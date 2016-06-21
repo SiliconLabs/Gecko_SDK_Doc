@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.2.0</span>
+   &#160;<span id="projectnumber">efm32g-doc-4.2.1</span>
    </div>
   </td>
  </tr>
@@ -113,17 +113,6 @@ $(document).ready(function(){initNavTree('group__MSC.html','');});
 
 <p>Flash controller (MSC) peripheral API </p><pre class="fragment"></pre><p>.  
 <a href="#details">More...</a></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for MSC:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<center><table><tr><td><img src="group__MSC.png" border="0" alt="" usemap="#group____MSC"/>
-<map name="group____MSC" id="group____MSC">
-<area shape="rect" id="node2" href="group__EM__Library.html" title="EM_Library" alt="" coords="5,5,91,32"/>
-</map>
-</td></tr></table></center>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -311,37 +300,6 @@ This function calls SystemCoreClockGet in order to set the global variable Syste
 <p>References <a class="el" href="em__cmu_8c_source.html#l01482">CMU_ClockFreqGet()</a>, <a class="el" href="em__cmu_8h_source.html#l00286">cmuClock_AUX</a>, <a class="el" href="efm32g890f128_8h_source.html#l00330">MSC</a>, <a class="el" href="efm32g890f128_8h_source.html#l00379">MSC_UNLOCK_CODE</a>, <a class="el" href="efm32g__msc_8h_source.html#l00096">MSC_WRITECTRL_WREN</a>, and <a class="el" href="system__efm32g_8c_source.html#l00123">SystemCoreClockGet()</a>.</p>
 
 <p>Referenced by <a class="el" href="bsp__trace_8h_source.html#l00062">BSP_TraceProfilerEnable()</a>, and <a class="el" href="nvm__hal_8c_source.html#l00111">NVMHAL_Init()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__MSC_gaa02df815c14caedbc2fd0a8910d2e055_cgraph.png" border="0" usemap="#group__MSC_gaa02df815c14caedbc2fd0a8910d2e055_cgraph" alt=""/></div>
-<map name="group__MSC_gaa02df815c14caedbc2fd0a8910d2e055_cgraph" id="group__MSC_gaa02df815c14caedbc2fd0a8910d2e055_cgraph">
-<area shape="rect" id="node3" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a" title="Get clock frequency for a clock point. " alt="" coords="128,107,259,133"/>
-<area shape="rect" id="node9" href="system__efm32g_8c.html#af2e6aa1120f0e55e38c83d8387625d16" title="Get the current core clock frequency. " alt="" coords="307,157,447,184"/>
-<area shape="rect" id="node5" href="group__CMU.html#ga3ac649cb01dd184676c6bdea7ff3d768" title="Convert dividend to logarithmic value. Only works for even numbers equal to 2^n. " alt="" coords="320,5,435,32"/>
-<area shape="rect" id="node7" href="group__CMU.html#ga535e1e8fa3a9131d7151cc549bfb4f29" title="Convert logarithm of 2 prescaler to division factor. " alt="" coords="320,56,435,83"/>
-<area shape="rect" id="node11" href="system__efm32g_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2" title="Get the current HFCLK frequency. " alt="" coords="496,132,624,159"/>
-<area shape="rect" id="node13" href="system__efm32g_8c.html#a442d0fcb831f601f02d643a64ab80f4c" title="GetProdRev" alt="" coords="672,132,760,159"/>
-</map>
-</div>
-</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__MSC_gaa02df815c14caedbc2fd0a8910d2e055_icgraph.png" border="0" usemap="#group__MSC_gaa02df815c14caedbc2fd0a8910d2e055_icgraph" alt=""/></div>
-<map name="group__MSC_gaa02df815c14caedbc2fd0a8910d2e055_icgraph" id="group__MSC_gaa02df815c14caedbc2fd0a8910d2e055_icgraph">
-<area shape="rect" id="node3" href="group__BSPCOMMON.html#ga5061043f8bb64d1b0130fe4185916916" title="Set or clear word in user page which enables or disables SWO in BSP_TraceProfilerSetup. If BSP_TraceProfilerEnable(false) has been run, no example project will enable SWO trace. " alt="" coords="128,5,291,32"/>
-<area shape="rect" id="node5" href="nvm__hal_8c.html#a67a31b5bf9f6a36a8e67b3d03bf59b38" title="Initialize NVM driver. " alt="" coords="162,56,257,83"/>
-<area shape="rect" id="node7" href="group__NVM.html#gaf74bb05f10ed4959e65e85fa438ead67" title="Initialize the NVM manager. " alt="" coords="339,56,413,83"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -551,21 +509,6 @@ This function calls SystemCoreClockGet in order to set the global variable Syste
 
 <p>Referenced by <a class="el" href="bsp__trace_8h_source.html#l00062">BSP_TraceProfilerEnable()</a>, and <a class="el" href="nvm__hal_8c_source.html#l00191">NVMHAL_Write()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__MSC_ga76309e04e090815bd80e7e5da3ee6ff6_icgraph.png" border="0" usemap="#group__MSC_ga76309e04e090815bd80e7e5da3ee6ff6_icgraph" alt=""/></div>
-<map name="group__MSC_ga76309e04e090815bd80e7e5da3ee6ff6_icgraph" id="group__MSC_ga76309e04e090815bd80e7e5da3ee6ff6_icgraph">
-<area shape="rect" id="node3" href="group__BSPCOMMON.html#ga5061043f8bb64d1b0130fe4185916916" title="Set or clear word in user page which enables or disables SWO in BSP_TraceProfilerSetup. If BSP_TraceProfilerEnable(false) has been run, no example project will enable SWO trace. " alt="" coords="171,5,333,32"/>
-<area shape="rect" id="node5" href="nvm__hal_8c.html#a0800d58f7bb43d0462592d0062c5cef3" title="Write data to NVM. " alt="" coords="198,56,306,83"/>
-<area shape="rect" id="node7" href="group__NVM.html#ga6cad1505838978506c7d94f9a1472595" title="Erase the entire allocated NVM area. " alt="" coords="382,31,469,57"/>
-<area shape="rect" id="node9" href="group__NVM.html#gad181be9b434658d3552fb311039ff691" title="Write an object or a page. " alt="" coords="382,81,469,108"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ga25bb7197232a0fa92f3fc22d3a128161"></a>
@@ -602,20 +545,6 @@ This function calls SystemCoreClockGet in order to set the global variable Syste
 
 <p>Referenced by <a class="el" href="bsp__trace_8h_source.html#l00062">BSP_TraceProfilerEnable()</a>, and <a class="el" href="nvm__hal_8c_source.html#l00278">NVMHAL_PageErase()</a>.</p>
 
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__MSC_ga25bb7197232a0fa92f3fc22d3a128161_icgraph.png" border="0" usemap="#group__MSC_ga25bb7197232a0fa92f3fc22d3a128161_icgraph" alt=""/></div>
-<map name="group__MSC_ga25bb7197232a0fa92f3fc22d3a128161_icgraph" id="group__MSC_ga25bb7197232a0fa92f3fc22d3a128161_icgraph">
-<area shape="rect" id="node3" href="group__BSPCOMMON.html#ga5061043f8bb64d1b0130fe4185916916" title="Set or clear word in user page which enables or disables SWO in BSP_TraceProfilerSetup. If BSP_TraceProfilerEnable(false) has been run, no example project will enable SWO trace. " alt="" coords="168,5,331,32"/>
-<area shape="rect" id="node5" href="nvm__hal_8c.html#aaa2acd545c460f4cea576178fc185a21" title="Erase a page in the NVM. " alt="" coords="181,56,318,83"/>
-<area shape="rect" id="node7" href="group__NVM.html#ga6cad1505838978506c7d94f9a1472595" title="Erase the entire allocated NVM area. " alt="" coords="379,56,466,83"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 </div><!-- contents -->
@@ -623,7 +552,7 @@ This function calls SystemCoreClockGet in order to set the global variable Syste
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 10 2015 11:35:14 for EFM32 Gecko Software Documentation by
+    <li class="footer">Generated on Tue Dec 8 2015 15:35:39 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

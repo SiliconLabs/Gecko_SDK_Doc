@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.0</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
    </div>
   </td>
  </tr>
@@ -114,17 +114,6 @@ $(document).ready(function(){initNavTree('group__LEUART.html','');});
 
 <p>Low Energy Universal Asynchronous Receiver/Transmitter (LEUART) Peripheral API </p><pre class="fragment"></pre><p>.  
 <a href="#details">More...</a></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for LEUART:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<center><table><tr><td><img src="group__LEUART.png" border="0" alt="" usemap="#group____LEUART"/>
-<map name="group____LEUART" id="group____LEUART">
-<area shape="rect" id="node2" href="group__EM__Library.html" title="EM_Library" alt="" coords="5,5,91,32"/>
-</map>
-</td></tr></table></center>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -414,18 +403,6 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="em__leuart_8c_source.html#l00207">LEUART_BaudrateGet()</a>.</p>
 
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__LEUART_ga0ae6c4ba0d7b1aa02db2c475757b257d_icgraph.png" border="0" usemap="#group__LEUART_ga0ae6c4ba0d7b1aa02db2c475757b257d_icgraph" alt=""/></div>
-<map name="group__LEUART_ga0ae6c4ba0d7b1aa02db2c475757b257d_icgraph" id="group__LEUART_ga0ae6c4ba0d7b1aa02db2c475757b257d_icgraph">
-<area shape="rect" id="node3" href="group__LEUART.html#ga41e06e8c961222093afa8997419ee9af" title="Get current baudrate for LEUART. " alt="" coords="203,5,347,32"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ga41e06e8c961222093afa8997419ee9af"></a>
@@ -453,23 +430,6 @@ Functions</h2></td></tr>
 <p>Definition at line <a class="el" href="em__leuart_8c_source.html#l00207">207</a> of file <a class="el" href="em__leuart_8c_source.html">em_leuart.c</a>.</p>
 
 <p>References <a class="el" href="efm32jg1b__leuart_8h_source.html#l00046">LEUART_TypeDef::CLKDIV</a>, <a class="el" href="em__cmu_8c_source.html#l01482">CMU_ClockFreqGet()</a>, <a class="el" href="em__cmu_8h_source.html#l00869">cmuClock_LEUART0</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00326">LEUART0</a>, and <a class="el" href="em__leuart_8c_source.html#l00129">LEUART_BaudrateCalc()</a>.</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__LEUART_ga41e06e8c961222093afa8997419ee9af_cgraph.png" border="0" usemap="#group__LEUART_ga41e06e8c961222093afa8997419ee9af_cgraph" alt=""/></div>
-<map name="group__LEUART_ga41e06e8c961222093afa8997419ee9af_cgraph" id="group__LEUART_ga41e06e8c961222093afa8997419ee9af_cgraph">
-<area shape="rect" id="node3" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a" title="Get clock frequency for a clock point. " alt="" coords="207,81,337,108"/>
-<area shape="rect" id="node14" href="group__LEUART.html#ga0ae6c4ba0d7b1aa02db2c475757b257d" title="Calculate baudrate for LEUART given reference frequency and clock division. " alt="" coords="197,132,347,159"/>
-<area shape="rect" id="node5" href="group__CMU.html#ga3ac649cb01dd184676c6bdea7ff3d768" title="Convert dividend to logarithmic value. Only works for even numbers equal to 2^n. " alt="" coords="408,5,523,32"/>
-<area shape="rect" id="node7" href="group__CMU.html#ga535e1e8fa3a9131d7151cc549bfb4f29" title="Convert logarithm of 2 prescaler to division factor. " alt="" coords="408,56,523,83"/>
-<area shape="rect" id="node9" href="system__efm32jg1b_8c.html#af2e6aa1120f0e55e38c83d8387625d16" title="Get the current core clock frequency. " alt="" coords="395,107,535,133"/>
-<area shape="rect" id="node11" href="system__efm32jg1b_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2" title="Get the current HFCLK frequency. " alt="" coords="584,132,712,159"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -518,38 +478,6 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="em__leuart_8c_source.html#l00456">LEUART_Init()</a>.</p>
 
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__LEUART_gac8d75da0027ebce98cf33ebcdfe9bdad_cgraph.png" border="0" usemap="#group__LEUART_gac8d75da0027ebce98cf33ebcdfe9bdad_cgraph" alt=""/></div>
-<map name="group__LEUART_gac8d75da0027ebce98cf33ebcdfe9bdad_cgraph" id="group__LEUART_gac8d75da0027ebce98cf33ebcdfe9bdad_cgraph">
-<area shape="rect" id="node3" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a" title="Get clock frequency for a clock point. " alt="" coords="197,81,328,108"/>
-<area shape="rect" id="node5" href="group__CMU.html#ga3ac649cb01dd184676c6bdea7ff3d768" title="Convert dividend to logarithmic value. Only works for even numbers equal to 2^n. " alt="" coords="389,5,504,32"/>
-<area shape="rect" id="node7" href="group__CMU.html#ga535e1e8fa3a9131d7151cc549bfb4f29" title="Convert logarithm of 2 prescaler to division factor. " alt="" coords="389,56,504,83"/>
-<area shape="rect" id="node9" href="system__efm32jg1b_8c.html#af2e6aa1120f0e55e38c83d8387625d16" title="Get the current core clock frequency. " alt="" coords="377,107,517,133"/>
-<area shape="rect" id="node11" href="system__efm32jg1b_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2" title="Get the current HFCLK frequency. " alt="" coords="565,132,693,159"/>
-</map>
-</div>
-</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__LEUART_gac8d75da0027ebce98cf33ebcdfe9bdad_icgraph.png" border="0" usemap="#group__LEUART_gac8d75da0027ebce98cf33ebcdfe9bdad_icgraph" alt=""/></div>
-<map name="group__LEUART_gac8d75da0027ebce98cf33ebcdfe9bdad_icgraph" id="group__LEUART_gac8d75da0027ebce98cf33ebcdfe9bdad_icgraph">
-<area shape="rect" id="node3" href="group__LEUART.html#ga14ed413542c26fb88fd1237f9eb99bd5" title="Init LEUART. " alt="" coords="198,31,290,57"/>
-<area shape="rect" id="node5" href="group__BSP__STK.html#gaba9ce74ca657de9f9f903e062cc654ef" title="Initialize board controller communication support (BCC) functionality. " alt="" coords="367,5,455,32"/>
-<area shape="rect" id="node7" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50" title="Intializes UART/LEUART. " alt="" coords="339,56,482,83"/>
-<area shape="rect" id="node9" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb" title="Receive a byte from USART/LEUART and put into global buffer. " alt="" coords="532,31,679,57"/>
-<area shape="rect" id="node11" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f" title="Transmit single byte to USART/LEUART. " alt="" coords="531,81,680,108"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="gaac8ffe82df5bc3b66519380843251228"></a>
@@ -590,20 +518,6 @@ Functions</h2></td></tr>
 <p>References <a class="el" href="efm32jg1b__leuart_8h_source.html#l00174">_LEUART_CMD_RXEN_MASK</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00184">_LEUART_CMD_TXEN_MASK</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00044">LEUART_TypeDef::CMD</a>, and <a class="el" href="efm32jg1b__leuart_8h_source.html#l00606">LEUART_SYNCBUSY_CMD</a>.</p>
 
 <p>Referenced by <a class="el" href="retargetserial_8c_source.html#l00095">RETARGET_SerialInit()</a>.</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__LEUART_gaac8ffe82df5bc3b66519380843251228_icgraph.png" border="0" usemap="#group__LEUART_gaac8ffe82df5bc3b66519380843251228_icgraph" alt=""/></div>
-<map name="group__LEUART_gaac8ffe82df5bc3b66519380843251228_icgraph" id="group__LEUART_gaac8ffe82df5bc3b66519380843251228_icgraph">
-<area shape="rect" id="node3" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50" title="Intializes UART/LEUART. " alt="" coords="166,31,309,57"/>
-<area shape="rect" id="node5" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb" title="Receive a byte from USART/LEUART and put into global buffer. " alt="" coords="359,5,505,32"/>
-<area shape="rect" id="node7" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f" title="Transmit single byte to USART/LEUART. " alt="" coords="357,56,507,83"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -650,24 +564,6 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="em__leuart_8c_source.html#l00456">LEUART_Init()</a>, and <a class="el" href="em__leuart_8c_source.html#l00495">LEUART_Reset()</a>.</p>
 
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__LEUART_ga997e11e29be1835b8a49b35b0a2e38a5_icgraph.png" border="0" usemap="#group__LEUART_ga997e11e29be1835b8a49b35b0a2e38a5_icgraph" alt=""/></div>
-<map name="group__LEUART_ga997e11e29be1835b8a49b35b0a2e38a5_icgraph" id="group__LEUART_ga997e11e29be1835b8a49b35b0a2e38a5_icgraph">
-<area shape="rect" id="node3" href="group__LEUART.html#ga14ed413542c26fb88fd1237f9eb99bd5" title="Init LEUART. " alt="" coords="213,56,305,83"/>
-<area shape="rect" id="node13" href="group__LEUART.html#gac1d2e66b6eb2ef53079453ebc2f1e5fa" title="Reset LEUART to same state as after a HW reset. " alt="" coords="205,107,312,133"/>
-<area shape="rect" id="node5" href="group__BSP__STK.html#gaba9ce74ca657de9f9f903e062cc654ef" title="Initialize board controller communication support (BCC) functionality. " alt="" coords="388,5,476,32"/>
-<area shape="rect" id="node7" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50" title="Intializes UART/LEUART. " alt="" coords="361,56,503,83"/>
-<area shape="rect" id="node9" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb" title="Receive a byte from USART/LEUART and put into global buffer. " alt="" coords="553,31,700,57"/>
-<area shape="rect" id="node11" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f" title="Transmit single byte to USART/LEUART. " alt="" coords="552,81,701,108"/>
-<area shape="rect" id="node15" href="group__BSP__STK.html#gac3192060c8ac4b2c6f4293aed6b2747a" title="Deinitialize board controller communication support (BCC) functionality. Reverse actions performed by..." alt="" coords="381,107,483,133"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ga14ed413542c26fb88fd1237f9eb99bd5"></a>
@@ -710,39 +606,6 @@ Functions</h2></td></tr>
 <p>References <a class="el" href="efm32jg1b__leuart_8h_source.html#l00093">_LEUART_CTRL_PARITY_MASK</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00104">_LEUART_CTRL_STOPBITS_MASK</a>, <a class="el" href="em__leuart_8h_source.html#l00119">LEUART_Init_TypeDef::baudrate</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00044">LEUART_TypeDef::CMD</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00043">LEUART_TypeDef::CTRL</a>, <a class="el" href="em__leuart_8h_source.html#l00122">LEUART_Init_TypeDef::databits</a>, <a class="el" href="em__leuart_8h_source.html#l00110">LEUART_Init_TypeDef::enable</a>, <a class="el" href="em__leuart_8c_source.html#l00255">LEUART_BaudrateSet()</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00177">LEUART_CMD_RXDIS</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00187">LEUART_CMD_TXDIS</a>, <a class="el" href="em__leuart_8c_source.html#l00400">LEUART_FreezeEnable()</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00606">LEUART_SYNCBUSY_CMD</a>, <a class="el" href="em__leuart_8h_source.html#l00125">LEUART_Init_TypeDef::parity</a>, <a class="el" href="em__leuart_8h_source.html#l00116">LEUART_Init_TypeDef::refFreq</a>, and <a class="el" href="em__leuart_8h_source.html#l00128">LEUART_Init_TypeDef::stopbits</a>.</p>
 
 <p>Referenced by <a class="el" href="bsp__bcc_8c_source.html#l00089">BSP_BccInit()</a>, and <a class="el" href="retargetserial_8c_source.html#l00095">RETARGET_SerialInit()</a>.</p>
-
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__LEUART_ga14ed413542c26fb88fd1237f9eb99bd5_cgraph.png" border="0" usemap="#group__LEUART_ga14ed413542c26fb88fd1237f9eb99bd5_cgraph" alt=""/></div>
-<map name="group__LEUART_ga14ed413542c26fb88fd1237f9eb99bd5_cgraph" id="group__LEUART_ga14ed413542c26fb88fd1237f9eb99bd5_cgraph">
-<area shape="rect" id="node3" href="group__LEUART.html#gac8d75da0027ebce98cf33ebcdfe9bdad" title="Configure baudrate (or as close as possible to specified baudrate). " alt="" coords="151,81,295,108"/>
-<area shape="rect" id="node16" href="group__LEUART.html#ga997e11e29be1835b8a49b35b0a2e38a5" title="LEUART register synchronization freeze control. " alt="" coords="147,132,298,159"/>
-<area shape="rect" id="node5" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a" title="Get clock frequency for a clock point. " alt="" coords="347,81,477,108"/>
-<area shape="rect" id="node7" href="group__CMU.html#ga3ac649cb01dd184676c6bdea7ff3d768" title="Convert dividend to logarithmic value. Only works for even numbers equal to 2^n. " alt="" coords="539,5,653,32"/>
-<area shape="rect" id="node9" href="group__CMU.html#ga535e1e8fa3a9131d7151cc549bfb4f29" title="Convert logarithm of 2 prescaler to division factor. " alt="" coords="539,56,653,83"/>
-<area shape="rect" id="node11" href="system__efm32jg1b_8c.html#af2e6aa1120f0e55e38c83d8387625d16" title="Get the current core clock frequency. " alt="" coords="526,107,666,133"/>
-<area shape="rect" id="node13" href="system__efm32jg1b_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2" title="Get the current HFCLK frequency. " alt="" coords="715,132,843,159"/>
-</map>
-</div>
-</p>
-
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__LEUART_ga14ed413542c26fb88fd1237f9eb99bd5_icgraph.png" border="0" usemap="#group__LEUART_ga14ed413542c26fb88fd1237f9eb99bd5_icgraph" alt=""/></div>
-<map name="group__LEUART_ga14ed413542c26fb88fd1237f9eb99bd5_icgraph" id="group__LEUART_ga14ed413542c26fb88fd1237f9eb99bd5_icgraph">
-<area shape="rect" id="node3" href="group__BSP__STK.html#gaba9ce74ca657de9f9f903e062cc654ef" title="Initialize board controller communication support (BCC) functionality. " alt="" coords="175,5,263,32"/>
-<area shape="rect" id="node5" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50" title="Intializes UART/LEUART. " alt="" coords="147,56,290,83"/>
-<area shape="rect" id="node7" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb" title="Receive a byte from USART/LEUART and put into global buffer. " alt="" coords="340,31,487,57"/>
-<area shape="rect" id="node9" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f" title="Transmit single byte to USART/LEUART. " alt="" coords="339,81,488,108"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -857,20 +720,6 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="retargetserial_8c_source.html#l00095">RETARGET_SerialInit()</a>.</p>
 
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__LEUART_gac7d9d111138799c46cb48b96689242b0_icgraph.png" border="0" usemap="#group__LEUART_gac7d9d111138799c46cb48b96689242b0_icgraph" alt=""/></div>
-<map name="group__LEUART_gac7d9d111138799c46cb48b96689242b0_icgraph" id="group__LEUART_gac7d9d111138799c46cb48b96689242b0_icgraph">
-<area shape="rect" id="node3" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50" title="Intializes UART/LEUART. " alt="" coords="174,31,317,57"/>
-<area shape="rect" id="node5" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb" title="Receive a byte from USART/LEUART and put into global buffer. " alt="" coords="367,5,513,32"/>
-<area shape="rect" id="node7" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f" title="Transmit single byte to USART/LEUART. " alt="" coords="365,56,515,83"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="gae685d3468982536584bf09757c5eec08"></a>
@@ -947,20 +796,6 @@ Functions</h2></td></tr>
 <p>References <a class="el" href="efm32jg1b__leuart_8h_source.html#l00057">LEUART_TypeDef::IEN</a>.</p>
 
 <p>Referenced by <a class="el" href="retargetserial_8c_source.html#l00095">RETARGET_SerialInit()</a>.</p>
-
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__LEUART_ga5485a64cc586e5a8df2a78df567fa5f4_icgraph.png" border="0" usemap="#group__LEUART_ga5485a64cc586e5a8df2a78df567fa5f4_icgraph" alt=""/></div>
-<map name="group__LEUART_ga5485a64cc586e5a8df2a78df567fa5f4_icgraph" id="group__LEUART_ga5485a64cc586e5a8df2a78df567fa5f4_icgraph">
-<area shape="rect" id="node3" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50" title="Intializes UART/LEUART. " alt="" coords="182,31,325,57"/>
-<area shape="rect" id="node5" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb" title="Receive a byte from USART/LEUART and put into global buffer. " alt="" coords="375,5,521,32"/>
-<area shape="rect" id="node7" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f" title="Transmit single byte to USART/LEUART. " alt="" coords="373,56,523,83"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -1113,30 +948,6 @@ Functions</h2></td></tr>
 <p>References <a class="el" href="efm32jg1b__leuart_8h_source.html#l00253">_LEUART_CLKDIV_RESETVALUE</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00076">_LEUART_CTRL_RESETVALUE</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00509">_LEUART_IEN_RESETVALUE</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00461">_LEUART_IFC_MASK</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00568">_LEUART_PULSECTRL_RESETVALUE</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00657">_LEUART_ROUTELOC0_RESETVALUE</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00643">_LEUART_ROUTEPEN_RESETVALUE</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00269">_LEUART_SIGFRAME_RESETVALUE</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00261">_LEUART_STARTFRAME_RESETVALUE</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00046">LEUART_TypeDef::CLKDIV</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00044">LEUART_TypeDef::CMD</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00043">LEUART_TypeDef::CTRL</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00057">LEUART_TypeDef::IEN</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00056">LEUART_TypeDef::IFC</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00207">LEUART_CMD_CLEARRX</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00202">LEUART_CMD_CLEARTX</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00197">LEUART_CMD_RXBLOCKDIS</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00177">LEUART_CMD_RXDIS</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00187">LEUART_CMD_TXDIS</a>, <a class="el" href="em__leuart_8c_source.html#l00400">LEUART_FreezeEnable()</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00058">LEUART_TypeDef::PULSECTRL</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00065">LEUART_TypeDef::ROUTELOC0</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00064">LEUART_TypeDef::ROUTEPEN</a>, <a class="el" href="efm32jg1b__leuart_8h_source.html#l00048">LEUART_TypeDef::SIGFRAME</a>, and <a class="el" href="efm32jg1b__leuart_8h_source.html#l00047">LEUART_TypeDef::STARTFRAME</a>.</p>
 
 <p>Referenced by <a class="el" href="bsp__bcc_8c_source.html#l00061">BSP_BccDeInit()</a>.</p>
-
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__LEUART_gac1d2e66b6eb2ef53079453ebc2f1e5fa_cgraph.png" border="0" usemap="#group__LEUART_gac1d2e66b6eb2ef53079453ebc2f1e5fa_cgraph" alt=""/></div>
-<map name="group__LEUART_gac1d2e66b6eb2ef53079453ebc2f1e5fa_cgraph" id="group__LEUART_gac1d2e66b6eb2ef53079453ebc2f1e5fa_cgraph">
-<area shape="rect" id="node3" href="group__LEUART.html#ga997e11e29be1835b8a49b35b0a2e38a5" title="LEUART register synchronization freeze control. " alt="" coords="161,5,311,32"/>
-</map>
-</div>
-</p>
-
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__LEUART_gac1d2e66b6eb2ef53079453ebc2f1e5fa_icgraph.png" border="0" usemap="#group__LEUART_gac1d2e66b6eb2ef53079453ebc2f1e5fa_icgraph" alt=""/></div>
-<map name="group__LEUART_gac1d2e66b6eb2ef53079453ebc2f1e5fa_icgraph" id="group__LEUART_gac1d2e66b6eb2ef53079453ebc2f1e5fa_icgraph">
-<area shape="rect" id="node3" href="group__BSP__STK.html#gac3192060c8ac4b2c6f4293aed6b2747a" title="Deinitialize board controller communication support (BCC) functionality. Reverse actions performed by..." alt="" coords="161,5,263,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -1345,7 +1156,7 @@ Notice that possible parity/stop bits are not considered part of specified frame
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 10 2015 12:29:53 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Tue Dec 8 2015 15:40:49 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

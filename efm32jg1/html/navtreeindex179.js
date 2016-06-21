@@ -1,5 +1,9 @@
 var NAVTREEINDEX179 =
 {
+"system__efm32jg1b_8h.html#a5d85fc6b067c8c01e6c88adf3e298aea":[3,0,0,0,0,0,37,31],
+"system__efm32jg1b_8h.html#a5f89e5f7418d3a10f49b2faeab3711dd":[3,0,0,0,0,0,37,14],
+"system__efm32jg1b_8h.html#a6303e1f258cbdc1f970ce579cc015623":[3,0,0,0,0,0,37,8],
+"system__efm32jg1b_8h.html#a64cc4ea6124c6503b120933d91edf1a0":[3,0,0,0,0,0,37,34],
 "system__efm32jg1b_8h.html#a6ad7a5e3ee69cb6db6a6b9111ba898bc":[3,0,0,0,0,0,37,1],
 "system__efm32jg1b_8h.html#a850cefb17a977292ae5eb4cafa9976c3":[3,0,0,0,0,0,37,4],
 "system__efm32jg1b_8h.html#a87d72653156b83829786f1f856ecbad1":[3,0,0,0,0,0,37,13],

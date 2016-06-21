@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.2.0</span>
+   &#160;<span id="projectnumber">efm32wg-doc-4.2.1</span>
    </div>
   </td>
  </tr>
@@ -111,17 +111,6 @@ $(document).ready(function(){initNavTree('group__USTIMER.html','');});
 
 <p>USTIMER Microsecond delay timer module, see <a class="el" href="group__USTIMER.html">USTIMER Microsecond delay timer module</a> page for detailed documentation. </p><pre class="fragment"></pre><p>.  
 <a href="#details">More...</a></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for USTIMER:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<center><table><tr><td><img src="group__USTIMER.png" border="0" alt="" usemap="#group____USTIMER"/>
-<map name="group____USTIMER" id="group____USTIMER">
-<area shape="rect" id="node1" href="group__EM__Drivers.html" title="EM_Drivers" alt="" coords="6,5,93,32"/>
-</map>
-</td></tr></table></center>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -213,42 +202,7 @@ int main( void )
 
 <p>References <a class="el" href="efm32wg__timer_8h_source.html#l00159">_TIMER_CTRL_PRESC_DIV1</a>, <a class="el" href="efm32wg__timer_8h_source.html#l00169">_TIMER_CTRL_PRESC_DIV1024</a>, <a class="el" href="em__cmu_8c_source.html#l01369">CMU_ClockEnable()</a>, <a class="el" href="em__cmu_8c_source.html#l01482">CMU_ClockFreqGet()</a>, <a class="el" href="em__cmu_8h_source.html#l00629">cmuClock_CORE</a>, <a class="el" href="em__cmu_8h_source.html#l00382">cmuClock_HFPER</a>, <a class="el" href="ustimer_8h_source.html#l00038">ECODE_EMDRV_USTIMER_OK</a>, <a class="el" href="em__timer_8h_source.html#l00375">TIMER_InitCC_TypeDef::mode</a>, <a class="el" href="em__timer_8h_source.html#l00279">TIMER_Init_TypeDef::prescale</a>, <a class="el" href="efm32wg__timer_8h_source.html#l00300">TIMER_IEN_CC0</a>, <a class="el" href="em__timer_8c_source.html#l00076">TIMER_Init()</a>, <a class="el" href="em__timer_8h_source.html#l00317">TIMER_INIT_DEFAULT</a>, <a class="el" href="em__timer_8c_source.html#l00130">TIMER_InitCC()</a>, <a class="el" href="em__timer_8h_source.html#l00397">TIMER_INITCC_DEFAULT</a>, <a class="el" href="em__timer_8h_source.html#l00730">TIMER_IntDisable()</a>, <a class="el" href="em__timer_8h_source.html#l00900">TIMER_TopSet()</a>, and <a class="el" href="em__timer_8h_source.html#l00101">timerCCModeCompare</a>.</p>
 
-<p>Referenced by <a class="el" href="ezradio__api__lib_8c_source.html#l00053">ezradio_reset()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__USTIMER_ga5c7fa9c799b61638907d4f832a45e58b_cgraph.png" border="0" usemap="#group__USTIMER_ga5c7fa9c799b61638907d4f832a45e58b_cgraph" alt=""/></div>
-<map name="group__USTIMER_ga5c7fa9c799b61638907d4f832a45e58b_cgraph" id="group__USTIMER_ga5c7fa9c799b61638907d4f832a45e58b_cgraph">
-<area shape="rect" id="node3" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8" title="Enable/disable a clock. " alt="" coords="155,31,277,57"/>
-<area shape="rect" id="node7" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a" title="Get clock frequency for a clock point. " alt="" coords="325,81,456,108"/>
-<area shape="rect" id="node21" href="group__TIMER.html#gad04a80140e22df0cd742e14933e9f028" title="Initialize TIMER. " alt="" coords="174,132,258,159"/>
-<area shape="rect" id="node23" href="group__TIMER.html#ga9b2a3560717e0c174a030d99fa8501b4" title="Initialize TIMER compare/capture channel. " alt="" coords="166,183,266,209"/>
-<area shape="rect" id="node25" href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9" title="Disable one or more TIMER interrupts. " alt="" coords="155,233,277,260"/>
-<area shape="rect" id="node27" href="group__TIMER.html#gad367b1801475494e0aeab2e4eab1e646" title="Set top value for timer. " alt="" coords="163,284,269,311"/>
-<area shape="rect" id="node5" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164" title="Perform a single&#45;bit write operation on a peripheral register. " alt="" coords="331,31,450,57"/>
-<area shape="rect" id="node9" href="group__CMU.html#ga3ac649cb01dd184676c6bdea7ff3d768" title="Convert dividend to logarithmic value. Only works for even numbers equal to 2^n. " alt="" coords="517,5,632,32"/>
-<area shape="rect" id="node11" href="group__CMU.html#ga535e1e8fa3a9131d7151cc549bfb4f29" title="Convert logarithm of 2 prescaler to division factor. " alt="" coords="517,56,632,83"/>
-<area shape="rect" id="node13" href="system__efm32wg_8c.html#af2e6aa1120f0e55e38c83d8387625d16" title="Get the current core clock frequency. " alt="" coords="505,107,645,133"/>
-<area shape="rect" id="node15" href="system__efm32wg_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2" title="Get the current HFCLK frequency. " alt="" coords="693,132,821,159"/>
-<area shape="rect" id="node17" href="system__efm32wg_8c.html#a442d0fcb831f601f02d643a64ab80f4c" title="GetProdRev" alt="" coords="869,132,957,159"/>
-</map>
-</div>
-</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__USTIMER_ga5c7fa9c799b61638907d4f832a45e58b_icgraph.png" border="0" usemap="#group__USTIMER_ga5c7fa9c799b61638907d4f832a45e58b_icgraph" alt=""/></div>
-<map name="group__USTIMER_ga5c7fa9c799b61638907d4f832a45e58b_icgraph" id="group__USTIMER_ga5c7fa9c799b61638907d4f832a45e58b_icgraph">
-<area shape="rect" id="node3" href="group__API__Layer.html#gad7a48081868b00a765b488f47909396c" title="ezradio_reset" alt="" coords="155,5,255,32"/>
-</map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="ezradio__api__lib_8c_source.html#l00054">ezradio_reset()</a>.</p>
 
 </div>
 </div>
@@ -272,41 +226,7 @@ int main( void )
 
 <p>References <a class="el" href="em__cmu_8c_source.html#l01369">CMU_ClockEnable()</a>, <a class="el" href="ustimer_8h_source.html#l00038">ECODE_EMDRV_USTIMER_OK</a>, <a class="el" href="em__timer_8h_source.html#l00613">TIMER_Enable()</a>, <a class="el" href="efm32wg__timer_8h_source.html#l00300">TIMER_IEN_CC0</a>, <a class="el" href="efm32wg__timer_8h_source.html#l00432">TIMER_IFC_CC0</a>, <a class="el" href="em__timer_8h_source.html#l00713">TIMER_IntClear()</a>, and <a class="el" href="em__timer_8h_source.html#l00730">TIMER_IntDisable()</a>.</p>
 
-<p>Referenced by <a class="el" href="ezradio__api__lib_8c_source.html#l00053">ezradio_reset()</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__USTIMER_gae0ab9e930ee6cbd71061142c4ad4e298_cgraph.png" border="0" usemap="#group__USTIMER_gae0ab9e930ee6cbd71061142c4ad4e298_cgraph" alt=""/></div>
-<map name="group__USTIMER_gae0ab9e930ee6cbd71061142c4ad4e298_cgraph" id="group__USTIMER_gae0ab9e930ee6cbd71061142c4ad4e298_cgraph">
-<area shape="rect" id="node3" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8" title="Enable/disable a clock. " alt="" coords="168,56,291,83"/>
-<area shape="rect" id="node20" href="group__TIMER.html#gae3dd36e419641a24d3f44084c216bf71" title="Start/stop TIMER. " alt="" coords="177,107,281,133"/>
-<area shape="rect" id="node22" href="group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57" title="Clear one or more pending TIMER interrupts. " alt="" coords="174,157,285,184"/>
-<area shape="rect" id="node24" href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9" title="Disable one or more TIMER interrupts. " alt="" coords="168,208,291,235"/>
-<area shape="rect" id="node5" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164" title="Perform a single&#45;bit write operation on a peripheral register. " alt="" coords="345,31,463,57"/>
-<area shape="rect" id="node7" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a" title="Get clock frequency for a clock point. " alt="" coords="339,81,469,108"/>
-<area shape="rect" id="node9" href="group__CMU.html#ga3ac649cb01dd184676c6bdea7ff3d768" title="Convert dividend to logarithmic value. Only works for even numbers equal to 2^n. " alt="" coords="531,5,645,32"/>
-<area shape="rect" id="node11" href="group__CMU.html#ga535e1e8fa3a9131d7151cc549bfb4f29" title="Convert logarithm of 2 prescaler to division factor. " alt="" coords="531,56,645,83"/>
-<area shape="rect" id="node13" href="system__efm32wg_8c.html#af2e6aa1120f0e55e38c83d8387625d16" title="Get the current core clock frequency. " alt="" coords="518,107,658,133"/>
-<area shape="rect" id="node15" href="system__efm32wg_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2" title="Get the current HFCLK frequency. " alt="" coords="707,132,835,159"/>
-<area shape="rect" id="node17" href="system__efm32wg_8c.html#a442d0fcb831f601f02d643a64ab80f4c" title="GetProdRev" alt="" coords="883,132,971,159"/>
-</map>
-</div>
-</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__USTIMER_gae0ab9e930ee6cbd71061142c4ad4e298_icgraph.png" border="0" usemap="#group__USTIMER_gae0ab9e930ee6cbd71061142c4ad4e298_icgraph" alt=""/></div>
-<map name="group__USTIMER_gae0ab9e930ee6cbd71061142c4ad4e298_icgraph" id="group__USTIMER_gae0ab9e930ee6cbd71061142c4ad4e298_icgraph">
-<area shape="rect" id="node3" href="group__API__Layer.html#gad7a48081868b00a765b488f47909396c" title="ezradio_reset" alt="" coords="169,5,269,32"/>
-</map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="ezradio__api__lib_8c_source.html#l00054">ezradio_reset()</a>.</p>
 
 </div>
 </div>
@@ -337,19 +257,7 @@ int main( void )
 
 <p>References <a class="el" href="ustimer_8h_source.html#l00038">ECODE_EMDRV_USTIMER_OK</a>.</p>
 
-<p>Referenced by <a class="el" href="ezradio__api__lib_8c_source.html#l00053">ezradio_reset()</a>.</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__USTIMER_ga3a844fc16a527d15450ba4692f6ce047_icgraph.png" border="0" usemap="#group__USTIMER_ga3a844fc16a527d15450ba4692f6ce047_icgraph" alt=""/></div>
-<map name="group__USTIMER_ga3a844fc16a527d15450ba4692f6ce047_icgraph" id="group__USTIMER_ga3a844fc16a527d15450ba4692f6ce047_icgraph">
-<area shape="rect" id="node3" href="group__API__Layer.html#gad7a48081868b00a765b488f47909396c" title="ezradio_reset" alt="" coords="169,5,269,32"/>
-</map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="ezradio__api__lib_8c_source.html#l00054">ezradio_reset()</a>.</p>
 
 </div>
 </div>
@@ -387,7 +295,7 @@ int main( void )
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 10 2015 12:00:01 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Tue Dec 8 2015 15:38:20 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

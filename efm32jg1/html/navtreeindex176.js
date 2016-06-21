@@ -1,5 +1,9 @@
 var NAVTREEINDEX176 =
 {
+"structLDMA__TypeDef.html#a15a7b10f1be8070cc9f8bd89b3b6a766":[1,31,27,0,12],
+"structLDMA__TypeDef.html#a1e323902e52fc78fc9872d138b536de7":[1,31,27,0,15],
+"structLDMA__TypeDef.html#a271c1acdb0f9303d73d6fd1b5eaeacd5":[1,31,27,0,14],
+"structLDMA__TypeDef.html#a2dbb81ef321a0637410901a5f30127c3":[1,31,27,0,11],
 "structLDMA__TypeDef.html#a42505e5f2c5006fb4a8d7408fc014b40":[1,31,27,0,3],
 "structLDMA__TypeDef.html#a4bf98447a78c5db27029562396f079e3":[1,31,27,0,16],
 "structLDMA__TypeDef.html#a560b1a4af39f770688895c88d18e335b":[1,31,27,0,18],
@@ -245,9 +249,5 @@ var NAVTREEINDEX176 =
 "structMSDSCSI__RequestSense__TypeDef.html":[1,35,9,5],
 "structMSDSCSI__RequestSense__TypeDef.html#a0e69b21acbd1e0b7e3158eefa3326954":[1,35,9,5,6],
 "structMSDSCSI__RequestSense__TypeDef.html#a198e363c27bbe1a92976ff6aca143eb7":[1,35,9,5,3],
-"structMSDSCSI__RequestSense__TypeDef.html#a2e663d75ee3be26383df61002dcf554a":[1,35,9,5,0],
-"structMSDSCSI__RequestSense__TypeDef.html#a6c5abb63ad406f601ca9532c095fe2e5":[1,35,9,5,4],
-"structMSDSCSI__RequestSense__TypeDef.html#a8bb0ae69d8e75ed18fdb619b465d748f":[1,35,9,5,2],
-"structMSDSCSI__RequestSense__TypeDef.html#ae2b17b045b6184a08d78553837a90de9":[1,35,9,5,1],
-"structMSDSCSI__RequestSense__TypeDef.html#af731f84bb4dd977080536bc124573bc5":[1,35,9,5,5]
+"structMSDSCSI__RequestSense__TypeDef.html#a2e663d75ee3be26383df61002dcf554a":[1,35,9,5,0]
 };

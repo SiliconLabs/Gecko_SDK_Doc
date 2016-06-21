@@ -1,5 +1,9 @@
 var NAVTREEINDEX173 =
 {
+"ksz8851snl_8c.html#a4fb198f5122ad90b21a55144fd193adc":[3,0,3,0,1,26,61],
+"ksz8851snl_8c.html#a502b2e6289fafe5337a3df230057048b":[3,0,3,0,1,26,111],
+"ksz8851snl_8c.html#a503dfce549f31a47951f785b636c762f":[3,0,3,0,1,26,155],
+"ksz8851snl_8c.html#a51ddde7ea1c2cb1d53ec6256d606e7c4":[3,0,3,0,1,26,150],
 "ksz8851snl_8c.html#a53b0bd1eebb93c5d26d4ee73a6928140":[3,0,3,0,1,26,1],
 "ksz8851snl_8c.html#a543c952d3573ec9a703cbf3470f69b1c":[3,0,3,0,1,26,126],
 "ksz8851snl_8c.html#a549874423431e423943346fbef8b023f":[3,0,3,0,1,26,72],
@@ -245,9 +249,5 @@ var NAVTREEINDEX173 =
 "segmentlcd_8c.html#ac4076c746e6d96a4fce1f2583d1b3228":[3,0,3,0,1,55,22],
 "segmentlcd_8c_source.html":[3,0,3,0,1,55],
 "segmentlcd_8h.html":[3,0,3,0,1,56],
-"segmentlcd_8h_source.html":[3,0,3,0,1,56],
-"si1147__i2c_8c.html":[3,0,3,0,1,57],
-"si1147__i2c_8c_source.html":[3,0,3,0,1,57],
-"si1147__i2c_8h.html":[3,0,3,0,1,58],
-"si1147__i2c_8h_source.html":[3,0,3,0,1,58]
+"segmentlcd_8h_source.html":[3,0,3,0,1,56]
 };

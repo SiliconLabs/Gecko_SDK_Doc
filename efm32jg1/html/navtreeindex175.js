@@ -1,5 +1,9 @@
 var NAVTREEINDEX175 =
 {
+"structEMU__TypeDef.html#a53dbb6ebfa7240277856a8976cf1a427":[1,31,17,0,5],
+"structEMU__TypeDef.html#a62e7f961a08efbf60cbe12c01aa43394":[1,31,17,0,0],
+"structEMU__TypeDef.html#a6cf9cf5d4d58f47bfda6316e24d5574e":[1,31,17,0,33],
+"structEMU__TypeDef.html#a6ee258accb6dc1fd23bca6e7dee53cb5":[1,31,17,0,6],
 "structEMU__TypeDef.html#a77641764d570eeefd0ff37dc6f3bc5cd":[1,31,17,0,14],
 "structEMU__TypeDef.html#a777233811151e9845eda7c934b601014":[1,31,17,0,22],
 "structEMU__TypeDef.html#a79b7d33133c43db64a852051b8cd89df":[1,31,17,0,32],
@@ -245,9 +249,5 @@ var NAVTREEINDEX175 =
 "structLDMA__TransferCfg__t.html#aea560beb6aca344fd728ed7390fa58b9":[1,32,15,2,8],
 "structLDMA__TransferCfg__t.html#af52334eee003bf37c2b41153c153c13a":[1,32,15,2,7],
 "structLDMA__TransferCfg__t.html#afac030732b213ff3be4fca53142e7a6a":[1,32,15,2,10],
-"structLDMA__TypeDef.html":[1,31,27,0],
-"structLDMA__TypeDef.html#a15a7b10f1be8070cc9f8bd89b3b6a766":[1,31,27,0,12],
-"structLDMA__TypeDef.html#a1e323902e52fc78fc9872d138b536de7":[1,31,27,0,15],
-"structLDMA__TypeDef.html#a271c1acdb0f9303d73d6fd1b5eaeacd5":[1,31,27,0,14],
-"structLDMA__TypeDef.html#a2dbb81ef321a0637410901a5f30127c3":[1,31,27,0,11]
+"structLDMA__TypeDef.html":[1,31,27,0]
 };

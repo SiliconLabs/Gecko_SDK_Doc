@@ -1,5 +1,9 @@
 var NAVTREEINDEX180 =
 {
+"structoperand__t.html#a3110d0088d2cc26a4eca11c34c8280ea":[2,0,88,0],
+"structsFlashStatus.html":[2,0,102],
+"structsFlashStatus.html#ae9ca98ab8f89563228684dccbf9878c5":[2,0,102,0],
+"structsFlashStatus.html#afab3f9da4a31eccd380d51725d90f773":[2,0,102,1],
 "system__efm32pg1b_8c.html":[3,0,0,0,0,1,0],
 "system__efm32pg1b_8c.html#a019e34c770ed2855a9ce73be796f33d5":[3,0,0,0,0,1,0,17],
 "system__efm32pg1b_8c.html#a16a9bb92649e0f2503f1565bf56e2afc":[3,0,0,0,0,1,0,0],

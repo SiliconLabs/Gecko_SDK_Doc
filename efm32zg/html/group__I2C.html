@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Zero Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32zg-doc-4.2.0</span>
+   &#160;<span id="projectnumber">efm32zg-doc-4.2.1</span>
    </div>
   </td>
  </tr>
@@ -113,17 +113,6 @@ $(document).ready(function(){initNavTree('group__I2C.html','');});
 
 <p>Inter-integrated Circuit (I2C) Peripheral API </p><pre class="fragment"></pre><p>.  
 <a href="#details">More...</a></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for I2C:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<center><table><tr><td><img src="group__I2C.png" border="0" alt="" usemap="#group____I2C"/>
-<map name="group____I2C" id="group____I2C">
-<area shape="rect" id="node2" href="group__EM__Library.html" title="EM_Library" alt="" coords="5,5,91,32"/>
-</map>
-</td></tr></table></center>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -517,22 +506,6 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="efm32zg__i2c_8h_source.html#l00104">_I2C_CTRL_CLHR_MASK</a>, <a class="el" href="efm32zg__i2c_8h_source.html#l00103">_I2C_CTRL_CLHR_SHIFT</a>, <a class="el" href="efm32zg__i2c_8h_source.html#l00047">I2C_TypeDef::CLKDIV</a>, <a class="el" href="em__cmu_8c_source.html#l01482">CMU_ClockFreqGet()</a>, <a class="el" href="em__cmu_8h_source.html#l00382">cmuClock_HFPER</a>, and <a class="el" href="efm32zg__i2c_8h_source.html#l00043">I2C_TypeDef::CTRL</a>.</p>
 
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__I2C_gaf2563ff04d4b24825a6c67f9ec4dcb80_cgraph.png" border="0" usemap="#group__I2C_gaf2563ff04d4b24825a6c67f9ec4dcb80_cgraph" alt=""/></div>
-<map name="group__I2C_gaf2563ff04d4b24825a6c67f9ec4dcb80_cgraph" id="group__I2C_gaf2563ff04d4b24825a6c67f9ec4dcb80_cgraph">
-<area shape="rect" id="node3" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a" title="Get clock frequency for a clock point. " alt="" coords="168,81,299,108"/>
-<area shape="rect" id="node5" href="group__CMU.html#ga3ac649cb01dd184676c6bdea7ff3d768" title="Convert dividend to logarithmic value. Only works for even numbers equal to 2^n. " alt="" coords="360,5,475,32"/>
-<area shape="rect" id="node7" href="group__CMU.html#ga535e1e8fa3a9131d7151cc549bfb4f29" title="Convert logarithm of 2 prescaler to division factor. " alt="" coords="360,56,475,83"/>
-<area shape="rect" id="node9" href="system__efm32zg_8c.html#af2e6aa1120f0e55e38c83d8387625d16" title="Get the current core clock frequency. " alt="" coords="347,107,487,133"/>
-<area shape="rect" id="node11" href="system__efm32zg_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2" title="Get the current HFCLK frequency. " alt="" coords="536,132,664,159"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ga02fbf32736b2e6c756399ceeba9563a1"></a>
@@ -589,38 +562,6 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="em__i2c_8c_source.html#l00349">I2C_Init()</a>.</p>
 
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__I2C_ga02fbf32736b2e6c756399ceeba9563a1_cgraph.png" border="0" usemap="#group__I2C_ga02fbf32736b2e6c756399ceeba9563a1_cgraph" alt=""/></div>
-<map name="group__I2C_ga02fbf32736b2e6c756399ceeba9563a1_cgraph" id="group__I2C_ga02fbf32736b2e6c756399ceeba9563a1_cgraph">
-<area shape="rect" id="node3" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76" title="Perform peripheral register masked clear and value write. " alt="" coords="169,56,317,83"/>
-<area shape="rect" id="node9" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a" title="Get clock frequency for a clock point. " alt="" coords="177,157,308,184"/>
-<area shape="rect" id="node5" href="group__BUS.html#gad226bfe478c81d51681539d935241758" title="Perform a masked clear operation on peripheral register address. " alt="" coords="365,5,512,32"/>
-<area shape="rect" id="node7" href="group__BUS.html#ga8225a5d4acac280abb182dc118e8df77" title="Perform a masked set operation on peripheral register address. " alt="" coords="371,56,507,83"/>
-<area shape="rect" id="node11" href="group__CMU.html#ga3ac649cb01dd184676c6bdea7ff3d768" title="Convert dividend to logarithmic value. Only works for even numbers equal to 2^n. " alt="" coords="381,107,496,133"/>
-<area shape="rect" id="node13" href="group__CMU.html#ga535e1e8fa3a9131d7151cc549bfb4f29" title="Convert logarithm of 2 prescaler to division factor. " alt="" coords="381,157,496,184"/>
-<area shape="rect" id="node15" href="system__efm32zg_8c.html#af2e6aa1120f0e55e38c83d8387625d16" title="Get the current core clock frequency. " alt="" coords="369,208,509,235"/>
-<area shape="rect" id="node17" href="system__efm32zg_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2" title="Get the current HFCLK frequency. " alt="" coords="560,233,688,260"/>
-</map>
-</div>
-</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__I2C_ga02fbf32736b2e6c756399ceeba9563a1_icgraph.png" border="0" usemap="#group__I2C_ga02fbf32736b2e6c756399ceeba9563a1_icgraph" alt=""/></div>
-<map name="group__I2C_ga02fbf32736b2e6c756399ceeba9563a1_icgraph" id="group__I2C_ga02fbf32736b2e6c756399ceeba9563a1_icgraph">
-<area shape="rect" id="node3" href="group__I2C.html#gab52e0fc0d3690e40f80a193d5b6fdd51" title="Initialize I2C. " alt="" coords="168,5,235,32"/>
-<area shape="rect" id="node5" href="group__I2CSPM.html#ga65556785bb5d714b23e1149d8ed742e5" title="Initalize I2C peripheral. " alt="" coords="283,5,373,32"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="gaca1c9ca46d6945a4696f8a34ab8c2ddf"></a>
@@ -658,18 +599,6 @@ Functions</h2></td></tr>
 <p>Definition at line <a class="el" href="em__i2c_8c_source.html#l00331">331</a> of file <a class="el" href="em__i2c_8c_source.html">em_i2c.c</a>.</p>
 
 <p>References <a class="el" href="efm32zg__i2c_8h_source.html#l00069">_I2C_CTRL_EN_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, and <a class="el" href="efm32zg__i2c_8h_source.html#l00043">I2C_TypeDef::CTRL</a>.</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__I2C_gaca1c9ca46d6945a4696f8a34ab8c2ddf_cgraph.png" border="0" usemap="#group__I2C_gaca1c9ca46d6945a4696f8a34ab8c2ddf_cgraph" alt=""/></div>
-<map name="group__I2C_gaca1c9ca46d6945a4696f8a34ab8c2ddf_cgraph" id="group__I2C_gaca1c9ca46d6945a4696f8a34ab8c2ddf_cgraph">
-<area shape="rect" id="node3" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164" title="Perform a single&#45;bit write operation on a peripheral register. " alt="" coords="142,5,261,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -709,39 +638,6 @@ Functions</h2></td></tr>
 <p>References <a class="el" href="efm32zg__i2c_8h_source.html#l00069">_I2C_CTRL_EN_SHIFT</a>, <a class="el" href="efm32zg__i2c_8h_source.html#l00074">_I2C_CTRL_SLAVE_SHIFT</a>, <a class="el" href="efm32zg__i2c_8h_source.html#l00505">_I2C_IFC_MASK</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="em__i2c_8h_source.html#l00218">I2C_Init_TypeDef::clhr</a>, <a class="el" href="efm32zg__i2c_8h_source.html#l00043">I2C_TypeDef::CTRL</a>, <a class="el" href="em__i2c_8h_source.html#l00199">I2C_Init_TypeDef::enable</a>, <a class="el" href="em__i2c_8h_source.html#l00215">I2C_Init_TypeDef::freq</a>, <a class="el" href="em__i2c_8c_source.html#l00223">I2C_BusFreqSet()</a>, <a class="el" href="efm32zg__i2c_8h_source.html#l00056">I2C_TypeDef::IEN</a>, <a class="el" href="efm32zg__i2c_8h_source.html#l00055">I2C_TypeDef::IFC</a>, <a class="el" href="em__i2c_8h_source.html#l00202">I2C_Init_TypeDef::master</a>, and <a class="el" href="em__i2c_8h_source.html#l00209">I2C_Init_TypeDef::refFreq</a>.</p>
 
 <p>Referenced by <a class="el" href="i2cspm_8c_source.html#l00039">I2CSPM_Init()</a>.</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__I2C_gab52e0fc0d3690e40f80a193d5b6fdd51_cgraph.png" border="0" usemap="#group__I2C_gab52e0fc0d3690e40f80a193d5b6fdd51_cgraph" alt=""/></div>
-<map name="group__I2C_gab52e0fc0d3690e40f80a193d5b6fdd51_cgraph" id="group__I2C_gab52e0fc0d3690e40f80a193d5b6fdd51_cgraph">
-<area shape="rect" id="node3" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164" title="Perform a single&#45;bit write operation on a peripheral register. " alt="" coords="121,56,239,83"/>
-<area shape="rect" id="node5" href="group__I2C.html#ga02fbf32736b2e6c756399ceeba9563a1" title="Set I2C bus frequency. " alt="" coords="123,107,237,133"/>
-<area shape="rect" id="node7" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76" title="Perform peripheral register masked clear and value write. " alt="" coords="289,56,437,83"/>
-<area shape="rect" id="node13" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a" title="Get clock frequency for a clock point. " alt="" coords="297,157,428,184"/>
-<area shape="rect" id="node9" href="group__BUS.html#gad226bfe478c81d51681539d935241758" title="Perform a masked clear operation on peripheral register address. " alt="" coords="485,5,632,32"/>
-<area shape="rect" id="node11" href="group__BUS.html#ga8225a5d4acac280abb182dc118e8df77" title="Perform a masked set operation on peripheral register address. " alt="" coords="491,56,627,83"/>
-<area shape="rect" id="node15" href="group__CMU.html#ga3ac649cb01dd184676c6bdea7ff3d768" title="Convert dividend to logarithmic value. Only works for even numbers equal to 2^n. " alt="" coords="501,107,616,133"/>
-<area shape="rect" id="node17" href="group__CMU.html#ga535e1e8fa3a9131d7151cc549bfb4f29" title="Convert logarithm of 2 prescaler to division factor. " alt="" coords="501,157,616,184"/>
-<area shape="rect" id="node19" href="system__efm32zg_8c.html#af2e6aa1120f0e55e38c83d8387625d16" title="Get the current core clock frequency. " alt="" coords="489,208,629,235"/>
-<area shape="rect" id="node21" href="system__efm32zg_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2" title="Get the current HFCLK frequency. " alt="" coords="680,233,808,260"/>
-</map>
-</div>
-</p>
-
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__I2C_gab52e0fc0d3690e40f80a193d5b6fdd51_icgraph.png" border="0" usemap="#group__I2C_gab52e0fc0d3690e40f80a193d5b6fdd51_icgraph" alt=""/></div>
-<map name="group__I2C_gab52e0fc0d3690e40f80a193d5b6fdd51_icgraph" id="group__I2C_gab52e0fc0d3690e40f80a193d5b6fdd51_icgraph">
-<area shape="rect" id="node3" href="group__I2CSPM.html#ga65556785bb5d714b23e1149d8ed742e5" title="Initalize I2C peripheral. " alt="" coords="120,5,211,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -1157,50 +1053,6 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="em__i2c_8c_source.html#l00803">I2C_TransferInit()</a>, and <a class="el" href="i2cspm_8c_source.html#l00124">I2CSPM_Transfer()</a>.</p>
 
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__I2C_ga67983b3dbe7f028a97f765e421b3df56_icgraph.png" border="0" usemap="#group__I2C_ga67983b3dbe7f028a97f765e421b3df56_icgraph" alt=""/></div>
-<map name="group__I2C_ga67983b3dbe7f028a97f765e421b3df56_icgraph" id="group__I2C_ga67983b3dbe7f028a97f765e421b3df56_icgraph">
-<area shape="rect" id="node3" href="group__I2C.html#gae2bf2ecc3d0c4f55e3511d4871b64b16" title="Prepare and start an I2C transfer (single master mode only). " alt="" coords="152,552,267,579"/>
-<area shape="rect" id="node5" href="group__I2CSPM.html#ga076766b20012fb6a0cdaaf0f2c760795" title="Perform I2C transfer. " alt="" coords="315,527,437,553"/>
-<area shape="rect" id="node7" href="eeprom_8c.html#aef96dc2e7cad63b532565057c7f0467c" title="Do acknowledge polling on EEPROM device. " alt="" coords="521,273,639,300"/>
-<area shape="rect" id="node9" href="group__Eeprom.html#ga1b92635b3e255f10731494e833654895" title="Write data to EEPROM. " alt="" coords="762,273,870,300"/>
-<area shape="rect" id="node11" href="group__Eeprom.html#gafffd2286594ec8e01dc16f8725626c04" title="Read data from EEPROM. " alt="" coords="527,375,633,401"/>
-<area shape="rect" id="node14" href="group__Si114x.html#ga8066eedd4bbac304e733a89e09cd6786" title="Reads register from the Si1147 sensor. " alt="" coords="505,425,655,452"/>
-<area shape="rect" id="node53" href="group__Si114x.html#gad2464ccbbf4938c5550702011d6dd5a4" title="Writes register in the Si1147 sensor. " alt="" coords="503,527,657,553"/>
-<area shape="rect" id="node67" href="group__Si114x.html#gaec6f34819894c8d7b2f86fb574da203e" title="Writes a block of data to the Si1147 sensor. " alt="" coords="749,469,883,510"/>
-<area shape="rect" id="node73" href="group__Si114x.html#ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7" title="Reads a block of data from the Si1147 sensor. " alt="" coords="487,577,673,604"/>
-<area shape="rect" id="node78" href="group__Si7013.html#gac595b86107a208280179a6f07c08bfa3" title="Reads Firmware Revision from a Si7013 sensor. " alt="" coords="485,628,675,655"/>
-<area shape="rect" id="node80" href="group__Si7013.html#ga93b1a4e0a94737abd16ec547004c270f" title="Checks if a Si7013 is present on the I2C bus or not. " alt="" coords="528,679,632,705"/>
-<area shape="rect" id="node82" href="group__TempSensor.html#gae77973607cb0dc33faaed18274885717" title="Read sensor register content. " alt="" coords="501,729,659,756"/>
-<area shape="rect" id="node86" href="group__TempSensor.html#gafeb45237c0a6989bc2e3bdbc564d90bd" title="Write to sensor register. " alt="" coords="501,780,659,807"/>
-<area shape="rect" id="node16" href="group__Si114x.html#gaeae79629a9f5a41c75ba329fa056eeef" title="Reads from Si114x register. " alt="" coords="733,324,899,351"/>
-<area shape="rect" id="node18" href="group__Si114x.html#ga05334a8a81ac4224f3fcbb68bd2e0fbe" title="Detects whether Si1147 is on the i2c bus. " alt="" coords="971,172,1119,199"/>
-<area shape="rect" id="node20" href="group__Si114x.html#ga75ef8acc675ca1a1bf14acda4f3c6686" title="Get the enable status of the Si1147 interrupt pin. " alt="" coords="958,5,1133,46"/>
-<area shape="rect" id="node22" href="group__Si114x.html#ga6621d57d8e2dedc1101227b7ad761d0a" title="Reads the UV measurement data and checks for object in proximity to the Si1147. " alt="" coords="1181,63,1373,105"/>
-<area shape="rect" id="node25" href="group__Si114x.html#ga350c8e857065a5061a49cd66a1a4b2a4" title="Reads new measurement data and processes a new sample. This function should be called every time an i..." alt="" coords="977,375,1113,401"/>
-<area shape="rect" id="node27" href="group__Si114x.html#ga81f826b515433015f7096e7b90e2d3b6" title="Reads a Parameter from the Si113x/4x. " alt="" coords="982,121,1109,148"/>
-<area shape="rect" id="node29" href="group__Si114x.html#gafee1fd953ec8559b0b2c53b4d3a7d442" title="Writes a byte to an Si113x/4x Parameter. " alt="" coords="1219,476,1335,503"/>
-<area shape="rect" id="node37" href="group__Si114x.html#ga85dcc599c9e3df8a22002f7ef5a3e5d8" title="Pauses autonomous measurements. " alt="" coords="991,527,1099,553"/>
-<area shape="rect" id="node43" href="group__Si114x.html#gadbec1218d8cc103d4d6c2fc0ec0f6abf" title="Populates the SI114X_CAL_S structure. " alt="" coords="971,745,1120,772"/>
-<area shape="rect" id="node47" href="group__Si114x.html#ga9966ab23359f5ae0c7e5b8d79a4ef59a" title="Initializes the Si113x/46/47/48 UCOEF Registers. " alt="" coords="1217,527,1337,553"/>
-<area shape="rect" id="node51" href="si114x__uv__index_8h.html#a92a1b86e34e4ed9dd68f51ba170c8e5f" title="Reads the UV index measurement data from the Si114x. " alt="" coords="964,324,1127,351"/>
-<area shape="rect" id="node31" href="group__Si114x.html#ga79b0443305d3a085028d1c197d398ede" title="Initializes and configures the Si1147 sensor. " alt="" coords="1421,628,1597,655"/>
-<area shape="rect" id="node33" href="si114x__uv__index_8h.html#a5636599ea7d573fcee234cc8bf4de655" title="Set the VIS_RANGE bit of the optical sensor Si114x. " alt="" coords="1430,476,1589,503"/>
-<area shape="rect" id="node35" href="si114x__uv__index_8h.html#aee56b411a2cb91ae85cae51c2d4039f7" title="Initializes and configures the Si1146 sensor for UV index measurements. " alt="" coords="1440,577,1579,604"/>
-<area shape="rect" id="node39" href="group__Si114x.html#ga88b866258cb278b01da1bcf766cfab57" title="Resets the Si113x/4x, clears any interrupts and initializes the HW_KEY register. " alt="" coords="1231,628,1323,655"/>
-<area shape="rect" id="node55" href="group__Si114x.html#ga8d9e6e60e0ced326193208cdf976bbee" title="Writes to Si114x Register. " alt="" coords="739,556,893,583"/>
-<area shape="rect" id="node57" href="group__Si114x.html#ga8f8ed0bfd8af165742a3169f87c1b32a" title="Enables or disables the Si1147 interrupt pin. " alt="" coords="958,629,1133,670"/>
-<area shape="rect" id="node69" href="group__Si114x.html#ga15059dd986a51d8188b5c93aa70681b6" title="Writes block of Si114x registers. " alt="" coords="985,476,1105,503"/>
-<area shape="rect" id="node75" href="group__Si114x.html#ga479ffe2c4fea4bf799a925d8e779400c" title="Reads block of Si114x registers. " alt="" coords="757,653,875,680"/>
-<area shape="rect" id="node84" href="group__TempSensor.html#gad39f162cc62b2eaeeaf8a0ebb2d0bdaa" title="Fetch current temperature from temperature sensor (in Celsius). " alt="" coords="723,729,909,756"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="gae2bf2ecc3d0c4f55e3511d4871b64b16"></a>
@@ -1247,61 +1099,6 @@ Functions</h2></td></tr>
 
 <p>Referenced by <a class="el" href="i2cspm_8c_source.html#l00124">I2CSPM_Transfer()</a>.</p>
 
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__I2C_gae2bf2ecc3d0c4f55e3511d4871b64b16_cgraph.png" border="0" usemap="#group__I2C_gae2bf2ecc3d0c4f55e3511d4871b64b16_cgraph" alt=""/></div>
-<map name="group__I2C_gae2bf2ecc3d0c4f55e3511d4871b64b16_cgraph" id="group__I2C_gae2bf2ecc3d0c4f55e3511d4871b64b16_cgraph">
-<area shape="rect" id="node3" href="group__I2C.html#ga67983b3dbe7f028a97f765e421b3df56" title="Continue an initiated I2C transfer (single master mode only). " alt="" coords="169,5,266,32"/>
-</map>
-</div>
-</p>
-
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__I2C_gae2bf2ecc3d0c4f55e3511d4871b64b16_icgraph.png" border="0" usemap="#group__I2C_gae2bf2ecc3d0c4f55e3511d4871b64b16_icgraph" alt=""/></div>
-<map name="group__I2C_gae2bf2ecc3d0c4f55e3511d4871b64b16_icgraph" id="group__I2C_gae2bf2ecc3d0c4f55e3511d4871b64b16_icgraph">
-<area shape="rect" id="node3" href="group__I2CSPM.html#ga076766b20012fb6a0cdaaf0f2c760795" title="Perform I2C transfer. " alt="" coords="168,527,291,553"/>
-<area shape="rect" id="node5" href="eeprom_8c.html#aef96dc2e7cad63b532565057c7f0467c" title="Do acknowledge polling on EEPROM device. " alt="" coords="375,273,492,300"/>
-<area shape="rect" id="node7" href="group__Eeprom.html#ga1b92635b3e255f10731494e833654895" title="Write data to EEPROM. " alt="" coords="615,273,723,300"/>
-<area shape="rect" id="node9" href="group__Eeprom.html#gafffd2286594ec8e01dc16f8725626c04" title="Read data from EEPROM. " alt="" coords="380,375,487,401"/>
-<area shape="rect" id="node12" href="group__Si114x.html#ga8066eedd4bbac304e733a89e09cd6786" title="Reads register from the Si1147 sensor. " alt="" coords="358,425,509,452"/>
-<area shape="rect" id="node51" href="group__Si114x.html#gad2464ccbbf4938c5550702011d6dd5a4" title="Writes register in the Si1147 sensor. " alt="" coords="357,527,510,553"/>
-<area shape="rect" id="node65" href="group__Si114x.html#gaec6f34819894c8d7b2f86fb574da203e" title="Writes a block of data to the Si1147 sensor. " alt="" coords="602,469,737,510"/>
-<area shape="rect" id="node71" href="group__Si114x.html#ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7" title="Reads a block of data from the Si1147 sensor. " alt="" coords="340,577,527,604"/>
-<area shape="rect" id="node76" href="group__Si7013.html#gac595b86107a208280179a6f07c08bfa3" title="Reads Firmware Revision from a Si7013 sensor. " alt="" coords="339,628,528,655"/>
-<area shape="rect" id="node78" href="group__Si7013.html#ga93b1a4e0a94737abd16ec547004c270f" title="Checks if a Si7013 is present on the I2C bus or not. " alt="" coords="381,679,485,705"/>
-<area shape="rect" id="node80" href="group__TempSensor.html#gae77973607cb0dc33faaed18274885717" title="Read sensor register content. " alt="" coords="354,729,513,756"/>
-<area shape="rect" id="node84" href="group__TempSensor.html#gafeb45237c0a6989bc2e3bdbc564d90bd" title="Write to sensor register. " alt="" coords="354,780,513,807"/>
-<area shape="rect" id="node14" href="group__Si114x.html#gaeae79629a9f5a41c75ba329fa056eeef" title="Reads from Si114x register. " alt="" coords="586,324,753,351"/>
-<area shape="rect" id="node16" href="group__Si114x.html#ga05334a8a81ac4224f3fcbb68bd2e0fbe" title="Detects whether Si1147 is on the i2c bus. " alt="" coords="825,172,973,199"/>
-<area shape="rect" id="node18" href="group__Si114x.html#ga75ef8acc675ca1a1bf14acda4f3c6686" title="Get the enable status of the Si1147 interrupt pin. " alt="" coords="811,5,986,46"/>
-<area shape="rect" id="node20" href="group__Si114x.html#ga6621d57d8e2dedc1101227b7ad761d0a" title="Reads the UV measurement data and checks for object in proximity to the Si1147. " alt="" coords="1035,63,1227,105"/>
-<area shape="rect" id="node23" href="group__Si114x.html#ga350c8e857065a5061a49cd66a1a4b2a4" title="Reads new measurement data and processes a new sample. This function should be called every time an i..." alt="" coords="831,375,967,401"/>
-<area shape="rect" id="node25" href="group__Si114x.html#ga81f826b515433015f7096e7b90e2d3b6" title="Reads a Parameter from the Si113x/4x. " alt="" coords="835,121,962,148"/>
-<area shape="rect" id="node27" href="group__Si114x.html#gafee1fd953ec8559b0b2c53b4d3a7d442" title="Writes a byte to an Si113x/4x Parameter. " alt="" coords="1073,476,1189,503"/>
-<area shape="rect" id="node35" href="group__Si114x.html#ga85dcc599c9e3df8a22002f7ef5a3e5d8" title="Pauses autonomous measurements. " alt="" coords="845,527,953,553"/>
-<area shape="rect" id="node41" href="group__Si114x.html#gadbec1218d8cc103d4d6c2fc0ec0f6abf" title="Populates the SI114X_CAL_S structure. " alt="" coords="824,745,973,772"/>
-<area shape="rect" id="node45" href="group__Si114x.html#ga9966ab23359f5ae0c7e5b8d79a4ef59a" title="Initializes the Si113x/46/47/48 UCOEF Registers. " alt="" coords="1071,527,1191,553"/>
-<area shape="rect" id="node49" href="si114x__uv__index_8h.html#a92a1b86e34e4ed9dd68f51ba170c8e5f" title="Reads the UV index measurement data from the Si114x. " alt="" coords="817,324,980,351"/>
-<area shape="rect" id="node29" href="group__Si114x.html#ga79b0443305d3a085028d1c197d398ede" title="Initializes and configures the Si1147 sensor. " alt="" coords="1275,628,1451,655"/>
-<area shape="rect" id="node31" href="si114x__uv__index_8h.html#a5636599ea7d573fcee234cc8bf4de655" title="Set the VIS_RANGE bit of the optical sensor Si114x. " alt="" coords="1283,476,1442,503"/>
-<area shape="rect" id="node33" href="si114x__uv__index_8h.html#aee56b411a2cb91ae85cae51c2d4039f7" title="Initializes and configures the Si1146 sensor for UV index measurements. " alt="" coords="1293,577,1432,604"/>
-<area shape="rect" id="node37" href="group__Si114x.html#ga88b866258cb278b01da1bcf766cfab57" title="Resets the Si113x/4x, clears any interrupts and initializes the HW_KEY register. " alt="" coords="1085,628,1177,655"/>
-<area shape="rect" id="node53" href="group__Si114x.html#ga8d9e6e60e0ced326193208cdf976bbee" title="Writes to Si114x Register. " alt="" coords="593,556,746,583"/>
-<area shape="rect" id="node55" href="group__Si114x.html#ga8f8ed0bfd8af165742a3169f87c1b32a" title="Enables or disables the Si1147 interrupt pin. " alt="" coords="811,629,986,670"/>
-<area shape="rect" id="node67" href="group__Si114x.html#ga15059dd986a51d8188b5c93aa70681b6" title="Writes block of Si114x registers. " alt="" coords="839,476,959,503"/>
-<area shape="rect" id="node73" href="group__Si114x.html#ga479ffe2c4fea4bf799a925d8e779400c" title="Reads block of Si114x registers. " alt="" coords="610,653,729,680"/>
-<area shape="rect" id="node82" href="group__TempSensor.html#gad39f162cc62b2eaeeaf8a0ebb2d0bdaa" title="Fetch current temperature from temperature sensor (in Celsius). " alt="" coords="576,729,763,756"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 </div><!-- contents -->
@@ -1309,7 +1106,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 10 2015 12:08:04 for EFM32 Zero Gecko Software Documentation by
+    <li class="footer">Generated on Tue Dec 8 2015 15:38:48 for EFM32 Zero Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>
