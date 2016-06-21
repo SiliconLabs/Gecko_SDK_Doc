@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -169,16 +167,16 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">int</span>               displayDeviceNo;    <span class="comment">/* Display device number to initialize</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">                                           test display on. */</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a>  displayDevice;      <span class="comment">/* Display properties. */</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>      columns;            <span class="comment">/* Number of columns to use. */</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>      lines;              <span class="comment">/* Number of lines to use. */</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordtype">bool</span>              scrollEnable;       <span class="comment">/* Enable/disable scrolling mode on the</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">                                           text display. Scrolling mode will</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">                                           consume more memory because the lines</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">                                           lines will have to be stored in</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">                                           memory. */</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">bool</span>                     lfToCrLf;    </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">DISPLAY_PixelMatrix_t</a>    lineBuffer;  </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">char</span>*                    <a class="code" href="retargettft_8c.html#acadd9214a631ccb83106849eddb8ac24">charBuffer</a>;  </div>
@@ -251,7 +249,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      charBufferDevice2,</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      charArrayDevice2</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    },</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#endif    </span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#if (TEXTDISPLAY_DEVICES_MAX == 4)</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    {</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      TEXTDISPLAY_DEVICE_3_LINES,</div>
@@ -259,7 +257,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      charBufferDevice3,</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      charArrayDevice3</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    },</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#endif    </span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  };</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
@@ -332,7 +330,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                         textdisplay-&gt;lineBuffer,</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                         textdisplay-&gt;displayDevice.geometry.width,</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                         FONT_HEIGHT);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                                      </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="group__Display.html#gaa5cb853e3c35b188018b6d2f4c6c3889">DISPLAY_EMSTATUS_OK</a> != status)</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <span class="keywordflow">return</span> status;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  }</div>
@@ -365,13 +363,13 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordflow">for</span> (i=0; i&lt;textdisplay-&gt;lines; i++)</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    textdisplay-&gt;charArray[i] =</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      textdisplay-&gt;charBuffer + textdisplay-&gt;columns * i;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="comment">/* Initialize color for text */</span></div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="comment">/* Use \b for red text (bell/warning) */</span></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  textdisplay-&gt;rgbColor[0]       = 0xff;</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  textdisplay-&gt;rgbColor[1]       = 0xff;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  textdisplay-&gt;rgbColor[2]       = 0xff;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="comment">/* Clear character buffer */</span></div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  TextdisplayClear(textdisplay);</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
@@ -404,7 +402,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    textdisplay-&gt;displayDeviceNo = -1;</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    textdisplay-&gt;initialized = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;   </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__Textdisplay.html#gafeec0d4459c2afed8055201214c21139">TEXTDISPLAY_EMSTATUS_OK</a>;</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  }</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
@@ -417,9 +415,9 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                              <span class="keywordtype">bool</span>                  on)</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;{</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  TEXTDISPLAY_Device_t*  textdisplay = (TEXTDISPLAY_Device_t*) handle;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  </div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  textdisplay-&gt;lfToCrLf = on;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  </div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__Textdisplay.html#gafeec0d4459c2afed8055201214c21139">TEXTDISPLAY_EMSTATUS_OK</a>;</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
@@ -442,7 +440,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    textdisplay-&gt;updateMode = TEXTDISPLAY_UPDATE_MODE_LINE;</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  }</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  {      </div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  {</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    textdisplay-&gt;updateMode = TEXTDISPLAY_UPDATE_MODE_CHAR;</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  }</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
@@ -490,8 +488,8 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00454"></a><span class="lineno"><a class="line" href="group__Textdisplay.html#ga1d0435b6df8ccb2ace0a10da0df9fdd3">  454</a></span>&#160;EMSTATUS <a class="code" href="group__Textdisplay.html#ga1d0435b6df8ccb2ace0a10da0df9fdd3">TEXTDISPLAY_WriteString</a>(<a class="code" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a>  handle,</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                                 <span class="keywordtype">char</span>*                 str)</div>
+<div class="line"><a name="l00454"></a><span class="lineno"><a class="line" href="group__Textdisplay.html#gab41a8aa41d06a94b8547766bac64c13d">  454</a></span>&#160;EMSTATUS <a class="code" href="group__Textdisplay.html#gab41a8aa41d06a94b8547766bac64c13d">TEXTDISPLAY_WriteString</a>(<a class="code" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a>  handle,</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">char</span>*           str)</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;{</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;  TEXTDISPLAY_Device_t*  textdisplay = (TEXTDISPLAY_Device_t*) handle;</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;  EMSTATUS               status;</div>
@@ -510,7 +508,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    textdisplay-&gt;updateMode = TEXTDISPLAY_UPDATE_MODE_LINE;</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  }</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  {      </div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  {</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    textdisplay-&gt;updateMode = TEXTDISPLAY_UPDATE_MODE_CHAR;</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;  }</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div>
@@ -707,7 +705,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;<span class="comment">           mode to none. */</span></div>
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        anyMatch = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        textdisplay-&gt;updateMode = TEXTDISPLAY_UPDATE_MODE_NONE;</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;      </div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        <span class="comment">/* Full match? */</span></div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        <span class="keywordflow">if</span> (len == strlen(escapeSequences[seqNo]))</div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        {</div>
@@ -752,7 +750,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;      }</div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    }</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    </div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">false</span> == anyMatch)</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    {</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;      <span class="comment">/* No match found. Clear escape sequence and return false. */</span></div>
@@ -768,7 +766,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;      textdisplay-&gt;updateMode = TEXTDISPLAY_UPDATE_MODE_NONE;</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    }</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    </div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    <span class="keywordflow">return</span> anyMatch;</div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;  }</div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;}</div>
@@ -785,7 +783,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;  <span class="keywordflow">case</span> <span class="charliteral">&#39;\r&#39;</span>:  <span class="comment">/* check for CR */</span></div>
 <div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;    textdisplay-&gt;xpos = 0;</div>
 <div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    </div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;</div>
 <div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;  <span class="keywordflow">case</span> <span class="charliteral">&#39;\n&#39;</span>:  <span class="comment">/* check for LF */</span></div>
 <div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;    textdisplay-&gt;ypos = textdisplay-&gt;ypos + 1;</div>
 <div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;    textdisplay-&gt;xpos = 0;</div>
@@ -871,7 +869,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;      TextdisplayClear(textdisplay);</div>
 <div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    }</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;  }</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;  textdisplay-&gt;charArray[textdisplay-&gt;ypos][textdisplay-&gt;xpos] = </div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;  textdisplay-&gt;charArray[textdisplay-&gt;ypos][textdisplay-&gt;xpos] =</div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;    c - FONT_ASCII_START;</div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;</div>
 <div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;  textdisplay-&gt;xpos = textdisplay-&gt;xpos + 1;</div>
@@ -903,7 +901,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="group__Display.html#gga582477144c2aad1388d54d6291e67107a2910774544083e2712c26216df0d9168">DISPLAY_COLOUR_MODE_MONOCHROME</a>:</div>
 <div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        rowPtr[x] = pixelBits;</div>
 <div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;    </div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;</div>
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;      <span class="keywordflow">case</span> <a class="code" href="group__Display.html#gga582477144c2aad1388d54d6291e67107ad56d271b8f1513162e2cb9e27f5098af">DISPLAY_COLOUR_MODE_MONOCHROME_INVERSE</a>:</div>
 <div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;        rowPtr[x] = ~pixelBits;</div>
 <div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;        <span class="keywordflow">break</span>;</div>
@@ -956,7 +954,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;    rowPtr +=</div>
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;      textdisplay-&gt;displayDevice.geometry.stride / (<span class="keyword">sizeof</span>(FontBits_t) * 8) ;</div>
 <div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;  }</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;  </div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;</div>
 <div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;  <span class="keywordflow">return</span></div>
 <div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;    textdisplay-&gt;displayDevice.pPixelMatrixDraw(&amp;textdisplay-&gt;displayDevice,</div>
 <div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;                                                textdisplay-&gt;lineBuffer,</div>
@@ -1072,6 +1070,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="ttc" id="retargettft_8c_html_acadd9214a631ccb83106849eddb8ac24"><div class="ttname"><a href="retargettft_8c.html#acadd9214a631ccb83106849eddb8ac24">charBuffer</a></div><div class="ttdeci">static uint8_t charBuffer[LINES][CHARS]</div><div class="ttdef"><b>Definition:</b> <a href="retargettft_8c_source.html#l00033">retargettft.c:33</a></div></div>
 <div class="ttc" id="displayfont8x8_8h_html"><div class="ttname"><a href="displayfont8x8_8h.html">displayfont8x8.h</a></div><div class="ttdoc">8x8 font with all characters </div></div>
 <div class="ttc" id="textdisplay_8h_html"><div class="ttname"><a href="textdisplay_8h.html">textdisplay.h</a></div><div class="ttdoc">Text display interface. </div></div>
+<div class="ttc" id="group__Textdisplay_html_gab41a8aa41d06a94b8547766bac64c13d"><div class="ttname"><a href="group__Textdisplay.html#gab41a8aa41d06a94b8547766bac64c13d">TEXTDISPLAY_WriteString</a></div><div class="ttdeci">EMSTATUS TEXTDISPLAY_WriteString(TEXTDISPLAY_Handle_t handle, const char *str)</div><div class="ttdoc">Write a string of characters to a text display. </div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8c_source.html#l00454">textdisplay.c:454</a></div></div>
 <div class="ttc" id="group__Textdisplay_html_ga70801eeb36bed0f70a5411962e90cb07"><div class="ttname"><a href="group__Textdisplay.html#ga70801eeb36bed0f70a5411962e90cb07">TEXTDISPLAY_EMSTATUS_NOT_SUPPORTED</a></div><div class="ttdeci">#define TEXTDISPLAY_EMSTATUS_NOT_SUPPORTED</div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8h_source.html#l00049">textdisplay.h:49</a></div></div>
 <div class="ttc" id="displayfont16x20_8h_html"><div class="ttname"><a href="displayfont16x20_8h.html">displayfont16x20.h</a></div><div class="ttdoc">16x20 font with only number characters and the colon&#39;:&#39; and space &#39; &#39; signs. </div></div>
 <div class="ttc" id="structTEXTDISPLAY__Config__t_html_aae4d4c24d67076baa049bb7d8ea9099e"><div class="ttname"><a href="structTEXTDISPLAY__Config__t.html#aae4d4c24d67076baa049bb7d8ea9099e">TEXTDISPLAY_Config_t::lfToCrLf</a></div><div class="ttdeci">bool lfToCrLf</div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8h_source.html#l00082">textdisplay.h:82</a></div></div>
@@ -1083,7 +1082,6 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div class="ttc" id="structTEXTDISPLAY__Config__t_html_ad1414884e0e326add1798e62c610fa33"><div class="ttname"><a href="structTEXTDISPLAY__Config__t.html#ad1414884e0e326add1798e62c610fa33">TEXTDISPLAY_Config_t::displayDeviceNo</a></div><div class="ttdeci">int displayDeviceNo</div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8h_source.html#l00075">textdisplay.h:75</a></div></div>
 <div class="ttc" id="group__Textdisplay_html_ga3e7ec7ac247089a051faa1831ea1e08b"><div class="ttname"><a href="group__Textdisplay.html#ga3e7ec7ac247089a051faa1831ea1e08b">TEXTDISPLAY_EMSTATUS_INVALID_PARAM</a></div><div class="ttdeci">#define TEXTDISPLAY_EMSTATUS_INVALID_PARAM</div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8h_source.html#l00046">textdisplay.h:46</a></div></div>
 <div class="ttc" id="group__Display_html_gaa5cb853e3c35b188018b6d2f4c6c3889"><div class="ttname"><a href="group__Display.html#gaa5cb853e3c35b188018b6d2f4c6c3889">DISPLAY_EMSTATUS_OK</a></div><div class="ttdeci">#define DISPLAY_EMSTATUS_OK</div><div class="ttdef"><b>Definition:</b> <a href="display_8h_source.html#l00047">display.h:47</a></div></div>
-<div class="ttc" id="group__Textdisplay_html_ga1d0435b6df8ccb2ace0a10da0df9fdd3"><div class="ttname"><a href="group__Textdisplay.html#ga1d0435b6df8ccb2ace0a10da0df9fdd3">TEXTDISPLAY_WriteString</a></div><div class="ttdeci">EMSTATUS TEXTDISPLAY_WriteString(TEXTDISPLAY_Handle_t handle, char *str)</div><div class="ttdoc">Write a string of characters to a text display. </div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8c_source.html#l00454">textdisplay.c:454</a></div></div>
 <div class="ttc" id="displayconfigall_8h_html"><div class="ttname"><a href="displayconfigall_8h.html">displayconfigall.h</a></div><div class="ttdoc">Main configuration file for the DISPLAY driver software stack. </div></div>
 <div class="ttc" id="group__Display_html_gga9bd101ffd5a8bdde4095b5b6e0f44cfca1ccd9c1fe86bb016315d028c3e7c0b3d"><div class="ttname"><a href="group__Display.html#gga9bd101ffd5a8bdde4095b5b6e0f44cfca1ccd9c1fe86bb016315d028c3e7c0b3d">DISPLAY_ADDRESSING_BY_ROWS_ONLY</a></div><div class="ttdef"><b>Definition:</b> <a href="display_8h_source.html#l00072">display.h:72</a></div></div>
 <div class="ttc" id="retargettft_8c_html_a073b10c2cb9017279b9e4862db9142e3"><div class="ttname"><a href="retargettft_8c.html#a073b10c2cb9017279b9e4862db9142e3">fontBits</a></div><div class="ttdeci">#define fontBits</div><div class="ttdef"><b>Definition:</b> <a href="retargettft_8c_source.html#l00028">retargettft.c:28</a></div></div>
@@ -1104,7 +1102,7 @@ $(document).ready(function(){initNavTree('textdisplay_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="textdisplay_8c.html">textdisplay.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:38:12 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:31:51 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

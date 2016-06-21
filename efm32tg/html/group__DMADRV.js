@@ -1,16 +1,20 @@
 var group__DMADRV =
 [
-    [ "DMADRV Direct Memory Access", "group__DMADRV.html#dmadrv_doc", "group__DMADRV_dmadrv_doc_dup" ],
-    [ "ECODE_EMDRV_DMADRV_OK", "group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4", null ],
-    [ "ECODE_EMDRV_DMADRV_PARAM_ERROR", "group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410", null ],
-    [ "ECODE_EMDRV_DMADRV_NOT_INITIALIZED", "group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64", null ],
+    [ "DMADRV_MAX_XFER_COUNT", "group__DMADRV.html#gaf9bcfe1e5a7ead155ba92b8132c5f17f", null ],
+    [ "ECODE_EMDRV_DMADRV_ALREADY_FREED", "group__DMADRV.html#ga3c5f5833c747aec203d10853194ff348", null ],
     [ "ECODE_EMDRV_DMADRV_ALREADY_INITIALIZED", "group__DMADRV.html#ga7c91611d3f79a7496ba2dee2639f7965", null ],
+    [ "ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED", "group__DMADRV.html#ga04c887be3eba7ea848f6b6bd25c16600", null ],
     [ "ECODE_EMDRV_DMADRV_CHANNELS_EXHAUSTED", "group__DMADRV.html#gaab97205f395c359f6d639347bb9f0f5f", null ],
     [ "ECODE_EMDRV_DMADRV_IN_USE", "group__DMADRV.html#ga7414a4bd6c8211ada153e2129e04f183", null ],
-    [ "ECODE_EMDRV_DMADRV_ALREADY_FREED", "group__DMADRV.html#ga3c5f5833c747aec203d10853194ff348", null ],
-    [ "ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED", "group__DMADRV.html#ga04c887be3eba7ea848f6b6bd25c16600", null ],
-    [ "DMADRV_MAX_XFER_COUNT", "group__DMADRV.html#gaf9bcfe1e5a7ead155ba92b8132c5f17f", null ],
+    [ "ECODE_EMDRV_DMADRV_NOT_INITIALIZED", "group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64", null ],
+    [ "ECODE_EMDRV_DMADRV_OK", "group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4", null ],
+    [ "ECODE_EMDRV_DMADRV_PARAM_ERROR", "group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410", null ],
     [ "DMADRV_Callback_t", "group__DMADRV.html#gab478bc82d26f7d79f11a63a3c90943ae", null ],
+    [ "DMADRV_Datasize_t", "group__DMADRV.html#ga5c64472ab957fa92a8b5099895591a8e", [
+      [ "dmadrvDataSize1", "group__DMADRV.html#gga5c64472ab957fa92a8b5099895591a8ea06c368848ce31e10dfc521afaf979a20", null ],
+      [ "dmadrvDataSize2", "group__DMADRV.html#gga5c64472ab957fa92a8b5099895591a8ea4917630b913f2aa84990b64a24dd965e", null ],
+      [ "dmadrvDataSize4", "group__DMADRV.html#gga5c64472ab957fa92a8b5099895591a8ea5d0e6bcf1832d08b11a74d6c9857ec77", null ]
+    ] ],
     [ "DMADRV_Peripheralsignal_t", "group__DMADRV.html#ga9d887cd6a26d26ed74cb19d77b501a94", [
       [ "dmadrvPeripheralSignal_NONE", "group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94a27e069ef55422a252986e5d1d28e2938", null ],
       [ "dmadrvPeripheralSignal_ADC0_SCAN", "group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94a2a1ef3bc3ad0e396240a05f9deebabbc", null ],
@@ -45,19 +49,16 @@ var group__DMADRV =
       [ "dmadrvPeripheralSignal_USART1_TXBLRIGHT", "group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94a4b91cf73315390a52120bb8abdb12f39", null ],
       [ "dmadrvPeripheralSignal_USART1_TXEMPTY", "group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94a23e8ff7996b0985ba39e32585c97f276", null ]
     ] ],
-    [ "DMADRV_Datasize_t", "group__DMADRV.html#ga5c64472ab957fa92a8b5099895591a8e", [
-      [ "dmadrvDataSize1", "group__DMADRV.html#gga5c64472ab957fa92a8b5099895591a8ea06c368848ce31e10dfc521afaf979a20", null ],
-      [ "dmadrvDataSize2", "group__DMADRV.html#gga5c64472ab957fa92a8b5099895591a8ea4917630b913f2aa84990b64a24dd965e", null ],
-      [ "dmadrvDataSize4", "group__DMADRV.html#gga5c64472ab957fa92a8b5099895591a8ea5d0e6bcf1832d08b11a74d6c9857ec77", null ]
-    ] ],
     [ "DMADRV_AllocateChannel", "group__DMADRV.html#gab503e066820cd13fd612f4365d4d07b2", null ],
     [ "DMADRV_DeInit", "group__DMADRV.html#ga73633db63cfd99ba01a68b05c24094ec", null ],
     [ "DMADRV_FreeChannel", "group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3", null ],
     [ "DMADRV_Init", "group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1", null ],
     [ "DMADRV_MemoryPeripheral", "group__DMADRV.html#gab1506de1a628ac908b2f8fe93e370578", null ],
-    [ "DMADRV_PeripheralMemory", "group__DMADRV.html#gaef226beb40700660728baf2cb509a2c4", null ],
     [ "DMADRV_MemoryPeripheralPingPong", "group__DMADRV.html#ga887d429df9893aef3b421e2fdd8f8641", null ],
+    [ "DMADRV_PauseTransfer", "group__DMADRV.html#ga3f27a6cff5b646b0faf3eb070ea1393f", null ],
+    [ "DMADRV_PeripheralMemory", "group__DMADRV.html#gaef226beb40700660728baf2cb509a2c4", null ],
     [ "DMADRV_PeripheralMemoryPingPong", "group__DMADRV.html#gafcabf314184e7d8f82d2164365f36bef", null ],
+    [ "DMADRV_ResumeTransfer", "group__DMADRV.html#ga4ad4c5b5eff525183a726002afbce071", null ],
     [ "DMADRV_StopTransfer", "group__DMADRV.html#ga3a04cb3aa30ec2fd955281f55538028d", null ],
     [ "DMADRV_TransferActive", "group__DMADRV.html#ga1a42965073322a9c2b1f8ebb8a67e846", null ],
     [ "DMADRV_TransferCompletePending", "group__DMADRV.html#gae6b5ec49230e4f15b78c31c57bfa3967", null ],

@@ -1,9 +1,14 @@
 var em__rtcc_8h =
 [
-    [ "RTCC_INIT_DEFAULT", "group__RTCC.html#gadb4e75d61f418d6c628c2a0fbeb8dce9", null ],
-    [ "RTCC_CH_INIT_COMPARE_DEFAULT", "group__RTCC.html#ga57e1709c5f33243f29d1dac451ab3c66", null ],
     [ "RTCC_CH_INIT_CAPTURE_DEFAULT", "group__RTCC.html#ga46196e946c7e68bc4ef135a2fe9f68ee", null ],
+    [ "RTCC_CH_INIT_COMPARE_DEFAULT", "group__RTCC.html#ga57e1709c5f33243f29d1dac451ab3c66", null ],
     [ "RTCC_CH_VALID", "group__RTCC.html#ga698f61ac638893f66016895298085ccc", null ],
+    [ "RTCC_INIT_DEFAULT", "group__RTCC.html#gadb4e75d61f418d6c628c2a0fbeb8dce9", null ],
+    [ "RTCC_CapComChMode_TypeDef", "group__RTCC.html#gae97fe5bba7812a48b934bd7fdab814fb", [
+      [ "rtccCapComChModeOff", "group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fba6a83b168530882bb34bd8efa20c727bd", null ],
+      [ "rtccCapComChModeCapture", "group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84", null ],
+      [ "rtccCapComChModeCompare", "group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fba63e4f13f5335b727ffa7f82207391344", null ]
+    ] ],
     [ "RTCC_CntMode_TypeDef", "group__RTCC.html#ga99b059f50a485234a456503ca956ea1e", [
       [ "rtccCntModeNormal", "group__RTCC.html#gga99b059f50a485234a456503ca956ea1ea30dcaebe744d82e1a92bb4d381ff576f", null ],
       [ "rtccCntModeCalendar", "group__RTCC.html#gga99b059f50a485234a456503ca956ea1eabd76349569a4a9418720bd7273780acc", null ]
@@ -26,20 +31,29 @@ var em__rtcc_8h =
       [ "rtccCntPresc_16384", "group__RTCC.html#ggad0335cb53922f7fedc244336f5f299b1abb0de6fda5de7482545208de4e4e6ff6", null ],
       [ "rtccCntPresc_32768", "group__RTCC.html#ggad0335cb53922f7fedc244336f5f299b1aeee836327859bf50e7f88a8d8f4ef74f", null ]
     ] ],
-    [ "RTCC_PrescMode_TypeDef", "group__RTCC.html#ga27eaf41fd1b547e396790d6bab732054", [
-      [ "rtccCntTickPresc", "group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df", null ],
-      [ "rtccCntTickCCV0Match", "group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054a6ec7fc3ffe4f35529e0d99fd99431ceb", null ]
-    ] ],
-    [ "RTCC_CapComChMode_TypeDef", "group__RTCC.html#gae97fe5bba7812a48b934bd7fdab814fb", [
-      [ "rtccCapComChModeOff", "group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fba6a83b168530882bb34bd8efa20c727bd", null ],
-      [ "rtccCapComChModeCapture", "group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84", null ],
-      [ "rtccCapComChModeCompare", "group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fba63e4f13f5335b727ffa7f82207391344", null ]
+    [ "RTCC_CompBase_TypeDef", "group__RTCC.html#gaffe824f0dbb1678e31697c966a6c15bf", [
+      [ "rtccCompBaseCnt", "group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1", null ],
+      [ "rtccCompBasePreCnt", "group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa7527842a3e125b1ac5c871d663de943b", null ]
     ] ],
     [ "RTCC_CompMatchOutAction_TypeDef", "group__RTCC.html#ga5262fdbf7e20eef8456121bb4c0128c8", [
       [ "rtccCompMatchOutActionPulse", "group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8a2c0614572ce6d5023f03e71f68f044f4", null ],
       [ "rtccCompMatchOutActionToggle", "group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8a6e103ae9a9a8ff415380f77a30cfa68e", null ],
       [ "rtccCompMatchOutActionClear", "group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8a9e4869a675220251b3c5dae6aca39677", null ],
       [ "rtccCompMatchOutActionSet", "group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8aced09c601780ef2c8ed209acfaa033af", null ]
+    ] ],
+    [ "RTCC_DayCompareMode_TypeDef", "group__RTCC.html#gaca22e74b99f507c580c2069a97b0bfe4", [
+      [ "rtccDayCompareModeMonth", "group__RTCC.html#ggaca22e74b99f507c580c2069a97b0bfe4a4263042eea73841b941f8b8d2fbb42ed", null ],
+      [ "rtccDayCompareModeWeek", "group__RTCC.html#ggaca22e74b99f507c580c2069a97b0bfe4ad87dae1f7846f6aec8e78bb73729d99d", null ]
+    ] ],
+    [ "RTCC_InEdgeSel_TypeDef", "group__RTCC.html#ga25aa199b54a7dbaa388ce94cd1c250cb", [
+      [ "rtccInEdgeRising", "group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2", null ],
+      [ "rtccInEdgeFalling", "group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba213df31af5a64eeb92d5949f47271acd", null ],
+      [ "rtccInEdgeBoth", "group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cbaa206e119b9554d6a6752da16a92b042d", null ],
+      [ "rtccInEdgeNone", "group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cbac3f49d2a06846b1a56d5263feb3d079f", null ]
+    ] ],
+    [ "RTCC_PrescMode_TypeDef", "group__RTCC.html#ga27eaf41fd1b547e396790d6bab732054", [
+      [ "rtccCntTickPresc", "group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df", null ],
+      [ "rtccCntTickCCV0Match", "group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054a6ec7fc3ffe4f35529e0d99fd99431ceb", null ]
     ] ],
     [ "RTCC_PRSSel_TypeDef", "group__RTCC.html#gaca3af9bdf0979b882fa0ea6d5847ff36", [
       [ "rtccPRSCh0", "group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a66352f5d530239f525b53cecfa120a13", null ],
@@ -54,20 +68,6 @@ var em__rtcc_8h =
       [ "rtccPRSCh9", "group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36ae39241d3b90f8ba93948de035588a037", null ],
       [ "rtccPRSCh10", "group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a79bda3a3d13652ba989d65355559225a", null ],
       [ "rtccPRSCh11", "group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a8554e309e4d7cb23299b8d4f96cf6eab", null ]
-    ] ],
-    [ "RTCC_InEdgeSel_TypeDef", "group__RTCC.html#ga25aa199b54a7dbaa388ce94cd1c250cb", [
-      [ "rtccInEdgeRising", "group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2", null ],
-      [ "rtccInEdgeFalling", "group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba213df31af5a64eeb92d5949f47271acd", null ],
-      [ "rtccInEdgeBoth", "group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cbaa206e119b9554d6a6752da16a92b042d", null ],
-      [ "rtccInEdgeNone", "group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cbac3f49d2a06846b1a56d5263feb3d079f", null ]
-    ] ],
-    [ "RTCC_CompBase_TypeDef", "group__RTCC.html#gaffe824f0dbb1678e31697c966a6c15bf", [
-      [ "rtccCompBaseCnt", "group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1", null ],
-      [ "rtccCompBasePreCnt", "group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa7527842a3e125b1ac5c871d663de943b", null ]
-    ] ],
-    [ "RTCC_DayCompareMode_TypeDef", "group__RTCC.html#gaca22e74b99f507c580c2069a97b0bfe4", [
-      [ "rtccDayCompareModeMonth", "group__RTCC.html#ggaca22e74b99f507c580c2069a97b0bfe4a4263042eea73841b941f8b8d2fbb42ed", null ],
-      [ "rtccDayCompareModeWeek", "group__RTCC.html#ggaca22e74b99f507c580c2069a97b0bfe4ad87dae1f7846f6aec8e78bb73729d99d", null ]
     ] ],
     [ "RTCC_ChannelCCVGet", "group__RTCC.html#ga0d82be527512c219adad4c01258e80c3", null ],
     [ "RTCC_ChannelCCVSet", "group__RTCC.html#ga3479b7902f7a3b6750fa14e235bbd6dc", null ],

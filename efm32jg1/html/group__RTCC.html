@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -108,33 +106,42 @@ $(document).ready(function(){initNavTree('group__RTCC.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">RTCC<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">RTCC<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Real Time Counter (RTCC) Peripheral API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Real Time Counter (RTCC) Peripheral API. </p>
+<p>This module contains functions to control the RTCC peripheral of Silicon Labs 32-bit MCUs and SoCs. The RTCC ensures timekeeping in low energy modes. The RTCC also includes a BCD calendar mode for easy time and date keeping. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRTCC__Init__TypeDef.html">RTCC_Init_TypeDef</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRTCC__CCChConf__TypeDef.html">RTCC_CCChConf_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRTCC__Init__TypeDef.html">RTCC_Init_TypeDef</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gadb4e75d61f418d6c628c2a0fbeb8dce9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gadb4e75d61f418d6c628c2a0fbeb8dce9">RTCC_INIT_DEFAULT</a></td></tr>
-<tr class="separator:gadb4e75d61f418d6c628c2a0fbeb8dce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57e1709c5f33243f29d1dac451ab3c66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga57e1709c5f33243f29d1dac451ab3c66">RTCC_CH_INIT_COMPARE_DEFAULT</a></td></tr>
-<tr class="separator:ga57e1709c5f33243f29d1dac451ab3c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga46196e946c7e68bc4ef135a2fe9f68ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga46196e946c7e68bc4ef135a2fe9f68ee">RTCC_CH_INIT_CAPTURE_DEFAULT</a></td></tr>
 <tr class="separator:ga46196e946c7e68bc4ef135a2fe9f68ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57e1709c5f33243f29d1dac451ab3c66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga57e1709c5f33243f29d1dac451ab3c66">RTCC_CH_INIT_COMPARE_DEFAULT</a></td></tr>
+<tr class="separator:ga57e1709c5f33243f29d1dac451ab3c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga698f61ac638893f66016895298085ccc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga698f61ac638893f66016895298085ccc">RTCC_CH_VALID</a>(ch)    &#160;&#160;&#160;( ( ch ) &lt; 3 )</td></tr>
 <tr class="separator:ga698f61ac638893f66016895298085ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb4e75d61f418d6c628c2a0fbeb8dce9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gadb4e75d61f418d6c628c2a0fbeb8dce9">RTCC_INIT_DEFAULT</a></td></tr>
+<tr class="separator:gadb4e75d61f418d6c628c2a0fbeb8dce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:gae97fe5bba7812a48b934bd7fdab814fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gae97fe5bba7812a48b934bd7fdab814fb">RTCC_CapComChMode_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fba6a83b168530882bb34bd8efa20c727bd">rtccCapComChModeOff</a> = _RTCC_CC_CTRL_MODE_OFF, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84">rtccCapComChModeCapture</a> = _RTCC_CC_CTRL_MODE_INPUTCAPTURE, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fba63e4f13f5335b727ffa7f82207391344">rtccCapComChModeCompare</a> = _RTCC_CC_CTRL_MODE_OUTPUTCOMPARE
+<br />
+ }<tr class="separator:gae97fe5bba7812a48b934bd7fdab814fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:ga99b059f50a485234a456503ca956ea1e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga99b059f50a485234a456503ca956ea1e">RTCC_CntMode_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__RTCC.html#gga99b059f50a485234a456503ca956ea1ea30dcaebe744d82e1a92bb4d381ff576f">rtccCntModeNormal</a> = _RTCC_CTRL_CNTTICK_PRESC, 
 <br />
@@ -177,21 +184,12 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:gad0335cb53922f7fedc244336f5f299b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:ga27eaf41fd1b547e396790d6bab732054"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga27eaf41fd1b547e396790d6bab732054">RTCC_PrescMode_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df">rtccCntTickPresc</a> = _RTCC_CTRL_CNTTICK_PRESC, 
+<tr class="memitem:gaffe824f0dbb1678e31697c966a6c15bf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gaffe824f0dbb1678e31697c966a6c15bf">RTCC_CompBase_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1">rtccCompBaseCnt</a> = _RTCC_CC_CTRL_COMPBASE_CNT, 
 <br />
-&#160;&#160;<a class="el" href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054a6ec7fc3ffe4f35529e0d99fd99431ceb">rtccCntTickCCV0Match</a> = _RTCC_CTRL_CNTTICK_CCV0MATCH
+&#160;&#160;<a class="el" href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa7527842a3e125b1ac5c871d663de943b">rtccCompBasePreCnt</a> = _RTCC_CC_CTRL_COMPBASE_PRECNT
 <br />
- }<tr class="separator:ga27eaf41fd1b547e396790d6bab732054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gae97fe5bba7812a48b934bd7fdab814fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gae97fe5bba7812a48b934bd7fdab814fb">RTCC_CapComChMode_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fba6a83b168530882bb34bd8efa20c727bd">rtccCapComChModeOff</a> = _RTCC_CC_CTRL_MODE_OFF, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84">rtccCapComChModeCapture</a> = _RTCC_CC_CTRL_MODE_INPUTCAPTURE, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fba63e4f13f5335b727ffa7f82207391344">rtccCapComChModeCompare</a> = _RTCC_CC_CTRL_MODE_OUTPUTCOMPARE
-<br />
- }<tr class="separator:gae97fe5bba7812a48b934bd7fdab814fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ }<tr class="separator:gaffe824f0dbb1678e31697c966a6c15bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ga5262fdbf7e20eef8456121bb4c0128c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga5262fdbf7e20eef8456121bb4c0128c8">RTCC_CompMatchOutAction_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8a2c0614572ce6d5023f03e71f68f044f4">rtccCompMatchOutActionPulse</a> = _RTCC_CC_CTRL_CMOA_PULSE, 
@@ -203,6 +201,31 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8aced09c601780ef2c8ed209acfaa033af">rtccCompMatchOutActionSet</a> = _RTCC_CC_CTRL_CMOA_SET
 <br />
  }<tr class="separator:ga5262fdbf7e20eef8456121bb4c0128c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gaca22e74b99f507c580c2069a97b0bfe4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gaca22e74b99f507c580c2069a97b0bfe4">RTCC_DayCompareMode_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__RTCC.html#ggaca22e74b99f507c580c2069a97b0bfe4a4263042eea73841b941f8b8d2fbb42ed">rtccDayCompareModeMonth</a> = _RTCC_CC_CTRL_DAYCC_MONTH, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#ggaca22e74b99f507c580c2069a97b0bfe4ad87dae1f7846f6aec8e78bb73729d99d">rtccDayCompareModeWeek</a> = _RTCC_CC_CTRL_DAYCC_WEEK
+<br />
+ }<tr class="separator:gaca22e74b99f507c580c2069a97b0bfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga25aa199b54a7dbaa388ce94cd1c250cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga25aa199b54a7dbaa388ce94cd1c250cb">RTCC_InEdgeSel_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2">rtccInEdgeRising</a> = _RTCC_CC_CTRL_ICEDGE_RISING, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba213df31af5a64eeb92d5949f47271acd">rtccInEdgeFalling</a> = _RTCC_CC_CTRL_ICEDGE_FALLING, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cbaa206e119b9554d6a6752da16a92b042d">rtccInEdgeBoth</a> = _RTCC_CC_CTRL_ICEDGE_BOTH, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cbac3f49d2a06846b1a56d5263feb3d079f">rtccInEdgeNone</a> = _RTCC_CC_CTRL_ICEDGE_NONE
+<br />
+ }<tr class="separator:ga25aa199b54a7dbaa388ce94cd1c250cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga27eaf41fd1b547e396790d6bab732054"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga27eaf41fd1b547e396790d6bab732054">RTCC_PrescMode_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df">rtccCntTickPresc</a> = _RTCC_CTRL_CNTTICK_PRESC, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054a6ec7fc3ffe4f35529e0d99fd99431ceb">rtccCntTickCCV0Match</a> = _RTCC_CTRL_CNTTICK_CCV0MATCH
+<br />
+ }<tr class="separator:ga27eaf41fd1b547e396790d6bab732054"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:gaca3af9bdf0979b882fa0ea6d5847ff36"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gaca3af9bdf0979b882fa0ea6d5847ff36">RTCC_PRSSel_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a66352f5d530239f525b53cecfa120a13">rtccPRSCh0</a> = _RTCC_CC_CTRL_PRSSEL_PRSCH0, 
@@ -230,31 +253,6 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a8554e309e4d7cb23299b8d4f96cf6eab">rtccPRSCh11</a> = _RTCC_CC_CTRL_PRSSEL_PRSCH11
 <br />
  }<tr class="separator:gaca3af9bdf0979b882fa0ea6d5847ff36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga25aa199b54a7dbaa388ce94cd1c250cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga25aa199b54a7dbaa388ce94cd1c250cb">RTCC_InEdgeSel_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2">rtccInEdgeRising</a> = _RTCC_CC_CTRL_ICEDGE_RISING, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba213df31af5a64eeb92d5949f47271acd">rtccInEdgeFalling</a> = _RTCC_CC_CTRL_ICEDGE_FALLING, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cbaa206e119b9554d6a6752da16a92b042d">rtccInEdgeBoth</a> = _RTCC_CC_CTRL_ICEDGE_BOTH, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cbac3f49d2a06846b1a56d5263feb3d079f">rtccInEdgeNone</a> = _RTCC_CC_CTRL_ICEDGE_NONE
-<br />
- }<tr class="separator:ga25aa199b54a7dbaa388ce94cd1c250cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gaffe824f0dbb1678e31697c966a6c15bf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gaffe824f0dbb1678e31697c966a6c15bf">RTCC_CompBase_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1">rtccCompBaseCnt</a> = _RTCC_CC_CTRL_COMPBASE_CNT, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa7527842a3e125b1ac5c871d663de943b">rtccCompBasePreCnt</a> = _RTCC_CC_CTRL_COMPBASE_PRECNT
-<br />
- }<tr class="separator:gaffe824f0dbb1678e31697c966a6c15bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gaca22e74b99f507c580c2069a97b0bfe4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gaca22e74b99f507c580c2069a97b0bfe4">RTCC_DayCompareMode_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggaca22e74b99f507c580c2069a97b0bfe4a4263042eea73841b941f8b8d2fbb42ed">rtccDayCompareModeMonth</a> = _RTCC_CC_CTRL_DAYCC_MONTH, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggaca22e74b99f507c580c2069a97b0bfe4ad87dae1f7846f6aec8e78bb73729d99d">rtccDayCompareModeWeek</a> = _RTCC_CC_CTRL_DAYCC_WEEK
-<br />
- }<tr class="separator:gaca22e74b99f507c580c2069a97b0bfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -355,36 +353,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memdesc:ga6397bf67f4af456b64565e38efc4063c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock RTCC registers.  <a href="#ga6397bf67f4af456b64565e38efc4063c">More...</a><br /></td></tr>
 <tr class="separator:ga6397bf67f4af456b64565e38efc4063c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="gadb4e75d61f418d6c628c2a0fbeb8dce9"></a>
+<a class="anchor" id="ga46196e946c7e68bc4ef135a2fe9f68ee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define RTCC_INIT_DEFAULT</td>
+          <td class="memname">#define RTCC_CH_INIT_CAPTURE_DEFAULT</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                           \</div>
-<div class="line">  true,     <span class="comment">/* Start counting when init done.                           */</span>  \</div>
-<div class="line">  false,    <span class="comment">/* Disable RTCC during debug halt.                          */</span>  \</div>
-<div class="line">  false,    <span class="comment">/* Disable precounter wrap on ch. 0 CCV value.              */</span>  \</div>
-<div class="line">  false,    <span class="comment">/* Disable counter wrap on ch. 1 CCV value.                 */</span>  <a class="code" href="group__RTCC.html#ggad0335cb53922f7fedc244336f5f299b1a3f800f8b06bfafc5f427e87114fde3cb">\</a></div>
-<div class="line"><a class="code" href="group__RTCC.html#ggad0335cb53922f7fedc244336f5f299b1a3f800f8b06bfafc5f427e87114fde3cb">  rtccCntPresc_32</a>, <span class="comment">/* 977 us per tick.                                  */</span>  <a class="code" href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df">\</a></div>
-<div class="line"><a class="code" href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df">  rtccCntTickPresc</a>, <span class="comment">/* Counter increments according to prescaler value. */</span>  \</div>
-<div class="line">  false,    <span class="comment">/* No RTCC oscillator failure detection.                    */</span>  <a class="code" href="group__RTCC.html#gga99b059f50a485234a456503ca956ea1ea30dcaebe744d82e1a92bb4d381ff576f">\</a></div>
-<div class="line"><a class="code" href="group__RTCC.html#gga99b059f50a485234a456503ca956ea1ea30dcaebe744d82e1a92bb4d381ff576f">  rtccCntModeNormal</a>, <span class="comment">/* Normal RTCC mode.                               */</span>  \</div>
-<div class="line">  false,    <span class="comment">/* No leap year correction.                                 */</span>  \</div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                           <a class="code" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84">\</a></div>
+<div class="line"><a class="code" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84">  rtccCapComChModeCapture</a>,     <span class="comment">/* Select input capture mode.      */</span>        <a class="code" href="group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8a2c0614572ce6d5023f03e71f68f044f4">\</a></div>
+<div class="line"><a class="code" href="group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8a2c0614572ce6d5023f03e71f68f044f4">  rtccCompMatchOutActionPulse</a>, <span class="comment">/* Create pulse on capture.        */</span>        <a class="code" href="group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a66352f5d530239f525b53cecfa120a13">\</a></div>
+<div class="line"><a class="code" href="group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a66352f5d530239f525b53cecfa120a13">  rtccPRSCh0</a>,                  <span class="comment">/* PRS channel 0.                  */</span>        <a class="code" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2">\</a></div>
+<div class="line"><a class="code" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2">  rtccInEdgeRising</a>,            <span class="comment">/* Rising edge detection.          */</span>        <a class="code" href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1">\</a></div>
+<div class="line"><a class="code" href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1">  rtccCompBaseCnt</a>,             <span class="comment">/* Don&#39;t care.                     */</span>        \</div>
+<div class="line">  0,                           <span class="comment">/* Don&#39;t care.                     */</span>        \</div>
+<div class="line">  rtccDayCompareModeMonth      <span class="comment">/* Don&#39;t care                      */</span>        \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__RTCC_html_gga99b059f50a485234a456503ca956ea1ea30dcaebe744d82e1a92bb4d381ff576f"><div class="ttname"><a href="group__RTCC.html#gga99b059f50a485234a456503ca956ea1ea30dcaebe744d82e1a92bb4d381ff576f">rtccCntModeNormal</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00064">em_rtcc.h:64</a></div></div>
-<div class="ttc" id="group__RTCC_html_ggad0335cb53922f7fedc244336f5f299b1a3f800f8b06bfafc5f427e87114fde3cb"><div class="ttname"><a href="group__RTCC.html#ggad0335cb53922f7fedc244336f5f299b1a3f800f8b06bfafc5f427e87114fde3cb">rtccCntPresc_32</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00079">em_rtcc.h:79</a></div></div>
-<div class="ttc" id="group__RTCC_html_gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df"><div class="ttname"><a href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df">rtccCntTickPresc</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00097">em_rtcc.h:97</a></div></div>
-</div><!-- fragment --><p>Default RTCC init structure. </p>
+<div class="ttc" id="group__RTCC_html_ggaca3af9bdf0979b882fa0ea6d5847ff36a66352f5d530239f525b53cecfa120a13"><div class="ttname"><a href="group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a66352f5d530239f525b53cecfa120a13">rtccPRSCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00126">em_rtcc.h:126</a></div></div>
+<div class="ttc" id="group__RTCC_html_gga5262fdbf7e20eef8456121bb4c0128c8a2c0614572ce6d5023f03e71f68f044f4"><div class="ttname"><a href="group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8a2c0614572ce6d5023f03e71f68f044f4">rtccCompMatchOutActionPulse</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00116">em_rtcc.h:116</a></div></div>
+<div class="ttc" id="group__RTCC_html_gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2"><div class="ttname"><a href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2">rtccInEdgeRising</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00144">em_rtcc.h:144</a></div></div>
+<div class="ttc" id="group__RTCC_html_ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84"><div class="ttname"><a href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84">rtccCapComChModeCapture</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00109">em_rtcc.h:109</a></div></div>
+<div class="ttc" id="group__RTCC_html_ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1"><div class="ttname"><a href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1">rtccCompBaseCnt</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00155">em_rtcc.h:155</a></div></div>
+</div><!-- fragment --><p>Default RTCC channel input capture init structure. </p>
 
-<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00260">260</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
-
-<p>Referenced by <a class="el" href="udelay_8c_source.html#l00071">UDELAY_Calibrate()</a>.</p>
+<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00287">287</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
 </div>
 </div>
@@ -417,35 +412,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 </div>
 </div>
-<a class="anchor" id="ga46196e946c7e68bc4ef135a2fe9f68ee"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RTCC_CH_INIT_CAPTURE_DEFAULT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                           <a class="code" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84">\</a></div>
-<div class="line"><a class="code" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84">  rtccCapComChModeCapture</a>,     <span class="comment">/* Select input capture mode.      */</span>        <a class="code" href="group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8a2c0614572ce6d5023f03e71f68f044f4">\</a></div>
-<div class="line"><a class="code" href="group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8a2c0614572ce6d5023f03e71f68f044f4">  rtccCompMatchOutActionPulse</a>, <span class="comment">/* Create pulse on capture.        */</span>        <a class="code" href="group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a66352f5d530239f525b53cecfa120a13">\</a></div>
-<div class="line"><a class="code" href="group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a66352f5d530239f525b53cecfa120a13">  rtccPRSCh0</a>,                  <span class="comment">/* PRS channel 0.                  */</span>        <a class="code" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2">\</a></div>
-<div class="line"><a class="code" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2">  rtccInEdgeRising</a>,            <span class="comment">/* Rising edge detection.          */</span>        <a class="code" href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1">\</a></div>
-<div class="line"><a class="code" href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1">  rtccCompBaseCnt</a>,             <span class="comment">/* Don&#39;t care.                     */</span>        \</div>
-<div class="line">  0,                           <span class="comment">/* Don&#39;t care.                     */</span>        \</div>
-<div class="line">  rtccDayCompareModeMonth      <span class="comment">/* Don&#39;t care                      */</span>        \</div>
-<div class="line">}</div>
-<div class="ttc" id="group__RTCC_html_ggaca3af9bdf0979b882fa0ea6d5847ff36a66352f5d530239f525b53cecfa120a13"><div class="ttname"><a href="group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a66352f5d530239f525b53cecfa120a13">rtccPRSCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00126">em_rtcc.h:126</a></div></div>
-<div class="ttc" id="group__RTCC_html_gga5262fdbf7e20eef8456121bb4c0128c8a2c0614572ce6d5023f03e71f68f044f4"><div class="ttname"><a href="group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8a2c0614572ce6d5023f03e71f68f044f4">rtccCompMatchOutActionPulse</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00116">em_rtcc.h:116</a></div></div>
-<div class="ttc" id="group__RTCC_html_gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2"><div class="ttname"><a href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2">rtccInEdgeRising</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00144">em_rtcc.h:144</a></div></div>
-<div class="ttc" id="group__RTCC_html_ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84"><div class="ttname"><a href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84">rtccCapComChModeCapture</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00109">em_rtcc.h:109</a></div></div>
-<div class="ttc" id="group__RTCC_html_ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1"><div class="ttname"><a href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1">rtccCompBaseCnt</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00155">em_rtcc.h:155</a></div></div>
-</div><!-- fragment --><p>Default RTCC channel input capture init structure. </p>
-
-<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00287">287</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga698f61ac638893f66016895298085ccc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -463,11 +429,68 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00299">299</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__rtcc_8h_source.html#l00315">RTCC_ChannelCCVGet()</a>, <a class="el" href="em__rtcc_8h_source.html#l00331">RTCC_ChannelCCVSet()</a>, <a class="el" href="em__rtcc_8h_source.html#l00347">RTCC_ChannelDateGet()</a>, <a class="el" href="em__rtcc_8h_source.html#l00363">RTCC_ChannelDateSet()</a>, <a class="el" href="em__rtcc_8c_source.html#l00077">RTCC_ChannelInit()</a>, <a class="el" href="em__rtcc_8h_source.html#l00381">RTCC_ChannelTimeGet()</a>, and <a class="el" href="em__rtcc_8h_source.html#l00397">RTCC_ChannelTimeSet()</a>.</p>
+<p>Referenced by <a class="el" href="group__RTCC.html#ga0d82be527512c219adad4c01258e80c3">RTCC_ChannelCCVGet()</a>, <a class="el" href="group__RTCC.html#ga3479b7902f7a3b6750fa14e235bbd6dc">RTCC_ChannelCCVSet()</a>, <a class="el" href="group__RTCC.html#gad83108d4f325615d02205bca98fdc1fe">RTCC_ChannelDateGet()</a>, <a class="el" href="group__RTCC.html#ga0980d34a61cac45825eb6d03f453c8c0">RTCC_ChannelDateSet()</a>, <a class="el" href="group__RTCC.html#gab7534987a5b7ef7a3616d334f6944278">RTCC_ChannelInit()</a>, <a class="el" href="group__RTCC.html#gaa4b09ddba3452d6f8e6d9825306a5fc8">RTCC_ChannelTimeGet()</a>, and <a class="el" href="group__RTCC.html#gaac14b9541ceb7cf05c78db1453fc1e17">RTCC_ChannelTimeSet()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gadb4e75d61f418d6c628c2a0fbeb8dce9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RTCC_INIT_DEFAULT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{                                                                           \</div>
+<div class="line">  true,     <span class="comment">/* Start counting when init done.                           */</span>  \</div>
+<div class="line">  false,    <span class="comment">/* Disable RTCC during debug halt.                          */</span>  \</div>
+<div class="line">  false,    <span class="comment">/* Disable precounter wrap on ch. 0 CCV value.              */</span>  \</div>
+<div class="line">  false,    <span class="comment">/* Disable counter wrap on ch. 1 CCV value.                 */</span>  <a class="code" href="group__RTCC.html#ggad0335cb53922f7fedc244336f5f299b1a3f800f8b06bfafc5f427e87114fde3cb">\</a></div>
+<div class="line"><a class="code" href="group__RTCC.html#ggad0335cb53922f7fedc244336f5f299b1a3f800f8b06bfafc5f427e87114fde3cb">  rtccCntPresc_32</a>, <span class="comment">/* 977 us per tick.                                  */</span>  <a class="code" href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df">\</a></div>
+<div class="line"><a class="code" href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df">  rtccCntTickPresc</a>, <span class="comment">/* Counter increments according to prescaler value. */</span>  \</div>
+<div class="line">  false,    <span class="comment">/* No RTCC oscillator failure detection.                    */</span>  <a class="code" href="group__RTCC.html#gga99b059f50a485234a456503ca956ea1ea30dcaebe744d82e1a92bb4d381ff576f">\</a></div>
+<div class="line"><a class="code" href="group__RTCC.html#gga99b059f50a485234a456503ca956ea1ea30dcaebe744d82e1a92bb4d381ff576f">  rtccCntModeNormal</a>, <span class="comment">/* Normal RTCC mode.                               */</span>  \</div>
+<div class="line">  false,    <span class="comment">/* No leap year correction.                                 */</span>  \</div>
+<div class="line">}</div>
+<div class="ttc" id="group__RTCC_html_gga99b059f50a485234a456503ca956ea1ea30dcaebe744d82e1a92bb4d381ff576f"><div class="ttname"><a href="group__RTCC.html#gga99b059f50a485234a456503ca956ea1ea30dcaebe744d82e1a92bb4d381ff576f">rtccCntModeNormal</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00064">em_rtcc.h:64</a></div></div>
+<div class="ttc" id="group__RTCC_html_ggad0335cb53922f7fedc244336f5f299b1a3f800f8b06bfafc5f427e87114fde3cb"><div class="ttname"><a href="group__RTCC.html#ggad0335cb53922f7fedc244336f5f299b1a3f800f8b06bfafc5f427e87114fde3cb">rtccCntPresc_32</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00079">em_rtcc.h:79</a></div></div>
+<div class="ttc" id="group__RTCC_html_gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df"><div class="ttname"><a href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df">rtccCntTickPresc</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00097">em_rtcc.h:97</a></div></div>
+</div><!-- fragment --><p>Default RTCC init structure. </p>
+
+<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00260">260</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="gae97fe5bba7812a48b934bd7fdab814fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__RTCC.html#gae97fe5bba7812a48b934bd7fdab814fb">RTCC_CapComChMode_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Capture/Compare channel mode. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggae97fe5bba7812a48b934bd7fdab814fba6a83b168530882bb34bd8efa20c727bd"></a>rtccCapComChModeOff&#160;</td><td class="fielddoc">
+<p>Capture/Compare channel turned off. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84"></a>rtccCapComChModeCapture&#160;</td><td class="fielddoc">
+<p>Capture mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae97fe5bba7812a48b934bd7fdab814fba63e4f13f5335b727ffa7f82207391344"></a>rtccCapComChModeCompare&#160;</td><td class="fielddoc">
+<p>Compare mode. </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00106">106</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga99b059f50a485234a456503ca956ea1e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -556,52 +579,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 </div>
 </div>
-<a class="anchor" id="ga27eaf41fd1b547e396790d6bab732054"></a>
+<a class="anchor" id="gaffe824f0dbb1678e31697c966a6c15bf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__RTCC.html#ga27eaf41fd1b547e396790d6bab732054">RTCC_PrescMode_TypeDef</a></td>
+          <td class="memname">enum <a class="el" href="group__RTCC.html#gaffe824f0dbb1678e31697c966a6c15bf">RTCC_CompBase_TypeDef</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Prescaler mode of the RTCC counter. </p>
+<p>Capture/Compare channel compare mode. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df"></a>rtccCntTickPresc&#160;</td><td class="fielddoc">
-<p>CNT register ticks according to the prescaler value. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1"></a>rtccCompBaseCnt&#160;</td><td class="fielddoc">
+<p>CCVx is compared with the CNT register. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga27eaf41fd1b547e396790d6bab732054a6ec7fc3ffe4f35529e0d99fd99431ceb"></a>rtccCntTickCCV0Match&#160;</td><td class="fielddoc">
-<p>CNT register ticks when PRECNT matches the 15 least significant bits of ch. 0 CCV register. </p>
+<tr><td class="fieldname"><a class="anchor" id="ggaffe824f0dbb1678e31697c966a6c15bfa7527842a3e125b1ac5c871d663de943b"></a>rtccCompBasePreCnt&#160;</td><td class="fielddoc">
+<p>CCVx is compared with a CNT[16:0] and PRECNT[14:0]. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00094">94</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gae97fe5bba7812a48b934bd7fdab814fb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__RTCC.html#gae97fe5bba7812a48b934bd7fdab814fb">RTCC_CapComChMode_TypeDef</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Capture/Compare channel mode. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggae97fe5bba7812a48b934bd7fdab814fba6a83b168530882bb34bd8efa20c727bd"></a>rtccCapComChModeOff&#160;</td><td class="fielddoc">
-<p>Capture/Compare channel turned off. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84"></a>rtccCapComChModeCapture&#160;</td><td class="fielddoc">
-<p>Capture mode. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae97fe5bba7812a48b934bd7fdab814fba63e4f13f5335b727ffa7f82207391344"></a>rtccCapComChModeCompare&#160;</td><td class="fielddoc">
-<p>Compare mode. </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00106">106</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00152">152</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
 </div>
 </div>
@@ -631,6 +628,81 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 </table>
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00114">114</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaca22e74b99f507c580c2069a97b0bfe4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__RTCC.html#gaca22e74b99f507c580c2069a97b0bfe4">RTCC_DayCompareMode_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Day compare mode. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggaca22e74b99f507c580c2069a97b0bfe4a4263042eea73841b941f8b8d2fbb42ed"></a>rtccDayCompareModeMonth&#160;</td><td class="fielddoc">
+<p>Day of month is selected for Capture/Compare. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggaca22e74b99f507c580c2069a97b0bfe4ad87dae1f7846f6aec8e78bb73729d99d"></a>rtccDayCompareModeWeek&#160;</td><td class="fielddoc">
+<p>Day of week is selected for Capture/Compare. </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00162">162</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga25aa199b54a7dbaa388ce94cd1c250cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__RTCC.html#ga25aa199b54a7dbaa388ce94cd1c250cb">RTCC_InEdgeSel_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Input edge select. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2"></a>rtccInEdgeRising&#160;</td><td class="fielddoc">
+<p>Rising edges detected. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga25aa199b54a7dbaa388ce94cd1c250cba213df31af5a64eeb92d5949f47271acd"></a>rtccInEdgeFalling&#160;</td><td class="fielddoc">
+<p>Falling edges detected. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga25aa199b54a7dbaa388ce94cd1c250cbaa206e119b9554d6a6752da16a92b042d"></a>rtccInEdgeBoth&#160;</td><td class="fielddoc">
+<p>Both edges detected. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga25aa199b54a7dbaa388ce94cd1c250cbac3f49d2a06846b1a56d5263feb3d079f"></a>rtccInEdgeNone&#160;</td><td class="fielddoc">
+<p>No edge detection, signal is left as is. </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00142">142</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga27eaf41fd1b547e396790d6bab732054"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__RTCC.html#ga27eaf41fd1b547e396790d6bab732054">RTCC_PrescMode_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prescaler mode of the RTCC counter. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df"></a>rtccCntTickPresc&#160;</td><td class="fielddoc">
+<p>CNT register ticks according to the prescaler value. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga27eaf41fd1b547e396790d6bab732054a6ec7fc3ffe4f35529e0d99fd99431ceb"></a>rtccCntTickCCV0Match&#160;</td><td class="fielddoc">
+<p>CNT register ticks when PRECNT matches the 15 least significant bits of ch. 0 CCV register. </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00094">94</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
 </div>
 </div>
@@ -687,81 +759,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 </div>
 </div>
-<a class="anchor" id="ga25aa199b54a7dbaa388ce94cd1c250cb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__RTCC.html#ga25aa199b54a7dbaa388ce94cd1c250cb">RTCC_InEdgeSel_TypeDef</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Input edge select. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2"></a>rtccInEdgeRising&#160;</td><td class="fielddoc">
-<p>Rising edges detected. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga25aa199b54a7dbaa388ce94cd1c250cba213df31af5a64eeb92d5949f47271acd"></a>rtccInEdgeFalling&#160;</td><td class="fielddoc">
-<p>Falling edges detected. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga25aa199b54a7dbaa388ce94cd1c250cbaa206e119b9554d6a6752da16a92b042d"></a>rtccInEdgeBoth&#160;</td><td class="fielddoc">
-<p>Both edges detected. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga25aa199b54a7dbaa388ce94cd1c250cbac3f49d2a06846b1a56d5263feb3d079f"></a>rtccInEdgeNone&#160;</td><td class="fielddoc">
-<p>No edge detection, signal is left as is. </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00142">142</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaffe824f0dbb1678e31697c966a6c15bf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__RTCC.html#gaffe824f0dbb1678e31697c966a6c15bf">RTCC_CompBase_TypeDef</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Capture/Compare channel compare mode. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1"></a>rtccCompBaseCnt&#160;</td><td class="fielddoc">
-<p>CCVx is compared with the CNT register. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaffe824f0dbb1678e31697c966a6c15bfa7527842a3e125b1ac5c871d663de943b"></a>rtccCompBasePreCnt&#160;</td><td class="fielddoc">
-<p>CCVx is compared with a CNT[16:0] and PRECNT[14:0]. </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00152">152</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaca22e74b99f507c580c2069a97b0bfe4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__RTCC.html#gaca22e74b99f507c580c2069a97b0bfe4">RTCC_DayCompareMode_TypeDef</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Day compare mode. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggaca22e74b99f507c580c2069a97b0bfe4a4263042eea73841b941f8b8d2fbb42ed"></a>rtccDayCompareModeMonth&#160;</td><td class="fielddoc">
-<p>Day of month is selected for Capture/Compare. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaca22e74b99f507c580c2069a97b0bfe4ad87dae1f7846f6aec8e78bb73729d99d"></a>rtccDayCompareModeWeek&#160;</td><td class="fielddoc">
-<p>Day of week is selected for Capture/Compare. </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00162">162</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ga0d82be527512c219adad4c01258e80c3"></a>
 <div class="memitem">
@@ -776,6 +773,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get RTCC capture/compare register value (CCV) for selected channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>Channel selector.</td></tr>
@@ -786,7 +785,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00315">315</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>, and <a class="el" href="em__rtcc_8h_source.html#l00299">RTCC_CH_VALID</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>, and <a class="el" href="group__RTCC.html#ga698f61ac638893f66016895298085ccc">RTCC_CH_VALID</a>.</p>
 
 </div>
 </div>
@@ -813,6 +812,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set RTCC capture/compare register value (CCV) for selected channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>Channel selector.</td></tr>
@@ -823,7 +824,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00331">331</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>, and <a class="el" href="em__rtcc_8h_source.html#l00299">RTCC_CH_VALID</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>, and <a class="el" href="group__RTCC.html#ga698f61ac638893f66016895298085ccc">RTCC_CH_VALID</a>.</p>
 
 </div>
 </div>
@@ -840,6 +841,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the calendar DATE register content for selected channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>Channel selector.</td></tr>
@@ -850,7 +853,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00347">347</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>, and <a class="el" href="em__rtcc_8h_source.html#l00299">RTCC_CH_VALID</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>, and <a class="el" href="group__RTCC.html#ga698f61ac638893f66016895298085ccc">RTCC_CH_VALID</a>.</p>
 
 </div>
 </div>
@@ -877,6 +880,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set the calendar DATE register for selected channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>Channel selector.</td></tr>
@@ -887,7 +892,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00363">363</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>, and <a class="el" href="em__rtcc_8h_source.html#l00299">RTCC_CH_VALID</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>, and <a class="el" href="group__RTCC.html#ga698f61ac638893f66016895298085ccc">RTCC_CH_VALID</a>.</p>
 
 </div>
 </div>
@@ -914,6 +919,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Configure the selected capture/compare channel of the RTCC. </p>
 <p>Use this function to configure a RTCC channel. Select capture/compare mode, match output action, overflow output action and PRS input configuration. Refer to the configuration structure <a class="el" href="structRTCC__CCChConf__TypeDef.html">RTCC_CCChConf_TypeDef</a> for more details.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -924,11 +931,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 </dl>
 <p>Configure the selected capture/compare channel. </p>
 
-<p>Definition at line <a class="el" href="em__rtcc_8c_source.html#l00077">77</a> of file <a class="el" href="em__rtcc_8c_source.html">em_rtcc.c</a>.</p>
+<p>Definition at line <a class="el" href="em__rtcc_8c_source.html#l00081">81</a> of file <a class="el" href="em__rtcc_8c_source.html">em_rtcc.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00553">_RTCC_CC_CTRL_CMOA_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00606">_RTCC_CC_CTRL_COMPBASE_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00615">_RTCC_CC_CTRL_COMPMASK_MASK</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00614">_RTCC_CC_CTRL_COMPMASK_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00619">_RTCC_CC_CTRL_DAYCC_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00565">_RTCC_CC_CTRL_ICEDGE_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00543">_RTCC_CC_CTRL_MODE_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00577">_RTCC_CC_CTRL_PRSSEL_SHIFT</a>, <a class="el" href="em__rtcc_8h_source.html#l00217">RTCC_CCChConf_TypeDef::chMode</a>, <a class="el" href="em__rtcc_8h_source.html#l00229">RTCC_CCChConf_TypeDef::compBase</a>, <a class="el" href="em__rtcc_8h_source.html#l00233">RTCC_CCChConf_TypeDef::compMask</a>, <a class="el" href="em__rtcc_8h_source.html#l00220">RTCC_CCChConf_TypeDef::compMatchOutAction</a>, <a class="el" href="em__rtcc_8h_source.html#l00236">RTCC_CCChConf_TypeDef::dayCompMode</a>, <a class="el" href="em__rtcc_8h_source.html#l00226">RTCC_CCChConf_TypeDef::inputEdgeSel</a>, <a class="el" href="em__rtcc_8h_source.html#l00223">RTCC_CCChConf_TypeDef::prsSel</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>, and <a class="el" href="em__rtcc_8h_source.html#l00299">RTCC_CH_VALID</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#gad7282d079ad65eb0a49769e091f4f3fe">_RTCC_CC_CTRL_CMOA_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga32da2ee406acb91a985b28d4d54fdefe">_RTCC_CC_CTRL_COMPBASE_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#gae29c28c478e2c94ff6b18b56011000e3">_RTCC_CC_CTRL_COMPMASK_MASK</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga3c558be2bc4bd9f62475d4dc449ada9a">_RTCC_CC_CTRL_COMPMASK_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga3f186695e8c72490850f320b55db7187">_RTCC_CC_CTRL_DAYCC_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#gaf4b28a9c3cfc4ad4a7f66bf669b64932">_RTCC_CC_CTRL_ICEDGE_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga47a94f719a8077fad1fcc9c81a782cff">_RTCC_CC_CTRL_MODE_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga0501a299381a839ffb89b18cc733c0e8">_RTCC_CC_CTRL_PRSSEL_SHIFT</a>, <a class="el" href="structRTCC__CCChConf__TypeDef.html#a9aac0028b61c05a7cbcbed2786c6e651">RTCC_CCChConf_TypeDef::chMode</a>, <a class="el" href="structRTCC__CCChConf__TypeDef.html#a755b1b989aeb9447d56d3279159d3fe5">RTCC_CCChConf_TypeDef::compBase</a>, <a class="el" href="structRTCC__CCChConf__TypeDef.html#a81c2722a44eda5e6044a31852cd45366">RTCC_CCChConf_TypeDef::compMask</a>, <a class="el" href="structRTCC__CCChConf__TypeDef.html#a702e3b604e62a2dc468cd561d2bdd752">RTCC_CCChConf_TypeDef::compMatchOutAction</a>, <a class="el" href="structRTCC__CCChConf__TypeDef.html#a51564c8ed1f969a1c0242867d8b06b19">RTCC_CCChConf_TypeDef::dayCompMode</a>, <a class="el" href="structRTCC__CCChConf__TypeDef.html#a2f5092db8e26b6202ebc82d5dde2593f">RTCC_CCChConf_TypeDef::inputEdgeSel</a>, <a class="el" href="structRTCC__CCChConf__TypeDef.html#aad3458f625fbf428196171ab3ac511ab">RTCC_CCChConf_TypeDef::prsSel</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>, and <a class="el" href="group__RTCC.html#ga698f61ac638893f66016895298085ccc">RTCC_CH_VALID</a>.</p>
 
-<p>Referenced by <a class="el" href="rtcdriver_8c_source.html#l00322">RTCDRV_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__RTCDRV.html#ga4419076832c5b4958dea6f1eec0a9bdf">RTCDRV_Init()</a>.</p>
 
 </div>
 </div>
@@ -945,6 +952,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the calendar TIME register content for selected channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>Channel selector.</td></tr>
@@ -955,7 +964,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00381">381</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>, and <a class="el" href="em__rtcc_8h_source.html#l00299">RTCC_CH_VALID</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>, and <a class="el" href="group__RTCC.html#ga698f61ac638893f66016895298085ccc">RTCC_CH_VALID</a>.</p>
 
 </div>
 </div>
@@ -982,6 +991,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set the calendar TIME register for selected channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>Channel selector.</td></tr>
@@ -992,7 +1003,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00397">397</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>, and <a class="el" href="em__rtcc_8h_source.html#l00299">RTCC_CH_VALID</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>, and <a class="el" href="group__RTCC.html#ga698f61ac638893f66016895298085ccc">RTCC_CH_VALID</a>.</p>
 
 </div>
 </div>
@@ -1009,11 +1020,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the combined CNT/PRECNT register content. </p>
 <dl class="section return"><dt>Returns</dt><dd>CNT/PRECNT register value. </dd></dl>
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00410">410</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1030,11 +1043,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get RTCC counter value. </p>
 <dl class="section return"><dt>Returns</dt><dd>Current RTCC counter value. </dd></dl>
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00422">422</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1051,6 +1066,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set RTCC CNT counter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>CNT value. </td></tr>
@@ -1060,7 +1077,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00434">434</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1077,11 +1094,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get DATE register value. </p>
 <dl class="section return"><dt>Returns</dt><dd>Current DATE register value. </dd></dl>
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00446">446</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1098,6 +1117,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set RTCC DATE register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">date</td><td>DATE value. </td></tr>
@@ -1107,7 +1128,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00458">458</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1124,6 +1145,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable/disable EM4 wakeup capability. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>True to enable EM4 wakeup, false to disable. </td></tr>
@@ -1133,7 +1156,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00470">470</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>, and <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00534">RTCC_EM4WUEN_EM4WU</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>, and <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#gabace8dba6025ad4992878a7358ec8498">RTCC_EM4WUEN_EM4WU</a>.</p>
 
 </div>
 </div>
@@ -1150,6 +1173,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable/disable RTCC. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>True to enable RTCC, false to disable. </td></tr>
@@ -1157,11 +1182,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__rtcc_8c_source.html#l00101">101</a> of file <a class="el" href="em__rtcc_8c_source.html">em_rtcc.c</a>.</p>
+<p>Definition at line <a class="el" href="em__rtcc_8c_source.html#l00105">105</a> of file <a class="el" href="em__rtcc_8c_source.html">em_rtcc.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00075">_RTCC_CTRL_ENABLE_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, and <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga5aadf70c5b06d7a2b7b8d8b297dee298">_RTCC_CTRL_ENABLE_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
-<p>Referenced by <a class="el" href="rtcdriver_8c_source.html#l00415">RTCDRV_DeInit()</a>, and <a class="el" href="udelay_8c_source.html#l00071">UDELAY_Calibrate()</a>.</p>
+<p>Referenced by <a class="el" href="group__RTCDRV.html#gae82ea6fa74f6bbc161b86a34385d63bf">RTCDRV_DeInit()</a>, and <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a>.</p>
 
 </div>
 </div>
@@ -1178,6 +1203,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize RTCC. </p>
 <p>Note that the compare values must be set separately with RTCC_CompareSet(). That should probably be done prior to the use of this function if configuring the RTCC to start when initialization is completed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1186,11 +1213,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__rtcc_8c_source.html#l00119">119</a> of file <a class="el" href="em__rtcc_8c_source.html">em_rtcc.c</a>.</p>
+<p>Definition at line <a class="el" href="em__rtcc_8c_source.html#l00123">123</a> of file <a class="el" href="em__rtcc_8c_source.html">em_rtcc.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00090">_RTCC_CTRL_CCV1TOP_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00145">_RTCC_CTRL_CNTMODE_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00094">_RTCC_CTRL_CNTPRESC_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00131">_RTCC_CTRL_CNTTICK_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00080">_RTCC_CTRL_DEBUGRUN_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00075">_RTCC_CTRL_ENABLE_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00154">_RTCC_CTRL_LYEARCORRDIS_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00140">_RTCC_CTRL_OSCFDETEN_SHIFT</a>, <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00085">_RTCC_CTRL_PRECCV0TOP_SHIFT</a>, <a class="el" href="em__rtcc_8h_source.html#l00204">RTCC_Init_TypeDef::cntMode</a>, <a class="el" href="em__rtcc_8h_source.html#l00185">RTCC_Init_TypeDef::cntWrapOnCCV1</a>, <a class="el" href="em__rtcc_8h_source.html#l00179">RTCC_Init_TypeDef::debugRun</a>, <a class="el" href="em__rtcc_8h_source.html#l00209">RTCC_Init_TypeDef::disLeapYearCorr</a>, <a class="el" href="em__rtcc_8h_source.html#l00176">RTCC_Init_TypeDef::enable</a>, <a class="el" href="em__rtcc_8h_source.html#l00201">RTCC_Init_TypeDef::enaOSCFailDetect</a>, <a class="el" href="em__rtcc_8h_source.html#l00182">RTCC_Init_TypeDef::precntWrapOnCCV0</a>, <a class="el" href="em__rtcc_8h_source.html#l00188">RTCC_Init_TypeDef::presc</a>, <a class="el" href="em__rtcc_8h_source.html#l00191">RTCC_Init_TypeDef::prescMode</a>, and <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#gacabc0404547a799ae6620d1fb9146f03">_RTCC_CTRL_CCV1TOP_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga01aaa679c0ab63651a5e6e599adf49c6">_RTCC_CTRL_CNTMODE_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga1d147561923d3a53cabbbbd29775c471">_RTCC_CTRL_CNTPRESC_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga149b7837a40f1639071f847a785864f8">_RTCC_CTRL_CNTTICK_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga10d25e56b962b8d91019afea10afe8be">_RTCC_CTRL_DEBUGRUN_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga5aadf70c5b06d7a2b7b8d8b297dee298">_RTCC_CTRL_ENABLE_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#gad664cc1714ece5694f10f5a02b25b9f9">_RTCC_CTRL_LYEARCORRDIS_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga4e9d50f145cd281010646d2d49016f6b">_RTCC_CTRL_OSCFDETEN_SHIFT</a>, <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga30589f5ee72d15eecf5b6d1b7d7fafcf">_RTCC_CTRL_PRECCV0TOP_SHIFT</a>, <a class="el" href="structRTCC__Init__TypeDef.html#a50cffa5c353a1a6d9b23af37d2a4e78b">RTCC_Init_TypeDef::cntMode</a>, <a class="el" href="structRTCC__Init__TypeDef.html#ae0e61752ae6783c94f12517d59611bc7">RTCC_Init_TypeDef::cntWrapOnCCV1</a>, <a class="el" href="structRTCC__Init__TypeDef.html#a1f8f07718d2a26370860ffb77d140a2b">RTCC_Init_TypeDef::debugRun</a>, <a class="el" href="structRTCC__Init__TypeDef.html#a45d6a297475e21dcd2009bb5dca4eeb6">RTCC_Init_TypeDef::disLeapYearCorr</a>, <a class="el" href="structRTCC__Init__TypeDef.html#a288bf58bcc271caa650c4731f17a5255">RTCC_Init_TypeDef::enable</a>, <a class="el" href="structRTCC__Init__TypeDef.html#a643e2c196ef5225d9220bc2402c8dad4">RTCC_Init_TypeDef::enaOSCFailDetect</a>, <a class="el" href="structRTCC__Init__TypeDef.html#a801245a25d2eaef7fac1a4c47cbb5956">RTCC_Init_TypeDef::precntWrapOnCCV0</a>, <a class="el" href="structRTCC__Init__TypeDef.html#a8530e8f63d4509c60ac7137ef45ea607">RTCC_Init_TypeDef::presc</a>, <a class="el" href="structRTCC__Init__TypeDef.html#a3247ca3768dc45dde830ef44cd9aab14">RTCC_Init_TypeDef::prescMode</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
-<p>Referenced by <a class="el" href="rtcdriver_8c_source.html#l00322">RTCDRV_Init()</a>, and <a class="el" href="udelay_8c_source.html#l00071">UDELAY_Calibrate()</a>.</p>
+<p>Referenced by <a class="el" href="group__RTCDRV.html#ga4419076832c5b4958dea6f1eec0a9bdf">RTCDRV_Init()</a>, and <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a>.</p>
 
 </div>
 </div>
@@ -1207,6 +1234,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Clear one or more pending RTCC interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>RTCC interrupt sources to clear. Use a set of interrupt flags OR-ed together to clear multiple interrupt sources. </td></tr>
@@ -1216,7 +1245,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00494">494</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1233,6 +1262,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Disable one or more RTCC interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>RTCC interrupt sources to disable. Use a set of interrupt flags OR-ed together to disable multiple interrupt. </td></tr>
@@ -1242,7 +1273,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00507">507</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1259,6 +1290,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable one or more RTCC interrupts. </p>
 <dl class="section note"><dt>Note</dt><dd>Depending on the use, a pending interrupt may already be set prior to enabling the interrupt. Consider using <a class="el" href="group__RTCC.html#gaaa02578af40049bc5a5a6e182fc64cd2" title="Clear one or more pending RTCC interrupts. ">RTCC_IntClear()</a> prior to enabling if such a pending interrupt should be ignored.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1269,7 +1302,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00525">525</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1286,12 +1319,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get pending RTCC interrupt flags. </p>
 <dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Pending RTCC interrupt sources. Returns a set of interrupt flags OR-ed together for the interrupt sources set. </dd></dl>
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00541">541</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1308,12 +1343,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get enabled and pending RTCC interrupt flags. </p>
 <p>Useful for handling more interrupt sources in the same interrupt handler.</p>
 <dl class="section return"><dt>Returns</dt><dd>Pending and enabled RTCC interrupt sources. Returns a set of interrupt flags OR-ed together for the interrupt sources set. </dd></dl>
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00557">557</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1330,6 +1367,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set one or more pending RTCC interrupts from SW. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>RTCC interrupt sources to set to pending. Use a set of interrupt flags (RTCC_IFS_nnn). </td></tr>
@@ -1339,7 +1378,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00575">575</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1356,11 +1395,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Lock RTCC registers. </p>
 <dl class="section note"><dt>Note</dt><dd>When RTCC registers are locked, RTCC_CTRL, RTCC_PRECNT, RTCC_CNT, RTCC_TIME, RTCC_DATE, RTCC_IEN, RTCC_POWERDOWN and RTCC_CCx_XXX registers can not be written to. </dd></dl>
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00589">589</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>, and <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00526">RTCC_LOCK_LOCKKEY_LOCK</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>, and <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga7c8d318cd2054a98d93eb88079aeeb63">RTCC_LOCK_LOCKKEY_LOCK</a>.</p>
 
 </div>
 </div>
@@ -1377,11 +1418,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get RTCC pre-counter value. </p>
 <dl class="section return"><dt>Returns</dt><dd>Current RTCC pre-counter value. </dd></dl>
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00601">601</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1398,6 +1441,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set RTCC pre-counter value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">preCntVal</td><td>RTCC pre-counter value to be set. </td></tr>
@@ -1407,7 +1452,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00613">613</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1424,11 +1469,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Power down the retention ram. </p>
 <dl class="section note"><dt>Note</dt><dd>Once retention ram is powered down, it cannot be powered up again. </dd></dl>
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00627">627</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>, and <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00509">RTCC_POWERDOWN_RAM</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>, and <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#ga0e616b878ac4b2ef44e2ba0c715ea509">RTCC_POWERDOWN_RAM</a>.</p>
 
 </div>
 </div>
@@ -1445,11 +1492,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get STATUS register value. </p>
 <dl class="section return"><dt>Returns</dt><dd>Current STATUS register value. </dd></dl>
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00641">641</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>, and <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00500">RTCC_SYNCBUSY_CMD</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>, and <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#gabf92535429b93fd3018d78aadc10b04f">RTCC_SYNCBUSY_CMD</a>.</p>
 
 </div>
 </div>
@@ -1466,11 +1515,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get TIME register value. </p>
 <dl class="section return"><dt>Returns</dt><dd>Current TIME register value. </dd></dl>
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00657">657</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1487,6 +1538,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set RTCC TIME register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>TIME value. </td></tr>
@@ -1496,7 +1549,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00669">669</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>.</p>
 
 </div>
 </div>
@@ -1513,13 +1566,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Unlock RTCC registers. </p>
 <dl class="section note"><dt>Note</dt><dd>When RTCC registers are locked, RTCC_CTRL, RTCC_PRECNT, RTCC_CNT, RTCC_TIME, RTCC_DATE, RTCC_IEN, RTCC_POWERDOWN and RTCC_CCx_XXX registers can not be written to. </dd></dl>
 
 <p>Definition at line <a class="el" href="em__rtcc_8h_source.html#l00683">683</a> of file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00335">RTCC</a>, and <a class="el" href="efm32jg1b__rtcc_8h_source.html#l00529">RTCC_LOCK_LOCKKEY_UNLOCK</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gabc8664cbc0700a5099260a449e357824">RTCC</a>, and <a class="el" href="group__EFM32JG1B__RTCC__BitFields.html#gac82a22c7d02e7fd330e135c349801a9e">RTCC_LOCK_LOCKKEY_UNLOCK</a>.</p>
 
-<p>Referenced by <a class="el" href="em__rtcc_8c_source.html#l00139">RTCC_Reset()</a>.</p>
+<p>Referenced by <a class="el" href="group__RTCC.html#gacb84a9c23d4668a974218bc7526fc6dc">RTCC_Reset()</a>.</p>
 
 </div>
 </div>
@@ -1528,7 +1583,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:49 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:40:58 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

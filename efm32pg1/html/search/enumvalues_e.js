@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['segmentlcdblockmodeblank',['segmentLCDBlockModeBlank',['../group__SegmentLcd.html#ggafbcfe27efe1304334520446550824d87ad70c39af2cb278c150921cbbd7f56210',1,'segmentlcd.h']]],
+  ['segmentlcdblockmodefill',['segmentLCDBlockModeFill',['../group__SegmentLcd.html#ggafbcfe27efe1304334520446550824d87acca3f6a670a8172783bb95e64eccbc0a',1,'segmentlcd.h']]],
+  ['segmentlcdblockmodeoutline',['segmentLCDBlockModeOutline',['../group__SegmentLcd.html#ggafbcfe27efe1304334520446550824d87a4d5db2a24c4eac104c3d50f8a2900014',1,'segmentlcd.h']]],
+  ['segmentlcdblockmodeoutlinefill',['segmentLCDBlockModeOutlineFill',['../group__SegmentLcd.html#ggafbcfe27efe1304334520446550824d87a81cb5a22827018014e8e6133daf3d5ae',1,'segmentlcd.h']]],
   ['sleepem0',['sleepEM0',['../group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7e989a57904991a6e3144b97f75410bd',1,'sleep.h']]],
   ['sleepem1',['sleepEM1',['../group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa56f509425c165a08ec70b4d8142161c2',1,'sleep.h']]],
   ['sleepem2',['sleepEM2',['../group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aabb50ecf70376fe1fb99995fea5bc14a8',1,'sleep.h']]],
@@ -46,6 +50,9 @@ var searchData=
   ['systempartfamilytiny',['systemPartFamilyTiny',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa61c8f81ba612497c56992b8b283c7b9c',1,'em_system.h']]],
   ['systempartfamilyunknown',['systemPartFamilyUnknown',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa0b598eb0a295177ef566285afaf9e660',1,'em_system.h']]],
   ['systempartfamilywonder',['systemPartFamilyWonder',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa0e0bb21fba94341125d8ea6ebf6d6ade',1,'em_system.h']]],
+  ['systempartfamilyzappy1b',['systemPartFamilyZappy1B',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa245c59d98baf6c91854cdd88f06a82d4',1,'em_system.h']]],
+  ['systempartfamilyzappy1p',['systemPartFamilyZappy1P',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aaa2773dc6a096d3fe290b8c6b67de2c44',1,'em_system.h']]],
+  ['systempartfamilyzappy1v',['systemPartFamilyZappy1V',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa7956f609b89903bf361b4e6912e078a9',1,'em_system.h']]],
   ['systempartfamilyzero',['systemPartFamilyZero',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aaf3c188b459bedab760142df3e5ede098',1,'em_system.h']]],
   ['systick_5firqn',['SysTick_IRQn',['../group__EFM32PG1B200F256GM48.html#gga666eb0caeb12ec0e281415592ae89083a6dbff8f8543325f3474cbae2446776e7',1,'efm32pg1b200f256gm48.h']]]
 ];

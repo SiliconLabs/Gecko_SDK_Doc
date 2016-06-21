@@ -8,9 +8,9 @@ var em__leuart_8c =
     [ "LEUART_Init", "group__LEUART.html#ga14ed413542c26fb88fd1237f9eb99bd5", null ],
     [ "LEUART_Reset", "group__LEUART.html#gac1d2e66b6eb2ef53079453ebc2f1e5fa", null ],
     [ "LEUART_Rx", "group__LEUART.html#ga7e84f260b845b086996737d5c6a3d584", null ],
+    [ "LEUART_RxDmaInEM2Enable", "group__LEUART.html#gaf9a622af67512b98926d2117f0ea29d1", null ],
     [ "LEUART_RxExt", "group__LEUART.html#ga41f5c2769d8f3789596111ee6e5e7f3b", null ],
     [ "LEUART_Tx", "group__LEUART.html#ga0acc32fe9bb75edec5123e7f155c68ac", null ],
-    [ "LEUART_TxExt", "group__LEUART.html#gaec9893a933f75974c16bd63ac823fd8e", null ],
     [ "LEUART_TxDmaInEM2Enable", "group__LEUART.html#ga0e54fd1a0a16f1e899969f29de49674f", null ],
-    [ "LEUART_RxDmaInEM2Enable", "group__LEUART.html#gaf9a622af67512b98926d2117f0ea29d1", null ]
+    [ "LEUART_TxExt", "group__LEUART.html#gaec9893a933f75974c16bd63ac823fd8e", null ]
 ];

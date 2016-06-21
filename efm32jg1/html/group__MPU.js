@@ -1,23 +1,31 @@
 var group__MPU =
 [
     [ "MPU_RegionInit_TypeDef", "structMPU__RegionInit__TypeDef.html", [
+      [ "accessPermission", "structMPU__RegionInit__TypeDef.html#a8f5380dac41dceb78c333c6b1176aa94", null ],
+      [ "baseAddress", "structMPU__RegionInit__TypeDef.html#a123836d2a9394876ce4d1a02b4f404f5", null ],
+      [ "bufferable", "structMPU__RegionInit__TypeDef.html#ae37d9a2c91a63bf8e8a98982e4576ca1", null ],
+      [ "cacheable", "structMPU__RegionInit__TypeDef.html#a4e2b59d59febce73f7a819169e7b7eb5", null ],
+      [ "disableExec", "structMPU__RegionInit__TypeDef.html#a537b70f4b5b964a672fbc678ea032f59", null ],
       [ "regionEnable", "structMPU__RegionInit__TypeDef.html#a83b582f14e33cb249727b87b083f3caa", null ],
       [ "regionNo", "structMPU__RegionInit__TypeDef.html#ae24f6a69452bfffd6dfdd35e96830951", null ],
-      [ "baseAddress", "structMPU__RegionInit__TypeDef.html#a123836d2a9394876ce4d1a02b4f404f5", null ],
-      [ "size", "structMPU__RegionInit__TypeDef.html#abf56263108a4e54978348c0bacf63c50", null ],
-      [ "accessPermission", "structMPU__RegionInit__TypeDef.html#a8f5380dac41dceb78c333c6b1176aa94", null ],
-      [ "disableExec", "structMPU__RegionInit__TypeDef.html#a537b70f4b5b964a672fbc678ea032f59", null ],
       [ "shareable", "structMPU__RegionInit__TypeDef.html#a7a41b37b8b841599501506887843eb98", null ],
-      [ "cacheable", "structMPU__RegionInit__TypeDef.html#a4e2b59d59febce73f7a819169e7b7eb5", null ],
-      [ "bufferable", "structMPU__RegionInit__TypeDef.html#ae37d9a2c91a63bf8e8a98982e4576ca1", null ],
+      [ "size", "structMPU__RegionInit__TypeDef.html#abf56263108a4e54978348c0bacf63c50", null ],
       [ "srd", "structMPU__RegionInit__TypeDef.html#a50839f69c79e78610509b1bfd6e7e3a8", null ],
       [ "tex", "structMPU__RegionInit__TypeDef.html#a1660320663617c0eb6c625b7ab38f563", null ]
     ] ],
-    [ "MPU_CTRL_PRIVDEFENA", "group__MPU.html#gaab51c0ef4d298181c4658130e720c126", null ],
     [ "MPU_CTRL_HFNMIENA", "group__MPU.html#gab7ed92a5600fdd190fb3ce6c8b9eef0a", null ],
+    [ "MPU_CTRL_PRIVDEFENA", "group__MPU.html#gaab51c0ef4d298181c4658130e720c126", null ],
     [ "MPU_INIT_FLASH_DEFAULT", "group__MPU.html#ga7dd89b899b29011a595eae970ee9c64c", null ],
-    [ "MPU_INIT_SRAM_DEFAULT", "group__MPU.html#gafb50eaf58ac5c817d898a39e067767d8", null ],
     [ "MPU_INIT_PERIPHERAL_DEFAULT", "group__MPU.html#ga6827c9b1a3262f44a276f4f836fb55cc", null ],
+    [ "MPU_INIT_SRAM_DEFAULT", "group__MPU.html#gafb50eaf58ac5c817d898a39e067767d8", null ],
+    [ "MPU_RegionAp_TypeDef", "group__MPU.html#gad31bacb9d44584cbeece0f228b543518", [
+      [ "mpuRegionNoAccess", "group__MPU.html#ggad31bacb9d44584cbeece0f228b543518a5366fd7ed5b469cebac3290f7b20ae81", null ],
+      [ "mpuRegionApPRw", "group__MPU.html#ggad31bacb9d44584cbeece0f228b543518a7796714772c8fcd5de32d419a4095bfe", null ],
+      [ "mpuRegionApPRwURo", "group__MPU.html#ggad31bacb9d44584cbeece0f228b543518ad3a58ae09a4b602599e9b341b16f57f7", null ],
+      [ "mpuRegionApFullAccess", "group__MPU.html#ggad31bacb9d44584cbeece0f228b543518a01fe173fbfc0f844e6e6a6c0195302c9", null ],
+      [ "mpuRegionApPRo", "group__MPU.html#ggad31bacb9d44584cbeece0f228b543518a541c00b491f9f346537f7de7782a74d9", null ],
+      [ "mpuRegionApPRo_URo", "group__MPU.html#ggad31bacb9d44584cbeece0f228b543518a44f7f0cd923145ff9b5e1c09612c1590", null ]
+    ] ],
     [ "MPU_RegionSize_TypeDef", "group__MPU.html#ga6a3fea8505cbab92ee8ac776359d5a26", [
       [ "mpuRegionSize32b", "group__MPU.html#gga6a3fea8505cbab92ee8ac776359d5a26a2db9e04a88a183feaf8dfa66454d5971", null ],
       [ "mpuRegionSize64b", "group__MPU.html#gga6a3fea8505cbab92ee8ac776359d5a26ad0b7b3fa45a16fb41fb915600b452c11", null ],
@@ -47,14 +55,6 @@ var group__MPU =
       [ "mpuRegionSize1Gb", "group__MPU.html#gga6a3fea8505cbab92ee8ac776359d5a26ae8e17fa80fa441fc3a0489b53bb2d672", null ],
       [ "mpuRegionSize2Gb", "group__MPU.html#gga6a3fea8505cbab92ee8ac776359d5a26a8597fb2c94f5327afddf7c3e3e60e713", null ],
       [ "mpuRegionSize4Gb", "group__MPU.html#gga6a3fea8505cbab92ee8ac776359d5a26afe91f5bc49c3f394f92a1ca9fd79dc4b", null ]
-    ] ],
-    [ "MPU_RegionAp_TypeDef", "group__MPU.html#gad31bacb9d44584cbeece0f228b543518", [
-      [ "mpuRegionNoAccess", "group__MPU.html#ggad31bacb9d44584cbeece0f228b543518a5366fd7ed5b469cebac3290f7b20ae81", null ],
-      [ "mpuRegionApPRw", "group__MPU.html#ggad31bacb9d44584cbeece0f228b543518a7796714772c8fcd5de32d419a4095bfe", null ],
-      [ "mpuRegionApPRwURo", "group__MPU.html#ggad31bacb9d44584cbeece0f228b543518ad3a58ae09a4b602599e9b341b16f57f7", null ],
-      [ "mpuRegionApFullAccess", "group__MPU.html#ggad31bacb9d44584cbeece0f228b543518a01fe173fbfc0f844e6e6a6c0195302c9", null ],
-      [ "mpuRegionApPRo", "group__MPU.html#ggad31bacb9d44584cbeece0f228b543518a541c00b491f9f346537f7de7782a74d9", null ],
-      [ "mpuRegionApPRo_URo", "group__MPU.html#ggad31bacb9d44584cbeece0f228b543518a44f7f0cd923145ff9b5e1c09612c1590", null ]
     ] ],
     [ "MPU_ConfigureRegion", "group__MPU.html#gaeb57443d5bd3de565f7d0b0ebd8b8785", null ],
     [ "MPU_Disable", "group__MPU.html#ga2661d44882b4c52855ef24bb8f8f70e7", null ],

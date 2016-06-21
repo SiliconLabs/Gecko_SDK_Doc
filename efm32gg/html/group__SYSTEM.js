@@ -1,9 +1,9 @@
 var group__SYSTEM =
 [
     [ "SYSTEM_ChipRevision_TypeDef", "structSYSTEM__ChipRevision__TypeDef.html", [
-      [ "minor", "structSYSTEM__ChipRevision__TypeDef.html#a4c191c69987d7029a7f2ec9510a99898", null ],
+      [ "family", "structSYSTEM__ChipRevision__TypeDef.html#a47b64ea4d787f0fd06b2e218a16cac1c", null ],
       [ "major", "structSYSTEM__ChipRevision__TypeDef.html#a79ebea0f9a0321ec622d9098afe5bdd1", null ],
-      [ "family", "structSYSTEM__ChipRevision__TypeDef.html#a47b64ea4d787f0fd06b2e218a16cac1c", null ]
+      [ "minor", "structSYSTEM__ChipRevision__TypeDef.html#a4c191c69987d7029a7f2ec9510a99898", null ]
     ] ],
     [ "SYSTEM_PartFamily_TypeDef", "group__SYSTEM.html#ga45f33557f44ae73db1c70765a2a29e5a", [
       [ "systemPartFamilyEfm32Gecko", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa04ecdf23aa3423303c43be6984f30ee0", null ],
@@ -26,13 +26,13 @@ var group__SYSTEM =
       [ "systemPartFamilyUnknown", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa0b598eb0a295177ef566285afaf9e660", null ]
     ] ],
     [ "SYSTEM_ChipRevisionGet", "group__SYSTEM.html#ga6470ed38937ffd0b8b509334c5add7dd", null ],
+    [ "SYSTEM_GetCalibrationTemperature", "group__SYSTEM.html#ga2a8be52c7eeb3f5d395ee7791e5c8bf8", null ],
     [ "SYSTEM_GetCalibrationValue", "group__SYSTEM.html#ga786913c991338e29650617d89aec3768", null ],
-    [ "SYSTEM_GetUnique", "group__SYSTEM.html#ga3ae06ffaffeb005dc411bfefedd1f16b", null ],
+    [ "SYSTEM_GetFamily", "group__SYSTEM.html#ga5b5bb91ac7916b37ce069dd75fc94196", null ],
+    [ "SYSTEM_GetFlashPageSize", "group__SYSTEM.html#ga9708a581c8fe3a02fc6ac92175a3860a", null ],
+    [ "SYSTEM_GetFlashSize", "group__SYSTEM.html#gacf4974847994d28b5e03e1cb6d76f5c0", null ],
+    [ "SYSTEM_GetPartNumber", "group__SYSTEM.html#ga4b9b04ffdb1f05c14f73f1b7ed0a95ba", null ],
     [ "SYSTEM_GetProdRev", "group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b", null ],
     [ "SYSTEM_GetSRAMSize", "group__SYSTEM.html#ga1e9f2935e6ccee880c25605351770560", null ],
-    [ "SYSTEM_GetFlashSize", "group__SYSTEM.html#gacf4974847994d28b5e03e1cb6d76f5c0", null ],
-    [ "SYSTEM_GetFlashPageSize", "group__SYSTEM.html#ga9708a581c8fe3a02fc6ac92175a3860a", null ],
-    [ "SYSTEM_GetPartNumber", "group__SYSTEM.html#ga4b9b04ffdb1f05c14f73f1b7ed0a95ba", null ],
-    [ "SYSTEM_GetFamily", "group__SYSTEM.html#ga5b5bb91ac7916b37ce069dd75fc94196", null ],
-    [ "SYSTEM_GetCalibrationTemperature", "group__SYSTEM.html#ga2a8be52c7eeb3f5d395ee7791e5c8bf8", null ]
+    [ "SYSTEM_GetUnique", "group__SYSTEM.html#ga3ae06ffaffeb005dc411bfefedd1f16b", null ]
 ];

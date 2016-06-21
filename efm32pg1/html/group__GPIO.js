@@ -1,6 +1,5 @@
 var group__GPIO =
 [
-    [ "GPIO_Port_TypeDef", "group__GPIO.html#gafe496583dfd425fc03c413d49459efe6", null ],
     [ "GPIO_DriveStrength_TypeDef", "group__GPIO.html#ga302f9e4781fc54afaace4dee03fdf046", [
       [ "gpioDriveStrengthWeakAlternateWeak", "group__GPIO.html#gga302f9e4781fc54afaace4dee03fdf046a27fcfed1f80503a541f6fe4abc4f9598", null ],
       [ "gpioDriveStrengthWeakAlternateStrong", "group__GPIO.html#gga302f9e4781fc54afaace4dee03fdf046ae7ac7d4c2eee4ce6dc4b873cbef56e50", null ],
@@ -25,19 +24,20 @@ var group__GPIO =
       [ "gpioModeWiredAndAlternatePullUp", "group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa5e08e3b99121000ba5269ce2b9d57b52", null ],
       [ "gpioModeWiredAndAlternatePullUpFilter", "group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa863daf4bc7af6163766c93c5505b1390", null ]
     ] ],
+    [ "GPIO_Port_TypeDef", "group__GPIO.html#gafe496583dfd425fc03c413d49459efe6", null ],
     [ "GPIO_DbgLocationSet", "group__GPIO.html#ga2e5db302df7c3695b41b582094ca6c15", null ],
-    [ "GPIO_IntConfig", "group__GPIO.html#ga42f6d22ce3a60ac994a5f663c18c0785", null ],
-    [ "GPIO_PinModeSet", "group__GPIO.html#gab6751992334a136efe8750a1d01a850d", null ],
-    [ "GPIO_EM4EnablePinWakeup", "group__GPIO.html#gad65109dacead0351fa390749d8682137", null ],
     [ "GPIO_DbgSWDClkEnable", "group__GPIO.html#ga7aa21d660197b3e2f67589db89686bbf", null ],
     [ "GPIO_DbgSWDIOEnable", "group__GPIO.html#gaceecf411d11a30e7fa10fc42dd4f612d", null ],
     [ "GPIO_DbgSWOEnable", "group__GPIO.html#ga9c587570c6c2422eb46ac557d9d9e319", null ],
     [ "GPIO_DriveStrengthSet", "group__GPIO.html#gadad2a0562d0727e167b8dd2319c50e3e", null ],
     [ "GPIO_EM4DisablePinWakeup", "group__GPIO.html#ga8aafff997f0e24ae7ba7f8040cd92c23", null ],
+    [ "GPIO_EM4EnablePinWakeup", "group__GPIO.html#gad65109dacead0351fa390749d8682137", null ],
     [ "GPIO_EM4GetPinWakeupCause", "group__GPIO.html#ga8a31b925465c592d3de6e98104fd3116", null ],
     [ "GPIO_EM4SetPinRetention", "group__GPIO.html#ga9373299464cb309d7251c73de17d0d66", null ],
+    [ "GPIO_ExtIntConfig", "group__GPIO.html#gac954a361034e059b980964055f6d735a", null ],
     [ "GPIO_InputSenseSet", "group__GPIO.html#gafb671a91ea44d3da7061588668f01e4a", null ],
     [ "GPIO_IntClear", "group__GPIO.html#ga1c840f8a9d9ee23d76f3f51000f9cc5d", null ],
+    [ "GPIO_IntConfig", "group__GPIO.html#ga609e88ab4e3540d3df6c5d6aa82be1e8", null ],
     [ "GPIO_IntDisable", "group__GPIO.html#ga0669ffdb8d3bbc8734c2ffa51ce39b4f", null ],
     [ "GPIO_IntEnable", "group__GPIO.html#gae83ed3dafe4e582f81f34815af282b8d", null ],
     [ "GPIO_IntGet", "group__GPIO.html#ga3b2ec1c19fdc6cb955e09641a704b5b7", null ],
@@ -45,6 +45,8 @@ var group__GPIO =
     [ "GPIO_IntSet", "group__GPIO.html#ga95700a5be7f020297ed30fafcca08b74", null ],
     [ "GPIO_Lock", "group__GPIO.html#ga5336b419525b0e2b6a69334eeb80f7af", null ],
     [ "GPIO_PinInGet", "group__GPIO.html#gac1050d30b940c30899c63aa060fa4dba", null ],
+    [ "GPIO_PinModeGet", "group__GPIO.html#ga990ec8d9113570947735485259acdabe", null ],
+    [ "GPIO_PinModeSet", "group__GPIO.html#gab6751992334a136efe8750a1d01a850d", null ],
     [ "GPIO_PinOutClear", "group__GPIO.html#ga607f3a5f3d881bb145101566f1664aba", null ],
     [ "GPIO_PinOutGet", "group__GPIO.html#ga8ed31bc079380c74d6db162d4cdc16b8", null ],
     [ "GPIO_PinOutSet", "group__GPIO.html#gab08f054efbb07aaff57d616974c9c536", null ],
@@ -55,5 +57,6 @@ var group__GPIO =
     [ "GPIO_PortOutSet", "group__GPIO.html#ga39a52563da4bf3105f61a49dc77b79a1", null ],
     [ "GPIO_PortOutSetVal", "group__GPIO.html#gaf9558eb1193bbda3a05330f552d129ca", null ],
     [ "GPIO_PortOutToggle", "group__GPIO.html#ga8e79bb33659c58ef081c5dc74476a9ec", null ],
+    [ "GPIO_SlewrateSet", "group__GPIO.html#ga3eb3051a2a3e6683a3b77fabcfad3806", null ],
     [ "GPIO_Unlock", "group__GPIO.html#ga3c5e527ac0c884a53b3c59af2afb6652", null ]
 ];

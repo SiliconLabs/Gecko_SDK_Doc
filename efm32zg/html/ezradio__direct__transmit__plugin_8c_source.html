@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Zero Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32zg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32zg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -122,10 +120,10 @@ $(document).ready(function(){initNavTree('ezradio__direct__transmit__plugin_8c_s
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ezradio__plugin__manager_8h.html">ezradio_plugin_manager.h</a>&quot;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ezradio__transmit__plugin_8h.html">ezradio_transmit_plugin.h</a>&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if ( defined EZRADIO_PLUGIN_DIRECT_TRANSMIT )</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if defined( EZRADIO_PLUGIN_DIRECT_TRANSMIT )</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group__Direct__Transmit__Plugin.html#gab765dcab5e4aab236830b5f2cd764f17">   56</a></span>&#160;<a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__Direct__Transmit__Plugin.html#gab765dcab5e4aab236830b5f2cd764f17">ezradioStartDirectTransmit</a>(<a class="code" href="structEZRADIODRV__HandleData.html">EZRADIODRV_Handle_t</a> radioHandle )</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group__Direct__Transmit__Plugin.html#gab765dcab5e4aab236830b5f2cd764f17">   56</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__Direct__Transmit__Plugin.html#gab765dcab5e4aab236830b5f2cd764f17">ezradioStartDirectTransmit</a>(<a class="code" href="structEZRADIODRV__HandleData.html">EZRADIODRV_Handle_t</a> radioHandle )</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  ezradio_cmd_reply_t ezradioReply;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
@@ -151,16 +149,16 @@ $(document).ready(function(){initNavTree('ezradio__direct__transmit__plugin_8c_s
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group__Direct__Transmit__Plugin.html#gaaeb98ca48e265d89240b188fb685f02c">   88</a></span>&#160;<a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__Direct__Transmit__Plugin.html#gaaeb98ca48e265d89240b188fb685f02c">ezradioStopDirectTransmit</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group__Direct__Transmit__Plugin.html#gaaeb98ca48e265d89240b188fb685f02c">   88</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__Direct__Transmit__Plugin.html#gaaeb98ca48e265d89240b188fb685f02c">ezradioStopDirectTransmit</a>( <span class="keywordtype">void</span> )</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="group__API__Layer.html#ga235ff2f0e61232797b5d3930b9319c5f">ezradio_change_state</a>(EZRADIO_CMD_CHANGE_STATE_ARG_NEXT_STATE1_NEW_STATE_ENUM_READY);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__Plugin__Manager.html#ga759250e9a6643d32417a6e8a55a55ffa">ECODE_EMDRV_EZRADIODRV_OK</a>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif //#if ( defined EZRADIO_PLUGIN_DIRECT_TRANSMIT )</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif //#if defined( EZRADIO_PLUGIN_DIRECT_TRANSMIT )</span></div>
 <div class="ttc" id="group__Transmit__Plugin_html_ga0285b16b19fce9947c56e6a585728858"><div class="ttname"><a href="group__Transmit__Plugin.html#ga0285b16b19fce9947c56e6a585728858">ECODE_EMDRV_EZRADIODRV_TRANSMIT_FAILED</a></div><div class="ttdeci">#define ECODE_EMDRV_EZRADIODRV_TRANSMIT_FAILED</div><div class="ttdoc">Unable to start transmission. </div><div class="ttdef"><b>Definition:</b> <a href="ezradio__transmit__plugin_8h_source.html#l00064">ezradio_transmit_plugin.h:64</a></div></div>
-<div class="ttc" id="group__Plugin__Manager_html_ga759250e9a6643d32417a6e8a55a55ffa"><div class="ttname"><a href="group__Plugin__Manager.html#ga759250e9a6643d32417a6e8a55a55ffa">ECODE_EMDRV_EZRADIODRV_OK</a></div><div class="ttdeci">#define ECODE_EMDRV_EZRADIODRV_OK</div><div class="ttdoc">Success return value. </div><div class="ttdef"><b>Definition:</b> <a href="ezradio__plugin__manager_8h_source.html#l00122">ezradio_plugin_manager.h:122</a></div></div>
+<div class="ttc" id="group__Plugin__Manager_html_ga759250e9a6643d32417a6e8a55a55ffa"><div class="ttname"><a href="group__Plugin__Manager.html#ga759250e9a6643d32417a6e8a55a55ffa">ECODE_EMDRV_EZRADIODRV_OK</a></div><div class="ttdeci">#define ECODE_EMDRV_EZRADIODRV_OK</div><div class="ttdoc">Success return value. </div><div class="ttdef"><b>Definition:</b> <a href="ezradio__plugin__manager_8h_source.html#l00124">ezradio_plugin_manager.h:124</a></div></div>
 <div class="ttc" id="group__Direct__Transmit__Plugin_html_gab765dcab5e4aab236830b5f2cd764f17"><div class="ttname"><a href="group__Direct__Transmit__Plugin.html#gab765dcab5e4aab236830b5f2cd764f17">ezradioStartDirectTransmit</a></div><div class="ttdeci">Ecode_t ezradioStartDirectTransmit(EZRADIODRV_Handle_t radioHandle)</div><div class="ttdoc">Starts direct transmission with the radio configurations from the radioHandle parameter. </div><div class="ttdef"><b>Definition:</b> <a href="ezradio__direct__transmit__plugin_8c_source.html#l00056">ezradio_direct_transmit_plugin.c:56</a></div></div>
 <div class="ttc" id="group__API__Layer_html_ga235ff2f0e61232797b5d3930b9319c5f"><div class="ttname"><a href="group__API__Layer.html#ga235ff2f0e61232797b5d3930b9319c5f">ezradio_change_state</a></div><div class="ttdeci">void ezradio_change_state(uint8_t next_state1)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__api__lib_8c_source.html#l00302">ezradio_api_lib.c:302</a></div></div>
 <div class="ttc" id="ezradio__api__lib_8h_html"><div class="ttname"><a href="ezradio__api__lib_8h.html">ezradio_api_lib.h</a></div><div class="ttdoc">This file contains the common API library of the EZRadio and EZRadioPRO families. ...</div></div>
@@ -169,12 +167,12 @@ $(document).ready(function(){initNavTree('ezradio__direct__transmit__plugin_8c_s
 <div class="ttc" id="ezradio__plugin__manager_8h_html"><div class="ttname"><a href="ezradio__plugin__manager_8h.html">ezradio_plugin_manager.h</a></div><div class="ttdoc">This file contains the plug-in manager for the EZRadio and EZRadioPRO chip families. </div></div>
 <div class="ttc" id="em__device_8h_html"><div class="ttname"><a href="em__device_8h.html">em_device.h</a></div><div class="ttdoc">CMSIS Cortex-M Peripheral Access Layer for Silicon Laboratories microcontroller devices. </div></div>
 <div class="ttc" id="ezradio__transmit__plugin_8h_html"><div class="ttname"><a href="ezradio__transmit__plugin_8h.html">ezradio_transmit_plugin.h</a></div><div class="ttdoc">EzRadio transmit plug-in managed by the plug-in manager if enabled. </div></div>
-<div class="ttc" id="structEZRADIODRV__HandleData_html"><div class="ttname"><a href="structEZRADIODRV__HandleData.html">EZRADIODRV_HandleData</a></div><div class="ttdef"><b>Definition:</b> <a href="ezradio__plugin__manager_8h_source.html#l00306">ezradio_plugin_manager.h:306</a></div></div>
+<div class="ttc" id="structEZRADIODRV__HandleData_html"><div class="ttname"><a href="structEZRADIODRV__HandleData.html">EZRADIODRV_HandleData</a></div><div class="ttdef"><b>Definition:</b> <a href="ezradio__plugin__manager_8h_source.html#l00308">ezradio_plugin_manager.h:308</a></div></div>
+<div class="ttc" id="group__emdrv_html_ga7bf5621660c5ba69ac4dd3044173d35c"><div class="ttname"><a href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a></div><div class="ttdeci">uint32_t Ecode_t</div><div class="ttdoc">Typedef for API function errorcode return values. </div><div class="ttdef"><b>Definition:</b> <a href="ecode_8h_source.html#l00051">ecode.h:51</a></div></div>
 <div class="ttc" id="group__Direct__Transmit__Plugin_html_gaaeb98ca48e265d89240b188fb685f02c"><div class="ttname"><a href="group__Direct__Transmit__Plugin.html#gaaeb98ca48e265d89240b188fb685f02c">ezradioStopDirectTransmit</a></div><div class="ttdeci">Ecode_t ezradioStopDirectTransmit(void)</div><div class="ttdoc">Stops direct transmission. </div><div class="ttdef"><b>Definition:</b> <a href="ezradio__direct__transmit__plugin_8c_source.html#l00088">ezradio_direct_transmit_plugin.c:88</a></div></div>
-<div class="ttc" id="structEZRADIODRV__HandleData_html_a83ef2f44ed706ee64db88e687a549fa2"><div class="ttname"><a href="structEZRADIODRV__HandleData.html#a83ef2f44ed706ee64db88e687a549fa2">EZRADIODRV_HandleData::directTx</a></div><div class="ttdeci">EZRADIODRV_DirectTxHandle_t directTx</div><div class="ttdoc">Direct transmission plug-in handler. </div><div class="ttdef"><b>Definition:</b> <a href="ezradio__plugin__manager_8h_source.html#l00334">ezradio_plugin_manager.h:334</a></div></div>
-<div class="ttc" id="group__Plugin__Manager_html_gad78c95fe2dec2f1bd1660544625ec77c"><div class="ttname"><a href="group__Plugin__Manager.html#gad78c95fe2dec2f1bd1660544625ec77c">ECODE_EMDRV_EZRADIODRV_ILLEGAL_HANDLE</a></div><div class="ttdeci">#define ECODE_EMDRV_EZRADIODRV_ILLEGAL_HANDLE</div><div class="ttdoc">Illegal SPI handle. </div><div class="ttdef"><b>Definition:</b> <a href="ezradio__plugin__manager_8h_source.html#l00123">ezradio_plugin_manager.h:123</a></div></div>
+<div class="ttc" id="structEZRADIODRV__HandleData_html_a83ef2f44ed706ee64db88e687a549fa2"><div class="ttname"><a href="structEZRADIODRV__HandleData.html#a83ef2f44ed706ee64db88e687a549fa2">EZRADIODRV_HandleData::directTx</a></div><div class="ttdeci">EZRADIODRV_DirectTxHandle_t directTx</div><div class="ttdoc">Direct transmission plug-in handler. </div><div class="ttdef"><b>Definition:</b> <a href="ezradio__plugin__manager_8h_source.html#l00336">ezradio_plugin_manager.h:336</a></div></div>
+<div class="ttc" id="group__Plugin__Manager_html_gad78c95fe2dec2f1bd1660544625ec77c"><div class="ttname"><a href="group__Plugin__Manager.html#gad78c95fe2dec2f1bd1660544625ec77c">ECODE_EMDRV_EZRADIODRV_ILLEGAL_HANDLE</a></div><div class="ttdeci">#define ECODE_EMDRV_EZRADIODRV_ILLEGAL_HANDLE</div><div class="ttdoc">Illegal SPI handle. </div><div class="ttdef"><b>Definition:</b> <a href="ezradio__plugin__manager_8h_source.html#l00125">ezradio_plugin_manager.h:125</a></div></div>
 <div class="ttc" id="structEZRADIODRV__DirectTxHandle_html_a844b920adf0b496eb03793d4539e3e38"><div class="ttname"><a href="structEZRADIODRV__DirectTxHandle.html#a844b920adf0b496eb03793d4539e3e38">EZRADIODRV_DirectTxHandle::channel</a></div><div class="ttdeci">uint8_t channel</div><div class="ttdoc">Direct transmit channel. </div><div class="ttdef"><b>Definition:</b> <a href="ezradio__direct__transmit__plugin_8h_source.html#l00068">ezradio_direct_transmit_plugin.h:68</a></div></div>
-<div class="ttc" id="group__EM__Drivers_html_ga7bf5621660c5ba69ac4dd3044173d35c"><div class="ttname"><a href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a></div><div class="ttdeci">uint32_t Ecode_t</div><div class="ttdoc">Typedef for API function errorcode return values. </div><div class="ttdef"><b>Definition:</b> <a href="ecode_8h_source.html#l00031">ecode.h:31</a></div></div>
 <div class="ttc" id="group__API__Layer_html_ga9f990f8ebde64b6ef0c051f397430c53"><div class="ttname"><a href="group__API__Layer.html#ga9f990f8ebde64b6ef0c051f397430c53">ezradio_request_device_state</a></div><div class="ttdeci">void ezradio_request_device_state(ezradio_cmd_reply_t *ezradioReply)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__api__lib_8c_source.html#l00558">ezradio_api_lib.c:558</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -182,7 +180,7 @@ $(document).ready(function(){initNavTree('ezradio__direct__transmit__plugin_8c_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_74d66e5e415af18c005205f87c017a4f.html">ezradiodrv</a></li><li class="navelem"><a class="el" href="dir_dc62e25ae1d0f0e9ad0dda32108a1961.html">plugins</a></li><li class="navelem"><a class="el" href="dir_dfd715aee663c4352abfe5ede2183c0d.html">src</a></li><li class="navelem"><a class="el" href="ezradio__direct__transmit__plugin_8c.html">ezradio_direct_transmit_plugin.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:38:40 for EFM32 Zero Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:33:43 for EFM32 Zero Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

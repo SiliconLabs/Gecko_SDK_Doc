@@ -62,8 +62,8 @@ var searchData=
   ['efm32jg1b_5fusart_5fbitfields',['EFM32JG1B_USART_BitFields',['../group__EFM32JG1B__USART__BitFields.html',1,'']]],
   ['efm32jg1b_5fwdog',['EFM32JG1B_WDOG',['../group__EFM32JG1B__WDOG.html',1,'']]],
   ['efm32jg1b_5fwdog_5fbitfields',['EFM32JG1B_WDOG_BitFields',['../group__EFM32JG1B__WDOG__BitFields.html',1,'']]],
-  ['em_5fdrivers',['EM_Drivers',['../group__EM__Drivers.html',1,'']]],
-  ['em_5flibrary',['EM_Library',['../group__EM__Library.html',1,'']]],
+  ['emdrv',['EMDRV',['../group__emdrv.html',1,'']]],
+  ['emlib',['EMLIB',['../group__emlib.html',1,'']]],
   ['emu',['EMU',['../group__EMU.html',1,'']]],
   ['ezradiodrv',['EZRADIODRV',['../group__EZRADIODRV.html',1,'']]]
 ];

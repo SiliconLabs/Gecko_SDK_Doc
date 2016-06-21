@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32tg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -69,13 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -111,43 +103,24 @@ $(document).ready(function(){initNavTree('structDMA__Init__TypeDef.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">DMA_Init_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a> &raquo; <a class="el" href="group__DMA.html">DMA</a></div></div>  </div>
+<div class="title">DMA_Init_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a> &raquo; <a class="el" href="group__DMA.html">DMA</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="em__dma_8h_source.html">em_dma.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a5f223fedb2ef5d2a8e7b219631520c4d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__Init__TypeDef.html#a5f223fedb2ef5d2a8e7b219631520c4d">hprot</a></td></tr>
-<tr class="separator:a5f223fedb2ef5d2a8e7b219631520c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4145fb76dfb19fa13bd7873bc35f5ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDMA__DESCRIPTOR__TypeDef.html">DMA_DESCRIPTOR_TypeDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__Init__TypeDef.html#af4145fb76dfb19fa13bd7873bc35f5ce">controlBlock</a></td></tr>
-<tr class="separator:af4145fb76dfb19fa13bd7873bc35f5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DMA init structure </p>
 
 <p>Definition at line <a class="el" href="em__dma_8h_source.html#l00325">325</a> of file <a class="el" href="em__dma_8h_source.html">em_dma.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a5f223fedb2ef5d2a8e7b219631520c4d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t DMA_Init_TypeDef::hprot</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>HPROT signal state when accessing the primary/alternate descriptors. Normally set to 0 if protection is not an issue. The following bits are available: </p><ul>
-<li>bit 0 - HPROT[1] control for descriptor accesses (ie when the DMA controller accesses the channel control block itself), privileged/non-privileged access </li>
-</ul>
-
-<p>Definition at line <a class="el" href="em__dma_8h_source.html#l00335">335</a> of file <a class="el" href="em__dma_8h_source.html">em_dma.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__dma_8c_source.html#l01033">DMA_Init()</a>.</p>
-
 </div>
-</div>
+<p><code>#include &lt;<a class="el" href="em__dma_8h_source.html">em_dma.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:af4145fb76dfb19fa13bd7873bc35f5ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDMA__DESCRIPTOR__TypeDef.html">DMA_DESCRIPTOR_TypeDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__Init__TypeDef.html#af4145fb76dfb19fa13bd7873bc35f5ce">controlBlock</a></td></tr>
+<tr class="separator:af4145fb76dfb19fa13bd7873bc35f5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f223fedb2ef5d2a8e7b219631520c4d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__Init__TypeDef.html#a5f223fedb2ef5d2a8e7b219631520c4d">hprot</a></td></tr>
+<tr class="separator:a5f223fedb2ef5d2a8e7b219631520c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="af4145fb76dfb19fa13bd7873bc35f5ce"></a>
 <div class="memitem">
 <div class="memproto">
@@ -163,7 +136,26 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__dma_8h_source.html#l00352">352</a> of file <a class="el" href="em__dma_8h_source.html">em_dma.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__dma_8c_source.html#l01033">DMA_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__DMA.html#ga1b244c27cc74059907a25a806eac9b90">DMA_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f223fedb2ef5d2a8e7b219631520c4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t DMA_Init_TypeDef::hprot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>HPROT signal state when accessing the primary/alternate descriptors. Normally set to 0 if protection is not an issue. The following bits are available: </p><ul>
+<li>bit 0 - HPROT[1] control for descriptor accesses (ie when the DMA controller accesses the channel control block itself), privileged/non-privileged access </li>
+</ul>
+
+<p>Definition at line <a class="el" href="em__dma_8h_source.html#l00335">335</a> of file <a class="el" href="em__dma_8h_source.html">em_dma.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__DMA.html#ga1b244c27cc74059907a25a806eac9b90">DMA_Init()</a>.</p>
 
 </div>
 </div>
@@ -176,7 +168,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structDMA__Init__TypeDef.html">DMA_Init_TypeDef</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:10 for EFM32 Tiny Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:24:42 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

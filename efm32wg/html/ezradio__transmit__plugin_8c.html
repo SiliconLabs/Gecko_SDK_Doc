@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,41 +111,9 @@ $(document).ready(function(){initNavTree('ezradio__transmit__plugin_8c.html','')
 <div class="title">ezradio_transmit_plugin.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>EzRadio transmit plug-in managed by the plug-in manager if enabled.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
-<code>#include &lt;stdbool.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
-<code>#include &quot;ezradio_cmd.h&quot;</code><br />
-<code>#include &quot;ezradio_prop.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="ezradio__api__lib_8h_source.html">ezradio_api_lib.h</a>&quot;</code><br />
-<code>#include &quot;ezradio_api_lib_add.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="ezradio__plugin__manager_8h_source.html">ezradio_plugin_manager.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ezradio__transmit__plugin_8h_source.html">ezradio_transmit_plugin.h</a>&quot;</code><br />
-</div>
-<p><a href="ezradio__transmit__plugin_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:gaf702a16bfb588bfed9cbc7c639ba650f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Transmit__Plugin.html#gaf702a16bfb588bfed9cbc7c639ba650f">ezradioStartTransmitBasic</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> radioHandle, uint16_t packetLength, uint8_t *pioRadioPacket)</td></tr>
-<tr class="memdesc:gaf702a16bfb588bfed9cbc7c639ba650f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start basic transmission. Radio transmits with data only in the first field in this case.  <a href="group__Transmit__Plugin.html#gaf702a16bfb588bfed9cbc7c639ba650f">More...</a><br /></td></tr>
-<tr class="separator:gaf702a16bfb588bfed9cbc7c639ba650f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga62e3d76389ad50afc7f77002f8750cb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Transmit__Plugin.html#ga62e3d76389ad50afc7f77002f8750cb8">ezradioStartTransmitConfigured</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> radioHandle, uint8_t *pioRadioPacket)</td></tr>
-<tr class="memdesc:ga62e3d76389ad50afc7f77002f8750cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start transmission using the packet parameters from the generated configuration header file.  <a href="group__Transmit__Plugin.html#ga62e3d76389ad50afc7f77002f8750cb8">More...</a><br /></td></tr>
-<tr class="separator:ga62e3d76389ad50afc7f77002f8750cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga348cad1485fa0c671d91af6751488ec1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Transmit__Plugin.html#ga348cad1485fa0c671d91af6751488ec1">ezradioStartTransmitCustom</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> radioHandle, <a class="el" href="group__Transmit__Plugin.html#gacbf4267054557b70fa253e1033a80fa1">EZRADIODRV_PacketLengthConfig_t</a> pktLengthConf, uint8_t *pioRadioPacket)</td></tr>
-<tr class="memdesc:ga348cad1485fa0c671d91af6751488ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start transmission using the packet parameters from pktLengthConf.  <a href="group__Transmit__Plugin.html#ga348cad1485fa0c671d91af6751488ec1">More...</a><br /></td></tr>
-<tr class="separator:ga348cad1485fa0c671d91af6751488ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0c60b70ac28ad2c13779b041b923153"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Transmit__Plugin.html#gaf0c60b70ac28ad2c13779b041b923153">ezradioStartTransmitSmart</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> radioHandle, <a class="el" href="group__Transmit__Plugin.html#gacbf4267054557b70fa253e1033a80fa1">EZRADIODRV_PacketLengthConfig_t</a> pktLengthConf, uint8_t *pioRadioPacket)</td></tr>
-<tr class="memdesc:gaf0c60b70ac28ad2c13779b041b923153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a smart transmission. Depending on the information in the pktLengthConf parameter the function decides which transmission function has to be called.  <a href="group__Transmit__Plugin.html#gaf0c60b70ac28ad2c13779b041b923153">More...</a><br /></td></tr>
-<tr class="separator:gaf0c60b70ac28ad2c13779b041b923153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gade85938593abc8d7c6246eeaa9536a61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Transmit__Plugin.html#gade85938593abc8d7c6246eeaa9536a61">ezradioStartTransmitDefault</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> radioHandle, uint8_t *pioRadioPacket)</td></tr>
-<tr class="memdesc:gade85938593abc8d7c6246eeaa9536a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a default transmission using the packet information previously set to radioHandle. Depending on the information in the radioHandle parameter the function decides which transmission function has to be called.  <a href="group__Transmit__Plugin.html#gade85938593abc8d7c6246eeaa9536a61">More...</a><br /></td></tr>
-<tr class="separator:gade85938593abc8d7c6246eeaa9536a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
+<div class="textblock"><p>EzRadio transmit plug-in managed by the plug-in manager if enabled. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -163,13 +129,43 @@ License</h1>
 <p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
 <p>Definition in file <a class="el" href="ezradio__transmit__plugin_8c_source.html">ezradio_transmit_plugin.c</a>.</p>
-</div></div><!-- contents -->
+</div><div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<code>#include &quot;ezradio_cmd.h&quot;</code><br />
+<code>#include &quot;ezradio_prop.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="ezradio__api__lib_8h_source.html">ezradio_api_lib.h</a>&quot;</code><br />
+<code>#include &quot;ezradio_api_lib_add.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="ezradio__plugin__manager_8h_source.html">ezradio_plugin_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ezradio__transmit__plugin_8h_source.html">ezradio_transmit_plugin.h</a>&quot;</code><br />
+</div>
+<p><a href="ezradio__transmit__plugin_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gaf702a16bfb588bfed9cbc7c639ba650f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Transmit__Plugin.html#gaf702a16bfb588bfed9cbc7c639ba650f">ezradioStartTransmitBasic</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> radioHandle, uint16_t packetLength, uint8_t *pioRadioPacket)</td></tr>
+<tr class="memdesc:gaf702a16bfb588bfed9cbc7c639ba650f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start basic transmission. Radio transmits with data only in the first field in this case.  <a href="group__Transmit__Plugin.html#gaf702a16bfb588bfed9cbc7c639ba650f">More...</a><br /></td></tr>
+<tr class="separator:gaf702a16bfb588bfed9cbc7c639ba650f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62e3d76389ad50afc7f77002f8750cb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Transmit__Plugin.html#ga62e3d76389ad50afc7f77002f8750cb8">ezradioStartTransmitConfigured</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> radioHandle, uint8_t *pioRadioPacket)</td></tr>
+<tr class="memdesc:ga62e3d76389ad50afc7f77002f8750cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start transmission using the packet parameters from the generated configuration header file.  <a href="group__Transmit__Plugin.html#ga62e3d76389ad50afc7f77002f8750cb8">More...</a><br /></td></tr>
+<tr class="separator:ga62e3d76389ad50afc7f77002f8750cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga348cad1485fa0c671d91af6751488ec1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Transmit__Plugin.html#ga348cad1485fa0c671d91af6751488ec1">ezradioStartTransmitCustom</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> radioHandle, <a class="el" href="group__Transmit__Plugin.html#gacbf4267054557b70fa253e1033a80fa1">EZRADIODRV_PacketLengthConfig_t</a> pktLengthConf, uint8_t *pioRadioPacket)</td></tr>
+<tr class="memdesc:ga348cad1485fa0c671d91af6751488ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start transmission using the packet parameters from pktLengthConf.  <a href="group__Transmit__Plugin.html#ga348cad1485fa0c671d91af6751488ec1">More...</a><br /></td></tr>
+<tr class="separator:ga348cad1485fa0c671d91af6751488ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade85938593abc8d7c6246eeaa9536a61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Transmit__Plugin.html#gade85938593abc8d7c6246eeaa9536a61">ezradioStartTransmitDefault</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> radioHandle, uint8_t *pioRadioPacket)</td></tr>
+<tr class="memdesc:gade85938593abc8d7c6246eeaa9536a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a default transmission using the packet information previously set to radioHandle. Depending on the information in the radioHandle parameter the function decides which transmission function has to be called.  <a href="group__Transmit__Plugin.html#gade85938593abc8d7c6246eeaa9536a61">More...</a><br /></td></tr>
+<tr class="separator:gade85938593abc8d7c6246eeaa9536a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0c60b70ac28ad2c13779b041b923153"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Transmit__Plugin.html#gaf0c60b70ac28ad2c13779b041b923153">ezradioStartTransmitSmart</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> radioHandle, <a class="el" href="group__Transmit__Plugin.html#gacbf4267054557b70fa253e1033a80fa1">EZRADIODRV_PacketLengthConfig_t</a> pktLengthConf, uint8_t *pioRadioPacket)</td></tr>
+<tr class="memdesc:gaf0c60b70ac28ad2c13779b041b923153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a smart transmission. Depending on the information in the pktLengthConf parameter the function decides which transmission function has to be called.  <a href="group__Transmit__Plugin.html#gaf0c60b70ac28ad2c13779b041b923153">More...</a><br /></td></tr>
+<tr class="separator:gaf0c60b70ac28ad2c13779b041b923153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_74d66e5e415af18c005205f87c017a4f.html">ezradiodrv</a></li><li class="navelem"><a class="el" href="dir_dc62e25ae1d0f0e9ad0dda32108a1961.html">plugins</a></li><li class="navelem"><a class="el" href="dir_dfd715aee663c4352abfe5ede2183c0d.html">src</a></li><li class="navelem"><a class="el" href="ezradio__transmit__plugin_8c.html">ezradio_transmit_plugin.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:38:14 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:32:01 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

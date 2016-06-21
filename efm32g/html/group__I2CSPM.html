@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32g-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -106,9 +105,10 @@ $(document).ready(function(){initNavTree('group__I2CSPM.html','');});
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">I2CSPM<div class="ingroups"><a class="el" href="group__Drivers.html">Drivers</a></div></div>  </div>
+<div class="title">I2CSPM<div class="ingroups"><a class="el" href="group__kitdrv.html">Kit Drivers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -129,7 +129,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga076766b20012fb6a0cdaaf0f2c760795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform I2C transfer.  <a href="#ga076766b20012fb6a0cdaaf0f2c760795">More...</a><br /></td></tr>
 <tr class="separator:ga076766b20012fb6a0cdaaf0f2c760795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gaa124f938b83ea3508c6fd3bee8c597a0"></a>
 <div class="memitem">
@@ -150,10 +149,10 @@ Functions</h2></td></tr>
 <div class="line">    I2C_FREQ_STANDARD_MAX,      <span class="comment">/* Set to standard rate  */</span>                     \</div>
 <div class="line">    i2cClockHLRStandard,        <span class="comment">/* Set to use 4:4 low/high duty cycle */</span>        \</div>
 <div class="line">  }</div>
-<div class="ttc" id="group__EFM32G890F128__Peripheral__Declaration_html_ga86abb2e8858d177c04e60c41e9242045"><div class="ttname"><a href="group__EFM32G890F128__Peripheral__Declaration.html#ga86abb2e8858d177c04e60c41e9242045">I2C0</a></div><div class="ttdeci">#define I2C0</div><div class="ttdef"><b>Definition:</b> <a href="efm32g890f128_8h_source.html#l00356">efm32g890f128.h:356</a></div></div>
+<div class="ttc" id="group__EFM32G890F128__Peripheral__Declaration_html_ga86abb2e8858d177c04e60c41e9242045"><div class="ttname"><a href="group__EFM32G890F128__Peripheral__Declaration.html#ga86abb2e8858d177c04e60c41e9242045">I2C0</a></div><div class="ttdeci">#define I2C0</div><div class="ttdef"><b>Definition:</b> <a href="efm32g890f128_8h_source.html#l00357">efm32g890f128.h:357</a></div></div>
 </div><!-- fragment --><p>Default config for I2C init structure. The default may be overridden by a i2cspmconfig.h file. </p>
 
-<p>Definition at line <a class="el" href="i2cspm_8h_source.html#l00068">68</a> of file <a class="el" href="i2cspm_8h_source.html">i2cspm.h</a>.</p>
+<p>Definition at line <a class="el" href="i2cspm_8h_source.html#l00073">73</a> of file <a class="el" href="i2cspm_8h_source.html">i2cspm.h</a>.</p>
 
 </div>
 </div>
@@ -171,6 +170,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initalize I2C peripheral. </p>
 <p>This driver supports master mode only, single bus-master. In addition to configuring the I2C peripheral module, it also configures DK/STK specific setup in order to use the I2C bus.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -181,7 +182,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="i2cspm_8c_source.html#l00039">39</a> of file <a class="el" href="i2cspm_8c_source.html">i2cspm.c</a>.</p>
 
-<p>References <a class="el" href="efm32g__i2c_8h_source.html#l00684">_I2C_ROUTE_LOCATION_SHIFT</a>, <a class="el" href="em__i2c_8h_source.html#l00218">I2C_Init_TypeDef::clhr</a>, <a class="el" href="em__cmu_8c_source.html#l01369">CMU_ClockEnable()</a>, <a class="el" href="em__cmu_8h_source.html#l00382">cmuClock_HFPER</a>, <a class="el" href="em__cmu_8h_source.html#l00599">cmuClock_I2C0</a>, <a class="el" href="em__i2c_8h_source.html#l00199">I2C_Init_TypeDef::enable</a>, <a class="el" href="em__i2c_8h_source.html#l00215">I2C_Init_TypeDef::freq</a>, <a class="el" href="em__gpio_8c_source.html#l00226">GPIO_PinModeSet()</a>, <a class="el" href="em__gpio_8h_source.html#l00698">GPIO_PinOutClear()</a>, <a class="el" href="em__gpio_8h_source.html#l00745">GPIO_PinOutSet()</a>, <a class="el" href="em__gpio_8h_source.html#l00327">gpioModeWiredAndPullUp</a>, <a class="el" href="efm32g890f128_8h_source.html#l00356">I2C0</a>, <a class="el" href="em__i2c_8c_source.html#l00349">I2C_Init()</a>, <a class="el" href="efm32g__i2c_8h_source.html#l00679">I2C_ROUTE_SCLPEN</a>, <a class="el" href="efm32g__i2c_8h_source.html#l00674">I2C_ROUTE_SDAPEN</a>, <a class="el" href="i2cspm_8h_source.html#l00061">I2CSPM_Init_TypeDef::i2cClhr</a>, <a class="el" href="i2cspm_8h_source.html#l00060">I2CSPM_Init_TypeDef::i2cMaxFreq</a>, <a class="el" href="i2cspm_8h_source.html#l00059">I2CSPM_Init_TypeDef::i2cRefFreq</a>, <a class="el" href="em__i2c_8h_source.html#l00202">I2C_Init_TypeDef::master</a>, <a class="el" href="i2cspm_8h_source.html#l00048">I2CSPM_Init_TypeDef::port</a>, <a class="el" href="i2cspm_8h_source.html#l00057">I2CSPM_Init_TypeDef::portLocation</a>, <a class="el" href="em__i2c_8h_source.html#l00209">I2C_Init_TypeDef::refFreq</a>, <a class="el" href="efm32g__i2c_8h_source.html#l00057">I2C_TypeDef::ROUTE</a>, <a class="el" href="i2cspm_8h_source.html#l00050">I2CSPM_Init_TypeDef::sclPin</a>, <a class="el" href="i2cspm_8h_source.html#l00049">I2CSPM_Init_TypeDef::sclPort</a>, <a class="el" href="i2cspm_8h_source.html#l00052">I2CSPM_Init_TypeDef::sdaPin</a>, and <a class="el" href="i2cspm_8h_source.html#l00051">I2CSPM_Init_TypeDef::sdaPort</a>.</p>
+<p>References <a class="el" href="group__EFM32G__I2C__BitFields.html#ga9e174989841fb6bcd04420636997b530">_I2C_ROUTE_LOCATION_SHIFT</a>, <a class="el" href="structI2C__Init__TypeDef.html#acc90993308843c20b377bbee7d636123">I2C_Init_TypeDef::clhr</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea799359c868e99ec2472747e7bc6608fa">cmuClock_I2C0</a>, <a class="el" href="structI2C__Init__TypeDef.html#a1fd77eeee85d3038268a8a7e16314df9">I2C_Init_TypeDef::enable</a>, <a class="el" href="structI2C__Init__TypeDef.html#a21000158b359b35d2dd6e732cd774b20">I2C_Init_TypeDef::freq</a>, <a class="el" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet()</a>, <a class="el" href="group__GPIO.html#ga607f3a5f3d881bb145101566f1664aba">GPIO_PinOutClear()</a>, <a class="el" href="group__GPIO.html#gab08f054efbb07aaff57d616974c9c536">GPIO_PinOutSet()</a>, <a class="el" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaaf5bf718ee1eadfa39c396e204023eda1">gpioModeWiredAndPullUp</a>, <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga86abb2e8858d177c04e60c41e9242045">I2C0</a>, <a class="el" href="group__I2C.html#gab52e0fc0d3690e40f80a193d5b6fdd51">I2C_Init()</a>, <a class="el" href="group__EFM32G__I2C__BitFields.html#ga462a67be392b016cd3b63fe2b57e5390">I2C_ROUTE_SCLPEN</a>, <a class="el" href="group__EFM32G__I2C__BitFields.html#gab8b17a1c10d8fca6f4812b57571ff954">I2C_ROUTE_SDAPEN</a>, <a class="el" href="structI2CSPM__Init__TypeDef.html#a4b3d8ca4fbb6322122e624c559b1725f">I2CSPM_Init_TypeDef::i2cClhr</a>, <a class="el" href="structI2CSPM__Init__TypeDef.html#adc55c677f2c1bb031b0ce39cf68737d6">I2CSPM_Init_TypeDef::i2cMaxFreq</a>, <a class="el" href="structI2CSPM__Init__TypeDef.html#a270a1dde86b24e249e095dd4ec27b0d9">I2CSPM_Init_TypeDef::i2cRefFreq</a>, <a class="el" href="structI2C__Init__TypeDef.html#a14b8b0fe9a200168abb347ce1773a7d4">I2C_Init_TypeDef::master</a>, <a class="el" href="structI2CSPM__Init__TypeDef.html#ac1e8a3c8cc4377e6fc108ed2ff8c0514">I2CSPM_Init_TypeDef::port</a>, <a class="el" href="structI2CSPM__Init__TypeDef.html#a76b23c774d14c0b955e2b5b752250aab">I2CSPM_Init_TypeDef::portLocation</a>, <a class="el" href="structI2C__Init__TypeDef.html#aa95bd4e4c981f7324e964ed375c9ed4a">I2C_Init_TypeDef::refFreq</a>, <a class="el" href="structI2C__TypeDef.html#a02956b307868cf069c78bafa27b0a95b">I2C_TypeDef::ROUTE</a>, <a class="el" href="structI2CSPM__Init__TypeDef.html#acea6f9a470682afe182d2b3121463437">I2CSPM_Init_TypeDef::sclPin</a>, <a class="el" href="structI2CSPM__Init__TypeDef.html#a891d76b97b24ced4f753398b2e246374">I2CSPM_Init_TypeDef::sclPort</a>, <a class="el" href="structI2CSPM__Init__TypeDef.html#ac022eef43800bc49863fb1dac35a6591">I2CSPM_Init_TypeDef::sdaPin</a>, and <a class="el" href="structI2CSPM__Init__TypeDef.html#a21ec00e90cebe7dcc9fde874695f8ae0">I2CSPM_Init_TypeDef::sdaPort</a>.</p>
 
 </div>
 </div>
@@ -208,6 +209,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Perform I2C transfer. </p>
 <p>This driver only supports master mode, single bus-master. It does not return until the transfer is complete, polling for completion.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -219,9 +222,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="i2cspm_8c_source.html#l00124">124</a> of file <a class="el" href="i2cspm_8c_source.html">i2cspm.c</a>.</p>
 
-<p>References <a class="el" href="em__i2c_8c_source.html#l00424">I2C_Transfer()</a>, <a class="el" href="em__i2c_8c_source.html#l00803">I2C_TransferInit()</a>, and <a class="el" href="em__i2c_8h_source.html#l00177">i2cTransferInProgress</a>.</p>
+<p>References <a class="el" href="group__I2C.html#ga67983b3dbe7f028a97f765e421b3df56">I2C_Transfer()</a>, <a class="el" href="group__I2C.html#gae2bf2ecc3d0c4f55e3511d4871b64b16">I2C_TransferInit()</a>, and <a class="el" href="group__I2C.html#gga7c781ec28ae11e3e28892de7aa07a00fa1f1df5a76a71b423083d6a327d38ca1c">i2cTransferInProgress</a>.</p>
 
-<p>Referenced by <a class="el" href="eeprom_8c_source.html#l00063">EEPROM_AckPoll()</a>, <a class="el" href="eeprom_8c_source.html#l00126">EEPROM_Read()</a>, <a class="el" href="eeprom_8c_source.html#l00191">EEPROM_Write()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00170">Si1147_Read_Block_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00042">Si1147_Read_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00124">Si1147_Write_Block_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00082">Si1147_Write_Register()</a>, <a class="el" href="si7013_8c_source.html#l00407">Si7013_Detect()</a>, <a class="el" href="si7013_8c_source.html#l00157">Si7013_GetFirmwareRevision()</a>, <a class="el" href="tempsens_8c_source.html#l00074">TEMPSENS_RegisterGet()</a>, and <a class="el" href="tempsens_8c_source.html#l00136">TEMPSENS_RegisterSet()</a>.</p>
+<p>Referenced by <a class="el" href="eeprom_8c.html#aef96dc2e7cad63b532565057c7f0467c">EEPROM_AckPoll()</a>, <a class="el" href="group__Eeprom.html#gafffd2286594ec8e01dc16f8725626c04">EEPROM_Read()</a>, <a class="el" href="group__Eeprom.html#ga1b92635b3e255f10731494e833654895">EEPROM_Write()</a>, <a class="el" href="group__Si114x.html#ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7">Si1147_Read_Block_Register()</a>, <a class="el" href="group__Si114x.html#ga8066eedd4bbac304e733a89e09cd6786">Si1147_Read_Register()</a>, <a class="el" href="group__Si114x.html#gaec6f34819894c8d7b2f86fb574da203e">Si1147_Write_Block_Register()</a>, <a class="el" href="group__Si114x.html#gad2464ccbbf4938c5550702011d6dd5a4">Si1147_Write_Register()</a>, <a class="el" href="group__Si7013.html#ga93b1a4e0a94737abd16ec547004c270f">Si7013_Detect()</a>, <a class="el" href="group__Si7013.html#gac595b86107a208280179a6f07c08bfa3">Si7013_GetFirmwareRevision()</a>, <a class="el" href="group__TempSensor.html#gae77973607cb0dc33faaed18274885717">TEMPSENS_RegisterGet()</a>, and <a class="el" href="group__TempSensor.html#gafeb45237c0a6989bc2e3bdbc564d90bd">TEMPSENS_RegisterSet()</a>.</p>
 
 </div>
 </div>
@@ -230,7 +233,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:35:40 for EFM32 Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:22:32 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

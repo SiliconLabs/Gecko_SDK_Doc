@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -108,12 +106,12 @@ $(document).ready(function(){initNavTree('group__IDAC.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">IDAC<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">IDAC<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Current Digital to Analog Conversion (IDAC) Peripheral API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Current Digital to Analog Conversion (IDAC) Peripheral API. </p>
+<p>This module contains functions to control the IDAC peripheral of Silicon Labs 32-bit MCUs and SoCs. The IDAC can sink or source a configurable constant current, to bias internal circuits, or together with the <a class="el" href="group__ADC.html">ADC</a> measure capacitance by injecting a controlled current into a component. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -235,27 +233,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad7063a3bf61e7e317fd131637e9323db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#gad7063a3bf61e7e317fd131637e9323db">IDAC_Init</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac, const <a class="el" href="structIDAC__Init__TypeDef.html">IDAC_Init_TypeDef</a> *init)</td></tr>
-<tr class="memdesc:gad7063a3bf61e7e317fd131637e9323db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize IDAC.  <a href="#gad7063a3bf61e7e317fd131637e9323db">More...</a><br /></td></tr>
-<tr class="separator:gad7063a3bf61e7e317fd131637e9323db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaee730488249cae5faac6be865dab9a33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#gaee730488249cae5faac6be865dab9a33">IDAC_Enable</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac, bool enable)</td></tr>
 <tr class="memdesc:gaee730488249cae5faac6be865dab9a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable IDAC.  <a href="#gaee730488249cae5faac6be865dab9a33">More...</a><br /></td></tr>
 <tr class="separator:gaee730488249cae5faac6be865dab9a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9e6f391f96c4d08378bec18e8bd4e4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#gac9e6f391f96c4d08378bec18e8bd4e4e">IDAC_Reset</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac)</td></tr>
-<tr class="memdesc:gac9e6f391f96c4d08378bec18e8bd4e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset IDAC to same state as after a HW reset.  <a href="#gac9e6f391f96c4d08378bec18e8bd4e4e">More...</a><br /></td></tr>
-<tr class="separator:gac9e6f391f96c4d08378bec18e8bd4e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6d5eba9c5497b56265fed7918daf97cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#ga6d5eba9c5497b56265fed7918daf97cd">IDAC_MinimalOutputTransitionMode</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac, bool enable)</td></tr>
-<tr class="memdesc:ga6d5eba9c5497b56265fed7918daf97cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable Minimal Output Transition mode.  <a href="#ga6d5eba9c5497b56265fed7918daf97cd">More...</a><br /></td></tr>
-<tr class="separator:ga6d5eba9c5497b56265fed7918daf97cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd18f64494187e3a438e2db1f1d89dc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#gafd18f64494187e3a438e2db1f1d89dc7">IDAC_RangeSet</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac, const <a class="el" href="group__IDAC.html#ga7ff0d5acba93b8f7b3111bfdf094fcee">IDAC_Range_TypeDef</a> range)</td></tr>
-<tr class="memdesc:gafd18f64494187e3a438e2db1f1d89dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current range of the IDAC output.  <a href="#gafd18f64494187e3a438e2db1f1d89dc7">More...</a><br /></td></tr>
-<tr class="separator:gafd18f64494187e3a438e2db1f1d89dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad246741d61cb9e83bb73650267b9dfc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#gad246741d61cb9e83bb73650267b9dfc6">IDAC_StepSet</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac, const uint32_t step)</td></tr>
-<tr class="memdesc:gad246741d61cb9e83bb73650267b9dfc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current step of the IDAC output.  <a href="#gad246741d61cb9e83bb73650267b9dfc6">More...</a><br /></td></tr>
-<tr class="separator:gad246741d61cb9e83bb73650267b9dfc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadb7157da10f33ecceb87bad6cc753df3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#gadb7157da10f33ecceb87bad6cc753df3">IDAC_OutEnable</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac, bool enable)</td></tr>
-<tr class="memdesc:gadb7157da10f33ecceb87bad6cc753df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable the IDAC OUT pin.  <a href="#gadb7157da10f33ecceb87bad6cc753df3">More...</a><br /></td></tr>
-<tr class="separator:gadb7157da10f33ecceb87bad6cc753df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7063a3bf61e7e317fd131637e9323db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#gad7063a3bf61e7e317fd131637e9323db">IDAC_Init</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac, const <a class="el" href="structIDAC__Init__TypeDef.html">IDAC_Init_TypeDef</a> *init)</td></tr>
+<tr class="memdesc:gad7063a3bf61e7e317fd131637e9323db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize IDAC.  <a href="#gad7063a3bf61e7e317fd131637e9323db">More...</a><br /></td></tr>
+<tr class="separator:gad7063a3bf61e7e317fd131637e9323db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gade49f7b886d33120ab589827e35ba5f1"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#gade49f7b886d33120ab589827e35ba5f1">IDAC_IntClear</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac, uint32_t flags)</td></tr>
 <tr class="memdesc:gade49f7b886d33120ab589827e35ba5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending IDAC interrupts.  <a href="#gade49f7b886d33120ab589827e35ba5f1">More...</a><br /></td></tr>
 <tr class="separator:gade49f7b886d33120ab589827e35ba5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,8 +257,22 @@ Functions</h2></td></tr>
 <tr class="memitem:gaca7d36af26f182df921b413f33a24335"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#gaca7d36af26f182df921b413f33a24335">IDAC_IntSet</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac, uint32_t flags)</td></tr>
 <tr class="memdesc:gaca7d36af26f182df921b413f33a24335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one or more pending IDAC interrupts from SW.  <a href="#gaca7d36af26f182df921b413f33a24335">More...</a><br /></td></tr>
 <tr class="separator:gaca7d36af26f182df921b413f33a24335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d5eba9c5497b56265fed7918daf97cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#ga6d5eba9c5497b56265fed7918daf97cd">IDAC_MinimalOutputTransitionMode</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac, bool enable)</td></tr>
+<tr class="memdesc:ga6d5eba9c5497b56265fed7918daf97cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable Minimal Output Transition mode.  <a href="#ga6d5eba9c5497b56265fed7918daf97cd">More...</a><br /></td></tr>
+<tr class="separator:ga6d5eba9c5497b56265fed7918daf97cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb7157da10f33ecceb87bad6cc753df3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#gadb7157da10f33ecceb87bad6cc753df3">IDAC_OutEnable</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac, bool enable)</td></tr>
+<tr class="memdesc:gadb7157da10f33ecceb87bad6cc753df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable the IDAC OUT pin.  <a href="#gadb7157da10f33ecceb87bad6cc753df3">More...</a><br /></td></tr>
+<tr class="separator:gadb7157da10f33ecceb87bad6cc753df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd18f64494187e3a438e2db1f1d89dc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#gafd18f64494187e3a438e2db1f1d89dc7">IDAC_RangeSet</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac, const <a class="el" href="group__IDAC.html#ga7ff0d5acba93b8f7b3111bfdf094fcee">IDAC_Range_TypeDef</a> range)</td></tr>
+<tr class="memdesc:gafd18f64494187e3a438e2db1f1d89dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current range of the IDAC output.  <a href="#gafd18f64494187e3a438e2db1f1d89dc7">More...</a><br /></td></tr>
+<tr class="separator:gafd18f64494187e3a438e2db1f1d89dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9e6f391f96c4d08378bec18e8bd4e4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#gac9e6f391f96c4d08378bec18e8bd4e4e">IDAC_Reset</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac)</td></tr>
+<tr class="memdesc:gac9e6f391f96c4d08378bec18e8bd4e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset IDAC to same state as after a HW reset.  <a href="#gac9e6f391f96c4d08378bec18e8bd4e4e">More...</a><br /></td></tr>
+<tr class="separator:gac9e6f391f96c4d08378bec18e8bd4e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad246741d61cb9e83bb73650267b9dfc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__IDAC.html#gad246741d61cb9e83bb73650267b9dfc6">IDAC_StepSet</a> (<a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *idac, const uint32_t step)</td></tr>
+<tr class="memdesc:gad246741d61cb9e83bb73650267b9dfc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current step of the IDAC output.  <a href="#gad246741d61cb9e83bb73650267b9dfc6">More...</a><br /></td></tr>
+<tr class="separator:gad246741d61cb9e83bb73650267b9dfc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gad4fdb3535bcbe74279cb50553823cccd"></a>
 <div class="memitem">
@@ -498,45 +495,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gad7063a3bf61e7e317fd131637e9323db"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void IDAC_Init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>idac</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structIDAC__Init__TypeDef.html">IDAC_Init_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>init</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Initializes IDAC according to the initialization structure parameter, and sets the default calibration value stored in the DEVINFO structure.</p>
-<dl class="section note"><dt>Note</dt><dd>This function will disable the IDAC prior to configuration.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>Pointer to IDAC initialization structure. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00077">77</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__idac_8h_source.html#l00043">IDAC_TypeDef::CTRL</a>, <a class="el" href="em__idac_8h_source.html#l00149">IDAC_Init_TypeDef::enable</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00073">IDAC_CTRL_CURSINK</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00068">IDAC_CTRL_EN</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00175">IDAC_CTRL_OUTENPRS</a>, <a class="el" href="em__idac_8h_source.html#l00152">IDAC_Init_TypeDef::outMode</a>, <a class="el" href="em__idac_8h_source.html#l00159">IDAC_Init_TypeDef::prsEnable</a>, <a class="el" href="em__idac_8h_source.html#l00165">IDAC_Init_TypeDef::prsSel</a>, and <a class="el" href="em__idac_8h_source.html#l00168">IDAC_Init_TypeDef::sinkEnable</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="gaee730488249cae5faac6be865dab9a33"></a>
 <div class="memitem">
 <div class="memproto">
@@ -560,6 +518,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable/disable IDAC. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
@@ -568,44 +528,18 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00114">114</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
+<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00119">119</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__idac_8h_source.html#l00069">_IDAC_CTRL_EN_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, and <a class="el" href="efm32jg1b__idac_8h_source.html#l00043">IDAC_TypeDef::CTRL</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gab24f9408d66850b30c94972dee34b9c6">_IDAC_CTRL_EN_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="structIDAC__TypeDef.html#a2ed309a7d3e702a209c80132338b27b7">IDAC_TypeDef::CTRL</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gac9e6f391f96c4d08378bec18e8bd4e4e"></a>
+<a class="anchor" id="gad7063a3bf61e7e317fd131637e9323db"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void IDAC_Reset </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>idac</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00133">133</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__idac_8h_source.html#l00066">_IDAC_CTRL_RESETVALUE</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00210">_IDAC_CURPROG_RESETVALUE</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00224">_IDAC_CURPROG_STEPSEL_SHIFT</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00234">_IDAC_DUTYCONFIG_RESETVALUE</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00043">IDAC_TypeDef::CTRL</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00044">IDAC_TypeDef::CURPROG</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00046">IDAC_TypeDef::DUTYCONFIG</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00068">IDAC_CTRL_EN</a>, and <a class="el" href="efm32jg1b__idac_8h_source.html#l00220">IDAC_CURPROG_RANGESEL_RANGE0</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga6d5eba9c5497b56265fed7918daf97cd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void IDAC_MinimalOutputTransitionMode </td>
+          <td class="memname">void IDAC_Init </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *&#160;</td>
           <td class="paramname"><em>idac</em>, </td>
@@ -613,8 +547,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structIDAC__Init__TypeDef.html">IDAC_Init_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>init</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -623,129 +557,29 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize IDAC. </p>
+<p>Initializes IDAC according to the initialization structure parameter, and sets the default calibration value stored in the DEVINFO structure.</p>
+<dl class="section note"><dt>Note</dt><dd>This function will disable the IDAC prior to configuration.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>true to enable Minimal Output Transition mode, false to disable. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>Pointer to IDAC initialization structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Configure the IDAC according to initialization structure parameters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>Pointer to IDAC initialization structure. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00172">172</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
+<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00078">78</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__idac_8h_source.html#l00079">_IDAC_CTRL_MINOUTTRANS_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, and <a class="el" href="efm32jg1b__idac_8h_source.html#l00043">IDAC_TypeDef::CTRL</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gafd18f64494187e3a438e2db1f1d89dc7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void IDAC_RangeSet </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>idac</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__IDAC.html#ga7ff0d5acba93b8f7b3111bfdf094fcee">IDAC_Range_TypeDef</a>&#160;</td>
-          <td class="paramname"><em>range</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function sets the current range of the IDAC output. The function also updates the IDAC calibration register (IDAC_CAL) with the default calibration value (from DEVINFO, factory setting) corresponding to the specified range.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>Current range value. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00200">200</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00660">_DEVINFO_IDAC0CAL0_SOURCERANGE0TUNING_MASK</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00659">_DEVINFO_IDAC0CAL0_SOURCERANGE0TUNING_SHIFT</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00662">_DEVINFO_IDAC0CAL0_SOURCERANGE1TUNING_MASK</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00661">_DEVINFO_IDAC0CAL0_SOURCERANGE1TUNING_SHIFT</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00664">_DEVINFO_IDAC0CAL0_SOURCERANGE2TUNING_MASK</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00663">_DEVINFO_IDAC0CAL0_SOURCERANGE2TUNING_SHIFT</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00666">_DEVINFO_IDAC0CAL0_SOURCERANGE3TUNING_MASK</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00665">_DEVINFO_IDAC0CAL0_SOURCERANGE3TUNING_SHIFT</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00671">_DEVINFO_IDAC0CAL1_SINKRANGE0TUNING_MASK</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00670">_DEVINFO_IDAC0CAL1_SINKRANGE0TUNING_SHIFT</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00673">_DEVINFO_IDAC0CAL1_SINKRANGE1TUNING_MASK</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00672">_DEVINFO_IDAC0CAL1_SINKRANGE1TUNING_SHIFT</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00675">_DEVINFO_IDAC0CAL1_SINKRANGE2TUNING_MASK</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00674">_DEVINFO_IDAC0CAL1_SINKRANGE2TUNING_SHIFT</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00677">_DEVINFO_IDAC0CAL1_SINKRANGE3TUNING_MASK</a>, <a class="el" href="efm32jg1b__devinfo_8h_source.html#l00676">_DEVINFO_IDAC0CAL1_SINKRANGE3TUNING_SHIFT</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00213">_IDAC_CURPROG_RANGESEL_MASK</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00212">_IDAC_CURPROG_RANGESEL_SHIFT</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00229">_IDAC_CURPROG_TUNING_MASK</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00228">_IDAC_CURPROG_TUNING_SHIFT</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00043">IDAC_TypeDef::CTRL</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00044">IDAC_TypeDef::CURPROG</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00337">DEVINFO</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00334">IDAC0</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00073">IDAC_CTRL_CURSINK</a>, <a class="el" href="em__idac_8h_source.html#l00135">idacCurrentRange0</a>, <a class="el" href="em__idac_8h_source.html#l00136">idacCurrentRange1</a>, <a class="el" href="em__idac_8h_source.html#l00137">idacCurrentRange2</a>, and <a class="el" href="em__idac_8h_source.html#l00138">idacCurrentRange3</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gad246741d61cb9e83bb73650267b9dfc6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void IDAC_StepSet </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>idac</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
-          <td class="paramname"><em>step</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">step</td><td>Step value for IDAC output. Valid range is 0-31. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00333">333</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__idac_8h_source.html#l00225">_IDAC_CURPROG_STEPSEL_MASK</a>, <a class="el" href="efm32jg1b__idac_8h_source.html#l00224">_IDAC_CURPROG_STEPSEL_SHIFT</a>, and <a class="el" href="efm32jg1b__idac_8h_source.html#l00044">IDAC_TypeDef::CURPROG</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gadb7157da10f33ecceb87bad6cc753df3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void IDAC_OutEnable </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>idac</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>true to enable the IDAC OUT pin, false to disable. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00357">357</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__idac_8h_source.html#l00084">_IDAC_CTRL_OUTEN_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, and <a class="el" href="efm32jg1b__idac_8h_source.html#l00043">IDAC_TypeDef::CTRL</a>.</p>
+<p>References <a class="el" href="structIDAC__TypeDef.html#a2ed309a7d3e702a209c80132338b27b7">IDAC_TypeDef::CTRL</a>, <a class="el" href="structIDAC__Init__TypeDef.html#a93edbfe8f59f54a35590af2ab81e1ea8">IDAC_Init_TypeDef::enable</a>, <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga61ac7447614e3156d45ab6c9b6e04f2c">IDAC_CTRL_APORTOUTENPRS</a>, <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga7ab81ae13a7f63273db0d9ee5906b397">IDAC_CTRL_CURSINK</a>, <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gaa57880e548ff134ea01738e44d5b8f27">IDAC_CTRL_EN</a>, <a class="el" href="structIDAC__Init__TypeDef.html#a73024982aa23263a084b0fada9ced096">IDAC_Init_TypeDef::outMode</a>, <a class="el" href="structIDAC__Init__TypeDef.html#a805d9bdc35649adb68f92aec1cfb0ed6">IDAC_Init_TypeDef::prsEnable</a>, <a class="el" href="structIDAC__Init__TypeDef.html#abc4b4e2a4e082ce5521ed3234915f41b">IDAC_Init_TypeDef::prsSel</a>, and <a class="el" href="structIDAC__Init__TypeDef.html#a71636ca5f44b3524b93873a1e65ac611">IDAC_Init_TypeDef::sinkEnable</a>.</p>
 
 </div>
 </div>
@@ -772,6 +606,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Clear one or more pending IDAC interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">IDAC</td><td>Pointer to IDAC peripheral register block.</td></tr>
@@ -782,7 +618,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__idac_8h_source.html#l00311">311</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__idac_8h_source.html#l00053">IDAC_TypeDef::IFC</a>.</p>
+<p>References <a class="el" href="structIDAC__TypeDef.html#ab5f34cd85a790aee5b0c1c62a3c86786">IDAC_TypeDef::IFC</a>.</p>
 
 </div>
 </div>
@@ -809,6 +645,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Disable one or more IDAC interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">IDAC</td><td>Pointer to IDAC peripheral register block.</td></tr>
@@ -819,7 +657,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__idac_8h_source.html#l00328">328</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__idac_8h_source.html#l00054">IDAC_TypeDef::IEN</a>.</p>
+<p>References <a class="el" href="structIDAC__TypeDef.html#af2af78974fcd7e09b54f3aa3e3c0587f">IDAC_TypeDef::IEN</a>.</p>
 
 </div>
 </div>
@@ -846,6 +684,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable one or more IDAC interrupts. </p>
 <dl class="section note"><dt>Note</dt><dd>Depending on the use, a pending interrupt may already be set prior to enabling the interrupt. Consider using <a class="el" href="group__IDAC.html#gade49f7b886d33120ab589827e35ba5f1" title="Clear one or more pending IDAC interrupts. ">IDAC_IntClear()</a> prior to enabling if such a pending interrupt should be ignored.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -857,7 +697,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__idac_8h_source.html#l00350">350</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__idac_8h_source.html#l00054">IDAC_TypeDef::IEN</a>.</p>
+<p>References <a class="el" href="structIDAC__TypeDef.html#af2af78974fcd7e09b54f3aa3e3c0587f">IDAC_TypeDef::IEN</a>.</p>
 
 </div>
 </div>
@@ -874,6 +714,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get pending IDAC interrupt flags. </p>
 <dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -885,7 +727,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__idac_8h_source.html#l00370">370</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__idac_8h_source.html#l00051">IDAC_TypeDef::IF</a>.</p>
+<p>References <a class="el" href="structIDAC__TypeDef.html#ae89c4a7288dc96ee59649d46d150e466">IDAC_TypeDef::IF</a>.</p>
 
 </div>
 </div>
@@ -902,6 +744,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get enabled and pending IDAC interrupt flags. Useful for handling more interrupt sources in the same interrupt handler. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">IDAC</td><td>Pointer to IDAC peripheral register block.</td></tr>
@@ -917,7 +761,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__idac_8h_source.html#l00395">395</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__idac_8h_source.html#l00054">IDAC_TypeDef::IEN</a>, and <a class="el" href="efm32jg1b__idac_8h_source.html#l00051">IDAC_TypeDef::IF</a>.</p>
+<p>References <a class="el" href="structIDAC__TypeDef.html#af2af78974fcd7e09b54f3aa3e3c0587f">IDAC_TypeDef::IEN</a>, and <a class="el" href="structIDAC__TypeDef.html#ae89c4a7288dc96ee59649d46d150e466">IDAC_TypeDef::IF</a>.</p>
 
 </div>
 </div>
@@ -944,6 +788,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set one or more pending IDAC interrupts from SW. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">IDAC</td><td>Pointer to IDAC peripheral register block.</td></tr>
@@ -954,7 +800,200 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__idac_8h_source.html#l00419">419</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__idac_8h_source.html#l00052">IDAC_TypeDef::IFS</a>.</p>
+<p>References <a class="el" href="structIDAC__TypeDef.html#ae8ca9f80a3d08c3232683892a0279cd2">IDAC_TypeDef::IFS</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga6d5eba9c5497b56265fed7918daf97cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IDAC_MinimalOutputTransitionMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>idac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable/disable Minimal Output Transition mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>true to enable Minimal Output Transition mode, false to disable. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00172">172</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gac11d37e2f93702611691538031a0fdec">_IDAC_CTRL_MINOUTTRANS_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="structIDAC__TypeDef.html#a2ed309a7d3e702a209c80132338b27b7">IDAC_TypeDef::CTRL</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gadb7157da10f33ecceb87bad6cc753df3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IDAC_OutEnable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>idac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable/disable the IDAC OUT pin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>true to enable the IDAC OUT pin, false to disable. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00346">346</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga05077cd776ca92e49954834d3503d2f6">_IDAC_CTRL_APORTOUTEN_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="structIDAC__TypeDef.html#a2ed309a7d3e702a209c80132338b27b7">IDAC_TypeDef::CTRL</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gafd18f64494187e3a438e2db1f1d89dc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IDAC_RangeSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>idac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__IDAC.html#ga7ff0d5acba93b8f7b3111bfdf094fcee">IDAC_Range_TypeDef</a>&#160;</td>
+          <td class="paramname"><em>range</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the current range of the IDAC output. </p>
+<p>This function sets the current range of the IDAC output. The function also updates the IDAC calibration register (IDAC_CAL) with the default calibration value (from DEVINFO, factory setting) corresponding to the specified range.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>Current range value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function sets the current range of the IDAC output. The function also updates the IDAC calibration register (IDAC_CAL) with the default calibration value from DEVINFO (factory calibration) corresponding to the specified range.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>Current range value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00195">195</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#gaf3c0ccd48e6fc7632180154ce42da83e">_DEVINFO_IDAC0CAL0_SOURCERANGE0TUNING_MASK</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#gab67bca82c8bea44d7a087092ea99454d">_DEVINFO_IDAC0CAL0_SOURCERANGE0TUNING_SHIFT</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#ga416dad704f0c8c14ae2060bbdf50aa40">_DEVINFO_IDAC0CAL0_SOURCERANGE1TUNING_MASK</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#ga6c800cb878d150e6436223f2feabd0b4">_DEVINFO_IDAC0CAL0_SOURCERANGE1TUNING_SHIFT</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#ga071b29bac1735355517c1e850e345d95">_DEVINFO_IDAC0CAL0_SOURCERANGE2TUNING_MASK</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#gaa615609b068a87bb6fef2b2e7f8f3700">_DEVINFO_IDAC0CAL0_SOURCERANGE2TUNING_SHIFT</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#gaa73fcb40e63b894cd01c0616be515a88">_DEVINFO_IDAC0CAL0_SOURCERANGE3TUNING_MASK</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#ga3a04d8f164b7a31868ecf033bfdf5e92">_DEVINFO_IDAC0CAL0_SOURCERANGE3TUNING_SHIFT</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#ga4847daf7617f2c618f855898076d59f4">_DEVINFO_IDAC0CAL1_SINKRANGE0TUNING_MASK</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#ga491216d0dba0614aad43ceb485ef6578">_DEVINFO_IDAC0CAL1_SINKRANGE0TUNING_SHIFT</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#gaf57f1518053b2c3d1796797466a95280">_DEVINFO_IDAC0CAL1_SINKRANGE1TUNING_MASK</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#ga319abfbdbd46119eecbdacab669cc037">_DEVINFO_IDAC0CAL1_SINKRANGE1TUNING_SHIFT</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#ga10890015dbfe5383caba9dd41deb78e3">_DEVINFO_IDAC0CAL1_SINKRANGE2TUNING_MASK</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#gaa7e6a03a05f8a3bab4572ee1f3b96a0a">_DEVINFO_IDAC0CAL1_SINKRANGE2TUNING_SHIFT</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#ga495e4f3aa07d848f9e7aaf0a2f395c68">_DEVINFO_IDAC0CAL1_SINKRANGE3TUNING_MASK</a>, <a class="el" href="group__EFM32JG1B__DEVINFO__BitFields.html#ga16abf4fdce3c56c71024ec781ef17f4a">_DEVINFO_IDAC0CAL1_SINKRANGE3TUNING_SHIFT</a>, <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gac98a05b743d83246185dae36bf92555b">_IDAC_CURPROG_RANGESEL_MASK</a>, <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga504f4818c6565310aa2543cda56b6046">_IDAC_CURPROG_RANGESEL_SHIFT</a>, <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gae7a3c9d117529a12c742737f597d2f53">_IDAC_CURPROG_TUNING_MASK</a>, <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga6f1821898411f0fe9b7c29cbb6dc2ee3">_IDAC_CURPROG_TUNING_SHIFT</a>, <a class="el" href="structIDAC__TypeDef.html#a2ed309a7d3e702a209c80132338b27b7">IDAC_TypeDef::CTRL</a>, <a class="el" href="structIDAC__TypeDef.html#a7f366dd6b986dbebb6a4ba47ebe0cac7">IDAC_TypeDef::CURPROG</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga6e5df673dd3355df3040d6f2e48dfdd8">IDAC0</a>, <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga7ab81ae13a7f63273db0d9ee5906b397">IDAC_CTRL_CURSINK</a>, <a class="el" href="group__IDAC.html#gga7ff0d5acba93b8f7b3111bfdf094fceea4b324a0fc5a523a21afea99cdacaaa35">idacCurrentRange0</a>, <a class="el" href="group__IDAC.html#gga7ff0d5acba93b8f7b3111bfdf094fceea0fcfdc435139852d445ab99828b5f880">idacCurrentRange1</a>, <a class="el" href="group__IDAC.html#gga7ff0d5acba93b8f7b3111bfdf094fceea3c5bf2f19a5cfa36ffe04edadb873e3e">idacCurrentRange2</a>, and <a class="el" href="group__IDAC.html#gga7ff0d5acba93b8f7b3111bfdf094fceea30f6b9ec7e298feda818357c65f1950a">idacCurrentRange3</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac9e6f391f96c4d08378bec18e8bd4e4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IDAC_Reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>idac</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset IDAC to same state as after a HW reset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00133">133</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gae7b05861a1ec5682f4e0b9b929223a91">_IDAC_CTRL_RESETVALUE</a>, <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gaa66c32551f46b9cbbb11754a1257ce50">_IDAC_CURPROG_RESETVALUE</a>, <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga02abd15c5023815879a97e2bc058dbd0">_IDAC_CURPROG_STEPSEL_SHIFT</a>, <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga9904b5b1c14c39c046eca16f421c2d5a">_IDAC_DUTYCONFIG_RESETVALUE</a>, <a class="el" href="structIDAC__TypeDef.html#a2ed309a7d3e702a209c80132338b27b7">IDAC_TypeDef::CTRL</a>, <a class="el" href="structIDAC__TypeDef.html#a7f366dd6b986dbebb6a4ba47ebe0cac7">IDAC_TypeDef::CURPROG</a>, <a class="el" href="structIDAC__TypeDef.html#ab7440bffdb3140632d4268376c5cf95f">IDAC_TypeDef::DUTYCONFIG</a>, <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gaa57880e548ff134ea01738e44d5b8f27">IDAC_CTRL_EN</a>, and <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gac4b44deb75bf7bbec578d98ddfca378f">IDAC_CURPROG_RANGESEL_RANGE0</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gad246741d61cb9e83bb73650267b9dfc6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IDAC_StepSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structIDAC__TypeDef.html">IDAC_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>idac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>step</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the current step of the IDAC output. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">step</td><td>Step value for IDAC output. Valid range is 0-31. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__idac_8c_source.html#l00322">322</a> of file <a class="el" href="em__idac_8c_source.html">em_idac.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gae48046d28385a6ea0792ea4abf1fe0c1">_IDAC_CURPROG_STEPSEL_MASK</a>, <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga02abd15c5023815879a97e2bc058dbd0">_IDAC_CURPROG_STEPSEL_SHIFT</a>, and <a class="el" href="structIDAC__TypeDef.html#a7f366dd6b986dbebb6a4ba47ebe0cac7">IDAC_TypeDef::CURPROG</a>.</p>
 
 </div>
 </div>
@@ -963,7 +1002,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:49 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:40:57 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

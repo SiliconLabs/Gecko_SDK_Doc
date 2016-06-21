@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -207,7 +205,7 @@ $(document).ready(function(){initNavTree('nvm_8c_source.html','');});
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">static</span> uint8_t* NVM_PagePhysicalAddressGet(uint16_t pageId);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">static</span> uint8_t* NVM_ScratchPageFindBest(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">static</span> <a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> NVM_PageErase(uint8_t *pPhysicalAddress);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">static</span> <a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> NVM_PageErase(uint8_t *pPhysicalAddress);</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">static</span> NVM_Page_Descriptor_t NVM_PageDescriptorGet(uint16_t pageId);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">static</span> NVM_ValidateResult_t NVM_PageValidate(uint8_t *pPhysicalAddress);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
@@ -221,7 +219,7 @@ $(document).ready(function(){initNavTree('nvm_8c_source.html','');});
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#if (NVM_FEATURE_STATIC_WEAR_ENABLED)</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> NVM_StaticWearReset(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> NVM_StaticWearUpdate(uint16_t address);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">static</span> <a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> NVM_StaticWearCheck(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">static</span> <a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> NVM_StaticWearCheck(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">/*******************************************************************************</span></div>
@@ -229,11 +227,11 @@ $(document).ready(function(){initNavTree('nvm_8c_source.html','');});
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="group__NVM.html#gaf74bb05f10ed4959e65e85fa438ead67">  185</a></span>&#160;<a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__NVM.html#gaf74bb05f10ed4959e65e85fa438ead67">NVM_Init</a>(NVM_Config_t <span class="keyword">const</span> *config)</div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="group__NVM.html#gaf74bb05f10ed4959e65e85fa438ead67">  185</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__NVM.html#gaf74bb05f10ed4959e65e85fa438ead67">NVM_Init</a>(NVM_Config_t <span class="keyword">const</span> *config)</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;{</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  uint16_t page;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="comment">/* Variable to store the result returned at the end. */</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> result = <a class="code" href="group__NVM.html#gad67929c11d6b7520bf992dc6dcfc4d2c">ECODE_EMDRV_NVM_ERROR</a>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> result = <a class="code" href="group__NVM.html#gad67929c11d6b7520bf992dc6dcfc4d2c">ECODE_EMDRV_NVM_ERROR</a>;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="comment">/* Physical address of the current page. */</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  uint8_t *pPhysicalAddress = (uint8_t *)(config-&gt;nvmArea);</div>
@@ -248,7 +246,7 @@ $(document).ready(function(){initNavTree('nvm_8c_source.html','');});
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="comment">/* Temporary variable to store results of a validation operation. */</span></div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  NVM_ValidateResult_t validationResult;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="comment">/* Temporary variable to store results of a erase operation. */</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> eraseResult;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> eraseResult;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="comment">/* if there is no spare page, return error */</span></div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordflow">if</span>( (config-&gt;pages &lt;= config-&gt;userPages)</div>
@@ -409,11 +407,11 @@ $(document).ready(function(){initNavTree('nvm_8c_source.html','');});
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="group__NVM.html#ga6cad1505838978506c7d94f9a1472595">  382</a></span>&#160;<a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__NVM.html#ga6cad1505838978506c7d94f9a1472595">NVM_Erase</a>(uint32_t eraseCount)</div>
+<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="group__NVM.html#ga6cad1505838978506c7d94f9a1472595">  382</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__NVM.html#ga6cad1505838978506c7d94f9a1472595">NVM_Erase</a>(uint32_t eraseCount)</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;{</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  uint16_t page;</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  <span class="comment">/* Result used when returning from the function. */</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  <a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> result = <a class="code" href="group__NVM.html#gad67929c11d6b7520bf992dc6dcfc4d2c">ECODE_EMDRV_NVM_ERROR</a>;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  <a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> result = <a class="code" href="group__NVM.html#gad67929c11d6b7520bf992dc6dcfc4d2c">ECODE_EMDRV_NVM_ERROR</a>;</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  <span class="comment">/* Location of physical page. */</span></div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  uint8_t *pPhysicalAddress = (uint8_t *)(nvmConfig-&gt;nvmArea);</div>
@@ -463,10 +461,10 @@ $(document).ready(function(){initNavTree('nvm_8c_source.html','');});
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00460"></a><span class="lineno"><a class="line" href="group__NVM.html#gad181be9b434658d3552fb311039ff691">  460</a></span>&#160;<a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__NVM.html#gad181be9b434658d3552fb311039ff691">NVM_Write</a>(uint16_t pageId, uint8_t objectId)</div>
+<div class="line"><a name="l00460"></a><span class="lineno"><a class="line" href="group__NVM.html#gad181be9b434658d3552fb311039ff691">  460</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__NVM.html#gad181be9b434658d3552fb311039ff691">NVM_Write</a>(uint16_t pageId, uint8_t objectId)</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;{</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  <span class="comment">/* Result variable used as return value from the function. */</span></div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> result = <a class="code" href="group__NVM.html#gad67929c11d6b7520bf992dc6dcfc4d2c">ECODE_EMDRV_NVM_ERROR</a>;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> result = <a class="code" href="group__NVM.html#gad67929c11d6b7520bf992dc6dcfc4d2c">ECODE_EMDRV_NVM_ERROR</a>;</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;  <span class="comment">/* Watermark to look for when finding page. First bit true. */</span></div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  uint16_t watermark = pageId | NVM_FIRST_BIT_ONE;</div>
@@ -818,7 +816,7 @@ $(document).ready(function(){initNavTree('nvm_8c_source.html','');});
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;</div>
 <div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;</div>
 <div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00834"></a><span class="lineno"><a class="line" href="group__NVM.html#ga34880829bee50bf0fde0f6c9695dca86">  834</a></span>&#160;<a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__NVM.html#ga34880829bee50bf0fde0f6c9695dca86">NVM_Read</a>(uint16_t pageId, uint8_t objectId)</div>
+<div class="line"><a name="l00834"></a><span class="lineno"><a class="line" href="group__NVM.html#ga34880829bee50bf0fde0f6c9695dca86">  834</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__NVM.html#ga34880829bee50bf0fde0f6c9695dca86">NVM_Read</a>(uint16_t pageId, uint8_t objectId)</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;{</div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;<span class="preprocessor">#if (NVM_FEATURE_WEAR_PAGES_ENABLED)</span></div>
 <div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;  <span class="comment">/* Variable used to fetch read index. */</span></div>
@@ -1031,7 +1029,7 @@ $(document).ready(function(){initNavTree('nvm_8c_source.html','');});
 <div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;</div>
 <div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;</div>
 <div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;<span class="keyword">static</span> <a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> NVM_PageErase(uint8_t *pPhysicalAddress)</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;<span class="keyword">static</span> <a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> NVM_PageErase(uint8_t *pPhysicalAddress)</div>
 <div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;{</div>
 <div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;<span class="preprocessor">#if (NVM_FEATURE_STATIC_WEAR_ENABLED)</span></div>
 <div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;  <span class="comment">/* Logical page address. */</span></div>
@@ -1371,7 +1369,7 @@ $(document).ready(function(){initNavTree('nvm_8c_source.html','');});
 <div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;</div>
 <div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;</div>
 <div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;<span class="keyword">static</span> <a class="code" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> NVM_StaticWearCheck(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;<span class="keyword">static</span> <a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> NVM_StaticWearCheck(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;{</div>
 <div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;  <span class="comment">/* Check if there is a check already running. We do not need more of these. */</span></div>
 <div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;  <span class="keywordflow">if</span> (!nvmStaticWearWorking)</div>
@@ -1426,32 +1424,32 @@ $(document).ready(function(){initNavTree('nvm_8c_source.html','');});
 <div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;</div>
 <div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;<span class="comment">/******** THE REST OF THE FILE IS DOCUMENTATION ONLY !**********************/</span></div>
 <div class="ttc" id="nvm__hal_8h_html_ae5903c7cb194ab35d7637879ca492479"><div class="ttname"><a href="nvm__hal_8h.html#ae5903c7cb194ab35d7637879ca492479">NVMHAL_Read</a></div><div class="ttdeci">void NVMHAL_Read(uint8_t *pAddress, void *pObject, uint16_t len)</div><div class="ttdoc">Read data from NVM. </div><div class="ttdef"><b>Definition:</b> <a href="nvm__hal_8c_source.html#l00152">nvm_hal.c:152</a></div></div>
-<div class="ttc" id="group__NVM_html_ga69ca4a7805f154f9e3b65bf2a42c8037"><div class="ttname"><a href="group__NVM.html#ga69ca4a7805f154f9e3b65bf2a42c8037">NVM_WRITE_ALL_CMD</a></div><div class="ttdeci">#define NVM_WRITE_ALL_CMD</div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00058">nvm.h:58</a></div></div>
+<div class="ttc" id="group__NVM_html_ga69ca4a7805f154f9e3b65bf2a42c8037"><div class="ttname"><a href="group__NVM.html#ga69ca4a7805f154f9e3b65bf2a42c8037">NVM_WRITE_ALL_CMD</a></div><div class="ttdeci">#define NVM_WRITE_ALL_CMD</div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00056">nvm.h:56</a></div></div>
 <div class="ttc" id="nvm__hal_8h_html_a4536f39203aeefdb8f672d237316a762"><div class="ttname"><a href="nvm__hal_8h.html#a4536f39203aeefdb8f672d237316a762">NVMHAL_Checksum</a></div><div class="ttdeci">void NVMHAL_Checksum(uint16_t *checksum, void *pMemory, uint16_t len)</div><div class="ttdoc">Calculate checksum according to CCITT CRC16. </div><div class="ttdef"><b>Definition:</b> <a href="nvm__hal_8c_source.html#l00308">nvm_hal.c:308</a></div></div>
 <div class="ttc" id="group__NVM_html_ga34880829bee50bf0fde0f6c9695dca86"><div class="ttname"><a href="group__NVM.html#ga34880829bee50bf0fde0f6c9695dca86">NVM_Read</a></div><div class="ttdeci">Ecode_t NVM_Read(uint16_t pageId, uint8_t objectId)</div><div class="ttdoc">Read an object or an entire page. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8c_source.html#l00834">nvm.c:834</a></div></div>
-<div class="ttc" id="group__NVM_html_gaddbc995da5f67dc3b176213f32008a62"><div class="ttname"><a href="group__NVM.html#gaddbc995da5f67dc3b176213f32008a62">NVM_ERASE_RETAINCOUNT</a></div><div class="ttdeci">#define NVM_ERASE_RETAINCOUNT</div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00065">nvm.h:65</a></div></div>
+<div class="ttc" id="group__NVM_html_gaddbc995da5f67dc3b176213f32008a62"><div class="ttname"><a href="group__NVM.html#gaddbc995da5f67dc3b176213f32008a62">NVM_ERASE_RETAINCOUNT</a></div><div class="ttdeci">#define NVM_ERASE_RETAINCOUNT</div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00063">nvm.h:63</a></div></div>
 <div class="ttc" id="nvm__hal_8h_html_a0800d58f7bb43d0462592d0062c5cef3"><div class="ttname"><a href="nvm__hal_8h.html#a0800d58f7bb43d0462592d0062c5cef3">NVMHAL_Write</a></div><div class="ttdeci">Ecode_t NVMHAL_Write(uint8_t *pAddress, void const *pObject, uint16_t len)</div><div class="ttdoc">Write data to NVM. </div><div class="ttdef"><b>Definition:</b> <a href="nvm__hal_8c_source.html#l00191">nvm_hal.c:191</a></div></div>
-<div class="ttc" id="group__NVM_html_ga2345b10d783d735ed6be169a918ec991"><div class="ttname"><a href="group__NVM.html#ga2345b10d783d735ed6be169a918ec991">ECODE_EMDRV_NVM_NO_PAGES_AVAILABLE</a></div><div class="ttdeci">#define ECODE_EMDRV_NVM_NO_PAGES_AVAILABLE</div><div class="ttdoc">Initialization didn&#39;t find any pages available to allocate. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00053">nvm.h:53</a></div></div>
+<div class="ttc" id="group__NVM_html_ga2345b10d783d735ed6be169a918ec991"><div class="ttname"><a href="group__NVM.html#ga2345b10d783d735ed6be169a918ec991">ECODE_EMDRV_NVM_NO_PAGES_AVAILABLE</a></div><div class="ttdeci">#define ECODE_EMDRV_NVM_NO_PAGES_AVAILABLE</div><div class="ttdoc">Initialization didn&#39;t find any pages available to allocate. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00051">nvm.h:51</a></div></div>
 <div class="ttc" id="nvm__hal_8h_html_aaa2acd545c460f4cea576178fc185a21"><div class="ttname"><a href="nvm__hal_8h.html#aaa2acd545c460f4cea576178fc185a21">NVMHAL_PageErase</a></div><div class="ttdeci">Ecode_t NVMHAL_PageErase(uint8_t *pAddress)</div><div class="ttdoc">Erase a page in the NVM. </div><div class="ttdef"><b>Definition:</b> <a href="nvm__hal_8c_source.html#l00278">nvm_hal.c:278</a></div></div>
 <div class="ttc" id="group__NVM_html_ga6cad1505838978506c7d94f9a1472595"><div class="ttname"><a href="group__NVM.html#ga6cad1505838978506c7d94f9a1472595">NVM_Erase</a></div><div class="ttdeci">Ecode_t NVM_Erase(uint32_t eraseCount)</div><div class="ttdoc">Erase the entire allocated NVM area. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8c_source.html#l00382">nvm.c:382</a></div></div>
 <div class="ttc" id="nvm_8h_html"><div class="ttname"><a href="nvm_8h.html">nvm.h</a></div><div class="ttdoc">Non-Volatile Memory Wear-Leveling driver API. </div></div>
 <div class="ttc" id="group__NVM_html_gaf74bb05f10ed4959e65e85fa438ead67"><div class="ttname"><a href="group__NVM.html#gaf74bb05f10ed4959e65e85fa438ead67">NVM_Init</a></div><div class="ttdeci">Ecode_t NVM_Init(NVM_Config_t const *config)</div><div class="ttdoc">Initialize the NVM manager. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8c_source.html#l00185">nvm.c:185</a></div></div>
 <div class="ttc" id="group__NVM_html_gad181be9b434658d3552fb311039ff691"><div class="ttname"><a href="group__NVM.html#gad181be9b434658d3552fb311039ff691">NVM_Write</a></div><div class="ttdeci">Ecode_t NVM_Write(uint16_t pageId, uint8_t objectId)</div><div class="ttdoc">Write an object or a page. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8c_source.html#l00460">nvm.c:460</a></div></div>
-<div class="ttc" id="group__NVM_html_ga6ea441c3105ea4a18a10a3b042bd7d86"><div class="ttname"><a href="group__NVM.html#ga6ea441c3105ea4a18a10a3b042bd7d86">ECODE_EMDRV_NVM_PAGE_INVALID</a></div><div class="ttdeci">#define ECODE_EMDRV_NVM_PAGE_INVALID</div><div class="ttdoc">Could not find the page specified. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00054">nvm.h:54</a></div></div>
+<div class="ttc" id="group__NVM_html_ga6ea441c3105ea4a18a10a3b042bd7d86"><div class="ttname"><a href="group__NVM.html#ga6ea441c3105ea4a18a10a3b042bd7d86">ECODE_EMDRV_NVM_PAGE_INVALID</a></div><div class="ttdeci">#define ECODE_EMDRV_NVM_PAGE_INVALID</div><div class="ttdoc">Could not find the page specified. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00052">nvm.h:52</a></div></div>
 <div class="ttc" id="nvm__hal_8h_html_a67a31b5bf9f6a36a8e67b3d03bf59b38"><div class="ttname"><a href="nvm__hal_8h.html#a67a31b5bf9f6a36a8e67b3d03bf59b38">NVMHAL_Init</a></div><div class="ttdeci">void NVMHAL_Init(void)</div><div class="ttdoc">Initialize NVM driver. </div><div class="ttdef"><b>Definition:</b> <a href="nvm__hal_8c_source.html#l00111">nvm_hal.c:111</a></div></div>
-<div class="ttc" id="group__NVM_html_gad67929c11d6b7520bf992dc6dcfc4d2c"><div class="ttname"><a href="group__NVM.html#gad67929c11d6b7520bf992dc6dcfc4d2c">ECODE_EMDRV_NVM_ERROR</a></div><div class="ttdeci">#define ECODE_EMDRV_NVM_ERROR</div><div class="ttdoc">General error. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00055">nvm.h:55</a></div></div>
-<div class="ttc" id="group__NVM_html_gaf237b8d940d372ccbd82b8998fbc8f60"><div class="ttname"><a href="group__NVM.html#gaf237b8d940d372ccbd82b8998fbc8f60">NVM_READ_ALL_CMD</a></div><div class="ttdeci">#define NVM_READ_ALL_CMD</div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00062">nvm.h:62</a></div></div>
-<div class="ttc" id="group__NVM_html_gae332cf766a19b67f1ed35c9d9e95bd20"><div class="ttname"><a href="group__NVM.html#gae332cf766a19b67f1ed35c9d9e95bd20">ECODE_EMDRV_NVM_OK</a></div><div class="ttdeci">#define ECODE_EMDRV_NVM_OK</div><div class="ttdoc">Success return value. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00048">nvm.h:48</a></div></div>
-<div class="ttc" id="group__EM__Drivers_html_ga7bf5621660c5ba69ac4dd3044173d35c"><div class="ttname"><a href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a></div><div class="ttdeci">uint32_t Ecode_t</div><div class="ttdoc">Typedef for API function errorcode return values. </div><div class="ttdef"><b>Definition:</b> <a href="ecode_8h_source.html#l00031">ecode.h:31</a></div></div>
-<div class="ttc" id="group__NVM_html_gac2786ac8b0b1ae7ae7dd2ee028cc97c7"><div class="ttname"><a href="group__NVM.html#gac2786ac8b0b1ae7ae7dd2ee028cc97c7">NVM_WRITE_NONE_CMD</a></div><div class="ttdeci">#define NVM_WRITE_NONE_CMD</div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00060">nvm.h:60</a></div></div>
-<div class="ttc" id="group__NVM_html_ga513abf6d9830442da42feae5d3aa3793"><div class="ttname"><a href="group__NVM.html#ga513abf6d9830442da42feae5d3aa3793">ECODE_EMDRV_NVM_DATA_INVALID</a></div><div class="ttdeci">#define ECODE_EMDRV_NVM_DATA_INVALID</div><div class="ttdoc">Invalid input data or format. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00051">nvm.h:51</a></div></div>
+<div class="ttc" id="group__emdrv_html_ga7bf5621660c5ba69ac4dd3044173d35c"><div class="ttname"><a href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a></div><div class="ttdeci">uint32_t Ecode_t</div><div class="ttdoc">Typedef for API function errorcode return values. </div><div class="ttdef"><b>Definition:</b> <a href="ecode_8h_source.html#l00051">ecode.h:51</a></div></div>
+<div class="ttc" id="group__NVM_html_gad67929c11d6b7520bf992dc6dcfc4d2c"><div class="ttname"><a href="group__NVM.html#gad67929c11d6b7520bf992dc6dcfc4d2c">ECODE_EMDRV_NVM_ERROR</a></div><div class="ttdeci">#define ECODE_EMDRV_NVM_ERROR</div><div class="ttdoc">General error. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00053">nvm.h:53</a></div></div>
+<div class="ttc" id="group__NVM_html_gaf237b8d940d372ccbd82b8998fbc8f60"><div class="ttname"><a href="group__NVM.html#gaf237b8d940d372ccbd82b8998fbc8f60">NVM_READ_ALL_CMD</a></div><div class="ttdeci">#define NVM_READ_ALL_CMD</div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00060">nvm.h:60</a></div></div>
+<div class="ttc" id="group__NVM_html_gae332cf766a19b67f1ed35c9d9e95bd20"><div class="ttname"><a href="group__NVM.html#gae332cf766a19b67f1ed35c9d9e95bd20">ECODE_EMDRV_NVM_OK</a></div><div class="ttdeci">#define ECODE_EMDRV_NVM_OK</div><div class="ttdoc">Success return value. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00046">nvm.h:46</a></div></div>
+<div class="ttc" id="group__NVM_html_gac2786ac8b0b1ae7ae7dd2ee028cc97c7"><div class="ttname"><a href="group__NVM.html#gac2786ac8b0b1ae7ae7dd2ee028cc97c7">NVM_WRITE_NONE_CMD</a></div><div class="ttdeci">#define NVM_WRITE_NONE_CMD</div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00058">nvm.h:58</a></div></div>
+<div class="ttc" id="group__NVM_html_ga513abf6d9830442da42feae5d3aa3793"><div class="ttname"><a href="group__NVM.html#ga513abf6d9830442da42feae5d3aa3793">ECODE_EMDRV_NVM_DATA_INVALID</a></div><div class="ttdeci">#define ECODE_EMDRV_NVM_DATA_INVALID</div><div class="ttdoc">Invalid input data or format. </div><div class="ttdef"><b>Definition:</b> <a href="nvm_8h_source.html#l00049">nvm.h:49</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_f6ffa9f3776c543fb9a0872acda4412e.html">nvm</a></li><li class="navelem"><a class="el" href="dir_1a04ebf9403ebe7c2e92b9960e789198.html">src</a></li><li class="navelem"><a class="el" href="nvm_8c.html">nvm.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:38:10 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:31:35 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

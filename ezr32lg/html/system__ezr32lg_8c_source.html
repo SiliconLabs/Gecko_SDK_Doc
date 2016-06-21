@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -273,112 +271,113 @@ $(document).ready(function(){initNavTree('system__ezr32lg_8c_source.html','');})
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  }</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordflow">return</span> ret / (1U + ((<a class="code" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;CTRL &amp; <a class="code" href="group__EZR32LG__CMU__BitFields.html#ga7c22366fec6dd0c455fce2599144ae6b">_CMU_CTRL_HFCLKDIV_MASK</a>)</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                      &gt;&gt; <a class="code" href="group__EZR32LG__CMU__BitFields.html#gab738dd99612bc0ff231a64a2871dc172">_CMU_CTRL_HFCLKDIV_SHIFT</a>));</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#aef32887eb9b08a5dd7db73c35ca7c747">  254</a></span>&#160;uint32_t <a class="code" href="system__ezr32lg_8c.html#aef32887eb9b08a5dd7db73c35ca7c747">SystemHFXOClockGet</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;{</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="comment">/* External crystal oscillator present? */</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#if (EFM32_HFXO_FREQ &gt; 0)</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordflow">return</span> SystemHFXOClock;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment">/**************************************************************************/</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#aef32887eb9b08a5dd7db73c35ca7c747">  255</a></span>&#160;uint32_t <a class="code" href="system__ezr32lg_8c.html#aef32887eb9b08a5dd7db73c35ca7c747">SystemHFXOClockGet</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;{</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="comment">/* External crystal oscillator present? */</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#if (EFM32_HFXO_FREQ &gt; 0)</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  <span class="keywordflow">return</span> SystemHFXOClock;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#ae8a3b3b223a7d08bf9e4d86a259f4e14">  280</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="system__ezr32lg_8c.html#ae8a3b3b223a7d08bf9e4d86a259f4e14">SystemHFXOClockSet</a>(uint32_t freq)</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;{</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  <span class="comment">/* External crystal oscillator present? */</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#if (EFM32_HFXO_FREQ &gt; 0)</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  SystemHFXOClock = freq;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="comment">/* Update core clock frequency if HFXO is used to clock core */</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;STATUS &amp; <a class="code" href="group__EZR32LG__CMU__BitFields.html#ga6963fd7b875e85b2a97b31643270469f">CMU_STATUS_HFXOSEL</a>)</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  {</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="comment">/* The function will update the global variable */</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="system__ezr32lg_8c.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet</a>();</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  }</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  (void)freq; <span class="comment">/* Unused parameter */</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;}</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">/**************************************************************************/</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#ae8a3b3b223a7d08bf9e4d86a259f4e14">  281</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="system__ezr32lg_8c.html#ae8a3b3b223a7d08bf9e4d86a259f4e14">SystemHFXOClockSet</a>(uint32_t freq)</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;{</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="comment">/* External crystal oscillator present? */</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor">#if (EFM32_HFXO_FREQ &gt; 0)</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  SystemHFXOClock = freq;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="comment">/* Update core clock frequency if HFXO is used to clock core */</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;STATUS &amp; <a class="code" href="group__EZR32LG__CMU__BitFields.html#ga6963fd7b875e85b2a97b31643270469f">CMU_STATUS_HFXOSEL</a>)</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="comment">/* The function will update the global variable */</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <a class="code" href="system__ezr32lg_8c.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet</a>();</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  (void)freq; <span class="comment">/* Unused parameter */</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;}</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#a93f514700ccf00d08dbdcff7f1224eb2">  310</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="system__ezr32lg_8c.html#a93f514700ccf00d08dbdcff7f1224eb2">SystemInit</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;{</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">/**************************************************************************/</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#a93f514700ccf00d08dbdcff7f1224eb2">  311</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="system__ezr32lg_8c.html#a93f514700ccf00d08dbdcff7f1224eb2">SystemInit</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;{</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#a477d1670608b8ca76108b6e21c1124eb">  325</a></span>&#160;uint32_t <a class="code" href="system__ezr32lg_8c.html#a477d1670608b8ca76108b6e21c1124eb">SystemLFRCOClockGet</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;{</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="comment">/* Currently we assume that this frequency is properly tuned during */</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="comment">/* manufacturing and is not changed after reset. If future requirements */</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="comment">/* for re-tuning by user, we can add support for that. */</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="system__ezr32lg_8c.html#a16a9bb92649e0f2503f1565bf56e2afc">EFM32_LFRCO_FREQ</a>;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;}</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">/**************************************************************************/</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#a477d1670608b8ca76108b6e21c1124eb">  326</a></span>&#160;uint32_t <a class="code" href="system__ezr32lg_8c.html#a477d1670608b8ca76108b6e21c1124eb">SystemLFRCOClockGet</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;{</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="comment">/* Currently we assume that this frequency is properly tuned during */</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="comment">/* manufacturing and is not changed after reset. If future requirements */</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="comment">/* for re-tuning by user, we can add support for that. */</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="system__ezr32lg_8c.html#a16a9bb92649e0f2503f1565bf56e2afc">EFM32_LFRCO_FREQ</a>;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;}</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#a88eecfafda55942454a9e10912b3f224">  344</a></span>&#160;uint32_t <a class="code" href="system__ezr32lg_8c.html#a88eecfafda55942454a9e10912b3f224">SystemULFRCOClockGet</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;{</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="comment">/* The ULFRCO frequency is not tuned, and can be very inaccurate */</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <span class="keywordflow">return</span> EFM32_ULFRCO_FREQ;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment">/**************************************************************************/</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#a88eecfafda55942454a9e10912b3f224">  345</a></span>&#160;uint32_t <a class="code" href="system__ezr32lg_8c.html#a88eecfafda55942454a9e10912b3f224">SystemULFRCOClockGet</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;{</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <span class="comment">/* The ULFRCO frequency is not tuned, and can be very inaccurate */</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordflow">return</span> EFM32_ULFRCO_FREQ;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;}</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#a186aefb7bb200c8fda0fc0a4d4b2aa14">  361</a></span>&#160;uint32_t <a class="code" href="system__ezr32lg_8c.html#a186aefb7bb200c8fda0fc0a4d4b2aa14">SystemLFXOClockGet</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;{</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <span class="comment">/* External crystal oscillator present? */</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor">#if (EFM32_LFXO_FREQ &gt; 0)</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="keywordflow">return</span> SystemLFXOClock;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment">/**************************************************************************/</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#a186aefb7bb200c8fda0fc0a4d4b2aa14">  362</a></span>&#160;uint32_t <a class="code" href="system__ezr32lg_8c.html#a186aefb7bb200c8fda0fc0a4d4b2aa14">SystemLFXOClockGet</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;{</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  <span class="comment">/* External crystal oscillator present? */</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor">#if (EFM32_LFXO_FREQ &gt; 0)</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  <span class="keywordflow">return</span> SystemLFXOClock;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;}</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#ace8c3b705bdbdc9172fbc7f2415dfd8b">  387</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="system__ezr32lg_8c.html#ace8c3b705bdbdc9172fbc7f2415dfd8b">SystemLFXOClockSet</a>(uint32_t freq)</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;{</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <span class="comment">/* External crystal oscillator present? */</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="preprocessor">#if (EFM32_LFXO_FREQ &gt; 0)</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  SystemLFXOClock = freq;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="comment">/* Update core clock frequency if LFXO is used to clock core */</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;STATUS &amp; <a class="code" href="group__EZR32LG__CMU__BitFields.html#gaa7ceb79efd3fe5547479edecc773f619">CMU_STATUS_LFXOSEL</a>)</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  {</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="comment">/* The function will update the global variable */</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <a class="code" href="system__ezr32lg_8c.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet</a>();</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  }</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  (void)freq; <span class="comment">/* Unused parameter */</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;}</div>
-<div class="ttc" id="system__ezr32lg_8c_html_ace8c3b705bdbdc9172fbc7f2415dfd8b"><div class="ttname"><a href="system__ezr32lg_8c.html#ace8c3b705bdbdc9172fbc7f2415dfd8b">SystemLFXOClockSet</a></div><div class="ttdeci">void SystemLFXOClockSet(uint32_t freq)</div><div class="ttdoc">Set low frequency crystal oscillator clock frequency for target system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00387">system_ezr32lg.c:387</a></div></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">/**************************************************************************/</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="system__ezr32lg_8h.html#ace8c3b705bdbdc9172fbc7f2415dfd8b">  388</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="system__ezr32lg_8c.html#ace8c3b705bdbdc9172fbc7f2415dfd8b">SystemLFXOClockSet</a>(uint32_t freq)</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;{</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  <span class="comment">/* External crystal oscillator present? */</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="preprocessor">#if (EFM32_LFXO_FREQ &gt; 0)</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  SystemLFXOClock = freq;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  <span class="comment">/* Update core clock frequency if LFXO is used to clock core */</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;STATUS &amp; <a class="code" href="group__EZR32LG__CMU__BitFields.html#gaa7ceb79efd3fe5547479edecc773f619">CMU_STATUS_LFXOSEL</a>)</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  {</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="comment">/* The function will update the global variable */</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <a class="code" href="system__ezr32lg_8c.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet</a>();</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  }</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  (void)freq; <span class="comment">/* Unused parameter */</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;}</div>
+<div class="ttc" id="system__ezr32lg_8c_html_ace8c3b705bdbdc9172fbc7f2415dfd8b"><div class="ttname"><a href="system__ezr32lg_8c.html#ace8c3b705bdbdc9172fbc7f2415dfd8b">SystemLFXOClockSet</a></div><div class="ttdeci">void SystemLFXOClockSet(uint32_t freq)</div><div class="ttdoc">Set low frequency crystal oscillator clock frequency for target system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00388">system_ezr32lg.c:388</a></div></div>
 <div class="ttc" id="system__ezr32lg_8c_html_af2e6aa1120f0e55e38c83d8387625d16"><div class="ttname"><a href="system__ezr32lg_8c.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet</a></div><div class="ttdeci">uint32_t SystemCoreClockGet(void)</div><div class="ttdoc">Get the current core clock frequency. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00123">system_ezr32lg.c:123</a></div></div>
 <div class="ttc" id="system__ezr32lg_8c_html_a16a9bb92649e0f2503f1565bf56e2afc"><div class="ttname"><a href="system__ezr32lg_8c.html#a16a9bb92649e0f2503f1565bf56e2afc">EFM32_LFRCO_FREQ</a></div><div class="ttdeci">#define EFM32_LFRCO_FREQ</div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00041">system_ezr32lg.c:41</a></div></div>
 <div class="ttc" id="group__EZR32LG__CMU__BitFields_html_ga46cfe5cd8c30a6e527826e0218f3c0db"><div class="ttname"><a href="group__EZR32LG__CMU__BitFields.html#ga46cfe5cd8c30a6e527826e0218f3c0db">_CMU_HFCORECLKDIV_HFCORECLKDIV_MASK</a></div><div class="ttdeci">#define _CMU_HFCORECLKDIV_HFCORECLKDIV_MASK</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__cmu_8h_source.html#l00234">ezr32lg_cmu.h:234</a></div></div>
-<div class="ttc" id="group__EZR32LG330F256R69__Peripheral__Declaration_html_ga0ed1d26edfd19bbb92da3601b9804750"><div class="ttname"><a href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a></div><div class="ttdeci">#define CMU</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg330f256r69_8h_source.html#l00395">ezr32lg330f256r69.h:395</a></div></div>
+<div class="ttc" id="group__EZR32LG330F256R69__Peripheral__Declaration_html_ga0ed1d26edfd19bbb92da3601b9804750"><div class="ttname"><a href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a></div><div class="ttdeci">#define CMU</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg330f256r69_8h_source.html#l00398">ezr32lg330f256r69.h:398</a></div></div>
 <div class="ttc" id="em__device_8h_html"><div class="ttname"><a href="em__device_8h.html">em_device.h</a></div><div class="ttdoc">CMSIS Cortex-M Peripheral Access Layer for Silicon Laboratories microcontroller devices. </div></div>
 <div class="ttc" id="system__ezr32lg_8c_html_ab5991f4c3faeaed3b4f20d5ab515f1f2"><div class="ttname"><a href="system__ezr32lg_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2">SystemHFClockGet</a></div><div class="ttdeci">uint32_t SystemHFClockGet(void)</div><div class="ttdoc">Get the current HFCLK frequency. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00169">system_ezr32lg.c:169</a></div></div>
-<div class="ttc" id="system__ezr32lg_8c_html_ae8a3b3b223a7d08bf9e4d86a259f4e14"><div class="ttname"><a href="system__ezr32lg_8c.html#ae8a3b3b223a7d08bf9e4d86a259f4e14">SystemHFXOClockSet</a></div><div class="ttdeci">void SystemHFXOClockSet(uint32_t freq)</div><div class="ttdoc">Set high frequency crystal oscillator clock frequency for target system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00280">system_ezr32lg.c:280</a></div></div>
-<div class="ttc" id="system__ezr32lg_8c_html_a477d1670608b8ca76108b6e21c1124eb"><div class="ttname"><a href="system__ezr32lg_8c.html#a477d1670608b8ca76108b6e21c1124eb">SystemLFRCOClockGet</a></div><div class="ttdeci">uint32_t SystemLFRCOClockGet(void)</div><div class="ttdoc">Get low frequency RC oscillator clock frequency for target system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00325">system_ezr32lg.c:325</a></div></div>
+<div class="ttc" id="system__ezr32lg_8c_html_ae8a3b3b223a7d08bf9e4d86a259f4e14"><div class="ttname"><a href="system__ezr32lg_8c.html#ae8a3b3b223a7d08bf9e4d86a259f4e14">SystemHFXOClockSet</a></div><div class="ttdeci">void SystemHFXOClockSet(uint32_t freq)</div><div class="ttdoc">Set high frequency crystal oscillator clock frequency for target system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00281">system_ezr32lg.c:281</a></div></div>
+<div class="ttc" id="system__ezr32lg_8c_html_a477d1670608b8ca76108b6e21c1124eb"><div class="ttname"><a href="system__ezr32lg_8c.html#a477d1670608b8ca76108b6e21c1124eb">SystemLFRCOClockGet</a></div><div class="ttdeci">uint32_t SystemLFRCOClockGet(void)</div><div class="ttdoc">Get low frequency RC oscillator clock frequency for target system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00326">system_ezr32lg.c:326</a></div></div>
 <div class="ttc" id="group__EZR32LG__CMU__BitFields_html_ga066f46576aa548846dbc6eb64d3830bb"><div class="ttname"><a href="group__EZR32LG__CMU__BitFields.html#ga066f46576aa548846dbc6eb64d3830bb">_CMU_HFRCOCTRL_BAND_MASK</a></div><div class="ttdeci">#define _CMU_HFRCOCTRL_BAND_MASK</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__cmu_8h_source.html#l00308">ezr32lg_cmu.h:308</a></div></div>
-<div class="ttc" id="system__ezr32lg_8c_html_aef32887eb9b08a5dd7db73c35ca7c747"><div class="ttname"><a href="system__ezr32lg_8c.html#aef32887eb9b08a5dd7db73c35ca7c747">SystemHFXOClockGet</a></div><div class="ttdeci">uint32_t SystemHFXOClockGet(void)</div><div class="ttdoc">Get high frequency crystal oscillator clock frequency for target system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00254">system_ezr32lg.c:254</a></div></div>
+<div class="ttc" id="system__ezr32lg_8c_html_aef32887eb9b08a5dd7db73c35ca7c747"><div class="ttname"><a href="system__ezr32lg_8c.html#aef32887eb9b08a5dd7db73c35ca7c747">SystemHFXOClockGet</a></div><div class="ttdeci">uint32_t SystemHFXOClockGet(void)</div><div class="ttdoc">Get high frequency crystal oscillator clock frequency for target system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00255">system_ezr32lg.c:255</a></div></div>
 <div class="ttc" id="system__ezr32lg_8c_html_a27d1136b2fa0bc83ea108d11cd29c502"><div class="ttname"><a href="system__ezr32lg_8c.html#a27d1136b2fa0bc83ea108d11cd29c502">EFM32_LFXO_FREQ</a></div><div class="ttdeci">#define EFM32_LFXO_FREQ</div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00071">system_ezr32lg.c:71</a></div></div>
-<div class="ttc" id="system__ezr32lg_8c_html_a93f514700ccf00d08dbdcff7f1224eb2"><div class="ttname"><a href="system__ezr32lg_8c.html#a93f514700ccf00d08dbdcff7f1224eb2">SystemInit</a></div><div class="ttdeci">void SystemInit(void)</div><div class="ttdoc">Initialize the system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00310">system_ezr32lg.c:310</a></div></div>
+<div class="ttc" id="system__ezr32lg_8c_html_a93f514700ccf00d08dbdcff7f1224eb2"><div class="ttname"><a href="system__ezr32lg_8c.html#a93f514700ccf00d08dbdcff7f1224eb2">SystemInit</a></div><div class="ttdeci">void SystemInit(void)</div><div class="ttdoc">Initialize the system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00311">system_ezr32lg.c:311</a></div></div>
 <div class="ttc" id="group__EZR32LG__CMU__BitFields_html_ga7c22366fec6dd0c455fce2599144ae6b"><div class="ttname"><a href="group__EZR32LG__CMU__BitFields.html#ga7c22366fec6dd0c455fce2599144ae6b">_CMU_CTRL_HFCLKDIV_MASK</a></div><div class="ttdeci">#define _CMU_CTRL_HFCLKDIV_MASK</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__cmu_8h_source.html#l00155">ezr32lg_cmu.h:155</a></div></div>
-<div class="ttc" id="group__EZR32LG330F256R69__Peripheral__Declaration_html_ga0fcf54e71ec010df38f8b7a9c1166f1f"><div class="ttname"><a href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a></div><div class="ttdeci">#define DEVINFO</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg330f256r69_8h_source.html#l00426">ezr32lg330f256r69.h:426</a></div></div>
+<div class="ttc" id="group__EZR32LG330F256R69__Peripheral__Declaration_html_ga0fcf54e71ec010df38f8b7a9c1166f1f"><div class="ttname"><a href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a></div><div class="ttdeci">#define DEVINFO</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg330f256r69_8h_source.html#l00429">ezr32lg330f256r69.h:429</a></div></div>
 <div class="ttc" id="group__EZR32LG__DEVINFO__BitFields_html_gaa7759fc4f4ea4980064ecd281c4d15ff"><div class="ttname"><a href="group__EZR32LG__DEVINFO__BitFields.html#gaa7759fc4f4ea4980064ecd281c4d15ff">_DEVINFO_PART_PROD_REV_SHIFT</a></div><div class="ttdeci">#define _DEVINFO_PART_PROD_REV_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__devinfo_8h_source.html#l00162">ezr32lg_devinfo.h:162</a></div></div>
 <div class="ttc" id="group__EZR32LG__CMU__BitFields_html_ga0faaa6d2bbe3b6343fdfa9ad6fa27c92"><div class="ttname"><a href="group__EZR32LG__CMU__BitFields.html#ga0faaa6d2bbe3b6343fdfa9ad6fa27c92">CMU_STATUS_HFRCOSEL</a></div><div class="ttdeci">#define CMU_STATUS_HFRCOSEL</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__cmu_8h_source.html#l00596">ezr32lg_cmu.h:596</a></div></div>
-<div class="ttc" id="system__ezr32lg_8c_html_a186aefb7bb200c8fda0fc0a4d4b2aa14"><div class="ttname"><a href="system__ezr32lg_8c.html#a186aefb7bb200c8fda0fc0a4d4b2aa14">SystemLFXOClockGet</a></div><div class="ttdeci">uint32_t SystemLFXOClockGet(void)</div><div class="ttdoc">Get low frequency crystal oscillator clock frequency for target system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00361">system_ezr32lg.c:361</a></div></div>
+<div class="ttc" id="system__ezr32lg_8c_html_a186aefb7bb200c8fda0fc0a4d4b2aa14"><div class="ttname"><a href="system__ezr32lg_8c.html#a186aefb7bb200c8fda0fc0a4d4b2aa14">SystemLFXOClockGet</a></div><div class="ttdeci">uint32_t SystemLFXOClockGet(void)</div><div class="ttdoc">Get low frequency crystal oscillator clock frequency for target system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00362">system_ezr32lg.c:362</a></div></div>
 <div class="ttc" id="group__EZR32LG__DEVINFO__BitFields_html_gafa63a8f8e63c487fe8ad94c79656708a"><div class="ttname"><a href="group__EZR32LG__DEVINFO__BitFields.html#gafa63a8f8e63c487fe8ad94c79656708a">_DEVINFO_PART_PROD_REV_MASK</a></div><div class="ttdeci">#define _DEVINFO_PART_PROD_REV_MASK</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__devinfo_8h_source.html#l00161">ezr32lg_devinfo.h:161</a></div></div>
 <div class="ttc" id="group__EZR32LG__CMU__BitFields_html_ga24b72f8f0983aad0fe9a476328c585c8"><div class="ttname"><a href="group__EZR32LG__CMU__BitFields.html#ga24b72f8f0983aad0fe9a476328c585c8">CMU_HFRCOCTRL_BAND_11MHZ</a></div><div class="ttdeci">#define CMU_HFRCOCTRL_BAND_11MHZ</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__cmu_8h_source.html#l00318">ezr32lg_cmu.h:318</a></div></div>
 <div class="ttc" id="system__ezr32lg_8c_html_a64cc4ea6124c6503b120933d91edf1a0"><div class="ttname"><a href="system__ezr32lg_8c.html#a64cc4ea6124c6503b120933d91edf1a0">SystemMaxCoreClockGet</a></div><div class="ttdeci">uint32_t SystemMaxCoreClockGet(void)</div><div class="ttdoc">Get the maximum core clock frequency. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00152">system_ezr32lg.c:152</a></div></div>
@@ -386,7 +385,7 @@ $(document).ready(function(){initNavTree('system__ezr32lg_8c_source.html','');})
 <div class="ttc" id="group__EZR32LG__CMU__BitFields_html_ga6963fd7b875e85b2a97b31643270469f"><div class="ttname"><a href="group__EZR32LG__CMU__BitFields.html#ga6963fd7b875e85b2a97b31643270469f">CMU_STATUS_HFXOSEL</a></div><div class="ttdeci">#define CMU_STATUS_HFXOSEL</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__cmu_8h_source.html#l00601">ezr32lg_cmu.h:601</a></div></div>
 <div class="ttc" id="group__EZR32LG__CMU__BitFields_html_gab738dd99612bc0ff231a64a2871dc172"><div class="ttname"><a href="group__EZR32LG__CMU__BitFields.html#gab738dd99612bc0ff231a64a2871dc172">_CMU_CTRL_HFCLKDIV_SHIFT</a></div><div class="ttdeci">#define _CMU_CTRL_HFCLKDIV_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__cmu_8h_source.html#l00154">ezr32lg_cmu.h:154</a></div></div>
 <div class="ttc" id="group__EZR32LG__CMU__BitFields_html_gaa7ceb79efd3fe5547479edecc773f619"><div class="ttname"><a href="group__EZR32LG__CMU__BitFields.html#gaa7ceb79efd3fe5547479edecc773f619">CMU_STATUS_LFXOSEL</a></div><div class="ttdeci">#define CMU_STATUS_LFXOSEL</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__cmu_8h_source.html#l00611">ezr32lg_cmu.h:611</a></div></div>
-<div class="ttc" id="system__ezr32lg_8c_html_a88eecfafda55942454a9e10912b3f224"><div class="ttname"><a href="system__ezr32lg_8c.html#a88eecfafda55942454a9e10912b3f224">SystemULFRCOClockGet</a></div><div class="ttdeci">uint32_t SystemULFRCOClockGet(void)</div><div class="ttdoc">Get ultra low frequency RC oscillator clock frequency for target system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00344">system_ezr32lg.c:344</a></div></div>
+<div class="ttc" id="system__ezr32lg_8c_html_a88eecfafda55942454a9e10912b3f224"><div class="ttname"><a href="system__ezr32lg_8c.html#a88eecfafda55942454a9e10912b3f224">SystemULFRCOClockGet</a></div><div class="ttdeci">uint32_t SystemULFRCOClockGet(void)</div><div class="ttdoc">Get ultra low frequency RC oscillator clock frequency for target system. </div><div class="ttdef"><b>Definition:</b> <a href="system__ezr32lg_8c_source.html#l00345">system_ezr32lg.c:345</a></div></div>
 <div class="ttc" id="group__EZR32LG__CMU__BitFields_html_ga1de66b2604acc99354743dc4ace896fb"><div class="ttname"><a href="group__EZR32LG__CMU__BitFields.html#ga1de66b2604acc99354743dc4ace896fb">CMU_HFRCOCTRL_BAND_28MHZ</a></div><div class="ttdeci">#define CMU_HFRCOCTRL_BAND_28MHZ</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__cmu_8h_source.html#l00322">ezr32lg_cmu.h:322</a></div></div>
 <div class="ttc" id="group__EZR32LG__CMU__BitFields_html_gacdf2aa36837ebca928e0aa001c634484"><div class="ttname"><a href="group__EZR32LG__CMU__BitFields.html#gacdf2aa36837ebca928e0aa001c634484">CMU_HFRCOCTRL_BAND_1MHZ</a></div><div class="ttdeci">#define CMU_HFRCOCTRL_BAND_1MHZ</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__cmu_8h_source.html#l00316">ezr32lg_cmu.h:316</a></div></div>
 <div class="ttc" id="group__EZR32LG__CMU__BitFields_html_ga3c946250fae7e269354db54290a5d30f"><div class="ttname"><a href="group__EZR32LG__CMU__BitFields.html#ga3c946250fae7e269354db54290a5d30f">CMU_HFRCOCTRL_BAND_21MHZ</a></div><div class="ttdeci">#define CMU_HFRCOCTRL_BAND_21MHZ</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__cmu_8h_source.html#l00321">ezr32lg_cmu.h:321</a></div></div>
@@ -401,7 +400,7 @@ $(document).ready(function(){initNavTree('system__ezr32lg_8c_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4c76ddfc10a27668d6c42d3412320ee0.html">Device</a></li><li class="navelem"><a class="el" href="dir_eca9ef8613423b074c58e28a7f7d2781.html">SiliconLabs</a></li><li class="navelem"><a class="el" href="dir_092418483db46d370fd97d3411f2bb2d.html">EZR32LG</a></li><li class="navelem"><a class="el" href="dir_40ff61390ceaf7a1203ed8be79b36aba.html">Source</a></li><li class="navelem"><a class="el" href="system__ezr32lg_8c.html">system_ezr32lg.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:41:25 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:42:31 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

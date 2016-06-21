@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -112,8 +110,8 @@ $(document).ready(function(){initNavTree('em__timer_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="em__timer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef __SILICON_LABS_EM_TIMER_H__</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define __SILICON_LABS_EM_TIMER_H__</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef EM_TIMER_H</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define EM_TIMER_H</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__device_8h.html">em_device.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined(TIMER_COUNT) &amp;&amp; (TIMER_COUNT &gt; 0)</span></div>
@@ -664,7 +662,7 @@ $(document).ready(function(){initNavTree('em__timer_8h_source.html','');});
 <div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;</div>
 <div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(TIMER_COUNT) &amp;&amp; (TIMER_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SILICON_LABS_EM_TIMER_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_TIMER_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="structTIMER__InitDTI__TypeDef_html_a59fc55f38d62814fdf52521a5a197d41"><div class="ttname"><a href="structTIMER__InitDTI__TypeDef.html#a59fc55f38d62814fdf52521a5a197d41">TIMER_InitDTI_TypeDef::outputsEnableMask</a></div><div class="ttdeci">uint32_t outputsEnableMask</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00448">em_timer.h:448</a></div></div>
 <div class="ttc" id="group__TIMER_html_ggadc7dec57fe232c5fbabbb7cd25ebffe0a562644f7e2fe520845c0e7175c135c89"><div class="ttname"><a href="group__TIMER.html#ggadc7dec57fe232c5fbabbb7cd25ebffe0a562644f7e2fe520845c0e7175c135c89">timerPrescale1024</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00217">em_timer.h:217</a></div></div>
 <div class="ttc" id="group__TIMER_html_gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9"><div class="ttname"><a href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9">TIMER_IntDisable</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_IntDisable(TIMER_TypeDef *timer, uint32_t flags)</div><div class="ttdoc">Disable one or more TIMER interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00730">em_timer.h:730</a></div></div>
@@ -690,7 +688,7 @@ $(document).ready(function(){initNavTree('em__timer_8h_source.html','');});
 <div class="ttc" id="group__EFM32LG__TIMER__BitFields_html_gae1affdbed92a366bc9dbab19ba908c93"><div class="ttname"><a href="group__EFM32LG__TIMER__BitFields.html#gae1affdbed92a366bc9dbab19ba908c93">_TIMER_CTRL_PRESC_DIV2</a></div><div class="ttdeci">#define _TIMER_CTRL_PRESC_DIV2</div><div class="ttdef"><b>Definition:</b> <a href="efm32lg__timer_8h_source.html#l00160">efm32lg_timer.h:160</a></div></div>
 <div class="ttc" id="group__TIMER_html_ggad737fcc050f53fc713f07f22f9bd5143a4e13a089274a0d90429d26ac58ec7310"><div class="ttname"><a href="group__TIMER.html#ggad737fcc050f53fc713f07f22f9bd5143a4e13a089274a0d90429d26ac58ec7310">timerInputActionReloadStart</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00173">em_timer.h:173</a></div></div>
 <div class="ttc" id="structTIMER__Init__TypeDef_html_a8310f7f65e6359215e3f47593a086a0f"><div class="ttname"><a href="structTIMER__Init__TypeDef.html#a8310f7f65e6359215e3f47593a086a0f">TIMER_Init_TypeDef::fallAction</a></div><div class="ttdeci">TIMER_InputAction_TypeDef fallAction</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00294">em_timer.h:294</a></div></div>
-<div class="ttc" id="group__EFM32LG995F256__Peripheral__Declaration_html_gaf1b746ba5ab7d0ab657156ebda0f290c"><div class="ttname"><a href="group__EFM32LG995F256__Peripheral__Declaration.html#gaf1b746ba5ab7d0ab657156ebda0f290c">TIMER0</a></div><div class="ttdeci">#define TIMER0</div><div class="ttdef"><b>Definition:</b> <a href="efm32lg995f256_8h_source.html#l00392">efm32lg995f256.h:392</a></div></div>
+<div class="ttc" id="group__EFM32LG995F256__Peripheral__Declaration_html_gaf1b746ba5ab7d0ab657156ebda0f290c"><div class="ttname"><a href="group__EFM32LG995F256__Peripheral__Declaration.html#gaf1b746ba5ab7d0ab657156ebda0f290c">TIMER0</a></div><div class="ttdeci">#define TIMER0</div><div class="ttdef"><b>Definition:</b> <a href="efm32lg995f256_8h_source.html#l00393">efm32lg995f256.h:393</a></div></div>
 <div class="ttc" id="group__TIMER_html_gae3dd36e419641a24d3f44084c216bf71"><div class="ttname"><a href="group__TIMER.html#gae3dd36e419641a24d3f44084c216bf71">TIMER_Enable</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_Enable(TIMER_TypeDef *timer, bool enable)</div><div class="ttdoc">Start/stop TIMER. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00613">em_timer.h:613</a></div></div>
 <div class="ttc" id="structTIMER__Init__TypeDef_html_a0d7b4ece39bb4b5672933a20e91b5cf7"><div class="ttname"><a href="structTIMER__Init__TypeDef.html#a0d7b4ece39bb4b5672933a20e91b5cf7">TIMER_Init_TypeDef::oneShot</a></div><div class="ttdeci">bool oneShot</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00309">em_timer.h:309</a></div></div>
 <div class="ttc" id="group__TIMER_html_gga3899377f736a636532b16922f7c65728aa869e67b3178482a35028bf6c15cbae4"><div class="ttname"><a href="group__TIMER.html#gga3899377f736a636532b16922f7c65728aa869e67b3178482a35028bf6c15cbae4">timerOutputActionSet</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00200">em_timer.h:200</a></div></div>
@@ -881,7 +879,7 @@ $(document).ready(function(){initNavTree('em__timer_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__timer_8h.html">em_timer.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:37:27 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:29:13 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

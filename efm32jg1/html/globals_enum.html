@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li class="current"><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
   <div id="navrow3" class="tabs2">
@@ -209,6 +206,9 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 <li>BSP_Display_TypeDef
 : <a class="el" href="group__BSP__DK.html#ga2dc0e02483c77ca9536927c6495db343">bsp.h</a>
 </li>
+<li>BSP_Peripheral_TypeDef
+: <a class="el" href="group__BSP__DK.html#ga978526e7803d063aeea2bba759571289">bsp.h</a>
+</li>
 </ul>
 
 
@@ -237,26 +237,17 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 <li>CRYOTIMER_Presc_TypeDef
 : <a class="el" href="group__CRYOTIMER.html#ga4f17c6369fd634d476c354a45a1fa426">em_cryotimer.h</a>
 </li>
-<li>CRYPTO_DataReg_TypeDef
-: <a class="el" href="group__CRYPTO.html#ga51f911302fe6091ef15a2919224bf13c">em_crypto.h</a>
-</li>
-<li>CRYPTO_DDataReg_TypeDef
-: <a class="el" href="group__CRYPTO.html#ga7ac553d2e2d1711e87cf467fb680a8ca">em_crypto.h</a>
-</li>
 <li>CRYPTO_IncWidth_TypeDef
 : <a class="el" href="group__CRYPTO.html#ga18d57ac9c4b732d60d917201c70e8627">em_crypto.h</a>
 </li>
 <li>CRYPTO_KeyWidth_TypeDef
 : <a class="el" href="group__CRYPTO.html#gab04d5148b33affc27d8b8fd65b22a837">em_crypto.h</a>
 </li>
-<li>CRYPTO_ModulusType_TypeDef
-: <a class="el" href="group__CRYPTO.html#gafc4d9a94c3c590773ad016dd94607338">em_crypto.h</a>
+<li>CRYPTO_ModulusId_TypeDef
+: <a class="el" href="group__CRYPTO.html#ga2d7bdc2c721b4d27fdf7b448c0cf177d">em_crypto.h</a>
 </li>
 <li>CRYPTO_MulOperandWidth_TypeDef
 : <a class="el" href="group__CRYPTO.html#gac49e99099e6e560fee3fecf4a235a3b3">em_crypto.h</a>
-</li>
-<li>CRYPTO_QDataReg_TypeDef
-: <a class="el" href="group__CRYPTO.html#ga97b7e8c67f394cec74fb1167248d098d">em_crypto.h</a>
 </li>
 <li>CRYPTO_ResultWidth_TypeDef
 : <a class="el" href="group__CRYPTO.html#ga8fa558edbd6903baeea49f8a6a28f00d">em_crypto.h</a>
@@ -289,9 +280,6 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 </li>
 <li>EMU_DcdcLnRcoBand_TypeDef
 : <a class="el" href="group__EMU.html#gaa7b79860e9ac3e301ab467715432b644">em_emu.h</a>
-</li>
-<li>EMU_DcdcLnTransientMode_TypeDef
-: <a class="el" href="group__EMU.html#gaf36ca06d495617fe5f5c5bb12954effd">em_emu.h</a>
 </li>
 <li>EMU_DcdcMode_TypeDef
 : <a class="el" href="group__EMU.html#ga8dc5324b0e9baa047afdb67739bdb53d">em_emu.h</a>
@@ -520,6 +508,9 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>SegmentLCD_BlockMode_TypeDef
+: <a class="el" href="group__SegmentLcd.html#gafbcfe27efe1304334520446550824d87">segmentlcd.h</a>
+</li>
 <li>SLEEP_EnergyMode_t
 : <a class="el" href="group__SLEEP.html#gaafb23646b17401bdad763d0fb0c7ff9a">sleep.h</a>
 </li>
@@ -640,13 +631,19 @@ $(document).ready(function(){initNavTree('globals_enum.html','');});
 <li>WDOG_PeriodSel_TypeDef
 : <a class="el" href="group__WDOG.html#gafb32176c669596071269d5fe62734505">em_wdog.h</a>
 </li>
+<li>WDOG_WarnSel_TypeDef
+: <a class="el" href="group__WDOG.html#gaf247334d25d8a47cbd5ececf5d942f6d">em_wdog.h</a>
+</li>
+<li>WDOG_WinSel_TypeDef
+: <a class="el" href="group__WDOG.html#gaf7f977a90d9fe36572ad083fc1478839">em_wdog.h</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:55 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:41:29 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

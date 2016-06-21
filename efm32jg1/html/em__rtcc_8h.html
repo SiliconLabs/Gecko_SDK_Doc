@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -117,10 +114,23 @@ $(document).ready(function(){initNavTree('em__rtcc_8h.html','');});
 <div class="title">em_rtcc.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Real Time Counter (RTCC) peripheral API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>Real Time Counter (RTCC) peripheral API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="em__assert_8h_source.html">em_assert.h</a>&quot;</code><br />
 </div>
@@ -128,24 +138,33 @@ $(document).ready(function(){initNavTree('em__rtcc_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRTCC__Init__TypeDef.html">RTCC_Init_TypeDef</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRTCC__CCChConf__TypeDef.html">RTCC_CCChConf_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRTCC__Init__TypeDef.html">RTCC_Init_TypeDef</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gadb4e75d61f418d6c628c2a0fbeb8dce9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gadb4e75d61f418d6c628c2a0fbeb8dce9">RTCC_INIT_DEFAULT</a></td></tr>
-<tr class="separator:gadb4e75d61f418d6c628c2a0fbeb8dce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57e1709c5f33243f29d1dac451ab3c66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga57e1709c5f33243f29d1dac451ab3c66">RTCC_CH_INIT_COMPARE_DEFAULT</a></td></tr>
-<tr class="separator:ga57e1709c5f33243f29d1dac451ab3c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga46196e946c7e68bc4ef135a2fe9f68ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga46196e946c7e68bc4ef135a2fe9f68ee">RTCC_CH_INIT_CAPTURE_DEFAULT</a></td></tr>
 <tr class="separator:ga46196e946c7e68bc4ef135a2fe9f68ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57e1709c5f33243f29d1dac451ab3c66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga57e1709c5f33243f29d1dac451ab3c66">RTCC_CH_INIT_COMPARE_DEFAULT</a></td></tr>
+<tr class="separator:ga57e1709c5f33243f29d1dac451ab3c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga698f61ac638893f66016895298085ccc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga698f61ac638893f66016895298085ccc">RTCC_CH_VALID</a>(ch)    &#160;&#160;&#160;( ( ch ) &lt; 3 )</td></tr>
 <tr class="separator:ga698f61ac638893f66016895298085ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb4e75d61f418d6c628c2a0fbeb8dce9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gadb4e75d61f418d6c628c2a0fbeb8dce9">RTCC_INIT_DEFAULT</a></td></tr>
+<tr class="separator:gadb4e75d61f418d6c628c2a0fbeb8dce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:gae97fe5bba7812a48b934bd7fdab814fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gae97fe5bba7812a48b934bd7fdab814fb">RTCC_CapComChMode_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fba6a83b168530882bb34bd8efa20c727bd">rtccCapComChModeOff</a> = _RTCC_CC_CTRL_MODE_OFF, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84">rtccCapComChModeCapture</a> = _RTCC_CC_CTRL_MODE_INPUTCAPTURE, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fba63e4f13f5335b727ffa7f82207391344">rtccCapComChModeCompare</a> = _RTCC_CC_CTRL_MODE_OUTPUTCOMPARE
+<br />
+ }<tr class="separator:gae97fe5bba7812a48b934bd7fdab814fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:ga99b059f50a485234a456503ca956ea1e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga99b059f50a485234a456503ca956ea1e">RTCC_CntMode_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__RTCC.html#gga99b059f50a485234a456503ca956ea1ea30dcaebe744d82e1a92bb4d381ff576f">rtccCntModeNormal</a> = _RTCC_CTRL_CNTTICK_PRESC, 
 <br />
@@ -188,21 +207,12 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:gad0335cb53922f7fedc244336f5f299b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:ga27eaf41fd1b547e396790d6bab732054"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga27eaf41fd1b547e396790d6bab732054">RTCC_PrescMode_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df">rtccCntTickPresc</a> = _RTCC_CTRL_CNTTICK_PRESC, 
+<tr class="memitem:gaffe824f0dbb1678e31697c966a6c15bf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gaffe824f0dbb1678e31697c966a6c15bf">RTCC_CompBase_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1">rtccCompBaseCnt</a> = _RTCC_CC_CTRL_COMPBASE_CNT, 
 <br />
-&#160;&#160;<a class="el" href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054a6ec7fc3ffe4f35529e0d99fd99431ceb">rtccCntTickCCV0Match</a> = _RTCC_CTRL_CNTTICK_CCV0MATCH
+&#160;&#160;<a class="el" href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa7527842a3e125b1ac5c871d663de943b">rtccCompBasePreCnt</a> = _RTCC_CC_CTRL_COMPBASE_PRECNT
 <br />
- }<tr class="separator:ga27eaf41fd1b547e396790d6bab732054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gae97fe5bba7812a48b934bd7fdab814fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gae97fe5bba7812a48b934bd7fdab814fb">RTCC_CapComChMode_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fba6a83b168530882bb34bd8efa20c727bd">rtccCapComChModeOff</a> = _RTCC_CC_CTRL_MODE_OFF, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fbae79ff34648ceeecc87c256023fcedf84">rtccCapComChModeCapture</a> = _RTCC_CC_CTRL_MODE_INPUTCAPTURE, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fba63e4f13f5335b727ffa7f82207391344">rtccCapComChModeCompare</a> = _RTCC_CC_CTRL_MODE_OUTPUTCOMPARE
-<br />
- }<tr class="separator:gae97fe5bba7812a48b934bd7fdab814fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ }<tr class="separator:gaffe824f0dbb1678e31697c966a6c15bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ga5262fdbf7e20eef8456121bb4c0128c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga5262fdbf7e20eef8456121bb4c0128c8">RTCC_CompMatchOutAction_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8a2c0614572ce6d5023f03e71f68f044f4">rtccCompMatchOutActionPulse</a> = _RTCC_CC_CTRL_CMOA_PULSE, 
@@ -214,6 +224,31 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8aced09c601780ef2c8ed209acfaa033af">rtccCompMatchOutActionSet</a> = _RTCC_CC_CTRL_CMOA_SET
 <br />
  }<tr class="separator:ga5262fdbf7e20eef8456121bb4c0128c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gaca22e74b99f507c580c2069a97b0bfe4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gaca22e74b99f507c580c2069a97b0bfe4">RTCC_DayCompareMode_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__RTCC.html#ggaca22e74b99f507c580c2069a97b0bfe4a4263042eea73841b941f8b8d2fbb42ed">rtccDayCompareModeMonth</a> = _RTCC_CC_CTRL_DAYCC_MONTH, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#ggaca22e74b99f507c580c2069a97b0bfe4ad87dae1f7846f6aec8e78bb73729d99d">rtccDayCompareModeWeek</a> = _RTCC_CC_CTRL_DAYCC_WEEK
+<br />
+ }<tr class="separator:gaca22e74b99f507c580c2069a97b0bfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga25aa199b54a7dbaa388ce94cd1c250cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga25aa199b54a7dbaa388ce94cd1c250cb">RTCC_InEdgeSel_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2">rtccInEdgeRising</a> = _RTCC_CC_CTRL_ICEDGE_RISING, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba213df31af5a64eeb92d5949f47271acd">rtccInEdgeFalling</a> = _RTCC_CC_CTRL_ICEDGE_FALLING, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cbaa206e119b9554d6a6752da16a92b042d">rtccInEdgeBoth</a> = _RTCC_CC_CTRL_ICEDGE_BOTH, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cbac3f49d2a06846b1a56d5263feb3d079f">rtccInEdgeNone</a> = _RTCC_CC_CTRL_ICEDGE_NONE
+<br />
+ }<tr class="separator:ga25aa199b54a7dbaa388ce94cd1c250cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga27eaf41fd1b547e396790d6bab732054"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga27eaf41fd1b547e396790d6bab732054">RTCC_PrescMode_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df">rtccCntTickPresc</a> = _RTCC_CTRL_CNTTICK_PRESC, 
+<br />
+&#160;&#160;<a class="el" href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054a6ec7fc3ffe4f35529e0d99fd99431ceb">rtccCntTickCCV0Match</a> = _RTCC_CTRL_CNTTICK_CCV0MATCH
+<br />
+ }<tr class="separator:ga27eaf41fd1b547e396790d6bab732054"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:gaca3af9bdf0979b882fa0ea6d5847ff36"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gaca3af9bdf0979b882fa0ea6d5847ff36">RTCC_PRSSel_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a66352f5d530239f525b53cecfa120a13">rtccPRSCh0</a> = _RTCC_CC_CTRL_PRSSEL_PRSCH0, 
@@ -241,31 +276,6 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a8554e309e4d7cb23299b8d4f96cf6eab">rtccPRSCh11</a> = _RTCC_CC_CTRL_PRSSEL_PRSCH11
 <br />
  }<tr class="separator:gaca3af9bdf0979b882fa0ea6d5847ff36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga25aa199b54a7dbaa388ce94cd1c250cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#ga25aa199b54a7dbaa388ce94cd1c250cb">RTCC_InEdgeSel_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba95e878e7d44807efecb3ac325343ddf2">rtccInEdgeRising</a> = _RTCC_CC_CTRL_ICEDGE_RISING, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cba213df31af5a64eeb92d5949f47271acd">rtccInEdgeFalling</a> = _RTCC_CC_CTRL_ICEDGE_FALLING, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cbaa206e119b9554d6a6752da16a92b042d">rtccInEdgeBoth</a> = _RTCC_CC_CTRL_ICEDGE_BOTH, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#gga25aa199b54a7dbaa388ce94cd1c250cbac3f49d2a06846b1a56d5263feb3d079f">rtccInEdgeNone</a> = _RTCC_CC_CTRL_ICEDGE_NONE
-<br />
- }<tr class="separator:ga25aa199b54a7dbaa388ce94cd1c250cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gaffe824f0dbb1678e31697c966a6c15bf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gaffe824f0dbb1678e31697c966a6c15bf">RTCC_CompBase_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1">rtccCompBaseCnt</a> = _RTCC_CC_CTRL_COMPBASE_CNT, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa7527842a3e125b1ac5c871d663de943b">rtccCompBasePreCnt</a> = _RTCC_CC_CTRL_COMPBASE_PRECNT
-<br />
- }<tr class="separator:gaffe824f0dbb1678e31697c966a6c15bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gaca22e74b99f507c580c2069a97b0bfe4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTCC.html#gaca22e74b99f507c580c2069a97b0bfe4">RTCC_DayCompareMode_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggaca22e74b99f507c580c2069a97b0bfe4a4263042eea73841b941f8b8d2fbb42ed">rtccDayCompareModeMonth</a> = _RTCC_CC_CTRL_DAYCC_MONTH, 
-<br />
-&#160;&#160;<a class="el" href="group__RTCC.html#ggaca22e74b99f507c580c2069a97b0bfe4ad87dae1f7846f6aec8e78bb73729d99d">rtccDayCompareModeWeek</a> = _RTCC_CC_CTRL_DAYCC_WEEK
-<br />
- }<tr class="separator:gaca22e74b99f507c580c2069a97b0bfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -366,28 +376,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memdesc:ga6397bf67f4af456b64565e38efc4063c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock RTCC registers.  <a href="group__RTCC.html#ga6397bf67f4af456b64565e38efc4063c">More...</a><br /></td></tr>
 <tr class="separator:ga6397bf67f4af456b64565e38efc4063c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="em__rtcc_8h_source.html">em_rtcc.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__rtcc_8h.html">em_rtcc.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:44 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:40:35 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

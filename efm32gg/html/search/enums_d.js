@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['segmentlcd_5fblockmode_5ftypedef',['SegmentLCD_BlockMode_TypeDef',['../group__SegmentLcd.html#gafbcfe27efe1304334520446550824d87',1,'segmentlcd.h']]],
   ['sleep_5fenergymode_5ft',['SLEEP_EnergyMode_t',['../group__SLEEP.html#gaafb23646b17401bdad763d0fb0c7ff9a',1,'sleep.h']]],
   ['spidrv_5fbitorder',['SPIDRV_BitOrder',['../group__SPIDRV.html#ga25c5e9421435cbb3cdd8e7da486426dd',1,'spidrv.h']]],
   ['spidrv_5fclockmode',['SPIDRV_ClockMode',['../group__SPIDRV.html#gaa1b4721388b623f0242d0cadd4a3b3ef',1,'spidrv.h']]],

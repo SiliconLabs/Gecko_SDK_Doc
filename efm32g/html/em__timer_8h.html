@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32g-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -116,10 +114,23 @@ $(document).ready(function(){initNavTree('em__timer_8h.html','');});
 <div class="title">em_timer.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Timer/counter (TIMER) peripheral API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>Timer/counter (TIMER) peripheral API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="em__assert_8h_source.html">em_assert.h</a>&quot;</code><br />
 </div>
@@ -164,6 +175,17 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__TIMER.html#gga511d9c88c172605ee06715c274ad9cfaa98d6140c598983b937ee4294e95f8739">timerClkSelCascade</a> = _TIMER_CTRL_CLKSEL_TIMEROUF
 <br />
  }<tr class="separator:ga511d9c88c172605ee06715c274ad9cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gae8ecc03dd4449015adc2fcb5469c691f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#gae8ecc03dd4449015adc2fcb5469c691f">TIMER_DtiFaultAction_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691faeae2b39b5fad50c713a73a6a03bb6375">timerDtiFaultActionNone</a> = _TIMER_DTFC_DTFA_NONE, 
+<br />
+&#160;&#160;<a class="el" href="group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691fab5142a73cd3ed39af3b2852fff3069e5">timerDtiFaultActionInactive</a> = _TIMER_DTFC_DTFA_INACTIVE, 
+<br />
+&#160;&#160;<a class="el" href="group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691fa2483f94170c976dde7bfd68eae34f665">timerDtiFaultActionClear</a> = _TIMER_DTFC_DTFA_CLEAR, 
+<br />
+&#160;&#160;<a class="el" href="group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691faa64dc181c4990a9356429c5046187456">timerDtiFaultActionTristate</a> = _TIMER_DTFC_DTFA_TRISTATE
+<br />
+ }<tr class="separator:gae8ecc03dd4449015adc2fcb5469c691f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:gaa024137506ad0a0cd518c4572f8ba545"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#gaa024137506ad0a0cd518c4572f8ba545">TIMER_Edge_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__TIMER.html#ggaa024137506ad0a0cd518c4572f8ba545adaf018c66d975a7bd2b75f6a1a9a78cf">timerEdgeRising</a> = _TIMER_CC_CTRL_ICEDGE_RISING, 
@@ -264,23 +286,15 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:gaaa9a5454731dae18603a8076f9a9010a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:gae8ecc03dd4449015adc2fcb5469c691f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#gae8ecc03dd4449015adc2fcb5469c691f">TIMER_DtiFaultAction_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691faeae2b39b5fad50c713a73a6a03bb6375">timerDtiFaultActionNone</a> = _TIMER_DTFC_DTFA_NONE, 
-<br />
-&#160;&#160;<a class="el" href="group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691fab5142a73cd3ed39af3b2852fff3069e5">timerDtiFaultActionInactive</a> = _TIMER_DTFC_DTFA_INACTIVE, 
-<br />
-&#160;&#160;<a class="el" href="group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691fa2483f94170c976dde7bfd68eae34f665">timerDtiFaultActionClear</a> = _TIMER_DTFC_DTFA_CLEAR, 
-<br />
-&#160;&#160;<a class="el" href="group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691faa64dc181c4990a9356429c5046187456">timerDtiFaultActionTristate</a> = _TIMER_DTFC_DTFA_TRISTATE
-<br />
- }<tr class="separator:gae8ecc03dd4449015adc2fcb5469c691f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga17f48913c060adae55b26b39f1f39a4c"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#ga17f48913c060adae55b26b39f1f39a4c">TIMER_CaptureGet</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer, unsigned int ch)</td></tr>
 <tr class="memdesc:ga17f48913c060adae55b26b39f1f39a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get capture value for compare/capture channel when operating in capture mode.  <a href="group__TIMER.html#ga17f48913c060adae55b26b39f1f39a4c">More...</a><br /></td></tr>
 <tr class="separator:ga17f48913c060adae55b26b39f1f39a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59f5d85009fa218eadf75d992d8b7254"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#ga59f5d85009fa218eadf75d992d8b7254">TIMER_ClearDTIFault</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer, uint32_t flags)</td></tr>
+<tr class="memdesc:ga59f5d85009fa218eadf75d992d8b7254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear DTI fault source flags.  <a href="group__TIMER.html#ga59f5d85009fa218eadf75d992d8b7254">More...</a><br /></td></tr>
+<tr class="separator:ga59f5d85009fa218eadf75d992d8b7254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaca426134377caec8f8e5d44fe7726a4a"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#gaca426134377caec8f8e5d44fe7726a4a">TIMER_CompareBufSet</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer, unsigned int ch, uint32_t val)</td></tr>
 <tr class="memdesc:gaca426134377caec8f8e5d44fe7726a4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set compare value buffer for compare/capture channel when operating in compare or PWM mode.  <a href="group__TIMER.html#gaca426134377caec8f8e5d44fe7726a4a">More...</a><br /></td></tr>
 <tr class="separator:gaca426134377caec8f8e5d44fe7726a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,6 +310,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gae3dd36e419641a24d3f44084c216bf71"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#gae3dd36e419641a24d3f44084c216bf71">TIMER_Enable</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer, bool enable)</td></tr>
 <tr class="memdesc:gae3dd36e419641a24d3f44084c216bf71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start/stop TIMER.  <a href="group__TIMER.html#gae3dd36e419641a24d3f44084c216bf71">More...</a><br /></td></tr>
 <tr class="separator:gae3dd36e419641a24d3f44084c216bf71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95411ff86d8a4c40b1b30565ae52360a"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#ga95411ff86d8a4c40b1b30565ae52360a">TIMER_EnableDTI</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer, bool enable)</td></tr>
+<tr class="memdesc:ga95411ff86d8a4c40b1b30565ae52360a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable DTI unit.  <a href="group__TIMER.html#ga95411ff86d8a4c40b1b30565ae52360a">More...</a><br /></td></tr>
+<tr class="separator:ga95411ff86d8a4c40b1b30565ae52360a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23bbd3fb6710c301b9196d5fb1579c03"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#ga23bbd3fb6710c301b9196d5fb1579c03">TIMER_GetDTIFault</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer)</td></tr>
+<tr class="memdesc:ga23bbd3fb6710c301b9196d5fb1579c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DTI fault source flags status.  <a href="group__TIMER.html#ga23bbd3fb6710c301b9196d5fb1579c03">More...</a><br /></td></tr>
+<tr class="separator:ga23bbd3fb6710c301b9196d5fb1579c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad04a80140e22df0cd742e14933e9f028"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#gad04a80140e22df0cd742e14933e9f028">TIMER_Init</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer, const <a class="el" href="structTIMER__Init__TypeDef.html">TIMER_Init_TypeDef</a> *init)</td></tr>
 <tr class="memdesc:gad04a80140e22df0cd742e14933e9f028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize TIMER.  <a href="group__TIMER.html#gad04a80140e22df0cd742e14933e9f028">More...</a><br /></td></tr>
 <tr class="separator:gad04a80140e22df0cd742e14933e9f028"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -305,15 +325,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gafd5d7986d15f1deb971b55e5d70cf32f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#gafd5d7986d15f1deb971b55e5d70cf32f">TIMER_InitDTI</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer, const <a class="el" href="structTIMER__InitDTI__TypeDef.html">TIMER_InitDTI_TypeDef</a> *init)</td></tr>
 <tr class="memdesc:gafd5d7986d15f1deb971b55e5d70cf32f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the TIMER DTI unit.  <a href="group__TIMER.html#gafd5d7986d15f1deb971b55e5d70cf32f">More...</a><br /></td></tr>
 <tr class="separator:gafd5d7986d15f1deb971b55e5d70cf32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga95411ff86d8a4c40b1b30565ae52360a"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#ga95411ff86d8a4c40b1b30565ae52360a">TIMER_EnableDTI</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer, bool enable)</td></tr>
-<tr class="memdesc:ga95411ff86d8a4c40b1b30565ae52360a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable DTI unit.  <a href="group__TIMER.html#ga95411ff86d8a4c40b1b30565ae52360a">More...</a><br /></td></tr>
-<tr class="separator:ga95411ff86d8a4c40b1b30565ae52360a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23bbd3fb6710c301b9196d5fb1579c03"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#ga23bbd3fb6710c301b9196d5fb1579c03">TIMER_GetDTIFault</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer)</td></tr>
-<tr class="memdesc:ga23bbd3fb6710c301b9196d5fb1579c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DTI fault source flags status.  <a href="group__TIMER.html#ga23bbd3fb6710c301b9196d5fb1579c03">More...</a><br /></td></tr>
-<tr class="separator:ga23bbd3fb6710c301b9196d5fb1579c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga59f5d85009fa218eadf75d992d8b7254"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#ga59f5d85009fa218eadf75d992d8b7254">TIMER_ClearDTIFault</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer, uint32_t flags)</td></tr>
-<tr class="memdesc:ga59f5d85009fa218eadf75d992d8b7254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear DTI fault source flags.  <a href="group__TIMER.html#ga59f5d85009fa218eadf75d992d8b7254">More...</a><br /></td></tr>
-<tr class="separator:ga59f5d85009fa218eadf75d992d8b7254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92304cb71e3c8da55c9715c8ab30dc57"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57">TIMER_IntClear</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer, uint32_t flags)</td></tr>
 <tr class="memdesc:ga92304cb71e3c8da55c9715c8ab30dc57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending TIMER interrupts.  <a href="group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57">More...</a><br /></td></tr>
 <tr class="separator:ga92304cb71e3c8da55c9715c8ab30dc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,28 +362,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:gae2b8639e42754b13b70c2202b854c86b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the TIMER so that writing to locked registers again is possible.  <a href="group__TIMER.html#gae2b8639e42754b13b70c2202b854c86b">More...</a><br /></td></tr>
 <tr class="separator:gae2b8639e42754b13b70c2202b854c86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__timer_8h.html">em_timer.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:35:35 for EFM32 Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:22:02 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

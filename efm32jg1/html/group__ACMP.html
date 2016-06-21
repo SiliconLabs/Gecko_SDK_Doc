@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -108,12 +106,12 @@ $(document).ready(function(){initNavTree('group__ACMP.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">ACMP<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">ACMP<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Analog comparator (ACMP) Peripheral API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Analog comparator (ACMP) Peripheral API. </p>
+<p>This module contains functions to control the ACMP peripheral of Silicon Labs 32-bit MCUs and SoCs. The ACMP compares two analog signals and returns a digital value telling which is greater. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -139,6 +137,13 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga7e2f8e4e3706ed128374b8e631b86bcd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga7e2f8e4e3706ed128374b8e631b86bcd">ACMP_Accuracy_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga7e2f8e4e3706ed128374b8e631b86bcda909ba1e6a74ec4de536c8954217da384">acmpAccuracyLow</a> = _ACMP_CTRL_ACCURACY_LOW, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga7e2f8e4e3706ed128374b8e631b86bcdaec2f7986bcdf95944bb3af4ce0ddd05d">acmpAccuracyHigh</a> = _ACMP_CTRL_ACCURACY_HIGH
+<br />
+ }<tr class="separator:ga7e2f8e4e3706ed128374b8e631b86bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:gaf50197241694fe457b4c378106792961"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gaf50197241694fe457b4c378106792961">ACMP_CapsenseResistor_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__ACMP.html#ggaf50197241694fe457b4c378106792961a853b6d06c5ef68e36ab807756ae6fd23">acmpResistor0</a> = _ACMP_INPUTSEL_CSRESSEL_RES0, 
 <br />
@@ -157,183 +162,6 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__ACMP.html#ggaf50197241694fe457b4c378106792961aa68f15fe3142629f843c867c25cf146a">acmpResistor7</a> = _ACMP_INPUTSEL_CSRESSEL_RES7
 <br />
  }<tr class="separator:gaf50197241694fe457b4c378106792961"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga216306eec0ad9c6d68aa3c6819378001"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga216306eec0ad9c6d68aa3c6819378001">ACMP_HysteresisLevel_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a0b356c23ff07532fd9c8ed5cd82e41fd">acmpHysteresisLevel0</a> = _ACMP_HYSTERESIS0_HYST_HYST0, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001adfafa0cbeefb24869ef36a5445dd2330">acmpHysteresisLevel1</a> = _ACMP_HYSTERESIS0_HYST_HYST1, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001ae56a703c6ac7b03dfea9a6ca7db8bbad">acmpHysteresisLevel2</a> = _ACMP_HYSTERESIS0_HYST_HYST2, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001aca13be6a6d11808be76d51e64ccec099">acmpHysteresisLevel3</a> = _ACMP_HYSTERESIS0_HYST_HYST3, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001ae8403246b10c611bf69b41d5ca57fb96">acmpHysteresisLevel4</a> = _ACMP_HYSTERESIS0_HYST_HYST4, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a65dc78b72e93f30c4e01c9d7ecaab576">acmpHysteresisLevel5</a> = _ACMP_HYSTERESIS0_HYST_HYST5, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001aab34fdf401991712bd7d74c8b771529a">acmpHysteresisLevel6</a> = _ACMP_HYSTERESIS0_HYST_HYST6, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a3d4969a1e6956dbee0584037854d8fea">acmpHysteresisLevel7</a> = _ACMP_HYSTERESIS0_HYST_HYST7, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a97add9722e302b984a17182366810916">acmpHysteresisLevel8</a> = _ACMP_HYSTERESIS0_HYST_HYST8, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a016d023459b4c0bc2d1a6e77ef69881a">acmpHysteresisLevel9</a> = _ACMP_HYSTERESIS0_HYST_HYST9, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001abdfada1e3e461093a9b816c8592a9a06">acmpHysteresisLevel10</a> = _ACMP_HYSTERESIS0_HYST_HYST10, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a8f0085f05f9c51960b7e609270876428">acmpHysteresisLevel11</a> = _ACMP_HYSTERESIS0_HYST_HYST11, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a17edd71a0dfcfb18794114b48e16c9bd">acmpHysteresisLevel12</a> = _ACMP_HYSTERESIS0_HYST_HYST12, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001acf3c3534c06dd63f33265e9128e7af60">acmpHysteresisLevel13</a> = _ACMP_HYSTERESIS0_HYST_HYST13, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001ab6fe63618926cffc5d5d423522d9470f">acmpHysteresisLevel14</a> = _ACMP_HYSTERESIS0_HYST_HYST14, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a84cfc7b0b3fabb7ff4b793c8f84ed016">acmpHysteresisLevel15</a> = _ACMP_HYSTERESIS0_HYST_HYST15
-<br />
- }<tr class="separator:ga216306eec0ad9c6d68aa3c6819378001"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gafed9af52222203b3cae484f2d5be3dda"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gafed9af52222203b3cae484f2d5be3dda">ACMP_InputRange_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__ACMP.html#ggafed9af52222203b3cae484f2d5be3ddaaee7e6257ac87f3c77e69882a7fc939aa">acmpInputRangeFull</a> = _ACMP_CTRL_INPUTRANGE_FULL, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#ggafed9af52222203b3cae484f2d5be3ddaa79b0ca20658b3d3176abfc40f2248f37">acmpInputRangeHigh</a> = _ACMP_CTRL_INPUTRANGE_GTVDDDIV2, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#ggafed9af52222203b3cae484f2d5be3ddaad7e75e94f3ab60838d02f31341939a6c">acmpInputRangeLow</a> = _ACMP_CTRL_INPUTRANGE_LTVDDDIV2
-<br />
- }<tr class="separator:gafed9af52222203b3cae484f2d5be3dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gaa79073ca871a3b2a6359f8e8f1802cfc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gaa79073ca871a3b2a6359f8e8f1802cfc">ACMP_PowerSource_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__ACMP.html#ggaa79073ca871a3b2a6359f8e8f1802cfca0ebb738c612b8cf2988451a2df477bab">acmpPowerSourceAvdd</a> = _ACMP_CTRL_PWRSEL_AVDD, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#ggaa79073ca871a3b2a6359f8e8f1802cfca20f3d4b9743a4787a3c55c4d53bc1ef3">acmpPowerSourceVddVreg</a> = _ACMP_CTRL_PWRSEL_VREGVDD, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#ggaa79073ca871a3b2a6359f8e8f1802cfca029c358869107b4537d74271ee55d015">acmpPowerSourceIOVdd0</a> = _ACMP_CTRL_PWRSEL_IOVDD0, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#ggaa79073ca871a3b2a6359f8e8f1802cfca50dc13691347aba4724468e1c825d5d5">acmpPowerSourceIOVdd1</a> = _ACMP_CTRL_PWRSEL_IOVDD1
-<br />
- }<tr class="separator:gaa79073ca871a3b2a6359f8e8f1802cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga7e2f8e4e3706ed128374b8e631b86bcd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga7e2f8e4e3706ed128374b8e631b86bcd">ACMP_Accuracy_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga7e2f8e4e3706ed128374b8e631b86bcda909ba1e6a74ec4de536c8954217da384">acmpAccuracyLow</a> = _ACMP_CTRL_ACCURACY_LOW, 
-<br />
-&#160;&#160;<a class="el" href="group__ACMP.html#gga7e2f8e4e3706ed128374b8e631b86bcdaec2f7986bcdf95944bb3af4ce0ddd05d">acmpAccuracyHigh</a> = _ACMP_CTRL_ACCURACY_HIGH
-<br />
- }<tr class="separator:ga7e2f8e4e3706ed128374b8e631b86bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga00d95349022e6f35b567743aed0a86af"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga00d95349022e6f35b567743aed0a86af">ACMP_VAInput_TypeDef</a> { <br />
-&#160;&#160;<b>acmpVAInputVDD</b> = _ACMP_INPUTSEL_VASEL_VDD, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH0</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH0, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH2</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH2, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH4</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH4, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH6</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH6, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH8</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH8, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH10</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH10, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH12</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH12, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH14</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH14, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH16</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH16, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH18</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH18, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH20</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH20, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH22</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH22, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH24</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH24, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH26</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH26, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH28</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH28, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT2YCH30</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH30, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH0</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH0, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH1</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH1, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH2</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH2, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH3</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH3, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH4</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH4, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH5</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH5, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH6</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH6, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH7</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH7, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH8</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH8, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH9</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH9, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH10</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH10, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH11</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH11, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH12</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH12, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH13</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH13, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH14</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH14, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH15</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH15, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH16</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH16, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH17</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH17, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH18</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH18, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH19</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH19, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH20</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH20, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH21</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH21, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH22</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH22, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH23</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH23, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH24</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH24, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH25</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH25, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH26</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH26, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH27</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH27, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH28</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH28, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH29</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH29, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1XCH30</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH30, 
-<br />
-&#160;&#160;<b>acmpVAInputAPORT1YCH31</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH31
-<br />
- }<tr class="separator:ga00d95349022e6f35b567743aed0a86af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gaa091829d3d4da104fce51980d48c03d5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gaa091829d3d4da104fce51980d48c03d5">ACMP_VBInput_TypeDef</a> { <br />
-&#160;&#160;<b>acmpVBInput1V25</b> = _ACMP_INPUTSEL_VBSEL_1V25, 
-<br />
-&#160;&#160;<b>acmpVBInput2V5</b> = _ACMP_INPUTSEL_VBSEL_2V5
-<br />
- }<tr class="separator:gaa091829d3d4da104fce51980d48c03d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gacff601e58d6e53b10966c135d045be94"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gacff601e58d6e53b10966c135d045be94">ACMP_VLPInput_Typedef</a> { <br />
-&#160;&#160;<b>acmpVLPInputVADIV</b> = _ACMP_INPUTSEL_VLPSEL_VADIV, 
-<br />
-&#160;&#160;<b>acmpVLPInputVBDIV</b> = _ACMP_INPUTSEL_VLPSEL_VBDIV
-<br />
- }<tr class="separator:gacff601e58d6e53b10966c135d045be94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ga0971c188cd2a1aeff32dd621f851af17"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga0971c188cd2a1aeff32dd621f851af17">ACMP_Channel_TypeDef</a> { <br />
 &#160;&#160;<b>acmpInputAPORT0XCH0</b> = _ACMP_INPUTSEL_POSSEL_APORT0XCH0, 
@@ -672,15 +500,185 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga0971c188cd2a1aeff32dd621f851af17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:ga216306eec0ad9c6d68aa3c6819378001"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga216306eec0ad9c6d68aa3c6819378001">ACMP_HysteresisLevel_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a0b356c23ff07532fd9c8ed5cd82e41fd">acmpHysteresisLevel0</a> = _ACMP_HYSTERESIS0_HYST_HYST0, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001adfafa0cbeefb24869ef36a5445dd2330">acmpHysteresisLevel1</a> = _ACMP_HYSTERESIS0_HYST_HYST1, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001ae56a703c6ac7b03dfea9a6ca7db8bbad">acmpHysteresisLevel2</a> = _ACMP_HYSTERESIS0_HYST_HYST2, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001aca13be6a6d11808be76d51e64ccec099">acmpHysteresisLevel3</a> = _ACMP_HYSTERESIS0_HYST_HYST3, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001ae8403246b10c611bf69b41d5ca57fb96">acmpHysteresisLevel4</a> = _ACMP_HYSTERESIS0_HYST_HYST4, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a65dc78b72e93f30c4e01c9d7ecaab576">acmpHysteresisLevel5</a> = _ACMP_HYSTERESIS0_HYST_HYST5, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001aab34fdf401991712bd7d74c8b771529a">acmpHysteresisLevel6</a> = _ACMP_HYSTERESIS0_HYST_HYST6, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a3d4969a1e6956dbee0584037854d8fea">acmpHysteresisLevel7</a> = _ACMP_HYSTERESIS0_HYST_HYST7, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a97add9722e302b984a17182366810916">acmpHysteresisLevel8</a> = _ACMP_HYSTERESIS0_HYST_HYST8, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a016d023459b4c0bc2d1a6e77ef69881a">acmpHysteresisLevel9</a> = _ACMP_HYSTERESIS0_HYST_HYST9, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001abdfada1e3e461093a9b816c8592a9a06">acmpHysteresisLevel10</a> = _ACMP_HYSTERESIS0_HYST_HYST10, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a8f0085f05f9c51960b7e609270876428">acmpHysteresisLevel11</a> = _ACMP_HYSTERESIS0_HYST_HYST11, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a17edd71a0dfcfb18794114b48e16c9bd">acmpHysteresisLevel12</a> = _ACMP_HYSTERESIS0_HYST_HYST12, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001acf3c3534c06dd63f33265e9128e7af60">acmpHysteresisLevel13</a> = _ACMP_HYSTERESIS0_HYST_HYST13, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001ab6fe63618926cffc5d5d423522d9470f">acmpHysteresisLevel14</a> = _ACMP_HYSTERESIS0_HYST_HYST14, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a84cfc7b0b3fabb7ff4b793c8f84ed016">acmpHysteresisLevel15</a> = _ACMP_HYSTERESIS0_HYST_HYST15
+<br />
+ }<tr class="separator:ga216306eec0ad9c6d68aa3c6819378001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gafed9af52222203b3cae484f2d5be3dda"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gafed9af52222203b3cae484f2d5be3dda">ACMP_InputRange_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__ACMP.html#ggafed9af52222203b3cae484f2d5be3ddaaee7e6257ac87f3c77e69882a7fc939aa">acmpInputRangeFull</a> = _ACMP_CTRL_INPUTRANGE_FULL, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#ggafed9af52222203b3cae484f2d5be3ddaa79b0ca20658b3d3176abfc40f2248f37">acmpInputRangeHigh</a> = _ACMP_CTRL_INPUTRANGE_GTVDDDIV2, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#ggafed9af52222203b3cae484f2d5be3ddaad7e75e94f3ab60838d02f31341939a6c">acmpInputRangeLow</a> = _ACMP_CTRL_INPUTRANGE_LTVDDDIV2
+<br />
+ }<tr class="separator:gafed9af52222203b3cae484f2d5be3dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gaa79073ca871a3b2a6359f8e8f1802cfc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gaa79073ca871a3b2a6359f8e8f1802cfc">ACMP_PowerSource_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__ACMP.html#ggaa79073ca871a3b2a6359f8e8f1802cfca0ebb738c612b8cf2988451a2df477bab">acmpPowerSourceAvdd</a> = _ACMP_CTRL_PWRSEL_AVDD, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#ggaa79073ca871a3b2a6359f8e8f1802cfca20f3d4b9743a4787a3c55c4d53bc1ef3">acmpPowerSourceVddVreg</a> = _ACMP_CTRL_PWRSEL_VREGVDD, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#ggaa79073ca871a3b2a6359f8e8f1802cfca029c358869107b4537d74271ee55d015">acmpPowerSourceIOVdd0</a> = _ACMP_CTRL_PWRSEL_IOVDD0, 
+<br />
+&#160;&#160;<a class="el" href="group__ACMP.html#ggaa79073ca871a3b2a6359f8e8f1802cfca50dc13691347aba4724468e1c825d5d5">acmpPowerSourceIOVdd1</a> = _ACMP_CTRL_PWRSEL_IOVDD1
+<br />
+ }<tr class="separator:gaa79073ca871a3b2a6359f8e8f1802cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga00d95349022e6f35b567743aed0a86af"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga00d95349022e6f35b567743aed0a86af">ACMP_VAInput_TypeDef</a> { <br />
+&#160;&#160;<b>acmpVAInputVDD</b> = _ACMP_INPUTSEL_VASEL_VDD, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH0</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH0, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH2</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH2, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH4</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH4, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH6</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH6, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH8</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH8, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH10</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH10, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH12</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH12, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH14</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH14, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH16</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH16, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH18</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH18, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH20</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH20, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH22</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH22, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH24</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH24, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH26</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH26, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH28</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH28, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT2YCH30</b> = _ACMP_INPUTSEL_VASEL_APORT2YCH30, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH0</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH0, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH1</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH1, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH2</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH2, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH3</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH3, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH4</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH4, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH5</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH5, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH6</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH6, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH7</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH7, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH8</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH8, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH9</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH9, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH10</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH10, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH11</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH11, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH12</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH12, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH13</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH13, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH14</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH14, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH15</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH15, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH16</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH16, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH17</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH17, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH18</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH18, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH19</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH19, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH20</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH20, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH21</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH21, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH22</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH22, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH23</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH23, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH24</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH24, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH25</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH25, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH26</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH26, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH27</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH27, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH28</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH28, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH29</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH29, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1XCH30</b> = _ACMP_INPUTSEL_VASEL_APORT1XCH30, 
+<br />
+&#160;&#160;<b>acmpVAInputAPORT1YCH31</b> = _ACMP_INPUTSEL_VASEL_APORT1YCH31
+<br />
+ }<tr class="separator:ga00d95349022e6f35b567743aed0a86af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gaa091829d3d4da104fce51980d48c03d5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gaa091829d3d4da104fce51980d48c03d5">ACMP_VBInput_TypeDef</a> { <br />
+&#160;&#160;<b>acmpVBInput1V25</b> = _ACMP_INPUTSEL_VBSEL_1V25, 
+<br />
+&#160;&#160;<b>acmpVBInput2V5</b> = _ACMP_INPUTSEL_VBSEL_2V5
+<br />
+ }<tr class="separator:gaa091829d3d4da104fce51980d48c03d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gacff601e58d6e53b10966c135d045be94"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gacff601e58d6e53b10966c135d045be94">ACMP_VLPInput_Typedef</a> { <br />
+&#160;&#160;<b>acmpVLPInputVADIV</b> = _ACMP_INPUTSEL_VLPSEL_VADIV, 
+<br />
+&#160;&#160;<b>acmpVLPInputVBDIV</b> = _ACMP_INPUTSEL_VLPSEL_VBDIV
+<br />
+ }<tr class="separator:gacff601e58d6e53b10966c135d045be94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gab99c16a966bfa66c081160ec51e0a039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gab99c16a966bfa66c081160ec51e0a039">ACMP_CapsenseInit</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp, const <a class="el" href="structACMP__CapsenseInit__TypeDef.html">ACMP_CapsenseInit_TypeDef</a> *init)</td></tr>
-<tr class="memdesc:gab99c16a966bfa66c081160ec51e0a039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the ACMP for use in capacative sense applications.  <a href="#gab99c16a966bfa66c081160ec51e0a039">More...</a><br /></td></tr>
-<tr class="separator:gab99c16a966bfa66c081160ec51e0a039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2c5edb834f314093c377e5c0673f7729"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga2c5edb834f314093c377e5c0673f7729">ACMP_CapsenseChannelSet</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp, <a class="el" href="group__ACMP.html#ga0971c188cd2a1aeff32dd621f851af17">ACMP_Channel_TypeDef</a> channel)</td></tr>
 <tr class="memdesc:ga2c5edb834f314093c377e5c0673f7729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the ACMP channel used for capacative sensing.  <a href="#ga2c5edb834f314093c377e5c0673f7729">More...</a><br /></td></tr>
 <tr class="separator:ga2c5edb834f314093c377e5c0673f7729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab99c16a966bfa66c081160ec51e0a039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gab99c16a966bfa66c081160ec51e0a039">ACMP_CapsenseInit</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp, const <a class="el" href="structACMP__CapsenseInit__TypeDef.html">ACMP_CapsenseInit_TypeDef</a> *init)</td></tr>
+<tr class="memdesc:gab99c16a966bfa66c081160ec51e0a039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the ACMP for use in capacative sense applications.  <a href="#gab99c16a966bfa66c081160ec51e0a039">More...</a><br /></td></tr>
+<tr class="separator:gab99c16a966bfa66c081160ec51e0a039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf2552815d97fa6b5cf035cf20727e322"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gaf2552815d97fa6b5cf035cf20727e322">ACMP_ChannelSet</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp, <a class="el" href="group__ACMP.html#ga0971c188cd2a1aeff32dd621f851af17">ACMP_Channel_TypeDef</a> negSel, <a class="el" href="group__ACMP.html#ga0971c188cd2a1aeff32dd621f851af17">ACMP_Channel_TypeDef</a> posSel)</td></tr>
 <tr class="memdesc:gaf2552815d97fa6b5cf035cf20727e322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets which channels should be used in ACMP comparisons.  <a href="#gaf2552815d97fa6b5cf035cf20727e322">More...</a><br /></td></tr>
 <tr class="separator:gaf2552815d97fa6b5cf035cf20727e322"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -696,15 +694,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gad04e5819cd2d6ca5a275e8cc047f9ecf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gad04e5819cd2d6ca5a275e8cc047f9ecf">ACMP_Init</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp, const <a class="el" href="structACMP__Init__TypeDef.html">ACMP_Init_TypeDef</a> *init)</td></tr>
 <tr class="memdesc:gad04e5819cd2d6ca5a275e8cc047f9ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize ACMP.  <a href="#gad04e5819cd2d6ca5a275e8cc047f9ecf">More...</a><br /></td></tr>
 <tr class="separator:gad04e5819cd2d6ca5a275e8cc047f9ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga671cb9f47c56e8c8a81af7d4bbfdbc5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga671cb9f47c56e8c8a81af7d4bbfdbc5f">ACMP_Reset</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp)</td></tr>
-<tr class="memdesc:ga671cb9f47c56e8c8a81af7d4bbfdbc5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset ACMP to same state as after a HW reset.  <a href="#ga671cb9f47c56e8c8a81af7d4bbfdbc5f">More...</a><br /></td></tr>
-<tr class="separator:ga671cb9f47c56e8c8a81af7d4bbfdbc5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga28f99fa11de9914148cd580cb707488e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga28f99fa11de9914148cd580cb707488e">ACMP_VASetup</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp, const <a class="el" href="structACMP__VAConfig__TypeDef.html">ACMP_VAConfig_TypeDef</a> *vaconfig)</td></tr>
-<tr class="memdesc:ga28f99fa11de9914148cd580cb707488e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the VA Source.  <a href="#ga28f99fa11de9914148cd580cb707488e">More...</a><br /></td></tr>
-<tr class="separator:ga28f99fa11de9914148cd580cb707488e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f892474faf30a358160e06731485561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga4f892474faf30a358160e06731485561">ACMP_VBSetup</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp, const <a class="el" href="structACMP__VBConfig__TypeDef.html">ACMP_VBConfig_TypeDef</a> *vbconfig)</td></tr>
-<tr class="memdesc:ga4f892474faf30a358160e06731485561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the VB Source.  <a href="#ga4f892474faf30a358160e06731485561">More...</a><br /></td></tr>
-<tr class="separator:ga4f892474faf30a358160e06731485561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8bcba309288cc9ee7ac36b57169d667a"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga8bcba309288cc9ee7ac36b57169d667a">ACMP_IntClear</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp, uint32_t flags)</td></tr>
 <tr class="memdesc:ga8bcba309288cc9ee7ac36b57169d667a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending ACMP interrupts.  <a href="#ga8bcba309288cc9ee7ac36b57169d667a">More...</a><br /></td></tr>
 <tr class="separator:ga8bcba309288cc9ee7ac36b57169d667a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -723,8 +712,16 @@ Functions</h2></td></tr>
 <tr class="memitem:gabb734b62f1ad3cfba9ebc5d0e1267fc8"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#gabb734b62f1ad3cfba9ebc5d0e1267fc8">ACMP_IntSet</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp, uint32_t flags)</td></tr>
 <tr class="memdesc:gabb734b62f1ad3cfba9ebc5d0e1267fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one or more pending ACMP interrupts from SW.  <a href="#gabb734b62f1ad3cfba9ebc5d0e1267fc8">More...</a><br /></td></tr>
 <tr class="separator:gabb734b62f1ad3cfba9ebc5d0e1267fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga671cb9f47c56e8c8a81af7d4bbfdbc5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga671cb9f47c56e8c8a81af7d4bbfdbc5f">ACMP_Reset</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp)</td></tr>
+<tr class="memdesc:ga671cb9f47c56e8c8a81af7d4bbfdbc5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset ACMP to same state as after a HW reset.  <a href="#ga671cb9f47c56e8c8a81af7d4bbfdbc5f">More...</a><br /></td></tr>
+<tr class="separator:ga671cb9f47c56e8c8a81af7d4bbfdbc5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga28f99fa11de9914148cd580cb707488e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga28f99fa11de9914148cd580cb707488e">ACMP_VASetup</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp, const <a class="el" href="structACMP__VAConfig__TypeDef.html">ACMP_VAConfig_TypeDef</a> *vaconfig)</td></tr>
+<tr class="memdesc:ga28f99fa11de9914148cd580cb707488e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the VA Source.  <a href="#ga28f99fa11de9914148cd580cb707488e">More...</a><br /></td></tr>
+<tr class="separator:ga28f99fa11de9914148cd580cb707488e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f892474faf30a358160e06731485561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga4f892474faf30a358160e06731485561">ACMP_VBSetup</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp, const <a class="el" href="structACMP__VBConfig__TypeDef.html">ACMP_VBConfig_TypeDef</a> *vbconfig)</td></tr>
+<tr class="memdesc:ga4f892474faf30a358160e06731485561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the VB Source.  <a href="#ga4f892474faf30a358160e06731485561">More...</a><br /></td></tr>
+<tr class="separator:ga4f892474faf30a358160e06731485561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga331e09f7103b18624b211ae978091159"></a>
 <div class="memitem">
@@ -751,7 +748,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__acmp_8h_source.html#l00545">545</a> of file <a class="el" href="em__acmp_8h_source.html">em_acmp.h</a>.</p>
 
-<p>Referenced by <a class="el" href="capsense_8c_source.html#l00290">CAPSENSE_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__CapSense.html#ga9cc00a748bf5cab4ca2e987e07b17566">CAPSENSE_Init()</a>.</p>
 
 </div>
 </div>
@@ -827,6 +824,29 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ga7e2f8e4e3706ed128374b8e631b86bcd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__ACMP.html#ga7e2f8e4e3706ed128374b8e631b86bcd">ACMP_Accuracy_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ACMP accuracy mode. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga7e2f8e4e3706ed128374b8e631b86bcda909ba1e6a74ec4de536c8954217da384"></a>acmpAccuracyLow&#160;</td><td class="fielddoc">
+<p>Low-accuracy mode but consume less current </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga7e2f8e4e3706ed128374b8e631b86bcdaec2f7986bcdf95944bb3af4ce0ddd05d"></a>acmpAccuracyHigh&#160;</td><td class="fielddoc">
+<p>High-accuracy mode but consume more current </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="em__acmp_8h_source.html#l00163">163</a> of file <a class="el" href="em__acmp_8h_source.html">em_acmp.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gaf50197241694fe457b4c378106792961"></a>
 <div class="memitem">
 <div class="memproto">
@@ -865,6 +885,21 @@ Functions</h2></td></tr>
 </table>
 
 <p>Definition at line <a class="el" href="em__acmp_8h_source.html#l00062">62</a> of file <a class="el" href="em__acmp_8h_source.html">em_acmp.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0971c188cd2a1aeff32dd621f851af17"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__ACMP.html#ga0971c188cd2a1aeff32dd621f851af17">ACMP_Channel_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ACMP Input Selection </p>
+
+<p>Definition at line <a class="el" href="em__acmp_8h_source.html#l00252">252</a> of file <a class="el" href="em__acmp_8h_source.html">em_acmp.h</a>.</p>
 
 </div>
 </div>
@@ -988,29 +1023,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga7e2f8e4e3706ed128374b8e631b86bcd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__ACMP.html#ga7e2f8e4e3706ed128374b8e631b86bcd">ACMP_Accuracy_TypeDef</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>ACMP accuracy mode. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga7e2f8e4e3706ed128374b8e631b86bcda909ba1e6a74ec4de536c8954217da384"></a>acmpAccuracyLow&#160;</td><td class="fielddoc">
-<p>Low-accuracy mode but consume less current </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7e2f8e4e3706ed128374b8e631b86bcdaec2f7986bcdf95944bb3af4ce0ddd05d"></a>acmpAccuracyHigh&#160;</td><td class="fielddoc">
-<p>High-accuracy mode but consume more current </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="em__acmp_8h_source.html#l00163">163</a> of file <a class="el" href="em__acmp_8h_source.html">em_acmp.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga00d95349022e6f35b567743aed0a86af"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1056,63 +1068,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga0971c188cd2a1aeff32dd621f851af17"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__ACMP.html#ga0971c188cd2a1aeff32dd621f851af17">ACMP_Channel_TypeDef</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>ACMP Input Selection </p>
-
-<p>Definition at line <a class="el" href="em__acmp_8h_source.html#l00252">252</a> of file <a class="el" href="em__acmp_8h_source.html">em_acmp.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gab99c16a966bfa66c081160ec51e0a039"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ACMP_CapsenseInit </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>acmp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structACMP__CapsenseInit__TypeDef.html">ACMP_CapsenseInit_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>init</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function sets up the ACMP for use in capacacitve sense applications. To use the capacative sense functionality in the ACMP you need to use the PRS output of the ACMP module to count the number of oscillations in the capacative sense circuit (possibly using a TIMER).</p>
-<dl class="section note"><dt>Note</dt><dd>A basic example of capacative sensing can be found in the STK BSP (capsense demo).</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to ACMP peripheral register block.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>Pointer to initialization structure used to configure ACMP for capacative sensing operation. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00110">110</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00121">_ACMP_CTRL_ACCURACY_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00157">_ACMP_CTRL_BIASPROG_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00156">_ACMP_CTRL_BIASPROG_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00070">_ACMP_CTRL_EN_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00161">_ACMP_CTRL_FULLBIAS_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01233">_ACMP_HYSTERESIS0_DIVVA_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01197">_ACMP_HYSTERESIS0_HYST_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01281">_ACMP_HYSTERESIS1_DIVVA_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01245">_ACMP_HYSTERESIS1_HYST_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00970">_ACMP_INPUTSEL_CSRESSEL_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00127">ACMP_CTRL_ACCURACY_HIGH</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00965">ACMP_INPUTSEL_CSRESEN</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00842">ACMP_INPUTSEL_NEGSEL_VADIV</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00898">ACMP_INPUTSEL_VASEL_VDD</a>, <a class="el" href="em__acmp_8h_source.html#l00486">ACMP_CapsenseInit_TypeDef::biasProg</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00043">ACMP_TypeDef::CTRL</a>, <a class="el" href="em__acmp_8h_source.html#l00540">ACMP_CapsenseInit_TypeDef::enable</a>, <a class="el" href="em__acmp_8h_source.html#l00476">ACMP_CapsenseInit_TypeDef::fullBias</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00053">ACMP_TypeDef::HYSTERESIS0</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00054">ACMP_TypeDef::HYSTERESIS1</a>, <a class="el" href="em__acmp_8h_source.html#l00499">ACMP_CapsenseInit_TypeDef::hysteresisLevel_0</a>, <a class="el" href="em__acmp_8h_source.html#l00502">ACMP_CapsenseInit_TypeDef::hysteresisLevel_1</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00044">ACMP_TypeDef::INPUTSEL</a>, <a class="el" href="em__acmp_8h_source.html#l00507">ACMP_CapsenseInit_TypeDef::resistor</a>, <a class="el" href="em__acmp_8h_source.html#l00527">ACMP_CapsenseInit_TypeDef::vddLevelHigh</a>, and <a class="el" href="em__acmp_8h_source.html#l00536">ACMP_CapsenseInit_TypeDef::vddLevelLow</a>.</p>
-
-<p>Referenced by <a class="el" href="caplesense_8c_source.html#l00141">CAPLESENSE_setupACMP()</a>, and <a class="el" href="capsense_8c_source.html#l00290">CAPSENSE_Init()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga2c5edb834f314093c377e5c0673f7729"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1136,6 +1092,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the ACMP channel used for capacative sensing. </p>
 <dl class="section note"><dt>Note</dt><dd>A basic example of capacative sensing can be found in the STK BSP (capsense demo).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1145,11 +1103,54 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00186">186</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
+<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00190">190</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00170">_ACMP_INPUTSEL_POSSEL_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00169">_ACMP_INPUTSEL_POSSEL_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00283">BUS_RegMaskedWrite()</a>, and <a class="el" href="efm32jg1b__acmp_8h_source.html#l00044">ACMP_TypeDef::INPUTSEL</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gae9bc168996987ea9eced8f12c3f6c269">_ACMP_INPUTSEL_POSSEL_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga016cd52cfd9d7cf8b7d8a2465635cfb1">_ACMP_INPUTSEL_POSSEL_SHIFT</a>, <a class="el" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite()</a>, and <a class="el" href="structACMP__TypeDef.html#abde51db76adba1aa353e1ac642ba827a">ACMP_TypeDef::INPUTSEL</a>.</p>
 
-<p>Referenced by <a class="el" href="capsense_8c_source.html#l00222">CAPSENSE_Measure()</a>.</p>
+<p>Referenced by <a class="el" href="capsense_8c.html#a39680c5b208b4c50c0b00834dddae3c0">CAPSENSE_Measure()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab99c16a966bfa66c081160ec51e0a039"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ACMP_CapsenseInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>acmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structACMP__CapsenseInit__TypeDef.html">ACMP_CapsenseInit_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>init</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets up the ACMP for use in capacative sense applications. </p>
+<p>This function sets up the ACMP for use in capacacitve sense applications. To use the capacative sense functionality in the ACMP you need to use the PRS output of the ACMP module to count the number of oscillations in the capacative sense circuit (possibly using a TIMER).</p>
+<dl class="section note"><dt>Note</dt><dd>A basic example of capacative sensing can be found in the STK BSP (capsense demo).</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to ACMP peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>Pointer to initialization structure used to configure ACMP for capacative sensing operation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00114">114</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaa05ce3cf0dff06e0aaa70d3ba5a262cd">_ACMP_CTRL_ACCURACY_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaa794b8376536eeec0b4015f86f8be985">_ACMP_CTRL_BIASPROG_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga589cb143484b6666ee614a9aeda4a887">_ACMP_CTRL_BIASPROG_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gabe389c094bb0c058deb6425d469eb5d5">_ACMP_CTRL_EN_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gabbf2210293a8af9dd5b5a3bda79d632d">_ACMP_CTRL_FULLBIAS_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga6dea144f159ae38b15fbae0518c9b721">_ACMP_HYSTERESIS0_DIVVA_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gab1933e990cc76611261421a54589a386">_ACMP_HYSTERESIS0_HYST_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga742a9fda5fc79e02e014b507004acce1">_ACMP_HYSTERESIS1_DIVVA_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga071dfb372abf708c7b358ad3dc32d6a8">_ACMP_HYSTERESIS1_HYST_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaa61d2db08bfa833a51682b1eb17e5af8">_ACMP_INPUTSEL_CSRESSEL_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaf0de7bfa982eb67ea63fb14dbdff9820">ACMP_CTRL_ACCURACY_HIGH</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gab8285bc59fcd1c6ec5e29dd3322ab544">ACMP_INPUTSEL_CSRESEN</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaf46149e4eed910832e92508d64fc6724">ACMP_INPUTSEL_NEGSEL_VADIV</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gad79ef2e4fb3dbd5004b524c1d064ff07">ACMP_INPUTSEL_VASEL_VDD</a>, <a class="el" href="structACMP__CapsenseInit__TypeDef.html#a0548fa4b5398a9989f7ae41720417eeb">ACMP_CapsenseInit_TypeDef::biasProg</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="structACMP__TypeDef.html#a8cea63f6174c75ddeee8acbc42d9825d">ACMP_TypeDef::CTRL</a>, <a class="el" href="structACMP__CapsenseInit__TypeDef.html#a3508dd1e3405fde031d59777c7fd7f66">ACMP_CapsenseInit_TypeDef::enable</a>, <a class="el" href="structACMP__CapsenseInit__TypeDef.html#a641c9c62f06e066e1063f2d4f77c5d76">ACMP_CapsenseInit_TypeDef::fullBias</a>, <a class="el" href="structACMP__TypeDef.html#a50dd6192c6e2a49b669cdb258425b238">ACMP_TypeDef::HYSTERESIS0</a>, <a class="el" href="structACMP__TypeDef.html#a6406a01556dcf52d55301a6e2738381f">ACMP_TypeDef::HYSTERESIS1</a>, <a class="el" href="structACMP__CapsenseInit__TypeDef.html#a3ab2156b230c73382e4c80fcbeeb303e">ACMP_CapsenseInit_TypeDef::hysteresisLevel_0</a>, <a class="el" href="structACMP__CapsenseInit__TypeDef.html#aba3904615f5ece958350b87ff18bbc2c">ACMP_CapsenseInit_TypeDef::hysteresisLevel_1</a>, <a class="el" href="structACMP__TypeDef.html#abde51db76adba1aa353e1ac642ba827a">ACMP_TypeDef::INPUTSEL</a>, <a class="el" href="structACMP__CapsenseInit__TypeDef.html#a5262cf3f31e8c05bf649e413432119e2">ACMP_CapsenseInit_TypeDef::resistor</a>, <a class="el" href="structACMP__CapsenseInit__TypeDef.html#a239d1c4dac0a34e9a8d7621454ffccfa">ACMP_CapsenseInit_TypeDef::vddLevelHigh</a>, and <a class="el" href="structACMP__CapsenseInit__TypeDef.html#a8bffedb21c93b215402bea0e1040e703">ACMP_CapsenseInit_TypeDef::vddLevelLow</a>.</p>
+
+<p>Referenced by <a class="el" href="caplesense_8c.html#a78388fdc0a453879163ff3de37c6a6ec">CAPLESENSE_setupACMP()</a>, and <a class="el" href="group__CapSense.html#ga9cc00a748bf5cab4ca2e987e07b17566">CAPSENSE_Init()</a>.</p>
 
 </div>
 </div>
@@ -1182,6 +1183,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets which channels should be used in ACMP comparisons. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to the ACMP peripheral register block.</td></tr>
@@ -1191,9 +1194,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00315">315</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
+<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00319">319</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00508">_ACMP_INPUTSEL_NEGSEL_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00507">_ACMP_INPUTSEL_NEGSEL_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00170">_ACMP_INPUTSEL_POSSEL_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00169">_ACMP_INPUTSEL_POSSEL_SHIFT</a>, and <a class="el" href="efm32jg1b__acmp_8h_source.html#l00044">ACMP_TypeDef::INPUTSEL</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga5f3865983ebeab2333966d13a76e879e">_ACMP_INPUTSEL_NEGSEL_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gad17b1b7398b88221b115d330a1ebc81e">_ACMP_INPUTSEL_NEGSEL_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gae9bc168996987ea9eced8f12c3f6c269">_ACMP_INPUTSEL_POSSEL_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga016cd52cfd9d7cf8b7d8a2465635cfb1">_ACMP_INPUTSEL_POSSEL_SHIFT</a>, and <a class="el" href="structACMP__TypeDef.html#abde51db76adba1aa353e1ac642ba827a">ACMP_TypeDef::INPUTSEL</a>.</p>
 
 </div>
 </div>
@@ -1210,6 +1213,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Disables the ACMP. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to ACMP peripheral register block. </td></tr>
@@ -1217,11 +1222,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00211">211</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
+<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00215">215</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00069">ACMP_CTRL_EN</a>, and <a class="el" href="efm32jg1b__acmp_8h_source.html#l00043">ACMP_TypeDef::CTRL</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga79fa245d0fa344f6b1747eb7f9da4a78">ACMP_CTRL_EN</a>, and <a class="el" href="structACMP__TypeDef.html#a8cea63f6174c75ddeee8acbc42d9825d">ACMP_TypeDef::CTRL</a>.</p>
 
-<p>Referenced by <a class="el" href="capsense_8c_source.html#l00250">CAPSENSE_Sense()</a>.</p>
+<p>Referenced by <a class="el" href="group__CapSense.html#ga053d58010d19241662916216a0327ad6">CAPSENSE_Sense()</a>.</p>
 
 </div>
 </div>
@@ -1238,6 +1243,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enables the ACMP. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to ACMP peripheral register block. </td></tr>
@@ -1245,11 +1252,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00226">226</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
+<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00230">230</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00069">ACMP_CTRL_EN</a>, and <a class="el" href="efm32jg1b__acmp_8h_source.html#l00043">ACMP_TypeDef::CTRL</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga79fa245d0fa344f6b1747eb7f9da4a78">ACMP_CTRL_EN</a>, and <a class="el" href="structACMP__TypeDef.html#a8cea63f6174c75ddeee8acbc42d9825d">ACMP_TypeDef::CTRL</a>.</p>
 
-<p>Referenced by <a class="el" href="capsense_8c_source.html#l00250">CAPSENSE_Sense()</a>.</p>
+<p>Referenced by <a class="el" href="group__CapSense.html#ga053d58010d19241662916216a0327ad6">CAPSENSE_Sense()</a>.</p>
 
 </div>
 </div>
@@ -1288,6 +1295,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets up GPIO output from the ACMP. </p>
 <dl class="section note"><dt>Note</dt><dd>GPIO must be enabled in the CMU before this function call, i.e. <pre class="fragment">CMU_ClockEnable(cmuClock_GPIO, true); </pre></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1299,11 +1308,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00280">280</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
+<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00284">284</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00085">_ACMP_CTRL_GPIOINV_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00084">_ACMP_CTRL_GPIOINV_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01302">_ACMP_ROUTELOC0_OUTLOC_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01293">ACMP_ROUTEPEN_OUTPEN</a>, <a class="el" href="em__bus_8h_source.html#l00283">BUS_RegMaskedWrite()</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00043">ACMP_TypeDef::CTRL</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00058">ACMP_TypeDef::ROUTELOC0</a>, and <a class="el" href="efm32jg1b__acmp_8h_source.html#l00057">ACMP_TypeDef::ROUTEPEN</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gae0ff7a04544bde8ac93936824b64635f">_ACMP_CTRL_GPIOINV_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga8fcd1b00d355084bedb3cacd6a827ba8">_ACMP_CTRL_GPIOINV_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga69e1d61ff711613717ed3c202b4c1d0f">_ACMP_ROUTELOC0_OUTLOC_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga5489f1636b702be284d92184d6e19093">ACMP_ROUTEPEN_OUTPEN</a>, <a class="el" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite()</a>, <a class="el" href="structACMP__TypeDef.html#a8cea63f6174c75ddeee8acbc42d9825d">ACMP_TypeDef::CTRL</a>, <a class="el" href="structACMP__TypeDef.html#afd83402dfc24fce2307db4ad417b1ccd">ACMP_TypeDef::ROUTELOC0</a>, and <a class="el" href="structACMP__TypeDef.html#a27e68a91ba226499e37bbe140b9432e1">ACMP_TypeDef::ROUTEPEN</a>.</p>
 
-<p>Referenced by <a class="el" href="caplesense_8c_source.html#l00141">CAPLESENSE_setupACMP()</a>.</p>
+<p>Referenced by <a class="el" href="caplesense_8c.html#a78388fdc0a453879163ff3de37c6a6ec">CAPLESENSE_setupACMP()</a>.</p>
 
 </div>
 </div>
@@ -1330,6 +1339,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize ACMP. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to the ACMP peripheral register block.</td></tr>
@@ -1338,110 +1349,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00349">349</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
+<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00353">353</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00121">_ACMP_CTRL_ACCURACY_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00120">_ACMP_CTRL_ACCURACY_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00156">_ACMP_CTRL_BIASPROG_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00070">_ACMP_CTRL_EN_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00161">_ACMP_CTRL_FULLBIAS_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00148">_ACMP_CTRL_IFALL_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00075">_ACMP_CTRL_INACTVAL_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00128">_ACMP_CTRL_INPUTRANGE_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00139">_ACMP_CTRL_IRISE_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00108">_ACMP_CTRL_PWRSEL_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00107">_ACMP_CTRL_PWRSEL_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00958">_ACMP_INPUTSEL_VLPSEL_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00957">_ACMP_INPUTSEL_VLPSEL_SHIFT</a>, <a class="el" href="em__acmp_8h_source.html#l00616">ACMP_Init_TypeDef::accuracy</a>, <a class="el" href="em__acmp_8h_source.html#l00598">ACMP_Init_TypeDef::biasProg</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00043">ACMP_TypeDef::CTRL</a>, <a class="el" href="em__acmp_8h_source.html#l00663">ACMP_Init_TypeDef::enable</a>, <a class="el" href="em__acmp_8h_source.html#l00588">ACMP_Init_TypeDef::fullBias</a>, <a class="el" href="em__acmp_8h_source.html#l00648">ACMP_Init_TypeDef::inactiveValue</a>, <a class="el" href="em__acmp_8h_source.html#l00609">ACMP_Init_TypeDef::inputRange</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00044">ACMP_TypeDef::INPUTSEL</a>, <a class="el" href="em__acmp_8h_source.html#l00601">ACMP_Init_TypeDef::interruptOnFallingEdge</a>, <a class="el" href="em__acmp_8h_source.html#l00604">ACMP_Init_TypeDef::interruptOnRisingEdge</a>, <a class="el" href="em__acmp_8h_source.html#l00621">ACMP_Init_TypeDef::powerSource</a>, and <a class="el" href="em__acmp_8h_source.html#l00644">ACMP_Init_TypeDef::vlpInput</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga671cb9f47c56e8c8a81af7d4bbfdbc5f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ACMP_Reset </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>acmp</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>The ROUTE register is NOT reset by this function, in order to allow for centralized setup of this feature.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to the ACMP peripheral register block. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00245">245</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00067">_ACMP_CTRL_RESETVALUE</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01195">_ACMP_HYSTERESIS0_RESETVALUE</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01243">_ACMP_HYSTERESIS1_RESETVALUE</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01068">_ACMP_IEN_RESETVALUE</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01012">_ACMP_IF_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00167">_ACMP_INPUTSEL_RESETVALUE</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00043">ACMP_TypeDef::CTRL</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00053">ACMP_TypeDef::HYSTERESIS0</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00054">ACMP_TypeDef::HYSTERESIS1</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00049">ACMP_TypeDef::IEN</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00048">ACMP_TypeDef::IFC</a>, and <a class="el" href="efm32jg1b__acmp_8h_source.html#l00044">ACMP_TypeDef::INPUTSEL</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga28f99fa11de9914148cd580cb707488e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ACMP_VASetup </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>acmp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structACMP__VAConfig__TypeDef.html">ACMP_VAConfig_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>vaconfig</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to the ACMP peripheral register block.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">vaconfig</td><td>Pointer to the structure used to configure the VA source. This structure contains the input source as well as the 2 divider values. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00414">414</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l01234">_ACMP_HYSTERESIS0_DIVVA_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01233">_ACMP_HYSTERESIS0_DIVVA_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01282">_ACMP_HYSTERESIS1_DIVVA_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01281">_ACMP_HYSTERESIS1_DIVVA_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00846">_ACMP_INPUTSEL_VASEL_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00845">_ACMP_INPUTSEL_VASEL_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00283">BUS_RegMaskedWrite()</a>, <a class="el" href="em__acmp_8h_source.html#l00728">ACMP_VAConfig_TypeDef::div0</a>, <a class="el" href="em__acmp_8h_source.html#l00737">ACMP_VAConfig_TypeDef::div1</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00053">ACMP_TypeDef::HYSTERESIS0</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00054">ACMP_TypeDef::HYSTERESIS1</a>, <a class="el" href="em__acmp_8h_source.html#l00719">ACMP_VAConfig_TypeDef::input</a>, and <a class="el" href="efm32jg1b__acmp_8h_source.html#l00044">ACMP_TypeDef::INPUTSEL</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga4f892474faf30a358160e06731485561"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ACMP_VBSetup </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>acmp</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structACMP__VBConfig__TypeDef.html">ACMP_VBConfig_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>vbconfig</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to the ACMP peripheral register block.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">vbconfig</td><td>Pointer to the structure used to configure the VB source. This structure contains the input source as well as the 2 divider values. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00440">440</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l01238">_ACMP_HYSTERESIS0_DIVVB_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01237">_ACMP_HYSTERESIS0_DIVVB_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01286">_ACMP_HYSTERESIS1_DIVVB_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l01285">_ACMP_HYSTERESIS1_DIVVB_SHIFT</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00949">_ACMP_INPUTSEL_VBSEL_MASK</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00948">_ACMP_INPUTSEL_VBSEL_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00283">BUS_RegMaskedWrite()</a>, <a class="el" href="em__acmp_8h_source.html#l00762">ACMP_VBConfig_TypeDef::div0</a>, <a class="el" href="em__acmp_8h_source.html#l00771">ACMP_VBConfig_TypeDef::div1</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00053">ACMP_TypeDef::HYSTERESIS0</a>, <a class="el" href="efm32jg1b__acmp_8h_source.html#l00054">ACMP_TypeDef::HYSTERESIS1</a>, <a class="el" href="em__acmp_8h_source.html#l00753">ACMP_VBConfig_TypeDef::input</a>, and <a class="el" href="efm32jg1b__acmp_8h_source.html#l00044">ACMP_TypeDef::INPUTSEL</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaa05ce3cf0dff06e0aaa70d3ba5a262cd">_ACMP_CTRL_ACCURACY_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga68e508185bce1c3dd692a00291e210f6">_ACMP_CTRL_ACCURACY_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga589cb143484b6666ee614a9aeda4a887">_ACMP_CTRL_BIASPROG_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gabe389c094bb0c058deb6425d469eb5d5">_ACMP_CTRL_EN_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gabbf2210293a8af9dd5b5a3bda79d632d">_ACMP_CTRL_FULLBIAS_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga2835879b9799d835ed5c62d921072c4b">_ACMP_CTRL_IFALL_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga2b26b9a69ec71ae3aa91b456d982ab3e">_ACMP_CTRL_INACTVAL_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaa623c6520244f0e82a17aa5874772cf7">_ACMP_CTRL_INPUTRANGE_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaa0acc07143c577bfdc9d919c45126871">_ACMP_CTRL_IRISE_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaf65fe5b05d7e111155690390dc87de88">_ACMP_CTRL_PWRSEL_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaa037246fd6fcdf5fe2bbfd579eb49581">_ACMP_CTRL_PWRSEL_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gacf1c416e492c9594cdbfc80970793529">_ACMP_INPUTSEL_VLPSEL_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga733e63a34c15ea52bff73c88eee53424">_ACMP_INPUTSEL_VLPSEL_SHIFT</a>, <a class="el" href="structACMP__Init__TypeDef.html#ac081dc8ec4259cc2bc9c2e3b876bbf02">ACMP_Init_TypeDef::accuracy</a>, <a class="el" href="structACMP__Init__TypeDef.html#aae1136d09be0599354f6f1599931ec63">ACMP_Init_TypeDef::biasProg</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="structACMP__TypeDef.html#a8cea63f6174c75ddeee8acbc42d9825d">ACMP_TypeDef::CTRL</a>, <a class="el" href="structACMP__Init__TypeDef.html#a3d385edae0dfc8079f2caca2e494a1fa">ACMP_Init_TypeDef::enable</a>, <a class="el" href="structACMP__Init__TypeDef.html#a69be75c50ae1d40b0324375224eebb4f">ACMP_Init_TypeDef::fullBias</a>, <a class="el" href="structACMP__Init__TypeDef.html#a94d7d72c511601da6ed4418a771f3016">ACMP_Init_TypeDef::inactiveValue</a>, <a class="el" href="structACMP__Init__TypeDef.html#a46cba76f6757a1abc20d7e13e7d09da3">ACMP_Init_TypeDef::inputRange</a>, <a class="el" href="structACMP__TypeDef.html#abde51db76adba1aa353e1ac642ba827a">ACMP_TypeDef::INPUTSEL</a>, <a class="el" href="structACMP__Init__TypeDef.html#a4ba09cea3d813ef6331ef3063b25a95a">ACMP_Init_TypeDef::interruptOnFallingEdge</a>, <a class="el" href="structACMP__Init__TypeDef.html#a94baa15ce4716dd3d6f7a2892b23085e">ACMP_Init_TypeDef::interruptOnRisingEdge</a>, <a class="el" href="structACMP__Init__TypeDef.html#ae1eb10f2a7377370a566a6a4e71a263c">ACMP_Init_TypeDef::powerSource</a>, and <a class="el" href="structACMP__Init__TypeDef.html#a9c93d6a04d11ffdee565b235c80b0ae7">ACMP_Init_TypeDef::vlpInput</a>.</p>
 
 </div>
 </div>
@@ -1468,6 +1378,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Clear one or more pending ACMP interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to ACMP peripheral register block.</td></tr>
@@ -1478,7 +1390,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__acmp_8h_source.html#l00812">812</a> of file <a class="el" href="em__acmp_8h_source.html">em_acmp.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00048">ACMP_TypeDef::IFC</a>.</p>
+<p>References <a class="el" href="structACMP__TypeDef.html#a836bf0a6ba2ccda5d800333a541b4919">ACMP_TypeDef::IFC</a>.</p>
 
 </div>
 </div>
@@ -1505,6 +1417,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Disable one or more ACMP interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to ACMP peripheral register block.</td></tr>
@@ -1515,7 +1429,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__acmp_8h_source.html#l00829">829</a> of file <a class="el" href="em__acmp_8h_source.html">em_acmp.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00049">ACMP_TypeDef::IEN</a>.</p>
+<p>References <a class="el" href="structACMP__TypeDef.html#af9616d0b870b89792eee8d1a4de3572b">ACMP_TypeDef::IEN</a>.</p>
 
 </div>
 </div>
@@ -1542,6 +1456,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable one or more ACMP interrupts. </p>
 <dl class="section note"><dt>Note</dt><dd>Depending on the use, a pending interrupt may already be set prior to enabling the interrupt. Consider using <a class="el" href="group__ACMP.html#ga8bcba309288cc9ee7ac36b57169d667a" title="Clear one or more pending ACMP interrupts. ">ACMP_IntClear()</a> prior to enabling if such a pending interrupt should be ignored.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1553,7 +1469,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__acmp_8h_source.html#l00851">851</a> of file <a class="el" href="em__acmp_8h_source.html">em_acmp.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00049">ACMP_TypeDef::IEN</a>.</p>
+<p>References <a class="el" href="structACMP__TypeDef.html#af9616d0b870b89792eee8d1a4de3572b">ACMP_TypeDef::IEN</a>.</p>
 
 </div>
 </div>
@@ -1570,6 +1486,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get pending ACMP interrupt flags. </p>
 <dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1581,7 +1499,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__acmp_8h_source.html#l00871">871</a> of file <a class="el" href="em__acmp_8h_source.html">em_acmp.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00046">ACMP_TypeDef::IF</a>.</p>
+<p>References <a class="el" href="structACMP__TypeDef.html#a11f3ce5f423249bfc2ba0071fb5d5cc5">ACMP_TypeDef::IF</a>.</p>
 
 </div>
 </div>
@@ -1598,6 +1516,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get enabled and pending ACMP interrupt flags. Useful for handling more interrupt sources in the same interrupt handler. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to ACMP peripheral register block.</td></tr>
@@ -1613,7 +1533,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__acmp_8h_source.html#l00896">896</a> of file <a class="el" href="em__acmp_8h_source.html">em_acmp.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00049">ACMP_TypeDef::IEN</a>, and <a class="el" href="efm32jg1b__acmp_8h_source.html#l00046">ACMP_TypeDef::IF</a>.</p>
+<p>References <a class="el" href="structACMP__TypeDef.html#af9616d0b870b89792eee8d1a4de3572b">ACMP_TypeDef::IEN</a>, and <a class="el" href="structACMP__TypeDef.html#a11f3ce5f423249bfc2ba0071fb5d5cc5">ACMP_TypeDef::IF</a>.</p>
 
 </div>
 </div>
@@ -1640,6 +1560,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set one or more pending ACMP interrupts from SW. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to ACMP peripheral register block.</td></tr>
@@ -1650,7 +1572,114 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__acmp_8h_source.html#l00920">920</a> of file <a class="el" href="em__acmp_8h_source.html">em_acmp.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__acmp_8h_source.html#l00047">ACMP_TypeDef::IFS</a>.</p>
+<p>References <a class="el" href="structACMP__TypeDef.html#a600379f4fe8799c598e2df508da1e9d0">ACMP_TypeDef::IFS</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga671cb9f47c56e8c8a81af7d4bbfdbc5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ACMP_Reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>acmp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset ACMP to same state as after a HW reset. </p>
+<dl class="section note"><dt>Note</dt><dd>The ROUTE register is NOT reset by this function, in order to allow for centralized setup of this feature.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to the ACMP peripheral register block. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00249">249</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga598a2cd180d1fd12cc5761f530a891ea">_ACMP_CTRL_RESETVALUE</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaf8eb8a1de9d96507015b38b02b54aa0f">_ACMP_HYSTERESIS0_RESETVALUE</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gafde4380a71dee6435443f310f804812f">_ACMP_HYSTERESIS1_RESETVALUE</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaae058a66f7210c2294b8995107f07265">_ACMP_IEN_RESETVALUE</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga7a4848e5b0f90df34343edfb3b27e30f">_ACMP_IF_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga03d23876138f4889df8a9f2d91758cf6">_ACMP_INPUTSEL_RESETVALUE</a>, <a class="el" href="structACMP__TypeDef.html#a8cea63f6174c75ddeee8acbc42d9825d">ACMP_TypeDef::CTRL</a>, <a class="el" href="structACMP__TypeDef.html#a50dd6192c6e2a49b669cdb258425b238">ACMP_TypeDef::HYSTERESIS0</a>, <a class="el" href="structACMP__TypeDef.html#a6406a01556dcf52d55301a6e2738381f">ACMP_TypeDef::HYSTERESIS1</a>, <a class="el" href="structACMP__TypeDef.html#af9616d0b870b89792eee8d1a4de3572b">ACMP_TypeDef::IEN</a>, <a class="el" href="structACMP__TypeDef.html#a836bf0a6ba2ccda5d800333a541b4919">ACMP_TypeDef::IFC</a>, and <a class="el" href="structACMP__TypeDef.html#abde51db76adba1aa353e1ac642ba827a">ACMP_TypeDef::INPUTSEL</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga28f99fa11de9914148cd580cb707488e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ACMP_VASetup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>acmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structACMP__VAConfig__TypeDef.html">ACMP_VAConfig_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>vaconfig</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setup the VA Source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to the ACMP peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vaconfig</td><td>Pointer to the structure used to configure the VA source. This structure contains the input source as well as the 2 divider values. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00418">418</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gace5944bc6626cdeba53d5d24ad08ab62">_ACMP_HYSTERESIS0_DIVVA_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga6dea144f159ae38b15fbae0518c9b721">_ACMP_HYSTERESIS0_DIVVA_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga5b085d19201ca15b20cffbb31e9d0824">_ACMP_HYSTERESIS1_DIVVA_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga742a9fda5fc79e02e014b507004acce1">_ACMP_HYSTERESIS1_DIVVA_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga525fbec42b7bd7923fb73660224064d9">_ACMP_INPUTSEL_VASEL_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaf9ecf0bb9dc373348b426f2534dc570e">_ACMP_INPUTSEL_VASEL_SHIFT</a>, <a class="el" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite()</a>, <a class="el" href="structACMP__VAConfig__TypeDef.html#ade0a85aee0ae7990e64eb80c71503c08">ACMP_VAConfig_TypeDef::div0</a>, <a class="el" href="structACMP__VAConfig__TypeDef.html#a40700604754c3c247e152844e03bd05c">ACMP_VAConfig_TypeDef::div1</a>, <a class="el" href="structACMP__TypeDef.html#a50dd6192c6e2a49b669cdb258425b238">ACMP_TypeDef::HYSTERESIS0</a>, <a class="el" href="structACMP__TypeDef.html#a6406a01556dcf52d55301a6e2738381f">ACMP_TypeDef::HYSTERESIS1</a>, <a class="el" href="structACMP__VAConfig__TypeDef.html#ab4101e9df5fd2b3572b1760f256b9f99">ACMP_VAConfig_TypeDef::input</a>, and <a class="el" href="structACMP__TypeDef.html#abde51db76adba1aa353e1ac642ba827a">ACMP_TypeDef::INPUTSEL</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4f892474faf30a358160e06731485561"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ACMP_VBSetup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>acmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structACMP__VBConfig__TypeDef.html">ACMP_VBConfig_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>vbconfig</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setup the VB Source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">acmp</td><td>Pointer to the ACMP peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vbconfig</td><td>Pointer to the structure used to configure the VB source. This structure contains the input source as well as the 2 divider values. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__acmp_8c_source.html#l00444">444</a> of file <a class="el" href="em__acmp_8c_source.html">em_acmp.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gadc423011083db6766d0a60be4731c084">_ACMP_HYSTERESIS0_DIVVB_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gaf98917137b9d2d24a3b1016c99bb6ec8">_ACMP_HYSTERESIS0_DIVVB_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga3458bcba85e4a677073366c8aa7f4438">_ACMP_HYSTERESIS1_DIVVB_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga012dc7218f13eaf2ebe20811c2cf6f32">_ACMP_HYSTERESIS1_DIVVB_SHIFT</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#gacbbb4fec4f2046919408861d5f7c6d0b">_ACMP_INPUTSEL_VBSEL_MASK</a>, <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga0878c686a17b2d96b1c1e86c40a3bb60">_ACMP_INPUTSEL_VBSEL_SHIFT</a>, <a class="el" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite()</a>, <a class="el" href="structACMP__VBConfig__TypeDef.html#afba0a4117f46b4f5c16a096196bca91b">ACMP_VBConfig_TypeDef::div0</a>, <a class="el" href="structACMP__VBConfig__TypeDef.html#ab51e209b2013a55aa540389a0819c38e">ACMP_VBConfig_TypeDef::div1</a>, <a class="el" href="structACMP__TypeDef.html#a50dd6192c6e2a49b669cdb258425b238">ACMP_TypeDef::HYSTERESIS0</a>, <a class="el" href="structACMP__TypeDef.html#a6406a01556dcf52d55301a6e2738381f">ACMP_TypeDef::HYSTERESIS1</a>, <a class="el" href="structACMP__VBConfig__TypeDef.html#a20cdc900e0ca6cb4173656168ef7c5de">ACMP_VBConfig_TypeDef::input</a>, and <a class="el" href="structACMP__TypeDef.html#abde51db76adba1aa353e1ac642ba827a">ACMP_TypeDef::INPUTSEL</a>.</p>
 
 </div>
 </div>
@@ -1659,7 +1688,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:49 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:40:56 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

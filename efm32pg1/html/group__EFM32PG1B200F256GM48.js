@@ -1,13 +1,13 @@
 var group__EFM32PG1B200F256GM48 =
 [
+    [ "EFM32PG1B200F256GM48 Alternate Function", "group__EFM32PG1B200F256GM48__Alternate__Function.html", null ],
+    [ "EFM32PG1B200F256GM48 Bit Fields", "group__EFM32PG1B200F256GM48__BitFields.html", "group__EFM32PG1B200F256GM48__BitFields" ],
     [ "EFM32PG1B200F256GM48 Core", "group__EFM32PG1B200F256GM48__Core.html", "group__EFM32PG1B200F256GM48__Core" ],
     [ "EFM32PG1B200F256GM48 Part", "group__EFM32PG1B200F256GM48__Part.html", "group__EFM32PG1B200F256GM48__Part" ],
-    [ "EFM32PG1B200F256GM48 Peripheral TypeDefs", "group__EFM32PG1B200F256GM48__Peripheral__TypeDefs.html", null ],
-    [ "EFM32PG1B200F256GM48 Peripheral Memory Map", "group__EFM32PG1B200F256GM48__Peripheral__Base.html", "group__EFM32PG1B200F256GM48__Peripheral__Base" ],
     [ "EFM32PG1B200F256GM48 Peripheral Declarations", "group__EFM32PG1B200F256GM48__Peripheral__Declaration.html", "group__EFM32PG1B200F256GM48__Peripheral__Declaration" ],
+    [ "EFM32PG1B200F256GM48 Peripheral Memory Map", "group__EFM32PG1B200F256GM48__Peripheral__Base.html", "group__EFM32PG1B200F256GM48__Peripheral__Base" ],
     [ "EFM32PG1B200F256GM48 Peripheral Offsets", "group__EFM32PG1B200F256GM48__Peripheral__Offsets.html", "group__EFM32PG1B200F256GM48__Peripheral__Offsets" ],
-    [ "EFM32PG1B200F256GM48 Bit Fields", "group__EFM32PG1B200F256GM48__BitFields.html", "group__EFM32PG1B200F256GM48__BitFields" ],
-    [ "EFM32PG1B200F256GM48 Alternate Function", "group__EFM32PG1B200F256GM48__Alternate__Function.html", null ],
+    [ "EFM32PG1B200F256GM48 Peripheral TypeDefs", "group__EFM32PG1B200F256GM48__Peripheral__TypeDefs.html", null ],
     [ "SET_BIT_FIELD", "group__EFM32PG1B200F256GM48.html#ga7979121950b76a6bd75bf5a8f6fbdcc0", null ],
     [ "IRQn_Type", "group__EFM32PG1B200F256GM48.html#gac3af4a32370fb28c4ade8bf2add80251", null ],
     [ "IRQn", "group__EFM32PG1B200F256GM48.html#ga666eb0caeb12ec0e281415592ae89083", [

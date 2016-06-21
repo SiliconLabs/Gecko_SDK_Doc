@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lba',['lba',['../structMSDD__CmdStatus__TypeDef.html#a3459bee80f45f8511927bf70dacd6483',1,'MSDD_CmdStatus_TypeDef::lba()'],['../structMSDSCSI__ReadCapacity__TypeDef.html#a68cd5734a4019cd89f9880c7ea74b95b',1,'MSDSCSI_ReadCapacity_TypeDef::Lba()'],['../structMSDSCSI__Read10__TypeDef.html#a0f7d380926a76054cfc9f1ba47e606b0',1,'MSDSCSI_Read10_TypeDef::Lba()'],['../structMSDSCSI__Write10__TypeDef.html#a8e61a32441fc28c57dbc04a9962d0386',1,'MSDSCSI_Write10_TypeDef::Lba()'],['../structMSDSCSI__Verify10__TypeDef.html#aea2da4d7826b701c8eeaf629a291e332',1,'MSDSCSI_Verify10_TypeDef::Lba()']]],
+  ['lba',['lba',['../structMSDD__CmdStatus__TypeDef.html#a3459bee80f45f8511927bf70dacd6483',1,'MSDD_CmdStatus_TypeDef::lba()'],['../structSL__ATTRIBUTE__PACKED.html#a22ae8e7da0a4c38fcd2a50fa19c40243',1,'SL_ATTRIBUTE_PACKED::Lba()']]],
   ['lcd',['LCD',['../group__EFM32GG995F1024__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733',1,'LCD():&#160;efm32gg995f1024.h'],['../group__LCD.html',1,'(Global Namespace)']]],
   ['lcd_5fanimenable',['LCD_AnimEnable',['../group__LCD.html#ga370a02864a788e98e6a6d6e859058317',1,'em_lcd.h']]],
   ['lcd_5faniminit',['LCD_AnimInit',['../group__LCD.html#ga1ba720135f8c1869113823d684e084f5',1,'em_lcd.c']]],
@@ -251,7 +251,7 @@ var searchData=
   ['ledi_5f65ma',['ledi_65ma',['../structcal__ref__t.html#a3c59d27a27e683b75c71ad90143c9773',1,'cal_ref_t']]],
   ['ledi_5fratio',['ledi_ratio',['../structSI114X__CAL__S.html#a7f39e0d41093e11b7557c86903fe5093',1,'SI114X_CAL_S']]],
   ['leftadjust',['leftAdjust',['../structADC__InitScan__TypeDef.html#afaeb7c7c6aa576a679de08b1c1b23845',1,'ADC_InitScan_TypeDef::leftAdjust()'],['../structADC__InitSingle__TypeDef.html#a64d99bb9d75e905b8a464233cb764c0e',1,'ADC_InitSingle_TypeDef::leftAdjust()']]],
-  ['len',['len',['../structI2C__TransferSeq__TypeDef.html#a92b6d16d6d3b3e4d5650740fa306a285',1,'I2C_TransferSeq_TypeDef::len()'],['../structUSB__StringDescriptor__TypeDef.html#aec679edb94b33ee9f7e57309e17ec8a6',1,'USB_StringDescriptor_TypeDef::len()']]],
+  ['len',['len',['../structI2C__TransferSeq__TypeDef.html#a92b6d16d6d3b3e4d5650740fa306a285',1,'I2C_TransferSeq_TypeDef::len()'],['../structSL__ATTRIBUTE__PACKED.html#a7e5f19dc3fc671d908e42801b1dfa850',1,'SL_ATTRIBUTE_PACKED::len()']]],
   ['lenconfig',['lenConfig',['../structEZRADIODRV__AutoAckHandle.html#a0f3b4f0d1dbeb3381b368fa2cb3c6664',1,'EZRADIODRV_AutoAckHandle::lenConfig()'],['../structEZRADIODRV__PacketTxHandle.html#ac97208fb2420b81e58b144113109d056',1,'EZRADIODRV_PacketTxHandle::lenConfig()']]],
   ['lenmode',['lenMode',['../structEZRADIODRV__PacketLengthConfig.html#ab6c504130d8c4d0702a7261c34d7724d',1,'EZRADIODRV_PacketLengthConfig']]],
   ['lesense',['LESENSE',['../group__EFM32GG995F1024__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c',1,'LESENSE():&#160;efm32gg995f1024.h'],['../group__LESENSE.html',1,'(Global Namespace)']]],
@@ -1466,15 +1466,15 @@ var searchData=
   ['lftocrlf',['lfToCrLf',['../structTEXTDISPLAY__Config__t.html#aae4d4c24d67076baa049bb7d8ea9099e',1,'TEXTDISPLAY_Config_t::lfToCrLf()'],['../group__RetargetIo.html#ga39f367ecd73dc4d3885a2f7e3117ac8c',1,'LFtoCRLF():&#160;retargetserial.c'],['../retargettft_8c.html#a348ac2c49f51720a95cfedffc5476fa6',1,'LFtoCRLF():&#160;retargettft.c']]],
   ['lfxofdet',['LFXOFDET',['../structBURTC__TypeDef.html#a04497707b915459b254ab595ad328779',1,'BURTC_TypeDef']]],
   ['lines',['LINES',['../retargettft_8c.html#a321ae946de24c36489276616d13c46cd',1,'retargettft.c']]],
-  ['linked',['Linked',['../structMSDSCSI__InquiryData__TypeDef.html#a8e8b9cd39602920d09cce83ff7f11a31',1,'MSDSCSI_InquiryData_TypeDef']]],
+  ['linked',['Linked',['../structSL__ATTRIBUTE__PACKED.html#aadc8a050bfeb546cf4558daf929f3f3d',1,'SL_ATTRIBUTE_PACKED']]],
   ['lirpd_5fadchi_5firled',['lirpd_adchi_irled',['../structcal__ref__t.html#af73d08084a1d8dd21c9e3bf01b3bad4f',1,'cal_ref_t']]],
   ['location',['location',['../structEBI__Init__TypeDef.html#a03e1a78ab8c037670d5c04686d44a821',1,'EBI_Init_TypeDef']]],
   ['lock',['lock',['../structWDOG__Init__TypeDef.html#a15ac1297036d0a0e49cb6ebc5d355fb2',1,'WDOG_Init_TypeDef::lock()'],['../structBURTC__TypeDef.html#a82038b1cc04e4e376020f6c0d748f703',1,'BURTC_TypeDef::LOCK()'],['../structCMU__TypeDef.html#ae2eab81f0ada97c5a8a96d3e698a2d0d',1,'CMU_TypeDef::LOCK()'],['../structEMU__TypeDef.html#a28db2cb3e33748114e51a11988714af1',1,'EMU_TypeDef::LOCK()'],['../structGPIO__TypeDef.html#af896db84304ad60fc765ba9715ad9440',1,'GPIO_TypeDef::LOCK()'],['../structMSC__TypeDef.html#a4b461389296286bbe63fa88ebef6a74e',1,'MSC_TypeDef::LOCK()']]],
   ['lockbits_5fbase',['LOCKBITS_BASE',['../group__EFM32GG995F1024__Peripheral__Base.html#gaa164957775ba3950a88b18cf5d6dee65',1,'efm32gg995f1024.h']]],
   ['lockconfig',['lockConfig',['../structEMU__EM4Init__TypeDef.html#a1621e4c8908b8b0c693ddb384c430793',1,'EMU_EM4Init_TypeDef']]],
-  ['loej',['LoEj',['../structMSDSCSI__StartStopUnit__TypeDef.html#ade192c3c1d97bc4aae65977e9eb22c8f',1,'MSDSCSI_StartStopUnit_TypeDef']]],
-  ['logicalblockaddress',['LogicalBlockAddress',['../structMSDSCSI__ReadCapacityData__TypeDef.html#a0a1147829445f6b2e1da2fd86ce45d91',1,'MSDSCSI_ReadCapacityData_TypeDef']]],
-  ['logicalblocklength',['LogicalBlockLength',['../structMSDSCSI__ReadCapacityData__TypeDef.html#a345dd2117f77e23f8f991c2568e266e5',1,'MSDSCSI_ReadCapacityData_TypeDef']]],
+  ['loej',['LoEj',['../structSL__ATTRIBUTE__PACKED.html#a2093bcbbd11a128257ff9825f4bd010e',1,'SL_ATTRIBUTE_PACKED']]],
+  ['logicalblockaddress',['LogicalBlockAddress',['../structSL__ATTRIBUTE__PACKED.html#aec39f99d617d38110cdb5ed99e36676c',1,'SL_ATTRIBUTE_PACKED']]],
+  ['logicalblocklength',['LogicalBlockLength',['../structSL__ATTRIBUTE__PACKED.html#a25dc63f8345a314d903952de1aea0452',1,'SL_ATTRIBUTE_PACKED']]],
   ['loop0',['LOOP0',['../structDMA__TypeDef.html#ac9098787a0834eb35053baf6241d585b',1,'DMA_TypeDef']]],
   ['loop1',['LOOP1',['../structDMA__TypeDef.html#ae37dc81a2729ab1ce7d4e496cbaac854',1,'DMA_TypeDef']]],
   ['lowpowercomp',['lowPowerComp',['../structBURTC__Init__TypeDef.html#a3380d3f542fc58dcd888649c089a36c1',1,'BURTC_Init_TypeDef']]],
@@ -1487,5 +1487,5 @@ var searchData=
   ['lpfpospaddisable',['lpfPosPadDisable',['../structOPAMP__Init__TypeDef.html#a94ac20bd14716b2826e9100ab5a69efe',1,'OPAMP_Init_TypeDef']]],
   ['lpmode',['LPMODE',['../structBURTC__TypeDef.html#af068d8975f201865b57abfabc2894bb8',1,'BURTC_TypeDef']]],
   ['lsb_5fmask',['LSB_MASK',['../ksz8851snl_8c.html#a338d54179ac0da2af2363e3a930bf374',1,'ksz8851snl.c']]],
-  ['lun',['Lun',['../structMSDBOT__CBW__TypeDef.html#adab4dcae6200ccb3a2a5d0671aba3be5',1,'MSDBOT_CBW_TypeDef']]]
+  ['lun',['Lun',['../structSL__ATTRIBUTE__PACKED.html#a19939c1e6bdd3103d0e287e4d2163d23',1,'SL_ATTRIBUTE_PACKED']]]
 ];

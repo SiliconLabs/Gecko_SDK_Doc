@@ -1,24 +1,14 @@
 var group__CRYOTIMER =
 [
     [ "CRYOTIMER_Init_TypeDef", "structCRYOTIMER__Init__TypeDef.html", [
-      [ "enable", "structCRYOTIMER__Init__TypeDef.html#ad9bfb442869e18fdb5e2981a20669e7f", null ],
       [ "debugRun", "structCRYOTIMER__Init__TypeDef.html#aaa15fa9ad7d3c45366ed4c855aa1188d", null ],
       [ "em4Wakeup", "structCRYOTIMER__Init__TypeDef.html#a13946506fd773b553ead76b7bf1fa8b3", null ],
+      [ "enable", "structCRYOTIMER__Init__TypeDef.html#ad9bfb442869e18fdb5e2981a20669e7f", null ],
       [ "osc", "structCRYOTIMER__Init__TypeDef.html#a51a7b5db3f57bc905174c887d4069057", null ],
-      [ "presc", "structCRYOTIMER__Init__TypeDef.html#a8a0045a9bdae75210409fccaf7a4bb33", null ],
-      [ "period", "structCRYOTIMER__Init__TypeDef.html#a36b9e2885ad984813efb15c46b465c01", null ]
+      [ "period", "structCRYOTIMER__Init__TypeDef.html#a36b9e2885ad984813efb15c46b465c01", null ],
+      [ "presc", "structCRYOTIMER__Init__TypeDef.html#a8a0045a9bdae75210409fccaf7a4bb33", null ]
     ] ],
     [ "CRYOTIMER_INIT_DEFAULT", "group__CRYOTIMER.html#gad8eb3451130bb396e2c1932417560f4b", null ],
-    [ "CRYOTIMER_Presc_TypeDef", "group__CRYOTIMER.html#ga4f17c6369fd634d476c354a45a1fa426", [
-      [ "cryotimerPresc_1", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426ab9533eebaa3ece0dba62c4a7896cc5cf", null ],
-      [ "cryotimerPresc_2", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426ae870a0380e9f4269dfca17f5476b8e4a", null ],
-      [ "cryotimerPresc_4", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a3b50d02554ddb97923d46345104ceeb8", null ],
-      [ "cryotimerPresc_8", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a7293610a21a80f84d5f36033d09e5bdf", null ],
-      [ "cryotimerPresc_16", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426aed2024c222b685fb8457523f05707dc9", null ],
-      [ "cryotimerPresc_32", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a46e40f0dda5b3146dc3f8e06da1a9308", null ],
-      [ "cryotimerPresc_64", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a3e7eac62ac81b57ddd516251664457f0", null ],
-      [ "cryotimerPresc_128", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426aac07ec15cc954ed359ace255be5d3aa9", null ]
-    ] ],
     [ "CRYOTIMER_Osc_TypeDef", "group__CRYOTIMER.html#gae75ded142f45aa60088d6fa1e4109238", [
       [ "cryotimerOscLFRCO", "group__CRYOTIMER.html#ggae75ded142f45aa60088d6fa1e4109238acc2acf2b665c6cd9e7566a1579361578", null ],
       [ "cryotimerOscLFXO", "group__CRYOTIMER.html#ggae75ded142f45aa60088d6fa1e4109238a339e75faadf0d3317f1fc020999beb24", null ],
@@ -59,16 +49,26 @@ var group__CRYOTIMER =
       [ "cryotimerPeriod_2048m", "group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21ababd18d35235c08ccca1b13ce7238bcf22", null ],
       [ "cryotimerPeriod_4096m", "group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21aba09e4b0c5e061b6692d995afa27bddc09", null ]
     ] ],
-    [ "CRYOTIMER_IntClear", "group__CRYOTIMER.html#ga3e76c6554781a0b5f865691c5712dbe1", null ],
-    [ "CRYOTIMER_IntGet", "group__CRYOTIMER.html#ga6a50a563e35cd7069c4d739ac39625f6", null ],
-    [ "CRYOTIMER_IntGetEnabled", "group__CRYOTIMER.html#ga998bcbac84507672ea7da89ceef556c0", null ],
-    [ "CRYOTIMER_IntEnable", "group__CRYOTIMER.html#ga36965b7d939b999d83628d531c825916", null ],
-    [ "CRYOTIMER_IntDisable", "group__CRYOTIMER.html#ga9076994d60697fd97aeb9dd49bc0f16d", null ],
-    [ "CRYOTIMER_IntSet", "group__CRYOTIMER.html#gade960b39d3653d8e81b076bd250b8dfc", null ],
-    [ "CRYOTIMER_PeriodSet", "group__CRYOTIMER.html#gaec3e00350e0081cb48df965d71ec1e1d", null ],
-    [ "CRYOTIMER_PeriodGet", "group__CRYOTIMER.html#ga837a0d702a8a90e01e64cb230624d85b", null ],
+    [ "CRYOTIMER_Presc_TypeDef", "group__CRYOTIMER.html#ga4f17c6369fd634d476c354a45a1fa426", [
+      [ "cryotimerPresc_1", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426ab9533eebaa3ece0dba62c4a7896cc5cf", null ],
+      [ "cryotimerPresc_2", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426ae870a0380e9f4269dfca17f5476b8e4a", null ],
+      [ "cryotimerPresc_4", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a3b50d02554ddb97923d46345104ceeb8", null ],
+      [ "cryotimerPresc_8", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a7293610a21a80f84d5f36033d09e5bdf", null ],
+      [ "cryotimerPresc_16", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426aed2024c222b685fb8457523f05707dc9", null ],
+      [ "cryotimerPresc_32", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a46e40f0dda5b3146dc3f8e06da1a9308", null ],
+      [ "cryotimerPresc_64", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a3e7eac62ac81b57ddd516251664457f0", null ],
+      [ "cryotimerPresc_128", "group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426aac07ec15cc954ed359ace255be5d3aa9", null ]
+    ] ],
     [ "CRYOTIMER_CounterGet", "group__CRYOTIMER.html#gaccf5fb37c2d823145b667893b15ddd11", null ],
     [ "CRYOTIMER_EM4WakeupEnable", "group__CRYOTIMER.html#gabe18934adcd131e47da8c492388c36e0", null ],
     [ "CRYOTIMER_Enable", "group__CRYOTIMER.html#gaed18ebc12bfa9111a0b4f4b08a507d17", null ],
-    [ "CRYOTIMER_Init", "group__CRYOTIMER.html#ga2fc2bf012253672d3870b45b736fb821", null ]
+    [ "CRYOTIMER_Init", "group__CRYOTIMER.html#ga2fc2bf012253672d3870b45b736fb821", null ],
+    [ "CRYOTIMER_IntClear", "group__CRYOTIMER.html#ga3e76c6554781a0b5f865691c5712dbe1", null ],
+    [ "CRYOTIMER_IntDisable", "group__CRYOTIMER.html#ga9076994d60697fd97aeb9dd49bc0f16d", null ],
+    [ "CRYOTIMER_IntEnable", "group__CRYOTIMER.html#ga36965b7d939b999d83628d531c825916", null ],
+    [ "CRYOTIMER_IntGet", "group__CRYOTIMER.html#ga6a50a563e35cd7069c4d739ac39625f6", null ],
+    [ "CRYOTIMER_IntGetEnabled", "group__CRYOTIMER.html#ga998bcbac84507672ea7da89ceef556c0", null ],
+    [ "CRYOTIMER_IntSet", "group__CRYOTIMER.html#gade960b39d3653d8e81b076bd250b8dfc", null ],
+    [ "CRYOTIMER_PeriodGet", "group__CRYOTIMER.html#ga837a0d702a8a90e01e64cb230624d85b", null ],
+    [ "CRYOTIMER_PeriodSet", "group__CRYOTIMER.html#gaec3e00350e0081cb48df965d71ec1e1d", null ]
 ];

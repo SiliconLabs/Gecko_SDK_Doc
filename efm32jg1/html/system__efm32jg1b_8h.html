@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -115,160 +112,12 @@ $(document).ready(function(){initNavTree('system__efm32jg1b_8h.html','');});
 <div class="title">system_efm32jg1b.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>CMSIS Cortex-M3/M4 System Layer for EFM32 devices.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-</div>
-<p><a href="system__efm32jg1b_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ae7ee340978f5c25f52f0cad1457c6616"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7ee340978f5c25f52f0cad1457c6616"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset_Handler</b> (void)</td></tr>
-<tr class="separator:ae7ee340978f5c25f52f0cad1457c6616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ad7a5e3ee69cb6db6a6b9111ba898bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ad7a5e3ee69cb6db6a6b9111ba898bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>NMI_Handler</b> (void)</td></tr>
-<tr class="separator:a6ad7a5e3ee69cb6db6a6b9111ba898bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bffc10d5bd4106753b7c30e86903bea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bffc10d5bd4106753b7c30e86903bea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HardFault_Handler</b> (void)</td></tr>
-<tr class="separator:a2bffc10d5bd4106753b7c30e86903bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3150f74512510287a942624aa9b44cc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3150f74512510287a942624aa9b44cc5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MemManage_Handler</b> (void)</td></tr>
-<tr class="separator:a3150f74512510287a942624aa9b44cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a850cefb17a977292ae5eb4cafa9976c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a850cefb17a977292ae5eb4cafa9976c3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BusFault_Handler</b> (void)</td></tr>
-<tr class="separator:a850cefb17a977292ae5eb4cafa9976c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d98923de2ed6b7309b66f9ba2971647"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d98923de2ed6b7309b66f9ba2971647"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UsageFault_Handler</b> (void)</td></tr>
-<tr class="separator:a1d98923de2ed6b7309b66f9ba2971647"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e5ddb3df0d62f2dc357e64a3f04a6ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e5ddb3df0d62f2dc357e64a3f04a6ce"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SVC_Handler</b> (void)</td></tr>
-<tr class="separator:a3e5ddb3df0d62f2dc357e64a3f04a6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbdfb05858cc36fc520974df37ec3cb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbdfb05858cc36fc520974df37ec3cb0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugMon_Handler</b> (void)</td></tr>
-<tr class="separator:adbdfb05858cc36fc520974df37ec3cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6303e1f258cbdc1f970ce579cc015623"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6303e1f258cbdc1f970ce579cc015623"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PendSV_Handler</b> (void)</td></tr>
-<tr class="separator:a6303e1f258cbdc1f970ce579cc015623"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5e09814056d617c521549e542639b7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5e09814056d617c521549e542639b7e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SysTick_Handler</b> (void)</td></tr>
-<tr class="separator:ab5e09814056d617c521549e542639b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fda42f1f4ae172145a1a67b8521d50c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fda42f1f4ae172145a1a67b8521d50c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EMU_IRQHandler</b> (void)</td></tr>
-<tr class="separator:a4fda42f1f4ae172145a1a67b8521d50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34f93cedc7186cc0f72abd12dfa697a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34f93cedc7186cc0f72abd12dfa697a0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WDOG_IRQHandler</b> (void)</td></tr>
-<tr class="separator:a34f93cedc7186cc0f72abd12dfa697a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a291de6b1e55d8b0a3992a2bfea16f157"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a291de6b1e55d8b0a3992a2bfea16f157"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LDMA_IRQHandler</b> (void)</td></tr>
-<tr class="separator:a291de6b1e55d8b0a3992a2bfea16f157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87d72653156b83829786f1f856ecbad1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87d72653156b83829786f1f856ecbad1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GPIO_EVEN_IRQHandler</b> (void)</td></tr>
-<tr class="separator:a87d72653156b83829786f1f856ecbad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f89e5f7418d3a10f49b2faeab3711dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a5f89e5f7418d3a10f49b2faeab3711dd">TIMER0_IRQHandler</a> (void)</td></tr>
-<tr class="memdesc:a5f89e5f7418d3a10f49b2faeab3711dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">TIMER0 interrupt handler.  <a href="#a5f89e5f7418d3a10f49b2faeab3711dd">More...</a><br /></td></tr>
-<tr class="separator:a5f89e5f7418d3a10f49b2faeab3711dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ef4dfd53f8b518acaeddcda2b159c61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ef4dfd53f8b518acaeddcda2b159c61"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>USART0_RX_IRQHandler</b> (void)</td></tr>
-<tr class="separator:a8ef4dfd53f8b518acaeddcda2b159c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1ad8819e3b118aa46e7c04efc32593b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1ad8819e3b118aa46e7c04efc32593b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>USART0_TX_IRQHandler</b> (void)</td></tr>
-<tr class="separator:aa1ad8819e3b118aa46e7c04efc32593b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd4f5e806b0ea1a2889632e254f8889a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd4f5e806b0ea1a2889632e254f8889a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ACMP0_IRQHandler</b> (void)</td></tr>
-<tr class="separator:abd4f5e806b0ea1a2889632e254f8889a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3611206d185a38b740457a748712c457"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3611206d185a38b740457a748712c457"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a3611206d185a38b740457a748712c457">ADC0_IRQHandler</a> (void)</td></tr>
-<tr class="memdesc:a3611206d185a38b740457a748712c457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt handler is executed with frequency ~28Hz when panel is not pressed and with frequency ~140Hz when panel is pressed - this will give ~50 readings per second. <br /></td></tr>
-<tr class="separator:a3611206d185a38b740457a748712c457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af92e84d0da8829e1c4c664224a1b97d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af92e84d0da8829e1c4c664224a1b97d5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>IDAC0_IRQHandler</b> (void)</td></tr>
-<tr class="separator:af92e84d0da8829e1c4c664224a1b97d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e817e99d2a59e5f48e4ff0c79e7eef5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e817e99d2a59e5f48e4ff0c79e7eef5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>I2C0_IRQHandler</b> (void)</td></tr>
-<tr class="separator:a8e817e99d2a59e5f48e4ff0c79e7eef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fff5a798ff4721659dc7bdbb3149c8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fff5a798ff4721659dc7bdbb3149c8b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GPIO_ODD_IRQHandler</b> (void)</td></tr>
-<tr class="separator:a8fff5a798ff4721659dc7bdbb3149c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92d71bbc9344a6aaf8858148035f3f9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92d71bbc9344a6aaf8858148035f3f9d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TIMER1_IRQHandler</b> (void)</td></tr>
-<tr class="separator:a92d71bbc9344a6aaf8858148035f3f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6a5099bafcea7a957c8a7aff925a5c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6a5099bafcea7a957c8a7aff925a5c2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>USART1_RX_IRQHandler</b> (void)</td></tr>
-<tr class="separator:aa6a5099bafcea7a957c8a7aff925a5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7afa223a57cccc216b627b070ad9443"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7afa223a57cccc216b627b070ad9443"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>USART1_TX_IRQHandler</b> (void)</td></tr>
-<tr class="separator:af7afa223a57cccc216b627b070ad9443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b6100ae82f114fbb9ff3c46bbb369c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b6100ae82f114fbb9ff3c46bbb369c2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LEUART0_IRQHandler</b> (void)</td></tr>
-<tr class="separator:a1b6100ae82f114fbb9ff3c46bbb369c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd61b5c71b995f3b66ead020bb6eb17a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd61b5c71b995f3b66ead020bb6eb17a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PCNT0_IRQHandler</b> (void)</td></tr>
-<tr class="separator:afd61b5c71b995f3b66ead020bb6eb17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9a4b9dcf55944cc4169738cd2303d35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9a4b9dcf55944cc4169738cd2303d35"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CMU_IRQHandler</b> (void)</td></tr>
-<tr class="separator:ad9a4b9dcf55944cc4169738cd2303d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e8923921390214676138892f8576d46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e8923921390214676138892f8576d46"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MSC_IRQHandler</b> (void)</td></tr>
-<tr class="separator:a8e8923921390214676138892f8576d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cf29979c5c93891ee0e15e1ae618a11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cf29979c5c93891ee0e15e1ae618a11"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LETIMER0_IRQHandler</b> (void)</td></tr>
-<tr class="separator:a8cf29979c5c93891ee0e15e1ae618a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a599e4440f38a7b21df1787e10e91c261"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a599e4440f38a7b21df1787e10e91c261"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RTCC_IRQHandler</b> (void)</td></tr>
-<tr class="separator:a599e4440f38a7b21df1787e10e91c261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d85fc6b067c8c01e6c88adf3e298aea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d85fc6b067c8c01e6c88adf3e298aea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CRYOTIMER_IRQHandler</b> (void)</td></tr>
-<tr class="separator:a5d85fc6b067c8c01e6c88adf3e298aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2e6aa1120f0e55e38c83d8387625d16"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet</a> (void)</td></tr>
-<tr class="memdesc:af2e6aa1120f0e55e38c83d8387625d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current core clock frequency.  <a href="#af2e6aa1120f0e55e38c83d8387625d16">More...</a><br /></td></tr>
-<tr class="separator:af2e6aa1120f0e55e38c83d8387625d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd24e7ebfd616c851c240233da5d2bba"><td class="memItemLeft" align="right" valign="top">static __INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#acd24e7ebfd616c851c240233da5d2bba">SystemCoreClockUpdate</a> (void)</td></tr>
-<tr class="memdesc:acd24e7ebfd616c851c240233da5d2bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update CMSIS SystemCoreClock variable.  <a href="#acd24e7ebfd616c851c240233da5d2bba">More...</a><br /></td></tr>
-<tr class="separator:acd24e7ebfd616c851c240233da5d2bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64cc4ea6124c6503b120933d91edf1a0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a64cc4ea6124c6503b120933d91edf1a0">SystemMaxCoreClockGet</a> (void)</td></tr>
-<tr class="memdesc:a64cc4ea6124c6503b120933d91edf1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum core clock frequency.  <a href="#a64cc4ea6124c6503b120933d91edf1a0">More...</a><br /></td></tr>
-<tr class="separator:a64cc4ea6124c6503b120933d91edf1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93f514700ccf00d08dbdcff7f1224eb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a93f514700ccf00d08dbdcff7f1224eb2">SystemInit</a> (void)</td></tr>
-<tr class="memdesc:a93f514700ccf00d08dbdcff7f1224eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the system.  <a href="#a93f514700ccf00d08dbdcff7f1224eb2">More...</a><br /></td></tr>
-<tr class="separator:a93f514700ccf00d08dbdcff7f1224eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5991f4c3faeaed3b4f20d5ab515f1f2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#ab5991f4c3faeaed3b4f20d5ab515f1f2">SystemHFClockGet</a> (void)</td></tr>
-<tr class="memdesc:ab5991f4c3faeaed3b4f20d5ab515f1f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current HFCLK frequency.  <a href="#ab5991f4c3faeaed3b4f20d5ab515f1f2">More...</a><br /></td></tr>
-<tr class="separator:ab5991f4c3faeaed3b4f20d5ab515f1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef32887eb9b08a5dd7db73c35ca7c747"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#aef32887eb9b08a5dd7db73c35ca7c747">SystemHFXOClockGet</a> (void)</td></tr>
-<tr class="memdesc:aef32887eb9b08a5dd7db73c35ca7c747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get high frequency crystal oscillator clock frequency for target system.  <a href="#aef32887eb9b08a5dd7db73c35ca7c747">More...</a><br /></td></tr>
-<tr class="separator:aef32887eb9b08a5dd7db73c35ca7c747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8a3b3b223a7d08bf9e4d86a259f4e14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#ae8a3b3b223a7d08bf9e4d86a259f4e14">SystemHFXOClockSet</a> (uint32_t freq)</td></tr>
-<tr class="memdesc:ae8a3b3b223a7d08bf9e4d86a259f4e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set high frequency crystal oscillator clock frequency for target system.  <a href="#ae8a3b3b223a7d08bf9e4d86a259f4e14">More...</a><br /></td></tr>
-<tr class="separator:ae8a3b3b223a7d08bf9e4d86a259f4e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a477d1670608b8ca76108b6e21c1124eb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a477d1670608b8ca76108b6e21c1124eb">SystemLFRCOClockGet</a> (void)</td></tr>
-<tr class="memdesc:a477d1670608b8ca76108b6e21c1124eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get low frequency RC oscillator clock frequency for target system.  <a href="#a477d1670608b8ca76108b6e21c1124eb">More...</a><br /></td></tr>
-<tr class="separator:a477d1670608b8ca76108b6e21c1124eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88eecfafda55942454a9e10912b3f224"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a88eecfafda55942454a9e10912b3f224">SystemULFRCOClockGet</a> (void)</td></tr>
-<tr class="memdesc:a88eecfafda55942454a9e10912b3f224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ultra low frequency RC oscillator clock frequency for target system.  <a href="#a88eecfafda55942454a9e10912b3f224">More...</a><br /></td></tr>
-<tr class="separator:a88eecfafda55942454a9e10912b3f224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a186aefb7bb200c8fda0fc0a4d4b2aa14"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a186aefb7bb200c8fda0fc0a4d4b2aa14">SystemLFXOClockGet</a> (void)</td></tr>
-<tr class="memdesc:a186aefb7bb200c8fda0fc0a4d4b2aa14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get low frequency crystal oscillator clock frequency for target system.  <a href="#a186aefb7bb200c8fda0fc0a4d4b2aa14">More...</a><br /></td></tr>
-<tr class="separator:a186aefb7bb200c8fda0fc0a4d4b2aa14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace8c3b705bdbdc9172fbc7f2415dfd8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#ace8c3b705bdbdc9172fbc7f2415dfd8b">SystemLFXOClockSet</a> (uint32_t freq)</td></tr>
-<tr class="memdesc:ace8c3b705bdbdc9172fbc7f2415dfd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set low frequency crystal oscillator clock frequency for target system.  <a href="#ace8c3b705bdbdc9172fbc7f2415dfd8b">More...</a><br /></td></tr>
-<tr class="separator:ace8c3b705bdbdc9172fbc7f2415dfd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aa3cd3e43291e81e795d642b79b6088e6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#aa3cd3e43291e81e795d642b79b6088e6">SystemCoreClock</a></td></tr>
-<tr class="memdesc:aa3cd3e43291e81e795d642b79b6088e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">System System Clock Frequency (Core Clock).  <a href="#aa3cd3e43291e81e795d642b79b6088e6">More...</a><br /></td></tr>
-<tr class="separator:aa3cd3e43291e81e795d642b79b6088e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a019e34c770ed2855a9ce73be796f33d5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a019e34c770ed2855a9ce73be796f33d5">SystemHfrcoFreq</a></td></tr>
-<tr class="memdesc:a019e34c770ed2855a9ce73be796f33d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">System HFRCO frequency.  <a href="#a019e34c770ed2855a9ce73be796f33d5">More...</a><br /></td></tr>
-<tr class="separator:a019e34c770ed2855a9ce73be796f33d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
+<div class="textblock"><p>CMSIS Cortex-M3/M4 System Layer for EFM32 devices. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
-<p><b>Copyright 2015 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
 <p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
 <ol type="1">
 <li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.<br />
@@ -281,28 +130,154 @@ License</h1>
 <p>Silicon Laboratories, Inc. will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
 <p>Definition in file <a class="el" href="system__efm32jg1b_8h_source.html">system_efm32jg1b.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a5f89e5f7418d3a10f49b2faeab3711dd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TIMER0_IRQHandler </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>When TIMER0 expires the number of pulses on TIMER1 is inserted into channelValues. If this values is bigger than what is recorded in channelMaxValues, channelMaxValues is updated. Finally, the next ACMP channel is selected. </p>
-
-<p>Definition at line <a class="el" href="capsense_8c_source.html#l00092">92</a> of file <a class="el" href="capsense_8c_source.html">capsense.c</a>.</p>
-
-<p>References <a class="el" href="caplesense_8c_source.html#l00053">channelMaxValues</a>, <a class="el" href="caplesense_8c_source.html#l00040">channelValues</a>, <a class="el" href="caplesense_8c_source.html#l00084">currentChannel</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00322">TIMER0</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00323">TIMER1</a>, <a class="el" href="efm32jg1b__timer_8h_source.html#l00205">TIMER_CMD_STOP</a>, and <a class="el" href="efm32jg1b__timer_8h_source.html#l00431">TIMER_IFC_OF</a>.</p>
-
+</div><div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 </div>
-</div>
+<p><a href="system__efm32jg1b_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abd4f5e806b0ea1a2889632e254f8889a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd4f5e806b0ea1a2889632e254f8889a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ACMP0_IRQHandler</b> (void)</td></tr>
+<tr class="separator:abd4f5e806b0ea1a2889632e254f8889a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3611206d185a38b740457a748712c457"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3611206d185a38b740457a748712c457"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a3611206d185a38b740457a748712c457">ADC0_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a3611206d185a38b740457a748712c457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt handler is executed with frequency ~28Hz when panel is not pressed and with frequency ~140Hz when panel is pressed - this will give ~50 readings per second. <br /></td></tr>
+<tr class="separator:a3611206d185a38b740457a748712c457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850cefb17a977292ae5eb4cafa9976c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a850cefb17a977292ae5eb4cafa9976c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BusFault_Handler</b> (void)</td></tr>
+<tr class="separator:a850cefb17a977292ae5eb4cafa9976c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9a4b9dcf55944cc4169738cd2303d35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9a4b9dcf55944cc4169738cd2303d35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CMU_IRQHandler</b> (void)</td></tr>
+<tr class="separator:ad9a4b9dcf55944cc4169738cd2303d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d85fc6b067c8c01e6c88adf3e298aea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d85fc6b067c8c01e6c88adf3e298aea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CRYOTIMER_IRQHandler</b> (void)</td></tr>
+<tr class="separator:a5d85fc6b067c8c01e6c88adf3e298aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbdfb05858cc36fc520974df37ec3cb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbdfb05858cc36fc520974df37ec3cb0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugMon_Handler</b> (void)</td></tr>
+<tr class="separator:adbdfb05858cc36fc520974df37ec3cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fda42f1f4ae172145a1a67b8521d50c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fda42f1f4ae172145a1a67b8521d50c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a4fda42f1f4ae172145a1a67b8521d50c">EMU_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a4fda42f1f4ae172145a1a67b8521d50c"><td class="mdescLeft">&#160;</td><td class="mdescRight">EMU Interrupt Handler. <br /></td></tr>
+<tr class="separator:a4fda42f1f4ae172145a1a67b8521d50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d72653156b83829786f1f856ecbad1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87d72653156b83829786f1f856ecbad1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GPIO_EVEN_IRQHandler</b> (void)</td></tr>
+<tr class="separator:a87d72653156b83829786f1f856ecbad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fff5a798ff4721659dc7bdbb3149c8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fff5a798ff4721659dc7bdbb3149c8b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GPIO_ODD_IRQHandler</b> (void)</td></tr>
+<tr class="separator:a8fff5a798ff4721659dc7bdbb3149c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bffc10d5bd4106753b7c30e86903bea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bffc10d5bd4106753b7c30e86903bea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HardFault_Handler</b> (void)</td></tr>
+<tr class="separator:a2bffc10d5bd4106753b7c30e86903bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e817e99d2a59e5f48e4ff0c79e7eef5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e817e99d2a59e5f48e4ff0c79e7eef5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>I2C0_IRQHandler</b> (void)</td></tr>
+<tr class="separator:a8e817e99d2a59e5f48e4ff0c79e7eef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92e84d0da8829e1c4c664224a1b97d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af92e84d0da8829e1c4c664224a1b97d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IDAC0_IRQHandler</b> (void)</td></tr>
+<tr class="separator:af92e84d0da8829e1c4c664224a1b97d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a291de6b1e55d8b0a3992a2bfea16f157"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a291de6b1e55d8b0a3992a2bfea16f157"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LDMA_IRQHandler</b> (void)</td></tr>
+<tr class="separator:a291de6b1e55d8b0a3992a2bfea16f157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf29979c5c93891ee0e15e1ae618a11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cf29979c5c93891ee0e15e1ae618a11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LETIMER0_IRQHandler</b> (void)</td></tr>
+<tr class="separator:a8cf29979c5c93891ee0e15e1ae618a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6100ae82f114fbb9ff3c46bbb369c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b6100ae82f114fbb9ff3c46bbb369c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LEUART0_IRQHandler</b> (void)</td></tr>
+<tr class="separator:a1b6100ae82f114fbb9ff3c46bbb369c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3150f74512510287a942624aa9b44cc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3150f74512510287a942624aa9b44cc5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MemManage_Handler</b> (void)</td></tr>
+<tr class="separator:a3150f74512510287a942624aa9b44cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8923921390214676138892f8576d46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e8923921390214676138892f8576d46"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MSC_IRQHandler</b> (void)</td></tr>
+<tr class="separator:a8e8923921390214676138892f8576d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad7a5e3ee69cb6db6a6b9111ba898bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ad7a5e3ee69cb6db6a6b9111ba898bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NMI_Handler</b> (void)</td></tr>
+<tr class="separator:a6ad7a5e3ee69cb6db6a6b9111ba898bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd61b5c71b995f3b66ead020bb6eb17a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd61b5c71b995f3b66ead020bb6eb17a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PCNT0_IRQHandler</b> (void)</td></tr>
+<tr class="separator:afd61b5c71b995f3b66ead020bb6eb17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6303e1f258cbdc1f970ce579cc015623"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6303e1f258cbdc1f970ce579cc015623"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PendSV_Handler</b> (void)</td></tr>
+<tr class="separator:a6303e1f258cbdc1f970ce579cc015623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ee340978f5c25f52f0cad1457c6616"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7ee340978f5c25f52f0cad1457c6616"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset_Handler</b> (void)</td></tr>
+<tr class="separator:ae7ee340978f5c25f52f0cad1457c6616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599e4440f38a7b21df1787e10e91c261"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a599e4440f38a7b21df1787e10e91c261"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RTCC_IRQHandler</b> (void)</td></tr>
+<tr class="separator:a599e4440f38a7b21df1787e10e91c261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5ddb3df0d62f2dc357e64a3f04a6ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e5ddb3df0d62f2dc357e64a3f04a6ce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SVC_Handler</b> (void)</td></tr>
+<tr class="separator:a3e5ddb3df0d62f2dc357e64a3f04a6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e6aa1120f0e55e38c83d8387625d16"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet</a> (void)</td></tr>
+<tr class="memdesc:af2e6aa1120f0e55e38c83d8387625d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current core clock frequency.  <a href="#af2e6aa1120f0e55e38c83d8387625d16">More...</a><br /></td></tr>
+<tr class="separator:af2e6aa1120f0e55e38c83d8387625d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd24e7ebfd616c851c240233da5d2bba"><td class="memItemLeft" align="right" valign="top">static __INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#acd24e7ebfd616c851c240233da5d2bba">SystemCoreClockUpdate</a> (void)</td></tr>
+<tr class="memdesc:acd24e7ebfd616c851c240233da5d2bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update CMSIS SystemCoreClock variable.  <a href="#acd24e7ebfd616c851c240233da5d2bba">More...</a><br /></td></tr>
+<tr class="separator:acd24e7ebfd616c851c240233da5d2bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5991f4c3faeaed3b4f20d5ab515f1f2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#ab5991f4c3faeaed3b4f20d5ab515f1f2">SystemHFClockGet</a> (void)</td></tr>
+<tr class="memdesc:ab5991f4c3faeaed3b4f20d5ab515f1f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current HFCLK frequency.  <a href="#ab5991f4c3faeaed3b4f20d5ab515f1f2">More...</a><br /></td></tr>
+<tr class="separator:ab5991f4c3faeaed3b4f20d5ab515f1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef32887eb9b08a5dd7db73c35ca7c747"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#aef32887eb9b08a5dd7db73c35ca7c747">SystemHFXOClockGet</a> (void)</td></tr>
+<tr class="memdesc:aef32887eb9b08a5dd7db73c35ca7c747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get high frequency crystal oscillator clock frequency for target system.  <a href="#aef32887eb9b08a5dd7db73c35ca7c747">More...</a><br /></td></tr>
+<tr class="separator:aef32887eb9b08a5dd7db73c35ca7c747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a3b3b223a7d08bf9e4d86a259f4e14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#ae8a3b3b223a7d08bf9e4d86a259f4e14">SystemHFXOClockSet</a> (uint32_t freq)</td></tr>
+<tr class="memdesc:ae8a3b3b223a7d08bf9e4d86a259f4e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set high frequency crystal oscillator clock frequency for target system.  <a href="#ae8a3b3b223a7d08bf9e4d86a259f4e14">More...</a><br /></td></tr>
+<tr class="separator:ae8a3b3b223a7d08bf9e4d86a259f4e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f514700ccf00d08dbdcff7f1224eb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a93f514700ccf00d08dbdcff7f1224eb2">SystemInit</a> (void)</td></tr>
+<tr class="memdesc:a93f514700ccf00d08dbdcff7f1224eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the system.  <a href="#a93f514700ccf00d08dbdcff7f1224eb2">More...</a><br /></td></tr>
+<tr class="separator:a93f514700ccf00d08dbdcff7f1224eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a477d1670608b8ca76108b6e21c1124eb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a477d1670608b8ca76108b6e21c1124eb">SystemLFRCOClockGet</a> (void)</td></tr>
+<tr class="memdesc:a477d1670608b8ca76108b6e21c1124eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get low frequency RC oscillator clock frequency for target system.  <a href="#a477d1670608b8ca76108b6e21c1124eb">More...</a><br /></td></tr>
+<tr class="separator:a477d1670608b8ca76108b6e21c1124eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a186aefb7bb200c8fda0fc0a4d4b2aa14"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a186aefb7bb200c8fda0fc0a4d4b2aa14">SystemLFXOClockGet</a> (void)</td></tr>
+<tr class="memdesc:a186aefb7bb200c8fda0fc0a4d4b2aa14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get low frequency crystal oscillator clock frequency for target system.  <a href="#a186aefb7bb200c8fda0fc0a4d4b2aa14">More...</a><br /></td></tr>
+<tr class="separator:a186aefb7bb200c8fda0fc0a4d4b2aa14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace8c3b705bdbdc9172fbc7f2415dfd8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#ace8c3b705bdbdc9172fbc7f2415dfd8b">SystemLFXOClockSet</a> (uint32_t freq)</td></tr>
+<tr class="memdesc:ace8c3b705bdbdc9172fbc7f2415dfd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set low frequency crystal oscillator clock frequency for target system.  <a href="#ace8c3b705bdbdc9172fbc7f2415dfd8b">More...</a><br /></td></tr>
+<tr class="separator:ace8c3b705bdbdc9172fbc7f2415dfd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cc4ea6124c6503b120933d91edf1a0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a64cc4ea6124c6503b120933d91edf1a0">SystemMaxCoreClockGet</a> (void)</td></tr>
+<tr class="memdesc:a64cc4ea6124c6503b120933d91edf1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum core clock frequency.  <a href="#a64cc4ea6124c6503b120933d91edf1a0">More...</a><br /></td></tr>
+<tr class="separator:a64cc4ea6124c6503b120933d91edf1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88eecfafda55942454a9e10912b3f224"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a88eecfafda55942454a9e10912b3f224">SystemULFRCOClockGet</a> (void)</td></tr>
+<tr class="memdesc:a88eecfafda55942454a9e10912b3f224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ultra low frequency RC oscillator clock frequency for target system.  <a href="#a88eecfafda55942454a9e10912b3f224">More...</a><br /></td></tr>
+<tr class="separator:a88eecfafda55942454a9e10912b3f224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e09814056d617c521549e542639b7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5e09814056d617c521549e542639b7e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SysTick_Handler</b> (void)</td></tr>
+<tr class="separator:ab5e09814056d617c521549e542639b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f89e5f7418d3a10f49b2faeab3711dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a5f89e5f7418d3a10f49b2faeab3711dd">TIMER0_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a5f89e5f7418d3a10f49b2faeab3711dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">TIMER0 interrupt handler.  <a href="#a5f89e5f7418d3a10f49b2faeab3711dd">More...</a><br /></td></tr>
+<tr class="separator:a5f89e5f7418d3a10f49b2faeab3711dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d71bbc9344a6aaf8858148035f3f9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92d71bbc9344a6aaf8858148035f3f9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TIMER1_IRQHandler</b> (void)</td></tr>
+<tr class="separator:a92d71bbc9344a6aaf8858148035f3f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d98923de2ed6b7309b66f9ba2971647"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d98923de2ed6b7309b66f9ba2971647"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UsageFault_Handler</b> (void)</td></tr>
+<tr class="separator:a1d98923de2ed6b7309b66f9ba2971647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef4dfd53f8b518acaeddcda2b159c61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ef4dfd53f8b518acaeddcda2b159c61"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>USART0_RX_IRQHandler</b> (void)</td></tr>
+<tr class="separator:a8ef4dfd53f8b518acaeddcda2b159c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ad8819e3b118aa46e7c04efc32593b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1ad8819e3b118aa46e7c04efc32593b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>USART0_TX_IRQHandler</b> (void)</td></tr>
+<tr class="separator:aa1ad8819e3b118aa46e7c04efc32593b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a5099bafcea7a957c8a7aff925a5c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6a5099bafcea7a957c8a7aff925a5c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>USART1_RX_IRQHandler</b> (void)</td></tr>
+<tr class="separator:aa6a5099bafcea7a957c8a7aff925a5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7afa223a57cccc216b627b070ad9443"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7afa223a57cccc216b627b070ad9443"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>USART1_TX_IRQHandler</b> (void)</td></tr>
+<tr class="separator:af7afa223a57cccc216b627b070ad9443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f93cedc7186cc0f72abd12dfa697a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34f93cedc7186cc0f72abd12dfa697a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WDOG_IRQHandler</b> (void)</td></tr>
+<tr class="separator:a34f93cedc7186cc0f72abd12dfa697a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa3cd3e43291e81e795d642b79b6088e6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#aa3cd3e43291e81e795d642b79b6088e6">SystemCoreClock</a></td></tr>
+<tr class="memdesc:aa3cd3e43291e81e795d642b79b6088e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">System System Clock Frequency (Core Clock).  <a href="#aa3cd3e43291e81e795d642b79b6088e6">More...</a><br /></td></tr>
+<tr class="separator:aa3cd3e43291e81e795d642b79b6088e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a019e34c770ed2855a9ce73be796f33d5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8h.html#a019e34c770ed2855a9ce73be796f33d5">SystemHfrcoFreq</a></td></tr>
+<tr class="memdesc:a019e34c770ed2855a9ce73be796f33d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">System HFRCO frequency.  <a href="#a019e34c770ed2855a9ce73be796f33d5">More...</a><br /></td></tr>
+<tr class="separator:a019e34c770ed2855a9ce73be796f33d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="af2e6aa1120f0e55e38c83d8387625d16"></a>
 <div class="memitem">
 <div class="memproto">
@@ -316,15 +291,17 @@ License</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the current core clock frequency. </p>
 <p>Calculate and get the current core clock frequency based on the current configuration. Assuming that the SystemCoreClock global variable is maintained, the core clock frequency is stored in that variable as well. This function will however calculate the core clock based on actual HW configuration. It will also update the SystemCoreClock global variable.</p>
 <dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The current core clock frequency in Hz. </dd></dl>
 
 <p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00137">137</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__cmu_8h_source.html#l01503">_CMU_HFCOREPRESC_PRESC_MASK</a>, <a class="el" href="efm32jg1b__cmu_8h_source.html#l01502">_CMU_HFCOREPRESC_PRESC_SHIFT</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00316">CMU</a>, <a class="el" href="system__efm32jg1b_8c_source.html#l00100">SystemCoreClock</a>, and <a class="el" href="system__efm32jg1b_8c_source.html#l00181">SystemHFClockGet()</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga589e7ba8f81ef7558c1a365370028d90">_CMU_HFCOREPRESC_PRESC_MASK</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga34c8d675e17353964cb6ff1e5333fb79">_CMU_HFCOREPRESC_PRESC_SHIFT</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>, <a class="el" href="system__efm32jg1b_8c.html#aa3cd3e43291e81e795d642b79b6088e6">SystemCoreClock</a>, and <a class="el" href="system__efm32jg1b_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2">SystemHFClockGet()</a>.</p>
 
-<p>Referenced by <a class="el" href="em__cmu_8c_source.html#l01141">CMU_ClockDivSet()</a>, <a class="el" href="em__cmu_8c_source.html#l01482">CMU_ClockFreqGet()</a>, <a class="el" href="em__cmu_8c_source.html#l01827">CMU_ClockPrescSet()</a>, <a class="el" href="em__cmu_8c_source.html#l02406">CMU_ClockSelectSet()</a>, <a class="el" href="em__msc_8c_source.html#l00101">MSC_Init()</a>, <a class="el" href="system__efm32jg1b_8h_source.html#l00107">SystemCoreClockUpdate()</a>, <a class="el" href="system__efm32jg1b_8c_source.html#l00256">SystemHFXOClockSet()</a>, <a class="el" href="system__efm32jg1b_8c_source.html#l00368">SystemLFXOClockSet()</a>, <a class="el" href="tftamapped_8c_source.html#l00037">TFT_AddressMappedInit()</a>, and <a class="el" href="tftdirect_8c_source.html#l00054">TFT_DirectInit()</a>.</p>
+<p>Referenced by <a class="el" href="group__CMU.html#ga7cc316a8dca5436fcc39d57f5e6c412d">CMU_ClockDivSet()</a>, <a class="el" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet()</a>, <a class="el" href="group__CMU.html#gaaa24f7c1a4197491c08b1978a09c535c">CMU_ClockPrescSet()</a>, <a class="el" href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet()</a>, <a class="el" href="group__CMU.html#ga79fa69403fb1b3629042a730d6a15cf6">CMU_HFRCOBandSet()</a>, <a class="el" href="group__MSC.html#gaa02df815c14caedbc2fd0a8910d2e055">MSC_Init()</a>, <a class="el" href="system__efm32jg1b_8h.html#acd24e7ebfd616c851c240233da5d2bba">SystemCoreClockUpdate()</a>, <a class="el" href="system__efm32jg1b_8h.html#ae8a3b3b223a7d08bf9e4d86a259f4e14">SystemHFXOClockSet()</a>, <a class="el" href="system__efm32jg1b_8h.html#ace8c3b705bdbdc9172fbc7f2415dfd8b">SystemLFXOClockSet()</a>, <a class="el" href="group__Tft.html#ga53cad6afec098c05461dd0da9479c0ef">TFT_AddressMappedInit()</a>, and <a class="el" href="group__Tft.html#gafae3e95323a15ac1b4b6ed6fa3c13e9b">TFT_DirectInit()</a>.</p>
 
 </div>
 </div>
@@ -349,54 +326,16 @@ License</h1>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Update CMSIS SystemCoreClock variable. </p>
 <p>CMSIS defines a global variable SystemCoreClock that shall hold the core frequency in Hz. If the core frequency is dynamically changed, the variable must be kept updated in order to be CMSIS compliant.</p>
 <p>Notice that only if changing the core clock frequency through the EFM CMU API, this variable will be kept updated. This function is only provided for CMSIS compliance and if a user modifies the the core clock outside the CMU API. </p>
 
 <p>Definition at line <a class="el" href="system__efm32jg1b_8h_source.html#l00107">107</a> of file <a class="el" href="system__efm32jg1b_8h_source.html">system_efm32jg1b.h</a>.</p>
 
-<p>References <a class="el" href="system__efm32jg1b_8c_source.html#l00137">SystemCoreClockGet()</a>.</p>
+<p>References <a class="el" href="system__efm32jg1b_8h.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet()</a>.</p>
 
-<p>Referenced by <a class="el" href="caplesense_8c_source.html#l00091">CAPLESENSE_setupCMU()</a>, <a class="el" href="em__emu_8c_source.html#l00413">EMU_EnterEM2()</a>, and <a class="el" href="em__emu_8c_source.html#l00529">EMU_EnterEM3()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a64cc4ea6124c6503b120933d91edf1a0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t SystemMaxCoreClockGet </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>The maximum core clock frequency in Hz. </dd></dl>
-
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00164">164</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a93f514700ccf00d08dbdcff7f1224eb2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SystemInit </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Do required generic HW system init.</p>
-<dl class="section note"><dt>Note</dt><dd>This function is invoked during system init, before the main() routine and any data has been initialized. For this reason, it cannot do any initialization of variables etc. </dd></dl>
-
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00286">286</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>Referenced by <a class="el" href="caplesense_8c.html#a2e4ba8079a4db025c71de23fd97211cc">CAPLESENSE_setupCMU()</a>, <a class="el" href="group__EMU.html#gacadc56c5e2a8fb2890edd139b694b25b">EMU_EnterEM2()</a>, and <a class="el" href="group__EMU.html#ga9e98f9066d91dbd64c3e73254336218f">EMU_EnterEM3()</a>.</p>
 
 </div>
 </div>
@@ -413,14 +352,16 @@ License</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the current HFCLK frequency. </p>
 <dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The current HFCLK frequency in Hz. </dd></dl>
 
 <p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00181">181</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__cmu_8h_source.html#l01026">_CMU_HFCLKSTATUS_SELECTED_MASK</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00316">CMU</a>, <a class="el" href="efm32jg1b__cmu_8h_source.html#l01034">CMU_HFCLKSTATUS_SELECTED_HFXO</a>, <a class="el" href="efm32jg1b__cmu_8h_source.html#l01035">CMU_HFCLKSTATUS_SELECTED_LFRCO</a>, <a class="el" href="efm32jg1b__cmu_8h_source.html#l01036">CMU_HFCLKSTATUS_SELECTED_LFXO</a>, <a class="el" href="system__efm32jg1b_8c_source.html#l00041">EFM32_LFRCO_FREQ</a>, and <a class="el" href="system__efm32jg1b_8c_source.html#l00113">SystemHfrcoFreq</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gab034901022327e46b90a7eb17404a3ec">_CMU_HFCLKSTATUS_SELECTED_MASK</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gaf9b9030e3d64dbd818c431dce7bb018e">_CMU_HFPRESC_PRESC_MASK</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga1a470ffcb963f96619c30d70a1a3031a">_CMU_HFPRESC_PRESC_SHIFT</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga20994d2c1d5e8561a7c025fae4179735">CMU_HFCLKSTATUS_SELECTED_HFXO</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga5793bcdbfd3d91c6ac8c18a700228bcb">CMU_HFCLKSTATUS_SELECTED_LFRCO</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga3548eda1842e0faa909d5a6f470c4aa6">CMU_HFCLKSTATUS_SELECTED_LFXO</a>, <a class="el" href="system__efm32jg1b_8c.html#a16a9bb92649e0f2503f1565bf56e2afc">EFM32_LFRCO_FREQ</a>, and <a class="el" href="system__efm32jg1b_8c.html#a019e34c770ed2855a9ce73be796f33d5">SystemHfrcoFreq</a>.</p>
 
-<p>Referenced by <a class="el" href="em__cmu_8c_source.html#l01482">CMU_ClockFreqGet()</a>, and <a class="el" href="system__efm32jg1b_8c_source.html#l00137">SystemCoreClockGet()</a>.</p>
+<p>Referenced by <a class="el" href="group__CMU.html#ga7cc316a8dca5436fcc39d57f5e6c412d">CMU_ClockDivSet()</a>, <a class="el" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet()</a>, and <a class="el" href="system__efm32jg1b_8h.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet()</a>.</p>
 
 </div>
 </div>
@@ -437,12 +378,14 @@ License</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get high frequency crystal oscillator clock frequency for target system. </p>
 <dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>HFXO frequency in Hz. </dd></dl>
 
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00230">230</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00231">231</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>Referenced by <a class="el" href="em__cmu_8c_source.html#l02406">CMU_ClockSelectSet()</a>.</p>
+<p>Referenced by <a class="el" href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet()</a>.</p>
 
 </div>
 </div>
@@ -459,6 +402,8 @@ License</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set high frequency crystal oscillator clock frequency for target system. </p>
 <dl class="section note"><dt>Note</dt><dd>This function is mainly provided for being able to handle target systems with different HF crystal oscillator frequencies run-time. If used, it should probably only be used once during system startup.</dd>
 <dd>
 This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
@@ -469,9 +414,31 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00256">256</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00257">257</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__cmu_8h_source.html#l01026">_CMU_HFCLKSTATUS_SELECTED_MASK</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00316">CMU</a>, <a class="el" href="efm32jg1b__cmu_8h_source.html#l01034">CMU_HFCLKSTATUS_SELECTED_HFXO</a>, and <a class="el" href="system__efm32jg1b_8c_source.html#l00137">SystemCoreClockGet()</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gab034901022327e46b90a7eb17404a3ec">_CMU_HFCLKSTATUS_SELECTED_MASK</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga20994d2c1d5e8561a7c025fae4179735">CMU_HFCLKSTATUS_SELECTED_HFXO</a>, and <a class="el" href="system__efm32jg1b_8c.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a93f514700ccf00d08dbdcff7f1224eb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SystemInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the system. </p>
+<p>Do required generic HW system init.</p>
+<dl class="section note"><dt>Note</dt><dd>This function is invoked during system init, before the main() routine and any data has been initialized. For this reason, it cannot do any initialization of variables etc. </dd></dl>
+
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00287">287</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
 </div>
 </div>
@@ -488,32 +455,14 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get low frequency RC oscillator clock frequency for target system. </p>
 <dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>LFRCO frequency in Hz. </dd></dl>
 
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00306">306</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00307">307</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>References <a class="el" href="system__efm32jg1b_8c_source.html#l00041">EFM32_LFRCO_FREQ</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a88eecfafda55942454a9e10912b3f224"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t SystemULFRCOClockGet </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>ULFRCO frequency in Hz. </dd></dl>
-
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00325">325</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>References <a class="el" href="system__efm32jg1b_8c.html#a16a9bb92649e0f2503f1565bf56e2afc">EFM32_LFRCO_FREQ</a>.</p>
 
 </div>
 </div>
@@ -530,10 +479,12 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get low frequency crystal oscillator clock frequency for target system. </p>
 <dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>LFXO frequency in Hz. </dd></dl>
 
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00342">342</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00343">343</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
 </div>
 </div>
@@ -550,6 +501,8 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set low frequency crystal oscillator clock frequency for target system. </p>
 <dl class="section note"><dt>Note</dt><dd>This function is mainly provided for being able to handle target systems with different HF crystal oscillator frequencies run-time. If used, it should probably only be used once during system startup.</dd>
 <dd>
 This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
@@ -560,9 +513,76 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00368">368</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00369">369</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__cmu_8h_source.html#l01026">_CMU_HFCLKSTATUS_SELECTED_MASK</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00316">CMU</a>, <a class="el" href="efm32jg1b__cmu_8h_source.html#l01036">CMU_HFCLKSTATUS_SELECTED_LFXO</a>, and <a class="el" href="system__efm32jg1b_8c_source.html#l00137">SystemCoreClockGet()</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gab034901022327e46b90a7eb17404a3ec">_CMU_HFCLKSTATUS_SELECTED_MASK</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga3548eda1842e0faa909d5a6f470c4aa6">CMU_HFCLKSTATUS_SELECTED_LFXO</a>, and <a class="el" href="system__efm32jg1b_8c.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a64cc4ea6124c6503b120933d91edf1a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SystemMaxCoreClockGet </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum core clock frequency. </p>
+<dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The maximum core clock frequency in Hz. </dd></dl>
+
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00164">164</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a88eecfafda55942454a9e10912b3f224"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SystemULFRCOClockGet </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get ultra low frequency RC oscillator clock frequency for target system. </p>
+<dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ULFRCO frequency in Hz. </dd></dl>
+
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00326">326</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f89e5f7418d3a10f49b2faeab3711dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TIMER0_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TIMER0 interrupt handler. </p>
+<p>When TIMER0 expires the number of pulses on TIMER1 is inserted into channelValues. If this values is bigger than what is recorded in channelMaxValues, channelMaxValues is updated. Finally, the next ACMP channel is selected. </p>
+
+<p>Definition at line <a class="el" href="capsense_8c_source.html#l00092">92</a> of file <a class="el" href="capsense_8c_source.html">capsense.c</a>.</p>
+
+<p>References <a class="el" href="caplesense_8c.html#a83414fff0517efa3fa70422812ea6b77">channelMaxValues</a>, <a class="el" href="caplesense_8c.html#a6b97d742d76afdb2a7545130850dad49">channelValues</a>, <a class="el" href="caplesense_8c.html#af1489d9f1912bd31cd050fe18ee643e7">currentChannel</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gaf1b746ba5ab7d0ab657156ebda0f290c">TIMER0</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga63bf4f24c85f26e838f55701a5e69831">TIMER1</a>, <a class="el" href="group__EFM32JG1B__TIMER__BitFields.html#gad422984e78892ff17aacb0bc00d87e3a">TIMER_CMD_STOP</a>, and <a class="el" href="group__EFM32JG1B__TIMER__BitFields.html#ga6082458aa6fd7ea1e291d19d635eacbf">TIMER_IFC_OF</a>.</p>
 
 </div>
 </div>
@@ -576,13 +596,15 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>System System Clock Frequency (Core Clock). </p>
 <p>System Clock Frequency (Core Clock)</p>
 <p>(DO_NOT_INCLUDE_WITH_DOXYGEN)</p>
 <p>Required CMSIS global variable that must be kept up-to-date. </p>
 
 <p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00100">100</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>Referenced by <a class="el" href="system__efm32jg1b_8c_source.html#l00137">SystemCoreClockGet()</a>.</p>
+<p>Referenced by <a class="el" href="system__efm32jg1b_8h.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet()</a>.</p>
 
 </div>
 </div>
@@ -595,13 +617,15 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>System HFRCO frequency. </p>
 <p>System HFRCO frequency</p>
 <dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary variable, not part of the CMSIS definition.</dd></dl>
 <p>Frequency of the system HFRCO oscillator </p>
 
 <p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00113">113</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>Referenced by <a class="el" href="em__cmu_8c_source.html#l03037">CMU_HFRCOFreqGet()</a>, <a class="el" href="em__cmu_8c_source.html#l03050">CMU_HFRCOFreqSet()</a>, and <a class="el" href="system__efm32jg1b_8c_source.html#l00181">SystemHFClockGet()</a>.</p>
+<p>Referenced by <a class="el" href="group__CMU.html#ga6e8fd53c566cb4c8075a51f67977fffc">CMU_HFRCOBandGet()</a>, <a class="el" href="group__CMU.html#ga79fa69403fb1b3629042a730d6a15cf6">CMU_HFRCOBandSet()</a>, and <a class="el" href="system__efm32jg1b_8h.html#ab5991f4c3faeaed3b4f20d5ab515f1f2">SystemHFClockGet()</a>.</p>
 
 </div>
 </div>
@@ -611,7 +635,7 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4c76ddfc10a27668d6c42d3412320ee0.html">Device</a></li><li class="navelem"><a class="el" href="dir_eca9ef8613423b074c58e28a7f7d2781.html">SiliconLabs</a></li><li class="navelem"><a class="el" href="dir_4589d30e5f5bbe1eca19f40385ae3e93.html">EFM32JG1B</a></li><li class="navelem"><a class="el" href="dir_44eda12c4cdc557a359fb6c6c2c3d0b9.html">Include</a></li><li class="navelem"><a class="el" href="system__efm32jg1b_8h.html">system_efm32jg1b.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:42 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:40:27 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

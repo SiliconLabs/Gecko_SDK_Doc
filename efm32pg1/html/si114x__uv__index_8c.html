@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Pearl Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32pg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32pg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -116,33 +113,39 @@ $(document).ready(function(){initNavTree('si114x__uv__index_8c.html','');});
 <div class="title">si114x_uv_index.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Si114x UV Index measurement. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>Si114x UV Index measurement.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="si114x__functions_8h_source.html">si114x_functions.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="si114x__uv__index_8c_source.html">si114x_uv_index.c</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="si114x__functions_8h_source.html">si114x_functions.h</a>&quot;</code><br />
 </div>
 <p><a href="si114x__uv__index_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a43d4736aa58d411f570d28c88d41d0c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si114x__uv__index_8c.html#a43d4736aa58d411f570d28c88d41d0c8">UV_TASKLIST</a>&#160;&#160;&#160;0x80</td></tr>
-<tr class="separator:a43d4736aa58d411f570d28c88d41d0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0bc067d0ed59e0c3fce84f85b1cccea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si114x__uv__index_8c.html#ac0bc067d0ed59e0c3fce84f85b1cccea">UV_IRQ_EN</a>&#160;&#160;&#160;IE_ALS_EVRYSAMPLE</td></tr>
-<tr class="separator:ac0bc067d0ed59e0c3fce84f85b1cccea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37f8a55071debf6fddedd4ccf2f06fda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si114x__uv__index_8c.html#a37f8a55071debf6fddedd4ccf2f06fda">SI1146_DEVICE_ID</a>&#160;&#160;&#160;0x46</td></tr>
 <tr class="separator:a37f8a55071debf6fddedd4ccf2f06fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0bc067d0ed59e0c3fce84f85b1cccea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si114x__uv__index_8c.html#ac0bc067d0ed59e0c3fce84f85b1cccea">UV_IRQ_EN</a>&#160;&#160;&#160;IE_ALS_EVRYSAMPLE</td></tr>
+<tr class="separator:ac0bc067d0ed59e0c3fce84f85b1cccea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d4736aa58d411f570d28c88d41d0c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si114x__uv__index_8c.html#a43d4736aa58d411f570d28c88d41d0c8">UV_TASKLIST</a>&#160;&#160;&#160;0x80</td></tr>
+<tr class="separator:a43d4736aa58d411f570d28c88d41d0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a92a1b86e34e4ed9dd68f51ba170c8e5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si114x__uv__index_8c.html#a92a1b86e34e4ed9dd68f51ba170c8e5f">Si114x_MeasureUVIndex</a> (u16 *uvIndex)</td></tr>
-<tr class="memdesc:a92a1b86e34e4ed9dd68f51ba170c8e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the UV index measurement data from the Si114x.  <a href="#a92a1b86e34e4ed9dd68f51ba170c8e5f">More...</a><br /></td></tr>
-<tr class="separator:a92a1b86e34e4ed9dd68f51ba170c8e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5636599ea7d573fcee234cc8bf4de655"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si114x__uv__index_8c.html#a5636599ea7d573fcee234cc8bf4de655">Si114x_EnableVisRange</a> (int vis_range_bit)</td></tr>
-<tr class="memdesc:a5636599ea7d573fcee234cc8bf4de655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the VIS_RANGE bit of the optical sensor Si114x.  <a href="#a5636599ea7d573fcee234cc8bf4de655">More...</a><br /></td></tr>
-<tr class="separator:a5636599ea7d573fcee234cc8bf4de655"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee56b411a2cb91ae85cae51c2d4039f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si114x__uv__index_8c.html#aee56b411a2cb91ae85cae51c2d4039f7">Si114x_ConfigureUV</a> (int fullInit, HANDLE *handle)</td></tr>
 <tr class="memdesc:aee56b411a2cb91ae85cae51c2d4039f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and configures the Si1146 sensor for UV index measurements.  <a href="#aee56b411a2cb91ae85cae51c2d4039f7">More...</a><br /></td></tr>
 <tr class="separator:aee56b411a2cb91ae85cae51c2d4039f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5636599ea7d573fcee234cc8bf4de655"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si114x__uv__index_8c.html#a5636599ea7d573fcee234cc8bf4de655">Si114x_EnableVisRange</a> (int vis_range_bit)</td></tr>
+<tr class="memdesc:a5636599ea7d573fcee234cc8bf4de655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the VIS_RANGE bit of the optical sensor Si114x.  <a href="#a5636599ea7d573fcee234cc8bf4de655">More...</a><br /></td></tr>
+<tr class="separator:a5636599ea7d573fcee234cc8bf4de655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a1b86e34e4ed9dd68f51ba170c8e5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si114x__uv__index_8c.html#a92a1b86e34e4ed9dd68f51ba170c8e5f">Si114x_MeasureUVIndex</a> (u16 *uvIndex)</td></tr>
+<tr class="memdesc:a92a1b86e34e4ed9dd68f51ba170c8e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the UV index measurement data from the Si114x.  <a href="#a92a1b86e34e4ed9dd68f51ba170c8e5f">More...</a><br /></td></tr>
+<tr class="separator:a92a1b86e34e4ed9dd68f51ba170c8e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -151,29 +154,19 @@ static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="memdesc:a39588930c6bf1721e2a42ffaef0f7ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Si114x PGM toolkit functions uses a void* to pass hardware parameters through to the lower level i2c functions. This struct is passed down to the low level i2c functions using that pointer. <br /></td></tr>
 <tr class="separator:a39588930c6bf1721e2a42ffaef0f7ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="si114x__uv__index_8c_source.html">si114x_uv_index.c</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a43d4736aa58d411f570d28c88d41d0c8"></a>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a37f8a55071debf6fddedd4ccf2f06fda"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define UV_TASKLIST&#160;&#160;&#160;0x80</td>
+          <td class="memname">#define SI1146_DEVICE_ID&#160;&#160;&#160;0x46</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Si114x register settings. UV task in CHLIST </p>
+<p>Si1146 device ID </p>
 
-<p>Definition at line <a class="el" href="si114x__uv__index_8c_source.html#l00019">19</a> of file <a class="el" href="si114x__uv__index_8c_source.html">si114x_uv_index.c</a>.</p>
-
-<p>Referenced by <a class="el" href="si114x__algorithm_8c_source.html#l00386">Si1147_ConfigureDetection()</a>, and <a class="el" href="si114x__uv__index_8c_source.html#l00110">Si114x_ConfigureUV()</a>.</p>
+<p>Definition at line <a class="el" href="si114x__uv__index_8c_source.html#l00021">21</a> of file <a class="el" href="si114x__uv__index_8c_source.html">si114x_uv_index.c</a>.</p>
 
 </div>
 </div>
@@ -192,76 +185,24 @@ License</h1>
 
 </div>
 </div>
-<a class="anchor" id="a37f8a55071debf6fddedd4ccf2f06fda"></a>
+<a class="anchor" id="a43d4736aa58d411f570d28c88d41d0c8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SI1146_DEVICE_ID&#160;&#160;&#160;0x46</td>
+          <td class="memname">#define UV_TASKLIST&#160;&#160;&#160;0x80</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Si1146 device ID </p>
+<p>Si114x register settings. UV task in CHLIST </p>
 
-<p>Definition at line <a class="el" href="si114x__uv__index_8c_source.html#l00021">21</a> of file <a class="el" href="si114x__uv__index_8c_source.html">si114x_uv_index.c</a>.</p>
+<p>Definition at line <a class="el" href="si114x__uv__index_8c_source.html#l00019">19</a> of file <a class="el" href="si114x__uv__index_8c_source.html">si114x_uv_index.c</a>.</p>
+
+<p>Referenced by <a class="el" href="group__Si114x.html#ga79b0443305d3a085028d1c197d398ede">Si1147_ConfigureDetection()</a>, and <a class="el" href="si114x__uv__index_8h.html#aee56b411a2cb91ae85cae51c2d4039f7">Si114x_ConfigureUV()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a92a1b86e34e4ed9dd68f51ba170c8e5f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Si114x_MeasureUVIndex </td>
-          <td>(</td>
-          <td class="paramtype">u16 *&#160;</td>
-          <td class="paramname"><em>uvIndex</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">uvIndex</td><td>The UV index read from the sensor </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns 0. </dd></dl>
-
-<p>Definition at line <a class="el" href="si114x__uv__index_8c_source.html#l00040">40</a> of file <a class="el" href="si114x__uv__index_8c_source.html">si114x_uv_index.c</a>.</p>
-
-<p>References <a class="el" href="si114x__uv__index_8c_source.html#l00029">si114x_handle</a>, <a class="el" href="si114x__functions_8c_source.html#l00235">Si114xPsAlsForce()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00219">Si114xReadFromRegister()</a>, and <a class="el" href="si1147__i2c_8c_source.html#l00205">Si114xWriteToRegister()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5636599ea7d573fcee234cc8bf4de655"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Si114x_EnableVisRange </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>vis_range_bit</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">vis_range_bit</td><td>the boolean value to set the bit to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns 0. </dd></dl>
-
-<p>Definition at line <a class="el" href="si114x__uv__index_8c_source.html#l00088">88</a> of file <a class="el" href="si114x__uv__index_8c_source.html">si114x_uv_index.c</a>.</p>
-
-<p>References <a class="el" href="si114x__uv__index_8c_source.html#l00029">si114x_handle</a>, and <a class="el" href="si114x__functions_8c_source.html#l00300">Si114xParamSet()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="aee56b411a2cb91ae85cae51c2d4039f7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -285,6 +226,8 @@ License</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initializes and configures the Si1146 sensor for UV index measurements. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">fullInit</td><td>The I2C peripheral to use (not used). </td></tr>
@@ -296,7 +239,65 @@ License</h1>
 
 <p>Definition at line <a class="el" href="si114x__uv__index_8c_source.html#l00110">110</a> of file <a class="el" href="si114x__uv__index_8c_source.html">si114x_uv_index.c</a>.</p>
 
-<p>References <a class="el" href="si114x__functions_8c_source.html#l01330">si114x_get_calibration()</a>, <a class="el" href="si114x__uv__index_8c_source.html#l00029">si114x_handle</a>, <a class="el" href="si114x__functions_8c_source.html#l01470">si114x_set_ucoef()</a>, <a class="el" href="si114x__functions_8c_source.html#l00300">Si114xParamSet()</a>, <a class="el" href="si114x__functions_8c_source.html#l00092">Si114xReset()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00205">Si114xWriteToRegister()</a>, and <a class="el" href="si114x__uv__index_8c_source.html#l00019">UV_TASKLIST</a>.</p>
+<p>References <a class="el" href="group__Si114x.html#gadbec1218d8cc103d4d6c2fc0ec0f6abf">si114x_get_calibration()</a>, <a class="el" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, <a class="el" href="group__Si114x.html#ga9966ab23359f5ae0c7e5b8d79a4ef59a">si114x_set_ucoef()</a>, <a class="el" href="group__Si114x.html#gafee1fd953ec8559b0b2c53b4d3a7d442">Si114xParamSet()</a>, <a class="el" href="group__Si114x.html#ga88b866258cb278b01da1bcf766cfab57">Si114xReset()</a>, <a class="el" href="group__Si114x.html#ga8d9e6e60e0ced326193208cdf976bbee">Si114xWriteToRegister()</a>, and <a class="el" href="si114x__uv__index_8c.html#a43d4736aa58d411f570d28c88d41d0c8">UV_TASKLIST</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5636599ea7d573fcee234cc8bf4de655"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Si114x_EnableVisRange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vis_range_bit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the VIS_RANGE bit of the optical sensor Si114x. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vis_range_bit</td><td>the boolean value to set the bit to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0. </dd></dl>
+
+<p>Definition at line <a class="el" href="si114x__uv__index_8c_source.html#l00088">88</a> of file <a class="el" href="si114x__uv__index_8c_source.html">si114x_uv_index.c</a>.</p>
+
+<p>References <a class="el" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, and <a class="el" href="group__Si114x.html#gafee1fd953ec8559b0b2c53b4d3a7d442">Si114xParamSet()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a92a1b86e34e4ed9dd68f51ba170c8e5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Si114x_MeasureUVIndex </td>
+          <td>(</td>
+          <td class="paramtype">u16 *&#160;</td>
+          <td class="paramname"><em>uvIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads the UV index measurement data from the Si114x. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">uvIndex</td><td>The UV index read from the sensor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 0. </dd></dl>
+
+<p>Definition at line <a class="el" href="si114x__uv__index_8c_source.html#l00040">40</a> of file <a class="el" href="si114x__uv__index_8c_source.html">si114x_uv_index.c</a>.</p>
+
+<p>References <a class="el" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, <a class="el" href="group__Si114x.html#gac4487c27a69c68ce91b6f193fc35fd3f">Si114xPsAlsForce()</a>, <a class="el" href="group__Si114x.html#gaeae79629a9f5a41c75ba329fa056eeef">Si114xReadFromRegister()</a>, and <a class="el" href="group__Si114x.html#ga8d9e6e60e0ced326193208cdf976bbee">Si114xWriteToRegister()</a>.</p>
 
 </div>
 </div>
@@ -306,7 +307,7 @@ License</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="si114x__uv__index_8c.html">si114x_uv_index.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:39:59 for EFM32 Pearl Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:38:30 for EFM32 Pearl Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

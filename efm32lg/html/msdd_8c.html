@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,10 +111,16 @@ $(document).ready(function(){initNavTree('msdd_8c.html','');});
 <div class="title">msdd.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Mass Storage class Device (MSD) driver. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>Mass Storage class Device (MSD) driver.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__usb_8h_source.html">em_usb.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="msdd_8c_source.html">msdd.c</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__usb_8h_source.html">em_usb.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__cmu_8h_source.html">em_cmu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="msdbot_8h_source.html">msdbot.h</a>&quot;</code><br />
@@ -128,34 +132,26 @@ $(document).ready(function(){initNavTree('msdd_8c.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6bab19f6afa0c63c3c735c9bea3b8242"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#ga6bab19f6afa0c63c3c735c9bea3b8242">MSDD_Init</a> (int activityLedPort, uint32_t activityLedPin)</td></tr>
-<tr class="memdesc:ga6bab19f6afa0c63c3c735c9bea3b8242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize MSD device.  <a href="group__Msd.html#ga6bab19f6afa0c63c3c735c9bea3b8242">More...</a><br /></td></tr>
-<tr class="separator:ga6bab19f6afa0c63c3c735c9bea3b8242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0dfd9473471d01231de7541cfd7f5ede"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#ga0dfd9473471d01231de7541cfd7f5ede">MSDD_Handler</a> (void)</td></tr>
 <tr class="memdesc:ga0dfd9473471d01231de7541cfd7f5ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serve the MSD state machine. This function should be called on a regular basis from your main loop. It cannot be called from within an interrupt handler.  <a href="group__Msd.html#ga0dfd9473471d01231de7541cfd7f5ede">More...</a><br /></td></tr>
 <tr class="separator:ga0dfd9473471d01231de7541cfd7f5ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd14b40b8d009c6341c92a35b5e9ad42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#gafd14b40b8d009c6341c92a35b5e9ad42">MSDD_SetupCmd</a> (const <a class="el" href="structUSB__Setup__TypeDef.html">USB_Setup_TypeDef</a> *setup)</td></tr>
+<tr class="memitem:ga6bab19f6afa0c63c3c735c9bea3b8242"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#ga6bab19f6afa0c63c3c735c9bea3b8242">MSDD_Init</a> (int activityLedPort, uint32_t activityLedPin)</td></tr>
+<tr class="memdesc:ga6bab19f6afa0c63c3c735c9bea3b8242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize MSD device.  <a href="group__Msd.html#ga6bab19f6afa0c63c3c735c9bea3b8242">More...</a><br /></td></tr>
+<tr class="separator:ga6bab19f6afa0c63c3c735c9bea3b8242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd14b40b8d009c6341c92a35b5e9ad42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#gafd14b40b8d009c6341c92a35b5e9ad42">MSDD_SetupCmd</a> (const USB_Setup_TypeDef *setup)</td></tr>
 <tr class="memdesc:gafd14b40b8d009c6341c92a35b5e9ad42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever a USB setup command is received. This function overrides standard CLEAR_FEATURE commands, and implements MSD class commands "Bulk-Only Mass Storage Reset" and "Get Max LUN".  <a href="group__Msd.html#gafd14b40b8d009c6341c92a35b5e9ad42">More...</a><br /></td></tr>
 <tr class="separator:gafd14b40b8d009c6341c92a35b5e9ad42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ee87f447439d9642c706b68e9905e4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#ga8ee87f447439d9642c706b68e9905e4a">MSDD_StateChangeEvent</a> (<a class="el" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a> oldState, <a class="el" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a> newState)</td></tr>
 <tr class="memdesc:ga8ee87f447439d9642c706b68e9905e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever the USB device has changed its device state.  <a href="group__Msd.html#ga8ee87f447439d9642c706b68e9905e4a">More...</a><br /></td></tr>
 <tr class="separator:ga8ee87f447439d9642c706b68e9905e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="msdd_8c_source.html">msdd.c</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="msdd_8c.html">msdd.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:37:32 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:29:42 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

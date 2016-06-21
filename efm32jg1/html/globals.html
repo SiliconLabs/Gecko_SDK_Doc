@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li class="current"><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
   <div id="navrow3" class="tabs2">
@@ -165,6 +162,9 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>__Vendor_SysTickConfig
 : <a class="el" href="group__EFM32JG1B200F256GM48__Core.html#gab58771b4ec03f9bdddc84770f7c95c68">efm32jg1b200f256gm48.h</a>
+</li>
+<li>__VTOR_PRESENT
+: <a class="el" href="group__EFM32JG1B200F256GM48__Core.html#gaddbae1a1b57539f398eb5546a17de8f6">efm32jg1b200f256gm48.h</a>
 </li>
 <li>_ACMP_APORTCONFLICT_APORT0XCONFLICT_DEFAULT
 : <a class="el" href="group__EFM32JG1B__ACMP__BitFields.html#ga43c97383f1c9411497bcbac8cfe482a5">efm32jg1b_acmp.h</a>
@@ -2536,6 +2536,21 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_ADC_BIASPROG_ADCBIASPROG_SHIFT
 : <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga93cb975ac5d5ea7799889a86d8a49d8b">efm32jg1b_adc.h</a>
 </li>
+<li>_ADC_BIASPROG_GPBIASACC_DEFAULT
+: <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga09a7d26cc7aacacfd76ccb5332a601cb">efm32jg1b_adc.h</a>
+</li>
+<li>_ADC_BIASPROG_GPBIASACC_HIGHACC
+: <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga74dad0db560dc26c5f4d9fe1a2d47290">efm32jg1b_adc.h</a>
+</li>
+<li>_ADC_BIASPROG_GPBIASACC_LOWACC
+: <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga972a3ab3a82de0e3c6aef38fff0ec19d">efm32jg1b_adc.h</a>
+</li>
+<li>_ADC_BIASPROG_GPBIASACC_MASK
+: <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#gad1fa65d524fd3e4fb70598d25a95454b">efm32jg1b_adc.h</a>
+</li>
+<li>_ADC_BIASPROG_GPBIASACC_SHIFT
+: <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga9d742ce0cc000708e7fb6771a63da90d">efm32jg1b_adc.h</a>
+</li>
 <li>_ADC_BIASPROG_MASK
 : <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga0efd7ad063fe7449b679dfe8d4ed8e3a">efm32jg1b_adc.h</a>
 </li>
@@ -3304,8 +3319,8 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_ADC_SCANCTRL_REF_2XVDD
 : <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga7165d223441bf2119ea66d969c9295ad">efm32jg1b_adc.h</a>
 </li>
-<li>_ADC_SCANCTRL_REF_5VDIFF
-: <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#gad10d9a394ac8e7a8ee85d22fa450c797">efm32jg1b_adc.h</a>
+<li>_ADC_SCANCTRL_REF_5V
+: <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga8a19e12d2cddadd93a108560403226b8">efm32jg1b_adc.h</a>
 </li>
 <li>_ADC_SCANCTRL_REF_CONF
 : <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga113c06be90aa707734a6419fc4818682">efm32jg1b_adc.h</a>
@@ -3510,9 +3525,6 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>_ADC_SCANCTRLX_VREFSEL_VDDXWATT
 : <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga1594146082959833bd37ecb6c48ee736">efm32jg1b_adc.h</a>
-</li>
-<li>_ADC_SCANCTRLX_VREFSEL_VENTROPY
-: <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga100a581d39476948cf865441be0ef2bc">efm32jg1b_adc.h</a>
 </li>
 <li>_ADC_SCANCTRLX_VREFSEL_VREFP
 : <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga9ef26aa1379092a23b525ea80f16481b">efm32jg1b_adc.h</a>
@@ -5350,14 +5362,17 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_ADC_SINGLECTRL_POSSEL_MASK
 : <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga9283807076a55c0f2283677f5dbcf33c">efm32jg1b_adc.h</a>
 </li>
+<li>_ADC_SINGLECTRL_POSSEL_OPA2
+: <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga8c557719980147ac87888bb89eed640c">efm32jg1b_adc.h</a>
+</li>
+<li>_ADC_SINGLECTRL_POSSEL_OPA3
+: <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga48008aedef63c88bc008b7cc140ee252">efm32jg1b_adc.h</a>
+</li>
 <li>_ADC_SINGLECTRL_POSSEL_PDBU
 : <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#gaa94c2926067a25f23d6df27f808abc42">efm32jg1b_adc.h</a>
 </li>
 <li>_ADC_SINGLECTRL_POSSEL_SHIFT
 : <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga42069a7dce107fc8ce9f8950ec655ab7">efm32jg1b_adc.h</a>
-</li>
-<li>_ADC_SINGLECTRL_POSSEL_SP0
-: <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#gab9aa3c31fab619ddd278f1d68f545c9d">efm32jg1b_adc.h</a>
 </li>
 <li>_ADC_SINGLECTRL_POSSEL_SP1
 : <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga1f90f065b15be01448b40296f4b8b40f">efm32jg1b_adc.h</a>
@@ -5404,8 +5419,8 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_ADC_SINGLECTRL_REF_2XVDD
 : <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga7d76f1521ba4a3aca0030d5b0ed14786">efm32jg1b_adc.h</a>
 </li>
-<li>_ADC_SINGLECTRL_REF_5VDIFF
-: <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#gabd70da588771e98dbaab6c206c089837">efm32jg1b_adc.h</a>
+<li>_ADC_SINGLECTRL_REF_5V
+: <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#ga0fff0cb3af96145baf7d695dd413deb1">efm32jg1b_adc.h</a>
 </li>
 <li>_ADC_SINGLECTRL_REF_CONF
 : <a class="el" href="group__EFM32JG1B__ADC__BitFields.html#gac4bfdf27de32cac81ed16ff7afad9142">efm32jg1b_adc.h</a>
@@ -6715,15 +6730,6 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_CMU_HFXOCTRL_AUTOSTARTEM0EM1_SHIFT
 : <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga18ff42918fb6ecbd8c8e09c1ec34c3e5">efm32jg1b_cmu.h</a>
 </li>
-<li>_CMU_HFXOCTRL_AUTOSTARTRDYSELRAC_DEFAULT
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga75bd79ef02fd51ab043eb4605bdd5844">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOCTRL_AUTOSTARTRDYSELRAC_MASK
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gafb02f4bc62e8b3e0bda26f11fa095d15">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOCTRL_AUTOSTARTRDYSELRAC_SHIFT
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga3ecd0d711933d11d2cfc93d02c4d7596">efm32jg1b_cmu.h</a>
-</li>
 <li>_CMU_HFXOCTRL_AUTOSTARTSELEM0EM1_DEFAULT
 : <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gaf994249ee434420eb8957d06a063f25b">efm32jg1b_cmu.h</a>
 </li>
@@ -6732,15 +6738,6 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>_CMU_HFXOCTRL_AUTOSTARTSELEM0EM1_SHIFT
 : <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga0b1393f73e57af71d435143f07297e80">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOCTRL_KEEPWARM_DEFAULT
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga45a85cb1aaf839994e8610a2f6b46494">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOCTRL_KEEPWARM_MASK
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gad9ea637fbef8a17f0ccec7cacff07c49">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOCTRL_KEEPWARM_SHIFT
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga06eae3f2da542a53542e477dafc3f268">efm32jg1b_cmu.h</a>
 </li>
 <li>_CMU_HFXOCTRL_LFTIMEOUT_0CYCLES
 : <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga1c762c6cf371e3ff93cf69233e349394">efm32jg1b_cmu.h</a>
@@ -6859,26 +6856,26 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_CMU_HFXOSTARTUPCTRL_IBTRIMXOCORE_SHIFT
 : <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gad3daa3b222273bd2c6acb01f324ac2d5">efm32jg1b_cmu.h</a>
 </li>
-<li>_CMU_HFXOSTARTUPCTRL_IBTRIMXOCOREWARM_DEFAULT
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga2f1ce1ddcd1b0221e277b93895c8e8c1">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOSTARTUPCTRL_IBTRIMXOCOREWARM_MASK
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga15d0987b86d237f33fcdf594ede21943">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOSTARTUPCTRL_IBTRIMXOCOREWARM_SHIFT
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gaaf9e3c6ff90ec9e8bd3f4e1a76fa4e19">efm32jg1b_cmu.h</a>
-</li>
 <li>_CMU_HFXOSTARTUPCTRL_MASK
 : <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga4ec67227599540e6de70dfffd7f02516">efm32jg1b_cmu.h</a>
 </li>
-<li>_CMU_HFXOSTARTUPCTRL_REGISHWARM_DEFAULT
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga4fc4b2ea1467ebec8208cc243090f69e">efm32jg1b_cmu.h</a>
+<li>_CMU_HFXOSTARTUPCTRL_RESERVED0_DEFAULT
+: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga8a7809dafe80377f654486a3aa450328">efm32jg1b_cmu.h</a>
 </li>
-<li>_CMU_HFXOSTARTUPCTRL_REGISHWARM_MASK
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gaf70a9742747e4962cd2e1e03420feccb">efm32jg1b_cmu.h</a>
+<li>_CMU_HFXOSTARTUPCTRL_RESERVED0_MASK
+: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga2f41030139f65f456f6d6d19af451087">efm32jg1b_cmu.h</a>
 </li>
-<li>_CMU_HFXOSTARTUPCTRL_REGISHWARM_SHIFT
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga6a1aaa47373ffd7d3959eca009225960">efm32jg1b_cmu.h</a>
+<li>_CMU_HFXOSTARTUPCTRL_RESERVED0_SHIFT
+: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gad187b2e9af79ed6c3e4fd52e2bfb8026">efm32jg1b_cmu.h</a>
+</li>
+<li>_CMU_HFXOSTARTUPCTRL_RESERVED1_DEFAULT
+: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gae11470b5e73090cadfee8ea40b29e071">efm32jg1b_cmu.h</a>
+</li>
+<li>_CMU_HFXOSTARTUPCTRL_RESERVED1_MASK
+: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gafc6ecf0cd5e1ecee915183e9fba85550">efm32jg1b_cmu.h</a>
+</li>
+<li>_CMU_HFXOSTARTUPCTRL_RESERVED1_SHIFT
+: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gaf1c805549ad3ccc585a7408b7c653c9e">efm32jg1b_cmu.h</a>
 </li>
 <li>_CMU_HFXOSTARTUPCTRL_RESETVALUE
 : <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gafada3dd0246a26559f04887d2a187b1c">efm32jg1b_cmu.h</a>
@@ -6987,6 +6984,15 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>_CMU_HFXOTIMEOUTCTRL_PEAKDETTIMEOUT_SHIFT
 : <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gaa3050d99045e980667abb85f5ee42e19">efm32jg1b_cmu.h</a>
+</li>
+<li>_CMU_HFXOTIMEOUTCTRL_RESERVED2_DEFAULT
+: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gad258552691f117483631045e66e538cb">efm32jg1b_cmu.h</a>
+</li>
+<li>_CMU_HFXOTIMEOUTCTRL_RESERVED2_MASK
+: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga05a976a99699ce8baeddca70b567ea07">efm32jg1b_cmu.h</a>
+</li>
+<li>_CMU_HFXOTIMEOUTCTRL_RESERVED2_SHIFT
+: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga253064819ccb74101eabf3b5af92c6ca">efm32jg1b_cmu.h</a>
 </li>
 <li>_CMU_HFXOTIMEOUTCTRL_RESETVALUE
 : <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga7844028d3248b4f7a1d09eb7f97c8753">efm32jg1b_cmu.h</a>
@@ -7116,48 +7122,6 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>_CMU_HFXOTIMEOUTCTRL_STEADYTIMEOUT_SHIFT
 : <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gad353fe9fa69b0eae285db293f4f45df7">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_16CYCLES
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga4403566ff37f36c640aacb923f176f39">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_16KCYCLES
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga5eafbc468e4cce3727ebdcd4485f995e">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_1KCYCLES
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga82df899cac7b0ab5e5ccaf6536b873df">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_256CYCLES
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga093805f0eb29fd952ffcc1de6ac1b099">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_2CYCLES
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga0616e35dc436e92c06d7368591a7f048">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_2KCYCLES
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gaf01a27d9aaa283b798312cca02da7133">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_32CYCLES
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga9797cd745af2f3f4a316d6cc73245fb0">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_32KCYCLES
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gaa730e07f5cbeebd382dd2bab783a0852">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_4CYCLES
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga88db1a92eccecd9210065a9a1f1a9249">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_4KCYCLES
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga4debfb15c3af6e2b026b509cda267a0a">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_8KCYCLES
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gae304fb033e9ec3c2cb80aeb25a87a208">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_DEFAULT
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gabe2631789555ef278fc131ebd4b275be">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_MASK
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gaaec4d530604af227322f7c8683e071e7">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_HFXOTIMEOUTCTRL_WARMSTEADYTIMEOUT_SHIFT
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga119e83d91386e87f6591b40e480c8add">efm32jg1b_cmu.h</a>
 </li>
 <li>_CMU_HFXOTRIMSTATUS_IBTRIMXOCORE_DEFAULT
 : <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga81057ad5312f5e3bffcababc32710d0f">efm32jg1b_cmu.h</a>
@@ -8511,15 +8475,6 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>_CMU_STATUS_HFXOSHUNTOPTRDY_SHIFT
 : <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga9b50443a610ed891c097b12c71ee07f4">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_STATUS_HFXOWARMS_DEFAULT
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gaa68cebadba03c978cd87f84823a2165a">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_STATUS_HFXOWARMS_MASK
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gad0b92a85abdfba36af482b85049d3d48">efm32jg1b_cmu.h</a>
-</li>
-<li>_CMU_STATUS_HFXOWARMS_SHIFT
-: <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga22846c68a3a30063c6f8297c9a7b8098">efm32jg1b_cmu.h</a>
 </li>
 <li>_CMU_STATUS_LFRCOENS_DEFAULT
 : <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga25628353faa26d07ea0c576e604e2e9e">efm32jg1b_cmu.h</a>
@@ -12445,6 +12400,12 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_EMU_DCDCCTRL_DCDCMODEEM23_DEFAULT
 : <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#gaa6c06d2cca8113ab7e3a5efacf53b14f">efm32jg1b_emu.h</a>
 </li>
+<li>_EMU_DCDCCTRL_DCDCMODEEM23_EM23LOWPOWER
+: <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#ga6502f7149cc8118c54ae19747ac66b83">efm32jg1b_emu.h</a>
+</li>
+<li>_EMU_DCDCCTRL_DCDCMODEEM23_EM23SW
+: <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#ga6336479ec1ce9f7b67e82734b3c4ef73">efm32jg1b_emu.h</a>
+</li>
 <li>_EMU_DCDCCTRL_DCDCMODEEM23_MASK
 : <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#ga6c280014215b8a815b645f77f23f394b">efm32jg1b_emu.h</a>
 </li>
@@ -12453,6 +12414,12 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>_EMU_DCDCCTRL_DCDCMODEEM4_DEFAULT
 : <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#gae84d8f463b68652187ca86cd7d8e458e">efm32jg1b_emu.h</a>
+</li>
+<li>_EMU_DCDCCTRL_DCDCMODEEM4_EM4LOWPOWER
+: <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#gaa30bd7681c3efad2dd3e15db2a8bc720">efm32jg1b_emu.h</a>
+</li>
+<li>_EMU_DCDCCTRL_DCDCMODEEM4_EM4SW
+: <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#gab0fdeba16058eb25bd17f9a7e6b6c6d3">efm32jg1b_emu.h</a>
 </li>
 <li>_EMU_DCDCCTRL_DCDCMODEEM4_MASK
 : <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#ga52878ea3d1c0dc136482081572b270e7">efm32jg1b_emu.h</a>
@@ -13618,21 +13585,6 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_EMU_LOCK_RESETVALUE
 : <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#ga2c6eefc6f0da5e245a232c0631b5ddcc">efm32jg1b_emu.h</a>
 </li>
-<li>_EMU_PERACTCONF_MASK
-: <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#ga029e20f29121232fa774497f06d00e7f">efm32jg1b_emu.h</a>
-</li>
-<li>_EMU_PERACTCONF_RACPER_DEFAULT
-: <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#ga122daba4954bee66ae5442f6eb710e15">efm32jg1b_emu.h</a>
-</li>
-<li>_EMU_PERACTCONF_RACPER_MASK
-: <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#gaea316bfe5e08ef8e782c7f39759334b6">efm32jg1b_emu.h</a>
-</li>
-<li>_EMU_PERACTCONF_RACPER_SHIFT
-: <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#gad537570c81f1cddc89bd0dcf83f2e2f3">efm32jg1b_emu.h</a>
-</li>
-<li>_EMU_PERACTCONF_RESETVALUE
-: <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#ga26ab61be15f666f3db436abb6a924f4b">efm32jg1b_emu.h</a>
-</li>
 <li>_EMU_PWRCFG_MASK
 : <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#gad8bcc1247edaa794e9245aad6c392c41">efm32jg1b_emu.h</a>
 </li>
@@ -14130,6 +14082,12 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>_GPCRC_CTRL_BITREVERSE_MASK
 : <a class="el" href="group__EFM32JG1B__GPCRC__BitFields.html#ga345d914c7adb9e6482471ca8143050a3">efm32jg1b_gpcrc.h</a>
+</li>
+<li>_GPCRC_CTRL_BITREVERSE_NORMAL
+: <a class="el" href="group__EFM32JG1B__GPCRC__BitFields.html#gae7d4dab202a987945b32e0855c5eb5fa">efm32jg1b_gpcrc.h</a>
+</li>
+<li>_GPCRC_CTRL_BITREVERSE_REVERSED
+: <a class="el" href="group__EFM32JG1B__GPCRC__BitFields.html#ga0291c1ce3831fbe7164c5d441c9468f5">efm32jg1b_gpcrc.h</a>
 </li>
 <li>_GPCRC_CTRL_BITREVERSE_SHIFT
 : <a class="el" href="group__EFM32JG1B__GPCRC__BitFields.html#ga94aaa3dd6e2d5c7c5705ed0adf4da88c">efm32jg1b_gpcrc.h</a>
@@ -18004,6 +17962,24 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <li>_IDAC_CTRL_APORTMASTERDIS_SHIFT
 : <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga1e5580c80186faf75ae9699951b87b50">efm32jg1b_idac.h</a>
 </li>
+<li>_IDAC_CTRL_APORTOUTEN_DEFAULT
+: <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga7cfa27f80df572a67a7efb23abd7bc89">efm32jg1b_idac.h</a>
+</li>
+<li>_IDAC_CTRL_APORTOUTEN_MASK
+: <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga8503cc416b9c914e1f296aea68fdca92">efm32jg1b_idac.h</a>
+</li>
+<li>_IDAC_CTRL_APORTOUTEN_SHIFT
+: <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga05077cd776ca92e49954834d3503d2f6">efm32jg1b_idac.h</a>
+</li>
+<li>_IDAC_CTRL_APORTOUTENPRS_DEFAULT
+: <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga95b88ab7daaa7606f85caaa02b28da82">efm32jg1b_idac.h</a>
+</li>
+<li>_IDAC_CTRL_APORTOUTENPRS_MASK
+: <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga1167e3a83980f3392e153494b30c83c1">efm32jg1b_idac.h</a>
+</li>
+<li>_IDAC_CTRL_APORTOUTENPRS_SHIFT
+: <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga1b4141c01634a2f2588690ab8fcadaf0">efm32jg1b_idac.h</a>
+</li>
 <li>_IDAC_CTRL_APORTOUTSEL_APORT1XCH0
 : <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gaa38de6e394cd5c3ea90b26a459c3faa2">efm32jg1b_idac.h</a>
 </li>
@@ -18147,24 +18123,6 @@ $(document).ready(function(){initNavTree('globals.html','');});
 </li>
 <li>_IDAC_CTRL_MINOUTTRANS_SHIFT
 : <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gac11d37e2f93702611691538031a0fdec">efm32jg1b_idac.h</a>
-</li>
-<li>_IDAC_CTRL_OUTEN_DEFAULT
-: <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga238fcf7c390e59987a645dae04c46ba4">efm32jg1b_idac.h</a>
-</li>
-<li>_IDAC_CTRL_OUTEN_MASK
-: <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga70ee78f284335a175c70bd14f46872a1">efm32jg1b_idac.h</a>
-</li>
-<li>_IDAC_CTRL_OUTEN_SHIFT
-: <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga15df6a9c2a0626d43134563231712f7f">efm32jg1b_idac.h</a>
-</li>
-<li>_IDAC_CTRL_OUTENPRS_DEFAULT
-: <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gaa5b6dedfa4f8731f56e4451e6fee36bb">efm32jg1b_idac.h</a>
-</li>
-<li>_IDAC_CTRL_OUTENPRS_MASK
-: <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga0ccbd468a8b309df04cd8542a877dc4f">efm32jg1b_idac.h</a>
-</li>
-<li>_IDAC_CTRL_OUTENPRS_SHIFT
-: <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#ga655be9b134556a41ecc57f0f02514861">efm32jg1b_idac.h</a>
 </li>
 <li>_IDAC_CTRL_PRSSEL_DEFAULT
 : <a class="el" href="group__EFM32JG1B__IDAC__BitFields.html#gaf4481c47d243d6b3035aa8a83272e99a">efm32jg1b_idac.h</a>
@@ -32389,7 +32347,7 @@ $(document).ready(function(){initNavTree('globals.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:54 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:41:23 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

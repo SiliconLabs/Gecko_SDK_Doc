@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,8 +110,8 @@ $(document).ready(function(){initNavTree('em__dma_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="em__dma_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef __SILICON_LABS_EM_DMA_H__</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define __SILICON_LABS_EM_DMA_H__</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef EM_DMA_H</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define EM_DMA_H</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__device_8h.html">em_device.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined( DMA_PRESENT )</span></div>
@@ -343,67 +340,68 @@ $(document).ready(function(){initNavTree('em__dma_8h_source.html','');});
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                               DMA_CfgDescrSGAlt_TypeDef *cfg);</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="keywordtype">void</span> DMA_ChannelEnable(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> channel, <span class="keywordtype">bool</span> enable);</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="keywordtype">bool</span> DMA_ChannelEnabled(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> channel);</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="keywordtype">void</span> DMA_Init(DMA_Init_TypeDef *init);</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="keywordtype">void</span> DMA_IRQHandler(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="keywordtype">void</span> DMA_RefreshPingPong(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> channel,</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                         <span class="keywordtype">bool</span> primary,</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                         <span class="keywordtype">bool</span> useBurst,</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                         <span class="keywordtype">void</span> *dst,</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                         <span class="keywordtype">void</span> *src,</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nMinus1,</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                         <span class="keywordtype">bool</span> last);</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="keywordtype">void</span> DMA_Reset(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> DMA_IntClear(uint32_t flags)</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;{</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  DMA-&gt;IFC = flags;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;}</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="keywordtype">void</span> DMA_ChannelRequestEnable(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> channel, <span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="keywordtype">void</span> DMA_Init(DMA_Init_TypeDef *init);</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="keywordtype">void</span> DMA_IRQHandler(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="keywordtype">void</span> DMA_RefreshPingPong(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> channel,</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                         <span class="keywordtype">bool</span> primary,</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                         <span class="keywordtype">bool</span> useBurst,</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                         <span class="keywordtype">void</span> *dst,</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                         <span class="keywordtype">void</span> *src,</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nMinus1,</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                         <span class="keywordtype">bool</span> last);</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="keywordtype">void</span> DMA_Reset(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> DMA_IntClear(uint32_t flags)</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;{</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  DMA-&gt;IFC = flags;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;}</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> DMA_IntDisable(uint32_t flags)</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;{</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;  DMA-&gt;IEN &amp;= ~flags;</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;}</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> DMA_IntDisable(uint32_t flags)</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;{</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;  DMA-&gt;IEN &amp;= ~flags;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;}</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> DMA_IntEnable(uint32_t flags)</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;{</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  DMA-&gt;IEN |= flags;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;}</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> DMA_IntEnable(uint32_t flags)</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;{</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  DMA-&gt;IEN |= flags;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;}</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;__STATIC_INLINE uint32_t DMA_IntGet(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;{</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  <span class="keywordflow">return</span> DMA-&gt;IF;</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;}</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;__STATIC_INLINE uint32_t DMA_IntGet(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;{</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  <span class="keywordflow">return</span> DMA-&gt;IF;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;}</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;__STATIC_INLINE uint32_t DMA_IntGetEnabled(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;{</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  uint32_t ien;</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;  ien = DMA-&gt;IEN;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <span class="keywordflow">return</span> DMA-&gt;IF &amp; ien;</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;}</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;__STATIC_INLINE uint32_t DMA_IntGetEnabled(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;{</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;  uint32_t ien;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  ien = DMA-&gt;IEN;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  <span class="keywordflow">return</span> DMA-&gt;IF &amp; ien;</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;}</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> DMA_IntSet(uint32_t flags)</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;{</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;  DMA-&gt;IFS = flags;</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;}</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;}</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined( DMA_PRESENT ) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SILICON_LABS_EM_DMA_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> DMA_IntSet(uint32_t flags)</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;{</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  DMA-&gt;IFS = flags;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;}</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;}</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined( DMA_PRESENT ) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_DMA_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="em__device_8h_html"><div class="ttname"><a href="em__device_8h.html">em_device.h</a></div><div class="ttdoc">CMSIS Cortex-M Peripheral Access Layer for Silicon Laboratories microcontroller devices. </div></div>
 <div class="ttc" id="structDMA__DESCRIPTOR__TypeDef_html"><div class="ttname"><a href="structDMA__DESCRIPTOR__TypeDef.html">DMA_DESCRIPTOR_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__dma__descriptor_8h_source.html#l00040">efm32jg1b_dma_descriptor.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -412,7 +410,7 @@ $(document).ready(function(){initNavTree('em__dma_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__dma_8h.html">em_dma.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:38 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:40:11 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

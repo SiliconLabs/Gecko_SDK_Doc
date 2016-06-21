@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['gpioint_20general_20purpose_20input_2foutput_20interrupt_20dispatcher',['GPIOINT General Purpose Input/Output Interrupt dispatcher',['../group__GPIOINT.html',1,'']]]
+  ['usb_20device_20stack_20library',['USB device stack library',['../group__USB.html',1,'']]],
+  ['usb_20host_20stack_20library',['USB host stack library',['../group__USB.html',1,'']]]
 ];

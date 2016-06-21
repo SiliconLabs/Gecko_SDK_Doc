@@ -1,12 +1,12 @@
 var group__EFM32WG995F256 =
 [
+    [ "EFM32WG995F256 Alternate Function", "group__EFM32WG995F256__Alternate__Function.html", null ],
+    [ "EFM32WG995F256 Bit Fields", "group__EFM32WG995F256__BitFields.html", "group__EFM32WG995F256__BitFields" ],
     [ "EFM32WG995F256 Core", "group__EFM32WG995F256__Core.html", "group__EFM32WG995F256__Core" ],
     [ "EFM32WG995F256 Part", "group__EFM32WG995F256__Part.html", "group__EFM32WG995F256__Part" ],
-    [ "EFM32WG995F256 Peripheral TypeDefs", "group__EFM32WG995F256__Peripheral__TypeDefs.html", null ],
-    [ "EFM32WG995F256 Peripheral Memory Map", "group__EFM32WG995F256__Peripheral__Base.html", "group__EFM32WG995F256__Peripheral__Base" ],
     [ "EFM32WG995F256 Peripheral Declarations", "group__EFM32WG995F256__Peripheral__Declaration.html", "group__EFM32WG995F256__Peripheral__Declaration" ],
-    [ "EFM32WG995F256 Bit Fields", "group__EFM32WG995F256__BitFields.html", "group__EFM32WG995F256__BitFields" ],
-    [ "EFM32WG995F256 Alternate Function", "group__EFM32WG995F256__Alternate__Function.html", null ],
+    [ "EFM32WG995F256 Peripheral Memory Map", "group__EFM32WG995F256__Peripheral__Base.html", "group__EFM32WG995F256__Peripheral__Base" ],
+    [ "EFM32WG995F256 Peripheral TypeDefs", "group__EFM32WG995F256__Peripheral__TypeDefs.html", null ],
     [ "SET_BIT_FIELD", "group__EFM32WG995F256.html#ga7979121950b76a6bd75bf5a8f6fbdcc0", null ],
     [ "IRQn_Type", "group__EFM32WG995F256.html#gac3af4a32370fb28c4ade8bf2add80251", null ],
     [ "IRQn", "group__EFM32WG995F256.html#ga666eb0caeb12ec0e281415592ae89083", [

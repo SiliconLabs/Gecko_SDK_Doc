@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -104,42 +103,83 @@ $(document).ready(function(){initNavTree('group__BUS.html','');});
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">BUS<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">BUS<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>BUS RAM and register bit/field read/write API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>BUS RAM and register bit/field read/write API. </p>
+<p>API to perform bitbanded and masked accesses to SRAM and peripheral memory. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5db07d1f35d501e6de6891eaeae88ec7"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BUS.html#ga5db07d1f35d501e6de6891eaeae88ec7">BUS_RamBitWrite</a> (volatile uint32_t *addr, unsigned int bit, unsigned int val)</td></tr>
-<tr class="memdesc:ga5db07d1f35d501e6de6891eaeae88ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a single-bit write operation on a 32-bit word in RAM.  <a href="#ga5db07d1f35d501e6de6891eaeae88ec7">More...</a><br /></td></tr>
-<tr class="separator:ga5db07d1f35d501e6de6891eaeae88ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga00e7633614955dd90f180acb07f83c8d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BUS.html#ga00e7633614955dd90f180acb07f83c8d">BUS_RamBitRead</a> (volatile const uint32_t *addr, unsigned int bit)</td></tr>
 <tr class="memdesc:ga00e7633614955dd90f180acb07f83c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a single-bit read operation on a 32-bit word in RAM.  <a href="#ga00e7633614955dd90f180acb07f83c8d">More...</a><br /></td></tr>
 <tr class="separator:ga00e7633614955dd90f180acb07f83c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf8574f14855448ecae32c5a9dd0c7164"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite</a> (volatile uint32_t *addr, unsigned int bit, unsigned int val)</td></tr>
-<tr class="memdesc:gaf8574f14855448ecae32c5a9dd0c7164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a single-bit write operation on a peripheral register.  <a href="#gaf8574f14855448ecae32c5a9dd0c7164">More...</a><br /></td></tr>
-<tr class="separator:gaf8574f14855448ecae32c5a9dd0c7164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5db07d1f35d501e6de6891eaeae88ec7"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BUS.html#ga5db07d1f35d501e6de6891eaeae88ec7">BUS_RamBitWrite</a> (volatile uint32_t *addr, unsigned int bit, unsigned int val)</td></tr>
+<tr class="memdesc:ga5db07d1f35d501e6de6891eaeae88ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a single-bit write operation on a 32-bit word in RAM.  <a href="#ga5db07d1f35d501e6de6891eaeae88ec7">More...</a><br /></td></tr>
+<tr class="separator:ga5db07d1f35d501e6de6891eaeae88ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaca6b55014161f4c51c9daf4f707eeb7c"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BUS.html#gaca6b55014161f4c51c9daf4f707eeb7c">BUS_RegBitRead</a> (volatile const uint32_t *addr, unsigned int bit)</td></tr>
 <tr class="memdesc:gaca6b55014161f4c51c9daf4f707eeb7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a single-bit read operation on a peripheral register.  <a href="#gaca6b55014161f4c51c9daf4f707eeb7c">More...</a><br /></td></tr>
 <tr class="separator:gaca6b55014161f4c51c9daf4f707eeb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8225a5d4acac280abb182dc118e8df77"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BUS.html#ga8225a5d4acac280abb182dc118e8df77">BUS_RegMaskedSet</a> (volatile uint32_t *addr, uint32_t mask)</td></tr>
-<tr class="memdesc:ga8225a5d4acac280abb182dc118e8df77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a masked set operation on peripheral register address.  <a href="#ga8225a5d4acac280abb182dc118e8df77">More...</a><br /></td></tr>
-<tr class="separator:ga8225a5d4acac280abb182dc118e8df77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8574f14855448ecae32c5a9dd0c7164"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite</a> (volatile uint32_t *addr, unsigned int bit, unsigned int val)</td></tr>
+<tr class="memdesc:gaf8574f14855448ecae32c5a9dd0c7164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a single-bit write operation on a peripheral register.  <a href="#gaf8574f14855448ecae32c5a9dd0c7164">More...</a><br /></td></tr>
+<tr class="separator:gaf8574f14855448ecae32c5a9dd0c7164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad226bfe478c81d51681539d935241758"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BUS.html#gad226bfe478c81d51681539d935241758">BUS_RegMaskedClear</a> (volatile uint32_t *addr, uint32_t mask)</td></tr>
 <tr class="memdesc:gad226bfe478c81d51681539d935241758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a masked clear operation on peripheral register address.  <a href="#gad226bfe478c81d51681539d935241758">More...</a><br /></td></tr>
 <tr class="separator:gad226bfe478c81d51681539d935241758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e878ccba24fcbf97b5bcb8b53356e76"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite</a> (volatile uint32_t *addr, uint32_t mask, uint32_t val)</td></tr>
-<tr class="memdesc:ga9e878ccba24fcbf97b5bcb8b53356e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform peripheral register masked clear and value write.  <a href="#ga9e878ccba24fcbf97b5bcb8b53356e76">More...</a><br /></td></tr>
-<tr class="separator:ga9e878ccba24fcbf97b5bcb8b53356e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaec23c86f9b844b9e0e102ebff0b96ff4"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BUS.html#gaec23c86f9b844b9e0e102ebff0b96ff4">BUS_RegMaskedRead</a> (volatile const uint32_t *addr, uint32_t mask)</td></tr>
 <tr class="memdesc:gaec23c86f9b844b9e0e102ebff0b96ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a peripheral register masked read.  <a href="#gaec23c86f9b844b9e0e102ebff0b96ff4">More...</a><br /></td></tr>
 <tr class="separator:gaec23c86f9b844b9e0e102ebff0b96ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8225a5d4acac280abb182dc118e8df77"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BUS.html#ga8225a5d4acac280abb182dc118e8df77">BUS_RegMaskedSet</a> (volatile uint32_t *addr, uint32_t mask)</td></tr>
+<tr class="memdesc:ga8225a5d4acac280abb182dc118e8df77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a masked set operation on peripheral register address.  <a href="#ga8225a5d4acac280abb182dc118e8df77">More...</a><br /></td></tr>
+<tr class="separator:ga8225a5d4acac280abb182dc118e8df77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e878ccba24fcbf97b5bcb8b53356e76"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite</a> (volatile uint32_t *addr, uint32_t mask, uint32_t val)</td></tr>
+<tr class="memdesc:ga9e878ccba24fcbf97b5bcb8b53356e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform peripheral register masked clear and value write.  <a href="#ga9e878ccba24fcbf97b5bcb8b53356e76">More...</a><br /></td></tr>
+<tr class="separator:ga9e878ccba24fcbf97b5bcb8b53356e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga00e7633614955dd90f180acb07f83c8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE unsigned int BUS_RamBitRead </td>
+          <td>(</td>
+          <td class="paramtype">volatile const uint32_t *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>bit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform a single-bit read operation on a 32-bit word in RAM. </p>
+<p>This function uses Cortex-M bit-banding hardware to perform an atomic read operation on a single register bit. Please refer to the reference manual for further details about bit-banding.</p>
+<dl class="section note"><dt>Note</dt><dd>This function is atomic on Cortex-M cores with bit-banding support. RAM bit-banding is performed using the memory alias region at BITBAND_RAM_BASE.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>RAM address</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bit</td><td>Bit position to read, 0-31</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The requested bit shifted to bit position 0 in the return value </dd></dl>
+
+<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00114">114</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
+
+<p>References <a class="el" href="group__EZR32LG330F256R69__Part.html#ga621a194f1cd2f0c9282e72583326a359">BITBAND_RAM_BASE</a>, and <a class="el" href="group__EZR32LG330F256R69__Part.html#ga05e8f3d2e5868754a7cd88614955aecc">SRAM_BASE</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga5db07d1f35d501e6de6891eaeae88ec7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -169,6 +209,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Perform a single-bit write operation on a 32-bit word in RAM. </p>
 <p>This function uses Cortex-M bit-banding hardware to perform an atomic read-modify-write operation on a single bit write on a 32-bit word in RAM. Please refer to the reference manual for further details about bit-banding.</p>
 <dl class="section note"><dt>Note</dt><dd>This function is atomic on Cortex-M cores with bit-banding support. Bit- banding is a multicycle read-modify-write bus operation. RAM bit-banding is performed using the memory alias region at BITBAND_RAM_BASE.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -180,18 +222,18 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00073">73</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
+<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00075">75</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
 
-<p>References <a class="el" href="ezr32lg330f256r69_8h_source.html#l00166">BITBAND_RAM_BASE</a>, and <a class="el" href="ezr32lg330f256r69_8h_source.html#l00172">SRAM_BASE</a>.</p>
+<p>References <a class="el" href="group__EZR32LG330F256R69__Part.html#ga621a194f1cd2f0c9282e72583326a359">BITBAND_RAM_BASE</a>, and <a class="el" href="group__EZR32LG330F256R69__Part.html#ga05e8f3d2e5868754a7cd88614955aecc">SRAM_BASE</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga00e7633614955dd90f180acb07f83c8d"></a>
+<a class="anchor" id="gaca6b55014161f4c51c9daf4f707eeb7c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__STATIC_INLINE unsigned int BUS_RamBitRead </td>
+          <td class="memname">__STATIC_INLINE unsigned int BUS_RegBitRead </td>
           <td>(</td>
           <td class="paramtype">volatile const uint32_t *&#160;</td>
           <td class="paramname"><em>addr</em>, </td>
@@ -209,20 +251,24 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Perform a single-bit read operation on a peripheral register. </p>
 <p>This function uses Cortex-M bit-banding hardware to perform an atomic read operation on a single register bit. Please refer to the reference manual for further details about bit-banding.</p>
-<dl class="section note"><dt>Note</dt><dd>This function is atomic on Cortex-M cores with bit-banding support. RAM bit-banding is performed using the memory alias region at BITBAND_RAM_BASE.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is atomic on Cortex-M cores with bit-banding support. Peripheral register bit-banding is performed using the memory alias region at BITBAND_PER_BASE.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>RAM address</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Peripheral register address</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">bit</td><td>Bit position to read, 0-31</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The requested bit shifted to bit position 0 in the return value </dd></dl>
 
-<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00112">112</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
+<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00187">187</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
 
-<p>References <a class="el" href="ezr32lg330f256r69_8h_source.html#l00166">BITBAND_RAM_BASE</a>, and <a class="el" href="ezr32lg330f256r69_8h_source.html#l00172">SRAM_BASE</a>.</p>
+<p>References <a class="el" href="group__EZR32LG330F256R69__Part.html#gaf6996efc26e41442689b5aa0b6bbd418">BITBAND_PER_BASE</a>, and <a class="el" href="group__EZR32LG330F256R69__Part.html#ga46ab71255f6da2fcd617bd33dfb3c202">PER_MEM_BASE</a>.</p>
+
+<p>Referenced by <a class="el" href="group__BURTC.html#ga934209ae3c6bd3d76642090d20462818">BURTC_Reset()</a>, <a class="el" href="group__CMU.html#ga144a6e08d50cc4913a3452231eb3cc36">CMU_Calibrate()</a>, <a class="el" href="group__CMU.html#ga6a5fb4b2d369de8db9ebf56edc780a7c">CMU_CalibrateCountGet()</a>, <a class="el" href="group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9">CMU_OscillatorEnable()</a>, <a class="el" href="group__CMU.html#ga1200b660d32b39db023753094a282ae9">CMU_OscillatorTuningSet()</a>, <a class="el" href="group__GPIO.html#gac1050d30b940c30899c63aa060fa4dba">GPIO_PinInGet()</a>, and <a class="el" href="group__GPIO.html#ga8ed31bc079380c74d6db162d4cdc16b8">GPIO_PinOutGet()</a>.</p>
 
 </div>
 </div>
@@ -255,6 +301,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Perform a single-bit write operation on a peripheral register. </p>
 <p>This function uses Cortex-M bit-banding hardware to perform an atomic read-modify-write operation on a single register bit. Please refer to the reference manual for further details about bit-banding.</p>
 <dl class="section note"><dt>Note</dt><dd>This function is atomic on Cortex-M cores with bit-banding support. Bit- banding is a multicycle read-modify-write bus operation. Peripheral register bit-banding is performed using the memory alias region at BITBAND_PER_BASE.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -266,94 +314,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00146">146</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
+<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00148">148</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
 
-<p>References <a class="el" href="ezr32lg330f256r69_8h_source.html#l00165">BITBAND_PER_BASE</a>, and <a class="el" href="ezr32lg330f256r69_8h_source.html#l00151">PER_MEM_BASE</a>.</p>
+<p>References <a class="el" href="group__EZR32LG330F256R69__Part.html#gaf6996efc26e41442689b5aa0b6bbd418">BITBAND_PER_BASE</a>, and <a class="el" href="group__EZR32LG330F256R69__Part.html#ga46ab71255f6da2fcd617bd33dfb3c202">PER_MEM_BASE</a>.</p>
 
-<p>Referenced by <a class="el" href="em__acmp_8c_source.html#l00110">ACMP_CapsenseInit()</a>, <a class="el" href="em__acmp_8c_source.html#l00349">ACMP_Init()</a>, <a class="el" href="em__adc_8c_source.html#l00679">ADC_InitScan()</a>, <a class="el" href="em__adc_8c_source.html#l00810">ADC_InitSingle()</a>, <a class="el" href="em__burtc_8c_source.html#l00235">BURTC_CounterReset()</a>, <a class="el" href="em__burtc_8h_source.html#l00285">BURTC_Enable()</a>, <a class="el" href="em__burtc_8h_source.html#l00331">BURTC_FreezeEnable()</a>, <a class="el" href="em__burtc_8h_source.html#l00345">BURTC_Powerdown()</a>, <a class="el" href="em__burtc_8c_source.html#l00251">BURTC_Reset()</a>, <a class="el" href="em__cmu_8h_source.html#l01153">CMU_CalibrateCont()</a>, <a class="el" href="em__cmu_8c_source.html#l01141">CMU_ClockDivSet()</a>, <a class="el" href="em__cmu_8c_source.html#l01369">CMU_ClockEnable()</a>, <a class="el" href="em__cmu_8c_source.html#l02406">CMU_ClockSelectSet()</a>, <a class="el" href="em__cmu_8c_source.html#l03685">CMU_PCNTClockExternalSet()</a>, <a class="el" href="em__dac_8c_source.html#l00081">DAC_Enable()</a>, <a class="el" href="em__dac_8c_source.html#l00118">DAC_Init()</a>, <a class="el" href="em__dma_8c_source.html#l00706">DMA_CfgChannel()</a>, <a class="el" href="em__emu_8c_source.html#l00827">EMU_BUPDInit()</a>, <a class="el" href="em__emu_8h_source.html#l00632">EMU_BUPinEnable()</a>, <a class="el" href="em__emu_8h_source.html#l00694">EMU_EM2Block()</a>, <a class="el" href="em__emu_8h_source.html#l00703">EMU_EM2UnBlock()</a>, <a class="el" href="em__emu_8h_source.html#l00607">EMU_EM4Lock()</a>, <a class="el" href="em__gpio_8h_source.html#l00385">GPIO_DbgSWDClkEnable()</a>, <a class="el" href="em__gpio_8h_source.html#l00409">GPIO_DbgSWDIOEnable()</a>, <a class="el" href="em__gpio_8h_source.html#l00435">GPIO_DbgSWOEnable()</a>, <a class="el" href="em__gpio_8c_source.html#l00168">GPIO_IntConfig()</a>, <a class="el" href="em__gpio_8h_source.html#l00698">GPIO_PinOutClear()</a>, <a class="el" href="em__gpio_8h_source.html#l00745">GPIO_PinOutSet()</a>, <a class="el" href="em__i2c_8c_source.html#l00331">I2C_Enable()</a>, <a class="el" href="em__i2c_8c_source.html#l00349">I2C_Init()</a>, <a class="el" href="em__lesense_8c_source.html#l00570">LESENSE_AltExConfig()</a>, <a class="el" href="em__lesense_8c_source.html#l00471">LESENSE_ChannelConfig()</a>, <a class="el" href="em__lesense_8c_source.html#l00654">LESENSE_ChannelEnable()</a>, <a class="el" href="em__msc_8h_source.html#l00399">MSC_EnableAutoCacheFlush()</a>, <a class="el" href="em__msc_8h_source.html#l00373">MSC_EnableCache()</a>, <a class="el" href="em__msc_8h_source.html#l00386">MSC_EnableCacheIRQs()</a>, <a class="el" href="em__pcnt_8c_source.html#l00141">PCNT_CounterReset()</a>, <a class="el" href="em__pcnt_8c_source.html#l00430">PCNT_Init()</a>, <a class="el" href="em__pcnt_8c_source.html#l00311">PCNT_PRSInputEnable()</a>, <a class="el" href="em__pcnt_8c_source.html#l00639">PCNT_Reset()</a>, <a class="el" href="em__rmu_8c_source.html#l00231">RMU_ResetCauseClear()</a>, <a class="el" href="em__rmu_8c_source.html#l00204">RMU_ResetControl()</a>, <a class="el" href="em__rtc_8c_source.html#l00214">RTC_Enable()</a>, <a class="el" href="em__wdog_8c_source.html#l00075">WDOG_Enable()</a>, <a class="el" href="em__wdog_8c_source.html#l00137">WDOG_Init()</a>, and <a class="el" href="em__wdog_8c_source.html#l00218">WDOG_Lock()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaca6b55014161f4c51c9daf4f707eeb7c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE unsigned int BUS_RegBitRead </td>
-          <td>(</td>
-          <td class="paramtype">volatile const uint32_t *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bit</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function uses Cortex-M bit-banding hardware to perform an atomic read operation on a single register bit. Please refer to the reference manual for further details about bit-banding.</p>
-<dl class="section note"><dt>Note</dt><dd>This function is atomic on Cortex-M cores with bit-banding support. Peripheral register bit-banding is performed using the memory alias region at BITBAND_PER_BASE.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Peripheral register address</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bit</td><td>Bit position to read, 0-31</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The requested bit shifted to bit position 0 in the return value </dd></dl>
-
-<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00185">185</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
-
-<p>References <a class="el" href="ezr32lg330f256r69_8h_source.html#l00165">BITBAND_PER_BASE</a>, and <a class="el" href="ezr32lg330f256r69_8h_source.html#l00151">PER_MEM_BASE</a>.</p>
-
-<p>Referenced by <a class="el" href="em__burtc_8c_source.html#l00251">BURTC_Reset()</a>, <a class="el" href="em__cmu_8c_source.html#l00801">CMU_Calibrate()</a>, <a class="el" href="em__cmu_8c_source.html#l00969">CMU_CalibrateCountGet()</a>, <a class="el" href="em__cmu_8c_source.html#l03394">CMU_OscillatorEnable()</a>, <a class="el" href="em__cmu_8c_source.html#l03584">CMU_OscillatorTuningSet()</a>, <a class="el" href="em__gpio_8h_source.html#l00675">GPIO_PinInGet()</a>, and <a class="el" href="em__gpio_8h_source.html#l00722">GPIO_PinOutGet()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga8225a5d4acac280abb182dc118e8df77"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void BUS_RegMaskedSet </td>
-          <td>(</td>
-          <td class="paramtype">volatile uint32_t *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mask</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Peripheral register masked set provides a single-cycle and atomic set operation of a bit-mask in a peripheral register. All 1's in the mask are set to 1 in the register. All 0's in the mask are not changed in the register. RAMs and special peripherals are not supported. Please refer to the reference manual for further details about peripheral register field set.</p>
-<dl class="section note"><dt>Note</dt><dd>This function is single-cycle and atomic on cores with peripheral bit set and clear support. It uses the memory alias region at PER_BITSET_MEM_BASE.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Peripheral register address</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>Mask to set </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00219">219</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
-
-<p>References <a class="el" href="ezr32lg330f256r69_8h_source.html#l00151">PER_MEM_BASE</a>.</p>
-
-<p>Referenced by <a class="el" href="em__bus_8h_source.html#l00283">BUS_RegMaskedWrite()</a>, and <a class="el" href="em__gpio_8h_source.html#l00853">GPIO_PortOutSet()</a>.</p>
+<p>Referenced by <a class="el" href="group__ACMP.html#gab99c16a966bfa66c081160ec51e0a039">ACMP_CapsenseInit()</a>, <a class="el" href="group__ACMP.html#gad04e5819cd2d6ca5a275e8cc047f9ecf">ACMP_Init()</a>, <a class="el" href="group__ADC.html#ga41207273ca90e4173084233060e0edbb">ADC_InitScan()</a>, <a class="el" href="group__ADC.html#ga76aa8949d51eb1027906f68b0952ea0e">ADC_InitSingle()</a>, <a class="el" href="group__BURTC.html#ga6423a88eadce1515ece163b5e7d3b0b3">BURTC_CounterReset()</a>, <a class="el" href="group__BURTC.html#ga366ffff57aa50af096dbaab5a0b626f4">BURTC_Enable()</a>, <a class="el" href="group__BURTC.html#ga6a7ad38c493ca909c77e0e752df6f7e9">BURTC_FreezeEnable()</a>, <a class="el" href="group__BURTC.html#ga75f80623d9e066d4a6cdac772873821a">BURTC_Powerdown()</a>, <a class="el" href="group__BURTC.html#ga934209ae3c6bd3d76642090d20462818">BURTC_Reset()</a>, <a class="el" href="group__CMU.html#gab0bbce1edee26bdd70234b1017cb1362">CMU_CalibrateCont()</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet()</a>, <a class="el" href="group__CMU.html#gac0fede38cfa32965cc8ace2b51a14d5b">CMU_PCNTClockExternalSet()</a>, <a class="el" href="group__DAC.html#ga3efabd2832fe5862fefd86e02accf2b8">DAC_Enable()</a>, <a class="el" href="group__DAC.html#gae8fd0951c9fd781d120c8d5e4ce7745d">DAC_Init()</a>, <a class="el" href="group__DMA.html#gab119fe5869e7ebcfd29542d05dae2d29">DMA_CfgChannel()</a>, <a class="el" href="group__DMA.html#ga906324e92ed0f9b14f755ec2b2047590">DMA_ChannelRequestEnable()</a>, <a class="el" href="group__EMU.html#ga3711dafbd1f74eed5fa2920efa9aaa9b">EMU_BUPDInit()</a>, <a class="el" href="group__EMU.html#ga423641b01d143cf598391ff9d772bb23">EMU_BUPinEnable()</a>, <a class="el" href="group__EMU.html#ga72910c09de24f4e2f8f170dc06bd8c07">EMU_EM2Block()</a>, <a class="el" href="group__EMU.html#ga9e959a9fd56ac4a2e18877b9b839d795">EMU_EM2UnBlock()</a>, <a class="el" href="group__EMU.html#gaa07523b26da61b61201e56e1b55b64b2">EMU_EM4Lock()</a>, <a class="el" href="group__GPIO.html#ga7aa21d660197b3e2f67589db89686bbf">GPIO_DbgSWDClkEnable()</a>, <a class="el" href="group__GPIO.html#gaceecf411d11a30e7fa10fc42dd4f612d">GPIO_DbgSWDIOEnable()</a>, <a class="el" href="group__GPIO.html#ga9c587570c6c2422eb46ac557d9d9e319">GPIO_DbgSWOEnable()</a>, <a class="el" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig()</a>, <a class="el" href="group__GPIO.html#ga607f3a5f3d881bb145101566f1664aba">GPIO_PinOutClear()</a>, <a class="el" href="group__GPIO.html#gab08f054efbb07aaff57d616974c9c536">GPIO_PinOutSet()</a>, <a class="el" href="group__I2C.html#gaca1c9ca46d6945a4696f8a34ab8c2ddf">I2C_Enable()</a>, <a class="el" href="group__I2C.html#gab52e0fc0d3690e40f80a193d5b6fdd51">I2C_Init()</a>, <a class="el" href="group__LESENSE.html#ga5e74a058bf6cb6a84b1b207ad7d0abcd">LESENSE_AltExConfig()</a>, <a class="el" href="group__LESENSE.html#ga6aa126a4b073bd48954c8903da1bf47f">LESENSE_ChannelConfig()</a>, <a class="el" href="group__LESENSE.html#ga611f48ec1dcb0e3f6007a5245fcbac7f">LESENSE_ChannelEnable()</a>, <a class="el" href="group__MSC.html#ga5245d3b0940fea9a9c812e95476e9aa1">MSC_EnableAutoCacheFlush()</a>, <a class="el" href="group__MSC.html#gae1220a12c62b8709ae553b0a155c0d18">MSC_EnableCache()</a>, <a class="el" href="group__MSC.html#ga474b3f23a041eea03a7f600727d2e41f">MSC_EnableCacheIRQs()</a>, <a class="el" href="group__PCNT.html#gacb21126956add214b4af318f61fd17cd">PCNT_CounterReset()</a>, <a class="el" href="group__PCNT.html#ga726934d28be99230a6025503fdbaf86d">PCNT_Init()</a>, <a class="el" href="group__PCNT.html#ga3398bc56f58cfc86afeedcd4febc5753">PCNT_PRSInputEnable()</a>, <a class="el" href="group__PCNT.html#gadf14f80981badc92e7a30a43caae130b">PCNT_Reset()</a>, <a class="el" href="group__RMU.html#ga1ebc1af03f738faa79b3e87d60a96ff1">RMU_ResetCauseClear()</a>, <a class="el" href="group__RMU.html#gafad06e5ac32430ed4182d4306d684eb7">RMU_ResetControl()</a>, <a class="el" href="group__RTC.html#ga19213bbf2d6cb73d55cec086a98493e6">RTC_Enable()</a>, <a class="el" href="group__WDOG.html#gaccf944498d4c40e6d87afa84e06d297b">WDOGn_Enable()</a>, and <a class="el" href="group__WDOG.html#ga638259d740de220fb9b34a5b9654e182">WDOGn_Lock()</a>.</p>
 
 </div>
 </div>
@@ -380,6 +345,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Perform a masked clear operation on peripheral register address. </p>
 <p>Peripheral register masked clear provides a single-cycle and atomic clear operation of a bit-mask in a peripheral register. All 1's in the mask are set to 0 in the register. All 0's in the mask are not changed in the register. RAMs and special peripherals are not supported. Please refer to the reference manual for further details about peripheral register field clear.</p>
 <dl class="section note"><dt>Note</dt><dd>This function is single-cycle and atomic on cores with peripheral bit set and clear support. It uses the memory alias region at PER_BITCLR_MEM_BASE.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -390,11 +357,96 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00251">251</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
+<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00253">253</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
 
-<p>References <a class="el" href="ezr32lg330f256r69_8h_source.html#l00151">PER_MEM_BASE</a>.</p>
+<p>References <a class="el" href="group__EZR32LG330F256R69__Part.html#ga46ab71255f6da2fcd617bd33dfb3c202">PER_MEM_BASE</a>.</p>
 
-<p>Referenced by <a class="el" href="em__bus_8h_source.html#l00283">BUS_RegMaskedWrite()</a>, and <a class="el" href="em__gpio_8h_source.html#l00809">GPIO_PortOutClear()</a>.</p>
+<p>Referenced by <a class="el" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite()</a>, and <a class="el" href="group__GPIO.html#ga5fac00f6219c714bde007b67646248d1">GPIO_PortOutClear()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaec23c86f9b844b9e0e102ebff0b96ff4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint32_t BUS_RegMaskedRead </td>
+          <td>(</td>
+          <td class="paramtype">volatile const uint32_t *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform a peripheral register masked read. </p>
+<p>Read an unshifted and masked value from a peripheral register.</p>
+<dl class="section note"><dt>Note</dt><dd>This operation is not hardware accelerated.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Peripheral register address</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>Peripheral register mask</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Unshifted and masked register value </dd></dl>
+
+<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00315">315</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9">CMU_OscillatorEnable()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8225a5d4acac280abb182dc118e8df77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void BUS_RegMaskedSet </td>
+          <td>(</td>
+          <td class="paramtype">volatile uint32_t *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform a masked set operation on peripheral register address. </p>
+<p>Peripheral register masked set provides a single-cycle and atomic set operation of a bit-mask in a peripheral register. All 1's in the mask are set to 1 in the register. All 0's in the mask are not changed in the register. RAMs and special peripherals are not supported. Please refer to the reference manual for further details about peripheral register field set.</p>
+<dl class="section note"><dt>Note</dt><dd>This function is single-cycle and atomic on cores with peripheral bit set and clear support. It uses the memory alias region at PER_BITSET_MEM_BASE.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Peripheral register address</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>Mask to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00221">221</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
+
+<p>References <a class="el" href="group__EZR32LG330F256R69__Part.html#ga46ab71255f6da2fcd617bd33dfb3c202">PER_MEM_BASE</a>.</p>
+
+<p>Referenced by <a class="el" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite()</a>, and <a class="el" href="group__GPIO.html#ga39a52563da4bf3105f61a49dc77b79a1">GPIO_PortOutSet()</a>.</p>
 
 </div>
 </div>
@@ -427,6 +479,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Perform peripheral register masked clear and value write. </p>
 <p>This function first clears the mask in the peripheral register, then writes the value. Typically the mask is a bit-field in the register, and the value val is within the mask.</p>
 <dl class="section note"><dt>Note</dt><dd>This operation is not atomic. Note that the mask is first set to 0 before the val is set.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -438,51 +492,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00283">283</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
+<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00285">285</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
 
-<p>References <a class="el" href="em__bus_8h_source.html#l00251">BUS_RegMaskedClear()</a>, and <a class="el" href="em__bus_8h_source.html#l00219">BUS_RegMaskedSet()</a>.</p>
+<p>References <a class="el" href="group__BUS.html#gad226bfe478c81d51681539d935241758">BUS_RegMaskedClear()</a>, and <a class="el" href="group__BUS.html#ga8225a5d4acac280abb182dc118e8df77">BUS_RegMaskedSet()</a>.</p>
 
-<p>Referenced by <a class="el" href="em__acmp_8c_source.html#l00186">ACMP_CapsenseChannelSet()</a>, <a class="el" href="em__acmp_8c_source.html#l00280">ACMP_GPIOSetup()</a>, <a class="el" href="em__adc_8c_source.html#l00363">ADC_Init()</a>, <a class="el" href="em__gpio_8c_source.html#l00168">GPIO_IntConfig()</a>, <a class="el" href="em__gpio_8c_source.html#l00226">GPIO_PinModeSet()</a>, <a class="el" href="em__i2c_8c_source.html#l00223">I2C_BusFreqSet()</a>, and <a class="el" href="em__usart_8c_source.html#l00472">USART_BaudrateSyncSet()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaec23c86f9b844b9e0e102ebff0b96ff4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE uint32_t BUS_RegMaskedRead </td>
-          <td>(</td>
-          <td class="paramtype">volatile const uint32_t *&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mask</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Read an unshifted and masked value from a peripheral register.</p>
-<dl class="section note"><dt>Note</dt><dd>This operation is not hardware accelerated.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Peripheral register address</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>Peripheral register mask</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Unshifted and masked register value </dd></dl>
-
-<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00313">313</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__cmu_8c_source.html#l03394">CMU_OscillatorEnable()</a>.</p>
+<p>Referenced by <a class="el" href="group__ACMP.html#ga2c5edb834f314093c377e5c0673f7729">ACMP_CapsenseChannelSet()</a>, <a class="el" href="group__ACMP.html#ga7a312099dc46377af2714277236716d3">ACMP_GPIOSetup()</a>, <a class="el" href="group__ADC.html#ga3d5a968fbc40b29ebc05f17b311f2eb9">ADC_Init()</a>, <a class="el" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig()</a>, <a class="el" href="group__I2C.html#ga02fbf32736b2e6c756399ceeba9563a1">I2C_BusFreqSet()</a>, and <a class="el" href="group__USART.html#ga5b96146f7c05f78d31bd77aacd4a3b5f">USART_BaudrateSyncSet()</a>.</p>
 
 </div>
 </div>
@@ -491,7 +505,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:41:39 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:43:24 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32g-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -107,12 +106,12 @@ $(document).ready(function(){initNavTree('group__EBI.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">EBI<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">EBI<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>EBI External Bus Interface (EBI) Peripheral API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>EBI External Bus Interface (EBI) Peripheral API. </p>
+<p>This module contains functions to control the EBI peripheral of Silicon Labs 32-bit MCUs and SoCs. The EBI is used for accessing external parallel devices. The devices appear as part of the internal memory map of the MCU. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -142,6 +141,19 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga00aa2f73c29832bc6b5c525a78ba0d6c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cab94cfaf3ff8a1fe02c85948a16bb0f7c">ebiLineARDY</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cafa7f2d16f573f1c4daabefc4697e3357">ebiLineALE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca6c222f909a288e2a73d8bbc83a525df9">ebiLineWE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca8105b84ff350a0006ac23dc72551a204">ebiLineRE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cabef51b937f72bb44fe99c19fcd370ebe">ebiLineCS</a>
+<br />
+ }<tr class="separator:ga00aa2f73c29832bc6b5c525a78ba0d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:ga476667a09de244839afb6de3980ca0bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga476667a09de244839afb6de3980ca0bd">EBI_Mode_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__EBI.html#gga476667a09de244839afb6de3980ca0bda65e86d54d6f4b8358078d98e8a68b0ef">ebiModeD8A8</a> = EBI_CTRL_MODE_D8A8, 
 <br />
@@ -158,29 +170,12 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga606deb6325c511ef9397e7271d2908c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:ga00aa2f73c29832bc6b5c525a78ba0d6c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cab94cfaf3ff8a1fe02c85948a16bb0f7c">ebiLineARDY</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cafa7f2d16f573f1c4daabefc4697e3357">ebiLineALE</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca6c222f909a288e2a73d8bbc83a525df9">ebiLineWE</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca8105b84ff350a0006ac23dc72551a204">ebiLineRE</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cabef51b937f72bb44fe99c19fcd370ebe">ebiLineCS</a>
-<br />
- }<tr class="separator:ga00aa2f73c29832bc6b5c525a78ba0d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad9f118caa49eadf9713559cfac3d3c04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">EBI_Init</a> (const <a class="el" href="structEBI__Init__TypeDef.html">EBI_Init_TypeDef</a> *ebiInit)</td></tr>
-<tr class="memdesc:gad9f118caa49eadf9713559cfac3d3c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and enable External Bus Interface.  <a href="#gad9f118caa49eadf9713559cfac3d3c04">More...</a><br /></td></tr>
-<tr class="separator:gad9f118caa49eadf9713559cfac3d3c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23ce88f16cb66663c76c21573469d251"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga23ce88f16cb66663c76c21573469d251"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga23ce88f16cb66663c76c21573469d251">EBI_Disable</a> (void)</td></tr>
-<tr class="memdesc:ga23ce88f16cb66663c76c21573469d251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable External Bus Interface. <br /></td></tr>
-<tr class="separator:ga23ce88f16cb66663c76c21573469d251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabef4d874ff17aa478fae71333a4c1ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gabef4d874ff17aa478fae71333a4c1ef5">EBI_AddressTimingSet</a> (int setupCycles, int holdCycles)</td></tr>
+<tr class="memdesc:gabef4d874ff17aa478fae71333a4c1ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of address latch bus accesses.  <a href="#gabef4d874ff17aa478fae71333a4c1ef5">More...</a><br /></td></tr>
+<tr class="separator:gabef4d874ff17aa478fae71333a4c1ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4f9278d0c9c01c9f45ccf423becc1f31"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga4f9278d0c9c01c9f45ccf423becc1f31">EBI_BankAddress</a> (uint32_t bank)</td></tr>
 <tr class="memdesc:ga4f9278d0c9c01c9f45ccf423becc1f31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return base address of EBI bank.  <a href="#ga4f9278d0c9c01c9f45ccf423becc1f31">More...</a><br /></td></tr>
 <tr class="separator:ga4f9278d0c9c01c9f45ccf423becc1f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,20 +185,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memitem:ga3ac877439175a25e03e658d247ae1615"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga3ac877439175a25e03e658d247ae1615">EBI_ChipSelectEnable</a> (uint32_t cs, bool enable)</td></tr>
 <tr class="memdesc:ga3ac877439175a25e03e658d247ae1615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable EBI Chip Select.  <a href="#ga3ac877439175a25e03e658d247ae1615">More...</a><br /></td></tr>
 <tr class="separator:ga3ac877439175a25e03e658d247ae1615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23ce88f16cb66663c76c21573469d251"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga23ce88f16cb66663c76c21573469d251"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga23ce88f16cb66663c76c21573469d251">EBI_Disable</a> (void)</td></tr>
+<tr class="memdesc:ga23ce88f16cb66663c76c21573469d251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable External Bus Interface. <br /></td></tr>
+<tr class="separator:ga23ce88f16cb66663c76c21573469d251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9f118caa49eadf9713559cfac3d3c04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">EBI_Init</a> (const <a class="el" href="structEBI__Init__TypeDef.html">EBI_Init_TypeDef</a> *ebiInit)</td></tr>
+<tr class="memdesc:gad9f118caa49eadf9713559cfac3d3c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and enable External Bus Interface.  <a href="#gad9f118caa49eadf9713559cfac3d3c04">More...</a><br /></td></tr>
+<tr class="separator:gad9f118caa49eadf9713559cfac3d3c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7fea7741967f124ac0a4021b48cc786"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gaf7fea7741967f124ac0a4021b48cc786">EBI_PolaritySet</a> (<a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a> line, <a class="el" href="group__EBI.html#ga606deb6325c511ef9397e7271d2908c8">EBI_Polarity_TypeDef</a> polarity)</td></tr>
+<tr class="memdesc:gaf7fea7741967f124ac0a4021b48cc786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure EBI pin polarity.  <a href="#gaf7fea7741967f124ac0a4021b48cc786">More...</a><br /></td></tr>
+<tr class="separator:gaf7fea7741967f124ac0a4021b48cc786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabd1af7612f8f14f7574df14547ce97e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gabd1af7612f8f14f7574df14547ce97e2">EBI_ReadTimingSet</a> (int setupCycles, int strobeCycles, int holdCycles)</td></tr>
 <tr class="memdesc:gabd1af7612f8f14f7574df14547ce97e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of read bus accesses.  <a href="#gabd1af7612f8f14f7574df14547ce97e2">More...</a><br /></td></tr>
 <tr class="separator:gabd1af7612f8f14f7574df14547ce97e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad9333cd6c2c48f2d831513b88f638429"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gad9333cd6c2c48f2d831513b88f638429">EBI_WriteTimingSet</a> (int setupCycles, int strobeCycles, int holdCycles)</td></tr>
 <tr class="memdesc:gad9333cd6c2c48f2d831513b88f638429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of write bus accesses.  <a href="#gad9333cd6c2c48f2d831513b88f638429">More...</a><br /></td></tr>
 <tr class="separator:gad9333cd6c2c48f2d831513b88f638429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabef4d874ff17aa478fae71333a4c1ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gabef4d874ff17aa478fae71333a4c1ef5">EBI_AddressTimingSet</a> (int setupCycles, int holdCycles)</td></tr>
-<tr class="memdesc:gabef4d874ff17aa478fae71333a4c1ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of address latch bus accesses.  <a href="#gabef4d874ff17aa478fae71333a4c1ef5">More...</a><br /></td></tr>
-<tr class="separator:gabef4d874ff17aa478fae71333a4c1ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf7fea7741967f124ac0a4021b48cc786"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gaf7fea7741967f124ac0a4021b48cc786">EBI_PolaritySet</a> (<a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a> line, <a class="el" href="group__EBI.html#ga606deb6325c511ef9397e7271d2908c8">EBI_Polarity_TypeDef</a> polarity)</td></tr>
-<tr class="memdesc:gaf7fea7741967f124ac0a4021b48cc786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure EBI pin polarity.  <a href="#gaf7fea7741967f124ac0a4021b48cc786">More...</a><br /></td></tr>
-<tr class="separator:gaf7fea7741967f124ac0a4021b48cc786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga0e6ec99afd677c3e7ce9650bb1429687"></a>
 <div class="memitem">
@@ -227,7 +225,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__ebi_8h_source.html#l00075">75</a> of file <a class="el" href="em__ebi_8h_source.html">em_ebi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="bsp__stk_8c_source.html#l00064">BSP_EbiInit()</a>, <a class="el" href="em__ebi_8c_source.html#l00326">EBI_BankAddress()</a>, <a class="el" href="em__ebi_8c_source.html#l00295">EBI_BankEnable()</a>, and <a class="el" href="em__ebi_8c_source.html#l00060">EBI_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__BSP__STK.html#ga03b1ff40234468f05b725c7997d8bd84">BSP_EbiInit()</a>, <a class="el" href="group__EBI.html#ga4f9278d0c9c01c9f45ccf423becc1f31">EBI_BankAddress()</a>, <a class="el" href="group__EBI.html#gab75fa83a3071d81162d19db6ec191ec5">EBI_BankEnable()</a>, and <a class="el" href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">EBI_Init()</a>.</p>
 
 </div>
 </div>
@@ -244,7 +242,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__ebi_8h_source.html#l00076">76</a> of file <a class="el" href="em__ebi_8h_source.html">em_ebi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__ebi_8c_source.html#l00326">EBI_BankAddress()</a>, <a class="el" href="em__ebi_8c_source.html#l00295">EBI_BankEnable()</a>, and <a class="el" href="em__ebi_8c_source.html#l00060">EBI_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__EBI.html#ga4f9278d0c9c01c9f45ccf423becc1f31">EBI_BankAddress()</a>, <a class="el" href="group__EBI.html#gab75fa83a3071d81162d19db6ec191ec5">EBI_BankEnable()</a>, and <a class="el" href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">EBI_Init()</a>.</p>
 
 </div>
 </div>
@@ -261,7 +259,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__ebi_8h_source.html#l00077">77</a> of file <a class="el" href="em__ebi_8h_source.html">em_ebi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__ebi_8c_source.html#l00326">EBI_BankAddress()</a>, <a class="el" href="em__ebi_8c_source.html#l00295">EBI_BankEnable()</a>, <a class="el" href="em__ebi_8c_source.html#l00060">EBI_Init()</a>, and <a class="el" href="tftdirect_8c_source.html#l00054">TFT_DirectInit()</a>.</p>
+<p>Referenced by <a class="el" href="group__EBI.html#ga4f9278d0c9c01c9f45ccf423becc1f31">EBI_BankAddress()</a>, <a class="el" href="group__EBI.html#gab75fa83a3071d81162d19db6ec191ec5">EBI_BankEnable()</a>, <a class="el" href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">EBI_Init()</a>, and <a class="el" href="group__Tft.html#gafae3e95323a15ac1b4b6ed6fa3c13e9b">TFT_DirectInit()</a>.</p>
 
 </div>
 </div>
@@ -278,7 +276,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__ebi_8h_source.html#l00078">78</a> of file <a class="el" href="em__ebi_8h_source.html">em_ebi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__ebi_8c_source.html#l00326">EBI_BankAddress()</a>, <a class="el" href="em__ebi_8c_source.html#l00295">EBI_BankEnable()</a>, and <a class="el" href="em__ebi_8c_source.html#l00060">EBI_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__EBI.html#ga4f9278d0c9c01c9f45ccf423becc1f31">EBI_BankAddress()</a>, <a class="el" href="group__EBI.html#gab75fa83a3071d81162d19db6ec191ec5">EBI_BankEnable()</a>, and <a class="el" href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">EBI_Init()</a>.</p>
 
 </div>
 </div>
@@ -295,7 +293,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__ebi_8h_source.html#l00080">80</a> of file <a class="el" href="em__ebi_8h_source.html">em_ebi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__ebi_8c_source.html#l00383">EBI_ChipSelectEnable()</a>.</p>
+<p>Referenced by <a class="el" href="group__EBI.html#ga3ac877439175a25e03e658d247ae1615">EBI_ChipSelectEnable()</a>.</p>
 
 </div>
 </div>
@@ -312,7 +310,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__ebi_8h_source.html#l00081">81</a> of file <a class="el" href="em__ebi_8h_source.html">em_ebi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__ebi_8c_source.html#l00383">EBI_ChipSelectEnable()</a>.</p>
+<p>Referenced by <a class="el" href="group__EBI.html#ga3ac877439175a25e03e658d247ae1615">EBI_ChipSelectEnable()</a>.</p>
 
 </div>
 </div>
@@ -329,7 +327,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__ebi_8h_source.html#l00082">82</a> of file <a class="el" href="em__ebi_8h_source.html">em_ebi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__ebi_8c_source.html#l00383">EBI_ChipSelectEnable()</a>.</p>
+<p>Referenced by <a class="el" href="group__EBI.html#ga3ac877439175a25e03e658d247ae1615">EBI_ChipSelectEnable()</a>.</p>
 
 </div>
 </div>
@@ -346,7 +344,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__ebi_8h_source.html#l00083">83</a> of file <a class="el" href="em__ebi_8h_source.html">em_ebi.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__ebi_8c_source.html#l00383">EBI_ChipSelectEnable()</a>.</p>
+<p>Referenced by <a class="el" href="group__EBI.html#ga3ac877439175a25e03e658d247ae1615">EBI_ChipSelectEnable()</a>.</p>
 
 </div>
 </div>
@@ -391,6 +389,38 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ga00aa2f73c29832bc6b5c525a78ba0d6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>EBI Pin Line types </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga00aa2f73c29832bc6b5c525a78ba0d6cab94cfaf3ff8a1fe02c85948a16bb0f7c"></a>ebiLineARDY&#160;</td><td class="fielddoc">
+<p>Address Ready line </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga00aa2f73c29832bc6b5c525a78ba0d6cafa7f2d16f573f1c4daabefc4697e3357"></a>ebiLineALE&#160;</td><td class="fielddoc">
+<p>Address Latch Enable line </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga00aa2f73c29832bc6b5c525a78ba0d6ca6c222f909a288e2a73d8bbc83a525df9"></a>ebiLineWE&#160;</td><td class="fielddoc">
+<p>Write Enable line </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga00aa2f73c29832bc6b5c525a78ba0d6ca8105b84ff350a0006ac23dc72551a204"></a>ebiLineRE&#160;</td><td class="fielddoc">
+<p>Read Enable line </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga00aa2f73c29832bc6b5c525a78ba0d6cabef51b937f72bb44fe99c19fcd370ebe"></a>ebiLineCS&#160;</td><td class="fielddoc">
+<p>Chip Select line </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="em__ebi_8h_source.html#l00114">114</a> of file <a class="el" href="em__ebi_8h_source.html">em_ebi.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga476667a09de244839afb6de3980ca0bd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -440,65 +470,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 </div>
 </div>
-<a class="anchor" id="ga00aa2f73c29832bc6b5c525a78ba0d6c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>EBI Pin Line types </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga00aa2f73c29832bc6b5c525a78ba0d6cab94cfaf3ff8a1fe02c85948a16bb0f7c"></a>ebiLineARDY&#160;</td><td class="fielddoc">
-<p>Address Ready line </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga00aa2f73c29832bc6b5c525a78ba0d6cafa7f2d16f573f1c4daabefc4697e3357"></a>ebiLineALE&#160;</td><td class="fielddoc">
-<p>Address Latch Enable line </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga00aa2f73c29832bc6b5c525a78ba0d6ca6c222f909a288e2a73d8bbc83a525df9"></a>ebiLineWE&#160;</td><td class="fielddoc">
-<p>Write Enable line </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga00aa2f73c29832bc6b5c525a78ba0d6ca8105b84ff350a0006ac23dc72551a204"></a>ebiLineRE&#160;</td><td class="fielddoc">
-<p>Read Enable line </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga00aa2f73c29832bc6b5c525a78ba0d6cabef51b937f72bb44fe99c19fcd370ebe"></a>ebiLineCS&#160;</td><td class="fielddoc">
-<p>Chip Select line </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="em__ebi_8h_source.html#l00114">114</a> of file <a class="el" href="em__ebi_8h_source.html">em_ebi.h</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gad9f118caa49eadf9713559cfac3d3c04"></a>
+<a class="anchor" id="gabef4d874ff17aa478fae71333a4c1ef5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void EBI_Init </td>
+          <td class="memname">void EBI_AddressTimingSet </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structEBI__Init__TypeDef.html">EBI_Init_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>ebiInit</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>setupCycles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>holdCycles</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Configure timing values of address latch bus accesses. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ebiInit</td><td>EBI configuration structure</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">setupCycles</td><td>Sets the number of cycles the address is held after ALE is asserted</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">holdCycles</td><td>Sets the number of cycles the address is driven onto the ADDRDAT bus before ALE is asserted. If set 0, 1 cycle is inserted by HW </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>GPIO lines must be configured as PUSH_PULL for correct operation GPIO and EBI clocks must be enabled in the CMU </dd></dl>
 
-<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00060">60</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
+<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00547">547</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
 
-<p>References <a class="el" href="efm32g__ebi_8h_source.html#l00091">_EBI_CTRL_ARDYEN_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00090">_EBI_CTRL_ARDYEN_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00096">_EBI_CTRL_ARDYTODIS_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00095">_EBI_CTRL_ARDYTODIS_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00071">_EBI_CTRL_BANK0EN_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00076">_EBI_CTRL_BANK1EN_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00081">_EBI_CTRL_BANK2EN_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00086">_EBI_CTRL_BANK3EN_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00060">_EBI_CTRL_MODE_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00059">_EBI_CTRL_MODE_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00222">_EBI_ROUTE_ALEPEN_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00197">_EBI_ROUTE_EBIPEN_SHIFT</a>, <a class="el" href="em__ebi_8h_source.html#l00347">EBI_Init_TypeDef::addrHoldCycles</a>, <a class="el" href="em__ebi_8h_source.html#l00345">EBI_Init_TypeDef::addrSetupCycles</a>, <a class="el" href="em__ebi_8h_source.html#l00321">EBI_Init_TypeDef::alePolarity</a>, <a class="el" href="em__ebi_8h_source.html#l00339">EBI_Init_TypeDef::ardyDisableTimeout</a>, <a class="el" href="em__ebi_8h_source.html#l00337">EBI_Init_TypeDef::ardyEnable</a>, <a class="el" href="em__ebi_8h_source.html#l00319">EBI_Init_TypeDef::ardyPolarity</a>, <a class="el" href="em__ebi_8h_source.html#l00341">EBI_Init_TypeDef::banks</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="em__ebi_8h_source.html#l00343">EBI_Init_TypeDef::csLines</a>, <a class="el" href="em__ebi_8h_source.html#l00327">EBI_Init_TypeDef::csPolarity</a>, <a class="el" href="efm32g890f128_8h_source.html#l00334">EBI</a>, <a class="el" href="em__ebi_8c_source.html#l00543">EBI_AddressTimingSet()</a>, <a class="el" href="em__ebi_8h_source.html#l00075">EBI_BANK0</a>, <a class="el" href="em__ebi_8h_source.html#l00076">EBI_BANK1</a>, <a class="el" href="em__ebi_8h_source.html#l00077">EBI_BANK2</a>, <a class="el" href="em__ebi_8h_source.html#l00078">EBI_BANK3</a>, <a class="el" href="em__ebi_8c_source.html#l00383">EBI_ChipSelectEnable()</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00069">EBI_CTRL_BANK0EN</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00074">EBI_CTRL_BANK1EN</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00079">EBI_CTRL_BANK2EN</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00084">EBI_CTRL_BANK3EN</a>, <a class="el" href="em__ebi_8c_source.html#l00414">EBI_PolaritySet()</a>, <a class="el" href="em__ebi_8c_source.html#l00474">EBI_ReadTimingSet()</a>, <a class="el" href="em__ebi_8c_source.html#l00510">EBI_WriteTimingSet()</a>, <a class="el" href="em__ebi_8h_source.html#l00119">ebiLineALE</a>, <a class="el" href="em__ebi_8h_source.html#l00117">ebiLineARDY</a>, <a class="el" href="em__ebi_8h_source.html#l00125">ebiLineCS</a>, <a class="el" href="em__ebi_8h_source.html#l00123">ebiLineRE</a>, <a class="el" href="em__ebi_8h_source.html#l00121">ebiLineWE</a>, <a class="el" href="em__ebi_8h_source.html#l00095">ebiModeD16A16ALE</a>, <a class="el" href="em__ebi_8h_source.html#l00097">ebiModeD8A24ALE</a>, <a class="el" href="em__ebi_8h_source.html#l00093">ebiModeD8A8</a>, <a class="el" href="em__ebi_8h_source.html#l00385">EBI_Init_TypeDef::enable</a>, <a class="el" href="em__ebi_8h_source.html#l00317">EBI_Init_TypeDef::mode</a>, <a class="el" href="em__ebi_8h_source.html#l00357">EBI_Init_TypeDef::readHoldCycles</a>, <a class="el" href="em__ebi_8h_source.html#l00353">EBI_Init_TypeDef::readSetupCycles</a>, <a class="el" href="em__ebi_8h_source.html#l00355">EBI_Init_TypeDef::readStrobeCycles</a>, <a class="el" href="em__ebi_8h_source.html#l00325">EBI_Init_TypeDef::rePolarity</a>, <a class="el" href="em__ebi_8h_source.html#l00323">EBI_Init_TypeDef::wePolarity</a>, <a class="el" href="em__ebi_8h_source.html#l00371">EBI_Init_TypeDef::writeHoldCycles</a>, <a class="el" href="em__ebi_8h_source.html#l00367">EBI_Init_TypeDef::writeSetupCycles</a>, and <a class="el" href="em__ebi_8h_source.html#l00369">EBI_Init_TypeDef::writeStrobeCycles</a>.</p>
+<p>References <a class="el" href="group__EFM32G__EBI__BitFields.html#gaefd9e45a78ce22c6f3729c04d3eba506">_EBI_ADDRTIMING_ADDRHOLD_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#gae422ac6deb0e980840df4761781da93c">_EBI_ADDRTIMING_ADDRHOLD_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga8613dfb84fc08b36088989ea6d7e9e0d">_EBI_ADDRTIMING_ADDRSETUP_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga76b2e1e712197a798a5f844341dfc4c7">_EBI_ADDRTIMING_ADDRSETUP_SHIFT</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#gab534c0fc7902a85b9d85e8917705bdc3">EBI</a>.</p>
 
-<p>Referenced by <a class="el" href="bsp__stk_8c_source.html#l00064">BSP_EbiInit()</a>.</p>
+<p>Referenced by <a class="el" href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">EBI_Init()</a>.</p>
 
 </div>
 </div>
@@ -515,6 +525,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Return base address of EBI bank. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bank</td><td>Bank to return start address for</td></tr>
@@ -523,11 +535,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Absolute address of bank </dd></dl>
 
-<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00326">326</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
+<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00330">330</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
 
-<p>References <a class="el" href="efm32g890f128_8h_source.html#l00334">EBI</a>, <a class="el" href="em__ebi_8h_source.html#l00075">EBI_BANK0</a>, <a class="el" href="em__ebi_8h_source.html#l00076">EBI_BANK1</a>, <a class="el" href="em__ebi_8h_source.html#l00077">EBI_BANK2</a>, <a class="el" href="em__ebi_8h_source.html#l00078">EBI_BANK3</a>, and <a class="el" href="efm32g890f128_8h_source.html#l00149">EBI_MEM_BASE</a>.</p>
+<p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#gab534c0fc7902a85b9d85e8917705bdc3">EBI</a>, <a class="el" href="group__EBI.html#ga0e6ec99afd677c3e7ce9650bb1429687">EBI_BANK0</a>, <a class="el" href="group__EBI.html#ga6a73132b9c8ac3db896e424db258bd67">EBI_BANK1</a>, <a class="el" href="group__EBI.html#ga6e16c7caadce0bad841af38008c86ca9">EBI_BANK2</a>, <a class="el" href="group__EBI.html#gae91be7478be02097fdf2909197b1745b">EBI_BANK3</a>, and <a class="el" href="group__EFM32G890F128__Part.html#gaa29a94bf44beeec0de5e6ad27e631ea4">EBI_MEM_BASE</a>.</p>
 
-<p>Referenced by <a class="el" href="tftdirect_8c_source.html#l00054">TFT_DirectInit()</a>.</p>
+<p>Referenced by <a class="el" href="group__Tft.html#gafae3e95323a15ac1b4b6ed6fa3c13e9b">TFT_DirectInit()</a>.</p>
 
 </div>
 </div>
@@ -554,6 +566,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable or disable EBI Bank. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">banks</td><td>Banks to reconfigure, mask of EBI_BANK&lt;n&gt; flags</td></tr>
@@ -562,9 +576,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00295">295</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
+<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00299">299</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
 
-<p>References <a class="el" href="efm32g__ebi_8h_source.html#l00070">_EBI_CTRL_BANK0EN_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00075">_EBI_CTRL_BANK1EN_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00080">_EBI_CTRL_BANK2EN_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00085">_EBI_CTRL_BANK3EN_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="efm32g890f128_8h_source.html#l00334">EBI</a>, <a class="el" href="em__ebi_8h_source.html#l00075">EBI_BANK0</a>, <a class="el" href="em__ebi_8h_source.html#l00076">EBI_BANK1</a>, <a class="el" href="em__ebi_8h_source.html#l00077">EBI_BANK2</a>, and <a class="el" href="em__ebi_8h_source.html#l00078">EBI_BANK3</a>.</p>
+<p>References <a class="el" href="group__EFM32G__EBI__BitFields.html#gaad8abb9b017a371b5efd9e471f705673">_EBI_CTRL_BANK0EN_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga950566741967922ab333c813d17e9790">_EBI_CTRL_BANK1EN_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga6344c130b4cd5ca263728bbb3d8f360a">_EBI_CTRL_BANK2EN_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga152fd635a0c46b55505ab7332c47184f">_EBI_CTRL_BANK3EN_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#gab534c0fc7902a85b9d85e8917705bdc3">EBI</a>, <a class="el" href="group__EBI.html#ga0e6ec99afd677c3e7ce9650bb1429687">EBI_BANK0</a>, <a class="el" href="group__EBI.html#ga6a73132b9c8ac3db896e424db258bd67">EBI_BANK1</a>, <a class="el" href="group__EBI.html#ga6e16c7caadce0bad841af38008c86ca9">EBI_BANK2</a>, and <a class="el" href="group__EBI.html#gae91be7478be02097fdf2909197b1745b">EBI_BANK3</a>.</p>
 
 </div>
 </div>
@@ -591,6 +605,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable or disable EBI Chip Select. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cs</td><td>ChipSelect lines to reconfigure, mask of EBI_CS&lt;n&gt; flags</td></tr>
@@ -599,11 +615,83 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00383">383</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
+<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00387">387</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
 
-<p>References <a class="el" href="efm32g__ebi_8h_source.html#l00202">_EBI_ROUTE_CS0PEN_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00207">_EBI_ROUTE_CS1PEN_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00212">_EBI_ROUTE_CS2PEN_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00217">_EBI_ROUTE_CS3PEN_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="efm32g890f128_8h_source.html#l00334">EBI</a>, <a class="el" href="em__ebi_8h_source.html#l00080">EBI_CS0</a>, <a class="el" href="em__ebi_8h_source.html#l00081">EBI_CS1</a>, <a class="el" href="em__ebi_8h_source.html#l00082">EBI_CS2</a>, and <a class="el" href="em__ebi_8h_source.html#l00083">EBI_CS3</a>.</p>
+<p>References <a class="el" href="group__EFM32G__EBI__BitFields.html#gacbd56a2020f4d4d6886cf21cbfd34d60">_EBI_ROUTE_CS0PEN_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga2883a69ef3a3d2b3a98a259268da615d">_EBI_ROUTE_CS1PEN_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#gac8887457a96d477520e6e62c71bb74b1">_EBI_ROUTE_CS2PEN_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga4650c52c518e19ae4b9f2bdef643e20a">_EBI_ROUTE_CS3PEN_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#gab534c0fc7902a85b9d85e8917705bdc3">EBI</a>, <a class="el" href="group__EBI.html#gab8dde86c147f2f9b4df958d235d13989">EBI_CS0</a>, <a class="el" href="group__EBI.html#ga4257c94a757437d7d5ff890e5d396fd8">EBI_CS1</a>, <a class="el" href="group__EBI.html#gaf58880d45d062ff41bc913b520883be4">EBI_CS2</a>, and <a class="el" href="group__EBI.html#gaa28f60e16af08736db138e4b19fc9aab">EBI_CS3</a>.</p>
 
-<p>Referenced by <a class="el" href="em__ebi_8c_source.html#l00060">EBI_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">EBI_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gad9f118caa49eadf9713559cfac3d3c04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EBI_Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structEBI__Init__TypeDef.html">EBI_Init_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>ebiInit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure and enable External Bus Interface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ebiInit</td><td>EBI configuration structure</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>GPIO lines must be configured as PUSH_PULL for correct operation GPIO and EBI clocks must be enabled in the CMU </dd></dl>
+
+<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00064">64</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32G__EBI__BitFields.html#ga6ab0549786f0915b1c4fc2b2d3430f78">_EBI_CTRL_ARDYEN_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga3f44b89d244dd799af3ae9d8a841567b">_EBI_CTRL_ARDYEN_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga414625f74564f961fbda19f8a8cd7bb9">_EBI_CTRL_ARDYTODIS_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga52957a46f2fe1d62ccbddaade2f3305f">_EBI_CTRL_ARDYTODIS_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#gac07dab47e977c3a8c487b833df91a8e0">_EBI_CTRL_BANK0EN_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga24040d23fdbd56f0b9057066190d9c14">_EBI_CTRL_BANK1EN_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#gae42f87b7c424167f9a77ff7b871806af">_EBI_CTRL_BANK2EN_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga9b3659e1e72bf5dd8f2e4f6149d443c5">_EBI_CTRL_BANK3EN_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#gaefe6d4fee2e5db31f14faa8396c1d89f">_EBI_CTRL_MODE_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#gacb7c3bc28ddd4c16c9c7a6311cf7647a">_EBI_CTRL_MODE_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga1bdaba2f5a4c9c52a5e98189b49207ab">_EBI_ROUTE_ALEPEN_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#gad00f77ac9273a9f23a8926d3dd68905e">_EBI_ROUTE_EBIPEN_SHIFT</a>, <a class="el" href="structEBI__Init__TypeDef.html#a264b0935d2aec7b7d83c3d1320fcba50">EBI_Init_TypeDef::addrHoldCycles</a>, <a class="el" href="structEBI__Init__TypeDef.html#acca7e044126716e91f26fc43011b850e">EBI_Init_TypeDef::addrSetupCycles</a>, <a class="el" href="structEBI__Init__TypeDef.html#a908c2184402b534321ac8aacd27175e7">EBI_Init_TypeDef::alePolarity</a>, <a class="el" href="structEBI__Init__TypeDef.html#aa325eda8ae8cd072388da35fbea6a02f">EBI_Init_TypeDef::ardyDisableTimeout</a>, <a class="el" href="structEBI__Init__TypeDef.html#aa6fb2ebe6acc1804435c5865d7d8a4f7">EBI_Init_TypeDef::ardyEnable</a>, <a class="el" href="structEBI__Init__TypeDef.html#ae79fb50f49a47a4bfaa2137beb15fe59">EBI_Init_TypeDef::ardyPolarity</a>, <a class="el" href="structEBI__Init__TypeDef.html#a3747238e7ae1998eca3fa0d93ea02f92">EBI_Init_TypeDef::banks</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="structEBI__Init__TypeDef.html#a1b31a935a9311033248d0e23ecd7345d">EBI_Init_TypeDef::csLines</a>, <a class="el" href="structEBI__Init__TypeDef.html#ab9618ca3aaeefb197b4b844036b9a1a9">EBI_Init_TypeDef::csPolarity</a>, <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#gab534c0fc7902a85b9d85e8917705bdc3">EBI</a>, <a class="el" href="group__EBI.html#gabef4d874ff17aa478fae71333a4c1ef5">EBI_AddressTimingSet()</a>, <a class="el" href="group__EBI.html#ga0e6ec99afd677c3e7ce9650bb1429687">EBI_BANK0</a>, <a class="el" href="group__EBI.html#ga6a73132b9c8ac3db896e424db258bd67">EBI_BANK1</a>, <a class="el" href="group__EBI.html#ga6e16c7caadce0bad841af38008c86ca9">EBI_BANK2</a>, <a class="el" href="group__EBI.html#gae91be7478be02097fdf2909197b1745b">EBI_BANK3</a>, <a class="el" href="group__EBI.html#ga3ac877439175a25e03e658d247ae1615">EBI_ChipSelectEnable()</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga25e1cc668c66c3419be3abc2f75e0063">EBI_CTRL_BANK0EN</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#gaa88a9a1045689861370957a71592478b">EBI_CTRL_BANK1EN</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga312caaa5d5f23155983f0c06a5683938">EBI_CTRL_BANK2EN</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga15c7ecb81efac62720f0051500abe8e7">EBI_CTRL_BANK3EN</a>, <a class="el" href="group__EBI.html#gaf7fea7741967f124ac0a4021b48cc786">EBI_PolaritySet()</a>, <a class="el" href="group__EBI.html#gabd1af7612f8f14f7574df14547ce97e2">EBI_ReadTimingSet()</a>, <a class="el" href="group__EBI.html#gad9333cd6c2c48f2d831513b88f638429">EBI_WriteTimingSet()</a>, <a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cafa7f2d16f573f1c4daabefc4697e3357">ebiLineALE</a>, <a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cab94cfaf3ff8a1fe02c85948a16bb0f7c">ebiLineARDY</a>, <a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cabef51b937f72bb44fe99c19fcd370ebe">ebiLineCS</a>, <a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca8105b84ff350a0006ac23dc72551a204">ebiLineRE</a>, <a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca6c222f909a288e2a73d8bbc83a525df9">ebiLineWE</a>, <a class="el" href="group__EBI.html#gga476667a09de244839afb6de3980ca0bda96ee6c78194fa392b1d7941b9473d45d">ebiModeD16A16ALE</a>, <a class="el" href="group__EBI.html#gga476667a09de244839afb6de3980ca0bda3dbb9ef84c1dbc4e8b4f22dbc2f70c70">ebiModeD8A24ALE</a>, <a class="el" href="group__EBI.html#gga476667a09de244839afb6de3980ca0bda65e86d54d6f4b8358078d98e8a68b0ef">ebiModeD8A8</a>, <a class="el" href="structEBI__Init__TypeDef.html#acc9d61fca07fc6c3c2f03e656bef37d3">EBI_Init_TypeDef::enable</a>, <a class="el" href="structEBI__Init__TypeDef.html#acea33fb26e04a79a8a29a8fcfb786a25">EBI_Init_TypeDef::mode</a>, <a class="el" href="structEBI__Init__TypeDef.html#ac35c943b82fc783137b7efe5a45d34dd">EBI_Init_TypeDef::readHoldCycles</a>, <a class="el" href="structEBI__Init__TypeDef.html#aaa7f4f1fdf917ffe2371f7dff467873d">EBI_Init_TypeDef::readSetupCycles</a>, <a class="el" href="structEBI__Init__TypeDef.html#a2b9836cbd4db30562dc409b852d68097">EBI_Init_TypeDef::readStrobeCycles</a>, <a class="el" href="structEBI__Init__TypeDef.html#a7739541e66ab97604a9eee2c2f52358e">EBI_Init_TypeDef::rePolarity</a>, <a class="el" href="structEBI__Init__TypeDef.html#a55235db5fde2774de105f3e7b0415a97">EBI_Init_TypeDef::wePolarity</a>, <a class="el" href="structEBI__Init__TypeDef.html#a6593cf3457b5335614f12d7e0443f818">EBI_Init_TypeDef::writeHoldCycles</a>, <a class="el" href="structEBI__Init__TypeDef.html#ac80e60f485ac62a38443c900680804f1">EBI_Init_TypeDef::writeSetupCycles</a>, and <a class="el" href="structEBI__Init__TypeDef.html#a941dde5c6ffa04852c238326682cd62a">EBI_Init_TypeDef::writeStrobeCycles</a>.</p>
+
+<p>Referenced by <a class="el" href="group__BSP__STK.html#ga03b1ff40234468f05b725c7997d8bd84">BSP_EbiInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf7fea7741967f124ac0a4021b48cc786"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EBI_PolaritySet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a>&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__EBI.html#ga606deb6325c511ef9397e7271d2908c8">EBI_Polarity_TypeDef</a>&#160;</td>
+          <td class="paramname"><em>polarity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure EBI pin polarity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>Which pin/line to configure</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polarity</td><td>Active high, or active low </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00418">418</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32G__EBI__BitFields.html#ga20b03ecf26d9209ffa9936834afebeea">_EBI_POLARITY_ALEPOL_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga4f63b44ba079dc4c315c40e8721a0785">_EBI_POLARITY_ARDYPOL_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga2b4242ec4ea68988667f0f676df372f7">_EBI_POLARITY_CSPOL_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga1ecd42d886c449622baa2c7f0f9c17d9">_EBI_POLARITY_REPOL_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga0fbabaa499371eb4317e2472dabc3239">_EBI_POLARITY_WEPOL_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#gab534c0fc7902a85b9d85e8917705bdc3">EBI</a>, <a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cafa7f2d16f573f1c4daabefc4697e3357">ebiLineALE</a>, <a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cab94cfaf3ff8a1fe02c85948a16bb0f7c">ebiLineARDY</a>, <a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cabef51b937f72bb44fe99c19fcd370ebe">ebiLineCS</a>, <a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca8105b84ff350a0006ac23dc72551a204">ebiLineRE</a>, and <a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca6c222f909a288e2a73d8bbc83a525df9">ebiLineWE</a>.</p>
+
+<p>Referenced by <a class="el" href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">EBI_Init()</a>.</p>
 
 </div>
 </div>
@@ -636,6 +724,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Configure timing values of read bus accesses. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">setupCycles</td><td>Number of clock cycles for address setup before REn is asserted</td></tr>
@@ -645,11 +735,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00474">474</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
+<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00478">478</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
 
-<p>References <a class="el" href="efm32g__ebi_8h_source.html#l00124">_EBI_RDTIMING_RDHOLD_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00123">_EBI_RDTIMING_RDHOLD_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00116">_EBI_RDTIMING_RDSETUP_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00115">_EBI_RDTIMING_RDSETUP_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00120">_EBI_RDTIMING_RDSTRB_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00119">_EBI_RDTIMING_RDSTRB_SHIFT</a>, and <a class="el" href="efm32g890f128_8h_source.html#l00334">EBI</a>.</p>
+<p>References <a class="el" href="group__EFM32G__EBI__BitFields.html#ga3484a2dbc3cfadc9f7b8fe0f49d63561">_EBI_RDTIMING_RDHOLD_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#gab6e08663e1bb7f04a65218b9249dbb96">_EBI_RDTIMING_RDHOLD_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga0be19fb9a8874d50a41c836faa01ec54">_EBI_RDTIMING_RDSETUP_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga99492f8dae4757de383812f2479205ab">_EBI_RDTIMING_RDSETUP_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga2e1478e9b1ad661efba5d9411112caab">_EBI_RDTIMING_RDSTRB_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga238e2256c0cb0dacdaae3ba979429347">_EBI_RDTIMING_RDSTRB_SHIFT</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#gab534c0fc7902a85b9d85e8917705bdc3">EBI</a>.</p>
 
-<p>Referenced by <a class="el" href="em__ebi_8c_source.html#l00060">EBI_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">EBI_Init()</a>.</p>
 
 </div>
 </div>
@@ -682,6 +772,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Configure timing values of write bus accesses. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">setupCycles</td><td>Number of clock cycles for address setup before WEn is asserted</td></tr>
@@ -691,89 +783,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00510">510</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
+<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00514">514</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
 
-<p>References <a class="el" href="efm32g__ebi_8h_source.html#l00140">_EBI_WRTIMING_WRHOLD_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00139">_EBI_WRTIMING_WRHOLD_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00132">_EBI_WRTIMING_WRSETUP_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00131">_EBI_WRTIMING_WRSETUP_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00136">_EBI_WRTIMING_WRSTRB_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00135">_EBI_WRTIMING_WRSTRB_SHIFT</a>, and <a class="el" href="efm32g890f128_8h_source.html#l00334">EBI</a>.</p>
+<p>References <a class="el" href="group__EFM32G__EBI__BitFields.html#ga97b1d9952cf1bb22e36c74564df57569">_EBI_WRTIMING_WRHOLD_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#gae92c7e5d673366a99732f341ffeaa77f">_EBI_WRTIMING_WRHOLD_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#gab3582b581298e3f49872bfa0f3f51c6e">_EBI_WRTIMING_WRSETUP_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga6c969be33fbb8fb6be7fd73976e30e25">_EBI_WRTIMING_WRSETUP_SHIFT</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#ga74afac47192d881dcad421f00f70714b">_EBI_WRTIMING_WRSTRB_MASK</a>, <a class="el" href="group__EFM32G__EBI__BitFields.html#gabd7a06dd20728d65e36796d5437ef1ed">_EBI_WRTIMING_WRSTRB_SHIFT</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#gab534c0fc7902a85b9d85e8917705bdc3">EBI</a>.</p>
 
-<p>Referenced by <a class="el" href="em__ebi_8c_source.html#l00060">EBI_Init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gabef4d874ff17aa478fae71333a4c1ef5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void EBI_AddressTimingSet </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>setupCycles</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>holdCycles</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">setupCycles</td><td>Sets the number of cycles the address is held after ALE is asserted</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">holdCycles</td><td>Sets the number of cycles the address is driven onto the ADDRDAT bus before ALE is asserted. If set 0, 1 cycle is inserted by HW </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00543">543</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
-
-<p>References <a class="el" href="efm32g__ebi_8h_source.html#l00108">_EBI_ADDRTIMING_ADDRHOLD_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00107">_EBI_ADDRTIMING_ADDRHOLD_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00104">_EBI_ADDRTIMING_ADDRSETUP_MASK</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00103">_EBI_ADDRTIMING_ADDRSETUP_SHIFT</a>, and <a class="el" href="efm32g890f128_8h_source.html#l00334">EBI</a>.</p>
-
-<p>Referenced by <a class="el" href="em__ebi_8c_source.html#l00060">EBI_Init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaf7fea7741967f124ac0a4021b48cc786"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void EBI_PolaritySet </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a>&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__EBI.html#ga606deb6325c511ef9397e7271d2908c8">EBI_Polarity_TypeDef</a>&#160;</td>
-          <td class="paramname"><em>polarity</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">line</td><td>Which pin/line to configure</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">polarity</td><td>Active high, or active low </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__ebi_8c_source.html#l00414">414</a> of file <a class="el" href="em__ebi_8c_source.html">em_ebi.c</a>.</p>
-
-<p>References <a class="el" href="efm32g__ebi_8h_source.html#l00175">_EBI_POLARITY_ALEPOL_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00184">_EBI_POLARITY_ARDYPOL_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00148">_EBI_POLARITY_CSPOL_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00157">_EBI_POLARITY_REPOL_SHIFT</a>, <a class="el" href="efm32g__ebi_8h_source.html#l00166">_EBI_POLARITY_WEPOL_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="efm32g890f128_8h_source.html#l00334">EBI</a>, <a class="el" href="em__ebi_8h_source.html#l00119">ebiLineALE</a>, <a class="el" href="em__ebi_8h_source.html#l00117">ebiLineARDY</a>, <a class="el" href="em__ebi_8h_source.html#l00125">ebiLineCS</a>, <a class="el" href="em__ebi_8h_source.html#l00123">ebiLineRE</a>, and <a class="el" href="em__ebi_8h_source.html#l00121">ebiLineWE</a>.</p>
-
-<p>Referenced by <a class="el" href="em__ebi_8c_source.html#l00060">EBI_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">EBI_Init()</a>.</p>
 
 </div>
 </div>
@@ -782,7 +796,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:35:39 for EFM32 Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:22:27 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -114,10 +111,16 @@ $(document).ready(function(){initNavTree('ksz8851snl__spi_8h.html','');});
 <div class="title">ksz8851snl_spi.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>SPI interface API for KSZ8851SNL Ethernet controller. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>SPI interface API for KSZ8851SNL Ethernet controller.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<p>Definition in file <a class="el" href="ksz8851snl__spi_8h_source.html">ksz8851snl_spi.h</a>.</p>
+</div><div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 </div>
 <p><a href="ksz8851snl__spi_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -126,42 +129,34 @@ Functions</h2></td></tr>
 <tr class="memitem:ga12cf356cb196dbc44230f7ad5aa16742"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga12cf356cb196dbc44230f7ad5aa16742">KSZ8851SNL_SPI_Init</a> (void)</td></tr>
 <tr class="memdesc:ga12cf356cb196dbc44230f7ad5aa16742"><td class="mdescLeft">&#160;</td><td class="mdescRight">KSZ8851SNL_SPI_Init Initialize SPI interface to Ethernet controller.  <a href="group__ksz8851snl.html#ga12cf356cb196dbc44230f7ad5aa16742">More...</a><br /></td></tr>
 <tr class="separator:ga12cf356cb196dbc44230f7ad5aa16742"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaef8e79d738a8e792ea8335a14e4d80c5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a> (uint8_t reg)</td></tr>
-<tr class="memdesc:gaef8e79d738a8e792ea8335a14e4d80c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read ethernet controller register.  <a href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">More...</a><br /></td></tr>
-<tr class="separator:gaef8e79d738a8e792ea8335a14e4d80c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga194769a82e5a1c0ab03ea0923b7da2d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a> (uint8_t reg, uint16_t value)</td></tr>
-<tr class="memdesc:ga194769a82e5a1c0ab03ea0923b7da2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write ethernet controller register.  <a href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">More...</a><br /></td></tr>
-<tr class="separator:ga194769a82e5a1c0ab03ea0923b7da2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3eda0b4b00ab2ec0a7c265329587cc88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga3eda0b4b00ab2ec0a7c265329587cc88">KSZ8851SNL_SPI_ReadFifo</a> (int numBytes, uint8_t *data)</td></tr>
 <tr class="memdesc:ga3eda0b4b00ab2ec0a7c265329587cc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the ethernet controller RX FIFO.  <a href="group__ksz8851snl.html#ga3eda0b4b00ab2ec0a7c265329587cc88">More...</a><br /></td></tr>
 <tr class="separator:ga3eda0b4b00ab2ec0a7c265329587cc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef8e79d738a8e792ea8335a14e4d80c5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a> (uint8_t reg)</td></tr>
+<tr class="memdesc:gaef8e79d738a8e792ea8335a14e4d80c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read ethernet controller register.  <a href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">More...</a><br /></td></tr>
+<tr class="separator:gaef8e79d738a8e792ea8335a14e4d80c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bf407a2b072a222c5053b39963ed165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">KSZ8851SNL_SPI_WriteFifo</a> (int numBytes, const uint8_t *data)</td></tr>
+<tr class="memdesc:ga8bf407a2b072a222c5053b39963ed165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continue writing ethernet controller FIFO.  <a href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">More...</a><br /></td></tr>
+<tr class="separator:ga8bf407a2b072a222c5053b39963ed165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga06d01a766dd38a09f6cb657bf778b385"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga06d01a766dd38a09f6cb657bf778b385"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga06d01a766dd38a09f6cb657bf778b385">KSZ8851SNL_SPI_WriteFifoBegin</a> (void)</td></tr>
 <tr class="memdesc:ga06d01a766dd38a09f6cb657bf778b385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start writing to the ethernet controller FIFO. <br /></td></tr>
 <tr class="separator:ga06d01a766dd38a09f6cb657bf778b385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8bf407a2b072a222c5053b39963ed165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">KSZ8851SNL_SPI_WriteFifo</a> (int numBytes, const uint8_t *data)</td></tr>
-<tr class="memdesc:ga8bf407a2b072a222c5053b39963ed165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continue writing ethernet controller FIFO.  <a href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">More...</a><br /></td></tr>
-<tr class="separator:ga8bf407a2b072a222c5053b39963ed165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3102136a87269f6531366fca103c06f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3102136a87269f6531366fca103c06f7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga3102136a87269f6531366fca103c06f7">KSZ8851SNL_SPI_WriteFifoEnd</a> (void)</td></tr>
 <tr class="memdesc:ga3102136a87269f6531366fca103c06f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop read/write the ethernet controller FIFO. <br /></td></tr>
 <tr class="separator:ga3102136a87269f6531366fca103c06f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga194769a82e5a1c0ab03ea0923b7da2d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a> (uint8_t reg, uint16_t value)</td></tr>
+<tr class="memdesc:ga194769a82e5a1c0ab03ea0923b7da2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write ethernet controller register.  <a href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">More...</a><br /></td></tr>
+<tr class="separator:ga194769a82e5a1c0ab03ea0923b7da2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="ksz8851snl__spi_8h_source.html">ksz8851snl_spi.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="ksz8851snl__spi_8h.html">ksz8851snl_spi.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:45 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:40:42 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

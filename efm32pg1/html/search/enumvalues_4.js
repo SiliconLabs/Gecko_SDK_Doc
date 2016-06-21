@@ -13,8 +13,6 @@ var searchData=
   ['emubodmode_5finactive',['emuBODMode_Inactive',['../group__EMU.html#gga7453aecd1fc0cf2d035df6178dfb9a16a0c3b74c9a8136ea916a2ed80e8327ee6',1,'em_emu.h']]],
   ['emudcdcanaperipheralpower_5favdd',['emuDcdcAnaPeripheralPower_AVDD',['../group__EMU.html#ggaccf990475418eb1ed67acaed99efa4d0a035bd434069aca951cc17748ecd8267f',1,'em_emu.h']]],
   ['emudcdcanaperipheralpower_5fdcdc',['emuDcdcAnaPeripheralPower_DCDC',['../group__EMU.html#ggaccf990475418eb1ed67acaed99efa4d0a11b20cbde79a3d9aede0836319b4e6eb',1,'em_emu.h']]],
-  ['emudcdclnfasttransient',['emuDcdcLnFastTransient',['../group__EMU.html#ggaf36ca06d495617fe5f5c5bb12954effdab46a07b58878f200db8942dbd1fc7f9e',1,'em_emu.h']]],
-  ['emudcdclnhighefficiency',['emuDcdcLnHighEfficiency',['../group__EMU.html#ggaf36ca06d495617fe5f5c5bb12954effdade96ecdfd1d16091e2c1eccd5ad65d90',1,'em_emu.h']]],
   ['emudcdcmode_5fbypass',['emuDcdcMode_Bypass',['../group__EMU.html#gga8dc5324b0e9baa047afdb67739bdb53dac8304128b38af414714bc3b44126d2b6',1,'em_emu.h']]],
   ['emudcdcmode_5flownoise',['emuDcdcMode_LowNoise',['../group__EMU.html#gga8dc5324b0e9baa047afdb67739bdb53daa876fdc70a4e140199a7bd4e2dcca615',1,'em_emu.h']]],
   ['emuem4hibernate',['emuEM4Hibernate',['../group__EMU.html#ggad04d2dd04b72ad9b4e621c29f59b4e81a22289e7f9edf19143b8f9be98507439d',1,'em_emu.h']]],

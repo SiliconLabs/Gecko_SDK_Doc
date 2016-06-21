@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32tg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,19 +111,36 @@ $(document).ready(function(){initNavTree('em__emu_8c.html','');});
 <div class="title">em_emu.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Energy Management Unit (EMU) Peripheral API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>Energy Management Unit (EMU) Peripheral API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;limits.h&gt;</code><br />
+<p>Definition in file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+</div><div class="textblock"><code>#include &lt;limits.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="em__emu_8h_source.html">em_emu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__cmu_8h_source.html">em_cmu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__system_8h_source.html">em_system.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="em__common_8h_source.html">em_common.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__assert_8h_source.html">em_assert.h</a>&quot;</code><br />
 </div>
 <p><a href="em__emu_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga27ca632c20c9251019338c5690279974"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga27ca632c20c9251019338c5690279974">EMU_EM23Init</a> (<a class="el" href="structEMU__EM23Init__TypeDef.html">EMU_EM23Init_TypeDef</a> *em23Init)</td></tr>
+<tr class="memdesc:ga27ca632c20c9251019338c5690279974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update EMU module with Energy Mode 2 and 3 configuration.  <a href="group__EMU.html#ga27ca632c20c9251019338c5690279974">More...</a><br /></td></tr>
+<tr class="separator:ga27ca632c20c9251019338c5690279974"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacadc56c5e2a8fb2890edd139b694b25b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#gacadc56c5e2a8fb2890edd139b694b25b">EMU_EnterEM2</a> (bool restore)</td></tr>
 <tr class="memdesc:gacadc56c5e2a8fb2890edd139b694b25b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enter energy mode 2 (EM2).  <a href="group__EMU.html#gacadc56c5e2a8fb2890edd139b694b25b">More...</a><br /></td></tr>
 <tr class="separator:gacadc56c5e2a8fb2890edd139b694b25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,32 +156,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3d442fa018de5138afb19a2b85797099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga3d442fa018de5138afb19a2b85797099">EMU_UpdateOscConfig</a> (void)</td></tr>
 <tr class="memdesc:ga3d442fa018de5138afb19a2b85797099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update EMU module with CMU oscillator selection/enable status.  <a href="group__EMU.html#ga3d442fa018de5138afb19a2b85797099">More...</a><br /></td></tr>
 <tr class="separator:ga3d442fa018de5138afb19a2b85797099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27ca632c20c9251019338c5690279974"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga27ca632c20c9251019338c5690279974">EMU_EM23Init</a> (<a class="el" href="structEMU__EM23Init__TypeDef.html">EMU_EM23Init_TypeDef</a> *em23Init)</td></tr>
-<tr class="memdesc:ga27ca632c20c9251019338c5690279974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update EMU module with Energy Mode 2 and 3 configuration.  <a href="group__EMU.html#ga27ca632c20c9251019338c5690279974">More...</a><br /></td></tr>
-<tr class="separator:ga27ca632c20c9251019338c5690279974"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_b024e35bd40549d46920f272346444ee.html">src</a></li><li class="navelem"><a class="el" href="em__emu_8c.html">em_emu.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:05 for EFM32 Tiny Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:24:18 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

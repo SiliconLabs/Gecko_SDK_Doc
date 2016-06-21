@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32g-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -116,10 +114,23 @@ $(document).ready(function(){initNavTree('em__pcnt_8h.html','');});
 <div class="title">em_pcnt.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Pulse Counter (PCNT) peripheral API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>Pulse Counter (PCNT) peripheral API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="em__pcnt_8h_source.html">em_pcnt.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div>
 <p><a href="em__pcnt_8h_source.html">Go to the source code of this file.</a></p>
@@ -162,12 +173,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gacb21126956add214b4af318f61fd17cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PCNT.html#gacb21126956add214b4af318f61fd17cd">PCNT_CounterReset</a> (<a class="el" href="structPCNT__TypeDef.html">PCNT_TypeDef</a> *pcnt)</td></tr>
 <tr class="memdesc:gacb21126956add214b4af318f61fd17cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset PCNT counters and TOP register.  <a href="group__PCNT.html#gacb21126956add214b4af318f61fd17cd">More...</a><br /></td></tr>
 <tr class="separator:gacb21126956add214b4af318f61fd17cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f29435f61c53e4a6e86947fe1980be9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PCNT.html#ga4f29435f61c53e4a6e86947fe1980be9">PCNT_CounterTopSet</a> (<a class="el" href="structPCNT__TypeDef.html">PCNT_TypeDef</a> *pcnt, uint32_t count, uint32_t top)</td></tr>
-<tr class="memdesc:ga4f29435f61c53e4a6e86947fe1980be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set counter and top values.  <a href="group__PCNT.html#ga4f29435f61c53e4a6e86947fe1980be9">More...</a><br /></td></tr>
-<tr class="separator:ga4f29435f61c53e4a6e86947fe1980be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga420446309a8fbbb76574d96ffc6db024"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PCNT.html#ga420446309a8fbbb76574d96ffc6db024">PCNT_CounterSet</a> (<a class="el" href="structPCNT__TypeDef.html">PCNT_TypeDef</a> *pcnt, uint32_t count)</td></tr>
 <tr class="memdesc:ga420446309a8fbbb76574d96ffc6db024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set counter value.  <a href="group__PCNT.html#ga420446309a8fbbb76574d96ffc6db024">More...</a><br /></td></tr>
 <tr class="separator:ga420446309a8fbbb76574d96ffc6db024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f29435f61c53e4a6e86947fe1980be9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PCNT.html#ga4f29435f61c53e4a6e86947fe1980be9">PCNT_CounterTopSet</a> (<a class="el" href="structPCNT__TypeDef.html">PCNT_TypeDef</a> *pcnt, uint32_t count, uint32_t top)</td></tr>
+<tr class="memdesc:ga4f29435f61c53e4a6e86947fe1980be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set counter and top values.  <a href="group__PCNT.html#ga4f29435f61c53e4a6e86947fe1980be9">More...</a><br /></td></tr>
+<tr class="separator:ga4f29435f61c53e4a6e86947fe1980be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa8820c09f38c0237a58300bdfa53cb0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PCNT.html#gaa8820c09f38c0237a58300bdfa53cb0e">PCNT_Enable</a> (<a class="el" href="structPCNT__TypeDef.html">PCNT_TypeDef</a> *pcnt, <a class="el" href="group__PCNT.html#ga2fb0fc7f68c902b71b271ba5687643a4">PCNT_Mode_TypeDef</a> mode)</td></tr>
 <tr class="memdesc:gaa8820c09f38c0237a58300bdfa53cb0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PCNT operational mode.  <a href="group__PCNT.html#gaa8820c09f38c0237a58300bdfa53cb0e">More...</a><br /></td></tr>
 <tr class="separator:gaa8820c09f38c0237a58300bdfa53cb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,28 +222,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:gac40297f0dcf3f1502b8cbca2aced1466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set top value.  <a href="group__PCNT.html#gac40297f0dcf3f1502b8cbca2aced1466">More...</a><br /></td></tr>
 <tr class="separator:gac40297f0dcf3f1502b8cbca2aced1466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="em__pcnt_8h_source.html">em_pcnt.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__pcnt_8h.html">em_pcnt.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:35:35 for EFM32 Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:22:01 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

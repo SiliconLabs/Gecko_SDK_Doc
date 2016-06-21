@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -114,21 +112,27 @@ $(document).ready(function(){initNavTree('bsp__bcp_8h.html','');});
 <div class="title">bsp_bcp.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Board Controller Communications Protocol (BCP) definitions. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>Board Controller Communications Protocol (BCP) definitions.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<p>Definition in file <a class="el" href="bsp__bcp_8h_source.html">bsp_bcp.h</a>.</p>
+</div><div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;bspconfig.h&quot;</code><br />
 </div>
 <p><a href="bsp__bcp_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBCP__Packet__.html">BCP_Packet_</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BCP Packet Structure - Board controller communication protocol version 1.  <a href="structBCP__Packet__.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBCP__Packet.html">BCP_Packet</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BCP Packet Structure - Board controller communication protocol version 2.  <a href="structBCP__Packet.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBCP__Packet__.html">BCP_Packet_</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BCP Packet Structure - Board controller communication protocol version 1.  <a href="structBCP__Packet__.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBCP__PacketHeader.html">BCP_PacketHeader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BCP Packet Header definition.  <a href="structBCP__PacketHeader.html#details">More...</a><br /></td></tr>
@@ -136,62 +140,54 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga194e58feba75542de33f7180305d0c80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga194e58feba75542de33f7180305d0c80">BSP_BCP_INVALID</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:ga194e58feba75542de33f7180305d0c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8833bd439a15a03a448d682e478abc6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga8833bd439a15a03a448d682e478abc6a">BSP_BCP_FIRST</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:ga8833bd439a15a03a448d682e478abc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae21507ce48192e3905ceba1334ee4362"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#gae21507ce48192e3905ceba1334ee4362">BSP_BCP_ACK</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:gae21507ce48192e3905ceba1334ee4362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97f579172081f0c2e783ea9d251ae0b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga97f579172081f0c2e783ea9d251ae0b8">BSP_BCP_ECHO_REQ</a>&#160;&#160;&#160;10</td></tr>
-<tr class="separator:ga97f579172081f0c2e783ea9d251ae0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf2a0c79fbfb0aa1d1a5daba444fa216b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#gaf2a0c79fbfb0aa1d1a5daba444fa216b">BSP_BCP_ECHO_REPLY</a>&#160;&#160;&#160;11</td></tr>
-<tr class="separator:gaf2a0c79fbfb0aa1d1a5daba444fa216b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga249b6c201b45d747064e44be0518969a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga249b6c201b45d747064e44be0518969a">BSP_BCP_CURRENT_REQ</a>&#160;&#160;&#160;14</td></tr>
-<tr class="separator:ga249b6c201b45d747064e44be0518969a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6445e79280ab84bbc90d9bfc8417be73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga6445e79280ab84bbc90d9bfc8417be73">BSP_BCP_CURRENT_REPLY</a>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:ga6445e79280ab84bbc90d9bfc8417be73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab5be77a938905f62c3e5461d551d3f87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#gab5be77a938905f62c3e5461d551d3f87">BSP_BCP_VOLTAGE_REQ</a>&#160;&#160;&#160;18</td></tr>
-<tr class="separator:gab5be77a938905f62c3e5461d551d3f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga490e671df42b4175fa225205ec2f48c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga490e671df42b4175fa225205ec2f48c8">BSP_BCP_VOLTAGE_REPLY</a>&#160;&#160;&#160;20</td></tr>
-<tr class="separator:ga490e671df42b4175fa225205ec2f48c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga249b6c201b45d747064e44be0518969a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga249b6c201b45d747064e44be0518969a">BSP_BCP_CURRENT_REQ</a>&#160;&#160;&#160;14</td></tr>
+<tr class="separator:ga249b6c201b45d747064e44be0518969a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2a0c79fbfb0aa1d1a5daba444fa216b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#gaf2a0c79fbfb0aa1d1a5daba444fa216b">BSP_BCP_ECHO_REPLY</a>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:gaf2a0c79fbfb0aa1d1a5daba444fa216b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97f579172081f0c2e783ea9d251ae0b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga97f579172081f0c2e783ea9d251ae0b8">BSP_BCP_ECHO_REQ</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:ga97f579172081f0c2e783ea9d251ae0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadccfc80e1e392f5c0fe364f2ba2941a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#gadccfc80e1e392f5c0fe364f2ba2941a1">BSP_BCP_ENERGYMODE</a>&#160;&#160;&#160;22</td></tr>
 <tr class="separator:gadccfc80e1e392f5c0fe364f2ba2941a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga07365dc4c2bdf5a87bbe9f7ea027a86d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga07365dc4c2bdf5a87bbe9f7ea027a86d">BSP_BCP_STDOUT</a>&#160;&#160;&#160;24</td></tr>
-<tr class="separator:ga07365dc4c2bdf5a87bbe9f7ea027a86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60f587d39131bae0c72cec4086b4aab5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga60f587d39131bae0c72cec4086b4aab5">BSP_BCP_STDERR</a>&#160;&#160;&#160;26</td></tr>
-<tr class="separator:ga60f587d39131bae0c72cec4086b4aab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3e3f75fdc29b2f7542656fa35d2769eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga3e3f75fdc29b2f7542656fa35d2769eb">BSP_BCP_TEST</a>&#160;&#160;&#160;32</td></tr>
-<tr class="separator:ga3e3f75fdc29b2f7542656fa35d2769eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a2281b28a75bd8c4487de46f1c4b655"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga4a2281b28a75bd8c4487de46f1c4b655">BSP_BCP_TEST_REPLY</a>&#160;&#160;&#160;33</td></tr>
-<tr class="separator:ga4a2281b28a75bd8c4487de46f1c4b655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c00ba734e1e0081afc957f521f6b889"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga3c00ba734e1e0081afc957f521f6b889">BSP_BCP_NET_REQUEST</a>&#160;&#160;&#160;64</td></tr>
-<tr class="separator:ga3c00ba734e1e0081afc957f521f6b889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79ccd66114a31496e713916ec3897394"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga79ccd66114a31496e713916ec3897394">BSP_BCP_NET_REPLY</a>&#160;&#160;&#160;65</td></tr>
-<tr class="separator:ga79ccd66114a31496e713916ec3897394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8833bd439a15a03a448d682e478abc6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga8833bd439a15a03a448d682e478abc6a">BSP_BCP_FIRST</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ga8833bd439a15a03a448d682e478abc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga194e58feba75542de33f7180305d0c80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga194e58feba75542de33f7180305d0c80">BSP_BCP_INVALID</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga194e58feba75542de33f7180305d0c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0bec337d5c82cdeb2dbf240bf1c986b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga0bec337d5c82cdeb2dbf240bf1c986b0">BSP_BCP_LAST</a>&#160;&#160;&#160;100</td></tr>
 <tr class="separator:ga0bec337d5c82cdeb2dbf240bf1c986b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3a84b8923b076ebe66bb7600fc9da103"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga3a84b8923b076ebe66bb7600fc9da103">BSP_BCP_MAGIC</a>&#160;&#160;&#160;0xF1</td></tr>
 <tr class="separator:ga3a84b8923b076ebe66bb7600fc9da103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79ccd66114a31496e713916ec3897394"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga79ccd66114a31496e713916ec3897394">BSP_BCP_NET_REPLY</a>&#160;&#160;&#160;65</td></tr>
+<tr class="separator:ga79ccd66114a31496e713916ec3897394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c00ba734e1e0081afc957f521f6b889"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga3c00ba734e1e0081afc957f521f6b889">BSP_BCP_NET_REQUEST</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:ga3c00ba734e1e0081afc957f521f6b889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1301d249add0f549fa9e12bbe2c23d9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga1301d249add0f549fa9e12bbe2c23d9c">BSP_BCP_PACKET_SIZe</a>&#160;&#160;&#160;30</td></tr>
 <tr class="separator:ga1301d249add0f549fa9e12bbe2c23d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga00b58bdabb2d1f6061899c038d0bcfcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga00b58bdabb2d1f6061899c038d0bcfcf">BSP_BCP_PACKET_SIZE</a>&#160;&#160;&#160;132</td></tr>
 <tr class="separator:ga00b58bdabb2d1f6061899c038d0bcfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60f587d39131bae0c72cec4086b4aab5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga60f587d39131bae0c72cec4086b4aab5">BSP_BCP_STDERR</a>&#160;&#160;&#160;26</td></tr>
+<tr class="separator:ga60f587d39131bae0c72cec4086b4aab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07365dc4c2bdf5a87bbe9f7ea027a86d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga07365dc4c2bdf5a87bbe9f7ea027a86d">BSP_BCP_STDOUT</a>&#160;&#160;&#160;24</td></tr>
+<tr class="separator:ga07365dc4c2bdf5a87bbe9f7ea027a86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e3f75fdc29b2f7542656fa35d2769eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga3e3f75fdc29b2f7542656fa35d2769eb">BSP_BCP_TEST</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:ga3e3f75fdc29b2f7542656fa35d2769eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a2281b28a75bd8c4487de46f1c4b655"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga4a2281b28a75bd8c4487de46f1c4b655">BSP_BCP_TEST_REPLY</a>&#160;&#160;&#160;33</td></tr>
+<tr class="separator:ga4a2281b28a75bd8c4487de46f1c4b655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga490e671df42b4175fa225205ec2f48c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga490e671df42b4175fa225205ec2f48c8">BSP_BCP_VOLTAGE_REPLY</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:ga490e671df42b4175fa225205ec2f48c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5be77a938905f62c3e5461d551d3f87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#gab5be77a938905f62c3e5461d551d3f87">BSP_BCP_VOLTAGE_REQ</a>&#160;&#160;&#160;18</td></tr>
+<tr class="separator:gab5be77a938905f62c3e5461d551d3f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="bsp__bcp_8h_source.html">bsp_bcp.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_0ba1cf5c98b17c4a9647d9c0c7e49f09.html">bsp</a></li><li class="navelem"><a class="el" href="bsp__bcp_8h.html">bsp_bcp.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:42:39 for EZR32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:45:43 for EZR32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

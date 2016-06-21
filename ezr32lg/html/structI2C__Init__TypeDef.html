@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -69,13 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -111,30 +103,47 @@ $(document).ready(function(){initNavTree('structI2C__Init__TypeDef.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">I2C_Init_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a> &raquo; <a class="el" href="group__I2C.html">I2C</a></div></div>  </div>
+<div class="title">I2C_Init_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a> &raquo; <a class="el" href="group__I2C.html">I2C</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a1fd77eeee85d3038268a8a7e16314df9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__Init__TypeDef.html#a1fd77eeee85d3038268a8a7e16314df9">enable</a></td></tr>
-<tr class="separator:a1fd77eeee85d3038268a8a7e16314df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b8b0fe9a200168abb347ce1773a7d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__Init__TypeDef.html#a14b8b0fe9a200168abb347ce1773a7d4">master</a></td></tr>
-<tr class="separator:a14b8b0fe9a200168abb347ce1773a7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa95bd4e4c981f7324e964ed375c9ed4a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__Init__TypeDef.html#aa95bd4e4c981f7324e964ed375c9ed4a">refFreq</a></td></tr>
-<tr class="separator:aa95bd4e4c981f7324e964ed375c9ed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21000158b359b35d2dd6e732cd774b20"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__Init__TypeDef.html#a21000158b359b35d2dd6e732cd774b20">freq</a></td></tr>
-<tr class="separator:a21000158b359b35d2dd6e732cd774b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc90993308843c20b377bbee7d636123"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__I2C.html#gabb1516548b4528328682d6be09a3e3a5">I2C_ClockHLR_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__Init__TypeDef.html#acc90993308843c20b377bbee7d636123">clhr</a></td></tr>
-<tr class="separator:acc90993308843c20b377bbee7d636123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>I2C initialization structure. </p>
 
 <p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00196">196</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
+</div>
+<p><code>#include &lt;<a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:acc90993308843c20b377bbee7d636123"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__I2C.html#gabb1516548b4528328682d6be09a3e3a5">I2C_ClockHLR_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__Init__TypeDef.html#acc90993308843c20b377bbee7d636123">clhr</a></td></tr>
+<tr class="separator:acc90993308843c20b377bbee7d636123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd77eeee85d3038268a8a7e16314df9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__Init__TypeDef.html#a1fd77eeee85d3038268a8a7e16314df9">enable</a></td></tr>
+<tr class="separator:a1fd77eeee85d3038268a8a7e16314df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21000158b359b35d2dd6e732cd774b20"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__Init__TypeDef.html#a21000158b359b35d2dd6e732cd774b20">freq</a></td></tr>
+<tr class="separator:a21000158b359b35d2dd6e732cd774b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b8b0fe9a200168abb347ce1773a7d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__Init__TypeDef.html#a14b8b0fe9a200168abb347ce1773a7d4">master</a></td></tr>
+<tr class="separator:a14b8b0fe9a200168abb347ce1773a7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95bd4e4c981f7324e964ed375c9ed4a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__Init__TypeDef.html#aa95bd4e4c981f7324e964ed375c9ed4a">refFreq</a></td></tr>
+<tr class="separator:aa95bd4e4c981f7324e964ed375c9ed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="acc90993308843c20b377bbee7d636123"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__I2C.html#gabb1516548b4528328682d6be09a3e3a5">I2C_ClockHLR_TypeDef</a> I2C_Init_TypeDef::clhr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Clock low/high ratio control. </p>
+
+<p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00218">218</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__I2C.html#gab52e0fc0d3690e40f80a193d5b6fdd51">I2C_Init()</a>, and <a class="el" href="group__I2CSPM.html#ga65556785bb5d714b23e1149d8ed742e5">I2CSPM_Init()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a1fd77eeee85d3038268a8a7e16314df9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -148,41 +157,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00199">199</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__i2c_8c_source.html#l00349">I2C_Init()</a>, and <a class="el" href="i2cspm_8c_source.html#l00039">I2CSPM_Init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a14b8b0fe9a200168abb347ce1773a7d4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool I2C_Init_TypeDef::master</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set to master (true) or slave (false) mode </p>
-
-<p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00202">202</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__i2c_8c_source.html#l00349">I2C_Init()</a>, and <a class="el" href="i2cspm_8c_source.html#l00039">I2CSPM_Init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa95bd4e4c981f7324e964ed375c9ed4a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t I2C_Init_TypeDef::refFreq</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>I2C reference clock assumed when configuring bus frequency setup. Set it to 0 if currently configurated reference clock shall be used This parameter is only applicable if operating in master mode. </p>
-
-<p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00209">209</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__i2c_8c_source.html#l00349">I2C_Init()</a>, and <a class="el" href="i2cspm_8c_source.html#l00039">I2CSPM_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__I2C.html#gab52e0fc0d3690e40f80a193d5b6fdd51">I2C_Init()</a>, and <a class="el" href="group__I2CSPM.html#ga65556785bb5d714b23e1149d8ed742e5">I2CSPM_Init()</a>.</p>
 
 </div>
 </div>
@@ -199,24 +174,41 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00215">215</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__i2c_8c_source.html#l00349">I2C_Init()</a>, and <a class="el" href="i2cspm_8c_source.html#l00039">I2CSPM_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__I2C.html#gab52e0fc0d3690e40f80a193d5b6fdd51">I2C_Init()</a>, and <a class="el" href="group__I2CSPM.html#ga65556785bb5d714b23e1149d8ed742e5">I2CSPM_Init()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acc90993308843c20b377bbee7d636123"></a>
+<a class="anchor" id="a14b8b0fe9a200168abb347ce1773a7d4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__I2C.html#gabb1516548b4528328682d6be09a3e3a5">I2C_ClockHLR_TypeDef</a> I2C_Init_TypeDef::clhr</td>
+          <td class="memname">bool I2C_Init_TypeDef::master</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Clock low/high ratio control. </p>
+<p>Set to master (true) or slave (false) mode </p>
 
-<p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00218">218</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
+<p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00202">202</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__i2c_8c_source.html#l00349">I2C_Init()</a>, and <a class="el" href="i2cspm_8c_source.html#l00039">I2CSPM_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__I2C.html#gab52e0fc0d3690e40f80a193d5b6fdd51">I2C_Init()</a>, and <a class="el" href="group__I2CSPM.html#ga65556785bb5d714b23e1149d8ed742e5">I2CSPM_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa95bd4e4c981f7324e964ed375c9ed4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t I2C_Init_TypeDef::refFreq</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>I2C reference clock assumed when configuring bus frequency setup. Set it to 0 if currently configurated reference clock shall be used This parameter is only applicable if operating in master mode. </p>
+
+<p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00209">209</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__I2C.html#gab52e0fc0d3690e40f80a193d5b6fdd51">I2C_Init()</a>, and <a class="el" href="group__I2CSPM.html#ga65556785bb5d714b23e1149d8ed742e5">I2CSPM_Init()</a>.</p>
 
 </div>
 </div>
@@ -229,7 +221,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structI2C__Init__TypeDef.html">I2C_Init_TypeDef</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:41:41 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:43:37 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

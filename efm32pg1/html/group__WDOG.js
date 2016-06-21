@@ -1,16 +1,20 @@
 var group__WDOG =
 [
     [ "WDOG_Init_TypeDef", "structWDOG__Init__TypeDef.html", [
-      [ "enable", "structWDOG__Init__TypeDef.html#a0adb705a2990beeec0e7364db15a93a9", null ],
+      [ "clkSel", "structWDOG__Init__TypeDef.html#a16dbd1225f5fd50a98604f024134c640", null ],
       [ "debugRun", "structWDOG__Init__TypeDef.html#adab4a9ecef6e9201f157a327b5966f58", null ],
       [ "em2Run", "structWDOG__Init__TypeDef.html#a55c6116baa8f623a13b7ee7b4a14a2cd", null ],
       [ "em3Run", "structWDOG__Init__TypeDef.html#a8268cf3e7d6fde7dad369f1741684066", null ],
       [ "em4Block", "structWDOG__Init__TypeDef.html#ae079f5c535a7f1d67575540a8db116b8", null ],
-      [ "swoscBlock", "structWDOG__Init__TypeDef.html#a3d0739fdc3cc61a95c26316a7ab3723e", null ],
+      [ "enable", "structWDOG__Init__TypeDef.html#a0adb705a2990beeec0e7364db15a93a9", null ],
       [ "lock", "structWDOG__Init__TypeDef.html#a15ac1297036d0a0e49cb6ebc5d355fb2", null ],
-      [ "clkSel", "structWDOG__Init__TypeDef.html#a16dbd1225f5fd50a98604f024134c640", null ],
-      [ "perSel", "structWDOG__Init__TypeDef.html#af068d276089f68713b896e1a0575ef7b", null ]
+      [ "perSel", "structWDOG__Init__TypeDef.html#af068d276089f68713b896e1a0575ef7b", null ],
+      [ "resetDisable", "structWDOG__Init__TypeDef.html#aecfd6a4964769d3ff7038a339de16f92", null ],
+      [ "swoscBlock", "structWDOG__Init__TypeDef.html#a3d0739fdc3cc61a95c26316a7ab3723e", null ],
+      [ "warnSel", "structWDOG__Init__TypeDef.html#ad8588643b00d999620ac2870f53b73d2", null ],
+      [ "winSel", "structWDOG__Init__TypeDef.html#a7a9dc68f7f3a310df7e2a4df19661d3a", null ]
     ] ],
+    [ "DEFAULT_WDOG", "group__WDOG.html#gaa8a21262e0b67fbe432eed3edfc246fd", null ],
     [ "WDOG_INIT_DEFAULT", "group__WDOG.html#ga8169ae345fecb9d7abddeb495db92693", null ],
     [ "WDOG_ClkSel_TypeDef", "group__WDOG.html#ga84959950c7a90940b7b2aa414648f338", [
       [ "wdogClkSelULFRCO", "group__WDOG.html#gga84959950c7a90940b7b2aa414648f338a13e2668aa9503395dece59d8ed08e468", null ],
@@ -35,8 +39,20 @@ var group__WDOG =
       [ "wdogPeriod_128k", "group__WDOG.html#ggafb32176c669596071269d5fe62734505ad1fde90472a0e74d6db24fe91149f5ea", null ],
       [ "wdogPeriod_256k", "group__WDOG.html#ggafb32176c669596071269d5fe62734505a763da9dc72d140d86dac3be63fcc77a9", null ]
     ] ],
-    [ "WDOG_Enable", "group__WDOG.html#ga662ed794f642aac8293b7cae09c4b223", null ],
-    [ "WDOG_Feed", "group__WDOG.html#gabf4cfa0c00f36eb71896f2ce1e884d27", null ],
-    [ "WDOG_Init", "group__WDOG.html#ga227aa37d1eab4e7748ecc801c386c7a7", null ],
-    [ "WDOG_Lock", "group__WDOG.html#ga26823031e069f4133964156550b64097", null ]
+    [ "WDOG_WarnSel_TypeDef", "group__WDOG.html#gaf247334d25d8a47cbd5ececf5d942f6d", null ],
+    [ "WDOG_WinSel_TypeDef", "group__WDOG.html#gaf7f977a90d9fe36572ad083fc1478839", null ],
+    [ "WDOG_Enable", "group__WDOG.html#ga88ccf7374d7c9c93c4b5627f84dab552", null ],
+    [ "WDOG_Feed", "group__WDOG.html#ga92bafbf5cb3834524aae57ffe579d9e6", null ],
+    [ "WDOG_Init", "group__WDOG.html#ga84515db25226cd9e5a7fd9b4dec7bef2", null ],
+    [ "WDOG_Lock", "group__WDOG.html#ga2fee9f36132888d17e299e5b6b4edbb5", null ],
+    [ "WDOGn_Enable", "group__WDOG.html#gaccf944498d4c40e6d87afa84e06d297b", null ],
+    [ "WDOGn_Feed", "group__WDOG.html#ga21dd2a92e33eaf3edd48d626cb4ff72b", null ],
+    [ "WDOGn_Init", "group__WDOG.html#ga3de9748141ca1e172ec40a77b8e86433", null ],
+    [ "WDOGn_IntClear", "group__WDOG.html#ga17e03c083de18cfcef912cb06bfe1962", null ],
+    [ "WDOGn_IntDisable", "group__WDOG.html#ga930ac1c0767bbe4d86bc00832129ae81", null ],
+    [ "WDOGn_IntEnable", "group__WDOG.html#gaa0768e472ea7cbeb28149dfaf7fb9759", null ],
+    [ "WDOGn_IntGet", "group__WDOG.html#ga51ba8d8f39ace24ca7fe11844d27489d", null ],
+    [ "WDOGn_IntGetEnabled", "group__WDOG.html#ga16af4f540f8271f162e7d2d9a23df02b", null ],
+    [ "WDOGn_IntSet", "group__WDOG.html#ga8025d828bbef8cbeb80497b245e0f47a", null ],
+    [ "WDOGn_Lock", "group__WDOG.html#ga638259d740de220fb9b34a5b9654e182", null ]
 ];

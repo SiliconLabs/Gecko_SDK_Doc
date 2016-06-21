@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -70,13 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -112,19 +103,25 @@ $(document).ready(function(){initNavTree('structLDMA__TransferCfg__t.html','');}
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">LDMA_TransferCfg_t Struct Reference<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a> &raquo; <a class="el" href="group__LDMA.html">LDMA</a></div></div>  </div>
+<div class="title">LDMA_TransferCfg_t Struct Reference<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a> &raquo; <a class="el" href="group__LDMA.html">LDMA</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>DMA transfer configuration structure. </p>
+<p>This struct configures all aspects of a DMA transfer. </p>
 
-<p>DMA transfer configuration structure.  
- <a href="structLDMA__TransferCfg__t.html#details">More...</a></p>
-
+<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00422">422</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a63fc25d044343f589427ee04637351cf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#a63fc25d044343f589427ee04637351cf">ldmaReqSel</a></td></tr>
-<tr class="separator:a63fc25d044343f589427ee04637351cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52334eee003bf37c2b41153c153c13a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#af52334eee003bf37c2b41153c153c13a">ldmaCfgArbSlots</a></td></tr>
+<tr class="separator:af52334eee003bf37c2b41153c153c13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0451d0520f33c85f2d289a7e350c77"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#a2f0451d0520f33c85f2d289a7e350c77">ldmaCfgDstIncSign</a></td></tr>
+<tr class="separator:a2f0451d0520f33c85f2d289a7e350c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea560beb6aca344fd728ed7390fa58b9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#aea560beb6aca344fd728ed7390fa58b9">ldmaCfgSrcIncSign</a></td></tr>
+<tr class="separator:aea560beb6aca344fd728ed7390fa58b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae640d894800318e06be6565ff1711348"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#ae640d894800318e06be6565ff1711348">ldmaCtrlSyncPrsClrOff</a></td></tr>
 <tr class="separator:ae640d894800318e06be6565ff1711348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc4d0194d1b1ff3ffb71bdd9ee90637f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#abc4d0194d1b1ff3ffb71bdd9ee90637f">ldmaCtrlSyncPrsClrOn</a></td></tr>
@@ -133,143 +130,16 @@ Data Fields</h2></td></tr>
 <tr class="separator:ab9742fd8b8ec70fa0de5694caeaaa40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fe41d288887507dfd19f46b384d2f75"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#a0fe41d288887507dfd19f46b384d2f75">ldmaCtrlSyncPrsSetOn</a></td></tr>
 <tr class="separator:a0fe41d288887507dfd19f46b384d2f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77209f95fecd6dac7794748e9eaf9524"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#a77209f95fecd6dac7794748e9eaf9524">ldmaReqDis</a></td></tr>
-<tr class="separator:a77209f95fecd6dac7794748e9eaf9524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac80b4e0618e1a1cffc390aae9c14eb09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#ac80b4e0618e1a1cffc390aae9c14eb09">ldmaDbgHalt</a></td></tr>
 <tr class="separator:ac80b4e0618e1a1cffc390aae9c14eb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af52334eee003bf37c2b41153c153c13a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#af52334eee003bf37c2b41153c153c13a">ldmaCfgArbSlots</a></td></tr>
-<tr class="separator:af52334eee003bf37c2b41153c153c13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea560beb6aca344fd728ed7390fa58b9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#aea560beb6aca344fd728ed7390fa58b9">ldmaCfgSrcIncSign</a></td></tr>
-<tr class="separator:aea560beb6aca344fd728ed7390fa58b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f0451d0520f33c85f2d289a7e350c77"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#a2f0451d0520f33c85f2d289a7e350c77">ldmaCfgDstIncSign</a></td></tr>
-<tr class="separator:a2f0451d0520f33c85f2d289a7e350c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afac030732b213ff3be4fca53142e7a6a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#afac030732b213ff3be4fca53142e7a6a">ldmaLoopCnt</a></td></tr>
 <tr class="separator:afac030732b213ff3be4fca53142e7a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77209f95fecd6dac7794748e9eaf9524"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#a77209f95fecd6dac7794748e9eaf9524">ldmaReqDis</a></td></tr>
+<tr class="separator:a77209f95fecd6dac7794748e9eaf9524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63fc25d044343f589427ee04637351cf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLDMA__TransferCfg__t.html#a63fc25d044343f589427ee04637351cf">ldmaReqSel</a></td></tr>
+<tr class="separator:a63fc25d044343f589427ee04637351cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This struct configures all aspects of a DMA transfer. </p>
-
-<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00422">422</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a63fc25d044343f589427ee04637351cf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t LDMA_TransferCfg_t::ldmaReqSel</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Selects DMA trigger source. </p>
-
-<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00424">424</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__ldma_8c_source.html#l00309">LDMA_StartTransfer()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae640d894800318e06be6565ff1711348"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t LDMA_TransferCfg_t::ldmaCtrlSyncPrsClrOff</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>PRS Synctrig clear enables to clear. </p>
-
-<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00425">425</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__ldma_8c_source.html#l00309">LDMA_StartTransfer()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abc4d0194d1b1ff3ffb71bdd9ee90637f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t LDMA_TransferCfg_t::ldmaCtrlSyncPrsClrOn</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>PRS Synctrig clear enables to set. </p>
-
-<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00426">426</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__ldma_8c_source.html#l00309">LDMA_StartTransfer()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab9742fd8b8ec70fa0de5694caeaaa40c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t LDMA_TransferCfg_t::ldmaCtrlSyncPrsSetOff</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>PRS Synctrig set enables to clear. </p>
-
-<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00427">427</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__ldma_8c_source.html#l00309">LDMA_StartTransfer()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0fe41d288887507dfd19f46b384d2f75"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t LDMA_TransferCfg_t::ldmaCtrlSyncPrsSetOn</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>PRS Synctrig set enables to set. </p>
-
-<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00428">428</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__ldma_8c_source.html#l00309">LDMA_StartTransfer()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a77209f95fecd6dac7794748e9eaf9524"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LDMA_TransferCfg_t::ldmaReqDis</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Mask the PRS trigger input. </p>
-
-<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00429">429</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__ldma_8c_source.html#l00309">LDMA_StartTransfer()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac80b4e0618e1a1cffc390aae9c14eb09"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LDMA_TransferCfg_t::ldmaDbgHalt</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Dis. DMA trig when cpu is halted. </p>
-
-<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00430">430</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__ldma_8c_source.html#l00309">LDMA_StartTransfer()</a>.</p>
-
-</div>
-</div>
+<h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="af52334eee003bf37c2b41153c153c13a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -283,24 +153,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00431">431</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__ldma_8c_source.html#l00309">LDMA_StartTransfer()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aea560beb6aca344fd728ed7390fa58b9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t LDMA_TransferCfg_t::ldmaCfgSrcIncSign</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Source addr. increment sign. </p>
-
-<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00432">432</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__ldma_8c_source.html#l00309">LDMA_StartTransfer()</a>.</p>
+<p>Referenced by <a class="el" href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">LDMA_StartTransfer()</a>.</p>
 
 </div>
 </div>
@@ -317,7 +170,109 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00433">433</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__ldma_8c_source.html#l00309">LDMA_StartTransfer()</a>.</p>
+<p>Referenced by <a class="el" href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">LDMA_StartTransfer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea560beb6aca344fd728ed7390fa58b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t LDMA_TransferCfg_t::ldmaCfgSrcIncSign</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Source addr. increment sign. </p>
+
+<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00432">432</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">LDMA_StartTransfer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae640d894800318e06be6565ff1711348"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t LDMA_TransferCfg_t::ldmaCtrlSyncPrsClrOff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PRS Synctrig clear enables to clear. </p>
+
+<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00425">425</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">LDMA_StartTransfer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abc4d0194d1b1ff3ffb71bdd9ee90637f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t LDMA_TransferCfg_t::ldmaCtrlSyncPrsClrOn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PRS Synctrig clear enables to set. </p>
+
+<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00426">426</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">LDMA_StartTransfer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9742fd8b8ec70fa0de5694caeaaa40c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t LDMA_TransferCfg_t::ldmaCtrlSyncPrsSetOff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PRS Synctrig set enables to clear. </p>
+
+<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00427">427</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">LDMA_StartTransfer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0fe41d288887507dfd19f46b384d2f75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t LDMA_TransferCfg_t::ldmaCtrlSyncPrsSetOn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PRS Synctrig set enables to set. </p>
+
+<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00428">428</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">LDMA_StartTransfer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac80b4e0618e1a1cffc390aae9c14eb09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LDMA_TransferCfg_t::ldmaDbgHalt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dis. DMA trig when cpu is halted. </p>
+
+<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00430">430</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">LDMA_StartTransfer()</a>.</p>
 
 </div>
 </div>
@@ -334,7 +289,41 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00434">434</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__ldma_8c_source.html#l00309">LDMA_StartTransfer()</a>.</p>
+<p>Referenced by <a class="el" href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">LDMA_StartTransfer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a77209f95fecd6dac7794748e9eaf9524"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LDMA_TransferCfg_t::ldmaReqDis</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mask the PRS trigger input. </p>
+
+<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00429">429</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">LDMA_StartTransfer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63fc25d044343f589427ee04637351cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t LDMA_TransferCfg_t::ldmaReqSel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Selects DMA trigger source. </p>
+
+<p>Definition at line <a class="el" href="em__ldma_8h_source.html#l00424">424</a> of file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">LDMA_StartTransfer()</a>.</p>
 
 </div>
 </div>
@@ -347,7 +336,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structLDMA__TransferCfg__t.html">LDMA_TransferCfg_t</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:51 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:41:08 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

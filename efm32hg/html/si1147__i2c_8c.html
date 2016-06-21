@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32hg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32hg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,10 +111,16 @@ $(document).ready(function(){initNavTree('si1147__i2c_8c.html','');});
 <div class="title">si1147_i2c.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>i2c driver for the Si1147 </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>i2c driver for the Si1147  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="i2cspm_8h_source.html">i2cspm.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="si1147__i2c_8c_source.html">si1147_i2c.c</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="i2cspm_8h_source.html">i2cspm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="si114x__functions_8h_source.html">si114x_functions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rtcdriver_8h_source.html">rtcdriver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="si1147__i2c_8h_source.html">si1147_i2c.h</a>&quot;</code><br />
@@ -125,30 +129,6 @@ $(document).ready(function(){initNavTree('si1147__i2c_8c.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga8066eedd4bbac304e733a89e09cd6786"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga8066eedd4bbac304e733a89e09cd6786">Si1147_Read_Register</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint8_t reg, uint8_t *data)</td></tr>
-<tr class="memdesc:ga8066eedd4bbac304e733a89e09cd6786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads register from the Si1147 sensor.  <a href="group__Si114x.html#ga8066eedd4bbac304e733a89e09cd6786">More...</a><br /></td></tr>
-<tr class="separator:ga8066eedd4bbac304e733a89e09cd6786"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2464ccbbf4938c5550702011d6dd5a4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#gad2464ccbbf4938c5550702011d6dd5a4">Si1147_Write_Register</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint8_t reg, uint8_t data)</td></tr>
-<tr class="memdesc:gad2464ccbbf4938c5550702011d6dd5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes register in the Si1147 sensor.  <a href="group__Si114x.html#gad2464ccbbf4938c5550702011d6dd5a4">More...</a><br /></td></tr>
-<tr class="separator:gad2464ccbbf4938c5550702011d6dd5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec6f34819894c8d7b2f86fb574da203e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#gaec6f34819894c8d7b2f86fb574da203e">Si1147_Write_Block_Register</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint8_t reg, uint8_t length, uint8_t const *data)</td></tr>
-<tr class="memdesc:gaec6f34819894c8d7b2f86fb574da203e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a block of data to the Si1147 sensor.  <a href="group__Si114x.html#gaec6f34819894c8d7b2f86fb574da203e">More...</a><br /></td></tr>
-<tr class="separator:gaec6f34819894c8d7b2f86fb574da203e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7">Si1147_Read_Block_Register</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint8_t reg, uint8_t length, uint8_t *data)</td></tr>
-<tr class="memdesc:ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a block of data from the Si1147 sensor.  <a href="group__Si114x.html#ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7">More...</a><br /></td></tr>
-<tr class="separator:ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8d9e6e60e0ced326193208cdf976bbee"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga8d9e6e60e0ced326193208cdf976bbee">Si114xWriteToRegister</a> (HANDLE <a class="el" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, uint8_t address, uint8_t data)</td></tr>
-<tr class="memdesc:ga8d9e6e60e0ced326193208cdf976bbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes to Si114x Register.  <a href="group__Si114x.html#ga8d9e6e60e0ced326193208cdf976bbee">More...</a><br /></td></tr>
-<tr class="separator:ga8d9e6e60e0ced326193208cdf976bbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeae79629a9f5a41c75ba329fa056eeef"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#gaeae79629a9f5a41c75ba329fa056eeef">Si114xReadFromRegister</a> (HANDLE <a class="el" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, uint8_t address)</td></tr>
-<tr class="memdesc:gaeae79629a9f5a41c75ba329fa056eeef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads from Si114x register.  <a href="group__Si114x.html#gaeae79629a9f5a41c75ba329fa056eeef">More...</a><br /></td></tr>
-<tr class="separator:gaeae79629a9f5a41c75ba329fa056eeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga15059dd986a51d8188b5c93aa70681b6"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga15059dd986a51d8188b5c93aa70681b6">Si114xBlockWrite</a> (HANDLE <a class="el" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, uint8_t address, uint8_t length, uint8_t *values)</td></tr>
-<tr class="memdesc:ga15059dd986a51d8188b5c93aa70681b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes block of Si114x registers.  <a href="group__Si114x.html#ga15059dd986a51d8188b5c93aa70681b6">More...</a><br /></td></tr>
-<tr class="separator:ga15059dd986a51d8188b5c93aa70681b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga479ffe2c4fea4bf799a925d8e779400c"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga479ffe2c4fea4bf799a925d8e779400c">Si114xBlockRead</a> (HANDLE <a class="el" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, uint8_t address, uint8_t length, uint8_t *values)</td></tr>
-<tr class="memdesc:ga479ffe2c4fea4bf799a925d8e779400c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads block of Si114x registers.  <a href="group__Si114x.html#ga479ffe2c4fea4bf799a925d8e779400c">More...</a><br /></td></tr>
-<tr class="separator:ga479ffe2c4fea4bf799a925d8e779400c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga68d719ca4b817a58e8014c9e826b390a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga68d719ca4b817a58e8014c9e826b390a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga68d719ca4b817a58e8014c9e826b390a">delay_10ms</a> ()</td></tr>
 <tr class="memdesc:ga68d719ca4b817a58e8014c9e826b390a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements 10ms delay. <br /></td></tr>
@@ -157,22 +137,38 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga734e022c8fda86b69a353b1012c59231">delay_1ms</a> ()</td></tr>
 <tr class="memdesc:ga734e022c8fda86b69a353b1012c59231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements 1ms delay. <br /></td></tr>
 <tr class="separator:ga734e022c8fda86b69a353b1012c59231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7">Si1147_Read_Block_Register</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint8_t reg, uint8_t length, uint8_t *data)</td></tr>
+<tr class="memdesc:ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a block of data from the Si1147 sensor.  <a href="group__Si114x.html#ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7">More...</a><br /></td></tr>
+<tr class="separator:ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8066eedd4bbac304e733a89e09cd6786"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga8066eedd4bbac304e733a89e09cd6786">Si1147_Read_Register</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint8_t reg, uint8_t *data)</td></tr>
+<tr class="memdesc:ga8066eedd4bbac304e733a89e09cd6786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads register from the Si1147 sensor.  <a href="group__Si114x.html#ga8066eedd4bbac304e733a89e09cd6786">More...</a><br /></td></tr>
+<tr class="separator:ga8066eedd4bbac304e733a89e09cd6786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec6f34819894c8d7b2f86fb574da203e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#gaec6f34819894c8d7b2f86fb574da203e">Si1147_Write_Block_Register</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint8_t reg, uint8_t length, uint8_t const *data)</td></tr>
+<tr class="memdesc:gaec6f34819894c8d7b2f86fb574da203e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a block of data to the Si1147 sensor.  <a href="group__Si114x.html#gaec6f34819894c8d7b2f86fb574da203e">More...</a><br /></td></tr>
+<tr class="separator:gaec6f34819894c8d7b2f86fb574da203e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2464ccbbf4938c5550702011d6dd5a4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#gad2464ccbbf4938c5550702011d6dd5a4">Si1147_Write_Register</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint8_t reg, uint8_t data)</td></tr>
+<tr class="memdesc:gad2464ccbbf4938c5550702011d6dd5a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes register in the Si1147 sensor.  <a href="group__Si114x.html#gad2464ccbbf4938c5550702011d6dd5a4">More...</a><br /></td></tr>
+<tr class="separator:gad2464ccbbf4938c5550702011d6dd5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga479ffe2c4fea4bf799a925d8e779400c"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga479ffe2c4fea4bf799a925d8e779400c">Si114xBlockRead</a> (HANDLE <a class="el" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, uint8_t address, uint8_t length, uint8_t *values)</td></tr>
+<tr class="memdesc:ga479ffe2c4fea4bf799a925d8e779400c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads block of Si114x registers.  <a href="group__Si114x.html#ga479ffe2c4fea4bf799a925d8e779400c">More...</a><br /></td></tr>
+<tr class="separator:ga479ffe2c4fea4bf799a925d8e779400c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15059dd986a51d8188b5c93aa70681b6"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga15059dd986a51d8188b5c93aa70681b6">Si114xBlockWrite</a> (HANDLE <a class="el" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, uint8_t address, uint8_t length, uint8_t *values)</td></tr>
+<tr class="memdesc:ga15059dd986a51d8188b5c93aa70681b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes block of Si114x registers.  <a href="group__Si114x.html#ga15059dd986a51d8188b5c93aa70681b6">More...</a><br /></td></tr>
+<tr class="separator:ga15059dd986a51d8188b5c93aa70681b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeae79629a9f5a41c75ba329fa056eeef"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#gaeae79629a9f5a41c75ba329fa056eeef">Si114xReadFromRegister</a> (HANDLE <a class="el" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, uint8_t address)</td></tr>
+<tr class="memdesc:gaeae79629a9f5a41c75ba329fa056eeef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads from Si114x register.  <a href="group__Si114x.html#gaeae79629a9f5a41c75ba329fa056eeef">More...</a><br /></td></tr>
+<tr class="separator:gaeae79629a9f5a41c75ba329fa056eeef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d9e6e60e0ced326193208cdf976bbee"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga8d9e6e60e0ced326193208cdf976bbee">Si114xWriteToRegister</a> (HANDLE <a class="el" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, uint8_t address, uint8_t data)</td></tr>
+<tr class="memdesc:ga8d9e6e60e0ced326193208cdf976bbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes to Si114x Register.  <a href="group__Si114x.html#ga8d9e6e60e0ced326193208cdf976bbee">More...</a><br /></td></tr>
+<tr class="separator:ga8d9e6e60e0ced326193208cdf976bbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="si1147__i2c_8c_source.html">si1147_i2c.c</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="si1147__i2c_8c.html">si1147_i2c.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:39:15 for EFM32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:36:12 for EFM32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

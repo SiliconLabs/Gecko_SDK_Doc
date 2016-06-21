@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -69,13 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -114,50 +106,48 @@ $(document).ready(function(){initNavTree('structUSBH__Device__TypeDef.html','');
 <div class="title">USBH_Device_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group__USB.html">USB</a> &raquo; <a class="el" href="group__USB__HOST.html">USB_HOST</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>USB HOST device definition. </p>
+<p>A host application should not manipulate the contents of this struct. </p>
 
-<p>USB HOST device definition.  
- <a href="structUSBH__Device__TypeDef.html#details">More...</a></p>
-
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00884">884</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="em__usb_8h_source.html">em_usb.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a07597207c1bc0d5a2795944c687ca812"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structUSB__DeviceDescriptor__TypeDef.html">USB_DeviceDescriptor_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#a07597207c1bc0d5a2795944c687ca812">devDesc</a></td></tr>
-<tr class="separator:a07597207c1bc0d5a2795944c687ca812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abec0a197ceb8df8dc928153f837a4c7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structUSB__ConfigurationDescriptor__TypeDef.html">USB_ConfigurationDescriptor_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#abec0a197ceb8df8dc928153f837a4c7c">confDesc</a></td></tr>
-<tr class="separator:abec0a197ceb8df8dc928153f837a4c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdc5a66f2a8f48b0326e28cdb75ae798"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structUSB__InterfaceDescriptor__TypeDef.html">USB_InterfaceDescriptor_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#acdc5a66f2a8f48b0326e28cdb75ae798">itfDesc</a></td></tr>
-<tr class="separator:acdc5a66f2a8f48b0326e28cdb75ae798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6babfb30fb631b15a7177342a1912b38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structUSBH__Ep__TypeDef.html">USBH_Ep_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#a6babfb30fb631b15a7177342a1912b38">ep0</a></td></tr>
-<tr class="separator:a6babfb30fb631b15a7177342a1912b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6faabbcd85b74888a66033798b643455"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structUSBH__Ep__TypeDef.html">USBH_Ep_TypeDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#a6faabbcd85b74888a66033798b643455">ep</a></td></tr>
-<tr class="separator:a6faabbcd85b74888a66033798b643455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a085fe94f3ccae689ff8e1f080bc371"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#a7a085fe94f3ccae689ff8e1f080bc371">numEp</a></td></tr>
-<tr class="separator:a7a085fe94f3ccae689ff8e1f080bc371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a345d58d313ea676ffea5c7b47e7f8b79"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#a345d58d313ea676ffea5c7b47e7f8b79">addr</a></td></tr>
 <tr class="separator:a345d58d313ea676ffea5c7b47e7f8b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec0a197ceb8df8dc928153f837a4c7c"><td class="memItemLeft" align="right" valign="top">USB_ConfigurationDescriptor_TypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#abec0a197ceb8df8dc928153f837a4c7c">confDesc</a></td></tr>
+<tr class="separator:abec0a197ceb8df8dc928153f837a4c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07597207c1bc0d5a2795944c687ca812"><td class="memItemLeft" align="right" valign="top">USB_DeviceDescriptor_TypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#a07597207c1bc0d5a2795944c687ca812">devDesc</a></td></tr>
+<tr class="separator:a07597207c1bc0d5a2795944c687ca812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6faabbcd85b74888a66033798b643455"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structUSBH__Ep__TypeDef.html">USBH_Ep_TypeDef</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#a6faabbcd85b74888a66033798b643455">ep</a></td></tr>
+<tr class="separator:a6faabbcd85b74888a66033798b643455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6babfb30fb631b15a7177342a1912b38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structUSBH__Ep__TypeDef.html">USBH_Ep_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#a6babfb30fb631b15a7177342a1912b38">ep0</a></td></tr>
+<tr class="separator:a6babfb30fb631b15a7177342a1912b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc5a66f2a8f48b0326e28cdb75ae798"><td class="memItemLeft" align="right" valign="top">USB_InterfaceDescriptor_TypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#acdc5a66f2a8f48b0326e28cdb75ae798">itfDesc</a></td></tr>
+<tr class="separator:acdc5a66f2a8f48b0326e28cdb75ae798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a085fe94f3ccae689ff8e1f080bc371"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#a7a085fe94f3ccae689ff8e1f080bc371">numEp</a></td></tr>
+<tr class="separator:a7a085fe94f3ccae689ff8e1f080bc371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0332a51a25b48aca2b750de8c474230"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Device__TypeDef.html#ad0332a51a25b48aca2b750de8c474230">speed</a></td></tr>
 <tr class="separator:ad0332a51a25b48aca2b750de8c474230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A host application should not manipulate the contents of this struct. </p>
-
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00889">889</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a07597207c1bc0d5a2795944c687ca812"></a>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a345d58d313ea676ffea5c7b47e7f8b79"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structUSB__DeviceDescriptor__TypeDef.html">USB_DeviceDescriptor_TypeDef</a> USBH_Device_TypeDef::devDesc</td>
+          <td class="memname">uint8_t USBH_Device_TypeDef::addr</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The device device descriptor. </p>
+<p>The device address. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00891">891</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00892">892</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__usbh_8c_source.html#l00905">USBH_InitDeviceData()</a>, <a class="el" href="em__usbh_8c_source.html#l01582">USBH_QueryDeviceB()</a>, and <a class="el" href="em__usbh_8c_source.html#l02146">USBH_WaitForDeviceConnectionB()</a>.</p>
+<p>Referenced by <a class="el" href="group__USB__HOST.html#ga50dc10ac598c6c8479319ff58c186266">USBH_InitDeviceData()</a>, and <a class="el" href="group__USB__HOST.html#gac93ecf15f240abf7093506c8e8ef9e61">USBH_SetAddressB()</a>.</p>
 
 </div>
 </div>
@@ -166,49 +156,32 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structUSB__ConfigurationDescriptor__TypeDef.html">USB_ConfigurationDescriptor_TypeDef</a> USBH_Device_TypeDef::confDesc</td>
+          <td class="memname">USB_ConfigurationDescriptor_TypeDef USBH_Device_TypeDef::confDesc</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>The device configuration descriptor. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00892">892</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00887">887</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__usbh_8c_source.html#l00905">USBH_InitDeviceData()</a>, and <a class="el" href="em__usbh_8c_source.html#l01582">USBH_QueryDeviceB()</a>.</p>
+<p>Referenced by <a class="el" href="group__USB__HOST.html#ga50dc10ac598c6c8479319ff58c186266">USBH_InitDeviceData()</a>, and <a class="el" href="group__USB__HOST.html#gae9ef72709bb00accb740a0350f79fe35">USBH_QueryDeviceB()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acdc5a66f2a8f48b0326e28cdb75ae798"></a>
+<a class="anchor" id="a07597207c1bc0d5a2795944c687ca812"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structUSB__InterfaceDescriptor__TypeDef.html">USB_InterfaceDescriptor_TypeDef</a> USBH_Device_TypeDef::itfDesc</td>
+          <td class="memname">USB_DeviceDescriptor_TypeDef USBH_Device_TypeDef::devDesc</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The device interface descriptor. </p>
+<p>The device device descriptor. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00893">893</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00886">886</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__usbh_8c_source.html#l00905">USBH_InitDeviceData()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6babfb30fb631b15a7177342a1912b38"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structUSBH__Ep__TypeDef.html">USBH_Ep_TypeDef</a> USBH_Device_TypeDef::ep0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Endpoint 0 status data. </p>
-
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00894">894</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__usbh_8c_source.html#l00647">USBH_GetConfigurationDescriptorB()</a>, <a class="el" href="em__usbh_8c_source.html#l00704">USBH_GetDeviceDescriptorB()</a>, <a class="el" href="em__usbh_8c_source.html#l00779">USBH_GetStringB()</a>, <a class="el" href="em__usbh_8c_source.html#l00905">USBH_InitDeviceData()</a>, <a class="el" href="em__usbh_8c_source.html#l01582">USBH_QueryDeviceB()</a>, <a class="el" href="em__usbh_8c_source.html#l01841">USBH_SetAddressB()</a>, <a class="el" href="em__usbh_8c_source.html#l01897">USBH_SetAltInterfaceB()</a>, <a class="el" href="em__usbh_8c_source.html#l01956">USBH_SetConfigurationB()</a>, <a class="el" href="em__usbh_8c_source.html#l02009">USBH_StallEpB()</a>, and <a class="el" href="em__usbh_8c_source.html#l02068">USBH_UnStallEpB()</a>.</p>
+<p>Referenced by <a class="el" href="group__USB__HOST.html#ga50dc10ac598c6c8479319ff58c186266">USBH_InitDeviceData()</a>, <a class="el" href="group__USB__HOST.html#gae9ef72709bb00accb740a0350f79fe35">USBH_QueryDeviceB()</a>, and <a class="el" href="group__USB__HOST.html#ga62f99f2ed786c98d00935fc2fd140aaf">USBH_WaitForDeviceConnectionB()</a>.</p>
 
 </div>
 </div>
@@ -223,9 +196,43 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Array of endpoint status data. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00895">895</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00890">890</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__usbh_8c_source.html#l00905">USBH_InitDeviceData()</a>, <a class="el" href="em__usbh_8c_source.html#l01582">USBH_QueryDeviceB()</a>, <a class="el" href="em__usbh_8c_source.html#l01897">USBH_SetAltInterfaceB()</a>, and <a class="el" href="em__usbh_8c_source.html#l01956">USBH_SetConfigurationB()</a>.</p>
+<p>Referenced by <a class="el" href="group__USB__HOST.html#ga50dc10ac598c6c8479319ff58c186266">USBH_InitDeviceData()</a>, <a class="el" href="group__USB__HOST.html#gae9ef72709bb00accb740a0350f79fe35">USBH_QueryDeviceB()</a>, <a class="el" href="group__USB__HOST.html#ga0f156ce4b8660203cf4957c019064d9f">USBH_SetAltInterfaceB()</a>, and <a class="el" href="group__USB__HOST.html#ga6938e5856e9d28116922070621be36a5">USBH_SetConfigurationB()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6babfb30fb631b15a7177342a1912b38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structUSBH__Ep__TypeDef.html">USBH_Ep_TypeDef</a> USBH_Device_TypeDef::ep0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Endpoint 0 status data. </p>
+
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00889">889</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__USB__HOST.html#gad09af4f14c4b205a9e159cb4c5fa7b8f">USBH_GetConfigurationDescriptorB()</a>, <a class="el" href="group__USB__HOST.html#ga2656404a391e6894b03dde7d42d11f4f">USBH_GetDeviceDescriptorB()</a>, <a class="el" href="group__USB__HOST.html#ga4e40f21d20e36116da7a45f4a8b7ee3c">USBH_GetStringB()</a>, <a class="el" href="group__USB__HOST.html#ga50dc10ac598c6c8479319ff58c186266">USBH_InitDeviceData()</a>, <a class="el" href="group__USB__HOST.html#gae9ef72709bb00accb740a0350f79fe35">USBH_QueryDeviceB()</a>, <a class="el" href="group__USB__HOST.html#gac93ecf15f240abf7093506c8e8ef9e61">USBH_SetAddressB()</a>, <a class="el" href="group__USB__HOST.html#ga0f156ce4b8660203cf4957c019064d9f">USBH_SetAltInterfaceB()</a>, <a class="el" href="group__USB__HOST.html#ga6938e5856e9d28116922070621be36a5">USBH_SetConfigurationB()</a>, <a class="el" href="group__USB__HOST.html#ga547d9df531d791c90fd6f44d28e7089a">USBH_StallEpB()</a>, and <a class="el" href="group__USB__HOST.html#gabf8fcc4a69080f3d1005d1bc21d44218">USBH_UnStallEpB()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acdc5a66f2a8f48b0326e28cdb75ae798"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">USB_InterfaceDescriptor_TypeDef USBH_Device_TypeDef::itfDesc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The device interface descriptor. </p>
+
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00888">888</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__USB__HOST.html#ga50dc10ac598c6c8479319ff58c186266">USBH_InitDeviceData()</a>.</p>
 
 </div>
 </div>
@@ -240,26 +247,9 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Number of endpoints. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00896">896</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00891">891</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__usbh_8c_source.html#l00905">USBH_InitDeviceData()</a>, <a class="el" href="em__usbh_8c_source.html#l01897">USBH_SetAltInterfaceB()</a>, and <a class="el" href="em__usbh_8c_source.html#l01956">USBH_SetConfigurationB()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a345d58d313ea676ffea5c7b47e7f8b79"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t USBH_Device_TypeDef::addr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The device address. </p>
-
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00897">897</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__usbh_8c_source.html#l00905">USBH_InitDeviceData()</a>, and <a class="el" href="em__usbh_8c_source.html#l01841">USBH_SetAddressB()</a>.</p>
+<p>Referenced by <a class="el" href="group__USB__HOST.html#ga50dc10ac598c6c8479319ff58c186266">USBH_InitDeviceData()</a>, <a class="el" href="group__USB__HOST.html#ga0f156ce4b8660203cf4957c019064d9f">USBH_SetAltInterfaceB()</a>, and <a class="el" href="group__USB__HOST.html#ga6938e5856e9d28116922070621be36a5">USBH_SetConfigurationB()</a>.</p>
 
 </div>
 </div>
@@ -274,9 +264,9 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>The device speed (low or full speed). </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00898">898</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00893">893</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
-<p>Referenced by <a class="el" href="msdbot_8c_source.html#l00058">MSDBOT_Init()</a>, <a class="el" href="em__usbh_8c_source.html#l00905">USBH_InitDeviceData()</a>, and <a class="el" href="em__usbh_8c_source.html#l01582">USBH_QueryDeviceB()</a>.</p>
+<p>Referenced by <a class="el" href="group__Msd.html#ga2d6610a0f39ffc856a740ff3330ba2e0">MSDBOT_Init()</a>, <a class="el" href="group__USB__HOST.html#ga50dc10ac598c6c8479319ff58c186266">USBH_InitDeviceData()</a>, and <a class="el" href="group__USB__HOST.html#gae9ef72709bb00accb740a0350f79fe35">USBH_QueryDeviceB()</a>.</p>
 
 </div>
 </div>
@@ -289,7 +279,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structUSBH__Device__TypeDef.html">USBH_Device_TypeDef</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:37:39 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:30:14 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -115,38 +112,12 @@ $(document).ready(function(){initNavTree('em__common_8h.html','');});
 <div class="title">em_common.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Emlib general purpose utilities.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
-<code>#include &lt;stdbool.h&gt;</code><br />
-</div>
-<p><a href="em__common_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gaf681fcd13024b5e6a44cd7f330b74cc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#gaf681fcd13024b5e6a44cd7f330b74cc4">EFM32_MIN</a>(a,  b)    &#160;&#160;&#160;({ __typeof__(a) _a = (a); __typeof__(b) _b = (b); _a &lt; _b ? _a : _b; })</td></tr>
-<tr class="separator:gaf681fcd13024b5e6a44cd7f330b74cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab9b4265c10fac1d4b4328a916a688d3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#gab9b4265c10fac1d4b4328a916a688d3b">EFM32_MAX</a>(a,  b)    &#160;&#160;&#160;({ __typeof__(a) _a = (a); __typeof__(b) _b = (b); _a &gt; _b ? _a : _b; })</td></tr>
-<tr class="separator:gab9b4265c10fac1d4b4328a916a688d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga099d98fa4e24657df90ae06fc13a4815"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga099d98fa4e24657df90ae06fc13a4815">EFM32_PACK_START</a>(x)</td></tr>
-<tr class="separator:ga099d98fa4e24657df90ae06fc13a4815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab2675861d42aae2af68c05f8fa1da22f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#gab2675861d42aae2af68c05f8fa1da22f">EFM32_PACK_END</a>()</td></tr>
-<tr class="separator:gab2675861d42aae2af68c05f8fa1da22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3e1e293640dd826cbd20924b763ddcc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga3e1e293640dd826cbd20924b763ddcc0">EFM32_ALIGN</a>(X)</td></tr>
-<tr class="separator:ga3e1e293640dd826cbd20924b763ddcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga360287cd806ff1d1520498417c41bb6c"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga360287cd806ff1d1520498417c41bb6c">EFM32_CTZ</a> (uint32_t value)</td></tr>
-<tr class="memdesc:ga360287cd806ff1d1520498417c41bb6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count trailing number of zero's.  <a href="group__COMMON.html#ga360287cd806ff1d1520498417c41bb6c">More...</a><br /></td></tr>
-<tr class="separator:ga360287cd806ff1d1520498417c41bb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
+<div class="textblock"><p>General purpose utilities. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
 <p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
 <ol type="1">
 <li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
@@ -157,13 +128,54 @@ License</h1>
 <p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
 <p>Definition in file <a class="el" href="em__common_8h_source.html">em_common.h</a>.</p>
-</div></div><!-- contents -->
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+</div>
+<p><a href="em__common_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga65ed831691a1570be10aa35f5538bdb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga65ed831691a1570be10aa35f5538bdb9">EFM32_ALIGN</a>(X)        &#160;&#160;&#160;<a class="el" href="group__COMMON.html#ga6c4212379594e73a70b66c5557f1eaa3">SL_ALIGN</a>(X)</td></tr>
+<tr class="separator:ga65ed831691a1570be10aa35f5538bdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga479bd259176d34174477d788c43545dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga479bd259176d34174477d788c43545dd">EFM32_MAX</a>(a,  b)      &#160;&#160;&#160;<a class="el" href="group__COMMON.html#gac33644dcb925ed2bde0b5fc7a5fd9cfe">SL_MAX</a>(a, b)</td></tr>
+<tr class="separator:ga479bd259176d34174477d788c43545dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f57cbb0a8c3a16a48f31520350cf6b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga4f57cbb0a8c3a16a48f31520350cf6b4">EFM32_MIN</a>(a,  b)      &#160;&#160;&#160;<a class="el" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>(a, b)</td></tr>
+<tr class="separator:ga4f57cbb0a8c3a16a48f31520350cf6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd5ced4310004cf38e7e0ce5f3616c9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#gacd5ced4310004cf38e7e0ce5f3616c9b">EFM32_PACK_END</a>()    &#160;&#160;&#160;<a class="el" href="group__COMMON.html#ga911e7f1f5d8dc5b4dd025e8c14159977">SL_PACK_END</a>()</td></tr>
+<tr class="separator:gacd5ced4310004cf38e7e0ce5f3616c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09edca56e303bddfac51da43893d6f48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga09edca56e303bddfac51da43893d6f48">EFM32_PACK_START</a>(X)&#160;&#160;&#160;<a class="el" href="group__COMMON.html#ga4b1aea3e52adaa7882e0e0299cead0fc">SL_PACK_START</a>(X)</td></tr>
+<tr class="separator:ga09edca56e303bddfac51da43893d6f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c4212379594e73a70b66c5557f1eaa3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga6c4212379594e73a70b66c5557f1eaa3">SL_ALIGN</a>(X)</td></tr>
+<tr class="separator:ga6c4212379594e73a70b66c5557f1eaa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14deffb02010866992cb069907f73846"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga14deffb02010866992cb069907f73846">SL_ATTRIBUTE_ALIGN</a>(X)&#160;&#160;&#160;__attribute__ ((aligned(X)))</td></tr>
+<tr class="separator:ga14deffb02010866992cb069907f73846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8622382a414e46f85b7c7c3e56ecc3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#gaa8622382a414e46f85b7c7c3e56ecc3a">SL_ATTRIBUTE_PACKED</a>&#160;&#160;&#160;__attribute__ ((packed))</td></tr>
+<tr class="separator:gaa8622382a414e46f85b7c7c3e56ecc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac33644dcb925ed2bde0b5fc7a5fd9cfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#gac33644dcb925ed2bde0b5fc7a5fd9cfe">SL_MAX</a>(a,  b)&#160;&#160;&#160;({__typeof__(a) _a = (a); __typeof__(b) _b = (b); _a &gt; _b ? _a : _b;})</td></tr>
+<tr class="separator:gac33644dcb925ed2bde0b5fc7a5fd9cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9569b0ba06efef226b0a82109eef3ec3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>(a,  b)&#160;&#160;&#160;({__typeof__(a) _a = (a); __typeof__(b) _b = (b); _a &lt; _b ? _a : _b;})</td></tr>
+<tr class="separator:ga9569b0ba06efef226b0a82109eef3ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga911e7f1f5d8dc5b4dd025e8c14159977"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga911e7f1f5d8dc5b4dd025e8c14159977">SL_PACK_END</a>()</td></tr>
+<tr class="separator:ga911e7f1f5d8dc5b4dd025e8c14159977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b1aea3e52adaa7882e0e0299cead0fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga4b1aea3e52adaa7882e0e0299cead0fc">SL_PACK_START</a>(x)</td></tr>
+<tr class="separator:ga4b1aea3e52adaa7882e0e0299cead0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga360287cd806ff1d1520498417c41bb6c"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga360287cd806ff1d1520498417c41bb6c">EFM32_CTZ</a> (uint32_t value)</td></tr>
+<tr class="memdesc:ga360287cd806ff1d1520498417c41bb6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count trailing number of zero's. Use CLZ instruction if available.  <a href="group__COMMON.html#ga360287cd806ff1d1520498417c41bb6c">More...</a><br /></td></tr>
+<tr class="separator:ga360287cd806ff1d1520498417c41bb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8df7f6d52e31dad26a89799b7e63adb0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga8df7f6d52e31dad26a89799b7e63adb0">SL_CTZ</a> (uint32_t value)</td></tr>
+<tr class="memdesc:ga8df7f6d52e31dad26a89799b7e63adb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count trailing number of zero's. Use CLZ instruction if available.  <a href="group__COMMON.html#ga8df7f6d52e31dad26a89799b7e63adb0">More...</a><br /></td></tr>
+<tr class="separator:ga8df7f6d52e31dad26a89799b7e63adb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__common_8h.html">em_common.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:43 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:40:33 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

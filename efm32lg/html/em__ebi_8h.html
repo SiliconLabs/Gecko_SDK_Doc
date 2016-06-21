@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -116,10 +114,23 @@ $(document).ready(function(){initNavTree('em__ebi_8h.html','');});
 <div class="title">em_ebi.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>External Bus Iterface (EBI) peripheral API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>External Bus Iterface (EBI) peripheral API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="em__ebi_8h_source.html">em_ebi.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="em__assert_8h_source.html">em_assert.h</a>&quot;</code><br />
@@ -158,60 +169,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga476667a09de244839afb6de3980ca0bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga476667a09de244839afb6de3980ca0bd">EBI_Mode_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga476667a09de244839afb6de3980ca0bda65e86d54d6f4b8358078d98e8a68b0ef">ebiModeD8A8</a> = EBI_CTRL_MODE_D8A8, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga476667a09de244839afb6de3980ca0bda96ee6c78194fa392b1d7941b9473d45d">ebiModeD16A16ALE</a> = EBI_CTRL_MODE_D16A16ALE, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga476667a09de244839afb6de3980ca0bda3dbb9ef84c1dbc4e8b4f22dbc2f70c70">ebiModeD8A24ALE</a> = EBI_CTRL_MODE_D8A24ALE, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga476667a09de244839afb6de3980ca0bdadc69b2aac0395bf069d311d6a1179987">ebiModeD16</a> = EBI_CTRL_MODE_D16
-<br />
- }<tr class="separator:ga476667a09de244839afb6de3980ca0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga606deb6325c511ef9397e7271d2908c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga606deb6325c511ef9397e7271d2908c8">EBI_Polarity_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga606deb6325c511ef9397e7271d2908c8ab92bd72b9f2e92947b868778d495c242">ebiActiveLow</a> = 0, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga606deb6325c511ef9397e7271d2908c8ab69fe7016f533e382c9b2d4d2711629a">ebiActiveHigh</a> = 1
-<br />
- }<tr class="separator:ga606deb6325c511ef9397e7271d2908c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga00aa2f73c29832bc6b5c525a78ba0d6c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cab94cfaf3ff8a1fe02c85948a16bb0f7c">ebiLineARDY</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cafa7f2d16f573f1c4daabefc4697e3357">ebiLineALE</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca6c222f909a288e2a73d8bbc83a525df9">ebiLineWE</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca8105b84ff350a0006ac23dc72551a204">ebiLineRE</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cabef51b937f72bb44fe99c19fcd370ebe">ebiLineCS</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca506b338b12c250c9b4df854aba1b1f94">ebiLineBL</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cab7dd1aa9c255b74c20871e0777643b5d">ebiLineTFTVSync</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca326d678f58f02b102f8bb57b3914eecd">ebiLineTFTHSync</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca4e3e670d59f88c3024e8de3a64edad0a">ebiLineTFTDataEn</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca6ef8fc02c10dd215a91f7f8649bbcd94">ebiLineTFTDClk</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca4980c7e8bd2ad394771c19692497a5ce">ebiLineTFTCS</a>
-<br />
- }<tr class="separator:ga00aa2f73c29832bc6b5c525a78ba0d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga850f09c9c31f2622c0a715a807eb3157"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga850f09c9c31f2622c0a715a807eb3157">EBI_ALow_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga850f09c9c31f2622c0a715a807eb3157a8a94f8358839fd75a04d32e0bdf8d169">ebiALowA0</a> = EBI_ROUTE_ALB_A0, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga850f09c9c31f2622c0a715a807eb3157a1d5dd92f4063b54a035c45e450725e17">ebiALowA8</a> = EBI_ROUTE_ALB_A8, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga850f09c9c31f2622c0a715a807eb3157a27db95a47c4f5cf0b39eecc36e33ab08">ebiALowA16</a> = EBI_ROUTE_ALB_A16, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga850f09c9c31f2622c0a715a807eb3157a0a9e89378b385589ad369422d9f95e8b">ebiALowA24</a> = EBI_ROUTE_ALB_A24
-<br />
- }<tr class="separator:ga850f09c9c31f2622c0a715a807eb3157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
 <tr class="memitem:ga4da8093cf7b3a6bd9d398054a4c88b69"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga4da8093cf7b3a6bd9d398054a4c88b69">EBI_AHigh_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__EBI.html#gga4da8093cf7b3a6bd9d398054a4c88b69adcc107b09e6efd297b9618fcff10c04d">ebiAHighA0</a> = EBI_ROUTE_APEN_A0, 
 <br />
@@ -265,6 +222,42 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga4da8093cf7b3a6bd9d398054a4c88b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:ga850f09c9c31f2622c0a715a807eb3157"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga850f09c9c31f2622c0a715a807eb3157">EBI_ALow_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga850f09c9c31f2622c0a715a807eb3157a8a94f8358839fd75a04d32e0bdf8d169">ebiALowA0</a> = EBI_ROUTE_ALB_A0, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga850f09c9c31f2622c0a715a807eb3157a1d5dd92f4063b54a035c45e450725e17">ebiALowA8</a> = EBI_ROUTE_ALB_A8, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga850f09c9c31f2622c0a715a807eb3157a27db95a47c4f5cf0b39eecc36e33ab08">ebiALowA16</a> = EBI_ROUTE_ALB_A16, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga850f09c9c31f2622c0a715a807eb3157a0a9e89378b385589ad369422d9f95e8b">ebiALowA24</a> = EBI_ROUTE_ALB_A24
+<br />
+ }<tr class="separator:ga850f09c9c31f2622c0a715a807eb3157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga00aa2f73c29832bc6b5c525a78ba0d6c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cab94cfaf3ff8a1fe02c85948a16bb0f7c">ebiLineARDY</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cafa7f2d16f573f1c4daabefc4697e3357">ebiLineALE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca6c222f909a288e2a73d8bbc83a525df9">ebiLineWE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca8105b84ff350a0006ac23dc72551a204">ebiLineRE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cabef51b937f72bb44fe99c19fcd370ebe">ebiLineCS</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca506b338b12c250c9b4df854aba1b1f94">ebiLineBL</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6cab7dd1aa9c255b74c20871e0777643b5d">ebiLineTFTVSync</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca326d678f58f02b102f8bb57b3914eecd">ebiLineTFTHSync</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca4e3e670d59f88c3024e8de3a64edad0a">ebiLineTFTDataEn</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca6ef8fc02c10dd215a91f7f8649bbcd94">ebiLineTFTDClk</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga00aa2f73c29832bc6b5c525a78ba0d6ca4980c7e8bd2ad394771c19692497a5ce">ebiLineTFTCS</a>
+<br />
+ }<tr class="separator:ga00aa2f73c29832bc6b5c525a78ba0d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:gaa6c0adaf11ede980c59df0dbb34c4b71"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gaa6c0adaf11ede980c59df0dbb34c4b71">EBI_Location_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__EBI.html#ggaa6c0adaf11ede980c59df0dbb34c4b71a6d6c34b97f19c0c934ef04453e400669">ebiLocation0</a> = EBI_ROUTE_LOCATION_LOC0, 
 <br />
@@ -273,6 +266,24 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__EBI.html#ggaa6c0adaf11ede980c59df0dbb34c4b71a4a6f9d42c52a8a70b90c7535d27143df">ebiLocation2</a> = EBI_ROUTE_LOCATION_LOC2
 <br />
  }<tr class="separator:gaa6c0adaf11ede980c59df0dbb34c4b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga476667a09de244839afb6de3980ca0bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga476667a09de244839afb6de3980ca0bd">EBI_Mode_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga476667a09de244839afb6de3980ca0bda65e86d54d6f4b8358078d98e8a68b0ef">ebiModeD8A8</a> = EBI_CTRL_MODE_D8A8, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga476667a09de244839afb6de3980ca0bda96ee6c78194fa392b1d7941b9473d45d">ebiModeD16A16ALE</a> = EBI_CTRL_MODE_D16A16ALE, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga476667a09de244839afb6de3980ca0bda3dbb9ef84c1dbc4e8b4f22dbc2f70c70">ebiModeD8A24ALE</a> = EBI_CTRL_MODE_D8A24ALE, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga476667a09de244839afb6de3980ca0bdadc69b2aac0395bf069d311d6a1179987">ebiModeD16</a> = EBI_CTRL_MODE_D16
+<br />
+ }<tr class="separator:ga476667a09de244839afb6de3980ca0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga606deb6325c511ef9397e7271d2908c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga606deb6325c511ef9397e7271d2908c8">EBI_Polarity_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga606deb6325c511ef9397e7271d2908c8ab92bd72b9f2e92947b868778d495c242">ebiActiveLow</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga606deb6325c511ef9397e7271d2908c8ab69fe7016f533e382c9b2d4d2711629a">ebiActiveHigh</a> = 1
+<br />
+ }<tr class="separator:ga606deb6325c511ef9397e7271d2908c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ga6c03c606eecce49e6b9ff552a82902a5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga6c03c606eecce49e6b9ff552a82902a5">EBI_TFTBank_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__EBI.html#gga6c03c606eecce49e6b9ff552a82902a5a1a5122402ccc4d35d593da055a380cf3">ebiTFTBank0</a> = EBI_TFTCTRL_BANKSEL_BANK0, 
@@ -292,6 +303,22 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:gaba965a83ff0dd3d149140420c2802c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:ga02c24ae10472226b255873ec5466e128"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga02c24ae10472226b255873ec5466e128">EBI_TFTDDMode_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga02c24ae10472226b255873ec5466e128a50a9b91e455d669736ecf8e86fb950bd">ebiTFTDDModeDisabled</a> = EBI_TFTCTRL_DD_DISABLED, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga02c24ae10472226b255873ec5466e128a3cac31f43f6bfc8c73e332ef3e0c2073">ebiTFTDDModeInternal</a> = EBI_TFTCTRL_DD_INTERNAL, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga02c24ae10472226b255873ec5466e128a656b2d1a05ac881b41cb06cd6bcdce92">ebiTFTDDModeExternal</a> = EBI_TFTCTRL_DD_EXTERNAL
+<br />
+ }<tr class="separator:ga02c24ae10472226b255873ec5466e128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga094315afc867b41449c9c88ce047d3bc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga094315afc867b41449c9c88ce047d3bc">EBI_TFTFrameBufTrigger_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga094315afc867b41449c9c88ce047d3bcad30f4c37cf8af06cd4a0501bfbce0881">ebiTFTFrameBufTriggerVSync</a> = EBI_TFTCTRL_FBCTRIG_VSYNC, 
+<br />
+&#160;&#160;<a class="el" href="group__EBI.html#gga094315afc867b41449c9c88ce047d3bcaf85c9a913fd6c74ae1c41cbbcfab9e61">ebiTFTFrameBufTriggerHSync</a> = EBI_TFTCTRL_FBCTRIG_HSYNC
+<br />
+ }<tr class="separator:ga094315afc867b41449c9c88ce047d3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:ga9e960053209c04b8ecc5b3553302b6ef"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga9e960053209c04b8ecc5b3553302b6ef">EBI_TFTInterleave_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__EBI.html#gga9e960053209c04b8ecc5b3553302b6efae87e2d82e35223d2feaf734130023982">ebiTFTInterleaveUnlimited</a> = EBI_TFTCTRL_INTERLEAVE_UNLIMITED, 
 <br />
@@ -300,13 +327,6 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__EBI.html#gga9e960053209c04b8ecc5b3553302b6efadefa16e0580f1b28295c3b29a6a2a5b2">ebiTFTInterleavePorch</a> = EBI_TFTCTRL_INTERLEAVE_PORCH
 <br />
  }<tr class="separator:ga9e960053209c04b8ecc5b3553302b6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga094315afc867b41449c9c88ce047d3bc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga094315afc867b41449c9c88ce047d3bc">EBI_TFTFrameBufTrigger_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga094315afc867b41449c9c88ce047d3bcad30f4c37cf8af06cd4a0501bfbce0881">ebiTFTFrameBufTriggerVSync</a> = EBI_TFTCTRL_FBCTRIG_VSYNC, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga094315afc867b41449c9c88ce047d3bcaf85c9a913fd6c74ae1c41cbbcfab9e61">ebiTFTFrameBufTriggerHSync</a> = EBI_TFTCTRL_FBCTRIG_HSYNC
-<br />
- }<tr class="separator:ga094315afc867b41449c9c88ce047d3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:gad8f6723eea84039cc9c1699cbf4ceb6d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gad8f6723eea84039cc9c1699cbf4ceb6d">EBI_TFTMaskBlend_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__EBI.html#ggad8f6723eea84039cc9c1699cbf4ceb6da0f96d7f94fd3eb50176e454d6e84e178">ebiTFTMBDisabled</a> = EBI_TFTCTRL_MASKBLEND_DISABLED, 
@@ -325,15 +345,6 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:gad8f6723eea84039cc9c1699cbf4ceb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:ga02c24ae10472226b255873ec5466e128"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga02c24ae10472226b255873ec5466e128">EBI_TFTDDMode_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga02c24ae10472226b255873ec5466e128a50a9b91e455d669736ecf8e86fb950bd">ebiTFTDDModeDisabled</a> = EBI_TFTCTRL_DD_DISABLED, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga02c24ae10472226b255873ec5466e128a3cac31f43f6bfc8c73e332ef3e0c2073">ebiTFTDDModeInternal</a> = EBI_TFTCTRL_DD_INTERNAL, 
-<br />
-&#160;&#160;<a class="el" href="group__EBI.html#gga02c24ae10472226b255873ec5466e128a656b2d1a05ac881b41cb06cd6bcdce92">ebiTFTDDModeExternal</a> = EBI_TFTCTRL_DD_EXTERNAL
-<br />
- }<tr class="separator:ga02c24ae10472226b255873ec5466e128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
 <tr class="memitem:ga2b474f65adb32bd0544187da978ed78f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga2b474f65adb32bd0544187da978ed78f">EBI_TFTWidth_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__EBI.html#gga2b474f65adb32bd0544187da978ed78fa0d88f2459e8000e9060807ca5b26b0c0">ebiTFTWidthByte</a> = EBI_TFTCTRL_WIDTH_BYTE, 
 <br />
@@ -344,97 +355,55 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad9f118caa49eadf9713559cfac3d3c04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">EBI_Init</a> (const <a class="el" href="structEBI__Init__TypeDef.html">EBI_Init_TypeDef</a> *ebiInit)</td></tr>
-<tr class="memdesc:gad9f118caa49eadf9713559cfac3d3c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and enable External Bus Interface.  <a href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">More...</a><br /></td></tr>
-<tr class="separator:gad9f118caa49eadf9713559cfac3d3c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabef4d874ff17aa478fae71333a4c1ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gabef4d874ff17aa478fae71333a4c1ef5">EBI_AddressTimingSet</a> (int setupCycles, int holdCycles)</td></tr>
+<tr class="memdesc:gabef4d874ff17aa478fae71333a4c1ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of address latch bus accesses.  <a href="group__EBI.html#gabef4d874ff17aa478fae71333a4c1ef5">More...</a><br /></td></tr>
+<tr class="separator:gabef4d874ff17aa478fae71333a4c1ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55f90f34115e6208948a03f6d32e74bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga55f90f34115e6208948a03f6d32e74bd">EBI_AltMapEnable</a> (bool enable)</td></tr>
+<tr class="memdesc:ga55f90f34115e6208948a03f6d32e74bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Alternate Address Map support Enables or disables 256MB address range for all banks.  <a href="group__EBI.html#ga55f90f34115e6208948a03f6d32e74bd">More...</a><br /></td></tr>
+<tr class="separator:ga55f90f34115e6208948a03f6d32e74bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f9278d0c9c01c9f45ccf423becc1f31"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga4f9278d0c9c01c9f45ccf423becc1f31">EBI_BankAddress</a> (uint32_t bank)</td></tr>
+<tr class="memdesc:ga4f9278d0c9c01c9f45ccf423becc1f31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return base address of EBI bank.  <a href="group__EBI.html#ga4f9278d0c9c01c9f45ccf423becc1f31">More...</a><br /></td></tr>
+<tr class="separator:ga4f9278d0c9c01c9f45ccf423becc1f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6b82e12f6e3e8122191ae92783575d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gac6b82e12f6e3e8122191ae92783575d9">EBI_BankAddressTimingConfig</a> (uint32_t banks, bool halfALE)</td></tr>
+<tr class="memdesc:gac6b82e12f6e3e8122191ae92783575d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure address operation parameters for selected bank.  <a href="group__EBI.html#gac6b82e12f6e3e8122191ae92783575d9">More...</a><br /></td></tr>
+<tr class="separator:gac6b82e12f6e3e8122191ae92783575d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga436598b8da21b9d09559485af43cd12c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga436598b8da21b9d09559485af43cd12c">EBI_BankAddressTimingSet</a> (uint32_t banks, int setupCycles, int holdCycles)</td></tr>
+<tr class="memdesc:ga436598b8da21b9d09559485af43cd12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of address latch bus accesses.  <a href="group__EBI.html#ga436598b8da21b9d09559485af43cd12c">More...</a><br /></td></tr>
+<tr class="separator:ga436598b8da21b9d09559485af43cd12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0522f174e6669dff3a65a897f2861f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gac0522f174e6669dff3a65a897f2861f0">EBI_BankByteLaneEnable</a> (uint32_t banks, bool enable)</td></tr>
+<tr class="memdesc:gac0522f174e6669dff3a65a897f2861f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Byte Lane Enable for select banks timing support.  <a href="group__EBI.html#gac0522f174e6669dff3a65a897f2861f0">More...</a><br /></td></tr>
+<tr class="separator:gac0522f174e6669dff3a65a897f2861f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab75fa83a3071d81162d19db6ec191ec5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gab75fa83a3071d81162d19db6ec191ec5">EBI_BankEnable</a> (uint32_t banks, bool enable)</td></tr>
+<tr class="memdesc:gab75fa83a3071d81162d19db6ec191ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable EBI Bank.  <a href="group__EBI.html#gab75fa83a3071d81162d19db6ec191ec5">More...</a><br /></td></tr>
+<tr class="separator:gab75fa83a3071d81162d19db6ec191ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga572ea9ffff7b789d3834cccef3fe911d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga572ea9ffff7b789d3834cccef3fe911d">EBI_BankPolaritySet</a> (uint32_t banks, <a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a> line, <a class="el" href="group__EBI.html#ga606deb6325c511ef9397e7271d2908c8">EBI_Polarity_TypeDef</a> polarity)</td></tr>
+<tr class="memdesc:ga572ea9ffff7b789d3834cccef3fe911d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure EBI pin polarity for selected bank(s) for devices with individual timing support.  <a href="group__EBI.html#ga572ea9ffff7b789d3834cccef3fe911d">More...</a><br /></td></tr>
+<tr class="separator:ga572ea9ffff7b789d3834cccef3fe911d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f024fe7418658a4658ba9f9aedbb67c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga6f024fe7418658a4658ba9f9aedbb67c">EBI_BankReadTimingConfig</a> (uint32_t banks, bool pageMode, bool prefetch, bool halfRE)</td></tr>
+<tr class="memdesc:ga6f024fe7418658a4658ba9f9aedbb67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure read operation parameters for selected bank.  <a href="group__EBI.html#ga6f024fe7418658a4658ba9f9aedbb67c">More...</a><br /></td></tr>
+<tr class="separator:ga6f024fe7418658a4658ba9f9aedbb67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad300ed5617b3b3839a75e22743fe77df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gad300ed5617b3b3839a75e22743fe77df">EBI_BankReadTimingSet</a> (uint32_t banks, int setupCycles, int strobeCycles, int holdCycles)</td></tr>
+<tr class="memdesc:gad300ed5617b3b3839a75e22743fe77df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of read bus accesses.  <a href="group__EBI.html#gad300ed5617b3b3839a75e22743fe77df">More...</a><br /></td></tr>
+<tr class="separator:gad300ed5617b3b3839a75e22743fe77df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26a32f19e176055efd9078ee0bacb443"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga26a32f19e176055efd9078ee0bacb443">EBI_BankWriteTimingConfig</a> (uint32_t banks, bool writeBufDisable, bool halfWE)</td></tr>
+<tr class="memdesc:ga26a32f19e176055efd9078ee0bacb443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure write operation parameters for selected bank.  <a href="group__EBI.html#ga26a32f19e176055efd9078ee0bacb443">More...</a><br /></td></tr>
+<tr class="separator:ga26a32f19e176055efd9078ee0bacb443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6aeffaa1964a6ace3e4cbf8dc909767"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gac6aeffaa1964a6ace3e4cbf8dc909767">EBI_BankWriteTimingSet</a> (uint32_t banks, int setupCycles, int strobeCycles, int holdCycles)</td></tr>
+<tr class="memdesc:gac6aeffaa1964a6ace3e4cbf8dc909767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of write bus accesses.  <a href="group__EBI.html#gac6aeffaa1964a6ace3e4cbf8dc909767">More...</a><br /></td></tr>
+<tr class="separator:gac6aeffaa1964a6ace3e4cbf8dc909767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ac877439175a25e03e658d247ae1615"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga3ac877439175a25e03e658d247ae1615">EBI_ChipSelectEnable</a> (uint32_t cs, bool enable)</td></tr>
+<tr class="memdesc:ga3ac877439175a25e03e658d247ae1615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable EBI Chip Select.  <a href="group__EBI.html#ga3ac877439175a25e03e658d247ae1615">More...</a><br /></td></tr>
+<tr class="separator:ga3ac877439175a25e03e658d247ae1615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga23ce88f16cb66663c76c21573469d251"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga23ce88f16cb66663c76c21573469d251"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga23ce88f16cb66663c76c21573469d251">EBI_Disable</a> (void)</td></tr>
 <tr class="memdesc:ga23ce88f16cb66663c76c21573469d251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable External Bus Interface. <br /></td></tr>
 <tr class="separator:ga23ce88f16cb66663c76c21573469d251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f9278d0c9c01c9f45ccf423becc1f31"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga4f9278d0c9c01c9f45ccf423becc1f31">EBI_BankAddress</a> (uint32_t bank)</td></tr>
-<tr class="memdesc:ga4f9278d0c9c01c9f45ccf423becc1f31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return base address of EBI bank.  <a href="group__EBI.html#ga4f9278d0c9c01c9f45ccf423becc1f31">More...</a><br /></td></tr>
-<tr class="separator:ga4f9278d0c9c01c9f45ccf423becc1f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab75fa83a3071d81162d19db6ec191ec5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gab75fa83a3071d81162d19db6ec191ec5">EBI_BankEnable</a> (uint32_t banks, bool enable)</td></tr>
-<tr class="memdesc:gab75fa83a3071d81162d19db6ec191ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable EBI Bank.  <a href="group__EBI.html#gab75fa83a3071d81162d19db6ec191ec5">More...</a><br /></td></tr>
-<tr class="separator:gab75fa83a3071d81162d19db6ec191ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga897172023b4e5acc58c3bb5afb9e4195"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga897172023b4e5acc58c3bb5afb9e4195">EBI_TFTInit</a> (const <a class="el" href="structEBI__TFTInit__TypeDef.html">EBI_TFTInit_TypeDef</a> *ebiTFTInit)</td></tr>
-<tr class="memdesc:ga897172023b4e5acc58c3bb5afb9e4195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and initialize TFT Direct Drive.  <a href="group__EBI.html#ga897172023b4e5acc58c3bb5afb9e4195">More...</a><br /></td></tr>
-<tr class="separator:ga897172023b4e5acc58c3bb5afb9e4195"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaddde4b33a283d6ef4b22578d73f43f76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gaddde4b33a283d6ef4b22578d73f43f76">EBI_TFTSizeSet</a> (uint32_t horizontal, uint32_t vertical)</td></tr>
-<tr class="memdesc:gaddde4b33a283d6ef4b22578d73f43f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and initialize TFT size settings.  <a href="group__EBI.html#gaddde4b33a283d6ef4b22578d73f43f76">More...</a><br /></td></tr>
-<tr class="separator:gaddde4b33a283d6ef4b22578d73f43f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9cc5e21f92d8794704250addd555f887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga9cc5e21f92d8794704250addd555f887">EBI_TFTHPorchSet</a> (int front, int back, int pulseWidth)</td></tr>
-<tr class="memdesc:ga9cc5e21f92d8794704250addd555f887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and initialize Horizontal Porch Settings.  <a href="group__EBI.html#ga9cc5e21f92d8794704250addd555f887">More...</a><br /></td></tr>
-<tr class="separator:ga9cc5e21f92d8794704250addd555f887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4bd6c0b5a2274f9e381ed8ff78291b7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga4bd6c0b5a2274f9e381ed8ff78291b7b">EBI_TFTVPorchSet</a> (int front, int back, int pulseWidth)</td></tr>
-<tr class="memdesc:ga4bd6c0b5a2274f9e381ed8ff78291b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Vertical Porch Settings.  <a href="group__EBI.html#ga4bd6c0b5a2274f9e381ed8ff78291b7b">More...</a><br /></td></tr>
-<tr class="separator:ga4bd6c0b5a2274f9e381ed8ff78291b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3160653245c7fa8aa2c5d20f32f8fde0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga3160653245c7fa8aa2c5d20f32f8fde0">EBI_TFTTimingSet</a> (int dclkPeriod, int start, int setup, int hold)</td></tr>
-<tr class="memdesc:ga3160653245c7fa8aa2c5d20f32f8fde0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure TFT Direct Drive Timing Settings.  <a href="group__EBI.html#ga3160653245c7fa8aa2c5d20f32f8fde0">More...</a><br /></td></tr>
-<tr class="separator:ga3160653245c7fa8aa2c5d20f32f8fde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad300ed5617b3b3839a75e22743fe77df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gad300ed5617b3b3839a75e22743fe77df">EBI_BankReadTimingSet</a> (uint32_t banks, int setupCycles, int strobeCycles, int holdCycles)</td></tr>
-<tr class="memdesc:gad300ed5617b3b3839a75e22743fe77df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of read bus accesses.  <a href="group__EBI.html#gad300ed5617b3b3839a75e22743fe77df">More...</a><br /></td></tr>
-<tr class="separator:gad300ed5617b3b3839a75e22743fe77df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f024fe7418658a4658ba9f9aedbb67c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga6f024fe7418658a4658ba9f9aedbb67c">EBI_BankReadTimingConfig</a> (uint32_t banks, bool pageMode, bool prefetch, bool halfRE)</td></tr>
-<tr class="memdesc:ga6f024fe7418658a4658ba9f9aedbb67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure read operation parameters for selected bank.  <a href="group__EBI.html#ga6f024fe7418658a4658ba9f9aedbb67c">More...</a><br /></td></tr>
-<tr class="separator:ga6f024fe7418658a4658ba9f9aedbb67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6aeffaa1964a6ace3e4cbf8dc909767"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gac6aeffaa1964a6ace3e4cbf8dc909767">EBI_BankWriteTimingSet</a> (uint32_t banks, int setupCycles, int strobeCycles, int holdCycles)</td></tr>
-<tr class="memdesc:gac6aeffaa1964a6ace3e4cbf8dc909767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of write bus accesses.  <a href="group__EBI.html#gac6aeffaa1964a6ace3e4cbf8dc909767">More...</a><br /></td></tr>
-<tr class="separator:gac6aeffaa1964a6ace3e4cbf8dc909767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26a32f19e176055efd9078ee0bacb443"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga26a32f19e176055efd9078ee0bacb443">EBI_BankWriteTimingConfig</a> (uint32_t banks, bool writeBufDisable, bool halfWE)</td></tr>
-<tr class="memdesc:ga26a32f19e176055efd9078ee0bacb443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure write operation parameters for selected bank.  <a href="group__EBI.html#ga26a32f19e176055efd9078ee0bacb443">More...</a><br /></td></tr>
-<tr class="separator:ga26a32f19e176055efd9078ee0bacb443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga436598b8da21b9d09559485af43cd12c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga436598b8da21b9d09559485af43cd12c">EBI_BankAddressTimingSet</a> (uint32_t banks, int setupCycles, int holdCycles)</td></tr>
-<tr class="memdesc:ga436598b8da21b9d09559485af43cd12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of address latch bus accesses.  <a href="group__EBI.html#ga436598b8da21b9d09559485af43cd12c">More...</a><br /></td></tr>
-<tr class="separator:ga436598b8da21b9d09559485af43cd12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6b82e12f6e3e8122191ae92783575d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gac6b82e12f6e3e8122191ae92783575d9">EBI_BankAddressTimingConfig</a> (uint32_t banks, bool halfALE)</td></tr>
-<tr class="memdesc:gac6b82e12f6e3e8122191ae92783575d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure address operation parameters for selected bank.  <a href="group__EBI.html#gac6b82e12f6e3e8122191ae92783575d9">More...</a><br /></td></tr>
-<tr class="separator:gac6b82e12f6e3e8122191ae92783575d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga572ea9ffff7b789d3834cccef3fe911d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga572ea9ffff7b789d3834cccef3fe911d">EBI_BankPolaritySet</a> (uint32_t banks, <a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a> line, <a class="el" href="group__EBI.html#ga606deb6325c511ef9397e7271d2908c8">EBI_Polarity_TypeDef</a> polarity)</td></tr>
-<tr class="memdesc:ga572ea9ffff7b789d3834cccef3fe911d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure EBI pin polarity for selected bank(s) for devices with individual timing support.  <a href="group__EBI.html#ga572ea9ffff7b789d3834cccef3fe911d">More...</a><br /></td></tr>
-<tr class="separator:ga572ea9ffff7b789d3834cccef3fe911d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0522f174e6669dff3a65a897f2861f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gac0522f174e6669dff3a65a897f2861f0">EBI_BankByteLaneEnable</a> (uint32_t banks, bool enable)</td></tr>
-<tr class="memdesc:gac0522f174e6669dff3a65a897f2861f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Byte Lane Enable for select banks timing support.  <a href="group__EBI.html#gac0522f174e6669dff3a65a897f2861f0">More...</a><br /></td></tr>
-<tr class="separator:gac0522f174e6669dff3a65a897f2861f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga55f90f34115e6208948a03f6d32e74bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga55f90f34115e6208948a03f6d32e74bd">EBI_AltMapEnable</a> (bool enable)</td></tr>
-<tr class="memdesc:ga55f90f34115e6208948a03f6d32e74bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Alternate Address Map support Enables or disables 256MB address range for all banks.  <a href="group__EBI.html#ga55f90f34115e6208948a03f6d32e74bd">More...</a><br /></td></tr>
-<tr class="separator:ga55f90f34115e6208948a03f6d32e74bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad4d4f612c626c8a0881289df719eab35"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gad4d4f612c626c8a0881289df719eab35">EBI_TFTEnable</a> (<a class="el" href="group__EBI.html#ga02c24ae10472226b255873ec5466e128">EBI_TFTDDMode_TypeDef</a> mode)</td></tr>
-<tr class="memdesc:gad4d4f612c626c8a0881289df719eab35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable TFT Direct Drive.  <a href="group__EBI.html#gad4d4f612c626c8a0881289df719eab35">More...</a><br /></td></tr>
-<tr class="separator:gad4d4f612c626c8a0881289df719eab35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4bb0491ae71ed303f803c6fe809268b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gae4bb0491ae71ed303f803c6fe809268b">EBI_TFTFrameBaseSet</a> (uint32_t address)</td></tr>
-<tr class="memdesc:gae4bb0491ae71ed303f803c6fe809268b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure frame buffer pointer.  <a href="group__EBI.html#gae4bb0491ae71ed303f803c6fe809268b">More...</a><br /></td></tr>
-<tr class="separator:gae4bb0491ae71ed303f803c6fe809268b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf21700f1ddec0e287c79ae863ae15c8d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gaf21700f1ddec0e287c79ae863ae15c8d">EBI_TFTPixelSet</a> (int pixel, uint32_t color)</td></tr>
-<tr class="memdesc:gaf21700f1ddec0e287c79ae863ae15c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set TFT Pixel Color 0 or 1.  <a href="group__EBI.html#gaf21700f1ddec0e287c79ae863ae15c8d">More...</a><br /></td></tr>
-<tr class="separator:gaf21700f1ddec0e287c79ae863ae15c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0c2d2c766bae83c6be0c17f81baea33"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gaf0c2d2c766bae83c6be0c17f81baea33">EBI_TFTMaskBlendMode</a> (<a class="el" href="group__EBI.html#gad8f6723eea84039cc9c1699cbf4ceb6d">EBI_TFTMaskBlend_TypeDef</a> maskBlend)</td></tr>
-<tr class="memdesc:gaf0c2d2c766bae83c6be0c17f81baea33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Masking and Blending Mode Set.  <a href="group__EBI.html#gaf0c2d2c766bae83c6be0c17f81baea33">More...</a><br /></td></tr>
-<tr class="separator:gaf0c2d2c766bae83c6be0c17f81baea33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3531926cf71aa41b00a27ce7649c4656"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga3531926cf71aa41b00a27ce7649c4656">EBI_TFTAlphaBlendSet</a> (uint8_t alpha)</td></tr>
-<tr class="memdesc:ga3531926cf71aa41b00a27ce7649c4656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set TFT Alpha Blending Factor.  <a href="group__EBI.html#ga3531926cf71aa41b00a27ce7649c4656">More...</a><br /></td></tr>
-<tr class="separator:ga3531926cf71aa41b00a27ce7649c4656"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf56e51fdf5096eb0f8dd366a0b0a2c7d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gaf56e51fdf5096eb0f8dd366a0b0a2c7d">EBI_TFTMaskSet</a> (uint32_t mask)</td></tr>
-<tr class="memdesc:gaf56e51fdf5096eb0f8dd366a0b0a2c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set TFT mask value Data accesses that matches this value are suppressed.  <a href="group__EBI.html#gaf56e51fdf5096eb0f8dd366a0b0a2c7d">More...</a><br /></td></tr>
-<tr class="separator:gaf56e51fdf5096eb0f8dd366a0b0a2c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga531ff978c073126b4ee5293bfa4c5c8b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga531ff978c073126b4ee5293bfa4c5c8b">EBI_TFTVCount</a> (void)</td></tr>
-<tr class="memdesc:ga531ff978c073126b4ee5293bfa4c5c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current vertical position counter.  <a href="group__EBI.html#ga531ff978c073126b4ee5293bfa4c5c8b">More...</a><br /></td></tr>
-<tr class="separator:ga531ff978c073126b4ee5293bfa4c5c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab89512300fa1d450993e505725a40453"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gab89512300fa1d450993e505725a40453">EBI_TFTHCount</a> (void)</td></tr>
-<tr class="memdesc:gab89512300fa1d450993e505725a40453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current horizontal position counter.  <a href="group__EBI.html#gab89512300fa1d450993e505725a40453">More...</a><br /></td></tr>
-<tr class="separator:gab89512300fa1d450993e505725a40453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae9d0dea787561cb46050e9ec96a6bf6d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gae9d0dea787561cb46050e9ec96a6bf6d">EBI_TFTFBTriggerSet</a> (<a class="el" href="group__EBI.html#ga094315afc867b41449c9c88ce047d3bc">EBI_TFTFrameBufTrigger_TypeDef</a> sync)</td></tr>
-<tr class="memdesc:gae9d0dea787561cb46050e9ec96a6bf6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Frame Buffer Trigger.  <a href="group__EBI.html#gae9d0dea787561cb46050e9ec96a6bf6d">More...</a><br /></td></tr>
-<tr class="separator:gae9d0dea787561cb46050e9ec96a6bf6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77b83e8c503f228e2a8a6c3aa8266721"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga77b83e8c503f228e2a8a6c3aa8266721">EBI_TFTHStrideSet</a> (uint32_t nbytes)</td></tr>
-<tr class="memdesc:ga77b83e8c503f228e2a8a6c3aa8266721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set horizontal TFT stride value in number of bytes.  <a href="group__EBI.html#ga77b83e8c503f228e2a8a6c3aa8266721">More...</a><br /></td></tr>
-<tr class="separator:ga77b83e8c503f228e2a8a6c3aa8266721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9f118caa49eadf9713559cfac3d3c04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">EBI_Init</a> (const <a class="el" href="structEBI__Init__TypeDef.html">EBI_Init_TypeDef</a> *ebiInit)</td></tr>
+<tr class="memdesc:gad9f118caa49eadf9713559cfac3d3c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and enable External Bus Interface.  <a href="group__EBI.html#gad9f118caa49eadf9713559cfac3d3c04">More...</a><br /></td></tr>
+<tr class="separator:gad9f118caa49eadf9713559cfac3d3c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0b3a44897bcc8f5148ab8b5c2babecc0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga0b3a44897bcc8f5148ab8b5c2babecc0">EBI_IntClear</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:ga0b3a44897bcc8f5148ab8b5c2babecc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending EBI interrupts.  <a href="group__EBI.html#ga0b3a44897bcc8f5148ab8b5c2babecc0">More...</a><br /></td></tr>
 <tr class="separator:ga0b3a44897bcc8f5148ab8b5c2babecc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2fcb5d07b73316ae6dbdbedcb5ab78d2"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga2fcb5d07b73316ae6dbdbedcb5ab78d2">EBI_IntSet</a> (uint32_t flags)</td></tr>
-<tr class="memdesc:ga2fcb5d07b73316ae6dbdbedcb5ab78d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one or more pending EBI interrupts.  <a href="group__EBI.html#ga2fcb5d07b73316ae6dbdbedcb5ab78d2">More...</a><br /></td></tr>
-<tr class="separator:ga2fcb5d07b73316ae6dbdbedcb5ab78d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a3ddc05cb18aaed27748c20c7a23355"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga7a3ddc05cb18aaed27748c20c7a23355">EBI_IntDisable</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:ga7a3ddc05cb18aaed27748c20c7a23355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable one or more EBI interrupts.  <a href="group__EBI.html#ga7a3ddc05cb18aaed27748c20c7a23355">More...</a><br /></td></tr>
 <tr class="separator:ga7a3ddc05cb18aaed27748c20c7a23355"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -447,6 +416,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memitem:gac6ad354d275433cf6f6d80828f175120"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gac6ad354d275433cf6f6d80828f175120">EBI_IntGetEnabled</a> (void)</td></tr>
 <tr class="memdesc:gac6ad354d275433cf6f6d80828f175120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get enabled and pending EBI interrupt flags. Useful for handling more interrupt sources in the same interrupt handler.  <a href="group__EBI.html#gac6ad354d275433cf6f6d80828f175120">More...</a><br /></td></tr>
 <tr class="separator:gac6ad354d275433cf6f6d80828f175120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fcb5d07b73316ae6dbdbedcb5ab78d2"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga2fcb5d07b73316ae6dbdbedcb5ab78d2">EBI_IntSet</a> (uint32_t flags)</td></tr>
+<tr class="memdesc:ga2fcb5d07b73316ae6dbdbedcb5ab78d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one or more pending EBI interrupts.  <a href="group__EBI.html#ga2fcb5d07b73316ae6dbdbedcb5ab78d2">More...</a><br /></td></tr>
+<tr class="separator:ga2fcb5d07b73316ae6dbdbedcb5ab78d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7fea7741967f124ac0a4021b48cc786"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gaf7fea7741967f124ac0a4021b48cc786">EBI_PolaritySet</a> (<a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a> line, <a class="el" href="group__EBI.html#ga606deb6325c511ef9397e7271d2908c8">EBI_Polarity_TypeDef</a> polarity)</td></tr>
+<tr class="memdesc:gaf7fea7741967f124ac0a4021b48cc786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure EBI pin polarity.  <a href="group__EBI.html#gaf7fea7741967f124ac0a4021b48cc786">More...</a><br /></td></tr>
+<tr class="separator:gaf7fea7741967f124ac0a4021b48cc786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd1af7612f8f14f7574df14547ce97e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gabd1af7612f8f14f7574df14547ce97e2">EBI_ReadTimingSet</a> (int setupCycles, int strobeCycles, int holdCycles)</td></tr>
+<tr class="memdesc:gabd1af7612f8f14f7574df14547ce97e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of read bus accesses.  <a href="group__EBI.html#gabd1af7612f8f14f7574df14547ce97e2">More...</a><br /></td></tr>
+<tr class="separator:gabd1af7612f8f14f7574df14547ce97e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga201417ea7b7a4b4b0e011d05bf45e434"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga201417ea7b7a4b4b0e011d05bf45e434"></a>
 __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga201417ea7b7a4b4b0e011d05bf45e434">EBI_StartNandEccGen</a> (void)</td></tr>
 <tr class="memdesc:ga201417ea7b7a4b4b0e011d05bf45e434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start ECC generator on NAND flash transfers. <br /></td></tr>
@@ -454,44 +432,62 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="memitem:gae4b13ea35205bc87efb2fbbb3eaabccf"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gae4b13ea35205bc87efb2fbbb3eaabccf">EBI_StopNandEccGen</a> (void)</td></tr>
 <tr class="memdesc:gae4b13ea35205bc87efb2fbbb3eaabccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop NAND flash ECC generator and return generated ECC.  <a href="group__EBI.html#gae4b13ea35205bc87efb2fbbb3eaabccf">More...</a><br /></td></tr>
 <tr class="separator:gae4b13ea35205bc87efb2fbbb3eaabccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ac877439175a25e03e658d247ae1615"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga3ac877439175a25e03e658d247ae1615">EBI_ChipSelectEnable</a> (uint32_t cs, bool enable)</td></tr>
-<tr class="memdesc:ga3ac877439175a25e03e658d247ae1615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable EBI Chip Select.  <a href="group__EBI.html#ga3ac877439175a25e03e658d247ae1615">More...</a><br /></td></tr>
-<tr class="separator:ga3ac877439175a25e03e658d247ae1615"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd1af7612f8f14f7574df14547ce97e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gabd1af7612f8f14f7574df14547ce97e2">EBI_ReadTimingSet</a> (int setupCycles, int strobeCycles, int holdCycles)</td></tr>
-<tr class="memdesc:gabd1af7612f8f14f7574df14547ce97e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of read bus accesses.  <a href="group__EBI.html#gabd1af7612f8f14f7574df14547ce97e2">More...</a><br /></td></tr>
-<tr class="separator:gabd1af7612f8f14f7574df14547ce97e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3531926cf71aa41b00a27ce7649c4656"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga3531926cf71aa41b00a27ce7649c4656">EBI_TFTAlphaBlendSet</a> (uint8_t alpha)</td></tr>
+<tr class="memdesc:ga3531926cf71aa41b00a27ce7649c4656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set TFT Alpha Blending Factor.  <a href="group__EBI.html#ga3531926cf71aa41b00a27ce7649c4656">More...</a><br /></td></tr>
+<tr class="separator:ga3531926cf71aa41b00a27ce7649c4656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4d4f612c626c8a0881289df719eab35"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gad4d4f612c626c8a0881289df719eab35">EBI_TFTEnable</a> (<a class="el" href="group__EBI.html#ga02c24ae10472226b255873ec5466e128">EBI_TFTDDMode_TypeDef</a> mode)</td></tr>
+<tr class="memdesc:gad4d4f612c626c8a0881289df719eab35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable TFT Direct Drive.  <a href="group__EBI.html#gad4d4f612c626c8a0881289df719eab35">More...</a><br /></td></tr>
+<tr class="separator:gad4d4f612c626c8a0881289df719eab35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9d0dea787561cb46050e9ec96a6bf6d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gae9d0dea787561cb46050e9ec96a6bf6d">EBI_TFTFBTriggerSet</a> (<a class="el" href="group__EBI.html#ga094315afc867b41449c9c88ce047d3bc">EBI_TFTFrameBufTrigger_TypeDef</a> sync)</td></tr>
+<tr class="memdesc:gae9d0dea787561cb46050e9ec96a6bf6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Frame Buffer Trigger.  <a href="group__EBI.html#gae9d0dea787561cb46050e9ec96a6bf6d">More...</a><br /></td></tr>
+<tr class="separator:gae9d0dea787561cb46050e9ec96a6bf6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4bb0491ae71ed303f803c6fe809268b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gae4bb0491ae71ed303f803c6fe809268b">EBI_TFTFrameBaseSet</a> (uint32_t address)</td></tr>
+<tr class="memdesc:gae4bb0491ae71ed303f803c6fe809268b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure frame buffer pointer.  <a href="group__EBI.html#gae4bb0491ae71ed303f803c6fe809268b">More...</a><br /></td></tr>
+<tr class="separator:gae4bb0491ae71ed303f803c6fe809268b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab89512300fa1d450993e505725a40453"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gab89512300fa1d450993e505725a40453">EBI_TFTHCount</a> (void)</td></tr>
+<tr class="memdesc:gab89512300fa1d450993e505725a40453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current horizontal position counter.  <a href="group__EBI.html#gab89512300fa1d450993e505725a40453">More...</a><br /></td></tr>
+<tr class="separator:gab89512300fa1d450993e505725a40453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9cc5e21f92d8794704250addd555f887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga9cc5e21f92d8794704250addd555f887">EBI_TFTHPorchSet</a> (int front, int back, int pulseWidth)</td></tr>
+<tr class="memdesc:ga9cc5e21f92d8794704250addd555f887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and initialize Horizontal Porch Settings.  <a href="group__EBI.html#ga9cc5e21f92d8794704250addd555f887">More...</a><br /></td></tr>
+<tr class="separator:ga9cc5e21f92d8794704250addd555f887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77b83e8c503f228e2a8a6c3aa8266721"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga77b83e8c503f228e2a8a6c3aa8266721">EBI_TFTHStrideSet</a> (uint32_t nbytes)</td></tr>
+<tr class="memdesc:ga77b83e8c503f228e2a8a6c3aa8266721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set horizontal TFT stride value in number of bytes.  <a href="group__EBI.html#ga77b83e8c503f228e2a8a6c3aa8266721">More...</a><br /></td></tr>
+<tr class="separator:ga77b83e8c503f228e2a8a6c3aa8266721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga897172023b4e5acc58c3bb5afb9e4195"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga897172023b4e5acc58c3bb5afb9e4195">EBI_TFTInit</a> (const <a class="el" href="structEBI__TFTInit__TypeDef.html">EBI_TFTInit_TypeDef</a> *ebiTFTInit)</td></tr>
+<tr class="memdesc:ga897172023b4e5acc58c3bb5afb9e4195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and initialize TFT Direct Drive.  <a href="group__EBI.html#ga897172023b4e5acc58c3bb5afb9e4195">More...</a><br /></td></tr>
+<tr class="separator:ga897172023b4e5acc58c3bb5afb9e4195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0c2d2c766bae83c6be0c17f81baea33"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gaf0c2d2c766bae83c6be0c17f81baea33">EBI_TFTMaskBlendMode</a> (<a class="el" href="group__EBI.html#gad8f6723eea84039cc9c1699cbf4ceb6d">EBI_TFTMaskBlend_TypeDef</a> maskBlend)</td></tr>
+<tr class="memdesc:gaf0c2d2c766bae83c6be0c17f81baea33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Masking and Blending Mode Set.  <a href="group__EBI.html#gaf0c2d2c766bae83c6be0c17f81baea33">More...</a><br /></td></tr>
+<tr class="separator:gaf0c2d2c766bae83c6be0c17f81baea33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf56e51fdf5096eb0f8dd366a0b0a2c7d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gaf56e51fdf5096eb0f8dd366a0b0a2c7d">EBI_TFTMaskSet</a> (uint32_t mask)</td></tr>
+<tr class="memdesc:gaf56e51fdf5096eb0f8dd366a0b0a2c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set TFT mask value Data accesses that matches this value are suppressed.  <a href="group__EBI.html#gaf56e51fdf5096eb0f8dd366a0b0a2c7d">More...</a><br /></td></tr>
+<tr class="separator:gaf56e51fdf5096eb0f8dd366a0b0a2c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf21700f1ddec0e287c79ae863ae15c8d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gaf21700f1ddec0e287c79ae863ae15c8d">EBI_TFTPixelSet</a> (int pixel, uint32_t color)</td></tr>
+<tr class="memdesc:gaf21700f1ddec0e287c79ae863ae15c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set TFT Pixel Color 0 or 1.  <a href="group__EBI.html#gaf21700f1ddec0e287c79ae863ae15c8d">More...</a><br /></td></tr>
+<tr class="separator:gaf21700f1ddec0e287c79ae863ae15c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddde4b33a283d6ef4b22578d73f43f76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gaddde4b33a283d6ef4b22578d73f43f76">EBI_TFTSizeSet</a> (uint32_t horizontal, uint32_t vertical)</td></tr>
+<tr class="memdesc:gaddde4b33a283d6ef4b22578d73f43f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and initialize TFT size settings.  <a href="group__EBI.html#gaddde4b33a283d6ef4b22578d73f43f76">More...</a><br /></td></tr>
+<tr class="separator:gaddde4b33a283d6ef4b22578d73f43f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3160653245c7fa8aa2c5d20f32f8fde0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga3160653245c7fa8aa2c5d20f32f8fde0">EBI_TFTTimingSet</a> (int dclkPeriod, int start, int setup, int hold)</td></tr>
+<tr class="memdesc:ga3160653245c7fa8aa2c5d20f32f8fde0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure TFT Direct Drive Timing Settings.  <a href="group__EBI.html#ga3160653245c7fa8aa2c5d20f32f8fde0">More...</a><br /></td></tr>
+<tr class="separator:ga3160653245c7fa8aa2c5d20f32f8fde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga531ff978c073126b4ee5293bfa4c5c8b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga531ff978c073126b4ee5293bfa4c5c8b">EBI_TFTVCount</a> (void)</td></tr>
+<tr class="memdesc:ga531ff978c073126b4ee5293bfa4c5c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current vertical position counter.  <a href="group__EBI.html#ga531ff978c073126b4ee5293bfa4c5c8b">More...</a><br /></td></tr>
+<tr class="separator:ga531ff978c073126b4ee5293bfa4c5c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bd6c0b5a2274f9e381ed8ff78291b7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#ga4bd6c0b5a2274f9e381ed8ff78291b7b">EBI_TFTVPorchSet</a> (int front, int back, int pulseWidth)</td></tr>
+<tr class="memdesc:ga4bd6c0b5a2274f9e381ed8ff78291b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Vertical Porch Settings.  <a href="group__EBI.html#ga4bd6c0b5a2274f9e381ed8ff78291b7b">More...</a><br /></td></tr>
+<tr class="separator:ga4bd6c0b5a2274f9e381ed8ff78291b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad9333cd6c2c48f2d831513b88f638429"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gad9333cd6c2c48f2d831513b88f638429">EBI_WriteTimingSet</a> (int setupCycles, int strobeCycles, int holdCycles)</td></tr>
 <tr class="memdesc:gad9333cd6c2c48f2d831513b88f638429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of write bus accesses.  <a href="group__EBI.html#gad9333cd6c2c48f2d831513b88f638429">More...</a><br /></td></tr>
 <tr class="separator:gad9333cd6c2c48f2d831513b88f638429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabef4d874ff17aa478fae71333a4c1ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gabef4d874ff17aa478fae71333a4c1ef5">EBI_AddressTimingSet</a> (int setupCycles, int holdCycles)</td></tr>
-<tr class="memdesc:gabef4d874ff17aa478fae71333a4c1ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure timing values of address latch bus accesses.  <a href="group__EBI.html#gabef4d874ff17aa478fae71333a4c1ef5">More...</a><br /></td></tr>
-<tr class="separator:gabef4d874ff17aa478fae71333a4c1ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf7fea7741967f124ac0a4021b48cc786"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EBI.html#gaf7fea7741967f124ac0a4021b48cc786">EBI_PolaritySet</a> (<a class="el" href="group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c">EBI_Line_TypeDef</a> line, <a class="el" href="group__EBI.html#ga606deb6325c511ef9397e7271d2908c8">EBI_Polarity_TypeDef</a> polarity)</td></tr>
-<tr class="memdesc:gaf7fea7741967f124ac0a4021b48cc786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure EBI pin polarity.  <a href="group__EBI.html#gaf7fea7741967f124ac0a4021b48cc786">More...</a><br /></td></tr>
-<tr class="separator:gaf7fea7741967f124ac0a4021b48cc786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="em__ebi_8h_source.html">em_ebi.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__ebi_8h.html">em_ebi.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:37:31 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:29:36 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

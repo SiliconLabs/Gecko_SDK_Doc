@@ -3,7 +3,6 @@ var searchData=
   ['emu_5fbodmode_5ftypedef',['EMU_BODMode_TypeDef',['../group__EMU.html#ga7453aecd1fc0cf2d035df6178dfb9a16',1,'em_emu.h']]],
   ['emu_5fdcdcanaperipheralpower_5ftypedef',['EMU_DcdcAnaPeripheralPower_TypeDef',['../group__EMU.html#gaccf990475418eb1ed67acaed99efa4d0',1,'em_emu.h']]],
   ['emu_5fdcdclnrcoband_5ftypedef',['EMU_DcdcLnRcoBand_TypeDef',['../group__EMU.html#gaa7b79860e9ac3e301ab467715432b644',1,'em_emu.h']]],
-  ['emu_5fdcdclntransientmode_5ftypedef',['EMU_DcdcLnTransientMode_TypeDef',['../group__EMU.html#gaf36ca06d495617fe5f5c5bb12954effd',1,'em_emu.h']]],
   ['emu_5fdcdcmode_5ftypedef',['EMU_DcdcMode_TypeDef',['../group__EMU.html#ga8dc5324b0e9baa047afdb67739bdb53d',1,'em_emu.h']]],
   ['emu_5fem4pinretention_5ftypedef',['EMU_EM4PinRetention_TypeDef',['../group__EMU.html#gabfa67ae54e346d342a4e4bbc8c7ad27e',1,'em_emu.h']]],
   ['emu_5fem4state_5ftypedef',['EMU_EM4State_TypeDef',['../group__EMU.html#gad04d2dd04b72ad9b4e621c29f59b4e81',1,'em_emu.h']]],

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['tempsensor',['TempSensor',['../group__TempSensor.html',1,'']]],
-  ['textdisplay',['Textdisplay',['../group__Textdisplay.html',1,'']]],
-  ['tft',['Tft',['../group__Tft.html',1,'']]],
-  ['timer',['TIMER',['../group__TIMER.html',1,'']]],
-  ['touch',['Touch',['../group__Touch.html',1,'']]],
-  ['transmit_5fplugin',['Transmit_Plugin',['../group__Transmit__Plugin.html',1,'']]]
+  ['segmentlcd',['SegmentLcd',['../group__SegmentLcd.html',1,'']]],
+  ['si114x',['Si114x',['../group__Si114x.html',1,'']]],
+  ['si7013',['Si7013',['../group__Si7013.html',1,'']]],
+  ['sleep',['SLEEP',['../group__SLEEP.html',1,'']]],
+  ['spidrv',['SPIDRV',['../group__SPIDRV.html',1,'']]],
+  ['system',['SYSTEM',['../group__SYSTEM.html',1,'']]]
 ];

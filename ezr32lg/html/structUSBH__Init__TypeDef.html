@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -69,13 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -114,45 +106,26 @@ $(document).ready(function(){initNavTree('structUSBH__Init__TypeDef.html','');})
 <div class="title">USBH_Init_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group__USB.html">USB</a> &raquo; <a class="el" href="group__USB__HOST.html">USB_HOST</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>USB Host stack initialization structure. </p>
+<p>This structure is passed to <a class="el" href="group__USB__HOST.html#gaedb37814762148d4977bd0dbc1a9b46e">USBH_Init()</a> when starting up the device. Max accumulated FIFO size is 2K bytes. </p>
 
-<p>USB Host stack initialization structure.  
- <a href="structUSBH__Init__TypeDef.html#details">More...</a></p>
-
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00900">900</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="em__usb_8h_source.html">em_usb.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:afb23a2753f21e530ed6f5ccf1316a5b2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Init__TypeDef.html#afb23a2753f21e530ed6f5ccf1316a5b2">rxFifoSize</a></td></tr>
-<tr class="separator:afb23a2753f21e530ed6f5ccf1316a5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca7555b01d0e35256d228cedd295a312"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Init__TypeDef.html#aca7555b01d0e35256d228cedd295a312">nptxFifoSize</a></td></tr>
 <tr class="separator:aca7555b01d0e35256d228cedd295a312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f06d71480097b85d53af70245c33ea1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Init__TypeDef.html#a4f06d71480097b85d53af70245c33ea1">ptxFifoSize</a></td></tr>
 <tr class="separator:a4f06d71480097b85d53af70245c33ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bbdaa8a61f7c83bb25a835b30a46277"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Init__TypeDef.html#a2bbdaa8a61f7c83bb25a835b30a46277">reserved</a></td></tr>
 <tr class="separator:a2bbdaa8a61f7c83bb25a835b30a46277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb23a2753f21e530ed6f5ccf1316a5b2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUSBH__Init__TypeDef.html#afb23a2753f21e530ed6f5ccf1316a5b2">rxFifoSize</a></td></tr>
+<tr class="separator:afb23a2753f21e530ed6f5ccf1316a5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This structure is passed to <a class="el" href="group__USB__HOST.html#gaedb37814762148d4977bd0dbc1a9b46e">USBH_Init()</a> when starting up the device. Max accumulated FIFO size is 2K bytes. </p>
-
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00905">905</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="afb23a2753f21e530ed6f5ccf1316a5b2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t USBH_Init_TypeDef::rxFifoSize</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Number of FIFO bytes set aside for IN endpoints. </p>
-
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00907">907</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__usbh_8c_source.html#l00837">USBH_Init()</a>.</p>
-
-</div>
-</div>
+<h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="aca7555b01d0e35256d228cedd295a312"></a>
 <div class="memitem">
 <div class="memproto">
@@ -164,9 +137,9 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Number of FIFO bytes set aside for OUT CTRL/BULK endoints. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00908">908</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00903">903</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__usbh_8c_source.html#l00837">USBH_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__USB__HOST.html#gaedb37814762148d4977bd0dbc1a9b46e">USBH_Init()</a>.</p>
 
 </div>
 </div>
@@ -181,9 +154,9 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Number of FIFO bytes set aside for OUT INTR/ISO endoints. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00909">909</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00904">904</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__usbh_8c_source.html#l00837">USBH_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__USB__HOST.html#gaedb37814762148d4977bd0dbc1a9b46e">USBH_Init()</a>.</p>
 
 </div>
 </div>
@@ -198,7 +171,24 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Reserved for future use. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00910">910</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00905">905</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb23a2753f21e530ed6f5ccf1316a5b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t USBH_Init_TypeDef::rxFifoSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Number of FIFO bytes set aside for IN endpoints. </p>
+
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00902">902</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__USB__HOST.html#gaedb37814762148d4977bd0dbc1a9b46e">USBH_Init()</a>.</p>
 
 </div>
 </div>
@@ -211,7 +201,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structUSBH__Init__TypeDef.html">USBH_Init_TypeDef</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:41:43 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:43:44 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -128,7 +126,7 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structSI114X__CAL__S.html">   54</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structSI114X__CAL__S.html">   54</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structSI114X__CAL__S.html#a92961490b1a4ae8a444b7de381528d92">   56</a></span>&#160;    uint32_t    <a class="code" href="structSI114X__CAL__S.html#a92961490b1a4ae8a444b7de381528d92">vispd_correction</a>;  </div>
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structSI114X__CAL__S.html#a8fa57797937808a3e7f73fff374ad5be">   57</a></span>&#160;    uint32_t    <a class="code" href="structSI114X__CAL__S.html#a8fa57797937808a3e7f73fff374ad5be">irpd_correction</a>;   </div>
@@ -142,17 +140,17 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> ***************   Functions Needed by Si114x_functions.c   ********************</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;int16_t <a class="code" href="group__Si114x.html#ga8d9e6e60e0ced326193208cdf976bbee">Si114xWriteToRegister</a>(HANDLE <a class="code" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                              uint8_t address, </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;int16_t <a class="code" href="group__Si114x.html#ga8d9e6e60e0ced326193208cdf976bbee">Si114xWriteToRegister</a>(HANDLE <a class="code" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                              uint8_t address,</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                              uint8_t value);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;int16_t <a class="code" href="group__Si114x.html#gaeae79629a9f5a41c75ba329fa056eeef">Si114xReadFromRegister</a>(HANDLE <a class="code" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, uint8_t address);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;int16_t <a class="code" href="group__Si114x.html#ga15059dd986a51d8188b5c93aa70681b6">Si114xBlockWrite</a>(HANDLE <a class="code" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                         uint8_t  address, </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                         uint8_t  length, </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;int16_t <a class="code" href="group__Si114x.html#ga15059dd986a51d8188b5c93aa70681b6">Si114xBlockWrite</a>(HANDLE <a class="code" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                         uint8_t  address,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                         uint8_t  length,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                         uint8_t* values);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;int16_t <a class="code" href="group__Si114x.html#ga479ffe2c4fea4bf799a925d8e779400c">Si114xBlockRead</a>(HANDLE <a class="code" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        uint8_t  address, </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        uint8_t  length, </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;int16_t <a class="code" href="group__Si114x.html#ga479ffe2c4fea4bf799a925d8e779400c">Si114xBlockRead</a>(HANDLE <a class="code" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        uint8_t  address,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        uint8_t  length,</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                        uint8_t* values);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__Si114x.html#ga68d719ca4b817a58e8014c9e826b390a">delay_10ms</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
@@ -225,10 +223,10 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#define REG_PARAM_OUT             0x2E</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#define REG_PARAM_RD              0x2E</span></div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#define REG_CHIP_STAT             0x30</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#define REG_UCOEF0                0x13  </span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#define REG_UCOEF0                0x13</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#define REG_UCOEF1                0x14</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#define REG_UCOEF2                0x15  </span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#define REG_UCOEF3                0x16  </span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#define REG_UCOEF2                0x15</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#define REG_UCOEF3                0x16</span></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#define REG_MEAS_RATE_LSB         0x08</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#define REG_MEAS_RATE_MSB         0x09</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
@@ -272,7 +270,7 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment"> *******    Si114x Register and Parameter Bit Definitions  *********************</span></div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">// REG_IRQ_CFG </span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">// REG_IRQ_CFG</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#define  ICG_INTOE                0x01</span></div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#define  ICG_INTMODE              0x02</span></div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
@@ -336,7 +334,7 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">// REG_PS_LED21   LED2 Current is upper nibble</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">//                LED1 Current is lower nibble </span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">//                LED1 Current is lower nibble</span></div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">// REG_PS_LED3    LED3 Current is lower nibble</span></div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor">#define LEDI_000                  0x00</span></div>
@@ -367,9 +365,9 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">// ADC Counters</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">// PARAM_PS_ADC_COUNTER      </span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">// PARAM_ALSVIS_ADC_COUNTER  </span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">// PARAM_ALSIR_ADC_COUNTER  </span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">// PARAM_PS_ADC_COUNTER</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">// PARAM_ALSVIS_ADC_COUNTER</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">// PARAM_ALSIR_ADC_COUNTER</span></div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#define RECCNT_001                0x00</span></div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">#define RECCNT_007                0x10</span></div>
@@ -383,7 +381,7 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment">// Proximity LED Selection</span></div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment">// PARAM_PSLED12_SELECT  PS2 LED Choice is Upper Nibble</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">//                       PS1 LED Choice is Lower Nibble </span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">//                       PS1 LED Choice is Lower Nibble</span></div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">// PARAM_PSLED3_SELECT   PS3 LED Choice is Lower Nibble</span></div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">//</span></div>
@@ -405,8 +403,8 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#define SEL_LED3_PS3              (LED3_EN)</span></div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">// PARAM_PS_ENCODING  </span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">// When these bits are set the corresponding measurement </span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">// PARAM_PS_ENCODING</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">// When these bits are set the corresponding measurement</span></div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">// will report the least significant bits of the</span></div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">// ADC is used instead of the most significant bits</span></div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor">#define PS1_LSB                   0x10</span></div>
@@ -415,8 +413,8 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor">#define PS_ENCODING_MASK          0x70</span></div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment">// PARAM_ALS_ENCODING </span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment">// When these bits are set the corresponding measurement </span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment">// PARAM_ALS_ENCODING</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment">// When these bits are set the corresponding measurement</span></div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment">// will report the least significant bits of the</span></div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment">// ADC is used instead of the most significant bits</span></div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor">#define ALS_VIS_LSB               0x10</span></div>
@@ -425,14 +423,14 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#define ALS_ENCODING_MASK         0xCF</span></div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">// PARAM_PS_ADC_MISC         </span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">// PARAM_ALS_VIS_ADC_MISC         </span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">// PARAM_ALS_IR_ADC_MISC         </span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">// PARAM_PS_ADC_MISC</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">// PARAM_ALS_VIS_ADC_MISC</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">// PARAM_ALS_IR_ADC_MISC</span></div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">// PS_MODE_MEAS_MODE and NOT_PS_MEAS_MODE are applicable only</span></div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">// for PARAM_PS_ADC_MISC.</span></div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">//    PS_MEAS_MODE is used to perform normal Proximity measurements. </span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">//    PS_MEAS_MODE is used to perform normal Proximity measurements.</span></div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">//    While in this operatinal mode, it is possible to choose either</span></div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">//    the small IR photodiode or big IR photodiode. The big IR</span></div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">//    photodiode is the default for normal operation. The small IR</span></div>
@@ -441,39 +439,39 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">//    NOT_PS_MEAS_MODE can be applied to PARAM_PS_ADC_MISC.</span></div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">//    This allows three PS channels to perform RAW ADC measurements </span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">//    This allows three PS channels to perform RAW ADC measurements</span></div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">//    on any source (no irLED driven). These measurements will have no</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">//    reference, and will have an offset of 0x4000 if the most </span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">//    significant 16 bits of the 17-bit ADC is reported. Otherwise, </span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment">//    if the PARAM_xxx_ENCODING _LSB settings are set, then the </span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">//    offset will be 0x8000 (due to bit shifting). </span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">//    reference, and will have an offset of 0x4000 if the most</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">//    significant 16 bits of the 17-bit ADC is reported. Otherwise,</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment">//    if the PARAM_xxx_ENCODING _LSB settings are set, then the</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">//    offset will be 0x8000 (due to bit shifting).</span></div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment">//    When performing voltage measurements (INT, LED1, LED2, TEMP), </span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment">//    When performing voltage measurements (INT, LED1, LED2, TEMP),</span></div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment">//    a separate VSS measurement should be subtracted from the reading.</span></div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">//    When performing measurement with visible photodiode, first take</span></div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="comment">//    a no-led measurement and subtract away the visible light measurement.</span></div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment">//    When performing an optical measurement using either two IR </span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">//    photodiodes, one should subtract away the no-led measurement from </span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment">//    When performing an optical measurement using either two IR</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">//    photodiodes, one should subtract away the no-led measurement from</span></div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">//    the IR measurement.</span></div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment">//    Note that the subtraction ordering is significant between</span></div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">//    taking visible light photodiode vs IR photodiode</span></div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">//    measurement. The raw ADC reading of visible light photodiode</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">//    decreases with increasing light levels while the raw ADC reading </span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">//    decreases with increasing light levels while the raw ADC reading</span></div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">//    of IR light photodiode increases with increasing light levels.</span></div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">// HSIG_EN means &#39;high signal range enable&#39;. The ADC would</span></div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">// be able to operate with higher light levels, but at the</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">// expense of sensitivity. This setting can be used for </span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">// expense of sensitivity. This setting can be used for</span></div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">// operation under direct sunlight.</span></div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">// PARAM_PS_ADC_MISC, PARAM_ALSVIS_ADC_MISC and PARAM_ALSIR_ADC_MISC    </span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">// PARAM_PS_ADC_MISC, PARAM_ALSVIS_ADC_MISC and PARAM_ALSIR_ADC_MISC</span></div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">// can use HSIG_EN also.</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">// </span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor">#define NOT_PS_MEAS_MODE          0x00 </span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="preprocessor">#define NOT_PS_MEAS_MODE          0x00</span></div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor">#define PS_MEAS_MODE              0x04</span></div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="preprocessor">#define HSIG_EN                   0x20</span></div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="preprocessor">#define RANGE_EN                  0x20</span></div>
@@ -483,14 +481,14 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">// ADC Mux Settings</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">// PARAM_PS1_ADC_MUX    See PARAM_PS_ADC_MISC also </span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">// PARAM_PS1_ADC_MUX    See PARAM_PS_ADC_MISC also</span></div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment">// PARAM_PS2_ADC_MUX    See PARAM_PS_ADC_MISC also</span></div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment">// PARAM_PS3_ADC_MUX    See PARAM_PS_ADC_MISC also</span></div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">// PARAM_VIS_ADC_MUX    MUX_ALS_VIS or MUX_NONE only</span></div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment">// PARAM_IR_ADC_MUX     MUX_ALS_IR, MUX_PS_IR or MUX_NONE only</span></div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment">// PARAM_AUX_ADC_MUX    MUX_VTEMP, MUX_LED1, MUX_LED2, MUX_INT</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment">//                      to use anything other than MUX_VTEMP, </span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment">//                      to use anything other than MUX_VTEMP,</span></div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment">//                      ANA_IN_KEY should be unlocked first.</span></div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">#define MUX_SMALL_IR              0x00</span></div>
@@ -506,9 +504,9 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="comment">// ADC Dividers</span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment">// PARAM_PS_ADC_GAIN       </span></div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="comment">// PARAM_ALSVIS_ADC_GAIN  </span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment">// PARAM_ALSIR_ADC_GAIN </span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment">// PARAM_PS_ADC_GAIN</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="comment">// PARAM_ALSVIS_ADC_GAIN</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment">// PARAM_ALSIR_ADC_GAIN</span></div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="preprocessor">#define ADC_NORM                  0x00</span></div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="preprocessor">#define ADC_DIV2                  0x01</span></div>
@@ -528,7 +526,7 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="preprocessor">#define HW_KEY_VAL0               0x17</span></div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="comment">// Sleep Control</span></div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="comment">// PARAM_SLEEP_CTRL </span></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="comment">// PARAM_SLEEP_CTRL</span></div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="preprocessor">#define SLEEP_DISABLED            0x01</span></div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="comment">// ANA_IN_KEY value</span></div>
@@ -576,7 +574,7 @@ $(document).ready(function(){initNavTree('si114x__functions_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="si114x__functions_8h.html">si114x_functions.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:41:30 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:42:49 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

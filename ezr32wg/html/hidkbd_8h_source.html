@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -125,14 +123,14 @@ $(document).ready(function(){initNavTree('hidkbd_8h_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="group__COMMON.html#ga099d98fa4e24657df90ae06fc13a4815">EFM32_PACK_START</a>( 1 )</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structHIDKBD__KeyReport__t.html">   38</a></span>&#160;typedef struct</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="group__COMMON.html#ga4b1aea3e52adaa7882e0e0299cead0fc">SL_PACK_START</a>(1)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;typedef struct</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structHIDKBD__KeyReport__t.html#add05877c08ff62c499bb86fa73ebbcaa">   40</a></span>&#160;  uint8_t <a class="code" href="structHIDKBD__KeyReport__t.html#add05877c08ff62c499bb86fa73ebbcaa">modifier</a>; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structHIDKBD__KeyReport__t.html#a1c7020f60a78aa2a54a34c998a482945">   41</a></span>&#160;  uint8_t <a class="code" href="structHIDKBD__KeyReport__t.html#a1c7020f60a78aa2a54a34c998a482945">reserved</a>; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structHIDKBD__KeyReport__t.html#ada4287d4ac8d739e3229f9461a3f25c2">   42</a></span>&#160;  uint8_t key[ 6 ]; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} __attribute__ ((packed)) <a class="code" href="structHIDKBD__KeyReport__t.html">HIDKBD_KeyReport_t</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="group__COMMON.html#gab2675861d42aae2af68c05f8fa1da22f">EFM32_PACK_END</a>()</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structSL__ATTRIBUTE__PACKED.html#a82a5013cef943a13e8d48f5437859a8b">   40</a></span>&#160;  uint8_t <a class="code" href="structSL__ATTRIBUTE__PACKED.html#a82a5013cef943a13e8d48f5437859a8b">modifier</a>; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structSL__ATTRIBUTE__PACKED.html#a105b0d94fdbbb29ea89e48f12256f0cc">   41</a></span>&#160;  uint8_t <a class="code" href="structSL__ATTRIBUTE__PACKED.html#a105b0d94fdbbb29ea89e48f12256f0cc">reserved</a>; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structSL__ATTRIBUTE__PACKED.html#a8f524eb498e52ed5c981a9018f54f608">   42</a></span>&#160;  uint8_t key[ 6 ]; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <a class="code" href="structSL__ATTRIBUTE__PACKED.html">SL_ATTRIBUTE_PACKED</a> HIDKBD_KeyReport_t;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<a class="code" href="group__COMMON.html#ga911e7f1f5d8dc5b4dd025e8c14159977">SL_PACK_END</a>()</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group__HidKeyboard.html#ga649c40d8591a065fc283aa8f02e812fd">   58</a></span>&#160;typedef <span class="keywordtype">void</span> (*<a class="code" href="group__HidKeyboard.html#ga649c40d8591a065fc283aa8f02e812fd">HIDKBD_SetReportFunc_t</a>)( uint8_t report );</div>
@@ -143,43 +141,41 @@ $(document).ready(function(){initNavTree('hidkbd_8h_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structHIDKBD__Init__t.html#a87993db01c8e9704211a585eebd1c559">   68</a></span>&#160;  <a class="code" href="group__HidKeyboard.html#ga649c40d8591a065fc283aa8f02e812fd">HIDKBD_SetReportFunc_t</a>  <a class="code" href="structHIDKBD__Init__t.html#a87993db01c8e9704211a585eebd1c559">setReportFunc</a>;  </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <a class="code" href="structHIDKBD__Init__t.html">HIDKBD_Init_t</a>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="group__HidKeyboard.html#ga885c1bef0666a7bb355a1e236f03083d">HIDKBD_ReportDescriptor</a>[ 69 ];</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> HIDKBD_ReportDescriptor[ 69 ];</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__HidKeyboard.html#ga3ae1e0bbb08a38fcb8aa952613c87268">HIDKBD_Init</a>( <a class="code" href="structHIDKBD__Init__t.html">HIDKBD_Init_t</a> *init );</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="group__HidKeyboard.html#gaa6482849b2bbbb6c800516059ad17453">HIDKBD_SetupCmd</a>( <span class="keyword">const</span> <a class="code" href="structUSB__Setup__TypeDef.html">USB_Setup_TypeDef</a> *setup );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="group__HidKeyboard.html#gaa6482849b2bbbb6c800516059ad17453">HIDKBD_SetupCmd</a>( <span class="keyword">const</span> USB_Setup_TypeDef *setup );</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__HidKeyboard.html#ga978af2049c35ad48a8b0668a04146cf1">HIDKBD_StateChangeEvent</a>( <a class="code" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a> oldState,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                              <a class="code" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a> newState );</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__HidKeyboard.html#gacf010c3e66985e5c5796c8d2f16de788">HIDKBD_KeyboardEvent</a>( <a class="code" href="structHIDKBD__KeyReport__t.html">HIDKBD_KeyReport_t</a> *report );</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__HidKeyboard.html#gacf010c3e66985e5c5796c8d2f16de788">HIDKBD_KeyboardEvent</a>( HIDKBD_KeyReport_t *report );</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SILICON_LABS_HIDKBD_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="structSL__ATTRIBUTE__PACKED_html"><div class="ttname"><a href="structSL__ATTRIBUTE__PACKED.html">SL_ATTRIBUTE_PACKED</a></div><div class="ttdoc">USB Setup request package. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00370">em_usb.h:370</a></div></div>
+<div class="ttc" id="group__COMMON_html_ga911e7f1f5d8dc5b4dd025e8c14159977"><div class="ttname"><a href="group__COMMON.html#ga911e7f1f5d8dc5b4dd025e8c14159977">SL_PACK_END</a></div><div class="ttdeci">#define SL_PACK_END()</div><div class="ttdef"><b>Definition:</b> <a href="em__common_8h_source.html#l00121">em_common.h:121</a></div></div>
 <div class="ttc" id="structHIDKBD__Init__t_html_a87993db01c8e9704211a585eebd1c559"><div class="ttname"><a href="structHIDKBD__Init__t.html#a87993db01c8e9704211a585eebd1c559">HIDKBD_Init_t::setReportFunc</a></div><div class="ttdeci">HIDKBD_SetReportFunc_t setReportFunc</div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8h_source.html#l00068">hidkbd.h:68</a></div></div>
-<div class="ttc" id="group__COMMON_html_ga099d98fa4e24657df90ae06fc13a4815"><div class="ttname"><a href="group__COMMON.html#ga099d98fa4e24657df90ae06fc13a4815">EFM32_PACK_START</a></div><div class="ttdeci">#define EFM32_PACK_START(x)</div><div class="ttdef"><b>Definition:</b> <a href="em__common_8h_source.html#l00088">em_common.h:88</a></div></div>
 <div class="ttc" id="structHIDKBD__Init__t_html_a1abc15bb9c1f43a76634bb23488e87dd"><div class="ttname"><a href="structHIDKBD__Init__t.html#a1abc15bb9c1f43a76634bb23488e87dd">HIDKBD_Init_t::hidDescriptor</a></div><div class="ttdeci">void * hidDescriptor</div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8h_source.html#l00067">hidkbd.h:67</a></div></div>
+<div class="ttc" id="structSL__ATTRIBUTE__PACKED_html_a105b0d94fdbbb29ea89e48f12256f0cc"><div class="ttname"><a href="structSL__ATTRIBUTE__PACKED.html#a105b0d94fdbbb29ea89e48f12256f0cc">SL_ATTRIBUTE_PACKED::reserved</a></div><div class="ttdeci">uint8_t reserved</div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8h_source.html#l00041">hidkbd.h:41</a></div></div>
 <div class="ttc" id="group__HidKeyboard_html_ga978af2049c35ad48a8b0668a04146cf1"><div class="ttname"><a href="group__HidKeyboard.html#ga978af2049c35ad48a8b0668a04146cf1">HIDKBD_StateChangeEvent</a></div><div class="ttdeci">void HIDKBD_StateChangeEvent(USBD_State_TypeDef oldState, USBD_State_TypeDef newState)</div><div class="ttdoc">Handle USB state change events, this function must be called each time the USB device state is change...</div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8c_source.html#l00344">hidkbd.c:344</a></div></div>
-<div class="ttc" id="group__COMMON_html_gab2675861d42aae2af68c05f8fa1da22f"><div class="ttname"><a href="group__COMMON.html#gab2675861d42aae2af68c05f8fa1da22f">EFM32_PACK_END</a></div><div class="ttdeci">#define EFM32_PACK_END()</div><div class="ttdef"><b>Definition:</b> <a href="em__common_8h_source.html#l00095">em_common.h:95</a></div></div>
-<div class="ttc" id="group__HidKeyboard_html_ga885c1bef0666a7bb355a1e236f03083d"><div class="ttname"><a href="group__HidKeyboard.html#ga885c1bef0666a7bb355a1e236f03083d">HIDKBD_ReportDescriptor</a></div><div class="ttdeci">const char HIDKBD_ReportDescriptor[69]</div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8c_source.html#l00067">hidkbd.c:67</a></div></div>
-<div class="ttc" id="structUSB__Setup__TypeDef_html"><div class="ttname"><a href="structUSB__Setup__TypeDef.html">USB_Setup_TypeDef</a></div><div class="ttdoc">USB Setup request package. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00375">em_usb.h:375</a></div></div>
-<div class="ttc" id="group__USB__DEVICE_html_ga437a2e7bf70740fc715ac9a5c7310a6d"><div class="ttname"><a href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a></div><div class="ttdeci">USBD_State_TypeDef</div><div class="ttdoc">USB device state enumerator. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00356">em_usb.h:356</a></div></div>
-<div class="ttc" id="structHIDKBD__KeyReport__t_html_a1c7020f60a78aa2a54a34c998a482945"><div class="ttname"><a href="structHIDKBD__KeyReport__t.html#a1c7020f60a78aa2a54a34c998a482945">HIDKBD_KeyReport_t::reserved</a></div><div class="ttdeci">uint8_t reserved</div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8h_source.html#l00041">hidkbd.h:41</a></div></div>
+<div class="ttc" id="group__COMMON_html_ga4b1aea3e52adaa7882e0e0299cead0fc"><div class="ttname"><a href="group__COMMON.html#ga4b1aea3e52adaa7882e0e0299cead0fc">SL_PACK_START</a></div><div class="ttdeci">#define SL_PACK_START(x)</div><div class="ttdef"><b>Definition:</b> <a href="em__common_8h_source.html#l00114">em_common.h:114</a></div></div>
+<div class="ttc" id="group__USB__DEVICE_html_ga437a2e7bf70740fc715ac9a5c7310a6d"><div class="ttname"><a href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a></div><div class="ttdeci">USBD_State_TypeDef</div><div class="ttdoc">USB device state enumerator. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00351">em_usb.h:351</a></div></div>
 <div class="ttc" id="group__HidKeyboard_html_gaa6482849b2bbbb6c800516059ad17453"><div class="ttname"><a href="group__HidKeyboard.html#gaa6482849b2bbbb6c800516059ad17453">HIDKBD_SetupCmd</a></div><div class="ttdeci">int HIDKBD_SetupCmd(const USB_Setup_TypeDef *setup)</div><div class="ttdoc">Handle USB setup commands. Implements HID class specific commands. This function must be called each ...</div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8c_source.html#l00232">hidkbd.c:232</a></div></div>
 <div class="ttc" id="group__HidKeyboard_html_ga3ae1e0bbb08a38fcb8aa952613c87268"><div class="ttname"><a href="group__HidKeyboard.html#ga3ae1e0bbb08a38fcb8aa952613c87268">HIDKBD_Init</a></div><div class="ttdeci">void HIDKBD_Init(HIDKBD_Init_t *init)</div><div class="ttdoc">Initialize HID Keyboard driver. </div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8c_source.html#l00187">hidkbd.c:187</a></div></div>
 <div class="ttc" id="em__usb_8h_html"><div class="ttname"><a href="em__usb_8h.html">em_usb.h</a></div><div class="ttdoc">USB protocol stack library API for EFM32/EZR32. </div></div>
-<div class="ttc" id="structHIDKBD__KeyReport__t_html"><div class="ttname"><a href="structHIDKBD__KeyReport__t.html">HIDKBD_KeyReport_t</a></div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8h_source.html#l00038">hidkbd.h:38</a></div></div>
 <div class="ttc" id="group__HidKeyboard_html_ga649c40d8591a065fc283aa8f02e812fd"><div class="ttname"><a href="group__HidKeyboard.html#ga649c40d8591a065fc283aa8f02e812fd">HIDKBD_SetReportFunc_t</a></div><div class="ttdeci">void(* HIDKBD_SetReportFunc_t)(uint8_t report)</div><div class="ttdoc">Callback function pointer for HID output reports. This function will be called by the driver each tim...</div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8h_source.html#l00058">hidkbd.h:58</a></div></div>
 <div class="ttc" id="structHIDKBD__Init__t_html"><div class="ttname"><a href="structHIDKBD__Init__t.html">HIDKBD_Init_t</a></div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8h_source.html#l00065">hidkbd.h:65</a></div></div>
 <div class="ttc" id="group__HidKeyboard_html_gacf010c3e66985e5c5796c8d2f16de788"><div class="ttname"><a href="group__HidKeyboard.html#gacf010c3e66985e5c5796c8d2f16de788">HIDKBD_KeyboardEvent</a></div><div class="ttdeci">void HIDKBD_KeyboardEvent(HIDKBD_KeyReport_t *report)</div><div class="ttdoc">Report a keyboard press/release event. </div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8c_source.html#l00202">hidkbd.c:202</a></div></div>
-<div class="ttc" id="structHIDKBD__KeyReport__t_html_add05877c08ff62c499bb86fa73ebbcaa"><div class="ttname"><a href="structHIDKBD__KeyReport__t.html#add05877c08ff62c499bb86fa73ebbcaa">HIDKBD_KeyReport_t::modifier</a></div><div class="ttdeci">uint8_t modifier</div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8h_source.html#l00040">hidkbd.h:40</a></div></div>
+<div class="ttc" id="structSL__ATTRIBUTE__PACKED_html_a82a5013cef943a13e8d48f5437859a8b"><div class="ttname"><a href="structSL__ATTRIBUTE__PACKED.html#a82a5013cef943a13e8d48f5437859a8b">SL_ATTRIBUTE_PACKED::modifier</a></div><div class="ttdeci">uint8_t modifier</div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8h_source.html#l00040">hidkbd.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="hidkbd_8h.html">hidkbd.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:42:33 for EZR32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:45:19 for EZR32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

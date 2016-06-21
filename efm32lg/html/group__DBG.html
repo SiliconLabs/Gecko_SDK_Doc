@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -104,12 +103,12 @@ $(document).ready(function(){initNavTree('group__DBG.html','');});
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">DBG<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">DBG<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Debug (DBG) Peripheral API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Debug (DBG) Peripheral API. </p>
+<p>This module contains functions to control the DBG peripheral of Silicon Labs 32-bit MCUs and SoCs. The Debug Interface is used to program and debug Silicon Labs devices. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -120,7 +119,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaf17760c5d4350c442202dee4fe8ec15f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Serial Wire Output (SWO) pin.  <a href="#gaf17760c5d4350c442202dee4fe8ec15f">More...</a><br /></td></tr>
 <tr class="separator:gaf17760c5d4350c442202dee4fe8ec15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="gac236398dfda211a335685f68f57cce14"></a>
 <div class="memitem">
@@ -135,6 +133,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Check if a debugger is connected (and debug session activated) </p>
 <p>Used to make run-time decisions depending on whether a debug session has been active since last reset, ie using a debug probe or similar. In some cases special handling is required in that scenario.</p>
 <dl class="section return"><dt>Returns</dt><dd>true if a debug session is active since last reset, otherwise false. </dd></dl>
 
@@ -155,6 +155,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable Serial Wire Output (SWO) pin. </p>
 <p>The SWO pin (sometimes denoted SWV, serial wire viewer) allows for miscellaneous output to be passed from the Cortex-M3 debug trace module to an external debug probe. By default, the debug trace module and pin output may be disabled.</p>
 <p>Since the SWO pin is only useful when using a debugger, a suggested use of this function during startup may be: </p><pre class="fragment">* if (DBG_Connected())
 * {
@@ -169,9 +171,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__dbg_8c_source.html#l00088">88</a> of file <a class="el" href="em__dbg_8c_source.html">em_dbg.c</a>.</p>
+<p>Definition at line <a class="el" href="em__dbg_8c_source.html#l00092">92</a> of file <a class="el" href="em__dbg_8c_source.html">em_dbg.c</a>.</p>
 
-<p>References <a class="el" href="em__cmu_8c_source.html#l03394">CMU_OscillatorEnable()</a>, <a class="el" href="em__cmu_8h_source.html#l00939">cmuOsc_AUXHFRCO</a>, <a class="el" href="em__gpio_8c_source.html#l00078">GPIO_DbgLocationSet()</a>, <a class="el" href="em__gpio_8h_source.html#l00435">GPIO_DbgSWOEnable()</a>, <a class="el" href="em__gpio_8c_source.html#l00226">GPIO_PinModeSet()</a>, and <a class="el" href="em__gpio_8h_source.html#l00309">gpioModePushPull</a>.</p>
+<p>References <a class="el" href="group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9">CMU_OscillatorEnable()</a>, <a class="el" href="group__CMU.html#gga095c94cc5b58238856389c523ce12c2aa99f6f1ae4f5dab8e01d7753505d9d085">cmuOsc_AUXHFRCO</a>, <a class="el" href="group__GPIO.html#ga2e5db302df7c3695b41b582094ca6c15">GPIO_DbgLocationSet()</a>, <a class="el" href="group__GPIO.html#ga9c587570c6c2422eb46ac557d9d9e319">GPIO_DbgSWOEnable()</a>, <a class="el" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet()</a>, and <a class="el" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa110ef690a2c14c594938e2aa70469abd">gpioModePushPull</a>.</p>
 
 </div>
 </div>
@@ -180,7 +182,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:37:36 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:29:57 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

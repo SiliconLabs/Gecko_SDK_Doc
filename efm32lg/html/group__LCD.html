@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -107,12 +106,12 @@ $(document).ready(function(){initNavTree('group__LCD.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">LCD<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">LCD<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Liquid Crystal Display (LCD) Peripheral API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Liquid Crystal Display (LCD) Peripheral API. </p>
+<p>This module contains functions to control the LDC peripheral of Silicon Labs 32-bit MCUs and SoCs. The LCD driver can drive up to 8x36 segmented LCD directly. The animation feature makes it possible to have active animations without CPU intervention. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -130,6 +129,51 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga92902bdc24eea5f00745f247536eb5cc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga92902bdc24eea5f00745f247536eb5cc">LCD_AnimLogic_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__LCD.html#gga92902bdc24eea5f00745f247536eb5cca7b919ce80da7c5513ac38373415964d1">lcdAnimLogicAnd</a> = LCD_BACTRL_ALOGSEL_AND, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#gga92902bdc24eea5f00745f247536eb5cca89378f2e494955efb7d5e0bf2018186b">lcdAnimLogicOr</a> = LCD_BACTRL_ALOGSEL_OR
+<br />
+ }<tr class="separator:ga92902bdc24eea5f00745f247536eb5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga6414aee2a60b9532d356a1423253e929"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga6414aee2a60b9532d356a1423253e929">LCD_AnimShift_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__LCD.html#gga6414aee2a60b9532d356a1423253e929a982ef954e5010f03ead965fc2bf705e2">lcdAnimShiftNone</a> = _LCD_BACTRL_AREGASC_NOSHIFT, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#gga6414aee2a60b9532d356a1423253e929afb927c2526a1e7cd626edbaa8e377e8a">lcdAnimShiftLeft</a> = _LCD_BACTRL_AREGASC_SHIFTLEFT, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#gga6414aee2a60b9532d356a1423253e929a29cf961808560b840e03b0faea7dab3a">lcdAnimShiftRight</a> = _LCD_BACTRL_AREGASC_SHIFTRIGHT
+<br />
+ }<tr class="separator:ga6414aee2a60b9532d356a1423253e929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gae514a48c9db49818cf832d21604754a5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gae514a48c9db49818cf832d21604754a5">LCD_Bias_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__LCD.html#ggae514a48c9db49818cf832d21604754a5a56378c806df2cc2d6d04bd44e2227ddc">lcdBiasStatic</a> = LCD_DISPCTRL_BIAS_STATIC, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#ggae514a48c9db49818cf832d21604754a5a771a82a99c2e96f20d22d5259e44a83d">lcdBiasOneHalf</a> = LCD_DISPCTRL_BIAS_ONEHALF, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#ggae514a48c9db49818cf832d21604754a5a4897fdc7d5ece1d0ede3858155637b81">lcdBiasOneThird</a> = LCD_DISPCTRL_BIAS_ONETHIRD, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#ggae514a48c9db49818cf832d21604754a5a74a4351b3a9cd792a06bd766705a2ba5">lcdBiasOneFourth</a> = LCD_DISPCTRL_BIAS_ONEFOURTH
+<br />
+ }<tr class="separator:gae514a48c9db49818cf832d21604754a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gad1dd2e4756549f019dbdbbb9bc76d6a4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gad1dd2e4756549f019dbdbbb9bc76d6a4">LCD_ConConf_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__LCD.html#ggad1dd2e4756549f019dbdbbb9bc76d6a4a43171fe33818f4c3fdcea955e45300fe">lcdConConfVLCD</a> = LCD_DISPCTRL_CONCONF_VLCD, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#ggad1dd2e4756549f019dbdbbb9bc76d6a4af8ab6c453bd070ab56c8891bc2a8a152">lcdConConfGND</a> = LCD_DISPCTRL_CONCONF_GND
+<br />
+ }<tr class="separator:gad1dd2e4756549f019dbdbbb9bc76d6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gadb31288745ef2c417aa697413230a652"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gadb31288745ef2c417aa697413230a652">LCD_FCPreScale_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__LCD.html#ggadb31288745ef2c417aa697413230a652ad58814eece78c4e1f332f4676c1b2d8a">lcdFCPrescDiv1</a> = LCD_BACTRL_FCPRESC_DIV1, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#ggadb31288745ef2c417aa697413230a652a8627b3ed9ecf15b27d08d07e5ad3d905">lcdFCPrescDiv2</a> = LCD_BACTRL_FCPRESC_DIV2, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#ggadb31288745ef2c417aa697413230a652ae63d676041d1c76e87aba534476cc64d">lcdFCPrescDiv4</a> = LCD_BACTRL_FCPRESC_DIV4, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#ggadb31288745ef2c417aa697413230a652a405447fd2de96b76256d0d3b5e1692e8">lcdFCPrescDiv8</a> = LCD_BACTRL_FCPRESC_DIV8
+<br />
+ }<tr class="separator:gadb31288745ef2c417aa697413230a652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:ga8f1a22ea036d6ea5f5ecc4e12e44e4c5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga8f1a22ea036d6ea5f5ecc4e12e44e4c5">LCD_Mux_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__LCD.html#gga8f1a22ea036d6ea5f5ecc4e12e44e4c5a3354e7da81250d63e64070927fb0cc9b">lcdMuxStatic</a> = LCD_DISPCTRL_MUX_STATIC, 
 <br />
@@ -144,68 +188,6 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__LCD.html#gga8f1a22ea036d6ea5f5ecc4e12e44e4c5afeb1d4b6613767205f3e0778a7b7e7f7">lcdMuxOctaplex</a> = LCD_DISPCTRL_MUXE_MUXE | LCD_DISPCTRL_MUX_QUADRUPLEX
 <br />
  }<tr class="separator:ga8f1a22ea036d6ea5f5ecc4e12e44e4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gae514a48c9db49818cf832d21604754a5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gae514a48c9db49818cf832d21604754a5">LCD_Bias_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggae514a48c9db49818cf832d21604754a5a56378c806df2cc2d6d04bd44e2227ddc">lcdBiasStatic</a> = LCD_DISPCTRL_BIAS_STATIC, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggae514a48c9db49818cf832d21604754a5a771a82a99c2e96f20d22d5259e44a83d">lcdBiasOneHalf</a> = LCD_DISPCTRL_BIAS_ONEHALF, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggae514a48c9db49818cf832d21604754a5a4897fdc7d5ece1d0ede3858155637b81">lcdBiasOneThird</a> = LCD_DISPCTRL_BIAS_ONETHIRD, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggae514a48c9db49818cf832d21604754a5a74a4351b3a9cd792a06bd766705a2ba5">lcdBiasOneFourth</a> = LCD_DISPCTRL_BIAS_ONEFOURTH
-<br />
- }<tr class="separator:gae514a48c9db49818cf832d21604754a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gab54b70818484c89e583e20004fd4a0b6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gab54b70818484c89e583e20004fd4a0b6">LCD_Wave_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggab54b70818484c89e583e20004fd4a0b6a584ffdeb41835eab26d8466902fa585c">lcdWaveLowPower</a> = LCD_DISPCTRL_WAVE_LOWPOWER, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggab54b70818484c89e583e20004fd4a0b6a2ca1879c3575fb69f355a0cd033d30d0">lcdWaveNormal</a> = LCD_DISPCTRL_WAVE_NORMAL
-<br />
- }<tr class="separator:gab54b70818484c89e583e20004fd4a0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gad692503495e3618efdef81ed74b3924e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gad692503495e3618efdef81ed74b3924e">LCD_VLCDSel_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggad692503495e3618efdef81ed74b3924eaa4b31ad40d2d21125c78a5d8f9db331c">lcdVLCDSelVDD</a> = LCD_DISPCTRL_VLCDSEL_VDD, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggad692503495e3618efdef81ed74b3924ea2286b147be1326e0c1236f05d8cb6930">lcdVLCDSelVExtBoost</a> = LCD_DISPCTRL_VLCDSEL_VEXTBOOST
-<br />
- }<tr class="separator:gad692503495e3618efdef81ed74b3924e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gad1dd2e4756549f019dbdbbb9bc76d6a4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gad1dd2e4756549f019dbdbbb9bc76d6a4">LCD_ConConf_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggad1dd2e4756549f019dbdbbb9bc76d6a4a43171fe33818f4c3fdcea955e45300fe">lcdConConfVLCD</a> = LCD_DISPCTRL_CONCONF_VLCD, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggad1dd2e4756549f019dbdbbb9bc76d6a4af8ab6c453bd070ab56c8891bc2a8a152">lcdConConfGND</a> = LCD_DISPCTRL_CONCONF_GND
-<br />
- }<tr class="separator:gad1dd2e4756549f019dbdbbb9bc76d6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga752298aa2fa7ddd07a3298780b6a7dc9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga752298aa2fa7ddd07a3298780b6a7dc9">LCD_VBoostLevel_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9a1146bac3ab0f033893246000ec95f0fb">lcdVBoostLevel0</a> = LCD_DISPCTRL_VBLEV_LEVEL0, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9ad6d0b3105db5bf06fe279f4e76569b23">lcdVBoostLevel1</a> = LCD_DISPCTRL_VBLEV_LEVEL1, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9a2e0b506ce51b86dff51b6cae59d03bec">lcdVBoostLevel2</a> = LCD_DISPCTRL_VBLEV_LEVEL2, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9a3f714c8b845d41dbc6ff66420d56ae5f">lcdVBoostLevel3</a> = LCD_DISPCTRL_VBLEV_LEVEL3, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9a9d2283073cae8cb4e10aa4e450df556d">lcdVBoostLevel4</a> = LCD_DISPCTRL_VBLEV_LEVEL4, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9af1bfe70eb089b0ae7d7baa7c63766197">lcdVBoostLevel5</a> = LCD_DISPCTRL_VBLEV_LEVEL5, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9a688a00ac6723275a7115927442c1275f">lcdVBoostLevel6</a> = LCD_DISPCTRL_VBLEV_LEVEL6, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9a8b48a40482f014b3f2a78e1b78c4449e">lcdVBoostLevel7</a> = LCD_DISPCTRL_VBLEV_LEVEL7
-<br />
- }<tr class="separator:ga752298aa2fa7ddd07a3298780b6a7dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gadb31288745ef2c417aa697413230a652"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gadb31288745ef2c417aa697413230a652">LCD_FCPreScale_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggadb31288745ef2c417aa697413230a652ad58814eece78c4e1f332f4676c1b2d8a">lcdFCPrescDiv1</a> = LCD_BACTRL_FCPRESC_DIV1, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggadb31288745ef2c417aa697413230a652a8627b3ed9ecf15b27d08d07e5ad3d905">lcdFCPrescDiv2</a> = LCD_BACTRL_FCPRESC_DIV2, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggadb31288745ef2c417aa697413230a652ae63d676041d1c76e87aba534476cc64d">lcdFCPrescDiv4</a> = LCD_BACTRL_FCPRESC_DIV4, 
-<br />
-&#160;&#160;<a class="el" href="group__LCD.html#ggadb31288745ef2c417aa697413230a652a405447fd2de96b76256d0d3b5e1692e8">lcdFCPrescDiv8</a> = LCD_BACTRL_FCPRESC_DIV8
-<br />
- }<tr class="separator:gadb31288745ef2c417aa697413230a652"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ga1ec97abe68d147faccb9597f10be8c9a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga1ec97abe68d147faccb9597f10be8c9a">LCD_SegmentRange_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__LCD.html#gga1ec97abe68d147faccb9597f10be8c9aaaf5f1e0a7444d139c1ef5cd8f2bdbe77">lcdSegment0_3</a> = (1 &lt;&lt; 0), 
@@ -241,94 +223,96 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga34370ad541df02f8378fe9022620fbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:ga6414aee2a60b9532d356a1423253e929"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga6414aee2a60b9532d356a1423253e929">LCD_AnimShift_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__LCD.html#gga6414aee2a60b9532d356a1423253e929a982ef954e5010f03ead965fc2bf705e2">lcdAnimShiftNone</a> = _LCD_BACTRL_AREGASC_NOSHIFT, 
+<tr class="memitem:ga752298aa2fa7ddd07a3298780b6a7dc9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga752298aa2fa7ddd07a3298780b6a7dc9">LCD_VBoostLevel_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9a1146bac3ab0f033893246000ec95f0fb">lcdVBoostLevel0</a> = LCD_DISPCTRL_VBLEV_LEVEL0, 
 <br />
-&#160;&#160;<a class="el" href="group__LCD.html#gga6414aee2a60b9532d356a1423253e929afb927c2526a1e7cd626edbaa8e377e8a">lcdAnimShiftLeft</a> = _LCD_BACTRL_AREGASC_SHIFTLEFT, 
+&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9ad6d0b3105db5bf06fe279f4e76569b23">lcdVBoostLevel1</a> = LCD_DISPCTRL_VBLEV_LEVEL1, 
 <br />
-&#160;&#160;<a class="el" href="group__LCD.html#gga6414aee2a60b9532d356a1423253e929a29cf961808560b840e03b0faea7dab3a">lcdAnimShiftRight</a> = _LCD_BACTRL_AREGASC_SHIFTRIGHT
+&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9a2e0b506ce51b86dff51b6cae59d03bec">lcdVBoostLevel2</a> = LCD_DISPCTRL_VBLEV_LEVEL2, 
 <br />
- }<tr class="separator:ga6414aee2a60b9532d356a1423253e929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9a3f714c8b845d41dbc6ff66420d56ae5f">lcdVBoostLevel3</a> = LCD_DISPCTRL_VBLEV_LEVEL3, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9a9d2283073cae8cb4e10aa4e450df556d">lcdVBoostLevel4</a> = LCD_DISPCTRL_VBLEV_LEVEL4, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9af1bfe70eb089b0ae7d7baa7c63766197">lcdVBoostLevel5</a> = LCD_DISPCTRL_VBLEV_LEVEL5, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9a688a00ac6723275a7115927442c1275f">lcdVBoostLevel6</a> = LCD_DISPCTRL_VBLEV_LEVEL6, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#gga752298aa2fa7ddd07a3298780b6a7dc9a8b48a40482f014b3f2a78e1b78c4449e">lcdVBoostLevel7</a> = LCD_DISPCTRL_VBLEV_LEVEL7
+<br />
+ }<tr class="separator:ga752298aa2fa7ddd07a3298780b6a7dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:ga92902bdc24eea5f00745f247536eb5cc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga92902bdc24eea5f00745f247536eb5cc">LCD_AnimLogic_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__LCD.html#gga92902bdc24eea5f00745f247536eb5cca7b919ce80da7c5513ac38373415964d1">lcdAnimLogicAnd</a> = LCD_BACTRL_ALOGSEL_AND, 
+<tr class="memitem:gad692503495e3618efdef81ed74b3924e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gad692503495e3618efdef81ed74b3924e">LCD_VLCDSel_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__LCD.html#ggad692503495e3618efdef81ed74b3924eaa4b31ad40d2d21125c78a5d8f9db331c">lcdVLCDSelVDD</a> = LCD_DISPCTRL_VLCDSEL_VDD, 
 <br />
-&#160;&#160;<a class="el" href="group__LCD.html#gga92902bdc24eea5f00745f247536eb5cca89378f2e494955efb7d5e0bf2018186b">lcdAnimLogicOr</a> = LCD_BACTRL_ALOGSEL_OR
+&#160;&#160;<a class="el" href="group__LCD.html#ggad692503495e3618efdef81ed74b3924ea2286b147be1326e0c1236f05d8cb6930">lcdVLCDSelVExtBoost</a> = LCD_DISPCTRL_VLCDSEL_VEXTBOOST
 <br />
- }<tr class="separator:ga92902bdc24eea5f00745f247536eb5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ }<tr class="separator:gad692503495e3618efdef81ed74b3924e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gab54b70818484c89e583e20004fd4a0b6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gab54b70818484c89e583e20004fd4a0b6">LCD_Wave_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__LCD.html#ggab54b70818484c89e583e20004fd4a0b6a584ffdeb41835eab26d8466902fa585c">lcdWaveLowPower</a> = LCD_DISPCTRL_WAVE_LOWPOWER, 
+<br />
+&#160;&#160;<a class="el" href="group__LCD.html#ggab54b70818484c89e583e20004fd4a0b6a2ca1879c3575fb69f355a0cd033d30d0">lcdWaveNormal</a> = LCD_DISPCTRL_WAVE_NORMAL
+<br />
+ }<tr class="separator:gab54b70818484c89e583e20004fd4a0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6c06e074a2a2f04da49c06206e9be571"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga6c06e074a2a2f04da49c06206e9be571">LCD_Init</a> (const <a class="el" href="structLCD__Init__TypeDef.html">LCD_Init_TypeDef</a> *lcdInit)</td></tr>
-<tr class="memdesc:ga6c06e074a2a2f04da49c06206e9be571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalize Liquid Crystal Display (LCD) controller.  <a href="#ga6c06e074a2a2f04da49c06206e9be571">More...</a><br /></td></tr>
-<tr class="separator:ga6c06e074a2a2f04da49c06206e9be571"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a9defe802f8056ad3afb11b23909808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga8a9defe802f8056ad3afb11b23909808">LCD_VLCDSelect</a> (<a class="el" href="group__LCD.html#gad692503495e3618efdef81ed74b3924e">LCD_VLCDSel_TypeDef</a> vlcd)</td></tr>
-<tr class="memdesc:ga8a9defe802f8056ad3afb11b23909808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select source for VLCD.  <a href="#ga8a9defe802f8056ad3afb11b23909808">More...</a><br /></td></tr>
-<tr class="separator:ga8a9defe802f8056ad3afb11b23909808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaae47aa4f1e46d3643f51c07f560580a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gaae47aa4f1e46d3643f51c07f560580a8">LCD_UpdateCtrl</a> (<a class="el" href="group__LCD.html#ga34370ad541df02f8378fe9022620fbc4">LCD_UpdateCtrl_TypeDef</a> ud)</td></tr>
-<tr class="memdesc:gaae47aa4f1e46d3643f51c07f560580a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Update Control.  <a href="#gaae47aa4f1e46d3643f51c07f560580a8">More...</a><br /></td></tr>
-<tr class="separator:gaae47aa4f1e46d3643f51c07f560580a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26c8e0ea9e738e4926f7e7e649ae4358"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga26c8e0ea9e738e4926f7e7e649ae4358">LCD_FrameCountInit</a> (const <a class="el" href="structLCD__FrameCountInit__TypeDef.html">LCD_FrameCountInit_TypeDef</a> *fcInit)</td></tr>
-<tr class="memdesc:ga26c8e0ea9e738e4926f7e7e649ae4358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize LCD Frame Counter.  <a href="#ga26c8e0ea9e738e4926f7e7e649ae4358">More...</a><br /></td></tr>
-<tr class="separator:ga26c8e0ea9e738e4926f7e7e649ae4358"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ba720135f8c1869113823d684e084f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga1ba720135f8c1869113823d684e084f5">LCD_AnimInit</a> (const <a class="el" href="structLCD__AnimInit__TypeDef.html">LCD_AnimInit_TypeDef</a> *animInit)</td></tr>
-<tr class="memdesc:ga1ba720135f8c1869113823d684e084f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures LCD controller Animation feature.  <a href="#ga1ba720135f8c1869113823d684e084f5">More...</a><br /></td></tr>
-<tr class="separator:ga1ba720135f8c1869113823d684e084f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84b488e1bd5032de1a8307a937b3064b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga84b488e1bd5032de1a8307a937b3064b">LCD_SegmentRangeEnable</a> (<a class="el" href="group__LCD.html#ga1ec97abe68d147faccb9597f10be8c9a">LCD_SegmentRange_TypeDef</a> segmentRange, bool enable)</td></tr>
-<tr class="memdesc:ga84b488e1bd5032de1a8307a937b3064b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables update of this range of LCD segment lines.  <a href="#ga84b488e1bd5032de1a8307a937b3064b">More...</a><br /></td></tr>
-<tr class="separator:ga84b488e1bd5032de1a8307a937b3064b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c176631920506966de2bd727ef9e944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga5c176631920506966de2bd727ef9e944">LCD_SegmentSet</a> (int com, int bit, bool enable)</td></tr>
-<tr class="memdesc:ga5c176631920506966de2bd727ef9e944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on or clear a segment.  <a href="#ga5c176631920506966de2bd727ef9e944">More...</a><br /></td></tr>
-<tr class="separator:ga5c176631920506966de2bd727ef9e944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga098d20909d9b75fbad54f4176a5c8864"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga098d20909d9b75fbad54f4176a5c8864">LCD_SegmentSetLow</a> (int com, uint32_t mask, uint32_t bits)</td></tr>
-<tr class="memdesc:ga098d20909d9b75fbad54f4176a5c8864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the 0-31 lowest segments on a given COM-line in one operation, according to bit mask.  <a href="#ga098d20909d9b75fbad54f4176a5c8864">More...</a><br /></td></tr>
-<tr class="separator:ga098d20909d9b75fbad54f4176a5c8864"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae974bcc7e675a1597917a5b355cff64e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gae974bcc7e675a1597917a5b355cff64e">LCD_SegmentSetHigh</a> (int com, uint32_t mask, uint32_t bits)</td></tr>
-<tr class="memdesc:gae974bcc7e675a1597917a5b355cff64e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updated the high (32-39) segments on a given COM-line in one operation.  <a href="#gae974bcc7e675a1597917a5b355cff64e">More...</a><br /></td></tr>
-<tr class="separator:gae974bcc7e675a1597917a5b355cff64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0d783bed716497ea3ba7e618f469ac32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga0d783bed716497ea3ba7e618f469ac32">LCD_ContrastSet</a> (int level)</td></tr>
-<tr class="memdesc:ga0d783bed716497ea3ba7e618f469ac32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure contrast level on LCD panel.  <a href="#ga0d783bed716497ea3ba7e618f469ac32">More...</a><br /></td></tr>
-<tr class="separator:ga0d783bed716497ea3ba7e618f469ac32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23d1bf6a3ce88f8514eaa1388f8c7d98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga23d1bf6a3ce88f8514eaa1388f8c7d98">LCD_VBoostSet</a> (<a class="el" href="group__LCD.html#ga752298aa2fa7ddd07a3298780b6a7dc9">LCD_VBoostLevel_TypeDef</a> vboost)</td></tr>
-<tr class="memdesc:ga23d1bf6a3ce88f8514eaa1388f8c7d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure voltage booster.  <a href="#ga23d1bf6a3ce88f8514eaa1388f8c7d98">More...</a><br /></td></tr>
-<tr class="separator:ga23d1bf6a3ce88f8514eaa1388f8c7d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab1e6500ce35b72eaebdc54b3b0ec392"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gaab1e6500ce35b72eaebdc54b3b0ec392">LCD_BiasSegmentSet</a> (int segmentLine, int biasLevel)</td></tr>
-<tr class="memdesc:gaab1e6500ce35b72eaebdc54b3b0ec392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure bias level for a specific segment line for Direct Segment Control.  <a href="#gaab1e6500ce35b72eaebdc54b3b0ec392">More...</a><br /></td></tr>
-<tr class="separator:gaab1e6500ce35b72eaebdc54b3b0ec392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7843cbadb32a101fc3846e1bf4659bef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga7843cbadb32a101fc3846e1bf4659bef">LCD_BiasComSet</a> (int comLine, int biasLevel)</td></tr>
-<tr class="memdesc:ga7843cbadb32a101fc3846e1bf4659bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure bias level for a specific segment line.  <a href="#ga7843cbadb32a101fc3846e1bf4659bef">More...</a><br /></td></tr>
-<tr class="separator:ga7843cbadb32a101fc3846e1bf4659bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47b12ccafec62a5adddefcba148ff442"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga47b12ccafec62a5adddefcba148ff442">LCD_Enable</a> (bool enable)</td></tr>
-<tr class="memdesc:ga47b12ccafec62a5adddefcba148ff442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable LCD controller.  <a href="#ga47b12ccafec62a5adddefcba148ff442">More...</a><br /></td></tr>
-<tr class="separator:ga47b12ccafec62a5adddefcba148ff442"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga370a02864a788e98e6a6d6e859058317"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga370a02864a788e98e6a6d6e859058317">LCD_AnimEnable</a> (bool enable)</td></tr>
 <tr class="memdesc:ga370a02864a788e98e6a6d6e859058317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables LCD Animation feature.  <a href="#ga370a02864a788e98e6a6d6e859058317">More...</a><br /></td></tr>
 <tr class="separator:ga370a02864a788e98e6a6d6e859058317"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8de4bda300afe88b567b545fdbe484d4"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga8de4bda300afe88b567b545fdbe484d4">LCD_BlinkEnable</a> (bool enable)</td></tr>
-<tr class="memdesc:ga8de4bda300afe88b567b545fdbe484d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables LCD blink.  <a href="#ga8de4bda300afe88b567b545fdbe484d4">More...</a><br /></td></tr>
-<tr class="separator:ga8de4bda300afe88b567b545fdbe484d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga25f32ee5e9376e6277fd47eeafca13d5"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga25f32ee5e9376e6277fd47eeafca13d5">LCD_BlankEnable</a> (bool enable)</td></tr>
-<tr class="memdesc:ga25f32ee5e9376e6277fd47eeafca13d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables all segments, while keeping segment state.  <a href="#ga25f32ee5e9376e6277fd47eeafca13d5">More...</a><br /></td></tr>
-<tr class="separator:ga25f32ee5e9376e6277fd47eeafca13d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5c8f8228a57761bb2a027130763d7b4"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gaf5c8f8228a57761bb2a027130763d7b4">LCD_FrameCountEnable</a> (bool enable)</td></tr>
-<tr class="memdesc:gaf5c8f8228a57761bb2a027130763d7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables LCD Frame Control.  <a href="#gaf5c8f8228a57761bb2a027130763d7b4">More...</a><br /></td></tr>
-<tr class="separator:gaf5c8f8228a57761bb2a027130763d7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ba720135f8c1869113823d684e084f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga1ba720135f8c1869113823d684e084f5">LCD_AnimInit</a> (const <a class="el" href="structLCD__AnimInit__TypeDef.html">LCD_AnimInit_TypeDef</a> *animInit)</td></tr>
+<tr class="memdesc:ga1ba720135f8c1869113823d684e084f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures LCD controller Animation feature.  <a href="#ga1ba720135f8c1869113823d684e084f5">More...</a><br /></td></tr>
+<tr class="separator:ga1ba720135f8c1869113823d684e084f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1592b99360e4fb02f3f5c5cd7646bbd4"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga1592b99360e4fb02f3f5c5cd7646bbd4">LCD_AnimState</a> (void)</td></tr>
 <tr class="memdesc:ga1592b99360e4fb02f3f5c5cd7646bbd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns current animation state.  <a href="#ga1592b99360e4fb02f3f5c5cd7646bbd4">More...</a><br /></td></tr>
 <tr class="separator:ga1592b99360e4fb02f3f5c5cd7646bbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7843cbadb32a101fc3846e1bf4659bef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga7843cbadb32a101fc3846e1bf4659bef">LCD_BiasComSet</a> (int comLine, int biasLevel)</td></tr>
+<tr class="memdesc:ga7843cbadb32a101fc3846e1bf4659bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure bias level for a specific segment line.  <a href="#ga7843cbadb32a101fc3846e1bf4659bef">More...</a><br /></td></tr>
+<tr class="separator:ga7843cbadb32a101fc3846e1bf4659bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab1e6500ce35b72eaebdc54b3b0ec392"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gaab1e6500ce35b72eaebdc54b3b0ec392">LCD_BiasSegmentSet</a> (int segmentLine, int biasLevel)</td></tr>
+<tr class="memdesc:gaab1e6500ce35b72eaebdc54b3b0ec392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure bias level for a specific segment line for Direct Segment Control.  <a href="#gaab1e6500ce35b72eaebdc54b3b0ec392">More...</a><br /></td></tr>
+<tr class="separator:gaab1e6500ce35b72eaebdc54b3b0ec392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25f32ee5e9376e6277fd47eeafca13d5"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga25f32ee5e9376e6277fd47eeafca13d5">LCD_BlankEnable</a> (bool enable)</td></tr>
+<tr class="memdesc:ga25f32ee5e9376e6277fd47eeafca13d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables all segments, while keeping segment state.  <a href="#ga25f32ee5e9376e6277fd47eeafca13d5">More...</a><br /></td></tr>
+<tr class="separator:ga25f32ee5e9376e6277fd47eeafca13d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8de4bda300afe88b567b545fdbe484d4"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga8de4bda300afe88b567b545fdbe484d4">LCD_BlinkEnable</a> (bool enable)</td></tr>
+<tr class="memdesc:ga8de4bda300afe88b567b545fdbe484d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables LCD blink.  <a href="#ga8de4bda300afe88b567b545fdbe484d4">More...</a><br /></td></tr>
+<tr class="separator:ga8de4bda300afe88b567b545fdbe484d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga62d6992513031ebc152058594cbf982b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga62d6992513031ebc152058594cbf982b">LCD_BlinkState</a> (void)</td></tr>
 <tr class="memdesc:ga62d6992513031ebc152058594cbf982b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns current blink state.  <a href="#ga62d6992513031ebc152058594cbf982b">More...</a><br /></td></tr>
 <tr class="separator:ga62d6992513031ebc152058594cbf982b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d783bed716497ea3ba7e618f469ac32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga0d783bed716497ea3ba7e618f469ac32">LCD_ContrastSet</a> (int level)</td></tr>
+<tr class="memdesc:ga0d783bed716497ea3ba7e618f469ac32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure contrast level on LCD panel.  <a href="#ga0d783bed716497ea3ba7e618f469ac32">More...</a><br /></td></tr>
+<tr class="separator:ga0d783bed716497ea3ba7e618f469ac32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b783db06bbe2944ba0e37253b07b7b3"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga2b783db06bbe2944ba0e37253b07b7b3">LCD_DSCEnable</a> (bool enable)</td></tr>
+<tr class="memdesc:ga2b783db06bbe2944ba0e37253b07b7b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable LCD Direct Segment Control.  <a href="#ga2b783db06bbe2944ba0e37253b07b7b3">More...</a><br /></td></tr>
+<tr class="separator:ga2b783db06bbe2944ba0e37253b07b7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47b12ccafec62a5adddefcba148ff442"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga47b12ccafec62a5adddefcba148ff442">LCD_Enable</a> (bool enable)</td></tr>
+<tr class="memdesc:ga47b12ccafec62a5adddefcba148ff442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable LCD controller.  <a href="#ga47b12ccafec62a5adddefcba148ff442">More...</a><br /></td></tr>
+<tr class="separator:ga47b12ccafec62a5adddefcba148ff442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5c8f8228a57761bb2a027130763d7b4"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gaf5c8f8228a57761bb2a027130763d7b4">LCD_FrameCountEnable</a> (bool enable)</td></tr>
+<tr class="memdesc:gaf5c8f8228a57761bb2a027130763d7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables LCD Frame Control.  <a href="#gaf5c8f8228a57761bb2a027130763d7b4">More...</a><br /></td></tr>
+<tr class="separator:gaf5c8f8228a57761bb2a027130763d7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26c8e0ea9e738e4926f7e7e649ae4358"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga26c8e0ea9e738e4926f7e7e649ae4358">LCD_FrameCountInit</a> (const <a class="el" href="structLCD__FrameCountInit__TypeDef.html">LCD_FrameCountInit_TypeDef</a> *fcInit)</td></tr>
+<tr class="memdesc:ga26c8e0ea9e738e4926f7e7e649ae4358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize LCD Frame Counter.  <a href="#ga26c8e0ea9e738e4926f7e7e649ae4358">More...</a><br /></td></tr>
+<tr class="separator:ga26c8e0ea9e738e4926f7e7e649ae4358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa8c374f0e169b555a7980e0e355584e0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gaa8c374f0e169b555a7980e0e355584e0">LCD_FreezeEnable</a> (bool enable)</td></tr>
 <tr class="memdesc:gaa8c374f0e169b555a7980e0e355584e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">When set, LCD registers will not be updated until cleared,.  <a href="#gaa8c374f0e169b555a7980e0e355584e0">More...</a><br /></td></tr>
 <tr class="separator:gaa8c374f0e169b555a7980e0e355584e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3aed15ee7b02bd66ca53f4bb29f1ba29"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga3aed15ee7b02bd66ca53f4bb29f1ba29">LCD_SyncBusyGet</a> (void)</td></tr>
-<tr class="memdesc:ga3aed15ee7b02bd66ca53f4bb29f1ba29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns SYNCBUSY bits, indicating which registers have pending updates.  <a href="#ga3aed15ee7b02bd66ca53f4bb29f1ba29">More...</a><br /></td></tr>
-<tr class="separator:ga3aed15ee7b02bd66ca53f4bb29f1ba29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad9d68c13929c40cf0d45194358491bb7"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gad9d68c13929c40cf0d45194358491bb7">LCD_SyncBusyDelay</a> (uint32_t flags)</td></tr>
-<tr class="memdesc:gad9d68c13929c40cf0d45194358491bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls LCD SYNCBUSY flags, until flag has been cleared.  <a href="#gad9d68c13929c40cf0d45194358491bb7">More...</a><br /></td></tr>
-<tr class="separator:gad9d68c13929c40cf0d45194358491bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c06e074a2a2f04da49c06206e9be571"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga6c06e074a2a2f04da49c06206e9be571">LCD_Init</a> (const <a class="el" href="structLCD__Init__TypeDef.html">LCD_Init_TypeDef</a> *lcdInit)</td></tr>
+<tr class="memdesc:ga6c06e074a2a2f04da49c06206e9be571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalize Liquid Crystal Display (LCD) controller.  <a href="#ga6c06e074a2a2f04da49c06206e9be571">More...</a><br /></td></tr>
+<tr class="separator:ga6c06e074a2a2f04da49c06206e9be571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85ef9fa5ef7beaad871fe887182d6064"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga85ef9fa5ef7beaad871fe887182d6064">LCD_IntClear</a> (uint32_t flags)</td></tr>
+<tr class="memdesc:ga85ef9fa5ef7beaad871fe887182d6064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more interrupt flags.  <a href="#ga85ef9fa5ef7beaad871fe887182d6064">More...</a><br /></td></tr>
+<tr class="separator:ga85ef9fa5ef7beaad871fe887182d6064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ec2ab7a9fbc59bef88c5f635b5b8cd0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga1ec2ab7a9fbc59bef88c5f635b5b8cd0">LCD_IntDisable</a> (uint32_t flags)</td></tr>
+<tr class="memdesc:ga1ec2ab7a9fbc59bef88c5f635b5b8cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable LCD interrupts.  <a href="#ga1ec2ab7a9fbc59bef88c5f635b5b8cd0">More...</a><br /></td></tr>
+<tr class="separator:ga1ec2ab7a9fbc59bef88c5f635b5b8cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26e7c3e726118e25f29c3987f7b4bc3a"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga26e7c3e726118e25f29c3987f7b4bc3a">LCD_IntEnable</a> (uint32_t flags)</td></tr>
+<tr class="memdesc:ga26e7c3e726118e25f29c3987f7b4bc3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable LCD interrupts.  <a href="#ga26e7c3e726118e25f29c3987f7b4bc3a">More...</a><br /></td></tr>
+<tr class="separator:ga26e7c3e726118e25f29c3987f7b4bc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga19aeec76708bf068ff0331fd3487bf60"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga19aeec76708bf068ff0331fd3487bf60">LCD_IntGet</a> (void)</td></tr>
 <tr class="memdesc:ga19aeec76708bf068ff0331fd3487bf60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pending LCD interrupt flags.  <a href="#ga19aeec76708bf068ff0331fd3487bf60">More...</a><br /></td></tr>
 <tr class="separator:ga19aeec76708bf068ff0331fd3487bf60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -338,20 +322,34 @@ Functions</h2></td></tr>
 <tr class="memitem:ga285cb55f01224c107c133c71afae5942"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga285cb55f01224c107c133c71afae5942">LCD_IntSet</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:ga285cb55f01224c107c133c71afae5942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one or more pending LCD interrupts from SW.  <a href="#ga285cb55f01224c107c133c71afae5942">More...</a><br /></td></tr>
 <tr class="separator:ga285cb55f01224c107c133c71afae5942"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26e7c3e726118e25f29c3987f7b4bc3a"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga26e7c3e726118e25f29c3987f7b4bc3a">LCD_IntEnable</a> (uint32_t flags)</td></tr>
-<tr class="memdesc:ga26e7c3e726118e25f29c3987f7b4bc3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable LCD interrupts.  <a href="#ga26e7c3e726118e25f29c3987f7b4bc3a">More...</a><br /></td></tr>
-<tr class="separator:ga26e7c3e726118e25f29c3987f7b4bc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ec2ab7a9fbc59bef88c5f635b5b8cd0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga1ec2ab7a9fbc59bef88c5f635b5b8cd0">LCD_IntDisable</a> (uint32_t flags)</td></tr>
-<tr class="memdesc:ga1ec2ab7a9fbc59bef88c5f635b5b8cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable LCD interrupts.  <a href="#ga1ec2ab7a9fbc59bef88c5f635b5b8cd0">More...</a><br /></td></tr>
-<tr class="separator:ga1ec2ab7a9fbc59bef88c5f635b5b8cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga85ef9fa5ef7beaad871fe887182d6064"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga85ef9fa5ef7beaad871fe887182d6064">LCD_IntClear</a> (uint32_t flags)</td></tr>
-<tr class="memdesc:ga85ef9fa5ef7beaad871fe887182d6064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more interrupt flags.  <a href="#ga85ef9fa5ef7beaad871fe887182d6064">More...</a><br /></td></tr>
-<tr class="separator:ga85ef9fa5ef7beaad871fe887182d6064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b783db06bbe2944ba0e37253b07b7b3"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga2b783db06bbe2944ba0e37253b07b7b3">LCD_DSCEnable</a> (bool enable)</td></tr>
-<tr class="memdesc:ga2b783db06bbe2944ba0e37253b07b7b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable LCD Direct Segment Control.  <a href="#ga2b783db06bbe2944ba0e37253b07b7b3">More...</a><br /></td></tr>
-<tr class="separator:ga2b783db06bbe2944ba0e37253b07b7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84b488e1bd5032de1a8307a937b3064b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga84b488e1bd5032de1a8307a937b3064b">LCD_SegmentRangeEnable</a> (<a class="el" href="group__LCD.html#ga1ec97abe68d147faccb9597f10be8c9a">LCD_SegmentRange_TypeDef</a> segmentRange, bool enable)</td></tr>
+<tr class="memdesc:ga84b488e1bd5032de1a8307a937b3064b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables update of this range of LCD segment lines.  <a href="#ga84b488e1bd5032de1a8307a937b3064b">More...</a><br /></td></tr>
+<tr class="separator:ga84b488e1bd5032de1a8307a937b3064b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c176631920506966de2bd727ef9e944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga5c176631920506966de2bd727ef9e944">LCD_SegmentSet</a> (int com, int bit, bool enable)</td></tr>
+<tr class="memdesc:ga5c176631920506966de2bd727ef9e944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on or clear a segment.  <a href="#ga5c176631920506966de2bd727ef9e944">More...</a><br /></td></tr>
+<tr class="separator:ga5c176631920506966de2bd727ef9e944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae974bcc7e675a1597917a5b355cff64e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gae974bcc7e675a1597917a5b355cff64e">LCD_SegmentSetHigh</a> (int com, uint32_t mask, uint32_t bits)</td></tr>
+<tr class="memdesc:gae974bcc7e675a1597917a5b355cff64e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updated the high (32-39) segments on a given COM-line in one operation.  <a href="#gae974bcc7e675a1597917a5b355cff64e">More...</a><br /></td></tr>
+<tr class="separator:gae974bcc7e675a1597917a5b355cff64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga098d20909d9b75fbad54f4176a5c8864"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga098d20909d9b75fbad54f4176a5c8864">LCD_SegmentSetLow</a> (int com, uint32_t mask, uint32_t bits)</td></tr>
+<tr class="memdesc:ga098d20909d9b75fbad54f4176a5c8864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the 0-31 lowest segments on a given COM-line in one operation, according to bit mask.  <a href="#ga098d20909d9b75fbad54f4176a5c8864">More...</a><br /></td></tr>
+<tr class="separator:ga098d20909d9b75fbad54f4176a5c8864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9d68c13929c40cf0d45194358491bb7"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gad9d68c13929c40cf0d45194358491bb7">LCD_SyncBusyDelay</a> (uint32_t flags)</td></tr>
+<tr class="memdesc:gad9d68c13929c40cf0d45194358491bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls LCD SYNCBUSY flags, until flag has been cleared.  <a href="#gad9d68c13929c40cf0d45194358491bb7">More...</a><br /></td></tr>
+<tr class="separator:gad9d68c13929c40cf0d45194358491bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3aed15ee7b02bd66ca53f4bb29f1ba29"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga3aed15ee7b02bd66ca53f4bb29f1ba29">LCD_SyncBusyGet</a> (void)</td></tr>
+<tr class="memdesc:ga3aed15ee7b02bd66ca53f4bb29f1ba29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns SYNCBUSY bits, indicating which registers have pending updates.  <a href="#ga3aed15ee7b02bd66ca53f4bb29f1ba29">More...</a><br /></td></tr>
+<tr class="separator:ga3aed15ee7b02bd66ca53f4bb29f1ba29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae47aa4f1e46d3643f51c07f560580a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gaae47aa4f1e46d3643f51c07f560580a8">LCD_UpdateCtrl</a> (<a class="el" href="group__LCD.html#ga34370ad541df02f8378fe9022620fbc4">LCD_UpdateCtrl_TypeDef</a> ud)</td></tr>
+<tr class="memdesc:gaae47aa4f1e46d3643f51c07f560580a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Update Control.  <a href="#gaae47aa4f1e46d3643f51c07f560580a8">More...</a><br /></td></tr>
+<tr class="separator:gaae47aa4f1e46d3643f51c07f560580a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23d1bf6a3ce88f8514eaa1388f8c7d98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga23d1bf6a3ce88f8514eaa1388f8c7d98">LCD_VBoostSet</a> (<a class="el" href="group__LCD.html#ga752298aa2fa7ddd07a3298780b6a7dc9">LCD_VBoostLevel_TypeDef</a> vboost)</td></tr>
+<tr class="memdesc:ga23d1bf6a3ce88f8514eaa1388f8c7d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure voltage booster.  <a href="#ga23d1bf6a3ce88f8514eaa1388f8c7d98">More...</a><br /></td></tr>
+<tr class="separator:ga23d1bf6a3ce88f8514eaa1388f8c7d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a9defe802f8056ad3afb11b23909808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga8a9defe802f8056ad3afb11b23909808">LCD_VLCDSelect</a> (<a class="el" href="group__LCD.html#gad692503495e3618efdef81ed74b3924e">LCD_VLCDSel_TypeDef</a> vlcd)</td></tr>
+<tr class="memdesc:ga8a9defe802f8056ad3afb11b23909808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select source for VLCD.  <a href="#ga8a9defe802f8056ad3afb11b23909808">More...</a><br /></td></tr>
+<tr class="separator:ga8a9defe802f8056ad3afb11b23909808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga0911d208c554e1520e21d8e3df7f3e6c"></a>
 <div class="memitem">
@@ -381,38 +379,52 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga8f1a22ea036d6ea5f5ecc4e12e44e4c5"></a>
+<a class="anchor" id="ga92902bdc24eea5f00745f247536eb5cc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__LCD.html#ga8f1a22ea036d6ea5f5ecc4e12e44e4c5">LCD_Mux_TypeDef</a></td>
+          <td class="memname">enum <a class="el" href="group__LCD.html#ga92902bdc24eea5f00745f247536eb5cc">LCD_AnimLogic_TypeDef</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>MUX setting </p>
+<p>Animation Logic Control, how AReg and BReg should be combined </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga8f1a22ea036d6ea5f5ecc4e12e44e4c5a3354e7da81250d63e64070927fb0cc9b"></a>lcdMuxStatic&#160;</td><td class="fielddoc">
-<p>Static (segments can be multiplexed with LCD_COM[0]) </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga92902bdc24eea5f00745f247536eb5cca7b919ce80da7c5513ac38373415964d1"></a>lcdAnimLogicAnd&#160;</td><td class="fielddoc">
+<p>Use bitwise logic AND to mix animation register A (AREGA) and B (AREGB) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga8f1a22ea036d6ea5f5ecc4e12e44e4c5a58edeeafba682c5d455e529783cd48b4"></a>lcdMuxDuplex&#160;</td><td class="fielddoc">
-<p>Duplex / 1/2 Duty cycle (segments can be multiplexed with LCD_COM[0:1]) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga8f1a22ea036d6ea5f5ecc4e12e44e4c5add1bf9436571af771bfad89f18410409"></a>lcdMuxTriplex&#160;</td><td class="fielddoc">
-<p>Triplex / 1/3 Duty cycle (segments can be multiplexed with LCD_COM[0:2]) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga8f1a22ea036d6ea5f5ecc4e12e44e4c5ac322cdab885a713be606315c39ae350f"></a>lcdMuxQuadruplex&#160;</td><td class="fielddoc">
-<p>Quadruplex / 1/4 Duty cycle (segments can be multiplexed with LCD_COM[0:3]) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga8f1a22ea036d6ea5f5ecc4e12e44e4c5aeb69804072ac70c2cf53f3f0f4eb2628"></a>lcdMuxSextaplex&#160;</td><td class="fielddoc">
-<p>Sextaplex / 1/6 Duty cycle (segments can be multiplexed with LCD_COM[0:5]) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga8f1a22ea036d6ea5f5ecc4e12e44e4c5afeb1d4b6613767205f3e0778a7b7e7f7"></a>lcdMuxOctaplex&#160;</td><td class="fielddoc">
-<p>Octaplex / 1/6 Duty cycle (segments can be multiplexed with LCD_COM[0:5]) </p>
+<tr><td class="fieldname"><a class="anchor" id="gga92902bdc24eea5f00745f247536eb5cca89378f2e494955efb7d5e0bf2018186b"></a>lcdAnimLogicOr&#160;</td><td class="fielddoc">
+<p>Use bitwise logic OR to mix animation register A (AREGA) and B (AREGB) </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00061">61</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00202">202</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga6414aee2a60b9532d356a1423253e929"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__LCD.html#ga6414aee2a60b9532d356a1423253e929">LCD_AnimShift_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Animation Shift operation; none, left or right </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga6414aee2a60b9532d356a1423253e929a982ef954e5010f03ead965fc2bf705e2"></a>lcdAnimShiftNone&#160;</td><td class="fielddoc">
+<p>No shift </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga6414aee2a60b9532d356a1423253e929afb927c2526a1e7cd626edbaa8e377e8a"></a>lcdAnimShiftLeft&#160;</td><td class="fielddoc">
+<p>Shift segment bits left </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga6414aee2a60b9532d356a1423253e929a29cf961808560b840e03b0faea7dab3a"></a>lcdAnimShiftRight&#160;</td><td class="fielddoc">
+<p>Shift segment bits right </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00191">191</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
 
 </div>
 </div>
@@ -445,52 +457,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gab54b70818484c89e583e20004fd4a0b6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__LCD.html#gab54b70818484c89e583e20004fd4a0b6">LCD_Wave_TypeDef</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Wave type </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggab54b70818484c89e583e20004fd4a0b6a584ffdeb41835eab26d8466902fa585c"></a>lcdWaveLowPower&#160;</td><td class="fielddoc">
-<p>Low power optimized waveform output </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggab54b70818484c89e583e20004fd4a0b6a2ca1879c3575fb69f355a0cd033d30d0"></a>lcdWaveNormal&#160;</td><td class="fielddoc">
-<p>Regular waveform output </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00095">95</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gad692503495e3618efdef81ed74b3924e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__LCD.html#gad692503495e3618efdef81ed74b3924e">LCD_VLCDSel_TypeDef</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>VLCD Voltage Source </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggad692503495e3618efdef81ed74b3924eaa4b31ad40d2d21125c78a5d8f9db331c"></a>lcdVLCDSelVDD&#160;</td><td class="fielddoc">
-<p>VLCD Powered by VDD </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggad692503495e3618efdef81ed74b3924ea2286b147be1326e0c1236f05d8cb6930"></a>lcdVLCDSelVExtBoost&#160;</td><td class="fielddoc">
-<p>VLCD Powered by external VDD / Voltage Boost </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00104">104</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="gad1dd2e4756549f019dbdbbb9bc76d6a4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -511,47 +477,6 @@ Functions</h2></td></tr>
 </table>
 
 <p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00113">113</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga752298aa2fa7ddd07a3298780b6a7dc9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__LCD.html#ga752298aa2fa7ddd07a3298780b6a7dc9">LCD_VBoostLevel_TypeDef</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Voltage Boost Level - Datasheets document setting for each part number </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9a1146bac3ab0f033893246000ec95f0fb"></a>lcdVBoostLevel0&#160;</td><td class="fielddoc">
-<p>Voltage boost LEVEL0 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9ad6d0b3105db5bf06fe279f4e76569b23"></a>lcdVBoostLevel1&#160;</td><td class="fielddoc">
-<p>Voltage boost LEVEL1 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9a2e0b506ce51b86dff51b6cae59d03bec"></a>lcdVBoostLevel2&#160;</td><td class="fielddoc">
-<p>Voltage boost LEVEL2 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9a3f714c8b845d41dbc6ff66420d56ae5f"></a>lcdVBoostLevel3&#160;</td><td class="fielddoc">
-<p>Voltage boost LEVEL3 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9a9d2283073cae8cb4e10aa4e450df556d"></a>lcdVBoostLevel4&#160;</td><td class="fielddoc">
-<p>Voltage boost LEVEL4 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9af1bfe70eb089b0ae7d7baa7c63766197"></a>lcdVBoostLevel5&#160;</td><td class="fielddoc">
-<p>Voltage boost LEVEL5 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9a688a00ac6723275a7115927442c1275f"></a>lcdVBoostLevel6&#160;</td><td class="fielddoc">
-<p>Voltage boost LEVEL6 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9a8b48a40482f014b3f2a78e1b78c4449e"></a>lcdVBoostLevel7&#160;</td><td class="fielddoc">
-<p>Voltage boost LEVEL7 </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00122">122</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
 
 </div>
 </div>
@@ -581,6 +506,41 @@ Functions</h2></td></tr>
 </table>
 
 <p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00135">135</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8f1a22ea036d6ea5f5ecc4e12e44e4c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__LCD.html#ga8f1a22ea036d6ea5f5ecc4e12e44e4c5">LCD_Mux_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>MUX setting </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga8f1a22ea036d6ea5f5ecc4e12e44e4c5a3354e7da81250d63e64070927fb0cc9b"></a>lcdMuxStatic&#160;</td><td class="fielddoc">
+<p>Static (segments can be multiplexed with LCD_COM[0]) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8f1a22ea036d6ea5f5ecc4e12e44e4c5a58edeeafba682c5d455e529783cd48b4"></a>lcdMuxDuplex&#160;</td><td class="fielddoc">
+<p>Duplex / 1/2 Duty cycle (segments can be multiplexed with LCD_COM[0:1]) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8f1a22ea036d6ea5f5ecc4e12e44e4c5add1bf9436571af771bfad89f18410409"></a>lcdMuxTriplex&#160;</td><td class="fielddoc">
+<p>Triplex / 1/3 Duty cycle (segments can be multiplexed with LCD_COM[0:2]) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8f1a22ea036d6ea5f5ecc4e12e44e4c5ac322cdab885a713be606315c39ae350f"></a>lcdMuxQuadruplex&#160;</td><td class="fielddoc">
+<p>Quadruplex / 1/4 Duty cycle (segments can be multiplexed with LCD_COM[0:3]) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8f1a22ea036d6ea5f5ecc4e12e44e4c5aeb69804072ac70c2cf53f3f0f4eb2628"></a>lcdMuxSextaplex&#160;</td><td class="fielddoc">
+<p>Sextaplex / 1/6 Duty cycle (segments can be multiplexed with LCD_COM[0:5]) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8f1a22ea036d6ea5f5ecc4e12e44e4c5afeb1d4b6613767205f3e0778a7b7e7f7"></a>lcdMuxOctaplex&#160;</td><td class="fielddoc">
+<p>Octaplex / 1/6 Duty cycle (segments can be multiplexed with LCD_COM[0:5]) </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00061">61</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
 
 </div>
 </div>
@@ -660,162 +620,121 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga6414aee2a60b9532d356a1423253e929"></a>
+<a class="anchor" id="ga752298aa2fa7ddd07a3298780b6a7dc9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__LCD.html#ga6414aee2a60b9532d356a1423253e929">LCD_AnimShift_TypeDef</a></td>
+          <td class="memname">enum <a class="el" href="group__LCD.html#ga752298aa2fa7ddd07a3298780b6a7dc9">LCD_VBoostLevel_TypeDef</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Animation Shift operation; none, left or right </p>
+<p>Voltage Boost Level - Datasheets document setting for each part number </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga6414aee2a60b9532d356a1423253e929a982ef954e5010f03ead965fc2bf705e2"></a>lcdAnimShiftNone&#160;</td><td class="fielddoc">
-<p>No shift </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9a1146bac3ab0f033893246000ec95f0fb"></a>lcdVBoostLevel0&#160;</td><td class="fielddoc">
+<p>Voltage boost LEVEL0 </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga6414aee2a60b9532d356a1423253e929afb927c2526a1e7cd626edbaa8e377e8a"></a>lcdAnimShiftLeft&#160;</td><td class="fielddoc">
-<p>Shift segment bits left </p>
+<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9ad6d0b3105db5bf06fe279f4e76569b23"></a>lcdVBoostLevel1&#160;</td><td class="fielddoc">
+<p>Voltage boost LEVEL1 </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga6414aee2a60b9532d356a1423253e929a29cf961808560b840e03b0faea7dab3a"></a>lcdAnimShiftRight&#160;</td><td class="fielddoc">
-<p>Shift segment bits right </p>
+<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9a2e0b506ce51b86dff51b6cae59d03bec"></a>lcdVBoostLevel2&#160;</td><td class="fielddoc">
+<p>Voltage boost LEVEL2 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9a3f714c8b845d41dbc6ff66420d56ae5f"></a>lcdVBoostLevel3&#160;</td><td class="fielddoc">
+<p>Voltage boost LEVEL3 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9a9d2283073cae8cb4e10aa4e450df556d"></a>lcdVBoostLevel4&#160;</td><td class="fielddoc">
+<p>Voltage boost LEVEL4 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9af1bfe70eb089b0ae7d7baa7c63766197"></a>lcdVBoostLevel5&#160;</td><td class="fielddoc">
+<p>Voltage boost LEVEL5 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9a688a00ac6723275a7115927442c1275f"></a>lcdVBoostLevel6&#160;</td><td class="fielddoc">
+<p>Voltage boost LEVEL6 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga752298aa2fa7ddd07a3298780b6a7dc9a8b48a40482f014b3f2a78e1b78c4449e"></a>lcdVBoostLevel7&#160;</td><td class="fielddoc">
+<p>Voltage boost LEVEL7 </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00191">191</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00122">122</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga92902bdc24eea5f00745f247536eb5cc"></a>
+<a class="anchor" id="gad692503495e3618efdef81ed74b3924e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__LCD.html#ga92902bdc24eea5f00745f247536eb5cc">LCD_AnimLogic_TypeDef</a></td>
+          <td class="memname">enum <a class="el" href="group__LCD.html#gad692503495e3618efdef81ed74b3924e">LCD_VLCDSel_TypeDef</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Animation Logic Control, how AReg and BReg should be combined </p>
+<p>VLCD Voltage Source </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga92902bdc24eea5f00745f247536eb5cca7b919ce80da7c5513ac38373415964d1"></a>lcdAnimLogicAnd&#160;</td><td class="fielddoc">
-<p>Use bitwise logic AND to mix animation register A (AREGA) and B (AREGB) </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggad692503495e3618efdef81ed74b3924eaa4b31ad40d2d21125c78a5d8f9db331c"></a>lcdVLCDSelVDD&#160;</td><td class="fielddoc">
+<p>VLCD Powered by VDD </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga92902bdc24eea5f00745f247536eb5cca89378f2e494955efb7d5e0bf2018186b"></a>lcdAnimLogicOr&#160;</td><td class="fielddoc">
-<p>Use bitwise logic OR to mix animation register A (AREGA) and B (AREGB) </p>
+<tr><td class="fieldname"><a class="anchor" id="ggad692503495e3618efdef81ed74b3924ea2286b147be1326e0c1236f05d8cb6930"></a>lcdVLCDSelVExtBoost&#160;</td><td class="fielddoc">
+<p>VLCD Powered by external VDD / Voltage Boost </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00202">202</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00104">104</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab54b70818484c89e583e20004fd4a0b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__LCD.html#gab54b70818484c89e583e20004fd4a0b6">LCD_Wave_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Wave type </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggab54b70818484c89e583e20004fd4a0b6a584ffdeb41835eab26d8466902fa585c"></a>lcdWaveLowPower&#160;</td><td class="fielddoc">
+<p>Low power optimized waveform output </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggab54b70818484c89e583e20004fd4a0b6a2ca1879c3575fb69f355a0cd033d30d0"></a>lcdWaveNormal&#160;</td><td class="fielddoc">
+<p>Regular waveform output </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00095">95</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga6c06e074a2a2f04da49c06206e9be571"></a>
+<a class="anchor" id="ga370a02864a788e98e6a6d6e859058317"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void LCD_Init </td>
+          <td class="memname">__STATIC_INLINE void LCD_AnimEnable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structLCD__Init__TypeDef.html">LCD_Init_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>lcdInit</em></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function call will only configure the LCD controller. You must enable it afterwards, potentially configuring Frame Control and interrupts first according to requirements.</p>
+
+<p>Enables or disables LCD Animation feature. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">lcdInit</td><td>Pointer to initialization structure which configures LCD controller. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Boolean true enables animation, false disables animation </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00062">62</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00328">328</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
 
-<p>References <a class="el" href="efm32lg__lcd_8h_source.html#l00125">_LCD_DISPCTRL_BIAS_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00155">_LCD_DISPCTRL_CONCONF_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00113">_LCD_DISPCTRL_MUX_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00193">_LCD_DISPCTRL_MUXE_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00164">_LCD_DISPCTRL_VLCDSEL_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00138">_LCD_DISPCTRL_WAVE_MASK</a>, <a class="el" href="em__lcd_8h_source.html#l00255">LCD_Init_TypeDef::bias</a>, <a class="el" href="em__lcd_8h_source.html#l00261">LCD_Init_TypeDef::contrast</a>, <a class="el" href="em__lcd_8h_source.html#l00251">LCD_Init_TypeDef::enable</a>, <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>, <a class="el" href="em__lcd_8h_source.html#l00308">LCD_Enable()</a>, <a class="el" href="em__lcd_8h_source.html#l00253">LCD_Init_TypeDef::mux</a>, <a class="el" href="em__lcd_8h_source.html#l00259">LCD_Init_TypeDef::vlcd</a>, and <a class="el" href="em__lcd_8h_source.html#l00257">LCD_Init_TypeDef::wave</a>.</p>
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>, and <a class="el" href="group__EFM32LG__LCD__BitFields.html#gad8d3b962d8106bffcc00be3bc6740fbf">LCD_BACTRL_AEN</a>.</p>
 
-<p>Referenced by <a class="el" href="segmentlcd_8c_source.html#l00382">SegmentLCD_Init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga8a9defe802f8056ad3afb11b23909808"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LCD_VLCDSelect </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__LCD.html#gad692503495e3618efdef81ed74b3924e">LCD_VLCDSel_TypeDef</a>&#160;</td>
-          <td class="paramname"><em>vlcd</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">vlcd</td><td>Select source for VLD voltage </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00107">107</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
-
-<p>References <a class="el" href="efm32lg__lcd_8h_source.html#l00164">_LCD_DISPCTRL_VLCDSEL_MASK</a>, <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00169">LCD_DISPCTRL_VLCDSEL_VDD</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00170">LCD_DISPCTRL_VLCDSEL_VEXTBOOST</a>, <a class="el" href="em__lcd_8h_source.html#l00107">lcdVLCDSelVDD</a>, and <a class="el" href="em__lcd_8h_source.html#l00109">lcdVLCDSelVExtBoost</a>.</p>
-
-<p>Referenced by <a class="el" href="segmentlcd_8c_source.html#l00382">SegmentLCD_Init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaae47aa4f1e46d3643f51c07f560580a8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LCD_UpdateCtrl </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__LCD.html#ga34370ad541df02f8378fe9022620fbc4">LCD_UpdateCtrl_TypeDef</a>&#160;</td>
-          <td class="paramname"><em>ud</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ud</td><td>Configures LCD update method </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00136">136</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
-
-<p>References <a class="el" href="efm32lg__lcd_8h_source.html#l00094">_LCD_CTRL_UDCTRL_MASK</a>, and <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga26c8e0ea9e738e4926f7e7e649ae4358"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LCD_FrameCountInit </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structLCD__FrameCountInit__TypeDef.html">LCD_FrameCountInit_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>fcInit</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fcInit</td><td>Pointer to Frame Counter initialization structure </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00149">149</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
-
-<p>References <a class="el" href="efm32lg__lcd_8h_source.html#l00262">_LCD_BACTRL_FCPRESC_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00274">_LCD_BACTRL_FCTOP_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00273">_LCD_BACTRL_FCTOP_SHIFT</a>, <a class="el" href="em__lcd_8h_source.html#l00240">LCD_FrameCountInit_TypeDef::enable</a>, <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>, <a class="el" href="em__lcd_8h_source.html#l00388">LCD_FrameCountEnable()</a>, <a class="el" href="em__lcd_8h_source.html#l00244">LCD_FrameCountInit_TypeDef::prescale</a>, and <a class="el" href="em__lcd_8h_source.html#l00242">LCD_FrameCountInit_TypeDef::top</a>.</p>
+<p>Referenced by <a class="el" href="group__LCD.html#ga1ba720135f8c1869113823d684e084f5">LCD_AnimInit()</a>.</p>
 
 </div>
 </div>
@@ -832,6 +751,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Configures LCD controller Animation feature. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">animInit</td><td>Pointer to LCD Animation initialization structure </td></tr>
@@ -839,9 +760,562 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00178">178</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00183">183</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
 
-<p>References <a class="el" href="efm32lg__lcd_8h_source.html#l00279">_LCD_BACTRL_ALOC_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00249">_LCD_BACTRL_ALOGSEL_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00228">_LCD_BACTRL_AREGASC_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00227">_LCD_BACTRL_AREGASC_SHIFT</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00238">_LCD_BACTRL_AREGBSC_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00237">_LCD_BACTRL_AREGBSC_SHIFT</a>, <a class="el" href="em__lcd_8h_source.html#l00229">LCD_AnimInit_TypeDef::animLogic</a>, <a class="el" href="em__lcd_8h_source.html#l00221">LCD_AnimInit_TypeDef::AReg</a>, <a class="el" href="em__lcd_8h_source.html#l00223">LCD_AnimInit_TypeDef::AShift</a>, <a class="el" href="em__lcd_8h_source.html#l00225">LCD_AnimInit_TypeDef::BReg</a>, <a class="el" href="em__lcd_8h_source.html#l00227">LCD_AnimInit_TypeDef::BShift</a>, <a class="el" href="em__lcd_8h_source.html#l00219">LCD_AnimInit_TypeDef::enable</a>, <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>, <a class="el" href="em__lcd_8h_source.html#l00328">LCD_AnimEnable()</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00284">LCD_BACTRL_ALOC_SEG0TO7</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00285">LCD_BACTRL_ALOC_SEG8TO15</a>, and <a class="el" href="em__lcd_8h_source.html#l00232">LCD_AnimInit_TypeDef::startSeg</a>.</p>
+<p>References <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga9565a42d7ea3ea870e2b1d083aca1c2c">_LCD_BACTRL_ALOC_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#gada21f3423f2dc6423e90623f0468724d">_LCD_BACTRL_ALOGSEL_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga30b0cfb3033b13ea54728e97e4a18dbd">_LCD_BACTRL_AREGASC_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga886c11a8b1e50e03d4bd61fd2e66a1ef">_LCD_BACTRL_AREGASC_SHIFT</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#gab3d9d199082d0ae1d510ad45eda30bbe">_LCD_BACTRL_AREGBSC_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga89034438a8f8967a50379f811a732ae4">_LCD_BACTRL_AREGBSC_SHIFT</a>, <a class="el" href="structLCD__AnimInit__TypeDef.html#a98a50ff76a3708719ac999ab94e27cb2">LCD_AnimInit_TypeDef::animLogic</a>, <a class="el" href="structLCD__AnimInit__TypeDef.html#a9f5aec5e1101b0d6c88713206cdc219c">LCD_AnimInit_TypeDef::AReg</a>, <a class="el" href="structLCD__AnimInit__TypeDef.html#a603dd63e5d3ccef8b058f49ea4467257">LCD_AnimInit_TypeDef::AShift</a>, <a class="el" href="structLCD__AnimInit__TypeDef.html#a80388af00a265b15d596642910901cd4">LCD_AnimInit_TypeDef::BReg</a>, <a class="el" href="structLCD__AnimInit__TypeDef.html#a3c0365252ad3859122ec2601d84cd651">LCD_AnimInit_TypeDef::BShift</a>, <a class="el" href="structLCD__AnimInit__TypeDef.html#a45d8ceb15ec1a3e1caabf55409e8fa51">LCD_AnimInit_TypeDef::enable</a>, <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>, <a class="el" href="group__LCD.html#ga370a02864a788e98e6a6d6e859058317">LCD_AnimEnable()</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga4e869c30c9d893e20fd5b5a5102966a9">LCD_BACTRL_ALOC_SEG0TO7</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga2b96ff5b4f9cc964184af81fe145da85">LCD_BACTRL_ALOC_SEG8TO15</a>, and <a class="el" href="structLCD__AnimInit__TypeDef.html#a866d4c63004272f85120888c1319f4e8">LCD_AnimInit_TypeDef::startSeg</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga1592b99360e4fb02f3f5c5cd7646bbd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE int LCD_AnimState </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns current animation state. </p>
+<dl class="section return"><dt>Returns</dt><dd>Animation state, in range 0-15 </dd></dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00408">408</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga5477eb5d3226a99e17ea67615841f0ef">_LCD_STATUS_ASTATE_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga496da33b9c1bfd72db319219fca838c7">_LCD_STATUS_ASTATE_SHIFT</a>, and <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7843cbadb32a101fc3846e1bf4659bef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_BiasComSet </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>comLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>biasLevel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure bias level for a specific segment line. </p>
+<dl class="section note"><dt>Note</dt><dd>When DSC is active, each configuration takes up 4 bits in the Segment Registers (SEGD4L/SEGD4H) which defines bias level. For optimal use of this feature, the entire SEGD-registers should be set at once in a optimized routine, so this function is mainly here to demonstrate how to correctly configure the bias levels, and should be used with care.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">comLine</td><td>COM line number, 0-7</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">biasLevel</td><td>Bias configuration level, 0-4. This value must be within the constraint defined by the LCD_DISPCTRL bias setting, see Reference Manual/Datasheet </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00755">755</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaab1e6500ce35b72eaebdc54b3b0ec392"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_BiasSegmentSet </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>segmentLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>biasLevel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure bias level for a specific segment line for Direct Segment Control. </p>
+<dl class="section note"><dt>Note</dt><dd>When DSC is active, each configuration takes up 4 bits in the Segment Registers (SEGD0L/SEGD1H) which defines bias level. For optimal use of this feature, the entire SEGD-registers should be set at once in a optimized routine, so this function is mainly here to demonstrate how to correctly configure the bias levels, and should be used with care.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">segmentLine</td><td>Segment line number</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">biasLevel</td><td>Bias configuration level, 0-4. This value must be within the constraint defined by the LCD_DISPCTRL bias setting, see Reference Manual/Datasheet </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00637">637</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga25f32ee5e9376e6277fd47eeafca13d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void LCD_BlankEnable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disables all segments, while keeping segment state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Boolean true clears all segments, boolean false restores all segment lines </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00368">368</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>, and <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga05345fc2345397479044ba69e23282bd">LCD_BACTRL_BLANK</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8de4bda300afe88b567b545fdbe484d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void LCD_BlinkEnable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables or disables LCD blink. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Boolean true enables blink, false disables blink </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00348">348</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>, and <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga139ea4c8fe6eab392705d8be2b3c1f2e">LCD_BACTRL_BLINKEN</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga62d6992513031ebc152058594cbf982b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE int LCD_BlinkState </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns current blink state. </p>
+<dl class="section return"><dt>Returns</dt><dd>Return value is 1 if segments are enabled, 0 if disabled </dd></dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00421">421</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga929b15a22fca621e02cd35a5e51c935f">_LCD_STATUS_BLINK_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#gae9548fcf07e819d6f8669ebdcab69b35">_LCD_STATUS_BLINK_SHIFT</a>, and <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0d783bed716497ea3ba7e618f469ac32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_ContrastSet </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure contrast level on LCD panel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>Contrast level in the range 0-31 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00592">592</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga1e1711330d28c90f303cda9cf26f8ef1">_LCD_DISPCTRL_CONLEV_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga6ba20a816c434792b302888cb0e05fc9">_LCD_DISPCTRL_CONLEV_SHIFT</a>, and <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2b783db06bbe2944ba0e37253b07b7b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void LCD_DSCEnable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or disable LCD Direct Segment Control. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>If true, enables LCD controller Direct Segment Control Segment and COM line bias levels needs to be set explicitly with the <a class="el" href="group__LCD.html#gaab1e6500ce35b72eaebdc54b3b0ec392" title="Configure bias level for a specific segment line for Direct Segment Control. ">LCD_BiasSegmentSet()</a> and <a class="el" href="group__LCD.html#ga7843cbadb32a101fc3846e1bf4659bef" title="Configure bias level for a specific segment line. ">LCD_BiasComSet()</a> function calls. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00590">590</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>, and <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga776ca4c36968d1376df2ff61a9a6b09c">LCD_CTRL_DSC</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga47b12ccafec62a5adddefcba148ff442"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void LCD_Enable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or disable LCD controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>If true, enables LCD controller with current configuration, if false disables LCD controller. CMU clock for LCD must be enabled for correct operation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00308">308</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>, and <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga0bc84f1368274ab6c2f77beb1fb9984b">LCD_CTRL_EN</a>.</p>
+
+<p>Referenced by <a class="el" href="group__LCD.html#ga6c06e074a2a2f04da49c06206e9be571">LCD_Init()</a>, and <a class="el" href="group__SegmentLcd.html#gaa6396568a708435511368037db1a39a5">SegmentLCD_Disable()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf5c8f8228a57761bb2a027130763d7b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void LCD_FrameCountEnable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables or disables LCD Frame Control. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Boolean true enables frame counter, false disables frame counter </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00388">388</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>, and <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga94507c02b4944e4369d5ee5cfb90850f">LCD_BACTRL_FCEN</a>.</p>
+
+<p>Referenced by <a class="el" href="group__LCD.html#ga26c8e0ea9e738e4926f7e7e649ae4358">LCD_FrameCountInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga26c8e0ea9e738e4926f7e7e649ae4358"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_FrameCountInit </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structLCD__FrameCountInit__TypeDef.html">LCD_FrameCountInit_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>fcInit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize LCD Frame Counter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fcInit</td><td>Pointer to Frame Counter initialization structure </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00154">154</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga16ab9aa548476936614c95135510063f">_LCD_BACTRL_FCPRESC_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#gaa999db158edf029d1c64a0625b7b688b">_LCD_BACTRL_FCTOP_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#gaa23ad392797450b8d2b93aaae0d91657">_LCD_BACTRL_FCTOP_SHIFT</a>, <a class="el" href="structLCD__FrameCountInit__TypeDef.html#aa99d50c77e95aea0a1b43e66208c8986">LCD_FrameCountInit_TypeDef::enable</a>, <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>, <a class="el" href="group__LCD.html#gaf5c8f8228a57761bb2a027130763d7b4">LCD_FrameCountEnable()</a>, <a class="el" href="structLCD__FrameCountInit__TypeDef.html#aa021f494110882db0f8be0397c0736b9">LCD_FrameCountInit_TypeDef::prescale</a>, and <a class="el" href="structLCD__FrameCountInit__TypeDef.html#ae657913edc5e10162d8499e885a185af">LCD_FrameCountInit_TypeDef::top</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa8c374f0e169b555a7980e0e355584e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void LCD_FreezeEnable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When set, LCD registers will not be updated until cleared,. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>When enable is true, update is stopped, when false all registers are updated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00435">435</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#gabbbeb6962e92edb0e73890d295357578">LCD_FREEZE_REGFREEZE_FREEZE</a>, and <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga646e3a1cc35c927d47f8d61282d92476">LCD_FREEZE_REGFREEZE_UPDATE</a>.</p>
+
+<p>Referenced by <a class="el" href="group__SegmentLcd.html#gab0279981a6246cd3e6b375b4c90a704b">SegmentLCD_Number()</a>, <a class="el" href="group__SegmentLcd.html#gabfd110e644119d8f25ae4b9fd54042b5">SegmentLCD_UnsignedHex()</a>, and <a class="el" href="group__SegmentLcd.html#gad22a3c06bcbb0ed501b6343c0cd62f86">SegmentLCD_Write()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga6c06e074a2a2f04da49c06206e9be571"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_Init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structLCD__Init__TypeDef.html">LCD_Init_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>lcdInit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initalize Liquid Crystal Display (LCD) controller. </p>
+<p>This function call will only configure the LCD controller. You must enable it afterwards, potentially configuring Frame Control and interrupts first according to requirements.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lcdInit</td><td>Pointer to initialization structure which configures LCD controller. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00067">67</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG__LCD__BitFields.html#gae1c26476d08f4e3e59f0509da9766663">_LCD_DISPCTRL_BIAS_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#gacfc4fce5b4185483f126e9bd696e6407">_LCD_DISPCTRL_CONCONF_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#gadf5f745be01fb57667dd873cb77ba9b8">_LCD_DISPCTRL_MUX_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#gaabd11d816f4483d980029fd1aada3dca">_LCD_DISPCTRL_MUXE_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#gad4880e5c9cc649af9180ecf53042580d">_LCD_DISPCTRL_VLCDSEL_MASK</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga5bb602e2388983338186bcf628017cad">_LCD_DISPCTRL_WAVE_MASK</a>, <a class="el" href="structLCD__Init__TypeDef.html#a0475193ff1103ddb31b0a7acb59b03f9">LCD_Init_TypeDef::bias</a>, <a class="el" href="structLCD__Init__TypeDef.html#a7426a711a217b0020406ea3d8c9bca0b">LCD_Init_TypeDef::contrast</a>, <a class="el" href="structLCD__Init__TypeDef.html#a46e219bcd129405c305bca1af7746ebc">LCD_Init_TypeDef::enable</a>, <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>, <a class="el" href="group__LCD.html#ga47b12ccafec62a5adddefcba148ff442">LCD_Enable()</a>, <a class="el" href="structLCD__Init__TypeDef.html#a76400b3aff1bda05baed2d37a1d46609">LCD_Init_TypeDef::mux</a>, <a class="el" href="structLCD__Init__TypeDef.html#aab685e0b3ed3beed09d6c64d4e28956e">LCD_Init_TypeDef::vlcd</a>, and <a class="el" href="structLCD__Init__TypeDef.html#af5fd808ce9e9ba21b3585cf7e0d68d00">LCD_Init_TypeDef::wave</a>.</p>
+
+<p>Referenced by <a class="el" href="group__SegmentLcd.html#ga0818c866cead74ab3902753a770eb4c4">SegmentLCD_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga85ef9fa5ef7beaad871fe887182d6064"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void LCD_IntClear </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear one or more interrupt flags. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>LCD interrupt sources to clear. Use a set of interrupt flags OR-ed together to clear multiple interrupt sources for the LCD module (LCD_IFS_nnn). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00574">574</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga1ec2ab7a9fbc59bef88c5f635b5b8cd0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void LCD_IntDisable </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable LCD interrupts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>LCD interrupt sources to disable. Use a set of interrupt flags OR-ed together to disable multiple interrupt sources for the LCD module (LCD_IFS_nnn). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00559">559</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
+
+<p>Referenced by <a class="el" href="group__SegmentLcd.html#ga0818c866cead74ab3902753a770eb4c4">SegmentLCD_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga26e7c3e726118e25f29c3987f7b4bc3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void LCD_IntEnable </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable LCD interrupts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>LCD interrupt sources to enable. Use a set of interrupt flags OR-ed together to set multiple interrupt sources for the LCD module (LCD_IFS_nnn). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00544">544</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga19aeec76708bf068ff0331fd3487bf60"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint32_t LCD_IntGet </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get pending LCD interrupt flags. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pending LCD interrupt sources. Returns a set of interrupt flags OR-ed together for multiple interrupt sources in the LCD module (LCD_IFS_nnn). </dd></dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00483">483</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gae87455a6d43cdbeba26b4b324706ec21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint32_t LCD_IntGetEnabled </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get enabled and pending LCD interrupt flags. </p>
+<p>Useful for handling more interrupt sources in the same interrupt handler.</p>
+<dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pending and enabled LCD interrupt sources. The return value is the bitwise AND combination of<ul>
+<li>the OR combination of enabled interrupt sources in LCD_IEN_nnn register (LCD_IEN_nnn) and</li>
+<li>the bitwise OR combination of valid interrupt flags of the LCD module (LCD_IF_nnn). </li>
+</ul>
+</dd></dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00507">507</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga285cb55f01224c107c133c71afae5942"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void LCD_IntSet </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set one or more pending LCD interrupts from SW. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>LCD interrupt sources to set to pending. Use a set of interrupt flags OR-ed together to set multiple interrupt sources for the LCD module (LCD_IFS_nnn). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00529">529</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
 
 </div>
 </div>
@@ -868,6 +1342,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enables update of this range of LCD segment lines. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">segmentRange</td><td>Range of 4 LCD segments lines to enable or disable, for all enabled COM lines</td></tr>
@@ -876,9 +1352,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00229">229</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00234">234</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
 
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
 
 </div>
 </div>
@@ -911,6 +1387,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Turn on or clear a segment. </p>
 <dl class="section note"><dt>Note</dt><dd>On Gecko Family, max configuration is (COM-lines x Segment-Lines) 4x40 On Tiny Family, max configuration is 8x20 or 4x24 On Giant Family, max configuration is 8x36 or 4x40</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -921,55 +1399,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00260">260</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00265">265</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
 
-<p>References <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, and <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
+<p>References <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
 
-<p>Referenced by <a class="el" href="segmentlcd_8c_source.html#l00284">SegmentLCD_ARing()</a>, <a class="el" href="segmentlcd_8c_source.html#l00306">SegmentLCD_Battery()</a>, <a class="el" href="segmentlcd_8c_source.html#l00360">SegmentLCD_EnergyMode()</a>, <a class="el" href="segmentlcd_8c_source.html#l00503">SegmentLCD_Number()</a>, <a class="el" href="segmentlcd_8c_source.html#l00577">SegmentLCD_Symbol()</a>, <a class="el" href="segmentlcd_8c_source.html#l00705">SegmentLCD_UnsignedHex()</a>, and <a class="el" href="segmentlcd_8c_source.html#l00749">SegmentLCD_Write()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga098d20909d9b75fbad54f4176a5c8864"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LCD_SegmentSetLow </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>com</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>mask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>bits</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">com</td><td>Which COM line to update</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>Bit mask for segments 0-31</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bits</td><td>Bit pattern for segments 0-31 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00414">414</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
-
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
+<p>Referenced by <a class="el" href="segmentlcd_8c.html#af22fd992a5292a586a0647d278aa039e">displayBlock()</a>, <a class="el" href="group__SegmentLcd.html#ga7c4b35ea06dab845d3733f6a118e2206">SegmentLCD_ARing()</a>, <a class="el" href="group__SegmentLcd.html#ga8e10bb9c31d3b8efe0273940a507e889">SegmentLCD_Battery()</a>, <a class="el" href="group__SegmentLcd.html#ga7849f40616f3c310576a083d2956410a">SegmentLCD_EnergyMode()</a>, <a class="el" href="group__SegmentLcd.html#gab0279981a6246cd3e6b375b4c90a704b">SegmentLCD_Number()</a>, <a class="el" href="group__SegmentLcd.html#ga9c02dec45dfa5339da028c046b7e1a36">SegmentLCD_Symbol()</a>, <a class="el" href="group__SegmentLcd.html#gabfd110e644119d8f25ae4b9fd54042b5">SegmentLCD_UnsignedHex()</a>, and <a class="el" href="group__SegmentLcd.html#gad22a3c06bcbb0ed501b6343c0cd62f86">SegmentLCD_Write()</a>.</p>
 
 </div>
 </div>
@@ -1002,6 +1436,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Updated the high (32-39) segments on a given COM-line in one operation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">com</td><td>Which COM line to update</td></tr>
@@ -1011,82 +1447,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00505">505</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00510">510</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
 
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga0d783bed716497ea3ba7e618f469ac32"></a>
+<a class="anchor" id="ga098d20909d9b75fbad54f4176a5c8864"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void LCD_ContrastSet </td>
+          <td class="memname">void LCD_SegmentSetLow </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>level</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>Contrast level in the range 0-31 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00587">587</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
-
-<p>References <a class="el" href="efm32lg__lcd_8h_source.html#l00146">_LCD_DISPCTRL_CONLEV_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00145">_LCD_DISPCTRL_CONLEV_SHIFT</a>, and <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga23d1bf6a3ce88f8514eaa1388f8c7d98"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LCD_VBoostSet </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__LCD.html#ga752298aa2fa7ddd07a3298780b6a7dc9">LCD_VBoostLevel_TypeDef</a>&#160;</td>
-          <td class="paramname"><em>vboost</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The resulting voltage level is described in each part number's data sheet</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">vboost</td><td>Voltage boost level </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00605">605</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
-
-<p>References <a class="el" href="efm32lg__lcd_8h_source.html#l00172">_LCD_DISPCTRL_VBLEV_MASK</a>, and <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
-
-<p>Referenced by <a class="el" href="segmentlcd_8c_source.html#l00382">SegmentLCD_Init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaab1e6500ce35b72eaebdc54b3b0ec392"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LCD_BiasSegmentSet </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>segmentLine</em>, </td>
+          <td class="paramname"><em>com</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>biasLevel</em>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>bits</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1095,283 +1482,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>When DSC is active, each configuration takes up 4 bits in the Segment Registers (SEGD0L/SEGD1H) which defines bias level. For optimal use of this feature, the entire SEGD-registers should be set at once in a optimized routine, so this function is mainly here to demonstrate how to correctly configure the bias levels, and should be used with care.</dd></dl>
+
+<p>Updates the 0-31 lowest segments on a given COM-line in one operation, according to bit mask. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">segmentLine</td><td>Segment line number</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">biasLevel</td><td>Bias configuration level, 0-4. This value must be within the constraint defined by the LCD_DISPCTRL bias setting, see Reference Manual/Datasheet </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">com</td><td>Which COM line to update</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>Bit mask for segments 0-31</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bits</td><td>Bit pattern for segments 0-31 </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00632">632</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00419">419</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
 
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga7843cbadb32a101fc3846e1bf4659bef"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LCD_BiasComSet </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>comLine</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>biasLevel</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>When DSC is active, each configuration takes up 4 bits in the Segment Registers (SEGD4L/SEGD4H) which defines bias level. For optimal use of this feature, the entire SEGD-registers should be set at once in a optimized routine, so this function is mainly here to demonstrate how to correctly configure the bias levels, and should be used with care.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">comLine</td><td>COM line number, 0-7</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">biasLevel</td><td>Bias configuration level, 0-4. This value must be within the constraint defined by the LCD_DISPCTRL bias setting, see Reference Manual/Datasheet </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00750">750</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
-
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga47b12ccafec62a5adddefcba148ff442"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void LCD_Enable </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>If true, enables LCD controller with current configuration, if false disables LCD controller. CMU clock for LCD must be enabled for correct operation. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00308">308</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>, and <a class="el" href="efm32lg__lcd_8h_source.html#l00088">LCD_CTRL_EN</a>.</p>
-
-<p>Referenced by <a class="el" href="em__lcd_8c_source.html#l00062">LCD_Init()</a>, and <a class="el" href="segmentlcd_8c_source.html#l00339">SegmentLCD_Disable()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga370a02864a788e98e6a6d6e859058317"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void LCD_AnimEnable </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Boolean true enables animation, false disables animation </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00328">328</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>, and <a class="el" href="efm32lg__lcd_8h_source.html#l00222">LCD_BACTRL_AEN</a>.</p>
-
-<p>Referenced by <a class="el" href="em__lcd_8c_source.html#l00178">LCD_AnimInit()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga8de4bda300afe88b567b545fdbe484d4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void LCD_BlinkEnable </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Boolean true enables blink, false disables blink </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00348">348</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>, and <a class="el" href="efm32lg__lcd_8h_source.html#l00212">LCD_BACTRL_BLINKEN</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga25f32ee5e9376e6277fd47eeafca13d5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void LCD_BlankEnable </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Boolean true clears all segments, boolean false restores all segment lines </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00368">368</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>, and <a class="el" href="efm32lg__lcd_8h_source.html#l00217">LCD_BACTRL_BLANK</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaf5c8f8228a57761bb2a027130763d7b4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void LCD_FrameCountEnable </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Boolean true enables frame counter, false disables frame counter </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00388">388</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>, and <a class="el" href="efm32lg__lcd_8h_source.html#l00256">LCD_BACTRL_FCEN</a>.</p>
-
-<p>Referenced by <a class="el" href="em__lcd_8c_source.html#l00149">LCD_FrameCountInit()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga1592b99360e4fb02f3f5c5cd7646bbd4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE int LCD_AnimState </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Animation state, in range 0-15 </dd></dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00408">408</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-<p>References <a class="el" href="efm32lg__lcd_8h_source.html#l00291">_LCD_STATUS_ASTATE_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00290">_LCD_STATUS_ASTATE_SHIFT</a>, and <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga62d6992513031ebc152058594cbf982b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE int LCD_BlinkState </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Return value is 1 if segments are enabled, 0 if disabled </dd></dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00421">421</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-<p>References <a class="el" href="efm32lg__lcd_8h_source.html#l00296">_LCD_STATUS_BLINK_MASK</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00295">_LCD_STATUS_BLINK_SHIFT</a>, and <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaa8c374f0e169b555a7980e0e355584e0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void LCD_FreezeEnable </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>When enable is true, update is stopped, when false all registers are updated </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00435">435</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>, <a class="el" href="efm32lg__lcd_8h_source.html#l00427">LCD_FREEZE_REGFREEZE_FREEZE</a>, and <a class="el" href="efm32lg__lcd_8h_source.html#l00426">LCD_FREEZE_REGFREEZE_UPDATE</a>.</p>
-
-<p>Referenced by <a class="el" href="segmentlcd_8c_source.html#l00503">SegmentLCD_Number()</a>, <a class="el" href="segmentlcd_8c_source.html#l00705">SegmentLCD_UnsignedHex()</a>, and <a class="el" href="segmentlcd_8c_source.html#l00749">SegmentLCD_Write()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga3aed15ee7b02bd66ca53f4bb29f1ba29"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE uint32_t LCD_SyncBusyGet </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Bit fields for LCD registers which have pending updates </dd></dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00455">455</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
 
 </div>
 </div>
@@ -1388,6 +1512,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Polls LCD SYNCBUSY flags, until flag has been cleared. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>Bit fields for LCD registers that shall be updated before we continue </td></tr>
@@ -1397,18 +1523,18 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00468">468</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
 
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
 
-<p>Referenced by <a class="el" href="segmentlcd_8c_source.html#l00339">SegmentLCD_Disable()</a>, <a class="el" href="segmentlcd_8c_source.html#l00382">SegmentLCD_Init()</a>, <a class="el" href="segmentlcd_8c_source.html#l00503">SegmentLCD_Number()</a>, <a class="el" href="segmentlcd_8c_source.html#l00705">SegmentLCD_UnsignedHex()</a>, and <a class="el" href="segmentlcd_8c_source.html#l00749">SegmentLCD_Write()</a>.</p>
+<p>Referenced by <a class="el" href="group__SegmentLcd.html#gaa6396568a708435511368037db1a39a5">SegmentLCD_Disable()</a>, <a class="el" href="group__SegmentLcd.html#ga0818c866cead74ab3902753a770eb4c4">SegmentLCD_Init()</a>, <a class="el" href="group__SegmentLcd.html#gab0279981a6246cd3e6b375b4c90a704b">SegmentLCD_Number()</a>, <a class="el" href="group__SegmentLcd.html#gabfd110e644119d8f25ae4b9fd54042b5">SegmentLCD_UnsignedHex()</a>, and <a class="el" href="group__SegmentLcd.html#gad22a3c06bcbb0ed501b6343c0cd62f86">SegmentLCD_Write()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga19aeec76708bf068ff0331fd3487bf60"></a>
+<a class="anchor" id="ga3aed15ee7b02bd66ca53f4bb29f1ba29"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__STATIC_INLINE uint32_t LCD_IntGet </td>
+          <td class="memname">__STATIC_INLINE uint32_t LCD_SyncBusyGet </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -1416,170 +1542,102 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Pending LCD interrupt sources. Returns a set of interrupt flags OR-ed together for multiple interrupt sources in the LCD module (LCD_IFS_nnn). </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00483">483</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+<p>Returns SYNCBUSY bits, indicating which registers have pending updates. </p>
+<dl class="section return"><dt>Returns</dt><dd>Bit fields for LCD registers which have pending updates </dd></dl>
 
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
+<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00455">455</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gae87455a6d43cdbeba26b4b324706ec21"></a>
+<a class="anchor" id="gaae47aa4f1e46d3643f51c07f560580a8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__STATIC_INLINE uint32_t LCD_IntGetEnabled </td>
+          <td class="memname">void LCD_UpdateCtrl </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__LCD.html#ga34370ad541df02f8378fe9022620fbc4">LCD_UpdateCtrl_TypeDef</a>&#160;</td>
+          <td class="paramname"><em>ud</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Useful for handling more interrupt sources in the same interrupt handler.</p>
-<dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>Pending and enabled LCD interrupt sources. The return value is the bitwise AND combination of<ul>
-<li>the OR combination of enabled interrupt sources in LCD_IEN_nnn register (LCD_IEN_nnn) and</li>
-<li>the bitwise OR combination of valid interrupt flags of the LCD module (LCD_IF_nnn). </li>
-</ul>
-</dd></dl>
 
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00507">507</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga285cb55f01224c107c133c71afae5942"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void LCD_IntSet </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Configure Update Control. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>LCD interrupt sources to set to pending. Use a set of interrupt flags OR-ed together to set multiple interrupt sources for the LCD module (LCD_IFS_nnn). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ud</td><td>Configures LCD update method </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00529">529</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00141">141</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
 
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
+<p>References <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga20d26e6d1fa17c5a68db7a055543d661">_LCD_CTRL_UDCTRL_MASK</a>, and <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga26e7c3e726118e25f29c3987f7b4bc3a"></a>
+<a class="anchor" id="ga23d1bf6a3ce88f8514eaa1388f8c7d98"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__STATIC_INLINE void LCD_IntEnable </td>
+          <td class="memname">void LCD_VBoostSet </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__LCD.html#ga752298aa2fa7ddd07a3298780b6a7dc9">LCD_VBoostLevel_TypeDef</a>&#160;</td>
+          <td class="paramname"><em>vboost</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Configure voltage booster. </p>
+<p>The resulting voltage level is described in each part number's data sheet</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>LCD interrupt sources to enable. Use a set of interrupt flags OR-ed together to set multiple interrupt sources for the LCD module (LCD_IFS_nnn). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vboost</td><td>Voltage boost level </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00544">544</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00610">610</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
 
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
+<p>References <a class="el" href="group__EFM32LG__LCD__BitFields.html#gae4f8802d5c15d5fc1d91d6c34be8887d">_LCD_DISPCTRL_VBLEV_MASK</a>, and <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>.</p>
+
+<p>Referenced by <a class="el" href="group__SegmentLcd.html#ga0818c866cead74ab3902753a770eb4c4">SegmentLCD_Init()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga1ec2ab7a9fbc59bef88c5f635b5b8cd0"></a>
+<a class="anchor" id="ga8a9defe802f8056ad3afb11b23909808"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__STATIC_INLINE void LCD_IntDisable </td>
+          <td class="memname">void LCD_VLCDSelect </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__LCD.html#gad692503495e3618efdef81ed74b3924e">LCD_VLCDSel_TypeDef</a>&#160;</td>
+          <td class="paramname"><em>vlcd</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Select source for VLCD. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>LCD interrupt sources to disable. Use a set of interrupt flags OR-ed together to disable multiple interrupt sources for the LCD module (LCD_IFS_nnn). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vlcd</td><td>Select source for VLD voltage </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00559">559</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lcd_8c_source.html#l00112">112</a> of file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
 
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
+<p>References <a class="el" href="group__EFM32LG__LCD__BitFields.html#gad4880e5c9cc649af9180ecf53042580d">_LCD_DISPCTRL_VLCDSEL_MASK</a>, <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#gabf2d80992dcfabfd1668184c3dff2733">LCD</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#gad1fa9d75fab334c26709667ba912498c">LCD_DISPCTRL_VLCDSEL_VDD</a>, <a class="el" href="group__EFM32LG__LCD__BitFields.html#ga716e9c89ef8635cd20533751e4edfbb6">LCD_DISPCTRL_VLCDSEL_VEXTBOOST</a>, <a class="el" href="group__LCD.html#ggad692503495e3618efdef81ed74b3924eaa4b31ad40d2d21125c78a5d8f9db331c">lcdVLCDSelVDD</a>, and <a class="el" href="group__LCD.html#ggad692503495e3618efdef81ed74b3924ea2286b147be1326e0c1236f05d8cb6930">lcdVLCDSelVExtBoost</a>.</p>
 
-<p>Referenced by <a class="el" href="segmentlcd_8c_source.html#l00382">SegmentLCD_Init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga85ef9fa5ef7beaad871fe887182d6064"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void LCD_IntClear </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>LCD interrupt sources to clear. Use a set of interrupt flags OR-ed together to clear multiple interrupt sources for the LCD module (LCD_IFS_nnn). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00574">574</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga2b783db06bbe2944ba0e37253b07b7b3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void LCD_DSCEnable </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enable</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>If true, enables LCD controller Direct Segment Control Segment and COM line bias levels needs to be set explicitly with the <a class="el" href="group__LCD.html#gaab1e6500ce35b72eaebdc54b3b0ec392" title="Configure bias level for a specific segment line for Direct Segment Control. ">LCD_BiasSegmentSet()</a> and <a class="el" href="group__LCD.html#ga7843cbadb32a101fc3846e1bf4659bef" title="Configure bias level for a specific segment line. ">LCD_BiasComSet()</a> function calls. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__lcd_8h_source.html#l00590">590</a> of file <a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>.</p>
-
-<p>References <a class="el" href="efm32lg995f256_8h_source.html#l00412">LCD</a>, and <a class="el" href="efm32lg__lcd_8h_source.html#l00103">LCD_CTRL_DSC</a>.</p>
+<p>Referenced by <a class="el" href="group__SegmentLcd.html#ga0818c866cead74ab3902753a770eb4c4">SegmentLCD_Init()</a>.</p>
 
 </div>
 </div>
@@ -1588,7 +1646,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:37:36 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:29:58 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

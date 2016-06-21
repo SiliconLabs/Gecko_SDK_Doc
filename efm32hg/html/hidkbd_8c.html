@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32hg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32hg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -109,16 +107,21 @@ $(document).ready(function(){initNavTree('hidkbd_8c.html','');});
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">hidkbd.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>USB Human Interface Devices (HID) class keyboard driver. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>USB Human Interface Devices (HID) class keyboard driver.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="hidkbd_8c_source.html">hidkbd.c</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__common_8h_source.html">em_common.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__usb_8h_source.html">em_usb.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hidkbd_8h_source.html">hidkbd.h</a>&quot;</code><br />
@@ -135,30 +138,19 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3ae1e0bbb08a38fcb8aa952613c87268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#ga3ae1e0bbb08a38fcb8aa952613c87268">HIDKBD_Init</a> (<a class="el" href="structHIDKBD__Init__t.html">HIDKBD_Init_t</a> *init)</td></tr>
 <tr class="memdesc:ga3ae1e0bbb08a38fcb8aa952613c87268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize HID Keyboard driver.  <a href="group__HidKeyboard.html#ga3ae1e0bbb08a38fcb8aa952613c87268">More...</a><br /></td></tr>
 <tr class="separator:ga3ae1e0bbb08a38fcb8aa952613c87268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf010c3e66985e5c5796c8d2f16de788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#gacf010c3e66985e5c5796c8d2f16de788">HIDKBD_KeyboardEvent</a> (<a class="el" href="structHIDKBD__KeyReport__t.html">HIDKBD_KeyReport_t</a> *report)</td></tr>
+<tr class="memitem:gacf010c3e66985e5c5796c8d2f16de788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#gacf010c3e66985e5c5796c8d2f16de788">HIDKBD_KeyboardEvent</a> (HIDKBD_KeyReport_t *report)</td></tr>
 <tr class="memdesc:gacf010c3e66985e5c5796c8d2f16de788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report a keyboard press/release event.  <a href="group__HidKeyboard.html#gacf010c3e66985e5c5796c8d2f16de788">More...</a><br /></td></tr>
 <tr class="separator:gacf010c3e66985e5c5796c8d2f16de788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa6482849b2bbbb6c800516059ad17453"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#gaa6482849b2bbbb6c800516059ad17453">HIDKBD_SetupCmd</a> (const <a class="el" href="structUSB__Setup__TypeDef.html">USB_Setup_TypeDef</a> *setup)</td></tr>
+<tr class="memitem:gaa6482849b2bbbb6c800516059ad17453"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#gaa6482849b2bbbb6c800516059ad17453">HIDKBD_SetupCmd</a> (const USB_Setup_TypeDef *setup)</td></tr>
 <tr class="memdesc:gaa6482849b2bbbb6c800516059ad17453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle USB setup commands. Implements HID class specific commands. This function must be called each time the device receive a setup command.  <a href="group__HidKeyboard.html#gaa6482849b2bbbb6c800516059ad17453">More...</a><br /></td></tr>
 <tr class="separator:gaa6482849b2bbbb6c800516059ad17453"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga978af2049c35ad48a8b0668a04146cf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#ga978af2049c35ad48a8b0668a04146cf1">HIDKBD_StateChangeEvent</a> (<a class="el" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a> oldState, <a class="el" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a> newState)</td></tr>
 <tr class="memdesc:ga978af2049c35ad48a8b0668a04146cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle USB state change events, this function must be called each time the USB device state is changed.  <a href="group__HidKeyboard.html#ga978af2049c35ad48a8b0668a04146cf1">More...</a><br /></td></tr>
 <tr class="separator:ga978af2049c35ad48a8b0668a04146cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ga885c1bef0666a7bb355a1e236f03083d"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#ga885c1bef0666a7bb355a1e236f03083d">HIDKBD_ReportDescriptor</a> [69]</td></tr>
-<tr class="separator:ga885c1bef0666a7bb355a1e236f03083d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819e9b7bbbaf649e5ff5bf14f694d1f9"><td class="memItemLeft" align="right" valign="top">const char HIDKBD_ReportDescriptor[69]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hidkbd_8c.html#a819e9b7bbbaf649e5ff5bf14f694d1f9">SL_ATTRIBUTE_ALIGN</a> (4)</td></tr>
+<tr class="separator:a819e9b7bbbaf649e5ff5bf14f694d1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="hidkbd_8c_source.html">hidkbd.c</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a1b3ed427680b005e36dc08bac5e32e04"></a>
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +164,25 @@ License</h1>
 
 <p>Definition at line <a class="el" href="hidkbd_8c_source.html#l00059">59</a> of file <a class="el" href="hidkbd_8c_source.html">hidkbd.c</a>.</p>
 
-<p>Referenced by <a class="el" href="hidkbd_8c_source.html#l00344">HIDKBD_StateChangeEvent()</a>.</p>
+<p>Referenced by <a class="el" href="group__HidKeyboard.html#ga978af2049c35ad48a8b0668a04146cf1">HIDKBD_StateChangeEvent()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a819e9b7bbbaf649e5ff5bf14f694d1f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char HIDKBD_ReportDescriptor [ 69 ] SL_ATTRIBUTE_ALIGN </td>
+          <td>(</td>
+          <td class="paramtype">4&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>HID report descriptor created with usb.org's "HID Descriptor Tool(DT)" version 2.4. The descriptor defines an input report which matches the HIDKBD_KeyReport_t typedef, and an output report with 3 bits for controlling NumLock, CapsLock and ScrollLock keyboard LED's </p>
 
 </div>
 </div>
@@ -182,7 +192,7 @@ License</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="hidkbd_8c.html">hidkbd.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:39:15 for EFM32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:36:10 for EFM32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

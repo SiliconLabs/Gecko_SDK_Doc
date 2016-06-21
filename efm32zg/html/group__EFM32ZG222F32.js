@@ -1,12 +1,12 @@
 var group__EFM32ZG222F32 =
 [
+    [ "EFM32ZG222F32 Alternate Function", "group__EFM32ZG222F32__Alternate__Function.html", null ],
+    [ "EFM32ZG222F32 Bit Fields", "group__EFM32ZG222F32__BitFields.html", "group__EFM32ZG222F32__BitFields" ],
     [ "EFM32ZG222F32 Core", "group__EFM32ZG222F32__Core.html", "group__EFM32ZG222F32__Core" ],
     [ "EFM32ZG222F32 Part", "group__EFM32ZG222F32__Part.html", "group__EFM32ZG222F32__Part" ],
-    [ "EFM32ZG222F32 Peripheral TypeDefs", "group__EFM32ZG222F32__Peripheral__TypeDefs.html", null ],
-    [ "EFM32ZG222F32 Peripheral Memory Map", "group__EFM32ZG222F32__Peripheral__Base.html", "group__EFM32ZG222F32__Peripheral__Base" ],
     [ "EFM32ZG222F32 Peripheral Declarations", "group__EFM32ZG222F32__Peripheral__Declaration.html", "group__EFM32ZG222F32__Peripheral__Declaration" ],
-    [ "EFM32ZG222F32 Bit Fields", "group__EFM32ZG222F32__BitFields.html", "group__EFM32ZG222F32__BitFields" ],
-    [ "EFM32ZG222F32 Alternate Function", "group__EFM32ZG222F32__Alternate__Function.html", null ],
+    [ "EFM32ZG222F32 Peripheral Memory Map", "group__EFM32ZG222F32__Peripheral__Base.html", "group__EFM32ZG222F32__Peripheral__Base" ],
+    [ "EFM32ZG222F32 Peripheral TypeDefs", "group__EFM32ZG222F32__Peripheral__TypeDefs.html", null ],
     [ "SET_BIT_FIELD", "group__EFM32ZG222F32.html#ga7979121950b76a6bd75bf5a8f6fbdcc0", null ],
     [ "IRQn_Type", "group__EFM32ZG222F32.html#gac3af4a32370fb28c4ade8bf2add80251", null ],
     [ "IRQn", "group__EFM32ZG222F32.html#ga666eb0caeb12ec0e281415592ae89083", [

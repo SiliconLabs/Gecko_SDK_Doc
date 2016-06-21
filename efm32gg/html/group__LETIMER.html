@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Giant Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32gg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32gg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -107,12 +106,12 @@ $(document).ready(function(){initNavTree('group__LETIMER.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">LETIMER<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">LETIMER<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Low Energy Timer (LETIMER) Peripheral API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Low Energy Timer (LETIMER) Peripheral API. </p>
+<p>This module contains functions to control the LETIMER peripheral of Silicon Labs 32-bit MCUs and SoCs. The LETIMER is a down-counter that can keep track of time and output configurable waveforms. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -197,7 +196,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaf7209283bdf0e32dd3983d2fbb078d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset LETIMER to same state as after a HW reset.  <a href="#gaf7209283bdf0e32dd3983d2fbb078d20">More...</a><br /></td></tr>
 <tr class="separator:gaf7209283bdf0e32dd3983d2fbb078d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gaa409061c5239d936cd67b4d578c054b3"></a>
 <div class="memitem">
@@ -311,6 +309,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get LETIMER compare register value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">letimer</td><td>Pointer to LETIMER peripheral register block</td></tr>
@@ -320,9 +320,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Compare register value, 0 if invalid register selected. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00125">125</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
+<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00129">129</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00047">LETIMER_TypeDef::COMP0</a>, and <a class="el" href="efm32gg__letimer_8h_source.html#l00048">LETIMER_TypeDef::COMP1</a>.</p>
+<p>References <a class="el" href="structLETIMER__TypeDef.html#a65d7ddedb25786b2e84705fbe5c6a731">LETIMER_TypeDef::COMP0</a>, and <a class="el" href="structLETIMER__TypeDef.html#a8ed0b3c9a45eb5d367c855d620de0599">LETIMER_TypeDef::COMP1</a>.</p>
 
 </div>
 </div>
@@ -355,6 +355,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set LETIMER compare register value. </p>
 <dl class="section note"><dt>Note</dt><dd>The setting of a compare register requires synchronization into the low frequency domain. If the same register is modified before a previous update has completed, this function will stall until the previous synchronization has completed. This only applies to the Gecko Family, see comment in the LETIMER_Sync() internal function call.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -365,9 +367,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00172">172</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
+<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00176">176</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00193">_LETIMER_COMP0_COMP0_MASK</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00192">_LETIMER_COMP0_COMP0_SHIFT</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00047">LETIMER_TypeDef::COMP0</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00048">LETIMER_TypeDef::COMP1</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00363">LETIMER_SYNCBUSY_COMP0</a>, and <a class="el" href="efm32gg__letimer_8h_source.html#l00368">LETIMER_SYNCBUSY_COMP1</a>.</p>
+<p>References <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gadf7183392445fad82a5a025906ca4f6a">_LETIMER_COMP0_COMP0_MASK</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga3b3dd998126eda231a616cbd0aad5a82">_LETIMER_COMP0_COMP0_SHIFT</a>, <a class="el" href="structLETIMER__TypeDef.html#a65d7ddedb25786b2e84705fbe5c6a731">LETIMER_TypeDef::COMP0</a>, <a class="el" href="structLETIMER__TypeDef.html#a8ed0b3c9a45eb5d367c855d620de0599">LETIMER_TypeDef::COMP1</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gafac39b8a69d1277a62e37d8c86cebf02">LETIMER_SYNCBUSY_COMP0</a>, and <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga0d144aa2dea5742d65f7a66ec96e2653">LETIMER_SYNCBUSY_COMP1</a>.</p>
 
 </div>
 </div>
@@ -384,6 +386,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get LETIMER counter value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">letimer</td><td>Pointer to LETIMER peripheral register block.</td></tr>
@@ -394,7 +398,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__letimer_8h_source.html#l00164">164</a> of file <a class="el" href="em__letimer_8h_source.html">em_letimer.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00046">LETIMER_TypeDef::CNT</a>.</p>
+<p>References <a class="el" href="structLETIMER__TypeDef.html#a3cf99da1678db814722381b159fb170c">LETIMER_TypeDef::CNT</a>.</p>
 
 </div>
 </div>
@@ -421,6 +425,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Start/stop LETIMER. </p>
 <dl class="section note"><dt>Note</dt><dd>The enabling/disabling of the LETIMER modifies the LETIMER CMD register which requires synchronization into the low frequency domain. If this register is modified before a previous update to the same register has completed, this function will stall until the previous synchronization has completed. This only applies to the Gecko Family, see comment in the LETIMER_Sync() internal function call.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -430,9 +436,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00227">227</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
+<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00231">231</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00044">LETIMER_TypeDef::CMD</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00146">LETIMER_CMD_START</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00151">LETIMER_CMD_STOP</a>, and <a class="el" href="efm32gg__letimer_8h_source.html#l00358">LETIMER_SYNCBUSY_CMD</a>.</p>
+<p>References <a class="el" href="structLETIMER__TypeDef.html#a4d622edac39de396661dc05f28bdd1ea">LETIMER_TypeDef::CMD</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gad7c5ff33a4ff4a7d3355a01d5d73290b">LETIMER_CMD_START</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gac0eaa09201c790750c57e82936774c50">LETIMER_CMD_STOP</a>, and <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga726e7db448af270bb7554f5700e77f30">LETIMER_SYNCBUSY_CMD</a>.</p>
 
 </div>
 </div>
@@ -459,6 +465,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>LETIMER register synchronization freeze control. </p>
 <p>Some LETIMER registers require synchronization into the low frequency (LF) domain. The freeze feature allows for several such registers to be modified before passing them to the LF domain simultaneously (which takes place when the freeze mode is disabled).</p>
 <dl class="section note"><dt>Note</dt><dd>When enabling freeze mode, this function will wait for all current ongoing LETIMER synchronization to LF domain to complete (Normally synchronization will not be in progress.) However for this reason, when using freeze mode, modifications of registers requiring LF synchronization should be done within one freeze enable/disable block to avoid unecessary stalling.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -473,11 +481,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00274">274</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
+<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00278">278</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00056">LETIMER_TypeDef::FREEZE</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00340">LETIMER_FREEZE_REGFREEZE</a>, and <a class="el" href="efm32gg__letimer_8h_source.html#l00057">LETIMER_TypeDef::SYNCBUSY</a>.</p>
+<p>References <a class="el" href="structLETIMER__TypeDef.html#a7c6acce276dc547ddb662ecc3ff0a1c5">LETIMER_TypeDef::FREEZE</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga634dbb35275a30f650e76339861043b2">LETIMER_FREEZE_REGFREEZE</a>, and <a class="el" href="structLETIMER__TypeDef.html#a4fdf578f71193bbc6ed1fbc656695011">LETIMER_TypeDef::SYNCBUSY</a>.</p>
 
-<p>Referenced by <a class="el" href="em__letimer_8c_source.html#l00516">LETIMER_Reset()</a>.</p>
+<p>Referenced by <a class="el" href="group__LETIMER.html#gaf7209283bdf0e32dd3983d2fbb078d20">LETIMER_Reset()</a>.</p>
 
 </div>
 </div>
@@ -504,6 +512,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize LETIMER. </p>
 <p>Note that the compare/repeat values must be set separately with <a class="el" href="group__LETIMER.html#ga5881f97abb64700592a23e213edeba21" title="Set LETIMER compare register value. ">LETIMER_CompareSet()</a> and <a class="el" href="group__LETIMER.html#ga99d89e7b494ea6d0a30be57444a7ba2a" title="Set LETIMER repeat counter register value. ">LETIMER_RepeatSet()</a>. That should probably be done prior to the use of this function if configuring the LETIMER to start when initialization is completed.</p>
 <dl class="section note"><dt>Note</dt><dd>The initialization of the LETIMER modifies the LETIMER CTRL/CMD registers which require synchronization into the low frequency domain. If any of those registers are modified before a previous update to the same register has completed, this function will stall until the previous synchronization has completed. This only applies to the Gecko Family, see comment in the LETIMER_Sync() internal function call.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -514,9 +524,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00323">323</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
+<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00327">327</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00071">_LETIMER_CTRL_REPMODE_SHIFT</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00083">_LETIMER_CTRL_UFOA0_SHIFT</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00095">_LETIMER_CTRL_UFOA1_SHIFT</a>, <a class="el" href="em__letimer_8h_source.html#l00105">LETIMER_Init_TypeDef::bufTop</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00044">LETIMER_TypeDef::CMD</a>, <a class="el" href="em__letimer_8h_source.html#l00104">LETIMER_Init_TypeDef::comp0Top</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00043">LETIMER_TypeDef::CTRL</a>, <a class="el" href="em__letimer_8h_source.html#l00099">LETIMER_Init_TypeDef::debugRun</a>, <a class="el" href="em__letimer_8h_source.html#l00098">LETIMER_Init_TypeDef::enable</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00146">LETIMER_CMD_START</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00151">LETIMER_CMD_STOP</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00117">LETIMER_CTRL_BUFTOP</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00122">LETIMER_CTRL_COMP0TOP</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00137">LETIMER_CTRL_DEBUGRUN</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00107">LETIMER_CTRL_OPOL0</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00112">LETIMER_CTRL_OPOL1</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00127">LETIMER_CTRL_RTCC0TEN</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00132">LETIMER_CTRL_RTCC1TEN</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00175">LETIMER_STATUS_RUNNING</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00358">LETIMER_SYNCBUSY_CMD</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00353">LETIMER_SYNCBUSY_CTRL</a>, <a class="el" href="em__letimer_8h_source.html#l00106">LETIMER_Init_TypeDef::out0Pol</a>, <a class="el" href="em__letimer_8h_source.html#l00107">LETIMER_Init_TypeDef::out1Pol</a>, <a class="el" href="em__letimer_8h_source.html#l00110">LETIMER_Init_TypeDef::repMode</a>, <a class="el" href="em__letimer_8h_source.html#l00101">LETIMER_Init_TypeDef::rtcComp0Enable</a>, <a class="el" href="em__letimer_8h_source.html#l00102">LETIMER_Init_TypeDef::rtcComp1Enable</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00045">LETIMER_TypeDef::STATUS</a>, <a class="el" href="em__letimer_8h_source.html#l00108">LETIMER_Init_TypeDef::ufoa0</a>, and <a class="el" href="em__letimer_8h_source.html#l00109">LETIMER_Init_TypeDef::ufoa1</a>.</p>
+<p>References <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga5dd37565d0b9ea8644a6d93531ec887f">_LETIMER_CTRL_REPMODE_SHIFT</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga1707e5c71323f9ee57e2e0bd2a987898">_LETIMER_CTRL_UFOA0_SHIFT</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gad127be36387307e1b6d2a93743ffb3a9">_LETIMER_CTRL_UFOA1_SHIFT</a>, <a class="el" href="structLETIMER__Init__TypeDef.html#a90d2ba4bde6ef0f81ab105f14b21b8a5">LETIMER_Init_TypeDef::bufTop</a>, <a class="el" href="structLETIMER__TypeDef.html#a4d622edac39de396661dc05f28bdd1ea">LETIMER_TypeDef::CMD</a>, <a class="el" href="structLETIMER__Init__TypeDef.html#af34e24384f0ac9552ae3c22458b4a2b3">LETIMER_Init_TypeDef::comp0Top</a>, <a class="el" href="structLETIMER__TypeDef.html#a3a7727953dfacb40db38296cff2132d9">LETIMER_TypeDef::CTRL</a>, <a class="el" href="structLETIMER__Init__TypeDef.html#a5be2e3642754f5b878ec80472cb38f6b">LETIMER_Init_TypeDef::debugRun</a>, <a class="el" href="structLETIMER__Init__TypeDef.html#ab4cee91e49a7a1c6e66e6d5a9dc6fbcf">LETIMER_Init_TypeDef::enable</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gad7c5ff33a4ff4a7d3355a01d5d73290b">LETIMER_CMD_START</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gac0eaa09201c790750c57e82936774c50">LETIMER_CMD_STOP</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga39961d1a0b765cef398f1acdeb89569c">LETIMER_CTRL_BUFTOP</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga87b5d7dba3b9b75cfddff5bec98aad83">LETIMER_CTRL_COMP0TOP</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga56d291c1e9fcdb70a6f686d5009739f6">LETIMER_CTRL_DEBUGRUN</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga8a559b03041b86d59ab151eaece31cf0">LETIMER_CTRL_OPOL0</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga55e670a9092222b049402ca47c4eaae8">LETIMER_CTRL_OPOL1</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga2d5ccee8563e03ac0dd96153a90f7eea">LETIMER_CTRL_RTCC0TEN</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga6c2b28f0f3c1a495bef5142dc8427d1d">LETIMER_CTRL_RTCC1TEN</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gaea69d78b16129fabafb8fa9ed43f088c">LETIMER_STATUS_RUNNING</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga726e7db448af270bb7554f5700e77f30">LETIMER_SYNCBUSY_CMD</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga501c1652f150940efde07d9dea00f012">LETIMER_SYNCBUSY_CTRL</a>, <a class="el" href="structLETIMER__Init__TypeDef.html#a1ea57a4cc27cb605e1a9984c4d46c450">LETIMER_Init_TypeDef::out0Pol</a>, <a class="el" href="structLETIMER__Init__TypeDef.html#a12d96ae7afa45649027b35482a398fad">LETIMER_Init_TypeDef::out1Pol</a>, <a class="el" href="structLETIMER__Init__TypeDef.html#a6d4938ce27c1357692dd1f848f37dc7d">LETIMER_Init_TypeDef::repMode</a>, <a class="el" href="structLETIMER__Init__TypeDef.html#ae82017af0847394f31ddcbf68578b2a4">LETIMER_Init_TypeDef::rtcComp0Enable</a>, <a class="el" href="structLETIMER__Init__TypeDef.html#ab12793ab7a93f24478e9e0f6bc1a54c7">LETIMER_Init_TypeDef::rtcComp1Enable</a>, <a class="el" href="structLETIMER__TypeDef.html#a60f8ede923a0fd76912f9c0a685303f5">LETIMER_TypeDef::STATUS</a>, <a class="el" href="structLETIMER__Init__TypeDef.html#a35d8c2bddaeca65001bfd65dced1897f">LETIMER_Init_TypeDef::ufoa0</a>, and <a class="el" href="structLETIMER__Init__TypeDef.html#adf10f61cb8ea9efb7c2f20cfee273c24">LETIMER_Init_TypeDef::ufoa1</a>.</p>
 
 </div>
 </div>
@@ -543,6 +553,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Clear one or more pending LETIMER interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">letimer</td><td>Pointer to LETIMER peripheral register block.</td></tr>
@@ -553,7 +565,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__letimer_8h_source.html#l00189">189</a> of file <a class="el" href="em__letimer_8h_source.html">em_letimer.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00053">LETIMER_TypeDef::IFC</a>.</p>
+<p>References <a class="el" href="structLETIMER__TypeDef.html#a6ff52c44838ab89abc78aab3e2f9ff96">LETIMER_TypeDef::IFC</a>.</p>
 
 </div>
 </div>
@@ -580,6 +592,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Disable one or more LETIMER interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">letimer</td><td>Pointer to LETIMER peripheral register block.</td></tr>
@@ -590,7 +604,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__letimer_8h_source.html#l00206">206</a> of file <a class="el" href="em__letimer_8h_source.html">em_letimer.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00054">LETIMER_TypeDef::IEN</a>.</p>
+<p>References <a class="el" href="structLETIMER__TypeDef.html#abb6e0f031b75d31c9b4b8e486d773527">LETIMER_TypeDef::IEN</a>.</p>
 
 </div>
 </div>
@@ -617,6 +631,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable one or more LETIMER interrupts. </p>
 <dl class="section note"><dt>Note</dt><dd>Depending on the use, a pending interrupt may already be set prior to enabling the interrupt. Consider using <a class="el" href="group__LETIMER.html#ga73948168b9c0345e75551ed3f8115474" title="Clear one or more pending LETIMER interrupts. ">LETIMER_IntClear()</a> prior to enabling if such a pending interrupt should be ignored.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -628,7 +644,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__letimer_8h_source.html#l00228">228</a> of file <a class="el" href="em__letimer_8h_source.html">em_letimer.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00054">LETIMER_TypeDef::IEN</a>.</p>
+<p>References <a class="el" href="structLETIMER__TypeDef.html#abb6e0f031b75d31c9b4b8e486d773527">LETIMER_TypeDef::IEN</a>.</p>
 
 </div>
 </div>
@@ -645,6 +661,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get pending LETIMER interrupt flags. </p>
 <dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -656,7 +674,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__letimer_8h_source.html#l00248">248</a> of file <a class="el" href="em__letimer_8h_source.html">em_letimer.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00051">LETIMER_TypeDef::IF</a>.</p>
+<p>References <a class="el" href="structLETIMER__TypeDef.html#ab1f562e11026330f4ef5b554a8729c34">LETIMER_TypeDef::IF</a>.</p>
 
 </div>
 </div>
@@ -673,6 +691,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get enabled and pending LETIMER interrupt flags. </p>
 <p>Useful for handling more interrupt sources in the same interrupt handler.</p>
 <dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -689,7 +709,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__letimer_8h_source.html#l00275">275</a> of file <a class="el" href="em__letimer_8h_source.html">em_letimer.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00054">LETIMER_TypeDef::IEN</a>, and <a class="el" href="efm32gg__letimer_8h_source.html#l00051">LETIMER_TypeDef::IF</a>.</p>
+<p>References <a class="el" href="structLETIMER__TypeDef.html#abb6e0f031b75d31c9b4b8e486d773527">LETIMER_TypeDef::IEN</a>, and <a class="el" href="structLETIMER__TypeDef.html#ab1f562e11026330f4ef5b554a8729c34">LETIMER_TypeDef::IF</a>.</p>
 
 </div>
 </div>
@@ -716,6 +736,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set one or more pending LETIMER interrupts from SW. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">letimer</td><td>Pointer to LETIMER peripheral register block.</td></tr>
@@ -726,7 +748,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__letimer_8h_source.html#l00300">300</a> of file <a class="el" href="em__letimer_8h_source.html">em_letimer.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00052">LETIMER_TypeDef::IFS</a>.</p>
+<p>References <a class="el" href="structLETIMER__TypeDef.html#a630292a2c6790293f30d99c8255d9232">LETIMER_TypeDef::IFS</a>.</p>
 
 </div>
 </div>
@@ -753,6 +775,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get LETIMER repeat register value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">letimer</td><td>Pointer to LETIMER peripheral register block</td></tr>
@@ -762,9 +786,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Repeat register value, 0 if invalid register selected. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00413">413</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
+<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00417">417</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00049">LETIMER_TypeDef::REP0</a>, and <a class="el" href="efm32gg__letimer_8h_source.html#l00050">LETIMER_TypeDef::REP1</a>.</p>
+<p>References <a class="el" href="structLETIMER__TypeDef.html#a1e77b3cb4acb57511bc848c30ad7bf24">LETIMER_TypeDef::REP0</a>, and <a class="el" href="structLETIMER__TypeDef.html#a499bce517e3b3617c63f472588252a1a">LETIMER_TypeDef::REP1</a>.</p>
 
 </div>
 </div>
@@ -797,6 +821,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set LETIMER repeat counter register value. </p>
 <dl class="section note"><dt>Note</dt><dd>The setting of a repeat counter register requires synchronization into the low frequency domain. If the same register is modified before a previous update has completed, this function will stall until the previous synchronization has completed. This only applies to the Gecko Family, see comment in the LETIMER_Sync() internal function call.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -807,9 +833,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00460">460</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
+<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00464">464</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00209">_LETIMER_REP0_REP0_MASK</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00208">_LETIMER_REP0_REP0_SHIFT</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00373">LETIMER_SYNCBUSY_REP0</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00378">LETIMER_SYNCBUSY_REP1</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00049">LETIMER_TypeDef::REP0</a>, and <a class="el" href="efm32gg__letimer_8h_source.html#l00050">LETIMER_TypeDef::REP1</a>.</p>
+<p>References <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gab471eb396e6347f16f923266488ee891">_LETIMER_REP0_REP0_MASK</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga5b55d23edea57ab6d33249ec1bc2e804">_LETIMER_REP0_REP0_SHIFT</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga13c506aa9d136897a39239417428c67a">LETIMER_SYNCBUSY_REP0</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga1f4cb065734c42cb6c2019a30d2055c4">LETIMER_SYNCBUSY_REP1</a>, <a class="el" href="structLETIMER__TypeDef.html#a1e77b3cb4acb57511bc848c30ad7bf24">LETIMER_TypeDef::REP0</a>, and <a class="el" href="structLETIMER__TypeDef.html#a499bce517e3b3617c63f472588252a1a">LETIMER_TypeDef::REP1</a>.</p>
 
 </div>
 </div>
@@ -826,6 +852,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Reset LETIMER to same state as after a HW reset. </p>
 <dl class="section note"><dt>Note</dt><dd>The ROUTE register is NOT reset by this function, in order to allow for centralized setup of this feature.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -834,9 +862,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00516">516</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
+<p>Definition at line <a class="el" href="em__letimer_8c_source.html#l00520">520</a> of file <a class="el" href="em__letimer_8c_source.html">em_letimer.c</a>.</p>
 
-<p>References <a class="el" href="efm32gg__letimer_8h_source.html#l00190">_LETIMER_COMP0_RESETVALUE</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00198">_LETIMER_COMP1_RESETVALUE</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00069">_LETIMER_CTRL_RESETVALUE</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00309">_LETIMER_IEN_RESETVALUE</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00281">_LETIMER_IFC_MASK</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00206">_LETIMER_REP0_RESETVALUE</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00214">_LETIMER_REP1_RESETVALUE</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00044">LETIMER_TypeDef::CMD</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00047">LETIMER_TypeDef::COMP0</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00048">LETIMER_TypeDef::COMP1</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00043">LETIMER_TypeDef::CTRL</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00054">LETIMER_TypeDef::IEN</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00053">LETIMER_TypeDef::IFC</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00156">LETIMER_CMD_CLEAR</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00161">LETIMER_CMD_CTO0</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00166">LETIMER_CMD_CTO1</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00151">LETIMER_CMD_STOP</a>, <a class="el" href="em__letimer_8c_source.html#l00274">LETIMER_FreezeEnable()</a>, <a class="el" href="efm32gg__letimer_8h_source.html#l00049">LETIMER_TypeDef::REP0</a>, and <a class="el" href="efm32gg__letimer_8h_source.html#l00050">LETIMER_TypeDef::REP1</a>.</p>
+<p>References <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga8a4fda35b93eadb74ac6be7e4da3ef2c">_LETIMER_COMP0_RESETVALUE</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga6de5af5e7a314827b1f653f8a2838114">_LETIMER_COMP1_RESETVALUE</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gabeb2df881a239b85ff5d2840fe3fe2b1">_LETIMER_CTRL_RESETVALUE</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gacb2d5c9a050fbb464dc8fb66e6f75110">_LETIMER_IEN_RESETVALUE</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gadb42a64b6c36cd467488b80654d24b1f">_LETIMER_IFC_MASK</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gad295829e87ab2cbfa7383393f5ea388c">_LETIMER_REP0_RESETVALUE</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga2f4daba3723232d8fa21bf6c7a777e13">_LETIMER_REP1_RESETVALUE</a>, <a class="el" href="structLETIMER__TypeDef.html#a4d622edac39de396661dc05f28bdd1ea">LETIMER_TypeDef::CMD</a>, <a class="el" href="structLETIMER__TypeDef.html#a65d7ddedb25786b2e84705fbe5c6a731">LETIMER_TypeDef::COMP0</a>, <a class="el" href="structLETIMER__TypeDef.html#a8ed0b3c9a45eb5d367c855d620de0599">LETIMER_TypeDef::COMP1</a>, <a class="el" href="structLETIMER__TypeDef.html#a3a7727953dfacb40db38296cff2132d9">LETIMER_TypeDef::CTRL</a>, <a class="el" href="structLETIMER__TypeDef.html#abb6e0f031b75d31c9b4b8e486d773527">LETIMER_TypeDef::IEN</a>, <a class="el" href="structLETIMER__TypeDef.html#a6ff52c44838ab89abc78aab3e2f9ff96">LETIMER_TypeDef::IFC</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga41bcd46608f0cf6674f1143a92ecf4b0">LETIMER_CMD_CLEAR</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gadd9a1b5d72e4f44bc81f1fd78599fbca">LETIMER_CMD_CTO0</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#ga9fe498f957a22bd5bfe57dc6fd1f45ad">LETIMER_CMD_CTO1</a>, <a class="el" href="group__EFM32GG__LETIMER__BitFields.html#gac0eaa09201c790750c57e82936774c50">LETIMER_CMD_STOP</a>, <a class="el" href="group__LETIMER.html#gaf4a565497669b1852de043374173c288">LETIMER_FreezeEnable()</a>, <a class="el" href="structLETIMER__TypeDef.html#a1e77b3cb4acb57511bc848c30ad7bf24">LETIMER_TypeDef::REP0</a>, and <a class="el" href="structLETIMER__TypeDef.html#a499bce517e3b3617c63f472588252a1a">LETIMER_TypeDef::REP1</a>.</p>
 
 </div>
 </div>
@@ -845,7 +873,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:52 for EFM32 Giant Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:27:17 for EFM32 Giant Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

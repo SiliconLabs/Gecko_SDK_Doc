@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32tg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -114,10 +112,16 @@ $(document).ready(function(){initNavTree('ksz8851snl__spi_8c.html','');});
 <div class="title">ksz8851snl_spi.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>SPI interface API for KSZ8851SNL Ethernet controller. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>SPI interface API for KSZ8851SNL Ethernet controller.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<p>Definition in file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
+</div><div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="ksz8851snl__spi_8h_source.html">ksz8851snl_spi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__assert_8h_source.html">em_assert.h</a>&quot;</code><br />
@@ -129,22 +133,12 @@ $(document).ready(function(){initNavTree('ksz8851snl__spi_8c.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a404266a05ffb37f3137256b78f1bf716"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#a404266a05ffb37f3137256b78f1bf716">BOGUS_BYTE</a>&#160;&#160;&#160;0xFF</td></tr>
-<tr class="separator:a404266a05ffb37f3137256b78f1bf716"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6a4859af8e250ed21bc057b7540a461"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#aa6a4859af8e250ed21bc057b7540a461">REG_MASK</a>&#160;&#160;&#160;0x03</td></tr>
-<tr class="separator:aa6a4859af8e250ed21bc057b7540a461"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fcbd064a7e187293addbe9e4cc93cce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#a6fcbd064a7e187293addbe9e4cc93cce">OPCODE_REG_READ</a>&#160;&#160;&#160;0x00</td></tr>
-<tr class="separator:a6fcbd064a7e187293addbe9e4cc93cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8b540d46b3b86ae11c069183aea466c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#ac8b540d46b3b86ae11c069183aea466c">OPCODE_REG_WRITE</a>&#160;&#160;&#160;0x40</td></tr>
-<tr class="separator:ac8b540d46b3b86ae11c069183aea466c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d6c32b31b85ca6082321357f7439cc6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#a2d6c32b31b85ca6082321357f7439cc6">OPCODE_FIFO_READ</a>&#160;&#160;&#160;0x80</td></tr>
-<tr class="separator:a2d6c32b31b85ca6082321357f7439cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ca682808698daba93e94f054b9a51e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#a4ca682808698daba93e94f054b9a51e0">OPCODE_FIFO_WRITE</a>&#160;&#160;&#160;0xC0</td></tr>
-<tr class="separator:a4ca682808698daba93e94f054b9a51e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8526cb126f7098e0a88e852be5869c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#ae8526cb126f7098e0a88e852be5869c4">ADDRESS_MS2B_POS</a>&#160;&#160;&#160;0x06</td></tr>
 <tr class="separator:ae8526cb126f7098e0a88e852be5869c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02fdff8245e3129623dda71f0245a704"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#a02fdff8245e3129623dda71f0245a704">ADDRESS_SHIFT</a>&#160;&#160;&#160;0x02</td></tr>
 <tr class="separator:a02fdff8245e3129623dda71f0245a704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404266a05ffb37f3137256b78f1bf716"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#a404266a05ffb37f3137256b78f1bf716">BOGUS_BYTE</a>&#160;&#160;&#160;0xFF</td></tr>
+<tr class="separator:a404266a05ffb37f3137256b78f1bf716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eab74b0d46a00705737d3fca071c8fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#a3eab74b0d46a00705737d3fca071c8fb">BYTE_ENABLE</a>&#160;&#160;&#160;0x03</td></tr>
 <tr class="separator:a3eab74b0d46a00705737d3fca071c8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a586977cb555c555102ce455b8786c232"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#a586977cb555c555102ce455b8786c232">BYTE_ENABLE_SHIFT</a>&#160;&#160;&#160;0x02</td></tr>
@@ -153,153 +147,53 @@ Macros</h2></td></tr>
 <tr class="separator:a8c72b0130a3a8067c2e9ce362cd305b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2107ae7691edb9a15edccada3ee54a43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#a2107ae7691edb9a15edccada3ee54a43">ETH_CS_PORT</a>&#160;&#160;&#160;gpioPortD</td></tr>
 <tr class="separator:a2107ae7691edb9a15edccada3ee54a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d6c32b31b85ca6082321357f7439cc6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#a2d6c32b31b85ca6082321357f7439cc6">OPCODE_FIFO_READ</a>&#160;&#160;&#160;0x80</td></tr>
+<tr class="separator:a2d6c32b31b85ca6082321357f7439cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca682808698daba93e94f054b9a51e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#a4ca682808698daba93e94f054b9a51e0">OPCODE_FIFO_WRITE</a>&#160;&#160;&#160;0xC0</td></tr>
+<tr class="separator:a4ca682808698daba93e94f054b9a51e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fcbd064a7e187293addbe9e4cc93cce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#a6fcbd064a7e187293addbe9e4cc93cce">OPCODE_REG_READ</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:a6fcbd064a7e187293addbe9e4cc93cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b540d46b3b86ae11c069183aea466c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#ac8b540d46b3b86ae11c069183aea466c">OPCODE_REG_WRITE</a>&#160;&#160;&#160;0x40</td></tr>
+<tr class="separator:ac8b540d46b3b86ae11c069183aea466c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a4859af8e250ed21bc057b7540a461"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#aa6a4859af8e250ed21bc057b7540a461">REG_MASK</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:aa6a4859af8e250ed21bc057b7540a461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga12cf356cb196dbc44230f7ad5aa16742"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga12cf356cb196dbc44230f7ad5aa16742">KSZ8851SNL_SPI_Init</a> (void)</td></tr>
 <tr class="memdesc:ga12cf356cb196dbc44230f7ad5aa16742"><td class="mdescLeft">&#160;</td><td class="mdescRight">KSZ8851SNL_SPI_Init Initialize SPI interface to Ethernet controller.  <a href="group__ksz8851snl.html#ga12cf356cb196dbc44230f7ad5aa16742">More...</a><br /></td></tr>
 <tr class="separator:ga12cf356cb196dbc44230f7ad5aa16742"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7973e5c903af7ba709937e516393a30"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#aa7973e5c903af7ba709937e516393a30">KSZ8851SNL_SPI_Transmit</a> (int numBytes, const uint8_t *data)</td></tr>
-<tr class="memdesc:aa7973e5c903af7ba709937e516393a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmits a series of bytes over the spi link.  <a href="#aa7973e5c903af7ba709937e516393a30">More...</a><br /></td></tr>
-<tr class="separator:aa7973e5c903af7ba709937e516393a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3eda0b4b00ab2ec0a7c265329587cc88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga3eda0b4b00ab2ec0a7c265329587cc88">KSZ8851SNL_SPI_ReadFifo</a> (int numBytes, uint8_t *data)</td></tr>
+<tr class="memdesc:ga3eda0b4b00ab2ec0a7c265329587cc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the ethernet controller RX FIFO.  <a href="group__ksz8851snl.html#ga3eda0b4b00ab2ec0a7c265329587cc88">More...</a><br /></td></tr>
+<tr class="separator:ga3eda0b4b00ab2ec0a7c265329587cc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef8e79d738a8e792ea8335a14e4d80c5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a> (uint8_t reg)</td></tr>
+<tr class="memdesc:gaef8e79d738a8e792ea8335a14e4d80c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read ethernet controller register.  <a href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">More...</a><br /></td></tr>
+<tr class="separator:gaef8e79d738a8e792ea8335a14e4d80c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a947af8a0b941a0ac77fbdaaec0c7a587"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#a947af8a0b941a0ac77fbdaaec0c7a587">KSZ8851SNL_SPI_Receive</a> (int numBytes, uint8_t *buffer)</td></tr>
 <tr class="memdesc:a947af8a0b941a0ac77fbdaaec0c7a587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a series of bytes over the spi link.  <a href="#a947af8a0b941a0ac77fbdaaec0c7a587">More...</a><br /></td></tr>
 <tr class="separator:a947af8a0b941a0ac77fbdaaec0c7a587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3cd4983675d048afb998f29244de6c0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#ab3cd4983675d048afb998f29244de6c0">KSZ8851SNL_SPI_SetChipSelect</a> (bool enable)</td></tr>
 <tr class="memdesc:ab3cd4983675d048afb998f29244de6c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select/deselect the ksz8851snl chip. This will clear/set the chip select GPIO pin connected to the ksz8851snl. The chip has active low chip select.  <a href="#ab3cd4983675d048afb998f29244de6c0">More...</a><br /></td></tr>
 <tr class="separator:ab3cd4983675d048afb998f29244de6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaef8e79d738a8e792ea8335a14e4d80c5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a> (uint8_t reg)</td></tr>
-<tr class="memdesc:gaef8e79d738a8e792ea8335a14e4d80c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read ethernet controller register.  <a href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">More...</a><br /></td></tr>
-<tr class="separator:gaef8e79d738a8e792ea8335a14e4d80c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga194769a82e5a1c0ab03ea0923b7da2d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a> (uint8_t reg, uint16_t value)</td></tr>
-<tr class="memdesc:ga194769a82e5a1c0ab03ea0923b7da2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write ethernet controller register.  <a href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">More...</a><br /></td></tr>
-<tr class="separator:ga194769a82e5a1c0ab03ea0923b7da2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3eda0b4b00ab2ec0a7c265329587cc88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga3eda0b4b00ab2ec0a7c265329587cc88">KSZ8851SNL_SPI_ReadFifo</a> (int numBytes, uint8_t *data)</td></tr>
-<tr class="memdesc:ga3eda0b4b00ab2ec0a7c265329587cc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the ethernet controller RX FIFO.  <a href="group__ksz8851snl.html#ga3eda0b4b00ab2ec0a7c265329587cc88">More...</a><br /></td></tr>
-<tr class="separator:ga3eda0b4b00ab2ec0a7c265329587cc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7973e5c903af7ba709937e516393a30"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ksz8851snl__spi_8c.html#aa7973e5c903af7ba709937e516393a30">KSZ8851SNL_SPI_Transmit</a> (int numBytes, const uint8_t *data)</td></tr>
+<tr class="memdesc:aa7973e5c903af7ba709937e516393a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmits a series of bytes over the spi link.  <a href="#aa7973e5c903af7ba709937e516393a30">More...</a><br /></td></tr>
+<tr class="separator:aa7973e5c903af7ba709937e516393a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bf407a2b072a222c5053b39963ed165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">KSZ8851SNL_SPI_WriteFifo</a> (int numBytes, const uint8_t *data)</td></tr>
+<tr class="memdesc:ga8bf407a2b072a222c5053b39963ed165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continue writing ethernet controller FIFO.  <a href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">More...</a><br /></td></tr>
+<tr class="separator:ga8bf407a2b072a222c5053b39963ed165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga06d01a766dd38a09f6cb657bf778b385"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga06d01a766dd38a09f6cb657bf778b385"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga06d01a766dd38a09f6cb657bf778b385">KSZ8851SNL_SPI_WriteFifoBegin</a> (void)</td></tr>
 <tr class="memdesc:ga06d01a766dd38a09f6cb657bf778b385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start writing to the ethernet controller FIFO. <br /></td></tr>
 <tr class="separator:ga06d01a766dd38a09f6cb657bf778b385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8bf407a2b072a222c5053b39963ed165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">KSZ8851SNL_SPI_WriteFifo</a> (int numBytes, const uint8_t *data)</td></tr>
-<tr class="memdesc:ga8bf407a2b072a222c5053b39963ed165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Continue writing ethernet controller FIFO.  <a href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">More...</a><br /></td></tr>
-<tr class="separator:ga8bf407a2b072a222c5053b39963ed165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3102136a87269f6531366fca103c06f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3102136a87269f6531366fca103c06f7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga3102136a87269f6531366fca103c06f7">KSZ8851SNL_SPI_WriteFifoEnd</a> (void)</td></tr>
 <tr class="memdesc:ga3102136a87269f6531366fca103c06f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop read/write the ethernet controller FIFO. <br /></td></tr>
 <tr class="separator:ga3102136a87269f6531366fca103c06f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga194769a82e5a1c0ab03ea0923b7da2d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a> (uint8_t reg, uint16_t value)</td></tr>
+<tr class="memdesc:ga194769a82e5a1c0ab03ea0923b7da2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write ethernet controller register.  <a href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">More...</a><br /></td></tr>
+<tr class="separator:ga194769a82e5a1c0ab03ea0923b7da2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a404266a05ffb37f3137256b78f1bf716"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BOGUS_BYTE&#160;&#160;&#160;0xFF</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Bogus byte used for receiving via SPI </p>
-
-<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00024">24</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
-
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00057">KSZ8851SNL_SPI_Init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa6a4859af8e250ed21bc057b7540a461"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define REG_MASK&#160;&#160;&#160;0x03</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Register mask </p>
-
-<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00025">25</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
-
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00167">KSZ8851SNL_SPI_ReadRegister()</a>, and <a class="el" href="ksz8851snl__spi_8c_source.html#l00209">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6fcbd064a7e187293addbe9e4cc93cce"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OPCODE_REG_READ&#160;&#160;&#160;0x00</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Opcode for reading a register </p>
-
-<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00026">26</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
-
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00167">KSZ8851SNL_SPI_ReadRegister()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac8b540d46b3b86ae11c069183aea466c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OPCODE_REG_WRITE&#160;&#160;&#160;0x40</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Opcode for writing a register </p>
-
-<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00027">27</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
-
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00209">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2d6c32b31b85ca6082321357f7439cc6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OPCODE_FIFO_READ&#160;&#160;&#160;0x80</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Opcode for reading from FIFO </p>
-
-<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00028">28</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
-
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00257">KSZ8851SNL_SPI_ReadFifo()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4ca682808698daba93e94f054b9a51e0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OPCODE_FIFO_WRITE&#160;&#160;&#160;0xC0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Opcode for writing to FIFO </p>
-
-<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00029">29</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
-
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00275">KSZ8851SNL_SPI_WriteFifoBegin()</a>.</p>
-
-</div>
-</div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ae8526cb126f7098e0a88e852be5869c4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -313,7 +207,7 @@ License</h1>
 
 <p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00030">30</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00167">KSZ8851SNL_SPI_ReadRegister()</a>, and <a class="el" href="ksz8851snl__spi_8c_source.html#l00209">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister()</a>, and <a class="el" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
 
 </div>
 </div>
@@ -330,7 +224,24 @@ License</h1>
 
 <p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00031">31</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00167">KSZ8851SNL_SPI_ReadRegister()</a>, and <a class="el" href="ksz8851snl__spi_8c_source.html#l00209">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister()</a>, and <a class="el" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a404266a05ffb37f3137256b78f1bf716"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOGUS_BYTE&#160;&#160;&#160;0xFF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bogus byte used for receiving via SPI </p>
+
+<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00024">24</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
+
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#ga12cf356cb196dbc44230f7ad5aa16742">KSZ8851SNL_SPI_Init()</a>.</p>
 
 </div>
 </div>
@@ -347,7 +258,7 @@ License</h1>
 
 <p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00032">32</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00167">KSZ8851SNL_SPI_ReadRegister()</a>, and <a class="el" href="ksz8851snl__spi_8c_source.html#l00209">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister()</a>, and <a class="el" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
 
 </div>
 </div>
@@ -364,7 +275,7 @@ License</h1>
 
 <p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00033">33</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00167">KSZ8851SNL_SPI_ReadRegister()</a>, and <a class="el" href="ksz8851snl__spi_8c_source.html#l00209">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister()</a>, and <a class="el" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
 
 </div>
 </div>
@@ -381,7 +292,7 @@ License</h1>
 
 <p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00037">37</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00057">KSZ8851SNL_SPI_Init()</a>, and <a class="el" href="ksz8851snl__spi_8c_source.html#l00144">KSZ8851SNL_SPI_SetChipSelect()</a>.</p>
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#ga12cf356cb196dbc44230f7ad5aa16742">KSZ8851SNL_SPI_Init()</a>, and <a class="el" href="ksz8851snl__spi_8c.html#ab3cd4983675d048afb998f29244de6c0">KSZ8851SNL_SPI_SetChipSelect()</a>.</p>
 
 </div>
 </div>
@@ -398,58 +309,96 @@ License</h1>
 
 <p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00038">38</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
 
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00057">KSZ8851SNL_SPI_Init()</a>, and <a class="el" href="ksz8851snl__spi_8c_source.html#l00144">KSZ8851SNL_SPI_SetChipSelect()</a>.</p>
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#ga12cf356cb196dbc44230f7ad5aa16742">KSZ8851SNL_SPI_Init()</a>, and <a class="el" href="ksz8851snl__spi_8c.html#ab3cd4983675d048afb998f29244de6c0">KSZ8851SNL_SPI_SetChipSelect()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d6c32b31b85ca6082321357f7439cc6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPCODE_FIFO_READ&#160;&#160;&#160;0x80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Opcode for reading from FIFO </p>
+
+<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00028">28</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
+
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#ga3eda0b4b00ab2ec0a7c265329587cc88">KSZ8851SNL_SPI_ReadFifo()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ca682808698daba93e94f054b9a51e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPCODE_FIFO_WRITE&#160;&#160;&#160;0xC0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Opcode for writing to FIFO </p>
+
+<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00029">29</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
+
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#ga06d01a766dd38a09f6cb657bf778b385">KSZ8851SNL_SPI_WriteFifoBegin()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6fcbd064a7e187293addbe9e4cc93cce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPCODE_REG_READ&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Opcode for reading a register </p>
+
+<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00026">26</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
+
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8b540d46b3b86ae11c069183aea466c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPCODE_REG_WRITE&#160;&#160;&#160;0x40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Opcode for writing a register </p>
+
+<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00027">27</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
+
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6a4859af8e250ed21bc057b7540a461"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_MASK&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Register mask </p>
+
+<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00025">25</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
+
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister()</a>, and <a class="el" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="aa7973e5c903af7ba709937e516393a30"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void KSZ8851SNL_SPI_Transmit </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>numBytes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">numBytes</td><td>the number of data bytes to be transmitted</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>actual data to be transmitted </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00085">85</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
-
-<p>References <a class="el" href="dmadrv_8h_source.html#l00088">DMADRV_MAX_XFER_COUNT</a>, <a class="el" href="spidrv_8h_source.html#l00046">ECODE_EMDRV_SPIDRV_OK</a>, <a class="el" href="em__common_8h_source.html#l00079">EFM32_MIN</a>, and <a class="el" href="spidrv_8c_source.html#l00805">SPIDRV_MTransmitB()</a>.</p>
-
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00257">KSZ8851SNL_SPI_ReadFifo()</a>, <a class="el" href="ksz8851snl__spi_8c_source.html#l00289">KSZ8851SNL_SPI_WriteFifo()</a>, <a class="el" href="ksz8851snl__spi_8c_source.html#l00275">KSZ8851SNL_SPI_WriteFifoBegin()</a>, and <a class="el" href="ksz8851snl__spi_8c_source.html#l00209">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a947af8a0b941a0ac77fbdaaec0c7a587"></a>
 <div class="memitem">
 <div class="memproto">
@@ -481,6 +430,8 @@ License</h1>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Receive a series of bytes over the spi link. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">numBytes</td><td>the number of data bytes to be received</td></tr>
@@ -491,9 +442,9 @@ License</h1>
 
 <p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00115">115</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
 
-<p>References <a class="el" href="dmadrv_8h_source.html#l00088">DMADRV_MAX_XFER_COUNT</a>, <a class="el" href="spidrv_8h_source.html#l00046">ECODE_EMDRV_SPIDRV_OK</a>, <a class="el" href="em__common_8h_source.html#l00079">EFM32_MIN</a>, and <a class="el" href="spidrv_8c_source.html#l00565">SPIDRV_MReceiveB()</a>.</p>
+<p>References <a class="el" href="group__DMADRV.html#gaf9bcfe1e5a7ead155ba92b8132c5f17f">DMADRV_MAX_XFER_COUNT</a>, <a class="el" href="group__SPIDRV.html#ga38b85d953fb373f09638bcf7c44d0967">ECODE_EMDRV_SPIDRV_OK</a>, <a class="el" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>, and <a class="el" href="group__SPIDRV.html#gace57de2fe713e7eed216c8f4d00e19b8">SPIDRV_MReceiveB()</a>.</p>
 
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00257">KSZ8851SNL_SPI_ReadFifo()</a>.</p>
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#ga3eda0b4b00ab2ec0a7c265329587cc88">KSZ8851SNL_SPI_ReadFifo()</a>.</p>
 
 </div>
 </div>
@@ -518,6 +469,8 @@ License</h1>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Select/deselect the ksz8851snl chip. This will clear/set the chip select GPIO pin connected to the ksz8851snl. The chip has active low chip select. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>true will select the ksz8851snl chip false will deselect the ksz8851snl chip. </td></tr>
@@ -527,9 +480,58 @@ License</h1>
 
 <p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00144">144</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
 
-<p>References <a class="el" href="ksz8851snl__spi_8c_source.html#l00037">ETH_CS_PIN</a>, <a class="el" href="ksz8851snl__spi_8c_source.html#l00038">ETH_CS_PORT</a>, <a class="el" href="em__gpio_8h_source.html#l00698">GPIO_PinOutClear()</a>, and <a class="el" href="em__gpio_8h_source.html#l00745">GPIO_PinOutSet()</a>.</p>
+<p>References <a class="el" href="ksz8851snl__spi_8c.html#a8c72b0130a3a8067c2e9ce362cd305b9">ETH_CS_PIN</a>, <a class="el" href="ksz8851snl__spi_8c.html#a2107ae7691edb9a15edccada3ee54a43">ETH_CS_PORT</a>, <a class="el" href="group__GPIO.html#ga607f3a5f3d881bb145101566f1664aba">GPIO_PinOutClear()</a>, and <a class="el" href="group__GPIO.html#gab08f054efbb07aaff57d616974c9c536">GPIO_PinOutSet()</a>.</p>
 
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00257">KSZ8851SNL_SPI_ReadFifo()</a>, <a class="el" href="ksz8851snl__spi_8c_source.html#l00167">KSZ8851SNL_SPI_ReadRegister()</a>, <a class="el" href="ksz8851snl__spi_8c_source.html#l00275">KSZ8851SNL_SPI_WriteFifoBegin()</a>, <a class="el" href="ksz8851snl__spi_8c_source.html#l00301">KSZ8851SNL_SPI_WriteFifoEnd()</a>, and <a class="el" href="ksz8851snl__spi_8c_source.html#l00209">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#ga3eda0b4b00ab2ec0a7c265329587cc88">KSZ8851SNL_SPI_ReadFifo()</a>, <a class="el" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister()</a>, <a class="el" href="group__ksz8851snl.html#ga06d01a766dd38a09f6cb657bf778b385">KSZ8851SNL_SPI_WriteFifoBegin()</a>, <a class="el" href="group__ksz8851snl.html#ga3102136a87269f6531366fca103c06f7">KSZ8851SNL_SPI_WriteFifoEnd()</a>, and <a class="el" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7973e5c903af7ba709937e516393a30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void KSZ8851SNL_SPI_Transmit </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transmits a series of bytes over the spi link. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">numBytes</td><td>the number of data bytes to be transmitted</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>actual data to be transmitted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="ksz8851snl__spi_8c_source.html#l00085">85</a> of file <a class="el" href="ksz8851snl__spi_8c_source.html">ksz8851snl_spi.c</a>.</p>
+
+<p>References <a class="el" href="group__DMADRV.html#gaf9bcfe1e5a7ead155ba92b8132c5f17f">DMADRV_MAX_XFER_COUNT</a>, <a class="el" href="group__SPIDRV.html#ga38b85d953fb373f09638bcf7c44d0967">ECODE_EMDRV_SPIDRV_OK</a>, <a class="el" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>, and <a class="el" href="group__SPIDRV.html#gaf53f10ccb89d8ae2c5c397db7cb87a9e">SPIDRV_MTransmitB()</a>.</p>
+
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#ga3eda0b4b00ab2ec0a7c265329587cc88">KSZ8851SNL_SPI_ReadFifo()</a>, <a class="el" href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">KSZ8851SNL_SPI_WriteFifo()</a>, <a class="el" href="group__ksz8851snl.html#ga06d01a766dd38a09f6cb657bf778b385">KSZ8851SNL_SPI_WriteFifoBegin()</a>, and <a class="el" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister()</a>.</p>
 
 </div>
 </div>
@@ -539,7 +541,7 @@ License</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="ksz8851snl__spi_8c.html">ksz8851snl_spi.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:06 for EFM32 Tiny Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:24:22 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

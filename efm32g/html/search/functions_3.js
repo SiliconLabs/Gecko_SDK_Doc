@@ -21,6 +21,7 @@ var searchData=
   ['cdc_5finit',['CDC_Init',['../group__Cdc.html#gaecd54ce9131e15785ad9cbd5105765d7',1,'CDC_Init(void):&#160;cdc.c'],['../group__Cdc.html#gaecd54ce9131e15785ad9cbd5105765d7',1,'CDC_Init(void):&#160;cdc.c']]],
   ['cdc_5fsetupcmd',['CDC_SetupCmd',['../group__Cdc.html#gabb299273fea87474d24e85a3fe1ad4d0',1,'CDC_SetupCmd(const USB_Setup_TypeDef *setup):&#160;cdc.c'],['../group__Cdc.html#gabb299273fea87474d24e85a3fe1ad4d0',1,'CDC_SetupCmd(const USB_Setup_TypeDef *setup):&#160;cdc.c']]],
   ['cdc_5fstatechangeevent',['CDC_StateChangeEvent',['../group__Cdc.html#gaab8bd37b2a51931c429dbec05e92c11f',1,'CDC_StateChangeEvent(USBD_State_TypeDef oldState, USBD_State_TypeDef newState):&#160;cdc.c'],['../group__Cdc.html#gaab8bd37b2a51931c429dbec05e92c11f',1,'CDC_StateChangeEvent(USBD_State_TypeDef oldState, USBD_State_TypeDef newState):&#160;cdc.c']]],
+  ['checkforduplicates',['checkForDuplicates',['../tempdrv_8c.html#a491d81c1f5c7c96d9c96cc946f45e171',1,'tempdrv.c']]],
   ['chip_5finit',['CHIP_Init',['../group__CHIP.html#ga6491ac6b7e786d253753c334615bce61',1,'em_chip.h']]],
   ['cmu_5fcalibrate',['CMU_Calibrate',['../group__CMU.html#ga144a6e08d50cc4913a3452231eb3cc36',1,'em_cmu.c']]],
   ['cmu_5fcalibratecountget',['CMU_CalibrateCountGet',['../group__CMU.html#ga6a5fb4b2d369de8db9ebf56edc780a7c',1,'em_cmu.c']]],
@@ -53,5 +54,7 @@ var searchData=
   ['cmu_5fpcntclockexternalget',['CMU_PCNTClockExternalGet',['../group__CMU.html#ga2d640d98deffdf17ec3756fb21fa1012',1,'em_cmu.c']]],
   ['cmu_5fpcntclockexternalset',['CMU_PCNTClockExternalSet',['../group__CMU.html#gac0fede38cfa32965cc8ace2b51a14d5b',1,'em_cmu.c']]],
   ['cmu_5funlock',['CMU_Unlock',['../group__CMU.html#ga15ee8874bbe2c87a9b47aa81d3b76f51',1,'em_cmu.h']]],
-  ['compress',['Compress',['../group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf',1,'Compress(uint16_t input):&#160;si114x_functions.c'],['../group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf',1,'Compress(uint16_t input):&#160;si114x_functions.c']]]
+  ['compress',['Compress',['../group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf',1,'Compress(uint16_t input):&#160;si114x_functions.c'],['../group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf',1,'Compress(uint16_t input):&#160;si114x_functions.c']]],
+  ['convertemutotemp',['convertEMUtoTEMP',['../tempdrv_8c.html#a798654ab0c6e543d7edc325d9a11c0e2',1,'tempdrv.c']]],
+  ['converttemptoemu',['convertTEMPtoEMU',['../tempdrv_8c.html#a8442646d166cb0ea7de0bb09390b33ce',1,'tempdrv.c']]]
 ];

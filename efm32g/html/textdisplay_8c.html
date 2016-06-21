@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32g-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,10 +111,16 @@ $(document).ready(function(){initNavTree('textdisplay_8c.html','');});
 <div class="title">textdisplay.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Provide stdio retargeting to the text display interface. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>Provide stdio retargeting to the text display interface.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<p>Definition in file <a class="el" href="textdisplay_8c_source.html">textdisplay.c</a>.</p>
+</div><div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
@@ -130,37 +134,29 @@ $(document).ready(function(){initNavTree('textdisplay_8c.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga0a9d10a115aa9baddd7c189f0d824570"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga0a9d10a115aa9baddd7c189f0d824570">TEXTDISPLAY_New</a> (<a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a> *config, <a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> *handle)</td></tr>
-<tr class="memdesc:ga0a9d10a115aa9baddd7c189f0d824570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new text display device.  <a href="group__Textdisplay.html#ga0a9d10a115aa9baddd7c189f0d824570">More...</a><br /></td></tr>
-<tr class="separator:ga0a9d10a115aa9baddd7c189f0d824570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1fe43d3b24f2d4d128e941cc75d41c58"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga1fe43d3b24f2d4d128e941cc75d41c58">TEXTDISPLAY_Delete</a> (<a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> handle)</td></tr>
 <tr class="memdesc:ga1fe43d3b24f2d4d128e941cc75d41c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a text display device.  <a href="group__Textdisplay.html#ga1fe43d3b24f2d4d128e941cc75d41c58">More...</a><br /></td></tr>
 <tr class="separator:ga1fe43d3b24f2d4d128e941cc75d41c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad1f296d80e71689ff9a01fafabbe948f"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#gad1f296d80e71689ff9a01fafabbe948f">TEXTDISPLAY_LfToCrLf</a> (<a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> handle, bool on)</td></tr>
 <tr class="memdesc:gad1f296d80e71689ff9a01fafabbe948f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable LF to CR+LF conversion.  <a href="group__Textdisplay.html#gad1f296d80e71689ff9a01fafabbe948f">More...</a><br /></td></tr>
 <tr class="separator:gad1f296d80e71689ff9a01fafabbe948f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a9d10a115aa9baddd7c189f0d824570"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga0a9d10a115aa9baddd7c189f0d824570">TEXTDISPLAY_New</a> (<a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a> *config, <a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> *handle)</td></tr>
+<tr class="memdesc:ga0a9d10a115aa9baddd7c189f0d824570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new text display device.  <a href="group__Textdisplay.html#ga0a9d10a115aa9baddd7c189f0d824570">More...</a><br /></td></tr>
+<tr class="separator:ga0a9d10a115aa9baddd7c189f0d824570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3a2e2388e48b53f5634e78fc6c48bc76"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga3a2e2388e48b53f5634e78fc6c48bc76">TEXTDISPLAY_WriteChar</a> (<a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> handle, char c)</td></tr>
 <tr class="memdesc:ga3a2e2388e48b53f5634e78fc6c48bc76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a single character to a text display.  <a href="group__Textdisplay.html#ga3a2e2388e48b53f5634e78fc6c48bc76">More...</a><br /></td></tr>
 <tr class="separator:ga3a2e2388e48b53f5634e78fc6c48bc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d0435b6df8ccb2ace0a10da0df9fdd3"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga1d0435b6df8ccb2ace0a10da0df9fdd3">TEXTDISPLAY_WriteString</a> (<a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> handle, char *str)</td></tr>
-<tr class="memdesc:ga1d0435b6df8ccb2ace0a10da0df9fdd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a string of characters to a text display.  <a href="group__Textdisplay.html#ga1d0435b6df8ccb2ace0a10da0df9fdd3">More...</a><br /></td></tr>
-<tr class="separator:ga1d0435b6df8ccb2ace0a10da0df9fdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab41a8aa41d06a94b8547766bac64c13d"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#gab41a8aa41d06a94b8547766bac64c13d">TEXTDISPLAY_WriteString</a> (<a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> handle, const char *str)</td></tr>
+<tr class="memdesc:gab41a8aa41d06a94b8547766bac64c13d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a string of characters to a text display.  <a href="group__Textdisplay.html#gab41a8aa41d06a94b8547766bac64c13d">More...</a><br /></td></tr>
+<tr class="separator:gab41a8aa41d06a94b8547766bac64c13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="textdisplay_8c_source.html">textdisplay.c</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="textdisplay_8c.html">textdisplay.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:35:37 for EFM32 Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:22:13 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

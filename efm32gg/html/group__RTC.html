@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Giant Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32gg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32gg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -106,12 +105,12 @@ $(document).ready(function(){initNavTree('group__RTC.html','');});
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">RTC<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">RTC<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Real Time Counter (RTC) Peripheral API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Real Time Counter (RTC) Peripheral API. </p>
+<p>This module contains functions to control the RTC peripheral of Silicon Labs 32-bit MCUs and SoCs. The RTC ensures timekeeping in low energy modes. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -138,6 +137,9 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTC.html#gae4cfdbe68de01d77bbdc979f1b026382">RTC_CounterReset</a> (void)</td></tr>
 <tr class="memdesc:gae4cfdbe68de01d77bbdc979f1b026382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restart RTC counter from zero. <br /></td></tr>
 <tr class="separator:gae4cfdbe68de01d77bbdc979f1b026382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga229eedd97507ee915f51d74496c08ad8"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTC.html#ga229eedd97507ee915f51d74496c08ad8">RTC_CounterSet</a> (uint32_t value)</td></tr>
+<tr class="memdesc:ga229eedd97507ee915f51d74496c08ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the RTC counter value.  <a href="#ga229eedd97507ee915f51d74496c08ad8">More...</a><br /></td></tr>
+<tr class="separator:ga229eedd97507ee915f51d74496c08ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga19213bbf2d6cb73d55cec086a98493e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RTC.html#ga19213bbf2d6cb73d55cec086a98493e6">RTC_Enable</a> (bool enable)</td></tr>
 <tr class="memdesc:ga19213bbf2d6cb73d55cec086a98493e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable RTC.  <a href="#ga19213bbf2d6cb73d55cec086a98493e6">More...</a><br /></td></tr>
 <tr class="separator:ga19213bbf2d6cb73d55cec086a98493e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,7 +172,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memdesc:gae1afe76d35fac641cdad34913ca63c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore RTC to reset state. <br /></td></tr>
 <tr class="separator:gae1afe76d35fac641cdad34913ca63c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gaa4e54bd1f7a26594eb031789117137dc"></a>
 <div class="memitem">
@@ -190,7 +191,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 
 <p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00068">68</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
 
-<p>Referenced by <a class="el" href="udelay_8c_source.html#l00071">UDELAY_Calibrate()</a>.</p>
+<p>Referenced by <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a>.</p>
 
 </div>
 </div>
@@ -208,6 +209,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get RTC compare register value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">comp</td><td>Compare register to get, either 0 or 1</td></tr>
@@ -216,9 +219,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Compare register value, 0 if invalid register selected. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__rtc_8c_source.html#l00114">114</a> of file <a class="el" href="em__rtc_8c_source.html">em_rtc.c</a>.</p>
+<p>Definition at line <a class="el" href="em__rtc_8c_source.html#l00117">117</a> of file <a class="el" href="em__rtc_8c_source.html">em_rtc.c</a>.</p>
 
-<p>References <a class="el" href="efm32gg995f1024_8h_source.html#l00385">RTC</a>.</p>
+<p>References <a class="el" href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>.</p>
 
 </div>
 </div>
@@ -245,6 +248,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set RTC compare register value. </p>
 <dl class="section note"><dt>Note</dt><dd>The setting of a compare register requires synchronization into the low frequency domain. If the same register is modified before a previous update has completed, this function will stall until the previous synchronization has completed. This only applies to the Gecko Family, see comment in the regSync() internal function call.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -254,9 +259,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__rtc_8c_source.html#l00158">158</a> of file <a class="el" href="em__rtc_8c_source.html">em_rtc.c</a>.</p>
+<p>Definition at line <a class="el" href="em__rtc_8c_source.html#l00161">161</a> of file <a class="el" href="em__rtc_8c_source.html">em_rtc.c</a>.</p>
 
-<p>References <a class="el" href="efm32gg__rtc_8h_source.html#l00096">_RTC_COMP0_COMP0_MASK</a>, <a class="el" href="efm32gg__rtc_8h_source.html#l00095">_RTC_COMP0_COMP0_SHIFT</a>, <a class="el" href="efm32gg995f1024_8h_source.html#l00385">RTC</a>, <a class="el" href="efm32gg__rtc_8h_source.html#l00205">RTC_SYNCBUSY_COMP0</a>, and <a class="el" href="efm32gg__rtc_8h_source.html#l00210">RTC_SYNCBUSY_COMP1</a>.</p>
+<p>References <a class="el" href="group__EFM32GG__RTC__BitFields.html#gaaf29e8f646fe9c95aa7511aa253dff95">_RTC_COMP0_COMP0_MASK</a>, <a class="el" href="group__EFM32GG__RTC__BitFields.html#gaaf00d97db0919931d6b7bfe99000bba7">_RTC_COMP0_COMP0_SHIFT</a>, <a class="el" href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>, <a class="el" href="group__EFM32GG__RTC__BitFields.html#ga771b2899b19d3d8aad2be95b9b12f653">RTC_SYNCBUSY_COMP0</a>, and <a class="el" href="group__EFM32GG__RTC__BitFields.html#ga367440b702cdd9bdb85fa2c0bac28061">RTC_SYNCBUSY_COMP1</a>.</p>
 
 </div>
 </div>
@@ -273,11 +278,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get RTC counter value. </p>
 <dl class="section return"><dt>Returns</dt><dd>Current RTC counter value. </dd></dl>
 
 <p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00090">90</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg995f1024_8h_source.html#l00385">RTC</a>.</p>
+<p>References <a class="el" href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga229eedd97507ee915f51d74496c08ad8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void RTC_CounterSet </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the RTC counter value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The new RTC counter value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00103">103</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>.</p>
 
 </div>
 </div>
@@ -294,6 +329,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable/disable RTC. </p>
 <dl class="section note"><dt>Note</dt><dd>The enabling/disabling of the RTC modifies the RTC CTRL register which requires synchronization into the low frequency domain. If this register is modified before a previous update to the same register has completed, this function will stall until the previous synchronization has completed. This only applies to the Gecko Family, see comment in the regSync() internal function call.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -302,11 +339,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__rtc_8c_source.html#l00214">214</a> of file <a class="el" href="em__rtc_8c_source.html">em_rtc.c</a>.</p>
+<p>Definition at line <a class="el" href="em__rtc_8c_source.html#l00217">217</a> of file <a class="el" href="em__rtc_8c_source.html">em_rtc.c</a>.</p>
 
-<p>References <a class="el" href="efm32gg__rtc_8h_source.html#l00065">_RTC_CTRL_EN_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="efm32gg995f1024_8h_source.html#l00385">RTC</a>, and <a class="el" href="efm32gg__rtc_8h_source.html#l00200">RTC_SYNCBUSY_CTRL</a>.</p>
+<p>References <a class="el" href="group__EFM32GG__RTC__BitFields.html#gad7890f03e9970ddb575e2d266b5dc225">_RTC_CTRL_EN_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>, and <a class="el" href="group__EFM32GG__RTC__BitFields.html#ga6653e84ae07a0a80e6a4799091d913c0">RTC_SYNCBUSY_CTRL</a>.</p>
 
-<p>Referenced by <a class="el" href="em__rtc_8c_source.html#l00367">RTC_CounterReset()</a>, <a class="el" href="rtcdriver_8c_source.html#l00415">RTCDRV_DeInit()</a>, and <a class="el" href="udelay_8c_source.html#l00071">UDELAY_Calibrate()</a>.</p>
+<p>Referenced by <a class="el" href="group__RTC.html#gae4cfdbe68de01d77bbdc979f1b026382">RTC_CounterReset()</a>, <a class="el" href="group__RTCDRV.html#gae82ea6fa74f6bbc161b86a34385d63bf">RTCDRV_DeInit()</a>, and <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a>.</p>
 
 </div>
 </div>
@@ -323,6 +360,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>RTC register synchronization freeze control. </p>
 <p>Some RTC registers require synchronization into the low frequency (LF) domain. The freeze feature allows for several such registers to be modified before passing them to the LF domain simultaneously (which takes place when the freeze mode is disabled).</p>
 <dl class="section note"><dt>Note</dt><dd>When enabling freeze mode, this function will wait for all current ongoing RTC synchronization to LF domain to complete (Normally synchronization will not be in progress.) However for this reason, when using freeze mode, modifications of registers requiring LF synchronization should be done within one freeze enable/disable block to avoid unecessary stalling. This only applies to the Gecko Family, see the reference manual chapter about Access to Low Energy Peripherals (Asynchronos Registers) for details.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -336,11 +375,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__rtc_8c_source.html#l00258">258</a> of file <a class="el" href="em__rtc_8c_source.html">em_rtc.c</a>.</p>
+<p>Definition at line <a class="el" href="em__rtc_8c_source.html#l00261">261</a> of file <a class="el" href="em__rtc_8c_source.html">em_rtc.c</a>.</p>
 
-<p>References <a class="el" href="efm32gg995f1024_8h_source.html#l00385">RTC</a>, and <a class="el" href="efm32gg__rtc_8h_source.html#l00187">RTC_FREEZE_REGFREEZE</a>.</p>
+<p>References <a class="el" href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>, and <a class="el" href="group__EFM32GG__RTC__BitFields.html#ga75be11d7aaa836be24d268602a3b6be6">RTC_FREEZE_REGFREEZE</a>.</p>
 
-<p>Referenced by <a class="el" href="udelay_8c_source.html#l00071">UDELAY_Calibrate()</a>.</p>
+<p>Referenced by <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a>.</p>
 
 </div>
 </div>
@@ -357,6 +396,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize RTC. </p>
 <p>Note that the compare values must be set separately with <a class="el" href="group__RTC.html#gae6de92934675357cf5731663406e9615" title="Set RTC compare register value. ">RTC_CompareSet()</a>. That should probably be done prior to the use of this function if configuring the RTC to start when initialization is completed.</p>
 <dl class="section note"><dt>Note</dt><dd>The initialization of the RTC modifies the RTC CTRL register which requires synchronization into the low frequency domain. If this register is modified before a previous update to the same register has completed, this function will stall until the previous synchronization has completed. This only applies to the Gecko Family, see comment in the regSync() internal function call.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -366,11 +407,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__rtc_8c_source.html#l00302">302</a> of file <a class="el" href="em__rtc_8c_source.html">em_rtc.c</a>.</p>
+<p>Definition at line <a class="el" href="em__rtc_8c_source.html#l00305">305</a> of file <a class="el" href="em__rtc_8c_source.html">em_rtc.c</a>.</p>
 
-<p>References <a class="el" href="em__rtc_8h_source.html#l00064">RTC_Init_TypeDef::comp0Top</a>, <a class="el" href="em__rtc_8h_source.html#l00063">RTC_Init_TypeDef::debugRun</a>, <a class="el" href="em__rtc_8h_source.html#l00062">RTC_Init_TypeDef::enable</a>, <a class="el" href="efm32gg995f1024_8h_source.html#l00385">RTC</a>, <a class="el" href="efm32gg__rtc_8h_source.html#l00074">RTC_CTRL_COMP0TOP</a>, <a class="el" href="efm32gg__rtc_8h_source.html#l00069">RTC_CTRL_DEBUGRUN</a>, <a class="el" href="efm32gg__rtc_8h_source.html#l00064">RTC_CTRL_EN</a>, and <a class="el" href="efm32gg__rtc_8h_source.html#l00200">RTC_SYNCBUSY_CTRL</a>.</p>
+<p>References <a class="el" href="structRTC__Init__TypeDef.html#ae6c8caf8fbbf266427fdab8865e6a65c">RTC_Init_TypeDef::comp0Top</a>, <a class="el" href="structRTC__Init__TypeDef.html#acd012fb27d533647a6d7b00e9f0fa60b">RTC_Init_TypeDef::debugRun</a>, <a class="el" href="structRTC__Init__TypeDef.html#a51e17e3b46c93def7a3c53a30f6f26f2">RTC_Init_TypeDef::enable</a>, <a class="el" href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>, <a class="el" href="group__EFM32GG__RTC__BitFields.html#ga25a30ef124ecd8b19eccf5b414ef0d4b">RTC_CTRL_COMP0TOP</a>, <a class="el" href="group__EFM32GG__RTC__BitFields.html#gac490e8ca5272759fe765080ace810a53">RTC_CTRL_DEBUGRUN</a>, <a class="el" href="group__EFM32GG__RTC__BitFields.html#ga465ba8fa99f362d2a5d187f22f79bb5b">RTC_CTRL_EN</a>, and <a class="el" href="group__EFM32GG__RTC__BitFields.html#ga6653e84ae07a0a80e6a4799091d913c0">RTC_SYNCBUSY_CTRL</a>.</p>
 
-<p>Referenced by <a class="el" href="rtcdriver_8c_source.html#l00322">RTCDRV_Init()</a>, and <a class="el" href="udelay_8c_source.html#l00071">UDELAY_Calibrate()</a>.</p>
+<p>Referenced by <a class="el" href="group__RTCDRV.html#ga4419076832c5b4958dea6f1eec0a9bdf">RTCDRV_Init()</a>, and <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a>.</p>
 
 </div>
 </div>
@@ -387,6 +428,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Clear one or more pending RTC interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>RTC interrupt sources to clear. Use a set of interrupt flags OR-ed together to clear multiple interrupt sources for the RTC module (RTC_IFS_nnn). </td></tr>
@@ -394,9 +437,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00109">109</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00123">123</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg995f1024_8h_source.html#l00385">RTC</a>.</p>
+<p>References <a class="el" href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>.</p>
 
 </div>
 </div>
@@ -413,6 +456,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Disable one or more RTC interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>RTC interrupt sources to disable. Use a set of interrupt flags OR-ed together to disable multiple interrupt sources for the RTC module (RTC_IFS_nnn). </td></tr>
@@ -420,9 +465,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00124">124</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00138">138</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg995f1024_8h_source.html#l00385">RTC</a>.</p>
+<p>References <a class="el" href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>.</p>
 
 </div>
 </div>
@@ -439,6 +484,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable one or more RTC interrupts. </p>
 <dl class="section note"><dt>Note</dt><dd>Depending on the use, a pending interrupt may already be set prior to enabling the interrupt. Consider using <a class="el" href="group__RTC.html#ga910583d142223c79d276cdffd317a1bf" title="Clear one or more pending RTC interrupts. ">RTC_IntClear()</a> prior to enabling if such a pending interrupt should be ignored.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -447,9 +494,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00144">144</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00158">158</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg995f1024_8h_source.html#l00385">RTC</a>.</p>
+<p>References <a class="el" href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>.</p>
 
 </div>
 </div>
@@ -466,12 +513,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get pending RTC interrupt flags. </p>
 <dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Pending RTC interrupt sources. Returns a set of interrupt flags OR-ed together for multiple interrupt sources in the RTC module (RTC_IFS_nnn). </dd></dl>
 
-<p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00161">161</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00175">175</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg995f1024_8h_source.html#l00385">RTC</a>.</p>
+<p>References <a class="el" href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>.</p>
 
 </div>
 </div>
@@ -488,6 +537,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get enabled and pending RTC interrupt flags. Useful for handling more interrupt sources in the same interrupt handler. </p>
 <dl class="section note"><dt>Note</dt><dd>Interrupt flags are not cleared by the use of this function.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Pending and enabled RTC interrupt sources The return value is the bitwise AND of<ul>
 <li>the enabled interrupt sources in RTC_IEN and</li>
@@ -495,9 +546,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00181">181</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00195">195</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg995f1024_8h_source.html#l00385">RTC</a>.</p>
+<p>References <a class="el" href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>.</p>
 
 </div>
 </div>
@@ -514,6 +565,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set one or more pending RTC interrupts from SW. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>RTC interrupt sources to set to pending. Use a set of interrupt flags OR-ed together to set multiple interrupt sources for the RTC module (RTC_IFS_nnn). </td></tr>
@@ -521,9 +574,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00199">199</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__rtc_8h_source.html#l00213">213</a> of file <a class="el" href="em__rtc_8h_source.html">em_rtc.h</a>.</p>
 
-<p>References <a class="el" href="efm32gg995f1024_8h_source.html#l00385">RTC</a>.</p>
+<p>References <a class="el" href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>.</p>
 
 </div>
 </div>
@@ -532,7 +585,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:52 for EFM32 Giant Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:27:17 for EFM32 Giant Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

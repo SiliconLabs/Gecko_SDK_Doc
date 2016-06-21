@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -115,10 +113,16 @@ $(document).ready(function(){initNavTree('si114x__algorithm_8h.html','');});
 <div class="title">si114x_algorithm.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Swipe algorithm for Si114x. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>Swipe algorithm for Si114x.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="si114x__algorithm_8h_source.html">si114x_algorithm.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="si114x__functions_8h_source.html">si114x_functions.h</a>&quot;</code><br />
 </div>
 <p><a href="si114x__algorithm_8h_source.html">Go to the source code of this file.</a></p>
@@ -148,40 +152,32 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga350c8e857065a5061a49cd66a1a4b2a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Si114x.html#ga336655f991c3d44f61e92e4d31c4bf36">gesture_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga350c8e857065a5061a49cd66a1a4b2a4">Si1147_NewSample</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint32_t timestamp)</td></tr>
-<tr class="memdesc:ga350c8e857065a5061a49cd66a1a4b2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads new measurement data and processes a new sample. This function should be called every time an interrupt for a new sample is received.  <a href="group__Si114x.html#ga350c8e857065a5061a49cd66a1a4b2a4">More...</a><br /></td></tr>
-<tr class="separator:ga350c8e857065a5061a49cd66a1a4b2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga79b0443305d3a085028d1c197d398ede"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga79b0443305d3a085028d1c197d398ede">Si1147_ConfigureDetection</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, int slow)</td></tr>
 <tr class="memdesc:ga79b0443305d3a085028d1c197d398ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and configures the Si1147 sensor.  <a href="group__Si114x.html#ga79b0443305d3a085028d1c197d398ede">More...</a><br /></td></tr>
 <tr class="separator:ga79b0443305d3a085028d1c197d398ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8f8ed0bfd8af165742a3169f87c1b32a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga8f8ed0bfd8af165742a3169f87c1b32a">Si1147_SetInterruptOutputEnable</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, int enable)</td></tr>
-<tr class="memdesc:ga8f8ed0bfd8af165742a3169f87c1b32a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the Si1147 interrupt pin.  <a href="group__Si114x.html#ga8f8ed0bfd8af165742a3169f87c1b32a">More...</a><br /></td></tr>
-<tr class="separator:ga8f8ed0bfd8af165742a3169f87c1b32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75ef8acc675ca1a1bf14acda4f3c6686"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga75ef8acc675ca1a1bf14acda4f3c6686">Si1147_GetInterruptOutputEnable</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, int *enable)</td></tr>
-<tr class="memdesc:ga75ef8acc675ca1a1bf14acda4f3c6686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the enable status of the Si1147 interrupt pin.  <a href="group__Si114x.html#ga75ef8acc675ca1a1bf14acda4f3c6686">More...</a><br /></td></tr>
-<tr class="separator:ga75ef8acc675ca1a1bf14acda4f3c6686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga05334a8a81ac4224f3fcbb68bd2e0fbe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga05334a8a81ac4224f3fcbb68bd2e0fbe">Si1147_Detect_Device</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr)</td></tr>
 <tr class="memdesc:ga05334a8a81ac4224f3fcbb68bd2e0fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects whether Si1147 is on the i2c bus.  <a href="group__Si114x.html#ga05334a8a81ac4224f3fcbb68bd2e0fbe">More...</a><br /></td></tr>
 <tr class="separator:ga05334a8a81ac4224f3fcbb68bd2e0fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75ef8acc675ca1a1bf14acda4f3c6686"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga75ef8acc675ca1a1bf14acda4f3c6686">Si1147_GetInterruptOutputEnable</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, int *enable)</td></tr>
+<tr class="memdesc:ga75ef8acc675ca1a1bf14acda4f3c6686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the enable status of the Si1147 interrupt pin.  <a href="group__Si114x.html#ga75ef8acc675ca1a1bf14acda4f3c6686">More...</a><br /></td></tr>
+<tr class="separator:ga75ef8acc675ca1a1bf14acda4f3c6686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6621d57d8e2dedc1101227b7ad761d0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga6621d57d8e2dedc1101227b7ad761d0a">Si1147_MeasureUVAndObjectPresent</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint16_t *uvIndex, int *objectDetect)</td></tr>
 <tr class="memdesc:ga6621d57d8e2dedc1101227b7ad761d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the UV measurement data and checks for object in proximity to the Si1147.  <a href="group__Si114x.html#ga6621d57d8e2dedc1101227b7ad761d0a">More...</a><br /></td></tr>
 <tr class="separator:ga6621d57d8e2dedc1101227b7ad761d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga350c8e857065a5061a49cd66a1a4b2a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Si114x.html#ga336655f991c3d44f61e92e4d31c4bf36">gesture_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga350c8e857065a5061a49cd66a1a4b2a4">Si1147_NewSample</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint32_t timestamp)</td></tr>
+<tr class="memdesc:ga350c8e857065a5061a49cd66a1a4b2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads new measurement data and processes a new sample. This function should be called every time an interrupt for a new sample is received.  <a href="group__Si114x.html#ga350c8e857065a5061a49cd66a1a4b2a4">More...</a><br /></td></tr>
+<tr class="separator:ga350c8e857065a5061a49cd66a1a4b2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f8ed0bfd8af165742a3169f87c1b32a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si114x.html#ga8f8ed0bfd8af165742a3169f87c1b32a">Si1147_SetInterruptOutputEnable</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, int enable)</td></tr>
+<tr class="memdesc:ga8f8ed0bfd8af165742a3169f87c1b32a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the Si1147 interrupt pin.  <a href="group__Si114x.html#ga8f8ed0bfd8af165742a3169f87c1b32a">More...</a><br /></td></tr>
+<tr class="separator:ga8f8ed0bfd8af165742a3169f87c1b32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="si114x__algorithm_8h_source.html">si114x_algorithm.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="si114x__algorithm_8h.html">si114x_algorithm.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:38:16 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:32:15 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>
