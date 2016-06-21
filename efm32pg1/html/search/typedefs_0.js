@@ -5,10 +5,13 @@ var searchData=
   ['crypto_5faes_5fctrfuncptr_5ftypedef',['CRYPTO_AES_CtrFuncPtr_TypeDef',['../group__CRYPTO.html#ga5802cdbda204f89d52c406878cbaa855',1,'em_crypto.h']]],
   ['crypto_5fdata260_5ftypedef',['CRYPTO_Data260_TypeDef',['../group__CRYPTO.html#ga971cb59aa4fb3d70b8a1c1962a2b7c57',1,'em_crypto.h']]],
   ['crypto_5fdata_5ftypedef',['CRYPTO_Data_TypeDef',['../group__CRYPTO.html#ga6bbe911697c04ae4a7b5b5a1fc74af25',1,'em_crypto.h']]],
+  ['crypto_5fdatareg_5ftypedef',['CRYPTO_DataReg_TypeDef',['../group__CRYPTO.html#ga7d7b0ab4bebf48ea293b0ccd6b7822ef',1,'em_crypto.h']]],
   ['crypto_5fddata_5ftypedef',['CRYPTO_DData_TypeDef',['../group__CRYPTO.html#gafa9d7b961254f12efc0dd6a2bbb86152',1,'em_crypto.h']]],
+  ['crypto_5fddatareg_5ftypedef',['CRYPTO_DDataReg_TypeDef',['../group__CRYPTO.html#ga11402e7bffec6c9baad34adfb4862ff6',1,'em_crypto.h']]],
   ['crypto_5finstructionsequence_5ftypedef',['CRYPTO_InstructionSequence_TypeDef',['../group__CRYPTO.html#ga419ef0661adb4a1242ea8d5f0c633d4d',1,'em_crypto.h']]],
   ['crypto_5fkeybuf_5ftypedef',['CRYPTO_KeyBuf_TypeDef',['../group__CRYPTO.html#gaddfb3bdad817258a0dd52e2b52af20ed',1,'em_crypto.h']]],
   ['crypto_5fqdata_5ftypedef',['CRYPTO_QData_TypeDef',['../group__CRYPTO.html#ga359db1a79d768e67f4b7a0c2a2fa4ff9',1,'em_crypto.h']]],
+  ['crypto_5fqdatareg_5ftypedef',['CRYPTO_QDataReg_TypeDef',['../group__CRYPTO.html#ga76384b5f33a37e1327020267aecc3942',1,'em_crypto.h']]],
   ['crypto_5fsha1_5fdigest_5ftypedef',['CRYPTO_SHA1_Digest_TypeDef',['../group__CRYPTO.html#ga93d61f0ed8e15174d98ddc51dc21b433',1,'em_crypto.h']]],
   ['crypto_5fsha256_5fdigest_5ftypedef',['CRYPTO_SHA256_Digest_TypeDef',['../group__CRYPTO.html#ga641af854dd7cdd4e01a2a9c44424ba3c',1,'em_crypto.h']]]
 ];

@@ -13,7 +13,7 @@ var searchData=
   ['uniqueh',['UNIQUEH',['../structDEVINFO__TypeDef.html#a47ab500932632f733cd3d112924ec884',1,'DEVINFO_TypeDef']]],
   ['uniquel',['UNIQUEL',['../structDEVINFO__TypeDef.html#adee06ca99df3ed15576e834bae80c4b4',1,'DEVINFO_TypeDef']]],
   ['unmodcarrier',['unmodCarrier',['../structEZRADIODRV__HandleData.html#adee41191751df0fa8727fa4de54a068c',1,'EZRADIODRV_HandleData']]],
-  ['used',['used',['../structUARTDRV__Buffer__FifoQueue__t.html#aabeffca311e523f59f3d90aef3ab8028',1,'UARTDRV_Buffer_FifoQueue_t']]],
+  ['used',['used',['../structUARTDRV__Buffer__FifoQueue__t.html#ae0a0e1b396b4f8cc3ac621681c9f2268',1,'UARTDRV_Buffer_FifoQueue_t']]],
   ['usehprot',['useHprot',['../structMSC__ExecConfig__TypeDef.html#a3984dc175ed49f2910786829fbe6b911',1,'MSC_ExecConfig_TypeDef']]],
   ['usercallback',['userCallback',['../structEZRADIODRV__AutoAckHandle.html#ae466fbca495d8f0fd14efac52180f84e',1,'EZRADIODRV_AutoAckHandle::userCallback()'],['../structEZRADIODRV__PacketCrcErrorHandle.html#a6de0d85e13a65076f54a3bc1d3df3ba5',1,'EZRADIODRV_PacketCrcErrorHandle::userCallback()'],['../structEZRADIODRV__PacketRxHandle.html#a7c5ec3b9bb694794f7a98559f1e9dc0e',1,'EZRADIODRV_PacketRxHandle::userCallback()'],['../structEZRADIODRV__PacketTxHandle.html#a821a74dfd1b4e464fd6e48fde8566e06',1,'EZRADIODRV_PacketTxHandle::userCallback()']]]
 ];

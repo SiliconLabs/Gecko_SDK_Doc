@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Pearl Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32pg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32pg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -108,61 +106,11 @@ $(document).ready(function(){initNavTree('group__Textdisplay.html','');});
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Textdisplay<div class="ingroups"><a class="el" href="group__Drivers.html">Drivers</a></div></div>  </div>
+<div class="title">Textdisplay<div class="ingroups"><a class="el" href="group__kitdrv.html">Kit Drivers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Line based text output terminal interface on top of the DISPLAY device driver stack. See <a class="el" href="group__Textdisplay.html#textdisplay_doc">TextDisplay Library</a> for more information. </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gafeec0d4459c2afed8055201214c21139"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#gafeec0d4459c2afed8055201214c21139">TEXTDISPLAY_EMSTATUS_OK</a>&#160;&#160;&#160;(0)</td></tr>
-<tr class="separator:gafeec0d4459c2afed8055201214c21139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3e7ec7ac247089a051faa1831ea1e08b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga3e7ec7ac247089a051faa1831ea1e08b">TEXTDISPLAY_EMSTATUS_INVALID_PARAM</a>&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 1)</td></tr>
-<tr class="separator:ga3e7ec7ac247089a051faa1831ea1e08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ae7753b4f459b75798ea12bb3ce49d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga3ae7753b4f459b75798ea12bb3ce49d6">TEXTDISPLAY_EMSTATUS_OUT_OF_RANGE</a>&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 2)</td></tr>
-<tr class="separator:ga3ae7753b4f459b75798ea12bb3ce49d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7fc58a7f443412664b0e2ec5e648b2f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga7fc58a7f443412664b0e2ec5e648b2f7">TEXTDISPLAY_EMSTATUS_ALREADY_INITIALIZED</a>&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 3)</td></tr>
-<tr class="separator:ga7fc58a7f443412664b0e2ec5e648b2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga70801eeb36bed0f70a5411962e90cb07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga70801eeb36bed0f70a5411962e90cb07">TEXTDISPLAY_EMSTATUS_NOT_SUPPORTED</a>&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 4)</td></tr>
-<tr class="separator:ga70801eeb36bed0f70a5411962e90cb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadaa3c9a13b74cb20471b0dfa9c15bb7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#gadaa3c9a13b74cb20471b0dfa9c15bb7a">TEXTDISPLAY_EMSTATUS_NOT_ENOUGH_MEMORY</a>&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 5)</td></tr>
-<tr class="separator:gadaa3c9a13b74cb20471b0dfa9c15bb7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga280f0ec4e7d9b3a9746944366cdc98c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga280f0ec4e7d9b3a9746944366cdc98c7">TEXTDISPLAY_EMSTATUS_NOT_INITIALIZED</a>&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 6)</td></tr>
-<tr class="separator:ga280f0ec4e7d9b3a9746944366cdc98c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gac330155089e29b249d24b42ef276c8e8"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a></td></tr>
-<tr class="separator:gac330155089e29b249d24b42ef276c8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e3c6a5a426a11121e37b3c27db084f1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga5e3c6a5a426a11121e37b3c27db084f1">TEXTDISPLAY_Config_t</a></td></tr>
-<tr class="separator:ga5e3c6a5a426a11121e37b3c27db084f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga0a9d10a115aa9baddd7c189f0d824570"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga0a9d10a115aa9baddd7c189f0d824570">TEXTDISPLAY_New</a> (<a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a> *config, <a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> *handle)</td></tr>
-<tr class="memdesc:ga0a9d10a115aa9baddd7c189f0d824570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new text display device.  <a href="#ga0a9d10a115aa9baddd7c189f0d824570">More...</a><br /></td></tr>
-<tr class="separator:ga0a9d10a115aa9baddd7c189f0d824570"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1fe43d3b24f2d4d128e941cc75d41c58"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga1fe43d3b24f2d4d128e941cc75d41c58">TEXTDISPLAY_Delete</a> (<a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> handle)</td></tr>
-<tr class="memdesc:ga1fe43d3b24f2d4d128e941cc75d41c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a text display device.  <a href="#ga1fe43d3b24f2d4d128e941cc75d41c58">More...</a><br /></td></tr>
-<tr class="separator:ga1fe43d3b24f2d4d128e941cc75d41c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3a2e2388e48b53f5634e78fc6c48bc76"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga3a2e2388e48b53f5634e78fc6c48bc76">TEXTDISPLAY_WriteChar</a> (<a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> handle, char c)</td></tr>
-<tr class="memdesc:ga3a2e2388e48b53f5634e78fc6c48bc76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a single character to a text display.  <a href="#ga3a2e2388e48b53f5634e78fc6c48bc76">More...</a><br /></td></tr>
-<tr class="separator:ga3a2e2388e48b53f5634e78fc6c48bc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d0435b6df8ccb2ace0a10da0df9fdd3"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga1d0435b6df8ccb2ace0a10da0df9fdd3">TEXTDISPLAY_WriteString</a> (<a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> handle, char *str)</td></tr>
-<tr class="memdesc:ga1d0435b6df8ccb2ace0a10da0df9fdd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a string of characters to a text display.  <a href="#ga1d0435b6df8ccb2ace0a10da0df9fdd3">More...</a><br /></td></tr>
-<tr class="separator:ga1d0435b6df8ccb2ace0a10da0df9fdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad1f296d80e71689ff9a01fafabbe948f"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#gad1f296d80e71689ff9a01fafabbe948f">TEXTDISPLAY_LfToCrLf</a> (<a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> handle, bool on)</td></tr>
-<tr class="memdesc:gad1f296d80e71689ff9a01fafabbe948f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable LF to CR+LF conversion.  <a href="#gad1f296d80e71689ff9a01fafabbe948f">More...</a><br /></td></tr>
-<tr class="separator:gad1f296d80e71689ff9a01fafabbe948f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Line based text output terminal interface on top of the DISPLAY device driver stack. See <a class="el" href="group__Textdisplay.html#textdisplay_doc">TextDisplay Library</a> for more information. </p><pre class="fragment"></pre><p>. </p>
 <p><br />
  </p>
 <h1><a class="anchor" id="textdisplay_doc"></a>
@@ -218,21 +166,67 @@ TEXTDISPLAY Kit Configuration</h2>
      height of the display. The user should not increase the values above the
      maximal values, however the values may be reduced.
      These constants are used for static memory allocation in the textdisplay
-     driver.</pre> <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="gafeec0d4459c2afed8055201214c21139"></a>
+     driver.</pre> <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga7fc58a7f443412664b0e2ec5e648b2f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga7fc58a7f443412664b0e2ec5e648b2f7">TEXTDISPLAY_EMSTATUS_ALREADY_INITIALIZED</a>&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 3)</td></tr>
+<tr class="separator:ga7fc58a7f443412664b0e2ec5e648b2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e7ec7ac247089a051faa1831ea1e08b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga3e7ec7ac247089a051faa1831ea1e08b">TEXTDISPLAY_EMSTATUS_INVALID_PARAM</a>&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 1)</td></tr>
+<tr class="separator:ga3e7ec7ac247089a051faa1831ea1e08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadaa3c9a13b74cb20471b0dfa9c15bb7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#gadaa3c9a13b74cb20471b0dfa9c15bb7a">TEXTDISPLAY_EMSTATUS_NOT_ENOUGH_MEMORY</a>&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 5)</td></tr>
+<tr class="separator:gadaa3c9a13b74cb20471b0dfa9c15bb7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga280f0ec4e7d9b3a9746944366cdc98c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga280f0ec4e7d9b3a9746944366cdc98c7">TEXTDISPLAY_EMSTATUS_NOT_INITIALIZED</a>&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 6)</td></tr>
+<tr class="separator:ga280f0ec4e7d9b3a9746944366cdc98c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70801eeb36bed0f70a5411962e90cb07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga70801eeb36bed0f70a5411962e90cb07">TEXTDISPLAY_EMSTATUS_NOT_SUPPORTED</a>&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 4)</td></tr>
+<tr class="separator:ga70801eeb36bed0f70a5411962e90cb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafeec0d4459c2afed8055201214c21139"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#gafeec0d4459c2afed8055201214c21139">TEXTDISPLAY_EMSTATUS_OK</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:gafeec0d4459c2afed8055201214c21139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ae7753b4f459b75798ea12bb3ce49d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga3ae7753b4f459b75798ea12bb3ce49d6">TEXTDISPLAY_EMSTATUS_OUT_OF_RANGE</a>&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 2)</td></tr>
+<tr class="separator:ga3ae7753b4f459b75798ea12bb3ce49d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga5e3c6a5a426a11121e37b3c27db084f1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga5e3c6a5a426a11121e37b3c27db084f1">TEXTDISPLAY_Config_t</a></td></tr>
+<tr class="separator:ga5e3c6a5a426a11121e37b3c27db084f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac330155089e29b249d24b42ef276c8e8"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a></td></tr>
+<tr class="separator:gac330155089e29b249d24b42ef276c8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga1fe43d3b24f2d4d128e941cc75d41c58"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga1fe43d3b24f2d4d128e941cc75d41c58">TEXTDISPLAY_Delete</a> (<a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> handle)</td></tr>
+<tr class="memdesc:ga1fe43d3b24f2d4d128e941cc75d41c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a text display device.  <a href="#ga1fe43d3b24f2d4d128e941cc75d41c58">More...</a><br /></td></tr>
+<tr class="separator:ga1fe43d3b24f2d4d128e941cc75d41c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1f296d80e71689ff9a01fafabbe948f"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#gad1f296d80e71689ff9a01fafabbe948f">TEXTDISPLAY_LfToCrLf</a> (<a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> handle, bool on)</td></tr>
+<tr class="memdesc:gad1f296d80e71689ff9a01fafabbe948f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable LF to CR+LF conversion.  <a href="#gad1f296d80e71689ff9a01fafabbe948f">More...</a><br /></td></tr>
+<tr class="separator:gad1f296d80e71689ff9a01fafabbe948f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a9d10a115aa9baddd7c189f0d824570"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga0a9d10a115aa9baddd7c189f0d824570">TEXTDISPLAY_New</a> (<a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a> *config, <a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> *handle)</td></tr>
+<tr class="memdesc:ga0a9d10a115aa9baddd7c189f0d824570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new text display device.  <a href="#ga0a9d10a115aa9baddd7c189f0d824570">More...</a><br /></td></tr>
+<tr class="separator:ga0a9d10a115aa9baddd7c189f0d824570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a2e2388e48b53f5634e78fc6c48bc76"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#ga3a2e2388e48b53f5634e78fc6c48bc76">TEXTDISPLAY_WriteChar</a> (<a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> handle, char c)</td></tr>
+<tr class="memdesc:ga3a2e2388e48b53f5634e78fc6c48bc76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a single character to a text display.  <a href="#ga3a2e2388e48b53f5634e78fc6c48bc76">More...</a><br /></td></tr>
+<tr class="separator:ga3a2e2388e48b53f5634e78fc6c48bc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab41a8aa41d06a94b8547766bac64c13d"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Textdisplay.html#gab41a8aa41d06a94b8547766bac64c13d">TEXTDISPLAY_WriteString</a> (<a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> handle, const char *str)</td></tr>
+<tr class="memdesc:gab41a8aa41d06a94b8547766bac64c13d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a string of characters to a text display.  <a href="#gab41a8aa41d06a94b8547766bac64c13d">More...</a><br /></td></tr>
+<tr class="separator:gab41a8aa41d06a94b8547766bac64c13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga7fc58a7f443412664b0e2ec5e648b2f7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TEXTDISPLAY_EMSTATUS_OK&#160;&#160;&#160;(0)</td>
+          <td class="memname">#define TEXTDISPLAY_EMSTATUS_ALREADY_INITIALIZED&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 3)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>EMSTATUS codes of the textdisplay module. Operation successful. </p>
+<p>Device is already initialized. </p>
 
-<p>Definition at line <a class="el" href="textdisplay_8h_source.html#l00045">45</a> of file <a class="el" href="textdisplay_8h_source.html">textdisplay.h</a>.</p>
-
-<p>Referenced by <a class="el" href="retargettextdisplay_8c_source.html#l00047">RETARGET_TextDisplayInit()</a>, <a class="el" href="textdisplay_8c_source.html#l00322">TEXTDISPLAY_Delete()</a>, <a class="el" href="textdisplay_8c_source.html#l00361">TEXTDISPLAY_LfToCrLf()</a>, <a class="el" href="textdisplay_8c_source.html#l00210">TEXTDISPLAY_New()</a>, <a class="el" href="textdisplay_8c_source.html#l00381">TEXTDISPLAY_WriteChar()</a>, and <a class="el" href="textdisplay_8c_source.html#l00454">TEXTDISPLAY_WriteString()</a>.</p>
+<p>Definition at line <a class="el" href="textdisplay_8h_source.html#l00048">48</a> of file <a class="el" href="textdisplay_8h_source.html">textdisplay.h</a>.</p>
 
 </div>
 </div>
@@ -249,39 +243,41 @@ TEXTDISPLAY Kit Configuration</h2>
 
 <p>Definition at line <a class="el" href="textdisplay_8h_source.html#l00046">46</a> of file <a class="el" href="textdisplay_8h_source.html">textdisplay.h</a>.</p>
 
-<p>Referenced by <a class="el" href="textdisplay_8c_source.html#l00322">TEXTDISPLAY_Delete()</a>.</p>
+<p>Referenced by <a class="el" href="group__Textdisplay.html#ga1fe43d3b24f2d4d128e941cc75d41c58">TEXTDISPLAY_Delete()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga3ae7753b4f459b75798ea12bb3ce49d6"></a>
+<a class="anchor" id="gadaa3c9a13b74cb20471b0dfa9c15bb7a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TEXTDISPLAY_EMSTATUS_OUT_OF_RANGE&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 2)</td>
+          <td class="memname">#define TEXTDISPLAY_EMSTATUS_NOT_ENOUGH_MEMORY&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 5)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Parameters out of range. </p>
+<p>Not enough memory. </p>
 
-<p>Definition at line <a class="el" href="textdisplay_8h_source.html#l00047">47</a> of file <a class="el" href="textdisplay_8h_source.html">textdisplay.h</a>.</p>
+<p>Definition at line <a class="el" href="textdisplay_8h_source.html#l00050">50</a> of file <a class="el" href="textdisplay_8h_source.html">textdisplay.h</a>.</p>
 
-<p>Referenced by <a class="el" href="textdisplay_8c_source.html#l00210">TEXTDISPLAY_New()</a>.</p>
+<p>Referenced by <a class="el" href="group__Textdisplay.html#ga0a9d10a115aa9baddd7c189f0d824570">TEXTDISPLAY_New()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga7fc58a7f443412664b0e2ec5e648b2f7"></a>
+<a class="anchor" id="ga280f0ec4e7d9b3a9746944366cdc98c7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TEXTDISPLAY_EMSTATUS_ALREADY_INITIALIZED&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 3)</td>
+          <td class="memname">#define TEXTDISPLAY_EMSTATUS_NOT_INITIALIZED&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 6)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Device is already initialized. </p>
+<p>Device is not initialized. </p>
 
-<p>Definition at line <a class="el" href="textdisplay_8h_source.html#l00048">48</a> of file <a class="el" href="textdisplay_8h_source.html">textdisplay.h</a>.</p>
+<p>Definition at line <a class="el" href="textdisplay_8h_source.html#l00051">51</a> of file <a class="el" href="textdisplay_8h_source.html">textdisplay.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga3603601be1ab26bec300eebb3cc5c5f9">RETARGET_WriteString()</a>, <a class="el" href="group__Textdisplay.html#ga3a2e2388e48b53f5634e78fc6c48bc76">TEXTDISPLAY_WriteChar()</a>, and <a class="el" href="group__Textdisplay.html#gab41a8aa41d06a94b8547766bac64c13d">TEXTDISPLAY_WriteString()</a>.</p>
 
 </div>
 </div>
@@ -300,41 +296,54 @@ TEXTDISPLAY Kit Configuration</h2>
 
 </div>
 </div>
-<a class="anchor" id="gadaa3c9a13b74cb20471b0dfa9c15bb7a"></a>
+<a class="anchor" id="gafeec0d4459c2afed8055201214c21139"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TEXTDISPLAY_EMSTATUS_NOT_ENOUGH_MEMORY&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 5)</td>
+          <td class="memname">#define TEXTDISPLAY_EMSTATUS_OK&#160;&#160;&#160;(0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Not enough memory. </p>
+<p>EMSTATUS codes of the textdisplay module. Operation successful. </p>
 
-<p>Definition at line <a class="el" href="textdisplay_8h_source.html#l00050">50</a> of file <a class="el" href="textdisplay_8h_source.html">textdisplay.h</a>.</p>
+<p>Definition at line <a class="el" href="textdisplay_8h_source.html#l00045">45</a> of file <a class="el" href="textdisplay_8h_source.html">textdisplay.h</a>.</p>
 
-<p>Referenced by <a class="el" href="textdisplay_8c_source.html#l00210">TEXTDISPLAY_New()</a>.</p>
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga1f514c0ebfe9dd2c24f293be0edfaf9b">RETARGET_TextDisplayInit()</a>, <a class="el" href="group__Textdisplay.html#ga1fe43d3b24f2d4d128e941cc75d41c58">TEXTDISPLAY_Delete()</a>, <a class="el" href="group__Textdisplay.html#gad1f296d80e71689ff9a01fafabbe948f">TEXTDISPLAY_LfToCrLf()</a>, <a class="el" href="group__Textdisplay.html#ga0a9d10a115aa9baddd7c189f0d824570">TEXTDISPLAY_New()</a>, <a class="el" href="group__Textdisplay.html#ga3a2e2388e48b53f5634e78fc6c48bc76">TEXTDISPLAY_WriteChar()</a>, and <a class="el" href="group__Textdisplay.html#gab41a8aa41d06a94b8547766bac64c13d">TEXTDISPLAY_WriteString()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga280f0ec4e7d9b3a9746944366cdc98c7"></a>
+<a class="anchor" id="ga3ae7753b4f459b75798ea12bb3ce49d6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TEXTDISPLAY_EMSTATUS_NOT_INITIALIZED&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 6)</td>
+          <td class="memname">#define TEXTDISPLAY_EMSTATUS_OUT_OF_RANGE&#160;&#160;&#160;(<a class="el" href="emstatus_8h.html#a65a83bba432329e332e019bf985607ab">TEXTDISPLAY_EMSTATUS_BASE</a> | 2)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Device is not initialized. </p>
+<p>Parameters out of range. </p>
 
-<p>Definition at line <a class="el" href="textdisplay_8h_source.html#l00051">51</a> of file <a class="el" href="textdisplay_8h_source.html">textdisplay.h</a>.</p>
+<p>Definition at line <a class="el" href="textdisplay_8h_source.html#l00047">47</a> of file <a class="el" href="textdisplay_8h_source.html">textdisplay.h</a>.</p>
 
-<p>Referenced by <a class="el" href="retargettextdisplay_8c_source.html#l00116">RETARGET_WriteString()</a>, <a class="el" href="textdisplay_8c_source.html#l00381">TEXTDISPLAY_WriteChar()</a>, and <a class="el" href="textdisplay_8c_source.html#l00454">TEXTDISPLAY_WriteString()</a>.</p>
+<p>Referenced by <a class="el" href="group__Textdisplay.html#ga0a9d10a115aa9baddd7c189f0d824570">TEXTDISPLAY_New()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ga5e3c6a5a426a11121e37b3c27db084f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a>  <a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialization data structure for text display devices. </p>
+
+</div>
+</div>
 <a class="anchor" id="gac330155089e29b249d24b42ef276c8e8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -350,60 +359,7 @@ TEXTDISPLAY Kit Configuration</h2>
 
 </div>
 </div>
-<a class="anchor" id="ga5e3c6a5a426a11121e37b3c27db084f1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a>  <a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Initialization data structure for text display devices. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga0a9d10a115aa9baddd7c189f0d824570"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EMSTATUS TEXTDISPLAY_New </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a> *&#160;</td>
-          <td class="paramname"><em>config</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> *&#160;</td>
-          <td class="paramname"><em>handle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Configuration data structure for the text display device to create. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>Pointer to text display handle which will be returned if the function is successful.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>EMSTATUS code of the operation. </dd></dl>
-
-<p>Definition at line <a class="el" href="textdisplay_8c_source.html#l00210">210</a> of file <a class="el" href="textdisplay_8c_source.html">textdisplay.c</a>.</p>
-
-<p>References <a class="el" href="display_8h_source.html#l00072">DISPLAY_ADDRESSING_BY_ROWS_ONLY</a>, <a class="el" href="display_8c_source.html#l00139">DISPLAY_DeviceGet()</a>, <a class="el" href="display_8h_source.html#l00047">DISPLAY_EMSTATUS_OK</a>, <a class="el" href="textdisplay_8h_source.html#l00075">TEXTDISPLAY_Config_t::displayDeviceNo</a>, <a class="el" href="retargetserial_8c_source.html#l00044">initialized</a>, <a class="el" href="textdisplay_8h_source.html#l00082">TEXTDISPLAY_Config_t::lfToCrLf</a>, <a class="el" href="textdisplay_8h_source.html#l00077">TEXTDISPLAY_Config_t::scrollEnable</a>, <a class="el" href="textdisplay_8h_source.html#l00050">TEXTDISPLAY_EMSTATUS_NOT_ENOUGH_MEMORY</a>, <a class="el" href="textdisplay_8h_source.html#l00045">TEXTDISPLAY_EMSTATUS_OK</a>, and <a class="el" href="textdisplay_8h_source.html#l00047">TEXTDISPLAY_EMSTATUS_OUT_OF_RANGE</a>.</p>
-
-<p>Referenced by <a class="el" href="retargettextdisplay_8c_source.html#l00047">RETARGET_TextDisplayInit()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga1fe43d3b24f2d4d128e941cc75d41c58"></a>
 <div class="memitem">
 <div class="memproto">
@@ -417,6 +373,8 @@ TEXTDISPLAY Kit Configuration</h2>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Delete a text display device. </p>
 <p>Delete a text display device and release all resources associataed with the text display device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -428,87 +386,7 @@ TEXTDISPLAY Kit Configuration</h2>
 
 <p>Definition at line <a class="el" href="textdisplay_8c_source.html#l00322">322</a> of file <a class="el" href="textdisplay_8c_source.html">textdisplay.c</a>.</p>
 
-<p>References <a class="el" href="textdisplay_8h_source.html#l00046">TEXTDISPLAY_EMSTATUS_INVALID_PARAM</a>, and <a class="el" href="textdisplay_8h_source.html#l00045">TEXTDISPLAY_EMSTATUS_OK</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga3a2e2388e48b53f5634e78fc6c48bc76"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EMSTATUS TEXTDISPLAY_WriteChar </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>c</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Text display handle associated with the text display to write the character on. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>Character to write.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>EMSTATUS code of the operation. </dd></dl>
-
-<p>Definition at line <a class="el" href="textdisplay_8c_source.html#l00381">381</a> of file <a class="el" href="textdisplay_8c_source.html">textdisplay.c</a>.</p>
-
-<p>References <a class="el" href="display_8h_source.html#l00072">DISPLAY_ADDRESSING_BY_ROWS_ONLY</a>, <a class="el" href="textdisplay_8h_source.html#l00051">TEXTDISPLAY_EMSTATUS_NOT_INITIALIZED</a>, and <a class="el" href="textdisplay_8h_source.html#l00045">TEXTDISPLAY_EMSTATUS_OK</a>.</p>
-
-<p>Referenced by <a class="el" href="retargettextdisplay_8c_source.html#l00097">RETARGET_WriteChar()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga1d0435b6df8ccb2ace0a10da0df9fdd3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EMSTATUS TEXTDISPLAY_WriteString </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>str</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Text display handle associated with the text display to write the character string on. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>String to write.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>EMSTATUS code of the operation. </dd></dl>
-
-<p>Definition at line <a class="el" href="textdisplay_8c_source.html#l00454">454</a> of file <a class="el" href="textdisplay_8c_source.html">textdisplay.c</a>.</p>
-
-<p>References <a class="el" href="display_8h_source.html#l00072">DISPLAY_ADDRESSING_BY_ROWS_ONLY</a>, <a class="el" href="textdisplay_8h_source.html#l00051">TEXTDISPLAY_EMSTATUS_NOT_INITIALIZED</a>, and <a class="el" href="textdisplay_8h_source.html#l00045">TEXTDISPLAY_EMSTATUS_OK</a>.</p>
-
-<p>Referenced by <a class="el" href="retargettextdisplay_8c_source.html#l00116">RETARGET_WriteString()</a>.</p>
+<p>References <a class="el" href="group__Textdisplay.html#ga3e7ec7ac247089a051faa1831ea1e08b">TEXTDISPLAY_EMSTATUS_INVALID_PARAM</a>, and <a class="el" href="group__Textdisplay.html#gafeec0d4459c2afed8055201214c21139">TEXTDISPLAY_EMSTATUS_OK</a>.</p>
 
 </div>
 </div>
@@ -535,6 +413,8 @@ TEXTDISPLAY Kit Configuration</h2>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable or disable LF to CR+LF conversion. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Text display handle associated with the text display to write the character on. </td></tr>
@@ -546,7 +426,133 @@ TEXTDISPLAY Kit Configuration</h2>
 
 <p>Definition at line <a class="el" href="textdisplay_8c_source.html#l00361">361</a> of file <a class="el" href="textdisplay_8c_source.html">textdisplay.c</a>.</p>
 
-<p>References <a class="el" href="textdisplay_8h_source.html#l00045">TEXTDISPLAY_EMSTATUS_OK</a>.</p>
+<p>References <a class="el" href="group__Textdisplay.html#gafeec0d4459c2afed8055201214c21139">TEXTDISPLAY_EMSTATUS_OK</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0a9d10a115aa9baddd7c189f0d824570"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EMSTATUS TEXTDISPLAY_New </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a> *&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new text display device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Configuration data structure for the text display device to create. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>Pointer to text display handle which will be returned if the function is successful.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>EMSTATUS code of the operation. </dd></dl>
+
+<p>Definition at line <a class="el" href="textdisplay_8c_source.html#l00210">210</a> of file <a class="el" href="textdisplay_8c_source.html">textdisplay.c</a>.</p>
+
+<p>References <a class="el" href="group__Display.html#gga9bd101ffd5a8bdde4095b5b6e0f44cfca1ccd9c1fe86bb016315d028c3e7c0b3d">DISPLAY_ADDRESSING_BY_ROWS_ONLY</a>, <a class="el" href="group__Display.html#ga156caca2b556cc968f8f4f106a68628a">DISPLAY_DeviceGet()</a>, <a class="el" href="group__Display.html#gaa5cb853e3c35b188018b6d2f4c6c3889">DISPLAY_EMSTATUS_OK</a>, <a class="el" href="structTEXTDISPLAY__Config__t.html#ad1414884e0e326add1798e62c610fa33">TEXTDISPLAY_Config_t::displayDeviceNo</a>, <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>, <a class="el" href="structTEXTDISPLAY__Config__t.html#aae4d4c24d67076baa049bb7d8ea9099e">TEXTDISPLAY_Config_t::lfToCrLf</a>, <a class="el" href="structTEXTDISPLAY__Config__t.html#a36d35117d8ebfd29e880790c43e29d6c">TEXTDISPLAY_Config_t::scrollEnable</a>, <a class="el" href="group__Textdisplay.html#gadaa3c9a13b74cb20471b0dfa9c15bb7a">TEXTDISPLAY_EMSTATUS_NOT_ENOUGH_MEMORY</a>, <a class="el" href="group__Textdisplay.html#gafeec0d4459c2afed8055201214c21139">TEXTDISPLAY_EMSTATUS_OK</a>, and <a class="el" href="group__Textdisplay.html#ga3ae7753b4f459b75798ea12bb3ce49d6">TEXTDISPLAY_EMSTATUS_OUT_OF_RANGE</a>.</p>
+
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga1f514c0ebfe9dd2c24f293be0edfaf9b">RETARGET_TextDisplayInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3a2e2388e48b53f5634e78fc6c48bc76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EMSTATUS TEXTDISPLAY_WriteChar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write a single character to a text display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Text display handle associated with the text display to write the character on. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>Character to write.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>EMSTATUS code of the operation. </dd></dl>
+
+<p>Definition at line <a class="el" href="textdisplay_8c_source.html#l00381">381</a> of file <a class="el" href="textdisplay_8c_source.html">textdisplay.c</a>.</p>
+
+<p>References <a class="el" href="group__Display.html#gga9bd101ffd5a8bdde4095b5b6e0f44cfca1ccd9c1fe86bb016315d028c3e7c0b3d">DISPLAY_ADDRESSING_BY_ROWS_ONLY</a>, <a class="el" href="group__Textdisplay.html#ga280f0ec4e7d9b3a9746944366cdc98c7">TEXTDISPLAY_EMSTATUS_NOT_INITIALIZED</a>, and <a class="el" href="group__Textdisplay.html#gafeec0d4459c2afed8055201214c21139">TEXTDISPLAY_EMSTATUS_OK</a>.</p>
+
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab41a8aa41d06a94b8547766bac64c13d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EMSTATUS TEXTDISPLAY_WriteString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write a string of characters to a text display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Text display handle associated with the text display to write the character string on. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>String to write.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>EMSTATUS code of the operation. </dd></dl>
+
+<p>Definition at line <a class="el" href="textdisplay_8c_source.html#l00454">454</a> of file <a class="el" href="textdisplay_8c_source.html">textdisplay.c</a>.</p>
+
+<p>References <a class="el" href="group__Display.html#gga9bd101ffd5a8bdde4095b5b6e0f44cfca1ccd9c1fe86bb016315d028c3e7c0b3d">DISPLAY_ADDRESSING_BY_ROWS_ONLY</a>, <a class="el" href="group__Textdisplay.html#ga280f0ec4e7d9b3a9746944366cdc98c7">TEXTDISPLAY_EMSTATUS_NOT_INITIALIZED</a>, and <a class="el" href="group__Textdisplay.html#gafeec0d4459c2afed8055201214c21139">TEXTDISPLAY_EMSTATUS_OK</a>.</p>
+
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga3603601be1ab26bec300eebb3cc5c5f9">RETARGET_WriteString()</a>.</p>
 
 </div>
 </div>
@@ -555,7 +561,7 @@ TEXTDISPLAY Kit Configuration</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:04 for EFM32 Pearl Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:38:48 for EFM32 Pearl Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

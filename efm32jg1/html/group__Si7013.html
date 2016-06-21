@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -106,45 +104,45 @@ $(document).ready(function(){initNavTree('group__Si7013.html','');});
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Si7013<div class="ingroups"><a class="el" href="group__Drivers.html">Drivers</a></div></div>  </div>
+<div class="title">Si7013<div class="ingroups"><a class="el" href="group__kitdrv.html">Kit Drivers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga986af06f786d47cab5a307d1fe2e3ba4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#ga986af06f786d47cab5a307d1fe2e3ba4">SI7013_ADDR</a>&#160;&#160;&#160;0x82</td></tr>
 <tr class="separator:ga986af06f786d47cab5a307d1fe2e3ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae2f3ab58a249649a0460ffe3826f8d60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#gae2f3ab58a249649a0460ffe3826f8d60">SI7021_ADDR</a>&#160;&#160;&#160;0x80</td></tr>
-<tr class="separator:gae2f3ab58a249649a0460ffe3826f8d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga14de9ae49610d520a6ff1f04de44b0e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#ga14de9ae49610d520a6ff1f04de44b0e2">SI7013_DEVICE_ID</a>&#160;&#160;&#160;0x0D</td></tr>
 <tr class="separator:ga14de9ae49610d520a6ff1f04de44b0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2be15e778b7aea159ed0aad29edf0e76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#ga2be15e778b7aea159ed0aad29edf0e76">SI7020_DEVICE_ID</a>&#160;&#160;&#160;0x14</td></tr>
 <tr class="separator:ga2be15e778b7aea159ed0aad29edf0e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2f3ab58a249649a0460ffe3826f8d60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#gae2f3ab58a249649a0460ffe3826f8d60">SI7021_ADDR</a>&#160;&#160;&#160;0x80</td></tr>
+<tr class="separator:gae2f3ab58a249649a0460ffe3826f8d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabf536578690c1223178bba781ab3b78e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#gabf536578690c1223178bba781ab3b78e">SI7021_DEVICE_ID</a>&#160;&#160;&#160;0x21</td></tr>
 <tr class="separator:gabf536578690c1223178bba781ab3b78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gac98bb80b752e8d70e52fb58f4382237b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#gac98bb80b752e8d70e52fb58f4382237b">Si7013_MeasureRHAndTemp</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint32_t *rhData, int32_t *tData)</td></tr>
-<tr class="memdesc:gac98bb80b752e8d70e52fb58f4382237b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads relative humidity and temperature from a Si7013 sensor.  <a href="#gac98bb80b752e8d70e52fb58f4382237b">More...</a><br /></td></tr>
-<tr class="separator:gac98bb80b752e8d70e52fb58f4382237b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac595b86107a208280179a6f07c08bfa3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#gac595b86107a208280179a6f07c08bfa3">Si7013_GetFirmwareRevision</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint8_t *fwRev)</td></tr>
-<tr class="memdesc:gac595b86107a208280179a6f07c08bfa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads Firmware Revision from a Si7013 sensor.  <a href="#gac595b86107a208280179a6f07c08bfa3">More...</a><br /></td></tr>
-<tr class="separator:gac595b86107a208280179a6f07c08bfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga93b1a4e0a94737abd16ec547004c270f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#ga93b1a4e0a94737abd16ec547004c270f">Si7013_Detect</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint8_t *deviceId)</td></tr>
 <tr class="memdesc:ga93b1a4e0a94737abd16ec547004c270f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a Si7013 is present on the I2C bus or not.  <a href="#ga93b1a4e0a94737abd16ec547004c270f">More...</a><br /></td></tr>
 <tr class="separator:ga93b1a4e0a94737abd16ec547004c270f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac595b86107a208280179a6f07c08bfa3"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#gac595b86107a208280179a6f07c08bfa3">Si7013_GetFirmwareRevision</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint8_t *fwRev)</td></tr>
+<tr class="memdesc:gac595b86107a208280179a6f07c08bfa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads Firmware Revision from a Si7013 sensor.  <a href="#gac595b86107a208280179a6f07c08bfa3">More...</a><br /></td></tr>
+<tr class="separator:gac595b86107a208280179a6f07c08bfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac98bb80b752e8d70e52fb58f4382237b"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#gac98bb80b752e8d70e52fb58f4382237b">Si7013_MeasureRHAndTemp</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint32_t *rhData, int32_t *tData)</td></tr>
+<tr class="memdesc:gac98bb80b752e8d70e52fb58f4382237b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads relative humidity and temperature from a Si7013 sensor.  <a href="#gac98bb80b752e8d70e52fb58f4382237b">More...</a><br /></td></tr>
+<tr class="separator:gac98bb80b752e8d70e52fb58f4382237b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e0ff510d89029fafb509e8c0257e0b0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#ga4e0ff510d89029fafb509e8c0257e0b0">Si7013_MeasureV</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, int32_t *vData)</td></tr>
+<tr class="memdesc:ga4e0ff510d89029fafb509e8c0257e0b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads relative humidity and temperature from a Si7013 sensor.  <a href="#ga4e0ff510d89029fafb509e8c0257e0b0">More...</a><br /></td></tr>
+<tr class="separator:ga4e0ff510d89029fafb509e8c0257e0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3eff490673aecb28afaadd73b2a3712f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#ga3eff490673aecb28afaadd73b2a3712f">Si7013_ReadNoHoldRHAndTemp</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, uint32_t *rhData, int32_t *tData)</td></tr>
 <tr class="memdesc:ga3eff490673aecb28afaadd73b2a3712f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads relative humidity and temperature from a Si7013 sensor.  <a href="#ga3eff490673aecb28afaadd73b2a3712f">More...</a><br /></td></tr>
 <tr class="separator:ga3eff490673aecb28afaadd73b2a3712f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3b89607cfc5570713fa1ec217d1dca2a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#ga3b89607cfc5570713fa1ec217d1dca2a">Si7013_StartNoHoldMeasureRHAndTemp</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr)</td></tr>
 <tr class="memdesc:ga3b89607cfc5570713fa1ec217d1dca2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts no hold measurement of relative humidity and temperature from a Si7013 sensor.  <a href="#ga3b89607cfc5570713fa1ec217d1dca2a">More...</a><br /></td></tr>
 <tr class="separator:ga3b89607cfc5570713fa1ec217d1dca2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4e0ff510d89029fafb509e8c0257e0b0"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Si7013.html#ga4e0ff510d89029fafb509e8c0257e0b0">Si7013_MeasureV</a> (<a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *i2c, uint8_t addr, int32_t *vData)</td></tr>
-<tr class="memdesc:ga4e0ff510d89029fafb509e8c0257e0b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads relative humidity and temperature from a Si7013 sensor.  <a href="#ga4e0ff510d89029fafb509e8c0257e0b0">More...</a><br /></td></tr>
-<tr class="separator:ga4e0ff510d89029fafb509e8c0257e0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga986af06f786d47cab5a307d1fe2e3ba4"></a>
 <div class="memitem">
@@ -158,21 +156,6 @@ Functions</h2></td></tr>
 <p>I2C device address for Si7013 </p>
 
 <p>Definition at line <a class="el" href="si7013_8h_source.html#l00041">41</a> of file <a class="el" href="si7013_8h_source.html">si7013.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gae2f3ab58a249649a0460ffe3826f8d60"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI7021_ADDR&#160;&#160;&#160;0x80</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>I2C device address for Si7021 </p>
-
-<p>Definition at line <a class="el" href="si7013_8h_source.html#l00043">43</a> of file <a class="el" href="si7013_8h_source.html">si7013.h</a>.</p>
 
 </div>
 </div>
@@ -206,6 +189,21 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gae2f3ab58a249649a0460ffe3826f8d60"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SI7021_ADDR&#160;&#160;&#160;0x80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>I2C device address for Si7021 </p>
+
+<p>Definition at line <a class="el" href="si7013_8h_source.html#l00043">43</a> of file <a class="el" href="si7013_8h_source.html">si7013.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gabf536578690c1223178bba781ab3b78e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -222,6 +220,100 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga93b1a4e0a94737abd16ec547004c270f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Si7013_Detect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>i2c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>deviceId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a Si7013 is present on the I2C bus or not. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i2c</td><td>The I2C peripheral to use (Not used). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The I2C address to probe. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">deviceId</td><td>Write device ID from SNB_3 if device reponds. Pass in NULL to discard. Should be 0x0D for Si7013, 0x14 for Si7020 or 0x15 for Si7021 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a Si7013 is detected, false otherwise. </dd></dl>
+
+<p>Definition at line <a class="el" href="si7013_8c_source.html#l00407">407</a> of file <a class="el" href="si7013_8c_source.html">si7013.c</a>.</p>
+
+<p>References <a class="el" href="structI2C__TransferSeq__TypeDef.html#a864fcee4abd27c2dab5723c2d2493ed0">I2C_TransferSeq_TypeDef::addr</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">I2C_TransferSeq_TypeDef::buf</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#ac50f3e038b429e01fd5b2bdfede2f674">I2C_TransferSeq_TypeDef::data</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#aa9eb709e67fbaa4acb9a4964ca5174cb">I2C_TransferSeq_TypeDef::flags</a>, <a class="el" href="group__I2C.html#gaf9fc47d6ee1c66405dc491f7a4c3b8fc">I2C_FLAG_WRITE_READ</a>, <a class="el" href="group__I2CSPM.html#ga076766b20012fb6a0cdaaf0f2c760795">I2CSPM_Transfer()</a>, <a class="el" href="group__I2C.html#gga7c781ec28ae11e3e28892de7aa07a00fa01149f9a11ada8a9b05e7104f873de66">i2cTransferDone</a>, and <a class="el" href="structI2C__TransferSeq__TypeDef.html#a92b6d16d6d3b3e4d5650740fa306a285">I2C_TransferSeq_TypeDef::len</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac595b86107a208280179a6f07c08bfa3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t Si7013_GetFirmwareRevision </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>i2c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>fwRev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads Firmware Revision from a Si7013 sensor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i2c</td><td>The I2C peripheral to use. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The I2C address of the sensor. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">fwRev</td><td>The internal firmware revision. 0xFF === 1.0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns zero on OK, non-zero otherwise. </dd></dl>
+
+<p>Definition at line <a class="el" href="si7013_8c_source.html#l00157">157</a> of file <a class="el" href="si7013_8c_source.html">si7013.c</a>.</p>
+
+<p>References <a class="el" href="structI2C__TransferSeq__TypeDef.html#a864fcee4abd27c2dab5723c2d2493ed0">I2C_TransferSeq_TypeDef::addr</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">I2C_TransferSeq_TypeDef::buf</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#ac50f3e038b429e01fd5b2bdfede2f674">I2C_TransferSeq_TypeDef::data</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#aa9eb709e67fbaa4acb9a4964ca5174cb">I2C_TransferSeq_TypeDef::flags</a>, <a class="el" href="group__I2C.html#gaf9fc47d6ee1c66405dc491f7a4c3b8fc">I2C_FLAG_WRITE_READ</a>, <a class="el" href="group__I2CSPM.html#ga076766b20012fb6a0cdaaf0f2c760795">I2CSPM_Transfer()</a>, <a class="el" href="group__I2C.html#gga7c781ec28ae11e3e28892de7aa07a00fa01149f9a11ada8a9b05e7104f873de66">i2cTransferDone</a>, and <a class="el" href="structI2C__TransferSeq__TypeDef.html#a92b6d16d6d3b3e4d5650740fa306a285">I2C_TransferSeq_TypeDef::len</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gac98bb80b752e8d70e52fb58f4382237b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -257,6 +349,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Reads relative humidity and temperature from a Si7013 sensor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">i2c</td><td>The I2C peripheral to use. </td></tr>
@@ -272,12 +366,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gac595b86107a208280179a6f07c08bfa3"></a>
+<a class="anchor" id="ga4e0ff510d89029fafb509e8c0257e0b0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t Si7013_GetFirmwareRevision </td>
+          <td class="memname">int32_t Si7013_MeasureV </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *&#160;</td>
           <td class="paramname"><em>i2c</em>, </td>
@@ -291,8 +385,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>fwRev</em>&#160;</td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>vData</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -301,64 +395,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Reads relative humidity and temperature from a Si7013 sensor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">i2c</td><td>The I2C peripheral to use. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The I2C address of the sensor. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">fwRev</td><td>The internal firmware revision. 0xFF === 1.0 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">vData</td><td>The data read from the sensor. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns zero on OK, non-zero otherwise. </dd></dl>
 
-<p>Definition at line <a class="el" href="si7013_8c_source.html#l00157">157</a> of file <a class="el" href="si7013_8c_source.html">si7013.c</a>.</p>
-
-<p>References <a class="el" href="em__i2c_8h_source.html#l00257">I2C_TransferSeq_TypeDef::addr</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">I2C_TransferSeq_TypeDef::buf</a>, <a class="el" href="em__i2c_8h_source.html#l00269">I2C_TransferSeq_TypeDef::data</a>, <a class="el" href="em__i2c_8h_source.html#l00260">I2C_TransferSeq_TypeDef::flags</a>, <a class="el" href="em__i2c_8h_source.html#l00143">I2C_FLAG_WRITE_READ</a>, <a class="el" href="i2cspm_8c_source.html#l00124">I2CSPM_Transfer()</a>, <a class="el" href="em__i2c_8h_source.html#l00180">i2cTransferDone</a>, and <a class="el" href="em__i2c_8h_source.html#l00278">I2C_TransferSeq_TypeDef::len</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga93b1a4e0a94737abd16ec547004c270f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Si7013_Detect </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>i2c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>deviceId</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">i2c</td><td>The I2C peripheral to use (Not used). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The I2C address to probe. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">deviceId</td><td>Write device ID from SNB_3 if device reponds. Pass in NULL to discard. Should be 0x0D for Si7013, 0x14 for Si7020 or 0x15 for Si7021 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if a Si7013 is detected, false otherwise. </dd></dl>
-
-<p>Definition at line <a class="el" href="si7013_8c_source.html#l00407">407</a> of file <a class="el" href="si7013_8c_source.html">si7013.c</a>.</p>
-
-<p>References <a class="el" href="em__i2c_8h_source.html#l00257">I2C_TransferSeq_TypeDef::addr</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">I2C_TransferSeq_TypeDef::buf</a>, <a class="el" href="em__i2c_8h_source.html#l00269">I2C_TransferSeq_TypeDef::data</a>, <a class="el" href="em__i2c_8h_source.html#l00260">I2C_TransferSeq_TypeDef::flags</a>, <a class="el" href="em__i2c_8h_source.html#l00143">I2C_FLAG_WRITE_READ</a>, <a class="el" href="i2cspm_8c_source.html#l00124">I2CSPM_Transfer()</a>, <a class="el" href="em__i2c_8h_source.html#l00180">i2cTransferDone</a>, and <a class="el" href="em__i2c_8h_source.html#l00278">I2C_TransferSeq_TypeDef::len</a>.</p>
+<p>Definition at line <a class="el" href="si7013_8c_source.html#l00376">376</a> of file <a class="el" href="si7013_8c_source.html">si7013.c</a>.</p>
 
 </div>
 </div>
@@ -397,6 +446,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Reads relative humidity and temperature from a Si7013 sensor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">i2c</td><td>The I2C peripheral to use. </td></tr>
@@ -435,6 +486,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Starts no hold measurement of relative humidity and temperature from a Si7013 sensor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">i2c</td><td>The I2C peripheral to use. </td></tr>
@@ -448,55 +501,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga4e0ff510d89029fafb509e8c0257e0b0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t Si7013_MeasureV </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structI2C__TypeDef.html">I2C_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>i2c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>vData</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">i2c</td><td>The I2C peripheral to use. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>The I2C address of the sensor. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">vData</td><td>The data read from the sensor. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns zero on OK, non-zero otherwise. </dd></dl>
-
-<p>Definition at line <a class="el" href="si7013_8c_source.html#l00376">376</a> of file <a class="el" href="si7013_8c_source.html">si7013.c</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:50 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:41:02 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

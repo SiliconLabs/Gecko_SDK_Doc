@@ -1,8 +1,7 @@
 var em__wdog_8c =
 [
-    [ "WDOG", "em__wdog_8c.html#ab938901a5fa5443253fc293ebd0399e3", null ],
-    [ "WDOG_Enable", "group__WDOG.html#ga662ed794f642aac8293b7cae09c4b223", null ],
-    [ "WDOG_Feed", "group__WDOG.html#gabf4cfa0c00f36eb71896f2ce1e884d27", null ],
-    [ "WDOG_Init", "group__WDOG.html#ga227aa37d1eab4e7748ecc801c386c7a7", null ],
-    [ "WDOG_Lock", "group__WDOG.html#ga26823031e069f4133964156550b64097", null ]
+    [ "WDOGn_Enable", "group__WDOG.html#gaccf944498d4c40e6d87afa84e06d297b", null ],
+    [ "WDOGn_Feed", "group__WDOG.html#ga21dd2a92e33eaf3edd48d626cb4ff72b", null ],
+    [ "WDOGn_Init", "group__WDOG.html#ga3de9748141ca1e172ec40a77b8e86433", null ],
+    [ "WDOGn_Lock", "group__WDOG.html#ga638259d740de220fb9b34a5b9654e182", null ]
 ];

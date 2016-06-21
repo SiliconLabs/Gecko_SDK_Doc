@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['rmu_5freset_5ftypedef',['RMU_Reset_TypeDef',['../group__RMU.html#ga8ac0ad7bdf565905989745354d31cb07',1,'em_rmu.h']]],
-  ['rmu_5fresetmode_5ftypedef',['RMU_ResetMode_TypeDef',['../group__RMU.html#gaa68fbe3a3279aff1f10fb2fb9f2b98fe',1,'em_rmu.h']]],
-  ['rtcdrv_5ftimertype_5ft',['RTCDRV_TimerType_t',['../group__RTCDRV.html#ga08a8750e466e18aee02bbb692446dac9',1,'rtcdriver.h']]]
+  ['pcnt_5fcntevent_5ftypedef',['PCNT_CntEvent_TypeDef',['../group__PCNT.html#gaf5d5d7081a8e56ad0571addc1028ac5c',1,'em_pcnt.h']]],
+  ['pcnt_5fmode_5ftypedef',['PCNT_Mode_TypeDef',['../group__PCNT.html#ga2fb0fc7f68c902b71b271ba5687643a4',1,'em_pcnt.h']]],
+  ['pcnt_5fprsinput_5ftypedef',['PCNT_PRSInput_TypeDef',['../group__PCNT.html#gae186a75007f832e0de80ccae92528104',1,'em_pcnt.h']]],
+  ['pcnt_5fprssel_5ftypedef',['PCNT_PRSSel_TypeDef',['../group__PCNT.html#ga1e54a6fa69a7da44510c6f38ced54486',1,'em_pcnt.h']]],
+  ['prs_5fedge_5ftypedef',['PRS_Edge_TypeDef',['../group__PRS.html#ga853e2a53ed99eb3a0c5e163e1d33e814',1,'em_prs.h']]]
 ];

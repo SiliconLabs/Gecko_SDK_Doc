@@ -1,11 +1,11 @@
 var spidrv_8c =
 [
-    [ "SPIDRV_Init", "group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239", null ],
-    [ "SPIDRV_DeInit", "group__SPIDRV.html#ga1bebced0f8f5b3a3ac582916e4b13460", null ],
     [ "SPIDRV_AbortTransfer", "group__SPIDRV.html#ga071d128b28b8acff08396fb090b8025a", null ],
+    [ "SPIDRV_DeInit", "group__SPIDRV.html#ga1bebced0f8f5b3a3ac582916e4b13460", null ],
     [ "SPIDRV_GetBitrate", "group__SPIDRV.html#ga9b3613b7cfbd6f3584a957c757934841", null ],
     [ "SPIDRV_GetFramelength", "group__SPIDRV.html#ga08075cb727e683585eeace6de71fcc80", null ],
     [ "SPIDRV_GetTransferStatus", "group__SPIDRV.html#ga7d440db45246649580c6c5b08eb332da", null ],
+    [ "SPIDRV_Init", "group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239", null ],
     [ "SPIDRV_MReceive", "group__SPIDRV.html#ga791215fe6c21c8630d8acd45dd02491c", null ],
     [ "SPIDRV_MReceiveB", "group__SPIDRV.html#gace57de2fe713e7eed216c8f4d00e19b8", null ],
     [ "SPIDRV_MTransfer", "group__SPIDRV.html#ga783d2e10fd457bdb7b214f59238c3deb", null ],

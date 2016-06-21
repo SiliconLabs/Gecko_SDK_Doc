@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -112,8 +110,8 @@ $(document).ready(function(){initNavTree('em__aes_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="em__aes_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef __SILICON_LABS_EM_AES_H__</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define __SILICON_LABS_EM_AES_H__</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef EM_AES_H</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define EM_AES_H</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__device_8h.html">em_device.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined(AES_COUNT) &amp;&amp; (AES_COUNT &gt; 0)</span></div>
@@ -271,13 +269,13 @@ $(document).ready(function(){initNavTree('em__aes_8h_source.html','');});
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(AES_COUNT) &amp;&amp; (AES_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SILICON_LABS_EM_AES_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_AES_H */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
 <div class="ttc" id="group__AES_html_gae7ec6a859651936fb72513965a415638"><div class="ttname"><a href="group__AES.html#gae7ec6a859651936fb72513965a415638">AES_IntGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t AES_IntGet(void)</div><div class="ttdoc">Get pending AES interrupt flags. </div><div class="ttdef"><b>Definition:</b> <a href="em__aes_8h_source.html#l00200">em_aes.h:200</a></div></div>
 <div class="ttc" id="group__AES_html_ga5a0c2448f7c6b17427d2103fde30f33f"><div class="ttname"><a href="group__AES.html#ga5a0c2448f7c6b17427d2103fde30f33f">AES_CTRUpdate32Bit</a></div><div class="ttdeci">void AES_CTRUpdate32Bit(uint8_t *ctr)</div><div class="ttdoc">Update last 32 bits of 128 bit counter, by incrementing with 1. </div><div class="ttdef"><b>Definition:</b> <a href="em__aes_8c_source.html#l00883">em_aes.c:883</a></div></div>
 <div class="ttc" id="group__AES_html_ga0b9664ab0522d8f834cae9b6635802cd"><div class="ttname"><a href="group__AES.html#ga0b9664ab0522d8f834cae9b6635802cd">AES_IntDisable</a></div><div class="ttdeci">__STATIC_INLINE void AES_IntDisable(uint32_t flags)</div><div class="ttdoc">Disable one or more AES interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__aes_8h_source.html#l00164">em_aes.h:164</a></div></div>
-<div class="ttc" id="group__EZR32WG330F256R69__Peripheral__Declaration_html_ga5412ac9ff64f4ab68c289a0da739eaef"><div class="ttname"><a href="group__EZR32WG330F256R69__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a></div><div class="ttdeci">#define AES</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg330f256r69_8h_source.html#l00395">ezr32wg330f256r69.h:395</a></div></div>
+<div class="ttc" id="group__EZR32WG330F256R69__Peripheral__Declaration_html_ga5412ac9ff64f4ab68c289a0da739eaef"><div class="ttname"><a href="group__EZR32WG330F256R69__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a></div><div class="ttdeci">#define AES</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg330f256r69_8h_source.html#l00398">ezr32wg330f256r69.h:398</a></div></div>
 <div class="ttc" id="group__AES_html_gab027d148043c0fec187940c9493e3fb6"><div class="ttname"><a href="group__AES.html#gab027d148043c0fec187940c9493e3fb6">AES_IntGetEnabled</a></div><div class="ttdeci">__STATIC_INLINE uint32_t AES_IntGetEnabled(void)</div><div class="ttdoc">Get enabled and pending AES interrupt flags. Useful for handling more interrupt sources in the same i...</div><div class="ttdef"><b>Definition:</b> <a href="em__aes_8h_source.html#l00220">em_aes.h:220</a></div></div>
 <div class="ttc" id="group__AES_html_ga237a5765f5ea75f9d96d3bebab4294d8"><div class="ttname"><a href="group__AES.html#ga237a5765f5ea75f9d96d3bebab4294d8">AES_IntEnable</a></div><div class="ttdeci">__STATIC_INLINE void AES_IntEnable(uint32_t flags)</div><div class="ttdoc">Enable one or more AES interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__aes_8h_source.html#l00183">em_aes.h:183</a></div></div>
 <div class="ttc" id="group__AES_html_gad13d72ceabfc5e05ef89d89dda50745a"><div class="ttname"><a href="group__AES.html#gad13d72ceabfc5e05ef89d89dda50745a">AES_DecryptKey128</a></div><div class="ttdeci">void AES_DecryptKey128(uint8_t *out, const uint8_t *in)</div><div class="ttdoc">Generate 128 bit decryption key from 128 bit encryption key. The decryption key is used for some ciph...</div><div class="ttdef"><b>Definition:</b> <a href="em__aes_8c_source.html#l00906">em_aes.c:906</a></div></div>
@@ -302,7 +300,7 @@ $(document).ready(function(){initNavTree('em__aes_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__aes_8h.html">em_aes.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:42:30 for EZR32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:45:10 for EZR32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

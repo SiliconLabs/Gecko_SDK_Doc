@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lba',['lba',['../structMSDD__CmdStatus__TypeDef.html#a3459bee80f45f8511927bf70dacd6483',1,'MSDD_CmdStatus_TypeDef::lba()'],['../structMSDSCSI__ReadCapacity__TypeDef.html#a68cd5734a4019cd89f9880c7ea74b95b',1,'MSDSCSI_ReadCapacity_TypeDef::Lba()'],['../structMSDSCSI__Read10__TypeDef.html#a0f7d380926a76054cfc9f1ba47e606b0',1,'MSDSCSI_Read10_TypeDef::Lba()'],['../structMSDSCSI__Write10__TypeDef.html#a8e61a32441fc28c57dbc04a9962d0386',1,'MSDSCSI_Write10_TypeDef::Lba()'],['../structMSDSCSI__Verify10__TypeDef.html#aea2da4d7826b701c8eeaf629a291e332',1,'MSDSCSI_Verify10_TypeDef::Lba()']]],
+  ['lba',['lba',['../structMSDD__CmdStatus__TypeDef.html#a3459bee80f45f8511927bf70dacd6483',1,'MSDD_CmdStatus_TypeDef::lba()'],['../structSL__ATTRIBUTE__PACKED.html#a22ae8e7da0a4c38fcd2a50fa19c40243',1,'SL_ATTRIBUTE_PACKED::Lba()']]],
   ['lcdctrl',['LCDCTRL',['../structCMU__TypeDef.html#af33239943fda45a18ef1ad52796c4998',1,'CMU_TypeDef']]],
   ['ledi_5f65ma',['ledi_65ma',['../structcal__ref__t.html#a3c59d27a27e683b75c71ad90143c9773',1,'cal_ref_t']]],
   ['ledi_5fratio',['ledi_ratio',['../structSI114X__CAL__S.html#a7f39e0d41093e11b7557c86903fe5093',1,'SI114X_CAL_S']]],
@@ -17,17 +17,17 @@ var searchData=
   ['lfclksel',['LFCLKSEL',['../structCMU__TypeDef.html#a56ef8cc60b35cb183706d3bbfdafc18f',1,'CMU_TypeDef']]],
   ['lfrcoctrl',['LFRCOCTRL',['../structCMU__TypeDef.html#addd7ed9144cb535cf8cd146298122491',1,'CMU_TypeDef']]],
   ['lftocrlf',['lfToCrLf',['../structTEXTDISPLAY__Config__t.html#aae4d4c24d67076baa049bb7d8ea9099e',1,'TEXTDISPLAY_Config_t::lfToCrLf()'],['../group__RetargetIo.html#ga39f367ecd73dc4d3885a2f7e3117ac8c',1,'LFtoCRLF():&#160;retargetserial.c'],['../retargettft_8c.html#a348ac2c49f51720a95cfedffc5476fa6',1,'LFtoCRLF():&#160;retargettft.c']]],
-  ['linked',['Linked',['../structMSDSCSI__InquiryData__TypeDef.html#a8e8b9cd39602920d09cce83ff7f11a31',1,'MSDSCSI_InquiryData_TypeDef']]],
+  ['linked',['Linked',['../structSL__ATTRIBUTE__PACKED.html#aadc8a050bfeb546cf4558daf929f3f3d',1,'SL_ATTRIBUTE_PACKED']]],
   ['lirpd_5fadchi_5firled',['lirpd_adchi_irled',['../structcal__ref__t.html#af73d08084a1d8dd21c9e3bf01b3bad4f',1,'cal_ref_t']]],
   ['lock',['LOCK',['../structCMU__TypeDef.html#ae2eab81f0ada97c5a8a96d3e698a2d0d',1,'CMU_TypeDef::LOCK()'],['../structEMU__TypeDef.html#a28db2cb3e33748114e51a11988714af1',1,'EMU_TypeDef::LOCK()'],['../structGPIO__TypeDef.html#af896db84304ad60fc765ba9715ad9440',1,'GPIO_TypeDef::LOCK()'],['../structMSC__TypeDef.html#a4b461389296286bbe63fa88ebef6a74e',1,'MSC_TypeDef::LOCK()'],['../structWDOG__Init__TypeDef.html#a15ac1297036d0a0e49cb6ebc5d355fb2',1,'WDOG_Init_TypeDef::lock()']]],
-  ['loej',['LoEj',['../structMSDSCSI__StartStopUnit__TypeDef.html#ade192c3c1d97bc4aae65977e9eb22c8f',1,'MSDSCSI_StartStopUnit_TypeDef']]],
-  ['logicalblockaddress',['LogicalBlockAddress',['../structMSDSCSI__ReadCapacityData__TypeDef.html#a0a1147829445f6b2e1da2fd86ce45d91',1,'MSDSCSI_ReadCapacityData_TypeDef']]],
-  ['logicalblocklength',['LogicalBlockLength',['../structMSDSCSI__ReadCapacityData__TypeDef.html#a345dd2117f77e23f8f991c2568e266e5',1,'MSDSCSI_ReadCapacityData_TypeDef']]],
+  ['loej',['LoEj',['../structSL__ATTRIBUTE__PACKED.html#a2093bcbbd11a128257ff9825f4bd010e',1,'SL_ATTRIBUTE_PACKED']]],
+  ['logicalblockaddress',['LogicalBlockAddress',['../structSL__ATTRIBUTE__PACKED.html#aec39f99d617d38110cdb5ed99e36676c',1,'SL_ATTRIBUTE_PACKED']]],
+  ['logicalblocklength',['LogicalBlockLength',['../structSL__ATTRIBUTE__PACKED.html#a25dc63f8345a314d903952de1aea0452',1,'SL_ATTRIBUTE_PACKED']]],
   ['lowpowerref',['lowPowerRef',['../structVCMP__Init__TypeDef.html#a771e03a21f518fb2e2f750d315c22aaa',1,'VCMP_Init_TypeDef']]],
   ['lowpowerreferenceenabled',['lowPowerReferenceEnabled',['../structACMP__CapsenseInit__TypeDef.html#aa05612b51a2fe56846058841f316657b',1,'ACMP_CapsenseInit_TypeDef::lowPowerReferenceEnabled()'],['../structACMP__Init__TypeDef.html#a8794108b50a9a5b87f64833fec9d381e',1,'ACMP_Init_TypeDef::lowPowerReferenceEnabled()']]],
   ['lpenable',['lpEnable',['../structDAC__Init__TypeDef.html#ad4f7c1b91d83bd737af35e13383067e9',1,'DAC_Init_TypeDef']]],
   ['lpfmode',['lpfMode',['../structADC__Init__TypeDef.html#aeb7d380d6aefa3e2b8fa9150cb2af1e7',1,'ADC_Init_TypeDef']]],
   ['lpfnegpaddisable',['lpfNegPadDisable',['../structOPAMP__Init__TypeDef.html#ae7f7cea11df855842be350561162d118',1,'OPAMP_Init_TypeDef']]],
   ['lpfpospaddisable',['lpfPosPadDisable',['../structOPAMP__Init__TypeDef.html#a94ac20bd14716b2826e9100ab5a69efe',1,'OPAMP_Init_TypeDef']]],
-  ['lun',['Lun',['../structMSDBOT__CBW__TypeDef.html#adab4dcae6200ccb3a2a5d0671aba3be5',1,'MSDBOT_CBW_TypeDef']]]
+  ['lun',['Lun',['../structSL__ATTRIBUTE__PACKED.html#a19939c1e6bdd3103d0e287e4d2163d23',1,'SL_ATTRIBUTE_PACKED']]]
 ];

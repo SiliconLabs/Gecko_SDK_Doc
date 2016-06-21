@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Giant Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32gg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32gg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -116,10 +114,23 @@ $(document).ready(function(){initNavTree('em__burtc_8h.html','');});
 <div class="title">em_burtc.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Backup Real Time Counter (BURTC) peripheral API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>Backup Real Time Counter (BURTC) peripheral API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="em__burtc_8h_source.html">em_burtc.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="em__assert_8h_source.html">em_assert.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__bus_8h_source.html">em_bus.h</a>&quot;</code><br />
@@ -133,24 +144,24 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gac1b6cd6dd18ce7a52b110b2450c84419"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gac1b6cd6dd18ce7a52b110b2450c84419">burtcClkDiv_1</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:gac1b6cd6dd18ce7a52b110b2450c84419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac055253fbd1316f7f14b67c0ff4e0979"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gac055253fbd1316f7f14b67c0ff4e0979">burtcClkDiv_2</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:gac055253fbd1316f7f14b67c0ff4e0979"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga497f813046f895121ca3e34ba47f97ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga497f813046f895121ca3e34ba47f97ff">burtcClkDiv_4</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:ga497f813046f895121ca3e34ba47f97ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabbf35ac69394c9c039a685fdbf0a883b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gabbf35ac69394c9c039a685fdbf0a883b">burtcClkDiv_8</a>&#160;&#160;&#160;8</td></tr>
-<tr class="separator:gabbf35ac69394c9c039a685fdbf0a883b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga722313384eff111d40aa4df2468614ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga722313384eff111d40aa4df2468614ae">burtcClkDiv_16</a>&#160;&#160;&#160;16</td></tr>
-<tr class="separator:ga722313384eff111d40aa4df2468614ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga610e96ae9d4bf245e85efe88d1a32599"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga610e96ae9d4bf245e85efe88d1a32599">burtcClkDiv_32</a>&#160;&#160;&#160;32</td></tr>
-<tr class="separator:ga610e96ae9d4bf245e85efe88d1a32599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf2fde94c32ddb3f446f31bcd6c91ba4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gaf2fde94c32ddb3f446f31bcd6c91ba4e">burtcClkDiv_64</a>&#160;&#160;&#160;64</td></tr>
-<tr class="separator:gaf2fde94c32ddb3f446f31bcd6c91ba4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2bea7c4c56d13215a74698fc39d62233"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga2bea7c4c56d13215a74698fc39d62233">burtcClkDiv_128</a>&#160;&#160;&#160;128</td></tr>
-<tr class="separator:ga2bea7c4c56d13215a74698fc39d62233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab8da8f11c288f830b49ba4e127127b66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gab8da8f11c288f830b49ba4e127127b66">BURTC_INIT_DEFAULT</a></td></tr>
 <tr class="separator:gab8da8f11c288f830b49ba4e127127b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1b6cd6dd18ce7a52b110b2450c84419"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gac1b6cd6dd18ce7a52b110b2450c84419">burtcClkDiv_1</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gac1b6cd6dd18ce7a52b110b2450c84419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bea7c4c56d13215a74698fc39d62233"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga2bea7c4c56d13215a74698fc39d62233">burtcClkDiv_128</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:ga2bea7c4c56d13215a74698fc39d62233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga722313384eff111d40aa4df2468614ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga722313384eff111d40aa4df2468614ae">burtcClkDiv_16</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:ga722313384eff111d40aa4df2468614ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac055253fbd1316f7f14b67c0ff4e0979"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gac055253fbd1316f7f14b67c0ff4e0979">burtcClkDiv_2</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:gac055253fbd1316f7f14b67c0ff4e0979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga610e96ae9d4bf245e85efe88d1a32599"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga610e96ae9d4bf245e85efe88d1a32599">burtcClkDiv_32</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:ga610e96ae9d4bf245e85efe88d1a32599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga497f813046f895121ca3e34ba47f97ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga497f813046f895121ca3e34ba47f97ff">burtcClkDiv_4</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ga497f813046f895121ca3e34ba47f97ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2fde94c32ddb3f446f31bcd6c91ba4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gaf2fde94c32ddb3f446f31bcd6c91ba4e">burtcClkDiv_64</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:gaf2fde94c32ddb3f446f31bcd6c91ba4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbf35ac69394c9c039a685fdbf0a883b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gabbf35ac69394c9c039a685fdbf0a883b">burtcClkDiv_8</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:gabbf35ac69394c9c039a685fdbf0a883b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -163,6 +174,15 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga2174d0781dc9e463a9b47bd9554ee169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:gaccf7a8cedbcc00d75e8a5e2aa669a6b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gaccf7a8cedbcc00d75e8a5e2aa669a6b0">BURTC_LP_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__BURTC.html#ggaccf7a8cedbcc00d75e8a5e2aa669a6b0abdfabf38c8749d0f225fb4073843e788">burtcLPDisable</a> = BURTC_LPMODE_LPMODE_DISABLE, 
+<br />
+&#160;&#160;<a class="el" href="group__BURTC.html#ggaccf7a8cedbcc00d75e8a5e2aa669a6b0afa917764813ef156c5a0d0d771c7f178">burtcLPEnable</a> = BURTC_LPMODE_LPMODE_ENABLE, 
+<br />
+&#160;&#160;<a class="el" href="group__BURTC.html#ggaccf7a8cedbcc00d75e8a5e2aa669a6b0ab08e65cf2e654a971753336626a34620">burtcLPBU</a> = BURTC_LPMODE_LPMODE_BUEN
+<br />
+ }<tr class="separator:gaccf7a8cedbcc00d75e8a5e2aa669a6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:ga133a9c23ff6d3943b4b021bafa1e1560"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga133a9c23ff6d3943b4b021bafa1e1560">BURTC_Mode_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__BURTC.html#gga133a9c23ff6d3943b4b021bafa1e1560a2e5f7709b1ef032a49abc4fcfa086f05">burtcModeDisable</a> = BURTC_CTRL_MODE_DISABLE, 
 <br />
@@ -174,18 +194,34 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga133a9c23ff6d3943b4b021bafa1e1560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:gaccf7a8cedbcc00d75e8a5e2aa669a6b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gaccf7a8cedbcc00d75e8a5e2aa669a6b0">BURTC_LP_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__BURTC.html#ggaccf7a8cedbcc00d75e8a5e2aa669a6b0abdfabf38c8749d0f225fb4073843e788">burtcLPDisable</a> = BURTC_LPMODE_LPMODE_DISABLE, 
-<br />
-&#160;&#160;<a class="el" href="group__BURTC.html#ggaccf7a8cedbcc00d75e8a5e2aa669a6b0afa917764813ef156c5a0d0d771c7f178">burtcLPEnable</a> = BURTC_LPMODE_LPMODE_ENABLE, 
-<br />
-&#160;&#160;<a class="el" href="group__BURTC.html#ggaccf7a8cedbcc00d75e8a5e2aa669a6b0ab08e65cf2e654a971753336626a34620">burtcLPBU</a> = BURTC_LPMODE_LPMODE_BUEN
-<br />
- }<tr class="separator:gaccf7a8cedbcc00d75e8a5e2aa669a6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga75aebf6e4c20218f1dcd3cabb6d50f9d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga75aebf6e4c20218f1dcd3cabb6d50f9d">BURTC_ClockFreqGet</a> (void)</td></tr>
+<tr class="memdesc:ga75aebf6e4c20218f1dcd3cabb6d50f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get clock frequency of the BURTC.  <a href="group__BURTC.html#ga75aebf6e4c20218f1dcd3cabb6d50f9d">More...</a><br /></td></tr>
+<tr class="separator:ga75aebf6e4c20218f1dcd3cabb6d50f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fd8ea14d506dcb4cf02bdf2fc7a93b8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga9fd8ea14d506dcb4cf02bdf2fc7a93b8">BURTC_CompareGet</a> (unsigned int comp)</td></tr>
+<tr class="memdesc:ga9fd8ea14d506dcb4cf02bdf2fc7a93b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get BURTC compare value.  <a href="group__BURTC.html#ga9fd8ea14d506dcb4cf02bdf2fc7a93b8">More...</a><br /></td></tr>
+<tr class="separator:ga9fd8ea14d506dcb4cf02bdf2fc7a93b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabca0a703a029a8a7e6cabe165a8cee71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gabca0a703a029a8a7e6cabe165a8cee71">BURTC_CompareSet</a> (unsigned int comp, uint32_t value)</td></tr>
+<tr class="memdesc:gabca0a703a029a8a7e6cabe165a8cee71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set BURTC compare channel.  <a href="group__BURTC.html#gabca0a703a029a8a7e6cabe165a8cee71">More...</a><br /></td></tr>
+<tr class="separator:gabca0a703a029a8a7e6cabe165a8cee71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73fe1a8e408f30708ea49a1a480020b0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga73fe1a8e408f30708ea49a1a480020b0">BURTC_CounterGet</a> (void)</td></tr>
+<tr class="memdesc:ga73fe1a8e408f30708ea49a1a480020b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get BURTC counter.  <a href="group__BURTC.html#ga73fe1a8e408f30708ea49a1a480020b0">More...</a><br /></td></tr>
+<tr class="separator:ga73fe1a8e408f30708ea49a1a480020b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6423a88eadce1515ece163b5e7d3b0b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6423a88eadce1515ece163b5e7d3b0b3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga6423a88eadce1515ece163b5e7d3b0b3">BURTC_CounterReset</a> (void)</td></tr>
+<tr class="memdesc:ga6423a88eadce1515ece163b5e7d3b0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset counter. <br /></td></tr>
+<tr class="separator:ga6423a88eadce1515ece163b5e7d3b0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga366ffff57aa50af096dbaab5a0b626f4"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga366ffff57aa50af096dbaab5a0b626f4">BURTC_Enable</a> (bool enable)</td></tr>
+<tr class="memdesc:ga366ffff57aa50af096dbaab5a0b626f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or Disable BURTC peripheral reset and start counter.  <a href="group__BURTC.html#ga366ffff57aa50af096dbaab5a0b626f4">More...</a><br /></td></tr>
+<tr class="separator:ga366ffff57aa50af096dbaab5a0b626f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a7ad38c493ca909c77e0e752df6f7e9"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga6a7ad38c493ca909c77e0e752df6f7e9">BURTC_FreezeEnable</a> (bool enable)</td></tr>
+<tr class="memdesc:ga6a7ad38c493ca909c77e0e752df6f7e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Freeze register updates until enabled.  <a href="group__BURTC.html#ga6a7ad38c493ca909c77e0e752df6f7e9">More...</a><br /></td></tr>
+<tr class="separator:ga6a7ad38c493ca909c77e0e752df6f7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga453958321e4d50c743c242ac132e271f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga453958321e4d50c743c242ac132e271f">BURTC_Init</a> (const <a class="el" href="structBURTC__Init__TypeDef.html">BURTC_Init_TypeDef</a> *burtcInit)</td></tr>
+<tr class="memdesc:ga453958321e4d50c743c242ac132e271f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize BURTC.  <a href="group__BURTC.html#ga453958321e4d50c743c242ac132e271f">More...</a><br /></td></tr>
+<tr class="separator:ga453958321e4d50c743c242ac132e271f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5f02d4a1b39760a358b66f133f0bd463"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga5f02d4a1b39760a358b66f133f0bd463">BURTC_IntClear</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:ga5f02d4a1b39760a358b66f133f0bd463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending BURTC interrupts.  <a href="group__BURTC.html#ga5f02d4a1b39760a358b66f133f0bd463">More...</a><br /></td></tr>
 <tr class="separator:ga5f02d4a1b39760a358b66f133f0bd463"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,6 +240,22 @@ Functions</h2></td></tr>
 <tr class="memitem:ga46455cfb213669590df65025e8838fa5"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga46455cfb213669590df65025e8838fa5">BURTC_IntSet</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:ga46455cfb213669590df65025e8838fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one or more pending BURTC interrupts from SW.  <a href="group__BURTC.html#ga46455cfb213669590df65025e8838fa5">More...</a><br /></td></tr>
 <tr class="separator:ga46455cfb213669590df65025e8838fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb5f8f26fec7998b6517fd825118e831"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafb5f8f26fec7998b6517fd825118e831"></a>
+__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gafb5f8f26fec7998b6517fd825118e831">BURTC_Lock</a> (void)</td></tr>
+<tr class="memdesc:gafb5f8f26fec7998b6517fd825118e831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock BURTC registers, will protect from writing new config settings. <br /></td></tr>
+<tr class="separator:gafb5f8f26fec7998b6517fd825118e831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75f80623d9e066d4a6cdac772873821a"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga75f80623d9e066d4a6cdac772873821a">BURTC_Powerdown</a> (bool enable)</td></tr>
+<tr class="memdesc:ga75f80623d9e066d4a6cdac772873821a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut down power to rentention register bank.  <a href="group__BURTC.html#ga75f80623d9e066d4a6cdac772873821a">More...</a><br /></td></tr>
+<tr class="separator:ga75f80623d9e066d4a6cdac772873821a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga934209ae3c6bd3d76642090d20462818"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga934209ae3c6bd3d76642090d20462818">BURTC_Reset</a> (void)</td></tr>
+<tr class="memdesc:ga934209ae3c6bd3d76642090d20462818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore BURTC to reset state.  <a href="group__BURTC.html#ga934209ae3c6bd3d76642090d20462818">More...</a><br /></td></tr>
+<tr class="separator:ga934209ae3c6bd3d76642090d20462818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57d4cc2c25ae055b87991ca09f09e446"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga57d4cc2c25ae055b87991ca09f09e446">BURTC_RetRegGet</a> (uint32_t num)</td></tr>
+<tr class="memdesc:ga57d4cc2c25ae055b87991ca09f09e446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a value from one of the retention registers.  <a href="group__BURTC.html#ga57d4cc2c25ae055b87991ca09f09e446">More...</a><br /></td></tr>
+<tr class="separator:ga57d4cc2c25ae055b87991ca09f09e446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3e5f5781a9afd24cbadbc7485eeaa41"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gae3e5f5781a9afd24cbadbc7485eeaa41">BURTC_RetRegSet</a> (uint32_t num, uint32_t data)</td></tr>
+<tr class="memdesc:gae3e5f5781a9afd24cbadbc7485eeaa41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a value in one of the retention registers.  <a href="group__BURTC.html#gae3e5f5781a9afd24cbadbc7485eeaa41">More...</a><br /></td></tr>
+<tr class="separator:gae3e5f5781a9afd24cbadbc7485eeaa41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga63f722112ac35b62c9deb58e494370fd"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga63f722112ac35b62c9deb58e494370fd">BURTC_Status</a> (void)</td></tr>
 <tr class="memdesc:ga63f722112ac35b62c9deb58e494370fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of BURTC RAM, timestamp and LP Mode.  <a href="group__BURTC.html#ga63f722112ac35b62c9deb58e494370fd">More...</a><br /></td></tr>
 <tr class="separator:ga63f722112ac35b62c9deb58e494370fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,77 +263,21 @@ Functions</h2></td></tr>
 __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga540f38d0894f8aaeae95d48ea84b5b62">BURTC_StatusClear</a> (void)</td></tr>
 <tr class="memdesc:ga540f38d0894f8aaeae95d48ea84b5b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear and reset BURTC status register. <br /></td></tr>
 <tr class="separator:ga540f38d0894f8aaeae95d48ea84b5b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga366ffff57aa50af096dbaab5a0b626f4"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga366ffff57aa50af096dbaab5a0b626f4">BURTC_Enable</a> (bool enable)</td></tr>
-<tr class="memdesc:ga366ffff57aa50af096dbaab5a0b626f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or Disable BURTC peripheral reset and start counter.  <a href="group__BURTC.html#ga366ffff57aa50af096dbaab5a0b626f4">More...</a><br /></td></tr>
-<tr class="separator:ga366ffff57aa50af096dbaab5a0b626f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga73fe1a8e408f30708ea49a1a480020b0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga73fe1a8e408f30708ea49a1a480020b0">BURTC_CounterGet</a> (void)</td></tr>
-<tr class="memdesc:ga73fe1a8e408f30708ea49a1a480020b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get BURTC counter.  <a href="group__BURTC.html#ga73fe1a8e408f30708ea49a1a480020b0">More...</a><br /></td></tr>
-<tr class="separator:ga73fe1a8e408f30708ea49a1a480020b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga321f0208c7d7369d2ac0365f2c7bae41"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga321f0208c7d7369d2ac0365f2c7bae41">BURTC_TimestampGet</a> (void)</td></tr>
 <tr class="memdesc:ga321f0208c7d7369d2ac0365f2c7bae41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get BURTC timestamp for entering BU.  <a href="group__BURTC.html#ga321f0208c7d7369d2ac0365f2c7bae41">More...</a><br /></td></tr>
 <tr class="separator:ga321f0208c7d7369d2ac0365f2c7bae41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6a7ad38c493ca909c77e0e752df6f7e9"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga6a7ad38c493ca909c77e0e752df6f7e9">BURTC_FreezeEnable</a> (bool enable)</td></tr>
-<tr class="memdesc:ga6a7ad38c493ca909c77e0e752df6f7e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Freeze register updates until enabled.  <a href="group__BURTC.html#ga6a7ad38c493ca909c77e0e752df6f7e9">More...</a><br /></td></tr>
-<tr class="separator:ga6a7ad38c493ca909c77e0e752df6f7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75f80623d9e066d4a6cdac772873821a"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga75f80623d9e066d4a6cdac772873821a">BURTC_Powerdown</a> (bool enable)</td></tr>
-<tr class="memdesc:ga75f80623d9e066d4a6cdac772873821a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut down power to rentention register bank.  <a href="group__BURTC.html#ga75f80623d9e066d4a6cdac772873821a">More...</a><br /></td></tr>
-<tr class="separator:ga75f80623d9e066d4a6cdac772873821a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3e5f5781a9afd24cbadbc7485eeaa41"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gae3e5f5781a9afd24cbadbc7485eeaa41">BURTC_RetRegSet</a> (uint32_t num, uint32_t data)</td></tr>
-<tr class="memdesc:gae3e5f5781a9afd24cbadbc7485eeaa41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a value in one of the retention registers.  <a href="group__BURTC.html#gae3e5f5781a9afd24cbadbc7485eeaa41">More...</a><br /></td></tr>
-<tr class="separator:gae3e5f5781a9afd24cbadbc7485eeaa41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga57d4cc2c25ae055b87991ca09f09e446"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga57d4cc2c25ae055b87991ca09f09e446">BURTC_RetRegGet</a> (uint32_t num)</td></tr>
-<tr class="memdesc:ga57d4cc2c25ae055b87991ca09f09e446"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a value from one of the retention registers.  <a href="group__BURTC.html#ga57d4cc2c25ae055b87991ca09f09e446">More...</a><br /></td></tr>
-<tr class="separator:ga57d4cc2c25ae055b87991ca09f09e446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb5f8f26fec7998b6517fd825118e831"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafb5f8f26fec7998b6517fd825118e831"></a>
-__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gafb5f8f26fec7998b6517fd825118e831">BURTC_Lock</a> (void)</td></tr>
-<tr class="memdesc:gafb5f8f26fec7998b6517fd825118e831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock BURTC registers, will protect from writing new config settings. <br /></td></tr>
-<tr class="separator:gafb5f8f26fec7998b6517fd825118e831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7c07e3b94c5fcffa343b8ed27e5c71e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7c07e3b94c5fcffa343b8ed27e5c71e5"></a>
 __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga7c07e3b94c5fcffa343b8ed27e5c71e5">BURTC_Unlock</a> (void)</td></tr>
 <tr class="memdesc:ga7c07e3b94c5fcffa343b8ed27e5c71e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock BURTC registers, enable write access to change configuration. <br /></td></tr>
 <tr class="separator:ga7c07e3b94c5fcffa343b8ed27e5c71e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga934209ae3c6bd3d76642090d20462818"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga934209ae3c6bd3d76642090d20462818">BURTC_Reset</a> (void)</td></tr>
-<tr class="memdesc:ga934209ae3c6bd3d76642090d20462818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore BURTC to reset state.  <a href="group__BURTC.html#ga934209ae3c6bd3d76642090d20462818">More...</a><br /></td></tr>
-<tr class="separator:ga934209ae3c6bd3d76642090d20462818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga453958321e4d50c743c242ac132e271f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga453958321e4d50c743c242ac132e271f">BURTC_Init</a> (const <a class="el" href="structBURTC__Init__TypeDef.html">BURTC_Init_TypeDef</a> *burtcInit)</td></tr>
-<tr class="memdesc:ga453958321e4d50c743c242ac132e271f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize BURTC.  <a href="group__BURTC.html#ga453958321e4d50c743c242ac132e271f">More...</a><br /></td></tr>
-<tr class="separator:ga453958321e4d50c743c242ac132e271f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6423a88eadce1515ece163b5e7d3b0b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6423a88eadce1515ece163b5e7d3b0b3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga6423a88eadce1515ece163b5e7d3b0b3">BURTC_CounterReset</a> (void)</td></tr>
-<tr class="memdesc:ga6423a88eadce1515ece163b5e7d3b0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset counter. <br /></td></tr>
-<tr class="separator:ga6423a88eadce1515ece163b5e7d3b0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabca0a703a029a8a7e6cabe165a8cee71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#gabca0a703a029a8a7e6cabe165a8cee71">BURTC_CompareSet</a> (unsigned int comp, uint32_t value)</td></tr>
-<tr class="memdesc:gabca0a703a029a8a7e6cabe165a8cee71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set BURTC compare channel.  <a href="group__BURTC.html#gabca0a703a029a8a7e6cabe165a8cee71">More...</a><br /></td></tr>
-<tr class="separator:gabca0a703a029a8a7e6cabe165a8cee71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9fd8ea14d506dcb4cf02bdf2fc7a93b8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga9fd8ea14d506dcb4cf02bdf2fc7a93b8">BURTC_CompareGet</a> (unsigned int comp)</td></tr>
-<tr class="memdesc:ga9fd8ea14d506dcb4cf02bdf2fc7a93b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get BURTC compare value.  <a href="group__BURTC.html#ga9fd8ea14d506dcb4cf02bdf2fc7a93b8">More...</a><br /></td></tr>
-<tr class="separator:ga9fd8ea14d506dcb4cf02bdf2fc7a93b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75aebf6e4c20218f1dcd3cabb6d50f9d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BURTC.html#ga75aebf6e4c20218f1dcd3cabb6d50f9d">BURTC_ClockFreqGet</a> (void)</td></tr>
-<tr class="memdesc:ga75aebf6e4c20218f1dcd3cabb6d50f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get clock frequency of the BURTC.  <a href="group__BURTC.html#ga75aebf6e4c20218f1dcd3cabb6d50f9d">More...</a><br /></td></tr>
-<tr class="separator:ga75aebf6e4c20218f1dcd3cabb6d50f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="em__burtc_8h_source.html">em_burtc.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__burtc_8h.html">em_burtc.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:47 for EFM32 Giant Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:26:47 for EFM32 Giant Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

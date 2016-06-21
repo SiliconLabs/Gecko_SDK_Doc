@@ -1,9 +1,9 @@
 var group__RTC =
 [
     [ "RTC_Init_TypeDef", "structRTC__Init__TypeDef.html", [
-      [ "enable", "structRTC__Init__TypeDef.html#a51e17e3b46c93def7a3c53a30f6f26f2", null ],
+      [ "comp0Top", "structRTC__Init__TypeDef.html#ae6c8caf8fbbf266427fdab8865e6a65c", null ],
       [ "debugRun", "structRTC__Init__TypeDef.html#acd012fb27d533647a6d7b00e9f0fa60b", null ],
-      [ "comp0Top", "structRTC__Init__TypeDef.html#ae6c8caf8fbbf266427fdab8865e6a65c", null ]
+      [ "enable", "structRTC__Init__TypeDef.html#a51e17e3b46c93def7a3c53a30f6f26f2", null ]
     ] ],
     [ "RTC_INIT_DEFAULT", "group__RTC.html#gaa4e54bd1f7a26594eb031789117137dc", null ],
     [ "RTC_CompareGet", "group__RTC.html#ga866d59c5c7c743e8f5382d2f7e6df8ec", null ],

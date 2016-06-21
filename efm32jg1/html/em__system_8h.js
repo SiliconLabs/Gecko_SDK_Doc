@@ -19,6 +19,9 @@ var em__system_8h =
       [ "systemPartFamilyBlue1P", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aae64879630b382cc9f0dbfbd893890333", null ],
       [ "systemPartFamilyBlue1B", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa0bc2eb97890c35b0419791a032c94989", null ],
       [ "systemPartFamilyBlue1V", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa6cc0cd3fb894977099156a8fb69e7cf1", null ],
+      [ "systemPartFamilyZappy1P", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aaa2773dc6a096d3fe290b8c6b67de2c44", null ],
+      [ "systemPartFamilyZappy1B", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa245c59d98baf6c91854cdd88f06a82d4", null ],
+      [ "systemPartFamilyZappy1V", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa7956f609b89903bf361b4e6912e078a9", null ],
       [ "systemPartFamilyFlex1P", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa16519506bc923bfd904427167a3e4c98", null ],
       [ "systemPartFamilyFlex1B", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa77928d7b65be397413eb7d1befd3e44a", null ],
       [ "systemPartFamilyFlex1V", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aac138e157cb640c4560a2b10402688c39", null ],
@@ -32,14 +35,14 @@ var em__system_8h =
       [ "systemPartFamilyUnknown", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa0b598eb0a295177ef566285afaf9e660", null ]
     ] ],
     [ "SYSTEM_ChipRevisionGet", "group__SYSTEM.html#ga6470ed38937ffd0b8b509334c5add7dd", null ],
+    [ "SYSTEM_GetCalibrationTemperature", "group__SYSTEM.html#ga2a8be52c7eeb3f5d395ee7791e5c8bf8", null ],
     [ "SYSTEM_GetCalibrationValue", "group__SYSTEM.html#ga786913c991338e29650617d89aec3768", null ],
-    [ "SYSTEM_GetUnique", "group__SYSTEM.html#ga3ae06ffaffeb005dc411bfefedd1f16b", null ],
+    [ "SYSTEM_GetDevinfoRev", "group__SYSTEM.html#gaf92e0afdba824102eb010f5418069b49", null ],
+    [ "SYSTEM_GetFamily", "group__SYSTEM.html#ga5b5bb91ac7916b37ce069dd75fc94196", null ],
+    [ "SYSTEM_GetFlashPageSize", "group__SYSTEM.html#ga9708a581c8fe3a02fc6ac92175a3860a", null ],
+    [ "SYSTEM_GetFlashSize", "group__SYSTEM.html#gacf4974847994d28b5e03e1cb6d76f5c0", null ],
+    [ "SYSTEM_GetPartNumber", "group__SYSTEM.html#ga4b9b04ffdb1f05c14f73f1b7ed0a95ba", null ],
     [ "SYSTEM_GetProdRev", "group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b", null ],
     [ "SYSTEM_GetSRAMSize", "group__SYSTEM.html#ga1e9f2935e6ccee880c25605351770560", null ],
-    [ "SYSTEM_GetFlashSize", "group__SYSTEM.html#gacf4974847994d28b5e03e1cb6d76f5c0", null ],
-    [ "SYSTEM_GetFlashPageSize", "group__SYSTEM.html#ga9708a581c8fe3a02fc6ac92175a3860a", null ],
-    [ "SYSTEM_GetDevinfoRev", "group__SYSTEM.html#gaf92e0afdba824102eb010f5418069b49", null ],
-    [ "SYSTEM_GetPartNumber", "group__SYSTEM.html#ga4b9b04ffdb1f05c14f73f1b7ed0a95ba", null ],
-    [ "SYSTEM_GetFamily", "group__SYSTEM.html#ga5b5bb91ac7916b37ce069dd75fc94196", null ],
-    [ "SYSTEM_GetCalibrationTemperature", "group__SYSTEM.html#ga2a8be52c7eeb3f5d395ee7791e5c8bf8", null ]
+    [ "SYSTEM_GetUnique", "group__SYSTEM.html#ga3ae06ffaffeb005dc411bfefedd1f16b", null ]
 ];

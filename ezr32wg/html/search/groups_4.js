@@ -1,8 +1,8 @@
 var searchData=
 [
   ['eeprom',['Eeprom',['../group__Eeprom.html',1,'']]],
-  ['em_5fdrivers',['EM_Drivers',['../group__EM__Drivers.html',1,'']]],
-  ['em_5flibrary',['EM_Library',['../group__EM__Library.html',1,'']]],
+  ['emdrv',['EMDRV',['../group__emdrv.html',1,'']]],
+  ['emlib',['EMLIB',['../group__emlib.html',1,'']]],
   ['emu',['EMU',['../group__EMU.html',1,'']]],
   ['ezr32wg330f256r69',['EZR32WG330F256R69',['../group__EZR32WG330F256R69.html',1,'']]],
   ['ezr32wg330f256r69_20alternate_20function',['EZR32WG330F256R69 Alternate Function',['../group__EZR32WG330F256R69__Alternate__Function.html',1,'']]],

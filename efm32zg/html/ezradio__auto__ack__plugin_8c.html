@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Zero Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32zg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32zg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,33 +111,9 @@ $(document).ready(function(){initNavTree('ezradio__auto__ack__plugin_8c.html',''
 <div class="title">ezradio_auto_ack_plugin.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>EzRadio auto acknowledge plug-in managed by the plug-in manager if enabled.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
-<code>#include &quot;ezradio_cmd.h&quot;</code><br />
-<code>#include &quot;ezradio_prop.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="ezradio__api__lib_8h_source.html">ezradio_api_lib.h</a>&quot;</code><br />
-<code>#include &quot;ezradio_api_lib_add.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="ezradio__plugin__manager_8h_source.html">ezradio_plugin_manager.h</a>&quot;</code><br />
-</div>
-<p><a href="ezradio__auto__ack__plugin_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga7b688d87c592a1a68ed3f7f0378405d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Auto__ACK__Plugin.html#ga7b688d87c592a1a68ed3f7f0378405d8">ezradioEnableAutoAck</a> (<a class="el" href="group__Auto__ACK__Plugin.html#ga7586d12843e3ce6f696d622bd2801349">EZRADIODRV_AutoAckHandle_t</a> *autoAckHandle)</td></tr>
-<tr class="memdesc:ga7b688d87c592a1a68ed3f7f0378405d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables auto acknowledge sending feature.  <a href="group__Auto__ACK__Plugin.html#ga7b688d87c592a1a68ed3f7f0378405d8">More...</a><br /></td></tr>
-<tr class="separator:ga7b688d87c592a1a68ed3f7f0378405d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3315ed2a380411a885d067d6edfd5ef1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Auto__ACK__Plugin.html#ga3315ed2a380411a885d067d6edfd5ef1">ezradioDisableAutoAck</a> (<a class="el" href="group__Auto__ACK__Plugin.html#ga7586d12843e3ce6f696d622bd2801349">EZRADIODRV_AutoAckHandle_t</a> *autoAckHandle)</td></tr>
-<tr class="memdesc:ga3315ed2a380411a885d067d6edfd5ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables auto acknowledge sending feature.  <a href="group__Auto__ACK__Plugin.html#ga3315ed2a380411a885d067d6edfd5ef1">More...</a><br /></td></tr>
-<tr class="separator:ga3315ed2a380411a885d067d6edfd5ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaba316aaed73770198e15b3814fcfcce3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Auto__ACK__Plugin.html#gaba316aaed73770198e15b3814fcfcce3">ezradioSkipAutoAck</a> (<a class="el" href="group__Auto__ACK__Plugin.html#ga7586d12843e3ce6f696d622bd2801349">EZRADIODRV_AutoAckHandle_t</a> *autoAckHandle)</td></tr>
-<tr class="memdesc:gaba316aaed73770198e15b3814fcfcce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures auto acknowledge sending feature so that there will be no acknowledge transmitted to the next received packet. This is usefull is both nodes of a link uses auto acknowledgement.  <a href="group__Auto__ACK__Plugin.html#gaba316aaed73770198e15b3814fcfcce3">More...</a><br /></td></tr>
-<tr class="separator:gaba316aaed73770198e15b3814fcfcce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
+<div class="textblock"><p>EzRadio auto acknowledge plug-in managed by the plug-in manager if enabled. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -155,13 +129,35 @@ License</h1>
 <p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
 <p>Definition in file <a class="el" href="ezradio__auto__ack__plugin_8c_source.html">ezradio_auto_ack_plugin.c</a>.</p>
-</div></div><!-- contents -->
+</div><div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<code>#include &quot;ezradio_cmd.h&quot;</code><br />
+<code>#include &quot;ezradio_prop.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="ezradio__api__lib_8h_source.html">ezradio_api_lib.h</a>&quot;</code><br />
+<code>#include &quot;ezradio_api_lib_add.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="ezradio__plugin__manager_8h_source.html">ezradio_plugin_manager.h</a>&quot;</code><br />
+</div>
+<p><a href="ezradio__auto__ack__plugin_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga3315ed2a380411a885d067d6edfd5ef1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Auto__ACK__Plugin.html#ga3315ed2a380411a885d067d6edfd5ef1">ezradioDisableAutoAck</a> (<a class="el" href="group__Auto__ACK__Plugin.html#ga7586d12843e3ce6f696d622bd2801349">EZRADIODRV_AutoAckHandle_t</a> *autoAckHandle)</td></tr>
+<tr class="memdesc:ga3315ed2a380411a885d067d6edfd5ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables auto acknowledge sending feature.  <a href="group__Auto__ACK__Plugin.html#ga3315ed2a380411a885d067d6edfd5ef1">More...</a><br /></td></tr>
+<tr class="separator:ga3315ed2a380411a885d067d6edfd5ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b688d87c592a1a68ed3f7f0378405d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Auto__ACK__Plugin.html#ga7b688d87c592a1a68ed3f7f0378405d8">ezradioEnableAutoAck</a> (<a class="el" href="group__Auto__ACK__Plugin.html#ga7586d12843e3ce6f696d622bd2801349">EZRADIODRV_AutoAckHandle_t</a> *autoAckHandle)</td></tr>
+<tr class="memdesc:ga7b688d87c592a1a68ed3f7f0378405d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables auto acknowledge sending feature.  <a href="group__Auto__ACK__Plugin.html#ga7b688d87c592a1a68ed3f7f0378405d8">More...</a><br /></td></tr>
+<tr class="separator:ga7b688d87c592a1a68ed3f7f0378405d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba316aaed73770198e15b3814fcfcce3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Auto__ACK__Plugin.html#gaba316aaed73770198e15b3814fcfcce3">ezradioSkipAutoAck</a> (<a class="el" href="group__Auto__ACK__Plugin.html#ga7586d12843e3ce6f696d622bd2801349">EZRADIODRV_AutoAckHandle_t</a> *autoAckHandle)</td></tr>
+<tr class="memdesc:gaba316aaed73770198e15b3814fcfcce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures auto acknowledge sending feature so that there will be no acknowledge transmitted to the next received packet. This is usefull is both nodes of a link uses auto acknowledgement.  <a href="group__Auto__ACK__Plugin.html#gaba316aaed73770198e15b3814fcfcce3">More...</a><br /></td></tr>
+<tr class="separator:gaba316aaed73770198e15b3814fcfcce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_74d66e5e415af18c005205f87c017a4f.html">ezradiodrv</a></li><li class="navelem"><a class="el" href="dir_dc62e25ae1d0f0e9ad0dda32108a1961.html">plugins</a></li><li class="navelem"><a class="el" href="dir_dfd715aee663c4352abfe5ede2183c0d.html">src</a></li><li class="navelem"><a class="el" href="ezradio__auto__ack__plugin_8c.html">ezradio_auto_ack_plugin.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:38:44 for EFM32 Zero Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:34:07 for EFM32 Zero Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

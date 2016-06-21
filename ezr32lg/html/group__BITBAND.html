@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -104,12 +103,12 @@ $(document).ready(function(){initNavTree('group__BITBAND.html','');});
   <div class="summary">
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">BITBAND<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">BITBAND<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>BITBAND Peripheral API (deprecated - use <a class="el" href="em__bus_8h.html" title="RAM and peripheral bit-field set and clear API. ">em_bus.h</a>) </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>BITBAND Peripheral API (deprecated - use <a class="el" href="em__bus_8h.html" title="RAM and peripheral bit-field set and clear API. ">em_bus.h</a>) </p>
+<p>API to perform bitbanded accesses to SRAM and peripheral memory. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -126,7 +125,6 @@ Macros</h2></td></tr>
 <tr class="memdesc:gacd9c86d02446506f3c47bc414debbe28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a single bit from the SRAM bit-band alias region.  <a href="#gacd9c86d02446506f3c47bc414debbe28">More...</a><br /></td></tr>
 <tr class="separator:gacd9c86d02446506f3c47bc414debbe28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gaa56c8b8be742543205ff84ceb35c3cb8"></a>
 <div class="memitem">
@@ -157,7 +155,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Perform bit-band operation on peripheral memory location. </p>
 <p>Bit-banding provides atomic read-modify-write cycle for single bit modification. Please refer to the reference manual for further details about bit-banding.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Deprecated function. New code should use <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is only atomic on cores which fully support bitbanding.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -168,7 +169,7 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__bitband_8h_source.html#l00071">71</a> of file <a class="el" href="em__bitband_8h_source.html">em_bitband.h</a>.</p>
+<p>Definition at line <a class="el" href="em__bitband_8h_source.html#l00076">76</a> of file <a class="el" href="em__bitband_8h_source.html">em_bitband.h</a>.</p>
 
 </div>
 </div>
@@ -195,7 +196,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Perform a read operation on the peripheral bit-band memory location. </p>
 <p>This function reads a single bit from the peripheral bit-band alias region. Bit-banding provides atomic read-modify-write cycle for single bit modification. Please refer to the reference manual for further details about bit-banding.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Deprecated function. New code should use <a class="el" href="group__BUS.html#gaca6b55014161f4c51c9daf4f707eeb7c">BUS_RegBitRead()</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Peripheral address location to read.</td></tr>
@@ -205,7 +209,7 @@ Macros</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value of the requested bit. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__bitband_8h_source.html#l00090">90</a> of file <a class="el" href="em__bitband_8h_source.html">em_bitband.h</a>.</p>
+<p>Definition at line <a class="el" href="em__bitband_8h_source.html#l00098">98</a> of file <a class="el" href="em__bitband_8h_source.html">em_bitband.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +242,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Perform bit-band operation on SRAM memory location. </p>
 <p>Bit-banding provides atomic read-modify-write cycle for single bit modification. Please refer to the reference manual for further details about bit-banding.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Deprecated function. New code should use <a class="el" href="group__BUS.html#ga5db07d1f35d501e6de6891eaeae88ec7">BUS_RamBitWrite()</a>.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is only atomic on cores which fully support bitbanding.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -249,7 +256,7 @@ Macros</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__bitband_8h_source.html#l00111">111</a> of file <a class="el" href="em__bitband_8h_source.html">em_bitband.h</a>.</p>
+<p>Definition at line <a class="el" href="em__bitband_8h_source.html#l00122">122</a> of file <a class="el" href="em__bitband_8h_source.html">em_bitband.h</a>.</p>
 
 </div>
 </div>
@@ -276,7 +283,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Read a single bit from the SRAM bit-band alias region. </p>
 <p>This function reads a single bit from the SRAM bit-band alias region. Bit-banding provides atomic read-modify-write cycle for single bit modification. Please refer to the reference manual for further details about bit-banding.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Deprecated function. New code should use <a class="el" href="group__BUS.html#ga00e7633614955dd90f180acb07f83c8d">BUS_RamBitRead()</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>SRAM address location to modify bit in.</td></tr>
@@ -286,7 +296,7 @@ Macros</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value of the requested bit. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__bitband_8h_source.html#l00130">130</a> of file <a class="el" href="em__bitband_8h_source.html">em_bitband.h</a>.</p>
+<p>Definition at line <a class="el" href="em__bitband_8h_source.html#l00144">144</a> of file <a class="el" href="em__bitband_8h_source.html">em_bitband.h</a>.</p>
 
 </div>
 </div>
@@ -295,7 +305,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:41:39 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:43:24 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

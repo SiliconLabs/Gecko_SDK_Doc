@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32tg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -112,8 +110,8 @@ $(document).ready(function(){initNavTree('em__rtc_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="em__rtc_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef __SILICON_LABS_EM_RTC_H__</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define __SILICON_LABS_EM_RTC_H__</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef EM_RTC_H</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define EM_RTC_H</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__device_8h.html">em_device.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined(RTC_COUNT) &amp;&amp; (RTC_COUNT &gt; 0)</span></div>
@@ -158,82 +156,91 @@ $(document).ready(function(){initNavTree('em__rtc_8h_source.html','');});
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;CNT;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__RTC.html#gae4cfdbe68de01d77bbdc979f1b026382">RTC_CounterReset</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__RTC.html#ga19213bbf2d6cb73d55cec086a98493e6">RTC_Enable</a>(<span class="keywordtype">bool</span> enable);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__RTC.html#gae75ea5a9ceb5123c2394fc722e27d2cd">RTC_FreezeEnable</a>(<span class="keywordtype">bool</span> enable);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__RTC.html#ga693d1c349834ec6be942f5b27258f6e9">RTC_Init</a>(<span class="keyword">const</span> <a class="code" href="structRTC__Init__TypeDef.html">RTC_Init_TypeDef</a> *init);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="group__RTC.html#ga910583d142223c79d276cdffd317a1bf">  109</a></span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__RTC.html#ga910583d142223c79d276cdffd317a1bf">RTC_IntClear</a>(uint32_t flags)</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IFC = flags;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#if !defined(_EFM32_GECKO_FAMILY)</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="group__RTC.html#ga229eedd97507ee915f51d74496c08ad8">  103</a></span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__RTC.html#ga229eedd97507ee915f51d74496c08ad8">RTC_CounterSet</a>(uint32_t value)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;CNT = value;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__RTC.html#gae4cfdbe68de01d77bbdc979f1b026382">RTC_CounterReset</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__RTC.html#ga19213bbf2d6cb73d55cec086a98493e6">RTC_Enable</a>(<span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__RTC.html#gae75ea5a9ceb5123c2394fc722e27d2cd">RTC_FreezeEnable</a>(<span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__RTC.html#ga693d1c349834ec6be942f5b27258f6e9">RTC_Init</a>(<span class="keyword">const</span> <a class="code" href="structRTC__Init__TypeDef.html">RTC_Init_TypeDef</a> *init);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="group__RTC.html#ga2a98d203572e19e46332a767ed129d75">  124</a></span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__RTC.html#ga2a98d203572e19e46332a767ed129d75">RTC_IntDisable</a>(uint32_t flags)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IEN &amp;= ~flags;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="group__RTC.html#ga910583d142223c79d276cdffd317a1bf">  123</a></span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__RTC.html#ga910583d142223c79d276cdffd317a1bf">RTC_IntClear</a>(uint32_t flags)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IFC = flags;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="group__RTC.html#gaa8a148dcdf7ac48dd76b84406f7b69a0">  144</a></span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__RTC.html#gaa8a148dcdf7ac48dd76b84406f7b69a0">RTC_IntEnable</a>(uint32_t flags)</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IEN |= flags;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="group__RTC.html#ga12263d43936af8d57cac8327d7225a1d">  161</a></span>&#160;__STATIC_INLINE uint32_t <a class="code" href="group__RTC.html#ga12263d43936af8d57cac8327d7225a1d">RTC_IntGet</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;{</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IF;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="group__RTC.html#gaa8d562567017516058b59b765190d314">  181</a></span>&#160;__STATIC_INLINE uint32_t <a class="code" href="group__RTC.html#gaa8d562567017516058b59b765190d314">RTC_IntGetEnabled</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  uint32_t ien;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  ien = <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IEN;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IF &amp; ien;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="group__RTC.html#ga1bb5c0890ca9d48a8e70a2a237226e43">  199</a></span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__RTC.html#ga1bb5c0890ca9d48a8e70a2a237226e43">RTC_IntSet</a>(uint32_t flags)</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;{</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IFS = flags;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="group__RTC.html#ga2a98d203572e19e46332a767ed129d75">  138</a></span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__RTC.html#ga2a98d203572e19e46332a767ed129d75">RTC_IntDisable</a>(uint32_t flags)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IEN &amp;= ~flags;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="group__RTC.html#gaa8a148dcdf7ac48dd76b84406f7b69a0">  158</a></span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__RTC.html#gaa8a148dcdf7ac48dd76b84406f7b69a0">RTC_IntEnable</a>(uint32_t flags)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IEN |= flags;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="group__RTC.html#ga12263d43936af8d57cac8327d7225a1d">  175</a></span>&#160;__STATIC_INLINE uint32_t <a class="code" href="group__RTC.html#ga12263d43936af8d57cac8327d7225a1d">RTC_IntGet</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IF;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="group__RTC.html#gaa8d562567017516058b59b765190d314">  195</a></span>&#160;__STATIC_INLINE uint32_t <a class="code" href="group__RTC.html#gaa8d562567017516058b59b765190d314">RTC_IntGetEnabled</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;{</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  uint32_t ien;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  ien = <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IEN;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IF &amp; ien;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__RTC.html#gae1afe76d35fac641cdad34913ca63c95">RTC_Reset</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(RTC_COUNT) &amp;&amp; (RTC_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SILICON_LABS_EM_RTC_H__ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="group__RTC_html_gae1afe76d35fac641cdad34913ca63c95"><div class="ttname"><a href="group__RTC.html#gae1afe76d35fac641cdad34913ca63c95">RTC_Reset</a></div><div class="ttdeci">void RTC_Reset(void)</div><div class="ttdoc">Restore RTC to reset state. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00343">em_rtc.c:343</a></div></div>
-<div class="ttc" id="group__RTC_html_ga2a98d203572e19e46332a767ed129d75"><div class="ttname"><a href="group__RTC.html#ga2a98d203572e19e46332a767ed129d75">RTC_IntDisable</a></div><div class="ttdeci">__STATIC_INLINE void RTC_IntDisable(uint32_t flags)</div><div class="ttdoc">Disable one or more RTC interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00124">em_rtc.h:124</a></div></div>
-<div class="ttc" id="group__RTC_html_gaa8d562567017516058b59b765190d314"><div class="ttname"><a href="group__RTC.html#gaa8d562567017516058b59b765190d314">RTC_IntGetEnabled</a></div><div class="ttdeci">__STATIC_INLINE uint32_t RTC_IntGetEnabled(void)</div><div class="ttdoc">Get enabled and pending RTC interrupt flags. Useful for handling more interrupt sources in the same i...</div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00181">em_rtc.h:181</a></div></div>
-<div class="ttc" id="group__RTC_html_gae4cfdbe68de01d77bbdc979f1b026382"><div class="ttname"><a href="group__RTC.html#gae4cfdbe68de01d77bbdc979f1b026382">RTC_CounterReset</a></div><div class="ttdeci">void RTC_CounterReset(void)</div><div class="ttdoc">Restart RTC counter from zero. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00367">em_rtc.c:367</a></div></div>
-<div class="ttc" id="group__RTC_html_ga910583d142223c79d276cdffd317a1bf"><div class="ttname"><a href="group__RTC.html#ga910583d142223c79d276cdffd317a1bf">RTC_IntClear</a></div><div class="ttdeci">__STATIC_INLINE void RTC_IntClear(uint32_t flags)</div><div class="ttdoc">Clear one or more pending RTC interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00109">em_rtc.h:109</a></div></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="group__RTC.html#ga1bb5c0890ca9d48a8e70a2a237226e43">  213</a></span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__RTC.html#ga1bb5c0890ca9d48a8e70a2a237226e43">RTC_IntSet</a>(uint32_t flags)</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;{</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <a class="code" href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a>-&gt;IFS = flags;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__RTC.html#gae1afe76d35fac641cdad34913ca63c95">RTC_Reset</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(RTC_COUNT) &amp;&amp; (RTC_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_RTC_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group__RTC_html_gae1afe76d35fac641cdad34913ca63c95"><div class="ttname"><a href="group__RTC.html#gae1afe76d35fac641cdad34913ca63c95">RTC_Reset</a></div><div class="ttdeci">void RTC_Reset(void)</div><div class="ttdoc">Restore RTC to reset state. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00346">em_rtc.c:346</a></div></div>
+<div class="ttc" id="group__RTC_html_ga2a98d203572e19e46332a767ed129d75"><div class="ttname"><a href="group__RTC.html#ga2a98d203572e19e46332a767ed129d75">RTC_IntDisable</a></div><div class="ttdeci">__STATIC_INLINE void RTC_IntDisable(uint32_t flags)</div><div class="ttdoc">Disable one or more RTC interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00138">em_rtc.h:138</a></div></div>
+<div class="ttc" id="group__RTC_html_gaa8d562567017516058b59b765190d314"><div class="ttname"><a href="group__RTC.html#gaa8d562567017516058b59b765190d314">RTC_IntGetEnabled</a></div><div class="ttdeci">__STATIC_INLINE uint32_t RTC_IntGetEnabled(void)</div><div class="ttdoc">Get enabled and pending RTC interrupt flags. Useful for handling more interrupt sources in the same i...</div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00195">em_rtc.h:195</a></div></div>
+<div class="ttc" id="group__RTC_html_gae4cfdbe68de01d77bbdc979f1b026382"><div class="ttname"><a href="group__RTC.html#gae4cfdbe68de01d77bbdc979f1b026382">RTC_CounterReset</a></div><div class="ttdeci">void RTC_CounterReset(void)</div><div class="ttdoc">Restart RTC counter from zero. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00370">em_rtc.c:370</a></div></div>
+<div class="ttc" id="group__RTC_html_ga910583d142223c79d276cdffd317a1bf"><div class="ttname"><a href="group__RTC.html#ga910583d142223c79d276cdffd317a1bf">RTC_IntClear</a></div><div class="ttdeci">__STATIC_INLINE void RTC_IntClear(uint32_t flags)</div><div class="ttdoc">Clear one or more pending RTC interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00123">em_rtc.h:123</a></div></div>
 <div class="ttc" id="group__RTC_html_ga08c2d4b78b387af02917d01db5a72aba"><div class="ttname"><a href="group__RTC.html#ga08c2d4b78b387af02917d01db5a72aba">RTC_CounterGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t RTC_CounterGet(void)</div><div class="ttdoc">Get RTC counter value. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00090">em_rtc.h:90</a></div></div>
 <div class="ttc" id="em__device_8h_html"><div class="ttname"><a href="em__device_8h.html">em_device.h</a></div><div class="ttdoc">CMSIS Cortex-M Peripheral Access Layer for Silicon Laboratories microcontroller devices. </div></div>
-<div class="ttc" id="group__RTC_html_gae6de92934675357cf5731663406e9615"><div class="ttname"><a href="group__RTC.html#gae6de92934675357cf5731663406e9615">RTC_CompareSet</a></div><div class="ttdeci">void RTC_CompareSet(unsigned int comp, uint32_t value)</div><div class="ttdoc">Set RTC compare register value. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00158">em_rtc.c:158</a></div></div>
-<div class="ttc" id="group__RTC_html_ga12263d43936af8d57cac8327d7225a1d"><div class="ttname"><a href="group__RTC.html#ga12263d43936af8d57cac8327d7225a1d">RTC_IntGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t RTC_IntGet(void)</div><div class="ttdoc">Get pending RTC interrupt flags. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00161">em_rtc.h:161</a></div></div>
+<div class="ttc" id="group__RTC_html_gae6de92934675357cf5731663406e9615"><div class="ttname"><a href="group__RTC.html#gae6de92934675357cf5731663406e9615">RTC_CompareSet</a></div><div class="ttdeci">void RTC_CompareSet(unsigned int comp, uint32_t value)</div><div class="ttdoc">Set RTC compare register value. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00161">em_rtc.c:161</a></div></div>
+<div class="ttc" id="group__RTC_html_ga12263d43936af8d57cac8327d7225a1d"><div class="ttname"><a href="group__RTC.html#ga12263d43936af8d57cac8327d7225a1d">RTC_IntGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t RTC_IntGet(void)</div><div class="ttdoc">Get pending RTC interrupt flags. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00175">em_rtc.h:175</a></div></div>
 <div class="ttc" id="structRTC__Init__TypeDef_html"><div class="ttname"><a href="structRTC__Init__TypeDef.html">RTC_Init_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00060">em_rtc.h:60</a></div></div>
+<div class="ttc" id="group__RTC_html_ga229eedd97507ee915f51d74496c08ad8"><div class="ttname"><a href="group__RTC.html#ga229eedd97507ee915f51d74496c08ad8">RTC_CounterSet</a></div><div class="ttdeci">__STATIC_INLINE void RTC_CounterSet(uint32_t value)</div><div class="ttdoc">Set the RTC counter value. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00103">em_rtc.h:103</a></div></div>
 <div class="ttc" id="structRTC__Init__TypeDef_html_acd012fb27d533647a6d7b00e9f0fa60b"><div class="ttname"><a href="structRTC__Init__TypeDef.html#acd012fb27d533647a6d7b00e9f0fa60b">RTC_Init_TypeDef::debugRun</a></div><div class="ttdeci">bool debugRun</div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00063">em_rtc.h:63</a></div></div>
-<div class="ttc" id="group__RTC_html_gaa8a148dcdf7ac48dd76b84406f7b69a0"><div class="ttname"><a href="group__RTC.html#gaa8a148dcdf7ac48dd76b84406f7b69a0">RTC_IntEnable</a></div><div class="ttdeci">__STATIC_INLINE void RTC_IntEnable(uint32_t flags)</div><div class="ttdoc">Enable one or more RTC interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00144">em_rtc.h:144</a></div></div>
+<div class="ttc" id="group__RTC_html_gaa8a148dcdf7ac48dd76b84406f7b69a0"><div class="ttname"><a href="group__RTC.html#gaa8a148dcdf7ac48dd76b84406f7b69a0">RTC_IntEnable</a></div><div class="ttdeci">__STATIC_INLINE void RTC_IntEnable(uint32_t flags)</div><div class="ttdoc">Enable one or more RTC interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00158">em_rtc.h:158</a></div></div>
 <div class="ttc" id="structRTC__Init__TypeDef_html_ae6c8caf8fbbf266427fdab8865e6a65c"><div class="ttname"><a href="structRTC__Init__TypeDef.html#ae6c8caf8fbbf266427fdab8865e6a65c">RTC_Init_TypeDef::comp0Top</a></div><div class="ttdeci">bool comp0Top</div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00064">em_rtc.h:64</a></div></div>
-<div class="ttc" id="group__RTC_html_ga1bb5c0890ca9d48a8e70a2a237226e43"><div class="ttname"><a href="group__RTC.html#ga1bb5c0890ca9d48a8e70a2a237226e43">RTC_IntSet</a></div><div class="ttdeci">__STATIC_INLINE void RTC_IntSet(uint32_t flags)</div><div class="ttdoc">Set one or more pending RTC interrupts from SW. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00199">em_rtc.h:199</a></div></div>
-<div class="ttc" id="group__RTC_html_ga693d1c349834ec6be942f5b27258f6e9"><div class="ttname"><a href="group__RTC.html#ga693d1c349834ec6be942f5b27258f6e9">RTC_Init</a></div><div class="ttdeci">void RTC_Init(const RTC_Init_TypeDef *init)</div><div class="ttdoc">Initialize RTC. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00302">em_rtc.c:302</a></div></div>
-<div class="ttc" id="group__RTC_html_ga19213bbf2d6cb73d55cec086a98493e6"><div class="ttname"><a href="group__RTC.html#ga19213bbf2d6cb73d55cec086a98493e6">RTC_Enable</a></div><div class="ttdeci">void RTC_Enable(bool enable)</div><div class="ttdoc">Enable/disable RTC. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00214">em_rtc.c:214</a></div></div>
-<div class="ttc" id="group__RTC_html_gae75ea5a9ceb5123c2394fc722e27d2cd"><div class="ttname"><a href="group__RTC.html#gae75ea5a9ceb5123c2394fc722e27d2cd">RTC_FreezeEnable</a></div><div class="ttdeci">void RTC_FreezeEnable(bool enable)</div><div class="ttdoc">RTC register synchronization freeze control. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00258">em_rtc.c:258</a></div></div>
-<div class="ttc" id="group__RTC_html_ga866d59c5c7c743e8f5382d2f7e6df8ec"><div class="ttname"><a href="group__RTC.html#ga866d59c5c7c743e8f5382d2f7e6df8ec">RTC_CompareGet</a></div><div class="ttdeci">uint32_t RTC_CompareGet(unsigned int comp)</div><div class="ttdoc">Get RTC compare register value. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00114">em_rtc.c:114</a></div></div>
-<div class="ttc" id="group__EFM32TG842F32__Peripheral__Declaration_html_ga5359a088f5d8b20ce74d920e46059304"><div class="ttname"><a href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a></div><div class="ttdeci">#define RTC</div><div class="ttdef"><b>Definition:</b> <a href="efm32tg842f32_8h_source.html#l00321">efm32tg842f32.h:321</a></div></div>
+<div class="ttc" id="group__RTC_html_ga1bb5c0890ca9d48a8e70a2a237226e43"><div class="ttname"><a href="group__RTC.html#ga1bb5c0890ca9d48a8e70a2a237226e43">RTC_IntSet</a></div><div class="ttdeci">__STATIC_INLINE void RTC_IntSet(uint32_t flags)</div><div class="ttdoc">Set one or more pending RTC interrupts from SW. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00213">em_rtc.h:213</a></div></div>
+<div class="ttc" id="group__RTC_html_ga693d1c349834ec6be942f5b27258f6e9"><div class="ttname"><a href="group__RTC.html#ga693d1c349834ec6be942f5b27258f6e9">RTC_Init</a></div><div class="ttdeci">void RTC_Init(const RTC_Init_TypeDef *init)</div><div class="ttdoc">Initialize RTC. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00305">em_rtc.c:305</a></div></div>
+<div class="ttc" id="group__RTC_html_ga19213bbf2d6cb73d55cec086a98493e6"><div class="ttname"><a href="group__RTC.html#ga19213bbf2d6cb73d55cec086a98493e6">RTC_Enable</a></div><div class="ttdeci">void RTC_Enable(bool enable)</div><div class="ttdoc">Enable/disable RTC. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00217">em_rtc.c:217</a></div></div>
+<div class="ttc" id="group__RTC_html_gae75ea5a9ceb5123c2394fc722e27d2cd"><div class="ttname"><a href="group__RTC.html#gae75ea5a9ceb5123c2394fc722e27d2cd">RTC_FreezeEnable</a></div><div class="ttdeci">void RTC_FreezeEnable(bool enable)</div><div class="ttdoc">RTC register synchronization freeze control. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00261">em_rtc.c:261</a></div></div>
+<div class="ttc" id="group__RTC_html_ga866d59c5c7c743e8f5382d2f7e6df8ec"><div class="ttname"><a href="group__RTC.html#ga866d59c5c7c743e8f5382d2f7e6df8ec">RTC_CompareGet</a></div><div class="ttdeci">uint32_t RTC_CompareGet(unsigned int comp)</div><div class="ttdoc">Get RTC compare register value. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8c_source.html#l00117">em_rtc.c:117</a></div></div>
+<div class="ttc" id="group__EFM32TG842F32__Peripheral__Declaration_html_ga5359a088f5d8b20ce74d920e46059304"><div class="ttname"><a href="group__EFM32TG842F32__Peripheral__Declaration.html#ga5359a088f5d8b20ce74d920e46059304">RTC</a></div><div class="ttdeci">#define RTC</div><div class="ttdef"><b>Definition:</b> <a href="efm32tg842f32_8h_source.html#l00322">efm32tg842f32.h:322</a></div></div>
 <div class="ttc" id="structRTC__Init__TypeDef_html_a51e17e3b46c93def7a3c53a30f6f26f2"><div class="ttname"><a href="structRTC__Init__TypeDef.html#a51e17e3b46c93def7a3c53a30f6f26f2">RTC_Init_TypeDef::enable</a></div><div class="ttdeci">bool enable</div><div class="ttdef"><b>Definition:</b> <a href="em__rtc_8h_source.html#l00062">em_rtc.h:62</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -241,7 +248,7 @@ $(document).ready(function(){initNavTree('em__rtc_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__rtc_8h.html">em_rtc.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:01 for EFM32 Tiny Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:23:55 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

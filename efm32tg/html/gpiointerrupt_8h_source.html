@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32tg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -123,33 +121,33 @@ $(document).ready(function(){initNavTree('gpiointerrupt_8h_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/***************************************************************************/</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/*******************************************************************************</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> *******************************   TYPEDEFS   **********************************</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">   49</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a>)(uint8_t pin);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/*******************************************************************************</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> ******************************   PROTOTYPES   *********************************</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__GPIOINT.html#gac93e5702d7693ab3efbbccd9782b22e0">GPIOINT_Init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister</a>(uint8_t pin, <a class="code" href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a> callbackPtr);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">static</span> __INLINE <span class="keywordtype">void</span> <a class="code" href="group__GPIOINT.html#ga2d33c9188635a9b34cce16b4f1a2e6d4">GPIOINT_CallbackUnRegister</a>(uint8_t pin);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group__GPIOINT.html#ga2d33c9188635a9b34cce16b4f1a2e6d4">   69</a></span>&#160;<span class="keyword">static</span> __INLINE <span class="keywordtype">void</span> <a class="code" href="group__GPIOINT.html#ga2d33c9188635a9b34cce16b4f1a2e6d4">GPIOINT_CallbackUnRegister</a>(uint8_t pin)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister</a>(pin,0);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __EMDRV_GPIOINTERRUPT_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="group__GPIOINT_html_ga2d33c9188635a9b34cce16b4f1a2e6d4"><div class="ttname"><a href="group__GPIOINT.html#ga2d33c9188635a9b34cce16b4f1a2e6d4">GPIOINT_CallbackUnRegister</a></div><div class="ttdeci">static __INLINE void GPIOINT_CallbackUnRegister(uint8_t pin)</div><div class="ttdoc">Unregisters user callback for given pin number. </div><div class="ttdef"><b>Definition:</b> <a href="gpiointerrupt_8h_source.html#l00069">gpiointerrupt.h:69</a></div></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/*******************************************************************************</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> *******************************   TYPEDEFS   **********************************</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">   47</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a>)(uint8_t pin);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">/*******************************************************************************</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> ******************************   PROTOTYPES   *********************************</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__GPIOINT.html#gac93e5702d7693ab3efbbccd9782b22e0">GPIOINT_Init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister</a>(uint8_t pin, <a class="code" href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a> callbackPtr);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">static</span> __INLINE <span class="keywordtype">void</span> <a class="code" href="group__GPIOINT.html#ga2d33c9188635a9b34cce16b4f1a2e6d4">GPIOINT_CallbackUnRegister</a>(uint8_t pin);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group__GPIOINT.html#ga2d33c9188635a9b34cce16b4f1a2e6d4">   67</a></span>&#160;<span class="keyword">static</span> __INLINE <span class="keywordtype">void</span> <a class="code" href="group__GPIOINT.html#ga2d33c9188635a9b34cce16b4f1a2e6d4">GPIOINT_CallbackUnRegister</a>(uint8_t pin)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister</a>(pin,0);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __EMDRV_GPIOINTERRUPT_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group__GPIOINT_html_ga2d33c9188635a9b34cce16b4f1a2e6d4"><div class="ttname"><a href="group__GPIOINT.html#ga2d33c9188635a9b34cce16b4f1a2e6d4">GPIOINT_CallbackUnRegister</a></div><div class="ttdeci">static __INLINE void GPIOINT_CallbackUnRegister(uint8_t pin)</div><div class="ttdoc">Unregisters user callback for given pin number. </div><div class="ttdef"><b>Definition:</b> <a href="gpiointerrupt_8h_source.html#l00067">gpiointerrupt.h:67</a></div></div>
 <div class="ttc" id="group__GPIOINT_html_gaffd9a793482ef44c0871654a9e60836e"><div class="ttname"><a href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister</a></div><div class="ttdeci">void GPIOINT_CallbackRegister(uint8_t pin, GPIOINT_IrqCallbackPtr_t callbackPtr)</div><div class="ttdoc">Registers user callback for given pin number. </div><div class="ttdef"><b>Definition:</b> <a href="gpiointerrupt_8c_source.html#l00091">gpiointerrupt.c:91</a></div></div>
-<div class="ttc" id="group__GPIOINT_html_ga0359e46b02264e5bae93e0a1224190b4"><div class="ttname"><a href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a></div><div class="ttdeci">void(* GPIOINT_IrqCallbackPtr_t)(uint8_t pin)</div><div class="ttdoc">GPIO interrupt callback function pointer. </div><div class="ttdef"><b>Definition:</b> <a href="gpiointerrupt_8h_source.html#l00049">gpiointerrupt.h:49</a></div></div>
+<div class="ttc" id="group__GPIOINT_html_ga0359e46b02264e5bae93e0a1224190b4"><div class="ttname"><a href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a></div><div class="ttdeci">void(* GPIOINT_IrqCallbackPtr_t)(uint8_t pin)</div><div class="ttdoc">GPIO interrupt callback function pointer. </div><div class="ttdef"><b>Definition:</b> <a href="gpiointerrupt_8h_source.html#l00047">gpiointerrupt.h:47</a></div></div>
 <div class="ttc" id="group__GPIOINT_html_gac93e5702d7693ab3efbbccd9782b22e0"><div class="ttname"><a href="group__GPIOINT.html#gac93e5702d7693ab3efbbccd9782b22e0">GPIOINT_Init</a></div><div class="ttdeci">void GPIOINT_Init(void)</div><div class="ttdoc">Initialization of GPIOINT module. </div><div class="ttdef"><b>Definition:</b> <a href="gpiointerrupt_8c_source.html#l00067">gpiointerrupt.c:67</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -157,7 +155,7 @@ $(document).ready(function(){initNavTree('gpiointerrupt_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_a4c7865bbce7a8303b6f974c12c308c9.html">gpiointerrupt</a></li><li class="navelem"><a class="el" href="dir_4904c5d03f591ef0b3b89f058fac5f63.html">inc</a></li><li class="navelem"><a class="el" href="gpiointerrupt_8h.html">gpiointerrupt.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:00 for EFM32 Tiny Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:23:51 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

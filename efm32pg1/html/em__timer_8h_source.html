@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Pearl Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32pg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32pg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,8 +110,8 @@ $(document).ready(function(){initNavTree('em__timer_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="em__timer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef __SILICON_LABS_EM_TIMER_H__</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define __SILICON_LABS_EM_TIMER_H__</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef EM_TIMER_H</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define EM_TIMER_H</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__device_8h.html">em_device.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined(TIMER_COUNT) &amp;&amp; (TIMER_COUNT &gt; 0)</span></div>
@@ -665,7 +662,7 @@ $(document).ready(function(){initNavTree('em__timer_8h_source.html','');});
 <div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;</div>
 <div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(TIMER_COUNT) &amp;&amp; (TIMER_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SILICON_LABS_EM_TIMER_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_TIMER_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="structTIMER__InitDTI__TypeDef_html_a59fc55f38d62814fdf52521a5a197d41"><div class="ttname"><a href="structTIMER__InitDTI__TypeDef.html#a59fc55f38d62814fdf52521a5a197d41">TIMER_InitDTI_TypeDef::outputsEnableMask</a></div><div class="ttdeci">uint32_t outputsEnableMask</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00448">em_timer.h:448</a></div></div>
 <div class="ttc" id="group__EFM32PG1B__TIMER__BitFields_html_ga0d9db5dac99c0e7cca67ef3fc5c3e874"><div class="ttname"><a href="group__EFM32PG1B__TIMER__BitFields.html#ga0d9db5dac99c0e7cca67ef3fc5c3e874">_TIMER_CC_CTRL_PRSSEL_PRSCH1</a></div><div class="ttdeci">#define _TIMER_CC_CTRL_PRSSEL_PRSCH1</div><div class="ttdef"><b>Definition:</b> <a href="efm32pg1b__timer_8h_source.html#l01174">efm32pg1b_timer.h:1174</a></div></div>
 <div class="ttc" id="group__TIMER_html_ggadc7dec57fe232c5fbabbb7cd25ebffe0a562644f7e2fe520845c0e7175c135c89"><div class="ttname"><a href="group__TIMER.html#ggadc7dec57fe232c5fbabbb7cd25ebffe0a562644f7e2fe520845c0e7175c135c89">timerPrescale1024</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00217">em_timer.h:217</a></div></div>
@@ -777,7 +774,7 @@ $(document).ready(function(){initNavTree('em__timer_8h_source.html','');});
 <div class="ttc" id="structTIMER__InitDTI__TypeDef_html_af6da6671ae8f3d6c9d467b042f502d28"><div class="ttname"><a href="structTIMER__InitDTI__TypeDef.html#af6da6671ae8f3d6c9d467b042f502d28">TIMER_InitDTI_TypeDef::riseTime</a></div><div class="ttdeci">unsigned int riseTime</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00439">em_timer.h:439</a></div></div>
 <div class="ttc" id="group__EFM32PG1B__TIMER__BitFields_html_ga779b7a46a66c96491049d135d22ba917"><div class="ttname"><a href="group__EFM32PG1B__TIMER__BitFields.html#ga779b7a46a66c96491049d135d22ba917">_TIMER_CC_CTRL_PRSSEL_PRSCH5</a></div><div class="ttdeci">#define _TIMER_CC_CTRL_PRSSEL_PRSCH5</div><div class="ttdef"><b>Definition:</b> <a href="efm32pg1b__timer_8h_source.html#l01178">efm32pg1b_timer.h:1178</a></div></div>
 <div class="ttc" id="structTIMER__InitCC__TypeDef_html_abf13a3647d816e68d0a8c611c1abc6df"><div class="ttname"><a href="structTIMER__InitCC__TypeDef.html#abf13a3647d816e68d0a8c611c1abc6df">TIMER_InitCC_TypeDef::eventCtrl</a></div><div class="ttdeci">TIMER_Event_TypeDef eventCtrl</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00354">em_timer.h:354</a></div></div>
-<div class="ttc" id="group__EFM32PG1B200F256GM48__Peripheral__Declaration_html_gaf1b746ba5ab7d0ab657156ebda0f290c"><div class="ttname"><a href="group__EFM32PG1B200F256GM48__Peripheral__Declaration.html#gaf1b746ba5ab7d0ab657156ebda0f290c">TIMER0</a></div><div class="ttdeci">#define TIMER0</div><div class="ttdef"><b>Definition:</b> <a href="efm32pg1b200f256gm48_8h_source.html#l00329">efm32pg1b200f256gm48.h:329</a></div></div>
+<div class="ttc" id="group__EFM32PG1B200F256GM48__Peripheral__Declaration_html_gaf1b746ba5ab7d0ab657156ebda0f290c"><div class="ttname"><a href="group__EFM32PG1B200F256GM48__Peripheral__Declaration.html#gaf1b746ba5ab7d0ab657156ebda0f290c">TIMER0</a></div><div class="ttdeci">#define TIMER0</div><div class="ttdef"><b>Definition:</b> <a href="efm32pg1b200f256gm48_8h_source.html#l00330">efm32pg1b200f256gm48.h:330</a></div></div>
 <div class="ttc" id="group__EFM32PG1B__TIMER__BitFields_html_ga35efde4d67e515bf0578b8f2475517c7"><div class="ttname"><a href="group__EFM32PG1B__TIMER__BitFields.html#ga35efde4d67e515bf0578b8f2475517c7">_TIMER_CC_CTRL_PRSSEL_PRSCH3</a></div><div class="ttdeci">#define _TIMER_CC_CTRL_PRSSEL_PRSCH3</div><div class="ttdef"><b>Definition:</b> <a href="efm32pg1b__timer_8h_source.html#l01176">efm32pg1b_timer.h:1176</a></div></div>
 <div class="ttc" id="structTIMER__InitDTI__TypeDef_html_a951fa352022e28725abfd3634b24a879"><div class="ttname"><a href="structTIMER__InitDTI__TypeDef.html#a951fa352022e28725abfd3634b24a879">TIMER_InitDTI_TypeDef::prescale</a></div><div class="ttdeci">TIMER_Prescale_TypeDef prescale</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00436">em_timer.h:436</a></div></div>
 <div class="ttc" id="structTIMER__InitCC__TypeDef_html_ae3f4937a7f9f883688e70051ce752e4b"><div class="ttname"><a href="structTIMER__InitCC__TypeDef.html#ae3f4937a7f9f883688e70051ce752e4b">TIMER_InitCC_TypeDef::coist</a></div><div class="ttdeci">bool coist</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00390">em_timer.h:390</a></div></div>
@@ -882,7 +879,7 @@ $(document).ready(function(){initNavTree('em__timer_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__timer_8h.html">em_timer.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:39:53 for EFM32 Pearl Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:37:55 for EFM32 Pearl Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

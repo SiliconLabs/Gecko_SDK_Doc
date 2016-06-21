@@ -1,8 +1,8 @@
 var em__cmu_8c =
 [
+    [ "CMU_AUXHFRCOBandGet", "group__CMU.html#ga4ea7051c97bd297873d5a5e763999fe8", null ],
+    [ "CMU_AUXHFRCOBandSet", "group__CMU.html#ga2b6f723f9b5bc7a5e63e8ab8041c68b9", null ],
     [ "CMU_AUXHFRCODevinfoGet", "group__CMU.html#ga5cb6e086e42cc246028b557514a1556c", null ],
-    [ "CMU_AUXHFRCOFreqGet", "group__CMU.html#gae20bb31081e0002abaf7b12f013a8902", null ],
-    [ "CMU_AUXHFRCOFreqSet", "group__CMU.html#gad6f6c5df2605d058d236a3b35677f5ef", null ],
     [ "CMU_Calibrate", "group__CMU.html#ga144a6e08d50cc4913a3452231eb3cc36", null ],
     [ "CMU_CalibrateConfig", "group__CMU.html#ga7145fb70394cf1c10e7b21b8f548c9f3", null ],
     [ "CMU_CalibrateCountGet", "group__CMU.html#ga6a5fb4b2d369de8db9ebf56edc780a7c", null ],
@@ -15,10 +15,9 @@ var em__cmu_8c =
     [ "CMU_ClockSelectGet", "group__CMU.html#ga924a9c8dbde9e529e684f0c8e7dfdaa2", null ],
     [ "CMU_ClockSelectSet", "group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3", null ],
     [ "CMU_FreezeEnable", "group__CMU.html#gaa497e1eb68ca0bfbac25e855537f1d9b", null ],
+    [ "CMU_HFRCOBandGet", "group__CMU.html#ga6e8fd53c566cb4c8075a51f67977fffc", null ],
+    [ "CMU_HFRCOBandSet", "group__CMU.html#ga79fa69403fb1b3629042a730d6a15cf6", null ],
     [ "CMU_HFRCODevinfoGet", "group__CMU.html#gac0a818d0ac189b4c802ad83b3dc720ba", null ],
-    [ "CMU_HFRCOFreqGet", "group__CMU.html#ga474db4cdc974625d34fb3ff0393a8bad", null ],
-    [ "CMU_HFRCOFreqSet", "group__CMU.html#ga0b9edc4e3400a44612b07c2c6f8f483a", null ],
-    [ "CMU_HFXOAutostartEnable", "group__CMU.html#gaef0349d89cbd8ddac609d352a9e6b8cb", null ],
     [ "CMU_HFXOInit", "group__CMU.html#ga97fc54dc73a1ead5a29fe538e538bd09", null ],
     [ "CMU_LCDClkFDIVGet", "group__CMU.html#gad457bf7183e8e8530681e93803321ded", null ],
     [ "CMU_LCDClkFDIVSet", "group__CMU.html#ga72d523a129eb31231432ad1010fa1096", null ],

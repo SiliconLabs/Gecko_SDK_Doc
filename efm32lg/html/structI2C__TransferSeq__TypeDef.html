@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -69,13 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -111,32 +103,12 @@ $(document).ready(function(){initNavTree('structI2C__TransferSeq__TypeDef.html',
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">I2C_TransferSeq_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a> &raquo; <a class="el" href="group__I2C.html">I2C</a></div></div>  </div>
+<div class="title">I2C_TransferSeq_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a> &raquo; <a class="el" href="group__I2C.html">I2C</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Master mode transfer message structure used to define a complete I2C transfer sequence (from start to stop).  
- <a href="structI2C__TransferSeq__TypeDef.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a864fcee4abd27c2dab5723c2d2493ed0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__TransferSeq__TypeDef.html#a864fcee4abd27c2dab5723c2d2493ed0">addr</a></td></tr>
-<tr class="memdesc:a864fcee4abd27c2dab5723c2d2493ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address to use after (repeated) start.  <a href="#a864fcee4abd27c2dab5723c2d2493ed0">More...</a><br /></td></tr>
-<tr class="separator:a864fcee4abd27c2dab5723c2d2493ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9eb709e67fbaa4acb9a4964ca5174cb"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__TransferSeq__TypeDef.html#aa9eb709e67fbaa4acb9a4964ca5174cb">flags</a></td></tr>
-<tr class="separator:aa9eb709e67fbaa4acb9a4964ca5174cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8768a91a4d0d3c66e72e8fdb981b5c63"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:a2b5bf7d5f4c4b876ef903e501aeda577"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t *&#160;&#160;&#160;<a class="el" href="structI2C__TransferSeq__TypeDef.html#ac50f3e038b429e01fd5b2bdfede2f674">data</a></td></tr>
-<tr class="separator:a2b5bf7d5f4c4b876ef903e501aeda577"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08adecdc22009940003d619f054fc856"><td class="memItemLeft" >&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="structI2C__TransferSeq__TypeDef.html#a92b6d16d6d3b3e4d5650740fa306a285">len</a></td></tr>
-<tr class="separator:a08adecdc22009940003d619f054fc856"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8768a91a4d0d3c66e72e8fdb981b5c63"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">buf</a> [2]</td></tr>
-<tr class="separator:a8768a91a4d0d3c66e72e8fdb981b5c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The structure allows for defining the following types of sequences, please refer to defines for sequence details. </p><ul>
+<div class="textblock"><p>Master mode transfer message structure used to define a complete I2C transfer sequence (from start to stop). </p>
+<p>The structure allows for defining the following types of sequences, please refer to defines for sequence details. </p><ul>
 <li><a class="el" href="group__I2C.html#ga0c1779663a5ebf44e956ea3f591b4e61" title="Indicate plain read sequence: S+ADDR(R)+DATA0+P. ">I2C_FLAG_READ</a> - data read into buf[0].data </li>
 <li><a class="el" href="group__I2C.html#ga091476f45133e8a6deb9dbd7a3ea6229" title="Indicate plain write sequence: S+ADDR(W)+DATA0+P. ">I2C_FLAG_WRITE</a> - data written from buf[0].data </li>
 <li><a class="el" href="group__I2C.html#gaf9fc47d6ee1c66405dc491f7a4c3b8fc" title="Indicate combined write/read sequence: S+ADDR(W)+DATA0+Sr+ADDR(R)+DATA1+P. ">I2C_FLAG_WRITE_READ</a> - data written from buf[0].data and read into buf[1].data </li>
@@ -144,7 +116,25 @@ Data Fields</h2></td></tr>
 </ul>
 
 <p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00247">247</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
+</div>
+<p><code>#include &lt;<a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a864fcee4abd27c2dab5723c2d2493ed0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__TransferSeq__TypeDef.html#a864fcee4abd27c2dab5723c2d2493ed0">addr</a></td></tr>
+<tr class="memdesc:a864fcee4abd27c2dab5723c2d2493ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address to use after (repeated) start.  <a href="#a864fcee4abd27c2dab5723c2d2493ed0">More...</a><br /></td></tr>
+<tr class="separator:a864fcee4abd27c2dab5723c2d2493ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8768a91a4d0d3c66e72e8fdb981b5c63"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a2b5bf7d5f4c4b876ef903e501aeda577"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t *&#160;&#160;&#160;<a class="el" href="structI2C__TransferSeq__TypeDef.html#ac50f3e038b429e01fd5b2bdfede2f674">data</a></td></tr>
+<tr class="separator:a2b5bf7d5f4c4b876ef903e501aeda577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08adecdc22009940003d619f054fc856"><td class="memItemLeft" >&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="structI2C__TransferSeq__TypeDef.html#a92b6d16d6d3b3e4d5650740fa306a285">len</a></td></tr>
+<tr class="separator:a08adecdc22009940003d619f054fc856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8768a91a4d0d3c66e72e8fdb981b5c63"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">buf</a> [2]</td></tr>
+<tr class="separator:a8768a91a4d0d3c66e72e8fdb981b5c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9eb709e67fbaa4acb9a4964ca5174cb"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structI2C__TransferSeq__TypeDef.html#aa9eb709e67fbaa4acb9a4964ca5174cb">flags</a></td></tr>
+<tr class="separator:aa9eb709e67fbaa4acb9a4964ca5174cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a864fcee4abd27c2dab5723c2d2493ed0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -154,6 +144,8 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Address to use after (repeated) start. </p>
 <p>Layout details, A = address bit, X = don't care bit (set to 0): </p><ul>
 <li>7 bit address - use format AAAA AAAX. </li>
 <li>10 bit address - use format XXXX XAAX AAAA AAAA </li>
@@ -161,24 +153,22 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00257">257</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="eeprom_8c_source.html#l00063">EEPROM_AckPoll()</a>, <a class="el" href="eeprom_8c_source.html#l00126">EEPROM_Read()</a>, <a class="el" href="eeprom_8c_source.html#l00191">EEPROM_Write()</a>, <a class="el" href="em__i2c_8c_source.html#l00424">I2C_Transfer()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00170">Si1147_Read_Block_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00042">Si1147_Read_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00124">Si1147_Write_Block_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00082">Si1147_Write_Register()</a>, <a class="el" href="si7013_8c_source.html#l00407">Si7013_Detect()</a>, <a class="el" href="si7013_8c_source.html#l00157">Si7013_GetFirmwareRevision()</a>, <a class="el" href="tempsens_8c_source.html#l00074">TEMPSENS_RegisterGet()</a>, and <a class="el" href="tempsens_8c_source.html#l00136">TEMPSENS_RegisterSet()</a>.</p>
+<p>Referenced by <a class="el" href="eeprom_8c.html#aef96dc2e7cad63b532565057c7f0467c">EEPROM_AckPoll()</a>, <a class="el" href="group__Eeprom.html#gafffd2286594ec8e01dc16f8725626c04">EEPROM_Read()</a>, <a class="el" href="group__Eeprom.html#ga1b92635b3e255f10731494e833654895">EEPROM_Write()</a>, <a class="el" href="group__I2C.html#ga67983b3dbe7f028a97f765e421b3df56">I2C_Transfer()</a>, <a class="el" href="cpt112s__i2c_8c.html#a0be56a687b1624b76fec1289ef075017">performI2CTransfer()</a>, <a class="el" href="group__Si114x.html#ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7">Si1147_Read_Block_Register()</a>, <a class="el" href="group__Si114x.html#ga8066eedd4bbac304e733a89e09cd6786">Si1147_Read_Register()</a>, <a class="el" href="group__Si114x.html#gaec6f34819894c8d7b2f86fb574da203e">Si1147_Write_Block_Register()</a>, <a class="el" href="group__Si114x.html#gad2464ccbbf4938c5550702011d6dd5a4">Si1147_Write_Register()</a>, <a class="el" href="group__Si7013.html#ga93b1a4e0a94737abd16ec547004c270f">Si7013_Detect()</a>, <a class="el" href="group__Si7013.html#gac595b86107a208280179a6f07c08bfa3">Si7013_GetFirmwareRevision()</a>, <a class="el" href="group__TempSensor.html#gae77973607cb0dc33faaed18274885717">TEMPSENS_RegisterGet()</a>, and <a class="el" href="group__TempSensor.html#gafeb45237c0a6989bc2e3bdbc564d90bd">TEMPSENS_RegisterSet()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa9eb709e67fbaa4acb9a4964ca5174cb"></a>
+<a class="anchor" id="a8768a91a4d0d3c66e72e8fdb981b5c63"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t I2C_TransferSeq_TypeDef::flags</td>
+          <td class="memname">struct { ... }   I2C_TransferSeq_TypeDef::buf[2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Flags defining sequence type and details, see I2C_FLAG_... defines. </p>
+<p>Buffers used to hold data to send from or receive into depending on sequence type. </p>
 
-<p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00260">260</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
-
-<p>Referenced by <a class="el" href="eeprom_8c_source.html#l00063">EEPROM_AckPoll()</a>, <a class="el" href="eeprom_8c_source.html#l00126">EEPROM_Read()</a>, <a class="el" href="eeprom_8c_source.html#l00191">EEPROM_Write()</a>, <a class="el" href="em__i2c_8c_source.html#l00424">I2C_Transfer()</a>, <a class="el" href="em__i2c_8c_source.html#l00803">I2C_TransferInit()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00170">Si1147_Read_Block_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00042">Si1147_Read_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00124">Si1147_Write_Block_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00082">Si1147_Write_Register()</a>, <a class="el" href="si7013_8c_source.html#l00407">Si7013_Detect()</a>, <a class="el" href="si7013_8c_source.html#l00157">Si7013_GetFirmwareRevision()</a>, <a class="el" href="tempsens_8c_source.html#l00074">TEMPSENS_RegisterGet()</a>, and <a class="el" href="tempsens_8c_source.html#l00136">TEMPSENS_RegisterSet()</a>.</p>
+<p>Referenced by <a class="el" href="eeprom_8c.html#aef96dc2e7cad63b532565057c7f0467c">EEPROM_AckPoll()</a>, <a class="el" href="group__Eeprom.html#gafffd2286594ec8e01dc16f8725626c04">EEPROM_Read()</a>, <a class="el" href="group__Eeprom.html#ga1b92635b3e255f10731494e833654895">EEPROM_Write()</a>, <a class="el" href="group__I2C.html#ga67983b3dbe7f028a97f765e421b3df56">I2C_Transfer()</a>, <a class="el" href="group__I2C.html#gae2bf2ecc3d0c4f55e3511d4871b64b16">I2C_TransferInit()</a>, <a class="el" href="cpt112s__i2c_8c.html#a0be56a687b1624b76fec1289ef075017">performI2CTransfer()</a>, <a class="el" href="group__Si114x.html#ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7">Si1147_Read_Block_Register()</a>, <a class="el" href="group__Si114x.html#ga8066eedd4bbac304e733a89e09cd6786">Si1147_Read_Register()</a>, <a class="el" href="group__Si114x.html#gaec6f34819894c8d7b2f86fb574da203e">Si1147_Write_Block_Register()</a>, <a class="el" href="group__Si114x.html#gad2464ccbbf4938c5550702011d6dd5a4">Si1147_Write_Register()</a>, <a class="el" href="group__Si7013.html#ga93b1a4e0a94737abd16ec547004c270f">Si7013_Detect()</a>, <a class="el" href="group__Si7013.html#gac595b86107a208280179a6f07c08bfa3">Si7013_GetFirmwareRevision()</a>, <a class="el" href="group__TempSensor.html#gae77973607cb0dc33faaed18274885717">TEMPSENS_RegisterGet()</a>, and <a class="el" href="group__TempSensor.html#gafeb45237c0a6989bc2e3bdbc564d90bd">TEMPSENS_RegisterSet()</a>.</p>
 
 </div>
 </div>
@@ -195,7 +185,24 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00269">269</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="eeprom_8c_source.html#l00063">EEPROM_AckPoll()</a>, <a class="el" href="eeprom_8c_source.html#l00126">EEPROM_Read()</a>, <a class="el" href="eeprom_8c_source.html#l00191">EEPROM_Write()</a>, <a class="el" href="em__i2c_8c_source.html#l00424">I2C_Transfer()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00170">Si1147_Read_Block_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00042">Si1147_Read_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00124">Si1147_Write_Block_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00082">Si1147_Write_Register()</a>, <a class="el" href="si7013_8c_source.html#l00407">Si7013_Detect()</a>, <a class="el" href="si7013_8c_source.html#l00157">Si7013_GetFirmwareRevision()</a>, <a class="el" href="tempsens_8c_source.html#l00074">TEMPSENS_RegisterGet()</a>, and <a class="el" href="tempsens_8c_source.html#l00136">TEMPSENS_RegisterSet()</a>.</p>
+<p>Referenced by <a class="el" href="eeprom_8c.html#aef96dc2e7cad63b532565057c7f0467c">EEPROM_AckPoll()</a>, <a class="el" href="group__Eeprom.html#gafffd2286594ec8e01dc16f8725626c04">EEPROM_Read()</a>, <a class="el" href="group__Eeprom.html#ga1b92635b3e255f10731494e833654895">EEPROM_Write()</a>, <a class="el" href="group__I2C.html#ga67983b3dbe7f028a97f765e421b3df56">I2C_Transfer()</a>, <a class="el" href="cpt112s__i2c_8c.html#a0be56a687b1624b76fec1289ef075017">performI2CTransfer()</a>, <a class="el" href="group__Si114x.html#ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7">Si1147_Read_Block_Register()</a>, <a class="el" href="group__Si114x.html#ga8066eedd4bbac304e733a89e09cd6786">Si1147_Read_Register()</a>, <a class="el" href="group__Si114x.html#gaec6f34819894c8d7b2f86fb574da203e">Si1147_Write_Block_Register()</a>, <a class="el" href="group__Si114x.html#gad2464ccbbf4938c5550702011d6dd5a4">Si1147_Write_Register()</a>, <a class="el" href="group__Si7013.html#ga93b1a4e0a94737abd16ec547004c270f">Si7013_Detect()</a>, <a class="el" href="group__Si7013.html#gac595b86107a208280179a6f07c08bfa3">Si7013_GetFirmwareRevision()</a>, <a class="el" href="group__TempSensor.html#gae77973607cb0dc33faaed18274885717">TEMPSENS_RegisterGet()</a>, and <a class="el" href="group__TempSensor.html#gafeb45237c0a6989bc2e3bdbc564d90bd">TEMPSENS_RegisterSet()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa9eb709e67fbaa4acb9a4964ca5174cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t I2C_TransferSeq_TypeDef::flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flags defining sequence type and details, see I2C_FLAG_... defines. </p>
+
+<p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00260">260</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
+
+<p>Referenced by <a class="el" href="eeprom_8c.html#aef96dc2e7cad63b532565057c7f0467c">EEPROM_AckPoll()</a>, <a class="el" href="group__Eeprom.html#gafffd2286594ec8e01dc16f8725626c04">EEPROM_Read()</a>, <a class="el" href="group__Eeprom.html#ga1b92635b3e255f10731494e833654895">EEPROM_Write()</a>, <a class="el" href="group__I2C.html#ga67983b3dbe7f028a97f765e421b3df56">I2C_Transfer()</a>, <a class="el" href="group__I2C.html#gae2bf2ecc3d0c4f55e3511d4871b64b16">I2C_TransferInit()</a>, <a class="el" href="cpt112s__i2c_8c.html#a0be56a687b1624b76fec1289ef075017">performI2CTransfer()</a>, <a class="el" href="group__Si114x.html#ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7">Si1147_Read_Block_Register()</a>, <a class="el" href="group__Si114x.html#ga8066eedd4bbac304e733a89e09cd6786">Si1147_Read_Register()</a>, <a class="el" href="group__Si114x.html#gaec6f34819894c8d7b2f86fb574da203e">Si1147_Write_Block_Register()</a>, <a class="el" href="group__Si114x.html#gad2464ccbbf4938c5550702011d6dd5a4">Si1147_Write_Register()</a>, <a class="el" href="group__Si7013.html#ga93b1a4e0a94737abd16ec547004c270f">Si7013_Detect()</a>, <a class="el" href="group__Si7013.html#gac595b86107a208280179a6f07c08bfa3">Si7013_GetFirmwareRevision()</a>, <a class="el" href="group__TempSensor.html#gae77973607cb0dc33faaed18274885717">TEMPSENS_RegisterGet()</a>, and <a class="el" href="group__TempSensor.html#gafeb45237c0a6989bc2e3bdbc564d90bd">TEMPSENS_RegisterSet()</a>.</p>
 
 </div>
 </div>
@@ -212,22 +219,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__i2c_8h_source.html#l00278">278</a> of file <a class="el" href="em__i2c_8h_source.html">em_i2c.h</a>.</p>
 
-<p>Referenced by <a class="el" href="eeprom_8c_source.html#l00063">EEPROM_AckPoll()</a>, <a class="el" href="eeprom_8c_source.html#l00126">EEPROM_Read()</a>, <a class="el" href="eeprom_8c_source.html#l00191">EEPROM_Write()</a>, <a class="el" href="em__i2c_8c_source.html#l00424">I2C_Transfer()</a>, <a class="el" href="em__i2c_8c_source.html#l00803">I2C_TransferInit()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00170">Si1147_Read_Block_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00042">Si1147_Read_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00124">Si1147_Write_Block_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00082">Si1147_Write_Register()</a>, <a class="el" href="si7013_8c_source.html#l00407">Si7013_Detect()</a>, <a class="el" href="si7013_8c_source.html#l00157">Si7013_GetFirmwareRevision()</a>, <a class="el" href="tempsens_8c_source.html#l00074">TEMPSENS_RegisterGet()</a>, and <a class="el" href="tempsens_8c_source.html#l00136">TEMPSENS_RegisterSet()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8768a91a4d0d3c66e72e8fdb981b5c63"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct { ... }   I2C_TransferSeq_TypeDef::buf[2]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Buffers used to hold data to send from or receive into depending on sequence type. </p>
-
-<p>Referenced by <a class="el" href="eeprom_8c_source.html#l00063">EEPROM_AckPoll()</a>, <a class="el" href="eeprom_8c_source.html#l00126">EEPROM_Read()</a>, <a class="el" href="eeprom_8c_source.html#l00191">EEPROM_Write()</a>, <a class="el" href="em__i2c_8c_source.html#l00424">I2C_Transfer()</a>, <a class="el" href="em__i2c_8c_source.html#l00803">I2C_TransferInit()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00170">Si1147_Read_Block_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00042">Si1147_Read_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00124">Si1147_Write_Block_Register()</a>, <a class="el" href="si1147__i2c_8c_source.html#l00082">Si1147_Write_Register()</a>, <a class="el" href="si7013_8c_source.html#l00407">Si7013_Detect()</a>, <a class="el" href="si7013_8c_source.html#l00157">Si7013_GetFirmwareRevision()</a>, <a class="el" href="tempsens_8c_source.html#l00074">TEMPSENS_RegisterGet()</a>, and <a class="el" href="tempsens_8c_source.html#l00136">TEMPSENS_RegisterSet()</a>.</p>
+<p>Referenced by <a class="el" href="eeprom_8c.html#aef96dc2e7cad63b532565057c7f0467c">EEPROM_AckPoll()</a>, <a class="el" href="group__Eeprom.html#gafffd2286594ec8e01dc16f8725626c04">EEPROM_Read()</a>, <a class="el" href="group__Eeprom.html#ga1b92635b3e255f10731494e833654895">EEPROM_Write()</a>, <a class="el" href="group__I2C.html#ga67983b3dbe7f028a97f765e421b3df56">I2C_Transfer()</a>, <a class="el" href="group__I2C.html#gae2bf2ecc3d0c4f55e3511d4871b64b16">I2C_TransferInit()</a>, <a class="el" href="cpt112s__i2c_8c.html#a0be56a687b1624b76fec1289ef075017">performI2CTransfer()</a>, <a class="el" href="group__Si114x.html#ga1ba38d5d8eefcaf2c7b1e5fcb0bec0f7">Si1147_Read_Block_Register()</a>, <a class="el" href="group__Si114x.html#ga8066eedd4bbac304e733a89e09cd6786">Si1147_Read_Register()</a>, <a class="el" href="group__Si114x.html#gaec6f34819894c8d7b2f86fb574da203e">Si1147_Write_Block_Register()</a>, <a class="el" href="group__Si114x.html#gad2464ccbbf4938c5550702011d6dd5a4">Si1147_Write_Register()</a>, <a class="el" href="group__Si7013.html#ga93b1a4e0a94737abd16ec547004c270f">Si7013_Detect()</a>, <a class="el" href="group__Si7013.html#gac595b86107a208280179a6f07c08bfa3">Si7013_GetFirmwareRevision()</a>, <a class="el" href="group__TempSensor.html#gae77973607cb0dc33faaed18274885717">TEMPSENS_RegisterGet()</a>, and <a class="el" href="group__TempSensor.html#gafeb45237c0a6989bc2e3bdbc564d90bd">TEMPSENS_RegisterSet()</a>.</p>
 
 </div>
 </div>
@@ -240,7 +232,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structI2C__TransferSeq__TypeDef.html">I2C_TransferSeq_TypeDef</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:37:38 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:30:08 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

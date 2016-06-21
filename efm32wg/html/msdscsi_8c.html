@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,10 +111,16 @@ $(document).ready(function(){initNavTree('msdscsi_8c.html','');});
 <div class="title">msdscsi.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>SCSI interface for Mass Storage Devices (MSD). </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>SCSI interface for Mass Storage Devices (MSD).  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__usb_8h_source.html">em_usb.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__usb_8h_source.html">em_usb.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="msdscsi_8h_source.html">msdscsi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="msdbot_8h_source.html">msdbot.h</a>&quot;</code><br />
 </div>
@@ -127,16 +131,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ga20d1e1bc8c9f66d3bbf9f7ec45a8afeb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#ga20d1e1bc8c9f66d3bbf9f7ec45a8afeb">MSDSCSI_Init</a> (<a class="el" href="structUSBH__Ep__TypeDef.html">USBH_Ep_TypeDef</a> *out, <a class="el" href="structUSBH__Ep__TypeDef.html">USBH_Ep_TypeDef</a> *in)</td></tr>
 <tr class="memdesc:ga20d1e1bc8c9f66d3bbf9f7ec45a8afeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">MSDSCSI module initialization.  <a href="group__Msd.html#ga20d1e1bc8c9f66d3bbf9f7ec45a8afeb">More...</a><br /></td></tr>
 <tr class="separator:ga20d1e1bc8c9f66d3bbf9f7ec45a8afeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8618b70076ea29385d60c816791d253c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#ga8618b70076ea29385d60c816791d253c">MSDSCSI_Inquiry</a> (<a class="el" href="structMSDSCSI__InquiryData__TypeDef.html">MSDSCSI_InquiryData_TypeDef</a> *data)</td></tr>
+<tr class="memitem:ga8618b70076ea29385d60c816791d253c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#ga8618b70076ea29385d60c816791d253c">MSDSCSI_Inquiry</a> (MSDSCSI_InquiryData_TypeDef *data)</td></tr>
 <tr class="memdesc:ga8618b70076ea29385d60c816791d253c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a SCSI Inquiry command.  <a href="group__Msd.html#ga8618b70076ea29385d60c816791d253c">More...</a><br /></td></tr>
 <tr class="separator:ga8618b70076ea29385d60c816791d253c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga316bfe2e0c761d50dcaed004a8034bbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#ga316bfe2e0c761d50dcaed004a8034bbe">MSDSCSI_Read10</a> (uint32_t lba, uint16_t sectors, void *data)</td></tr>
 <tr class="memdesc:ga316bfe2e0c761d50dcaed004a8034bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a SCSI Read(10) command.  <a href="group__Msd.html#ga316bfe2e0c761d50dcaed004a8034bbe">More...</a><br /></td></tr>
 <tr class="separator:ga316bfe2e0c761d50dcaed004a8034bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaabf14b7316a5270391c8961f7b7bd1e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#gaabf14b7316a5270391c8961f7b7bd1e9">MSDSCSI_ReadCapacity</a> (<a class="el" href="structMSDSCSI__ReadCapacityData__TypeDef.html">MSDSCSI_ReadCapacityData_TypeDef</a> *data)</td></tr>
+<tr class="memitem:gaabf14b7316a5270391c8961f7b7bd1e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#gaabf14b7316a5270391c8961f7b7bd1e9">MSDSCSI_ReadCapacity</a> (MSDSCSI_ReadCapacityData_TypeDef *data)</td></tr>
 <tr class="memdesc:gaabf14b7316a5270391c8961f7b7bd1e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a SCSI Read Capacity command.  <a href="group__Msd.html#gaabf14b7316a5270391c8961f7b7bd1e9">More...</a><br /></td></tr>
 <tr class="separator:gaabf14b7316a5270391c8961f7b7bd1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa04e858f68c0729af7d749a9bbbd64fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#gaa04e858f68c0729af7d749a9bbbd64fb">MSDSCSI_RequestSense</a> (<a class="el" href="structMSDSCSI__RequestSenseData__TypeDef.html">MSDSCSI_RequestSenseData_TypeDef</a> *data)</td></tr>
+<tr class="memitem:gaa04e858f68c0729af7d749a9bbbd64fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#gaa04e858f68c0729af7d749a9bbbd64fb">MSDSCSI_RequestSense</a> (MSDSCSI_RequestSenseData_TypeDef *data)</td></tr>
 <tr class="memdesc:gaa04e858f68c0729af7d749a9bbbd64fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a SCSI Request Sense command.  <a href="group__Msd.html#gaa04e858f68c0729af7d749a9bbbd64fb">More...</a><br /></td></tr>
 <tr class="separator:gaa04e858f68c0729af7d749a9bbbd64fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga28044689db0ce7f73fe0eb209e01c68e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Msd.html#ga28044689db0ce7f73fe0eb209e01c68e">MSDSCSI_TestUnitReady</a> (void)</td></tr>
@@ -146,21 +150,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaf01dd388f44692d483d2d83decf804c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a SCSI Write(10) command.  <a href="group__Msd.html#gaf01dd388f44692d483d2d83decf804c2">More...</a><br /></td></tr>
 <tr class="separator:gaf01dd388f44692d483d2d83decf804c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="msdscsi_8c.html">msdscsi.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:38:16 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:32:14 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

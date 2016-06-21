@@ -9,6 +9,7 @@ var searchData=
   ['uartdrvaborttransmit',['uartdrvAbortTransmit',['../group__UARTDRV.html#gga7b3eb02ccaea26685afc6dd9e69c8501a56c15ee0b09d981b5e43871929f2e551',1,'uartdrv.h']]],
   ['uartdrvflowcontrolauto',['uartdrvFlowControlAuto',['../group__UARTDRV.html#ggae5bb048bcc9222f56c9b4b811f3395e0ae854b0adf4c13f331af47f31e4cde5b5',1,'uartdrv.h']]],
   ['uartdrvflowcontrolhw',['uartdrvFlowControlHw',['../group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a913edb6e0dbe54138d15da54f92cadda',1,'uartdrv.h']]],
+  ['uartdrvflowcontrolhwuart',['uartdrvFlowControlHwUart',['../group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a70c8bed3ae9395cb48e38e98ac9c9814',1,'uartdrv.h']]],
   ['uartdrvflowcontrolnone',['uartdrvFlowControlNone',['../group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73afb13e9c9f236dbccf530081cac5a884d',1,'uartdrv.h']]],
   ['uartdrvflowcontroloff',['uartdrvFlowControlOff',['../group__UARTDRV.html#ggae5bb048bcc9222f56c9b4b811f3395e0a6c793820b2ac1a1bf2b59ddc491cbcbf',1,'uartdrv.h']]],
   ['uartdrvflowcontrolon',['uartdrvFlowControlOn',['../group__UARTDRV.html#ggae5bb048bcc9222f56c9b4b811f3395e0ae8a25b944922fad849995ff5b616a79c',1,'uartdrv.h']]],

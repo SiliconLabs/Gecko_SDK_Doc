@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Giant Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32gg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32gg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -114,10 +112,16 @@ $(document).ready(function(){initNavTree('ustimer_8h.html','');});
 <div class="title">ustimer.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Microsecond delay function API definition. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>Microsecond delay function API definition.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<p>Definition in file <a class="el" href="ustimer_8h_source.html">ustimer.h</a>.</p>
+</div><div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="ecode_8h_source.html">ecode.h</a>&quot;</code><br />
 <code>#include &quot;ustimer_config.h&quot;</code><br />
 </div>
@@ -126,40 +130,32 @@ $(document).ready(function(){initNavTree('ustimer_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:gafa7a3cfd6fa84e52ff30b19963c550bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafa7a3cfd6fa84e52ff30b19963c550bc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#gad59417e7951d81dfc15ec2757f08148e">ECODE_OK</a> )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#gad59417e7951d81dfc15ec2757f08148e">ECODE_OK</a> )</td></tr>
 <tr class="memdesc:gafa7a3cfd6fa84e52ff30b19963c550bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Success return value. <br /></td></tr>
 <tr class="separator:gafa7a3cfd6fa84e52ff30b19963c550bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5c7fa9c799b61638907d4f832a45e58b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init</a> (void)</td></tr>
-<tr class="memdesc:ga5c7fa9c799b61638907d4f832a45e58b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate and initialize the hardware timer used to pace the 1 microsecond delay functions.  <a href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">More...</a><br /></td></tr>
-<tr class="separator:ga5c7fa9c799b61638907d4f832a45e58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae0ab9e930ee6cbd71061142c4ad4e298"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">USTIMER_DeInit</a> (void)</td></tr>
+<tr class="memitem:gae0ab9e930ee6cbd71061142c4ad4e298"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">USTIMER_DeInit</a> (void)</td></tr>
 <tr class="memdesc:gae0ab9e930ee6cbd71061142c4ad4e298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize USTIMER driver.  <a href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">More...</a><br /></td></tr>
 <tr class="separator:gae0ab9e930ee6cbd71061142c4ad4e298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3a844fc16a527d15450ba4692f6ce047"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">USTIMER_Delay</a> (uint32_t usec)</td></tr>
+<tr class="memitem:ga3a844fc16a527d15450ba4692f6ce047"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">USTIMER_Delay</a> (uint32_t usec)</td></tr>
 <tr class="memdesc:ga3a844fc16a527d15450ba4692f6ce047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay a given number of microseconds.  <a href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">More...</a><br /></td></tr>
 <tr class="separator:ga3a844fc16a527d15450ba4692f6ce047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga22982b2c10f35aa2f9dacb7252dfa0af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">USTIMER_DelayIntSafe</a> (uint32_t usec)</td></tr>
+<tr class="memitem:ga22982b2c10f35aa2f9dacb7252dfa0af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">USTIMER_DelayIntSafe</a> (uint32_t usec)</td></tr>
 <tr class="memdesc:ga22982b2c10f35aa2f9dacb7252dfa0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay a given number of microseconds.  <a href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">More...</a><br /></td></tr>
 <tr class="separator:ga22982b2c10f35aa2f9dacb7252dfa0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c7fa9c799b61638907d4f832a45e58b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init</a> (void)</td></tr>
+<tr class="memdesc:ga5c7fa9c799b61638907d4f832a45e58b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate and initialize the hardware timer used to pace the 1 microsecond delay functions.  <a href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">More...</a><br /></td></tr>
+<tr class="separator:ga5c7fa9c799b61638907d4f832a45e58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="ustimer_8h_source.html">ustimer.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_ffff73ed5bb422f19de7b8148196fa80.html">ustimer</a></li><li class="navelem"><a class="el" href="dir_df4e6f4e1368387805e91b493fd9898d.html">inc</a></li><li class="navelem"><a class="el" href="ustimer_8h.html">ustimer.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:46 for EFM32 Giant Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:26:46 for EFM32 Giant Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

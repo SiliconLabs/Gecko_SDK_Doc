@@ -1,12 +1,12 @@
 var group__EFM32GG995F1024 =
 [
+    [ "EFM32GG995F1024 Alternate Function", "group__EFM32GG995F1024__Alternate__Function.html", null ],
+    [ "EFM32GG995F1024 Bit Fields", "group__EFM32GG995F1024__BitFields.html", "group__EFM32GG995F1024__BitFields" ],
     [ "EFM32GG995F1024 Core", "group__EFM32GG995F1024__Core.html", "group__EFM32GG995F1024__Core" ],
     [ "EFM32GG995F1024 Part", "group__EFM32GG995F1024__Part.html", "group__EFM32GG995F1024__Part" ],
-    [ "EFM32GG995F1024 Peripheral TypeDefs", "group__EFM32GG995F1024__Peripheral__TypeDefs.html", null ],
-    [ "EFM32GG995F1024 Peripheral Memory Map", "group__EFM32GG995F1024__Peripheral__Base.html", "group__EFM32GG995F1024__Peripheral__Base" ],
     [ "EFM32GG995F1024 Peripheral Declarations", "group__EFM32GG995F1024__Peripheral__Declaration.html", "group__EFM32GG995F1024__Peripheral__Declaration" ],
-    [ "EFM32GG995F1024 Bit Fields", "group__EFM32GG995F1024__BitFields.html", "group__EFM32GG995F1024__BitFields" ],
-    [ "EFM32GG995F1024 Alternate Function", "group__EFM32GG995F1024__Alternate__Function.html", null ],
+    [ "EFM32GG995F1024 Peripheral Memory Map", "group__EFM32GG995F1024__Peripheral__Base.html", "group__EFM32GG995F1024__Peripheral__Base" ],
+    [ "EFM32GG995F1024 Peripheral TypeDefs", "group__EFM32GG995F1024__Peripheral__TypeDefs.html", null ],
     [ "SET_BIT_FIELD", "group__EFM32GG995F1024.html#ga7979121950b76a6bd75bf5a8f6fbdcc0", null ],
     [ "IRQn_Type", "group__EFM32GG995F1024.html#gac3af4a32370fb28c4ade8bf2add80251", null ],
     [ "IRQn", "group__EFM32GG995F1024.html#ga666eb0caeb12ec0e281415592ae89083", [

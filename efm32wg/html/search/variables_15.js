@@ -16,7 +16,7 @@ var searchData=
   ['usbreset',['usbReset',['../structUSBD__Callbacks__TypeDef.html#a93a3dcf2bbef9f22b35f37df969b6ac7',1,'USBD_Callbacks_TypeDef']]],
   ['usbstatechange',['usbStateChange',['../structUSBD__Callbacks__TypeDef.html#af4bb516d0199344f9a7ca21c20b43f8f',1,'USBD_Callbacks_TypeDef']]],
   ['usealtex',['useAltEx',['../structLESENSE__ChDesc__TypeDef.html#a606eb1453bd1b4b8dfd04c94885fe3c9',1,'LESENSE_ChDesc_TypeDef']]],
-  ['used',['used',['../structUARTDRV__Buffer__FifoQueue__t.html#aabeffca311e523f59f3d90aef3ab8028',1,'UARTDRV_Buffer_FifoQueue_t']]],
+  ['used',['used',['../structUARTDRV__Buffer__FifoQueue__t.html#ae0a0e1b396b4f8cc3ac621681c9f2268',1,'UARTDRV_Buffer_FifoQueue_t']]],
   ['usehprot',['useHprot',['../structMSC__ExecConfig__TypeDef.html#a3984dc175ed49f2910786829fbe6b911',1,'MSC_ExecConfig_TypeDef']]],
   ['user',['USER',['../structDMA__DESCRIPTOR__TypeDef.html#a4346c88c2a75d91f13030a28b5dbcfbe',1,'DMA_DESCRIPTOR_TypeDef']]],
   ['usercallback',['userCallback',['../structEZRADIODRV__AutoAckHandle.html#ae466fbca495d8f0fd14efac52180f84e',1,'EZRADIODRV_AutoAckHandle::userCallback()'],['../structEZRADIODRV__PacketCrcErrorHandle.html#a6de0d85e13a65076f54a3bc1d3df3ba5',1,'EZRADIODRV_PacketCrcErrorHandle::userCallback()'],['../structEZRADIODRV__PacketRxHandle.html#a7c5ec3b9bb694794f7a98559f1e9dc0e',1,'EZRADIODRV_PacketRxHandle::userCallback()'],['../structEZRADIODRV__PacketTxHandle.html#a821a74dfd1b4e464fd6e48fde8566e06',1,'EZRADIODRV_PacketTxHandle::userCallback()']]],

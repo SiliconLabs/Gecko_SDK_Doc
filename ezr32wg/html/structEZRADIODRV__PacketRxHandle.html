@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -69,13 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -111,21 +103,18 @@ $(document).ready(function(){initNavTree('structEZRADIODRV__PacketRxHandle.html'
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">EZRADIODRV_PacketRxHandle Struct Reference<div class="ingroups"><a class="el" href="group__EM__Drivers.html">EM_Drivers</a> &raquo; <a class="el" href="group__EZRADIODRV.html">EZRADIODRV</a> &raquo; <a class="el" href="group__Plugin__System.html">Plugin_System</a> &raquo; <a class="el" href="group__Receive__Plugin.html">Receive_Plugin</a></div></div>  </div>
+<div class="title">EZRADIODRV_PacketRxHandle Struct Reference<div class="ingroups"><a class="el" href="group__emdrv.html">EMDRV</a> &raquo; <a class="el" href="group__EZRADIODRV.html">EZRADIODRV</a> &raquo; <a class="el" href="group__Plugin__System.html">Plugin_System</a> &raquo; <a class="el" href="group__Receive__Plugin.html">Receive_Plugin</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>EzRadio receive plug-in instance initialization and handler structure. </p>
 
-<p>EzRadio receive plug-in instance initialization and handler structure.  
- <a href="structEZRADIODRV__PacketRxHandle.html#details">More...</a></p>
-
+<p>Definition at line <a class="el" href="ezradio__receive__plugin_8h_source.html#l00066">66</a> of file <a class="el" href="ezradio__receive__plugin_8h_source.html">ezradio_receive_plugin.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="ezradio__receive__plugin_8h_source.html">ezradio_receive_plugin.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a7c5ec3b9bb694794f7a98559f1e9dc0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c5ec3b9bb694794f7a98559f1e9dc0e"></a>
-<a class="el" href="group__Plugin__Manager.html#ga99c83890e33d1df262fd830ff5b61c6d">EZRADIODRV_Callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__PacketRxHandle.html#a7c5ec3b9bb694794f7a98559f1e9dc0e">userCallback</a></td></tr>
-<tr class="memdesc:a7c5ec3b9bb694794f7a98559f1e9dc0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">User callback. <br /></td></tr>
-<tr class="separator:a7c5ec3b9bb694794f7a98559f1e9dc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76a70367de81b46e34301500d3997819"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76a70367de81b46e34301500d3997819"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__PacketRxHandle.html#a76a70367de81b46e34301500d3997819">channel</a></td></tr>
 <tr class="memdesc:a76a70367de81b46e34301500d3997819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reception channel. <br /></td></tr>
@@ -134,11 +123,12 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__PacketRxHandle.html#a546284c849121a3d30c6961bdd5ef6f0">pktBuf</a></td></tr>
 <tr class="memdesc:a546284c849121a3d30c6961bdd5ef6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the receive buffer. <br /></td></tr>
 <tr class="separator:a546284c849121a3d30c6961bdd5ef6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c5ec3b9bb694794f7a98559f1e9dc0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c5ec3b9bb694794f7a98559f1e9dc0e"></a>
+<a class="el" href="group__Plugin__Manager.html#ga99c83890e33d1df262fd830ff5b61c6d">EZRADIODRV_Callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__PacketRxHandle.html#a7c5ec3b9bb694794f7a98559f1e9dc0e">userCallback</a></td></tr>
+<tr class="memdesc:a7c5ec3b9bb694794f7a98559f1e9dc0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">User callback. <br /></td></tr>
+<tr class="separator:a7c5ec3b9bb694794f7a98559f1e9dc0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="ezradio__receive__plugin_8h_source.html#l00066">66</a> of file <a class="el" href="ezradio__receive__plugin_8h_source.html">ezradio_receive_plugin.h</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>C:/work/s025_sw/emdrv/ezradiodrv/plugins/inc/<a class="el" href="ezradio__receive__plugin_8h_source.html">ezradio_receive_plugin.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -147,7 +137,7 @@ uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structEZRADIODRV__PacketRxHandle.html">EZRADIODRV_PacketRxHandle</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:42:46 for EZR32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:46:19 for EZR32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

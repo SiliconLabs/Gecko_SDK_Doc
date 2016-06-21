@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32hg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32hg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -114,10 +112,16 @@ $(document).ready(function(){initNavTree('nvm_8h.html','');});
 <div class="title">nvm.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Non-Volatile Memory Wear-Leveling driver API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>Non-Volatile Memory Wear-Leveling driver API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<p>Definition in file <a class="el" href="nvm_8h_source.html">nvm.h</a>.</p>
+</div><div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="nvm__hal_8h_source.html">nvm_hal.h</a>&quot;</code><br />
@@ -128,78 +132,70 @@ $(document).ready(function(){initNavTree('nvm_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gae332cf766a19b67f1ed35c9d9e95bd20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gae332cf766a19b67f1ed35c9d9e95bd20">ECODE_EMDRV_NVM_OK</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#gad59417e7951d81dfc15ec2757f08148e">ECODE_OK</a> )</td></tr>
-<tr class="memdesc:gae332cf766a19b67f1ed35c9d9e95bd20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Success return value.  <a href="group__NVM.html#gae332cf766a19b67f1ed35c9d9e95bd20">More...</a><br /></td></tr>
-<tr class="separator:gae332cf766a19b67f1ed35c9d9e95bd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacb8a7f9574d3b638baa9975a1d2d525b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacb8a7f9574d3b638baa9975a1d2d525b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gacb8a7f9574d3b638baa9975a1d2d525b">ECODE_EMDRV_NVM_ADDR_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000001 )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gacb8a7f9574d3b638baa9975a1d2d525b">ECODE_EMDRV_NVM_ADDR_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000001 )</td></tr>
 <tr class="memdesc:gacb8a7f9574d3b638baa9975a1d2d525b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid address. <br /></td></tr>
 <tr class="separator:gacb8a7f9574d3b638baa9975a1d2d525b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae4e262fa99ff77f50f342100567e579"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaae4e262fa99ff77f50f342100567e579"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gaae4e262fa99ff77f50f342100567e579">ECODE_EMDRV_NVM_ALIGNMENT_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000002 )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gaae4e262fa99ff77f50f342100567e579">ECODE_EMDRV_NVM_ALIGNMENT_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000002 )</td></tr>
 <tr class="memdesc:gaae4e262fa99ff77f50f342100567e579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid data alignment. <br /></td></tr>
 <tr class="separator:gaae4e262fa99ff77f50f342100567e579"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga513abf6d9830442da42feae5d3aa3793"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga513abf6d9830442da42feae5d3aa3793"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga513abf6d9830442da42feae5d3aa3793">ECODE_EMDRV_NVM_DATA_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000003 )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga513abf6d9830442da42feae5d3aa3793">ECODE_EMDRV_NVM_DATA_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000003 )</td></tr>
 <tr class="memdesc:ga513abf6d9830442da42feae5d3aa3793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid input data or format. <br /></td></tr>
 <tr class="separator:ga513abf6d9830442da42feae5d3aa3793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga903849e2678082db4030a0f553ea508a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga903849e2678082db4030a0f553ea508a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga903849e2678082db4030a0f553ea508a">ECODE_EMDRV_NVM_WRITE_LOCK</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000004 )</td></tr>
-<tr class="memdesc:ga903849e2678082db4030a0f553ea508a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A write is currently in progress. <br /></td></tr>
-<tr class="separator:ga903849e2678082db4030a0f553ea508a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2345b10d783d735ed6be169a918ec991"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2345b10d783d735ed6be169a918ec991"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga2345b10d783d735ed6be169a918ec991">ECODE_EMDRV_NVM_NO_PAGES_AVAILABLE</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000005 )</td></tr>
-<tr class="memdesc:ga2345b10d783d735ed6be169a918ec991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization didn't find any pages available to allocate. <br /></td></tr>
-<tr class="separator:ga2345b10d783d735ed6be169a918ec991"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6ea441c3105ea4a18a10a3b042bd7d86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6ea441c3105ea4a18a10a3b042bd7d86"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga6ea441c3105ea4a18a10a3b042bd7d86">ECODE_EMDRV_NVM_PAGE_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000006 )</td></tr>
-<tr class="memdesc:ga6ea441c3105ea4a18a10a3b042bd7d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Could not find the page specified. <br /></td></tr>
-<tr class="separator:ga6ea441c3105ea4a18a10a3b042bd7d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad67929c11d6b7520bf992dc6dcfc4d2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad67929c11d6b7520bf992dc6dcfc4d2c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gad67929c11d6b7520bf992dc6dcfc4d2c">ECODE_EMDRV_NVM_ERROR</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000007 )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gad67929c11d6b7520bf992dc6dcfc4d2c">ECODE_EMDRV_NVM_ERROR</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000007 )</td></tr>
 <tr class="memdesc:gad67929c11d6b7520bf992dc6dcfc4d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">General error. <br /></td></tr>
 <tr class="separator:gad67929c11d6b7520bf992dc6dcfc4d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga69ca4a7805f154f9e3b65bf2a42c8037"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga69ca4a7805f154f9e3b65bf2a42c8037">NVM_WRITE_ALL_CMD</a>&#160;&#160;&#160;0xff</td></tr>
-<tr class="separator:ga69ca4a7805f154f9e3b65bf2a42c8037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac2786ac8b0b1ae7ae7dd2ee028cc97c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gac2786ac8b0b1ae7ae7dd2ee028cc97c7">NVM_WRITE_NONE_CMD</a>&#160;&#160;&#160;0xfe</td></tr>
-<tr class="separator:gac2786ac8b0b1ae7ae7dd2ee028cc97c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf237b8d940d372ccbd82b8998fbc8f60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gaf237b8d940d372ccbd82b8998fbc8f60">NVM_READ_ALL_CMD</a>&#160;&#160;&#160;0xff</td></tr>
-<tr class="separator:gaf237b8d940d372ccbd82b8998fbc8f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2345b10d783d735ed6be169a918ec991"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2345b10d783d735ed6be169a918ec991"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga2345b10d783d735ed6be169a918ec991">ECODE_EMDRV_NVM_NO_PAGES_AVAILABLE</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000005 )</td></tr>
+<tr class="memdesc:ga2345b10d783d735ed6be169a918ec991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization didn't find any pages available to allocate. <br /></td></tr>
+<tr class="separator:ga2345b10d783d735ed6be169a918ec991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae332cf766a19b67f1ed35c9d9e95bd20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gae332cf766a19b67f1ed35c9d9e95bd20">ECODE_EMDRV_NVM_OK</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#gad59417e7951d81dfc15ec2757f08148e">ECODE_OK</a> )</td></tr>
+<tr class="memdesc:gae332cf766a19b67f1ed35c9d9e95bd20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Success return value.  <a href="group__NVM.html#gae332cf766a19b67f1ed35c9d9e95bd20">More...</a><br /></td></tr>
+<tr class="separator:gae332cf766a19b67f1ed35c9d9e95bd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ea441c3105ea4a18a10a3b042bd7d86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6ea441c3105ea4a18a10a3b042bd7d86"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga6ea441c3105ea4a18a10a3b042bd7d86">ECODE_EMDRV_NVM_PAGE_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000006 )</td></tr>
+<tr class="memdesc:ga6ea441c3105ea4a18a10a3b042bd7d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Could not find the page specified. <br /></td></tr>
+<tr class="separator:ga6ea441c3105ea4a18a10a3b042bd7d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga903849e2678082db4030a0f553ea508a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga903849e2678082db4030a0f553ea508a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga903849e2678082db4030a0f553ea508a">ECODE_EMDRV_NVM_WRITE_LOCK</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000004 )</td></tr>
+<tr class="memdesc:ga903849e2678082db4030a0f553ea508a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A write is currently in progress. <br /></td></tr>
+<tr class="separator:ga903849e2678082db4030a0f553ea508a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaddbc995da5f67dc3b176213f32008a62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gaddbc995da5f67dc3b176213f32008a62">NVM_ERASE_RETAINCOUNT</a>&#160;&#160;&#160;0xffffffffUL</td></tr>
 <tr class="separator:gaddbc995da5f67dc3b176213f32008a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabdbe94a8a506bb943ed440adf4c3c0c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gabdbe94a8a506bb943ed440adf4c3c0c6">NVM_PAGE_TERMINATION</a>&#160;&#160;&#160;{ NULL, 0, (NVM_Object_Ids) 0 }</td></tr>
 <tr class="separator:gabdbe94a8a506bb943ed440adf4c3c0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf237b8d940d372ccbd82b8998fbc8f60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gaf237b8d940d372ccbd82b8998fbc8f60">NVM_READ_ALL_CMD</a>&#160;&#160;&#160;0xff</td></tr>
+<tr class="separator:gaf237b8d940d372ccbd82b8998fbc8f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69ca4a7805f154f9e3b65bf2a42c8037"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga69ca4a7805f154f9e3b65bf2a42c8037">NVM_WRITE_ALL_CMD</a>&#160;&#160;&#160;0xff</td></tr>
+<tr class="separator:ga69ca4a7805f154f9e3b65bf2a42c8037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2786ac8b0b1ae7ae7dd2ee028cc97c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gac2786ac8b0b1ae7ae7dd2ee028cc97c7">NVM_WRITE_NONE_CMD</a>&#160;&#160;&#160;0xfe</td></tr>
+<tr class="separator:gac2786ac8b0b1ae7ae7dd2ee028cc97c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaf74bb05f10ed4959e65e85fa438ead67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gaf74bb05f10ed4959e65e85fa438ead67">NVM_Init</a> (NVM_Config_t const *nvmConfig)</td></tr>
-<tr class="memdesc:gaf74bb05f10ed4959e65e85fa438ead67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the NVM manager.  <a href="group__NVM.html#gaf74bb05f10ed4959e65e85fa438ead67">More...</a><br /></td></tr>
-<tr class="separator:gaf74bb05f10ed4959e65e85fa438ead67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6cad1505838978506c7d94f9a1472595"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga6cad1505838978506c7d94f9a1472595">NVM_Erase</a> (uint32_t eraseCount)</td></tr>
+<tr class="memitem:ga6cad1505838978506c7d94f9a1472595"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga6cad1505838978506c7d94f9a1472595">NVM_Erase</a> (uint32_t eraseCount)</td></tr>
 <tr class="memdesc:ga6cad1505838978506c7d94f9a1472595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase the entire allocated NVM area.  <a href="group__NVM.html#ga6cad1505838978506c7d94f9a1472595">More...</a><br /></td></tr>
 <tr class="separator:ga6cad1505838978506c7d94f9a1472595"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad181be9b434658d3552fb311039ff691"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gad181be9b434658d3552fb311039ff691">NVM_Write</a> (uint16_t pageId, uint8_t objectId)</td></tr>
-<tr class="memdesc:gad181be9b434658d3552fb311039ff691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an object or a page.  <a href="group__NVM.html#gad181be9b434658d3552fb311039ff691">More...</a><br /></td></tr>
-<tr class="separator:gad181be9b434658d3552fb311039ff691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga34880829bee50bf0fde0f6c9695dca86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga34880829bee50bf0fde0f6c9695dca86">NVM_Read</a> (uint16_t pageId, uint8_t objectId)</td></tr>
+<tr class="memitem:gaf74bb05f10ed4959e65e85fa438ead67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gaf74bb05f10ed4959e65e85fa438ead67">NVM_Init</a> (NVM_Config_t const *nvmConfig)</td></tr>
+<tr class="memdesc:gaf74bb05f10ed4959e65e85fa438ead67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the NVM manager.  <a href="group__NVM.html#gaf74bb05f10ed4959e65e85fa438ead67">More...</a><br /></td></tr>
+<tr class="separator:gaf74bb05f10ed4959e65e85fa438ead67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34880829bee50bf0fde0f6c9695dca86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga34880829bee50bf0fde0f6c9695dca86">NVM_Read</a> (uint16_t pageId, uint8_t objectId)</td></tr>
 <tr class="memdesc:ga34880829bee50bf0fde0f6c9695dca86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an object or an entire page.  <a href="group__NVM.html#ga34880829bee50bf0fde0f6c9695dca86">More...</a><br /></td></tr>
 <tr class="separator:ga34880829bee50bf0fde0f6c9695dca86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad181be9b434658d3552fb311039ff691"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gad181be9b434658d3552fb311039ff691">NVM_Write</a> (uint16_t pageId, uint8_t objectId)</td></tr>
+<tr class="memdesc:gad181be9b434658d3552fb311039ff691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an object or a page.  <a href="group__NVM.html#gad181be9b434658d3552fb311039ff691">More...</a><br /></td></tr>
+<tr class="separator:gad181be9b434658d3552fb311039ff691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="nvm_8h_source.html">nvm.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_f6ffa9f3776c543fb9a0872acda4412e.html">nvm</a></li><li class="navelem"><a class="el" href="dir_56141e2e670288a8a9f6c68cc1519d1e.html">inc</a></li><li class="navelem"><a class="el" href="nvm_8h.html">nvm.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:39:13 for EFM32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:36:02 for EFM32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

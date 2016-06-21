@@ -62,17 +62,17 @@ var group__IDAC =
       [ "idacCurrentRange2", "group__IDAC.html#gga7ff0d5acba93b8f7b3111bfdf094fceea3c5bf2f19a5cfa36ffe04edadb873e3e", null ],
       [ "idacCurrentRange3", "group__IDAC.html#gga7ff0d5acba93b8f7b3111bfdf094fceea30f6b9ec7e298feda818357c65f1950a", null ]
     ] ],
-    [ "IDAC_Init", "group__IDAC.html#gad7063a3bf61e7e317fd131637e9323db", null ],
     [ "IDAC_Enable", "group__IDAC.html#gaee730488249cae5faac6be865dab9a33", null ],
-    [ "IDAC_Reset", "group__IDAC.html#gac9e6f391f96c4d08378bec18e8bd4e4e", null ],
-    [ "IDAC_MinimalOutputTransitionMode", "group__IDAC.html#ga6d5eba9c5497b56265fed7918daf97cd", null ],
-    [ "IDAC_RangeSet", "group__IDAC.html#gafd18f64494187e3a438e2db1f1d89dc7", null ],
-    [ "IDAC_StepSet", "group__IDAC.html#gad246741d61cb9e83bb73650267b9dfc6", null ],
-    [ "IDAC_OutEnable", "group__IDAC.html#gadb7157da10f33ecceb87bad6cc753df3", null ],
+    [ "IDAC_Init", "group__IDAC.html#gad7063a3bf61e7e317fd131637e9323db", null ],
     [ "IDAC_IntClear", "group__IDAC.html#gade49f7b886d33120ab589827e35ba5f1", null ],
     [ "IDAC_IntDisable", "group__IDAC.html#gae88b0332cb4e82fe23f37dcb719bf686", null ],
     [ "IDAC_IntEnable", "group__IDAC.html#gaec83fe5e6b3d49be4b7be7b865f5eb7b", null ],
     [ "IDAC_IntGet", "group__IDAC.html#gae232cd859506f89618e6f5cb3d5e9f07", null ],
     [ "IDAC_IntGetEnabled", "group__IDAC.html#ga41a795b5ce2c348e6af801189ebab2c8", null ],
-    [ "IDAC_IntSet", "group__IDAC.html#gaca7d36af26f182df921b413f33a24335", null ]
+    [ "IDAC_IntSet", "group__IDAC.html#gaca7d36af26f182df921b413f33a24335", null ],
+    [ "IDAC_MinimalOutputTransitionMode", "group__IDAC.html#ga6d5eba9c5497b56265fed7918daf97cd", null ],
+    [ "IDAC_OutEnable", "group__IDAC.html#gadb7157da10f33ecceb87bad6cc753df3", null ],
+    [ "IDAC_RangeSet", "group__IDAC.html#gafd18f64494187e3a438e2db1f1d89dc7", null ],
+    [ "IDAC_Reset", "group__IDAC.html#gac9e6f391f96c4d08378bec18e8bd4e4e", null ],
+    [ "IDAC_StepSet", "group__IDAC.html#gad246741d61cb9e83bb73650267b9dfc6", null ]
 ];

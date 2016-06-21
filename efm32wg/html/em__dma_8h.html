@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -116,10 +114,23 @@ $(document).ready(function(){initNavTree('em__dma_8h.html','');});
 <div class="title">em_dma.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Direct memory access (DMA) API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>Direct memory access (DMA) API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="em__dma_8h_source.html">em_dma.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div>
@@ -134,11 +145,11 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__CfgDescr__TypeDef.html">DMA_CfgDescr_TypeDef</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__CfgDescrSGAlt__TypeDef.html">DMA_CfgDescrSGAlt_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__CfgLoop__TypeDef.html">DMA_CfgLoop_TypeDef</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__CfgRect__TypeDef.html">DMA_CfgRect_TypeDef</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__CfgDescrSGAlt__TypeDef.html">DMA_CfgDescrSGAlt_TypeDef</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__Init__TypeDef.html">DMA_Init_TypeDef</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,39 +162,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gaade1a68a6cbf32800b8ac4046a133988"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gaade1a68a6cbf32800b8ac4046a133988">DMA_DataInc_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__DMA.html#ggaade1a68a6cbf32800b8ac4046a133988ab9db5dc3d8cb2364ee74185ca9500b8a">dmaDataInc1</a> = _DMA_CTRL_SRC_INC_BYTE, 
-<br />
-&#160;&#160;<a class="el" href="group__DMA.html#ggaade1a68a6cbf32800b8ac4046a133988a20c1b6043914c6c3678b2cb5f7a5618b">dmaDataInc2</a> = _DMA_CTRL_SRC_INC_HALFWORD, 
-<br />
-&#160;&#160;<a class="el" href="group__DMA.html#ggaade1a68a6cbf32800b8ac4046a133988a07edd8fc13175289dd2e6ac5e14a1044">dmaDataInc4</a> = _DMA_CTRL_SRC_INC_WORD, 
-<br />
-&#160;&#160;<a class="el" href="group__DMA.html#ggaade1a68a6cbf32800b8ac4046a133988a56ebf7629a95d65ff0c5a40030cc6102">dmaDataIncNone</a> = _DMA_CTRL_SRC_INC_NONE
-<br />
- }<tr class="separator:gaade1a68a6cbf32800b8ac4046a133988"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga19fed692b981a8dc7e3a5d6b0f281540"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga19fed692b981a8dc7e3a5d6b0f281540">DMA_DataSize_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__DMA.html#gga19fed692b981a8dc7e3a5d6b0f281540a7364220082afbe44fa77b2e93877f491">dmaDataSize1</a> = _DMA_CTRL_SRC_SIZE_BYTE, 
-<br />
-&#160;&#160;<a class="el" href="group__DMA.html#gga19fed692b981a8dc7e3a5d6b0f281540aad69742ea4b6f914331c08fdcf9a5265">dmaDataSize2</a> = _DMA_CTRL_SRC_SIZE_HALFWORD, 
-<br />
-&#160;&#160;<a class="el" href="group__DMA.html#gga19fed692b981a8dc7e3a5d6b0f281540af372081fe5f67e55ac6ac355eaa2c7ba">dmaDataSize4</a> = _DMA_CTRL_SRC_SIZE_WORD
-<br />
- }<tr class="separator:ga19fed692b981a8dc7e3a5d6b0f281540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gaf7c5bc2b557c15cabf48a19746df01b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gaf7c5bc2b557c15cabf48a19746df01b7">DMA_CycleCtrl_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__DMA.html#ggaf7c5bc2b557c15cabf48a19746df01b7a63be11c241248128c56500a9d7863029">dmaCycleCtrlBasic</a> = _DMA_CTRL_CYCLE_CTRL_BASIC, 
-<br />
-&#160;&#160;<a class="el" href="group__DMA.html#ggaf7c5bc2b557c15cabf48a19746df01b7ac7297053ebff4cac9f14432d7f3ab066">dmaCycleCtrlAuto</a> = _DMA_CTRL_CYCLE_CTRL_AUTO, 
-<br />
-&#160;&#160;<a class="el" href="group__DMA.html#ggaf7c5bc2b557c15cabf48a19746df01b7af4331d0c4073d4f24b329bb4b5f0a2fc">dmaCycleCtrlPingPong</a> = _DMA_CTRL_CYCLE_CTRL_PINGPONG, 
-<br />
-&#160;&#160;<a class="el" href="group__DMA.html#ggaf7c5bc2b557c15cabf48a19746df01b7a4fcfb852e0cb5792d69f0bf8b42b1e55">dmaCycleCtrlMemScatterGather</a> = _DMA_CTRL_CYCLE_CTRL_MEM_SCATTER_GATHER, 
-<br />
-&#160;&#160;<a class="el" href="group__DMA.html#ggaf7c5bc2b557c15cabf48a19746df01b7ad5d3b9491d535921b86f9f295426ca95">dmaCycleCtrlPerScatterGather</a> = _DMA_CTRL_CYCLE_CTRL_PER_SCATTER_GATHER
-<br />
- }<tr class="separator:gaf7c5bc2b557c15cabf48a19746df01b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
 <tr class="memitem:ga0b815384b08ec6721a23eb8a29db0c59"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga0b815384b08ec6721a23eb8a29db0c59">DMA_ArbiterConfig_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__DMA.html#gga0b815384b08ec6721a23eb8a29db0c59accf356c49fd20db0bd4b29c26cec7cec">dmaArbitrate1</a> = _DMA_CTRL_R_POWER_1, 
 <br />
@@ -209,6 +187,39 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga0b815384b08ec6721a23eb8a29db0c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:gaf7c5bc2b557c15cabf48a19746df01b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gaf7c5bc2b557c15cabf48a19746df01b7">DMA_CycleCtrl_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__DMA.html#ggaf7c5bc2b557c15cabf48a19746df01b7a63be11c241248128c56500a9d7863029">dmaCycleCtrlBasic</a> = _DMA_CTRL_CYCLE_CTRL_BASIC, 
+<br />
+&#160;&#160;<a class="el" href="group__DMA.html#ggaf7c5bc2b557c15cabf48a19746df01b7ac7297053ebff4cac9f14432d7f3ab066">dmaCycleCtrlAuto</a> = _DMA_CTRL_CYCLE_CTRL_AUTO, 
+<br />
+&#160;&#160;<a class="el" href="group__DMA.html#ggaf7c5bc2b557c15cabf48a19746df01b7af4331d0c4073d4f24b329bb4b5f0a2fc">dmaCycleCtrlPingPong</a> = _DMA_CTRL_CYCLE_CTRL_PINGPONG, 
+<br />
+&#160;&#160;<a class="el" href="group__DMA.html#ggaf7c5bc2b557c15cabf48a19746df01b7a4fcfb852e0cb5792d69f0bf8b42b1e55">dmaCycleCtrlMemScatterGather</a> = _DMA_CTRL_CYCLE_CTRL_MEM_SCATTER_GATHER, 
+<br />
+&#160;&#160;<a class="el" href="group__DMA.html#ggaf7c5bc2b557c15cabf48a19746df01b7ad5d3b9491d535921b86f9f295426ca95">dmaCycleCtrlPerScatterGather</a> = _DMA_CTRL_CYCLE_CTRL_PER_SCATTER_GATHER
+<br />
+ }<tr class="separator:gaf7c5bc2b557c15cabf48a19746df01b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gaade1a68a6cbf32800b8ac4046a133988"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gaade1a68a6cbf32800b8ac4046a133988">DMA_DataInc_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__DMA.html#ggaade1a68a6cbf32800b8ac4046a133988ab9db5dc3d8cb2364ee74185ca9500b8a">dmaDataInc1</a> = _DMA_CTRL_SRC_INC_BYTE, 
+<br />
+&#160;&#160;<a class="el" href="group__DMA.html#ggaade1a68a6cbf32800b8ac4046a133988a20c1b6043914c6c3678b2cb5f7a5618b">dmaDataInc2</a> = _DMA_CTRL_SRC_INC_HALFWORD, 
+<br />
+&#160;&#160;<a class="el" href="group__DMA.html#ggaade1a68a6cbf32800b8ac4046a133988a07edd8fc13175289dd2e6ac5e14a1044">dmaDataInc4</a> = _DMA_CTRL_SRC_INC_WORD, 
+<br />
+&#160;&#160;<a class="el" href="group__DMA.html#ggaade1a68a6cbf32800b8ac4046a133988a56ebf7629a95d65ff0c5a40030cc6102">dmaDataIncNone</a> = _DMA_CTRL_SRC_INC_NONE
+<br />
+ }<tr class="separator:gaade1a68a6cbf32800b8ac4046a133988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga19fed692b981a8dc7e3a5d6b0f281540"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga19fed692b981a8dc7e3a5d6b0f281540">DMA_DataSize_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__DMA.html#gga19fed692b981a8dc7e3a5d6b0f281540a7364220082afbe44fa77b2e93877f491">dmaDataSize1</a> = _DMA_CTRL_SRC_SIZE_BYTE, 
+<br />
+&#160;&#160;<a class="el" href="group__DMA.html#gga19fed692b981a8dc7e3a5d6b0f281540aad69742ea4b6f914331c08fdcf9a5265">dmaDataSize2</a> = _DMA_CTRL_SRC_SIZE_HALFWORD, 
+<br />
+&#160;&#160;<a class="el" href="group__DMA.html#gga19fed692b981a8dc7e3a5d6b0f281540af372081fe5f67e55ac6ac355eaa2c7ba">dmaDataSize4</a> = _DMA_CTRL_SRC_SIZE_WORD
+<br />
+ }<tr class="separator:ga19fed692b981a8dc7e3a5d6b0f281540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -230,39 +241,27 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6595eabbd98c16c3d610eebb88daf052"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga6595eabbd98c16c3d610eebb88daf052">DMA_CfgDescr</a> (unsigned int channel, bool primary, <a class="el" href="structDMA__CfgDescr__TypeDef.html">DMA_CfgDescr_TypeDef</a> *cfg)</td></tr>
 <tr class="memdesc:ga6595eabbd98c16c3d610eebb88daf052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure DMA descriptor for auto-request, basic or ping-pong DMA cycles.  <a href="group__DMA.html#ga6595eabbd98c16c3d610eebb88daf052">More...</a><br /></td></tr>
 <tr class="separator:ga6595eabbd98c16c3d610eebb88daf052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac365a3587fa185c9b32b549ed8e8dc23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gac365a3587fa185c9b32b549ed8e8dc23">DMA_CfgDescrScatterGather</a> (<a class="el" href="structDMA__DESCRIPTOR__TypeDef.html">DMA_DESCRIPTOR_TypeDef</a> *descr, unsigned int indx, <a class="el" href="structDMA__CfgDescrSGAlt__TypeDef.html">DMA_CfgDescrSGAlt_TypeDef</a> *cfg)</td></tr>
+<tr class="memdesc:gac365a3587fa185c9b32b549ed8e8dc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure an alternate DMA descriptor for use with scatter-gather DMA cycles.  <a href="group__DMA.html#gac365a3587fa185c9b32b549ed8e8dc23">More...</a><br /></td></tr>
+<tr class="separator:gac365a3587fa185c9b32b549ed8e8dc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad7793e946a1d7c1e4d7c350d959ee274"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gad7793e946a1d7c1e4d7c350d959ee274">DMA_CfgLoop</a> (unsigned int channel, <a class="el" href="structDMA__CfgLoop__TypeDef.html">DMA_CfgLoop_TypeDef</a> *cfg)</td></tr>
 <tr class="memdesc:gad7793e946a1d7c1e4d7c350d959ee274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure DMA channel for Loop mode or 2D transfer.  <a href="group__DMA.html#gad7793e946a1d7c1e4d7c350d959ee274">More...</a><br /></td></tr>
 <tr class="separator:gad7793e946a1d7c1e4d7c350d959ee274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabef8d6b3c273171902e71c02d6df8f6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gabef8d6b3c273171902e71c02d6df8f6d">DMA_CfgRect</a> (unsigned int channel, <a class="el" href="structDMA__CfgRect__TypeDef.html">DMA_CfgRect_TypeDef</a> *cfg)</td></tr>
 <tr class="memdesc:gabef8d6b3c273171902e71c02d6df8f6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure DMA channel 2D transfer properties.  <a href="group__DMA.html#gabef8d6b3c273171902e71c02d6df8f6d">More...</a><br /></td></tr>
 <tr class="separator:gabef8d6b3c273171902e71c02d6df8f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f9d600684b3b416f39e19eea3c07adc"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga6f9d600684b3b416f39e19eea3c07adc">DMA_ResetLoop</a> (unsigned int channel)</td></tr>
-<tr class="memdesc:ga6f9d600684b3b416f39e19eea3c07adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear Loop configuration for channel.  <a href="group__DMA.html#ga6f9d600684b3b416f39e19eea3c07adc">More...</a><br /></td></tr>
-<tr class="separator:ga6f9d600684b3b416f39e19eea3c07adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga65cc2a2f0f8c96524faff46daae04f35"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga65cc2a2f0f8c96524faff46daae04f35">DMA_ResetRect</a> (unsigned int channel)</td></tr>
-<tr class="memdesc:ga65cc2a2f0f8c96524faff46daae04f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear Rect/2D DMA configuration for channel.  <a href="group__DMA.html#ga65cc2a2f0f8c96524faff46daae04f35">More...</a><br /></td></tr>
-<tr class="separator:ga65cc2a2f0f8c96524faff46daae04f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac365a3587fa185c9b32b549ed8e8dc23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gac365a3587fa185c9b32b549ed8e8dc23">DMA_CfgDescrScatterGather</a> (<a class="el" href="structDMA__DESCRIPTOR__TypeDef.html">DMA_DESCRIPTOR_TypeDef</a> *descr, unsigned int indx, <a class="el" href="structDMA__CfgDescrSGAlt__TypeDef.html">DMA_CfgDescrSGAlt_TypeDef</a> *cfg)</td></tr>
-<tr class="memdesc:gac365a3587fa185c9b32b549ed8e8dc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure an alternate DMA descriptor for use with scatter-gather DMA cycles.  <a href="group__DMA.html#gac365a3587fa185c9b32b549ed8e8dc23">More...</a><br /></td></tr>
-<tr class="separator:gac365a3587fa185c9b32b549ed8e8dc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab7d47175069b1952534467bf115eb02e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gab7d47175069b1952534467bf115eb02e">DMA_ChannelEnable</a> (unsigned int channel, bool enable)</td></tr>
 <tr class="memdesc:gab7d47175069b1952534467bf115eb02e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable a DMA channel.  <a href="group__DMA.html#gab7d47175069b1952534467bf115eb02e">More...</a><br /></td></tr>
 <tr class="separator:gab7d47175069b1952534467bf115eb02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad699a3954c696e5523826c04befb6db5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gad699a3954c696e5523826c04befb6db5">DMA_ChannelEnabled</a> (unsigned int channel)</td></tr>
 <tr class="memdesc:gad699a3954c696e5523826c04befb6db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if DMA channel is enabled.  <a href="group__DMA.html#gad699a3954c696e5523826c04befb6db5">More...</a><br /></td></tr>
 <tr class="separator:gad699a3954c696e5523826c04befb6db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga906324e92ed0f9b14f755ec2b2047590"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga906324e92ed0f9b14f755ec2b2047590">DMA_ChannelRequestEnable</a> (unsigned int channel, bool enable)</td></tr>
+<tr class="memdesc:ga906324e92ed0f9b14f755ec2b2047590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable a DMA channel request.  <a href="group__DMA.html#ga906324e92ed0f9b14f755ec2b2047590">More...</a><br /></td></tr>
+<tr class="separator:ga906324e92ed0f9b14f755ec2b2047590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1b244c27cc74059907a25a806eac9b90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga1b244c27cc74059907a25a806eac9b90">DMA_Init</a> (<a class="el" href="structDMA__Init__TypeDef.html">DMA_Init_TypeDef</a> *init)</td></tr>
 <tr class="memdesc:ga1b244c27cc74059907a25a806eac9b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes DMA controller.  <a href="group__DMA.html#ga1b244c27cc74059907a25a806eac9b90">More...</a><br /></td></tr>
 <tr class="separator:ga1b244c27cc74059907a25a806eac9b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac1fca8b8a3ce0431d9aebbf432eda751"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gac1fca8b8a3ce0431d9aebbf432eda751">DMA_IRQHandler</a> (void)</td></tr>
-<tr class="memdesc:gac1fca8b8a3ce0431d9aebbf432eda751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt handler for DMA cycle completion handling.  <a href="group__DMA.html#gac1fca8b8a3ce0431d9aebbf432eda751">More...</a><br /></td></tr>
-<tr class="separator:gac1fca8b8a3ce0431d9aebbf432eda751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga98484c1f3ff4ca1bef804b1d35f387bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga98484c1f3ff4ca1bef804b1d35f387bd">DMA_RefreshPingPong</a> (unsigned int channel, bool primary, bool useBurst, void *dst, void *src, unsigned int nMinus1, bool stop)</td></tr>
-<tr class="memdesc:ga98484c1f3ff4ca1bef804b1d35f387bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh a descriptor used in a DMA ping-pong cycle.  <a href="group__DMA.html#ga98484c1f3ff4ca1bef804b1d35f387bd">More...</a><br /></td></tr>
-<tr class="separator:ga98484c1f3ff4ca1bef804b1d35f387bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga35a483de1c773d6cd958434372054b8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga35a483de1c773d6cd958434372054b8b">DMA_Reset</a> (void)</td></tr>
-<tr class="memdesc:ga35a483de1c773d6cd958434372054b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the DMA controller.  <a href="group__DMA.html#ga35a483de1c773d6cd958434372054b8b">More...</a><br /></td></tr>
-<tr class="separator:ga35a483de1c773d6cd958434372054b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacfb597ca009573709f70161c6cfd0cf7"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gacfb597ca009573709f70161c6cfd0cf7">DMA_IntClear</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:gacfb597ca009573709f70161c6cfd0cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending DMA interrupts.  <a href="group__DMA.html#gacfb597ca009573709f70161c6cfd0cf7">More...</a><br /></td></tr>
 <tr class="separator:gacfb597ca009573709f70161c6cfd0cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,29 +280,29 @@ Functions</h2></td></tr>
 <tr class="memitem:gaed62cc3df555ca00b05adbbbe87fade1"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gaed62cc3df555ca00b05adbbbe87fade1">DMA_IntSet</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:gaed62cc3df555ca00b05adbbbe87fade1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one or more pending DMA interrupts.  <a href="group__DMA.html#gaed62cc3df555ca00b05adbbbe87fade1">More...</a><br /></td></tr>
 <tr class="separator:gaed62cc3df555ca00b05adbbbe87fade1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1fca8b8a3ce0431d9aebbf432eda751"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#gac1fca8b8a3ce0431d9aebbf432eda751">DMA_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:gac1fca8b8a3ce0431d9aebbf432eda751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt handler for DMA cycle completion handling.  <a href="group__DMA.html#gac1fca8b8a3ce0431d9aebbf432eda751">More...</a><br /></td></tr>
+<tr class="separator:gac1fca8b8a3ce0431d9aebbf432eda751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98484c1f3ff4ca1bef804b1d35f387bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga98484c1f3ff4ca1bef804b1d35f387bd">DMA_RefreshPingPong</a> (unsigned int channel, bool primary, bool useBurst, void *dst, void *src, unsigned int nMinus1, bool stop)</td></tr>
+<tr class="memdesc:ga98484c1f3ff4ca1bef804b1d35f387bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh a descriptor used in a DMA ping-pong cycle.  <a href="group__DMA.html#ga98484c1f3ff4ca1bef804b1d35f387bd">More...</a><br /></td></tr>
+<tr class="separator:ga98484c1f3ff4ca1bef804b1d35f387bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35a483de1c773d6cd958434372054b8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga35a483de1c773d6cd958434372054b8b">DMA_Reset</a> (void)</td></tr>
+<tr class="memdesc:ga35a483de1c773d6cd958434372054b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the DMA controller.  <a href="group__DMA.html#ga35a483de1c773d6cd958434372054b8b">More...</a><br /></td></tr>
+<tr class="separator:ga35a483de1c773d6cd958434372054b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f9d600684b3b416f39e19eea3c07adc"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga6f9d600684b3b416f39e19eea3c07adc">DMA_ResetLoop</a> (unsigned int channel)</td></tr>
+<tr class="memdesc:ga6f9d600684b3b416f39e19eea3c07adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear Loop configuration for channel.  <a href="group__DMA.html#ga6f9d600684b3b416f39e19eea3c07adc">More...</a><br /></td></tr>
+<tr class="separator:ga6f9d600684b3b416f39e19eea3c07adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65cc2a2f0f8c96524faff46daae04f35"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__DMA.html#ga65cc2a2f0f8c96524faff46daae04f35">DMA_ResetRect</a> (unsigned int channel)</td></tr>
+<tr class="memdesc:ga65cc2a2f0f8c96524faff46daae04f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear Rect/2D DMA configuration for channel.  <a href="group__DMA.html#ga65cc2a2f0f8c96524faff46daae04f35">More...</a><br /></td></tr>
+<tr class="separator:ga65cc2a2f0f8c96524faff46daae04f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="em__dma_8h_source.html">em_dma.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__dma_8h.html">em_dma.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:38:15 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:32:04 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

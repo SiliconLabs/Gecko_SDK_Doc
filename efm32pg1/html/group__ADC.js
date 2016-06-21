@@ -1,44 +1,44 @@
 var group__ADC =
 [
     [ "ADC_Init_TypeDef", "structADC__Init__TypeDef.html", [
+      [ "em2ClockConfig", "structADC__Init__TypeDef.html#a5d84e24c03fe480a2ad7d7d44a242dd9", null ],
       [ "ovsRateSel", "structADC__Init__TypeDef.html#abd87f85b8c594baee7981ec252998618", null ],
-      [ "warmUpMode", "structADC__Init__TypeDef.html#ac20d26a2e7384f0f648600e446261629", null ],
-      [ "timebase", "structADC__Init__TypeDef.html#a8a4fdc6c3ba9c0b3bad5270e2614134e", null ],
       [ "prescale", "structADC__Init__TypeDef.html#afea4e566991ef1c7d0e12035f5efe8a3", null ],
       [ "tailgate", "structADC__Init__TypeDef.html#abb40c65ecf8b039794fb7196e720f3cf", null ],
-      [ "em2ClockConfig", "structADC__Init__TypeDef.html#a5d84e24c03fe480a2ad7d7d44a242dd9", null ]
-    ] ],
-    [ "ADC_InitScanInput_TypeDef", "structADC__InitScanInput__TypeDef.html", [
-      [ "scanInputSel", "structADC__InitScanInput__TypeDef.html#ac65ab8a3cbc06539149badd46710d5a2", null ],
-      [ "scanInputEn", "structADC__InitScanInput__TypeDef.html#a36cc0ad89f2c74ed087cf6a59db1f927", null ],
-      [ "scanNegSel", "structADC__InitScanInput__TypeDef.html#a53b532aa95f5538e0a66c89a0a02c2a6", null ]
+      [ "timebase", "structADC__Init__TypeDef.html#a8a4fdc6c3ba9c0b3bad5270e2614134e", null ],
+      [ "warmUpMode", "structADC__Init__TypeDef.html#ac20d26a2e7384f0f648600e446261629", null ]
     ] ],
     [ "ADC_InitScan_TypeDef", "structADC__InitScan__TypeDef.html", [
-      [ "prsSel", "structADC__InitScan__TypeDef.html#aaf96f12fb19c8fa3ec8b8f7edbf33f37", null ],
       [ "acqTime", "structADC__InitScan__TypeDef.html#afe0305e5c4ff30be937adf199052ffc5", null ],
-      [ "reference", "structADC__InitScan__TypeDef.html#aeee42559908020ede887a53775cfe1ef", null ],
-      [ "resolution", "structADC__InitScan__TypeDef.html#a8d7d55f3b72942e71ff3eb87a1792303", null ],
-      [ "scanInputConfig", "structADC__InitScan__TypeDef.html#a6ecce675af53e42ee66bdde39937a073", null ],
       [ "diff", "structADC__InitScan__TypeDef.html#a5a3ec4ec81c389a5a72b6c7b0cf797d7", null ],
-      [ "prsEnable", "structADC__InitScan__TypeDef.html#a552538ad388b6d36e2f5074f2a7caa67", null ],
+      [ "fifoOverwrite", "structADC__InitScan__TypeDef.html#a28f326d5337063d77d82000ebfbd0761", null ],
       [ "leftAdjust", "structADC__InitScan__TypeDef.html#afaeb7c7c6aa576a679de08b1c1b23845", null ],
+      [ "prsEnable", "structADC__InitScan__TypeDef.html#a552538ad388b6d36e2f5074f2a7caa67", null ],
+      [ "prsSel", "structADC__InitScan__TypeDef.html#aaf96f12fb19c8fa3ec8b8f7edbf33f37", null ],
+      [ "reference", "structADC__InitScan__TypeDef.html#aeee42559908020ede887a53775cfe1ef", null ],
       [ "rep", "structADC__InitScan__TypeDef.html#aa42a6f2f8094c12b7da7a28673cf39ba", null ],
+      [ "resolution", "structADC__InitScan__TypeDef.html#a8d7d55f3b72942e71ff3eb87a1792303", null ],
       [ "scanDmaEm2Wu", "structADC__InitScan__TypeDef.html#a95f94ee37e1c487f0d6ca9e966626e5a", null ],
-      [ "fifoOverwrite", "structADC__InitScan__TypeDef.html#a28f326d5337063d77d82000ebfbd0761", null ]
+      [ "scanInputConfig", "structADC__InitScan__TypeDef.html#a6ecce675af53e42ee66bdde39937a073", null ]
+    ] ],
+    [ "ADC_InitScanInput_TypeDef", "structADC__InitScanInput__TypeDef.html", [
+      [ "scanInputEn", "structADC__InitScanInput__TypeDef.html#a36cc0ad89f2c74ed087cf6a59db1f927", null ],
+      [ "scanInputSel", "structADC__InitScanInput__TypeDef.html#ac65ab8a3cbc06539149badd46710d5a2", null ],
+      [ "scanNegSel", "structADC__InitScanInput__TypeDef.html#a53b532aa95f5538e0a66c89a0a02c2a6", null ]
     ] ],
     [ "ADC_InitSingle_TypeDef", "structADC__InitSingle__TypeDef.html", [
-      [ "prsSel", "structADC__InitSingle__TypeDef.html#abe3677451c9916ae5f84318f090b5dbf", null ],
       [ "acqTime", "structADC__InitSingle__TypeDef.html#ab5774ab856a328f3f01e238cf92f96a9", null ],
-      [ "reference", "structADC__InitSingle__TypeDef.html#a4751bd8ba80b6b1f8c67a793928ea85c", null ],
-      [ "resolution", "structADC__InitSingle__TypeDef.html#a9ee5b016f52095cd030e2e7b1780186c", null ],
-      [ "posSel", "structADC__InitSingle__TypeDef.html#a334e77d83c3b524b8473e5f04a45a2a4", null ],
-      [ "negSel", "structADC__InitSingle__TypeDef.html#a627b0bed1f89cab7a96d92179591f738", null ],
       [ "diff", "structADC__InitSingle__TypeDef.html#a8ca356b274b37427cf2ab20bdd085a08", null ],
-      [ "prsEnable", "structADC__InitSingle__TypeDef.html#a153191dfba6578e9975c41a753ce65eb", null ],
+      [ "fifoOverwrite", "structADC__InitSingle__TypeDef.html#a2ff4b3214f07511401fe0de049c3e42d", null ],
       [ "leftAdjust", "structADC__InitSingle__TypeDef.html#a64d99bb9d75e905b8a464233cb764c0e", null ],
+      [ "negSel", "structADC__InitSingle__TypeDef.html#a627b0bed1f89cab7a96d92179591f738", null ],
+      [ "posSel", "structADC__InitSingle__TypeDef.html#a334e77d83c3b524b8473e5f04a45a2a4", null ],
+      [ "prsEnable", "structADC__InitSingle__TypeDef.html#a153191dfba6578e9975c41a753ce65eb", null ],
+      [ "prsSel", "structADC__InitSingle__TypeDef.html#abe3677451c9916ae5f84318f090b5dbf", null ],
+      [ "reference", "structADC__InitSingle__TypeDef.html#a4751bd8ba80b6b1f8c67a793928ea85c", null ],
       [ "rep", "structADC__InitSingle__TypeDef.html#aef3e7be9b4ddc55404d36658d6d388b8", null ],
-      [ "singleDmaEm2Wu", "structADC__InitSingle__TypeDef.html#a5277270dc527e9284ad57901424d94df", null ],
-      [ "fifoOverwrite", "structADC__InitSingle__TypeDef.html#a2ff4b3214f07511401fe0de049c3e42d", null ]
+      [ "resolution", "structADC__InitSingle__TypeDef.html#a9ee5b016f52095cd030e2e7b1780186c", null ],
+      [ "singleDmaEm2Wu", "structADC__InitSingle__TypeDef.html#a5277270dc527e9284ad57901424d94df", null ]
     ] ],
     [ "ADC_CTRLX_VREFSEL_REG", "group__ADC.html#gafdba11afac476690de7756867eea9d7d", null ],
     [ "ADC_INIT_DEFAULT", "group__ADC.html#ga4572f863a8d863214dfd0a4b48f653e2", null ],
@@ -55,6 +55,8 @@ var group__ADC =
       [ "adcAcqTime128", "group__ADC.html#gga85e06060d63f1b16039d8efa318833d4aa33bcad0e6e0606b74d071214e4ea472", null ],
       [ "adcAcqTime256", "group__ADC.html#gga85e06060d63f1b16039d8efa318833d4ab6647a38bf29c66f96ca46d8d7c4fc0a", null ]
     ] ],
+    [ "ADC_EM2ClockConfig_TypeDef", "group__ADC.html#ga8e7f97d7629d26ae71b9d43c2773c7db", null ],
+    [ "ADC_NegSel_TypeDef", "group__ADC.html#gabe1921c6013f3e2f1cfd52bca3262b69", null ],
     [ "ADC_OvsRateSel_TypeDef", "group__ADC.html#gaaeb1f1d92bdb6a1bfc824461d63f5a21", [
       [ "adcOvsRateSel2", "group__ADC.html#ggaaeb1f1d92bdb6a1bfc824461d63f5a21a7b09ccd08d771af9008f378a19c63d57", null ],
       [ "adcOvsRateSel4", "group__ADC.html#ggaaeb1f1d92bdb6a1bfc824461d63f5a21a743dd5cf31c637824a9b90523bef4770", null ],
@@ -69,6 +71,7 @@ var group__ADC =
       [ "adcOvsRateSel2048", "group__ADC.html#ggaaeb1f1d92bdb6a1bfc824461d63f5a21a32293790619576912ad20f57e773154a", null ],
       [ "adcOvsRateSel4096", "group__ADC.html#ggaaeb1f1d92bdb6a1bfc824461d63f5a21aefbac494813347ff3a59ae652f990edf", null ]
     ] ],
+    [ "ADC_PosSel_TypeDef", "group__ADC.html#ga368c455b2fbaa1475373b391d1566b41", null ],
     [ "ADC_PRSSEL_TypeDef", "group__ADC.html#gacc4ddb8213b64d8b89df372069003b49", [
       [ "adcPRSSELCh0", "group__ADC.html#ggacc4ddb8213b64d8b89df372069003b49a508b578219d0a3a6df78382dcd48d8de", null ],
       [ "adcPRSSELCh1", "group__ADC.html#ggacc4ddb8213b64d8b89df372069003b49a7b590cf50b87609abf44e29c1fc68d84", null ],
@@ -87,7 +90,7 @@ var group__ADC =
       [ "adcRef1V25", "group__ADC.html#gga90e3c5bfd7ebdd7686cf65bb896e4eaca97f40de792c64102ddbf60b0faa82c32", null ],
       [ "adcRef2V5", "group__ADC.html#gga90e3c5bfd7ebdd7686cf65bb896e4eaca611947cfb4d734ac07e6d44967ca28ce", null ],
       [ "adcRefVDD", "group__ADC.html#gga90e3c5bfd7ebdd7686cf65bb896e4eaca875ace9b639af0d1640e8c597ddf7c0d", null ],
-      [ "adcRef5VDIFF", "group__ADC.html#gga90e3c5bfd7ebdd7686cf65bb896e4eacab8fa2a2f4bc48d4f5e46173714288fca", null ],
+      [ "adcRef5V", "group__ADC.html#gga90e3c5bfd7ebdd7686cf65bb896e4eacad7639f2e56437cd8cce35aaaf810464c", null ],
       [ "adcRefExtSingle", "group__ADC.html#gga90e3c5bfd7ebdd7686cf65bb896e4eacaf8fc4b0a067f7002d9cf4350de5342aa", null ],
       [ "adcRef2xExtDiff", "group__ADC.html#gga90e3c5bfd7ebdd7686cf65bb896e4eacafb73c669d8537f2afc679f2910827805", null ],
       [ "adcRef2xVDD", "group__ADC.html#gga90e3c5bfd7ebdd7686cf65bb896e4eaca85d6fcd5c42fbc583bb02eb5374cd702", null ],
@@ -105,8 +108,6 @@ var group__ADC =
       [ "adcRes6Bit", "group__ADC.html#gga0e5f9f20d16acc591c7329302f562f10a4e2b35830cf9430251ecf3959af6f04c", null ],
       [ "adcResOVS", "group__ADC.html#gga0e5f9f20d16acc591c7329302f562f10a81037a34c35c126216119c80b11e7b78", null ]
     ] ],
-    [ "ADC_PosSel_TypeDef", "group__ADC.html#ga368c455b2fbaa1475373b391d1566b41", null ],
-    [ "ADC_NegSel_TypeDef", "group__ADC.html#gabe1921c6013f3e2f1cfd52bca3262b69", null ],
     [ "ADC_Start_TypeDef", "group__ADC.html#gabb2bed27705f116f042670adb36996fb", [
       [ "adcStartSingle", "group__ADC.html#ggabb2bed27705f116f042670adb36996fbae6bdebdccc5c1edc843c906ab5929cae", null ],
       [ "adcStartScan", "group__ADC.html#ggabb2bed27705f116f042670adb36996fbaeb2f8b1e59f1058616d3276a5e25e77b", null ],
@@ -118,26 +119,25 @@ var group__ADC =
       [ "adcWarmupKeepInSlowAcq", "group__ADC.html#gga3990fbf520d66567df3de07ac040d6c5a227d0fc724fe970bd000e1dc24773e28", null ],
       [ "adcWarmupKeepADCWarm", "group__ADC.html#gga3990fbf520d66567df3de07ac040d6c5abfde4333060e0f79b1a4ec3076a75ee2", null ]
     ] ],
-    [ "ADC_EM2ClockConfig_TypeDef", "group__ADC.html#ga8e7f97d7629d26ae71b9d43c2773c7db", null ],
-    [ "ADC_DataSingleGet", "group__ADC.html#gad88086368d3a6ddd2ca71503da68607b", null ],
-    [ "ADC_DataSinglePeek", "group__ADC.html#ga38b60dda3824a2f843d0368698da4ce1", null ],
+    [ "ADC_DataIdScanGet", "group__ADC.html#gae145619e49706f16d4f495d7af61a362", null ],
     [ "ADC_DataScanGet", "group__ADC.html#ga16bbb8a7a2a4304a9b5233ff5e55dceb", null ],
     [ "ADC_DataScanPeek", "group__ADC.html#ga6c39a372119d452e4735cfadc3317ebf", null ],
-    [ "ADC_DataIdScanGet", "group__ADC.html#gae145619e49706f16d4f495d7af61a362", null ],
+    [ "ADC_DataSingleGet", "group__ADC.html#gad88086368d3a6ddd2ca71503da68607b", null ],
+    [ "ADC_DataSinglePeek", "group__ADC.html#ga38b60dda3824a2f843d0368698da4ce1", null ],
     [ "ADC_Init", "group__ADC.html#ga3d5a968fbc40b29ebc05f17b311f2eb9", null ],
-    [ "ADC_Reset", "group__ADC.html#ga75639a8eba9a3353c216b324e554827e", null ],
     [ "ADC_InitScan", "group__ADC.html#ga41207273ca90e4173084233060e0edbb", null ],
-    [ "ADC_ScanInputClear", "group__ADC.html#ga8f98fdcc67bc9e24d93dd74b25bbf578", null ],
-    [ "ADC_ScanSingleEndedInputAdd", "group__ADC.html#gad13030808bddd43b35c69d66fe339eea", null ],
-    [ "ADC_ScanDifferentialInputAdd", "group__ADC.html#ga2fb5a8a1a3503da7ea97a02a7954e2f2", null ],
     [ "ADC_InitSingle", "group__ADC.html#ga76aa8949d51eb1027906f68b0952ea0e", null ],
-    [ "ADC_TimebaseCalc", "group__ADC.html#ga95a5a908501b6c3bbd44022d41205e73", null ],
-    [ "ADC_PrescaleCalc", "group__ADC.html#ga635eb5e70c406ff3bd150b8e695a70f9", null ],
     [ "ADC_IntClear", "group__ADC.html#ga8519f6d9482a6fb6a15365f62fc4435d", null ],
     [ "ADC_IntDisable", "group__ADC.html#ga4e7612b7ab98ff06627cd121d51da1dc", null ],
     [ "ADC_IntEnable", "group__ADC.html#ga98bf6f1584f8879dd9d0118afd78e240", null ],
     [ "ADC_IntGet", "group__ADC.html#ga672d01dc9249a61c1b294a6849d5e55a", null ],
     [ "ADC_IntGetEnabled", "group__ADC.html#gaef2e4f1488777db93eab024d75e0859d", null ],
     [ "ADC_IntSet", "group__ADC.html#ga9538560672ae862a2fc339ce7c7999b9", null ],
-    [ "ADC_Start", "group__ADC.html#ga9dbf010db18a514043b369886de0bfc7", null ]
+    [ "ADC_PrescaleCalc", "group__ADC.html#ga635eb5e70c406ff3bd150b8e695a70f9", null ],
+    [ "ADC_Reset", "group__ADC.html#ga75639a8eba9a3353c216b324e554827e", null ],
+    [ "ADC_ScanDifferentialInputAdd", "group__ADC.html#ga2fb5a8a1a3503da7ea97a02a7954e2f2", null ],
+    [ "ADC_ScanInputClear", "group__ADC.html#ga8f98fdcc67bc9e24d93dd74b25bbf578", null ],
+    [ "ADC_ScanSingleEndedInputAdd", "group__ADC.html#gad13030808bddd43b35c69d66fe339eea", null ],
+    [ "ADC_Start", "group__ADC.html#ga9dbf010db18a514043b369886de0bfc7", null ],
+    [ "ADC_TimebaseCalc", "group__ADC.html#ga95a5a908501b6c3bbd44022d41205e73", null ]
 ];

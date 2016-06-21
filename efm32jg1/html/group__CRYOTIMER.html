@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -108,12 +106,14 @@ $(document).ready(function(){initNavTree('group__CRYOTIMER.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">CRYOTIMER<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">CRYOTIMER<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Ultra Low Energy Timer/Counter (CRYOTIMER) Peripheral API.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Ultra Low Energy Timer/Counter (CRYOTIMER) Peripheral API. </p>
+<p>The user is responsible for choosing which oscillator to use for the CRYOTIMER. The oscillator that is choosen must be enabled and ready before calling this <a class="el" href="group__CRYOTIMER.html#ga2fc2bf012253672d3870b45b736fb821">CRYOTIMER_Init</a> function. See <a class="el" href="group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9">CMU_OscillatorEnable</a> for details of how to enable and wait for an oscillator to become ready. Note that ULFRCO is always ready while LFRCO and LFXO must be enable by the user.</p>
+<p>Note that the only oscillator which is running in EM3 is ULFRCO. Keep this in mind when choosing which oscillator to use for the CRYOTIMER.</p>
+<p>Special care must be taken if the user wants the CRYOTIMER to run during EM4. All the low frequency oscillators can be used in EM4, however the oscillator that is used must be be configured to be retained when going into EM4. This can be configured by using functions in the <a class="el" href="group__EMU.html">EMU</a> module. See <a class="el" href="group__EMU.html#ga06bca70635ca5004a01c35eeafa15690">EMU_EM4Init</a> and <a class="el" href="structEMU__EM4Init__TypeDef.html">EMU_EM4Init_TypeDef</a>. If an oscillator is retained in EM4 the user is also responsible for unlatching the retained configuration on a wakeup from EM4. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -127,25 +127,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga4f17c6369fd634d476c354a45a1fa426"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga4f17c6369fd634d476c354a45a1fa426">CRYOTIMER_Presc_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426ab9533eebaa3ece0dba62c4a7896cc5cf">cryotimerPresc_1</a> = _CRYOTIMER_CTRL_PRESC_DIV1, 
-<br />
-&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426ae870a0380e9f4269dfca17f5476b8e4a">cryotimerPresc_2</a> = _CRYOTIMER_CTRL_PRESC_DIV2, 
-<br />
-&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a3b50d02554ddb97923d46345104ceeb8">cryotimerPresc_4</a> = _CRYOTIMER_CTRL_PRESC_DIV4, 
-<br />
-&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a7293610a21a80f84d5f36033d09e5bdf">cryotimerPresc_8</a> = _CRYOTIMER_CTRL_PRESC_DIV8, 
-<br />
-&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426aed2024c222b685fb8457523f05707dc9">cryotimerPresc_16</a> = _CRYOTIMER_CTRL_PRESC_DIV16, 
-<br />
-&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a46e40f0dda5b3146dc3f8e06da1a9308">cryotimerPresc_32</a> = _CRYOTIMER_CTRL_PRESC_DIV32, 
-<br />
-&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a3e7eac62ac81b57ddd516251664457f0">cryotimerPresc_64</a> = _CRYOTIMER_CTRL_PRESC_DIV64, 
-<br />
-&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426aac07ec15cc954ed359ace255be5d3aa9">cryotimerPresc_128</a> = _CRYOTIMER_CTRL_PRESC_DIV128
-<br />
- }<tr class="separator:ga4f17c6369fd634d476c354a45a1fa426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
 <tr class="memitem:gae75ded142f45aa60088d6fa1e4109238"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#gae75ded142f45aa60088d6fa1e4109238">CRYOTIMER_Osc_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__CRYOTIMER.html#ggae75ded142f45aa60088d6fa1e4109238acc2acf2b665c6cd9e7566a1579361578">cryotimerOscLFRCO</a> = _CRYOTIMER_CTRL_OSCSEL_LFRCO, 
 <br />
@@ -224,33 +205,28 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga5ce9dab679451bb96883b7f9846d21ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:ga4f17c6369fd634d476c354a45a1fa426"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga4f17c6369fd634d476c354a45a1fa426">CRYOTIMER_Presc_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426ab9533eebaa3ece0dba62c4a7896cc5cf">cryotimerPresc_1</a> = _CRYOTIMER_CTRL_PRESC_DIV1, 
+<br />
+&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426ae870a0380e9f4269dfca17f5476b8e4a">cryotimerPresc_2</a> = _CRYOTIMER_CTRL_PRESC_DIV2, 
+<br />
+&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a3b50d02554ddb97923d46345104ceeb8">cryotimerPresc_4</a> = _CRYOTIMER_CTRL_PRESC_DIV4, 
+<br />
+&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a7293610a21a80f84d5f36033d09e5bdf">cryotimerPresc_8</a> = _CRYOTIMER_CTRL_PRESC_DIV8, 
+<br />
+&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426aed2024c222b685fb8457523f05707dc9">cryotimerPresc_16</a> = _CRYOTIMER_CTRL_PRESC_DIV16, 
+<br />
+&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a46e40f0dda5b3146dc3f8e06da1a9308">cryotimerPresc_32</a> = _CRYOTIMER_CTRL_PRESC_DIV32, 
+<br />
+&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a3e7eac62ac81b57ddd516251664457f0">cryotimerPresc_64</a> = _CRYOTIMER_CTRL_PRESC_DIV64, 
+<br />
+&#160;&#160;<a class="el" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426aac07ec15cc954ed359ace255be5d3aa9">cryotimerPresc_128</a> = _CRYOTIMER_CTRL_PRESC_DIV128
+<br />
+ }<tr class="separator:ga4f17c6369fd634d476c354a45a1fa426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga3e76c6554781a0b5f865691c5712dbe1"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga3e76c6554781a0b5f865691c5712dbe1">CRYOTIMER_IntClear</a> (uint32_t flags)</td></tr>
-<tr class="memdesc:ga3e76c6554781a0b5f865691c5712dbe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the CRYOTIMER period interrupt.  <a href="#ga3e76c6554781a0b5f865691c5712dbe1">More...</a><br /></td></tr>
-<tr class="separator:ga3e76c6554781a0b5f865691c5712dbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6a50a563e35cd7069c4d739ac39625f6"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga6a50a563e35cd7069c4d739ac39625f6">CRYOTIMER_IntGet</a> (void)</td></tr>
-<tr class="memdesc:ga6a50a563e35cd7069c4d739ac39625f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CRYOTIMER interrupt flag.  <a href="#ga6a50a563e35cd7069c4d739ac39625f6">More...</a><br /></td></tr>
-<tr class="separator:ga6a50a563e35cd7069c4d739ac39625f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga998bcbac84507672ea7da89ceef556c0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga998bcbac84507672ea7da89ceef556c0">CRYOTIMER_IntGetEnabled</a> (void)</td></tr>
-<tr class="memdesc:ga998bcbac84507672ea7da89ceef556c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get enabled and pending CRYOTIMER interrupt flags. Useful for handling more interrupt sources in the same interrupt handler.  <a href="#ga998bcbac84507672ea7da89ceef556c0">More...</a><br /></td></tr>
-<tr class="separator:ga998bcbac84507672ea7da89ceef556c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga36965b7d939b999d83628d531c825916"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga36965b7d939b999d83628d531c825916">CRYOTIMER_IntEnable</a> (uint32_t flags)</td></tr>
-<tr class="memdesc:ga36965b7d939b999d83628d531c825916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable one or more CRYOTIMER interrupts.  <a href="#ga36965b7d939b999d83628d531c825916">More...</a><br /></td></tr>
-<tr class="separator:ga36965b7d939b999d83628d531c825916"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9076994d60697fd97aeb9dd49bc0f16d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga9076994d60697fd97aeb9dd49bc0f16d">CRYOTIMER_IntDisable</a> (uint32_t flags)</td></tr>
-<tr class="memdesc:ga9076994d60697fd97aeb9dd49bc0f16d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable one or more CRYOTIMER interrupts.  <a href="#ga9076994d60697fd97aeb9dd49bc0f16d">More...</a><br /></td></tr>
-<tr class="separator:ga9076994d60697fd97aeb9dd49bc0f16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gade960b39d3653d8e81b076bd250b8dfc"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#gade960b39d3653d8e81b076bd250b8dfc">CRYOTIMER_IntSet</a> (uint32_t flags)</td></tr>
-<tr class="memdesc:gade960b39d3653d8e81b076bd250b8dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the CRYOTIMER period interrupt flag.  <a href="#gade960b39d3653d8e81b076bd250b8dfc">More...</a><br /></td></tr>
-<tr class="separator:gade960b39d3653d8e81b076bd250b8dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec3e00350e0081cb48df965d71ec1e1d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#gaec3e00350e0081cb48df965d71ec1e1d">CRYOTIMER_PeriodSet</a> (uint32_t period)</td></tr>
-<tr class="memdesc:gaec3e00350e0081cb48df965d71ec1e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the CRYOTIMER period select.  <a href="#gaec3e00350e0081cb48df965d71ec1e1d">More...</a><br /></td></tr>
-<tr class="separator:gaec3e00350e0081cb48df965d71ec1e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga837a0d702a8a90e01e64cb230624d85b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga837a0d702a8a90e01e64cb230624d85b">CRYOTIMER_PeriodGet</a> (void)</td></tr>
-<tr class="memdesc:ga837a0d702a8a90e01e64cb230624d85b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CRYOTIMER period select value.  <a href="#ga837a0d702a8a90e01e64cb230624d85b">More...</a><br /></td></tr>
-<tr class="separator:ga837a0d702a8a90e01e64cb230624d85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaccf5fb37c2d823145b667893b15ddd11"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#gaccf5fb37c2d823145b667893b15ddd11">CRYOTIMER_CounterGet</a> (void)</td></tr>
 <tr class="memdesc:gaccf5fb37c2d823145b667893b15ddd11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CRYOTIMER counter value.  <a href="#gaccf5fb37c2d823145b667893b15ddd11">More...</a><br /></td></tr>
 <tr class="separator:gaccf5fb37c2d823145b667893b15ddd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,11 +239,31 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2fc2bf012253672d3870b45b736fb821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga2fc2bf012253672d3870b45b736fb821">CRYOTIMER_Init</a> (const <a class="el" href="structCRYOTIMER__Init__TypeDef.html">CRYOTIMER_Init_TypeDef</a> *init)</td></tr>
 <tr class="memdesc:ga2fc2bf012253672d3870b45b736fb821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the CRYOTIMER.  <a href="#ga2fc2bf012253672d3870b45b736fb821">More...</a><br /></td></tr>
 <tr class="separator:ga2fc2bf012253672d3870b45b736fb821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e76c6554781a0b5f865691c5712dbe1"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga3e76c6554781a0b5f865691c5712dbe1">CRYOTIMER_IntClear</a> (uint32_t flags)</td></tr>
+<tr class="memdesc:ga3e76c6554781a0b5f865691c5712dbe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the CRYOTIMER period interrupt.  <a href="#ga3e76c6554781a0b5f865691c5712dbe1">More...</a><br /></td></tr>
+<tr class="separator:ga3e76c6554781a0b5f865691c5712dbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9076994d60697fd97aeb9dd49bc0f16d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga9076994d60697fd97aeb9dd49bc0f16d">CRYOTIMER_IntDisable</a> (uint32_t flags)</td></tr>
+<tr class="memdesc:ga9076994d60697fd97aeb9dd49bc0f16d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable one or more CRYOTIMER interrupts.  <a href="#ga9076994d60697fd97aeb9dd49bc0f16d">More...</a><br /></td></tr>
+<tr class="separator:ga9076994d60697fd97aeb9dd49bc0f16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36965b7d939b999d83628d531c825916"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga36965b7d939b999d83628d531c825916">CRYOTIMER_IntEnable</a> (uint32_t flags)</td></tr>
+<tr class="memdesc:ga36965b7d939b999d83628d531c825916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable one or more CRYOTIMER interrupts.  <a href="#ga36965b7d939b999d83628d531c825916">More...</a><br /></td></tr>
+<tr class="separator:ga36965b7d939b999d83628d531c825916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a50a563e35cd7069c4d739ac39625f6"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga6a50a563e35cd7069c4d739ac39625f6">CRYOTIMER_IntGet</a> (void)</td></tr>
+<tr class="memdesc:ga6a50a563e35cd7069c4d739ac39625f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CRYOTIMER interrupt flag.  <a href="#ga6a50a563e35cd7069c4d739ac39625f6">More...</a><br /></td></tr>
+<tr class="separator:ga6a50a563e35cd7069c4d739ac39625f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga998bcbac84507672ea7da89ceef556c0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga998bcbac84507672ea7da89ceef556c0">CRYOTIMER_IntGetEnabled</a> (void)</td></tr>
+<tr class="memdesc:ga998bcbac84507672ea7da89ceef556c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get enabled and pending CRYOTIMER interrupt flags. Useful for handling more interrupt sources in the same interrupt handler.  <a href="#ga998bcbac84507672ea7da89ceef556c0">More...</a><br /></td></tr>
+<tr class="separator:ga998bcbac84507672ea7da89ceef556c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade960b39d3653d8e81b076bd250b8dfc"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#gade960b39d3653d8e81b076bd250b8dfc">CRYOTIMER_IntSet</a> (uint32_t flags)</td></tr>
+<tr class="memdesc:gade960b39d3653d8e81b076bd250b8dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the CRYOTIMER period interrupt flag.  <a href="#gade960b39d3653d8e81b076bd250b8dfc">More...</a><br /></td></tr>
+<tr class="separator:gade960b39d3653d8e81b076bd250b8dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga837a0d702a8a90e01e64cb230624d85b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#ga837a0d702a8a90e01e64cb230624d85b">CRYOTIMER_PeriodGet</a> (void)</td></tr>
+<tr class="memdesc:ga837a0d702a8a90e01e64cb230624d85b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the CRYOTIMER period select value.  <a href="#ga837a0d702a8a90e01e64cb230624d85b">More...</a><br /></td></tr>
+<tr class="separator:ga837a0d702a8a90e01e64cb230624d85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec3e00350e0081cb48df965d71ec1e1d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CRYOTIMER.html#gaec3e00350e0081cb48df965d71ec1e1d">CRYOTIMER_PeriodSet</a> (uint32_t period)</td></tr>
+<tr class="memdesc:gaec3e00350e0081cb48df965d71ec1e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the CRYOTIMER period select.  <a href="#gaec3e00350e0081cb48df965d71ec1e1d">More...</a><br /></td></tr>
+<tr class="separator:gaec3e00350e0081cb48df965d71ec1e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>The user is responsible for choosing which oscillator to use for the CRYOTIMER. The oscillator that is choosen must be enabled and ready before calling this <a class="el" href="group__CRYOTIMER.html#ga2fc2bf012253672d3870b45b736fb821">CRYOTIMER_Init</a> function. See <a class="el" href="group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9">CMU_OscillatorEnable</a> for details of how to enable and wait for an oscillator to become ready. Note that ULFRCO is always ready while LFRCO and LFXO must be enable by the user.</p>
-<p>Note that the only oscillator which is running in EM3 is ULFRCO. Keep this in mind when choosing which oscillator to use for the CRYOTIMER.</p>
-<p>Special care must be taken if the user wants the CRYOTIMER to run during EM4. All the low frequency oscillators can be used in EM4, however the oscillator that is used must be be configured to be retained when going into EM4. This can be configured by using functions in the <a class="el" href="group__EMU.html">EMU</a> module. See <a class="el" href="group__EMU.html#ga06bca70635ca5004a01c35eeafa15690">EMU_EM4Init</a> and <a class="el" href="structEMU__EM4Init__TypeDef.html">EMU_EM4Init_TypeDef</a>. If an oscillator is retained in EM4 the user is also responsible for unlatching the retained configuration on a wakeup from EM4. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gad8eb3451130bb396e2c1932417560f4b"></a>
 <div class="memitem">
@@ -296,47 +292,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga4f17c6369fd634d476c354a45a1fa426"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__CRYOTIMER.html#ga4f17c6369fd634d476c354a45a1fa426">CRYOTIMER_Presc_TypeDef</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Prescaler selection. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426ab9533eebaa3ece0dba62c4a7896cc5cf"></a>cryotimerPresc_1&#160;</td><td class="fielddoc">
-<p>Divide clock by 1. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426ae870a0380e9f4269dfca17f5476b8e4a"></a>cryotimerPresc_2&#160;</td><td class="fielddoc">
-<p>Divide clock by 2. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426a3b50d02554ddb97923d46345104ceeb8"></a>cryotimerPresc_4&#160;</td><td class="fielddoc">
-<p>Divide clock by 4. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426a7293610a21a80f84d5f36033d09e5bdf"></a>cryotimerPresc_8&#160;</td><td class="fielddoc">
-<p>Divide clock by 8. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426aed2024c222b685fb8457523f05707dc9"></a>cryotimerPresc_16&#160;</td><td class="fielddoc">
-<p>Divide clock by 16. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426a46e40f0dda5b3146dc3f8e06da1a9308"></a>cryotimerPresc_32&#160;</td><td class="fielddoc">
-<p>Divide clock by 32. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426a3e7eac62ac81b57ddd516251664457f0"></a>cryotimerPresc_64&#160;</td><td class="fielddoc">
-<p>Divide clock by 64. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426aac07ec15cc954ed359ace255be5d3aa9"></a>cryotimerPresc_128&#160;</td><td class="fielddoc">
-<p>Divide clock by 128. </p>
-</td></tr>
-</table>
-
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00084">84</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="gae75ded142f45aa60088d6fa1e4109238"></a>
 <div class="memitem">
 <div class="memproto">
@@ -479,209 +434,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga4f17c6369fd634d476c354a45a1fa426"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__CRYOTIMER.html#ga4f17c6369fd634d476c354a45a1fa426">CRYOTIMER_Presc_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prescaler selection. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426ab9533eebaa3ece0dba62c4a7896cc5cf"></a>cryotimerPresc_1&#160;</td><td class="fielddoc">
+<p>Divide clock by 1. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426ae870a0380e9f4269dfca17f5476b8e4a"></a>cryotimerPresc_2&#160;</td><td class="fielddoc">
+<p>Divide clock by 2. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426a3b50d02554ddb97923d46345104ceeb8"></a>cryotimerPresc_4&#160;</td><td class="fielddoc">
+<p>Divide clock by 4. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426a7293610a21a80f84d5f36033d09e5bdf"></a>cryotimerPresc_8&#160;</td><td class="fielddoc">
+<p>Divide clock by 8. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426aed2024c222b685fb8457523f05707dc9"></a>cryotimerPresc_16&#160;</td><td class="fielddoc">
+<p>Divide clock by 16. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426a46e40f0dda5b3146dc3f8e06da1a9308"></a>cryotimerPresc_32&#160;</td><td class="fielddoc">
+<p>Divide clock by 32. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426a3e7eac62ac81b57ddd516251664457f0"></a>cryotimerPresc_64&#160;</td><td class="fielddoc">
+<p>Divide clock by 64. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga4f17c6369fd634d476c354a45a1fa426aac07ec15cc954ed359ace255be5d3aa9"></a>cryotimerPresc_128&#160;</td><td class="fielddoc">
+<p>Divide clock by 128. </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00084">84</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga3e76c6554781a0b5f865691c5712dbe1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void CRYOTIMER_IntClear </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to clear. Use CRYOTIMER_IFC_PERIOD </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00194">194</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__cryotimer_8h_source.html#l00147">_CRYOTIMER_IFC_MASK</a>, and <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00328">CRYOTIMER</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga6a50a563e35cd7069c4d739ac39625f6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE uint32_t CRYOTIMER_IntGet </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>Pending CRYOTIMER interrupt sources. </dd></dl>
-
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00209">209</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00328">CRYOTIMER</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga998bcbac84507672ea7da89ceef556c0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE uint32_t CRYOTIMER_IntGetEnabled </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>Interrupt flags are not cleared by the use of this function.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>Pending and enabled CRYOTIMER interrupt sources The return value is the bitwise AND of<ul>
-<li>the enabled interrupt sources in CRYOTIMER_IEN and</li>
-<li>the pending interrupt flags CRYOTIMER_IF </li>
-</ul>
-</dd></dl>
-
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00228">228</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__cryotimer_8h_source.html#l00156">_CRYOTIMER_IEN_MASK</a>, and <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00328">CRYOTIMER</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga36965b7d939b999d83628d531c825916"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void CRYOTIMER_IntEnable </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to enable. Use CRYOTIMER_IEN_PERIOD. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00243">243</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__cryotimer_8h_source.html#l00156">_CRYOTIMER_IEN_MASK</a>, and <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00328">CRYOTIMER</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga9076994d60697fd97aeb9dd49bc0f16d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void CRYOTIMER_IntDisable </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to disable. Use CRYOTIMER_IEN_PERIOD. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00255">255</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__cryotimer_8h_source.html#l00156">_CRYOTIMER_IEN_MASK</a>, and <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00328">CRYOTIMER</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gade960b39d3653d8e81b076bd250b8dfc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void CRYOTIMER_IntSet </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>flags</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>Writes 1 to the interrupt flag set register.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to set to pending. Use CRYOTIMER_IFS_PERIOD. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00270">270</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__cryotimer_8h_source.html#l00138">_CRYOTIMER_IFS_MASK</a>, and <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00328">CRYOTIMER</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaec3e00350e0081cb48df965d71ec1e1d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE void CRYOTIMER_PeriodSet </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>period</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>Sets the duration between the Interrupts/Wakeup events based on the pre-scaled clock.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">period</td><td>2^period is the number of clock cycles before a wakeup event or interrupt is triggered. The CRYOTIMER_Periodsel_TypeDef enum can be used a convenience type when calling this function. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00288">288</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b__cryotimer_8h_source.html#l00104">_CRYOTIMER_PERIODSEL_MASK</a>, and <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00328">CRYOTIMER</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga837a0d702a8a90e01e64cb230624d85b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE uint32_t CRYOTIMER_PeriodGet </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>Gets the duration between the Interrupts/Wakeup events in the CRYOTIMER.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>Duration between the interrupts/wakeup events. Returns the value of the PERIODSEL register. The number of clock cycles can be calculated as the 2^n where n is the return value of this function. </dd></dl>
-
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00306">306</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
-
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00328">CRYOTIMER</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="gaccf5fb37c2d823145b667893b15ddd11"></a>
 <div class="memitem">
 <div class="memproto">
@@ -695,11 +489,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the CRYOTIMER counter value. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns the current CRYOTIMER counter value. </dd></dl>
 
 <p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00318">318</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00328">CRYOTIMER</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
 </div>
 </div>
@@ -716,6 +512,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable/disable EM4 wakeup capability. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>True to enable EM4 wakeup, false to disable. </td></tr>
@@ -725,9 +523,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00330">330</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__cryotimer_8h_source.html#l00122">_CRYOTIMER_EM4WUEN_EM4WU_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, and <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00328">CRYOTIMER</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#gac2b483211f970a1557febdc0fd140e2c">_CRYOTIMER_EM4WUEN_EM4WU_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
-<p>Referenced by <a class="el" href="em__cryotimer_8c_source.html#l00051">CRYOTIMER_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__CRYOTIMER.html#ga2fc2bf012253672d3870b45b736fb821">CRYOTIMER_Init()</a>.</p>
 
 </div>
 </div>
@@ -744,6 +542,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable/disable the CRYOTIMER. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>True to enable the CRYOTIMER, false to disable. </td></tr>
@@ -753,7 +553,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00342">342</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__cryotimer_8h_source.html#l00062">_CRYOTIMER_CTRL_EN_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, and <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00328">CRYOTIMER</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga1a4e6e8fa16b148cc33b037e2f67e357">_CRYOTIMER_CTRL_EN_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
 </div>
 </div>
@@ -770,6 +570,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize the CRYOTIMER. </p>
 <p>Use this function to initialize the CRYOTIMER. Select prescaler setting and select low frequency oscillator. Refer to the configuration structure <a class="el" href="structCRYOTIMER__Init__TypeDef.html">CRYOTIMER_Init_TypeDef</a> for more details.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -780,7 +582,225 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__cryotimer_8c_source.html#l00051">51</a> of file <a class="el" href="em__cryotimer_8c_source.html">em_cryotimer.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__cryotimer_8h_source.html#l00067">_CRYOTIMER_CTRL_DEBUGRUN_SHIFT</a>, <a class="el" href="efm32jg1b__cryotimer_8h_source.html#l00062">_CRYOTIMER_CTRL_EN_SHIFT</a>, <a class="el" href="efm32jg1b__cryotimer_8h_source.html#l00071">_CRYOTIMER_CTRL_OSCSEL_SHIFT</a>, <a class="el" href="efm32jg1b__cryotimer_8h_source.html#l00081">_CRYOTIMER_CTRL_PRESC_SHIFT</a>, <a class="el" href="efm32jg1b__cryotimer_8h_source.html#l00104">_CRYOTIMER_PERIODSEL_MASK</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00328">CRYOTIMER</a>, <a class="el" href="em__cryotimer_8h_source.html#l00330">CRYOTIMER_EM4WakeupEnable()</a>, <a class="el" href="em__cryotimer_8h_source.html#l00153">CRYOTIMER_Init_TypeDef::debugRun</a>, <a class="el" href="em__cryotimer_8h_source.html#l00156">CRYOTIMER_Init_TypeDef::em4Wakeup</a>, <a class="el" href="em__cryotimer_8h_source.html#l00150">CRYOTIMER_Init_TypeDef::enable</a>, <a class="el" href="em__cryotimer_8h_source.html#l00159">CRYOTIMER_Init_TypeDef::osc</a>, <a class="el" href="em__cryotimer_8h_source.html#l00165">CRYOTIMER_Init_TypeDef::period</a>, and <a class="el" href="em__cryotimer_8h_source.html#l00162">CRYOTIMER_Init_TypeDef::presc</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga68e2056ddd8c8e4bc87678061a70fc6b">_CRYOTIMER_CTRL_DEBUGRUN_SHIFT</a>, <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga1a4e6e8fa16b148cc33b037e2f67e357">_CRYOTIMER_CTRL_EN_SHIFT</a>, <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga22112c76fcc42db92c24b015fea456af">_CRYOTIMER_CTRL_OSCSEL_SHIFT</a>, <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#gad58030fd46ba3a5087454ba635115d14">_CRYOTIMER_CTRL_PRESC_SHIFT</a>, <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga2e0769c0ec0d8ca0831991062beec655">_CRYOTIMER_PERIODSEL_MASK</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>, <a class="el" href="group__CRYOTIMER.html#gabe18934adcd131e47da8c492388c36e0">CRYOTIMER_EM4WakeupEnable()</a>, <a class="el" href="structCRYOTIMER__Init__TypeDef.html#aaa15fa9ad7d3c45366ed4c855aa1188d">CRYOTIMER_Init_TypeDef::debugRun</a>, <a class="el" href="structCRYOTIMER__Init__TypeDef.html#a13946506fd773b553ead76b7bf1fa8b3">CRYOTIMER_Init_TypeDef::em4Wakeup</a>, <a class="el" href="structCRYOTIMER__Init__TypeDef.html#ad9bfb442869e18fdb5e2981a20669e7f">CRYOTIMER_Init_TypeDef::enable</a>, <a class="el" href="structCRYOTIMER__Init__TypeDef.html#a51a7b5db3f57bc905174c887d4069057">CRYOTIMER_Init_TypeDef::osc</a>, <a class="el" href="structCRYOTIMER__Init__TypeDef.html#a36b9e2885ad984813efb15c46b465c01">CRYOTIMER_Init_TypeDef::period</a>, and <a class="el" href="structCRYOTIMER__Init__TypeDef.html#a8a0045a9bdae75210409fccaf7a4bb33">CRYOTIMER_Init_TypeDef::presc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3e76c6554781a0b5f865691c5712dbe1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void CRYOTIMER_IntClear </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear the CRYOTIMER period interrupt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to clear. Use CRYOTIMER_IFC_PERIOD </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00194">194</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#gaa804edac34845b4bb890e8cf9b7b2734">_CRYOTIMER_IFC_MASK</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga9076994d60697fd97aeb9dd49bc0f16d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void CRYOTIMER_IntDisable </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable one or more CRYOTIMER interrupts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to disable. Use CRYOTIMER_IEN_PERIOD. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00255">255</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga492745f622f4ccba8a873986a081d742">_CRYOTIMER_IEN_MASK</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga36965b7d939b999d83628d531c825916"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void CRYOTIMER_IntEnable </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable one or more CRYOTIMER interrupts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to enable. Use CRYOTIMER_IEN_PERIOD. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00243">243</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga492745f622f4ccba8a873986a081d742">_CRYOTIMER_IEN_MASK</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga6a50a563e35cd7069c4d739ac39625f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint32_t CRYOTIMER_IntGet </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the CRYOTIMER interrupt flag. </p>
+<dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pending CRYOTIMER interrupt sources. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00209">209</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga998bcbac84507672ea7da89ceef556c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint32_t CRYOTIMER_IntGetEnabled </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get enabled and pending CRYOTIMER interrupt flags. Useful for handling more interrupt sources in the same interrupt handler. </p>
+<dl class="section note"><dt>Note</dt><dd>Interrupt flags are not cleared by the use of this function.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pending and enabled CRYOTIMER interrupt sources The return value is the bitwise AND of<ul>
+<li>the enabled interrupt sources in CRYOTIMER_IEN and</li>
+<li>the pending interrupt flags CRYOTIMER_IF </li>
+</ul>
+</dd></dl>
+
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00228">228</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga492745f622f4ccba8a873986a081d742">_CRYOTIMER_IEN_MASK</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gade960b39d3653d8e81b076bd250b8dfc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void CRYOTIMER_IntSet </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the CRYOTIMER period interrupt flag. </p>
+<dl class="section note"><dt>Note</dt><dd>Writes 1 to the interrupt flag set register.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to set to pending. Use CRYOTIMER_IFS_PERIOD. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00270">270</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga4b3d2c92b7dbbcddc809f6c30269cc3e">_CRYOTIMER_IFS_MASK</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga837a0d702a8a90e01e64cb230624d85b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint32_t CRYOTIMER_PeriodGet </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the CRYOTIMER period select value. </p>
+<dl class="section note"><dt>Note</dt><dd>Gets the duration between the Interrupts/Wakeup events in the CRYOTIMER.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Duration between the interrupts/wakeup events. Returns the value of the PERIODSEL register. The number of clock cycles can be calculated as the 2^n where n is the return value of this function. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00306">306</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaec3e00350e0081cb48df965d71ec1e1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void CRYOTIMER_PeriodSet </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>period</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the CRYOTIMER period select. </p>
+<dl class="section note"><dt>Note</dt><dd>Sets the duration between the Interrupts/Wakeup events based on the pre-scaled clock.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">period</td><td>2^period is the number of clock cycles before a wakeup event or interrupt is triggered. The CRYOTIMER_Periodsel_TypeDef enum can be used a convenience type when calling this function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00288">288</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga2e0769c0ec0d8ca0831991062beec655">_CRYOTIMER_PERIODSEL_MASK</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
 </div>
 </div>
@@ -789,7 +809,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:49 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:40:56 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

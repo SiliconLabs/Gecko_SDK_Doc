@@ -1,12 +1,12 @@
 var group__EFM32HG322F64 =
 [
+    [ "EFM32HG322F64 Alternate Function", "group__EFM32HG322F64__Alternate__Function.html", null ],
+    [ "EFM32HG322F64 Bit Fields", "group__EFM32HG322F64__BitFields.html", "group__EFM32HG322F64__BitFields" ],
     [ "EFM32HG322F64 Core", "group__EFM32HG322F64__Core.html", "group__EFM32HG322F64__Core" ],
     [ "EFM32HG322F64 Part", "group__EFM32HG322F64__Part.html", "group__EFM32HG322F64__Part" ],
-    [ "EFM32HG322F64 Peripheral TypeDefs", "group__EFM32HG322F64__Peripheral__TypeDefs.html", null ],
-    [ "EFM32HG322F64 Peripheral Memory Map", "group__EFM32HG322F64__Peripheral__Base.html", "group__EFM32HG322F64__Peripheral__Base" ],
     [ "EFM32HG322F64 Peripheral Declarations", "group__EFM32HG322F64__Peripheral__Declaration.html", "group__EFM32HG322F64__Peripheral__Declaration" ],
-    [ "EFM32HG322F64 Bit Fields", "group__EFM32HG322F64__BitFields.html", "group__EFM32HG322F64__BitFields" ],
-    [ "EFM32HG322F64 Alternate Function", "group__EFM32HG322F64__Alternate__Function.html", null ],
+    [ "EFM32HG322F64 Peripheral Memory Map", "group__EFM32HG322F64__Peripheral__Base.html", "group__EFM32HG322F64__Peripheral__Base" ],
+    [ "EFM32HG322F64 Peripheral TypeDefs", "group__EFM32HG322F64__Peripheral__TypeDefs.html", null ],
     [ "SET_BIT_FIELD", "group__EFM32HG322F64.html#ga7979121950b76a6bd75bf5a8f6fbdcc0", null ],
     [ "IRQn_Type", "group__EFM32HG322F64.html#gac3af4a32370fb28c4ade8bf2add80251", null ],
     [ "IRQn", "group__EFM32HG322F64.html#ga666eb0caeb12ec0e281415592ae89083", [

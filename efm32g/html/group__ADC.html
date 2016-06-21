@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32g-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -107,20 +106,20 @@ $(document).ready(function(){initNavTree('group__ADC.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">ADC<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">ADC<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Analog to Digital Converter (ADC) Peripheral API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Analog to Digital Converter (ADC) Peripheral API. </p>
+<p>This module contains functions to control the ADC peripheral of Silicon Labs 32-bit MCUs and SoCs. The ADC is used to convert analog signals into a digital representation. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structADC__Init__TypeDef.html">ADC_Init_TypeDef</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structADC__InitScanInput__TypeDef.html">ADC_InitScanInput_TypeDef</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structADC__InitScan__TypeDef.html">ADC_InitScan_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structADC__InitScanInput__TypeDef.html">ADC_InitScanInput_TypeDef</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structADC__InitSingle__TypeDef.html">ADC_InitSingle_TypeDef</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,36 +307,27 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad88086368d3a6ddd2ca71503da68607b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#gad88086368d3a6ddd2ca71503da68607b">ADC_DataSingleGet</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc)</td></tr>
-<tr class="memdesc:gad88086368d3a6ddd2ca71503da68607b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get single conversion result.  <a href="#gad88086368d3a6ddd2ca71503da68607b">More...</a><br /></td></tr>
-<tr class="separator:gad88086368d3a6ddd2ca71503da68607b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga38b60dda3824a2f843d0368698da4ce1"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga38b60dda3824a2f843d0368698da4ce1">ADC_DataSinglePeek</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc)</td></tr>
-<tr class="memdesc:ga38b60dda3824a2f843d0368698da4ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peek single conversion result.  <a href="#ga38b60dda3824a2f843d0368698da4ce1">More...</a><br /></td></tr>
-<tr class="separator:ga38b60dda3824a2f843d0368698da4ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga16bbb8a7a2a4304a9b5233ff5e55dceb"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga16bbb8a7a2a4304a9b5233ff5e55dceb">ADC_DataScanGet</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc)</td></tr>
 <tr class="memdesc:ga16bbb8a7a2a4304a9b5233ff5e55dceb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get scan result.  <a href="#ga16bbb8a7a2a4304a9b5233ff5e55dceb">More...</a><br /></td></tr>
 <tr class="separator:ga16bbb8a7a2a4304a9b5233ff5e55dceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6c39a372119d452e4735cfadc3317ebf"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga6c39a372119d452e4735cfadc3317ebf">ADC_DataScanPeek</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc)</td></tr>
 <tr class="memdesc:ga6c39a372119d452e4735cfadc3317ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peek scan result.  <a href="#ga6c39a372119d452e4735cfadc3317ebf">More...</a><br /></td></tr>
 <tr class="separator:ga6c39a372119d452e4735cfadc3317ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad88086368d3a6ddd2ca71503da68607b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#gad88086368d3a6ddd2ca71503da68607b">ADC_DataSingleGet</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc)</td></tr>
+<tr class="memdesc:gad88086368d3a6ddd2ca71503da68607b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get single conversion result.  <a href="#gad88086368d3a6ddd2ca71503da68607b">More...</a><br /></td></tr>
+<tr class="separator:gad88086368d3a6ddd2ca71503da68607b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38b60dda3824a2f843d0368698da4ce1"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga38b60dda3824a2f843d0368698da4ce1">ADC_DataSinglePeek</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc)</td></tr>
+<tr class="memdesc:ga38b60dda3824a2f843d0368698da4ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peek single conversion result.  <a href="#ga38b60dda3824a2f843d0368698da4ce1">More...</a><br /></td></tr>
+<tr class="separator:ga38b60dda3824a2f843d0368698da4ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3d5a968fbc40b29ebc05f17b311f2eb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga3d5a968fbc40b29ebc05f17b311f2eb9">ADC_Init</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc, const <a class="el" href="structADC__Init__TypeDef.html">ADC_Init_TypeDef</a> *init)</td></tr>
 <tr class="memdesc:ga3d5a968fbc40b29ebc05f17b311f2eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize ADC.  <a href="#ga3d5a968fbc40b29ebc05f17b311f2eb9">More...</a><br /></td></tr>
 <tr class="separator:ga3d5a968fbc40b29ebc05f17b311f2eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75639a8eba9a3353c216b324e554827e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga75639a8eba9a3353c216b324e554827e">ADC_Reset</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc)</td></tr>
-<tr class="memdesc:ga75639a8eba9a3353c216b324e554827e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset ADC to same state as after a HW reset.  <a href="#ga75639a8eba9a3353c216b324e554827e">More...</a><br /></td></tr>
-<tr class="separator:ga75639a8eba9a3353c216b324e554827e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga41207273ca90e4173084233060e0edbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga41207273ca90e4173084233060e0edbb">ADC_InitScan</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc, const <a class="el" href="structADC__InitScan__TypeDef.html">ADC_InitScan_TypeDef</a> *init)</td></tr>
 <tr class="memdesc:ga41207273ca90e4173084233060e0edbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize ADC scan sequence.  <a href="#ga41207273ca90e4173084233060e0edbb">More...</a><br /></td></tr>
 <tr class="separator:ga41207273ca90e4173084233060e0edbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga76aa8949d51eb1027906f68b0952ea0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga76aa8949d51eb1027906f68b0952ea0e">ADC_InitSingle</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc, const <a class="el" href="structADC__InitSingle__TypeDef.html">ADC_InitSingle_TypeDef</a> *init)</td></tr>
 <tr class="memdesc:ga76aa8949d51eb1027906f68b0952ea0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize single ADC sample conversion.  <a href="#ga76aa8949d51eb1027906f68b0952ea0e">More...</a><br /></td></tr>
 <tr class="separator:ga76aa8949d51eb1027906f68b0952ea0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga95a5a908501b6c3bbd44022d41205e73"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga95a5a908501b6c3bbd44022d41205e73">ADC_TimebaseCalc</a> (uint32_t hfperFreq)</td></tr>
-<tr class="memdesc:ga95a5a908501b6c3bbd44022d41205e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate timebase value in order to get a timebase providing at least 1us.  <a href="#ga95a5a908501b6c3bbd44022d41205e73">More...</a><br /></td></tr>
-<tr class="separator:ga95a5a908501b6c3bbd44022d41205e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga635eb5e70c406ff3bd150b8e695a70f9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga635eb5e70c406ff3bd150b8e695a70f9">ADC_PrescaleCalc</a> (uint32_t adcFreq, uint32_t hfperFreq)</td></tr>
-<tr class="memdesc:ga635eb5e70c406ff3bd150b8e695a70f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate prescaler value used to determine ADC clock.  <a href="#ga635eb5e70c406ff3bd150b8e695a70f9">More...</a><br /></td></tr>
-<tr class="separator:ga635eb5e70c406ff3bd150b8e695a70f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8519f6d9482a6fb6a15365f62fc4435d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga8519f6d9482a6fb6a15365f62fc4435d">ADC_IntClear</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc, uint32_t flags)</td></tr>
 <tr class="memdesc:ga8519f6d9482a6fb6a15365f62fc4435d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending ADC interrupts.  <a href="#ga8519f6d9482a6fb6a15365f62fc4435d">More...</a><br /></td></tr>
 <tr class="separator:ga8519f6d9482a6fb6a15365f62fc4435d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -356,11 +346,19 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9538560672ae862a2fc339ce7c7999b9"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga9538560672ae862a2fc339ce7c7999b9">ADC_IntSet</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc, uint32_t flags)</td></tr>
 <tr class="memdesc:ga9538560672ae862a2fc339ce7c7999b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one or more pending ADC interrupts from SW.  <a href="#ga9538560672ae862a2fc339ce7c7999b9">More...</a><br /></td></tr>
 <tr class="separator:ga9538560672ae862a2fc339ce7c7999b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga635eb5e70c406ff3bd150b8e695a70f9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga635eb5e70c406ff3bd150b8e695a70f9">ADC_PrescaleCalc</a> (uint32_t adcFreq, uint32_t hfperFreq)</td></tr>
+<tr class="memdesc:ga635eb5e70c406ff3bd150b8e695a70f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate prescaler value used to determine ADC clock.  <a href="#ga635eb5e70c406ff3bd150b8e695a70f9">More...</a><br /></td></tr>
+<tr class="separator:ga635eb5e70c406ff3bd150b8e695a70f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75639a8eba9a3353c216b324e554827e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga75639a8eba9a3353c216b324e554827e">ADC_Reset</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc)</td></tr>
+<tr class="memdesc:ga75639a8eba9a3353c216b324e554827e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset ADC to same state as after a HW reset.  <a href="#ga75639a8eba9a3353c216b324e554827e">More...</a><br /></td></tr>
+<tr class="separator:ga75639a8eba9a3353c216b324e554827e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9dbf010db18a514043b369886de0bfc7"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga9dbf010db18a514043b369886de0bfc7">ADC_Start</a> (<a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *adc, <a class="el" href="group__ADC.html#gabb2bed27705f116f042670adb36996fb">ADC_Start_TypeDef</a> cmd)</td></tr>
 <tr class="memdesc:ga9dbf010db18a514043b369886de0bfc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start scan sequence and/or single conversion.  <a href="#ga9dbf010db18a514043b369886de0bfc7">More...</a><br /></td></tr>
 <tr class="separator:ga9dbf010db18a514043b369886de0bfc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95a5a908501b6c3bbd44022d41205e73"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga95a5a908501b6c3bbd44022d41205e73">ADC_TimebaseCalc</a> (uint32_t hfperFreq)</td></tr>
+<tr class="memdesc:ga95a5a908501b6c3bbd44022d41205e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate timebase value in order to get a timebase providing at least 1us.  <a href="#ga95a5a908501b6c3bbd44022d41205e73">More...</a><br /></td></tr>
+<tr class="separator:ga95a5a908501b6c3bbd44022d41205e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga4572f863a8d863214dfd0a4b48f653e2"></a>
 <div class="memitem">
@@ -383,12 +381,12 @@ Functions</h2></td></tr>
 <div class="ttc" id="group__EFM32G__ADC__BitFields_html_gad36bc8eb33c1f63693ecab926500a092"><div class="ttname"><a href="group__EFM32G__ADC__BitFields.html#gad36bc8eb33c1f63693ecab926500a092">_ADC_CTRL_TIMEBASE_DEFAULT</a></div><div class="ttdeci">#define _ADC_CTRL_TIMEBASE_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="efm32g__adc_8h_source.html#l00104">efm32g_adc.h:104</a></div></div>
 <div class="ttc" id="group__ADC_html_gga3fc7e4aa2fb8d028f622e93e7bea3055af2118fc83283bac43666b83478e7f500"><div class="ttname"><a href="group__ADC.html#gga3fc7e4aa2fb8d028f622e93e7bea3055af2118fc83283bac43666b83478e7f500">adcLPFilterBypass</a></div><div class="ttdef"><b>Definition:</b> <a href="em__adc_8h_source.html#l00078">em_adc.h:78</a></div></div>
 <div class="ttc" id="group__EFM32G__ADC__BitFields_html_ga186a3e0fb6fa0a062eff032ca253abbc"><div class="ttname"><a href="group__EFM32G__ADC__BitFields.html#ga186a3e0fb6fa0a062eff032ca253abbc">_ADC_CTRL_PRESC_DEFAULT</a></div><div class="ttdeci">#define _ADC_CTRL_PRESC_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="efm32g__adc_8h_source.html#l00098">efm32g_adc.h:98</a></div></div>
-<div class="ttc" id="group__ADC_html_gga3990fbf520d66567df3de07ac040d6c5a0b495546dd9a182c1c0867d48a3162ca"><div class="ttname"><a href="group__ADC.html#gga3990fbf520d66567df3de07ac040d6c5a0b495546dd9a182c1c0867d48a3162ca">adcWarmupNormal</a></div><div class="ttdef"><b>Definition:</b> <a href="em__adc_8h_source.html#l00724">em_adc.h:724</a></div></div>
+<div class="ttc" id="group__ADC_html_gga3990fbf520d66567df3de07ac040d6c5a0b495546dd9a182c1c0867d48a3162ca"><div class="ttname"><a href="group__ADC.html#gga3990fbf520d66567df3de07ac040d6c5a0b495546dd9a182c1c0867d48a3162ca">adcWarmupNormal</a></div><div class="ttdef"><b>Definition:</b> <a href="em__adc_8h_source.html#l00737">em_adc.h:737</a></div></div>
 </div><!-- fragment --><p>Default config for ADC init structure. </p>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l00811">811</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l00824">824</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
-<p>Referenced by <a class="el" href="touch_8c_source.html#l00340">TOUCH_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__Touch.html#ga7998398248274366ad0d8cc3abc63f35">TOUCH_Init()</a>.</p>
 
 </div>
 </div>
@@ -412,13 +410,13 @@ Functions</h2></td></tr>
 <div class="line">  false,                     <span class="comment">/* Right adjust. */</span>                                  \</div>
 <div class="line">  false,                     <span class="comment">/* Deactivate conversion after one scan sequence. */</span> \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__ADC_html_gga0e5f9f20d16acc591c7329302f562f10a046959365e8be6caa6d26739f37c3bc8"><div class="ttname"><a href="group__ADC.html#gga0e5f9f20d16acc591c7329302f562f10a046959365e8be6caa6d26739f37c3bc8">adcRes12Bit</a></div><div class="ttdef"><b>Definition:</b> <a href="em__adc_8h_source.html#l00255">em_adc.h:255</a></div></div>
+<div class="ttc" id="group__ADC_html_gga0e5f9f20d16acc591c7329302f562f10a046959365e8be6caa6d26739f37c3bc8"><div class="ttname"><a href="group__ADC.html#gga0e5f9f20d16acc591c7329302f562f10a046959365e8be6caa6d26739f37c3bc8">adcRes12Bit</a></div><div class="ttdef"><b>Definition:</b> <a href="em__adc_8h_source.html#l00269">em_adc.h:269</a></div></div>
 <div class="ttc" id="group__ADC_html_gga90e3c5bfd7ebdd7686cf65bb896e4eaca97f40de792c64102ddbf60b0faa82c32"><div class="ttname"><a href="group__ADC.html#gga90e3c5bfd7ebdd7686cf65bb896e4eaca97f40de792c64102ddbf60b0faa82c32">adcRef1V25</a></div><div class="ttdef"><b>Definition:</b> <a href="em__adc_8h_source.html#l00192">em_adc.h:192</a></div></div>
 <div class="ttc" id="group__ADC_html_gga85e06060d63f1b16039d8efa318833d4a8ce5aa42e27cab1c6155b432a65674c9"><div class="ttname"><a href="group__ADC.html#gga85e06060d63f1b16039d8efa318833d4a8ce5aa42e27cab1c6155b432a65674c9">adcAcqTime1</a></div><div class="ttdef"><b>Definition:</b> <a href="em__adc_8h_source.html#l00062">em_adc.h:62</a></div></div>
 <div class="ttc" id="group__ADC_html_ggacc4ddb8213b64d8b89df372069003b49a508b578219d0a3a6df78382dcd48d8de"><div class="ttname"><a href="group__ADC.html#ggacc4ddb8213b64d8b89df372069003b49a508b578219d0a3a6df78382dcd48d8de">adcPRSSELCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__adc_8h_source.html#l00133">em_adc.h:133</a></div></div>
 </div><!-- fragment --><p>Default config for ADC scan init structure. </p>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l00921">921</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l00934">934</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
 </div>
 </div>
@@ -442,13 +440,13 @@ Functions</h2></td></tr>
 <div class="line">  false,                     <span class="comment">/* Right adjust. */</span>                                  \</div>
 <div class="line">  false                      <span class="comment">/* Deactivate conversion after one scan sequence. */</span> \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__ADC_html_gga0e5f9f20d16acc591c7329302f562f10a046959365e8be6caa6d26739f37c3bc8"><div class="ttname"><a href="group__ADC.html#gga0e5f9f20d16acc591c7329302f562f10a046959365e8be6caa6d26739f37c3bc8">adcRes12Bit</a></div><div class="ttdef"><b>Definition:</b> <a href="em__adc_8h_source.html#l00255">em_adc.h:255</a></div></div>
+<div class="ttc" id="group__ADC_html_gga0e5f9f20d16acc591c7329302f562f10a046959365e8be6caa6d26739f37c3bc8"><div class="ttname"><a href="group__ADC.html#gga0e5f9f20d16acc591c7329302f562f10a046959365e8be6caa6d26739f37c3bc8">adcRes12Bit</a></div><div class="ttdef"><b>Definition:</b> <a href="em__adc_8h_source.html#l00269">em_adc.h:269</a></div></div>
 <div class="ttc" id="group__ADC_html_gga90e3c5bfd7ebdd7686cf65bb896e4eaca97f40de792c64102ddbf60b0faa82c32"><div class="ttname"><a href="group__ADC.html#gga90e3c5bfd7ebdd7686cf65bb896e4eaca97f40de792c64102ddbf60b0faa82c32">adcRef1V25</a></div><div class="ttdef"><b>Definition:</b> <a href="em__adc_8h_source.html#l00192">em_adc.h:192</a></div></div>
 <div class="ttc" id="group__ADC_html_gga85e06060d63f1b16039d8efa318833d4a8ce5aa42e27cab1c6155b432a65674c9"><div class="ttname"><a href="group__ADC.html#gga85e06060d63f1b16039d8efa318833d4a8ce5aa42e27cab1c6155b432a65674c9">adcAcqTime1</a></div><div class="ttdef"><b>Definition:</b> <a href="em__adc_8h_source.html#l00062">em_adc.h:62</a></div></div>
 <div class="ttc" id="group__ADC_html_ggacc4ddb8213b64d8b89df372069003b49a508b578219d0a3a6df78382dcd48d8de"><div class="ttname"><a href="group__ADC.html#ggacc4ddb8213b64d8b89df372069003b49a508b578219d0a3a6df78382dcd48d8de">adcPRSSELCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__adc_8h_source.html#l00133">em_adc.h:133</a></div></div>
 </div><!-- fragment --><p>Default config for ADC single conversion init structure. </p>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01021">1021</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01036">1036</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
 </div>
 </div>
@@ -680,7 +678,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l00253">253</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l00267">267</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
 </div>
 </div>
@@ -760,7 +758,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l00264">264</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l00278">278</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
 </div>
 </div>
@@ -786,7 +784,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l00704">704</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l00717">717</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
 </div>
 </div>
@@ -815,69 +813,11 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l00721">721</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l00734">734</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gad88086368d3a6ddd2ca71503da68607b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE uint32_t ADC_DataSingleGet </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>adc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>Check data valid flag before calling this function.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">adc</td><td>Pointer to ADC peripheral register block.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Single conversion data. </dd></dl>
-
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01068">1068</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
-
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00052">ADC_TypeDef::SINGLEDATA</a>.</p>
-
-<p>Referenced by <a class="el" href="touch_8c_source.html#l00224">ADC0_IRQHandler()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga38b60dda3824a2f843d0368698da4ce1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE uint32_t ADC_DataSinglePeek </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>adc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>Check data valid flag before calling this function.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">adc</td><td>Pointer to ADC peripheral register block.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Single conversion data. </dd></dl>
-
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01087">1087</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
-
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00054">ADC_TypeDef::SINGLEDATAP</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga16bbb8a7a2a4304a9b5233ff5e55dceb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -891,6 +831,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get scan result. </p>
 <dl class="section note"><dt>Note</dt><dd>Check data valid flag before calling this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -900,9 +842,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Scan conversion data. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01106">1106</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01121">1121</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00053">ADC_TypeDef::SCANDATA</a>.</p>
+<p>References <a class="el" href="structADC__TypeDef.html#a4ecb9f146ba5421917928ef7ed2caf2c">ADC_TypeDef::SCANDATA</a>.</p>
 
 </div>
 </div>
@@ -919,6 +861,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Peek scan result. </p>
 <dl class="section note"><dt>Note</dt><dd>Check data valid flag before calling this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -928,9 +872,71 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Scan conversion data. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01125">1125</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01140">1140</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00055">ADC_TypeDef::SCANDATAP</a>.</p>
+<p>References <a class="el" href="structADC__TypeDef.html#a58296297e53f2721d0f8922e6d0166ce">ADC_TypeDef::SCANDATAP</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gad88086368d3a6ddd2ca71503da68607b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint32_t ADC_DataSingleGet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>adc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get single conversion result. </p>
+<dl class="section note"><dt>Note</dt><dd>Check data valid flag before calling this function.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">adc</td><td>Pointer to ADC peripheral register block.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Single conversion data. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01083">1083</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+
+<p>References <a class="el" href="structADC__TypeDef.html#ae9ce94dd939b06105735a9013e247508">ADC_TypeDef::SINGLEDATA</a>.</p>
+
+<p>Referenced by <a class="el" href="touch_8c.html#a3611206d185a38b740457a748712c457">ADC0_IRQHandler()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga38b60dda3824a2f843d0368698da4ce1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint32_t ADC_DataSinglePeek </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>adc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Peek single conversion result. </p>
+<dl class="section note"><dt>Note</dt><dd>Check data valid flag before calling this function.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">adc</td><td>Pointer to ADC peripheral register block.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Single conversion data. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01102">1102</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+
+<p>References <a class="el" href="structADC__TypeDef.html#abf3ae21b40b6a230d2e85fbdf5d49121">ADC_TypeDef::SINGLEDATAP</a>.</p>
 
 </div>
 </div>
@@ -957,6 +963,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize ADC. </p>
 <p>Initializes common parts for both single conversion and scan sequence. In addition, single and/or scan control configuration must be done, please refer to <a class="el" href="group__ADC.html#ga76aa8949d51eb1027906f68b0952ea0e" title="Initialize single ADC sample conversion. ">ADC_InitSingle()</a> and <a class="el" href="group__ADC.html#ga41207273ca90e4173084233060e0edbb" title="Initialize ADC scan sequence. ">ADC_InitScan()</a> respectively.</p>
 <p>On ADC architectures with the ADCn-&gt;SCANCHCONF register, ADC_ScanSingleEndedInit() and ADC_ScanDifferentialInit() can be used to assist scan conversion input setup.</p>
 <dl class="section note"><dt>Note</dt><dd>This function will stop any ongoing conversion.</dd></dl>
@@ -968,38 +976,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__adc_8c_source.html#l00363">363</a> of file <a class="el" href="em__adc_8c_source.html">em_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8c_source.html#l00367">367</a> of file <a class="el" href="em__adc_8c_source.html">em_adc.c</a>.</p>
 
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00087">_ADC_CTRL_LPFMODE_MASK</a>, <a class="el" href="efm32g__adc_8h_source.html#l00086">_ADC_CTRL_LPFMODE_SHIFT</a>, <a class="el" href="efm32g__adc_8h_source.html#l00106">_ADC_CTRL_OVSRSEL_SHIFT</a>, <a class="el" href="efm32g__adc_8h_source.html#l00097">_ADC_CTRL_PRESC_MASK</a>, <a class="el" href="efm32g__adc_8h_source.html#l00096">_ADC_CTRL_PRESC_SHIFT</a>, <a class="el" href="efm32g__adc_8h_source.html#l00103">_ADC_CTRL_TIMEBASE_MASK</a>, <a class="el" href="efm32g__adc_8h_source.html#l00102">_ADC_CTRL_TIMEBASE_SHIFT</a>, <a class="el" href="efm32g__adc_8h_source.html#l00069">_ADC_CTRL_WARMUPMODE_SHIFT</a>, <a class="el" href="efm32g890f128_8h_source.html#l00355">ADC0</a>, <a class="el" href="efm32g__adc_8h_source.html#l00153">ADC_CMD_SCANSTOP</a>, <a class="el" href="efm32g__adc_8h_source.html#l00143">ADC_CMD_SINGLESTOP</a>, <a class="el" href="efm32g__adc_8h_source.html#l00081">ADC_CTRL_TAILGATE</a>, <a class="el" href="em__adc_8h_source.html#l01166">ADC_IntClear()</a>, <a class="el" href="em__bus_8h_source.html#l00283">BUS_RegMaskedWrite()</a>, <a class="el" href="efm32g__adc_8h_source.html#l00044">ADC_TypeDef::CMD</a>, <a class="el" href="efm32g__adc_8h_source.html#l00043">ADC_TypeDef::CTRL</a>, <a class="el" href="em__adc_8h_source.html#l00781">ADC_Init_TypeDef::lpfMode</a>, <a class="el" href="em__adc_8h_source.html#l00777">ADC_Init_TypeDef::ovsRateSel</a>, <a class="el" href="em__adc_8h_source.html#l00797">ADC_Init_TypeDef::prescale</a>, <a class="el" href="em__adc_8h_source.html#l00800">ADC_Init_TypeDef::tailgate</a>, <a class="el" href="em__adc_8h_source.html#l00794">ADC_Init_TypeDef::timebase</a>, and <a class="el" href="em__adc_8h_source.html#l00785">ADC_Init_TypeDef::warmUpMode</a>.</p>
+<p>References <a class="el" href="group__EFM32G__ADC__BitFields.html#ga71faf9e4a713fdda33082c80996e9b17">_ADC_CTRL_LPFMODE_MASK</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga04a22a67aa91619ce97d09467a9bc6bc">_ADC_CTRL_LPFMODE_SHIFT</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gae931c1b2bfdc212aeaceef1c3b675509">_ADC_CTRL_OVSRSEL_SHIFT</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gaeb8dd7d0ae6bdb1063d0117bc03db4a4">_ADC_CTRL_PRESC_MASK</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga506341c9c3f103fc18659ff6c8e79836">_ADC_CTRL_PRESC_SHIFT</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga30f7d951af923d4673e6ac12d98e1b44">_ADC_CTRL_TIMEBASE_MASK</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gac20db4ac672f56d62714dbba1c69721d">_ADC_CTRL_TIMEBASE_SHIFT</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga2b25ef3f984662538647901174299c46">_ADC_CTRL_WARMUPMODE_SHIFT</a>, <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga0d2ea0f4a8dd17bf08e69d05deacbcb5">ADC0</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga22c75882048c12de77a8bb674c66e1f1">ADC_CMD_SCANSTOP</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gab63b591d9d051a6c3885f3e6f41d96db">ADC_CMD_SINGLESTOP</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga2213e643ddf376095fe89759ce31126d">ADC_CTRL_TAILGATE</a>, <a class="el" href="group__ADC.html#ga8519f6d9482a6fb6a15365f62fc4435d">ADC_IntClear()</a>, <a class="el" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite()</a>, <a class="el" href="structADC__TypeDef.html#a2723a9e936500899aa1eeb07f2486d2f">ADC_TypeDef::CMD</a>, <a class="el" href="structADC__TypeDef.html#ab4d1f93bdafe7669212ded76243bb7d7">ADC_TypeDef::CTRL</a>, <a class="el" href="structADC__Init__TypeDef.html#aeb7d380d6aefa3e2b8fa9150cb2af1e7">ADC_Init_TypeDef::lpfMode</a>, <a class="el" href="structADC__Init__TypeDef.html#abd87f85b8c594baee7981ec252998618">ADC_Init_TypeDef::ovsRateSel</a>, <a class="el" href="structADC__Init__TypeDef.html#afea4e566991ef1c7d0e12035f5efe8a3">ADC_Init_TypeDef::prescale</a>, <a class="el" href="structADC__Init__TypeDef.html#abb40c65ecf8b039794fb7196e720f3cf">ADC_Init_TypeDef::tailgate</a>, <a class="el" href="structADC__Init__TypeDef.html#a8a4fdc6c3ba9c0b3bad5270e2614134e">ADC_Init_TypeDef::timebase</a>, and <a class="el" href="structADC__Init__TypeDef.html#ac20d26a2e7384f0f648600e446261629">ADC_Init_TypeDef::warmUpMode</a>.</p>
 
-<p>Referenced by <a class="el" href="touch_8c_source.html#l00340">TOUCH_Init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga75639a8eba9a3353c216b324e554827e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ADC_Reset </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *&#160;</td>
-          <td class="paramname"><em>adc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>The ROUTE register is NOT reset by this function, in order to allow for centralized setup of this feature.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">adc</td><td>Pointer to ADC peripheral register block. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__adc_8c_source.html#l00996">996</a> of file <a class="el" href="em__adc_8c_source.html">em_adc.c</a>.</p>
-
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00639">_ADC_BIASPROG_RESETVALUE</a>, <a class="el" href="efm32g__adc_8h_source.html#l00067">_ADC_CTRL_RESETVALUE</a>, <a class="el" href="efm32g__adc_8h_source.html#l00491">_ADC_IEN_RESETVALUE</a>, <a class="el" href="efm32g__adc_8h_source.html#l00564">_ADC_IFC_MASK</a>, <a class="el" href="efm32g__adc_8h_source.html#l00363">_ADC_SCANCTRL_RESETVALUE</a>, <a class="el" href="efm32g__adc_8h_source.html#l00219">_ADC_SINGLECTRL_RESETVALUE</a>, <a class="el" href="efm32g__adc_8h_source.html#l00153">ADC_CMD_SCANSTOP</a>, <a class="el" href="efm32g__adc_8h_source.html#l00143">ADC_CMD_SINGLESTOP</a>, <a class="el" href="em__adc_8h_source.html#l00192">adcRef1V25</a>, <a class="el" href="efm32g__adc_8h_source.html#l00058">ADC_TypeDef::BIASPROG</a>, <a class="el" href="efm32g__adc_8h_source.html#l00044">ADC_TypeDef::CMD</a>, <a class="el" href="efm32g__adc_8h_source.html#l00043">ADC_TypeDef::CTRL</a>, <a class="el" href="efm32g__adc_8h_source.html#l00048">ADC_TypeDef::IEN</a>, <a class="el" href="efm32g__adc_8h_source.html#l00051">ADC_TypeDef::IFC</a>, <a class="el" href="efm32g__adc_8h_source.html#l00047">ADC_TypeDef::SCANCTRL</a>, and <a class="el" href="efm32g__adc_8h_source.html#l00046">ADC_TypeDef::SINGLECTRL</a>.</p>
+<p>Referenced by <a class="el" href="group__Touch.html#ga7998398248274366ad0d8cc3abc63f35">TOUCH_Init()</a>.</p>
 
 </div>
 </div>
@@ -1026,6 +1007,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize ADC scan sequence. </p>
 <p>Please refer to <a class="el" href="group__ADC.html#ga9dbf010db18a514043b369886de0bfc7" title="Start scan sequence and/or single conversion. ">ADC_Start()</a> for starting scan sequence.</p>
 <p>When selecting an external reference, the gain and offset calibration must be set explicitly (CAL register). For other references, the calibration is updated with values defined during manufacturing.</p>
 <dl class="section note"><dt>Note</dt><dd>This function will stop any ongoing scan sequence.</dd></dl>
@@ -1037,9 +1020,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__adc_8c_source.html#l00679">679</a> of file <a class="el" href="em__adc_8c_source.html">em_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8c_source.html#l00683">683</a> of file <a class="el" href="em__adc_8c_source.html">em_adc.c</a>.</p>
 
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00442">_ADC_SCANCTRL_AT_SHIFT</a>, <a class="el" href="efm32g__adc_8h_source.html#l00469">_ADC_SCANCTRL_PRSSEL_SHIFT</a>, <a class="el" href="efm32g__adc_8h_source.html#l00424">_ADC_SCANCTRL_REF_SHIFT</a>, <a class="el" href="efm32g__adc_8h_source.html#l00384">_ADC_SCANCTRL_RES_SHIFT</a>, <a class="el" href="em__adc_8h_source.html#l00866">ADC_InitScan_TypeDef::acqTime</a>, <a class="el" href="efm32g__adc_8h_source.html#l00153">ADC_CMD_SCANSTOP</a>, <a class="el" href="efm32g__adc_8h_source.html#l00383">ADC_SCANCTRL_ADJ_LEFT</a>, <a class="el" href="efm32g__adc_8h_source.html#l00370">ADC_SCANCTRL_DIFF</a>, <a class="el" href="efm32g__adc_8h_source.html#l00464">ADC_SCANCTRL_PRSEN</a>, <a class="el" href="efm32g__adc_8h_source.html#l00365">ADC_SCANCTRL_REP</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="efm32g__adc_8h_source.html#l00044">ADC_TypeDef::CMD</a>, <a class="el" href="efm32g__adc_8h_source.html#l00043">ADC_TypeDef::CTRL</a>, <a class="el" href="em__adc_8h_source.html#l00896">ADC_InitScan_TypeDef::diff</a>, <a class="el" href="em__adc_8h_source.html#l00884">ADC_InitScan_TypeDef::input</a>, <a class="el" href="em__adc_8h_source.html#l00902">ADC_InitScan_TypeDef::leftAdjust</a>, <a class="el" href="em__adc_8h_source.html#l00899">ADC_InitScan_TypeDef::prsEnable</a>, <a class="el" href="em__adc_8h_source.html#l00863">ADC_InitScan_TypeDef::prsSel</a>, <a class="el" href="em__adc_8h_source.html#l00872">ADC_InitScan_TypeDef::reference</a>, <a class="el" href="em__adc_8h_source.html#l00905">ADC_InitScan_TypeDef::rep</a>, <a class="el" href="em__adc_8h_source.html#l00875">ADC_InitScan_TypeDef::resolution</a>, <a class="el" href="efm32g__adc_8h_source.html#l00047">ADC_TypeDef::SCANCTRL</a>, and <a class="el" href="efm32g__adc_8h_source.html#l00045">ADC_TypeDef::STATUS</a>.</p>
+<p>References <a class="el" href="group__EFM32G__ADC__BitFields.html#ga18d773a476b3df5be6a918951fe91e4f">_ADC_SCANCTRL_AT_SHIFT</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga4ab8010e17a800a63bec25fb90ec7fb5">_ADC_SCANCTRL_PRSSEL_SHIFT</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gab2f973cabb20e3807239671550b875a5">_ADC_SCANCTRL_REF_SHIFT</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga77c86b6b649baf57894ba77be5ae9fa0">_ADC_SCANCTRL_RES_SHIFT</a>, <a class="el" href="structADC__InitScan__TypeDef.html#afe0305e5c4ff30be937adf199052ffc5">ADC_InitScan_TypeDef::acqTime</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga22c75882048c12de77a8bb674c66e1f1">ADC_CMD_SCANSTOP</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gad519246132708dfc5c3ab1192129b84f">ADC_SCANCTRL_ADJ_LEFT</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga82555d1dbfe5ce548bc50e6dbe493d97">ADC_SCANCTRL_DIFF</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga57dbc85fb658ab5e5818f8cf8ccb391d">ADC_SCANCTRL_PRSEN</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga2714cf1646aaa7f2e75577b93d9f7828">ADC_SCANCTRL_REP</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="structADC__TypeDef.html#a2723a9e936500899aa1eeb07f2486d2f">ADC_TypeDef::CMD</a>, <a class="el" href="structADC__TypeDef.html#ab4d1f93bdafe7669212ded76243bb7d7">ADC_TypeDef::CTRL</a>, <a class="el" href="structADC__InitScan__TypeDef.html#a5a3ec4ec81c389a5a72b6c7b0cf797d7">ADC_InitScan_TypeDef::diff</a>, <a class="el" href="structADC__InitScan__TypeDef.html#aba83a966d8cfbfb81c1a5adfde978794">ADC_InitScan_TypeDef::input</a>, <a class="el" href="structADC__InitScan__TypeDef.html#afaeb7c7c6aa576a679de08b1c1b23845">ADC_InitScan_TypeDef::leftAdjust</a>, <a class="el" href="structADC__InitScan__TypeDef.html#a552538ad388b6d36e2f5074f2a7caa67">ADC_InitScan_TypeDef::prsEnable</a>, <a class="el" href="structADC__InitScan__TypeDef.html#aaf96f12fb19c8fa3ec8b8f7edbf33f37">ADC_InitScan_TypeDef::prsSel</a>, <a class="el" href="structADC__InitScan__TypeDef.html#aeee42559908020ede887a53775cfe1ef">ADC_InitScan_TypeDef::reference</a>, <a class="el" href="structADC__InitScan__TypeDef.html#aa42a6f2f8094c12b7da7a28673cf39ba">ADC_InitScan_TypeDef::rep</a>, <a class="el" href="structADC__InitScan__TypeDef.html#a8d7d55f3b72942e71ff3eb87a1792303">ADC_InitScan_TypeDef::resolution</a>, <a class="el" href="structADC__TypeDef.html#a2e3ee12b5dd89c904116e74ca0e26d76">ADC_TypeDef::SCANCTRL</a>, and <a class="el" href="structADC__TypeDef.html#a48cdef058741bcf443d7c36fe7fdf186">ADC_TypeDef::STATUS</a>.</p>
 
 </div>
 </div>
@@ -1066,6 +1049,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize single ADC sample conversion. </p>
 <p>Please refer to <a class="el" href="group__ADC.html#ga9dbf010db18a514043b369886de0bfc7" title="Start scan sequence and/or single conversion. ">ADC_Start()</a> for starting single conversion.</p>
 <p>When selecting an external reference, the gain and offset calibration must be set explicitly (CAL register). For other references, the calibration is updated with values defined during manufacturing.</p>
 <dl class="section note"><dt>Note</dt><dd>This function will stop any ongoing single conversion.</dd></dl>
@@ -1077,79 +1062,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__adc_8c_source.html#l00810">810</a> of file <a class="el" href="em__adc_8c_source.html">em_adc.c</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8c_source.html#l00814">814</a> of file <a class="el" href="em__adc_8c_source.html">em_adc.c</a>.</p>
 
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00314">_ADC_SINGLECTRL_AT_SHIFT</a>, <a class="el" href="efm32g__adc_8h_source.html#l00252">_ADC_SINGLECTRL_INPUTSEL_SHIFT</a>, <a class="el" href="efm32g__adc_8h_source.html#l00341">_ADC_SINGLECTRL_PRSSEL_SHIFT</a>, <a class="el" href="efm32g__adc_8h_source.html#l00296">_ADC_SINGLECTRL_REF_SHIFT</a>, <a class="el" href="efm32g__adc_8h_source.html#l00240">_ADC_SINGLECTRL_RES_SHIFT</a>, <a class="el" href="em__adc_8h_source.html#l00965">ADC_InitSingle_TypeDef::acqTime</a>, <a class="el" href="efm32g890f128_8h_source.html#l00355">ADC0</a>, <a class="el" href="efm32g__adc_8h_source.html#l00143">ADC_CMD_SINGLESTOP</a>, <a class="el" href="efm32g__adc_8h_source.html#l00239">ADC_SINGLECTRL_ADJ_LEFT</a>, <a class="el" href="efm32g__adc_8h_source.html#l00226">ADC_SINGLECTRL_DIFF</a>, <a class="el" href="efm32g__adc_8h_source.html#l00336">ADC_SINGLECTRL_PRSEN</a>, <a class="el" href="efm32g__adc_8h_source.html#l00221">ADC_SINGLECTRL_REP</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="efm32g__adc_8h_source.html#l00044">ADC_TypeDef::CMD</a>, <a class="el" href="em__adc_8h_source.html#l00996">ADC_InitSingle_TypeDef::diff</a>, <a class="el" href="em__adc_8h_source.html#l00981">ADC_InitSingle_TypeDef::input</a>, <a class="el" href="em__adc_8h_source.html#l01002">ADC_InitSingle_TypeDef::leftAdjust</a>, <a class="el" href="em__adc_8h_source.html#l00999">ADC_InitSingle_TypeDef::prsEnable</a>, <a class="el" href="em__adc_8h_source.html#l00962">ADC_InitSingle_TypeDef::prsSel</a>, <a class="el" href="em__adc_8h_source.html#l00971">ADC_InitSingle_TypeDef::reference</a>, <a class="el" href="em__adc_8h_source.html#l01005">ADC_InitSingle_TypeDef::rep</a>, <a class="el" href="em__adc_8h_source.html#l00974">ADC_InitSingle_TypeDef::resolution</a>, <a class="el" href="efm32g__adc_8h_source.html#l00046">ADC_TypeDef::SINGLECTRL</a>, and <a class="el" href="efm32g__adc_8h_source.html#l00045">ADC_TypeDef::STATUS</a>.</p>
+<p>References <a class="el" href="group__EFM32G__ADC__BitFields.html#gac98c6e50cc42f251d91394ed0316f0f9">_ADC_SINGLECTRL_AT_SHIFT</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gaee90f85f0e361cc1f15b61658d0fb268">_ADC_SINGLECTRL_INPUTSEL_SHIFT</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga27605eebc3336fece2d3367978326889">_ADC_SINGLECTRL_PRSSEL_SHIFT</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gaa752c7adf87ec3e06e593560318204e1">_ADC_SINGLECTRL_REF_SHIFT</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gaed4e3876b78676f7f56f9f883b860b88">_ADC_SINGLECTRL_RES_SHIFT</a>, <a class="el" href="structADC__InitSingle__TypeDef.html#ab5774ab856a328f3f01e238cf92f96a9">ADC_InitSingle_TypeDef::acqTime</a>, <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga0d2ea0f4a8dd17bf08e69d05deacbcb5">ADC0</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gab63b591d9d051a6c3885f3e6f41d96db">ADC_CMD_SINGLESTOP</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gad6808ebd1fbd1bfa0385153dca2df7c2">ADC_SINGLECTRL_ADJ_LEFT</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga4a24e29d80e0e486b99b12ccff9785be">ADC_SINGLECTRL_DIFF</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga76bb373f0ba12368ca7a43a0f79d4dc0">ADC_SINGLECTRL_PRSEN</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga7168ba4e2490352e7b919c176f6bd93a">ADC_SINGLECTRL_REP</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="structADC__TypeDef.html#a2723a9e936500899aa1eeb07f2486d2f">ADC_TypeDef::CMD</a>, <a class="el" href="structADC__InitSingle__TypeDef.html#a8ca356b274b37427cf2ab20bdd085a08">ADC_InitSingle_TypeDef::diff</a>, <a class="el" href="structADC__InitSingle__TypeDef.html#aff9c4c85f07033aa543652c6c2ee366e">ADC_InitSingle_TypeDef::input</a>, <a class="el" href="structADC__InitSingle__TypeDef.html#a64d99bb9d75e905b8a464233cb764c0e">ADC_InitSingle_TypeDef::leftAdjust</a>, <a class="el" href="structADC__InitSingle__TypeDef.html#a153191dfba6578e9975c41a753ce65eb">ADC_InitSingle_TypeDef::prsEnable</a>, <a class="el" href="structADC__InitSingle__TypeDef.html#abe3677451c9916ae5f84318f090b5dbf">ADC_InitSingle_TypeDef::prsSel</a>, <a class="el" href="structADC__InitSingle__TypeDef.html#a4751bd8ba80b6b1f8c67a793928ea85c">ADC_InitSingle_TypeDef::reference</a>, <a class="el" href="structADC__InitSingle__TypeDef.html#aef3e7be9b4ddc55404d36658d6d388b8">ADC_InitSingle_TypeDef::rep</a>, <a class="el" href="structADC__InitSingle__TypeDef.html#a9ee5b016f52095cd030e2e7b1780186c">ADC_InitSingle_TypeDef::resolution</a>, <a class="el" href="structADC__TypeDef.html#a8c2115647a07691bfa1ab63c64dd5353">ADC_TypeDef::SINGLECTRL</a>, and <a class="el" href="structADC__TypeDef.html#a48cdef058741bcf443d7c36fe7fdf186">ADC_TypeDef::STATUS</a>.</p>
 
-<p>Referenced by <a class="el" href="touch_8c_source.html#l00224">ADC0_IRQHandler()</a>, and <a class="el" href="touch_8c_source.html#l00340">TOUCH_Init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga95a5a908501b6c3bbd44022d41205e73"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t ADC_TimebaseCalc </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>hfperFreq</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hfperFreq</td><td>Frequency in Hz of reference HFPER clock. Set to 0 to use currently defined HFPER clock setting.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Timebase value to use for ADC in order to achieve at least 1 us. </dd></dl>
-
-<p>Definition at line <a class="el" href="em__adc_8c_source.html#l01048">1048</a> of file <a class="el" href="em__adc_8c_source.html">em_adc.c</a>.</p>
-
-<p>References <a class="el" href="em__cmu_8c_source.html#l01482">CMU_ClockFreqGet()</a>, and <a class="el" href="em__cmu_8h_source.html#l00382">cmuClock_HFPER</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga635eb5e70c406ff3bd150b8e695a70f9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t ADC_PrescaleCalc </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>adcFreq</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>hfperFreq</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The ADC clock is given by: HFPERCLK / (prescale + 1).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">adcFreq</td><td>ADC frequency wanted. The frequency will automatically be adjusted to be within valid range according to reference manual.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hfperFreq</td><td>Frequency in Hz of reference HFPER clock. Set to 0 to use currently defined HFPER clock setting.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Prescaler value to use for ADC in order to achieve a clock value &lt;= <code>adcFreq</code>. </dd></dl>
-
-<p>Definition at line <a class="el" href="em__adc_8c_source.html#l00955">955</a> of file <a class="el" href="em__adc_8c_source.html">em_adc.c</a>.</p>
-
-<p>References <a class="el" href="em__cmu_8c_source.html#l01482">CMU_ClockFreqGet()</a>, and <a class="el" href="em__cmu_8h_source.html#l00382">cmuClock_HFPER</a>.</p>
-
-<p>Referenced by <a class="el" href="touch_8c_source.html#l00340">TOUCH_Init()</a>.</p>
+<p>Referenced by <a class="el" href="touch_8c.html#a3611206d185a38b740457a748712c457">ADC0_IRQHandler()</a>, and <a class="el" href="group__Touch.html#ga7998398248274366ad0d8cc3abc63f35">TOUCH_Init()</a>.</p>
 
 </div>
 </div>
@@ -1176,6 +1093,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Clear one or more pending ADC interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">adc</td><td>Pointer to ADC peripheral register block.</td></tr>
@@ -1184,11 +1103,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01166">1166</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01181">1181</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00051">ADC_TypeDef::IFC</a>.</p>
+<p>References <a class="el" href="structADC__TypeDef.html#aaab065dd3acdf1c8cd031dc70e3af72f">ADC_TypeDef::IFC</a>.</p>
 
-<p>Referenced by <a class="el" href="touch_8c_source.html#l00224">ADC0_IRQHandler()</a>, <a class="el" href="em__adc_8c_source.html#l00363">ADC_Init()</a>, and <a class="el" href="touch_8c_source.html#l00340">TOUCH_Init()</a>.</p>
+<p>Referenced by <a class="el" href="touch_8c.html#a3611206d185a38b740457a748712c457">ADC0_IRQHandler()</a>, <a class="el" href="group__ADC.html#ga3d5a968fbc40b29ebc05f17b311f2eb9">ADC_Init()</a>, and <a class="el" href="group__Touch.html#ga7998398248274366ad0d8cc3abc63f35">TOUCH_Init()</a>.</p>
 
 </div>
 </div>
@@ -1215,6 +1134,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Disable one or more ADC interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">adc</td><td>Pointer to ADC peripheral register block.</td></tr>
@@ -1223,11 +1144,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01183">1183</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01198">1198</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00048">ADC_TypeDef::IEN</a>.</p>
+<p>References <a class="el" href="structADC__TypeDef.html#abf96119a91d66e04ea3bcdf5d9ab23d6">ADC_TypeDef::IEN</a>.</p>
 
-<p>Referenced by <a class="el" href="touch_8c_source.html#l00372">TOUCH_GetPos()</a>, and <a class="el" href="touch_8c_source.html#l00340">TOUCH_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__Touch.html#ga8c35b907b601d52774d63dd6b86ebc83">TOUCH_GetPos()</a>, and <a class="el" href="group__Touch.html#ga7998398248274366ad0d8cc3abc63f35">TOUCH_Init()</a>.</p>
 
 </div>
 </div>
@@ -1254,6 +1175,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable one or more ADC interrupts. </p>
 <dl class="section note"><dt>Note</dt><dd>Depending on the use, a pending interrupt may already be set prior to enabling the interrupt. Consider using <a class="el" href="group__ADC.html#ga8519f6d9482a6fb6a15365f62fc4435d" title="Clear one or more pending ADC interrupts. ">ADC_IntClear()</a> prior to enabling if such a pending interrupt should be ignored.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1263,11 +1186,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01205">1205</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01220">1220</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00048">ADC_TypeDef::IEN</a>.</p>
+<p>References <a class="el" href="structADC__TypeDef.html#abf96119a91d66e04ea3bcdf5d9ab23d6">ADC_TypeDef::IEN</a>.</p>
 
-<p>Referenced by <a class="el" href="touch_8c_source.html#l00372">TOUCH_GetPos()</a>, and <a class="el" href="touch_8c_source.html#l00340">TOUCH_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__Touch.html#ga8c35b907b601d52774d63dd6b86ebc83">TOUCH_GetPos()</a>, and <a class="el" href="group__Touch.html#ga7998398248274366ad0d8cc3abc63f35">TOUCH_Init()</a>.</p>
 
 </div>
 </div>
@@ -1284,6 +1207,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get pending ADC interrupt flags. </p>
 <dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1293,9 +1218,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ADC interrupt sources pending. A bitwise logic OR combination of valid interrupt flags for the ADC module (ADC_IF_nnn). </dd></dl>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01225">1225</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01240">1240</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00049">ADC_TypeDef::IF</a>.</p>
+<p>References <a class="el" href="structADC__TypeDef.html#aafd5aefddba1fd40cf8c1acbfd2ac159">ADC_TypeDef::IF</a>.</p>
 
 </div>
 </div>
@@ -1312,6 +1237,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get enabled and pending ADC interrupt flags. Useful for handling more interrupt sources in the same interrupt handler. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">adc</td><td>Pointer to ADC peripheral register block.</td></tr>
@@ -1325,9 +1252,9 @@ Functions</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01250">1250</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01265">1265</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00048">ADC_TypeDef::IEN</a>, and <a class="el" href="efm32g__adc_8h_source.html#l00049">ADC_TypeDef::IF</a>.</p>
+<p>References <a class="el" href="structADC__TypeDef.html#abf96119a91d66e04ea3bcdf5d9ab23d6">ADC_TypeDef::IEN</a>, and <a class="el" href="structADC__TypeDef.html#aafd5aefddba1fd40cf8c1acbfd2ac159">ADC_TypeDef::IF</a>.</p>
 
 </div>
 </div>
@@ -1354,6 +1281,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set one or more pending ADC interrupts from SW. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">adc</td><td>Pointer to ADC peripheral register block.</td></tr>
@@ -1362,9 +1291,81 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01274">1274</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01289">1289</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00050">ADC_TypeDef::IFS</a>.</p>
+<p>References <a class="el" href="structADC__TypeDef.html#a85c18563bb7bc7451aab4b0d2a3d7b71">ADC_TypeDef::IFS</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga635eb5e70c406ff3bd150b8e695a70f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ADC_PrescaleCalc </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>adcFreq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>hfperFreq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate prescaler value used to determine ADC clock. </p>
+<p>The ADC clock is given by: HFPERCLK / (prescale + 1).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">adcFreq</td><td>ADC frequency wanted. The frequency will automatically be adjusted to be within valid range according to reference manual.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hfperFreq</td><td>Frequency in Hz of reference HFPER clock. Set to 0 to use currently defined HFPER clock setting.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Prescaler value to use for ADC in order to achieve a clock value &lt;= <code>adcFreq</code>. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__adc_8c_source.html#l00959">959</a> of file <a class="el" href="em__adc_8c_source.html">em_adc.c</a>.</p>
+
+<p>References <a class="el" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet()</a>, and <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a>.</p>
+
+<p>Referenced by <a class="el" href="group__Touch.html#ga7998398248274366ad0d8cc3abc63f35">TOUCH_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga75639a8eba9a3353c216b324e554827e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ADC_Reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structADC__TypeDef.html">ADC_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>adc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset ADC to same state as after a HW reset. </p>
+<dl class="section note"><dt>Note</dt><dd>The ROUTE register is NOT reset by this function, in order to allow for centralized setup of this feature.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">adc</td><td>Pointer to ADC peripheral register block. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__adc_8c_source.html#l01000">1000</a> of file <a class="el" href="em__adc_8c_source.html">em_adc.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32G__ADC__BitFields.html#gaa76da26b40ae33817ca45c95457ff711">_ADC_BIASPROG_RESETVALUE</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga4f0c5e6652e40a859e1e229290129dfa">_ADC_CTRL_RESETVALUE</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gaba3122b4fd8277e835b7c9c5bacb93e3">_ADC_IEN_RESETVALUE</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gadc97a0427251da33d5902cdb546f02dd">_ADC_IFC_MASK</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga43ee31126086ac57f2611a1cd73c00e1">_ADC_SCANCTRL_RESETVALUE</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga54f782d5239910d7cfbd041de53d0c1f">_ADC_SINGLECTRL_RESETVALUE</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#ga22c75882048c12de77a8bb674c66e1f1">ADC_CMD_SCANSTOP</a>, <a class="el" href="group__EFM32G__ADC__BitFields.html#gab63b591d9d051a6c3885f3e6f41d96db">ADC_CMD_SINGLESTOP</a>, <a class="el" href="group__ADC.html#gga90e3c5bfd7ebdd7686cf65bb896e4eaca97f40de792c64102ddbf60b0faa82c32">adcRef1V25</a>, <a class="el" href="structADC__TypeDef.html#a671981aa74db23e9b4d94a3e8391dce3">ADC_TypeDef::BIASPROG</a>, <a class="el" href="structADC__TypeDef.html#a2723a9e936500899aa1eeb07f2486d2f">ADC_TypeDef::CMD</a>, <a class="el" href="structADC__TypeDef.html#ab4d1f93bdafe7669212ded76243bb7d7">ADC_TypeDef::CTRL</a>, <a class="el" href="structADC__TypeDef.html#abf96119a91d66e04ea3bcdf5d9ab23d6">ADC_TypeDef::IEN</a>, <a class="el" href="structADC__TypeDef.html#aaab065dd3acdf1c8cd031dc70e3af72f">ADC_TypeDef::IFC</a>, <a class="el" href="structADC__TypeDef.html#a2e3ee12b5dd89c904116e74ca0e26d76">ADC_TypeDef::SCANCTRL</a>, and <a class="el" href="structADC__TypeDef.html#a8c2115647a07691bfa1ab63c64dd5353">ADC_TypeDef::SINGLECTRL</a>.</p>
 
 </div>
 </div>
@@ -1391,6 +1392,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Start scan sequence and/or single conversion. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">adc</td><td>Pointer to ADC peripheral register block.</td></tr>
@@ -1399,11 +1402,40 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01290">1290</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__adc_8h_source.html#l01305">1305</a> of file <a class="el" href="em__adc_8h_source.html">em_adc.h</a>.</p>
 
-<p>References <a class="el" href="efm32g__adc_8h_source.html#l00044">ADC_TypeDef::CMD</a>.</p>
+<p>References <a class="el" href="structADC__TypeDef.html#a2723a9e936500899aa1eeb07f2486d2f">ADC_TypeDef::CMD</a>.</p>
 
-<p>Referenced by <a class="el" href="touch_8c_source.html#l00224">ADC0_IRQHandler()</a>, and <a class="el" href="touch_8c_source.html#l00340">TOUCH_Init()</a>.</p>
+<p>Referenced by <a class="el" href="touch_8c.html#a3611206d185a38b740457a748712c457">ADC0_IRQHandler()</a>, and <a class="el" href="group__Touch.html#ga7998398248274366ad0d8cc3abc63f35">TOUCH_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga95a5a908501b6c3bbd44022d41205e73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ADC_TimebaseCalc </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>hfperFreq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate timebase value in order to get a timebase providing at least 1us. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hfperFreq</td><td>Frequency in Hz of reference HFPER clock. Set to 0 to use currently defined HFPER clock setting.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Timebase value to use for ADC in order to achieve at least 1 us. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__adc_8c_source.html#l01052">1052</a> of file <a class="el" href="em__adc_8c_source.html">em_adc.c</a>.</p>
+
+<p>References <a class="el" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet()</a>, and <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a>.</p>
 
 </div>
 </div>
@@ -1412,7 +1444,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:35:39 for EFM32 Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:22:26 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

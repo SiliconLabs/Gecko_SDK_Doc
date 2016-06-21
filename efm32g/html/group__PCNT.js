@@ -1,12 +1,12 @@
 var group__PCNT =
 [
     [ "PCNT_Init_TypeDef", "structPCNT__Init__TypeDef.html", [
-      [ "mode", "structPCNT__Init__TypeDef.html#aa0844eb86c0f7524d1b9d6e681686f1d", null ],
-      [ "counter", "structPCNT__Init__TypeDef.html#a5d96030a51af815ee5ecb429edddadf1", null ],
-      [ "top", "structPCNT__Init__TypeDef.html#aed74c73c9af92c58c89902b0a98556a2", null ],
-      [ "negEdge", "structPCNT__Init__TypeDef.html#afde2d462e1190d18030bf844d7b213e2", null ],
       [ "countDown", "structPCNT__Init__TypeDef.html#a37e1864793e7dfc671b70e6dd945f7c0", null ],
-      [ "filter", "structPCNT__Init__TypeDef.html#a28bbdd19f0ae5755381b04e63d41d1fb", null ]
+      [ "counter", "structPCNT__Init__TypeDef.html#a5d96030a51af815ee5ecb429edddadf1", null ],
+      [ "filter", "structPCNT__Init__TypeDef.html#a28bbdd19f0ae5755381b04e63d41d1fb", null ],
+      [ "mode", "structPCNT__Init__TypeDef.html#aa0844eb86c0f7524d1b9d6e681686f1d", null ],
+      [ "negEdge", "structPCNT__Init__TypeDef.html#afde2d462e1190d18030bf844d7b213e2", null ],
+      [ "top", "structPCNT__Init__TypeDef.html#aed74c73c9af92c58c89902b0a98556a2", null ]
     ] ],
     [ "PCNT0_CNT_SIZE", "group__PCNT.html#gaf9147680cf4def78a0d85a8056ac305d", null ],
     [ "PCNT1_CNT_SIZE", "group__PCNT.html#gac0b5dd0a1e5062fdaf21780ef8c96643", null ],
@@ -20,8 +20,8 @@ var group__PCNT =
     ] ],
     [ "PCNT_CounterGet", "group__PCNT.html#ga70fe3bed7f9fc6b0823d53023fdf5f37", null ],
     [ "PCNT_CounterReset", "group__PCNT.html#gacb21126956add214b4af318f61fd17cd", null ],
-    [ "PCNT_CounterTopSet", "group__PCNT.html#ga4f29435f61c53e4a6e86947fe1980be9", null ],
     [ "PCNT_CounterSet", "group__PCNT.html#ga420446309a8fbbb76574d96ffc6db024", null ],
+    [ "PCNT_CounterTopSet", "group__PCNT.html#ga4f29435f61c53e4a6e86947fe1980be9", null ],
     [ "PCNT_Enable", "group__PCNT.html#gaa8820c09f38c0237a58300bdfa53cb0e", null ],
     [ "PCNT_FreezeEnable", "group__PCNT.html#ga0a3a18c64e545011e4b4eaef0bdc2b3d", null ],
     [ "PCNT_Init", "group__PCNT.html#ga726934d28be99230a6025503fdbaf86d", null ],

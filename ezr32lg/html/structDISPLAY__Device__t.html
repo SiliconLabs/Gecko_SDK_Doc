@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -69,13 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -111,67 +103,52 @@ $(document).ready(function(){initNavTree('structDISPLAY__Device__t.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">DISPLAY_Device_t Struct Reference<div class="ingroups"><a class="el" href="group__Drivers.html">Drivers</a> &raquo; <a class="el" href="group__Display.html">Display</a></div></div>  </div>
+<div class="title">DISPLAY_Device_t Struct Reference<div class="ingroups"><a class="el" href="group__kitdrv.html">Kit Drivers</a> &raquo; <a class="el" href="group__Display.html">Display</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="display_8h_source.html">display.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a053be6583f77e45fc0ac34bd10f55985"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#a053be6583f77e45fc0ac34bd10f55985">name</a></td></tr>
-<tr class="separator:a053be6583f77e45fc0ac34bd10f55985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2831b90b6c0376b8a4e517d4fdb14235"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDISPLAY__Geometry__t.html">DISPLAY_Geometry_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#a2831b90b6c0376b8a4e517d4fdb14235">geometry</a></td></tr>
-<tr class="separator:a2831b90b6c0376b8a4e517d4fdb14235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2f81862ed4adef467e8a525b633ebcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Display.html#ga582477144c2aad1388d54d6291e67107">DISPLAY_ColourMode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#aa2f81862ed4adef467e8a525b633ebcd">colourMode</a></td></tr>
-<tr class="separator:aa2f81862ed4adef467e8a525b633ebcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7cfe713ba0e68920ea9d3a3cd037164"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Display.html#ga9bd101ffd5a8bdde4095b5b6e0f44cfc">DISPLAY_AddressMode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#ab7cfe713ba0e68920ea9d3a3cd037164">addressMode</a></td></tr>
-<tr class="separator:ab7cfe713ba0e68920ea9d3a3cd037164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b7ff8185f64514a3a6d73b4d57fec28"><td class="memItemLeft" align="right" valign="top">EMSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#a2b7ff8185f64514a3a6d73b4d57fec28">pDisplayPowerOn</a> )(struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, bool on)</td></tr>
-<tr class="separator:a2b7ff8185f64514a3a6d73b4d57fec28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab197938a3adeff3bcdb554ec09bb44a6"><td class="memItemLeft" align="right" valign="top">EMSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#ab197938a3adeff3bcdb554ec09bb44a6">pPixelMatrixAllocate</a> )(struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, unsigned int width, unsigned int height, <a class="el" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">DISPLAY_PixelMatrix_t</a> *pixelMatrix)</td></tr>
-<tr class="separator:ab197938a3adeff3bcdb554ec09bb44a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c36c16534404f1d924381c8b54fede1"><td class="memItemLeft" align="right" valign="top">EMSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#a6c36c16534404f1d924381c8b54fede1">pPixelMatrixFree</a> )(struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, <a class="el" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">DISPLAY_PixelMatrix_t</a> pixelMatrix)</td></tr>
-<tr class="separator:a6c36c16534404f1d924381c8b54fede1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3b7631f373516f6e7a812890a0b9081"><td class="memItemLeft" align="right" valign="top">EMSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#ac3b7631f373516f6e7a812890a0b9081">pPixelMatrixDraw</a> )(struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, <a class="el" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">DISPLAY_PixelMatrix_t</a> pixelMatrix, unsigned int startColumn, unsigned int width, unsigned int startRow, unsigned int height)</td></tr>
-<tr class="separator:ac3b7631f373516f6e7a812890a0b9081"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95dfb163b85090fd817e8db60555a490"><td class="memItemLeft" align="right" valign="top">EMSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#a95dfb163b85090fd817e8db60555a490">pPixelMatrixClear</a> )(struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, <a class="el" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">DISPLAY_PixelMatrix_t</a> pixelMatrix, unsigned int width, unsigned int height)</td></tr>
-<tr class="separator:a95dfb163b85090fd817e8db60555a490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89e9d90aca1d26eac8d1ef40bdc09e04"><td class="memItemLeft" align="right" valign="top">EMSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#a89e9d90aca1d26eac8d1ef40bdc09e04">pDriverRefresh</a> )(struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device)</td></tr>
-<tr class="separator:a89e9d90aca1d26eac8d1ef40bdc09e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Display device data structure, including a specification of how the display device behaves. </p>
 
 <p>Definition at line <a class="el" href="display_8h_source.html#l00108">108</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a053be6583f77e45fc0ac34bd10f55985"></a>
+</div>
+<p><code>#include &lt;<a class="el" href="display_8h_source.html">display.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:ab7cfe713ba0e68920ea9d3a3cd037164"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Display.html#ga9bd101ffd5a8bdde4095b5b6e0f44cfc">DISPLAY_AddressMode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#ab7cfe713ba0e68920ea9d3a3cd037164">addressMode</a></td></tr>
+<tr class="separator:ab7cfe713ba0e68920ea9d3a3cd037164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f81862ed4adef467e8a525b633ebcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__Display.html#ga582477144c2aad1388d54d6291e67107">DISPLAY_ColourMode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#aa2f81862ed4adef467e8a525b633ebcd">colourMode</a></td></tr>
+<tr class="separator:aa2f81862ed4adef467e8a525b633ebcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2831b90b6c0376b8a4e517d4fdb14235"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDISPLAY__Geometry__t.html">DISPLAY_Geometry_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#a2831b90b6c0376b8a4e517d4fdb14235">geometry</a></td></tr>
+<tr class="separator:a2831b90b6c0376b8a4e517d4fdb14235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053be6583f77e45fc0ac34bd10f55985"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#a053be6583f77e45fc0ac34bd10f55985">name</a></td></tr>
+<tr class="separator:a053be6583f77e45fc0ac34bd10f55985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b7ff8185f64514a3a6d73b4d57fec28"><td class="memItemLeft" align="right" valign="top">EMSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#a2b7ff8185f64514a3a6d73b4d57fec28">pDisplayPowerOn</a> )(struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, bool on)</td></tr>
+<tr class="separator:a2b7ff8185f64514a3a6d73b4d57fec28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e9d90aca1d26eac8d1ef40bdc09e04"><td class="memItemLeft" align="right" valign="top">EMSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#a89e9d90aca1d26eac8d1ef40bdc09e04">pDriverRefresh</a> )(struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device)</td></tr>
+<tr class="separator:a89e9d90aca1d26eac8d1ef40bdc09e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab197938a3adeff3bcdb554ec09bb44a6"><td class="memItemLeft" align="right" valign="top">EMSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#ab197938a3adeff3bcdb554ec09bb44a6">pPixelMatrixAllocate</a> )(struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, unsigned int width, unsigned int height, <a class="el" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">DISPLAY_PixelMatrix_t</a> *pixelMatrix)</td></tr>
+<tr class="separator:ab197938a3adeff3bcdb554ec09bb44a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95dfb163b85090fd817e8db60555a490"><td class="memItemLeft" align="right" valign="top">EMSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#a95dfb163b85090fd817e8db60555a490">pPixelMatrixClear</a> )(struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, <a class="el" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">DISPLAY_PixelMatrix_t</a> pixelMatrix, unsigned int width, unsigned int height)</td></tr>
+<tr class="separator:a95dfb163b85090fd817e8db60555a490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b7631f373516f6e7a812890a0b9081"><td class="memItemLeft" align="right" valign="top">EMSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#ac3b7631f373516f6e7a812890a0b9081">pPixelMatrixDraw</a> )(struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, <a class="el" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">DISPLAY_PixelMatrix_t</a> pixelMatrix, unsigned int startColumn, unsigned int width, unsigned int startRow, unsigned int height)</td></tr>
+<tr class="separator:ac3b7631f373516f6e7a812890a0b9081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c36c16534404f1d924381c8b54fede1"><td class="memItemLeft" align="right" valign="top">EMSTATUS(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDISPLAY__Device__t.html#a6c36c16534404f1d924381c8b54fede1">pPixelMatrixFree</a> )(struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, <a class="el" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">DISPLAY_PixelMatrix_t</a> pixelMatrix)</td></tr>
+<tr class="separator:a6c36c16534404f1d924381c8b54fede1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="ab7cfe713ba0e68920ea9d3a3cd037164"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* DISPLAY_Device_t::name</td>
+          <td class="memname"><a class="el" href="group__Display.html#ga9bd101ffd5a8bdde4095b5b6e0f44cfc">DISPLAY_AddressMode_t</a> DISPLAY_Device_t::addressMode</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Name of the display device. </p>
+<p>Address mode of the display device. </p>
 
-<p>Definition at line <a class="el" href="display_8h_source.html#l00110">110</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2831b90b6c0376b8a4e517d4fdb14235"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structDISPLAY__Geometry__t.html">DISPLAY_Geometry_t</a> DISPLAY_Device_t::geometry</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Geometry of the display device. </p>
-
-<p>Definition at line <a class="el" href="display_8h_source.html#l00111">111</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
+<p>Definition at line <a class="el" href="display_8h_source.html#l00113">113</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
 
 </div>
 </div>
@@ -190,18 +167,33 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab7cfe713ba0e68920ea9d3a3cd037164"></a>
+<a class="anchor" id="a2831b90b6c0376b8a4e517d4fdb14235"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__Display.html#ga9bd101ffd5a8bdde4095b5b6e0f44cfc">DISPLAY_AddressMode_t</a> DISPLAY_Device_t::addressMode</td>
+          <td class="memname"><a class="el" href="structDISPLAY__Geometry__t.html">DISPLAY_Geometry_t</a> DISPLAY_Device_t::geometry</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Address mode of the display device. </p>
+<p>Geometry of the display device. </p>
 
-<p>Definition at line <a class="el" href="display_8h_source.html#l00113">113</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
+<p>Definition at line <a class="el" href="display_8h_source.html#l00111">111</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a053be6583f77e45fc0ac34bd10f55985"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* DISPLAY_Device_t::name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Name of the display device. </p>
+
+<p>Definition at line <a class="el" href="display_8h_source.html#l00110">110</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
 
 </div>
 </div>
@@ -220,6 +212,23 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a89e9d90aca1d26eac8d1ef40bdc09e04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EMSTATUS(* DISPLAY_Device_t::pDriverRefresh) (struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Refreshes the display device driver after system change, like changing a clock frequency of some related device. </p>
+
+<p>Definition at line <a class="el" href="display_8h_source.html#l00155">155</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__Display.html#gafa320dfc335fac0f70ca28fe8150b0de">DISPLAY_DriverRefresh()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ab197938a3adeff3bcdb554ec09bb44a6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -232,36 +241,6 @@ Data Fields</h2></td></tr>
 <p>Allocates a pixelMatrix buffer in the format specified by the geometry (<a class="el" href="structDISPLAY__Geometry__t.html">DISPLAY_Geometry_t</a>) of the display device. </p>
 
 <p>Definition at line <a class="el" href="display_8h_source.html#l00121">121</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6c36c16534404f1d924381c8b54fede1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EMSTATUS(* DISPLAY_Device_t::pPixelMatrixFree) (struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, <a class="el" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">DISPLAY_PixelMatrix_t</a> pixelMatrix)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Frees a pixelMatrix buffer </p>
-
-<p>Definition at line <a class="el" href="display_8h_source.html#l00131">131</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac3b7631f373516f6e7a812890a0b9081"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EMSTATUS(* DISPLAY_Device_t::pPixelMatrixDraw) (struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, <a class="el" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">DISPLAY_PixelMatrix_t</a> pixelMatrix, unsigned int startColumn, unsigned int width, unsigned int startRow, unsigned int height)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Copies the contents of the specified pixelMatrix buffer to the display device. </p>
-
-<p>Definition at line <a class="el" href="display_8h_source.html#l00136">136</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
 
 </div>
 </div>
@@ -280,20 +259,33 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a89e9d90aca1d26eac8d1ef40bdc09e04"></a>
+<a class="anchor" id="ac3b7631f373516f6e7a812890a0b9081"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EMSTATUS(* DISPLAY_Device_t::pDriverRefresh) (struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device)</td>
+          <td class="memname">EMSTATUS(* DISPLAY_Device_t::pPixelMatrixDraw) (struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, <a class="el" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">DISPLAY_PixelMatrix_t</a> pixelMatrix, unsigned int startColumn, unsigned int width, unsigned int startRow, unsigned int height)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Refreshes the display device driver after system change, like changing a clock frequency of some related device. </p>
+<p>Copies the contents of the specified pixelMatrix buffer to the display device. </p>
 
-<p>Definition at line <a class="el" href="display_8h_source.html#l00155">155</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
+<p>Definition at line <a class="el" href="display_8h_source.html#l00136">136</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
 
-<p>Referenced by <a class="el" href="display_8c_source.html#l00097">DISPLAY_DriverRefresh()</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a6c36c16534404f1d924381c8b54fede1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EMSTATUS(* DISPLAY_Device_t::pPixelMatrixFree) (struct <a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a> *device, <a class="el" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">DISPLAY_PixelMatrix_t</a> pixelMatrix)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Frees a pixelMatrix buffer </p>
+
+<p>Definition at line <a class="el" href="display_8h_source.html#l00131">131</a> of file <a class="el" href="display_8h_source.html">display.h</a>.</p>
 
 </div>
 </div>
@@ -306,7 +298,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structDISPLAY__Device__t.html">DISPLAY_Device_t</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:41:41 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:43:35 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

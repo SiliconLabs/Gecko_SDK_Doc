@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -106,102 +105,9 @@ $(document).ready(function(){initNavTree('group__RetargetIo.html','');});
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">RetargetIo<div class="ingroups"><a class="el" href="group__Drivers.html">Drivers</a></div></div>  </div>
+<div class="title">RetargetIo<div class="ingroups"><a class="el" href="group__kitdrv.html">Kit Drivers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga4a941b75a2cf56698a1e769d8214fd50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga4a941b75a2cf56698a1e769d8214fd50">RXBUFSIZE</a>&#160;&#160;&#160;8</td></tr>
-<tr class="separator:ga4a941b75a2cf56698a1e769d8214fd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga5af724185f484056b02b42f4ab184bfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar</a> (void)</td></tr>
-<tr class="memdesc:ga5af724185f484056b02b42f4ab184bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a byte from USART/LEUART and put into global buffer.  <a href="#ga5af724185f484056b02b42f4ab184bfb">More...</a><br /></td></tr>
-<tr class="separator:ga5af724185f484056b02b42f4ab184bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga856ae0b788dccadc2c83a6e67409be5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar</a> (char c)</td></tr>
-<tr class="memdesc:ga856ae0b788dccadc2c83a6e67409be5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit single byte to USART/LEUART.  <a href="#ga856ae0b788dccadc2c83a6e67409be5f">More...</a><br /></td></tr>
-<tr class="separator:ga856ae0b788dccadc2c83a6e67409be5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5aab5e2acfd600e3667dc915a2bbc7cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga5aab5e2acfd600e3667dc915a2bbc7cb">_close</a> (int file)</td></tr>
-<tr class="memdesc:ga5aab5e2acfd600e3667dc915a2bbc7cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a file.  <a href="#ga5aab5e2acfd600e3667dc915a2bbc7cb">More...</a><br /></td></tr>
-<tr class="separator:ga5aab5e2acfd600e3667dc915a2bbc7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga41eef54307912a82d20e71c3d47315aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga41eef54307912a82d20e71c3d47315aa">_fstat</a> (int file, struct stat *st)</td></tr>
-<tr class="memdesc:ga41eef54307912a82d20e71c3d47315aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of an open file.  <a href="#ga41eef54307912a82d20e71c3d47315aa">More...</a><br /></td></tr>
-<tr class="separator:ga41eef54307912a82d20e71c3d47315aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3134a3dc296622b8d1c5456e481505b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gad3134a3dc296622b8d1c5456e481505b">_isatty</a> (int file)</td></tr>
-<tr class="memdesc:gad3134a3dc296622b8d1c5456e481505b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether output stream is a terminal.  <a href="#gad3134a3dc296622b8d1c5456e481505b">More...</a><br /></td></tr>
-<tr class="separator:gad3134a3dc296622b8d1c5456e481505b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7a61311bdf1cb025fc07dc2bdae22ce4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga7a61311bdf1cb025fc07dc2bdae22ce4">_lseek</a> (int file, int ptr, int dir)</td></tr>
-<tr class="memdesc:ga7a61311bdf1cb025fc07dc2bdae22ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position in a file.  <a href="#ga7a61311bdf1cb025fc07dc2bdae22ce4">More...</a><br /></td></tr>
-<tr class="separator:ga7a61311bdf1cb025fc07dc2bdae22ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f9bf1e1602f2828e0a54e70c3b2dccb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga4f9bf1e1602f2828e0a54e70c3b2dccb">_read</a> (int file, char *ptr, int len)</td></tr>
-<tr class="memdesc:ga4f9bf1e1602f2828e0a54e70c3b2dccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from a file.  <a href="#ga4f9bf1e1602f2828e0a54e70c3b2dccb">More...</a><br /></td></tr>
-<tr class="separator:ga4f9bf1e1602f2828e0a54e70c3b2dccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaae54d7b9578ba1fc171ce6f30f4c68a3"><td class="memItemLeft" align="right" valign="top">caddr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gaae54d7b9578ba1fc171ce6f30f4c68a3">_sbrk</a> (int incr)</td></tr>
-<tr class="memdesc:gaae54d7b9578ba1fc171ce6f30f4c68a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase heap.  <a href="#gaae54d7b9578ba1fc171ce6f30f4c68a3">More...</a><br /></td></tr>
-<tr class="separator:gaae54d7b9578ba1fc171ce6f30f4c68a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga086fc1b0720a915cba9092371c03d367"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga086fc1b0720a915cba9092371c03d367">_write</a> (int file, const char *ptr, int len)</td></tr>
-<tr class="memdesc:ga086fc1b0720a915cba9092371c03d367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to a file.  <a href="#ga086fc1b0720a915cba9092371c03d367">More...</a><br /></td></tr>
-<tr class="separator:ga086fc1b0720a915cba9092371c03d367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc96bd69b58b2deaddb484478d911c1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gabc96bd69b58b2deaddb484478d911c1b">_exit</a> (int status)</td></tr>
-<tr class="memdesc:gabc96bd69b58b2deaddb484478d911c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit the program.  <a href="#gabc96bd69b58b2deaddb484478d911c1b">More...</a><br /></td></tr>
-<tr class="separator:gabc96bd69b58b2deaddb484478d911c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga945e539df8e0f66d3c73c533fe1968ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga945e539df8e0f66d3c73c533fe1968ee"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga945e539df8e0f66d3c73c533fe1968ee">_getpid</a> (void)</td></tr>
-<tr class="memdesc:ga945e539df8e0f66d3c73c533fe1968ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get process ID. <br /></td></tr>
-<tr class="separator:ga945e539df8e0f66d3c73c533fe1968ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga062a5101199c3128edd5170f2575bb10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga062a5101199c3128edd5170f2575bb10">_kill</a> (int pid, int sig)</td></tr>
-<tr class="memdesc:ga062a5101199c3128edd5170f2575bb10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send signal to process.  <a href="#ga062a5101199c3128edd5170f2575bb10">More...</a><br /></td></tr>
-<tr class="separator:ga062a5101199c3128edd5170f2575bb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8254ba1c7ef3b88b42fc5d2b971e58ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8254ba1c7ef3b88b42fc5d2b971e58ef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga8254ba1c7ef3b88b42fc5d2b971e58ef">RETARGET_IRQ_NAME</a> (void)</td></tr>
-<tr class="memdesc:ga8254ba1c7ef3b88b42fc5d2b971e58ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART/LEUART IRQ Handler. <br /></td></tr>
-<tr class="separator:ga8254ba1c7ef3b88b42fc5d2b971e58ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e36c68713259dd181ef349430ba0096"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga9e36c68713259dd181ef349430ba0096">RETARGET_SerialCrLf</a> (int on)</td></tr>
-<tr class="memdesc:ga9e36c68713259dd181ef349430ba0096"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART/LEUART toggle LF to CRLF conversion.  <a href="#ga9e36c68713259dd181ef349430ba0096">More...</a><br /></td></tr>
-<tr class="separator:ga9e36c68713259dd181ef349430ba0096"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab455176edfa0f3414d104e5d6d64cc50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab455176edfa0f3414d104e5d6d64cc50"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50">RETARGET_SerialInit</a> (void)</td></tr>
-<tr class="memdesc:gab455176edfa0f3414d104e5d6d64cc50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intializes UART/LEUART. <br /></td></tr>
-<tr class="separator:gab455176edfa0f3414d104e5d6d64cc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f514c0ebfe9dd2c24f293be0edfaf9b"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga1f514c0ebfe9dd2c24f293be0edfaf9b">RETARGET_TextDisplayInit</a> (void)</td></tr>
-<tr class="memdesc:ga1f514c0ebfe9dd2c24f293be0edfaf9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize/retarget a TEXTDISPLAY device to receivie stdout(put).  <a href="#ga1f514c0ebfe9dd2c24f293be0edfaf9b">More...</a><br /></td></tr>
-<tr class="separator:ga1f514c0ebfe9dd2c24f293be0edfaf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3603601be1ab26bec300eebb3cc5c5f9"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga3603601be1ab26bec300eebb3cc5c5f9">RETARGET_WriteString</a> (char *str)</td></tr>
-<tr class="memdesc:ga3603601be1ab26bec300eebb3cc5c5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a string of characters to the RETARGET text display device.  <a href="#ga3603601be1ab26bec300eebb3cc5c5f9">More...</a><br /></td></tr>
-<tr class="separator:ga3603601be1ab26bec300eebb3cc5c5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0a41813e3ddadfbf867971b03a799d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gaa0a41813e3ddadfbf867971b03a799d0">RETARGET_TFTTX</a> (int c)</td></tr>
-<tr class="memdesc:gaa0a41813e3ddadfbf867971b03a799d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit/display a character.  <a href="#gaa0a41813e3ddadfbf867971b03a799d0">More...</a><br /></td></tr>
-<tr class="separator:gaa0a41813e3ddadfbf867971b03a799d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47b8191a5aaac7b583336350b37b617d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga47b8191a5aaac7b583336350b37b617d">RETARGET_TFTUpdate</a> (bool fullFrame)</td></tr>
-<tr class="memdesc:ga47b8191a5aaac7b583336350b37b617d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display framebuffer.  <a href="#ga47b8191a5aaac7b583336350b37b617d">More...</a><br /></td></tr>
-<tr class="separator:ga47b8191a5aaac7b583336350b37b617d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad444352f46f856ffcb6cb255e3ef5d7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad444352f46f856ffcb6cb255e3ef5d7b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gad444352f46f856ffcb6cb255e3ef5d7b">RETARGET_TftInit</a> (void)</td></tr>
-<tr class="memdesc:gad444352f46f856ffcb6cb255e3ef5d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intializes TFT text display. <br /></td></tr>
-<tr class="separator:gad444352f46f856ffcb6cb255e3ef5d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga72e624a3e4aaef1e0376eb96404c8b6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga72e624a3e4aaef1e0376eb96404c8b6f">RETARGET_TftCrLf</a> (int on)</td></tr>
-<tr class="memdesc:ga72e624a3e4aaef1e0376eb96404c8b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle LF to CRLF conversion.  <a href="#ga72e624a3e4aaef1e0376eb96404c8b6f">More...</a><br /></td></tr>
-<tr class="separator:ga72e624a3e4aaef1e0376eb96404c8b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:gae61047e80011bfea03c48e69ec79b7e5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gae61047e80011bfea03c48e69ec79b7e5">_end</a></td></tr>
-<tr class="separator:gae61047e80011bfea03c48e69ec79b7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f6f5118f3990fce754499b31832267d"><td class="memItemLeft" align="right" valign="top">static volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga1f6f5118f3990fce754499b31832267d">rxReadIndex</a> = 0</td></tr>
-<tr class="separator:ga1f6f5118f3990fce754499b31832267d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga468f240bc568666107c397e5a7477e45"><td class="memItemLeft" align="right" valign="top">static volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga468f240bc568666107c397e5a7477e45">rxWriteIndex</a> = 0</td></tr>
-<tr class="separator:ga468f240bc568666107c397e5a7477e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga683894ac27700e907d105ce882f06048"><td class="memItemLeft" align="right" valign="top">static volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga683894ac27700e907d105ce882f06048">rxCount</a> = 0</td></tr>
-<tr class="separator:ga683894ac27700e907d105ce882f06048"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f76982f95d8c7b6336003b274ec752f"><td class="memItemLeft" align="right" valign="top">static volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga1f76982f95d8c7b6336003b274ec752f">rxBuffer</a> [<a class="el" href="group__RetargetIo.html#ga4a941b75a2cf56698a1e769d8214fd50">RXBUFSIZE</a>]</td></tr>
-<tr class="separator:ga1f76982f95d8c7b6336003b274ec752f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga39f367ecd73dc4d3885a2f7e3117ac8c"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga39f367ecd73dc4d3885a2f7e3117ac8c">LFtoCRLF</a> = 0</td></tr>
-<tr class="separator:ga39f367ecd73dc4d3885a2f7e3117ac8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaedeffc7d23da25d52b9a50045189fe2b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a> = false</td></tr>
-<tr class="separator:gaedeffc7d23da25d52b9a50045189fe2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This module provide low-level stubs for retargetting stdio for all supported toolchains. The stubs are minimal yet sufficient implementations. Refer to chapter 12 in the reference manual for newlib 1.17.0 for details on implementing newlib stubs.</p>
 <p><br />
@@ -234,7 +140,100 @@ Retarget TextDisplay Configuration.</h1>
         Select which TEXTDISPLAY device number to retarget stdout to. Normally
         there is only one display device present in the system therefore this
         parameter should be zero. However if there are more than one display
-        device the user may want to select a different display device.</pre> <h2 class="groupheader">Macro Definition Documentation</h2>
+        device the user may want to select a different display device.</pre> <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga4a941b75a2cf56698a1e769d8214fd50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga4a941b75a2cf56698a1e769d8214fd50">RXBUFSIZE</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:ga4a941b75a2cf56698a1e769d8214fd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga5aab5e2acfd600e3667dc915a2bbc7cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga5aab5e2acfd600e3667dc915a2bbc7cb">_close</a> (int file)</td></tr>
+<tr class="memdesc:ga5aab5e2acfd600e3667dc915a2bbc7cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a file.  <a href="#ga5aab5e2acfd600e3667dc915a2bbc7cb">More...</a><br /></td></tr>
+<tr class="separator:ga5aab5e2acfd600e3667dc915a2bbc7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc96bd69b58b2deaddb484478d911c1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gabc96bd69b58b2deaddb484478d911c1b">_exit</a> (int status)</td></tr>
+<tr class="memdesc:gabc96bd69b58b2deaddb484478d911c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit the program.  <a href="#gabc96bd69b58b2deaddb484478d911c1b">More...</a><br /></td></tr>
+<tr class="separator:gabc96bd69b58b2deaddb484478d911c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41eef54307912a82d20e71c3d47315aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga41eef54307912a82d20e71c3d47315aa">_fstat</a> (int file, struct stat *st)</td></tr>
+<tr class="memdesc:ga41eef54307912a82d20e71c3d47315aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of an open file.  <a href="#ga41eef54307912a82d20e71c3d47315aa">More...</a><br /></td></tr>
+<tr class="separator:ga41eef54307912a82d20e71c3d47315aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga945e539df8e0f66d3c73c533fe1968ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga945e539df8e0f66d3c73c533fe1968ee"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga945e539df8e0f66d3c73c533fe1968ee">_getpid</a> (void)</td></tr>
+<tr class="memdesc:ga945e539df8e0f66d3c73c533fe1968ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get process ID. <br /></td></tr>
+<tr class="separator:ga945e539df8e0f66d3c73c533fe1968ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3134a3dc296622b8d1c5456e481505b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gad3134a3dc296622b8d1c5456e481505b">_isatty</a> (int file)</td></tr>
+<tr class="memdesc:gad3134a3dc296622b8d1c5456e481505b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query whether output stream is a terminal.  <a href="#gad3134a3dc296622b8d1c5456e481505b">More...</a><br /></td></tr>
+<tr class="separator:gad3134a3dc296622b8d1c5456e481505b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga062a5101199c3128edd5170f2575bb10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga062a5101199c3128edd5170f2575bb10">_kill</a> (int pid, int sig)</td></tr>
+<tr class="memdesc:ga062a5101199c3128edd5170f2575bb10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send signal to process.  <a href="#ga062a5101199c3128edd5170f2575bb10">More...</a><br /></td></tr>
+<tr class="separator:ga062a5101199c3128edd5170f2575bb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a61311bdf1cb025fc07dc2bdae22ce4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga7a61311bdf1cb025fc07dc2bdae22ce4">_lseek</a> (int file, int ptr, int dir)</td></tr>
+<tr class="memdesc:ga7a61311bdf1cb025fc07dc2bdae22ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set position in a file.  <a href="#ga7a61311bdf1cb025fc07dc2bdae22ce4">More...</a><br /></td></tr>
+<tr class="separator:ga7a61311bdf1cb025fc07dc2bdae22ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f9bf1e1602f2828e0a54e70c3b2dccb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga4f9bf1e1602f2828e0a54e70c3b2dccb">_read</a> (int file, char *ptr, int len)</td></tr>
+<tr class="memdesc:ga4f9bf1e1602f2828e0a54e70c3b2dccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from a file.  <a href="#ga4f9bf1e1602f2828e0a54e70c3b2dccb">More...</a><br /></td></tr>
+<tr class="separator:ga4f9bf1e1602f2828e0a54e70c3b2dccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae54d7b9578ba1fc171ce6f30f4c68a3"><td class="memItemLeft" align="right" valign="top">caddr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gaae54d7b9578ba1fc171ce6f30f4c68a3">_sbrk</a> (int incr)</td></tr>
+<tr class="memdesc:gaae54d7b9578ba1fc171ce6f30f4c68a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase heap.  <a href="#gaae54d7b9578ba1fc171ce6f30f4c68a3">More...</a><br /></td></tr>
+<tr class="separator:gaae54d7b9578ba1fc171ce6f30f4c68a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga086fc1b0720a915cba9092371c03d367"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga086fc1b0720a915cba9092371c03d367">_write</a> (int file, const char *ptr, int len)</td></tr>
+<tr class="memdesc:ga086fc1b0720a915cba9092371c03d367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write to a file.  <a href="#ga086fc1b0720a915cba9092371c03d367">More...</a><br /></td></tr>
+<tr class="separator:ga086fc1b0720a915cba9092371c03d367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8254ba1c7ef3b88b42fc5d2b971e58ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8254ba1c7ef3b88b42fc5d2b971e58ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga8254ba1c7ef3b88b42fc5d2b971e58ef">RETARGET_IRQ_NAME</a> (void)</td></tr>
+<tr class="memdesc:ga8254ba1c7ef3b88b42fc5d2b971e58ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART/LEUART IRQ Handler. <br /></td></tr>
+<tr class="separator:ga8254ba1c7ef3b88b42fc5d2b971e58ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5af724185f484056b02b42f4ab184bfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar</a> (void)</td></tr>
+<tr class="memdesc:ga5af724185f484056b02b42f4ab184bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a byte from USART/LEUART and put into global buffer.  <a href="#ga5af724185f484056b02b42f4ab184bfb">More...</a><br /></td></tr>
+<tr class="separator:ga5af724185f484056b02b42f4ab184bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e36c68713259dd181ef349430ba0096"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga9e36c68713259dd181ef349430ba0096">RETARGET_SerialCrLf</a> (int on)</td></tr>
+<tr class="memdesc:ga9e36c68713259dd181ef349430ba0096"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART/LEUART toggle LF to CRLF conversion.  <a href="#ga9e36c68713259dd181ef349430ba0096">More...</a><br /></td></tr>
+<tr class="separator:ga9e36c68713259dd181ef349430ba0096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab455176edfa0f3414d104e5d6d64cc50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab455176edfa0f3414d104e5d6d64cc50"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50">RETARGET_SerialInit</a> (void)</td></tr>
+<tr class="memdesc:gab455176edfa0f3414d104e5d6d64cc50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intializes UART/LEUART. <br /></td></tr>
+<tr class="separator:gab455176edfa0f3414d104e5d6d64cc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f514c0ebfe9dd2c24f293be0edfaf9b"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga1f514c0ebfe9dd2c24f293be0edfaf9b">RETARGET_TextDisplayInit</a> (void)</td></tr>
+<tr class="memdesc:ga1f514c0ebfe9dd2c24f293be0edfaf9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize/retarget a TEXTDISPLAY device to receivie stdout(put).  <a href="#ga1f514c0ebfe9dd2c24f293be0edfaf9b">More...</a><br /></td></tr>
+<tr class="separator:ga1f514c0ebfe9dd2c24f293be0edfaf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72e624a3e4aaef1e0376eb96404c8b6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga72e624a3e4aaef1e0376eb96404c8b6f">RETARGET_TftCrLf</a> (int on)</td></tr>
+<tr class="memdesc:ga72e624a3e4aaef1e0376eb96404c8b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle LF to CRLF conversion.  <a href="#ga72e624a3e4aaef1e0376eb96404c8b6f">More...</a><br /></td></tr>
+<tr class="separator:ga72e624a3e4aaef1e0376eb96404c8b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad444352f46f856ffcb6cb255e3ef5d7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad444352f46f856ffcb6cb255e3ef5d7b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gad444352f46f856ffcb6cb255e3ef5d7b">RETARGET_TftInit</a> (void)</td></tr>
+<tr class="memdesc:gad444352f46f856ffcb6cb255e3ef5d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intializes TFT text display. <br /></td></tr>
+<tr class="separator:gad444352f46f856ffcb6cb255e3ef5d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0a41813e3ddadfbf867971b03a799d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gaa0a41813e3ddadfbf867971b03a799d0">RETARGET_TFTTX</a> (int c)</td></tr>
+<tr class="memdesc:gaa0a41813e3ddadfbf867971b03a799d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit/display a character.  <a href="#gaa0a41813e3ddadfbf867971b03a799d0">More...</a><br /></td></tr>
+<tr class="separator:gaa0a41813e3ddadfbf867971b03a799d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47b8191a5aaac7b583336350b37b617d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga47b8191a5aaac7b583336350b37b617d">RETARGET_TFTUpdate</a> (bool fullFrame)</td></tr>
+<tr class="memdesc:ga47b8191a5aaac7b583336350b37b617d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display framebuffer.  <a href="#ga47b8191a5aaac7b583336350b37b617d">More...</a><br /></td></tr>
+<tr class="separator:ga47b8191a5aaac7b583336350b37b617d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga856ae0b788dccadc2c83a6e67409be5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar</a> (char c)</td></tr>
+<tr class="memdesc:ga856ae0b788dccadc2c83a6e67409be5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit single byte to USART/LEUART.  <a href="#ga856ae0b788dccadc2c83a6e67409be5f">More...</a><br /></td></tr>
+<tr class="separator:ga856ae0b788dccadc2c83a6e67409be5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3603601be1ab26bec300eebb3cc5c5f9"><td class="memItemLeft" align="right" valign="top">EMSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga3603601be1ab26bec300eebb3cc5c5f9">RETARGET_WriteString</a> (char *str)</td></tr>
+<tr class="memdesc:ga3603601be1ab26bec300eebb3cc5c5f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a string of characters to the RETARGET text display device.  <a href="#ga3603601be1ab26bec300eebb3cc5c5f9">More...</a><br /></td></tr>
+<tr class="separator:ga3603601be1ab26bec300eebb3cc5c5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gae61047e80011bfea03c48e69ec79b7e5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gae61047e80011bfea03c48e69ec79b7e5">_end</a></td></tr>
+<tr class="separator:gae61047e80011bfea03c48e69ec79b7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedeffc7d23da25d52b9a50045189fe2b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a> = false</td></tr>
+<tr class="separator:gaedeffc7d23da25d52b9a50045189fe2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39f367ecd73dc4d3885a2f7e3117ac8c"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga39f367ecd73dc4d3885a2f7e3117ac8c">LFtoCRLF</a> = 0</td></tr>
+<tr class="separator:ga39f367ecd73dc4d3885a2f7e3117ac8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f76982f95d8c7b6336003b274ec752f"><td class="memItemLeft" align="right" valign="top">static volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga1f76982f95d8c7b6336003b274ec752f">rxBuffer</a> [<a class="el" href="group__RetargetIo.html#ga4a941b75a2cf56698a1e769d8214fd50">RXBUFSIZE</a>]</td></tr>
+<tr class="separator:ga1f76982f95d8c7b6336003b274ec752f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga683894ac27700e907d105ce882f06048"><td class="memItemLeft" align="right" valign="top">static volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga683894ac27700e907d105ce882f06048">rxCount</a> = 0</td></tr>
+<tr class="separator:ga683894ac27700e907d105ce882f06048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f6f5118f3990fce754499b31832267d"><td class="memItemLeft" align="right" valign="top">static volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga1f6f5118f3990fce754499b31832267d">rxReadIndex</a> = 0</td></tr>
+<tr class="separator:ga1f6f5118f3990fce754499b31832267d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga468f240bc568666107c397e5a7477e45"><td class="memItemLeft" align="right" valign="top">static volatile int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga468f240bc568666107c397e5a7477e45">rxWriteIndex</a> = 0</td></tr>
+<tr class="separator:ga468f240bc568666107c397e5a7477e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga4a941b75a2cf56698a1e769d8214fd50"></a>
 <div class="memitem">
 <div class="memproto">
@@ -248,83 +247,11 @@ Retarget TextDisplay Configuration.</h1>
 
 <p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00038">38</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
 
-<p>Referenced by <a class="el" href="retargetserial_8c_source.html#l00049">RETARGET_IRQ_NAME()</a>, and <a class="el" href="retargetserial_8c_source.html#l00210">RETARGET_ReadChar()</a>.</p>
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga8254ba1c7ef3b88b42fc5d2b971e58ef">RETARGET_IRQ_NAME()</a>, and <a class="el" href="group__RetargetSWO.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga5af724185f484056b02b42f4ab184bfb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int RETARGET_ReadChar </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>-1 on failure, or positive character integer on sucesss</dd></dl>
-<p>Receive a byte from USART/LEUART and put into global buffer.</p>
-<dl class="section return"><dt>Returns</dt><dd>-1 on failure</dd></dl>
-<p>Receive a byte from USART/LEUART and put into global buffer.</p>
-<dl class="section return"><dt>Returns</dt><dd>-1 on failure, or positive character integer on sucesss </dd></dl>
-
-<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00210">210</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
-
-<p>References <a class="el" href="retargetserial_8c_source.html#l00044">initialized</a>, <a class="el" href="em__int_8h_source.html#l00071">INT_Disable()</a>, <a class="el" href="em__int_8h_source.html#l00094">INT_Enable()</a>, <a class="el" href="retargetserial_8c_source.html#l00095">RETARGET_SerialInit()</a>, <a class="el" href="retargetserial_8c_source.html#l00042">rxBuffer</a>, <a class="el" href="retargetserial_8c_source.html#l00038">RXBUFSIZE</a>, <a class="el" href="retargetserial_8c_source.html#l00041">rxCount</a>, and <a class="el" href="retargetserial_8c_source.html#l00039">rxReadIndex</a>.</p>
-
-<p>Referenced by <a class="el" href="retargetio_8c_source.html#l00175">_read()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga856ae0b788dccadc2c83a6e67409be5f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int RETARGET_WriteChar </td>
-          <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">c</td><td>Character to transmit </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Transmitted character</dd></dl>
-<p>Transmit single byte to USART/LEUART.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">c</td><td>Character to write</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Printed character if text display is initialized. -1 if text display is not initialized.</dd></dl>
-<p>Transmit single byte to USART/LEUART.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">c</td><td>Character to transmit </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Transmitted character </dd></dl>
-
-<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00240">240</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
-
-<p>References <a class="el" href="bsp__dk__bcreg__3201_8h_source.html#l00172">BC_ARB_CTRL_EBI</a>, <a class="el" href="bsp__dk__bcreg__3201_8h_source.html#l00125">BC_REGISTER</a>, <a class="el" href="bsp__dk__bcreg__3201_8h_source.html#l00157">BC_UIF_AEM_EFM</a>, <a class="el" href="retargettft_8c_source.html#l00040">bufferReset</a>, <a class="el" href="retargettft_8c_source.html#l00039">fullUpdate</a>, <a class="el" href="retargetserial_8c_source.html#l00044">initialized</a>, <a class="el" href="retargetserial_8c_source.html#l00043">LFtoCRLF</a>, <a class="el" href="retargetserial_8c_source.html#l00095">RETARGET_SerialInit()</a>, <a class="el" href="retargettft_8c_source.html#l00168">RETARGET_TFTTX()</a>, <a class="el" href="retargettft_8c_source.html#l00230">RETARGET_TFTUpdate()</a>, <a class="el" href="textdisplay_8c_source.html#l00381">TEXTDISPLAY_WriteChar()</a>, <a class="el" href="retargettft_8c_source.html#l00041">tftReset</a>, and <a class="el" href="retargettft_8c_source.html#l00080">tftTextReset()</a>.</p>
-
-<p>Referenced by <a class="el" href="retargetio_8c_source.html#l00250">_write()</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ga5aab5e2acfd600e3667dc915a2bbc7cb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -338,6 +265,8 @@ Retarget TextDisplay Configuration.</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Close a file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>File you want to close.</td></tr>
@@ -347,6 +276,32 @@ Retarget TextDisplay Configuration.</h1>
 <dl class="section return"><dt>Returns</dt><dd>Returns 0 when the file is closed. </dd></dl>
 
 <p>Definition at line <a class="el" href="retargetio_8c_source.html#l00062">62</a> of file <a class="el" href="retargetio_8c_source.html">retargetio.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gabc96bd69b58b2deaddb484478d911c1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _exit </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exit the program. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>The value to return to the parent process as the exit status (not used). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="retargetio_8c_source.html#l00073">73</a> of file <a class="el" href="retargetio_8c_source.html">retargetio.c</a>.</p>
 
 </div>
 </div>
@@ -373,6 +328,8 @@ Retarget TextDisplay Configuration.</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Status of an open file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>Check status for this file.</td></tr>
@@ -399,6 +356,8 @@ Retarget TextDisplay Configuration.</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Query whether output stream is a terminal. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>Descriptor for the file.</td></tr>
@@ -408,6 +367,43 @@ Retarget TextDisplay Configuration.</h1>
 <dl class="section return"><dt>Returns</dt><dd>Returns 1 when query is done. </dd></dl>
 
 <p>Definition at line <a class="el" href="retargetio_8c_source.html#l00117">117</a> of file <a class="el" href="retargetio_8c_source.html">retargetio.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga062a5101199c3128edd5170f2575bb10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _kill </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sig</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send signal to process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>Process id (not used). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td>Signal to send (not used). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="retargetio_8c_source.html#l00128">128</a> of file <a class="el" href="retargetio_8c_source.html">retargetio.c</a>.</p>
 
 </div>
 </div>
@@ -440,6 +436,8 @@ Retarget TextDisplay Configuration.</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set position in a file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>Descriptor for the file.</td></tr>
@@ -483,6 +481,8 @@ Retarget TextDisplay Configuration.</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Read from a file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>Descriptor for the file you want to read from.</td></tr>
@@ -495,7 +495,7 @@ Retarget TextDisplay Configuration.</h1>
 
 <p>Definition at line <a class="el" href="retargetio_8c_source.html#l00175">175</a> of file <a class="el" href="retargetio_8c_source.html">retargetio.c</a>.</p>
 
-<p>References <a class="el" href="retargetserial_8c_source.html#l00210">RETARGET_ReadChar()</a>, and <a class="el" href="retargetserial_8c_source.html#l00041">rxCount</a>.</p>
+<p>References <a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar()</a>, and <a class="el" href="group__RetargetIo.html#ga683894ac27700e907d105ce882f06048">rxCount</a>.</p>
 
 </div>
 </div>
@@ -512,6 +512,8 @@ Retarget TextDisplay Configuration.</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Increase heap. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">incr</td><td>Number of bytes you want increment the program's data space.</td></tr>
@@ -522,7 +524,7 @@ Retarget TextDisplay Configuration.</h1>
 
 <p>Definition at line <a class="el" href="retargetio_8c_source.html#l00212">212</a> of file <a class="el" href="retargetio_8c_source.html">retargetio.c</a>.</p>
 
-<p>References <a class="el" href="group__RetargetIo.html#gae61047e80011bfea03c48e69ec79b7e5">_end</a>, and <a class="el" href="retargetio_8c_source.html#l00250">_write()</a>.</p>
+<p>References <a class="el" href="group__RetargetIo.html#gae61047e80011bfea03c48e69ec79b7e5">_end</a>, and <a class="el" href="group__RetargetIo.html#ga086fc1b0720a915cba9092371c03d367">_write()</a>.</p>
 
 </div>
 </div>
@@ -555,6 +557,8 @@ Retarget TextDisplay Configuration.</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Write to a file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">file</td><td>Descriptor for the file you want to write to.</td></tr>
@@ -567,68 +571,36 @@ Retarget TextDisplay Configuration.</h1>
 
 <p>Definition at line <a class="el" href="retargetio_8c_source.html#l00250">250</a> of file <a class="el" href="retargetio_8c_source.html">retargetio.c</a>.</p>
 
-<p>References <a class="el" href="retargetserial_8c_source.html#l00240">RETARGET_WriteChar()</a>.</p>
+<p>References <a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar()</a>.</p>
 
-<p>Referenced by <a class="el" href="retargetio_8c_source.html#l00212">_sbrk()</a>.</p>
+<p>Referenced by <a class="el" href="group__RetargetIo.html#gaae54d7b9578ba1fc171ce6f30f4c68a3">_sbrk()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gabc96bd69b58b2deaddb484478d911c1b"></a>
+<a class="anchor" id="ga5af724185f484056b02b42f4ab184bfb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void _exit </td>
+          <td class="memname">int RETARGET_ReadChar </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>status</em></td><td>)</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>The value to return to the parent process as the exit status (not used). </td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p>Definition at line <a class="el" href="retargetio_8c_source.html#l00073">73</a> of file <a class="el" href="retargetio_8c_source.html">retargetio.c</a>.</p>
+<p>Receive a byte from USART/LEUART and put into global buffer. </p>
+<dl class="section return"><dt>Returns</dt><dd>-1 on failure, or positive character integer on sucesss</dd></dl>
+<p>Receive a byte from USART/LEUART and put into global buffer.</p>
+<dl class="section return"><dt>Returns</dt><dd>-1 on failure</dd></dl>
+<p>Receive a byte from USART/LEUART and put into global buffer.</p>
+<dl class="section return"><dt>Returns</dt><dd>-1 on failure, or positive character integer on sucesss </dd></dl>
 
-</div>
-</div>
-<a class="anchor" id="ga062a5101199c3128edd5170f2575bb10"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int _kill </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sig</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>Process id (not used). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td>Signal to send (not used). </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00210">210</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
 
-<p>Definition at line <a class="el" href="retargetio_8c_source.html#l00128">128</a> of file <a class="el" href="retargetio_8c_source.html">retargetio.c</a>.</p>
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga4f9bf1e1602f2828e0a54e70c3b2dccb">_read()</a>.</p>
 
 </div>
 </div>
@@ -645,6 +617,8 @@ Retarget TextDisplay Configuration.</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>UART/LEUART toggle LF to CRLF conversion. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">on</td><td>If non-zero, automatic LF to CRLF conversion will be enabled </td></tr>
@@ -654,7 +628,7 @@ Retarget TextDisplay Configuration.</h1>
 
 <p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00083">83</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
 
-<p>References <a class="el" href="retargetserial_8c_source.html#l00043">LFtoCRLF</a>.</p>
+<p>References <a class="el" href="group__RetargetIo.html#ga39f367ecd73dc4d3885a2f7e3117ac8c">LFtoCRLF</a>.</p>
 
 </div>
 </div>
@@ -671,95 +645,13 @@ Retarget TextDisplay Configuration.</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize/retarget a TEXTDISPLAY device to receivie stdout(put). </p>
 <dl class="section return"><dt>Returns</dt><dd>EMSTATUS code of the operation. </dd></dl>
 
 <p>Definition at line <a class="el" href="retargettextdisplay_8c_source.html#l00047">47</a> of file <a class="el" href="retargettextdisplay_8c_source.html">retargettextdisplay.c</a>.</p>
 
-<p>References <a class="el" href="display_8c_source.html#l00139">DISPLAY_DeviceGet()</a>, <a class="el" href="display_8h_source.html#l00047">DISPLAY_EMSTATUS_OK</a>, <a class="el" href="textdisplay_8h_source.html#l00075">TEXTDISPLAY_Config_t::displayDeviceNo</a>, <a class="el" href="textdisplay_8h_source.html#l00082">TEXTDISPLAY_Config_t::lfToCrLf</a>, <a class="el" href="textdisplay_8h_source.html#l00077">TEXTDISPLAY_Config_t::scrollEnable</a>, <a class="el" href="textdisplay_8h_source.html#l00045">TEXTDISPLAY_EMSTATUS_OK</a>, and <a class="el" href="textdisplay_8c_source.html#l00210">TEXTDISPLAY_New()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga3603601be1ab26bec300eebb3cc5c5f9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EMSTATUS RETARGET_WriteString </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>String to write.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>EMSTATUS code of the operation. </dd></dl>
-
-<p>Definition at line <a class="el" href="retargettextdisplay_8c_source.html#l00116">116</a> of file <a class="el" href="retargettextdisplay_8c_source.html">retargettextdisplay.c</a>.</p>
-
-<p>References <a class="el" href="textdisplay_8h_source.html#l00051">TEXTDISPLAY_EMSTATUS_NOT_INITIALIZED</a>, and <a class="el" href="textdisplay_8c_source.html#l00454">TEXTDISPLAY_WriteString()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaa0a41813e3ddadfbf867971b03a799d0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RETARGET_TFTTX </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>ASCII character to output </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>-1 on failure, or positive character integer on sucesss </dd></dl>
-
-<p>Definition at line <a class="el" href="retargettft_8c_source.html#l00168">168</a> of file <a class="el" href="retargettft_8c_source.html">retargettft.c</a>.</p>
-
-<p>References <a class="el" href="retargettft_8c_source.html#l00033">charBuffer</a>, <a class="el" href="retargettft_8c_source.html#l00030">CHARS</a>, <a class="el" href="retargettft_8c_source.html#l00031">LINES</a>, <a class="el" href="retargettft_8c_source.html#l00034">rgbColor</a>, <a class="el" href="retargettft_8c_source.html#l00135">tftTextScrollUp()</a>, <a class="el" href="retargettft_8c_source.html#l00037">xpos</a>, and <a class="el" href="retargettft_8c_source.html#l00037">ypos</a>.</p>
-
-<p>Referenced by <a class="el" href="retargettft_8c_source.html#l00426">RETARGET_WriteChar()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga47b8191a5aaac7b583336350b37b617d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RETARGET_TFTUpdate </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>fullFrame</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fullFrame</td><td>If true, draw entire screen, if false, draw incremental update (faster) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="retargettft_8c_source.html#l00230">230</a> of file <a class="el" href="retargettft_8c_source.html">retargettft.c</a>.</p>
-
-<p>References <a class="el" href="retargettft_8c_source.html#l00033">charBuffer</a>, <a class="el" href="retargettft_8c_source.html#l00030">CHARS</a>, <a class="el" href="retargettft_8c_source.html#l00028">fontBits</a>, <a class="el" href="retargettft_8c_source.html#l00031">LINES</a>, <a class="el" href="retargettft_8c_source.html#l00034">rgbColor</a>, <a class="el" href="retargettft_8c_source.html#l00037">xpos</a>, and <a class="el" href="retargettft_8c_source.html#l00037">ypos</a>.</p>
-
-<p>Referenced by <a class="el" href="retargettft_8c_source.html#l00426">RETARGET_WriteChar()</a>.</p>
+<p>References <a class="el" href="group__Display.html#ga156caca2b556cc968f8f4f106a68628a">DISPLAY_DeviceGet()</a>, <a class="el" href="group__Display.html#gaa5cb853e3c35b188018b6d2f4c6c3889">DISPLAY_EMSTATUS_OK</a>, <a class="el" href="structTEXTDISPLAY__Config__t.html#ad1414884e0e326add1798e62c610fa33">TEXTDISPLAY_Config_t::displayDeviceNo</a>, <a class="el" href="structTEXTDISPLAY__Config__t.html#aae4d4c24d67076baa049bb7d8ea9099e">TEXTDISPLAY_Config_t::lfToCrLf</a>, <a class="el" href="structTEXTDISPLAY__Config__t.html#a36d35117d8ebfd29e880790c43e29d6c">TEXTDISPLAY_Config_t::scrollEnable</a>, <a class="el" href="group__Textdisplay.html#gafeec0d4459c2afed8055201214c21139">TEXTDISPLAY_EMSTATUS_OK</a>, and <a class="el" href="group__Textdisplay.html#ga0a9d10a115aa9baddd7c189f0d824570">TEXTDISPLAY_New()</a>.</p>
 
 </div>
 </div>
@@ -776,6 +668,8 @@ Retarget TextDisplay Configuration.</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Toggle LF to CRLF conversion. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">on</td><td>If non-zero, automatic LF to CRLF conversion will be enabled </td></tr>
@@ -785,7 +679,142 @@ Retarget TextDisplay Configuration.</h1>
 
 <p>Definition at line <a class="el" href="retargettft_8c_source.html#l00068">68</a> of file <a class="el" href="retargettft_8c_source.html">retargettft.c</a>.</p>
 
-<p>References <a class="el" href="retargettft_8c_source.html#l00042">LFtoCRLF</a>.</p>
+<p>References <a class="el" href="retargettft_8c.html#a348ac2c49f51720a95cfedffc5476fa6">LFtoCRLF</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa0a41813e3ddadfbf867971b03a799d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RETARGET_TFTTX </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transmit/display a character. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>ASCII character to output </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 on failure, or positive character integer on sucesss </dd></dl>
+
+<p>Definition at line <a class="el" href="retargettft_8c_source.html#l00168">168</a> of file <a class="el" href="retargettft_8c_source.html">retargettft.c</a>.</p>
+
+<p>References <a class="el" href="retargettft_8c.html#acadd9214a631ccb83106849eddb8ac24">charBuffer</a>, <a class="el" href="retargettft_8c.html#a5d7cfaaf3d71eb89b31364adb9fda6a6">CHARS</a>, <a class="el" href="retargettft_8c.html#a321ae946de24c36489276616d13c46cd">LINES</a>, <a class="el" href="retargettft_8c.html#aeba93d45d39aee310a09ceb164cbd62a">rgbColor</a>, <a class="el" href="retargettft_8c.html#aa5af964a1f84893b8cd016492fcb4da9">tftTextScrollUp()</a>, <a class="el" href="retargettft_8c.html#a4c8fb3f1c1ae597ee856290390ebc274">xpos</a>, and <a class="el" href="retargettft_8c.html#a4db09a4236b6f591c377857b932eb41a">ypos</a>.</p>
+
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga47b8191a5aaac7b583336350b37b617d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RETARGET_TFTUpdate </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fullFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display framebuffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fullFrame</td><td>If true, draw entire screen, if false, draw incremental update (faster) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="retargettft_8c_source.html#l00230">230</a> of file <a class="el" href="retargettft_8c_source.html">retargettft.c</a>.</p>
+
+<p>References <a class="el" href="retargettft_8c.html#acadd9214a631ccb83106849eddb8ac24">charBuffer</a>, <a class="el" href="retargettft_8c.html#a5d7cfaaf3d71eb89b31364adb9fda6a6">CHARS</a>, <a class="el" href="retargettft_8c.html#a073b10c2cb9017279b9e4862db9142e3">fontBits</a>, <a class="el" href="retargettft_8c.html#a321ae946de24c36489276616d13c46cd">LINES</a>, <a class="el" href="retargettft_8c.html#aeba93d45d39aee310a09ceb164cbd62a">rgbColor</a>, <a class="el" href="retargettft_8c.html#a4c8fb3f1c1ae597ee856290390ebc274">xpos</a>, and <a class="el" href="retargettft_8c.html#a4db09a4236b6f591c377857b932eb41a">ypos</a>.</p>
+
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga856ae0b788dccadc2c83a6e67409be5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RETARGET_WriteChar </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transmit single byte to USART/LEUART. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Character to transmit </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Transmitted character</dd></dl>
+<p>Transmit single byte to USART/LEUART.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Character to write</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Printed character if text display is initialized. -1 if text display is not initialized.</dd></dl>
+<p>Transmit single byte to USART/LEUART.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Character to transmit </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Transmitted character </dd></dl>
+
+<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00240">240</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
+
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga086fc1b0720a915cba9092371c03d367">_write()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3603601be1ab26bec300eebb3cc5c5f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EMSTATUS RETARGET_WriteString </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write a string of characters to the RETARGET text display device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>String to write.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>EMSTATUS code of the operation. </dd></dl>
+
+<p>Definition at line <a class="el" href="retargettextdisplay_8c_source.html#l00116">116</a> of file <a class="el" href="retargettextdisplay_8c_source.html">retargettextdisplay.c</a>.</p>
+
+<p>References <a class="el" href="group__Textdisplay.html#ga280f0ec4e7d9b3a9746944366cdc98c7">TEXTDISPLAY_EMSTATUS_NOT_INITIALIZED</a>, and <a class="el" href="group__Textdisplay.html#gab41a8aa41d06a94b8547766bac64c13d">TEXTDISPLAY_WriteString()</a>.</p>
 
 </div>
 </div>
@@ -801,132 +830,7 @@ Retarget TextDisplay Configuration.</h1>
 </div><div class="memdoc">
 <p>Defined by the linker </p>
 
-<p>Referenced by <a class="el" href="retargetio_8c_source.html#l00212">_sbrk()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga1f6f5118f3990fce754499b31832267d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int rxReadIndex = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Index in buffer to be read </p>
-
-<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00039">39</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
-
-<p>Referenced by <a class="el" href="retargetserial_8c_source.html#l00049">RETARGET_IRQ_NAME()</a>, and <a class="el" href="retargetserial_8c_source.html#l00210">RETARGET_ReadChar()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga468f240bc568666107c397e5a7477e45"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int rxWriteIndex = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Index in buffer to be written to </p>
-
-<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00040">40</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
-
-<p>Referenced by <a class="el" href="retargetserial_8c_source.html#l00049">RETARGET_IRQ_NAME()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga683894ac27700e907d105ce882f06048"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile int rxCount = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Keeps track of how much data which are stored in the buffer </p>
-
-<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00041">41</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
-
-<p>Referenced by <a class="el" href="retargetio_8c_source.html#l00175">_read()</a>, <a class="el" href="retargetserial_8c_source.html#l00049">RETARGET_IRQ_NAME()</a>, and <a class="el" href="retargetserial_8c_source.html#l00210">RETARGET_ReadChar()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga1f76982f95d8c7b6336003b274ec752f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">volatile uint8_t rxBuffer[<a class="el" href="group__RetargetIo.html#ga4a941b75a2cf56698a1e769d8214fd50">RXBUFSIZE</a>]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Buffer to store data </p>
-
-<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00042">42</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
-
-<p>Referenced by <a class="el" href="ksz8851snl__spi_8c_source.html#l00167">KSZ8851SNL_SPI_ReadRegister()</a>, <a class="el" href="retargetserial_8c_source.html#l00049">RETARGET_IRQ_NAME()</a>, <a class="el" href="retargetserial_8c_source.html#l00210">RETARGET_ReadChar()</a>, <a class="el" href="spidrv_8c_source.html#l00706">SPIDRV_MTransferSingleItemB()</a>, <a class="el" href="uartdrv_8c_source.html#l00862">UARTDRV_Abort()</a>, and <a class="el" href="uartdrv_8c_source.html#l00956">UARTDRV_GetReceiveStatus()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga39f367ecd73dc4d3885a2f7e3117ac8c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t LFtoCRLF = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>LF to CRLF conversion disabled </p>
-
-<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00043">43</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
-
-<p>Referenced by <a class="el" href="retargetserial_8c_source.html#l00083">RETARGET_SerialCrLf()</a>, and <a class="el" href="retargetserial_8c_source.html#l00240">RETARGET_WriteChar()</a>.</p>
+<p>Referenced by <a class="el" href="group__RetargetIo.html#gaae54d7b9578ba1fc171ce6f30f4c68a3">_sbrk()</a>.</p>
 
 </div>
 </div>
@@ -951,7 +855,132 @@ Retarget TextDisplay Configuration.</h1>
 
 <p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00044">44</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
 
-<p>Referenced by <a class="el" href="dmadrv_8c_source.html#l00131">DMADRV_AllocateChannel()</a>, <a class="el" href="dmadrv_8c_source.html#l00176">DMADRV_DeInit()</a>, <a class="el" href="dmadrv_8c_source.html#l00223">DMADRV_FreeChannel()</a>, <a class="el" href="dmadrv_8c_source.html#l00258">DMADRV_Init()</a>, <a class="el" href="dmadrv_8c_source.html#l00641">DMADRV_StopTransfer()</a>, <a class="el" href="dmadrv_8c_source.html#l00681">DMADRV_TransferActive()</a>, <a class="el" href="dmadrv_8c_source.html#l00733">DMADRV_TransferCompletePending()</a>, <a class="el" href="dmadrv_8c_source.html#l00786">DMADRV_TransferDone()</a>, <a class="el" href="dmadrv_8c_source.html#l00852">DMADRV_TransferRemainingCount()</a>, <a class="el" href="retargetserial_8c_source.html#l00210">RETARGET_ReadChar()</a>, <a class="el" href="retargetserial_8c_source.html#l00095">RETARGET_SerialInit()</a>, <a class="el" href="retargetserial_8c_source.html#l00240">RETARGET_WriteChar()</a>, and <a class="el" href="textdisplay_8c_source.html#l00210">TEXTDISPLAY_New()</a>.</p>
+<p>Referenced by <a class="el" href="group__DMADRV.html#gab503e066820cd13fd612f4365d4d07b2">DMADRV_AllocateChannel()</a>, <a class="el" href="group__DMADRV.html#ga73633db63cfd99ba01a68b05c24094ec">DMADRV_DeInit()</a>, <a class="el" href="group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3">DMADRV_FreeChannel()</a>, <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">DMADRV_Init()</a>, <a class="el" href="group__DMADRV.html#ga3f27a6cff5b646b0faf3eb070ea1393f">DMADRV_PauseTransfer()</a>, <a class="el" href="group__DMADRV.html#ga4ad4c5b5eff525183a726002afbce071">DMADRV_ResumeTransfer()</a>, <a class="el" href="group__DMADRV.html#ga3a04cb3aa30ec2fd955281f55538028d">DMADRV_StopTransfer()</a>, <a class="el" href="group__DMADRV.html#ga1a42965073322a9c2b1f8ebb8a67e846">DMADRV_TransferActive()</a>, <a class="el" href="group__DMADRV.html#gae6b5ec49230e4f15b78c31c57bfa3967">DMADRV_TransferCompletePending()</a>, <a class="el" href="group__DMADRV.html#gaa46714c6a19608cff3058c386f1e4c03">DMADRV_TransferDone()</a>, <a class="el" href="group__DMADRV.html#ga9a253b47872d205a76b6f1b7b486194d">DMADRV_TransferRemainingCount()</a>, <a class="el" href="group__RetargetSWO.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar()</a>, <a class="el" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50">RETARGET_SerialInit()</a>, <a class="el" href="group__RetargetSWO.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar()</a>, and <a class="el" href="group__Textdisplay.html#ga0a9d10a115aa9baddd7c189f0d824570">TEXTDISPLAY_New()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga39f367ecd73dc4d3885a2f7e3117ac8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t LFtoCRLF = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>LF to CRLF conversion disabled </p>
+
+<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00043">43</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
+
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga9e36c68713259dd181ef349430ba0096">RETARGET_SerialCrLf()</a>, and <a class="el" href="group__RetargetSWO.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga1f76982f95d8c7b6336003b274ec752f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t rxBuffer[<a class="el" href="group__RetargetIo.html#ga4a941b75a2cf56698a1e769d8214fd50">RXBUFSIZE</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Buffer to store data </p>
+
+<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00042">42</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
+
+<p>Referenced by <a class="el" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister()</a>, <a class="el" href="group__RetargetIo.html#ga8254ba1c7ef3b88b42fc5d2b971e58ef">RETARGET_IRQ_NAME()</a>, <a class="el" href="group__RetargetSWO.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar()</a>, <a class="el" href="group__SPIDRV.html#gaea943a66137078855a6511a75fb27437">SPIDRV_MTransferSingleItemB()</a>, <a class="el" href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">UARTDRV_Abort()</a>, and <a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">UARTDRV_GetReceiveStatus()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga683894ac27700e907d105ce882f06048"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile int rxCount = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Keeps track of how much data which are stored in the buffer </p>
+
+<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00041">41</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
+
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga4f9bf1e1602f2828e0a54e70c3b2dccb">_read()</a>, <a class="el" href="group__RetargetIo.html#ga8254ba1c7ef3b88b42fc5d2b971e58ef">RETARGET_IRQ_NAME()</a>, and <a class="el" href="group__RetargetSWO.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga1f6f5118f3990fce754499b31832267d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile int rxReadIndex = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Index in buffer to be read </p>
+
+<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00039">39</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
+
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga8254ba1c7ef3b88b42fc5d2b971e58ef">RETARGET_IRQ_NAME()</a>, and <a class="el" href="group__RetargetSWO.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga468f240bc568666107c397e5a7477e45"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile int rxWriteIndex = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Index in buffer to be written to </p>
+
+<p>Definition at line <a class="el" href="retargetserial_8c_source.html#l00040">40</a> of file <a class="el" href="retargetserial_8c_source.html">retargetserial.c</a>.</p>
+
+<p>Referenced by <a class="el" href="group__RetargetIo.html#ga8254ba1c7ef3b88b42fc5d2b971e58ef">RETARGET_IRQ_NAME()</a>.</p>
 
 </div>
 </div>
@@ -960,7 +989,7 @@ Retarget TextDisplay Configuration.</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:37:37 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:30:03 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

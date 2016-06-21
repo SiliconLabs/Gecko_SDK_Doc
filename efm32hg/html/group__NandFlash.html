@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32hg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32hg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -107,9 +106,13 @@ $(document).ready(function(){initNavTree('group__NandFlash.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">NandFlash<div class="ingroups"><a class="el" href="group__Drivers.html">Drivers</a></div></div>  </div>
+<div class="title">NandFlash<div class="ingroups"><a class="el" href="group__kitdrv.html">Kit Drivers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Implements a NAND flash device driver. The driver has basic functions to read and write data to a nand flash device.</p>
+<p>When writing to the nand flash, an ECC is generated and written in the page spare area. This ECC is checked when the page is read and the data read is corrected when possible. Read and write operations can be done using DMA (configurable) at initialization.</p>
+<p>The module is easily adapted to other NAND flash devices. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -186,10 +189,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga1414ac5f995f6e37bef82297ff2f51a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a page in nand device. The ECC generated while writing the page data is written in the spare area at byte positions 7, 8 and 9.  <a href="#ga1414ac5f995f6e37bef82297ff2f51a5">More...</a><br /></td></tr>
 <tr class="separator:ga1414ac5f995f6e37bef82297ff2f51a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Implements a NAND flash device driver. The driver has basic functions to read and write data to a nand flash device.</p>
-<p>When writing to the nand flash, an ECC is generated and written in the page spare area. This ECC is checked when the page is read and the data read is corrected when possible. Read and write operations can be done using DMA (configurable) at initialization.</p>
-<p>The module is easily adapted to other NAND flash devices. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gaa9340348b9962d9ef5c0adec85cf4009"></a>
 <div class="memitem">
@@ -234,7 +233,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nandflash_8h_source.html#l00038">38</a> of file <a class="el" href="nandflash_8h_source.html">nandflash.h</a>.</p>
 
-<p>Referenced by <a class="el" href="nandflash_8c_source.html#l00500">NANDFLASH_ReadPage()</a>.</p>
+<p>Referenced by <a class="el" href="group__NandFlash.html#gac7c2bddd174fa07c8140b38c7584cc59">NANDFLASH_ReadPage()</a>.</p>
 
 </div>
 </div>
@@ -251,7 +250,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nandflash_8h_source.html#l00039">39</a> of file <a class="el" href="nandflash_8h_source.html">nandflash.h</a>.</p>
 
-<p>Referenced by <a class="el" href="nandflash_8c_source.html#l00500">NANDFLASH_ReadPage()</a>.</p>
+<p>Referenced by <a class="el" href="group__NandFlash.html#gac7c2bddd174fa07c8140b38c7584cc59">NANDFLASH_ReadPage()</a>.</p>
 
 </div>
 </div>
@@ -268,7 +267,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nandflash_8h_source.html#l00040">40</a> of file <a class="el" href="nandflash_8h_source.html">nandflash.h</a>.</p>
 
-<p>Referenced by <a class="el" href="nandflash_8c_source.html#l00500">NANDFLASH_ReadPage()</a>.</p>
+<p>Referenced by <a class="el" href="group__NandFlash.html#gac7c2bddd174fa07c8140b38c7584cc59">NANDFLASH_ReadPage()</a>.</p>
 
 </div>
 </div>
@@ -282,6 +281,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>NANDFLASH status enumerator. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga1f0b4320b42b215cd63dac9ef5f70773a6b6589ecb6a873a559ee78eafd250a87"></a>NANDFLASH_STATUS_OK&#160;</td><td class="fielddoc">
 <p>No errors detected. </p>
@@ -327,6 +328,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Check if an address is valid for the nand flash device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>The address value to check.</td></tr>
@@ -337,9 +340,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nandflash_8c_source.html#l00156">156</a> of file <a class="el" href="nandflash_8c_source.html">nandflash.c</a>.</p>
 
-<p>References <a class="el" href="nandflash_8h_source.html#l00058">NANDFLASH_Info_TypeDef::baseAddress</a>, and <a class="el" href="nandflash_8h_source.html#l00061">NANDFLASH_Info_TypeDef::deviceSize</a>.</p>
+<p>References <a class="el" href="structNANDFLASH__Info__TypeDef.html#a1ad0484a1860a34da353b54929de8810">NANDFLASH_Info_TypeDef::baseAddress</a>, and <a class="el" href="structNANDFLASH__Info__TypeDef.html#a50ce1667eeb1d371798ed0fff1a82b5c">NANDFLASH_Info_TypeDef::deviceSize</a>.</p>
 
-<p>Referenced by <a class="el" href="nandflash_8c_source.html#l00188">NANDFLASH_CopyPage()</a>, <a class="el" href="nandflash_8c_source.html#l00353">NANDFLASH_EraseBlock()</a>, <a class="el" href="nandflash_8c_source.html#l00442">NANDFLASH_MarkBadBlock()</a>, <a class="el" href="nandflash_8c_source.html#l00500">NANDFLASH_ReadPage()</a>, <a class="el" href="nandflash_8c_source.html#l00581">NANDFLASH_ReadSpare()</a>, and <a class="el" href="nandflash_8c_source.html#l00646">NANDFLASH_WritePage()</a>.</p>
+<p>Referenced by <a class="el" href="group__NandFlash.html#ga89e673d7489781772b09cd59fae7f434">NANDFLASH_CopyPage()</a>, <a class="el" href="group__NandFlash.html#gab6b041fc25f751a48aea91db3409f094">NANDFLASH_EraseBlock()</a>, <a class="el" href="group__NandFlash.html#gac4148bf559466d233cccf815adbeb95d">NANDFLASH_MarkBadBlock()</a>, <a class="el" href="group__NandFlash.html#gac7c2bddd174fa07c8140b38c7584cc59">NANDFLASH_ReadPage()</a>, <a class="el" href="group__NandFlash.html#ga9a52019a2c065536e1c707aea6f27830">NANDFLASH_ReadSpare()</a>, and <a class="el" href="group__NandFlash.html#ga1414ac5f995f6e37bef82297ff2f51a5">NANDFLASH_WritePage()</a>.</p>
 
 </div>
 </div>
@@ -366,6 +369,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Copy a page within the device to a new location. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dstAddr</td><td>The address of the destination page.</td></tr>
@@ -383,7 +388,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nandflash_8c_source.html#l00188">188</a> of file <a class="el" href="nandflash_8c_source.html">nandflash.c</a>.</p>
 
-<p>References <a class="el" href="nandflash_8c_source.html#l00156">NANDFLASH_AddressValid()</a>, <a class="el" href="nandflash_8h_source.html#l00047">NANDFLASH_INVALID_ADDRESS</a>, <a class="el" href="nandflash_8h_source.html#l00052">NANDFLASH_NOT_INITIALIZED</a>, <a class="el" href="nandflash_8h_source.html#l00045">NANDFLASH_STATUS_OK</a>, and <a class="el" href="nandflash_8h_source.html#l00048">NANDFLASH_WRITE_ERROR</a>.</p>
+<p>References <a class="el" href="group__NandFlash.html#ga439db746d35d38bd98b554084bd15907">NANDFLASH_AddressValid()</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a8d605a0e6e4998814d4c4dfdba0323dd">NANDFLASH_INVALID_ADDRESS</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773ab8d069e1e61cae1f551dedeca98b56e2">NANDFLASH_NOT_INITIALIZED</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a6b6589ecb6a873a559ee78eafd250a87">NANDFLASH_STATUS_OK</a>, and <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773ae747e446bff895ff1c9fe46e1db04c67">NANDFLASH_WRITE_ERROR</a>.</p>
 
 </div>
 </div>
@@ -400,6 +405,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Return a pointer to a <a class="el" href="structNANDFLASH__Info__TypeDef.html">NANDFLASH_Info_TypeDef</a> structure, which contain vital nand flash device information. </p>
 <dl class="section return"><dt>Returns</dt><dd>NULL if no prior call to <a class="el" href="group__NandFlash.html#ga77237e34d1ad7e9ea927c64f77ec6e24">NANDFLASH_Init()</a> has been made. Pointer to a <a class="el" href="structNANDFLASH__Info__TypeDef.html">NANDFLASH_Info_TypeDef</a> on success. </dd></dl>
 
 <p>Definition at line <a class="el" href="nandflash_8c_source.html#l00248">248</a> of file <a class="el" href="nandflash_8c_source.html">nandflash.c</a>.</p>
@@ -435,6 +442,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Check generated ECC against ECC read from device and correct data if possible. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">generatedEcc</td><td>An ECC value originating from the hardware ECC generator.</td></tr>
@@ -447,9 +456,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nandflash_8c_source.html#l00275">275</a> of file <a class="el" href="nandflash_8c_source.html">nandflash.c</a>.</p>
 
-<p>References <a class="el" href="nandflash_8h_source.html#l00049">NANDFLASH_ECC_ERROR</a>, <a class="el" href="nandflash_8h_source.html#l00050">NANDFLASH_ECC_UNCORRECTABLE</a>, and <a class="el" href="nandflash_8h_source.html#l00045">NANDFLASH_STATUS_OK</a>.</p>
+<p>References <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a015251afa4ae85548ba1239c4825d699">NANDFLASH_ECC_ERROR</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773af5863d48609dca796592be1a067e080f">NANDFLASH_ECC_UNCORRECTABLE</a>, and <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a6b6589ecb6a873a559ee78eafd250a87">NANDFLASH_STATUS_OK</a>.</p>
 
-<p>Referenced by <a class="el" href="nandflash_8c_source.html#l00500">NANDFLASH_ReadPage()</a>.</p>
+<p>Referenced by <a class="el" href="group__NandFlash.html#gac7c2bddd174fa07c8140b38c7584cc59">NANDFLASH_ReadPage()</a>.</p>
 
 </div>
 </div>
@@ -466,6 +475,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Erase a block in the nand flash. </p>
 <dl class="section note"><dt>Note</dt><dd>If this function returns <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773ae747e446bff895ff1c9fe46e1db04c67">NANDFLASH_WRITE_ERROR</a>, the block should be considered as "bad" and never used again.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -477,7 +488,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nandflash_8c_source.html#l00353">353</a> of file <a class="el" href="nandflash_8c_source.html">nandflash.c</a>.</p>
 
-<p>References <a class="el" href="nandflash_8c_source.html#l00156">NANDFLASH_AddressValid()</a>, <a class="el" href="nandflash_8h_source.html#l00047">NANDFLASH_INVALID_ADDRESS</a>, <a class="el" href="nandflash_8h_source.html#l00052">NANDFLASH_NOT_INITIALIZED</a>, <a class="el" href="nandflash_8h_source.html#l00045">NANDFLASH_STATUS_OK</a>, and <a class="el" href="nandflash_8h_source.html#l00048">NANDFLASH_WRITE_ERROR</a>.</p>
+<p>References <a class="el" href="group__NandFlash.html#ga439db746d35d38bd98b554084bd15907">NANDFLASH_AddressValid()</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a8d605a0e6e4998814d4c4dfdba0323dd">NANDFLASH_INVALID_ADDRESS</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773ab8d069e1e61cae1f551dedeca98b56e2">NANDFLASH_NOT_INITIALIZED</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a6b6589ecb6a873a559ee78eafd250a87">NANDFLASH_STATUS_OK</a>, and <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773ae747e446bff895ff1c9fe46e1db04c67">NANDFLASH_WRITE_ERROR</a>.</p>
 
 </div>
 </div>
@@ -494,6 +505,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize the NANDFLASH module. </p>
 <dl class="section note"><dt>Note</dt><dd>This function should be called before any other NANDFLASH_xxx() functions are used.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -505,7 +518,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nandflash_8c_source.html#l00407">407</a> of file <a class="el" href="nandflash_8c_source.html">nandflash.c</a>.</p>
 
-<p>References <a class="el" href="em__dma_8c_source.html#l00706">DMA_CfgChannel()</a>, <a class="el" href="efm32hg322f64_8h_source.html#l00154">DMA_CHAN_COUNT</a>, <a class="el" href="em__dma_8c_source.html#l01033">DMA_Init()</a>, <a class="el" href="nandflash_8h_source.html#l00067">NANDFLASH_Info_TypeDef::dmaCh</a>, and <a class="el" href="nandflash_8h_source.html#l00051">NANDFLASH_INVALID_SETUP</a>.</p>
+<p>References <a class="el" href="group__DMA.html#gab119fe5869e7ebcfd29542d05dae2d29">DMA_CfgChannel()</a>, <a class="el" href="group__EFM32HG322F64__Part.html#ga3cec723aa225c0767466f38e8449602c">DMA_CHAN_COUNT</a>, <a class="el" href="group__DMA.html#ga1b244c27cc74059907a25a806eac9b90">DMA_Init()</a>, <a class="el" href="structNANDFLASH__Info__TypeDef.html#a8bd465d15390d99ec898ab23d9c8cbb6">NANDFLASH_Info_TypeDef::dmaCh</a>, and <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a504fbafcb79cd7d9fc26007e6e3e6772">NANDFLASH_INVALID_SETUP</a>.</p>
 
 </div>
 </div>
@@ -522,6 +535,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Mark a block as bad. </p>
 <dl class="section note"><dt>Note</dt><dd>This function writes a bad-block marker in the spare area of the first page in the block. The marker is written in the 6th byte of the spare area. A bad-block marker is any value different from 0xFF.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -533,7 +548,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nandflash_8c_source.html#l00442">442</a> of file <a class="el" href="nandflash_8c_source.html">nandflash.c</a>.</p>
 
-<p>References <a class="el" href="nandflash_8c_source.html#l00156">NANDFLASH_AddressValid()</a>, <a class="el" href="nandflash_8h_source.html#l00047">NANDFLASH_INVALID_ADDRESS</a>, <a class="el" href="nandflash_8h_source.html#l00052">NANDFLASH_NOT_INITIALIZED</a>, and <a class="el" href="nandflash_8h_source.html#l00045">NANDFLASH_STATUS_OK</a>.</p>
+<p>References <a class="el" href="group__NandFlash.html#ga439db746d35d38bd98b554084bd15907">NANDFLASH_AddressValid()</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a8d605a0e6e4998814d4c4dfdba0323dd">NANDFLASH_INVALID_ADDRESS</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773ab8d069e1e61cae1f551dedeca98b56e2">NANDFLASH_NOT_INITIALIZED</a>, and <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a6b6589ecb6a873a559ee78eafd250a87">NANDFLASH_STATUS_OK</a>.</p>
 
 </div>
 </div>
@@ -560,6 +575,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Read a page from nand device. Ecc errors will be detected and corrected if possible. <a class="el" href="structNANDFLASH__Info__TypeDef.html#ac1f8aca107c0ee0aa8ebd67d151c1ff8">NANDFLASH_Info_TypeDef::ecc</a> will be set to the ecc generated while reading the page data. <a class="el" href="structNANDFLASH__Info__TypeDef.html#afcedb33282c21d6215a3460c1d730f1a">NANDFLASH_Info_TypeDef::spare</a> will be set to the content of the page spare area. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Page address.</td></tr>
@@ -571,7 +588,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nandflash_8c_source.html#l00500">500</a> of file <a class="el" href="nandflash_8c_source.html">nandflash.c</a>.</p>
 
-<p>References <a class="el" href="nandflash_8h_source.html#l00067">NANDFLASH_Info_TypeDef::dmaCh</a>, <a class="el" href="nandflash_8h_source.html#l00065">NANDFLASH_Info_TypeDef::ecc</a>, <a class="el" href="nandflash_8h_source.html#l00038">NAND_SPARE_ECC0_POS</a>, <a class="el" href="nandflash_8h_source.html#l00039">NAND_SPARE_ECC1_POS</a>, <a class="el" href="nandflash_8h_source.html#l00040">NAND_SPARE_ECC2_POS</a>, <a class="el" href="nandflash_8c_source.html#l00156">NANDFLASH_AddressValid()</a>, <a class="el" href="nandflash_8c_source.html#l00275">NANDFLASH_EccCorrect()</a>, <a class="el" href="nandflash_8h_source.html#l00047">NANDFLASH_INVALID_ADDRESS</a>, <a class="el" href="nandflash_8h_source.html#l00052">NANDFLASH_NOT_INITIALIZED</a>, <a class="el" href="nandflash_8h_source.html#l00062">NANDFLASH_Info_TypeDef::pageSize</a>, <a class="el" href="nandflash_8h_source.html#l00066">NANDFLASH_Info_TypeDef::spare</a>, and <a class="el" href="nandflash_8h_source.html#l00063">NANDFLASH_Info_TypeDef::spareSize</a>.</p>
+<p>References <a class="el" href="structNANDFLASH__Info__TypeDef.html#a8bd465d15390d99ec898ab23d9c8cbb6">NANDFLASH_Info_TypeDef::dmaCh</a>, <a class="el" href="structNANDFLASH__Info__TypeDef.html#ac1f8aca107c0ee0aa8ebd67d151c1ff8">NANDFLASH_Info_TypeDef::ecc</a>, <a class="el" href="group__NandFlash.html#ga68202c2af9400be750e866347c1ae77e">NAND_SPARE_ECC0_POS</a>, <a class="el" href="group__NandFlash.html#ga291ef2093c6334b58316c7eb96359cec">NAND_SPARE_ECC1_POS</a>, <a class="el" href="group__NandFlash.html#ga0acc344f59146337478dd4099f7bef7c">NAND_SPARE_ECC2_POS</a>, <a class="el" href="group__NandFlash.html#ga439db746d35d38bd98b554084bd15907">NANDFLASH_AddressValid()</a>, <a class="el" href="group__NandFlash.html#ga5f05f548912d09981e531480b6802700">NANDFLASH_EccCorrect()</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a8d605a0e6e4998814d4c4dfdba0323dd">NANDFLASH_INVALID_ADDRESS</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773ab8d069e1e61cae1f551dedeca98b56e2">NANDFLASH_NOT_INITIALIZED</a>, <a class="el" href="structNANDFLASH__Info__TypeDef.html#af7dc70e21592c452a68e9a5e0ff5a528">NANDFLASH_Info_TypeDef::pageSize</a>, <a class="el" href="structNANDFLASH__Info__TypeDef.html#afcedb33282c21d6215a3460c1d730f1a">NANDFLASH_Info_TypeDef::spare</a>, and <a class="el" href="structNANDFLASH__Info__TypeDef.html#a7bd5dc10a7325e04a521231d1c4f1979">NANDFLASH_Info_TypeDef::spareSize</a>.</p>
 
 </div>
 </div>
@@ -598,6 +615,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Read the spare area content of a page. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Page address.</td></tr>
@@ -609,7 +628,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nandflash_8c_source.html#l00581">581</a> of file <a class="el" href="nandflash_8c_source.html">nandflash.c</a>.</p>
 
-<p>References <a class="el" href="nandflash_8h_source.html#l00067">NANDFLASH_Info_TypeDef::dmaCh</a>, <a class="el" href="nandflash_8c_source.html#l00156">NANDFLASH_AddressValid()</a>, <a class="el" href="nandflash_8h_source.html#l00047">NANDFLASH_INVALID_ADDRESS</a>, <a class="el" href="nandflash_8h_source.html#l00052">NANDFLASH_NOT_INITIALIZED</a>, <a class="el" href="nandflash_8h_source.html#l00045">NANDFLASH_STATUS_OK</a>, and <a class="el" href="nandflash_8h_source.html#l00063">NANDFLASH_Info_TypeDef::spareSize</a>.</p>
+<p>References <a class="el" href="structNANDFLASH__Info__TypeDef.html#a8bd465d15390d99ec898ab23d9c8cbb6">NANDFLASH_Info_TypeDef::dmaCh</a>, <a class="el" href="group__NandFlash.html#ga439db746d35d38bd98b554084bd15907">NANDFLASH_AddressValid()</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a8d605a0e6e4998814d4c4dfdba0323dd">NANDFLASH_INVALID_ADDRESS</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773ab8d069e1e61cae1f551dedeca98b56e2">NANDFLASH_NOT_INITIALIZED</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a6b6589ecb6a873a559ee78eafd250a87">NANDFLASH_STATUS_OK</a>, and <a class="el" href="structNANDFLASH__Info__TypeDef.html#a7bd5dc10a7325e04a521231d1c4f1979">NANDFLASH_Info_TypeDef::spareSize</a>.</p>
 
 </div>
 </div>
@@ -636,6 +655,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Write a page in nand device. The ECC generated while writing the page data is written in the spare area at byte positions 7, 8 and 9. </p>
 <dl class="section note"><dt>Note</dt><dd>If this function returns <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773ae747e446bff895ff1c9fe46e1db04c67">NANDFLASH_WRITE_ERROR</a>, the block should be considered as "bad" and never used again.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -648,7 +669,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="nandflash_8c_source.html#l00646">646</a> of file <a class="el" href="nandflash_8c_source.html">nandflash.c</a>.</p>
 
-<p>References <a class="el" href="nandflash_8h_source.html#l00067">NANDFLASH_Info_TypeDef::dmaCh</a>, <a class="el" href="nandflash_8h_source.html#l00065">NANDFLASH_Info_TypeDef::ecc</a>, <a class="el" href="nandflash_8c_source.html#l00156">NANDFLASH_AddressValid()</a>, <a class="el" href="nandflash_8h_source.html#l00047">NANDFLASH_INVALID_ADDRESS</a>, <a class="el" href="nandflash_8h_source.html#l00052">NANDFLASH_NOT_INITIALIZED</a>, <a class="el" href="nandflash_8h_source.html#l00045">NANDFLASH_STATUS_OK</a>, <a class="el" href="nandflash_8h_source.html#l00048">NANDFLASH_WRITE_ERROR</a>, and <a class="el" href="nandflash_8h_source.html#l00062">NANDFLASH_Info_TypeDef::pageSize</a>.</p>
+<p>References <a class="el" href="structNANDFLASH__Info__TypeDef.html#a8bd465d15390d99ec898ab23d9c8cbb6">NANDFLASH_Info_TypeDef::dmaCh</a>, <a class="el" href="structNANDFLASH__Info__TypeDef.html#ac1f8aca107c0ee0aa8ebd67d151c1ff8">NANDFLASH_Info_TypeDef::ecc</a>, <a class="el" href="group__NandFlash.html#ga439db746d35d38bd98b554084bd15907">NANDFLASH_AddressValid()</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a8d605a0e6e4998814d4c4dfdba0323dd">NANDFLASH_INVALID_ADDRESS</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773ab8d069e1e61cae1f551dedeca98b56e2">NANDFLASH_NOT_INITIALIZED</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a6b6589ecb6a873a559ee78eafd250a87">NANDFLASH_STATUS_OK</a>, <a class="el" href="group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773ae747e446bff895ff1c9fe46e1db04c67">NANDFLASH_WRITE_ERROR</a>, and <a class="el" href="structNANDFLASH__Info__TypeDef.html#af7dc70e21592c452a68e9a5e0ff5a528">NANDFLASH_Info_TypeDef::pageSize</a>.</p>
 
 </div>
 </div>
@@ -657,7 +678,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:39:20 for EFM32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:36:26 for EFM32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

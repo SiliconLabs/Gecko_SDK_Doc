@@ -88,21 +88,21 @@ var em__adc_8h =
       [ "adcWarmupKeepScanRefWarm", "group__ADC.html#gga3990fbf520d66567df3de07ac040d6c5a1442ad8a26e94dd6ec37e3348515e771", null ],
       [ "adcWarmupKeepADCWarm", "group__ADC.html#gga3990fbf520d66567df3de07ac040d6c5abfde4333060e0f79b1a4ec3076a75ee2", null ]
     ] ],
-    [ "ADC_DataSingleGet", "group__ADC.html#gad88086368d3a6ddd2ca71503da68607b", null ],
-    [ "ADC_DataSinglePeek", "group__ADC.html#ga38b60dda3824a2f843d0368698da4ce1", null ],
     [ "ADC_DataScanGet", "group__ADC.html#ga16bbb8a7a2a4304a9b5233ff5e55dceb", null ],
     [ "ADC_DataScanPeek", "group__ADC.html#ga6c39a372119d452e4735cfadc3317ebf", null ],
+    [ "ADC_DataSingleGet", "group__ADC.html#gad88086368d3a6ddd2ca71503da68607b", null ],
+    [ "ADC_DataSinglePeek", "group__ADC.html#ga38b60dda3824a2f843d0368698da4ce1", null ],
     [ "ADC_Init", "group__ADC.html#ga3d5a968fbc40b29ebc05f17b311f2eb9", null ],
-    [ "ADC_Reset", "group__ADC.html#ga75639a8eba9a3353c216b324e554827e", null ],
     [ "ADC_InitScan", "group__ADC.html#ga41207273ca90e4173084233060e0edbb", null ],
     [ "ADC_InitSingle", "group__ADC.html#ga76aa8949d51eb1027906f68b0952ea0e", null ],
-    [ "ADC_TimebaseCalc", "group__ADC.html#ga95a5a908501b6c3bbd44022d41205e73", null ],
-    [ "ADC_PrescaleCalc", "group__ADC.html#ga635eb5e70c406ff3bd150b8e695a70f9", null ],
     [ "ADC_IntClear", "group__ADC.html#ga8519f6d9482a6fb6a15365f62fc4435d", null ],
     [ "ADC_IntDisable", "group__ADC.html#ga4e7612b7ab98ff06627cd121d51da1dc", null ],
     [ "ADC_IntEnable", "group__ADC.html#ga98bf6f1584f8879dd9d0118afd78e240", null ],
     [ "ADC_IntGet", "group__ADC.html#ga672d01dc9249a61c1b294a6849d5e55a", null ],
     [ "ADC_IntGetEnabled", "group__ADC.html#gaef2e4f1488777db93eab024d75e0859d", null ],
     [ "ADC_IntSet", "group__ADC.html#ga9538560672ae862a2fc339ce7c7999b9", null ],
-    [ "ADC_Start", "group__ADC.html#ga9dbf010db18a514043b369886de0bfc7", null ]
+    [ "ADC_PrescaleCalc", "group__ADC.html#ga635eb5e70c406ff3bd150b8e695a70f9", null ],
+    [ "ADC_Reset", "group__ADC.html#ga75639a8eba9a3353c216b324e554827e", null ],
+    [ "ADC_Start", "group__ADC.html#ga9dbf010db18a514043b369886de0bfc7", null ],
+    [ "ADC_TimebaseCalc", "group__ADC.html#ga95a5a908501b6c3bbd44022d41205e73", null ]
 ];

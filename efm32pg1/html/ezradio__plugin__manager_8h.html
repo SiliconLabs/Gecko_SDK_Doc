@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Pearl Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32pg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32pg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -117,10 +114,25 @@ $(document).ready(function(){initNavTree('ezradio__plugin__manager_8h.html','');
 <div class="title">ezradio_plugin_manager.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file contains the plug-in manager for the EZRadio and EZRadioPRO chip families. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.<br />
+</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.<br />
+</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>This file contains the plug-in manager for the EZRadio and EZRadioPRO chip families.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="ecode_8h_source.html">ecode.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="ezradio__plugin__manager_8h_source.html">ezradio_plugin_manager.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="ecode_8h_source.html">ecode.h</a>&quot;</code><br />
 <code>#include &quot;app-config.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="ezradio__transmit__plugin_8h_source.html">ezradio_transmit_plugin.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ezradio__receive__plugin_8h_source.html">ezradio_receive_plugin.h</a>&quot;</code><br />
@@ -140,79 +152,79 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga759250e9a6643d32417a6e8a55a55ffa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga759250e9a6643d32417a6e8a55a55ffa"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga759250e9a6643d32417a6e8a55a55ffa">ECODE_EMDRV_EZRADIODRV_OK</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#gad59417e7951d81dfc15ec2757f08148e">ECODE_OK</a> )</td></tr>
-<tr class="memdesc:ga759250e9a6643d32417a6e8a55a55ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Success return value. <br /></td></tr>
-<tr class="separator:ga759250e9a6643d32417a6e8a55a55ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad78c95fe2dec2f1bd1660544625ec77c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad78c95fe2dec2f1bd1660544625ec77c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#gad78c95fe2dec2f1bd1660544625ec77c">ECODE_EMDRV_EZRADIODRV_ILLEGAL_HANDLE</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000001 )</td></tr>
-<tr class="memdesc:gad78c95fe2dec2f1bd1660544625ec77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Illegal SPI handle. <br /></td></tr>
-<tr class="separator:gad78c95fe2dec2f1bd1660544625ec77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga30b7ef4cac2f8a090b94be201cccb394"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga30b7ef4cac2f8a090b94be201cccb394"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga30b7ef4cac2f8a090b94be201cccb394">ECODE_EMDRV_EZRADIODRV_TRANSMIT_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000100 )</td></tr>
-<tr class="memdesc:ga30b7ef4cac2f8a090b94be201cccb394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit plugin base error code. <br /></td></tr>
-<tr class="separator:ga30b7ef4cac2f8a090b94be201cccb394"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga767f5e1b993607242dd96a3c1e8286db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga767f5e1b993607242dd96a3c1e8286db"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga767f5e1b993607242dd96a3c1e8286db">ECODE_EMDRV_EZRADIODRV_RECEIVE_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000200 )</td></tr>
-<tr class="memdesc:ga767f5e1b993607242dd96a3c1e8286db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive plugin base error code. <br /></td></tr>
-<tr class="separator:ga767f5e1b993607242dd96a3c1e8286db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga85c9a4ad611ad1c3ded66e18ab2d1b16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga85c9a4ad611ad1c3ded66e18ab2d1b16"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga85c9a4ad611ad1c3ded66e18ab2d1b16">ECODE_EMDRV_EZRADIODRV_CRC_ERROR_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000300 )</td></tr>
-<tr class="memdesc:ga85c9a4ad611ad1c3ded66e18ab2d1b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRC error plugin base error code. <br /></td></tr>
-<tr class="separator:ga85c9a4ad611ad1c3ded66e18ab2d1b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4d989b00776aee83ddb58dfbc232b8e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4d989b00776aee83ddb58dfbc232b8e1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga4d989b00776aee83ddb58dfbc232b8e1">ECODE_EMDRV_EZRADIODRV_AUTO_ACK_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000400 )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga4d989b00776aee83ddb58dfbc232b8e1">ECODE_EMDRV_EZRADIODRV_AUTO_ACK_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000400 )</td></tr>
 <tr class="memdesc:ga4d989b00776aee83ddb58dfbc232b8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive plugin base error code. <br /></td></tr>
 <tr class="separator:ga4d989b00776aee83ddb58dfbc232b8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5392c46247674afbde45e9384b393534"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5392c46247674afbde45e9384b393534"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga5392c46247674afbde45e9384b393534">ECODE_EMDRV_EZRADIODRV_UNMOD_CARRIER_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000500 )</td></tr>
-<tr class="memdesc:ga5392c46247674afbde45e9384b393534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive plugin base error code. <br /></td></tr>
-<tr class="separator:ga5392c46247674afbde45e9384b393534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8b9f941d6b83cab57e92a91a38ac79a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae8b9f941d6b83cab57e92a91a38ac79a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#gae8b9f941d6b83cab57e92a91a38ac79a">ECODE_EMDRV_EZRADIODRV_PN9_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000600 )</td></tr>
-<tr class="memdesc:gae8b9f941d6b83cab57e92a91a38ac79a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive plugin base error code. <br /></td></tr>
-<tr class="separator:gae8b9f941d6b83cab57e92a91a38ac79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeae1425c0b1d65d5012473e74999490f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaeae1425c0b1d65d5012473e74999490f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#gaeae1425c0b1d65d5012473e74999490f">ECODE_EMDRV_EZRADIODRV_DIRECT_TRANSMIT_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000700 )</td></tr>
-<tr class="memdesc:gaeae1425c0b1d65d5012473e74999490f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit plugin base error code. <br /></td></tr>
-<tr class="separator:gaeae1425c0b1d65d5012473e74999490f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85c9a4ad611ad1c3ded66e18ab2d1b16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga85c9a4ad611ad1c3ded66e18ab2d1b16"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga85c9a4ad611ad1c3ded66e18ab2d1b16">ECODE_EMDRV_EZRADIODRV_CRC_ERROR_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000300 )</td></tr>
+<tr class="memdesc:ga85c9a4ad611ad1c3ded66e18ab2d1b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRC error plugin base error code. <br /></td></tr>
+<tr class="separator:ga85c9a4ad611ad1c3ded66e18ab2d1b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga34faa2e55e3e04b9e00260a0762da94b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga34faa2e55e3e04b9e00260a0762da94b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga34faa2e55e3e04b9e00260a0762da94b">ECODE_EMDRV_EZRADIODRV_DIRECT_RECEIVE_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000800 )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga34faa2e55e3e04b9e00260a0762da94b">ECODE_EMDRV_EZRADIODRV_DIRECT_RECEIVE_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000800 )</td></tr>
 <tr class="memdesc:ga34faa2e55e3e04b9e00260a0762da94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive plugin base error code. <br /></td></tr>
 <tr class="separator:ga34faa2e55e3e04b9e00260a0762da94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeae1425c0b1d65d5012473e74999490f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaeae1425c0b1d65d5012473e74999490f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#gaeae1425c0b1d65d5012473e74999490f">ECODE_EMDRV_EZRADIODRV_DIRECT_TRANSMIT_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000700 )</td></tr>
+<tr class="memdesc:gaeae1425c0b1d65d5012473e74999490f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit plugin base error code. <br /></td></tr>
+<tr class="separator:gaeae1425c0b1d65d5012473e74999490f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad78c95fe2dec2f1bd1660544625ec77c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad78c95fe2dec2f1bd1660544625ec77c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#gad78c95fe2dec2f1bd1660544625ec77c">ECODE_EMDRV_EZRADIODRV_ILLEGAL_HANDLE</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000001 )</td></tr>
+<tr class="memdesc:gad78c95fe2dec2f1bd1660544625ec77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Illegal SPI handle. <br /></td></tr>
+<tr class="separator:gad78c95fe2dec2f1bd1660544625ec77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga759250e9a6643d32417a6e8a55a55ffa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga759250e9a6643d32417a6e8a55a55ffa"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga759250e9a6643d32417a6e8a55a55ffa">ECODE_EMDRV_EZRADIODRV_OK</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#gad59417e7951d81dfc15ec2757f08148e">ECODE_OK</a> )</td></tr>
+<tr class="memdesc:ga759250e9a6643d32417a6e8a55a55ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Success return value. <br /></td></tr>
+<tr class="separator:ga759250e9a6643d32417a6e8a55a55ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8b9f941d6b83cab57e92a91a38ac79a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae8b9f941d6b83cab57e92a91a38ac79a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#gae8b9f941d6b83cab57e92a91a38ac79a">ECODE_EMDRV_EZRADIODRV_PN9_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000600 )</td></tr>
+<tr class="memdesc:gae8b9f941d6b83cab57e92a91a38ac79a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive plugin base error code. <br /></td></tr>
+<tr class="separator:gae8b9f941d6b83cab57e92a91a38ac79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga767f5e1b993607242dd96a3c1e8286db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga767f5e1b993607242dd96a3c1e8286db"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga767f5e1b993607242dd96a3c1e8286db">ECODE_EMDRV_EZRADIODRV_RECEIVE_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000200 )</td></tr>
+<tr class="memdesc:ga767f5e1b993607242dd96a3c1e8286db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive plugin base error code. <br /></td></tr>
+<tr class="separator:ga767f5e1b993607242dd96a3c1e8286db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30b7ef4cac2f8a090b94be201cccb394"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga30b7ef4cac2f8a090b94be201cccb394"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga30b7ef4cac2f8a090b94be201cccb394">ECODE_EMDRV_EZRADIODRV_TRANSMIT_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000100 )</td></tr>
+<tr class="memdesc:ga30b7ef4cac2f8a090b94be201cccb394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit plugin base error code. <br /></td></tr>
+<tr class="separator:ga30b7ef4cac2f8a090b94be201cccb394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5392c46247674afbde45e9384b393534"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5392c46247674afbde45e9384b393534"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga5392c46247674afbde45e9384b393534">ECODE_EMDRV_EZRADIODRV_UNMOD_CARRIER_PLUGIN_BASE</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga65ca1edc324f83188bb304f3197e5935">ECODE_EMDRV_EZRADIODRV_BASE</a> | 0x00000500 )</td></tr>
+<tr class="memdesc:ga5392c46247674afbde45e9384b393534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive plugin base error code. <br /></td></tr>
+<tr class="separator:ga5392c46247674afbde45e9384b393534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga083a90d118754ec652dd488de5263e4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga083a90d118754ec652dd488de5263e4b">EZRADIODRV_INIT_DEFAULT</a></td></tr>
+<tr class="memdesc:ga083a90d118754ec652dd488de5263e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration data for EzRadio plugin manager.  <a href="group__Plugin__Manager.html#ga083a90d118754ec652dd488de5263e4b">More...</a><br /></td></tr>
+<tr class="separator:ga083a90d118754ec652dd488de5263e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga75105b934320c9bb5670693b411468db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>RADIO_CONFIG_DATA_FIELD_LENGTH</b></td></tr>
 <tr class="separator:ga75105b934320c9bb5670693b411468db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2e89007b715feba7791a881f28fd01b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2e89007b715feba7791a881f28fd01b2"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>RADIO_CONFIG_DATA_MAX_PACKET_LENGTH</b>&#160;&#160;&#160;RADIO_CONFIG_DATA_FIELD1_LENGTH</td></tr>
 <tr class="separator:ga2e89007b715feba7791a881f28fd01b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga083a90d118754ec652dd488de5263e4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga083a90d118754ec652dd488de5263e4b">EZRADIODRV_INIT_DEFAULT</a></td></tr>
-<tr class="memdesc:ga083a90d118754ec652dd488de5263e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration data for EzRadio plugin manager.  <a href="group__Plugin__Manager.html#ga083a90d118754ec652dd488de5263e4b">More...</a><br /></td></tr>
-<tr class="separator:ga083a90d118754ec652dd488de5263e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga159db551541c685e589c91e6a7923077"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga159db551541c685e589c91e6a7923077"></a>
-typedef struct <a class="el" href="structEZRADIODRV__HandleData.html">EZRADIODRV_HandleData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga159db551541c685e589c91e6a7923077">EZRADIODRV_HandleData_t</a></td></tr>
-<tr class="memdesc:ga159db551541c685e589c91e6a7923077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for <a class="el" href="structEZRADIODRV__HandleData.html">EZRADIODRV_HandleData</a> structure type defined below. <br /></td></tr>
-<tr class="separator:ga159db551541c685e589c91e6a7923077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99c83890e33d1df262fd830ff5b61c6d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga99c83890e33d1df262fd830ff5b61c6d">EZRADIODRV_Callback_t</a>) (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> handle, <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> status)</td></tr>
+<tr class="memdesc:ga99c83890e33d1df262fd830ff5b61c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">EZRADIODRV feature callback function interface.  <a href="group__Plugin__Manager.html#ga99c83890e33d1df262fd830ff5b61c6d">More...</a><br /></td></tr>
+<tr class="separator:ga99c83890e33d1df262fd830ff5b61c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab85d488ff2d8f62d46adc449bb8a1737"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab85d488ff2d8f62d46adc449bb8a1737"></a>
 typedef <a class="el" href="group__Plugin__Manager.html#ga159db551541c685e589c91e6a7923077">EZRADIODRV_HandleData_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a></td></tr>
 <tr class="memdesc:gab85d488ff2d8f62d46adc449bb8a1737"><td class="mdescLeft">&#160;</td><td class="mdescRight">EZRadio driver instance handle. <br /></td></tr>
 <tr class="separator:gab85d488ff2d8f62d46adc449bb8a1737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga159db551541c685e589c91e6a7923077"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga159db551541c685e589c91e6a7923077"></a>
+typedef struct <a class="el" href="structEZRADIODRV__HandleData.html">EZRADIODRV_HandleData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga159db551541c685e589c91e6a7923077">EZRADIODRV_HandleData_t</a></td></tr>
+<tr class="memdesc:ga159db551541c685e589c91e6a7923077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for <a class="el" href="structEZRADIODRV__HandleData.html">EZRADIODRV_HandleData</a> structure type defined below. <br /></td></tr>
+<tr class="separator:ga159db551541c685e589c91e6a7923077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacdae8227af89ed0c8a6a0837332a5c3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacdae8227af89ed0c8a6a0837332a5c3d"></a>
 typedef ezradio_cmd_reply_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#gacdae8227af89ed0c8a6a0837332a5c3d">EZRADIODRV_ReplyHandle_t</a></td></tr>
 <tr class="memdesc:gacdae8227af89ed0c8a6a0837332a5c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">EZradio reply union handle. <br /></td></tr>
 <tr class="separator:gacdae8227af89ed0c8a6a0837332a5c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga99c83890e33d1df262fd830ff5b61c6d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga99c83890e33d1df262fd830ff5b61c6d">EZRADIODRV_Callback_t</a>) (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> handle, <a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> status)</td></tr>
-<tr class="memdesc:ga99c83890e33d1df262fd830ff5b61c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">EZRADIODRV feature callback function interface.  <a href="group__Plugin__Manager.html#ga99c83890e33d1df262fd830ff5b61c6d">More...</a><br /></td></tr>
-<tr class="separator:ga99c83890e33d1df262fd830ff5b61c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga55ab56dfaa297c93024dc43239bc8592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga55ab56dfaa297c93024dc43239bc8592">ezradioInit</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> handle)</td></tr>
 <tr class="memdesc:ga55ab56dfaa297c93024dc43239bc8592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radio Initialization.  <a href="group__Plugin__Manager.html#ga55ab56dfaa297c93024dc43239bc8592">More...</a><br /></td></tr>
 <tr class="separator:ga55ab56dfaa297c93024dc43239bc8592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga32fa115744a93d5a0e56b5c33b8231bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga32fa115744a93d5a0e56b5c33b8231bb">ezradioPluginManager</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> handle)</td></tr>
+<tr class="memitem:ga32fa115744a93d5a0e56b5c33b8231bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__Manager.html#ga32fa115744a93d5a0e56b5c33b8231bb">ezradioPluginManager</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> handle)</td></tr>
 <tr class="memdesc:ga32fa115744a93d5a0e56b5c33b8231bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">EzRadio plugin manager state machine handler. This function should be called in the application in an infinite loop, in order to manage the EzRadio plug-ins properly.  <a href="group__Plugin__Manager.html#ga32fa115744a93d5a0e56b5c33b8231bb">More...</a><br /></td></tr>
 <tr class="separator:ga32fa115744a93d5a0e56b5c33b8231bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5a552425d8e40d1eefd78cc82b5dd7b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5a552425d8e40d1eefd78cc82b5dd7b5"></a>
@@ -220,30 +232,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memdesc:ga5a552425d8e40d1eefd78cc82b5dd7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets both the TX and RX FIFOs. <br /></td></tr>
 <tr class="separator:ga5a552425d8e40d1eefd78cc82b5dd7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.<br />
-</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.<br />
-</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="ezradio__plugin__manager_8h_source.html">ezradio_plugin_manager.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_74d66e5e415af18c005205f87c017a4f.html">ezradiodrv</a></li><li class="navelem"><a class="el" href="dir_dc62e25ae1d0f0e9ad0dda32108a1961.html">plugins</a></li><li class="navelem"><a class="el" href="dir_85f555eec412c0c816859d65c3046cb9.html">inc</a></li><li class="navelem"><a class="el" href="ezradio__plugin__manager_8h.html">ezradio_plugin_manager.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:39:57 for EFM32 Pearl Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:38:14 for EFM32 Pearl Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

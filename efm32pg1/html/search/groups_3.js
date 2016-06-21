@@ -5,6 +5,5 @@ var searchData=
   ['direct_5ftransmit_5fplugin',['Direct_Transmit_Plugin',['../group__Direct__Transmit__Plugin.html',1,'']]],
   ['display',['Display',['../group__Display.html',1,'']]],
   ['dmactrl',['DmaCtrl',['../group__DmaCtrl.html',1,'']]],
-  ['dmadrv',['DMADRV',['../group__DMADRV.html',1,'']]],
-  ['drivers',['Drivers',['../group__Drivers.html',1,'']]]
+  ['dmadrv',['DMADRV',['../group__DMADRV.html',1,'']]]
 ];
