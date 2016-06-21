@@ -5,6 +5,7 @@ var searchData=
   ['_5f_5fmpu_5fpresent',['__MPU_PRESENT',['../group__EZR32LG330F256R69__Core.html#ga4127d1b31aaf336fab3d7329d117f448',1,'ezr32lg330f256r69.h']]],
   ['_5f_5fnvic_5fprio_5fbits',['__NVIC_PRIO_BITS',['../group__EZR32LG330F256R69__Core.html#gae3fe3587d5100c787e02102ce3944460',1,'ezr32lg330f256r69.h']]],
   ['_5f_5fvendor_5fsystickconfig',['__Vendor_SysTickConfig',['../group__EZR32LG330F256R69__Core.html#gab58771b4ec03f9bdddc84770f7c95c68',1,'ezr32lg330f256r69.h']]],
+  ['_5f_5fvtor_5fpresent',['__VTOR_PRESENT',['../group__EZR32LG330F256R69__Core.html#gaddbae1a1b57539f398eb5546a17de8f6',1,'ezr32lg330f256r69.h']]],
   ['_5facmp_5fctrl_5fbiasprog_5fdefault',['_ACMP_CTRL_BIASPROG_DEFAULT',['../group__EZR32LG__ACMP__BitFields.html#gae691bf5e13124d876928344b7d7674ad',1,'ezr32lg_acmp.h']]],
   ['_5facmp_5fctrl_5fbiasprog_5fmask',['_ACMP_CTRL_BIASPROG_MASK',['../group__EZR32LG__ACMP__BitFields.html#gaa794b8376536eeec0b4015f86f8be985',1,'ezr32lg_acmp.h']]],
   ['_5facmp_5fctrl_5fbiasprog_5fshift',['_ACMP_CTRL_BIASPROG_SHIFT',['../group__EZR32LG__ACMP__BitFields.html#ga589cb143484b6666ee614a9aeda4a887',1,'ezr32lg_acmp.h']]],

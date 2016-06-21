@@ -77,8 +77,8 @@ var searchData=
   ['efm32wg_5fvcmp_5fbitfields',['EFM32WG_VCMP_BitFields',['../group__EFM32WG__VCMP__BitFields.html',1,'']]],
   ['efm32wg_5fwdog',['EFM32WG_WDOG',['../group__EFM32WG__WDOG.html',1,'']]],
   ['efm32wg_5fwdog_5fbitfields',['EFM32WG_WDOG_BitFields',['../group__EFM32WG__WDOG__BitFields.html',1,'']]],
-  ['em_5fdrivers',['EM_Drivers',['../group__EM__Drivers.html',1,'']]],
-  ['em_5flibrary',['EM_Library',['../group__EM__Library.html',1,'']]],
+  ['emdrv',['EMDRV',['../group__emdrv.html',1,'']]],
+  ['emlib',['EMLIB',['../group__emlib.html',1,'']]],
   ['emu',['EMU',['../group__EMU.html',1,'']]],
   ['ezradiodrv',['EZRADIODRV',['../group__EZRADIODRV.html',1,'']]]
 ];

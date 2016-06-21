@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32hg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32hg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -124,28 +122,30 @@ $(document).ready(function(){initNavTree('rtcdrv_8h_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__RTCDRV.html#ga65ef38fa0eb21b4c379512aa087f7686">RTCDRV_Delay</a>(uint32_t msec, <span class="keywordtype">bool</span> useEM2);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> RTCDRV_Trigger(uint32_t msec, <span class="keywordtype">void</span> (*cb)(<span class="keywordtype">void</span>));</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> RTCDRV_Setup(<a class="code" href="group__CMU.html#gaeaf3a27499d7441981159c5973546751">CMU_Select_TypeDef</a> lfaClockSrc, <a class="code" href="group__CMU.html#ga44da9c73a703ac0f9c9f101aa43414c3">CMU_ClkDiv_TypeDef</a> rtcPrescale);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#warning &quot;kits/common/drivers/rtcdrv.c is deprecated. Please use emdrv/rtcdrv/src/rtcdriver.c.&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__RTCDRV.html#ga65ef38fa0eb21b4c379512aa087f7686">RTCDRV_Delay</a>(uint32_t msec, <span class="keywordtype">bool</span> useEM2);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> RTCDRV_Trigger(uint32_t msec, <span class="keywordtype">void</span> (*cb)(<span class="keywordtype">void</span>));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> RTCDRV_Setup(<a class="code" href="group__CMU.html#gaeaf3a27499d7441981159c5973546751">CMU_Select_TypeDef</a> lfaClockSrc, <a class="code" href="group__CMU.html#ga44da9c73a703ac0f9c9f101aa43414c3">CMU_ClkDiv_TypeDef</a> rtcPrescale);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="ttc" id="em__cmu_8h_html"><div class="ttname"><a href="em__cmu_8h.html">em_cmu.h</a></div><div class="ttdoc">Clock management unit (CMU) API. </div></div>
-<div class="ttc" id="group__CMU_html_gaeaf3a27499d7441981159c5973546751"><div class="ttname"><a href="group__CMU.html#gaeaf3a27499d7441981159c5973546751">CMU_Select_TypeDef</a></div><div class="ttdeci">CMU_Select_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8h_source.html#l00950">em_cmu.h:950</a></div></div>
+<div class="ttc" id="group__CMU_html_gaeaf3a27499d7441981159c5973546751"><div class="ttname"><a href="group__CMU.html#gaeaf3a27499d7441981159c5973546751">CMU_Select_TypeDef</a></div><div class="ttdeci">CMU_Select_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8h_source.html#l00867">em_cmu.h:867</a></div></div>
 <div class="ttc" id="em__device_8h_html"><div class="ttname"><a href="em__device_8h.html">em_device.h</a></div><div class="ttdoc">CMSIS Cortex-M Peripheral Access Layer for Silicon Laboratories microcontroller devices. </div></div>
-<div class="ttc" id="group__CMU_html_ga44da9c73a703ac0f9c9f101aa43414c3"><div class="ttname"><a href="group__CMU.html#ga44da9c73a703ac0f9c9f101aa43414c3">CMU_ClkDiv_TypeDef</a></div><div class="ttdeci">uint32_t CMU_ClkDiv_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8h_source.html#l00166">em_cmu.h:166</a></div></div>
-<div class="ttc" id="group__RTCDRV_html_ga65ef38fa0eb21b4c379512aa087f7686"><div class="ttname"><a href="group__RTCDRV.html#ga65ef38fa0eb21b4c379512aa087f7686">RTCDRV_Delay</a></div><div class="ttdeci">Ecode_t RTCDRV_Delay(uint32_t ms)</div><div class="ttdoc">Millisecond delay function. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00266">rtcdriver.c:266</a></div></div>
+<div class="ttc" id="group__CMU_html_ga44da9c73a703ac0f9c9f101aa43414c3"><div class="ttname"><a href="group__CMU.html#ga44da9c73a703ac0f9c9f101aa43414c3">CMU_ClkDiv_TypeDef</a></div><div class="ttdeci">uint32_t CMU_ClkDiv_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8h_source.html#l00163">em_cmu.h:163</a></div></div>
+<div class="ttc" id="group__RTCDRV_html_ga65ef38fa0eb21b4c379512aa087f7686"><div class="ttname"><a href="group__RTCDRV.html#ga65ef38fa0eb21b4c379512aa087f7686">RTCDRV_Delay</a></div><div class="ttdeci">Ecode_t RTCDRV_Delay(uint32_t ms)</div><div class="ttdoc">Millisecond delay function. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00269">rtcdriver.c:269</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="rtcdrv_8h.html">rtcdrv.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:39:12 for EFM32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:35:52 for EFM32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

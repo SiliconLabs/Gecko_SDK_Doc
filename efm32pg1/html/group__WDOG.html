@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Pearl Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32pg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32pg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -108,12 +106,12 @@ $(document).ready(function(){initNavTree('group__WDOG.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">WDOG<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">WDOG<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Watchdog (WDOG) Peripheral API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Watchdog (WDOG) Peripheral API. </p>
+<p>This module contains functions to control the WDOG peripheral of Silicon Labs 32-bit MCUs and SoCs. The WDOG resets the system in case of a fault condition. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -122,6 +120,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:gaa8a21262e0b67fbe432eed3edfc246fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#gaa8a21262e0b67fbe432eed3edfc246fd">DEFAULT_WDOG</a>&#160;&#160;&#160;<a class="el" href="group__EFM32PG1B200F256GM48__Peripheral__Declaration.html#ga2786c4aa52de96f5701346b6cb16ac97">WDOG0</a></td></tr>
+<tr class="separator:gaa8a21262e0b67fbe432eed3edfc246fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8169ae345fecb9d7abddeb495db92693"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga8169ae345fecb9d7abddeb495db92693">WDOG_INIT_DEFAULT</a></td></tr>
 <tr class="separator:ga8169ae345fecb9d7abddeb495db92693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -171,24 +171,100 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:gafb32176c669596071269d5fe62734505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:gaf247334d25d8a47cbd5ececf5d942f6d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#gaf247334d25d8a47cbd5ececf5d942f6d">WDOG_WarnSel_TypeDef</a> { <br />
+&#160;&#160;<b>wdogWarnDisable</b> = 0, 
+<br />
+&#160;&#160;<b>wdogWarnTime25pct</b> = 1, 
+<br />
+&#160;&#160;<b>wdogWarnTime50pct</b> = 2, 
+<br />
+&#160;&#160;<b>wdogWarnTime75pct</b> = 3
+<br />
+ }<tr class="separator:gaf247334d25d8a47cbd5ececf5d942f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gaf7f977a90d9fe36572ad083fc1478839"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#gaf7f977a90d9fe36572ad083fc1478839">WDOG_WinSel_TypeDef</a> { <br />
+&#160;&#160;<b>wdogIllegalWindowDisable</b> = 0, 
+<br />
+&#160;&#160;<b>wdogIllegalWindowTime12_5pct</b> = 1, 
+<br />
+&#160;&#160;<b>wdogIllegalWindowTime25_0pct</b> = 2, 
+<br />
+&#160;&#160;<b>wdogIllegalWindowTime37_5pct</b> = 3, 
+<br />
+&#160;&#160;<b>wdogIllegalWindowTime50_0pct</b> = 4, 
+<br />
+&#160;&#160;<b>wdogIllegalWindowTime62_5pct</b> = 5, 
+<br />
+&#160;&#160;<b>wdogIllegalWindowTime75_0pct</b> = 6, 
+<br />
+&#160;&#160;<b>wdogIllegalWindowTime87_5pct</b> = 7
+<br />
+ }<tr class="separator:gaf7f977a90d9fe36572ad083fc1478839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga662ed794f642aac8293b7cae09c4b223"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga662ed794f642aac8293b7cae09c4b223">WDOG_Enable</a> (bool enable)</td></tr>
-<tr class="memdesc:ga662ed794f642aac8293b7cae09c4b223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable the watchdog timer.  <a href="#ga662ed794f642aac8293b7cae09c4b223">More...</a><br /></td></tr>
-<tr class="separator:ga662ed794f642aac8293b7cae09c4b223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf4cfa0c00f36eb71896f2ce1e884d27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#gabf4cfa0c00f36eb71896f2ce1e884d27">WDOG_Feed</a> (void)</td></tr>
-<tr class="memdesc:gabf4cfa0c00f36eb71896f2ce1e884d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feed the watchdog.  <a href="#gabf4cfa0c00f36eb71896f2ce1e884d27">More...</a><br /></td></tr>
-<tr class="separator:gabf4cfa0c00f36eb71896f2ce1e884d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga227aa37d1eab4e7748ecc801c386c7a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga227aa37d1eab4e7748ecc801c386c7a7">WDOG_Init</a> (const <a class="el" href="structWDOG__Init__TypeDef.html">WDOG_Init_TypeDef</a> *init)</td></tr>
-<tr class="memdesc:ga227aa37d1eab4e7748ecc801c386c7a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize watchdog (assuming the watchdog configuration has not been locked).  <a href="#ga227aa37d1eab4e7748ecc801c386c7a7">More...</a><br /></td></tr>
-<tr class="separator:ga227aa37d1eab4e7748ecc801c386c7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26823031e069f4133964156550b64097"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga26823031e069f4133964156550b64097">WDOG_Lock</a> (void)</td></tr>
-<tr class="memdesc:ga26823031e069f4133964156550b64097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the watchdog configuration.  <a href="#ga26823031e069f4133964156550b64097">More...</a><br /></td></tr>
-<tr class="separator:ga26823031e069f4133964156550b64097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88ccf7374d7c9c93c4b5627f84dab552"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga88ccf7374d7c9c93c4b5627f84dab552">WDOG_Enable</a> (bool enable)</td></tr>
+<tr class="memdesc:ga88ccf7374d7c9c93c4b5627f84dab552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable the watchdog timer.  <a href="#ga88ccf7374d7c9c93c4b5627f84dab552">More...</a><br /></td></tr>
+<tr class="separator:ga88ccf7374d7c9c93c4b5627f84dab552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92bafbf5cb3834524aae57ffe579d9e6"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga92bafbf5cb3834524aae57ffe579d9e6">WDOG_Feed</a> (void)</td></tr>
+<tr class="memdesc:ga92bafbf5cb3834524aae57ffe579d9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feed the watchdog.  <a href="#ga92bafbf5cb3834524aae57ffe579d9e6">More...</a><br /></td></tr>
+<tr class="separator:ga92bafbf5cb3834524aae57ffe579d9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84515db25226cd9e5a7fd9b4dec7bef2"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga84515db25226cd9e5a7fd9b4dec7bef2">WDOG_Init</a> (const <a class="el" href="structWDOG__Init__TypeDef.html">WDOG_Init_TypeDef</a> *init)</td></tr>
+<tr class="memdesc:ga84515db25226cd9e5a7fd9b4dec7bef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize watchdog (assuming the watchdog configuration has not been locked).  <a href="#ga84515db25226cd9e5a7fd9b4dec7bef2">More...</a><br /></td></tr>
+<tr class="separator:ga84515db25226cd9e5a7fd9b4dec7bef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fee9f36132888d17e299e5b6b4edbb5"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga2fee9f36132888d17e299e5b6b4edbb5">WDOG_Lock</a> (void)</td></tr>
+<tr class="memdesc:ga2fee9f36132888d17e299e5b6b4edbb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the watchdog configuration.  <a href="#ga2fee9f36132888d17e299e5b6b4edbb5">More...</a><br /></td></tr>
+<tr class="separator:ga2fee9f36132888d17e299e5b6b4edbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccf944498d4c40e6d87afa84e06d297b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#gaccf944498d4c40e6d87afa84e06d297b">WDOGn_Enable</a> (<a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *wdog, bool enable)</td></tr>
+<tr class="memdesc:gaccf944498d4c40e6d87afa84e06d297b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable the watchdog timer.  <a href="#gaccf944498d4c40e6d87afa84e06d297b">More...</a><br /></td></tr>
+<tr class="separator:gaccf944498d4c40e6d87afa84e06d297b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21dd2a92e33eaf3edd48d626cb4ff72b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga21dd2a92e33eaf3edd48d626cb4ff72b">WDOGn_Feed</a> (<a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *wdog)</td></tr>
+<tr class="memdesc:ga21dd2a92e33eaf3edd48d626cb4ff72b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feed the watchdog.  <a href="#ga21dd2a92e33eaf3edd48d626cb4ff72b">More...</a><br /></td></tr>
+<tr class="separator:ga21dd2a92e33eaf3edd48d626cb4ff72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3de9748141ca1e172ec40a77b8e86433"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga3de9748141ca1e172ec40a77b8e86433">WDOGn_Init</a> (<a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *wdog, const <a class="el" href="structWDOG__Init__TypeDef.html">WDOG_Init_TypeDef</a> *init)</td></tr>
+<tr class="memdesc:ga3de9748141ca1e172ec40a77b8e86433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize watchdog (assuming the watchdog configuration has not been locked).  <a href="#ga3de9748141ca1e172ec40a77b8e86433">More...</a><br /></td></tr>
+<tr class="separator:ga3de9748141ca1e172ec40a77b8e86433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17e03c083de18cfcef912cb06bfe1962"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga17e03c083de18cfcef912cb06bfe1962">WDOGn_IntClear</a> (<a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *wdog, uint32_t flags)</td></tr>
+<tr class="memdesc:ga17e03c083de18cfcef912cb06bfe1962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending WDOG interrupts.  <a href="#ga17e03c083de18cfcef912cb06bfe1962">More...</a><br /></td></tr>
+<tr class="separator:ga17e03c083de18cfcef912cb06bfe1962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga930ac1c0767bbe4d86bc00832129ae81"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga930ac1c0767bbe4d86bc00832129ae81">WDOGn_IntDisable</a> (<a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *wdog, uint32_t flags)</td></tr>
+<tr class="memdesc:ga930ac1c0767bbe4d86bc00832129ae81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable one or more WDOG interrupts.  <a href="#ga930ac1c0767bbe4d86bc00832129ae81">More...</a><br /></td></tr>
+<tr class="separator:ga930ac1c0767bbe4d86bc00832129ae81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0768e472ea7cbeb28149dfaf7fb9759"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#gaa0768e472ea7cbeb28149dfaf7fb9759">WDOGn_IntEnable</a> (<a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *wdog, uint32_t flags)</td></tr>
+<tr class="memdesc:gaa0768e472ea7cbeb28149dfaf7fb9759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable one or more WDOG interrupts.  <a href="#gaa0768e472ea7cbeb28149dfaf7fb9759">More...</a><br /></td></tr>
+<tr class="separator:gaa0768e472ea7cbeb28149dfaf7fb9759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51ba8d8f39ace24ca7fe11844d27489d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga51ba8d8f39ace24ca7fe11844d27489d">WDOGn_IntGet</a> (<a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *wdog)</td></tr>
+<tr class="memdesc:ga51ba8d8f39ace24ca7fe11844d27489d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pending WDOG interrupt flags.  <a href="#ga51ba8d8f39ace24ca7fe11844d27489d">More...</a><br /></td></tr>
+<tr class="separator:ga51ba8d8f39ace24ca7fe11844d27489d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16af4f540f8271f162e7d2d9a23df02b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga16af4f540f8271f162e7d2d9a23df02b">WDOGn_IntGetEnabled</a> (<a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *wdog)</td></tr>
+<tr class="memdesc:ga16af4f540f8271f162e7d2d9a23df02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get enabled and pending WDOG interrupt flags.  <a href="#ga16af4f540f8271f162e7d2d9a23df02b">More...</a><br /></td></tr>
+<tr class="separator:ga16af4f540f8271f162e7d2d9a23df02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8025d828bbef8cbeb80497b245e0f47a"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga8025d828bbef8cbeb80497b245e0f47a">WDOGn_IntSet</a> (<a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *wdog, uint32_t flags)</td></tr>
+<tr class="memdesc:ga8025d828bbef8cbeb80497b245e0f47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one or more pending WDOG interrupts from SW.  <a href="#ga8025d828bbef8cbeb80497b245e0f47a">More...</a><br /></td></tr>
+<tr class="separator:ga8025d828bbef8cbeb80497b245e0f47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga638259d740de220fb9b34a5b9654e182"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__WDOG.html#ga638259d740de220fb9b34a5b9654e182">WDOGn_Lock</a> (<a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *wdog)</td></tr>
+<tr class="memdesc:ga638259d740de220fb9b34a5b9654e182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the watchdog configuration.  <a href="#ga638259d740de220fb9b34a5b9654e182">More...</a><br /></td></tr>
+<tr class="separator:ga638259d740de220fb9b34a5b9654e182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="gaa8a21262e0b67fbe432eed3edfc246fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_WDOG&#160;&#160;&#160;<a class="el" href="group__EFM32PG1B200F256GM48__Peripheral__Declaration.html#ga2786c4aa52de96f5701346b6cb16ac97">WDOG0</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Default WDOG instance for deprecated functions. </p>
+
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00334">334</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__WDOG.html#ga88ccf7374d7c9c93c4b5627f84dab552">WDOG_Enable()</a>, <a class="el" href="group__WDOG.html#ga92bafbf5cb3834524aae57ffe579d9e6">WDOG_Feed()</a>, <a class="el" href="group__WDOG.html#ga84515db25226cd9e5a7fd9b4dec7bef2">WDOG_Init()</a>, and <a class="el" href="group__WDOG.html#ga2fee9f36132888d17e299e5b6b4edbb5">WDOG_Lock()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga8169ae345fecb9d7abddeb495db92693"></a>
 <div class="memitem">
 <div class="memproto">
@@ -198,21 +274,26 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                                              \</div>
-<div class="line">  true,               <span class="comment">/* Start watchdog when init done */</span>                                      \</div>
-<div class="line">  false,              <span class="comment">/* WDOG not counting during debug halt */</span>                                \</div>
-<div class="line">  false,              <span class="comment">/* WDOG not counting when in EM2 */</span>                                      \</div>
-<div class="line">  false,              <span class="comment">/* WDOG not counting when in EM3 */</span>                                      \</div>
-<div class="line">  false,              <span class="comment">/* EM4 can be entered */</span>                                                 \</div>
-<div class="line">  false,              <span class="comment">/* Do not block disabling LFRCO/LFXO in CMU */</span>                           \</div>
-<div class="line">  false,              <span class="comment">/* Do not lock WDOG configuration (if locked, reset needed to unlock) */</span> <a class="code" href="group__WDOG.html#gga84959950c7a90940b7b2aa414648f338a13e2668aa9503395dece59d8ed08e468">\</a></div>
-<div class="line"><a class="code" href="group__WDOG.html#gga84959950c7a90940b7b2aa414648f338a13e2668aa9503395dece59d8ed08e468">  wdogClkSelULFRCO</a>,   <span class="comment">/* Select 1kHZ WDOG oscillator */</span>                                        \</div>
-<div class="line">  wdogPeriod_256k     <span class="comment">/* Set longest possible timeout period */</span>                                \</div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                               \</div>
+<div class="line">  true,                         <span class="comment">/* Start watchdog when init done */</span>             \</div>
+<div class="line">  false,                        <span class="comment">/* WDOG not counting during debug halt */</span>       \</div>
+<div class="line">  false,                        <span class="comment">/* WDOG not counting when in EM2 */</span>             \</div>
+<div class="line">  false,                        <span class="comment">/* WDOG not counting when in EM3 */</span>             \</div>
+<div class="line">  false,                        <span class="comment">/* EM4 can be entered */</span>                        \</div>
+<div class="line">  false,                        <span class="comment">/* Do not block disabling LFRCO/LFXO in CMU */</span>  \</div>
+<div class="line">  false,                        <span class="comment">/* Do not lock WDOG configuration (if locked,</span></div>
+<div class="line"><span class="comment">                                   reset needed to unlock) */</span>                   <a class="code" href="group__WDOG.html#gga84959950c7a90940b7b2aa414648f338a13e2668aa9503395dece59d8ed08e468">\</a></div>
+<div class="line"><a class="code" href="group__WDOG.html#gga84959950c7a90940b7b2aa414648f338a13e2668aa9503395dece59d8ed08e468">  wdogClkSelULFRCO</a>,             <span class="comment">/* Select 1kHZ WDOG oscillator */</span>               <a class="code" href="group__WDOG.html#ggafb32176c669596071269d5fe62734505a763da9dc72d140d86dac3be63fcc77a9">\</a></div>
+<div class="line"><a class="code" href="group__WDOG.html#ggafb32176c669596071269d5fe62734505a763da9dc72d140d86dac3be63fcc77a9">  wdogPeriod_256k</a>,              <span class="comment">/* Set longest possible timeout period */</span>       \</div>
+<div class="line">  wdogWarnDisable,              <span class="comment">/* Disable warning interrupt */</span>                 \</div>
+<div class="line">  wdogIllegalWindowDisable,     <span class="comment">/* Disable illegal window interrupt */</span>          \</div>
+<div class="line">  false                         <span class="comment">/* Do not disable reset */</span>                      \</div>
 <div class="line">}</div>
 <div class="ttc" id="group__WDOG_html_gga84959950c7a90940b7b2aa414648f338a13e2668aa9503395dece59d8ed08e468"><div class="ttname"><a href="group__WDOG.html#gga84959950c7a90940b7b2aa414648f338a13e2668aa9503395dece59d8ed08e468">wdogClkSelULFRCO</a></div><div class="ttdef"><b>Definition:</b> <a href="em__wdog_8h_source.html#l00063">em_wdog.h:63</a></div></div>
+<div class="ttc" id="group__WDOG_html_ggafb32176c669596071269d5fe62734505a763da9dc72d140d86dac3be63fcc77a9"><div class="ttname"><a href="group__WDOG.html#ggafb32176c669596071269d5fe62734505a763da9dc72d140d86dac3be63fcc77a9">wdogPeriod_256k</a></div><div class="ttdef"><b>Definition:</b> <a href="em__wdog_8h_source.html#l00086">em_wdog.h:86</a></div></div>
 </div><!-- fragment --><p>Suggested default config for WDOG init structure. </p>
 
-<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00125">125</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00171">171</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
 
 </div>
 </div>
@@ -308,13 +389,43 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga662ed794f642aac8293b7cae09c4b223"></a>
+<a class="anchor" id="gaf247334d25d8a47cbd5ececf5d942f6d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void WDOG_Enable </td>
+          <td class="memname">enum <a class="el" href="group__WDOG.html#gaf247334d25d8a47cbd5ececf5d942f6d">WDOG_WarnSel_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Select watchdog warning timeout period as percentage of timeout. </p>
+
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00092">92</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf7f977a90d9fe36572ad083fc1478839"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__WDOG.html#gaf7f977a90d9fe36572ad083fc1478839">WDOG_WinSel_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Select watchdog illegal window limit. </p>
+
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00103">103</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga88ccf7374d7c9c93c4b5627f84dab552"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void WDOG_Enable </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>enable</em></td><td>)</td>
@@ -322,7 +433,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>This function modifies the WDOG CTRL register which requires synchronization into the low frequency domain. If this register is modified before a previous update to the same register has completed, this function will stall until the previous synchronization has completed.</dd></dl>
+
+<p>Enable/disable the watchdog timer. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd>Deprecated function. New code should use <a class="el" href="group__WDOG.html#gaccf944498d4c40e6d87afa84e06d297b">WDOGn_Enable()</a>. This function uses <a class="el" href="group__WDOG.html#gaa8a21262e0b67fbe432eed3edfc246fd">DEFAULT_WDOG</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>true to enable watchdog, false to disable. Watchdog cannot be disabled if watchdog has been locked. </td></tr>
@@ -330,18 +443,18 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__wdog_8c_source.html#l00075">75</a> of file <a class="el" href="em__wdog_8c_source.html">em_wdog.c</a>.</p>
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00350">350</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
 
-<p>References <a class="el" href="efm32pg1b__wdog_8h_source.html#l00066">_WDOG_CTRL_EN_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, and <a class="el" href="efm32pg1b__wdog_8h_source.html#l00157">WDOG_SYNCBUSY_CTRL</a>.</p>
+<p>References <a class="el" href="group__WDOG.html#gaa8a21262e0b67fbe432eed3edfc246fd">DEFAULT_WDOG</a>, and <a class="el" href="group__WDOG.html#gaccf944498d4c40e6d87afa84e06d297b">WDOGn_Enable()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gabf4cfa0c00f36eb71896f2ce1e884d27"></a>
+<a class="anchor" id="ga92bafbf5cb3834524aae57ffe579d9e6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void WDOG_Feed </td>
+          <td class="memname">__STATIC_INLINE void WDOG_Feed </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -349,20 +462,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>When the watchdog is activated, it must be fed (ie clearing the counter) before it reaches the defined timeout period. Otherwise, the watchdog will generate a reset. </p>
 
-<p>Definition at line <a class="el" href="em__wdog_8c_source.html#l00097">97</a> of file <a class="el" href="em__wdog_8c_source.html">em_wdog.c</a>.</p>
+<p>Feed the watchdog. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated:</a></b></dt><dd>Deprecated function. New code should use <a class="el" href="group__WDOG.html#ga21dd2a92e33eaf3edd48d626cb4ff72b">WDOGn_Feed()</a>. This function uses <a class="el" href="group__WDOG.html#gaa8a21262e0b67fbe432eed3edfc246fd">DEFAULT_WDOG</a>. </dd></dl>
 
-<p>References <a class="el" href="efm32pg1b__wdog_8h_source.html#l00144">WDOG_CMD_CLEAR</a>, <a class="el" href="efm32pg1b__wdog_8h_source.html#l00065">WDOG_CTRL_EN</a>, <a class="el" href="efm32pg1b__wdog_8h_source.html#l00162">WDOG_SYNCBUSY_CMD</a>, and <a class="el" href="efm32pg1b__wdog_8h_source.html#l00157">WDOG_SYNCBUSY_CTRL</a>.</p>
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00364">364</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
+
+<p>References <a class="el" href="group__WDOG.html#gaa8a21262e0b67fbe432eed3edfc246fd">DEFAULT_WDOG</a>, and <a class="el" href="group__WDOG.html#ga21dd2a92e33eaf3edd48d626cb4ff72b">WDOGn_Feed()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga227aa37d1eab4e7748ecc801c386c7a7"></a>
+<a class="anchor" id="ga84515db25226cd9e5a7fd9b4dec7bef2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void WDOG_Init </td>
+          <td class="memname">__STATIC_INLINE void WDOG_Init </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structWDOG__Init__TypeDef.html">WDOG_Init_TypeDef</a> *&#160;</td>
           <td class="paramname"><em>init</em></td><td>)</td>
@@ -370,7 +485,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>This function modifies the WDOG CTRL register which requires synchronization into the low frequency domain. If this register is modified before a previous update to the same register has completed, this function will stall until the previous synchronization has completed.</dd></dl>
+
+<p>Initialize watchdog (assuming the watchdog configuration has not been locked). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated:</a></b></dt><dd>Deprecated function. New code should use Use <a class="el" href="group__WDOG.html#ga3de9748141ca1e172ec40a77b8e86433">WDOGn_Init()</a>. This function uses <a class="el" href="group__WDOG.html#gaa8a21262e0b67fbe432eed3edfc246fd">DEFAULT_WDOG</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>Structure holding watchdog configuration. A default setting <a class="el" href="group__WDOG.html#ga8169ae345fecb9d7abddeb495db92693">WDOG_INIT_DEFAULT</a> is available for init. </td></tr>
@@ -378,18 +495,18 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__wdog_8c_source.html#l00137">137</a> of file <a class="el" href="em__wdog_8c_source.html">em_wdog.c</a>.</p>
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00383">383</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
 
-<p>References <a class="el" href="efm32pg1b__wdog_8h_source.html#l00104">_WDOG_CTRL_CLKSEL_SHIFT</a>, <a class="el" href="efm32pg1b__wdog_8h_source.html#l00086">_WDOG_CTRL_LOCK_SHIFT</a>, <a class="el" href="efm32pg1b__wdog_8h_source.html#l00100">_WDOG_CTRL_PERSEL_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="em__wdog_8h_source.html#l00118">WDOG_Init_TypeDef::clkSel</a>, <a class="el" href="em__wdog_8h_source.html#l00100">WDOG_Init_TypeDef::debugRun</a>, <a class="el" href="em__wdog_8h_source.html#l00103">WDOG_Init_TypeDef::em2Run</a>, <a class="el" href="em__wdog_8h_source.html#l00106">WDOG_Init_TypeDef::em3Run</a>, <a class="el" href="em__wdog_8h_source.html#l00109">WDOG_Init_TypeDef::em4Block</a>, <a class="el" href="em__wdog_8h_source.html#l00097">WDOG_Init_TypeDef::enable</a>, <a class="el" href="em__wdog_8h_source.html#l00115">WDOG_Init_TypeDef::lock</a>, <a class="el" href="em__wdog_8h_source.html#l00121">WDOG_Init_TypeDef::perSel</a>, <a class="el" href="em__wdog_8h_source.html#l00112">WDOG_Init_TypeDef::swoscBlock</a>, <a class="el" href="efm32pg1b__wdog_8h_source.html#l00070">WDOG_CTRL_DEBUGRUN</a>, <a class="el" href="efm32pg1b__wdog_8h_source.html#l00075">WDOG_CTRL_EM2RUN</a>, <a class="el" href="efm32pg1b__wdog_8h_source.html#l00080">WDOG_CTRL_EM3RUN</a>, <a class="el" href="efm32pg1b__wdog_8h_source.html#l00090">WDOG_CTRL_EM4BLOCK</a>, <a class="el" href="efm32pg1b__wdog_8h_source.html#l00065">WDOG_CTRL_EN</a>, <a class="el" href="efm32pg1b__wdog_8h_source.html#l00095">WDOG_CTRL_SWOSCBLOCK</a>, <a class="el" href="em__wdog_8c_source.html#l00218">WDOG_Lock()</a>, and <a class="el" href="efm32pg1b__wdog_8h_source.html#l00157">WDOG_SYNCBUSY_CTRL</a>.</p>
+<p>References <a class="el" href="group__WDOG.html#gaa8a21262e0b67fbe432eed3edfc246fd">DEFAULT_WDOG</a>, and <a class="el" href="group__WDOG.html#ga3de9748141ca1e172ec40a77b8e86433">WDOGn_Init()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga26823031e069f4133964156550b64097"></a>
+<a class="anchor" id="ga2fee9f36132888d17e299e5b6b4edbb5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void WDOG_Lock </td>
+          <td class="memname">__STATIC_INLINE void WDOG_Lock </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -397,15 +514,378 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Lock the watchdog configuration. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated:</a></b></dt><dd>Deprecated function. New code should use <a class="el" href="group__WDOG.html#ga638259d740de220fb9b34a5b9654e182">WDOGn_Lock()</a>. This function uses <a class="el" href="group__WDOG.html#gaa8a21262e0b67fbe432eed3edfc246fd">DEFAULT_WDOG</a>. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00397">397</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
+
+<p>References <a class="el" href="group__WDOG.html#gaa8a21262e0b67fbe432eed3edfc246fd">DEFAULT_WDOG</a>, and <a class="el" href="group__WDOG.html#ga638259d740de220fb9b34a5b9654e182">WDOGn_Lock()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaccf944498d4c40e6d87afa84e06d297b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WDOGn_Enable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>wdog</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable/disable the watchdog timer. </p>
+<dl class="section note"><dt>Note</dt><dd>This function modifies the WDOG CTRL register which requires synchronization into the low frequency domain. If this register is modified before a previous update to the same register has completed, this function will stall until the previous synchronization has completed.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wdog</td><td>Pointer to WDOG peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>true to enable watchdog, false to disable. Watchdog cannot be disabled if watchdog has been locked. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__wdog_8c_source.html#l00075">75</a> of file <a class="el" href="em__wdog_8c_source.html">em_wdog.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga80a2a02856453261dacd8e5bd7929a40">_WDOG_CTRL_EN_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="structWDOG__TypeDef.html#a7b80f565743bdfec115c795e210b7329">WDOG_TypeDef::CTRL</a>, <a class="el" href="structWDOG__TypeDef.html#a4246f52a0a9f8f794abc5e9f9ca3cd4a">WDOG_TypeDef::SYNCBUSY</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga986ed8cc4fb55167a4d77e721493db0e">WDOG_CTRL_LOCK</a>, and <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga01d33cd360657e5a5b67a694526585e8">WDOG_SYNCBUSY_CTRL</a>.</p>
+
+<p>Referenced by <a class="el" href="group__WDOG.html#ga88ccf7374d7c9c93c4b5627f84dab552">WDOG_Enable()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga21dd2a92e33eaf3edd48d626cb4ff72b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WDOGn_Feed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>wdog</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Feed the watchdog. </p>
+<p>When the watchdog is activated, it must be fed (ie clearing the counter) before it reaches the defined timeout period. Otherwise, the watchdog will generate a reset.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wdog</td><td>Pointer to WDOG peripheral register block. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__wdog_8c_source.html#l00106">106</a> of file <a class="el" href="em__wdog_8c_source.html">em_wdog.c</a>.</p>
+
+<p>References <a class="el" href="structWDOG__TypeDef.html#a69a0eab04da9e527682424440619c571">WDOG_TypeDef::CMD</a>, <a class="el" href="structWDOG__TypeDef.html#a7b80f565743bdfec115c795e210b7329">WDOG_TypeDef::CTRL</a>, <a class="el" href="structWDOG__TypeDef.html#a4246f52a0a9f8f794abc5e9f9ca3cd4a">WDOG_TypeDef::SYNCBUSY</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga0d7f223efa2d435b1034770f98f62af4">WDOG_CMD_CLEAR</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#gab8fedf070937edbf4bb110ed1e151638">WDOG_CTRL_EN</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga2957281413a223bd2b61b212718717df">WDOG_SYNCBUSY_CMD</a>, and <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga01d33cd360657e5a5b67a694526585e8">WDOG_SYNCBUSY_CTRL</a>.</p>
+
+<p>Referenced by <a class="el" href="group__WDOG.html#ga92bafbf5cb3834524aae57ffe579d9e6">WDOG_Feed()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3de9748141ca1e172ec40a77b8e86433"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WDOGn_Init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>wdog</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structWDOG__Init__TypeDef.html">WDOG_Init_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>init</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize watchdog (assuming the watchdog configuration has not been locked). </p>
+<dl class="section note"><dt>Note</dt><dd>This function modifies the WDOG CTRL register which requires synchronization into the low frequency domain. If this register is modified before a previous update to the same register has completed, this function will stall until the previous synchronization has completed.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wdog</td><td>Pointer to WDOG peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>Structure holding watchdog configuration. A default setting <a class="el" href="group__WDOG.html#ga8169ae345fecb9d7abddeb495db92693">WDOG_INIT_DEFAULT</a> is available for init. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__wdog_8c_source.html#l00149">149</a> of file <a class="el" href="em__wdog_8c_source.html">em_wdog.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga366ccb2e49a54616eadcba2201dd086e">_WDOG_CTRL_CLKSEL_SHIFT</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga4e9a4d15dbc854d4a4681e492cf628ee">_WDOG_CTRL_PERSEL_SHIFT</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga4d1da229957e3e0c0812b19c38367651">_WDOG_CTRL_WARNSEL_MASK</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga4bcd05f43b1324cde83fc78a47ef8a01">_WDOG_CTRL_WARNSEL_SHIFT</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga9d2c7260a922af18e8fc7442c6c1bcf9">_WDOG_CTRL_WINSEL_MASK</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#gaa99fd2215bdb373c215d1cb236a6d2ce">_WDOG_CTRL_WINSEL_SHIFT</a>, <a class="el" href="structWDOG__Init__TypeDef.html#a16dbd1225f5fd50a98604f024134c640">WDOG_Init_TypeDef::clkSel</a>, <a class="el" href="structWDOG__TypeDef.html#a7b80f565743bdfec115c795e210b7329">WDOG_TypeDef::CTRL</a>, <a class="el" href="structWDOG__Init__TypeDef.html#adab4a9ecef6e9201f157a327b5966f58">WDOG_Init_TypeDef::debugRun</a>, <a class="el" href="structWDOG__Init__TypeDef.html#a55c6116baa8f623a13b7ee7b4a14a2cd">WDOG_Init_TypeDef::em2Run</a>, <a class="el" href="structWDOG__Init__TypeDef.html#a8268cf3e7d6fde7dad369f1741684066">WDOG_Init_TypeDef::em3Run</a>, <a class="el" href="structWDOG__Init__TypeDef.html#ae079f5c535a7f1d67575540a8db116b8">WDOG_Init_TypeDef::em4Block</a>, <a class="el" href="structWDOG__Init__TypeDef.html#a0adb705a2990beeec0e7364db15a93a9">WDOG_Init_TypeDef::enable</a>, <a class="el" href="structWDOG__Init__TypeDef.html#a15ac1297036d0a0e49cb6ebc5d355fb2">WDOG_Init_TypeDef::lock</a>, <a class="el" href="structWDOG__Init__TypeDef.html#af068d276089f68713b896e1a0575ef7b">WDOG_Init_TypeDef::perSel</a>, <a class="el" href="structWDOG__Init__TypeDef.html#aecfd6a4964769d3ff7038a339de16f92">WDOG_Init_TypeDef::resetDisable</a>, <a class="el" href="structWDOG__Init__TypeDef.html#a3d0739fdc3cc61a95c26316a7ab3723e">WDOG_Init_TypeDef::swoscBlock</a>, <a class="el" href="structWDOG__TypeDef.html#a4246f52a0a9f8f794abc5e9f9ca3cd4a">WDOG_TypeDef::SYNCBUSY</a>, <a class="el" href="structWDOG__Init__TypeDef.html#ad8588643b00d999620ac2870f53b73d2">WDOG_Init_TypeDef::warnSel</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga5c439f1ed75e661d6c85a88c619f4b44">WDOG_CTRL_DEBUGRUN</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga635021f193f1421d05008039d6d94580">WDOG_CTRL_EM2RUN</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga90fbd6006d4c13b38656cc54646f8a18">WDOG_CTRL_EM3RUN</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga8dedd5b2994286df61c337fb3376ae24">WDOG_CTRL_EM4BLOCK</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#gab8fedf070937edbf4bb110ed1e151638">WDOG_CTRL_EN</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga986ed8cc4fb55167a4d77e721493db0e">WDOG_CTRL_LOCK</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga40b764cad42f324595211b0856013cab">WDOG_CTRL_SWOSCBLOCK</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga89d98602b97be3ebe587d0741fbbf6d4">WDOG_CTRL_WDOGRSTDIS</a>, <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga01d33cd360657e5a5b67a694526585e8">WDOG_SYNCBUSY_CTRL</a>, and <a class="el" href="structWDOG__Init__TypeDef.html#a7a9dc68f7f3a310df7e2a4df19661d3a">WDOG_Init_TypeDef::winSel</a>.</p>
+
+<p>Referenced by <a class="el" href="group__WDOG.html#ga84515db25226cd9e5a7fd9b4dec7bef2">WDOG_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga17e03c083de18cfcef912cb06bfe1962"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void WDOGn_IntClear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>wdog</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear one or more pending WDOG interrupts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wdog</td><td>Pointer to WDOG peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>WDOG interrupt sources to clear. Use a set of interrupt flags OR-ed together to clear multiple interrupt sources. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00226">226</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
+
+<p>References <a class="el" href="structWDOG__TypeDef.html#a93235c66372c2a0cdc6e691f70159dd4">WDOG_TypeDef::IFC</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga930ac1c0767bbe4d86bc00832129ae81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void WDOGn_IntDisable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>wdog</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable one or more WDOG interrupts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wdog</td><td>Pointer to WDOG peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>WDOG interrupt sources to disable. Use a set of interrupt flags OR-ed together to disable multiple interrupt. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00242">242</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
+
+<p>References <a class="el" href="structWDOG__TypeDef.html#a27c616077a7dfc44cf0087be1c4a6368">WDOG_TypeDef::IEN</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa0768e472ea7cbeb28149dfaf7fb9759"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void WDOGn_IntEnable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>wdog</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable one or more WDOG interrupts. </p>
+<dl class="section note"><dt>Note</dt><dd>Depending on the use, a pending interrupt may already be set prior to enabling the interrupt. Consider using WDOG_IntClear() prior to enabling if such a pending interrupt should be ignored.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wdog</td><td>Pointer to WDOG peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>WDOG interrupt sources to enable. Use a set of interrupt flags OR-ed together to set multiple interrupt. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00263">263</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
+
+<p>References <a class="el" href="structWDOG__TypeDef.html#a27c616077a7dfc44cf0087be1c4a6368">WDOG_TypeDef::IEN</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga51ba8d8f39ace24ca7fe11844d27489d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint32_t WDOGn_IntGet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>wdog</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get pending WDOG interrupt flags. </p>
+<dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wdog</td><td>Pointer to WDOG peripheral register block.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pending WDOG interrupt sources. Returns a set of interrupt flags OR-ed together for the interrupt sources set. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00282">282</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
+
+<p>References <a class="el" href="structWDOG__TypeDef.html#ae3743cbb5a269d637b68e61ef3e6be73">WDOG_TypeDef::IF</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga16af4f540f8271f162e7d2d9a23df02b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint32_t WDOGn_IntGetEnabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>wdog</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get enabled and pending WDOG interrupt flags. </p>
+<p>Useful for handling more interrupt sources in the same interrupt handler.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wdog</td><td>Pointer to WDOG peripheral register block.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pending and enabled WDOG interrupt sources. Returns a set of interrupt flags OR-ed together for the interrupt sources set. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00301">301</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
+
+<p>References <a class="el" href="structWDOG__TypeDef.html#a27c616077a7dfc44cf0087be1c4a6368">WDOG_TypeDef::IEN</a>, and <a class="el" href="structWDOG__TypeDef.html#ae3743cbb5a269d637b68e61ef3e6be73">WDOG_TypeDef::IF</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8025d828bbef8cbeb80497b245e0f47a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE void WDOGn_IntSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>wdog</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set one or more pending WDOG interrupts from SW. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wdog</td><td>Pointer to WDOG peripheral register block.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>WDOG interrupt sources to set to pending. Use a set of interrupt flags (WDOG_IFS_nnn). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__wdog_8h_source.html#l00322">322</a> of file <a class="el" href="em__wdog_8h_source.html">em_wdog.h</a>.</p>
+
+<p>References <a class="el" href="structWDOG__TypeDef.html#a3765288aafecee0739ebbed3e07385a9">WDOG_TypeDef::IFS</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga638259d740de220fb9b34a5b9654e182"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WDOGn_Lock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structWDOG__TypeDef.html">WDOG_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>wdog</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lock the watchdog configuration. </p>
 <p>This prevents errors from overwriting the watchdog configuration, possibly disabling it. Only a reset can unlock the watchdog config, once locked.</p>
-<p>If the LFRCO or LFXO clocks are used to clock the watchdog, one should consider using the option of inhibiting those clocks to be disabled, please see the <a class="el" href="group__WDOG.html#ga662ed794f642aac8293b7cae09c4b223" title="Enable/disable the watchdog timer. ">WDOG_Enable()</a> init structure.</p>
-<dl class="section note"><dt>Note</dt><dd>This function modifies the WDOG CTRL register which requires synchronization into the low frequency domain. If this register is modified before a previous update to the same register has completed, this function will stall until the previous synchronization has completed. </dd></dl>
+<p>If the LFRCO or LFXO clocks are used to clock the watchdog, one should consider using the option of inhibiting those clocks to be disabled, please see the <a class="el" href="group__WDOG.html#ga88ccf7374d7c9c93c4b5627f84dab552" title="Enable/disable the watchdog timer. ">WDOG_Enable()</a> init structure.</p>
+<dl class="section note"><dt>Note</dt><dd>This function modifies the WDOG CTRL register which requires synchronization into the low frequency domain. If this register is modified before a previous update to the same register has completed, this function will stall until the previous synchronization has completed.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wdog</td><td>Pointer to WDOG peripheral register block. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="em__wdog_8c_source.html#l00218">218</a> of file <a class="el" href="em__wdog_8c_source.html">em_wdog.c</a>.</p>
+<p>Definition at line <a class="el" href="em__wdog_8c_source.html#l00234">234</a> of file <a class="el" href="em__wdog_8c_source.html">em_wdog.c</a>.</p>
 
-<p>References <a class="el" href="efm32pg1b__wdog_8h_source.html#l00086">_WDOG_CTRL_LOCK_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, and <a class="el" href="efm32pg1b__wdog_8h_source.html#l00157">WDOG_SYNCBUSY_CTRL</a>.</p>
+<p>References <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#gaad4e71d1b36e98e37cf58aa172c88869">_WDOG_CTRL_LOCK_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="structWDOG__TypeDef.html#a7b80f565743bdfec115c795e210b7329">WDOG_TypeDef::CTRL</a>, <a class="el" href="structWDOG__TypeDef.html#a4246f52a0a9f8f794abc5e9f9ca3cd4a">WDOG_TypeDef::SYNCBUSY</a>, and <a class="el" href="group__EFM32PG1B__WDOG__BitFields.html#ga01d33cd360657e5a5b67a694526585e8">WDOG_SYNCBUSY_CTRL</a>.</p>
 
-<p>Referenced by <a class="el" href="em__wdog_8c_source.html#l00137">WDOG_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__WDOG.html#ga2fee9f36132888d17e299e5b6b4edbb5">WDOG_Lock()</a>.</p>
 
 </div>
 </div>
@@ -414,7 +894,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:03 for EFM32 Pearl Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:38:44 for EFM32 Pearl Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

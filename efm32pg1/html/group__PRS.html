@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Pearl Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32pg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32pg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -106,12 +104,12 @@ $(document).ready(function(){initNavTree('group__PRS.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">PRS<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">PRS<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Peripheral Reflex System (PRS) Peripheral API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Peripheral Reflex System (PRS) Peripheral API. </p>
+<p>This module contains functions to control the PRS peripheral of Silicon Labs 32-bit MCUs and SoCs. The PRS allows configurable, fast and autonomous communication between peripherals on the MCU or SoC. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -135,14 +133,13 @@ Functions</h2></td></tr>
 <tr class="memitem:gabf5756623b5b766e287ca27441bd0f1d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRS.html#gabf5756623b5b766e287ca27441bd0f1d">PRS_PulseTrigger</a> (uint32_t channels)</td></tr>
 <tr class="memdesc:gabf5756623b5b766e287ca27441bd0f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a high pulse (one HFPERCLK) for one or more channels.  <a href="#gabf5756623b5b766e287ca27441bd0f1d">More...</a><br /></td></tr>
 <tr class="separator:gabf5756623b5b766e287ca27441bd0f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8273dde832f46d40696b4c5025e411c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRS.html#gab8273dde832f46d40696b4c5025e411c">PRS_SourceSignalSet</a> (unsigned int ch, uint32_t source, uint32_t signal, <a class="el" href="group__PRS.html#ga853e2a53ed99eb3a0c5e163e1d33e814">PRS_Edge_TypeDef</a> edge)</td></tr>
-<tr class="memdesc:gab8273dde832f46d40696b4c5025e411c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set source and signal to be used for a channel.  <a href="#gab8273dde832f46d40696b4c5025e411c">More...</a><br /></td></tr>
-<tr class="separator:gab8273dde832f46d40696b4c5025e411c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf05c066e83d651bfbdcb170af48c6843"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRS.html#gaf05c066e83d651bfbdcb170af48c6843">PRS_SourceAsyncSignalSet</a> (unsigned int ch, uint32_t source, uint32_t signal)</td></tr>
 <tr class="memdesc:gaf05c066e83d651bfbdcb170af48c6843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set source and asynchronous signal to be used for a channel.  <a href="#gaf05c066e83d651bfbdcb170af48c6843">More...</a><br /></td></tr>
 <tr class="separator:gaf05c066e83d651bfbdcb170af48c6843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8273dde832f46d40696b4c5025e411c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRS.html#gab8273dde832f46d40696b4c5025e411c">PRS_SourceSignalSet</a> (unsigned int ch, uint32_t source, uint32_t signal, <a class="el" href="group__PRS.html#ga853e2a53ed99eb3a0c5e163e1d33e814">PRS_Edge_TypeDef</a> edge)</td></tr>
+<tr class="memdesc:gab8273dde832f46d40696b4c5025e411c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set source and signal to be used for a channel.  <a href="#gab8273dde832f46d40696b4c5025e411c">More...</a><br /></td></tr>
+<tr class="separator:gab8273dde832f46d40696b4c5025e411c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="ga853e2a53ed99eb3a0c5e163e1d33e814"></a>
 <div class="memitem">
@@ -197,6 +194,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set level control bit for one or more channels. </p>
 <p>The level value for a channel is XORed with both the pulse possible issued by <a class="el" href="group__PRS.html#gabf5756623b5b766e287ca27441bd0f1d" title="Trigger a high pulse (one HFPERCLK) for one or more channels. ">PRS_PulseTrigger()</a> and the PRS input signal selected for the channel(s).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -208,7 +207,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__prs_8h_source.html#l00086">86</a> of file <a class="el" href="em__prs_8h_source.html">em_prs.h</a>.</p>
 
-<p>References <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00325">PRS</a>.</p>
+<p>References <a class="el" href="group__EFM32PG1B200F256GM48__Peripheral__Declaration.html#ga8397acedb06c1832f583d8660807e826">PRS</a>.</p>
 
 </div>
 </div>
@@ -225,6 +224,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Trigger a high pulse (one HFPERCLK) for one or more channels. </p>
 <p>Setting a bit for a channel causes the bit in the register to remain high for one HFPERCLK cycle. The pulse is XORed with both the corresponding bit in PRS SWLEVEL register and the PRS input signal selected for the channel(s).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -235,7 +236,57 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__prs_8h_source.html#l00106">106</a> of file <a class="el" href="em__prs_8h_source.html">em_prs.h</a>.</p>
 
-<p>References <a class="el" href="efm32pg1b__prs_8h_source.html#l00069">_PRS_SWPULSE_MASK</a>, and <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00325">PRS</a>.</p>
+<p>References <a class="el" href="group__EFM32PG1B__PRS__BitFields.html#gaaa2b7d9ce7b1d07e4c577ed71ccb6159">_PRS_SWPULSE_MASK</a>, and <a class="el" href="group__EFM32PG1B200F256GM48__Peripheral__Declaration.html#ga8397acedb06c1832f583d8660807e826">PRS</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf05c066e83d651bfbdcb170af48c6843"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PRS_SourceAsyncSignalSet </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>signal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set source and asynchronous signal to be used for a channel. </p>
+<p>Asynchronous reflexes are not clocked on HFPERCLK, and can be used even in EM2/EM3. There is a limitation to reflexes operating in asynchronous mode: they can only be used by a subset of the reflex consumers. Please refer to PRS chapter in the reference manual for the complete list of supported asynchronous signals and consumers.</p>
+<dl class="section note"><dt>Note</dt><dd>This function is not supported on EFM32GxxxFyyy parts. In asynchronous mode, the edge detector only works in EM0, hence it shall not be used. The EDSEL parameter in PRS_CHx_CTRL register is set to 0 (OFF) by default.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>Channel to define source and asynchronous signal for.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>Source to select for channel. Use one of PRS_CH_CTRL_SOURCESEL_x defines.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">signal</td><td>Asynchronous signal (for selected <code>source</code>) to use. Use one of the PRS_CH_CTRL_SIGSEL_x defines that support asynchronous operation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="em__prs_8c_source.html#l00115">115</a> of file <a class="el" href="em__prs_8c_source.html">em_prs.c</a>.</p>
+
+<p>References <a class="el" href="group__EFM32PG1B__PRS__BitFields.html#ga2d36c8c56174e5db5abcbc04c1141597">_PRS_CH_CTRL_SIGSEL_MASK</a>, <a class="el" href="group__EFM32PG1B__PRS__BitFields.html#ga3a7487965459eeccdd641d169bb1262a">_PRS_CH_CTRL_SOURCESEL_MASK</a>, <a class="el" href="group__EFM32PG1B200F256GM48__Peripheral__Declaration.html#ga8397acedb06c1832f583d8660807e826">PRS</a>, <a class="el" href="group__EFM32PG1B__PRS__BitFields.html#ga776bf2cd206588212b9e638163017e47">PRS_CH_CTRL_ASYNC</a>, <a class="el" href="group__EFM32PG1B__PRS__BitFields.html#gad2e8f3971f911576d36121fc2fa50fcb">PRS_CH_CTRL_EDSEL_OFF</a>, and <a class="el" href="group__EFM32PG1B200F256GM48__Part.html#ga2c3bc92832d253b94bfa2840bf7fcfd3">PRS_CHAN_COUNT</a>.</p>
+
+<p>Referenced by <a class="el" href="group__HAL__Layer.html#gabf61af8f57a9c92ea50311df53a7d825">ezradio_hal_GpioInit()</a>.</p>
 
 </div>
 </div>
@@ -274,6 +325,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set source and signal to be used for a channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>Channel to define signal and source for.</td></tr>
@@ -284,57 +337,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__prs_8c_source.html#l00070">70</a> of file <a class="el" href="em__prs_8c_source.html">em_prs.c</a>.</p>
+<p>Definition at line <a class="el" href="em__prs_8c_source.html#l00074">74</a> of file <a class="el" href="em__prs_8c_source.html">em_prs.c</a>.</p>
 
-<p>References <a class="el" href="efm32pg1b__prs_8h_source.html#l00744">_PRS_CH_CTRL_SIGSEL_MASK</a>, <a class="el" href="efm32pg1b__prs_8h_source.html#l00876">_PRS_CH_CTRL_SOURCESEL_MASK</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00325">PRS</a>, and <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00173">PRS_CHAN_COUNT</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaf05c066e83d651bfbdcb170af48c6843"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PRS_SourceAsyncSignalSet </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>ch</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>source</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>signal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Asynchronous reflexes are not clocked on HFPERCLK, and can be used even in EM2/EM3. There is a limitation to reflexes operating in asynchronous mode: they can only be used by a subset of the reflex consumers. Please refer to PRS chapter in the reference manual for the complete list of supported asynchronous signals and consumers.</p>
-<dl class="section note"><dt>Note</dt><dd>This function is not supported on EFM32GxxxFyyy parts. In asynchronous mode, the edge detector only works in EM0, hence it shall not be used. The EDSEL parameter in PRS_CHx_CTRL register is set to 0 (OFF) by default.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>Channel to define source and asynchronous signal for.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>Source to select for channel. Use one of PRS_CH_CTRL_SOURCESEL_x defines.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">signal</td><td>Asynchronous signal (for selected <code>source</code>) to use. Use one of the PRS_CH_CTRL_SIGSEL_x defines that support asynchronous operation. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="em__prs_8c_source.html#l00111">111</a> of file <a class="el" href="em__prs_8c_source.html">em_prs.c</a>.</p>
-
-<p>References <a class="el" href="efm32pg1b__prs_8h_source.html#l00744">_PRS_CH_CTRL_SIGSEL_MASK</a>, <a class="el" href="efm32pg1b__prs_8h_source.html#l00876">_PRS_CH_CTRL_SOURCESEL_MASK</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00325">PRS</a>, <a class="el" href="efm32pg1b__prs_8h_source.html#l00943">PRS_CH_CTRL_ASYNC</a>, <a class="el" href="efm32pg1b__prs_8h_source.html#l00919">PRS_CH_CTRL_EDSEL_OFF</a>, and <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00173">PRS_CHAN_COUNT</a>.</p>
-
-<p>Referenced by <a class="el" href="ezradio__hal_8c_source.html#l00063">ezradio_hal_GpioInit()</a>.</p>
+<p>References <a class="el" href="group__EFM32PG1B__PRS__BitFields.html#ga2d36c8c56174e5db5abcbc04c1141597">_PRS_CH_CTRL_SIGSEL_MASK</a>, <a class="el" href="group__EFM32PG1B__PRS__BitFields.html#ga3a7487965459eeccdd641d169bb1262a">_PRS_CH_CTRL_SOURCESEL_MASK</a>, <a class="el" href="group__EFM32PG1B200F256GM48__Peripheral__Declaration.html#ga8397acedb06c1832f583d8660807e826">PRS</a>, and <a class="el" href="group__EFM32PG1B200F256GM48__Part.html#ga2c3bc92832d253b94bfa2840bf7fcfd3">PRS_CHAN_COUNT</a>.</p>
 
 </div>
 </div>
@@ -343,7 +348,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:03 for EFM32 Pearl Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:38:43 for EFM32 Pearl Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

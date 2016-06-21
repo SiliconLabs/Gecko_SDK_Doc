@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Pearl Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32pg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32pg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,8 +110,8 @@ $(document).ready(function(){initNavTree('em__cryotimer_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="em__cryotimer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef EM_CRYOTIMER_H__</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define EM_CRYOTIMER_H__</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef EM_CRYOTIMER_H</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define EM_CRYOTIMER_H</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__device_8h.html">em_device.h</a>&quot;</span></div>
@@ -144,7 +141,7 @@ $(document).ready(function(){initNavTree('em__cryotimer_8h_source.html','');});
 <div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426aac07ec15cc954ed359ace255be5d3aa9">   93</a></span>&#160;  <a class="code" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426aac07ec15cc954ed359ace255be5d3aa9">cryotimerPresc_128</a>   = <a class="code" href="group__EFM32PG1B__CRYOTIMER__BitFields.html#gaa56e99a4d3e095ecc503597d53b8f6e2">_CRYOTIMER_CTRL_PRESC_DIV128</a>,    </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;} <a class="code" href="group__CRYOTIMER.html#ga4f17c6369fd634d476c354a45a1fa426">CRYOTIMER_Presc_TypeDef</a>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group__CRYOTIMER.html#gae75ded142f45aa60088d6fa1e4109238">   97</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group__CRYOTIMER.html#gae75ded142f45aa60088d6fa1e4109238">   97</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
 <div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group__CRYOTIMER.html#ggae75ded142f45aa60088d6fa1e4109238acc2acf2b665c6cd9e7566a1579361578">   99</a></span>&#160;  <a class="code" href="group__CRYOTIMER.html#ggae75ded142f45aa60088d6fa1e4109238acc2acf2b665c6cd9e7566a1579361578">cryotimerOscLFRCO</a>   = <a class="code" href="group__EFM32PG1B__CRYOTIMER__BitFields.html#ga373fa5447640cb3fabbf7663a150b380">_CRYOTIMER_CTRL_OSCSEL_LFRCO</a>,  </div>
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="group__CRYOTIMER.html#ggae75ded142f45aa60088d6fa1e4109238a339e75faadf0d3317f1fc020999beb24">  100</a></span>&#160;  <a class="code" href="group__CRYOTIMER.html#ggae75ded142f45aa60088d6fa1e4109238a339e75faadf0d3317f1fc020999beb24">cryotimerOscLFXO</a>    = <a class="code" href="group__EFM32PG1B__CRYOTIMER__BitFields.html#ga7aa41eed063ea4ca009382d7fd2bb86f">_CRYOTIMER_CTRL_OSCSEL_LFXO</a>,   </div>
@@ -301,7 +298,7 @@ $(document).ready(function(){initNavTree('em__cryotimer_8h_source.html','');});
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(CRYOTIMER_PRESENT) &amp;&amp; (CRYOTIMER_COUNT == 1) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_CRYOTIMER_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_CRYOTIMER_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="group__CRYOTIMER_html_gga5ce9dab679451bb96883b7f9846d21aba5285ee8229d011d140235dccd2adc7d3"><div class="ttname"><a href="group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21aba5285ee8229d011d140235dccd2adc7d3">cryotimerPeriod_4m</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00129">em_cryotimer.h:129</a></div></div>
 <div class="ttc" id="group__CRYOTIMER_html_gga5ce9dab679451bb96883b7f9846d21aba6ed6239162da6642174875e64eb8b96b"><div class="ttname"><a href="group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21aba6ed6239162da6642174875e64eb8b96b">cryotimerPeriod_2k</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00118">em_cryotimer.h:118</a></div></div>
 <div class="ttc" id="group__CRYOTIMER_html_gga5ce9dab679451bb96883b7f9846d21aba35a1f0665ccfebc211c3613c1ad9010d"><div class="ttname"><a href="group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21aba35a1f0665ccfebc211c3613c1ad9010d">cryotimerPeriod_2m</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00128">em_cryotimer.h:128</a></div></div>
@@ -377,8 +374,8 @@ $(document).ready(function(){initNavTree('em__cryotimer_8h_source.html','');});
 <div class="ttc" id="group__CRYOTIMER_html_gga4f17c6369fd634d476c354a45a1fa426a7293610a21a80f84d5f36033d09e5bdf"><div class="ttname"><a href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426a7293610a21a80f84d5f36033d09e5bdf">cryotimerPresc_8</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00089">em_cryotimer.h:89</a></div></div>
 <div class="ttc" id="group__CRYOTIMER_html_gga5ce9dab679451bb96883b7f9846d21aba8e7facce203cf63f429db115e2c915db"><div class="ttname"><a href="group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21aba8e7facce203cf63f429db115e2c915db">cryotimerPeriod_64k</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00123">em_cryotimer.h:123</a></div></div>
 <div class="ttc" id="group__CRYOTIMER_html_gga5ce9dab679451bb96883b7f9846d21aba67af677483787610c4e608ac86e1d752"><div class="ttname"><a href="group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21aba67af677483787610c4e608ac86e1d752">cryotimerPeriod_512m</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00136">em_cryotimer.h:136</a></div></div>
-<div class="ttc" id="group__BUS_html_gaf8574f14855448ecae32c5a9dd0c7164"><div class="ttname"><a href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite</a></div><div class="ttdeci">__STATIC_INLINE void BUS_RegBitWrite(volatile uint32_t *addr, unsigned int bit, unsigned int val)</div><div class="ttdoc">Perform a single-bit write operation on a peripheral register. </div><div class="ttdef"><b>Definition:</b> <a href="em__bus_8h_source.html#l00146">em_bus.h:146</a></div></div>
-<div class="ttc" id="group__EFM32PG1B200F256GM48__Peripheral__Declaration_html_gae58438cda38393910068e844f8f30dca"><div class="ttname"><a href="group__EFM32PG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a></div><div class="ttdeci">#define CRYOTIMER</div><div class="ttdef"><b>Definition:</b> <a href="efm32pg1b200f256gm48_8h_source.html#l00335">efm32pg1b200f256gm48.h:335</a></div></div>
+<div class="ttc" id="group__BUS_html_gaf8574f14855448ecae32c5a9dd0c7164"><div class="ttname"><a href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite</a></div><div class="ttdeci">__STATIC_INLINE void BUS_RegBitWrite(volatile uint32_t *addr, unsigned int bit, unsigned int val)</div><div class="ttdoc">Perform a single-bit write operation on a peripheral register. </div><div class="ttdef"><b>Definition:</b> <a href="em__bus_8h_source.html#l00148">em_bus.h:148</a></div></div>
+<div class="ttc" id="group__EFM32PG1B200F256GM48__Peripheral__Declaration_html_gae58438cda38393910068e844f8f30dca"><div class="ttname"><a href="group__EFM32PG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a></div><div class="ttdeci">#define CRYOTIMER</div><div class="ttdef"><b>Definition:</b> <a href="efm32pg1b200f256gm48_8h_source.html#l00336">efm32pg1b200f256gm48.h:336</a></div></div>
 <div class="ttc" id="group__CRYOTIMER_html_gaec3e00350e0081cb48df965d71ec1e1d"><div class="ttname"><a href="group__CRYOTIMER.html#gaec3e00350e0081cb48df965d71ec1e1d">CRYOTIMER_PeriodSet</a></div><div class="ttdeci">__STATIC_INLINE void CRYOTIMER_PeriodSet(uint32_t period)</div><div class="ttdoc">Set the CRYOTIMER period select. </div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00288">em_cryotimer.h:288</a></div></div>
 <div class="ttc" id="group__EFM32PG1B__CRYOTIMER__BitFields_html_ga4b3d2c92b7dbbcddc809f6c30269cc3e"><div class="ttname"><a href="group__EFM32PG1B__CRYOTIMER__BitFields.html#ga4b3d2c92b7dbbcddc809f6c30269cc3e">_CRYOTIMER_IFS_MASK</a></div><div class="ttdeci">#define _CRYOTIMER_IFS_MASK</div><div class="ttdef"><b>Definition:</b> <a href="efm32pg1b__cryotimer_8h_source.html#l00138">efm32pg1b_cryotimer.h:138</a></div></div>
 <div class="ttc" id="group__CRYOTIMER_html_gga5ce9dab679451bb96883b7f9846d21abaf5dccb0569e754d0caec66d889dd91ad"><div class="ttname"><a href="group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21abaf5dccb0569e754d0caec66d889dd91ad">cryotimerPeriod_1m</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00127">em_cryotimer.h:127</a></div></div>
@@ -395,7 +392,7 @@ $(document).ready(function(){initNavTree('em__cryotimer_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__cryotimer_8h.html">em_cryotimer.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:39:52 for EFM32 Pearl Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:37:53 for EFM32 Pearl Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

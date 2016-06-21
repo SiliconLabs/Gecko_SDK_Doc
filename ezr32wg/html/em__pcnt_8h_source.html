@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -112,8 +110,8 @@ $(document).ready(function(){initNavTree('em__pcnt_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="em__pcnt_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef __SILICON_LABS_EM_PCNT_H__</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define __SILICON_LABS_EM_PCNT_H__</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef EM_PCNT_H</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define EM_PCNT_H</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__device_8h.html">em_device.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined(PCNT_COUNT) &amp;&amp; (PCNT_COUNT &gt; 0)</span></div>
@@ -159,13 +157,13 @@ $(document).ready(function(){initNavTree('em__pcnt_8h_source.html','');});
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group__PCNT.html#gga2fb0fc7f68c902b71b271ba5687643a4a036410c15ce30d5b1b0e419f96dc62fe">   90</a></span>&#160;  <a class="code" href="group__PCNT.html#gga2fb0fc7f68c902b71b271ba5687643a4a036410c15ce30d5b1b0e419f96dc62fe">pcntModeExtSingle</a> = <a class="code" href="group__EZR32WG__PCNT__BitFields.html#gade445ce844ecf598e2d1b09c2d77c3f9">_PCNT_CTRL_MODE_EXTCLKSINGLE</a>,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group__PCNT.html#gga2fb0fc7f68c902b71b271ba5687643a4a369c3b5ed067a8ac8e9acde0d977662f">   93</a></span>&#160;  <a class="code" href="group__PCNT.html#gga2fb0fc7f68c902b71b271ba5687643a4a369c3b5ed067a8ac8e9acde0d977662f">pcntModeExtQuad</a>   = <a class="code" href="group__EZR32WG__PCNT__BitFields.html#ga9ddba022f1288b55b67eb3776919a138">_PCNT_CTRL_MODE_EXTCLKQUAD</a>,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#if defined(_PCNT_CTRL_MODE_OVSQUAD1X)</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  pcntModeOvsQuad1  = _PCNT_CTRL_MODE_OVSQUAD1X,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  pcntModeOvsQuad2  = _PCNT_CTRL_MODE_OVSQUAD2X,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  pcntModeOvsQuad4  = _PCNT_CTRL_MODE_OVSQUAD4X,</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;} <a class="code" href="group__PCNT.html#ga2fb0fc7f68c902b71b271ba5687643a4">PCNT_Mode_TypeDef</a>;</div>
@@ -244,7 +242,7 @@ $(document).ready(function(){initNavTree('em__pcnt_8h_source.html','');});
 <div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="structPCNT__Init__TypeDef.html#afde2d462e1190d18030bf844d7b213e2">  199</a></span>&#160;  <span class="keywordtype">bool</span>                  <a class="code" href="structPCNT__Init__TypeDef.html#afde2d462e1190d18030bf844d7b213e2">negEdge</a>;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
 <div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="structPCNT__Init__TypeDef.html#a37e1864793e7dfc671b70e6dd945f7c0">  203</a></span>&#160;  <span class="keywordtype">bool</span>                  <a class="code" href="structPCNT__Init__TypeDef.html#a37e1864793e7dfc671b70e6dd945f7c0">countDown</a>;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
 <div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="structPCNT__Init__TypeDef.html#a28bbdd19f0ae5755381b04e63d41d1fb">  206</a></span>&#160;  <span class="keywordtype">bool</span>                  <a class="code" href="structPCNT__Init__TypeDef.html#a28bbdd19f0ae5755381b04e63d41d1fb">filter</a>;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#if defined(PCNT_CTRL_HYST)</span></div>
@@ -295,10 +293,10 @@ $(document).ready(function(){initNavTree('em__pcnt_8h_source.html','');});
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#if defined(PCNT_OVSCFG_FILTLEN_DEFAULT)</span></div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;{</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  uint8_t               filtLen;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordtype">bool</span>                  flutterrm;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;} PCNT_Filter_TypeDef;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -308,52 +306,52 @@ $(document).ready(function(){initNavTree('em__pcnt_8h_source.html','');});
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">{                                                                                               \</span></div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">  0,                                        </span><span class="comment">/* Default length is 5 LFACLK cycles */</span><span class="preprocessor">             \</span></div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor">  false                                     </span><span class="comment">/* No flutter removal */</span><span class="preprocessor">                            \</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor">}                                                                                             </span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor">}</span></div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor">#if defined(PCNT_CTRL_TCCMODE_DEFAULT)</span></div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;{</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  tccModeDisabled       = _PCNT_CTRL_TCCMODE_DISABLED,</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  tccModeLFA            = _PCNT_CTRL_TCCMODE_LFA,</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  tccModePRS            = _PCNT_CTRL_TCCMODE_PRS</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;} PCNT_TCCMode_TypeDef;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;{</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  tccPrescDiv1          = _PCNT_CTRL_TCCPRESC_DIV1,</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  tccPrescDiv2          = _PCNT_CTRL_TCCPRESC_DIV2,</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  tccPrescDiv4          = _PCNT_CTRL_TCCPRESC_DIV4,</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  tccPrescDiv8          = _PCNT_CTRL_TCCPRESC_DIV8</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;} PCNT_TCCPresc_Typedef;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;{</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  tccCompLTOE           = _PCNT_CTRL_TCCCOMP_LTOE,</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  tccCompGTOE           = _PCNT_CTRL_TCCCOMP_GTOE,</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  tccCompRange          = _PCNT_CTRL_TCCCOMP_RANGE</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;} PCNT_TCCComp_Typedef;</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;{</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  PCNT_TCCMode_TypeDef      mode;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  PCNT_TCCPresc_Typedef     prescaler;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  PCNT_TCCComp_Typedef      compare;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <a class="code" href="group__PCNT.html#ga1e54a6fa69a7da44510c6f38ced54486">PCNT_PRSSel_TypeDef</a>       tccPRS;</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  <span class="keywordtype">bool</span>                      prsPolarity;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  </div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  <span class="keywordtype">bool</span>                      prsGateEnable;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;} PCNT_TCC_TypeDef;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
@@ -367,7 +365,7 @@ $(document).ready(function(){initNavTree('em__pcnt_8h_source.html','');});
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor">  false                                         </span><span class="comment">/* Do not gate the PCNT counter input */</span><span class="preprocessor">            \</span></div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="preprocessor">}</span></div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment">/* defined(PCNT_CTRL_TCCMODE_DEFAULT) */</span></div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">/*******************************************************************************</span></div>
@@ -481,26 +479,26 @@ $(document).ready(function(){initNavTree('em__pcnt_8h_source.html','');});
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(PCNT_COUNT) &amp;&amp; (PCNT_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SILICON_LABS_EM_PCNT_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_PCNT_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="group__PCNT_html_ggaf5d5d7081a8e56ad0571addc1028ac5ca508f29ad6c8a01a1b745d27e3df4fb51"><div class="ttname"><a href="group__PCNT.html#ggaf5d5d7081a8e56ad0571addc1028ac5ca508f29ad6c8a01a1b745d27e3df4fb51">pcntCntEventBoth</a></div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00115">em_pcnt.h:115</a></div></div>
 <div class="ttc" id="group__PCNT_html_gga1e54a6fa69a7da44510c6f38ced54486a55e19f8bab3cf9a3ed66c56108b4ee5c"><div class="ttname"><a href="group__PCNT.html#gga1e54a6fa69a7da44510c6f38ced54486a55e19f8bab3cf9a3ed66c56108b4ee5c">pcntPRSCh2</a></div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00135">em_pcnt.h:135</a></div></div>
 <div class="ttc" id="group__EZR32WG__PCNT__BitFields_html_ga63fdff10bd6a34924104bf3e509e013f"><div class="ttname"><a href="group__EZR32WG__PCNT__BitFields.html#ga63fdff10bd6a34924104bf3e509e013f">_PCNT_CTRL_MODE_OVSSINGLE</a></div><div class="ttdeci">#define _PCNT_CTRL_MODE_OVSSINGLE</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__pcnt_8h_source.html#l00075">ezr32wg_pcnt.h:75</a></div></div>
 <div class="ttc" id="group__PCNT_html_gga2fb0fc7f68c902b71b271ba5687643a4ad7b6ebce85e46e117dfd46723abe2b3d"><div class="ttname"><a href="group__PCNT.html#gga2fb0fc7f68c902b71b271ba5687643a4ad7b6ebce85e46e117dfd46723abe2b3d">pcntModeDisable</a></div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00084">em_pcnt.h:84</a></div></div>
 <div class="ttc" id="group__PCNT_html_ga891fb6ed2bb9bf604783b363c87464de"><div class="ttname"><a href="group__PCNT.html#ga891fb6ed2bb9bf604783b363c87464de">PCNT_TopBufferGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t PCNT_TopBufferGet(PCNT_TypeDef *pcnt)</div><div class="ttdoc">Get pulse counter top buffer value. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00587">em_pcnt.h:587</a></div></div>
 <div class="ttc" id="group__PCNT_html_ga420446309a8fbbb76574d96ffc6db024"><div class="ttname"><a href="group__PCNT.html#ga420446309a8fbbb76574d96ffc6db024">PCNT_CounterSet</a></div><div class="ttdeci">__STATIC_INLINE void PCNT_CounterSet(PCNT_TypeDef *pcnt, uint32_t count)</div><div class="ttdoc">Set counter value. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00431">em_pcnt.h:431</a></div></div>
-<div class="ttc" id="group__PCNT_html_ga4f29435f61c53e4a6e86947fe1980be9"><div class="ttname"><a href="group__PCNT.html#ga4f29435f61c53e4a6e86947fe1980be9">PCNT_CounterTopSet</a></div><div class="ttdeci">void PCNT_CounterTopSet(PCNT_TypeDef *pcnt, uint32_t count, uint32_t top)</div><div class="ttdoc">Set counter and top values. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00177">em_pcnt.c:177</a></div></div>
+<div class="ttc" id="group__PCNT_html_ga4f29435f61c53e4a6e86947fe1980be9"><div class="ttname"><a href="group__PCNT.html#ga4f29435f61c53e4a6e86947fe1980be9">PCNT_CounterTopSet</a></div><div class="ttdeci">void PCNT_CounterTopSet(PCNT_TypeDef *pcnt, uint32_t count, uint32_t top)</div><div class="ttdoc">Set counter and top values. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00182">em_pcnt.c:182</a></div></div>
 <div class="ttc" id="group__PCNT_html_ggae186a75007f832e0de80ccae92528104a7fba9e27fcf61b1938cf81109a06bb5e"><div class="ttname"><a href="group__PCNT.html#ggae186a75007f832e0de80ccae92528104a7fba9e27fcf61b1938cf81109a06bb5e">pcntPRSInputS1</a></div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00168">em_pcnt.h:168</a></div></div>
-<div class="ttc" id="group__PCNT_html_gaa8820c09f38c0237a58300bdfa53cb0e"><div class="ttname"><a href="group__PCNT.html#gaa8820c09f38c0237a58300bdfa53cb0e">PCNT_Enable</a></div><div class="ttdeci">void PCNT_Enable(PCNT_TypeDef *pcnt, PCNT_Mode_TypeDef mode)</div><div class="ttdoc">Set PCNT operational mode. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00279">em_pcnt.c:279</a></div></div>
+<div class="ttc" id="group__PCNT_html_gaa8820c09f38c0237a58300bdfa53cb0e"><div class="ttname"><a href="group__PCNT.html#gaa8820c09f38c0237a58300bdfa53cb0e">PCNT_Enable</a></div><div class="ttdeci">void PCNT_Enable(PCNT_TypeDef *pcnt, PCNT_Mode_TypeDef mode)</div><div class="ttdoc">Set PCNT operational mode. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00284">em_pcnt.c:284</a></div></div>
 <div class="ttc" id="structPCNT__TypeDef_html_aee7e5ea9eebe6518fc67351efe6f2b95"><div class="ttname"><a href="structPCNT__TypeDef.html#aee7e5ea9eebe6518fc67351efe6f2b95">PCNT_TypeDef::IFS</a></div><div class="ttdeci">__IO uint32_t IFS</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__pcnt_8h_source.html#l00050">ezr32wg_pcnt.h:50</a></div></div>
 <div class="ttc" id="structPCNT__Init__TypeDef_html_a28bbdd19f0ae5755381b04e63d41d1fb"><div class="ttname"><a href="structPCNT__Init__TypeDef.html#a28bbdd19f0ae5755381b04e63d41d1fb">PCNT_Init_TypeDef::filter</a></div><div class="ttdeci">bool filter</div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00206">em_pcnt.h:206</a></div></div>
 <div class="ttc" id="group__PCNT_html_ga48363e8f5b035115fda26ce1c7c73953"><div class="ttname"><a href="group__PCNT.html#ga48363e8f5b035115fda26ce1c7c73953">PCNT_IntEnable</a></div><div class="ttdeci">__STATIC_INLINE void PCNT_IntEnable(PCNT_TypeDef *pcnt, uint32_t flags)</div><div class="ttdoc">Enable one or more PCNT interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00501">em_pcnt.h:501</a></div></div>
 <div class="ttc" id="structPCNT__TypeDef_html_a587d1f5f379684ba5ae712dcc7547da0"><div class="ttname"><a href="structPCNT__TypeDef.html#a587d1f5f379684ba5ae712dcc7547da0">PCNT_TypeDef::TOPB</a></div><div class="ttdeci">__IO uint32_t TOPB</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__pcnt_8h_source.html#l00048">ezr32wg_pcnt.h:48</a></div></div>
-<div class="ttc" id="group__PCNT_html_gac40297f0dcf3f1502b8cbca2aced1466"><div class="ttname"><a href="group__PCNT.html#gac40297f0dcf3f1502b8cbca2aced1466">PCNT_TopSet</a></div><div class="ttdeci">void PCNT_TopSet(PCNT_TypeDef *pcnt, uint32_t val)</div><div class="ttdoc">Set top value. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00809">em_pcnt.c:809</a></div></div>
+<div class="ttc" id="group__PCNT_html_gac40297f0dcf3f1502b8cbca2aced1466"><div class="ttname"><a href="group__PCNT.html#gac40297f0dcf3f1502b8cbca2aced1466">PCNT_TopSet</a></div><div class="ttdeci">void PCNT_TopSet(PCNT_TypeDef *pcnt, uint32_t val)</div><div class="ttdoc">Set top value. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00814">em_pcnt.c:814</a></div></div>
 <div class="ttc" id="group__PCNT_html_ggaf5d5d7081a8e56ad0571addc1028ac5caebf6f54275c360dba940960e82f641d3"><div class="ttname"><a href="group__PCNT.html#ggaf5d5d7081a8e56ad0571addc1028ac5caebf6f54275c360dba940960e82f641d3">pcntCntEventDown</a></div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00121">em_pcnt.h:121</a></div></div>
 <div class="ttc" id="structPCNT__TypeDef_html"><div class="ttname"><a href="structPCNT__TypeDef.html">PCNT_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__pcnt_8h_source.html#l00041">ezr32wg_pcnt.h:41</a></div></div>
 <div class="ttc" id="group__EZR32WG__PCNT__BitFields_html_ga5d6c89a496bb5800835a827fefe63e8d"><div class="ttname"><a href="group__EZR32WG__PCNT__BitFields.html#ga5d6c89a496bb5800835a827fefe63e8d">_PCNT_CTRL_CNTEV_BOTH</a></div><div class="ttdeci">#define _PCNT_CTRL_CNTEV_BOTH</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__pcnt_8h_source.html#l00124">ezr32wg_pcnt.h:124</a></div></div>
 <div class="ttc" id="structPCNT__Init__TypeDef_html_a0b5c589f5083a032275acb525753c114"><div class="ttname"><a href="structPCNT__Init__TypeDef.html#a0b5c589f5083a032275acb525753c114">PCNT_Init_TypeDef::hyst</a></div><div class="ttdeci">bool hyst</div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00211">em_pcnt.h:211</a></div></div>
-<div class="ttc" id="group__PCNT_html_ga3398bc56f58cfc86afeedcd4febc5753"><div class="ttname"><a href="group__PCNT.html#ga3398bc56f58cfc86afeedcd4febc5753">PCNT_PRSInputEnable</a></div><div class="ttdeci">void PCNT_PRSInputEnable(PCNT_TypeDef *pcnt, PCNT_PRSInput_TypeDef prsInput, bool enable)</div><div class="ttdoc">Enable/disable the selected PRS input of PCNT. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00311">em_pcnt.c:311</a></div></div>
+<div class="ttc" id="group__PCNT_html_ga3398bc56f58cfc86afeedcd4febc5753"><div class="ttname"><a href="group__PCNT.html#ga3398bc56f58cfc86afeedcd4febc5753">PCNT_PRSInputEnable</a></div><div class="ttdeci">void PCNT_PRSInputEnable(PCNT_TypeDef *pcnt, PCNT_PRSInput_TypeDef prsInput, bool enable)</div><div class="ttdoc">Enable/disable the selected PRS input of PCNT. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00316">em_pcnt.c:316</a></div></div>
 <div class="ttc" id="group__PCNT_html_ga656f9c01f924fb88378bf4d77bb927a1"><div class="ttname"><a href="group__PCNT.html#ga656f9c01f924fb88378bf4d77bb927a1">PCNT_IntClear</a></div><div class="ttdeci">__STATIC_INLINE void PCNT_IntClear(PCNT_TypeDef *pcnt, uint32_t flags)</div><div class="ttdoc">Clear one or more pending PCNT interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00464">em_pcnt.h:464</a></div></div>
 <div class="ttc" id="em__device_8h_html"><div class="ttname"><a href="em__device_8h.html">em_device.h</a></div><div class="ttdoc">CMSIS Cortex-M Peripheral Access Layer for Silicon Laboratories microcontroller devices. </div></div>
 <div class="ttc" id="group__EZR32WG__PCNT__BitFields_html_gade445ce844ecf598e2d1b09c2d77c3f9"><div class="ttname"><a href="group__EZR32WG__PCNT__BitFields.html#gade445ce844ecf598e2d1b09c2d77c3f9">_PCNT_CTRL_MODE_EXTCLKSINGLE</a></div><div class="ttdeci">#define _PCNT_CTRL_MODE_EXTCLKSINGLE</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__pcnt_8h_source.html#l00076">ezr32wg_pcnt.h:76</a></div></div>
@@ -531,11 +529,11 @@ $(document).ready(function(){initNavTree('em__pcnt_8h_source.html','');});
 <div class="ttc" id="structPCNT__TypeDef_html_a93639f49edacc7942763f403dc50cd5b"><div class="ttname"><a href="structPCNT__TypeDef.html#a93639f49edacc7942763f403dc50cd5b">PCNT_TypeDef::IFC</a></div><div class="ttdeci">__IO uint32_t IFC</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__pcnt_8h_source.html#l00051">ezr32wg_pcnt.h:51</a></div></div>
 <div class="ttc" id="group__PCNT_html_ga2fb0fc7f68c902b71b271ba5687643a4"><div class="ttname"><a href="group__PCNT.html#ga2fb0fc7f68c902b71b271ba5687643a4">PCNT_Mode_TypeDef</a></div><div class="ttdeci">PCNT_Mode_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00081">em_pcnt.h:81</a></div></div>
 <div class="ttc" id="group__PCNT_html_gga2fb0fc7f68c902b71b271ba5687643a4a036410c15ce30d5b1b0e419f96dc62fe"><div class="ttname"><a href="group__PCNT.html#gga2fb0fc7f68c902b71b271ba5687643a4a036410c15ce30d5b1b0e419f96dc62fe">pcntModeExtSingle</a></div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00090">em_pcnt.h:90</a></div></div>
-<div class="ttc" id="group__PCNT_html_gacb21126956add214b4af318f61fd17cd"><div class="ttname"><a href="group__PCNT.html#gacb21126956add214b4af318f61fd17cd">PCNT_CounterReset</a></div><div class="ttdeci">void PCNT_CounterReset(PCNT_TypeDef *pcnt)</div><div class="ttdoc">Reset PCNT counters and TOP register. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00141">em_pcnt.c:141</a></div></div>
-<div class="ttc" id="group__PCNT_html_ga726934d28be99230a6025503fdbaf86d"><div class="ttname"><a href="group__PCNT.html#ga726934d28be99230a6025503fdbaf86d">PCNT_Init</a></div><div class="ttdeci">void PCNT_Init(PCNT_TypeDef *pcnt, const PCNT_Init_TypeDef *init)</div><div class="ttdoc">Init pulse counter. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00430">em_pcnt.c:430</a></div></div>
+<div class="ttc" id="group__PCNT_html_gacb21126956add214b4af318f61fd17cd"><div class="ttname"><a href="group__PCNT.html#gacb21126956add214b4af318f61fd17cd">PCNT_CounterReset</a></div><div class="ttdeci">void PCNT_CounterReset(PCNT_TypeDef *pcnt)</div><div class="ttdoc">Reset PCNT counters and TOP register. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00146">em_pcnt.c:146</a></div></div>
+<div class="ttc" id="group__PCNT_html_ga726934d28be99230a6025503fdbaf86d"><div class="ttname"><a href="group__PCNT.html#ga726934d28be99230a6025503fdbaf86d">PCNT_Init</a></div><div class="ttdeci">void PCNT_Init(PCNT_TypeDef *pcnt, const PCNT_Init_TypeDef *init)</div><div class="ttdoc">Init pulse counter. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00435">em_pcnt.c:435</a></div></div>
 <div class="ttc" id="structPCNT__Init__TypeDef_html_a66a6f9762c717eea1a81312a5a9b19a0"><div class="ttname"><a href="structPCNT__Init__TypeDef.html#a66a6f9762c717eea1a81312a5a9b19a0">PCNT_Init_TypeDef::s1PRS</a></div><div class="ttdeci">PCNT_PRSSel_TypeDef s1PRS</div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00231">em_pcnt.h:231</a></div></div>
 <div class="ttc" id="structPCNT__Init__TypeDef_html_a4b9c9cf1957ffe17a5360fefe7c8e67e"><div class="ttname"><a href="structPCNT__Init__TypeDef.html#a4b9c9cf1957ffe17a5360fefe7c8e67e">PCNT_Init_TypeDef::s0PRS</a></div><div class="ttdeci">PCNT_PRSSel_TypeDef s0PRS</div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00228">em_pcnt.h:228</a></div></div>
-<div class="ttc" id="group__PCNT_html_gaa0a00b056f5f6404abd02de84c30d002"><div class="ttname"><a href="group__PCNT.html#gaa0a00b056f5f6404abd02de84c30d002">PCNT_TopBufferSet</a></div><div class="ttdeci">void PCNT_TopBufferSet(PCNT_TypeDef *pcnt, uint32_t val)</div><div class="ttdoc">Set top buffer value. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00783">em_pcnt.c:783</a></div></div>
+<div class="ttc" id="group__PCNT_html_gaa0a00b056f5f6404abd02de84c30d002"><div class="ttname"><a href="group__PCNT.html#gaa0a00b056f5f6404abd02de84c30d002">PCNT_TopBufferSet</a></div><div class="ttdeci">void PCNT_TopBufferSet(PCNT_TypeDef *pcnt, uint32_t val)</div><div class="ttdoc">Set top buffer value. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00788">em_pcnt.c:788</a></div></div>
 <div class="ttc" id="group__PCNT_html_ga963e01aecd570531bae9630800165ff4"><div class="ttname"><a href="group__PCNT.html#ga963e01aecd570531bae9630800165ff4">PCNT_TopGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t PCNT_TopGet(PCNT_TypeDef *pcnt)</div><div class="ttdoc">Get pulse counter top value. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00604">em_pcnt.h:604</a></div></div>
 <div class="ttc" id="structPCNT__Init__TypeDef_html_a37e1864793e7dfc671b70e6dd945f7c0"><div class="ttname"><a href="structPCNT__Init__TypeDef.html#a37e1864793e7dfc671b70e6dd945f7c0">PCNT_Init_TypeDef::countDown</a></div><div class="ttdeci">bool countDown</div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00203">em_pcnt.h:203</a></div></div>
 <div class="ttc" id="group__PCNT_html_gad2c0d9afde7927503a4abee86862c7f1"><div class="ttname"><a href="group__PCNT.html#gad2c0d9afde7927503a4abee86862c7f1">PCNT_IntGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t PCNT_IntGet(PCNT_TypeDef *pcnt)</div><div class="ttdoc">Get pending PCNT interrupt flags. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00520">em_pcnt.h:520</a></div></div>
@@ -544,7 +542,7 @@ $(document).ready(function(){initNavTree('em__pcnt_8h_source.html','');});
 <div class="ttc" id="structPCNT__TypeDef_html_add3070a02776b944253ee6a47fb9166b"><div class="ttname"><a href="structPCNT__TypeDef.html#add3070a02776b944253ee6a47fb9166b">PCNT_TypeDef::AUXCNT</a></div><div class="ttdeci">__IO uint32_t AUXCNT</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__pcnt_8h_source.html#l00059">ezr32wg_pcnt.h:59</a></div></div>
 <div class="ttc" id="group__PCNT_html_ggaf5d5d7081a8e56ad0571addc1028ac5caf3a92af89029e25e067ddfab3154f865"><div class="ttname"><a href="group__PCNT.html#ggaf5d5d7081a8e56ad0571addc1028ac5caf3a92af89029e25e067ddfab3154f865">pcntCntEventUp</a></div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00118">em_pcnt.h:118</a></div></div>
 <div class="ttc" id="group__PCNT_html_ga2571e9ccf1f9c011a5f69c847c394a33"><div class="ttname"><a href="group__PCNT.html#ga2571e9ccf1f9c011a5f69c847c394a33">PCNT_AuxCounterGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t PCNT_AuxCounterGet(PCNT_TypeDef *pcnt)</div><div class="ttdoc">Get auxiliary counter value. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00401">em_pcnt.h:401</a></div></div>
-<div class="ttc" id="group__PCNT_html_ga0a3a18c64e545011e4b4eaef0bdc2b3d"><div class="ttname"><a href="group__PCNT.html#ga0a3a18c64e545011e4b4eaef0bdc2b3d">PCNT_FreezeEnable</a></div><div class="ttdeci">void PCNT_FreezeEnable(PCNT_TypeDef *pcnt, bool enable)</div><div class="ttdoc">PCNT register synchronization freeze control. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00366">em_pcnt.c:366</a></div></div>
+<div class="ttc" id="group__PCNT_html_ga0a3a18c64e545011e4b4eaef0bdc2b3d"><div class="ttname"><a href="group__PCNT.html#ga0a3a18c64e545011e4b4eaef0bdc2b3d">PCNT_FreezeEnable</a></div><div class="ttdeci">void PCNT_FreezeEnable(PCNT_TypeDef *pcnt, bool enable)</div><div class="ttdoc">PCNT register synchronization freeze control. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00371">em_pcnt.c:371</a></div></div>
 <div class="ttc" id="group__PCNT_html_gga1e54a6fa69a7da44510c6f38ced54486a758e1e596c434a460d6f7c4a3e30d331"><div class="ttname"><a href="group__PCNT.html#gga1e54a6fa69a7da44510c6f38ced54486a758e1e596c434a460d6f7c4a3e30d331">pcntPRSCh5</a></div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00141">em_pcnt.h:141</a></div></div>
 <div class="ttc" id="group__PCNT_html_gga1e54a6fa69a7da44510c6f38ced54486a380afd4a87322dc59bd6348e77c70e98"><div class="ttname"><a href="group__PCNT.html#gga1e54a6fa69a7da44510c6f38ced54486a380afd4a87322dc59bd6348e77c70e98">pcntPRSCh10</a></div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00156">em_pcnt.h:156</a></div></div>
 <div class="ttc" id="structPCNT__Init__TypeDef_html_afde2d462e1190d18030bf844d7b213e2"><div class="ttname"><a href="structPCNT__Init__TypeDef.html#afde2d462e1190d18030bf844d7b213e2">PCNT_Init_TypeDef::negEdge</a></div><div class="ttdeci">bool negEdge</div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00199">em_pcnt.h:199</a></div></div>
@@ -554,7 +552,7 @@ $(document).ready(function(){initNavTree('em__pcnt_8h_source.html','');});
 <div class="ttc" id="structPCNT__TypeDef_html_a78ddd930e9216fa2f61f6da1dc2b9022"><div class="ttname"><a href="structPCNT__TypeDef.html#a78ddd930e9216fa2f61f6da1dc2b9022">PCNT_TypeDef::CNT</a></div><div class="ttdeci">__I uint32_t CNT</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__pcnt_8h_source.html#l00046">ezr32wg_pcnt.h:46</a></div></div>
 <div class="ttc" id="structPCNT__Init__TypeDef_html_aa0844eb86c0f7524d1b9d6e681686f1d"><div class="ttname"><a href="structPCNT__Init__TypeDef.html#aa0844eb86c0f7524d1b9d6e681686f1d">PCNT_Init_TypeDef::mode</a></div><div class="ttdeci">PCNT_Mode_TypeDef mode</div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00181">em_pcnt.h:181</a></div></div>
 <div class="ttc" id="structPCNT__Init__TypeDef_html_aecf46917eed2cf6dd89325093f90c773"><div class="ttname"><a href="structPCNT__Init__TypeDef.html#aecf46917eed2cf6dd89325093f90c773">PCNT_Init_TypeDef::s1CntDir</a></div><div class="ttdeci">bool s1CntDir</div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00217">em_pcnt.h:217</a></div></div>
-<div class="ttc" id="group__PCNT_html_gadf14f80981badc92e7a30a43caae130b"><div class="ttname"><a href="group__PCNT.html#gadf14f80981badc92e7a30a43caae130b">PCNT_Reset</a></div><div class="ttdeci">void PCNT_Reset(PCNT_TypeDef *pcnt)</div><div class="ttdoc">Reset PCNT to same state as after a HW reset. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00639">em_pcnt.c:639</a></div></div>
+<div class="ttc" id="group__PCNT_html_gadf14f80981badc92e7a30a43caae130b"><div class="ttname"><a href="group__PCNT.html#gadf14f80981badc92e7a30a43caae130b">PCNT_Reset</a></div><div class="ttdeci">void PCNT_Reset(PCNT_TypeDef *pcnt)</div><div class="ttdoc">Reset PCNT to same state as after a HW reset. </div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8c_source.html#l00644">em_pcnt.c:644</a></div></div>
 <div class="ttc" id="structPCNT__TypeDef_html_a70360f57d7a511823d0a7aa141b76d81"><div class="ttname"><a href="structPCNT__TypeDef.html#a70360f57d7a511823d0a7aa141b76d81">PCNT_TypeDef::TOP</a></div><div class="ttdeci">__I uint32_t TOP</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__pcnt_8h_source.html#l00047">ezr32wg_pcnt.h:47</a></div></div>
 <div class="ttc" id="group__PCNT_html_gga1e54a6fa69a7da44510c6f38ced54486a7bdb842df9114f527cd8a05afafaafde"><div class="ttname"><a href="group__PCNT.html#gga1e54a6fa69a7da44510c6f38ced54486a7bdb842df9114f527cd8a05afafaafde">pcntPRSCh7</a></div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00147">em_pcnt.h:147</a></div></div>
 <div class="ttc" id="group__PCNT_html_gga1e54a6fa69a7da44510c6f38ced54486adc576311169a872d67378ac5d0753b0c"><div class="ttname"><a href="group__PCNT.html#gga1e54a6fa69a7da44510c6f38ced54486adc576311169a872d67378ac5d0753b0c">pcntPRSCh6</a></div><div class="ttdef"><b>Definition:</b> <a href="em__pcnt_8h_source.html#l00144">em_pcnt.h:144</a></div></div>
@@ -564,7 +562,7 @@ $(document).ready(function(){initNavTree('em__pcnt_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__pcnt_8h.html">em_pcnt.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:42:31 for EZR32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:45:12 for EZR32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

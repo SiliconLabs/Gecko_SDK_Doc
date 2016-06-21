@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32g-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -106,12 +105,12 @@ $(document).ready(function(){initNavTree('group__SYSTEM.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">SYSTEM<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">SYSTEM<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>System Peripheral API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>System Peripheral API. </p>
+<p>This module contains functions to read device information from Silicon Labs 32-bit MCUs and SoCs, as well as control the FPU on compatible devices. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -165,35 +164,34 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6470ed38937ffd0b8b509334c5add7dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga6470ed38937ffd0b8b509334c5add7dd">SYSTEM_ChipRevisionGet</a> (<a class="el" href="structSYSTEM__ChipRevision__TypeDef.html">SYSTEM_ChipRevision_TypeDef</a> *rev)</td></tr>
 <tr class="memdesc:ga6470ed38937ffd0b8b509334c5add7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get chip major/minor revision.  <a href="#ga6470ed38937ffd0b8b509334c5add7dd">More...</a><br /></td></tr>
 <tr class="separator:ga6470ed38937ffd0b8b509334c5add7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a8be52c7eeb3f5d395ee7791e5c8bf8"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga2a8be52c7eeb3f5d395ee7791e5c8bf8">SYSTEM_GetCalibrationTemperature</a> (void)</td></tr>
+<tr class="memdesc:ga2a8be52c7eeb3f5d395ee7791e5c8bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the calibration temperature (in degrees Celsius).  <a href="#ga2a8be52c7eeb3f5d395ee7791e5c8bf8">More...</a><br /></td></tr>
+<tr class="separator:ga2a8be52c7eeb3f5d395ee7791e5c8bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga786913c991338e29650617d89aec3768"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga786913c991338e29650617d89aec3768">SYSTEM_GetCalibrationValue</a> (volatile uint32_t *regAddress)</td></tr>
 <tr class="memdesc:ga786913c991338e29650617d89aec3768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get factory calibration value for a given peripheral register.  <a href="#ga786913c991338e29650617d89aec3768">More...</a><br /></td></tr>
 <tr class="separator:ga786913c991338e29650617d89aec3768"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ae06ffaffeb005dc411bfefedd1f16b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga3ae06ffaffeb005dc411bfefedd1f16b">SYSTEM_GetUnique</a> (void)</td></tr>
-<tr class="memdesc:ga3ae06ffaffeb005dc411bfefedd1f16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the unique number for this part.  <a href="#ga3ae06ffaffeb005dc411bfefedd1f16b">More...</a><br /></td></tr>
-<tr class="separator:ga3ae06ffaffeb005dc411bfefedd1f16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b5bb91ac7916b37ce069dd75fc94196"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE <a class="el" href="group__SYSTEM.html#ga45f33557f44ae73db1c70765a2a29e5a">SYSTEM_PartFamily_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga5b5bb91ac7916b37ce069dd75fc94196">SYSTEM_GetFamily</a> (void)</td></tr>
+<tr class="memdesc:ga5b5bb91ac7916b37ce069dd75fc94196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get family identifier of the MCU.  <a href="#ga5b5bb91ac7916b37ce069dd75fc94196">More...</a><br /></td></tr>
+<tr class="separator:ga5b5bb91ac7916b37ce069dd75fc94196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9708a581c8fe3a02fc6ac92175a3860a"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga9708a581c8fe3a02fc6ac92175a3860a">SYSTEM_GetFlashPageSize</a> (void)</td></tr>
+<tr class="memdesc:ga9708a581c8fe3a02fc6ac92175a3860a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flash page size in bytes.  <a href="#ga9708a581c8fe3a02fc6ac92175a3860a">More...</a><br /></td></tr>
+<tr class="separator:ga9708a581c8fe3a02fc6ac92175a3860a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf4974847994d28b5e03e1cb6d76f5c0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#gacf4974847994d28b5e03e1cb6d76f5c0">SYSTEM_GetFlashSize</a> (void)</td></tr>
+<tr class="memdesc:gacf4974847994d28b5e03e1cb6d76f5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flash size (in KB).  <a href="#gacf4974847994d28b5e03e1cb6d76f5c0">More...</a><br /></td></tr>
+<tr class="separator:gacf4974847994d28b5e03e1cb6d76f5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b9b04ffdb1f05c14f73f1b7ed0a95ba"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga4b9b04ffdb1f05c14f73f1b7ed0a95ba">SYSTEM_GetPartNumber</a> (void)</td></tr>
+<tr class="memdesc:ga4b9b04ffdb1f05c14f73f1b7ed0a95ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get part number of the MCU.  <a href="#ga4b9b04ffdb1f05c14f73f1b7ed0a95ba">More...</a><br /></td></tr>
+<tr class="separator:ga4b9b04ffdb1f05c14f73f1b7ed0a95ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0ab109172e28a441c3ff173d0f83405b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev</a> (void)</td></tr>
 <tr class="memdesc:ga0ab109172e28a441c3ff173d0f83405b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the production revision for this part.  <a href="#ga0ab109172e28a441c3ff173d0f83405b">More...</a><br /></td></tr>
 <tr class="separator:ga0ab109172e28a441c3ff173d0f83405b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1e9f2935e6ccee880c25605351770560"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga1e9f2935e6ccee880c25605351770560">SYSTEM_GetSRAMSize</a> (void)</td></tr>
 <tr class="memdesc:ga1e9f2935e6ccee880c25605351770560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the SRAM size (in KB).  <a href="#ga1e9f2935e6ccee880c25605351770560">More...</a><br /></td></tr>
 <tr class="separator:ga1e9f2935e6ccee880c25605351770560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf4974847994d28b5e03e1cb6d76f5c0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#gacf4974847994d28b5e03e1cb6d76f5c0">SYSTEM_GetFlashSize</a> (void)</td></tr>
-<tr class="memdesc:gacf4974847994d28b5e03e1cb6d76f5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flash size (in KB).  <a href="#gacf4974847994d28b5e03e1cb6d76f5c0">More...</a><br /></td></tr>
-<tr class="separator:gacf4974847994d28b5e03e1cb6d76f5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9708a581c8fe3a02fc6ac92175a3860a"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga9708a581c8fe3a02fc6ac92175a3860a">SYSTEM_GetFlashPageSize</a> (void)</td></tr>
-<tr class="memdesc:ga9708a581c8fe3a02fc6ac92175a3860a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the flash page size in bytes.  <a href="#ga9708a581c8fe3a02fc6ac92175a3860a">More...</a><br /></td></tr>
-<tr class="separator:ga9708a581c8fe3a02fc6ac92175a3860a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4b9b04ffdb1f05c14f73f1b7ed0a95ba"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga4b9b04ffdb1f05c14f73f1b7ed0a95ba">SYSTEM_GetPartNumber</a> (void)</td></tr>
-<tr class="memdesc:ga4b9b04ffdb1f05c14f73f1b7ed0a95ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get part number of the MCU.  <a href="#ga4b9b04ffdb1f05c14f73f1b7ed0a95ba">More...</a><br /></td></tr>
-<tr class="separator:ga4b9b04ffdb1f05c14f73f1b7ed0a95ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b5bb91ac7916b37ce069dd75fc94196"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE <a class="el" href="group__SYSTEM.html#ga45f33557f44ae73db1c70765a2a29e5a">SYSTEM_PartFamily_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga5b5bb91ac7916b37ce069dd75fc94196">SYSTEM_GetFamily</a> (void)</td></tr>
-<tr class="memdesc:ga5b5bb91ac7916b37ce069dd75fc94196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get family identifier of the MCU.  <a href="#ga5b5bb91ac7916b37ce069dd75fc94196">More...</a><br /></td></tr>
-<tr class="separator:ga5b5bb91ac7916b37ce069dd75fc94196"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2a8be52c7eeb3f5d395ee7791e5c8bf8"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga2a8be52c7eeb3f5d395ee7791e5c8bf8">SYSTEM_GetCalibrationTemperature</a> (void)</td></tr>
-<tr class="memdesc:ga2a8be52c7eeb3f5d395ee7791e5c8bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the calibration temperature (in degrees Celsius).  <a href="#ga2a8be52c7eeb3f5d395ee7791e5c8bf8">More...</a><br /></td></tr>
-<tr class="separator:ga2a8be52c7eeb3f5d395ee7791e5c8bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ae06ffaffeb005dc411bfefedd1f16b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga3ae06ffaffeb005dc411bfefedd1f16b">SYSTEM_GetUnique</a> (void)</td></tr>
+<tr class="memdesc:ga3ae06ffaffeb005dc411bfefedd1f16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the unique number for this device.  <a href="#ga3ae06ffaffeb005dc411bfefedd1f16b">More...</a><br /></td></tr>
+<tr class="separator:ga3ae06ffaffeb005dc411bfefedd1f16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="ga45f33557f44ae73db1c70765a2a29e5a"></a>
 <div class="memitem">
@@ -280,6 +278,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get chip major/minor revision. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">rev</td><td>Location to place chip revision info. </td></tr>
@@ -287,191 +287,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__system_8c_source.html#l00058">58</a> of file <a class="el" href="em__system_8c_source.html">em_system.c</a>.</p>
+<p>Definition at line <a class="el" href="em__system_8c_source.html#l00061">61</a> of file <a class="el" href="em__system_8c_source.html">em_system.c</a>.</p>
 
-<p>References <a class="el" href="efm32g__romtable_8h_source.html#l00059">_ROMTABLE_PID0_FAMILYLSB_MASK</a>, <a class="el" href="efm32g__romtable_8h_source.html#l00060">_ROMTABLE_PID0_FAMILYLSB_SHIFT</a>, <a class="el" href="efm32g__romtable_8h_source.html#l00061">_ROMTABLE_PID0_REVMAJOR_MASK</a>, <a class="el" href="efm32g__romtable_8h_source.html#l00062">_ROMTABLE_PID0_REVMAJOR_SHIFT</a>, <a class="el" href="efm32g__romtable_8h_source.html#l00063">_ROMTABLE_PID1_FAMILYMSB_MASK</a>, <a class="el" href="efm32g__romtable_8h_source.html#l00064">_ROMTABLE_PID1_FAMILYMSB_SHIFT</a>, <a class="el" href="efm32g__romtable_8h_source.html#l00065">_ROMTABLE_PID2_REVMINORMSB_MASK</a>, <a class="el" href="efm32g__romtable_8h_source.html#l00066">_ROMTABLE_PID2_REVMINORMSB_SHIFT</a>, <a class="el" href="efm32g__romtable_8h_source.html#l00067">_ROMTABLE_PID3_REVMINORLSB_MASK</a>, <a class="el" href="efm32g__romtable_8h_source.html#l00068">_ROMTABLE_PID3_REVMINORLSB_SHIFT</a>, <a class="el" href="em__system_8h_source.html#l00170">SYSTEM_ChipRevision_TypeDef::family</a>, <a class="el" href="em__system_8h_source.html#l00169">SYSTEM_ChipRevision_TypeDef::major</a>, <a class="el" href="em__system_8h_source.html#l00168">SYSTEM_ChipRevision_TypeDef::minor</a>, and <a class="el" href="efm32g890f128_8h_source.html#l00361">ROMTABLE</a>.</p>
+<p>References <a class="el" href="group__EFM32G__ROMTABLE__BitFields.html#ga31138aa588fb1603e3e34769ebd2ccf8">_ROMTABLE_PID0_FAMILYLSB_MASK</a>, <a class="el" href="group__EFM32G__ROMTABLE__BitFields.html#gafb39f02a18143e34038b986e871e3e06">_ROMTABLE_PID0_FAMILYLSB_SHIFT</a>, <a class="el" href="group__EFM32G__ROMTABLE__BitFields.html#gae07c0d7368e21dfdfba4e97d40eeb8af">_ROMTABLE_PID0_REVMAJOR_MASK</a>, <a class="el" href="group__EFM32G__ROMTABLE__BitFields.html#gad0394774c7f495101bf0441f9a955696">_ROMTABLE_PID0_REVMAJOR_SHIFT</a>, <a class="el" href="group__EFM32G__ROMTABLE__BitFields.html#ga51a54141ebea453f8c92c0776014573f">_ROMTABLE_PID1_FAMILYMSB_MASK</a>, <a class="el" href="group__EFM32G__ROMTABLE__BitFields.html#ga3e120cfb277313d912818ddc57299047">_ROMTABLE_PID1_FAMILYMSB_SHIFT</a>, <a class="el" href="group__EFM32G__ROMTABLE__BitFields.html#gabbef257d78e08f84e5e35f5a4d748014">_ROMTABLE_PID2_REVMINORMSB_MASK</a>, <a class="el" href="group__EFM32G__ROMTABLE__BitFields.html#ga9f9ff40a370f9c591d2e74e163928c02">_ROMTABLE_PID2_REVMINORMSB_SHIFT</a>, <a class="el" href="group__EFM32G__ROMTABLE__BitFields.html#ga3a4130b04add459cff3ecc1b17090231">_ROMTABLE_PID3_REVMINORLSB_MASK</a>, <a class="el" href="group__EFM32G__ROMTABLE__BitFields.html#ga4c5c632a0a7cb392cf0a1ad61ba57fd5">_ROMTABLE_PID3_REVMINORLSB_SHIFT</a>, <a class="el" href="structSYSTEM__ChipRevision__TypeDef.html#a47b64ea4d787f0fd06b2e218a16cac1c">SYSTEM_ChipRevision_TypeDef::family</a>, <a class="el" href="structSYSTEM__ChipRevision__TypeDef.html#a79ebea0f9a0321ec622d9098afe5bdd1">SYSTEM_ChipRevision_TypeDef::major</a>, <a class="el" href="structSYSTEM__ChipRevision__TypeDef.html#a4c191c69987d7029a7f2ec9510a99898">SYSTEM_ChipRevision_TypeDef::minor</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga6ad88ce503ff5777d641e1ed15c0d550">ROMTABLE</a>.</p>
 
-<p>Referenced by <a class="el" href="em__chip_8h_source.html#l00062">CHIP_Init()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga786913c991338e29650617d89aec3768"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t SYSTEM_GetCalibrationValue </td>
-          <td>(</td>
-          <td class="paramtype">volatile uint32_t *&#160;</td>
-          <td class="paramname"><em>regAddress</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">regAddress</td><td>Address of register to get a calibration value for.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Calibration value for the requested register. </dd></dl>
-
-<p>Definition at line <a class="el" href="em__system_8c_source.html#l00092">92</a> of file <a class="el" href="em__system_8c_source.html">em_system.c</a>.</p>
-
-<p>References <a class="el" href="efm32g__calibrate_8h_source.html#l00044">CALIBRATE_TypeDef::ADDRESS</a>, <a class="el" href="efm32g890f128_8h_source.html#l00359">CALIBRATE</a>, <a class="el" href="efm32g__calibrate_8h_source.html#l00040">CALIBRATE_MAX_REGISTERS</a>, and <a class="el" href="efm32g__calibrate_8h_source.html#l00045">CALIBRATE_TypeDef::VALUE</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga3ae06ffaffeb005dc411bfefedd1f16b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE uint64_t SYSTEM_GetUnique </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Unique number for this part. </dd></dl>
-
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00213">213</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
-
-<p>References <a class="el" href="efm32g890f128_8h_source.html#l00360">DEVINFO</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga0ab109172e28a441c3ff173d0f83405b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE uint8_t SYSTEM_GetProdRev </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Production revision for this part. </dd></dl>
-
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00225">225</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
-
-<p>References <a class="el" href="efm32g__devinfo_8h_source.html#l00130">_DEVINFO_PART_PROD_REV_MASK</a>, <a class="el" href="efm32g__devinfo_8h_source.html#l00131">_DEVINFO_PART_PROD_REV_SHIFT</a>, and <a class="el" href="efm32g890f128_8h_source.html#l00360">DEVINFO</a>.</p>
-
-<p>Referenced by <a class="el" href="em__system_8h_source.html#l00296">SYSTEM_GetFlashPageSize()</a>, <a class="el" href="em__system_8h_source.html#l00269">SYSTEM_GetFlashSize()</a>, and <a class="el" href="em__system_8h_source.html#l00243">SYSTEM_GetSRAMSize()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga1e9f2935e6ccee880c25605351770560"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE uint16_t SYSTEM_GetSRAMSize </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>This function retrievs the correct value by reading the chip device info structure. If your binary is made for one specific device only, the #define SRAM_SIZE can be used instead.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>The size of the internal SRAM (in KB). </dd></dl>
-
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00243">243</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
-
-<p>References <a class="el" href="efm32g__devinfo_8h_source.html#l00128">_DEVINFO_MSIZE_FLASH_MASK</a>, <a class="el" href="efm32g__devinfo_8h_source.html#l00129">_DEVINFO_MSIZE_FLASH_SHIFT</a>, <a class="el" href="efm32g__devinfo_8h_source.html#l00126">_DEVINFO_MSIZE_SRAM_MASK</a>, <a class="el" href="efm32g__devinfo_8h_source.html#l00127">_DEVINFO_MSIZE_SRAM_SHIFT</a>, <a class="el" href="efm32g890f128_8h_source.html#l00360">DEVINFO</a>, and <a class="el" href="em__system_8h_source.html#l00225">SYSTEM_GetProdRev()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gacf4974847994d28b5e03e1cb6d76f5c0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE uint16_t SYSTEM_GetFlashSize </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>This function retrievs the correct value by reading the chip device info structure. If your binary is made for one specific device only, the #define FLASH_SIZE can be used instead.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>The size of the internal flash (in KB). </dd></dl>
-
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00269">269</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
-
-<p>References <a class="el" href="efm32g__devinfo_8h_source.html#l00128">_DEVINFO_MSIZE_FLASH_MASK</a>, <a class="el" href="efm32g__devinfo_8h_source.html#l00129">_DEVINFO_MSIZE_FLASH_SHIFT</a>, <a class="el" href="efm32g__devinfo_8h_source.html#l00126">_DEVINFO_MSIZE_SRAM_MASK</a>, <a class="el" href="efm32g__devinfo_8h_source.html#l00127">_DEVINFO_MSIZE_SRAM_SHIFT</a>, <a class="el" href="efm32g890f128_8h_source.html#l00360">DEVINFO</a>, and <a class="el" href="em__system_8h_source.html#l00225">SYSTEM_GetProdRev()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga9708a581c8fe3a02fc6ac92175a3860a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE uint32_t SYSTEM_GetFlashPageSize </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>This function retrievs the correct value by reading the chip device info structure. If your binary is made for one specific device only, the #define FLASH_PAGE_SIZE can be used instead.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>The page size of the internal flash in bytes. </dd></dl>
-
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00296">296</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
-
-<p>References <a class="el" href="efm32g__devinfo_8h_source.html#l00120">_DEVINFO_MEMINFO_FLASH_PAGE_SIZE_MASK</a>, <a class="el" href="efm32g__devinfo_8h_source.html#l00121">_DEVINFO_MEMINFO_FLASH_PAGE_SIZE_SHIFT</a>, <a class="el" href="efm32g890f128_8h_source.html#l00360">DEVINFO</a>, <a class="el" href="efm32g890f128_8h_source.html#l00161">FLASH_PAGE_SIZE</a>, and <a class="el" href="em__system_8h_source.html#l00225">SYSTEM_GetProdRev()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga4b9b04ffdb1f05c14f73f1b7ed0a95ba"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE uint16_t SYSTEM_GetPartNumber </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>The part number of the MCU. </dd></dl>
-
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00344">344</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
-
-<p>References <a class="el" href="efm32g__devinfo_8h_source.html#l00153">_DEVINFO_PART_DEVICE_NUMBER_MASK</a>, <a class="el" href="efm32g__devinfo_8h_source.html#l00154">_DEVINFO_PART_DEVICE_NUMBER_SHIFT</a>, and <a class="el" href="efm32g890f128_8h_source.html#l00360">DEVINFO</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga5b5bb91ac7916b37ce069dd75fc94196"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">__STATIC_INLINE <a class="el" href="group__SYSTEM.html#ga45f33557f44ae73db1c70765a2a29e5a">SYSTEM_PartFamily_TypeDef</a> SYSTEM_GetFamily </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>This function retrievs the family id by reading the chip's device info structure in flash memory. The user can retrieve the family id directly by reading the DEVINFO-&gt;PART item and decode with the mask and shift #defines defined in &lt;part_family&gt;_devinfo.h (please refer to code below for details).</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>The family identifier of the MCU. </dd></dl>
-
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00364">364</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
-
-<p>References <a class="el" href="efm32g__devinfo_8h_source.html#l00132">_DEVINFO_PART_DEVICE_FAMILY_MASK</a>, <a class="el" href="efm32g__devinfo_8h_source.html#l00133">_DEVINFO_PART_DEVICE_FAMILY_SHIFT</a>, and <a class="el" href="efm32g890f128_8h_source.html#l00360">DEVINFO</a>.</p>
+<p>Referenced by <a class="el" href="group__CHIP.html#ga6491ac6b7e786d253753c334615bce61">CHIP_Init()</a>.</p>
 
 </div>
 </div>
@@ -488,11 +308,209 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the calibration temperature (in degrees Celsius). </p>
 <dl class="section return"><dt>Returns</dt><dd>The calibration temperature in Celsius. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00379">379</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00380">380</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
 
-<p>References <a class="el" href="efm32g__devinfo_8h_source.html#l00068">_DEVINFO_CAL_TEMP_MASK</a>, <a class="el" href="efm32g__devinfo_8h_source.html#l00069">_DEVINFO_CAL_TEMP_SHIFT</a>, and <a class="el" href="efm32g890f128_8h_source.html#l00360">DEVINFO</a>.</p>
+<p>References <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#ga7e12f8cdf56f968f2b2c399b99b09823">_DEVINFO_CAL_TEMP_MASK</a>, <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#gaaa15661a4a5a8cfe5c9f3d99e2224d47">_DEVINFO_CAL_TEMP_SHIFT</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga786913c991338e29650617d89aec3768"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SYSTEM_GetCalibrationValue </td>
+          <td>(</td>
+          <td class="paramtype">volatile uint32_t *&#160;</td>
+          <td class="paramname"><em>regAddress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get factory calibration value for a given peripheral register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">regAddress</td><td>Address of register to get a calibration value for.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Calibration value for the requested register. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__system_8c_source.html#l00095">95</a> of file <a class="el" href="em__system_8c_source.html">em_system.c</a>.</p>
+
+<p>References <a class="el" href="structCALIBRATE__TypeDef.html#a870a53173dd0a544ac4f7fb80d06d0d1">CALIBRATE_TypeDef::ADDRESS</a>, <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#gadacf4c0ec79d1e8779e6bad70ddf1ee9">CALIBRATE</a>, <a class="el" href="group__EFM32G__CALIBRATE.html#gaf4f5baeff40173e0faf352b369c3be20">CALIBRATE_MAX_REGISTERS</a>, and <a class="el" href="structCALIBRATE__TypeDef.html#a34d5d7f215bc8b06a6d77a578528712b">CALIBRATE_TypeDef::VALUE</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5b5bb91ac7916b37ce069dd75fc94196"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE <a class="el" href="group__SYSTEM.html#ga45f33557f44ae73db1c70765a2a29e5a">SYSTEM_PartFamily_TypeDef</a> SYSTEM_GetFamily </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get family identifier of the MCU. </p>
+<dl class="section note"><dt>Note</dt><dd>This function retrievs the family id by reading the chip's device info structure in flash memory. The user can retrieve the family id directly by reading the DEVINFO-&gt;PART item and decode with the mask and shift #defines defined in &lt;part_family&gt;_devinfo.h (please refer to code below for details).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The family identifier of the MCU. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00365">365</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#ga2fe450e17ca85457a2dbbd079b25e103">_DEVINFO_PART_DEVICE_FAMILY_MASK</a>, <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#ga25202e4e467dd87ceda706048f6db095">_DEVINFO_PART_DEVICE_FAMILY_SHIFT</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga9708a581c8fe3a02fc6ac92175a3860a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint32_t SYSTEM_GetFlashPageSize </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the flash page size in bytes. </p>
+<dl class="section note"><dt>Note</dt><dd>This function retrievs the correct value by reading the chip device info structure. If your binary is made for one specific device only, the #define FLASH_PAGE_SIZE can be used instead.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The page size of the internal flash in bytes. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00297">297</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#gae766d99b9de4b45c7f8f4a5ce3a27e99">_DEVINFO_MEMINFO_FLASH_PAGE_SIZE_MASK</a>, <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#ga80f313804aad14d56c4eeb01c696b006">_DEVINFO_MEMINFO_FLASH_PAGE_SIZE_SHIFT</a>, <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>, <a class="el" href="group__EFM32G890F128__Part.html#ga4cc14e2c99ae7f8e5a8e371d03c8532c">FLASH_PAGE_SIZE</a>, and <a class="el" href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gacf4974847994d28b5e03e1cb6d76f5c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint16_t SYSTEM_GetFlashSize </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the flash size (in KB). </p>
+<dl class="section note"><dt>Note</dt><dd>This function retrievs the correct value by reading the chip device info structure. If your binary is made for one specific device only, the #define FLASH_SIZE can be used instead.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of the internal flash (in KB). </dd></dl>
+
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00270">270</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#gad4061d6bde2c33b8762ff7ec426bb74a">_DEVINFO_MSIZE_FLASH_MASK</a>, <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#ga12a8c9d21c16050c5fdc7b0511c70ac5">_DEVINFO_MSIZE_FLASH_SHIFT</a>, <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#ga2cd07c11c0a648d6bcfbc55521f8c93b">_DEVINFO_MSIZE_SRAM_MASK</a>, <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#ga6f649e21ba1240b56f9e7e411ef341d3">_DEVINFO_MSIZE_SRAM_SHIFT</a>, <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>, and <a class="el" href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4b9b04ffdb1f05c14f73f1b7ed0a95ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint16_t SYSTEM_GetPartNumber </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get part number of the MCU. </p>
+<dl class="section return"><dt>Returns</dt><dd>The part number of the MCU. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00345">345</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#ga77e71bccf547f7c372fca4d09e109057">_DEVINFO_PART_DEVICE_NUMBER_MASK</a>, <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#gaaa3d36b30fbbe180271eddbefb3fdbb1">_DEVINFO_PART_DEVICE_NUMBER_SHIFT</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0ab109172e28a441c3ff173d0f83405b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint8_t SYSTEM_GetProdRev </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the production revision for this part. </p>
+<dl class="section return"><dt>Returns</dt><dd>Production revision for this part. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00226">226</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#gafa63a8f8e63c487fe8ad94c79656708a">_DEVINFO_PART_PROD_REV_MASK</a>, <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#gaa7759fc4f4ea4980064ecd281c4d15ff">_DEVINFO_PART_PROD_REV_SHIFT</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>.</p>
+
+<p>Referenced by <a class="el" href="group__CHIP.html#ga6491ac6b7e786d253753c334615bce61">CHIP_Init()</a>, <a class="el" href="group__SYSTEM.html#ga9708a581c8fe3a02fc6ac92175a3860a">SYSTEM_GetFlashPageSize()</a>, <a class="el" href="group__SYSTEM.html#gacf4974847994d28b5e03e1cb6d76f5c0">SYSTEM_GetFlashSize()</a>, and <a class="el" href="group__SYSTEM.html#ga1e9f2935e6ccee880c25605351770560">SYSTEM_GetSRAMSize()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga1e9f2935e6ccee880c25605351770560"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint16_t SYSTEM_GetSRAMSize </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the SRAM size (in KB). </p>
+<dl class="section note"><dt>Note</dt><dd>This function retrievs the correct value by reading the chip device info structure. If your binary is made for one specific device only, the #define SRAM_SIZE can be used instead.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of the internal SRAM (in KB). </dd></dl>
+
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00244">244</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#gad4061d6bde2c33b8762ff7ec426bb74a">_DEVINFO_MSIZE_FLASH_MASK</a>, <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#ga12a8c9d21c16050c5fdc7b0511c70ac5">_DEVINFO_MSIZE_FLASH_SHIFT</a>, <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#ga2cd07c11c0a648d6bcfbc55521f8c93b">_DEVINFO_MSIZE_SRAM_MASK</a>, <a class="el" href="group__EFM32G__DEVINFO__BitFields.html#ga6f649e21ba1240b56f9e7e411ef341d3">_DEVINFO_MSIZE_SRAM_SHIFT</a>, <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>, and <a class="el" href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3ae06ffaffeb005dc411bfefedd1f16b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint64_t SYSTEM_GetUnique </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the unique number for this device. </p>
+<dl class="section return"><dt>Returns</dt><dd>Unique number for this device. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00213">213</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+
+<p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>.</p>
 
 </div>
 </div>
@@ -501,7 +519,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:35:39 for EFM32 Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:22:28 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

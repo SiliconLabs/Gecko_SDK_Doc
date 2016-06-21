@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -117,10 +114,25 @@ $(document).ready(function(){initNavTree('em__ldma_8h.html','');});
 <div class="title">em_ldma.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Direct memory access (LDMA) API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.<br />
+</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.<br />
+</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>Direct memory access (LDMA) API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div>
 <p><a href="em__ldma_8h_source.html">Go to the source code of this file.</a></p>
@@ -139,6 +151,63 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga94b66a79decb6cdfb579e05a27f37559"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga94b66a79decb6cdfb579e05a27f37559">LDMA_DESCRIPTOR_LINKABS_M2M_BYTE</a>(src,  dest,  count)</td></tr>
+<tr class="memdesc:ga94b66a79decb6cdfb579e05a27f37559"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for linked memory to memory byte transfer.  <a href="group__LDMA.html#ga94b66a79decb6cdfb579e05a27f37559">More...</a><br /></td></tr>
+<tr class="separator:ga94b66a79decb6cdfb579e05a27f37559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60b372ea07be689e11acc4176650d585"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga60b372ea07be689e11acc4176650d585">LDMA_DESCRIPTOR_LINKABS_M2M_HALF</a>(src,  dest,  count)</td></tr>
+<tr class="memdesc:ga60b372ea07be689e11acc4176650d585"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for linked memory to memory half-word transfer.  <a href="group__LDMA.html#ga60b372ea07be689e11acc4176650d585">More...</a><br /></td></tr>
+<tr class="separator:ga60b372ea07be689e11acc4176650d585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55567ffc62ece860416bbe3885895e4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga55567ffc62ece860416bbe3885895e4a">LDMA_DESCRIPTOR_LINKABS_M2M_WORD</a>(src,  dest,  count)</td></tr>
+<tr class="memdesc:ga55567ffc62ece860416bbe3885895e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for linked memory to memory word transfer.  <a href="group__LDMA.html#ga55567ffc62ece860416bbe3885895e4a">More...</a><br /></td></tr>
+<tr class="separator:ga55567ffc62ece860416bbe3885895e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf993e912c1971c710eb52bb1affa1779"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gaf993e912c1971c710eb52bb1affa1779">LDMA_DESCRIPTOR_LINKABS_SYNC</a>(set,  clr,  matchValue,  matchEnable)</td></tr>
+<tr class="memdesc:gaf993e912c1971c710eb52bb1affa1779"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for SYNC transfer.  <a href="group__LDMA.html#gaf993e912c1971c710eb52bb1affa1779">More...</a><br /></td></tr>
+<tr class="separator:gaf993e912c1971c710eb52bb1affa1779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ac45db98d8a0f10979f3dc861406702"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga8ac45db98d8a0f10979f3dc861406702">LDMA_DESCRIPTOR_LINKABS_WRITE</a>(value,  address)</td></tr>
+<tr class="memdesc:ga8ac45db98d8a0f10979f3dc861406702"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for Immediate WRITE transfer.  <a href="group__LDMA.html#ga8ac45db98d8a0f10979f3dc861406702">More...</a><br /></td></tr>
+<tr class="separator:ga8ac45db98d8a0f10979f3dc861406702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee35dd864484d29d0f40dbe011920b29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gaee35dd864484d29d0f40dbe011920b29">LDMA_DESCRIPTOR_LINKREL_M2M_BYTE</a>(src,  dest,  count,  linkjmp)</td></tr>
+<tr class="memdesc:gaee35dd864484d29d0f40dbe011920b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for linked memory to memory byte transfer.  <a href="group__LDMA.html#gaee35dd864484d29d0f40dbe011920b29">More...</a><br /></td></tr>
+<tr class="separator:gaee35dd864484d29d0f40dbe011920b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecbbe0b61aef9b08bb6d94dfba224402"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gaecbbe0b61aef9b08bb6d94dfba224402">LDMA_DESCRIPTOR_LINKREL_M2M_HALF</a>(src,  dest,  count,  linkjmp)</td></tr>
+<tr class="memdesc:gaecbbe0b61aef9b08bb6d94dfba224402"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for linked memory to memory half-word transfer.  <a href="group__LDMA.html#gaecbbe0b61aef9b08bb6d94dfba224402">More...</a><br /></td></tr>
+<tr class="separator:gaecbbe0b61aef9b08bb6d94dfba224402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27d663304f97e0bd1eac76163c815973"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga27d663304f97e0bd1eac76163c815973">LDMA_DESCRIPTOR_LINKREL_M2M_WORD</a>(src,  dest,  count,  linkjmp)</td></tr>
+<tr class="memdesc:ga27d663304f97e0bd1eac76163c815973"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for linked memory to memory word transfer.  <a href="group__LDMA.html#ga27d663304f97e0bd1eac76163c815973">More...</a><br /></td></tr>
+<tr class="separator:ga27d663304f97e0bd1eac76163c815973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a40a3c684f818adae4a27d494f8d08b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga1a40a3c684f818adae4a27d494f8d08b">LDMA_DESCRIPTOR_LINKREL_M2P_BYTE</a>(src,  dest,  count,  linkjmp)</td></tr>
+<tr class="memdesc:ga1a40a3c684f818adae4a27d494f8d08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for byte transfers from memory to a peripheral.  <a href="group__LDMA.html#ga1a40a3c684f818adae4a27d494f8d08b">More...</a><br /></td></tr>
+<tr class="separator:ga1a40a3c684f818adae4a27d494f8d08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb2e026030dd713aefca1401aaab8365"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gadb2e026030dd713aefca1401aaab8365">LDMA_DESCRIPTOR_LINKREL_P2M_BYTE</a>(src,  dest,  count,  linkjmp)</td></tr>
+<tr class="memdesc:gadb2e026030dd713aefca1401aaab8365"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for byte transfers from a peripheral to memory.  <a href="group__LDMA.html#gadb2e026030dd713aefca1401aaab8365">More...</a><br /></td></tr>
+<tr class="separator:gadb2e026030dd713aefca1401aaab8365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19e959f5ccd00b4ae257abea813608c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga19e959f5ccd00b4ae257abea813608c3">LDMA_DESCRIPTOR_LINKREL_SYNC</a>(set,  clr,  matchValue,  matchEnable,  linkjmp)</td></tr>
+<tr class="memdesc:ga19e959f5ccd00b4ae257abea813608c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for SYNC transfer.  <a href="group__LDMA.html#ga19e959f5ccd00b4ae257abea813608c3">More...</a><br /></td></tr>
+<tr class="separator:ga19e959f5ccd00b4ae257abea813608c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2e904079a1d69b53d9620750abe1ee9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gac2e904079a1d69b53d9620750abe1ee9">LDMA_DESCRIPTOR_LINKREL_WRITE</a>(value,  address,  linkjmp)</td></tr>
+<tr class="memdesc:gac2e904079a1d69b53d9620750abe1ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for Immediate WRITE transfer.  <a href="group__LDMA.html#gac2e904079a1d69b53d9620750abe1ee9">More...</a><br /></td></tr>
+<tr class="separator:gac2e904079a1d69b53d9620750abe1ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c7290690a081e93e9d2b60590ef15f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga5c7290690a081e93e9d2b60590ef15f6">LDMA_DESCRIPTOR_SINGLE_M2M_BYTE</a>(src,  dest,  count)</td></tr>
+<tr class="memdesc:ga5c7290690a081e93e9d2b60590ef15f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for single memory to memory byte transfer.  <a href="group__LDMA.html#ga5c7290690a081e93e9d2b60590ef15f6">More...</a><br /></td></tr>
+<tr class="separator:ga5c7290690a081e93e9d2b60590ef15f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8f41c88116e7fe10864de1db4c7adb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gaf8f41c88116e7fe10864de1db4c7adb3">LDMA_DESCRIPTOR_SINGLE_M2M_HALF</a>(src,  dest,  count)</td></tr>
+<tr class="memdesc:gaf8f41c88116e7fe10864de1db4c7adb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for single memory to memory half-word transfer.  <a href="group__LDMA.html#gaf8f41c88116e7fe10864de1db4c7adb3">More...</a><br /></td></tr>
+<tr class="separator:gaf8f41c88116e7fe10864de1db4c7adb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a144eef3ebf7d23cca4476194c328da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga9a144eef3ebf7d23cca4476194c328da">LDMA_DESCRIPTOR_SINGLE_M2M_WORD</a>(src,  dest,  count)</td></tr>
+<tr class="memdesc:ga9a144eef3ebf7d23cca4476194c328da"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for single memory to memory word transfer.  <a href="group__LDMA.html#ga9a144eef3ebf7d23cca4476194c328da">More...</a><br /></td></tr>
+<tr class="separator:ga9a144eef3ebf7d23cca4476194c328da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga931f3f1990483399f946b10cadb167b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga931f3f1990483399f946b10cadb167b0">LDMA_DESCRIPTOR_SINGLE_M2P_BYTE</a>(src,  dest,  count)</td></tr>
+<tr class="memdesc:ga931f3f1990483399f946b10cadb167b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for byte transfers from memory to a peripheral.  <a href="group__LDMA.html#ga931f3f1990483399f946b10cadb167b0">More...</a><br /></td></tr>
+<tr class="separator:ga931f3f1990483399f946b10cadb167b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd30d7baf385451967a016859569472a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gafd30d7baf385451967a016859569472a">LDMA_DESCRIPTOR_SINGLE_P2M_BYTE</a>(src,  dest,  count)</td></tr>
+<tr class="memdesc:gafd30d7baf385451967a016859569472a"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for byte transfers from a peripheral to memory.  <a href="group__LDMA.html#gafd30d7baf385451967a016859569472a">More...</a><br /></td></tr>
+<tr class="separator:gafd30d7baf385451967a016859569472a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab87422b532123dadb675780759c79e4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gab87422b532123dadb675780759c79e4f">LDMA_DESCRIPTOR_SINGLE_SYNC</a>(set,  clr,  matchValue,  matchEnable)</td></tr>
+<tr class="memdesc:gab87422b532123dadb675780759c79e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for SYNC transfer.  <a href="group__LDMA.html#gab87422b532123dadb675780759c79e4f">More...</a><br /></td></tr>
+<tr class="separator:gab87422b532123dadb675780759c79e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78ea3b9711a74578c7195467dfc4aaf2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga78ea3b9711a74578c7195467dfc4aaf2">LDMA_DESCRIPTOR_SINGLE_WRITE</a>(value,  address)</td></tr>
+<tr class="memdesc:ga78ea3b9711a74578c7195467dfc4aaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for Immediate WRITE transfer.  <a href="group__LDMA.html#ga78ea3b9711a74578c7195467dfc4aaf2">More...</a><br /></td></tr>
+<tr class="separator:ga78ea3b9711a74578c7195467dfc4aaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8734a872a3306744ecf24a3b8068e3c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga8734a872a3306744ecf24a3b8068e3c5">LDMA_INIT_DEFAULT</a></td></tr>
 <tr class="memdesc:ga8734a872a3306744ecf24a3b8068e3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default DMA initialization structure.  <a href="group__LDMA.html#ga8734a872a3306744ecf24a3b8068e3c5">More...</a><br /></td></tr>
 <tr class="separator:ga8734a872a3306744ecf24a3b8068e3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,66 +223,34 @@ Macros</h2></td></tr>
 <tr class="memitem:ga9c1e809a192f769f812f8713bcbb482b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga9c1e809a192f769f812f8713bcbb482b">LDMA_TRANSFER_CFG_PERIPHERAL_LOOP</a>(signal,  loopCnt)</td></tr>
 <tr class="memdesc:ga9c1e809a192f769f812f8713bcbb482b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic DMA transfer configuration for looped memory to/from peripheral transfers.  <a href="group__LDMA.html#ga9c1e809a192f769f812f8713bcbb482b">More...</a><br /></td></tr>
 <tr class="separator:ga9c1e809a192f769f812f8713bcbb482b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9a144eef3ebf7d23cca4476194c328da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga9a144eef3ebf7d23cca4476194c328da">LDMA_DESCRIPTOR_SINGLE_M2M_WORD</a>(src,  dest,  count)</td></tr>
-<tr class="memdesc:ga9a144eef3ebf7d23cca4476194c328da"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for single memory to memory word transfer.  <a href="group__LDMA.html#ga9a144eef3ebf7d23cca4476194c328da">More...</a><br /></td></tr>
-<tr class="separator:ga9a144eef3ebf7d23cca4476194c328da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf8f41c88116e7fe10864de1db4c7adb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gaf8f41c88116e7fe10864de1db4c7adb3">LDMA_DESCRIPTOR_SINGLE_M2M_HALF</a>(src,  dest,  count)</td></tr>
-<tr class="memdesc:gaf8f41c88116e7fe10864de1db4c7adb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for single memory to memory half-word transfer.  <a href="group__LDMA.html#gaf8f41c88116e7fe10864de1db4c7adb3">More...</a><br /></td></tr>
-<tr class="separator:gaf8f41c88116e7fe10864de1db4c7adb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c7290690a081e93e9d2b60590ef15f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga5c7290690a081e93e9d2b60590ef15f6">LDMA_DESCRIPTOR_SINGLE_M2M_BYTE</a>(src,  dest,  count)</td></tr>
-<tr class="memdesc:ga5c7290690a081e93e9d2b60590ef15f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for single memory to memory byte transfer.  <a href="group__LDMA.html#ga5c7290690a081e93e9d2b60590ef15f6">More...</a><br /></td></tr>
-<tr class="separator:ga5c7290690a081e93e9d2b60590ef15f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga55567ffc62ece860416bbe3885895e4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga55567ffc62ece860416bbe3885895e4a">LDMA_DESCRIPTOR_LINKABS_M2M_WORD</a>(src,  dest,  count)</td></tr>
-<tr class="memdesc:ga55567ffc62ece860416bbe3885895e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for linked memory to memory word transfer.  <a href="group__LDMA.html#ga55567ffc62ece860416bbe3885895e4a">More...</a><br /></td></tr>
-<tr class="separator:ga55567ffc62ece860416bbe3885895e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60b372ea07be689e11acc4176650d585"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga60b372ea07be689e11acc4176650d585">LDMA_DESCRIPTOR_LINKABS_M2M_HALF</a>(src,  dest,  count)</td></tr>
-<tr class="memdesc:ga60b372ea07be689e11acc4176650d585"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for linked memory to memory half-word transfer.  <a href="group__LDMA.html#ga60b372ea07be689e11acc4176650d585">More...</a><br /></td></tr>
-<tr class="separator:ga60b372ea07be689e11acc4176650d585"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94b66a79decb6cdfb579e05a27f37559"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga94b66a79decb6cdfb579e05a27f37559">LDMA_DESCRIPTOR_LINKABS_M2M_BYTE</a>(src,  dest,  count)</td></tr>
-<tr class="memdesc:ga94b66a79decb6cdfb579e05a27f37559"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for linked memory to memory byte transfer.  <a href="group__LDMA.html#ga94b66a79decb6cdfb579e05a27f37559">More...</a><br /></td></tr>
-<tr class="separator:ga94b66a79decb6cdfb579e05a27f37559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27d663304f97e0bd1eac76163c815973"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga27d663304f97e0bd1eac76163c815973">LDMA_DESCRIPTOR_LINKREL_M2M_WORD</a>(src,  dest,  count,  linkjmp)</td></tr>
-<tr class="memdesc:ga27d663304f97e0bd1eac76163c815973"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for linked memory to memory word transfer.  <a href="group__LDMA.html#ga27d663304f97e0bd1eac76163c815973">More...</a><br /></td></tr>
-<tr class="separator:ga27d663304f97e0bd1eac76163c815973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaecbbe0b61aef9b08bb6d94dfba224402"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gaecbbe0b61aef9b08bb6d94dfba224402">LDMA_DESCRIPTOR_LINKREL_M2M_HALF</a>(src,  dest,  count,  linkjmp)</td></tr>
-<tr class="memdesc:gaecbbe0b61aef9b08bb6d94dfba224402"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for linked memory to memory half-word transfer.  <a href="group__LDMA.html#gaecbbe0b61aef9b08bb6d94dfba224402">More...</a><br /></td></tr>
-<tr class="separator:gaecbbe0b61aef9b08bb6d94dfba224402"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee35dd864484d29d0f40dbe011920b29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gaee35dd864484d29d0f40dbe011920b29">LDMA_DESCRIPTOR_LINKREL_M2M_BYTE</a>(src,  dest,  count,  linkjmp)</td></tr>
-<tr class="memdesc:gaee35dd864484d29d0f40dbe011920b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for linked memory to memory byte transfer.  <a href="group__LDMA.html#gaee35dd864484d29d0f40dbe011920b29">More...</a><br /></td></tr>
-<tr class="separator:gaee35dd864484d29d0f40dbe011920b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd30d7baf385451967a016859569472a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gafd30d7baf385451967a016859569472a">LDMA_DESCRIPTOR_SINGLE_P2M_BYTE</a>(src,  dest,  count)</td></tr>
-<tr class="memdesc:gafd30d7baf385451967a016859569472a"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for byte transfers from a peripheral to memory.  <a href="group__LDMA.html#gafd30d7baf385451967a016859569472a">More...</a><br /></td></tr>
-<tr class="separator:gafd30d7baf385451967a016859569472a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga931f3f1990483399f946b10cadb167b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga931f3f1990483399f946b10cadb167b0">LDMA_DESCRIPTOR_SINGLE_M2P_BYTE</a>(src,  dest,  count)</td></tr>
-<tr class="memdesc:ga931f3f1990483399f946b10cadb167b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for byte transfers from memory to a peripheral.  <a href="group__LDMA.html#ga931f3f1990483399f946b10cadb167b0">More...</a><br /></td></tr>
-<tr class="separator:ga931f3f1990483399f946b10cadb167b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadb2e026030dd713aefca1401aaab8365"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gadb2e026030dd713aefca1401aaab8365">LDMA_DESCRIPTOR_LINKREL_P2M_BYTE</a>(src,  dest,  count,  linkjmp)</td></tr>
-<tr class="memdesc:gadb2e026030dd713aefca1401aaab8365"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for byte transfers from a peripheral to memory.  <a href="group__LDMA.html#gadb2e026030dd713aefca1401aaab8365">More...</a><br /></td></tr>
-<tr class="separator:gadb2e026030dd713aefca1401aaab8365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a40a3c684f818adae4a27d494f8d08b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga1a40a3c684f818adae4a27d494f8d08b">LDMA_DESCRIPTOR_LINKREL_M2P_BYTE</a>(src,  dest,  count,  linkjmp)</td></tr>
-<tr class="memdesc:ga1a40a3c684f818adae4a27d494f8d08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for byte transfers from memory to a peripheral.  <a href="group__LDMA.html#ga1a40a3c684f818adae4a27d494f8d08b">More...</a><br /></td></tr>
-<tr class="separator:ga1a40a3c684f818adae4a27d494f8d08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga78ea3b9711a74578c7195467dfc4aaf2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga78ea3b9711a74578c7195467dfc4aaf2">LDMA_DESCRIPTOR_SINGLE_WRITE</a>(value,  address)</td></tr>
-<tr class="memdesc:ga78ea3b9711a74578c7195467dfc4aaf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for Immediate WRITE transfer.  <a href="group__LDMA.html#ga78ea3b9711a74578c7195467dfc4aaf2">More...</a><br /></td></tr>
-<tr class="separator:ga78ea3b9711a74578c7195467dfc4aaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ac45db98d8a0f10979f3dc861406702"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga8ac45db98d8a0f10979f3dc861406702">LDMA_DESCRIPTOR_LINKABS_WRITE</a>(value,  address)</td></tr>
-<tr class="memdesc:ga8ac45db98d8a0f10979f3dc861406702"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for Immediate WRITE transfer.  <a href="group__LDMA.html#ga8ac45db98d8a0f10979f3dc861406702">More...</a><br /></td></tr>
-<tr class="separator:ga8ac45db98d8a0f10979f3dc861406702"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac2e904079a1d69b53d9620750abe1ee9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gac2e904079a1d69b53d9620750abe1ee9">LDMA_DESCRIPTOR_LINKREL_WRITE</a>(value,  address,  linkjmp)</td></tr>
-<tr class="memdesc:gac2e904079a1d69b53d9620750abe1ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for Immediate WRITE transfer.  <a href="group__LDMA.html#gac2e904079a1d69b53d9620750abe1ee9">More...</a><br /></td></tr>
-<tr class="separator:gac2e904079a1d69b53d9620750abe1ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab87422b532123dadb675780759c79e4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gab87422b532123dadb675780759c79e4f">LDMA_DESCRIPTOR_SINGLE_SYNC</a>(set,  clr,  matchValue,  matchEnable)</td></tr>
-<tr class="memdesc:gab87422b532123dadb675780759c79e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for SYNC transfer.  <a href="group__LDMA.html#gab87422b532123dadb675780759c79e4f">More...</a><br /></td></tr>
-<tr class="separator:gab87422b532123dadb675780759c79e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf993e912c1971c710eb52bb1affa1779"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gaf993e912c1971c710eb52bb1affa1779">LDMA_DESCRIPTOR_LINKABS_SYNC</a>(set,  clr,  matchValue,  matchEnable)</td></tr>
-<tr class="memdesc:gaf993e912c1971c710eb52bb1affa1779"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for SYNC transfer.  <a href="group__LDMA.html#gaf993e912c1971c710eb52bb1affa1779">More...</a><br /></td></tr>
-<tr class="separator:gaf993e912c1971c710eb52bb1affa1779"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga19e959f5ccd00b4ae257abea813608c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga19e959f5ccd00b4ae257abea813608c3">LDMA_DESCRIPTOR_LINKREL_SYNC</a>(set,  clr,  matchValue,  matchEnable,  linkjmp)</td></tr>
-<tr class="memdesc:ga19e959f5ccd00b4ae257abea813608c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA descriptor initializer for SYNC transfer.  <a href="group__LDMA.html#ga19e959f5ccd00b4ae257abea813608c3">More...</a><br /></td></tr>
-<tr class="separator:ga19e959f5ccd00b4ae257abea813608c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga0832d0c171749a45a0d26b3e3a0ab262"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga0832d0c171749a45a0d26b3e3a0ab262">LDMA_CfgArbSlots_t</a> { <br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga0832d0c171749a45a0d26b3e3a0ab262a1e313d1b478b2bb29094246a8c23720e">ldmaCfgArbSlotsAs1</a> = _LDMA_CH_CFG_ARBSLOTS_ONE, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga0832d0c171749a45a0d26b3e3a0ab262a9b34b5bbbfd250845fbfa6cb584c4eeb">ldmaCfgArbSlotsAs2</a> = _LDMA_CH_CFG_ARBSLOTS_TWO, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga0832d0c171749a45a0d26b3e3a0ab262a5de1831b905952150d63684408c240c1">ldmaCfgArbSlotsAs4</a> = _LDMA_CH_CFG_ARBSLOTS_FOUR, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga0832d0c171749a45a0d26b3e3a0ab262a38867de1a23a204a714e79107badaa21">ldmaCfgArbSlotsAs8</a> = _LDMA_CH_CFG_ARBSLOTS_EIGHT
+<br />
+ }<tr class="separator:ga0832d0c171749a45a0d26b3e3a0ab262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga613011e9fc2fbe1c0f61823e7d52e7a6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga613011e9fc2fbe1c0f61823e7d52e7a6">LDMA_CfgDstIncSign_t</a> { <br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga613011e9fc2fbe1c0f61823e7d52e7a6a8dd54e02b101e444e5fc59b504478e23">ldmaCfgDstIncSignPos</a> = _LDMA_CH_CFG_DSTINCSIGN_POSITIVE, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga613011e9fc2fbe1c0f61823e7d52e7a6a2c96412fc68ef88d70420ab2642184ed">ldmaCfgDstIncSignNeg</a> = _LDMA_CH_CFG_DSTINCSIGN_NEGATIVE
+<br />
+ }<tr class="separator:ga613011e9fc2fbe1c0f61823e7d52e7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gad403a7cadc82112e002b6d22c2d784f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gad403a7cadc82112e002b6d22c2d784f1">LDMA_CfgSrcIncSign_t</a> { <br />
+&#160;&#160;<a class="el" href="group__LDMA.html#ggad403a7cadc82112e002b6d22c2d784f1a4be0530b5a0cf4864899df7528b61aa8">ldmaCfgSrcIncSignPos</a> = _LDMA_CH_CFG_SRCINCSIGN_POSITIVE, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#ggad403a7cadc82112e002b6d22c2d784f1a9e75a07c6584997a19c6a9db11e9c96e">ldmaCfgSrcIncSignNeg</a> = _LDMA_CH_CFG_SRCINCSIGN_NEGATIVE
+<br />
+ }<tr class="separator:gad403a7cadc82112e002b6d22c2d784f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:gad9f63827ce4dab5c267621a41c92b8d5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gad9f63827ce4dab5c267621a41c92b8d5">LDMA_CtrlBlockSize_t</a> { <br />
 &#160;&#160;<a class="el" href="group__LDMA.html#ggad9f63827ce4dab5c267621a41c92b8d5af1be8236f6a537297bc7943519264245">ldmaCtrlBlockSizeUnit1</a> = _LDMA_CH_CTRL_BLOCKSIZE_UNIT1, 
 <br />
@@ -245,41 +282,12 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:gad9f63827ce4dab5c267621a41c92b8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:ga5b4a74c3c18eed0ae3f3e88430f19322"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga5b4a74c3c18eed0ae3f3e88430f19322">LDMA_CtrlStructType_t</a> { <br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga5b4a74c3c18eed0ae3f3e88430f19322ad3eba56d7c3ed92cfaa8a55cfb0a57ea">ldmaCtrlStructTypeXfer</a> = _LDMA_CH_CTRL_STRUCTTYPE_TRANSFER, 
+<tr class="memitem:gaef3b1dc642c70afed38593c1e1e2fd60"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gaef3b1dc642c70afed38593c1e1e2fd60">LDMA_CtrlDstAddrMode_t</a> { <br />
+&#160;&#160;<a class="el" href="group__LDMA.html#ggaef3b1dc642c70afed38593c1e1e2fd60aab42081838fdff9cccbbe0d224bc8a6e">ldmaCtrlDstAddrModeAbs</a> = _LDMA_CH_CTRL_DSTMODE_ABSOLUTE, 
 <br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga5b4a74c3c18eed0ae3f3e88430f19322af776993a6ca7c411edfb753881efb067">ldmaCtrlStructTypeSync</a> = _LDMA_CH_CTRL_STRUCTTYPE_SYNCHRONIZE, 
+&#160;&#160;<a class="el" href="group__LDMA.html#ggaef3b1dc642c70afed38593c1e1e2fd60a81d9498c3545d27afc89d05ef7ea603f">ldmaCtrlDstAddrModeRel</a> = _LDMA_CH_CTRL_DSTMODE_RELATIVE
 <br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga5b4a74c3c18eed0ae3f3e88430f19322ad3e6c6bd32e301c8f2440fc9c8fb77c0">ldmaCtrlStructTypeWrite</a> = _LDMA_CH_CTRL_STRUCTTYPE_WRITE
-<br />
- }<tr class="separator:ga5b4a74c3c18eed0ae3f3e88430f19322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga433a92d97f637600c533a857efe04538"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga433a92d97f637600c533a857efe04538">LDMA_CtrlReqMode_t</a> { <br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga433a92d97f637600c533a857efe04538a3e0b6476d614cbd3f4c05e0be089040c">ldmaCtrlReqModeBlock</a> = _LDMA_CH_CTRL_REQMODE_BLOCK, 
-<br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga433a92d97f637600c533a857efe04538a27871038313ea92e6895364dfe9c3f4f">ldmaCtrlReqModeAll</a> = _LDMA_CH_CTRL_REQMODE_ALL
-<br />
- }<tr class="separator:ga433a92d97f637600c533a857efe04538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga332532227a564f73e71b1d6b82c7f8f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga332532227a564f73e71b1d6b82c7f8f2">LDMA_CtrlSrcInc_t</a> { <br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga332532227a564f73e71b1d6b82c7f8f2aef2cf74934bd371b968aa54d44e9da63">ldmaCtrlSrcIncOne</a> = _LDMA_CH_CTRL_SRCINC_ONE, 
-<br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga332532227a564f73e71b1d6b82c7f8f2ab4affe5ef45bc5d2dadb1501d24fe5cc">ldmaCtrlSrcIncTwo</a> = _LDMA_CH_CTRL_SRCINC_TWO, 
-<br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga332532227a564f73e71b1d6b82c7f8f2a6fc20584b897d5c5db10b422ea0310fb">ldmaCtrlSrcIncFour</a> = _LDMA_CH_CTRL_SRCINC_FOUR, 
-<br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga332532227a564f73e71b1d6b82c7f8f2a837844adb8fb248cb6987c7c781b8426">ldmaCtrlSrcIncNone</a> = _LDMA_CH_CTRL_SRCINC_NONE
-<br />
- }<tr class="separator:ga332532227a564f73e71b1d6b82c7f8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga7ff428d7685dc91962c7bc693d16af34"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga7ff428d7685dc91962c7bc693d16af34">LDMA_CtrlSize_t</a> { <br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga7ff428d7685dc91962c7bc693d16af34acc98a94a8b21644677e339c6762b8460">ldmaCtrlSizeByte</a> = _LDMA_CH_CTRL_SIZE_BYTE, 
-<br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga7ff428d7685dc91962c7bc693d16af34a2eeae8bca51fbd9980a728dd9be0467c">ldmaCtrlSizeHalf</a> = _LDMA_CH_CTRL_SIZE_HALFWORD, 
-<br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga7ff428d7685dc91962c7bc693d16af34a75df0f7031c902f6e96d0d147e75caf4">ldmaCtrlSizeWord</a> = _LDMA_CH_CTRL_SIZE_WORD
-<br />
- }<tr class="separator:ga7ff428d7685dc91962c7bc693d16af34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ }<tr class="separator:gaef3b1dc642c70afed38593c1e1e2fd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ga531fc9df9edc1334a65d4ba8f9d0f368"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga531fc9df9edc1334a65d4ba8f9d0f368">LDMA_CtrlDstInc_t</a> { <br />
 &#160;&#160;<a class="el" href="group__LDMA.html#gga531fc9df9edc1334a65d4ba8f9d0f368ab87047c0f2623d5f83b944ca3d8fe311">ldmaCtrlDstIncOne</a> = _LDMA_CH_CTRL_DSTINC_ONE, 
@@ -292,6 +300,22 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga531fc9df9edc1334a65d4ba8f9d0f368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:ga433a92d97f637600c533a857efe04538"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga433a92d97f637600c533a857efe04538">LDMA_CtrlReqMode_t</a> { <br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga433a92d97f637600c533a857efe04538a3e0b6476d614cbd3f4c05e0be089040c">ldmaCtrlReqModeBlock</a> = _LDMA_CH_CTRL_REQMODE_BLOCK, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga433a92d97f637600c533a857efe04538a27871038313ea92e6895364dfe9c3f4f">ldmaCtrlReqModeAll</a> = _LDMA_CH_CTRL_REQMODE_ALL
+<br />
+ }<tr class="separator:ga433a92d97f637600c533a857efe04538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga7ff428d7685dc91962c7bc693d16af34"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga7ff428d7685dc91962c7bc693d16af34">LDMA_CtrlSize_t</a> { <br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga7ff428d7685dc91962c7bc693d16af34acc98a94a8b21644677e339c6762b8460">ldmaCtrlSizeByte</a> = _LDMA_CH_CTRL_SIZE_BYTE, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga7ff428d7685dc91962c7bc693d16af34a2eeae8bca51fbd9980a728dd9be0467c">ldmaCtrlSizeHalf</a> = _LDMA_CH_CTRL_SIZE_HALFWORD, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga7ff428d7685dc91962c7bc693d16af34a75df0f7031c902f6e96d0d147e75caf4">ldmaCtrlSizeWord</a> = _LDMA_CH_CTRL_SIZE_WORD
+<br />
+ }<tr class="separator:ga7ff428d7685dc91962c7bc693d16af34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:gad2dd9860d8030b8c6ae52a0ca0a57aae"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gad2dd9860d8030b8c6ae52a0ca0a57aae">LDMA_CtrlSrcAddrMode_t</a> { <br />
 &#160;&#160;<a class="el" href="group__LDMA.html#ggad2dd9860d8030b8c6ae52a0ca0a57aaea107f55ce26e4ea9ac1dc9d6db7bbee59">ldmaCtrlSrcAddrModeAbs</a> = _LDMA_CH_CTRL_SRCMODE_ABSOLUTE, 
 <br />
@@ -299,12 +323,25 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:gad2dd9860d8030b8c6ae52a0ca0a57aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:gaef3b1dc642c70afed38593c1e1e2fd60"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gaef3b1dc642c70afed38593c1e1e2fd60">LDMA_CtrlDstAddrMode_t</a> { <br />
-&#160;&#160;<a class="el" href="group__LDMA.html#ggaef3b1dc642c70afed38593c1e1e2fd60aab42081838fdff9cccbbe0d224bc8a6e">ldmaCtrlDstAddrModeAbs</a> = _LDMA_CH_CTRL_DSTMODE_ABSOLUTE, 
+<tr class="memitem:ga332532227a564f73e71b1d6b82c7f8f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga332532227a564f73e71b1d6b82c7f8f2">LDMA_CtrlSrcInc_t</a> { <br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga332532227a564f73e71b1d6b82c7f8f2aef2cf74934bd371b968aa54d44e9da63">ldmaCtrlSrcIncOne</a> = _LDMA_CH_CTRL_SRCINC_ONE, 
 <br />
-&#160;&#160;<a class="el" href="group__LDMA.html#ggaef3b1dc642c70afed38593c1e1e2fd60a81d9498c3545d27afc89d05ef7ea603f">ldmaCtrlDstAddrModeRel</a> = _LDMA_CH_CTRL_DSTMODE_RELATIVE
+&#160;&#160;<a class="el" href="group__LDMA.html#gga332532227a564f73e71b1d6b82c7f8f2ab4affe5ef45bc5d2dadb1501d24fe5cc">ldmaCtrlSrcIncTwo</a> = _LDMA_CH_CTRL_SRCINC_TWO, 
 <br />
- }<tr class="separator:gaef3b1dc642c70afed38593c1e1e2fd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&#160;&#160;<a class="el" href="group__LDMA.html#gga332532227a564f73e71b1d6b82c7f8f2a6fc20584b897d5c5db10b422ea0310fb">ldmaCtrlSrcIncFour</a> = _LDMA_CH_CTRL_SRCINC_FOUR, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga332532227a564f73e71b1d6b82c7f8f2a837844adb8fb248cb6987c7c781b8426">ldmaCtrlSrcIncNone</a> = _LDMA_CH_CTRL_SRCINC_NONE
+<br />
+ }<tr class="separator:ga332532227a564f73e71b1d6b82c7f8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga5b4a74c3c18eed0ae3f3e88430f19322"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga5b4a74c3c18eed0ae3f3e88430f19322">LDMA_CtrlStructType_t</a> { <br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga5b4a74c3c18eed0ae3f3e88430f19322ad3eba56d7c3ed92cfaa8a55cfb0a57ea">ldmaCtrlStructTypeXfer</a> = _LDMA_CH_CTRL_STRUCTTYPE_TRANSFER, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga5b4a74c3c18eed0ae3f3e88430f19322af776993a6ca7c411edfb753881efb067">ldmaCtrlStructTypeSync</a> = _LDMA_CH_CTRL_STRUCTTYPE_SYNCHRONIZE, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga5b4a74c3c18eed0ae3f3e88430f19322ad3e6c6bd32e301c8f2440fc9c8fb77c0">ldmaCtrlStructTypeWrite</a> = _LDMA_CH_CTRL_STRUCTTYPE_WRITE
+<br />
+ }<tr class="separator:ga5b4a74c3c18eed0ae3f3e88430f19322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ga850acba952c604f093774a0702c73bb3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga850acba952c604f093774a0702c73bb3">LDMA_LinkMode_t</a> { <br />
 &#160;&#160;<a class="el" href="group__LDMA.html#gga850acba952c604f093774a0702c73bb3a6ad9f5550d73398c5dd1155ee12d1619">ldmaLinkModeAbs</a> = _LDMA_CH_LINK_LINKMODE_ABSOLUTE, 
@@ -312,31 +349,6 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__LDMA.html#gga850acba952c604f093774a0702c73bb3a5052280a60134c89068ba6d2ad096352">ldmaLinkModeRel</a> = _LDMA_CH_LINK_LINKMODE_RELATIVE
 <br />
  }<tr class="separator:ga850acba952c604f093774a0702c73bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga0832d0c171749a45a0d26b3e3a0ab262"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga0832d0c171749a45a0d26b3e3a0ab262">LDMA_CfgArbSlots_t</a> { <br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga0832d0c171749a45a0d26b3e3a0ab262a1e313d1b478b2bb29094246a8c23720e">ldmaCfgArbSlotsAs1</a> = _LDMA_CH_CFG_ARBSLOTS_ONE, 
-<br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga0832d0c171749a45a0d26b3e3a0ab262a9b34b5bbbfd250845fbfa6cb584c4eeb">ldmaCfgArbSlotsAs2</a> = _LDMA_CH_CFG_ARBSLOTS_TWO, 
-<br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga0832d0c171749a45a0d26b3e3a0ab262a5de1831b905952150d63684408c240c1">ldmaCfgArbSlotsAs4</a> = _LDMA_CH_CFG_ARBSLOTS_FOUR, 
-<br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga0832d0c171749a45a0d26b3e3a0ab262a38867de1a23a204a714e79107badaa21">ldmaCfgArbSlotsAs8</a> = _LDMA_CH_CFG_ARBSLOTS_EIGHT
-<br />
- }<tr class="separator:ga0832d0c171749a45a0d26b3e3a0ab262"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:gad403a7cadc82112e002b6d22c2d784f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gad403a7cadc82112e002b6d22c2d784f1">LDMA_CfgSrcIncSign_t</a> { <br />
-&#160;&#160;<a class="el" href="group__LDMA.html#ggad403a7cadc82112e002b6d22c2d784f1a4be0530b5a0cf4864899df7528b61aa8">ldmaCfgSrcIncSignPos</a> = _LDMA_CH_CFG_SRCINCSIGN_POSITIVE, 
-<br />
-&#160;&#160;<a class="el" href="group__LDMA.html#ggad403a7cadc82112e002b6d22c2d784f1a9e75a07c6584997a19c6a9db11e9c96e">ldmaCfgSrcIncSignNeg</a> = _LDMA_CH_CFG_SRCINCSIGN_NEGATIVE
-<br />
- }<tr class="separator:gad403a7cadc82112e002b6d22c2d784f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
-<tr class="memitem:ga613011e9fc2fbe1c0f61823e7d52e7a6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga613011e9fc2fbe1c0f61823e7d52e7a6">LDMA_CfgDstIncSign_t</a> { <br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga613011e9fc2fbe1c0f61823e7d52e7a6a8dd54e02b101e444e5fc59b504478e23">ldmaCfgDstIncSignPos</a> = _LDMA_CH_CFG_DSTINCSIGN_POSITIVE, 
-<br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga613011e9fc2fbe1c0f61823e7d52e7a6a2c96412fc68ef88d70420ab2642184ed">ldmaCfgDstIncSignNeg</a> = _LDMA_CH_CFG_DSTINCSIGN_NEGATIVE
-<br />
- }<tr class="separator:ga613011e9fc2fbe1c0f61823e7d52e7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ga4cd64c56c0374044e338834ada233bee"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga4cd64c56c0374044e338834ada233bee">LDMA_PeripheralSignal_t</a> { <br />
 &#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea5191237bdfe9c5a9c3e6b1011cfabb98">ldmaPeripheralSignal_NONE</a> = LDMA_CH_REQSEL_SOURCESEL_NONE, 
@@ -413,21 +425,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga77a1dadc1ecfd21bd12a173e6e28e072"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga77a1dadc1ecfd21bd12a173e6e28e072">LDMA_DeInit</a> (void)</td></tr>
 <tr class="memdesc:ga77a1dadc1ecfd21bd12a173e6e28e072"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initialize the LDMA controller.  <a href="group__LDMA.html#ga77a1dadc1ecfd21bd12a173e6e28e072">More...</a><br /></td></tr>
 <tr class="separator:ga77a1dadc1ecfd21bd12a173e6e28e072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a0a040a773947aca9cfedd597441dc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga1a0a040a773947aca9cfedd597441dc5">LDMA_EnableChannelRequest</a> (int ch, bool enable)</td></tr>
+<tr class="memdesc:ga1a0a040a773947aca9cfedd597441dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable a LDMA channel request.  <a href="group__LDMA.html#ga1a0a040a773947aca9cfedd597441dc5">More...</a><br /></td></tr>
+<tr class="separator:ga1a0a040a773947aca9cfedd597441dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga50d6a2d296d7e41c90d00d642152158d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga50d6a2d296d7e41c90d00d642152158d">LDMA_Init</a> (<a class="el" href="structLDMA__Init__t.html">LDMA_Init_t</a> *init)</td></tr>
 <tr class="memdesc:ga50d6a2d296d7e41c90d00d642152158d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the LDMA controller.  <a href="group__LDMA.html#ga50d6a2d296d7e41c90d00d642152158d">More...</a><br /></td></tr>
 <tr class="separator:ga50d6a2d296d7e41c90d00d642152158d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5c9ca9bae8e1bcf397bf53d6f3f79f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">LDMA_StartTransfer</a> (int ch, <a class="el" href="structLDMA__TransferCfg__t.html">LDMA_TransferCfg_t</a> *transfer, <a class="el" href="unionLDMA__Descriptor__t.html">LDMA_Descriptor_t</a> *descriptor)</td></tr>
-<tr class="memdesc:gaf5c9ca9bae8e1bcf397bf53d6f3f79f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a DMA transfer.  <a href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">More...</a><br /></td></tr>
-<tr class="separator:gaf5c9ca9bae8e1bcf397bf53d6f3f79f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94f7cafc791d8ddb5858dafee6a94ada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga94f7cafc791d8ddb5858dafee6a94ada">LDMA_StopTransfer</a> (int ch)</td></tr>
-<tr class="memdesc:ga94f7cafc791d8ddb5858dafee6a94ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop a DMA transfer.  <a href="group__LDMA.html#ga94f7cafc791d8ddb5858dafee6a94ada">More...</a><br /></td></tr>
-<tr class="separator:ga94f7cafc791d8ddb5858dafee6a94ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga361b5d96651a907354f242c7945dd7d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga361b5d96651a907354f242c7945dd7d5">LDMA_TransferDone</a> (int ch)</td></tr>
-<tr class="memdesc:ga361b5d96651a907354f242c7945dd7d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a DMA transfer has completed.  <a href="group__LDMA.html#ga361b5d96651a907354f242c7945dd7d5">More...</a><br /></td></tr>
-<tr class="separator:ga361b5d96651a907354f242c7945dd7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabfd6f1003414438b5c234f2bec304511"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gabfd6f1003414438b5c234f2bec304511">LDMA_TransferRemainingCount</a> (int ch)</td></tr>
-<tr class="memdesc:gabfd6f1003414438b5c234f2bec304511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of items remaining in a transfer.  <a href="group__LDMA.html#gabfd6f1003414438b5c234f2bec304511">More...</a><br /></td></tr>
-<tr class="separator:gabfd6f1003414438b5c234f2bec304511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad34eb2a46f912f39794664e48bab23a6"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gad34eb2a46f912f39794664e48bab23a6">LDMA_IntClear</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:gad34eb2a46f912f39794664e48bab23a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending LDMA interrupts.  <a href="group__LDMA.html#gad34eb2a46f912f39794664e48bab23a6">More...</a><br /></td></tr>
 <tr class="separator:gad34eb2a46f912f39794664e48bab23a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -446,31 +449,26 @@ Functions</h2></td></tr>
 <tr class="memitem:ga093c5c350509d09b821d4fe957fed4e3"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga093c5c350509d09b821d4fe957fed4e3">LDMA_IntSet</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:ga093c5c350509d09b821d4fe957fed4e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one or more pending LDMA interrupts.  <a href="group__LDMA.html#ga093c5c350509d09b821d4fe957fed4e3">More...</a><br /></td></tr>
 <tr class="separator:ga093c5c350509d09b821d4fe957fed4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5c9ca9bae8e1bcf397bf53d6f3f79f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">LDMA_StartTransfer</a> (int ch, <a class="el" href="structLDMA__TransferCfg__t.html">LDMA_TransferCfg_t</a> *transfer, <a class="el" href="unionLDMA__Descriptor__t.html">LDMA_Descriptor_t</a> *descriptor)</td></tr>
+<tr class="memdesc:gaf5c9ca9bae8e1bcf397bf53d6f3f79f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a DMA transfer.  <a href="group__LDMA.html#gaf5c9ca9bae8e1bcf397bf53d6f3f79f5">More...</a><br /></td></tr>
+<tr class="separator:gaf5c9ca9bae8e1bcf397bf53d6f3f79f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94f7cafc791d8ddb5858dafee6a94ada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga94f7cafc791d8ddb5858dafee6a94ada">LDMA_StopTransfer</a> (int ch)</td></tr>
+<tr class="memdesc:ga94f7cafc791d8ddb5858dafee6a94ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop a DMA transfer.  <a href="group__LDMA.html#ga94f7cafc791d8ddb5858dafee6a94ada">More...</a><br /></td></tr>
+<tr class="separator:ga94f7cafc791d8ddb5858dafee6a94ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga361b5d96651a907354f242c7945dd7d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#ga361b5d96651a907354f242c7945dd7d5">LDMA_TransferDone</a> (int ch)</td></tr>
+<tr class="memdesc:ga361b5d96651a907354f242c7945dd7d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a DMA transfer has completed.  <a href="group__LDMA.html#ga361b5d96651a907354f242c7945dd7d5">More...</a><br /></td></tr>
+<tr class="separator:ga361b5d96651a907354f242c7945dd7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfd6f1003414438b5c234f2bec304511"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LDMA.html#gabfd6f1003414438b5c234f2bec304511">LDMA_TransferRemainingCount</a> (int ch)</td></tr>
+<tr class="memdesc:gabfd6f1003414438b5c234f2bec304511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of items remaining in a transfer.  <a href="group__LDMA.html#gabfd6f1003414438b5c234f2bec304511">More...</a><br /></td></tr>
+<tr class="separator:gabfd6f1003414438b5c234f2bec304511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.<br />
-</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.<br />
-</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="em__ldma_8h_source.html">em_ldma.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__ldma_8h.html">em_ldma.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:43 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:40:34 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

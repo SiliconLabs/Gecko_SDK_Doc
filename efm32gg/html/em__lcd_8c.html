@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Giant Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32gg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32gg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,62 +111,12 @@ $(document).ready(function(){initNavTree('em__lcd_8c.html','');});
 <div class="title">em_lcd.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Liquid Crystal Display (LCD) Peripheral API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="em__assert_8h_source.html">em_assert.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="em__bus_8h_source.html">em_bus.h</a>&quot;</code><br />
-</div>
-<p><a href="em__lcd_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga6c06e074a2a2f04da49c06206e9be571"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga6c06e074a2a2f04da49c06206e9be571">LCD_Init</a> (const <a class="el" href="structLCD__Init__TypeDef.html">LCD_Init_TypeDef</a> *lcdInit)</td></tr>
-<tr class="memdesc:ga6c06e074a2a2f04da49c06206e9be571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalize Liquid Crystal Display (LCD) controller.  <a href="group__LCD.html#ga6c06e074a2a2f04da49c06206e9be571">More...</a><br /></td></tr>
-<tr class="separator:ga6c06e074a2a2f04da49c06206e9be571"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a9defe802f8056ad3afb11b23909808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga8a9defe802f8056ad3afb11b23909808">LCD_VLCDSelect</a> (<a class="el" href="group__LCD.html#gad692503495e3618efdef81ed74b3924e">LCD_VLCDSel_TypeDef</a> vlcd)</td></tr>
-<tr class="memdesc:ga8a9defe802f8056ad3afb11b23909808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select source for VLCD.  <a href="group__LCD.html#ga8a9defe802f8056ad3afb11b23909808">More...</a><br /></td></tr>
-<tr class="separator:ga8a9defe802f8056ad3afb11b23909808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaae47aa4f1e46d3643f51c07f560580a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gaae47aa4f1e46d3643f51c07f560580a8">LCD_UpdateCtrl</a> (<a class="el" href="group__LCD.html#ga34370ad541df02f8378fe9022620fbc4">LCD_UpdateCtrl_TypeDef</a> ud)</td></tr>
-<tr class="memdesc:gaae47aa4f1e46d3643f51c07f560580a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Update Control.  <a href="group__LCD.html#gaae47aa4f1e46d3643f51c07f560580a8">More...</a><br /></td></tr>
-<tr class="separator:gaae47aa4f1e46d3643f51c07f560580a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga26c8e0ea9e738e4926f7e7e649ae4358"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga26c8e0ea9e738e4926f7e7e649ae4358">LCD_FrameCountInit</a> (const <a class="el" href="structLCD__FrameCountInit__TypeDef.html">LCD_FrameCountInit_TypeDef</a> *fcInit)</td></tr>
-<tr class="memdesc:ga26c8e0ea9e738e4926f7e7e649ae4358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize LCD Frame Counter.  <a href="group__LCD.html#ga26c8e0ea9e738e4926f7e7e649ae4358">More...</a><br /></td></tr>
-<tr class="separator:ga26c8e0ea9e738e4926f7e7e649ae4358"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ba720135f8c1869113823d684e084f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga1ba720135f8c1869113823d684e084f5">LCD_AnimInit</a> (const <a class="el" href="structLCD__AnimInit__TypeDef.html">LCD_AnimInit_TypeDef</a> *animInit)</td></tr>
-<tr class="memdesc:ga1ba720135f8c1869113823d684e084f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures LCD controller Animation feature.  <a href="group__LCD.html#ga1ba720135f8c1869113823d684e084f5">More...</a><br /></td></tr>
-<tr class="separator:ga1ba720135f8c1869113823d684e084f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84b488e1bd5032de1a8307a937b3064b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga84b488e1bd5032de1a8307a937b3064b">LCD_SegmentRangeEnable</a> (<a class="el" href="group__LCD.html#ga1ec97abe68d147faccb9597f10be8c9a">LCD_SegmentRange_TypeDef</a> segmentRange, bool enable)</td></tr>
-<tr class="memdesc:ga84b488e1bd5032de1a8307a937b3064b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables update of this range of LCD segment lines.  <a href="group__LCD.html#ga84b488e1bd5032de1a8307a937b3064b">More...</a><br /></td></tr>
-<tr class="separator:ga84b488e1bd5032de1a8307a937b3064b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c176631920506966de2bd727ef9e944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga5c176631920506966de2bd727ef9e944">LCD_SegmentSet</a> (int com, int bit, bool enable)</td></tr>
-<tr class="memdesc:ga5c176631920506966de2bd727ef9e944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on or clear a segment.  <a href="group__LCD.html#ga5c176631920506966de2bd727ef9e944">More...</a><br /></td></tr>
-<tr class="separator:ga5c176631920506966de2bd727ef9e944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga098d20909d9b75fbad54f4176a5c8864"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga098d20909d9b75fbad54f4176a5c8864">LCD_SegmentSetLow</a> (int com, uint32_t mask, uint32_t bits)</td></tr>
-<tr class="memdesc:ga098d20909d9b75fbad54f4176a5c8864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the 0-31 lowest segments on a given COM-line in one operation, according to bit mask.  <a href="group__LCD.html#ga098d20909d9b75fbad54f4176a5c8864">More...</a><br /></td></tr>
-<tr class="separator:ga098d20909d9b75fbad54f4176a5c8864"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae974bcc7e675a1597917a5b355cff64e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gae974bcc7e675a1597917a5b355cff64e">LCD_SegmentSetHigh</a> (int com, uint32_t mask, uint32_t bits)</td></tr>
-<tr class="memdesc:gae974bcc7e675a1597917a5b355cff64e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updated the high (32-39) segments on a given COM-line in one operation.  <a href="group__LCD.html#gae974bcc7e675a1597917a5b355cff64e">More...</a><br /></td></tr>
-<tr class="separator:gae974bcc7e675a1597917a5b355cff64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0d783bed716497ea3ba7e618f469ac32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga0d783bed716497ea3ba7e618f469ac32">LCD_ContrastSet</a> (int level)</td></tr>
-<tr class="memdesc:ga0d783bed716497ea3ba7e618f469ac32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure contrast level on LCD panel.  <a href="group__LCD.html#ga0d783bed716497ea3ba7e618f469ac32">More...</a><br /></td></tr>
-<tr class="separator:ga0d783bed716497ea3ba7e618f469ac32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23d1bf6a3ce88f8514eaa1388f8c7d98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga23d1bf6a3ce88f8514eaa1388f8c7d98">LCD_VBoostSet</a> (<a class="el" href="group__LCD.html#ga752298aa2fa7ddd07a3298780b6a7dc9">LCD_VBoostLevel_TypeDef</a> vboost)</td></tr>
-<tr class="memdesc:ga23d1bf6a3ce88f8514eaa1388f8c7d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure voltage booster.  <a href="group__LCD.html#ga23d1bf6a3ce88f8514eaa1388f8c7d98">More...</a><br /></td></tr>
-<tr class="separator:ga23d1bf6a3ce88f8514eaa1388f8c7d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab1e6500ce35b72eaebdc54b3b0ec392"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gaab1e6500ce35b72eaebdc54b3b0ec392">LCD_BiasSegmentSet</a> (int segmentLine, int biasLevel)</td></tr>
-<tr class="memdesc:gaab1e6500ce35b72eaebdc54b3b0ec392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure bias level for a specific segment line for Direct Segment Control.  <a href="group__LCD.html#gaab1e6500ce35b72eaebdc54b3b0ec392">More...</a><br /></td></tr>
-<tr class="separator:gaab1e6500ce35b72eaebdc54b3b0ec392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7843cbadb32a101fc3846e1bf4659bef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga7843cbadb32a101fc3846e1bf4659bef">LCD_BiasComSet</a> (int comLine, int biasLevel)</td></tr>
-<tr class="memdesc:ga7843cbadb32a101fc3846e1bf4659bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure bias level for a specific segment line.  <a href="group__LCD.html#ga7843cbadb32a101fc3846e1bf4659bef">More...</a><br /></td></tr>
-<tr class="separator:ga7843cbadb32a101fc3846e1bf4659bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
+<div class="textblock"><p>Liquid Crystal Display (LCD) Peripheral API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
 <p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
 <ol type="1">
 <li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
@@ -179,13 +127,61 @@ License</h1>
 <p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
 <p>Definition in file <a class="el" href="em__lcd_8c_source.html">em_lcd.c</a>.</p>
-</div></div><!-- contents -->
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__lcd_8h_source.html">em_lcd.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="em__assert_8h_source.html">em_assert.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="em__bus_8h_source.html">em_bus.h</a>&quot;</code><br />
+</div>
+<p><a href="em__lcd_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga1ba720135f8c1869113823d684e084f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga1ba720135f8c1869113823d684e084f5">LCD_AnimInit</a> (const <a class="el" href="structLCD__AnimInit__TypeDef.html">LCD_AnimInit_TypeDef</a> *animInit)</td></tr>
+<tr class="memdesc:ga1ba720135f8c1869113823d684e084f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures LCD controller Animation feature.  <a href="group__LCD.html#ga1ba720135f8c1869113823d684e084f5">More...</a><br /></td></tr>
+<tr class="separator:ga1ba720135f8c1869113823d684e084f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7843cbadb32a101fc3846e1bf4659bef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga7843cbadb32a101fc3846e1bf4659bef">LCD_BiasComSet</a> (int comLine, int biasLevel)</td></tr>
+<tr class="memdesc:ga7843cbadb32a101fc3846e1bf4659bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure bias level for a specific segment line.  <a href="group__LCD.html#ga7843cbadb32a101fc3846e1bf4659bef">More...</a><br /></td></tr>
+<tr class="separator:ga7843cbadb32a101fc3846e1bf4659bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab1e6500ce35b72eaebdc54b3b0ec392"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gaab1e6500ce35b72eaebdc54b3b0ec392">LCD_BiasSegmentSet</a> (int segmentLine, int biasLevel)</td></tr>
+<tr class="memdesc:gaab1e6500ce35b72eaebdc54b3b0ec392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure bias level for a specific segment line for Direct Segment Control.  <a href="group__LCD.html#gaab1e6500ce35b72eaebdc54b3b0ec392">More...</a><br /></td></tr>
+<tr class="separator:gaab1e6500ce35b72eaebdc54b3b0ec392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d783bed716497ea3ba7e618f469ac32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga0d783bed716497ea3ba7e618f469ac32">LCD_ContrastSet</a> (int level)</td></tr>
+<tr class="memdesc:ga0d783bed716497ea3ba7e618f469ac32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure contrast level on LCD panel.  <a href="group__LCD.html#ga0d783bed716497ea3ba7e618f469ac32">More...</a><br /></td></tr>
+<tr class="separator:ga0d783bed716497ea3ba7e618f469ac32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26c8e0ea9e738e4926f7e7e649ae4358"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga26c8e0ea9e738e4926f7e7e649ae4358">LCD_FrameCountInit</a> (const <a class="el" href="structLCD__FrameCountInit__TypeDef.html">LCD_FrameCountInit_TypeDef</a> *fcInit)</td></tr>
+<tr class="memdesc:ga26c8e0ea9e738e4926f7e7e649ae4358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize LCD Frame Counter.  <a href="group__LCD.html#ga26c8e0ea9e738e4926f7e7e649ae4358">More...</a><br /></td></tr>
+<tr class="separator:ga26c8e0ea9e738e4926f7e7e649ae4358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c06e074a2a2f04da49c06206e9be571"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga6c06e074a2a2f04da49c06206e9be571">LCD_Init</a> (const <a class="el" href="structLCD__Init__TypeDef.html">LCD_Init_TypeDef</a> *lcdInit)</td></tr>
+<tr class="memdesc:ga6c06e074a2a2f04da49c06206e9be571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalize Liquid Crystal Display (LCD) controller.  <a href="group__LCD.html#ga6c06e074a2a2f04da49c06206e9be571">More...</a><br /></td></tr>
+<tr class="separator:ga6c06e074a2a2f04da49c06206e9be571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84b488e1bd5032de1a8307a937b3064b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga84b488e1bd5032de1a8307a937b3064b">LCD_SegmentRangeEnable</a> (<a class="el" href="group__LCD.html#ga1ec97abe68d147faccb9597f10be8c9a">LCD_SegmentRange_TypeDef</a> segmentRange, bool enable)</td></tr>
+<tr class="memdesc:ga84b488e1bd5032de1a8307a937b3064b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables update of this range of LCD segment lines.  <a href="group__LCD.html#ga84b488e1bd5032de1a8307a937b3064b">More...</a><br /></td></tr>
+<tr class="separator:ga84b488e1bd5032de1a8307a937b3064b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c176631920506966de2bd727ef9e944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga5c176631920506966de2bd727ef9e944">LCD_SegmentSet</a> (int com, int bit, bool enable)</td></tr>
+<tr class="memdesc:ga5c176631920506966de2bd727ef9e944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on or clear a segment.  <a href="group__LCD.html#ga5c176631920506966de2bd727ef9e944">More...</a><br /></td></tr>
+<tr class="separator:ga5c176631920506966de2bd727ef9e944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae974bcc7e675a1597917a5b355cff64e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gae974bcc7e675a1597917a5b355cff64e">LCD_SegmentSetHigh</a> (int com, uint32_t mask, uint32_t bits)</td></tr>
+<tr class="memdesc:gae974bcc7e675a1597917a5b355cff64e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updated the high (32-39) segments on a given COM-line in one operation.  <a href="group__LCD.html#gae974bcc7e675a1597917a5b355cff64e">More...</a><br /></td></tr>
+<tr class="separator:gae974bcc7e675a1597917a5b355cff64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga098d20909d9b75fbad54f4176a5c8864"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga098d20909d9b75fbad54f4176a5c8864">LCD_SegmentSetLow</a> (int com, uint32_t mask, uint32_t bits)</td></tr>
+<tr class="memdesc:ga098d20909d9b75fbad54f4176a5c8864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the 0-31 lowest segments on a given COM-line in one operation, according to bit mask.  <a href="group__LCD.html#ga098d20909d9b75fbad54f4176a5c8864">More...</a><br /></td></tr>
+<tr class="separator:ga098d20909d9b75fbad54f4176a5c8864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae47aa4f1e46d3643f51c07f560580a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#gaae47aa4f1e46d3643f51c07f560580a8">LCD_UpdateCtrl</a> (<a class="el" href="group__LCD.html#ga34370ad541df02f8378fe9022620fbc4">LCD_UpdateCtrl_TypeDef</a> ud)</td></tr>
+<tr class="memdesc:gaae47aa4f1e46d3643f51c07f560580a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Update Control.  <a href="group__LCD.html#gaae47aa4f1e46d3643f51c07f560580a8">More...</a><br /></td></tr>
+<tr class="separator:gaae47aa4f1e46d3643f51c07f560580a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23d1bf6a3ce88f8514eaa1388f8c7d98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga23d1bf6a3ce88f8514eaa1388f8c7d98">LCD_VBoostSet</a> (<a class="el" href="group__LCD.html#ga752298aa2fa7ddd07a3298780b6a7dc9">LCD_VBoostLevel_TypeDef</a> vboost)</td></tr>
+<tr class="memdesc:ga23d1bf6a3ce88f8514eaa1388f8c7d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure voltage booster.  <a href="group__LCD.html#ga23d1bf6a3ce88f8514eaa1388f8c7d98">More...</a><br /></td></tr>
+<tr class="separator:ga23d1bf6a3ce88f8514eaa1388f8c7d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a9defe802f8056ad3afb11b23909808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LCD.html#ga8a9defe802f8056ad3afb11b23909808">LCD_VLCDSelect</a> (<a class="el" href="group__LCD.html#gad692503495e3618efdef81ed74b3924e">LCD_VLCDSel_TypeDef</a> vlcd)</td></tr>
+<tr class="memdesc:ga8a9defe802f8056ad3afb11b23909808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select source for VLCD.  <a href="group__LCD.html#ga8a9defe802f8056ad3afb11b23909808">More...</a><br /></td></tr>
+<tr class="separator:ga8a9defe802f8056ad3afb11b23909808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_b024e35bd40549d46920f272346444ee.html">src</a></li><li class="navelem"><a class="el" href="em__lcd_8c.html">em_lcd.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:47 for EFM32 Giant Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:26:52 for EFM32 Giant Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

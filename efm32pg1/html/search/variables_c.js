@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lba',['Lba',['../structMSDSCSI__ReadCapacity__TypeDef.html#a68cd5734a4019cd89f9880c7ea74b95b',1,'MSDSCSI_ReadCapacity_TypeDef::Lba()'],['../structMSDSCSI__Read10__TypeDef.html#a0f7d380926a76054cfc9f1ba47e606b0',1,'MSDSCSI_Read10_TypeDef::Lba()'],['../structMSDSCSI__Write10__TypeDef.html#a8e61a32441fc28c57dbc04a9962d0386',1,'MSDSCSI_Write10_TypeDef::Lba()'],['../structMSDSCSI__Verify10__TypeDef.html#aea2da4d7826b701c8eeaf629a291e332',1,'MSDSCSI_Verify10_TypeDef::Lba()'],['../structMSDD__CmdStatus__TypeDef.html#a3459bee80f45f8511927bf70dacd6483',1,'MSDD_CmdStatus_TypeDef::lba()']]],
+  ['lba',['Lba',['../structSL__ATTRIBUTE__PACKED.html#a22ae8e7da0a4c38fcd2a50fa19c40243',1,'SL_ATTRIBUTE_PACKED::Lba()'],['../structMSDD__CmdStatus__TypeDef.html#a3459bee80f45f8511927bf70dacd6483',1,'MSDD_CmdStatus_TypeDef::lba()']]],
   ['ldmacfgarbslots',['ldmaCfgArbSlots',['../structLDMA__TransferCfg__t.html#af52334eee003bf37c2b41153c153c13a',1,'LDMA_TransferCfg_t']]],
   ['ldmacfgdstincsign',['ldmaCfgDstIncSign',['../structLDMA__TransferCfg__t.html#a2f0451d0520f33c85f2d289a7e350c77',1,'LDMA_TransferCfg_t']]],
   ['ldmacfgsrcincsign',['ldmaCfgSrcIncSign',['../structLDMA__TransferCfg__t.html#aea560beb6aca344fd728ed7390fa58b9',1,'LDMA_TransferCfg_t']]],
@@ -38,16 +38,15 @@ var searchData=
   ['lfxoctrl',['LFXOCTRL',['../structCMU__TypeDef.html#a5375664d48e4e2ddd5a986c27a143051',1,'CMU_TypeDef']]],
   ['link',['LINK',['../structDMA__DESCRIPTOR__TypeDef.html#accf30e1911daf44b7b7e01a667378249',1,'DMA_DESCRIPTOR_TypeDef::LINK()'],['../structLDMA__CH__TypeDef.html#a6964e18a8bad18fa2f407c2e8c95a7e2',1,'LDMA_CH_TypeDef::LINK()'],['../unionLDMA__Descriptor__t.html#afb2aa046fc651d35ead93cbfaf189cc9',1,'LDMA_Descriptor_t::link()']]],
   ['linkaddr',['linkAddr',['../unionLDMA__Descriptor__t.html#ad5c790cc73a7edf426235b508d41812b',1,'LDMA_Descriptor_t']]],
-  ['linked',['Linked',['../structMSDSCSI__InquiryData__TypeDef.html#a8e8b9cd39602920d09cce83ff7f11a31',1,'MSDSCSI_InquiryData_TypeDef']]],
+  ['linked',['Linked',['../structSL__ATTRIBUTE__PACKED.html#aadc8a050bfeb546cf4558daf929f3f3d',1,'SL_ATTRIBUTE_PACKED']]],
   ['linkload',['LINKLOAD',['../structLDMA__TypeDef.html#a2dbb81ef321a0637410901a5f30127c3',1,'LDMA_TypeDef']]],
   ['linkmode',['linkMode',['../unionLDMA__Descriptor__t.html#a7b7b507d2cb387b27c00eb45e67a4faf',1,'LDMA_Descriptor_t']]],
   ['lirpd_5fadchi_5firled',['lirpd_adchi_irled',['../structcal__ref__t.html#af73d08084a1d8dd21c9e3bf01b3bad4f',1,'cal_ref_t']]],
-  ['lntransientmode',['lnTransientMode',['../structEMU__DCDCInit__TypeDef.html#aca111fc7d3357dafa4a1ed66e741f437',1,'EMU_DCDCInit_TypeDef']]],
   ['lock',['lock',['../structWDOG__Init__TypeDef.html#a15ac1297036d0a0e49cb6ebc5d355fb2',1,'WDOG_Init_TypeDef::lock()'],['../structCMU__TypeDef.html#ae2eab81f0ada97c5a8a96d3e698a2d0d',1,'CMU_TypeDef::LOCK()'],['../structEMU__TypeDef.html#a28db2cb3e33748114e51a11988714af1',1,'EMU_TypeDef::LOCK()'],['../structGPIO__TypeDef.html#af896db84304ad60fc765ba9715ad9440',1,'GPIO_TypeDef::LOCK()'],['../structMSC__TypeDef.html#a4b461389296286bbe63fa88ebef6a74e',1,'MSC_TypeDef::LOCK()'],['../structRMU__TypeDef.html#aaf082c899615bef3513e7881a552b5c6',1,'RMU_TypeDef::LOCK()'],['../structRTCC__TypeDef.html#a4b218be5600eee1e67c2a5093fec8b16',1,'RTCC_TypeDef::LOCK()'],['../structTIMER__TypeDef.html#a72f4eaa8254108919eeb5c86ada0b40e',1,'TIMER_TypeDef::LOCK()']]],
-  ['loej',['LoEj',['../structMSDSCSI__StartStopUnit__TypeDef.html#ade192c3c1d97bc4aae65977e9eb22c8f',1,'MSDSCSI_StartStopUnit_TypeDef']]],
-  ['logicalblockaddress',['LogicalBlockAddress',['../structMSDSCSI__ReadCapacityData__TypeDef.html#a0a1147829445f6b2e1da2fd86ce45d91',1,'MSDSCSI_ReadCapacityData_TypeDef']]],
-  ['logicalblocklength',['LogicalBlockLength',['../structMSDSCSI__ReadCapacityData__TypeDef.html#a345dd2117f77e23f8f991c2568e266e5',1,'MSDSCSI_ReadCapacityData_TypeDef']]],
+  ['loej',['LoEj',['../structSL__ATTRIBUTE__PACKED.html#a2093bcbbd11a128257ff9825f4bd010e',1,'SL_ATTRIBUTE_PACKED']]],
+  ['logicalblockaddress',['LogicalBlockAddress',['../structSL__ATTRIBUTE__PACKED.html#aec39f99d617d38110cdb5ed99e36676c',1,'SL_ATTRIBUTE_PACKED']]],
+  ['logicalblocklength',['LogicalBlockLength',['../structSL__ATTRIBUTE__PACKED.html#a25dc63f8345a314d903952de1aea0452',1,'SL_ATTRIBUTE_PACKED']]],
   ['loop',['LOOP',['../structLDMA__CH__TypeDef.html#a7b02dbaebb0f93285120adc23352a929',1,'LDMA_CH_TypeDef']]],
   ['lowpowermode',['lowPowerMode',['../structCMU__HFXOInit__TypeDef.html#ab425b409844273d3d4f85e67ea46a4af',1,'CMU_HFXOInit_TypeDef']]],
-  ['lun',['Lun',['../structMSDBOT__CBW__TypeDef.html#adab4dcae6200ccb3a2a5d0671aba3be5',1,'MSDBOT_CBW_TypeDef']]]
+  ['lun',['Lun',['../structSL__ATTRIBUTE__PACKED.html#a19939c1e6bdd3103d0e287e4d2163d23',1,'SL_ATTRIBUTE_PACKED']]]
 ];

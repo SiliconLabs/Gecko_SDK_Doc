@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32tg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -107,12 +106,11 @@ $(document).ready(function(){initNavTree('group__Receive__Plugin.html','');});
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Receive_Plugin<div class="ingroups"><a class="el" href="group__EM__Drivers.html">EM_Drivers</a> &raquo; <a class="el" href="group__EZRADIODRV.html">EZRADIODRV</a> &raquo; <a class="el" href="group__Plugin__System.html">Plugin_System</a></div></div>  </div>
+<div class="title">Receive_Plugin<div class="ingroups"><a class="el" href="group__emdrv.html">EMDRV</a> &raquo; <a class="el" href="group__EZRADIODRV.html">EZRADIODRV</a> &raquo; <a class="el" href="group__Plugin__System.html">Plugin_System</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Receive plugin, see <a class="el" href="group__EZRADIODRV.html#ezradiodrv_plugin">Plugin System Layer</a> on page <a class="el" href="group__EZRADIODRV.html">EZRADIODRV EzRadio Peripheral Interface driver</a> for detailed documentation. </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Receive plugin, see <a class="el" href="group__EZRADIODRV.html#ezradiodrv_plugin">Plugin System Layer</a> on page ezradiodrv_doc for detailed documentation. </p><pre class="fragment"></pre><p>. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -135,11 +133,10 @@ typedef struct <a class="el" href="structEZRADIODRV__PacketRxHandle.html">EZRADI
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae2761df30f35463d361937ddee63eed0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Receive__Plugin.html#gae2761df30f35463d361937ddee63eed0">ezradioStartRx</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> radioHandle)</td></tr>
+<tr class="memitem:gae2761df30f35463d361937ddee63eed0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Receive__Plugin.html#gae2761df30f35463d361937ddee63eed0">ezradioStartRx</a> (<a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a> radioHandle)</td></tr>
 <tr class="memdesc:gae2761df30f35463d361937ddee63eed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Radio to RX mode, packet length is always coming from the radio configuration.  <a href="#gae2761df30f35463d361937ddee63eed0">More...</a><br /></td></tr>
 <tr class="separator:gae2761df30f35463d361937ddee63eed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gac8d289f95ae5bb7e819149afd34e16ff"></a>
 <div class="memitem">
@@ -150,12 +147,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                               <span class="comment">/* Packet RX                        */</span>  \</div>
-<div class="line">  NULL,                         <span class="comment">/* CallBack                         */</span>  \</div>
-<div class="line">  0,                            <span class="comment">/* Channel                          */</span>  \</div>
-<div class="line">  NULL,                         <span class="comment">/* Packet buffer                    */</span>  \</div>
+<b>Value:</b><div class="fragment"><div class="line">{                                             <span class="comment">/* Packet RX                */</span>  \</div>
+<div class="line">  NULL,                                       <span class="comment">/* CallBack                 */</span>  \</div>
+<div class="line">  RADIO_CONFIGURATION_DATA_CHANNEL_NUMBER,    <span class="comment">/* Channel                  */</span>  \</div>
+<div class="line">  NULL,                                       <span class="comment">/* Packet buffer            */</span>  \</div>
 <div class="line">},</div>
 </div><!-- fragment -->
+<p>Configuration data for EzRadio receive plug-in. </p>
+
 <p>Definition at line <a class="el" href="ezradio__receive__plugin_8h_source.html#l00077">77</a> of file <a class="el" href="ezradio__receive__plugin_8h_source.html">ezradio_receive_plugin.h</a>.</p>
 
 </div>
@@ -166,7 +165,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> ezradioStartRx </td>
+          <td class="memname"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> ezradioStartRx </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__Plugin__Manager.html#gab85d488ff2d8f62d46adc449bb8a1737">EZRADIODRV_Handle_t</a>&#160;</td>
           <td class="paramname"><em>radioHandle</em></td><td>)</td>
@@ -174,17 +173,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set Radio to RX mode, packet length is always coming from the radio configuration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">radioHandle</td><td>Handler of the EzRadio driver instance where packet buffer, callback and channel configurations are set.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__Plugin__Manager.html#ga759250e9a6643d32417a6e8a55a55ffa">ECODE_EMDRV_EZRADIODRV_OK</a> on success. On failure an appropriate EZRADIODRV <a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__Plugin__Manager.html#ga759250e9a6643d32417a6e8a55a55ffa">ECODE_EMDRV_EZRADIODRV_OK</a> on success. On failure an appropriate EZRADIODRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
 <p>Definition at line <a class="el" href="ezradio__receive__plugin_8c_source.html#l00064">64</a> of file <a class="el" href="ezradio__receive__plugin_8c_source.html">ezradio_receive_plugin.c</a>.</p>
 
-<p>References <a class="el" href="ezradio__receive__plugin_8h_source.html#l00069">EZRADIODRV_PacketRxHandle::channel</a>, <a class="el" href="ezradio__plugin__manager_8h_source.html#l00122">ECODE_EMDRV_EZRADIODRV_OK</a>, <a class="el" href="ezradio__api__lib_8c_source.html#l00161">ezradio_start_rx()</a>, and <a class="el" href="ezradio__plugin__manager_8h_source.html#l00314">EZRADIODRV_HandleData::packetRx</a>.</p>
+<p>References <a class="el" href="structEZRADIODRV__PacketRxHandle.html#a76a70367de81b46e34301500d3997819">EZRADIODRV_PacketRxHandle::channel</a>, <a class="el" href="group__Plugin__Manager.html#ga759250e9a6643d32417a6e8a55a55ffa">ECODE_EMDRV_EZRADIODRV_OK</a>, <a class="el" href="group__API__Layer.html#ga6bebb6e764046173bd4b58db3d5f30c2">ezradio_start_rx()</a>, and <a class="el" href="structEZRADIODRV__HandleData.html#a457b60b425a44d08bbaa444a9d70ca75">EZRADIODRV_HandleData::packetRx</a>.</p>
 
 </div>
 </div>
@@ -193,7 +194,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:09 for EFM32 Tiny Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:24:36 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -114,10 +112,26 @@ $(document).ready(function(){initNavTree('ezradio__api__lib_8h.html','');});
 <div class="title">ezradio_api_lib.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file contains the common API library of the EZRadio and EZRadioPRO families. </p>
+<dl class="section note"><dt>Note</dt><dd>The ezradiodrv API is not settled entirely in the current relase.</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.<br />
+</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.<br />
+</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>This file contains the common API library of the EZRadio and EZRadioPRO families.  
-<a href="#details">More...</a></p>
-
+<p>Definition in file <a class="el" href="ezradio__api__lib_8h_source.html">ezradio_api_lib.h</a>.</p>
+</div>
 <p><a href="ezradio__api__lib_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -138,36 +152,14 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad7a48081868b00a765b488f47909396c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gad7a48081868b00a765b488f47909396c">ezradio_reset</a> (void)</td></tr>
-<tr class="separator:gad7a48081868b00a765b488f47909396c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaedde5a0144af3d029672a3d6c27210b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gaaedde5a0144af3d029672a3d6c27210b">ezradio_power_up</a> (uint8_t boot_options, uint8_t xtal_options, uint32_t xo_freq)</td></tr>
-<tr class="separator:gaaedde5a0144af3d029672a3d6c27210b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90809bd86f07081e57bdb2127c29b19c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga90809bd86f07081e57bdb2127c29b19c">ezradio_part_info</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:ga90809bd86f07081e57bdb2127c29b19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga95ec30d47eea9860cccae2c5bb3fc878"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga95ec30d47eea9860cccae2c5bb3fc878">ezradio_start_tx</a> (uint8_t channel, uint8_t condition, uint16_t tx_len)</td></tr>
-<tr class="separator:ga95ec30d47eea9860cccae2c5bb3fc878"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6bebb6e764046173bd4b58db3d5f30c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga6bebb6e764046173bd4b58db3d5f30c2">ezradio_start_rx</a> (uint8_t channel, uint8_t condition, uint16_t rx_len, uint8_t next_state1, uint8_t next_state2, uint8_t next_state3)</td></tr>
-<tr class="separator:ga6bebb6e764046173bd4b58db3d5f30c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2060b35450cc17415abf08a2f028b2b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga2060b35450cc17415abf08a2f028b2b6">ezradio_get_int_status</a> (uint8_t ph_clr_pend, uint8_t modem_clr_pend, uint8_t chip_clr_pend, ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:ga2060b35450cc17415abf08a2f028b2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gada8c3e33f1cba006a91daba785d93298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gada8c3e33f1cba006a91daba785d93298">ezradio_gpio_pin_cfg</a> (uint8_t gpio0, uint8_t gpio1, uint8_t gpio2, uint8_t gpio3, uint8_t nirq, uint8_t sdo, uint8_t gen_config, ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:gada8c3e33f1cba006a91daba785d93298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f37f9c7237c880623753bbd9c772876"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga5f37f9c7237c880623753bbd9c772876">ezradio_set_property</a> (uint8_t group, uint8_t num_props, uint8_t start_prop,...)</td></tr>
-<tr class="separator:ga5f37f9c7237c880623753bbd9c772876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga235ff2f0e61232797b5d3930b9319c5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga235ff2f0e61232797b5d3930b9319c5f">ezradio_change_state</a> (uint8_t next_state1)</td></tr>
 <tr class="separator:ga235ff2f0e61232797b5d3930b9319c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadac39bea145c7690251ea39231b4595e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gadac39bea145c7690251ea39231b4595e">ezradio_nop</a> (void)</td></tr>
-<tr class="separator:gadac39bea145c7690251ea39231b4595e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad7e9af6ef1205ffb877a3c869f5193ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gad7e9af6ef1205ffb877a3c869f5193ee">ezradio_fifo_info</a> (uint8_t fifo, ezradio_cmd_reply_t *ezradioReply)</td></tr>
 <tr class="separator:gad7e9af6ef1205ffb877a3c869f5193ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga352edd05911a66d9fe2b2e7c11d2df22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga352edd05911a66d9fe2b2e7c11d2df22">ezradio_write_tx_fifo</a> (uint8_t numbytes, uint8_t *pdata)</td></tr>
-<tr class="separator:ga352edd05911a66d9fe2b2e7c11d2df22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga329c4c3b314e2db479997a6b5bcf2ab0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga329c4c3b314e2db479997a6b5bcf2ab0">ezradio_read_rx_fifo</a> (uint8_t numbytes, uint8_t *prxdata)</td></tr>
-<tr class="separator:ga329c4c3b314e2db479997a6b5bcf2ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad46745a62ae7ab1876792eac63216874"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gad46745a62ae7ab1876792eac63216874">ezradio_get_property</a> (uint8_t group, uint8_t num_props, uint8_t start_prop, ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:gad46745a62ae7ab1876792eac63216874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c5d8d1ef6ca843dfdbff5460e6dad2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga6c5d8d1ef6ca843dfdbff5460e6dad2c">ezradio_func_info</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:ga6c5d8d1ef6ca843dfdbff5460e6dad2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf761bc9fbc4e01da3b6fc09523da4260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gaf761bc9fbc4e01da3b6fc09523da4260">ezradio_fifo_info_fast_read</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:gaf761bc9fbc4e01da3b6fc09523da4260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab214bdcdc5818dff1a6714c2aa0f98e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gab214bdcdc5818dff1a6714c2aa0f98e3">ezradio_fifo_info_fast_reset</a> (uint8_t fifo)</td></tr>
+<tr class="separator:gab214bdcdc5818dff1a6714c2aa0f98e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga36440d6a56405dc92ec2b72e1e10292a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga36440d6a56405dc92ec2b72e1e10292a">ezradio_frr_a_read</a> (uint8_t respByteCount, ezradio_cmd_reply_t *ezradioReply)</td></tr>
 <tr class="separator:ga36440d6a56405dc92ec2b72e1e10292a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf0cda7a2e6b72419d9c11e2bbcbb652a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gaf0cda7a2e6b72419d9c11e2bbcbb652a">ezradio_frr_b_read</a> (uint8_t respByteCount, ezradio_cmd_reply_t *ezradioReply)</td></tr>
@@ -176,70 +168,74 @@ Functions</h2></td></tr>
 <tr class="separator:ga0ee2cc3558bc6e85aea2f4c74dd7023a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3c6aa8b9c6580a45e53cb4f473e11168"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga3c6aa8b9c6580a45e53cb4f473e11168">ezradio_frr_d_read</a> (uint8_t respByteCount, ezradio_cmd_reply_t *ezradioReply)</td></tr>
 <tr class="separator:ga3c6aa8b9c6580a45e53cb4f473e11168"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9f990f8ebde64b6ef0c051f397430c53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga9f990f8ebde64b6ef0c051f397430c53">ezradio_request_device_state</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:ga9f990f8ebde64b6ef0c051f397430c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga18c87c07ae75e6a7a378e2ebe9d618c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga18c87c07ae75e6a7a378e2ebe9d618c1">ezradio_read_cmd_buff</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:ga18c87c07ae75e6a7a378e2ebe9d618c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4a541df5be98d23714c2409ed485a1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gac4a541df5be98d23714c2409ed485a1b">ezradio_get_ph_status</a> (uint8_t ph_clr_pend, ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:gac4a541df5be98d23714c2409ed485a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7269dfaf3135be3218c08494df40542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gad7269dfaf3135be3218c08494df40542">ezradio_get_modem_status</a> (uint8_t modem_clr_pend, ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:gad7269dfaf3135be3218c08494df40542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c5d8d1ef6ca843dfdbff5460e6dad2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga6c5d8d1ef6ca843dfdbff5460e6dad2c">ezradio_func_info</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:ga6c5d8d1ef6ca843dfdbff5460e6dad2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5ef27035ca328bb2861b5126600a490"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gad5ef27035ca328bb2861b5126600a490">ezradio_get_chip_status</a> (uint8_t chip_clr_pend, ezradio_cmd_reply_t *ezradioReply)</td></tr>
 <tr class="separator:gad5ef27035ca328bb2861b5126600a490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa6777e927f0bd0c5368ec58d4d6d3bcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gaa6777e927f0bd0c5368ec58d4d6d3bcb">ezradio_get_packet_info</a> (uint8_t field_number_mask, uint16_t len, int16_t diff_len, ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:gaa6777e927f0bd0c5368ec58d4d6d3bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae98048c6798c02b17ce19356390a265a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gae98048c6798c02b17ce19356390a265a">ezradio_start_tx_fast</a> (void)</td></tr>
-<tr class="separator:gae98048c6798c02b17ce19356390a265a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2afe6af0c962076145f252f0e18d97ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga2afe6af0c962076145f252f0e18d97ee">ezradio_start_rx_fast</a> (void)</td></tr>
-<tr class="separator:ga2afe6af0c962076145f252f0e18d97ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7aa4d52445b45b05292f22c888d54456"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga7aa4d52445b45b05292f22c888d54456">ezradio_get_int_status_fast_clear</a> (void)</td></tr>
-<tr class="separator:ga7aa4d52445b45b05292f22c888d54456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84c393b3068b4ae7366205b5be11b382"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga84c393b3068b4ae7366205b5be11b382">ezradio_get_int_status_fast_clear_read</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:ga84c393b3068b4ae7366205b5be11b382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga812515656b246c20cce34daa883151a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga812515656b246c20cce34daa883151a6">ezradio_gpio_pin_cfg_fast</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:ga812515656b246c20cce34daa883151a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae79ddb973018cb991d0272414cd7a961"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gae79ddb973018cb991d0272414cd7a961">ezradio_get_ph_status_fast_clear</a> (void)</td></tr>
-<tr class="separator:gae79ddb973018cb991d0272414cd7a961"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga959a4025e03dbdcf89a195021400601d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga959a4025e03dbdcf89a195021400601d">ezradio_get_ph_status_fast_clear_read</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:ga959a4025e03dbdcf89a195021400601d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga31fbcc3ddf36d660029f52c7590551bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga31fbcc3ddf36d660029f52c7590551bf">ezradio_get_modem_status_fast_clear</a> (void)</td></tr>
-<tr class="separator:ga31fbcc3ddf36d660029f52c7590551bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2539aeb090517be778e29b658c7197fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga2539aeb090517be778e29b658c7197fb">ezradio_get_modem_status_fast_clear_read</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:ga2539aeb090517be778e29b658c7197fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad600f530d5f68c9a059f6bc661b38dbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gad600f530d5f68c9a059f6bc661b38dbd">ezradio_get_chip_status_fast_clear</a> (void)</td></tr>
 <tr class="separator:gad600f530d5f68c9a059f6bc661b38dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga797cd338dde1db4e7a24a06a06802766"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga797cd338dde1db4e7a24a06a06802766">ezradio_get_chip_status_fast_clear_read</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
 <tr class="separator:ga797cd338dde1db4e7a24a06a06802766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab214bdcdc5818dff1a6714c2aa0f98e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gab214bdcdc5818dff1a6714c2aa0f98e3">ezradio_fifo_info_fast_reset</a> (uint8_t fifo)</td></tr>
-<tr class="separator:gab214bdcdc5818dff1a6714c2aa0f98e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf761bc9fbc4e01da3b6fc09523da4260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gaf761bc9fbc4e01da3b6fc09523da4260">ezradio_fifo_info_fast_read</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
-<tr class="separator:gaf761bc9fbc4e01da3b6fc09523da4260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2060b35450cc17415abf08a2f028b2b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga2060b35450cc17415abf08a2f028b2b6">ezradio_get_int_status</a> (uint8_t ph_clr_pend, uint8_t modem_clr_pend, uint8_t chip_clr_pend, ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:ga2060b35450cc17415abf08a2f028b2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7aa4d52445b45b05292f22c888d54456"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga7aa4d52445b45b05292f22c888d54456">ezradio_get_int_status_fast_clear</a> (void)</td></tr>
+<tr class="separator:ga7aa4d52445b45b05292f22c888d54456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84c393b3068b4ae7366205b5be11b382"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga84c393b3068b4ae7366205b5be11b382">ezradio_get_int_status_fast_clear_read</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:ga84c393b3068b4ae7366205b5be11b382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7269dfaf3135be3218c08494df40542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gad7269dfaf3135be3218c08494df40542">ezradio_get_modem_status</a> (uint8_t modem_clr_pend, ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:gad7269dfaf3135be3218c08494df40542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31fbcc3ddf36d660029f52c7590551bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga31fbcc3ddf36d660029f52c7590551bf">ezradio_get_modem_status_fast_clear</a> (void)</td></tr>
+<tr class="separator:ga31fbcc3ddf36d660029f52c7590551bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2539aeb090517be778e29b658c7197fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga2539aeb090517be778e29b658c7197fb">ezradio_get_modem_status_fast_clear_read</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:ga2539aeb090517be778e29b658c7197fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6777e927f0bd0c5368ec58d4d6d3bcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gaa6777e927f0bd0c5368ec58d4d6d3bcb">ezradio_get_packet_info</a> (uint8_t field_number_mask, uint16_t len, int16_t diff_len, ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:gaa6777e927f0bd0c5368ec58d4d6d3bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4a541df5be98d23714c2409ed485a1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gac4a541df5be98d23714c2409ed485a1b">ezradio_get_ph_status</a> (uint8_t ph_clr_pend, ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:gac4a541df5be98d23714c2409ed485a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae79ddb973018cb991d0272414cd7a961"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gae79ddb973018cb991d0272414cd7a961">ezradio_get_ph_status_fast_clear</a> (void)</td></tr>
+<tr class="separator:gae79ddb973018cb991d0272414cd7a961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga959a4025e03dbdcf89a195021400601d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga959a4025e03dbdcf89a195021400601d">ezradio_get_ph_status_fast_clear_read</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:ga959a4025e03dbdcf89a195021400601d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad46745a62ae7ab1876792eac63216874"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gad46745a62ae7ab1876792eac63216874">ezradio_get_property</a> (uint8_t group, uint8_t num_props, uint8_t start_prop, ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:gad46745a62ae7ab1876792eac63216874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada8c3e33f1cba006a91daba785d93298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gada8c3e33f1cba006a91daba785d93298">ezradio_gpio_pin_cfg</a> (uint8_t gpio0, uint8_t gpio1, uint8_t gpio2, uint8_t gpio3, uint8_t nirq, uint8_t sdo, uint8_t gen_config, ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:gada8c3e33f1cba006a91daba785d93298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga812515656b246c20cce34daa883151a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga812515656b246c20cce34daa883151a6">ezradio_gpio_pin_cfg_fast</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:ga812515656b246c20cce34daa883151a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadac39bea145c7690251ea39231b4595e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gadac39bea145c7690251ea39231b4595e">ezradio_nop</a> (void)</td></tr>
+<tr class="separator:gadac39bea145c7690251ea39231b4595e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90809bd86f07081e57bdb2127c29b19c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga90809bd86f07081e57bdb2127c29b19c">ezradio_part_info</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:ga90809bd86f07081e57bdb2127c29b19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaedde5a0144af3d029672a3d6c27210b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gaaedde5a0144af3d029672a3d6c27210b">ezradio_power_up</a> (uint8_t boot_options, uint8_t xtal_options, uint32_t xo_freq)</td></tr>
+<tr class="separator:gaaedde5a0144af3d029672a3d6c27210b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18c87c07ae75e6a7a378e2ebe9d618c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga18c87c07ae75e6a7a378e2ebe9d618c1">ezradio_read_cmd_buff</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:ga18c87c07ae75e6a7a378e2ebe9d618c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga329c4c3b314e2db479997a6b5bcf2ab0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga329c4c3b314e2db479997a6b5bcf2ab0">ezradio_read_rx_fifo</a> (uint8_t numbytes, uint8_t *prxdata)</td></tr>
+<tr class="separator:ga329c4c3b314e2db479997a6b5bcf2ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f990f8ebde64b6ef0c051f397430c53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga9f990f8ebde64b6ef0c051f397430c53">ezradio_request_device_state</a> (ezradio_cmd_reply_t *ezradioReply)</td></tr>
+<tr class="separator:ga9f990f8ebde64b6ef0c051f397430c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7a48081868b00a765b488f47909396c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gad7a48081868b00a765b488f47909396c">ezradio_reset</a> (void)</td></tr>
+<tr class="separator:gad7a48081868b00a765b488f47909396c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f37f9c7237c880623753bbd9c772876"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga5f37f9c7237c880623753bbd9c772876">ezradio_set_property</a> (uint8_t group, uint8_t num_props, uint8_t start_prop,...)</td></tr>
+<tr class="separator:ga5f37f9c7237c880623753bbd9c772876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6bebb6e764046173bd4b58db3d5f30c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga6bebb6e764046173bd4b58db3d5f30c2">ezradio_start_rx</a> (uint8_t channel, uint8_t condition, uint16_t rx_len, uint8_t next_state1, uint8_t next_state2, uint8_t next_state3)</td></tr>
+<tr class="separator:ga6bebb6e764046173bd4b58db3d5f30c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2afe6af0c962076145f252f0e18d97ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga2afe6af0c962076145f252f0e18d97ee">ezradio_start_rx_fast</a> (void)</td></tr>
+<tr class="separator:ga2afe6af0c962076145f252f0e18d97ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95ec30d47eea9860cccae2c5bb3fc878"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga95ec30d47eea9860cccae2c5bb3fc878">ezradio_start_tx</a> (uint8_t channel, uint8_t condition, uint16_t tx_len)</td></tr>
+<tr class="separator:ga95ec30d47eea9860cccae2c5bb3fc878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae98048c6798c02b17ce19356390a265a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#gae98048c6798c02b17ce19356390a265a">ezradio_start_tx_fast</a> (void)</td></tr>
+<tr class="separator:gae98048c6798c02b17ce19356390a265a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga352edd05911a66d9fe2b2e7c11d2df22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html#ga352edd05911a66d9fe2b2e7c11d2df22">ezradio_write_tx_fifo</a> (uint8_t numbytes, uint8_t *pdata)</td></tr>
+<tr class="separator:ga352edd05911a66d9fe2b2e7c11d2df22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section note"><dt>Note</dt><dd>The ezradiodrv API is not settled entirely in the current relase.</dd></dl>
-<dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.<br />
-</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.<br />
-</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="ezradio__api__lib_8h_source.html">ezradio_api_lib.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_74d66e5e415af18c005205f87c017a4f.html">ezradiodrv</a></li><li class="navelem"><a class="el" href="dir_318d8263568d560f171ee5482256b513.html">common</a></li><li class="navelem"><a class="el" href="dir_804dd120e0965964b734107086b7bfad.html">inc</a></li><li class="navelem"><a class="el" href="ezradio__api__lib_8h.html">ezradio_api_lib.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:42:37 for EZR32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:45:32 for EZR32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

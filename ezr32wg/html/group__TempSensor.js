@@ -1,8 +1,8 @@
 var group__TempSensor =
 [
     [ "TEMPSENS_Temp_TypeDef", "structTEMPSENS__Temp__TypeDef.html", [
-      [ "i", "structTEMPSENS__Temp__TypeDef.html#aa62d8b12520d6fbf9b467eda98556af9", null ],
-      [ "f", "structTEMPSENS__Temp__TypeDef.html#a4224dac51426b31c17b7f59a76ee1dac", null ]
+      [ "f", "structTEMPSENS__Temp__TypeDef.html#a4224dac51426b31c17b7f59a76ee1dac", null ],
+      [ "i", "structTEMPSENS__Temp__TypeDef.html#aa62d8b12520d6fbf9b467eda98556af9", null ]
     ] ],
     [ "TEMPSENS_DK_ADDR", "group__TempSensor.html#ga0b9b20a17b8c59faffc6124cc5b4bdb5", null ],
     [ "TEMPSENS_Register_TypeDef", "group__TempSensor.html#gaf7cf71b30a49a97a51a7c60a2b9ff225", [

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32tg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,22 +111,100 @@ $(document).ready(function(){initNavTree('efm32tg__af__pins_8h.html','');});
 <div class="title">efm32tg_af_pins.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>EFM32TG_AF_PINS register and bit field definitions. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.<br />
+</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.<br />
+</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Laboratories, Inc. has no obligation to support this Software. Silicon Laboratories, Inc. is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Laboratories, Inc. will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>EFM32TG_AF_PINS register and bit field definitions.  
-<a href="#details">More...</a></p>
-
+<p>Definition in file <a class="el" href="efm32tg__af__pins_8h_source.html">efm32tg_af_pins.h</a>.</p>
+</div>
 <p><a href="efm32tg__af__pins_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga973c708721a22808fe35773e927a8271"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga973c708721a22808fe35773e927a8271"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ACMP0_OUT_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 13 : (i) == 1 ? -1 : (i) == 2 ? 6 :  -1)</td></tr>
+<tr class="separator:ga973c708721a22808fe35773e927a8271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf94ff3282ec87127d948bf954d472ae3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf94ff3282ec87127d948bf954d472ae3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ACMP1_OUT_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? -1 : (i) == 2 ? 7 :  -1)</td></tr>
+<tr class="separator:gaf94ff3282ec87127d948bf954d472ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9139a82da3c9697c1335cfa1ff97018d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EFM32TG__AF__Pins.html#ga9139a82da3c9697c1335cfa1ff97018d">AF_CMU_CLK0_PIN</a>(i)                &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? 12 : (i) == 2 ? 7 :  -1)</td></tr>
 <tr class="separator:ga9139a82da3c9697c1335cfa1ff97018d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad0960a43df5faebc4635aa743d49533b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad0960a43df5faebc4635aa743d49533b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_CMU_CLK1_PIN</b>(i)                &#160;&#160;&#160;((i) == 0 ? 1 : (i) == 1 ? 8 : (i) == 2 ? 12 :  -1)</td></tr>
 <tr class="separator:gad0960a43df5faebc4635aa743d49533b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa50c43b46129058d2549ba53254e870f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa50c43b46129058d2549ba53254e870f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_DBG_SWCLK_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 0 :  -1)</td></tr>
+<tr class="separator:gaa50c43b46129058d2549ba53254e870f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5dacdf4656a0ef0fa5412b2ad697c552"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5dacdf4656a0ef0fa5412b2ad697c552"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_DBG_SWDIO_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 1 : (i) == 1 ? 1 :  -1)</td></tr>
+<tr class="separator:ga5dacdf4656a0ef0fa5412b2ad697c552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31f188f1940e0c73d1e8131917241c46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga31f188f1940e0c73d1e8131917241c46"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_DBG_SWO_PIN</b>(i)                  &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? 15 :  -1)</td></tr>
+<tr class="separator:ga31f188f1940e0c73d1e8131917241c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4508400d8dffe4dc69c031d330a3f846"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4508400d8dffe4dc69c031d330a3f846"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_I2C0_SCL_PIN</b>(i)                &#160;&#160;&#160;((i) == 0 ? 1 : (i) == 1 ? 7 : (i) == 2 ? 7 : (i) == 3 ? -1 : (i) == 4 ? 1 : (i) == 5 ? 1 : (i) == 6 ? 13 :  -1)</td></tr>
+<tr class="separator:ga4508400d8dffe4dc69c031d330a3f846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c043de704efee6f251c212faa144c38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4c043de704efee6f251c212faa144c38"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_I2C0_SDA_PIN</b>(i)                &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 6 : (i) == 2 ? 6 : (i) == 3 ? -1 : (i) == 4 ? 0 : (i) == 5 ? 0 : (i) == 6 ? 12 :  -1)</td></tr>
+<tr class="separator:ga4c043de704efee6f251c212faa144c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed45380da32946a07cac7cb95c1ba233"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaed45380da32946a07cac7cb95c1ba233"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX0_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 6 :  -1)</td></tr>
+<tr class="separator:gaed45380da32946a07cac7cb95c1ba233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3682b8f6c2e43869204ff7d3bdf50311"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3682b8f6c2e43869204ff7d3bdf50311"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX1_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 7 :  -1)</td></tr>
+<tr class="separator:ga3682b8f6c2e43869204ff7d3bdf50311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21768f8c4d8b6271fedb1885d17f37b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga21768f8c4d8b6271fedb1885d17f37b8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX2_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 3 :  -1)</td></tr>
+<tr class="separator:ga21768f8c4d8b6271fedb1885d17f37b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11b15393a7ad9febfe20594fca262d3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga11b15393a7ad9febfe20594fca262d3d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX3_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 4 :  -1)</td></tr>
+<tr class="separator:ga11b15393a7ad9febfe20594fca262d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49a4e7e8a00c81b988939367f38c49f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga49a4e7e8a00c81b988939367f38c49f1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX4_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 5 :  -1)</td></tr>
+<tr class="separator:ga49a4e7e8a00c81b988939367f38c49f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga390cb4ca72d932fc50762c0103cdd907"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga390cb4ca72d932fc50762c0103cdd907"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX5_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 11 :  -1)</td></tr>
+<tr class="separator:ga390cb4ca72d932fc50762c0103cdd907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6a7c412f3aa3621fc9fc9848f31c91e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad6a7c412f3aa3621fc9fc9848f31c91e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX6_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 12 :  -1)</td></tr>
+<tr class="separator:gad6a7c412f3aa3621fc9fc9848f31c91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabc5a84e43fd6d2c8eec81bb723ed84c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaabc5a84e43fd6d2c8eec81bb723ed84c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX7_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 13 :  -1)</td></tr>
+<tr class="separator:gaabc5a84e43fd6d2c8eec81bb723ed84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga55b02a50d1839048fde411d9832c7c81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga55b02a50d1839048fde411d9832c7c81"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH0_PIN</b>(i)          &#160;&#160;&#160;((i) == 0 ? 0 :  -1)</td></tr>
 <tr class="separator:ga55b02a50d1839048fde411d9832c7c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga506658518d4ed2586da5bca85af43be5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga506658518d4ed2586da5bca85af43be5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH10_PIN</b>(i)        &#160;&#160;&#160;((i) == 0 ? 10 :  -1)</td></tr>
+<tr class="separator:ga506658518d4ed2586da5bca85af43be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1df1f0a66c6c5c4f8f8a7aa2faa9f563"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1df1f0a66c6c5c4f8f8a7aa2faa9f563"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH11_PIN</b>(i)        &#160;&#160;&#160;((i) == 0 ? 11 :  -1)</td></tr>
+<tr class="separator:ga1df1f0a66c6c5c4f8f8a7aa2faa9f563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a2af70276c92ad11e6f24d6cdd675b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3a2af70276c92ad11e6f24d6cdd675b7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH12_PIN</b>(i)        &#160;&#160;&#160;((i) == 0 ? 12 :  -1)</td></tr>
+<tr class="separator:ga3a2af70276c92ad11e6f24d6cdd675b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab43538f52387913f23a364a420d99be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaab43538f52387913f23a364a420d99be"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH13_PIN</b>(i)        &#160;&#160;&#160;((i) == 0 ? 13 :  -1)</td></tr>
+<tr class="separator:gaab43538f52387913f23a364a420d99be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga942f4394381dafaeb19b537304a8f099"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga942f4394381dafaeb19b537304a8f099"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH14_PIN</b>(i)        &#160;&#160;&#160;((i) == 0 ? 14 :  -1)</td></tr>
+<tr class="separator:ga942f4394381dafaeb19b537304a8f099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad61d1a510ab3c2ac61ac1a435fae43e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad61d1a510ab3c2ac61ac1a435fae43e4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH15_PIN</b>(i)        &#160;&#160;&#160;((i) == 0 ? 15 :  -1)</td></tr>
+<tr class="separator:gad61d1a510ab3c2ac61ac1a435fae43e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga13a53b32ba52c2f5b4c371e82d020b26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga13a53b32ba52c2f5b4c371e82d020b26"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH1_PIN</b>(i)          &#160;&#160;&#160;((i) == 0 ? 1 :  -1)</td></tr>
 <tr class="separator:ga13a53b32ba52c2f5b4c371e82d020b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,78 +232,36 @@ Macros</h2></td></tr>
 <tr class="memitem:ga09f84db6b8724672faee412e4de7e439"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga09f84db6b8724672faee412e4de7e439"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH9_PIN</b>(i)          &#160;&#160;&#160;((i) == 0 ? 9 :  -1)</td></tr>
 <tr class="separator:ga09f84db6b8724672faee412e4de7e439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga506658518d4ed2586da5bca85af43be5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga506658518d4ed2586da5bca85af43be5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH10_PIN</b>(i)        &#160;&#160;&#160;((i) == 0 ? 10 :  -1)</td></tr>
-<tr class="separator:ga506658518d4ed2586da5bca85af43be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1df1f0a66c6c5c4f8f8a7aa2faa9f563"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1df1f0a66c6c5c4f8f8a7aa2faa9f563"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH11_PIN</b>(i)        &#160;&#160;&#160;((i) == 0 ? 11 :  -1)</td></tr>
-<tr class="separator:ga1df1f0a66c6c5c4f8f8a7aa2faa9f563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3a2af70276c92ad11e6f24d6cdd675b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3a2af70276c92ad11e6f24d6cdd675b7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH12_PIN</b>(i)        &#160;&#160;&#160;((i) == 0 ? 12 :  -1)</td></tr>
-<tr class="separator:ga3a2af70276c92ad11e6f24d6cdd675b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab43538f52387913f23a364a420d99be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaab43538f52387913f23a364a420d99be"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH13_PIN</b>(i)        &#160;&#160;&#160;((i) == 0 ? 13 :  -1)</td></tr>
-<tr class="separator:gaab43538f52387913f23a364a420d99be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga942f4394381dafaeb19b537304a8f099"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga942f4394381dafaeb19b537304a8f099"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH14_PIN</b>(i)        &#160;&#160;&#160;((i) == 0 ? 14 :  -1)</td></tr>
-<tr class="separator:ga942f4394381dafaeb19b537304a8f099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad61d1a510ab3c2ac61ac1a435fae43e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad61d1a510ab3c2ac61ac1a435fae43e4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH15_PIN</b>(i)        &#160;&#160;&#160;((i) == 0 ? 15 :  -1)</td></tr>
-<tr class="separator:gad61d1a510ab3c2ac61ac1a435fae43e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaed45380da32946a07cac7cb95c1ba233"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaed45380da32946a07cac7cb95c1ba233"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX0_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 6 :  -1)</td></tr>
-<tr class="separator:gaed45380da32946a07cac7cb95c1ba233"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3682b8f6c2e43869204ff7d3bdf50311"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3682b8f6c2e43869204ff7d3bdf50311"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX1_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 7 :  -1)</td></tr>
-<tr class="separator:ga3682b8f6c2e43869204ff7d3bdf50311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga21768f8c4d8b6271fedb1885d17f37b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga21768f8c4d8b6271fedb1885d17f37b8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX2_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 3 :  -1)</td></tr>
-<tr class="separator:ga21768f8c4d8b6271fedb1885d17f37b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga11b15393a7ad9febfe20594fca262d3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga11b15393a7ad9febfe20594fca262d3d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX3_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 4 :  -1)</td></tr>
-<tr class="separator:ga11b15393a7ad9febfe20594fca262d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga49a4e7e8a00c81b988939367f38c49f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga49a4e7e8a00c81b988939367f38c49f1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX4_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 5 :  -1)</td></tr>
-<tr class="separator:ga49a4e7e8a00c81b988939367f38c49f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga390cb4ca72d932fc50762c0103cdd907"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga390cb4ca72d932fc50762c0103cdd907"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX5_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 11 :  -1)</td></tr>
-<tr class="separator:ga390cb4ca72d932fc50762c0103cdd907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6a7c412f3aa3621fc9fc9848f31c91e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad6a7c412f3aa3621fc9fc9848f31c91e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX6_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 12 :  -1)</td></tr>
-<tr class="separator:gad6a7c412f3aa3621fc9fc9848f31c91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaabc5a84e43fd6d2c8eec81bb723ed84c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaabc5a84e43fd6d2c8eec81bb723ed84c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_ALTEX7_PIN</b>(i)    &#160;&#160;&#160;((i) == 0 ? 13 :  -1)</td></tr>
-<tr class="separator:gaabc5a84e43fd6d2c8eec81bb723ed84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga973c708721a22808fe35773e927a8271"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga973c708721a22808fe35773e927a8271"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ACMP0_OUT_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 13 : (i) == 1 ? -1 : (i) == 2 ? 6 :  -1)</td></tr>
-<tr class="separator:ga973c708721a22808fe35773e927a8271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf94ff3282ec87127d948bf954d472ae3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf94ff3282ec87127d948bf954d472ae3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ACMP1_OUT_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? -1 : (i) == 2 ? 7 :  -1)</td></tr>
-<tr class="separator:gaf94ff3282ec87127d948bf954d472ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga11cf9f8b59f457a1f80fc9a77441cf7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga11cf9f8b59f457a1f80fc9a77441cf7c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART0_TX_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 10 : (i) == 1 ? 7 : (i) == 2 ? 11 : (i) == 3 ? 13 : (i) == 4 ? 7 : (i) == 5 ? 0 :  -1)</td></tr>
-<tr class="separator:ga11cf9f8b59f457a1f80fc9a77441cf7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga782f6c269cf59e16371a437d06221ce6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga782f6c269cf59e16371a437d06221ce6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART0_RX_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 11 : (i) == 1 ? 6 : (i) == 2 ? 10 : (i) == 3 ? 12 : (i) == 4 ? 8 : (i) == 5 ? 1 :  -1)</td></tr>
-<tr class="separator:ga782f6c269cf59e16371a437d06221ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6e818a0536c61651cfdccaa5a9c22af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad6e818a0536c61651cfdccaa5a9c22af"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART0_CLK_PIN</b>(i)            &#160;&#160;&#160;((i) == 0 ? 12 : (i) == 1 ? 5 : (i) == 2 ? 9 : (i) == 3 ? 15 : (i) == 4 ? 13 : (i) == 5 ? 13 :  -1)</td></tr>
-<tr class="separator:gad6e818a0536c61651cfdccaa5a9c22af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga888a2cf300b008602be4594182cc3ee3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga888a2cf300b008602be4594182cc3ee3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART0_CS_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 13 : (i) == 1 ? 4 : (i) == 2 ? 8 : (i) == 3 ? 14 : (i) == 4 ? 14 : (i) == 5 ? 14 :  -1)</td></tr>
-<tr class="separator:ga888a2cf300b008602be4594182cc3ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad06ec995bc1328907a1cf41d65573685"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad06ec995bc1328907a1cf41d65573685"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_TX_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 0 : (i) == 2 ? 7 :  -1)</td></tr>
-<tr class="separator:gad06ec995bc1328907a1cf41d65573685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac42975c264f66349084fa8d71eca2837"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac42975c264f66349084fa8d71eca2837"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_RX_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 1 : (i) == 1 ? 1 : (i) == 2 ? 6 :  -1)</td></tr>
-<tr class="separator:gac42975c264f66349084fa8d71eca2837"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5418d79b9909f5162dcc48d095b92064"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5418d79b9909f5162dcc48d095b92064"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_CLK_PIN</b>(i)            &#160;&#160;&#160;((i) == 0 ? 7 : (i) == 1 ? 2 : (i) == 2 ? 0 :  -1)</td></tr>
-<tr class="separator:ga5418d79b9909f5162dcc48d095b92064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga769e58577240e145e260ea8f24757a0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga769e58577240e145e260ea8f24757a0e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_CS_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 8 : (i) == 1 ? 3 : (i) == 2 ? 1 :  -1)</td></tr>
-<tr class="separator:ga769e58577240e145e260ea8f24757a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf992ff132be27c2f8c89aecf32191406"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf992ff132be27c2f8c89aecf32191406"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LETIMER0_OUT0_PIN</b>(i)      &#160;&#160;&#160;((i) == 0 ? 6 : (i) == 1 ? 11 : (i) == 2 ? 0 : (i) == 3 ? 4 :  -1)</td></tr>
+<tr class="separator:gaf992ff132be27c2f8c89aecf32191406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga609bbfa5ce70a3399545f30569c87f17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga609bbfa5ce70a3399545f30569c87f17"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LETIMER0_OUT1_PIN</b>(i)      &#160;&#160;&#160;((i) == 0 ? 7 : (i) == 1 ? 12 : (i) == 2 ? 1 : (i) == 3 ? 5 :  -1)</td></tr>
+<tr class="separator:ga609bbfa5ce70a3399545f30569c87f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46a17da0f910dbf975791247ee29af0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga46a17da0f910dbf975791247ee29af0b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LEUART0_RX_PIN</b>(i)            &#160;&#160;&#160;((i) == 0 ? 5 : (i) == 1 ? 14 : (i) == 2 ? 15 : (i) == 3 ? 1 : (i) == 4 ? 0 :  -1)</td></tr>
+<tr class="separator:ga46a17da0f910dbf975791247ee29af0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4152e4ac6a49a62ca90715de77a5b76e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4152e4ac6a49a62ca90715de77a5b76e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LEUART0_TX_PIN</b>(i)            &#160;&#160;&#160;((i) == 0 ? 4 : (i) == 1 ? 13 : (i) == 2 ? 14 : (i) == 3 ? 0 : (i) == 4 ? 2 :  -1)</td></tr>
+<tr class="separator:ga4152e4ac6a49a62ca90715de77a5b76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8af426096afe1de9f3e63d58a0007623"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8af426096afe1de9f3e63d58a0007623"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT0_S0IN_PIN</b>(i)            &#160;&#160;&#160;((i) == 0 ? 13 : (i) == 1 ? -1 : (i) == 2 ? 0 : (i) == 3 ? 6 :  -1)</td></tr>
+<tr class="separator:ga8af426096afe1de9f3e63d58a0007623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa807073708438d7d1d1f4994fab7820a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa807073708438d7d1d1f4994fab7820a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT0_S1IN_PIN</b>(i)            &#160;&#160;&#160;((i) == 0 ? 14 : (i) == 1 ? -1 : (i) == 2 ? 1 : (i) == 3 ? 7 :  -1)</td></tr>
+<tr class="separator:gaa807073708438d7d1d1f4994fab7820a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf40bed3ec3f3fe03cbbef2a79ea052a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadf40bed3ec3f3fe03cbbef2a79ea052a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH0_PIN</b>(i)                  &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 3 :  -1)</td></tr>
+<tr class="separator:gadf40bed3ec3f3fe03cbbef2a79ea052a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7392c70251c013838b47092722d9aba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf7392c70251c013838b47092722d9aba"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH1_PIN</b>(i)                  &#160;&#160;&#160;((i) == 0 ? 1 : (i) == 1 ? 4 :  -1)</td></tr>
+<tr class="separator:gaf7392c70251c013838b47092722d9aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad28d90d29edfbb6c62e80003f82fb01c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad28d90d29edfbb6c62e80003f82fb01c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH2_PIN</b>(i)                  &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 5 :  -1)</td></tr>
+<tr class="separator:gad28d90d29edfbb6c62e80003f82fb01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1e1e8709e7edc7ed4b491c15160b98e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae1e1e8709e7edc7ed4b491c15160b98e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH3_PIN</b>(i)                  &#160;&#160;&#160;((i) == 0 ? 1 : (i) == 1 ? 8 :  -1)</td></tr>
+<tr class="separator:gae1e1e8709e7edc7ed4b491c15160b98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7c3359e7bccbf92359579d402be6e244"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7c3359e7bccbf92359579d402be6e244"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_TIMER0_CC0_PIN</b>(i)            &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 0 : (i) == 2 ? -1 : (i) == 3 ? 1 : (i) == 4 ? 0 : (i) == 5 ? 0 :  -1)</td></tr>
 <tr class="separator:ga7c3359e7bccbf92359579d402be6e244"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,76 +298,38 @@ Macros</h2></td></tr>
 <tr class="memitem:ga4a92d974ce235de11b14b5e8674e6671"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4a92d974ce235de11b14b5e8674e6671"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_TIMER1_CDTI2_PIN</b>(i)        &#160;&#160;&#160;(-1)</td></tr>
 <tr class="separator:ga4a92d974ce235de11b14b5e8674e6671"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf40bed3ec3f3fe03cbbef2a79ea052a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadf40bed3ec3f3fe03cbbef2a79ea052a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH0_PIN</b>(i)                  &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 3 :  -1)</td></tr>
-<tr class="separator:gadf40bed3ec3f3fe03cbbef2a79ea052a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf7392c70251c013838b47092722d9aba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf7392c70251c013838b47092722d9aba"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH1_PIN</b>(i)                  &#160;&#160;&#160;((i) == 0 ? 1 : (i) == 1 ? 4 :  -1)</td></tr>
-<tr class="separator:gaf7392c70251c013838b47092722d9aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad28d90d29edfbb6c62e80003f82fb01c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad28d90d29edfbb6c62e80003f82fb01c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH2_PIN</b>(i)                  &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 5 :  -1)</td></tr>
-<tr class="separator:gad28d90d29edfbb6c62e80003f82fb01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae1e1e8709e7edc7ed4b491c15160b98e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae1e1e8709e7edc7ed4b491c15160b98e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH3_PIN</b>(i)                  &#160;&#160;&#160;((i) == 0 ? 1 : (i) == 1 ? 8 :  -1)</td></tr>
-<tr class="separator:gae1e1e8709e7edc7ed4b491c15160b98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4152e4ac6a49a62ca90715de77a5b76e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4152e4ac6a49a62ca90715de77a5b76e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LEUART0_TX_PIN</b>(i)            &#160;&#160;&#160;((i) == 0 ? 4 : (i) == 1 ? 13 : (i) == 2 ? 14 : (i) == 3 ? 0 : (i) == 4 ? 2 :  -1)</td></tr>
-<tr class="separator:ga4152e4ac6a49a62ca90715de77a5b76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga46a17da0f910dbf975791247ee29af0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga46a17da0f910dbf975791247ee29af0b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LEUART0_RX_PIN</b>(i)            &#160;&#160;&#160;((i) == 0 ? 5 : (i) == 1 ? 14 : (i) == 2 ? 15 : (i) == 3 ? 1 : (i) == 4 ? 0 :  -1)</td></tr>
-<tr class="separator:ga46a17da0f910dbf975791247ee29af0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf992ff132be27c2f8c89aecf32191406"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf992ff132be27c2f8c89aecf32191406"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LETIMER0_OUT0_PIN</b>(i)      &#160;&#160;&#160;((i) == 0 ? 6 : (i) == 1 ? 11 : (i) == 2 ? 0 : (i) == 3 ? 4 :  -1)</td></tr>
-<tr class="separator:gaf992ff132be27c2f8c89aecf32191406"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga609bbfa5ce70a3399545f30569c87f17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga609bbfa5ce70a3399545f30569c87f17"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LETIMER0_OUT1_PIN</b>(i)      &#160;&#160;&#160;((i) == 0 ? 7 : (i) == 1 ? 12 : (i) == 2 ? 1 : (i) == 3 ? 5 :  -1)</td></tr>
-<tr class="separator:ga609bbfa5ce70a3399545f30569c87f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8af426096afe1de9f3e63d58a0007623"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8af426096afe1de9f3e63d58a0007623"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT0_S0IN_PIN</b>(i)            &#160;&#160;&#160;((i) == 0 ? 13 : (i) == 1 ? -1 : (i) == 2 ? 0 : (i) == 3 ? 6 :  -1)</td></tr>
-<tr class="separator:ga8af426096afe1de9f3e63d58a0007623"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa807073708438d7d1d1f4994fab7820a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa807073708438d7d1d1f4994fab7820a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT0_S1IN_PIN</b>(i)            &#160;&#160;&#160;((i) == 0 ? 14 : (i) == 1 ? -1 : (i) == 2 ? 1 : (i) == 3 ? 7 :  -1)</td></tr>
-<tr class="separator:gaa807073708438d7d1d1f4994fab7820a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c043de704efee6f251c212faa144c38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4c043de704efee6f251c212faa144c38"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_I2C0_SDA_PIN</b>(i)                &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 6 : (i) == 2 ? 6 : (i) == 3 ? -1 : (i) == 4 ? 0 : (i) == 5 ? 0 : (i) == 6 ? 12 :  -1)</td></tr>
-<tr class="separator:ga4c043de704efee6f251c212faa144c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4508400d8dffe4dc69c031d330a3f846"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4508400d8dffe4dc69c031d330a3f846"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_I2C0_SCL_PIN</b>(i)                &#160;&#160;&#160;((i) == 0 ? 1 : (i) == 1 ? 7 : (i) == 2 ? 7 : (i) == 3 ? -1 : (i) == 4 ? 1 : (i) == 5 ? 1 : (i) == 6 ? 13 :  -1)</td></tr>
-<tr class="separator:ga4508400d8dffe4dc69c031d330a3f846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga31f188f1940e0c73d1e8131917241c46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga31f188f1940e0c73d1e8131917241c46"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_DBG_SWO_PIN</b>(i)                  &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? 15 :  -1)</td></tr>
-<tr class="separator:ga31f188f1940e0c73d1e8131917241c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5dacdf4656a0ef0fa5412b2ad697c552"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5dacdf4656a0ef0fa5412b2ad697c552"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_DBG_SWDIO_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 1 : (i) == 1 ? 1 :  -1)</td></tr>
-<tr class="separator:ga5dacdf4656a0ef0fa5412b2ad697c552"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa50c43b46129058d2549ba53254e870f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa50c43b46129058d2549ba53254e870f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_DBG_SWCLK_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 0 :  -1)</td></tr>
-<tr class="separator:gaa50c43b46129058d2549ba53254e870f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6e818a0536c61651cfdccaa5a9c22af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad6e818a0536c61651cfdccaa5a9c22af"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART0_CLK_PIN</b>(i)            &#160;&#160;&#160;((i) == 0 ? 12 : (i) == 1 ? 5 : (i) == 2 ? 9 : (i) == 3 ? 15 : (i) == 4 ? 13 : (i) == 5 ? 13 :  -1)</td></tr>
+<tr class="separator:gad6e818a0536c61651cfdccaa5a9c22af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga888a2cf300b008602be4594182cc3ee3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga888a2cf300b008602be4594182cc3ee3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART0_CS_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 13 : (i) == 1 ? 4 : (i) == 2 ? 8 : (i) == 3 ? 14 : (i) == 4 ? 14 : (i) == 5 ? 14 :  -1)</td></tr>
+<tr class="separator:ga888a2cf300b008602be4594182cc3ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga782f6c269cf59e16371a437d06221ce6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga782f6c269cf59e16371a437d06221ce6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART0_RX_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 11 : (i) == 1 ? 6 : (i) == 2 ? 10 : (i) == 3 ? 12 : (i) == 4 ? 8 : (i) == 5 ? 1 :  -1)</td></tr>
+<tr class="separator:ga782f6c269cf59e16371a437d06221ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11cf9f8b59f457a1f80fc9a77441cf7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga11cf9f8b59f457a1f80fc9a77441cf7c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART0_TX_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 10 : (i) == 1 ? 7 : (i) == 2 ? 11 : (i) == 3 ? 13 : (i) == 4 ? 7 : (i) == 5 ? 0 :  -1)</td></tr>
+<tr class="separator:ga11cf9f8b59f457a1f80fc9a77441cf7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5418d79b9909f5162dcc48d095b92064"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5418d79b9909f5162dcc48d095b92064"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_CLK_PIN</b>(i)            &#160;&#160;&#160;((i) == 0 ? 7 : (i) == 1 ? 2 : (i) == 2 ? 0 :  -1)</td></tr>
+<tr class="separator:ga5418d79b9909f5162dcc48d095b92064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga769e58577240e145e260ea8f24757a0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga769e58577240e145e260ea8f24757a0e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_CS_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 8 : (i) == 1 ? 3 : (i) == 2 ? 1 :  -1)</td></tr>
+<tr class="separator:ga769e58577240e145e260ea8f24757a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac42975c264f66349084fa8d71eca2837"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac42975c264f66349084fa8d71eca2837"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_RX_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 1 : (i) == 1 ? 1 : (i) == 2 ? 6 :  -1)</td></tr>
+<tr class="separator:gac42975c264f66349084fa8d71eca2837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad06ec995bc1328907a1cf41d65573685"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad06ec995bc1328907a1cf41d65573685"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_TX_PIN</b>(i)              &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 0 : (i) == 2 ? 7 :  -1)</td></tr>
+<tr class="separator:gad06ec995bc1328907a1cf41d65573685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>Copyright 2015 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.<br />
-</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.<br />
-</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Laboratories, Inc. has no obligation to support this Software. Silicon Laboratories, Inc. is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Laboratories, Inc. will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="efm32tg__af__pins_8h_source.html">efm32tg_af_pins.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4c76ddfc10a27668d6c42d3412320ee0.html">Device</a></li><li class="navelem"><a class="el" href="dir_eca9ef8613423b074c58e28a7f7d2781.html">SiliconLabs</a></li><li class="navelem"><a class="el" href="dir_8f71dd3f724f273a869ac82427e09018.html">EFM32TG</a></li><li class="navelem"><a class="el" href="dir_f62fe3c7424a608ce29e9918116c6189.html">Include</a></li><li class="navelem"><a class="el" href="efm32tg__af__pins_8h.html">efm32tg_af_pins.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:03 for EFM32 Tiny Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:24:08 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

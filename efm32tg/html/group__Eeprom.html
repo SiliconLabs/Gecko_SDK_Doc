@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32tg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -105,9 +104,10 @@ $(document).ready(function(){initNavTree('group__Eeprom.html','');});
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Eeprom<div class="ingroups"><a class="el" href="group__Drivers.html">Drivers</a></div></div>  </div>
+<div class="title">Eeprom<div class="ingroups"><a class="el" href="group__kitdrv.html">Kit Drivers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -123,7 +123,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga1b92635b3e255f10731494e833654895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to EEPROM.  <a href="#ga1b92635b3e255f10731494e833654895">More...</a><br /></td></tr>
 <tr class="separator:ga1b92635b3e255f10731494e833654895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gadb46ffb3709ae467d769f19b6478bdc4"></a>
 <div class="memitem">
@@ -182,6 +181,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Read data from EEPROM. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">i2c</td><td>Pointer to I2C peripheral register block.</td></tr>
@@ -196,7 +197,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="eeprom_8c_source.html#l00126">126</a> of file <a class="el" href="eeprom_8c_source.html">eeprom.c</a>.</p>
 
-<p>References <a class="el" href="em__i2c_8h_source.html#l00257">I2C_TransferSeq_TypeDef::addr</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">I2C_TransferSeq_TypeDef::buf</a>, <a class="el" href="em__i2c_8h_source.html#l00269">I2C_TransferSeq_TypeDef::data</a>, <a class="el" href="eeprom_8c_source.html#l00025">EEPROM_DVK_LEN</a>, <a class="el" href="em__i2c_8h_source.html#l00260">I2C_TransferSeq_TypeDef::flags</a>, <a class="el" href="em__i2c_8h_source.html#l00143">I2C_FLAG_WRITE_READ</a>, <a class="el" href="i2cspm_8c_source.html#l00124">I2CSPM_Transfer()</a>, <a class="el" href="em__i2c_8h_source.html#l00180">i2cTransferDone</a>, and <a class="el" href="em__i2c_8h_source.html#l00278">I2C_TransferSeq_TypeDef::len</a>.</p>
+<p>References <a class="el" href="structI2C__TransferSeq__TypeDef.html#a864fcee4abd27c2dab5723c2d2493ed0">I2C_TransferSeq_TypeDef::addr</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">I2C_TransferSeq_TypeDef::buf</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#ac50f3e038b429e01fd5b2bdfede2f674">I2C_TransferSeq_TypeDef::data</a>, <a class="el" href="eeprom_8c.html#ae970c1492f409ded5c203342312ec6f0">EEPROM_DVK_LEN</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#aa9eb709e67fbaa4acb9a4964ca5174cb">I2C_TransferSeq_TypeDef::flags</a>, <a class="el" href="group__I2C.html#gaf9fc47d6ee1c66405dc491f7a4c3b8fc">I2C_FLAG_WRITE_READ</a>, <a class="el" href="group__I2CSPM.html#ga076766b20012fb6a0cdaaf0f2c760795">I2CSPM_Transfer()</a>, <a class="el" href="group__I2C.html#gga7c781ec28ae11e3e28892de7aa07a00fa01149f9a11ada8a9b05e7104f873de66">i2cTransferDone</a>, and <a class="el" href="structI2C__TransferSeq__TypeDef.html#a92b6d16d6d3b3e4d5650740fa306a285">I2C_TransferSeq_TypeDef::len</a>.</p>
 
 </div>
 </div>
@@ -241,6 +242,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Write data to EEPROM. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">i2c</td><td>Pointer to I2C peripheral register block.</td></tr>
@@ -255,7 +258,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="eeprom_8c_source.html#l00191">191</a> of file <a class="el" href="eeprom_8c_source.html">eeprom.c</a>.</p>
 
-<p>References <a class="el" href="em__i2c_8h_source.html#l00257">I2C_TransferSeq_TypeDef::addr</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">I2C_TransferSeq_TypeDef::buf</a>, <a class="el" href="em__i2c_8h_source.html#l00269">I2C_TransferSeq_TypeDef::data</a>, <a class="el" href="eeprom_8c_source.html#l00063">EEPROM_AckPoll()</a>, <a class="el" href="eeprom_8c_source.html#l00025">EEPROM_DVK_LEN</a>, <a class="el" href="eeprom_8c_source.html#l00028">EEPROM_DVK_PAGESIZE</a>, <a class="el" href="em__i2c_8h_source.html#l00260">I2C_TransferSeq_TypeDef::flags</a>, <a class="el" href="em__i2c_8h_source.html#l00154">I2C_FLAG_WRITE_WRITE</a>, <a class="el" href="i2cspm_8c_source.html#l00124">I2CSPM_Transfer()</a>, <a class="el" href="em__i2c_8h_source.html#l00180">i2cTransferDone</a>, and <a class="el" href="em__i2c_8h_source.html#l00278">I2C_TransferSeq_TypeDef::len</a>.</p>
+<p>References <a class="el" href="structI2C__TransferSeq__TypeDef.html#a864fcee4abd27c2dab5723c2d2493ed0">I2C_TransferSeq_TypeDef::addr</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">I2C_TransferSeq_TypeDef::buf</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#ac50f3e038b429e01fd5b2bdfede2f674">I2C_TransferSeq_TypeDef::data</a>, <a class="el" href="eeprom_8c.html#aef96dc2e7cad63b532565057c7f0467c">EEPROM_AckPoll()</a>, <a class="el" href="eeprom_8c.html#ae970c1492f409ded5c203342312ec6f0">EEPROM_DVK_LEN</a>, <a class="el" href="eeprom_8c.html#ab9f6ef5425ba80856246aac26b1fa7cd">EEPROM_DVK_PAGESIZE</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#aa9eb709e67fbaa4acb9a4964ca5174cb">I2C_TransferSeq_TypeDef::flags</a>, <a class="el" href="group__I2C.html#ga28bb5f9d0559f3af24c0554e497ba2b3">I2C_FLAG_WRITE_WRITE</a>, <a class="el" href="group__I2CSPM.html#ga076766b20012fb6a0cdaaf0f2c760795">I2CSPM_Transfer()</a>, <a class="el" href="group__I2C.html#gga7c781ec28ae11e3e28892de7aa07a00fa01149f9a11ada8a9b05e7104f873de66">i2cTransferDone</a>, and <a class="el" href="structI2C__TransferSeq__TypeDef.html#a92b6d16d6d3b3e4d5650740fa306a285">I2C_TransferSeq_TypeDef::len</a>.</p>
 
 </div>
 </div>
@@ -264,7 +267,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:09 for EFM32 Tiny Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:24:38 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

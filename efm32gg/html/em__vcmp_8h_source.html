@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Giant Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32gg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32gg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -112,8 +110,8 @@ $(document).ready(function(){initNavTree('em__vcmp_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="em__vcmp_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef __SILICON_LABS_EM_VCMP_H__</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define __SILICON_LABS_EM_VCMP_H__</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef EM_VCMP_H</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define EM_VCMP_H</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__device_8h.html">em_device.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined(VCMP_COUNT) &amp;&amp; (VCMP_COUNT &gt; 0)</span></div>
@@ -305,11 +303,11 @@ $(document).ready(function(){initNavTree('em__vcmp_8h_source.html','');});
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(VCMP_COUNT) &amp;&amp; (VCMP_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SILICON_LABS_EM_VCMP_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_VCMP_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="group__VCMP_html_gaf52eef153dec125bcc731ad0d31e3f11"><div class="ttname"><a href="group__VCMP.html#gaf52eef153dec125bcc731ad0d31e3f11">VCMP_IntEnable</a></div><div class="ttdeci">__STATIC_INLINE void VCMP_IntEnable(uint32_t flags)</div><div class="ttdoc">Enable one or more VCMP interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8h_source.html#l00288">em_vcmp.h:288</a></div></div>
 <div class="ttc" id="structVCMP__Init__TypeDef_html"><div class="ttname"><a href="structVCMP__Init__TypeDef.html">VCMP_Init_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8h_source.html#l00096">em_vcmp.h:96</a></div></div>
-<div class="ttc" id="group__EFM32GG995F1024__Peripheral__Declaration_html_ga2df0e11fc4a10e1e7ea0e83042a5c77d"><div class="ttname"><a href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga2df0e11fc4a10e1e7ea0e83042a5c77d">VCMP</a></div><div class="ttdeci">#define VCMP</div><div class="ttdef"><b>Definition:</b> <a href="efm32gg995f1024_8h_source.html#l00402">efm32gg995f1024.h:402</a></div></div>
-<div class="ttc" id="group__VCMP_html_ga52aa53df539c0d68c1e2e0f5b4b40041"><div class="ttname"><a href="group__VCMP.html#ga52aa53df539c0d68c1e2e0f5b4b40041">VCMP_Init</a></div><div class="ttdeci">void VCMP_Init(const VCMP_Init_TypeDef *vcmpInit)</div><div class="ttdoc">Configure and enable Voltage Comparator. </div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8c_source.html#l00056">em_vcmp.c:56</a></div></div>
+<div class="ttc" id="group__EFM32GG995F1024__Peripheral__Declaration_html_ga2df0e11fc4a10e1e7ea0e83042a5c77d"><div class="ttname"><a href="group__EFM32GG995F1024__Peripheral__Declaration.html#ga2df0e11fc4a10e1e7ea0e83042a5c77d">VCMP</a></div><div class="ttdeci">#define VCMP</div><div class="ttdef"><b>Definition:</b> <a href="efm32gg995f1024_8h_source.html#l00403">efm32gg995f1024.h:403</a></div></div>
+<div class="ttc" id="group__VCMP_html_ga52aa53df539c0d68c1e2e0f5b4b40041"><div class="ttname"><a href="group__VCMP.html#ga52aa53df539c0d68c1e2e0f5b4b40041">VCMP_Init</a></div><div class="ttdeci">void VCMP_Init(const VCMP_Init_TypeDef *vcmpInit)</div><div class="ttdoc">Configure and enable Voltage Comparator. </div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8c_source.html#l00060">em_vcmp.c:60</a></div></div>
 <div class="ttc" id="group__VCMP_html_ga4f19b07662931f087951ba5ff5af1189"><div class="ttname"><a href="group__VCMP.html#ga4f19b07662931f087951ba5ff5af1189">VCMP_IntSet</a></div><div class="ttdeci">__STATIC_INLINE void VCMP_IntSet(uint32_t flags)</div><div class="ttdoc">Set one or more pending VCMP interrupts from SW. </div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8h_source.html#l00258">em_vcmp.h:258</a></div></div>
 <div class="ttc" id="group__EFM32GG__VCMP__BitFields_html_ga510e2cebb78f1f6462b13ae0a8782c1b"><div class="ttname"><a href="group__EFM32GG__VCMP__BitFields.html#ga510e2cebb78f1f6462b13ae0a8782c1b">_VCMP_CTRL_WARMTIME_256CYCLES</a></div><div class="ttdeci">#define _VCMP_CTRL_WARMTIME_256CYCLES</div><div class="ttdef"><b>Definition:</b> <a href="efm32gg__vcmp_8h_source.html#l00084">efm32gg_vcmp.h:84</a></div></div>
 <div class="ttc" id="structVCMP__Init__TypeDef_html_ab2c4b4284d981395568a37e9dfcde457"><div class="ttname"><a href="structVCMP__Init__TypeDef.html#ab2c4b4284d981395568a37e9dfcde457">VCMP_Init_TypeDef::inactive</a></div><div class="ttdeci">int inactive</div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8h_source.html#l00112">em_vcmp.h:112</a></div></div>
@@ -332,10 +330,10 @@ $(document).ready(function(){initNavTree('em__vcmp_8h_source.html','');});
 <div class="ttc" id="structVCMP__Init__TypeDef_html_a8a66e7e37fd864e384a7667f7bd3a54b"><div class="ttname"><a href="structVCMP__Init__TypeDef.html#a8a66e7e37fd864e384a7667f7bd3a54b">VCMP_Init_TypeDef::biasProg</a></div><div class="ttdeci">int biasProg</div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8h_source.html#l00102">em_vcmp.h:102</a></div></div>
 <div class="ttc" id="structVCMP__Init__TypeDef_html_a5d55a9625a50419bcdc088a97c08f255"><div class="ttname"><a href="structVCMP__Init__TypeDef.html#a5d55a9625a50419bcdc088a97c08f255">VCMP_Init_TypeDef::enable</a></div><div class="ttdeci">bool enable</div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8h_source.html#l00119">em_vcmp.h:119</a></div></div>
 <div class="ttc" id="group__VCMP_html_ggab56ac68a10865bcbd08f2978a6cf5d5ba206e40abcd9cb83626a9ca4b4120c629"><div class="ttname"><a href="group__VCMP.html#ggab56ac68a10865bcbd08f2978a6cf5d5ba206e40abcd9cb83626a9ca4b4120c629">vcmpHystNone</a></div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8h_source.html#l00085">em_vcmp.h:85</a></div></div>
-<div class="ttc" id="group__VCMP_html_ga185203f0a0c2e0343cca51d82b2b21ef"><div class="ttname"><a href="group__VCMP.html#ga185203f0a0c2e0343cca51d82b2b21ef">VCMP_TriggerSet</a></div><div class="ttdeci">void VCMP_TriggerSet(int level)</div><div class="ttdoc">Configure trigger level of voltage comparator. </div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8c_source.html#l00171">em_vcmp.c:171</a></div></div>
+<div class="ttc" id="group__VCMP_html_ga185203f0a0c2e0343cca51d82b2b21ef"><div class="ttname"><a href="group__VCMP.html#ga185203f0a0c2e0343cca51d82b2b21ef">VCMP_TriggerSet</a></div><div class="ttdeci">void VCMP_TriggerSet(int level)</div><div class="ttdoc">Configure trigger level of voltage comparator. </div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8c_source.html#l00175">em_vcmp.c:175</a></div></div>
 <div class="ttc" id="group__VCMP_html_ga8ded00997c333fd43ebb3c5ad888bac7"><div class="ttname"><a href="group__VCMP.html#ga8ded00997c333fd43ebb3c5ad888bac7">VCMP_Ready</a></div><div class="ttdeci">__STATIC_INLINE bool VCMP_Ready(void)</div><div class="ttdoc">VCMP output is ready. </div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8h_source.html#l00221">em_vcmp.h:221</a></div></div>
 <div class="ttc" id="group__EFM32GG__VCMP__BitFields_html_ga8fcc4d5513c49b74c03e795e2ba43fbf"><div class="ttname"><a href="group__EFM32GG__VCMP__BitFields.html#ga8fcc4d5513c49b74c03e795e2ba43fbf">_VCMP_CTRL_WARMTIME_32CYCLES</a></div><div class="ttdeci">#define _VCMP_CTRL_WARMTIME_32CYCLES</div><div class="ttdef"><b>Definition:</b> <a href="efm32gg__vcmp_8h_source.html#l00081">efm32gg_vcmp.h:81</a></div></div>
-<div class="ttc" id="group__VCMP_html_gab87bb21a4afe57c7721d424e2f8e99c5"><div class="ttname"><a href="group__VCMP.html#gab87bb21a4afe57c7721d424e2f8e99c5">VCMP_LowPowerRefSet</a></div><div class="ttdeci">void VCMP_LowPowerRefSet(bool enable)</div><div class="ttdoc">Enable or disable Low Power Reference setting. </div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8c_source.html#l00151">em_vcmp.c:151</a></div></div>
+<div class="ttc" id="group__VCMP_html_gab87bb21a4afe57c7721d424e2f8e99c5"><div class="ttname"><a href="group__VCMP.html#gab87bb21a4afe57c7721d424e2f8e99c5">VCMP_LowPowerRefSet</a></div><div class="ttdeci">void VCMP_LowPowerRefSet(bool enable)</div><div class="ttdoc">Enable or disable Low Power Reference setting. </div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8c_source.html#l00155">em_vcmp.c:155</a></div></div>
 <div class="ttc" id="group__VCMP_html_gacd1e72c9db56316c049efb14e3aa2fc2"><div class="ttname"><a href="group__VCMP.html#gacd1e72c9db56316c049efb14e3aa2fc2">VCMP_Enable</a></div><div class="ttdeci">__STATIC_INLINE void VCMP_Enable(void)</div><div class="ttdoc">Enable Voltage Comparator. </div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8h_source.html#l00149">em_vcmp.h:149</a></div></div>
 <div class="ttc" id="group__VCMP_html_ga2c95d208b80bffc906fef5c3bcdeacc8"><div class="ttname"><a href="group__VCMP.html#ga2c95d208b80bffc906fef5c3bcdeacc8">VCMP_IntGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t VCMP_IntGet(void)</div><div class="ttdoc">Get pending VCMP interrupt flags. </div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8h_source.html#l00305">em_vcmp.h:305</a></div></div>
 <div class="ttc" id="group__VCMP_html_gga4d4b37ff688f47766c7f11fd44806cc6a3a70a500a360e8e46e0e27ff8d245061"><div class="ttname"><a href="group__VCMP.html#gga4d4b37ff688f47766c7f11fd44806cc6a3a70a500a360e8e46e0e27ff8d245061">vcmpWarmTime512Cycles</a></div><div class="ttdef"><b>Definition:</b> <a href="em__vcmp_8h_source.html#l00078">em_vcmp.h:78</a></div></div>
@@ -363,7 +361,7 @@ $(document).ready(function(){initNavTree('em__vcmp_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__vcmp_8h.html">em_vcmp.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:42 for EFM32 Giant Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:26:21 for EFM32 Giant Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

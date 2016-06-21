@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -69,13 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -111,52 +103,52 @@ $(document).ready(function(){initNavTree('structEZRADIODRV__HandleData.html','')
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">EZRADIODRV_HandleData Struct Reference<div class="ingroups"><a class="el" href="group__EM__Drivers.html">EM_Drivers</a> &raquo; <a class="el" href="group__EZRADIODRV.html">EZRADIODRV</a> &raquo; <a class="el" href="group__Plugin__System.html">Plugin_System</a> &raquo; <a class="el" href="group__Plugin__Manager.html">Plugin_Manager</a></div></div>  </div>
+<div class="title">EZRADIODRV_HandleData Struct Reference<div class="ingroups"><a class="el" href="group__emdrv.html">EMDRV</a> &raquo; <a class="el" href="group__EZRADIODRV.html">EZRADIODRV</a> &raquo; <a class="el" href="group__Plugin__System.html">Plugin_System</a> &raquo; <a class="el" href="group__Plugin__Manager.html">Plugin_Manager</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>EzRadio driver instance initialization and handler structure. This data structure contains a number of EzRadio driver configuration options. Handler to this structure is passed to <a class="el" href="group__Plugin__Manager.html#ga55ab56dfaa297c93024dc43239bc8592">ezradioInit()</a> when initializing an EzRadio driver instance. Some common initialization data sets are predefined in <a class="el" href="group__Plugin__Manager.html#ga083a90d118754ec652dd488de5263e4b">EZRADIODRV_INIT_DEFAULT</a>. Note: All the referenced plug-in instances has there own handler sturcture, that is referenced from this structure. </p>
 
+<p>Definition at line <a class="el" href="ezradio__plugin__manager_8h_source.html#l00308">308</a> of file <a class="el" href="ezradio__plugin__manager_8h_source.html">ezradio_plugin_manager.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="ezradio__plugin__manager_8h_source.html">ezradio_plugin_manager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a2cb6e44ae8838bac12bd6c806faa4c28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cb6e44ae8838bac12bd6c806faa4c28"></a>
-<a class="el" href="group__Transmit__Plugin.html#ga7b8a0131029182043182172b81cc607b">EZRADIODRV_PacketTxHandle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#a2cb6e44ae8838bac12bd6c806faa4c28">packetTx</a></td></tr>
-<tr class="memdesc:a2cb6e44ae8838bac12bd6c806faa4c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet transmission plug-in handler. <br /></td></tr>
-<tr class="separator:a2cb6e44ae8838bac12bd6c806faa4c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a457b60b425a44d08bbaa444a9d70ca75"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a457b60b425a44d08bbaa444a9d70ca75"></a>
-<a class="el" href="group__Receive__Plugin.html#gaab5e2c6e695bb0d29751d46f20b5677e">EZRADIODRV_PacketRxHandle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#a457b60b425a44d08bbaa444a9d70ca75">packetRx</a></td></tr>
-<tr class="memdesc:a457b60b425a44d08bbaa444a9d70ca75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet reception plug-in handler. <br /></td></tr>
-<tr class="separator:a457b60b425a44d08bbaa444a9d70ca75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34a55e0639a427607fbe93ae020a5cd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34a55e0639a427607fbe93ae020a5cd2"></a>
-<a class="el" href="group__CRC__Error__Plugin.html#ga937c4bf6ce11f3d9834145348f9e579d">EZRADIODRV_PacketCrcErrorHandle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#a34a55e0639a427607fbe93ae020a5cd2">packetCrcError</a></td></tr>
-<tr class="memdesc:a34a55e0639a427607fbe93ae020a5cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet reception with CRC error plug-in handler. <br /></td></tr>
-<tr class="separator:a34a55e0639a427607fbe93ae020a5cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5235cf36c737ad3df3cee0580c87db80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5235cf36c737ad3df3cee0580c87db80"></a>
 <a class="el" href="group__Auto__ACK__Plugin.html#ga7586d12843e3ce6f696d622bd2801349">EZRADIODRV_AutoAckHandle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#a5235cf36c737ad3df3cee0580c87db80">autoAck</a></td></tr>
 <tr class="memdesc:a5235cf36c737ad3df3cee0580c87db80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auto-acknowledge plug-in handler. <br /></td></tr>
 <tr class="separator:a5235cf36c737ad3df3cee0580c87db80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adee41191751df0fa8727fa4de54a068c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adee41191751df0fa8727fa4de54a068c"></a>
-<a class="el" href="group__Unmod__Carrier__Plugin.html#ga2f71845110c2ad97935762e55a73d61d">EZRADIODRV_UnmodCarrierHandle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#adee41191751df0fa8727fa4de54a068c">unmodCarrier</a></td></tr>
-<tr class="memdesc:adee41191751df0fa8727fa4de54a068c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmodulated carrier plug-in handler. <br /></td></tr>
-<tr class="separator:adee41191751df0fa8727fa4de54a068c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f94cdc2181b4c0ea4a63f4f52f439a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f94cdc2181b4c0ea4a63f4f52f439a9"></a>
-<a class="el" href="group__PN9__Plugin.html#gacf4c453a34c27fc697db2de2fd8e4e62">EZRADIODRV_Pn9Handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#a2f94cdc2181b4c0ea4a63f4f52f439a9">pn9</a></td></tr>
-<tr class="memdesc:a2f94cdc2181b4c0ea4a63f4f52f439a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">PN9 plug-in handler. <br /></td></tr>
-<tr class="separator:a2f94cdc2181b4c0ea4a63f4f52f439a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83ef2f44ed706ee64db88e687a549fa2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83ef2f44ed706ee64db88e687a549fa2"></a>
-<a class="el" href="group__Direct__Transmit__Plugin.html#ga92ba959e1bc2e29d913e264c8f3ce050">EZRADIODRV_DirectTxHandle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#a83ef2f44ed706ee64db88e687a549fa2">directTx</a></td></tr>
-<tr class="memdesc:a83ef2f44ed706ee64db88e687a549fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct transmission plug-in handler. <br /></td></tr>
-<tr class="separator:a83ef2f44ed706ee64db88e687a549fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5baff53e6ac565ad2afc0542264176b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5baff53e6ac565ad2afc0542264176b9"></a>
 <a class="el" href="group__Direct__Receive__Plugin.html#ga3b5f1dfd73623943e7a469431c8d7270">EZRADIODRV_DirectRxHandle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#a5baff53e6ac565ad2afc0542264176b9">directRx</a></td></tr>
 <tr class="memdesc:a5baff53e6ac565ad2afc0542264176b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct reception plug-in handler. <br /></td></tr>
 <tr class="separator:a5baff53e6ac565ad2afc0542264176b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83ef2f44ed706ee64db88e687a549fa2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83ef2f44ed706ee64db88e687a549fa2"></a>
+<a class="el" href="group__Direct__Transmit__Plugin.html#ga92ba959e1bc2e29d913e264c8f3ce050">EZRADIODRV_DirectTxHandle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#a83ef2f44ed706ee64db88e687a549fa2">directTx</a></td></tr>
+<tr class="memdesc:a83ef2f44ed706ee64db88e687a549fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct transmission plug-in handler. <br /></td></tr>
+<tr class="separator:a83ef2f44ed706ee64db88e687a549fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a55e0639a427607fbe93ae020a5cd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34a55e0639a427607fbe93ae020a5cd2"></a>
+<a class="el" href="group__CRC__Error__Plugin.html#ga937c4bf6ce11f3d9834145348f9e579d">EZRADIODRV_PacketCrcErrorHandle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#a34a55e0639a427607fbe93ae020a5cd2">packetCrcError</a></td></tr>
+<tr class="memdesc:a34a55e0639a427607fbe93ae020a5cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet reception with CRC error plug-in handler. <br /></td></tr>
+<tr class="separator:a34a55e0639a427607fbe93ae020a5cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457b60b425a44d08bbaa444a9d70ca75"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a457b60b425a44d08bbaa444a9d70ca75"></a>
+<a class="el" href="group__Receive__Plugin.html#gaab5e2c6e695bb0d29751d46f20b5677e">EZRADIODRV_PacketRxHandle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#a457b60b425a44d08bbaa444a9d70ca75">packetRx</a></td></tr>
+<tr class="memdesc:a457b60b425a44d08bbaa444a9d70ca75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet reception plug-in handler. <br /></td></tr>
+<tr class="separator:a457b60b425a44d08bbaa444a9d70ca75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb6e44ae8838bac12bd6c806faa4c28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cb6e44ae8838bac12bd6c806faa4c28"></a>
+<a class="el" href="group__Transmit__Plugin.html#ga7b8a0131029182043182172b81cc607b">EZRADIODRV_PacketTxHandle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#a2cb6e44ae8838bac12bd6c806faa4c28">packetTx</a></td></tr>
+<tr class="memdesc:a2cb6e44ae8838bac12bd6c806faa4c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Packet transmission plug-in handler. <br /></td></tr>
+<tr class="separator:a2cb6e44ae8838bac12bd6c806faa4c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f94cdc2181b4c0ea4a63f4f52f439a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f94cdc2181b4c0ea4a63f4f52f439a9"></a>
+<a class="el" href="group__PN9__Plugin.html#gacf4c453a34c27fc697db2de2fd8e4e62">EZRADIODRV_Pn9Handle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#a2f94cdc2181b4c0ea4a63f4f52f439a9">pn9</a></td></tr>
+<tr class="memdesc:a2f94cdc2181b4c0ea4a63f4f52f439a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">PN9 plug-in handler. <br /></td></tr>
+<tr class="separator:a2f94cdc2181b4c0ea4a63f4f52f439a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee41191751df0fa8727fa4de54a068c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adee41191751df0fa8727fa4de54a068c"></a>
+<a class="el" href="group__Unmod__Carrier__Plugin.html#ga2f71845110c2ad97935762e55a73d61d">EZRADIODRV_UnmodCarrierHandle_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEZRADIODRV__HandleData.html#adee41191751df0fa8727fa4de54a068c">unmodCarrier</a></td></tr>
+<tr class="memdesc:adee41191751df0fa8727fa4de54a068c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmodulated carrier plug-in handler. <br /></td></tr>
+<tr class="separator:adee41191751df0fa8727fa4de54a068c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>EzRadio driver instance initialization and handler structure. This data structure contains a number of EzRadio driver configuration options. Handler to this structure is passed to <a class="el" href="group__Plugin__Manager.html#ga55ab56dfaa297c93024dc43239bc8592">ezradioInit()</a> when initializing an EzRadio driver instance. Some common initialization data sets are predefined in <a class="el" href="group__Plugin__Manager.html#ga083a90d118754ec652dd488de5263e4b">EZRADIODRV_INIT_DEFAULT</a>. Note: All the referenced plug-in instances has there own handler sturcture, that is referenced from this structure. </p>
-
-<p>Definition at line <a class="el" href="ezradio__plugin__manager_8h_source.html#l00306">306</a> of file <a class="el" href="ezradio__plugin__manager_8h_source.html">ezradio_plugin_manager.h</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>C:/work/s025_sw/emdrv/ezradiodrv/plugins/inc/<a class="el" href="ezradio__plugin__manager_8h_source.html">ezradio_plugin_manager.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -165,7 +157,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structEZRADIODRV__HandleData.html">EZRADIODRV_HandleData</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:41:41 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:43:37 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

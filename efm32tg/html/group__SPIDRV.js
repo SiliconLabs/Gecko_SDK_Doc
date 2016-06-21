@@ -1,29 +1,28 @@
 var group__SPIDRV =
 [
+    [ "SPIDRV_HandleData", "structSPIDRV__HandleData.html", null ],
     [ "SPIDRV_Init", "structSPIDRV__Init.html", [
-      [ "port", "structSPIDRV__Init.html#a70850ce8d7d9e382680fa9e0099988c8", null ],
-      [ "portLocation", "structSPIDRV__Init.html#aa27c85e8e319748dc13b15b518214f1c", null ],
-      [ "bitRate", "structSPIDRV__Init.html#a99dbda3f0f3d2326eed8c74d68e9df39", null ],
-      [ "frameLength", "structSPIDRV__Init.html#a294b8aa1198583675863883c6c459c46", null ],
-      [ "dummyTxValue", "structSPIDRV__Init.html#a207c6c1d6fe3547cfa3bcac9deb91c94", null ],
-      [ "type", "structSPIDRV__Init.html#a6f015a4e0562e354c4b194d6ee61642f", null ],
       [ "bitOrder", "structSPIDRV__Init.html#a692a9bba58acd5a4f9420363b53de9a6", null ],
+      [ "bitRate", "structSPIDRV__Init.html#a99dbda3f0f3d2326eed8c74d68e9df39", null ],
       [ "clockMode", "structSPIDRV__Init.html#a9b7e5d04e3bfa608db4cf48054499671", null ],
       [ "csControl", "structSPIDRV__Init.html#a6ede9845f3c7f74f44e47b9d9198fbf7", null ],
-      [ "slaveStartMode", "structSPIDRV__Init.html#a61e358241cd643dffef97de8c4d0663d", null ]
+      [ "dummyTxValue", "structSPIDRV__Init.html#a207c6c1d6fe3547cfa3bcac9deb91c94", null ],
+      [ "frameLength", "structSPIDRV__Init.html#a294b8aa1198583675863883c6c459c46", null ],
+      [ "port", "structSPIDRV__Init.html#a70850ce8d7d9e382680fa9e0099988c8", null ],
+      [ "portLocation", "structSPIDRV__Init.html#aa27c85e8e319748dc13b15b518214f1c", null ],
+      [ "slaveStartMode", "structSPIDRV__Init.html#a61e358241cd643dffef97de8c4d0663d", null ],
+      [ "type", "structSPIDRV__Init.html#a6f015a4e0562e354c4b194d6ee61642f", null ]
     ] ],
-    [ "SPIDRV_HandleData", "structSPIDRV__HandleData.html", null ],
-    [ "SPIDRV Serial Peripheral Interface driver", "group__SPIDRV.html#spidrv_doc", "group__SPIDRV_spidrv_doc_dup" ],
-    [ "ECODE_EMDRV_SPIDRV_OK", "group__SPIDRV.html#ga38b85d953fb373f09638bcf7c44d0967", null ],
-    [ "ECODE_EMDRV_SPIDRV_ILLEGAL_HANDLE", "group__SPIDRV.html#gaafa5ae1f0a47144a11cbf18f2760a5ff", null ],
-    [ "ECODE_EMDRV_SPIDRV_PARAM_ERROR", "group__SPIDRV.html#ga6760019174c4ac5bb0dce83b515fd2d7", null ],
-    [ "ECODE_EMDRV_SPIDRV_BUSY", "group__SPIDRV.html#ga9e9cef5beffb68b757a079404b939ef5", null ],
-    [ "ECODE_EMDRV_SPIDRV_TIMER_ALLOC_ERROR", "group__SPIDRV.html#ga23e5cb98212c37e189e3ec44b98d6774", null ],
-    [ "ECODE_EMDRV_SPIDRV_TIMEOUT", "group__SPIDRV.html#ga5a80e8e9a81e323a5e64eef0a793e0c7", null ],
-    [ "ECODE_EMDRV_SPIDRV_IDLE", "group__SPIDRV.html#ga5895306e19420d805870b7c0c9fa2ada", null ],
     [ "ECODE_EMDRV_SPIDRV_ABORTED", "group__SPIDRV.html#ga6fa497c90552cd4a5a171df85a4cc2ff", null ],
-    [ "ECODE_EMDRV_SPIDRV_MODE_ERROR", "group__SPIDRV.html#ga0c2f1edd90df0d093f33240bc4b57ed8", null ],
+    [ "ECODE_EMDRV_SPIDRV_BUSY", "group__SPIDRV.html#ga9e9cef5beffb68b757a079404b939ef5", null ],
     [ "ECODE_EMDRV_SPIDRV_DMA_ALLOC_ERROR", "group__SPIDRV.html#ga6464dd0b0517f0b6a9baf9fcb0e5015f", null ],
+    [ "ECODE_EMDRV_SPIDRV_IDLE", "group__SPIDRV.html#ga5895306e19420d805870b7c0c9fa2ada", null ],
+    [ "ECODE_EMDRV_SPIDRV_ILLEGAL_HANDLE", "group__SPIDRV.html#gaafa5ae1f0a47144a11cbf18f2760a5ff", null ],
+    [ "ECODE_EMDRV_SPIDRV_MODE_ERROR", "group__SPIDRV.html#ga0c2f1edd90df0d093f33240bc4b57ed8", null ],
+    [ "ECODE_EMDRV_SPIDRV_OK", "group__SPIDRV.html#ga38b85d953fb373f09638bcf7c44d0967", null ],
+    [ "ECODE_EMDRV_SPIDRV_PARAM_ERROR", "group__SPIDRV.html#ga6760019174c4ac5bb0dce83b515fd2d7", null ],
+    [ "ECODE_EMDRV_SPIDRV_TIMEOUT", "group__SPIDRV.html#ga5a80e8e9a81e323a5e64eef0a793e0c7", null ],
+    [ "ECODE_EMDRV_SPIDRV_TIMER_ALLOC_ERROR", "group__SPIDRV.html#ga23e5cb98212c37e189e3ec44b98d6774", null ],
     [ "SPIDRV_MASTER_USART0", "group__SPIDRV.html#ga551dc4157363812661bc07602b3e1184", null ],
     [ "SPIDRV_MASTER_USART1", "group__SPIDRV.html#ga8516f5e723dc93a6d2a392e37c25252b", null ],
     [ "SPIDRV_MASTER_USART2", "group__SPIDRV.html#ga7a8acfe9763b52fd70029ac0a6207123", null ],
@@ -33,19 +32,15 @@ var group__SPIDRV =
     [ "SPIDRV_SLAVE_USART1", "group__SPIDRV.html#ga2e19ab6c2117260945a111fc9f4cd4b9", null ],
     [ "SPIDRV_SLAVE_USART2", "group__SPIDRV.html#gac0f451db8f1d80cadb60d27738b44171", null ],
     [ "SPIDRV_SLAVE_USARTRF0", "group__SPIDRV.html#ga156909bd29ba0cd4b8d35e2d8e10a53a", null ],
-    [ "SPIDRV_Type_t", "group__SPIDRV.html#ga928e744e11ebd825c4d8f419c5ce5f81", null ],
     [ "SPIDRV_BitOrder_t", "group__SPIDRV.html#ga909f87203f30c2e7ed4947eb60ee7e28", null ],
+    [ "SPIDRV_Callback_t", "group__SPIDRV.html#ga350f047a931c290e22c6626e05185f30", null ],
     [ "SPIDRV_ClockMode_t", "group__SPIDRV.html#gaaf5fff9b12451a428e6a8b731438a58e", null ],
     [ "SPIDRV_CsControl_t", "group__SPIDRV.html#gab5c15922b5a37de9fb125167389f8a0c", null ],
-    [ "SPIDRV_SlaveStart_t", "group__SPIDRV.html#ga6e1712c7c02c2978d0452fc79be56172", null ],
-    [ "SPIDRV_Callback_t", "group__SPIDRV.html#ga350f047a931c290e22c6626e05185f30", null ],
-    [ "SPIDRV_Init_t", "group__SPIDRV.html#ga649219adba5376ae8cab4f939d776136", null ],
-    [ "SPIDRV_HandleData_t", "group__SPIDRV.html#ga205a4cacfb7153b67e54cce5e5144485", null ],
     [ "SPIDRV_Handle_t", "group__SPIDRV.html#gaa2b4d4c1c192566db0b9080a5c06eb60", null ],
-    [ "SPIDRV_Type", "group__SPIDRV.html#gad47b70bb6c11a6a2842f7dc8dab31824", [
-      [ "spidrvMaster", "group__SPIDRV.html#ggad47b70bb6c11a6a2842f7dc8dab31824af6a83e2d1d37a22bc9ba51fd82639ca1", null ],
-      [ "spidrvSlave", "group__SPIDRV.html#ggad47b70bb6c11a6a2842f7dc8dab31824a95838f0a3dc0a41cd9f8666007153382", null ]
-    ] ],
+    [ "SPIDRV_HandleData_t", "group__SPIDRV.html#ga205a4cacfb7153b67e54cce5e5144485", null ],
+    [ "SPIDRV_Init_t", "group__SPIDRV.html#ga649219adba5376ae8cab4f939d776136", null ],
+    [ "SPIDRV_SlaveStart_t", "group__SPIDRV.html#ga6e1712c7c02c2978d0452fc79be56172", null ],
+    [ "SPIDRV_Type_t", "group__SPIDRV.html#ga928e744e11ebd825c4d8f419c5ce5f81", null ],
     [ "SPIDRV_BitOrder", "group__SPIDRV.html#ga25c5e9421435cbb3cdd8e7da486426dd", [
       [ "spidrvBitOrderLsbFirst", "group__SPIDRV.html#gga25c5e9421435cbb3cdd8e7da486426ddad5e81b8d0ea9e47ce1b0e8e07d7fefcb", null ],
       [ "spidrvBitOrderMsbFirst", "group__SPIDRV.html#gga25c5e9421435cbb3cdd8e7da486426dda39e35dc40973c0bd86a3bf5773e62ee0", null ]
@@ -63,6 +58,10 @@ var group__SPIDRV =
     [ "SPIDRV_SlaveStart", "group__SPIDRV.html#ga5e653c9b53ec8c873a24192257bd8312", [
       [ "spidrvSlaveStartImmediate", "group__SPIDRV.html#gga5e653c9b53ec8c873a24192257bd8312a5cd731dca4929ff3ec6ad62006b7bca8", null ],
       [ "spidrvSlaveStartDelayed", "group__SPIDRV.html#gga5e653c9b53ec8c873a24192257bd8312ad616a0af127eb0682af8f60e9954289a", null ]
+    ] ],
+    [ "SPIDRV_Type", "group__SPIDRV.html#gad47b70bb6c11a6a2842f7dc8dab31824", [
+      [ "spidrvMaster", "group__SPIDRV.html#ggad47b70bb6c11a6a2842f7dc8dab31824af6a83e2d1d37a22bc9ba51fd82639ca1", null ],
+      [ "spidrvSlave", "group__SPIDRV.html#ggad47b70bb6c11a6a2842f7dc8dab31824a95838f0a3dc0a41cd9f8666007153382", null ]
     ] ],
     [ "SPIDRV_AbortTransfer", "group__SPIDRV.html#ga071d128b28b8acff08396fb090b8025a", null ],
     [ "SPIDRV_DeInit", "group__SPIDRV.html#ga1bebced0f8f5b3a3ac582916e4b13460", null ],

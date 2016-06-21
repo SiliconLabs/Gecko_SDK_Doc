@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32g-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -105,12 +104,12 @@ $(document).ready(function(){initNavTree('group__PRS.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">PRS<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
+<div class="title">PRS<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Peripheral Reflex System (PRS) Peripheral API </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Peripheral Reflex System (PRS) Peripheral API. </p>
+<p>This module contains functions to control the PRS peripheral of Silicon Labs 32-bit MCUs and SoCs. The PRS allows configurable, fast and autonomous communication between peripherals on the MCU or SoC. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -138,7 +137,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:gab8273dde832f46d40696b4c5025e411c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set source and signal to be used for a channel.  <a href="#gab8273dde832f46d40696b4c5025e411c">More...</a><br /></td></tr>
 <tr class="separator:gab8273dde832f46d40696b4c5025e411c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="ga853e2a53ed99eb3a0c5e163e1d33e814"></a>
 <div class="memitem">
@@ -193,6 +191,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set level control bit for one or more channels. </p>
 <p>The level value for a channel is XORed with both the pulse possible issued by <a class="el" href="group__PRS.html#gabf5756623b5b766e287ca27441bd0f1d" title="Trigger a high pulse (one HFPERCLK) for one or more channels. ">PRS_PulseTrigger()</a> and the PRS input signal selected for the channel(s).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -204,7 +204,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__prs_8h_source.html#l00086">86</a> of file <a class="el" href="em__prs_8h_source.html">em_prs.h</a>.</p>
 
-<p>References <a class="el" href="efm32g890f128_8h_source.html#l00351">PRS</a>.</p>
+<p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga8397acedb06c1832f583d8660807e826">PRS</a>.</p>
 
 </div>
 </div>
@@ -221,6 +221,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Trigger a high pulse (one HFPERCLK) for one or more channels. </p>
 <p>Setting a bit for a channel causes the bit in the register to remain high for one HFPERCLK cycle. The pulse is XORed with both the corresponding bit in PRS SWLEVEL register and the PRS input signal selected for the channel(s).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -231,7 +233,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__prs_8h_source.html#l00106">106</a> of file <a class="el" href="em__prs_8h_source.html">em_prs.h</a>.</p>
 
-<p>References <a class="el" href="efm32g__prs_8h_source.html#l00058">_PRS_SWPULSE_MASK</a>, and <a class="el" href="efm32g890f128_8h_source.html#l00351">PRS</a>.</p>
+<p>References <a class="el" href="group__EFM32G__PRS__BitFields.html#gaaa2b7d9ce7b1d07e4c577ed71ccb6159">_PRS_SWPULSE_MASK</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga8397acedb06c1832f583d8660807e826">PRS</a>.</p>
 
 </div>
 </div>
@@ -270,6 +272,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set source and signal to be used for a channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>Channel to define signal and source for.</td></tr>
@@ -280,9 +284,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__prs_8c_source.html#l00070">70</a> of file <a class="el" href="em__prs_8c_source.html">em_prs.c</a>.</p>
+<p>Definition at line <a class="el" href="em__prs_8c_source.html#l00074">74</a> of file <a class="el" href="em__prs_8c_source.html">em_prs.c</a>.</p>
 
-<p>References <a class="el" href="efm32g__prs_8h_source.html#l00148">_PRS_CH_CTRL_SIGSEL_MASK</a>, <a class="el" href="efm32g__prs_8h_source.html#l00250">_PRS_CH_CTRL_SOURCESEL_MASK</a>, <a class="el" href="efm32g890f128_8h_source.html#l00351">PRS</a>, and <a class="el" href="efm32g890f128_8h_source.html#l00165">PRS_CHAN_COUNT</a>.</p>
+<p>References <a class="el" href="group__EFM32G__PRS__BitFields.html#ga2d36c8c56174e5db5abcbc04c1141597">_PRS_CH_CTRL_SIGSEL_MASK</a>, <a class="el" href="group__EFM32G__PRS__BitFields.html#ga3a7487965459eeccdd641d169bb1262a">_PRS_CH_CTRL_SOURCESEL_MASK</a>, <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga8397acedb06c1832f583d8660807e826">PRS</a>, and <a class="el" href="group__EFM32G890F128__Part.html#ga2c3bc92832d253b94bfa2840bf7fcfd3">PRS_CHAN_COUNT</a>.</p>
 
 </div>
 </div>
@@ -291,7 +295,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:35:39 for EFM32 Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:22:28 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

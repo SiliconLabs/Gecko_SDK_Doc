@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li class="current"><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
   <div id="navrow3" class="tabs2">
@@ -262,6 +260,9 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 </li>
 <li>CHARS
 : <a class="el" href="retargettft_8c.html#a5d7cfaaf3d71eb89b31364adb9fda6a6">retargettft.c</a>
+</li>
+<li>checkForDuplicates()
+: <a class="el" href="tempdrv_8c.html#a491d81c1f5c7c96d9c96cc946f45e171">tempdrv.c</a>
 </li>
 <li>CHECKSUM_VALID_FRAME_MASK
 : <a class="el" href="ksz8851snl_8c.html#a028895fdab77c4dd8aca7a34aaaf38e9">ksz8851snl.c</a>
@@ -1853,9 +1854,6 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 <li>cmuClock_CORE
 : <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea040d340c971448a4607a4a70092bc0f8">em_cmu.h</a>
 </li>
-<li>cmuClock_CORELE
-: <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea9909478ce7d103023a8227911633c36c">em_cmu.h</a>
-</li>
 <li>cmuClock_DAC0
 : <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea2501230a3104bd2588207a5cea0392c4">em_cmu.h</a>
 </li>
@@ -1873,6 +1871,9 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 </li>
 <li>cmuClock_HF
 : <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaf26ebbfb801b7dbd9ee98bc3e49327f0">em_cmu.h</a>
+</li>
+<li>cmuClock_HFLE
+: <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea5a6fb325e4fa1fad5103c47916498b11">em_cmu.h</a>
 </li>
 <li>cmuClock_HFPER
 : <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">em_cmu.h</a>
@@ -1997,9 +1998,6 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 <li>cmuSelect_AUXHFRCO
 : <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751ac8f1609f0766b0a732ac5e8c59724390">em_cmu.h</a>
 </li>
-<li>cmuSelect_CORELEDIV2
-: <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751ac7db64db9cb0e2b74466d80e117e01e5">em_cmu.h</a>
-</li>
 <li>cmuSelect_Disabled
 : <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751af9ac024fe61a29cf5b48b34989ca3e8c">em_cmu.h</a>
 </li>
@@ -2008,6 +2006,9 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 </li>
 <li>cmuSelect_HFCLK
 : <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751a3ddbd6ec6781fcd8646672b83aee23e4">em_cmu.h</a>
+</li>
+<li>cmuSelect_HFCLKLE
+: <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751aab1ec2c1fdaeddd9f8bc9d562e7051ee">em_cmu.h</a>
 </li>
 <li>cmuSelect_HFRCO
 : <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751a190774bb5f5ff6c49d7b084a6ea867fa">em_cmu.h</a>
@@ -2025,8 +2026,8 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 : <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751a697562863050d6dd51342bde4ea381f5">em_cmu.h</a>
 </li>
 <li>Compress()
-: <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.c</a>
-, <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.h</a>
+: <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.h</a>
+, <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.c</a>
 </li>
 <li>CONFIG_DESC_BM_REMOTEWAKEUP
 : <a class="el" href="group__USB__COMMON.html#gad69d76a5459f09a53591df538f4335d9">em_usb.h</a>
@@ -2043,6 +2044,12 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 <li>CONFIG_DESC_MAXPOWER_mA
 : <a class="el" href="group__USB__COMMON.html#ga74dae1d42500a1b618c5df4a4a07d36f">em_usb.h</a>
 </li>
+<li>convertEMUtoTEMP()
+: <a class="el" href="tempdrv_8c.html#a798654ab0c6e543d7edc325d9a11c0e2">tempdrv.c</a>
+</li>
+<li>convertTEMPtoEMU()
+: <a class="el" href="tempdrv_8c.html#a8442646d166cb0ea7de0bb09390b33ce">tempdrv.c</a>
+</li>
 <li>currentChannel
 : <a class="el" href="caplesense_8c.html#af1489d9f1912bd31cd050fe18ee643e7">caplesense.c</a>
 </li>
@@ -2052,7 +2059,7 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:38:24 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:32:56 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

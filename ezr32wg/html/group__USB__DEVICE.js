@@ -1,33 +1,33 @@
 var group__USB__DEVICE =
 [
+    [ "USBD_Callbacks_TypeDef", "structUSBD__Callbacks__TypeDef.html", [
+      [ "isSelfPowered", "structUSBD__Callbacks__TypeDef.html#a41cdc1ee710af186504583727ac64ea9", null ],
+      [ "setupCmd", "structUSBD__Callbacks__TypeDef.html#a4735f0df935af594ea2f331581211206", null ],
+      [ "sofInt", "structUSBD__Callbacks__TypeDef.html#a5506e8d86a3a7f08361a883efbddc1b5", null ],
+      [ "usbReset", "structUSBD__Callbacks__TypeDef.html#a93a3dcf2bbef9f22b35f37df969b6ac7", null ],
+      [ "usbStateChange", "structUSBD__Callbacks__TypeDef.html#af4bb516d0199344f9a7ca21c20b43f8f", null ]
+    ] ],
     [ "USBD_Init_TypeDef", "structUSBD__Init__TypeDef.html", [
-      [ "deviceDescriptor", "structUSBD__Init__TypeDef.html#a9b34de34ccc1726c268b646419f5a1b4", null ],
-      [ "configDescriptor", "structUSBD__Init__TypeDef.html#a0a79a532500f7d8618fdcf491a5a7b13", null ],
-      [ "stringDescriptors", "structUSBD__Init__TypeDef.html#add4d80f6bf26ff2fe67485ec12284a4c", null ],
-      [ "numberOfStrings", "structUSBD__Init__TypeDef.html#a7dffaf3d3163e86be4304269d89047a1", null ],
       [ "bufferingMultiplier", "structUSBD__Init__TypeDef.html#adac2ad6ec2b476697054bf4d442d2e61", null ],
       [ "callbacks", "structUSBD__Init__TypeDef.html#ab7362b4c08a63e16e79e5dab224331c8", null ],
-      [ "reserved", "structUSBD__Init__TypeDef.html#a20cf696f18ca10c83c4a34124809cd06", null ]
+      [ "configDescriptor", "structUSBD__Init__TypeDef.html#a0a79a532500f7d8618fdcf491a5a7b13", null ],
+      [ "deviceDescriptor", "structUSBD__Init__TypeDef.html#a9b34de34ccc1726c268b646419f5a1b4", null ],
+      [ "numberOfStrings", "structUSBD__Init__TypeDef.html#a7dffaf3d3163e86be4304269d89047a1", null ],
+      [ "reserved", "structUSBD__Init__TypeDef.html#a20cf696f18ca10c83c4a34124809cd06", null ],
+      [ "stringDescriptors", "structUSBD__Init__TypeDef.html#add4d80f6bf26ff2fe67485ec12284a4c", null ]
     ] ],
-    [ "USBD_Callbacks_TypeDef", "structUSBD__Callbacks__TypeDef.html", [
-      [ "usbReset", "structUSBD__Callbacks__TypeDef.html#a93a3dcf2bbef9f22b35f37df969b6ac7", null ],
-      [ "usbStateChange", "structUSBD__Callbacks__TypeDef.html#af4bb516d0199344f9a7ca21c20b43f8f", null ],
-      [ "setupCmd", "structUSBD__Callbacks__TypeDef.html#a4735f0df935af594ea2f331581211206", null ],
-      [ "isSelfPowered", "structUSBD__Callbacks__TypeDef.html#a41cdc1ee710af186504583727ac64ea9", null ],
-      [ "sofInt", "structUSBD__Callbacks__TypeDef.html#a5506e8d86a3a7f08361a883efbddc1b5", null ]
-    ] ],
+    [ "USB_PWRSAVE_MODE_ENTEREM2", "group__USB__DEVICE.html#ga001311728c77fec4acc7c9f1d014807d", null ],
     [ "USB_PWRSAVE_MODE_OFF", "group__USB__DEVICE.html#gaed832194c88151c731cdc01d356d5715", null ],
     [ "USB_PWRSAVE_MODE_ONSUSPEND", "group__USB__DEVICE.html#gaecc3288da02dc30b204b355a3fb2a8af", null ],
     [ "USB_PWRSAVE_MODE_ONVBUSOFF", "group__USB__DEVICE.html#gab3b6ff4a605085b5491c986590e485a1", null ],
-    [ "USB_PWRSAVE_MODE_ENTEREM2", "group__USB__DEVICE.html#ga001311728c77fec4acc7c9f1d014807d", null ],
-    [ "USB_USBC_32kHz_CLK_LFXO", "group__USB__DEVICE.html#gaf8d187657d473708015f844f4c8aa61e", null ],
     [ "USB_USBC_32kHz_CLK_LFRCO", "group__USB__DEVICE.html#gaac14afa136f38a5e84029f8f027cc216", null ],
-    [ "USBD_UsbResetCb_TypeDef", "group__USB__DEVICE.html#ga34f1b34e168438a4d2b475bef5103820", null ],
-    [ "USBD_SofIntCb_TypeDef", "group__USB__DEVICE.html#ga6ed47bd813327a60229b6b9e90a331c0", null ],
+    [ "USB_USBC_32kHz_CLK_LFXO", "group__USB__DEVICE.html#gaf8d187657d473708015f844f4c8aa61e", null ],
+    [ "USBD_Callbacks_TypeDef", "group__USB__DEVICE.html#gaa981b243246dbd611a4ba8bdd042424a", null ],
     [ "USBD_DeviceStateChangeCb_TypeDef", "group__USB__DEVICE.html#ga437ac57b8fb58de07cf10ba94740b54a", null ],
     [ "USBD_IsSelfPoweredCb_TypeDef", "group__USB__DEVICE.html#ga8bb00f127c19df8b5b2ac421ae109082", null ],
     [ "USBD_SetupCmdCb_TypeDef", "group__USB__DEVICE.html#gaf94f2cac2cddd3cc081888cc0d98a3e5", null ],
-    [ "USBD_Callbacks_TypeDef", "group__USB__DEVICE.html#gaa981b243246dbd611a4ba8bdd042424a", null ],
+    [ "USBD_SofIntCb_TypeDef", "group__USB__DEVICE.html#ga6ed47bd813327a60229b6b9e90a331c0", null ],
+    [ "USBD_UsbResetCb_TypeDef", "group__USB__DEVICE.html#ga34f1b34e168438a4d2b475bef5103820", null ],
     [ "USBD_State_TypeDef", "group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d", [
       [ "USBD_STATE_NONE", "group__USB__DEVICE.html#gga437a2e7bf70740fc715ac9a5c7310a6da35ca8b56bdc46ce0dd7c39400796ba7c", null ],
       [ "USBD_STATE_ATTACHED", "group__USB__DEVICE.html#gga437a2e7bf70740fc715ac9a5c7310a6da01e32e620c7692ea767d99bb4120940b", null ],

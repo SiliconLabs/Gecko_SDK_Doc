@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Giant Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32gg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32gg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,10 +111,16 @@ $(document).ready(function(){initNavTree('retargetserial_8h.html','');});
 <div class="title">retargetserial.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>USART1 prototypes and definitions. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>USART1 prototypes and definitions.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;retargetserialconfig.h&quot;</code><br />
+<p>Definition in file <a class="el" href="retargetserial_8h_source.html">retargetserial.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;retargetserialconfig.h&quot;</code><br />
 </div>
 <p><a href="retargetserial_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -125,9 +129,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5af724185f484056b02b42f4ab184bfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar</a> (void)</td></tr>
 <tr class="memdesc:ga5af724185f484056b02b42f4ab184bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a byte from USART/LEUART and put into global buffer.  <a href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">More...</a><br /></td></tr>
 <tr class="separator:ga5af724185f484056b02b42f4ab184bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga856ae0b788dccadc2c83a6e67409be5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar</a> (char c)</td></tr>
-<tr class="memdesc:ga856ae0b788dccadc2c83a6e67409be5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit single byte to USART/LEUART.  <a href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">More...</a><br /></td></tr>
-<tr class="separator:ga856ae0b788dccadc2c83a6e67409be5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9e36c68713259dd181ef349430ba0096"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga9e36c68713259dd181ef349430ba0096">RETARGET_SerialCrLf</a> (int on)</td></tr>
 <tr class="memdesc:ga9e36c68713259dd181ef349430ba0096"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART/LEUART toggle LF to CRLF conversion.  <a href="group__RetargetIo.html#ga9e36c68713259dd181ef349430ba0096">More...</a><br /></td></tr>
 <tr class="separator:ga9e36c68713259dd181ef349430ba0096"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,22 +136,17 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50">RETARGET_SerialInit</a> (void)</td></tr>
 <tr class="memdesc:gab455176edfa0f3414d104e5d6d64cc50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intializes UART/LEUART. <br /></td></tr>
 <tr class="separator:gab455176edfa0f3414d104e5d6d64cc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga856ae0b788dccadc2c83a6e67409be5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar</a> (char c)</td></tr>
+<tr class="memdesc:ga856ae0b788dccadc2c83a6e67409be5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit single byte to USART/LEUART.  <a href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">More...</a><br /></td></tr>
+<tr class="separator:ga856ae0b788dccadc2c83a6e67409be5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="retargetserial_8h_source.html">retargetserial.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="retargetserial_8h.html">retargetserial.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:48 for EFM32 Giant Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:26:58 for EFM32 Giant Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

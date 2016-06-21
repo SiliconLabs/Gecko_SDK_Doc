@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['valid',['valid',['../structMSDD__CmdStatus__TypeDef.html#a0eb28e74638f8ca64f0cf141a4cb3055',1,'MSDD_CmdStatus_TypeDef::valid()'],['../structMSDSCSI__RequestSenseData__TypeDef.html#ac486480a4989efbebbaccf3cbafc3b68',1,'MSDSCSI_RequestSenseData_TypeDef::Valid()']]],
+  ['valid',['Valid',['../structSL__ATTRIBUTE__PACKED.html#afb2b27c5078dfb37a22500defe7bab8e',1,'SL_ATTRIBUTE_PACKED::Valid()'],['../structMSDD__CmdStatus__TypeDef.html#a0eb28e74638f8ca64f0cf141a4cb3055',1,'MSDD_CmdStatus_TypeDef::valid()']]],
   ['valid_5fframe_5fmask',['VALID_FRAME_MASK',['../ksz8851snl_8c.html#aeaa8fab8c4bb775b6dd1fc7532911f25',1,'ksz8851snl.c']]],
   ['value',['VALUE',['../structCALIBRATE__TypeDef.html#a34d5d7f215bc8b06a6d77a578528712b',1,'CALIBRATE_TypeDef']]],
   ['vcmp',['VCMP',['../group__EFM32LG995F256__Peripheral__Declaration.html#ga2df0e11fc4a10e1e7ea0e83042a5c77d',1,'VCMP():&#160;efm32lg995f256.h'],['../group__VCMP.html',1,'(Global Namespace)']]],
@@ -88,8 +88,8 @@ var searchData=
   ['vddcheck_5finit',['VDDCHECK_Init',['../group__VddCheck.html#gab3b6f35557b826311fc4de286db457fb',1,'VDDCHECK_Init(void):&#160;vddcheck.c'],['../group__VddCheck.html#gab3b6f35557b826311fc4de286db457fb',1,'VDDCHECK_Init(void):&#160;vddcheck.c']]],
   ['vddcheck_5flowvoltage',['VDDCHECK_LowVoltage',['../group__VddCheck.html#ga9281f4ae6f1c6b5f31205fb3cc138e0e',1,'VDDCHECK_LowVoltage(float vdd):&#160;vddcheck.c'],['../group__VddCheck.html#ga9281f4ae6f1c6b5f31205fb3cc138e0e',1,'VDDCHECK_LowVoltage(float vdd):&#160;vddcheck.c']]],
   ['vddlevel',['vddLevel',['../structACMP__CapsenseInit__TypeDef.html#ac6c45a058c3881092795487edf418c4a',1,'ACMP_CapsenseInit_TypeDef::vddLevel()'],['../structACMP__Init__TypeDef.html#a1d3145c20d24f1b53279187cfd771a31',1,'ACMP_Init_TypeDef::vddLevel()']]],
-  ['verification',['Verification',['../structMSDSCSI__Verify10__TypeDef.html#a30481a394fbcd76dca996efc1c1d6f57',1,'MSDSCSI_Verify10_TypeDef']]],
-  ['version',['Version',['../structMSDSCSI__InquiryData__TypeDef.html#a19b18638a490b73406a2a934e9846bb3',1,'MSDSCSI_InquiryData_TypeDef::Version()'],['../group__VERSION.html',1,'(Global Namespace)']]],
+  ['verification',['Verification',['../structSL__ATTRIBUTE__PACKED.html#aac2fbed2b74bf365b7eb477fadf5e59b',1,'SL_ATTRIBUTE_PACKED']]],
+  ['version',['Version',['../structSL__ATTRIBUTE__PACKED.html#a61264e7df80ef9e96e9121aa8da3e8ca',1,'SL_ATTRIBUTE_PACKED::Version()'],['../group__VERSION.html',1,'(Global Namespace)']]],
   ['vis',['vis',['../structSI114X__IRQ__SAMPLE.html#a434aca5bbede919398acb1412d64aace',1,'SI114X_IRQ_SAMPLE']]],
   ['vispd_5fadchi_5fwhled',['vispd_adchi_whled',['../structcal__ref__t.html#a0a6e163ff6ea04fd48947c6ff5fac5ac',1,'cal_ref_t']]],
   ['vispd_5fadclo_5fwhled',['vispd_adclo_whled',['../structcal__ref__t.html#ac1c15fdb1f3a80f4c150b74727f56198',1,'cal_ref_t']]],
@@ -102,9 +102,9 @@ var searchData=
   ['vporchfront',['vPorchFront',['../structEBI__TFTInit__TypeDef.html#a7785c70c6f38730e1b5f386a9a224210',1,'EBI_TFTInit_TypeDef']]],
   ['vpulsewidth',['vPulseWidth',['../structEBI__TFTInit__TypeDef.html#a0c554a38215f7b80acd06e77cf2d17dd',1,'EBI_TFTInit_TypeDef']]],
   ['vreg',['vreg',['../structEMU__EM4Init__TypeDef.html#a36eb638fce9398a662f5627cf0beee28',1,'EMU_EM4Init_TypeDef']]],
-  ['vrprotect',['VrProtect',['../structMSDSCSI__Verify10__TypeDef.html#ae54d995272dc054a0e9fbbd81f3f068c',1,'MSDSCSI_Verify10_TypeDef']]],
-  ['vs1',['Vs1',['../structMSDSCSI__InquiryData__TypeDef.html#ad69b6988740c3012da6579229731cf93',1,'MSDSCSI_InquiryData_TypeDef']]],
-  ['vs2',['Vs2',['../structMSDSCSI__InquiryData__TypeDef.html#a93bd09979d33921c72bd7183f3372a4a',1,'MSDSCSI_InquiryData_TypeDef']]],
+  ['vrprotect',['VrProtect',['../structSL__ATTRIBUTE__PACKED.html#a3722cf803fa97450da98b86b230c46f5',1,'SL_ATTRIBUTE_PACKED']]],
+  ['vs1',['Vs1',['../structSL__ATTRIBUTE__PACKED.html#a489d3e7769db6967ea8462dc7fd9027c',1,'SL_ATTRIBUTE_PACKED']]],
+  ['vs2',['Vs2',['../structSL__ATTRIBUTE__PACKED.html#aae127cfff4ad02adc4d251ab7128d4a4',1,'SL_ATTRIBUTE_PACKED']]],
   ['vsize',['vsize',['../structEBI__TFTInit__TypeDef.html#aa3b51f90ddff4decc9c7b89f44fe39b0',1,'EBI_TFTInit_TypeDef']]],
   ['vsyncpolarity',['vsyncPolarity',['../structEBI__TFTInit__TypeDef.html#ae832bd10b9cf4120e60e1ad7f50a4d58',1,'EBI_TFTInit_TypeDef']]]
 ];

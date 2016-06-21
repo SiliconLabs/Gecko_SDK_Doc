@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Pearl Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32pg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32pg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -114,10 +111,16 @@ $(document).ready(function(){initNavTree('msdscsi_8c.html','');});
 <div class="title">msdscsi.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>SCSI interface for Mass Storage Devices (MSD). </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
-<p>SCSI interface for Mass Storage Devices (MSD).  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;em_usb.h&quot;</code><br />
+<p>Definition in file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
+</div><div class="textblock"><code>#include &quot;em_usb.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="msdscsi_8h_source.html">msdscsi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="msdbot_8h_source.html">msdbot.h</a>&quot;</code><br />
 </div>
@@ -128,16 +131,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a20d1e1bc8c9f66d3bbf9f7ec45a8afeb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#a20d1e1bc8c9f66d3bbf9f7ec45a8afeb">MSDSCSI_Init</a> (USBH_Ep_TypeDef *out, USBH_Ep_TypeDef *in)</td></tr>
 <tr class="memdesc:a20d1e1bc8c9f66d3bbf9f7ec45a8afeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">MSDSCSI module initialization.  <a href="#a20d1e1bc8c9f66d3bbf9f7ec45a8afeb">More...</a><br /></td></tr>
 <tr class="separator:a20d1e1bc8c9f66d3bbf9f7ec45a8afeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8618b70076ea29385d60c816791d253c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#a8618b70076ea29385d60c816791d253c">MSDSCSI_Inquiry</a> (<a class="el" href="structMSDSCSI__InquiryData__TypeDef.html">MSDSCSI_InquiryData_TypeDef</a> *data)</td></tr>
+<tr class="memitem:a8618b70076ea29385d60c816791d253c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#a8618b70076ea29385d60c816791d253c">MSDSCSI_Inquiry</a> (MSDSCSI_InquiryData_TypeDef *data)</td></tr>
 <tr class="memdesc:a8618b70076ea29385d60c816791d253c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a SCSI Inquiry command.  <a href="#a8618b70076ea29385d60c816791d253c">More...</a><br /></td></tr>
 <tr class="separator:a8618b70076ea29385d60c816791d253c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a316bfe2e0c761d50dcaed004a8034bbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#a316bfe2e0c761d50dcaed004a8034bbe">MSDSCSI_Read10</a> (uint32_t lba, uint16_t sectors, void *data)</td></tr>
 <tr class="memdesc:a316bfe2e0c761d50dcaed004a8034bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a SCSI Read(10) command.  <a href="#a316bfe2e0c761d50dcaed004a8034bbe">More...</a><br /></td></tr>
 <tr class="separator:a316bfe2e0c761d50dcaed004a8034bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabf14b7316a5270391c8961f7b7bd1e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#aabf14b7316a5270391c8961f7b7bd1e9">MSDSCSI_ReadCapacity</a> (<a class="el" href="structMSDSCSI__ReadCapacityData__TypeDef.html">MSDSCSI_ReadCapacityData_TypeDef</a> *data)</td></tr>
+<tr class="memitem:aabf14b7316a5270391c8961f7b7bd1e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#aabf14b7316a5270391c8961f7b7bd1e9">MSDSCSI_ReadCapacity</a> (MSDSCSI_ReadCapacityData_TypeDef *data)</td></tr>
 <tr class="memdesc:aabf14b7316a5270391c8961f7b7bd1e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a SCSI Read Capacity command.  <a href="#aabf14b7316a5270391c8961f7b7bd1e9">More...</a><br /></td></tr>
 <tr class="separator:aabf14b7316a5270391c8961f7b7bd1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa04e858f68c0729af7d749a9bbbd64fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#aa04e858f68c0729af7d749a9bbbd64fb">MSDSCSI_RequestSense</a> (<a class="el" href="structMSDSCSI__RequestSenseData__TypeDef.html">MSDSCSI_RequestSenseData_TypeDef</a> *data)</td></tr>
+<tr class="memitem:aa04e858f68c0729af7d749a9bbbd64fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#aa04e858f68c0729af7d749a9bbbd64fb">MSDSCSI_RequestSense</a> (MSDSCSI_RequestSenseData_TypeDef *data)</td></tr>
 <tr class="memdesc:aa04e858f68c0729af7d749a9bbbd64fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a SCSI Request Sense command.  <a href="#aa04e858f68c0729af7d749a9bbbd64fb">More...</a><br /></td></tr>
 <tr class="separator:aa04e858f68c0729af7d749a9bbbd64fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28044689db0ce7f73fe0eb209e01c68e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#a28044689db0ce7f73fe0eb209e01c68e">MSDSCSI_TestUnitReady</a> (void)</td></tr>
@@ -147,15 +150,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:af01dd388f44692d483d2d83decf804c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a SCSI Write(10) command.  <a href="#af01dd388f44692d483d2d83decf804c2">More...</a><br /></td></tr>
 <tr class="separator:af01dd388f44692d483d2d83decf804c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
-
-<p>Definition in file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+<h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a20d1e1bc8c9f66d3bbf9f7ec45a8afeb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -179,6 +174,8 @@ License</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>MSDSCSI module initialization. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">out</td><td>Pointer to an MSD bulk OUT endpoint structure.</td></tr>
@@ -190,9 +187,9 @@ License</h1>
 
 <p>Definition at line <a class="el" href="msdscsi_8c_source.html#l00157">157</a> of file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
 
-<p>References <a class="el" href="msdbot_8c_source.html#l00058">MSDBOT_Init()</a>, <a class="el" href="msdbot_8h_source.html#l00105">MSDBOT_STATUS_OK</a>, <a class="el" href="msdscsi_8h_source.html#l00046">SCSI_INQUIRYDATA_LEN</a>, <a class="el" href="msdscsi_8h_source.html#l00043">SCSI_READ10_LEN</a>, <a class="el" href="msdscsi_8h_source.html#l00051">SCSI_READCAPACITYDATA_LEN</a>, <a class="el" href="msdscsi_8h_source.html#l00049">SCSI_REQUESTSENSEDATA_LEN</a>, and <a class="el" href="msdscsi_8h_source.html#l00044">SCSI_WRITE10_LEN</a>.</p>
+<p>References <a class="el" href="msdbot_8c.html#a2d6610a0f39ffc856a740ff3330ba2e0">MSDBOT_Init()</a>, <a class="el" href="group__Msd.html#gga8c250077559bcebe75d58cd631add55ea5bd66cc15a09602931308f19ce3bc75c">MSDBOT_STATUS_OK</a>, <a class="el" href="group__Msd.html#ga59d92155a959caa17dee09196cf59e7c">SCSI_INQUIRYDATA_LEN</a>, <a class="el" href="group__Msd.html#gaeeee5bff632d8292bdf27234a2db1610">SCSI_READ10_LEN</a>, <a class="el" href="group__Msd.html#gab6ed4755185c4e6d8d0de6f8dd021e8c">SCSI_READCAPACITYDATA_LEN</a>, <a class="el" href="group__Msd.html#ga5981ba77043dd5be09ef0c563d5acac1">SCSI_REQUESTSENSEDATA_LEN</a>, and <a class="el" href="group__Msd.html#ga412dd9e12c21fbd38201d7b8fb4ac25f">SCSI_WRITE10_LEN</a>.</p>
 
-<p>Referenced by <a class="el" href="msdh_8c_source.html#l00059">MSDH_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__Msd.html#gaeb31e6900faf7971679af16d079f6c14">MSDH_Init()</a>.</p>
 
 </div>
 </div>
@@ -203,12 +200,14 @@ License</h1>
         <tr>
           <td class="memname">bool MSDSCSI_Inquiry </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structMSDSCSI__InquiryData__TypeDef.html">MSDSCSI_InquiryData_TypeDef</a> *&#160;</td>
+          <td class="paramtype">MSDSCSI_InquiryData_TypeDef *&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Issue a SCSI Inquiry command. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>Inquiry response data buffer.</td></tr>
@@ -219,9 +218,9 @@ License</h1>
 
 <p>Definition at line <a class="el" href="msdscsi_8c_source.html#l00189">189</a> of file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
 
-<p>References <a class="el" href="msdbot_8c_source.html#l00098">MSDBOT_Xfer()</a>, and <a class="el" href="msdscsi_8h_source.html#l00046">SCSI_INQUIRYDATA_LEN</a>.</p>
+<p>References <a class="el" href="msdbot_8c.html#a924b6ac8bbbb582c299825f371813067">MSDBOT_Xfer()</a>, and <a class="el" href="group__Msd.html#ga59d92155a959caa17dee09196cf59e7c">SCSI_INQUIRYDATA_LEN</a>.</p>
 
-<p>Referenced by <a class="el" href="msdh_8c_source.html#l00059">MSDH_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__Msd.html#gaeb31e6900faf7971679af16d079f6c14">MSDH_Init()</a>.</p>
 
 </div>
 </div>
@@ -254,6 +253,8 @@ License</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Issue a SCSI Read(10) command. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">lba</td><td>Sector address (LBA) of first sector to read.</td></tr>
@@ -266,9 +267,9 @@ License</h1>
 
 <p>Definition at line <a class="el" href="msdscsi_8c_source.html#l00213">213</a> of file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
 
-<p>References <a class="el" href="em__common_8h_source.html#l00103">EFM32_ALIGN</a>, <a class="el" href="msdscsi_8h_source.html#l00237">MSDSCSI_Read10_TypeDef::Lba</a>, <a class="el" href="msdbot_8c_source.html#l00098">MSDBOT_Xfer()</a>, and <a class="el" href="msdscsi_8h_source.html#l00243">MSDSCSI_Read10_TypeDef::TransferLength</a>.</p>
+<p>References <a class="el" href="msdbot_8c.html#a924b6ac8bbbb582c299825f371813067">MSDBOT_Xfer()</a>, <a class="el" href="group__COMMON.html#ga6c4212379594e73a70b66c5557f1eaa3">SL_ALIGN</a>, and <a class="el" href="group__COMMON.html#ga14deffb02010866992cb069907f73846">SL_ATTRIBUTE_ALIGN</a>.</p>
 
-<p>Referenced by <a class="el" href="msdh_8c_source.html#l00249">MSDH_ReadSectors()</a>.</p>
+<p>Referenced by <a class="el" href="group__Msd.html#ga8697013d00236b3c6dc0ded028f02c3d">MSDH_ReadSectors()</a>.</p>
 
 </div>
 </div>
@@ -279,12 +280,14 @@ License</h1>
         <tr>
           <td class="memname">bool MSDSCSI_ReadCapacity </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structMSDSCSI__ReadCapacityData__TypeDef.html">MSDSCSI_ReadCapacityData_TypeDef</a> *&#160;</td>
+          <td class="paramtype">MSDSCSI_ReadCapacityData_TypeDef *&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Issue a SCSI Read Capacity command. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>Read Capacity response data buffer.</td></tr>
@@ -295,9 +298,9 @@ License</h1>
 
 <p>Definition at line <a class="el" href="msdscsi_8c_source.html#l00240">240</a> of file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
 
-<p>References <a class="el" href="msdscsi_8h_source.html#l00216">MSDSCSI_ReadCapacityData_TypeDef::LogicalBlockAddress</a>, <a class="el" href="msdscsi_8h_source.html#l00217">MSDSCSI_ReadCapacityData_TypeDef::LogicalBlockLength</a>, <a class="el" href="msdbot_8c_source.html#l00098">MSDBOT_Xfer()</a>, and <a class="el" href="msdscsi_8h_source.html#l00051">SCSI_READCAPACITYDATA_LEN</a>.</p>
+<p>References <a class="el" href="msdbot_8c.html#a924b6ac8bbbb582c299825f371813067">MSDBOT_Xfer()</a>, and <a class="el" href="group__Msd.html#gab6ed4755185c4e6d8d0de6f8dd021e8c">SCSI_READCAPACITYDATA_LEN</a>.</p>
 
-<p>Referenced by <a class="el" href="msdh_8c_source.html#l00220">MSDH_GetBlockSize()</a>, <a class="el" href="msdh_8c_source.html#l00171">MSDH_GetSectorCount()</a>, <a class="el" href="msdh_8c_source.html#l00194">MSDH_GetSectorSize()</a>, and <a class="el" href="msdh_8c_source.html#l00059">MSDH_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__Msd.html#gae8f9b12aff7da92b795ef4c64a5bd242">MSDH_GetBlockSize()</a>, <a class="el" href="group__Msd.html#gaef64501159db49dd5e00287a2487ce68">MSDH_GetSectorCount()</a>, <a class="el" href="group__Msd.html#ga14bdf90c68d29571164a39c8f22f8f73">MSDH_GetSectorSize()</a>, and <a class="el" href="group__Msd.html#gaeb31e6900faf7971679af16d079f6c14">MSDH_Init()</a>.</p>
 
 </div>
 </div>
@@ -308,12 +311,14 @@ License</h1>
         <tr>
           <td class="memname">bool MSDSCSI_RequestSense </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structMSDSCSI__RequestSenseData__TypeDef.html">MSDSCSI_RequestSenseData_TypeDef</a> *&#160;</td>
+          <td class="paramtype">MSDSCSI_RequestSenseData_TypeDef *&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Issue a SCSI Request Sense command. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>Request Sense response data buffer.</td></tr>
@@ -324,9 +329,9 @@ License</h1>
 
 <p>Definition at line <a class="el" href="msdscsi_8c_source.html#l00267">267</a> of file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
 
-<p>References <a class="el" href="msdbot_8c_source.html#l00098">MSDBOT_Xfer()</a>, and <a class="el" href="msdscsi_8h_source.html#l00049">SCSI_REQUESTSENSEDATA_LEN</a>.</p>
+<p>References <a class="el" href="msdbot_8c.html#a924b6ac8bbbb582c299825f371813067">MSDBOT_Xfer()</a>, and <a class="el" href="group__Msd.html#ga5981ba77043dd5be09ef0c563d5acac1">SCSI_REQUESTSENSEDATA_LEN</a>.</p>
 
-<p>Referenced by <a class="el" href="msdh_8c_source.html#l00059">MSDH_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__Msd.html#gaeb31e6900faf7971679af16d079f6c14">MSDH_Init()</a>.</p>
 
 </div>
 </div>
@@ -343,13 +348,15 @@ License</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Issue a SCSI Test Unit Ready command. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns true if device ready, false if device not ready or cmd transfer error. </dd></dl>
 
 <p>Definition at line <a class="el" href="msdscsi_8c_source.html#l00283">283</a> of file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
 
-<p>References <a class="el" href="msdbot_8h_source.html#l00105">MSDBOT_STATUS_OK</a>, and <a class="el" href="msdbot_8c_source.html#l00098">MSDBOT_Xfer()</a>.</p>
+<p>References <a class="el" href="group__Msd.html#gga8c250077559bcebe75d58cd631add55ea5bd66cc15a09602931308f19ce3bc75c">MSDBOT_STATUS_OK</a>, and <a class="el" href="msdbot_8c.html#a924b6ac8bbbb582c299825f371813067">MSDBOT_Xfer()</a>.</p>
 
-<p>Referenced by <a class="el" href="msdh_8c_source.html#l00059">MSDH_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__Msd.html#gaeb31e6900faf7971679af16d079f6c14">MSDH_Init()</a>.</p>
 
 </div>
 </div>
@@ -382,6 +389,8 @@ License</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Perform a SCSI Write(10) command. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">lba</td><td>Sector address (LBA) of first sector to write.</td></tr>
@@ -394,9 +403,9 @@ License</h1>
 
 <p>Definition at line <a class="el" href="msdscsi_8c_source.html#l00307">307</a> of file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
 
-<p>References <a class="el" href="em__common_8h_source.html#l00103">EFM32_ALIGN</a>, <a class="el" href="msdscsi_8h_source.html#l00264">MSDSCSI_Write10_TypeDef::Lba</a>, <a class="el" href="msdbot_8c_source.html#l00098">MSDBOT_Xfer()</a>, and <a class="el" href="msdscsi_8h_source.html#l00270">MSDSCSI_Write10_TypeDef::TransferLength</a>.</p>
+<p>References <a class="el" href="msdbot_8c.html#a924b6ac8bbbb582c299825f371813067">MSDBOT_Xfer()</a>, <a class="el" href="group__COMMON.html#ga6c4212379594e73a70b66c5557f1eaa3">SL_ALIGN</a>, and <a class="el" href="group__COMMON.html#ga14deffb02010866992cb069907f73846">SL_ATTRIBUTE_ALIGN</a>.</p>
 
-<p>Referenced by <a class="el" href="msdh_8c_source.html#l00270">MSDH_WriteSectors()</a>.</p>
+<p>Referenced by <a class="el" href="group__Msd.html#ga364dc7de14926e4b9716addb8cca99d2">MSDH_WriteSectors()</a>.</p>
 
 </div>
 </div>
@@ -406,7 +415,7 @@ License</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="msdscsi_8c.html">msdscsi.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:39:59 for EFM32 Pearl Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:38:27 for EFM32 Pearl Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

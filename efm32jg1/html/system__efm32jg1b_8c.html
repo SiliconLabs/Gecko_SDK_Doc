@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -116,41 +113,53 @@ $(document).ready(function(){initNavTree('system__efm32jg1b_8c.html','');});
 <div class="title">system_efm32jg1b.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>CMSIS Cortex-M3/M4 System Layer for EFM32 devices. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.<br />
+</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.<br />
+</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Laboratories, Inc. has no obligation to support this Software. Silicon Laboratories, Inc. is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Laboratories, Inc. will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>CMSIS Cortex-M3/M4 System Layer for EFM32 devices.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<p>Definition in file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+</div><div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 </div>
 <p><a href="system__efm32jg1b_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a16a9bb92649e0f2503f1565bf56e2afc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8c.html#a16a9bb92649e0f2503f1565bf56e2afc">EFM32_LFRCO_FREQ</a>&#160;&#160;&#160;(32768UL)</td></tr>
-<tr class="separator:a16a9bb92649e0f2503f1565bf56e2afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a747f64e814730ee6c0fa0483ef475a87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a747f64e814730ee6c0fa0483ef475a87"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>EFM32_ULFRCO_FREQ</b>&#160;&#160;&#160;(1000UL)</td></tr>
-<tr class="separator:a747f64e814730ee6c0fa0483ef475a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf415d3ffe9ce1a46bef43fb0953c9ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf415d3ffe9ce1a46bef43fb0953c9ea"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>EFM32_HFRCO_MAX_FREQ</b>&#160;&#160;&#160;(38000000UL)</td></tr>
 <tr class="separator:acf415d3ffe9ce1a46bef43fb0953c9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb2de58226beebaf4830db62d7b6c1d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb2de58226beebaf4830db62d7b6c1d6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>EFM32_HFXO_FREQ</b>&#160;&#160;&#160;(40000000UL)</td></tr>
-<tr class="separator:acb2de58226beebaf4830db62d7b6c1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34229077fe53cb40cf87f9310c7f5601"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34229077fe53cb40cf87f9310c7f5601"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>EFM32_HFRCO_STARTUP_FREQ</b>&#160;&#160;&#160;(19000000UL)</td></tr>
 <tr class="separator:a34229077fe53cb40cf87f9310c7f5601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb2de58226beebaf4830db62d7b6c1d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb2de58226beebaf4830db62d7b6c1d6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EFM32_HFXO_FREQ</b>&#160;&#160;&#160;(40000000UL)</td></tr>
+<tr class="separator:acb2de58226beebaf4830db62d7b6c1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a9bb92649e0f2503f1565bf56e2afc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8c.html#a16a9bb92649e0f2503f1565bf56e2afc">EFM32_LFRCO_FREQ</a>&#160;&#160;&#160;(32768UL)</td></tr>
+<tr class="separator:a16a9bb92649e0f2503f1565bf56e2afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27d1136b2fa0bc83ea108d11cd29c502"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8c.html#a27d1136b2fa0bc83ea108d11cd29c502">EFM32_LFXO_FREQ</a>&#160;&#160;&#160;(<a class="el" href="system__efm32jg1b_8c.html#a16a9bb92649e0f2503f1565bf56e2afc">EFM32_LFRCO_FREQ</a>)</td></tr>
 <tr class="separator:a27d1136b2fa0bc83ea108d11cd29c502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747f64e814730ee6c0fa0483ef475a87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a747f64e814730ee6c0fa0483ef475a87"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EFM32_ULFRCO_FREQ</b>&#160;&#160;&#160;(1000UL)</td></tr>
+<tr class="separator:a747f64e814730ee6c0fa0483ef475a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af2e6aa1120f0e55e38c83d8387625d16"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8c.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet</a> (void)</td></tr>
 <tr class="memdesc:af2e6aa1120f0e55e38c83d8387625d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current core clock frequency.  <a href="#af2e6aa1120f0e55e38c83d8387625d16">More...</a><br /></td></tr>
 <tr class="separator:af2e6aa1120f0e55e38c83d8387625d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64cc4ea6124c6503b120933d91edf1a0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8c.html#a64cc4ea6124c6503b120933d91edf1a0">SystemMaxCoreClockGet</a> (void)</td></tr>
-<tr class="memdesc:a64cc4ea6124c6503b120933d91edf1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum core clock frequency.  <a href="#a64cc4ea6124c6503b120933d91edf1a0">More...</a><br /></td></tr>
-<tr class="separator:a64cc4ea6124c6503b120933d91edf1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5991f4c3faeaed3b4f20d5ab515f1f2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2">SystemHFClockGet</a> (void)</td></tr>
 <tr class="memdesc:ab5991f4c3faeaed3b4f20d5ab515f1f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current HFCLK frequency.  <a href="#ab5991f4c3faeaed3b4f20d5ab515f1f2">More...</a><br /></td></tr>
 <tr class="separator:ab5991f4c3faeaed3b4f20d5ab515f1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,15 +175,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a477d1670608b8ca76108b6e21c1124eb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8c.html#a477d1670608b8ca76108b6e21c1124eb">SystemLFRCOClockGet</a> (void)</td></tr>
 <tr class="memdesc:a477d1670608b8ca76108b6e21c1124eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get low frequency RC oscillator clock frequency for target system.  <a href="#a477d1670608b8ca76108b6e21c1124eb">More...</a><br /></td></tr>
 <tr class="separator:a477d1670608b8ca76108b6e21c1124eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88eecfafda55942454a9e10912b3f224"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8c.html#a88eecfafda55942454a9e10912b3f224">SystemULFRCOClockGet</a> (void)</td></tr>
-<tr class="memdesc:a88eecfafda55942454a9e10912b3f224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ultra low frequency RC oscillator clock frequency for target system.  <a href="#a88eecfafda55942454a9e10912b3f224">More...</a><br /></td></tr>
-<tr class="separator:a88eecfafda55942454a9e10912b3f224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a186aefb7bb200c8fda0fc0a4d4b2aa14"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8c.html#a186aefb7bb200c8fda0fc0a4d4b2aa14">SystemLFXOClockGet</a> (void)</td></tr>
 <tr class="memdesc:a186aefb7bb200c8fda0fc0a4d4b2aa14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get low frequency crystal oscillator clock frequency for target system.  <a href="#a186aefb7bb200c8fda0fc0a4d4b2aa14">More...</a><br /></td></tr>
 <tr class="separator:a186aefb7bb200c8fda0fc0a4d4b2aa14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace8c3b705bdbdc9172fbc7f2415dfd8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8c.html#ace8c3b705bdbdc9172fbc7f2415dfd8b">SystemLFXOClockSet</a> (uint32_t freq)</td></tr>
 <tr class="memdesc:ace8c3b705bdbdc9172fbc7f2415dfd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set low frequency crystal oscillator clock frequency for target system.  <a href="#ace8c3b705bdbdc9172fbc7f2415dfd8b">More...</a><br /></td></tr>
 <tr class="separator:ace8c3b705bdbdc9172fbc7f2415dfd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64cc4ea6124c6503b120933d91edf1a0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8c.html#a64cc4ea6124c6503b120933d91edf1a0">SystemMaxCoreClockGet</a> (void)</td></tr>
+<tr class="memdesc:a64cc4ea6124c6503b120933d91edf1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum core clock frequency.  <a href="#a64cc4ea6124c6503b120933d91edf1a0">More...</a><br /></td></tr>
+<tr class="separator:a64cc4ea6124c6503b120933d91edf1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88eecfafda55942454a9e10912b3f224"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efm32jg1b_8c.html#a88eecfafda55942454a9e10912b3f224">SystemULFRCOClockGet</a> (void)</td></tr>
+<tr class="memdesc:a88eecfafda55942454a9e10912b3f224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ultra low frequency RC oscillator clock frequency for target system.  <a href="#a88eecfafda55942454a9e10912b3f224">More...</a><br /></td></tr>
+<tr class="separator:a88eecfafda55942454a9e10912b3f224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -185,24 +197,7 @@ Variables</h2></td></tr>
 <tr class="memdesc:a019e34c770ed2855a9ce73be796f33d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">System HFRCO frequency.  <a href="#a019e34c770ed2855a9ce73be796f33d5">More...</a><br /></td></tr>
 <tr class="separator:a019e34c770ed2855a9ce73be796f33d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>Copyright 2015 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.<br />
-</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.<br />
-</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Laboratories, Inc. has no obligation to support this Software. Silicon Laboratories, Inc. is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Laboratories, Inc. will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a16a9bb92649e0f2503f1565bf56e2afc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +211,7 @@ License</h1>
 
 <p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00041">41</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>Referenced by <a class="el" href="system__efm32jg1b_8c_source.html#l00181">SystemHFClockGet()</a>, and <a class="el" href="system__efm32jg1b_8c_source.html#l00306">SystemLFRCOClockGet()</a>.</p>
+<p>Referenced by <a class="el" href="system__efm32jg1b_8h.html#ab5991f4c3faeaed3b4f20d5ab515f1f2">SystemHFClockGet()</a>, and <a class="el" href="system__efm32jg1b_8h.html#a477d1670608b8ca76108b6e21c1124eb">SystemLFRCOClockGet()</a>.</p>
 
 </div>
 </div>
@@ -249,35 +244,17 @@ License</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the current core clock frequency. </p>
 <p>Calculate and get the current core clock frequency based on the current configuration. Assuming that the SystemCoreClock global variable is maintained, the core clock frequency is stored in that variable as well. This function will however calculate the core clock based on actual HW configuration. It will also update the SystemCoreClock global variable.</p>
 <dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The current core clock frequency in Hz. </dd></dl>
 
 <p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00137">137</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__cmu_8h_source.html#l01503">_CMU_HFCOREPRESC_PRESC_MASK</a>, <a class="el" href="efm32jg1b__cmu_8h_source.html#l01502">_CMU_HFCOREPRESC_PRESC_SHIFT</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00316">CMU</a>, <a class="el" href="system__efm32jg1b_8c_source.html#l00100">SystemCoreClock</a>, and <a class="el" href="system__efm32jg1b_8c_source.html#l00181">SystemHFClockGet()</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga589e7ba8f81ef7558c1a365370028d90">_CMU_HFCOREPRESC_PRESC_MASK</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga34c8d675e17353964cb6ff1e5333fb79">_CMU_HFCOREPRESC_PRESC_SHIFT</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>, <a class="el" href="system__efm32jg1b_8c.html#aa3cd3e43291e81e795d642b79b6088e6">SystemCoreClock</a>, and <a class="el" href="system__efm32jg1b_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2">SystemHFClockGet()</a>.</p>
 
-<p>Referenced by <a class="el" href="em__cmu_8c_source.html#l01141">CMU_ClockDivSet()</a>, <a class="el" href="em__cmu_8c_source.html#l01482">CMU_ClockFreqGet()</a>, <a class="el" href="em__cmu_8c_source.html#l01827">CMU_ClockPrescSet()</a>, <a class="el" href="em__cmu_8c_source.html#l02406">CMU_ClockSelectSet()</a>, <a class="el" href="em__msc_8c_source.html#l00101">MSC_Init()</a>, <a class="el" href="system__efm32jg1b_8h_source.html#l00107">SystemCoreClockUpdate()</a>, <a class="el" href="system__efm32jg1b_8c_source.html#l00256">SystemHFXOClockSet()</a>, <a class="el" href="system__efm32jg1b_8c_source.html#l00368">SystemLFXOClockSet()</a>, <a class="el" href="tftamapped_8c_source.html#l00037">TFT_AddressMappedInit()</a>, and <a class="el" href="tftdirect_8c_source.html#l00054">TFT_DirectInit()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a64cc4ea6124c6503b120933d91edf1a0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t SystemMaxCoreClockGet </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>The maximum core clock frequency in Hz. </dd></dl>
-
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00164">164</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>Referenced by <a class="el" href="group__CMU.html#ga7cc316a8dca5436fcc39d57f5e6c412d">CMU_ClockDivSet()</a>, <a class="el" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet()</a>, <a class="el" href="group__CMU.html#gaaa24f7c1a4197491c08b1978a09c535c">CMU_ClockPrescSet()</a>, <a class="el" href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet()</a>, <a class="el" href="group__CMU.html#ga79fa69403fb1b3629042a730d6a15cf6">CMU_HFRCOBandSet()</a>, <a class="el" href="group__MSC.html#gaa02df815c14caedbc2fd0a8910d2e055">MSC_Init()</a>, <a class="el" href="system__efm32jg1b_8h.html#acd24e7ebfd616c851c240233da5d2bba">SystemCoreClockUpdate()</a>, <a class="el" href="system__efm32jg1b_8h.html#ae8a3b3b223a7d08bf9e4d86a259f4e14">SystemHFXOClockSet()</a>, <a class="el" href="system__efm32jg1b_8h.html#ace8c3b705bdbdc9172fbc7f2415dfd8b">SystemLFXOClockSet()</a>, <a class="el" href="group__Tft.html#ga53cad6afec098c05461dd0da9479c0ef">TFT_AddressMappedInit()</a>, and <a class="el" href="group__Tft.html#gafae3e95323a15ac1b4b6ed6fa3c13e9b">TFT_DirectInit()</a>.</p>
 
 </div>
 </div>
@@ -294,14 +271,16 @@ License</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the current HFCLK frequency. </p>
 <dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The current HFCLK frequency in Hz. </dd></dl>
 
 <p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00181">181</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__cmu_8h_source.html#l01026">_CMU_HFCLKSTATUS_SELECTED_MASK</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00316">CMU</a>, <a class="el" href="efm32jg1b__cmu_8h_source.html#l01034">CMU_HFCLKSTATUS_SELECTED_HFXO</a>, <a class="el" href="efm32jg1b__cmu_8h_source.html#l01035">CMU_HFCLKSTATUS_SELECTED_LFRCO</a>, <a class="el" href="efm32jg1b__cmu_8h_source.html#l01036">CMU_HFCLKSTATUS_SELECTED_LFXO</a>, <a class="el" href="system__efm32jg1b_8c_source.html#l00041">EFM32_LFRCO_FREQ</a>, and <a class="el" href="system__efm32jg1b_8c_source.html#l00113">SystemHfrcoFreq</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gab034901022327e46b90a7eb17404a3ec">_CMU_HFCLKSTATUS_SELECTED_MASK</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gaf9b9030e3d64dbd818c431dce7bb018e">_CMU_HFPRESC_PRESC_MASK</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga1a470ffcb963f96619c30d70a1a3031a">_CMU_HFPRESC_PRESC_SHIFT</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga20994d2c1d5e8561a7c025fae4179735">CMU_HFCLKSTATUS_SELECTED_HFXO</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga5793bcdbfd3d91c6ac8c18a700228bcb">CMU_HFCLKSTATUS_SELECTED_LFRCO</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga3548eda1842e0faa909d5a6f470c4aa6">CMU_HFCLKSTATUS_SELECTED_LFXO</a>, <a class="el" href="system__efm32jg1b_8c.html#a16a9bb92649e0f2503f1565bf56e2afc">EFM32_LFRCO_FREQ</a>, and <a class="el" href="system__efm32jg1b_8c.html#a019e34c770ed2855a9ce73be796f33d5">SystemHfrcoFreq</a>.</p>
 
-<p>Referenced by <a class="el" href="em__cmu_8c_source.html#l01482">CMU_ClockFreqGet()</a>, and <a class="el" href="system__efm32jg1b_8c_source.html#l00137">SystemCoreClockGet()</a>.</p>
+<p>Referenced by <a class="el" href="group__CMU.html#ga7cc316a8dca5436fcc39d57f5e6c412d">CMU_ClockDivSet()</a>, <a class="el" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet()</a>, and <a class="el" href="system__efm32jg1b_8h.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet()</a>.</p>
 
 </div>
 </div>
@@ -318,12 +297,14 @@ License</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get high frequency crystal oscillator clock frequency for target system. </p>
 <dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>HFXO frequency in Hz. </dd></dl>
 
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00230">230</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00231">231</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>Referenced by <a class="el" href="em__cmu_8c_source.html#l02406">CMU_ClockSelectSet()</a>.</p>
+<p>Referenced by <a class="el" href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet()</a>.</p>
 
 </div>
 </div>
@@ -340,6 +321,8 @@ License</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set high frequency crystal oscillator clock frequency for target system. </p>
 <dl class="section note"><dt>Note</dt><dd>This function is mainly provided for being able to handle target systems with different HF crystal oscillator frequencies run-time. If used, it should probably only be used once during system startup.</dd>
 <dd>
 This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
@@ -350,9 +333,9 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00256">256</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00257">257</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__cmu_8h_source.html#l01026">_CMU_HFCLKSTATUS_SELECTED_MASK</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00316">CMU</a>, <a class="el" href="efm32jg1b__cmu_8h_source.html#l01034">CMU_HFCLKSTATUS_SELECTED_HFXO</a>, and <a class="el" href="system__efm32jg1b_8c_source.html#l00137">SystemCoreClockGet()</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gab034901022327e46b90a7eb17404a3ec">_CMU_HFCLKSTATUS_SELECTED_MASK</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga20994d2c1d5e8561a7c025fae4179735">CMU_HFCLKSTATUS_SELECTED_HFXO</a>, and <a class="el" href="system__efm32jg1b_8c.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet()</a>.</p>
 
 </div>
 </div>
@@ -369,10 +352,12 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize the system. </p>
 <p>Do required generic HW system init.</p>
 <dl class="section note"><dt>Note</dt><dd>This function is invoked during system init, before the main() routine and any data has been initialized. For this reason, it cannot do any initialization of variables etc. </dd></dl>
 
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00286">286</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00287">287</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
 </div>
 </div>
@@ -389,32 +374,14 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get low frequency RC oscillator clock frequency for target system. </p>
 <dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>LFRCO frequency in Hz. </dd></dl>
 
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00306">306</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00307">307</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>References <a class="el" href="system__efm32jg1b_8c_source.html#l00041">EFM32_LFRCO_FREQ</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a88eecfafda55942454a9e10912b3f224"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t SystemULFRCOClockGet </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>ULFRCO frequency in Hz. </dd></dl>
-
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00325">325</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>References <a class="el" href="system__efm32jg1b_8c.html#a16a9bb92649e0f2503f1565bf56e2afc">EFM32_LFRCO_FREQ</a>.</p>
 
 </div>
 </div>
@@ -431,10 +398,12 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get low frequency crystal oscillator clock frequency for target system. </p>
 <dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>LFXO frequency in Hz. </dd></dl>
 
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00342">342</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00343">343</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
 </div>
 </div>
@@ -451,6 +420,8 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set low frequency crystal oscillator clock frequency for target system. </p>
 <dl class="section note"><dt>Note</dt><dd>This function is mainly provided for being able to handle target systems with different HF crystal oscillator frequencies run-time. If used, it should probably only be used once during system startup.</dd>
 <dd>
 This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
@@ -461,9 +432,53 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00368">368</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00369">369</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>References <a class="el" href="efm32jg1b__cmu_8h_source.html#l01026">_CMU_HFCLKSTATUS_SELECTED_MASK</a>, <a class="el" href="efm32jg1b200f256gm48_8h_source.html#l00316">CMU</a>, <a class="el" href="efm32jg1b__cmu_8h_source.html#l01036">CMU_HFCLKSTATUS_SELECTED_LFXO</a>, and <a class="el" href="system__efm32jg1b_8c_source.html#l00137">SystemCoreClockGet()</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#gab034901022327e46b90a7eb17404a3ec">_CMU_HFCLKSTATUS_SELECTED_MASK</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>, <a class="el" href="group__EFM32JG1B__CMU__BitFields.html#ga3548eda1842e0faa909d5a6f470c4aa6">CMU_HFCLKSTATUS_SELECTED_LFXO</a>, and <a class="el" href="system__efm32jg1b_8c.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a64cc4ea6124c6503b120933d91edf1a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SystemMaxCoreClockGet </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum core clock frequency. </p>
+<dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The maximum core clock frequency in Hz. </dd></dl>
+
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00164">164</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a88eecfafda55942454a9e10912b3f224"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t SystemULFRCOClockGet </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get ultra low frequency RC oscillator clock frequency for target system. </p>
+<dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ULFRCO frequency in Hz. </dd></dl>
+
+<p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00326">326</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
 </div>
 </div>
@@ -477,12 +492,14 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>System System Clock Frequency (Core Clock). </p>
 <p>(DO_NOT_INCLUDE_WITH_DOXYGEN)</p>
 <p>Required CMSIS global variable that must be kept up-to-date. </p>
 
 <p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00100">100</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>Referenced by <a class="el" href="system__efm32jg1b_8c_source.html#l00137">SystemCoreClockGet()</a>.</p>
+<p>Referenced by <a class="el" href="system__efm32jg1b_8h.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet()</a>.</p>
 
 </div>
 </div>
@@ -495,12 +512,14 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>System HFRCO frequency. </p>
 <dl class="section note"><dt>Note</dt><dd>This is an EFM32 proprietary variable, not part of the CMSIS definition.</dd></dl>
 <p>Frequency of the system HFRCO oscillator </p>
 
 <p>Definition at line <a class="el" href="system__efm32jg1b_8c_source.html#l00113">113</a> of file <a class="el" href="system__efm32jg1b_8c_source.html">system_efm32jg1b.c</a>.</p>
 
-<p>Referenced by <a class="el" href="em__cmu_8c_source.html#l03037">CMU_HFRCOFreqGet()</a>, <a class="el" href="em__cmu_8c_source.html#l03050">CMU_HFRCOFreqSet()</a>, and <a class="el" href="system__efm32jg1b_8c_source.html#l00181">SystemHFClockGet()</a>.</p>
+<p>Referenced by <a class="el" href="group__CMU.html#ga6e8fd53c566cb4c8075a51f67977fffc">CMU_HFRCOBandGet()</a>, <a class="el" href="group__CMU.html#ga79fa69403fb1b3629042a730d6a15cf6">CMU_HFRCOBandSet()</a>, and <a class="el" href="system__efm32jg1b_8h.html#ab5991f4c3faeaed3b4f20d5ab515f1f2">SystemHFClockGet()</a>.</p>
 
 </div>
 </div>
@@ -510,7 +529,7 @@ This is an EFM32 proprietary function, not part of the CMSIS definition.</dd></d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4c76ddfc10a27668d6c42d3412320ee0.html">Device</a></li><li class="navelem"><a class="el" href="dir_eca9ef8613423b074c58e28a7f7d2781.html">SiliconLabs</a></li><li class="navelem"><a class="el" href="dir_4589d30e5f5bbe1eca19f40385ae3e93.html">EFM32JG1B</a></li><li class="navelem"><a class="el" href="dir_31bd64eeb9b3c4ff8538044106d8d842.html">Source</a></li><li class="navelem"><a class="el" href="system__efm32jg1b_8c.html">system_efm32jg1b.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:42 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:40:27 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

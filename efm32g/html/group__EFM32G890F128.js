@@ -1,12 +1,12 @@
 var group__EFM32G890F128 =
 [
+    [ "EFM32G890F128 Alternate Function", "group__EFM32G890F128__Alternate__Function.html", null ],
+    [ "EFM32G890F128 Bit Fields", "group__EFM32G890F128__BitFields.html", "group__EFM32G890F128__BitFields" ],
     [ "EFM32G890F128 Core", "group__EFM32G890F128__Core.html", "group__EFM32G890F128__Core" ],
     [ "EFM32G890F128 Part", "group__EFM32G890F128__Part.html", "group__EFM32G890F128__Part" ],
-    [ "EFM32G890F128 Peripheral TypeDefs", "group__EFM32G890F128__Peripheral__TypeDefs.html", null ],
-    [ "EFM32G890F128 Peripheral Memory Map", "group__EFM32G890F128__Peripheral__Base.html", "group__EFM32G890F128__Peripheral__Base" ],
     [ "EFM32G890F128 Peripheral Declarations", "group__EFM32G890F128__Peripheral__Declaration.html", "group__EFM32G890F128__Peripheral__Declaration" ],
-    [ "EFM32G890F128 Bit Fields", "group__EFM32G890F128__BitFields.html", "group__EFM32G890F128__BitFields" ],
-    [ "EFM32G890F128 Alternate Function", "group__EFM32G890F128__Alternate__Function.html", null ],
+    [ "EFM32G890F128 Peripheral Memory Map", "group__EFM32G890F128__Peripheral__Base.html", "group__EFM32G890F128__Peripheral__Base" ],
+    [ "EFM32G890F128 Peripheral TypeDefs", "group__EFM32G890F128__Peripheral__TypeDefs.html", null ],
     [ "SET_BIT_FIELD", "group__EFM32G890F128.html#ga7979121950b76a6bd75bf5a8f6fbdcc0", null ],
     [ "IRQn_Type", "group__EFM32G890F128.html#gac3af4a32370fb28c4ade8bf2add80251", null ],
     [ "IRQn", "group__EFM32G890F128.html#ga666eb0caeb12ec0e281415592ae89083", [

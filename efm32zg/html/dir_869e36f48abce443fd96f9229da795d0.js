@@ -8,6 +8,7 @@ var dir_869e36f48abce443fd96f9229da795d0 =
     [ "rtcdrv", "dir_fb86c39980e83f9b543f683f406d370b.html", "dir_fb86c39980e83f9b543f683f406d370b" ],
     [ "sleep", "dir_a27469ec0b30e17252c3c87413f88395.html", "dir_a27469ec0b30e17252c3c87413f88395" ],
     [ "spidrv", "dir_70c688d7e8dd20a37480d2e156d0edc4.html", "dir_70c688d7e8dd20a37480d2e156d0edc4" ],
+    [ "tempdrv", "dir_83a549278dc9c141dffd9e3498c868df.html", "dir_83a549278dc9c141dffd9e3498c868df" ],
     [ "uartdrv", "dir_5d1b5d945f64eccef1842dcc064c269d.html", "dir_5d1b5d945f64eccef1842dcc064c269d" ],
     [ "ustimer", "dir_ffff73ed5bb422f19de7b8148196fa80.html", "dir_ffff73ed5bb422f19de7b8148196fa80" ]
 ];

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -107,43 +106,9 @@ $(document).ready(function(){initNavTree('group__HidKeyboard.html','');});
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">HidKeyboard<div class="ingroups"><a class="el" href="group__Drivers.html">Drivers</a></div></div>  </div>
+<div class="title">HidKeyboard<div class="ingroups"><a class="el" href="group__kitdrv.html">Kit Drivers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHIDKBD__KeyReport__t.html">HIDKBD_KeyReport_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHIDKBD__Init__t.html">HIDKBD_Init_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga649c40d8591a065fc283aa8f02e812fd"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#ga649c40d8591a065fc283aa8f02e812fd">HIDKBD_SetReportFunc_t</a>) (uint8_t report)</td></tr>
-<tr class="memdesc:ga649c40d8591a065fc283aa8f02e812fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function pointer for HID output reports. This function will be called by the driver each time an output report is received by the device.  <a href="#ga649c40d8591a065fc283aa8f02e812fd">More...</a><br /></td></tr>
-<tr class="separator:ga649c40d8591a065fc283aa8f02e812fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga3ae1e0bbb08a38fcb8aa952613c87268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#ga3ae1e0bbb08a38fcb8aa952613c87268">HIDKBD_Init</a> (<a class="el" href="structHIDKBD__Init__t.html">HIDKBD_Init_t</a> *init)</td></tr>
-<tr class="memdesc:ga3ae1e0bbb08a38fcb8aa952613c87268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize HID Keyboard driver.  <a href="#ga3ae1e0bbb08a38fcb8aa952613c87268">More...</a><br /></td></tr>
-<tr class="separator:ga3ae1e0bbb08a38fcb8aa952613c87268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa6482849b2bbbb6c800516059ad17453"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#gaa6482849b2bbbb6c800516059ad17453">HIDKBD_SetupCmd</a> (const <a class="el" href="structUSB__Setup__TypeDef.html">USB_Setup_TypeDef</a> *setup)</td></tr>
-<tr class="memdesc:gaa6482849b2bbbb6c800516059ad17453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle USB setup commands. Implements HID class specific commands. This function must be called each time the device receive a setup command.  <a href="#gaa6482849b2bbbb6c800516059ad17453">More...</a><br /></td></tr>
-<tr class="separator:gaa6482849b2bbbb6c800516059ad17453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga978af2049c35ad48a8b0668a04146cf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#ga978af2049c35ad48a8b0668a04146cf1">HIDKBD_StateChangeEvent</a> (<a class="el" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a> oldState, <a class="el" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a> newState)</td></tr>
-<tr class="memdesc:ga978af2049c35ad48a8b0668a04146cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle USB state change events, this function must be called each time the USB device state is changed.  <a href="#ga978af2049c35ad48a8b0668a04146cf1">More...</a><br /></td></tr>
-<tr class="separator:ga978af2049c35ad48a8b0668a04146cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf010c3e66985e5c5796c8d2f16de788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#gacf010c3e66985e5c5796c8d2f16de788">HIDKBD_KeyboardEvent</a> (<a class="el" href="structHIDKBD__KeyReport__t.html">HIDKBD_KeyReport_t</a> *report)</td></tr>
-<tr class="memdesc:gacf010c3e66985e5c5796c8d2f16de788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report a keyboard press/release event.  <a href="#gacf010c3e66985e5c5796c8d2f16de788">More...</a><br /></td></tr>
-<tr class="separator:gacf010c3e66985e5c5796c8d2f16de788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ga885c1bef0666a7bb355a1e236f03083d"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#ga885c1bef0666a7bb355a1e236f03083d">HIDKBD_ReportDescriptor</a> [69]</td></tr>
-<tr class="separator:ga885c1bef0666a7bb355a1e236f03083d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Implements a USB HID class keyboard.</p>
 <h1><a class="anchor" id="hidkbd_intro"></a>
@@ -167,7 +132,43 @@ HIDKBD device configuration options.</h1>
 
 // Timer id, see USBTIMER in the USB device stack documentation.
 // The HID driver use a timer to implement the idle-rate defined in the HID class spec.
-#define HIDKBD_IDLE_TIMER       0</pre> <h2 class="groupheader">Typedef Documentation</h2>
+#define HIDKBD_IDLE_TIMER       0</pre> <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHIDKBD__Init__t.html">HIDKBD_Init_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__ATTRIBUTE__PACKED.html">SL_ATTRIBUTE_PACKED</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB Setup request package.  <a href="structSL__ATTRIBUTE__PACKED.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga649c40d8591a065fc283aa8f02e812fd"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#ga649c40d8591a065fc283aa8f02e812fd">HIDKBD_SetReportFunc_t</a>) (uint8_t report)</td></tr>
+<tr class="memdesc:ga649c40d8591a065fc283aa8f02e812fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function pointer for HID output reports. This function will be called by the driver each time an output report is received by the device.  <a href="#ga649c40d8591a065fc283aa8f02e812fd">More...</a><br /></td></tr>
+<tr class="separator:ga649c40d8591a065fc283aa8f02e812fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga3ae1e0bbb08a38fcb8aa952613c87268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#ga3ae1e0bbb08a38fcb8aa952613c87268">HIDKBD_Init</a> (<a class="el" href="structHIDKBD__Init__t.html">HIDKBD_Init_t</a> *init)</td></tr>
+<tr class="memdesc:ga3ae1e0bbb08a38fcb8aa952613c87268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize HID Keyboard driver.  <a href="#ga3ae1e0bbb08a38fcb8aa952613c87268">More...</a><br /></td></tr>
+<tr class="separator:ga3ae1e0bbb08a38fcb8aa952613c87268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf010c3e66985e5c5796c8d2f16de788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#gacf010c3e66985e5c5796c8d2f16de788">HIDKBD_KeyboardEvent</a> (HIDKBD_KeyReport_t *report)</td></tr>
+<tr class="memdesc:gacf010c3e66985e5c5796c8d2f16de788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report a keyboard press/release event.  <a href="#gacf010c3e66985e5c5796c8d2f16de788">More...</a><br /></td></tr>
+<tr class="separator:gacf010c3e66985e5c5796c8d2f16de788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6482849b2bbbb6c800516059ad17453"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#gaa6482849b2bbbb6c800516059ad17453">HIDKBD_SetupCmd</a> (const USB_Setup_TypeDef *setup)</td></tr>
+<tr class="memdesc:gaa6482849b2bbbb6c800516059ad17453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle USB setup commands. Implements HID class specific commands. This function must be called each time the device receive a setup command.  <a href="#gaa6482849b2bbbb6c800516059ad17453">More...</a><br /></td></tr>
+<tr class="separator:gaa6482849b2bbbb6c800516059ad17453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga978af2049c35ad48a8b0668a04146cf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#ga978af2049c35ad48a8b0668a04146cf1">HIDKBD_StateChangeEvent</a> (<a class="el" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a> oldState, <a class="el" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a> newState)</td></tr>
+<tr class="memdesc:ga978af2049c35ad48a8b0668a04146cf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle USB state change events, this function must be called each time the USB device state is changed.  <a href="#ga978af2049c35ad48a8b0668a04146cf1">More...</a><br /></td></tr>
+<tr class="separator:ga978af2049c35ad48a8b0668a04146cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga885c1bef0666a7bb355a1e236f03083d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga885c1bef0666a7bb355a1e236f03083d"></a>
+const char&#160;</td><td class="memItemRight" valign="bottom"><b>HIDKBD_ReportDescriptor</b> [69]</td></tr>
+<tr class="separator:ga885c1bef0666a7bb355a1e236f03083d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="ga649c40d8591a065fc283aa8f02e812fd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -177,6 +178,8 @@ HIDKBD device configuration options.</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Callback function pointer for HID output reports. This function will be called by the driver each time an output report is received by the device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">report</td><td>Output report byte. <br />
@@ -205,6 +208,8 @@ HIDKBD device configuration options.</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize HID Keyboard driver. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>Pointer to a <a class="el" href="structHIDKBD__Init__t.html">HIDKBD_Init_t</a> struct with configuration options. </td></tr>
@@ -214,7 +219,35 @@ HIDKBD device configuration options.</h1>
 
 <p>Definition at line <a class="el" href="hidkbd_8c_source.html#l00187">187</a> of file <a class="el" href="hidkbd_8c_source.html">hidkbd.c</a>.</p>
 
-<p>References <a class="el" href="hidkbd_8h_source.html#l00067">HIDKBD_Init_t::hidDescriptor</a>, and <a class="el" href="hidkbd_8h_source.html#l00068">HIDKBD_Init_t::setReportFunc</a>.</p>
+<p>References <a class="el" href="structHIDKBD__Init__t.html#a1abc15bb9c1f43a76634bb23488e87dd">HIDKBD_Init_t::hidDescriptor</a>, and <a class="el" href="structHIDKBD__Init__t.html#a87993db01c8e9704211a585eebd1c559">HIDKBD_Init_t::setReportFunc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gacf010c3e66985e5c5796c8d2f16de788"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HIDKBD_KeyboardEvent </td>
+          <td>(</td>
+          <td class="paramtype">HIDKBD_KeyReport_t *&#160;</td>
+          <td class="paramname"><em>report</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Report a keyboard press/release event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">report</td><td>Pointer to a HIDKBD_KeyReport_t struct with new key pressed information. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="hidkbd_8c_source.html#l00202">202</a> of file <a class="el" href="hidkbd_8c_source.html">hidkbd.c</a>.</p>
+
+<p>References <a class="el" href="group__USB__DEVICE.html#ga656c8d2935af97156bc0babdc43c32ee">USBD_Write()</a>.</p>
 
 </div>
 </div>
@@ -225,12 +258,14 @@ HIDKBD device configuration options.</h1>
         <tr>
           <td class="memname">int HIDKBD_SetupCmd </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structUSB__Setup__TypeDef.html">USB_Setup_TypeDef</a> *&#160;</td>
+          <td class="paramtype">const USB_Setup_TypeDef *&#160;</td>
           <td class="paramname"><em>setup</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Handle USB setup commands. Implements HID class specific commands. This function must be called each time the device receive a setup command. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">setup</td><td>Pointer to the setup packet received.</td></tr>
@@ -241,7 +276,7 @@ HIDKBD device configuration options.</h1>
 
 <p>Definition at line <a class="el" href="hidkbd_8c_source.html#l00232">232</a> of file <a class="el" href="hidkbd_8c_source.html">hidkbd.c</a>.</p>
 
-<p>References <a class="el" href="em__usb_8h_source.html#l00391">USB_Setup_TypeDef::bRequest</a>, <a class="el" href="em__usb_8h_source.html#l00387">USB_Setup_TypeDef::Direction</a>, <a class="el" href="em__common_8h_source.html#l00079">EFM32_MIN</a>, <a class="el" href="em__usb_8h_source.html#l00083">GET_DESCRIPTOR</a>, <a class="el" href="hidkbd_8c_source.html#l00067">HIDKBD_ReportDescriptor</a>, <a class="el" href="em__usb_8h_source.html#l00385">USB_Setup_TypeDef::Recipient</a>, <a class="el" href="em__usb_8h_source.html#l00311">STATIC_UBUF</a>, <a class="el" href="em__usb_8h_source.html#l00386">USB_Setup_TypeDef::Type</a>, <a class="el" href="em__usb_8h_source.html#l00126">USB_HID_DESCRIPTOR</a>, <a class="el" href="em__usb_8h_source.html#l00151">USB_HID_DESCSIZE</a>, <a class="el" href="em__usb_8h_source.html#l00093">USB_HID_GET_IDLE</a>, <a class="el" href="em__usb_8h_source.html#l00092">USB_HID_GET_REPORT</a>, <a class="el" href="em__usb_8h_source.html#l00128">USB_HID_REPORT_DESCRIPTOR</a>, <a class="el" href="em__usb_8h_source.html#l00095">USB_HID_SET_IDLE</a>, <a class="el" href="em__usb_8h_source.html#l00094">USB_HID_SET_REPORT</a>, <a class="el" href="em__usb_8h_source.html#l00059">USB_SETUP_DIR_IN</a>, <a class="el" href="em__usb_8h_source.html#l00074">USB_SETUP_RECIPIENT_INTERFACE</a>, <a class="el" href="em__usb_8h_source.html#l00066">USB_SETUP_TYPE_CLASS</a>, <a class="el" href="em__usb_8h_source.html#l00065">USB_SETUP_TYPE_STANDARD</a>, <a class="el" href="em__usb_8h_source.html#l00319">USB_STATUS_OK</a>, <a class="el" href="em__usb_8h_source.html#l00322">USB_STATUS_REQ_UNHANDLED</a>, <a class="el" href="em__usbd_8c_source.html#l00545">USBD_Read()</a>, <a class="el" href="em__usbd_8c_source.html#l00820">USBD_Write()</a>, <a class="el" href="em__usbtimer_8c_source.html#l00302">USBTIMER_Stop()</a>, <a class="el" href="em__usb_8h_source.html#l00393">USB_Setup_TypeDef::wIndex</a>, <a class="el" href="em__usb_8h_source.html#l00394">USB_Setup_TypeDef::wLength</a>, and <a class="el" href="em__usb_8h_source.html#l00392">USB_Setup_TypeDef::wValue</a>.</p>
+<p>References <a class="el" href="group__USB__COMMON.html#ga115a1d866ed9498300d59c90549ead0d">GET_DESCRIPTOR</a>, <a class="el" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>, <a class="el" href="group__USB__COMMON.html#gaa057d31fe63604d11d6cec2b2b75e30c">STATIC_UBUF</a>, <a class="el" href="group__USB__COMMON.html#ga83aa5aabf780042441bfd1feb7ce9acc">USB_HID_DESCRIPTOR</a>, <a class="el" href="group__USB__COMMON.html#gac5c4b521eadb200a4b92c32cb8da88df">USB_HID_DESCSIZE</a>, <a class="el" href="group__USB__COMMON.html#ga9d69e0dae00cf3c6c5dc5602f63b2f2f">USB_HID_GET_IDLE</a>, <a class="el" href="group__USB__COMMON.html#ga3d4f67db0b3531f3493cde381110809d">USB_HID_GET_REPORT</a>, <a class="el" href="group__USB__COMMON.html#ga3025fb5c2c8253a9e6f432f70e9e1391">USB_HID_REPORT_DESCRIPTOR</a>, <a class="el" href="group__USB__COMMON.html#ga1cbc5f99d9bd85fca7b9a624efb41078">USB_HID_SET_IDLE</a>, <a class="el" href="group__USB__COMMON.html#gaed6de2caf14f9caa049fab82902299cf">USB_HID_SET_REPORT</a>, <a class="el" href="group__USB__COMMON.html#gadbfebb23903d05393b65f468838f78c0">USB_SETUP_DIR_IN</a>, <a class="el" href="group__USB__COMMON.html#ga59754621c21db801e11513ba06a3a02e">USB_SETUP_RECIPIENT_INTERFACE</a>, <a class="el" href="group__USB__COMMON.html#gacf3fd30992e9fe01f1bac9aaa7fea61b">USB_SETUP_TYPE_CLASS</a>, <a class="el" href="group__USB__COMMON.html#ga3b51a35acaa76cafbb987c07186a7868">USB_SETUP_TYPE_STANDARD</a>, <a class="el" href="group__USB__COMMON.html#gga889b575b566a663621c33eebf46272c1a7fc3604700f290c08102ab7a60dbeac2">USB_STATUS_OK</a>, <a class="el" href="group__USB__COMMON.html#gga889b575b566a663621c33eebf46272c1ae32e2e8da1dce5b54ea6542adabec3a4">USB_STATUS_REQ_UNHANDLED</a>, <a class="el" href="group__USB__DEVICE.html#ga9e0a1cf705301d9e035feff27ea41cda">USBD_Read()</a>, <a class="el" href="group__USB__DEVICE.html#ga656c8d2935af97156bc0babdc43c32ee">USBD_Write()</a>, and <a class="el" href="group__USB__COMMON.html#gab73c922427cf0d509788a8063451703f">USBTIMER_Stop()</a>.</p>
 
 </div>
 </div>
@@ -268,6 +303,8 @@ HIDKBD device configuration options.</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Handle USB state change events, this function must be called each time the USB device state is changed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">oldState</td><td>The device state the device has just left. </td></tr>
@@ -278,51 +315,7 @@ HIDKBD device configuration options.</h1>
 
 <p>Definition at line <a class="el" href="hidkbd_8c_source.html#l00344">344</a> of file <a class="el" href="hidkbd_8c_source.html">hidkbd.c</a>.</p>
 
-<p>References <a class="el" href="hidkbd_8c_source.html#l00059">DEFAULT_IDLE_RATE</a>, <a class="el" href="em__usb_8h_source.html#l00363">USBD_STATE_CONFIGURED</a>, <a class="el" href="em__usb_8h_source.html#l00364">USBD_STATE_SUSPENDED</a>, <a class="el" href="em__usbtimer_8c_source.html#l00234">USBTIMER_Start()</a>, and <a class="el" href="em__usbtimer_8c_source.html#l00302">USBTIMER_Stop()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gacf010c3e66985e5c5796c8d2f16de788"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void HIDKBD_KeyboardEvent </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structHIDKBD__KeyReport__t.html">HIDKBD_KeyReport_t</a> *&#160;</td>
-          <td class="paramname"><em>report</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">report</td><td>Pointer to a <a class="el" href="structHIDKBD__KeyReport__t.html">HIDKBD_KeyReport_t</a> struct with new key pressed information. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="hidkbd_8c_source.html#l00202">202</a> of file <a class="el" href="hidkbd_8c_source.html">hidkbd.c</a>.</p>
-
-<p>References <a class="el" href="em__usbd_8c_source.html#l00820">USBD_Write()</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="ga885c1bef0666a7bb355a1e236f03083d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char HIDKBD_ReportDescriptor[69]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>HID report descriptor created with usb.org's "HID Descriptor Tool(DT)" version 2.4. The descriptor defines an input report which matches the <a class="el" href="structHIDKBD__KeyReport__t.html">HIDKBD_KeyReport_t</a> typedef, and an output report with 3 bits for controlling NumLock, CapsLock and ScrollLock keyboard LED's </p>
-
-<p>Definition at line <a class="el" href="hidkbd_8c_source.html#l00067">67</a> of file <a class="el" href="hidkbd_8c_source.html">hidkbd.c</a>.</p>
-
-<p>Referenced by <a class="el" href="hidkbd_8c_source.html#l00232">HIDKBD_SetupCmd()</a>.</p>
+<p>References <a class="el" href="hidkbd_8c.html#a1b3ed427680b005e36dc08bac5e32e04">DEFAULT_IDLE_RATE</a>, <a class="el" href="group__USB__DEVICE.html#gga437a2e7bf70740fc715ac9a5c7310a6da44c1920b09ea1062ea4d7ac31a846509">USBD_STATE_CONFIGURED</a>, <a class="el" href="group__USB__DEVICE.html#gga437a2e7bf70740fc715ac9a5c7310a6da74e1d49afc6b25e202cc9e42f595f4ed">USBD_STATE_SUSPENDED</a>, <a class="el" href="group__USB__COMMON.html#gac2a406f16d989b04c4fc5b37d5c10b45">USBTIMER_Start()</a>, and <a class="el" href="group__USB__COMMON.html#gab73c922427cf0d509788a8063451703f">USBTIMER_Stop()</a>.</p>
 
 </div>
 </div>
@@ -331,7 +324,7 @@ HIDKBD device configuration options.</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:38:21 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:32:34 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

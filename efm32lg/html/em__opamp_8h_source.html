@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -112,8 +110,8 @@ $(document).ready(function(){initNavTree('em__opamp_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="em__opamp_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef __SILICON_LABS_EM_OPAMP_H__</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define __SILICON_LABS_EM_OPAMP_H__</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef EM_OPAMP_H</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define EM_OPAMP_H</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__device_8h.html">em_device.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined(OPAMP_PRESENT) &amp;&amp; (OPAMP_COUNT == 1)</span></div>
@@ -582,7 +580,7 @@ $(document).ready(function(){initNavTree('em__opamp_8h_source.html','');});
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined( OPAMP_PRESENT ) &amp;&amp; ( OPAMP_COUNT == 1 ) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SILICON_LABS_EM_OPAMP_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_OPAMP_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="group__OPAMP_html_gae4961677bcc2a81a88093ab23195e2c0"><div class="ttname"><a href="group__OPAMP.html#gae4961677bcc2a81a88093ab23195e2c0">OPAMP_Enable</a></div><div class="ttdeci">void OPAMP_Enable(DAC_TypeDef *dac, OPAMP_TypeDef opa, const OPAMP_Init_TypeDef *init)</div><div class="ttdoc">Configure and enable an Operational Amplifier. </div><div class="ttdef"><b>Definition:</b> <a href="em__opamp_8c_source.html#l00266">em_opamp.c:266</a></div></div>
 <div class="ttc" id="group__EFM32LG__DAC__BitFields_html_ga9171b4bbef64e55291a5ad56531a44ac"><div class="ttname"><a href="group__EFM32LG__DAC__BitFields.html#ga9171b4bbef64e55291a5ad56531a44ac">DAC_OPA0MUX_RESSEL_RES4</a></div><div class="ttdeci">#define DAC_OPA0MUX_RESSEL_RES4</div><div class="ttdef"><b>Definition:</b> <a href="efm32lg__dac_8h_source.html#l00594">efm32lg_dac.h:594</a></div></div>
 <div class="ttc" id="group__OPAMP_html_gga2c5ecf4f85f9031861b4e81643cb4ff8a3a79ec97806678ed3e3245acd43982ce"><div class="ttname"><a href="group__OPAMP.html#gga2c5ecf4f85f9031861b4e81643cb4ff8a3a79ec97806678ed3e3245acd43982ce">opaPosSelResTapOpa0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__opamp_8h_source.html#l00092">em_opamp.h:92</a></div></div>
@@ -675,7 +673,7 @@ $(document).ready(function(){initNavTree('em__opamp_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__opamp_8h.html">em_opamp.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:37:26 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:29:12 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

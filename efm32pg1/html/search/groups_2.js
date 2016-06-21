@@ -7,6 +7,7 @@ var searchData=
   ['cmu',['CMU',['../group__CMU.html',1,'']]],
   ['comm_5flayer',['COMM_Layer',['../group__COMM__Layer.html',1,'']]],
   ['common',['COMMON',['../group__COMMON.html',1,'']]],
+  ['cpt112s_5fi2c',['CPT112S_I2C',['../group__CPT112S__I2C.html',1,'']]],
   ['crc_5ferror_5fplugin',['CRC_Error_Plugin',['../group__CRC__Error__Plugin.html',1,'']]],
   ['cryotimer',['CRYOTIMER',['../group__CRYOTIMER.html',1,'']]],
   ['crypto',['CRYPTO',['../group__CRYPTO.html',1,'']]]

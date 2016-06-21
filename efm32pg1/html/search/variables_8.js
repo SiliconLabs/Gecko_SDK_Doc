@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['head',['head',['../structUARTDRV__Buffer__FifoQueue__t.html#a770371b1ad7353200e8405c31ab82b8e',1,'UARTDRV_Buffer_FifoQueue_t']]],
+  ['head',['head',['../structUARTDRV__Buffer__FifoQueue__t.html#a098bc39f083739e5a6e32093a094593c',1,'UARTDRV_Buffer_FifoQueue_t']]],
   ['height',['height',['../structDISPLAY__Geometry__t.html#a03ff0be9b964a10dcdf7dc02b73814b8',1,'DISPLAY_Geometry_t']]],
   ['hfbusclken0',['HFBUSCLKEN0',['../structCMU__TypeDef.html#adb1f555054295dc0127fdf47ef32ee28',1,'CMU_TypeDef']]],
   ['hfclksel',['HFCLKSEL',['../structCMU__TypeDef.html#a23db0c2542b3f9b0449473af91a744fe',1,'CMU_TypeDef']]],
@@ -26,8 +26,7 @@ var searchData=
   ['hfxotimeoutctrl',['HFXOTIMEOUTCTRL',['../structCMU__TypeDef.html#a82ae72a4907e6842582c1a00d5d64433',1,'CMU_TypeDef']]],
   ['hfxotrimstatus',['HFXOTRIMSTATUS',['../structCMU__TypeDef.html#a2332c925a7a8eb340db04f3e45ea5ae5',1,'CMU_TypeDef']]],
   ['hiddescriptor',['hidDescriptor',['../structHIDKBD__Init__t.html#a1abc15bb9c1f43a76634bb23488e87dd',1,'HIDKBD_Init_t']]],
-  ['hidkbd_5freportdescriptor',['HIDKBD_ReportDescriptor',['../group__HidKeyboard.html#ga885c1bef0666a7bb355a1e236f03083d',1,'HIDKBD_ReportDescriptor():&#160;hidkbd.c'],['../group__HidKeyboard.html#ga885c1bef0666a7bb355a1e236f03083d',1,'HIDKBD_ReportDescriptor():&#160;hidkbd.c']]],
-  ['hisup',['HiSup',['../structMSDSCSI__InquiryData__TypeDef.html#a877dca1a45dd4447f46e88fcf1586ba7',1,'MSDSCSI_InquiryData_TypeDef']]],
+  ['hisup',['HiSup',['../structSL__ATTRIBUTE__PACKED.html#a270d4bd727b15765fc7ca825f8bb05b8',1,'SL_ATTRIBUTE_PACKED']]],
   ['hw_5fversion',['HW_VERSION',['../structBC__TypeDef.html#a54f8cf0a391f950ca84f3c1e1c1bde21',1,'BC_TypeDef']]],
   ['hyst',['hyst',['../structPCNT__Init__TypeDef.html#a0b5c589f5083a032275acb525753c114',1,'PCNT_Init_TypeDef']]],
   ['hysteresis0',['HYSTERESIS0',['../structACMP__TypeDef.html#a50dd6192c6e2a49b669cdb258425b238',1,'ACMP_TypeDef']]],

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32g-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -69,13 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -114,27 +106,40 @@ $(document).ready(function(){initNavTree('structBCP__Packet__.html','');});
 <div class="title">BCP_Packet_ Struct Reference<div class="ingroups"><a class="el" href="group__BSP.html">BSP</a> &raquo; <a class="el" href="group__BSP__STK.html">API for STKs and WSTKs</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>BCP Packet Structure - Board controller communication protocol version 1. </p>
 
-<p>BCP Packet Structure - Board controller communication protocol version 1.  
- <a href="structBCP__Packet__.html#details">More...</a></p>
-
+<p>Definition at line <a class="el" href="bsp__bcp_8h_source.html#l00074">74</a> of file <a class="el" href="bsp__bcp_8h_source.html">bsp_bcp.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="bsp__bcp_8h_source.html">bsp_bcp.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aaf7b261a823481710ab67531e7e21111"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBCP__Packet__.html#aaf7b261a823481710ab67531e7e21111">magic</a></td></tr>
-<tr class="separator:aaf7b261a823481710ab67531e7e21111"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a228c20b5dd77c695dc4a7a123c003cd5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBCP__Packet__.html#a228c20b5dd77c695dc4a7a123c003cd5">type</a></td></tr>
-<tr class="separator:a228c20b5dd77c695dc4a7a123c003cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fbbba6a24e5cab77ebda6c03c981056"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBCP__Packet__.html#a0fbbba6a24e5cab77ebda6c03c981056">payloadLength</a></td></tr>
-<tr class="separator:a0fbbba6a24e5cab77ebda6c03c981056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc51aef1d83f0a48c06fe0cdb7a8110"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBCP__Packet__.html#a3fc51aef1d83f0a48c06fe0cdb7a8110">data</a> [<a class="el" href="group__BSP__STK.html#ga00b58bdabb2d1f6061899c038d0bcfcf">BSP_BCP_PACKET_SIZE</a>]</td></tr>
 <tr class="separator:a3fc51aef1d83f0a48c06fe0cdb7a8110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7b261a823481710ab67531e7e21111"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBCP__Packet__.html#aaf7b261a823481710ab67531e7e21111">magic</a></td></tr>
+<tr class="separator:aaf7b261a823481710ab67531e7e21111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fbbba6a24e5cab77ebda6c03c981056"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBCP__Packet__.html#a0fbbba6a24e5cab77ebda6c03c981056">payloadLength</a></td></tr>
+<tr class="separator:a0fbbba6a24e5cab77ebda6c03c981056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228c20b5dd77c695dc4a7a123c003cd5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBCP__Packet__.html#a228c20b5dd77c695dc4a7a123c003cd5">type</a></td></tr>
+<tr class="separator:a228c20b5dd77c695dc4a7a123c003cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="bsp__bcp_8h_source.html#l00074">74</a> of file <a class="el" href="bsp__bcp_8h_source.html">bsp_bcp.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a3fc51aef1d83f0a48c06fe0cdb7a8110"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t BCP_Packet_::data[<a class="el" href="group__BSP__STK.html#ga00b58bdabb2d1f6061899c038d0bcfcf">BSP_BCP_PACKET_SIZE</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>BCP Packet Data payload </p>
+
+<p>Definition at line <a class="el" href="bsp__bcp_8h_source.html#l00079">79</a> of file <a class="el" href="bsp__bcp_8h_source.html">bsp_bcp.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aaf7b261a823481710ab67531e7e21111"></a>
 <div class="memitem">
 <div class="memproto">
@@ -147,21 +152,6 @@ Data Fields</h2></td></tr>
 <p>Magic - start of packet - must be BSP_BCP_MAGIC </p>
 
 <p>Definition at line <a class="el" href="bsp__bcp_8h_source.html#l00076">76</a> of file <a class="el" href="bsp__bcp_8h_source.html">bsp_bcp.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a228c20b5dd77c695dc4a7a123c003cd5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t BCP_Packet_::type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Type of packet </p>
-
-<p>Definition at line <a class="el" href="bsp__bcp_8h_source.html#l00077">77</a> of file <a class="el" href="bsp__bcp_8h_source.html">bsp_bcp.h</a>.</p>
 
 </div>
 </div>
@@ -180,18 +170,18 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3fc51aef1d83f0a48c06fe0cdb7a8110"></a>
+<a class="anchor" id="a228c20b5dd77c695dc4a7a123c003cd5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t BCP_Packet_::data[<a class="el" href="group__BSP__STK.html#ga00b58bdabb2d1f6061899c038d0bcfcf">BSP_BCP_PACKET_SIZE</a>]</td>
+          <td class="memname">uint8_t BCP_Packet_::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>BCP Packet Data payload </p>
+<p>Type of packet </p>
 
-<p>Definition at line <a class="el" href="bsp__bcp_8h_source.html#l00079">79</a> of file <a class="el" href="bsp__bcp_8h_source.html">bsp_bcp.h</a>.</p>
+<p>Definition at line <a class="el" href="bsp__bcp_8h_source.html#l00077">77</a> of file <a class="el" href="bsp__bcp_8h_source.html">bsp_bcp.h</a>.</p>
 
 </div>
 </div>
@@ -204,7 +194,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structBCP__Packet__.html">BCP_Packet_</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:35:40 for EFM32 Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:22:38 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

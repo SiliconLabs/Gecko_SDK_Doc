@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -107,9 +106,8 @@ $(document).ready(function(){initNavTree('group__USB.html','');});
 <div class="title">USB</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>USB HOST and DEVICE protocol stacks. </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>USB HOST and DEVICE protocol stacks. </p><pre class="fragment"></pre><p>. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
@@ -123,7 +121,6 @@ Modules</h2></td></tr>
 <tr class="memdesc:group__USB__HOST"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB HOST protocol stack, see <a class="el" href="group__USB.html">USB host stack library</a> page for detailed documentation. </p><pre class="fragment"></pre><p>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 
 
 <h3><a class="anchor" id="usb_device"></a>USB device stack library</h3><div class="textblock">The source files for the USB device stack resides in the usb directory and follows the naming convention: em_usbd<em>nnn</em>.c/h.<ul>
@@ -340,8 +337,8 @@ extern int RETARGET_WriteChar(char c);
 #define DEBUG_USB_API </pre><p><br />
  Define device properties and fill in USB initstruct in <em>descriptors.h</em>: <br />
  <br />
-</p><pre class="fragment">EFM32_ALIGN(4)
-static const USB_DeviceDescriptor_TypeDef deviceDesc __attribute__ ((aligned(4))) =
+</p><pre class="fragment">SL_ALIGN(4)
+static const USB_DeviceDescriptor_TypeDef deviceDesc SL_ATTRIBUTE_ALIGN(4)=
 {
   .bLength            = USB_DEVICE_DESCSIZE,
   .bDescriptorType    = USB_DEVICE_DESCRIPTOR,
@@ -359,8 +356,8 @@ static const USB_DeviceDescriptor_TypeDef deviceDesc __attribute__ ((aligned(4))
   .bNumConfigurations = 1
 };
 
-EFM32_ALIGN(4)
-static const uint8_t configDesc[] __attribute__ ((aligned(4)))=
+SL_ALIGN(4)
+static const uint8_t configDesc[] SL_ATTRIBUTE_ALIGN(4)=
 {
   // *** Configuration descriptor ***
   USB_CONFIG_DESCSIZE,            // bLength
@@ -738,7 +735,7 @@ extern int RETARGET_WriteChar(char c);
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:42:45 for EZR32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:46:11 for EZR32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

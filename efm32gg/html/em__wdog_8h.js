@@ -1,5 +1,6 @@
 var em__wdog_8h =
 [
+    [ "DEFAULT_WDOG", "group__WDOG.html#gaa8a21262e0b67fbe432eed3edfc246fd", null ],
     [ "WDOG_INIT_DEFAULT", "group__WDOG.html#ga8169ae345fecb9d7abddeb495db92693", null ],
     [ "WDOG_ClkSel_TypeDef", "group__WDOG.html#ga84959950c7a90940b7b2aa414648f338", [
       [ "wdogClkSelULFRCO", "group__WDOG.html#gga84959950c7a90940b7b2aa414648f338a13e2668aa9503395dece59d8ed08e468", null ],
@@ -24,8 +25,12 @@ var em__wdog_8h =
       [ "wdogPeriod_128k", "group__WDOG.html#ggafb32176c669596071269d5fe62734505ad1fde90472a0e74d6db24fe91149f5ea", null ],
       [ "wdogPeriod_256k", "group__WDOG.html#ggafb32176c669596071269d5fe62734505a763da9dc72d140d86dac3be63fcc77a9", null ]
     ] ],
-    [ "WDOG_Enable", "group__WDOG.html#ga662ed794f642aac8293b7cae09c4b223", null ],
-    [ "WDOG_Feed", "group__WDOG.html#gabf4cfa0c00f36eb71896f2ce1e884d27", null ],
-    [ "WDOG_Init", "group__WDOG.html#ga227aa37d1eab4e7748ecc801c386c7a7", null ],
-    [ "WDOG_Lock", "group__WDOG.html#ga26823031e069f4133964156550b64097", null ]
+    [ "WDOG_Enable", "group__WDOG.html#ga88ccf7374d7c9c93c4b5627f84dab552", null ],
+    [ "WDOG_Feed", "group__WDOG.html#ga92bafbf5cb3834524aae57ffe579d9e6", null ],
+    [ "WDOG_Init", "group__WDOG.html#ga84515db25226cd9e5a7fd9b4dec7bef2", null ],
+    [ "WDOG_Lock", "group__WDOG.html#ga2fee9f36132888d17e299e5b6b4edbb5", null ],
+    [ "WDOGn_Enable", "group__WDOG.html#gaccf944498d4c40e6d87afa84e06d297b", null ],
+    [ "WDOGn_Feed", "group__WDOG.html#ga21dd2a92e33eaf3edd48d626cb4ff72b", null ],
+    [ "WDOGn_Init", "group__WDOG.html#ga3de9748141ca1e172ec40a77b8e86433", null ],
+    [ "WDOGn_Lock", "group__WDOG.html#ga638259d740de220fb9b34a5b9654e182", null ]
 ];

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -104,9 +103,15 @@ $(document).ready(function(){initNavTree('group__Udelay.html','');});
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Udelay<div class="ingroups"><a class="el" href="group__Drivers.html">Drivers</a></div></div>  </div>
+<div class="title">Udelay<div class="ingroups"><a class="el" href="group__kitdrv.html">Kit Drivers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Implements active wait microsecond delay.</p>
+<p>The delay is implemented as a loop coded in assembly. The delay loop must be calibrated by calling <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a> once. The calibration algorithm is taken from linux 2.4 sources (bogomips).</p>
+<p>The delay is fairly accurate, the assembly coding will not be optimized by the compiler. The delay function should not be used for longer delays than 1000 us. Calling the delay function with &gt; 1000 will give unpredictable results. Recalibrate the loop when HFCORECLK is changed.</p>
+<p>The calibration uses the RTC clocked by LFRCO to measure time. Better accuracy can be achieved by adding #define UDELAY_LFXO (i.e. add -DUDELAY_LFXO on the commandline). The LFXO oscillator is then used for delay loop calibration.</p>
+<p>The calibration function will restore RTC upon exit. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -118,12 +123,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memdesc:ga7b02c652fea1e8305b266ec0356a5ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Microsecond active wait delay routine.  <a href="#ga7b02c652fea1e8305b266ec0356a5ad5">More...</a><br /></td></tr>
 <tr class="separator:ga7b02c652fea1e8305b266ec0356a5ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Implements active wait microsecond delay.</p>
-<p>The delay is implemented as a loop coded in assembly. The delay loop must be calibrated by calling <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a> once. The calibration algorithm is taken from linux 2.4 sources (bogomips).</p>
-<p>The delay is fairly accurate, the assembly coding will not be optimized by the compiler. The delay function should not be used for longer delays than 1000 us. Calling the delay function with &gt; 1000 will give unpredictable results. Recalibrate the loop when HFCORECLK is changed.</p>
-<p>The calibration uses the RTC clocked by LFRCO to measure time. Better accuracy can be achieved by adding #define UDELAY_LFXO (i.e. add -DUDELAY_LFXO on the commandline). The LFXO oscillator is then used for delay loop calibration.</p>
-<p>The calibration function will restore RTC upon exit. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ga7b02c652fea1e8305b266ec0356a5ad5"></a>
 <div class="memitem">
@@ -138,6 +137,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Microsecond active wait delay routine. </p>
 <dl class="section note"><dt>Note</dt><dd>The delay function should not be used for longer delays than 1000 us. Calling the delay function with &gt; 1000 will give unpredictable results.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -155,7 +156,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:42:45 for EZR32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:46:14 for EZR32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

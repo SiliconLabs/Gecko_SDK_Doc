@@ -1,12 +1,12 @@
 var group__EZR32WG330F256R69 =
 [
+    [ "EZR32WG330F256R69 Alternate Function", "group__EZR32WG330F256R69__Alternate__Function.html", null ],
+    [ "EZR32WG330F256R69 Bit Fields", "group__EZR32WG330F256R69__BitFields.html", "group__EZR32WG330F256R69__BitFields" ],
     [ "EZR32WG330F256R69 Core", "group__EZR32WG330F256R69__Core.html", "group__EZR32WG330F256R69__Core" ],
     [ "EZR32WG330F256R69 Part", "group__EZR32WG330F256R69__Part.html", "group__EZR32WG330F256R69__Part" ],
-    [ "EZR32WG330F256R69 Peripheral TypeDefs", "group__EZR32WG330F256R69__Peripheral__TypeDefs.html", null ],
-    [ "EZR32WG330F256R69 Peripheral Memory Map", "group__EZR32WG330F256R69__Peripheral__Base.html", "group__EZR32WG330F256R69__Peripheral__Base" ],
     [ "EZR32WG330F256R69 Peripheral Declarations", "group__EZR32WG330F256R69__Peripheral__Declaration.html", "group__EZR32WG330F256R69__Peripheral__Declaration" ],
-    [ "EZR32WG330F256R69 Bit Fields", "group__EZR32WG330F256R69__BitFields.html", "group__EZR32WG330F256R69__BitFields" ],
-    [ "EZR32WG330F256R69 Alternate Function", "group__EZR32WG330F256R69__Alternate__Function.html", null ],
+    [ "EZR32WG330F256R69 Peripheral Memory Map", "group__EZR32WG330F256R69__Peripheral__Base.html", "group__EZR32WG330F256R69__Peripheral__Base" ],
+    [ "EZR32WG330F256R69 Peripheral TypeDefs", "group__EZR32WG330F256R69__Peripheral__TypeDefs.html", null ],
     [ "SET_BIT_FIELD", "group__EZR32WG330F256R69.html#ga7979121950b76a6bd75bf5a8f6fbdcc0", null ],
     [ "IRQn_Type", "group__EZR32WG330F256R69.html#gac3af4a32370fb28c4ade8bf2add80251", null ],
     [ "IRQn", "group__EZR32WG330F256R69.html#ga666eb0caeb12ec0e281415592ae89083", [

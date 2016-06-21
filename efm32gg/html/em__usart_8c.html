@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Giant Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32gg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32gg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,10 +111,23 @@ $(document).ready(function(){initNavTree('em__usart_8c.html','');});
 <div class="title">em_usart.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Universal synchronous/asynchronous receiver/transmitter (USART/UART) Peripheral API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>Universal synchronous/asynchronous receiver/transmitter (USART/UART) Peripheral API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__usart_8h_source.html">em_usart.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="em__usart_8c_source.html">em_usart.c</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__usart_8h_source.html">em_usart.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__cmu_8h_source.html">em_cmu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__bus_8h_source.html">em_bus.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__assert_8h_source.html">em_assert.h</a>&quot;</code><br />
@@ -143,18 +154,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5b851444f0fbdca97017c7b927b37f52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART.html#ga5b851444f0fbdca97017c7b927b37f52">USART_InitAsync</a> (<a class="el" href="structUSART__TypeDef.html">USART_TypeDef</a> *usart, const <a class="el" href="structUSART__InitAsync__TypeDef.html">USART_InitAsync_TypeDef</a> *init)</td></tr>
 <tr class="memdesc:ga5b851444f0fbdca97017c7b927b37f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init USART/UART for normal asynchronous mode.  <a href="group__USART.html#ga5b851444f0fbdca97017c7b927b37f52">More...</a><br /></td></tr>
 <tr class="separator:ga5b851444f0fbdca97017c7b927b37f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab6053ba081f6fabce6762fb4563fb28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART.html#gaab6053ba081f6fabce6762fb4563fb28">USART_InitSync</a> (<a class="el" href="structUSART__TypeDef.html">USART_TypeDef</a> *usart, const <a class="el" href="structUSART__InitSync__TypeDef.html">USART_InitSync_TypeDef</a> *init)</td></tr>
-<tr class="memdesc:gaab6053ba081f6fabce6762fb4563fb28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init USART for synchronous mode.  <a href="group__USART.html#gaab6053ba081f6fabce6762fb4563fb28">More...</a><br /></td></tr>
-<tr class="separator:gaab6053ba081f6fabce6762fb4563fb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga68be1cf794e547ab572d71b7bada30c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART.html#ga68be1cf794e547ab572d71b7bada30c0">USART_InitIrDA</a> (const <a class="el" href="structUSART__InitIrDA__TypeDef.html">USART_InitIrDA_TypeDef</a> *init)</td></tr>
-<tr class="memdesc:ga68be1cf794e547ab572d71b7bada30c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init USART0 for asynchronous IrDA mode.  <a href="group__USART.html#ga68be1cf794e547ab572d71b7bada30c0">More...</a><br /></td></tr>
-<tr class="separator:ga68be1cf794e547ab572d71b7bada30c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa3973304191a67c1b6e837d8b6cc2197"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART.html#gaa3973304191a67c1b6e837d8b6cc2197">USART_InitI2s</a> (<a class="el" href="structUSART__TypeDef.html">USART_TypeDef</a> *usart, <a class="el" href="structUSART__InitI2s__TypeDef.html">USART_InitI2s_TypeDef</a> *init)</td></tr>
 <tr class="memdesc:gaa3973304191a67c1b6e837d8b6cc2197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init USART for I2S mode.  <a href="group__USART.html#gaa3973304191a67c1b6e837d8b6cc2197">More...</a><br /></td></tr>
 <tr class="separator:gaa3973304191a67c1b6e837d8b6cc2197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0deb307dc635809644280bd95dca6301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART.html#ga0deb307dc635809644280bd95dca6301">USART_InitPrsTrigger</a> (<a class="el" href="structUSART__TypeDef.html">USART_TypeDef</a> *usart, const <a class="el" href="structUSART__PrsTriggerInit__TypeDef.html">USART_PrsTriggerInit_TypeDef</a> *init)</td></tr>
 <tr class="memdesc:ga0deb307dc635809644280bd95dca6301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize automatic transmissions using PRS channel as trigger.  <a href="group__USART.html#ga0deb307dc635809644280bd95dca6301">More...</a><br /></td></tr>
 <tr class="separator:ga0deb307dc635809644280bd95dca6301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab6053ba081f6fabce6762fb4563fb28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART.html#gaab6053ba081f6fabce6762fb4563fb28">USART_InitSync</a> (<a class="el" href="structUSART__TypeDef.html">USART_TypeDef</a> *usart, const <a class="el" href="structUSART__InitSync__TypeDef.html">USART_InitSync_TypeDef</a> *init)</td></tr>
+<tr class="memdesc:gaab6053ba081f6fabce6762fb4563fb28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init USART for synchronous mode.  <a href="group__USART.html#gaab6053ba081f6fabce6762fb4563fb28">More...</a><br /></td></tr>
+<tr class="separator:gaab6053ba081f6fabce6762fb4563fb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4769e1b5d573d6cecc95ca0c7d8e2da2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART.html#ga4769e1b5d573d6cecc95ca0c7d8e2da2">USART_Reset</a> (<a class="el" href="structUSART__TypeDef.html">USART_TypeDef</a> *usart)</td></tr>
 <tr class="memdesc:ga4769e1b5d573d6cecc95ca0c7d8e2da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset USART/UART to same state as after a HW reset.  <a href="group__USART.html#ga4769e1b5d573d6cecc95ca0c7d8e2da2">More...</a><br /></td></tr>
 <tr class="separator:ga4769e1b5d573d6cecc95ca0c7d8e2da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,29 +193,17 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8ff633e12b44c4032366a859d07f9766"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART.html#ga8ff633e12b44c4032366a859d07f9766">USART_TxExt</a> (<a class="el" href="structUSART__TypeDef.html">USART_TypeDef</a> *usart, uint16_t data)</td></tr>
 <tr class="memdesc:ga8ff633e12b44c4032366a859d07f9766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit one 4-9 bit frame with extended control.  <a href="group__USART.html#ga8ff633e12b44c4032366a859d07f9766">More...</a><br /></td></tr>
 <tr class="separator:ga8ff633e12b44c4032366a859d07f9766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefd1e61b7282c062406cc5b4eb0e8e98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USART.html#gaefd1e61b7282c062406cc5b4eb0e8e98">USARTn_InitIrDA</a> (<a class="el" href="structUSART__TypeDef.html">USART_TypeDef</a> *usart, const <a class="el" href="structUSART__InitIrDA__TypeDef.html">USART_InitIrDA_TypeDef</a> *init)</td></tr>
+<tr class="memdesc:gaefd1e61b7282c062406cc5b4eb0e8e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init USART for asynchronous IrDA mode.  <a href="group__USART.html#gaefd1e61b7282c062406cc5b4eb0e8e98">More...</a><br /></td></tr>
+<tr class="separator:gaefd1e61b7282c062406cc5b4eb0e8e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="em__usart_8c_source.html">em_usart.c</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_b024e35bd40549d46920f272346444ee.html">src</a></li><li class="navelem"><a class="el" href="em__usart_8c.html">em_usart.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:47 for EFM32 Giant Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:26:53 for EFM32 Giant Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

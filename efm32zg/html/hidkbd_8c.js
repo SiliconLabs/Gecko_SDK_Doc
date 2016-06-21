@@ -5,5 +5,5 @@ var hidkbd_8c =
     [ "HIDKBD_KeyboardEvent", "group__HidKeyboard.html#gacf010c3e66985e5c5796c8d2f16de788", null ],
     [ "HIDKBD_SetupCmd", "group__HidKeyboard.html#gaa6482849b2bbbb6c800516059ad17453", null ],
     [ "HIDKBD_StateChangeEvent", "group__HidKeyboard.html#ga978af2049c35ad48a8b0668a04146cf1", null ],
-    [ "HIDKBD_ReportDescriptor", "group__HidKeyboard.html#ga885c1bef0666a7bb355a1e236f03083d", null ]
+    [ "SL_ATTRIBUTE_ALIGN", "hidkbd_8c.html#a819e9b7bbbaf649e5ff5bf14f694d1f9", null ]
 ];

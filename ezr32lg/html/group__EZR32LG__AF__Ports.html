@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -107,26 +106,58 @@ $(document).ready(function(){initNavTree('group__EZR32LG__AF__Ports.html','');})
 <div class="title">EZR32LG_AF_Ports<div class="ingroups"><a class="el" href="group__Parts.html">Parts</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gad762f6e157a6da9a6fb73bfae04ce808"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EZR32LG__AF__Ports.html#gad762f6e157a6da9a6fb73bfae04ce808">AF_USB_VBUSEN_PORT</a>(i)          &#160;&#160;&#160;((i) == 0 ? 5 :  -1)</td></tr>
-<tr class="separator:gad762f6e157a6da9a6fb73bfae04ce808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c4dbfad9d3b83522938f69d9133eb20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0c4dbfad9d3b83522938f69d9133eb20"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USB_DMPU_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 3 :  -1)</td></tr>
-<tr class="separator:ga0c4dbfad9d3b83522938f69d9133eb20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3643065ee960c667130829efe8749b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab3643065ee960c667130829efe8749b2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ACMP0_OUT_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 4 : (i) == 2 ? 3 :  -1)</td></tr>
+<tr class="separator:gab3643065ee960c667130829efe8749b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdbd7e456a1015ba174d98039460f0f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafdbd7e456a1015ba174d98039460f0f6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ACMP1_OUT_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? 5 : (i) == 1 ? 4 : (i) == 2 ? 3 :  -1)</td></tr>
+<tr class="separator:gafdbd7e456a1015ba174d98039460f0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga337a5bba2915b5fbb6cd9327f88ee391"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga337a5bba2915b5fbb6cd9327f88ee391"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_CMU_CLK0_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 2 : (i) == 2 ? 3 :  -1)</td></tr>
 <tr class="separator:ga337a5bba2915b5fbb6cd9327f88ee391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaac69c102d31288749568d2f286a66659"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaac69c102d31288749568d2f286a66659"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_CMU_CLK1_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 3 : (i) == 2 ? 4 :  -1)</td></tr>
 <tr class="separator:gaac69c102d31288749568d2f286a66659"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga22b08b3fa54baaf21646b3e79e193f44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga22b08b3fa54baaf21646b3e79e193f44"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH6_PORT</b>(i)        &#160;&#160;&#160;((i) == 0 ? 2 :  -1)</td></tr>
-<tr class="separator:ga22b08b3fa54baaf21646b3e79e193f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c8ec1de05d9aed9eefa6768f2e303c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0c8ec1de05d9aed9eefa6768f2e303c6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH7_PORT</b>(i)        &#160;&#160;&#160;((i) == 0 ? 2 :  -1)</td></tr>
-<tr class="separator:ga0c8ec1de05d9aed9eefa6768f2e303c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga655994c79e5d59a719b3593b59aa8add"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga655994c79e5d59a719b3593b59aa8add"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_DBG_SWCLK_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? 5 : (i) == 1 ? 5 : (i) == 2 ? 5 : (i) == 3 ? 5 :  -1)</td></tr>
+<tr class="separator:ga655994c79e5d59a719b3593b59aa8add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6caa4f0d2005e837e663ca2decc0ae4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae6caa4f0d2005e837e663ca2decc0ae4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_DBG_SWDIO_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? 5 : (i) == 1 ? 5 : (i) == 2 ? 5 : (i) == 3 ? 5 :  -1)</td></tr>
+<tr class="separator:gae6caa4f0d2005e837e663ca2decc0ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8bed260b2bde8646fb7ad55da54f0a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac8bed260b2bde8646fb7ad55da54f0a8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_DBG_SWO_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 5 : (i) == 1 ? 2 : (i) == 2 ? 3 : (i) == 3 ? 3 :  -1)</td></tr>
+<tr class="separator:gac8bed260b2bde8646fb7ad55da54f0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec17bbcb52185b2096d16ed633027c4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaec17bbcb52185b2096d16ed633027c4f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ETM_TCLK_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 : (i) == 2 ? 2 : (i) == 3 ? -1 :  -1)</td></tr>
+<tr class="separator:gaec17bbcb52185b2096d16ed633027c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53a3aad2b60a1e33fa9f9bbda9115b3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga53a3aad2b60a1e33fa9f9bbda9115b3b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ETM_TD0_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 : (i) == 2 ? 2 : (i) == 3 ? -1 :  -1)</td></tr>
+<tr class="separator:ga53a3aad2b60a1e33fa9f9bbda9115b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa8738df9ef7e479ee1a0862df773e80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafa8738df9ef7e479ee1a0862df773e80"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ETM_TD1_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 : (i) == 2 ? 3 : (i) == 3 ? -1 :  -1)</td></tr>
+<tr class="separator:gafa8738df9ef7e479ee1a0862df773e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15448c33b20965cf779fd9c0ede750fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga15448c33b20965cf779fd9c0ede750fc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ETM_TD2_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 : (i) == 2 ? 3 : (i) == 3 ? -1 :  -1)</td></tr>
+<tr class="separator:ga15448c33b20965cf779fd9c0ede750fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f85c48eacacb2de57e9a818d10e89f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6f85c48eacacb2de57e9a818d10e89f1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ETM_TD3_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 : (i) == 2 ? 3 : (i) == 3 ? -1 :  -1)</td></tr>
+<tr class="separator:ga6f85c48eacacb2de57e9a818d10e89f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4fc23f1879c59811b807800302d3163"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab4fc23f1879c59811b807800302d3163"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_I2C0_SCL_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 3 : (i) == 2 ? 2 : (i) == 3 ? -1 : (i) == 4 ? -1 : (i) == 5 ? 5 : (i) == 6 ? -1 :  -1)</td></tr>
+<tr class="separator:gab4fc23f1879c59811b807800302d3163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga149beff237e3f8d53d110c6a247a3258"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga149beff237e3f8d53d110c6a247a3258"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_I2C0_SDA_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 3 : (i) == 2 ? 2 : (i) == 3 ? -1 : (i) == 4 ? -1 : (i) == 5 ? 5 : (i) == 6 ? -1 :  -1)</td></tr>
+<tr class="separator:ga149beff237e3f8d53d110c6a247a3258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga590391c62785933cadda8af667b15a63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga590391c62785933cadda8af667b15a63"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_I2C1_SCL_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? -1 : (i) == 2 ? 4 :  -1)</td></tr>
+<tr class="separator:ga590391c62785933cadda8af667b15a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4a24aeb75ecdf0b548cf7b2a5b76a1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab4a24aeb75ecdf0b548cf7b2a5b76a1c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_I2C1_SDA_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? -1 : (i) == 2 ? 4 :  -1)</td></tr>
+<tr class="separator:gab4a24aeb75ecdf0b548cf7b2a5b76a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7ae1f1c774c5745e184d4630bdeaed47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7ae1f1c774c5745e184d4630bdeaed47"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH12_PORT</b>(i)      &#160;&#160;&#160;((i) == 0 ? 2 :  -1)</td></tr>
 <tr class="separator:ga7ae1f1c774c5745e184d4630bdeaed47"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,66 +170,60 @@ Macros</h2></td></tr>
 <tr class="memitem:ga04951f325448b04f0987b6baf870d778"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga04951f325448b04f0987b6baf870d778"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH15_PORT</b>(i)      &#160;&#160;&#160;((i) == 0 ? 2 :  -1)</td></tr>
 <tr class="separator:ga04951f325448b04f0987b6baf870d778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79473923ae43944cc46a50e691aa12f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga79473923ae43944cc46a50e691aa12f3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USARTRF0_TX_PORT</b>(i)        &#160;&#160;&#160;((i) == 0 ? 4 : (i) == 1 ? -1 : (i) == 2 ? -1 : (i) == 3 ? -1 : (i) == 4 ? 1 : (i) == 5 ? -1 :  -1)</td></tr>
-<tr class="separator:ga79473923ae43944cc46a50e691aa12f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga148b07cee8fd364a5a8f52efe378fa3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga148b07cee8fd364a5a8f52efe378fa3b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USARTRF0_RX_PORT</b>(i)        &#160;&#160;&#160;((i) == 0 ? 4 : (i) == 1 ? -1 : (i) == 2 ? -1 : (i) == 3 ? -1 : (i) == 4 ? 1 : (i) == 5 ? -1 :  -1)</td></tr>
-<tr class="separator:ga148b07cee8fd364a5a8f52efe378fa3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaddc876a3bd77f662ccc496cc795a3418"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaddc876a3bd77f662ccc496cc795a3418"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USARTRF0_CLK_PORT</b>(i)      &#160;&#160;&#160;((i) == 0 ? 4 : (i) == 1 ? -1 : (i) == 2 ? -1 : (i) == 3 ? -1 : (i) == 4 ? -1 : (i) == 5 ? -1 :  -1)</td></tr>
-<tr class="separator:gaddc876a3bd77f662ccc496cc795a3418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae265161abb12d564f108bd066feee5d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae265161abb12d564f108bd066feee5d4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USARTRF0_CS_PORT</b>(i)        &#160;&#160;&#160;((i) == 0 ? 4 : (i) == 1 ? -1 : (i) == 2 ? -1 : (i) == 3 ? -1 : (i) == 4 ? -1 : (i) == 5 ? -1 :  -1)</td></tr>
-<tr class="separator:gae265161abb12d564f108bd066feee5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82aa93d474d63035ba5eed6b1fd2745e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga82aa93d474d63035ba5eed6b1fd2745e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_TX_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 3 : (i) == 2 ? 3 :  -1)</td></tr>
-<tr class="separator:ga82aa93d474d63035ba5eed6b1fd2745e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga15827636dac72cc034a7fdc0ece24506"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga15827636dac72cc034a7fdc0ece24506"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_RX_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 3 : (i) == 2 ? 3 :  -1)</td></tr>
-<tr class="separator:ga15827636dac72cc034a7fdc0ece24506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca48ffc715e6393b1c6ef379ce4184e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaca48ffc715e6393b1c6ef379ce4184e7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_CLK_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 3 : (i) == 2 ? 5 :  -1)</td></tr>
-<tr class="separator:gaca48ffc715e6393b1c6ef379ce4184e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b3fb5b75ebd0212f7194dc77e5791e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9b3fb5b75ebd0212f7194dc77e5791e9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_CS_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 3 : (i) == 2 ? 5 :  -1)</td></tr>
-<tr class="separator:ga9b3fb5b75ebd0212f7194dc77e5791e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7b70b9afcdcccbda92191072d5a8e964"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7b70b9afcdcccbda92191072d5a8e964"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART2_TX_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 1 :  -1)</td></tr>
-<tr class="separator:ga7b70b9afcdcccbda92191072d5a8e964"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6faf158a815363d8184f98f85dfbf62c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6faf158a815363d8184f98f85dfbf62c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART2_RX_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 1 :  -1)</td></tr>
-<tr class="separator:ga6faf158a815363d8184f98f85dfbf62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97bf778bae1273c02851b5f92c5a826e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga97bf778bae1273c02851b5f92c5a826e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART2_CLK_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 1 :  -1)</td></tr>
-<tr class="separator:ga97bf778bae1273c02851b5f92c5a826e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga12ddb5736478a2f4e2e55afd7154c964"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga12ddb5736478a2f4e2e55afd7154c964"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART2_CS_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 1 :  -1)</td></tr>
-<tr class="separator:ga12ddb5736478a2f4e2e55afd7154c964"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1dabaf44a05a8ae5fbd7dfa14ded93d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1dabaf44a05a8ae5fbd7dfa14ded93d7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART0_TX_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 4 : (i) == 2 ? -1 : (i) == 3 ? 2 :  -1)</td></tr>
-<tr class="separator:ga1dabaf44a05a8ae5fbd7dfa14ded93d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga41090330a6d06e88dd3d2c8317131b02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga41090330a6d06e88dd3d2c8317131b02"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART0_RX_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 4 : (i) == 2 ? -1 : (i) == 3 ? 2 :  -1)</td></tr>
-<tr class="separator:ga41090330a6d06e88dd3d2c8317131b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2f95a4b6565dcab284ba599753e090f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2f95a4b6565dcab284ba599753e090f8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART0_CLK_PORT</b>(i)            &#160;&#160;&#160;(-1)</td></tr>
-<tr class="separator:ga2f95a4b6565dcab284ba599753e090f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacefcb0a1c57e2803068c5ff6fe64e65c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacefcb0a1c57e2803068c5ff6fe64e65c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART0_CS_PORT</b>(i)              &#160;&#160;&#160;(-1)</td></tr>
-<tr class="separator:gacefcb0a1c57e2803068c5ff6fe64e65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga370aa6dd896d621d1abe2ddf402eee54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga370aa6dd896d621d1abe2ddf402eee54"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART1_TX_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? -1 : (i) == 2 ? -1 : (i) == 3 ? 4 :  -1)</td></tr>
-<tr class="separator:ga370aa6dd896d621d1abe2ddf402eee54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga929b60895a65d25d992d45663eb635fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga929b60895a65d25d992d45663eb635fe"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART1_RX_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? -1 : (i) == 2 ? -1 : (i) == 3 ? 4 :  -1)</td></tr>
-<tr class="separator:ga929b60895a65d25d992d45663eb635fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8567ddf9acb6f9e7c32957d71d1ed743"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8567ddf9acb6f9e7c32957d71d1ed743"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART1_CLK_PORT</b>(i)            &#160;&#160;&#160;(-1)</td></tr>
-<tr class="separator:ga8567ddf9acb6f9e7c32957d71d1ed743"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77653336283e9fde902e7eae55d31625"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga77653336283e9fde902e7eae55d31625"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART1_CS_PORT</b>(i)              &#160;&#160;&#160;(-1)</td></tr>
-<tr class="separator:ga77653336283e9fde902e7eae55d31625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22b08b3fa54baaf21646b3e79e193f44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga22b08b3fa54baaf21646b3e79e193f44"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH6_PORT</b>(i)        &#160;&#160;&#160;((i) == 0 ? 2 :  -1)</td></tr>
+<tr class="separator:ga22b08b3fa54baaf21646b3e79e193f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c8ec1de05d9aed9eefa6768f2e303c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0c8ec1de05d9aed9eefa6768f2e303c6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LESENSE_CH7_PORT</b>(i)        &#160;&#160;&#160;((i) == 0 ? 2 :  -1)</td></tr>
+<tr class="separator:ga0c8ec1de05d9aed9eefa6768f2e303c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga270382974bd71e1eea8e2836d8008504"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga270382974bd71e1eea8e2836d8008504"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LETIMER0_OUT0_PORT</b>(i)    &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? 1 : (i) == 2 ? 5 : (i) == 3 ? -1 :  -1)</td></tr>
+<tr class="separator:ga270382974bd71e1eea8e2836d8008504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7dedac999b818fe8b398d64848588f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf7dedac999b818fe8b398d64848588f6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LETIMER0_OUT1_PORT</b>(i)    &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 : (i) == 2 ? 5 : (i) == 3 ? -1 :  -1)</td></tr>
+<tr class="separator:gaf7dedac999b818fe8b398d64848588f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f81a88968cbb372517db05895e9705b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3f81a88968cbb372517db05895e9705b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LEUART0_RX_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? 1 : (i) == 2 ? -1 : (i) == 3 ? 5 : (i) == 4 ? 0 :  -1)</td></tr>
+<tr class="separator:ga3f81a88968cbb372517db05895e9705b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed50b650113eb135aac1a9bfda776331"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaed50b650113eb135aac1a9bfda776331"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LEUART0_TX_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? 1 : (i) == 2 ? -1 : (i) == 3 ? 5 : (i) == 4 ? 5 :  -1)</td></tr>
+<tr class="separator:gaed50b650113eb135aac1a9bfda776331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac928fc706a61a9e8d92286f8deaa41c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac928fc706a61a9e8d92286f8deaa41c5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LEUART1_RX_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? -1 :  -1)</td></tr>
+<tr class="separator:gac928fc706a61a9e8d92286f8deaa41c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33469fab8cff92beaa05137b4292b987"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga33469fab8cff92beaa05137b4292b987"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LEUART1_TX_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? -1 :  -1)</td></tr>
+<tr class="separator:ga33469fab8cff92beaa05137b4292b987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd3e4ae5865c458ca5086dcea5cfd024"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafd3e4ae5865c458ca5086dcea5cfd024"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT0_S0IN_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? 4 : (i) == 2 ? -1 : (i) == 3 ? 3 :  -1)</td></tr>
+<tr class="separator:gafd3e4ae5865c458ca5086dcea5cfd024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2eb668b1456e68659f144f1544842fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae2eb668b1456e68659f144f1544842fc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT0_S1IN_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? 4 : (i) == 2 ? -1 : (i) == 3 ? 3 :  -1)</td></tr>
+<tr class="separator:gae2eb668b1456e68659f144f1544842fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad62ba3079e42065ea7637098fae40738"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad62ba3079e42065ea7637098fae40738"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT1_S0IN_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 1 :  -1)</td></tr>
+<tr class="separator:gad62ba3079e42065ea7637098fae40738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ec4e80f0481119f4c1ddb1accf5e733"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1ec4e80f0481119f4c1ddb1accf5e733"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT1_S1IN_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 1 :  -1)</td></tr>
+<tr class="separator:ga1ec4e80f0481119f4c1ddb1accf5e733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7efaaf2d9793b2ed98f153669c268826"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7efaaf2d9793b2ed98f153669c268826"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT2_S0IN_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 :  -1)</td></tr>
+<tr class="separator:ga7efaaf2d9793b2ed98f153669c268826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5670064529aa0fdbd1219db332ad8dd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5670064529aa0fdbd1219db332ad8dd6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT2_S1IN_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 :  -1)</td></tr>
+<tr class="separator:ga5670064529aa0fdbd1219db332ad8dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23bf0dd10ffd4c61bb71da2860a06f85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga23bf0dd10ffd4c61bb71da2860a06f85"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH0_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 5 :  -1)</td></tr>
+<tr class="separator:ga23bf0dd10ffd4c61bb71da2860a06f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga981501eba9344d1d5a98fda5d86b2201"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga981501eba9344d1d5a98fda5d86b2201"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH1_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 5 :  -1)</td></tr>
+<tr class="separator:ga981501eba9344d1d5a98fda5d86b2201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a42f6db16abb8e9a5a1fcdbaef97781"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4a42f6db16abb8e9a5a1fcdbaef97781"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH2_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 5 :  -1)</td></tr>
+<tr class="separator:ga4a42f6db16abb8e9a5a1fcdbaef97781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga91e1c8d676e21807ea668e85a355462c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga91e1c8d676e21807ea668e85a355462c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH3_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? -1 :  -1)</td></tr>
+<tr class="separator:ga91e1c8d676e21807ea668e85a355462c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5c1bf8fc726fd71ede62fcabb78b0f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad5c1bf8fc726fd71ede62fcabb78b0f9"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_TIMER0_CC0_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 0 : (i) == 2 ? 5 : (i) == 3 ? 3 : (i) == 4 ? 0 : (i) == 5 ? 5 :  -1)</td></tr>
 <tr class="separator:gad5c1bf8fc726fd71ede62fcabb78b0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,98 +296,72 @@ Macros</h2></td></tr>
 <tr class="memitem:gae8241ecfedf9ae4571045af50180d57e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae8241ecfedf9ae4571045af50180d57e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_TIMER3_CDTI2_PORT</b>(i)      &#160;&#160;&#160;(-1)</td></tr>
 <tr class="separator:gae8241ecfedf9ae4571045af50180d57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab3643065ee960c667130829efe8749b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab3643065ee960c667130829efe8749b2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ACMP0_OUT_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 4 : (i) == 2 ? 3 :  -1)</td></tr>
-<tr class="separator:gab3643065ee960c667130829efe8749b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafdbd7e456a1015ba174d98039460f0f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafdbd7e456a1015ba174d98039460f0f6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ACMP1_OUT_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? 5 : (i) == 1 ? 4 : (i) == 2 ? 3 :  -1)</td></tr>
-<tr class="separator:gafdbd7e456a1015ba174d98039460f0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaed50b650113eb135aac1a9bfda776331"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaed50b650113eb135aac1a9bfda776331"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LEUART0_TX_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? 1 : (i) == 2 ? -1 : (i) == 3 ? 5 : (i) == 4 ? 5 :  -1)</td></tr>
-<tr class="separator:gaed50b650113eb135aac1a9bfda776331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f81a88968cbb372517db05895e9705b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3f81a88968cbb372517db05895e9705b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LEUART0_RX_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? 1 : (i) == 2 ? -1 : (i) == 3 ? 5 : (i) == 4 ? 0 :  -1)</td></tr>
-<tr class="separator:ga3f81a88968cbb372517db05895e9705b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga33469fab8cff92beaa05137b4292b987"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga33469fab8cff92beaa05137b4292b987"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LEUART1_TX_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? -1 :  -1)</td></tr>
-<tr class="separator:ga33469fab8cff92beaa05137b4292b987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac928fc706a61a9e8d92286f8deaa41c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac928fc706a61a9e8d92286f8deaa41c5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LEUART1_RX_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? -1 :  -1)</td></tr>
-<tr class="separator:gac928fc706a61a9e8d92286f8deaa41c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga270382974bd71e1eea8e2836d8008504"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga270382974bd71e1eea8e2836d8008504"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LETIMER0_OUT0_PORT</b>(i)    &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? 1 : (i) == 2 ? 5 : (i) == 3 ? -1 :  -1)</td></tr>
-<tr class="separator:ga270382974bd71e1eea8e2836d8008504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf7dedac999b818fe8b398d64848588f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf7dedac999b818fe8b398d64848588f6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_LETIMER0_OUT1_PORT</b>(i)    &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 : (i) == 2 ? 5 : (i) == 3 ? -1 :  -1)</td></tr>
-<tr class="separator:gaf7dedac999b818fe8b398d64848588f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd3e4ae5865c458ca5086dcea5cfd024"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafd3e4ae5865c458ca5086dcea5cfd024"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT0_S0IN_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? 4 : (i) == 2 ? -1 : (i) == 3 ? 3 :  -1)</td></tr>
-<tr class="separator:gafd3e4ae5865c458ca5086dcea5cfd024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae2eb668b1456e68659f144f1544842fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae2eb668b1456e68659f144f1544842fc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT0_S1IN_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? 4 : (i) == 2 ? -1 : (i) == 3 ? 3 :  -1)</td></tr>
-<tr class="separator:gae2eb668b1456e68659f144f1544842fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad62ba3079e42065ea7637098fae40738"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad62ba3079e42065ea7637098fae40738"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT1_S0IN_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 1 :  -1)</td></tr>
-<tr class="separator:gad62ba3079e42065ea7637098fae40738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ec4e80f0481119f4c1ddb1accf5e733"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1ec4e80f0481119f4c1ddb1accf5e733"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT1_S1IN_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 1 :  -1)</td></tr>
-<tr class="separator:ga1ec4e80f0481119f4c1ddb1accf5e733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7efaaf2d9793b2ed98f153669c268826"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7efaaf2d9793b2ed98f153669c268826"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT2_S0IN_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 :  -1)</td></tr>
-<tr class="separator:ga7efaaf2d9793b2ed98f153669c268826"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5670064529aa0fdbd1219db332ad8dd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5670064529aa0fdbd1219db332ad8dd6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PCNT2_S1IN_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 :  -1)</td></tr>
-<tr class="separator:ga5670064529aa0fdbd1219db332ad8dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga149beff237e3f8d53d110c6a247a3258"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga149beff237e3f8d53d110c6a247a3258"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_I2C0_SDA_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 3 : (i) == 2 ? 2 : (i) == 3 ? -1 : (i) == 4 ? -1 : (i) == 5 ? 5 : (i) == 6 ? -1 :  -1)</td></tr>
-<tr class="separator:ga149beff237e3f8d53d110c6a247a3258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab4fc23f1879c59811b807800302d3163"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab4fc23f1879c59811b807800302d3163"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_I2C0_SCL_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 3 : (i) == 2 ? 2 : (i) == 3 ? -1 : (i) == 4 ? -1 : (i) == 5 ? 5 : (i) == 6 ? -1 :  -1)</td></tr>
-<tr class="separator:gab4fc23f1879c59811b807800302d3163"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab4a24aeb75ecdf0b548cf7b2a5b76a1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab4a24aeb75ecdf0b548cf7b2a5b76a1c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_I2C1_SDA_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? -1 : (i) == 2 ? 4 :  -1)</td></tr>
-<tr class="separator:gab4a24aeb75ecdf0b548cf7b2a5b76a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga590391c62785933cadda8af667b15a63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga590391c62785933cadda8af667b15a63"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_I2C1_SCL_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? -1 : (i) == 2 ? 4 :  -1)</td></tr>
-<tr class="separator:ga590391c62785933cadda8af667b15a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23bf0dd10ffd4c61bb71da2860a06f85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga23bf0dd10ffd4c61bb71da2860a06f85"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH0_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 5 :  -1)</td></tr>
-<tr class="separator:ga23bf0dd10ffd4c61bb71da2860a06f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga981501eba9344d1d5a98fda5d86b2201"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga981501eba9344d1d5a98fda5d86b2201"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH1_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 0 : (i) == 1 ? 5 :  -1)</td></tr>
-<tr class="separator:ga981501eba9344d1d5a98fda5d86b2201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a42f6db16abb8e9a5a1fcdbaef97781"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4a42f6db16abb8e9a5a1fcdbaef97781"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH2_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 5 :  -1)</td></tr>
-<tr class="separator:ga4a42f6db16abb8e9a5a1fcdbaef97781"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga91e1c8d676e21807ea668e85a355462c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga91e1c8d676e21807ea668e85a355462c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_PRS_CH3_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? -1 :  -1)</td></tr>
-<tr class="separator:ga91e1c8d676e21807ea668e85a355462c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac8bed260b2bde8646fb7ad55da54f0a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac8bed260b2bde8646fb7ad55da54f0a8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_DBG_SWO_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 5 : (i) == 1 ? 2 : (i) == 2 ? 3 : (i) == 3 ? 3 :  -1)</td></tr>
-<tr class="separator:gac8bed260b2bde8646fb7ad55da54f0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae6caa4f0d2005e837e663ca2decc0ae4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae6caa4f0d2005e837e663ca2decc0ae4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_DBG_SWDIO_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? 5 : (i) == 1 ? 5 : (i) == 2 ? 5 : (i) == 3 ? 5 :  -1)</td></tr>
-<tr class="separator:gae6caa4f0d2005e837e663ca2decc0ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga655994c79e5d59a719b3593b59aa8add"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga655994c79e5d59a719b3593b59aa8add"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_DBG_SWCLK_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? 5 : (i) == 1 ? 5 : (i) == 2 ? 5 : (i) == 3 ? 5 :  -1)</td></tr>
-<tr class="separator:ga655994c79e5d59a719b3593b59aa8add"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec17bbcb52185b2096d16ed633027c4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaec17bbcb52185b2096d16ed633027c4f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ETM_TCLK_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 : (i) == 2 ? 2 : (i) == 3 ? -1 :  -1)</td></tr>
-<tr class="separator:gaec17bbcb52185b2096d16ed633027c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga53a3aad2b60a1e33fa9f9bbda9115b3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga53a3aad2b60a1e33fa9f9bbda9115b3b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ETM_TD0_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 : (i) == 2 ? 2 : (i) == 3 ? -1 :  -1)</td></tr>
-<tr class="separator:ga53a3aad2b60a1e33fa9f9bbda9115b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafa8738df9ef7e479ee1a0862df773e80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafa8738df9ef7e479ee1a0862df773e80"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ETM_TD1_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 : (i) == 2 ? 3 : (i) == 3 ? -1 :  -1)</td></tr>
-<tr class="separator:gafa8738df9ef7e479ee1a0862df773e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga15448c33b20965cf779fd9c0ede750fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga15448c33b20965cf779fd9c0ede750fc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ETM_TD2_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 : (i) == 2 ? 3 : (i) == 3 ? -1 :  -1)</td></tr>
-<tr class="separator:ga15448c33b20965cf779fd9c0ede750fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f85c48eacacb2de57e9a818d10e89f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6f85c48eacacb2de57e9a818d10e89f1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_ETM_TD3_PORT</b>(i)                &#160;&#160;&#160;((i) == 0 ? 3 : (i) == 1 ? -1 : (i) == 2 ? 3 : (i) == 3 ? -1 :  -1)</td></tr>
-<tr class="separator:ga6f85c48eacacb2de57e9a818d10e89f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f95a4b6565dcab284ba599753e090f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2f95a4b6565dcab284ba599753e090f8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART0_CLK_PORT</b>(i)            &#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:ga2f95a4b6565dcab284ba599753e090f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacefcb0a1c57e2803068c5ff6fe64e65c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacefcb0a1c57e2803068c5ff6fe64e65c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART0_CS_PORT</b>(i)              &#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:gacefcb0a1c57e2803068c5ff6fe64e65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41090330a6d06e88dd3d2c8317131b02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga41090330a6d06e88dd3d2c8317131b02"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART0_RX_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 5 : (i) == 1 ? 4 : (i) == 2 ? -1 : (i) == 3 ? 2 :  -1)</td></tr>
+<tr class="separator:ga41090330a6d06e88dd3d2c8317131b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1dabaf44a05a8ae5fbd7dfa14ded93d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1dabaf44a05a8ae5fbd7dfa14ded93d7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART0_TX_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 5 : (i) == 1 ? 4 : (i) == 2 ? -1 : (i) == 3 ? 2 :  -1)</td></tr>
+<tr class="separator:ga1dabaf44a05a8ae5fbd7dfa14ded93d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8567ddf9acb6f9e7c32957d71d1ed743"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8567ddf9acb6f9e7c32957d71d1ed743"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART1_CLK_PORT</b>(i)            &#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:ga8567ddf9acb6f9e7c32957d71d1ed743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77653336283e9fde902e7eae55d31625"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga77653336283e9fde902e7eae55d31625"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART1_CS_PORT</b>(i)              &#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:ga77653336283e9fde902e7eae55d31625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga929b60895a65d25d992d45663eb635fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga929b60895a65d25d992d45663eb635fe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART1_RX_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? -1 : (i) == 2 ? -1 : (i) == 3 ? 4 :  -1)</td></tr>
+<tr class="separator:ga929b60895a65d25d992d45663eb635fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga370aa6dd896d621d1abe2ddf402eee54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga370aa6dd896d621d1abe2ddf402eee54"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_UART1_TX_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 2 : (i) == 1 ? -1 : (i) == 2 ? -1 : (i) == 3 ? 4 :  -1)</td></tr>
+<tr class="separator:ga370aa6dd896d621d1abe2ddf402eee54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca48ffc715e6393b1c6ef379ce4184e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaca48ffc715e6393b1c6ef379ce4184e7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_CLK_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 3 : (i) == 2 ? 5 :  -1)</td></tr>
+<tr class="separator:gaca48ffc715e6393b1c6ef379ce4184e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b3fb5b75ebd0212f7194dc77e5791e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9b3fb5b75ebd0212f7194dc77e5791e9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_CS_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 3 : (i) == 2 ? 5 :  -1)</td></tr>
+<tr class="separator:ga9b3fb5b75ebd0212f7194dc77e5791e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15827636dac72cc034a7fdc0ece24506"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga15827636dac72cc034a7fdc0ece24506"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_RX_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 3 : (i) == 2 ? 3 :  -1)</td></tr>
+<tr class="separator:ga15827636dac72cc034a7fdc0ece24506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82aa93d474d63035ba5eed6b1fd2745e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga82aa93d474d63035ba5eed6b1fd2745e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART1_TX_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 3 : (i) == 2 ? 3 :  -1)</td></tr>
+<tr class="separator:ga82aa93d474d63035ba5eed6b1fd2745e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97bf778bae1273c02851b5f92c5a826e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga97bf778bae1273c02851b5f92c5a826e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART2_CLK_PORT</b>(i)          &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 1 :  -1)</td></tr>
+<tr class="separator:ga97bf778bae1273c02851b5f92c5a826e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12ddb5736478a2f4e2e55afd7154c964"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga12ddb5736478a2f4e2e55afd7154c964"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART2_CS_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 1 :  -1)</td></tr>
+<tr class="separator:ga12ddb5736478a2f4e2e55afd7154c964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6faf158a815363d8184f98f85dfbf62c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6faf158a815363d8184f98f85dfbf62c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART2_RX_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 1 :  -1)</td></tr>
+<tr class="separator:ga6faf158a815363d8184f98f85dfbf62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b70b9afcdcccbda92191072d5a8e964"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7b70b9afcdcccbda92191072d5a8e964"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USART2_TX_PORT</b>(i)            &#160;&#160;&#160;((i) == 0 ? -1 : (i) == 1 ? 1 :  -1)</td></tr>
+<tr class="separator:ga7b70b9afcdcccbda92191072d5a8e964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddc876a3bd77f662ccc496cc795a3418"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaddc876a3bd77f662ccc496cc795a3418"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USARTRF0_CLK_PORT</b>(i)      &#160;&#160;&#160;((i) == 0 ? 4 : (i) == 1 ? -1 : (i) == 2 ? -1 : (i) == 3 ? -1 : (i) == 4 ? -1 : (i) == 5 ? -1 :  -1)</td></tr>
+<tr class="separator:gaddc876a3bd77f662ccc496cc795a3418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae265161abb12d564f108bd066feee5d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae265161abb12d564f108bd066feee5d4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USARTRF0_CS_PORT</b>(i)        &#160;&#160;&#160;((i) == 0 ? 4 : (i) == 1 ? -1 : (i) == 2 ? -1 : (i) == 3 ? -1 : (i) == 4 ? -1 : (i) == 5 ? -1 :  -1)</td></tr>
+<tr class="separator:gae265161abb12d564f108bd066feee5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga148b07cee8fd364a5a8f52efe378fa3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga148b07cee8fd364a5a8f52efe378fa3b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USARTRF0_RX_PORT</b>(i)        &#160;&#160;&#160;((i) == 0 ? 4 : (i) == 1 ? -1 : (i) == 2 ? -1 : (i) == 3 ? -1 : (i) == 4 ? 1 : (i) == 5 ? -1 :  -1)</td></tr>
+<tr class="separator:ga148b07cee8fd364a5a8f52efe378fa3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79473923ae43944cc46a50e691aa12f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga79473923ae43944cc46a50e691aa12f3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USARTRF0_TX_PORT</b>(i)        &#160;&#160;&#160;((i) == 0 ? 4 : (i) == 1 ? -1 : (i) == 2 ? -1 : (i) == 3 ? -1 : (i) == 4 ? 1 : (i) == 5 ? -1 :  -1)</td></tr>
+<tr class="separator:ga79473923ae43944cc46a50e691aa12f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c4dbfad9d3b83522938f69d9133eb20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0c4dbfad9d3b83522938f69d9133eb20"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>AF_USB_DMPU_PORT</b>(i)              &#160;&#160;&#160;((i) == 0 ? 3 :  -1)</td></tr>
+<tr class="separator:ga0c4dbfad9d3b83522938f69d9133eb20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad762f6e157a6da9a6fb73bfae04ce808"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EZR32LG__AF__Ports.html#gad762f6e157a6da9a6fb73bfae04ce808">AF_USB_VBUSEN_PORT</a>(i)          &#160;&#160;&#160;((i) == 0 ? 5 :  -1)</td></tr>
+<tr class="separator:gad762f6e157a6da9a6fb73bfae04ce808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gad762f6e157a6da9a6fb73bfae04ce808"></a>
 <div class="memitem">
@@ -388,7 +387,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:41:36 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:43:16 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

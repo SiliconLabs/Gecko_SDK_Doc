@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -116,10 +114,23 @@ $(document).ready(function(){initNavTree('em__leuart_8h.html','');});
 <div class="title">em_leuart.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Low Energy Universal Asynchronous Receiver/Transmitter (LEUART) peripheral API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>Low Energy Universal Asynchronous Receiver/Transmitter (LEUART) peripheral API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="em__leuart_8h_source.html">em_leuart.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div>
 <p><a href="em__leuart_8h_source.html">Go to the source code of this file.</a></p>
@@ -191,12 +202,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga14ed413542c26fb88fd1237f9eb99bd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#ga14ed413542c26fb88fd1237f9eb99bd5">LEUART_Init</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart, <a class="el" href="structLEUART__Init__TypeDef.html">LEUART_Init_TypeDef</a> const *init)</td></tr>
 <tr class="memdesc:ga14ed413542c26fb88fd1237f9eb99bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init LEUART.  <a href="group__LEUART.html#ga14ed413542c26fb88fd1237f9eb99bd5">More...</a><br /></td></tr>
 <tr class="separator:ga14ed413542c26fb88fd1237f9eb99bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0e54fd1a0a16f1e899969f29de49674f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#ga0e54fd1a0a16f1e899969f29de49674f">LEUART_TxDmaInEM2Enable</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart, bool enable)</td></tr>
-<tr class="memdesc:ga0e54fd1a0a16f1e899969f29de49674f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables handling of LEUART TX by DMA in EM2.  <a href="group__LEUART.html#ga0e54fd1a0a16f1e899969f29de49674f">More...</a><br /></td></tr>
-<tr class="separator:ga0e54fd1a0a16f1e899969f29de49674f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf9a622af67512b98926d2117f0ea29d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#gaf9a622af67512b98926d2117f0ea29d1">LEUART_RxDmaInEM2Enable</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart, bool enable)</td></tr>
-<tr class="memdesc:gaf9a622af67512b98926d2117f0ea29d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables handling of LEUART RX by DMA in EM2.  <a href="group__LEUART.html#gaf9a622af67512b98926d2117f0ea29d1">More...</a><br /></td></tr>
-<tr class="separator:gaf9a622af67512b98926d2117f0ea29d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac7d9d111138799c46cb48b96689242b0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#gac7d9d111138799c46cb48b96689242b0">LEUART_IntClear</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart, uint32_t flags)</td></tr>
 <tr class="memdesc:gac7d9d111138799c46cb48b96689242b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending LEUART interrupts.  <a href="group__LEUART.html#gac7d9d111138799c46cb48b96689242b0">More...</a><br /></td></tr>
 <tr class="separator:gac7d9d111138799c46cb48b96689242b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,53 +220,44 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa2551eeb204f1fe8bf67f40a1dfbb66b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#gaa2551eeb204f1fe8bf67f40a1dfbb66b">LEUART_IntSet</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart, uint32_t flags)</td></tr>
 <tr class="memdesc:gaa2551eeb204f1fe8bf67f40a1dfbb66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one or more pending LEUART interrupts from SW.  <a href="group__LEUART.html#gaa2551eeb204f1fe8bf67f40a1dfbb66b">More...</a><br /></td></tr>
 <tr class="separator:gaa2551eeb204f1fe8bf67f40a1dfbb66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga43bd574280826803da1d94d87e7d71cc"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#ga43bd574280826803da1d94d87e7d71cc">LEUART_StatusGet</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart)</td></tr>
-<tr class="memdesc:ga43bd574280826803da1d94d87e7d71cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get LEUART STATUS register.  <a href="group__LEUART.html#ga43bd574280826803da1d94d87e7d71cc">More...</a><br /></td></tr>
-<tr class="separator:ga43bd574280826803da1d94d87e7d71cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac1d2e66b6eb2ef53079453ebc2f1e5fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#gac1d2e66b6eb2ef53079453ebc2f1e5fa">LEUART_Reset</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart)</td></tr>
 <tr class="memdesc:gac1d2e66b6eb2ef53079453ebc2f1e5fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset LEUART to same state as after a HW reset.  <a href="group__LEUART.html#gac1d2e66b6eb2ef53079453ebc2f1e5fa">More...</a><br /></td></tr>
 <tr class="separator:gac1d2e66b6eb2ef53079453ebc2f1e5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7e84f260b845b086996737d5c6a3d584"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#ga7e84f260b845b086996737d5c6a3d584">LEUART_Rx</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart)</td></tr>
 <tr class="memdesc:ga7e84f260b845b086996737d5c6a3d584"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive one 8 bit frame, (or part of 9 bit frame).  <a href="group__LEUART.html#ga7e84f260b845b086996737d5c6a3d584">More...</a><br /></td></tr>
 <tr class="separator:ga7e84f260b845b086996737d5c6a3d584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga41f5c2769d8f3789596111ee6e5e7f3b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#ga41f5c2769d8f3789596111ee6e5e7f3b">LEUART_RxExt</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart)</td></tr>
-<tr class="memdesc:ga41f5c2769d8f3789596111ee6e5e7f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive one 8-9 bit frame, with extended information.  <a href="group__LEUART.html#ga41f5c2769d8f3789596111ee6e5e7f3b">More...</a><br /></td></tr>
-<tr class="separator:ga41f5c2769d8f3789596111ee6e5e7f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0acc32fe9bb75edec5123e7f155c68ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#ga0acc32fe9bb75edec5123e7f155c68ac">LEUART_Tx</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart, uint8_t data)</td></tr>
-<tr class="memdesc:ga0acc32fe9bb75edec5123e7f155c68ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit one frame.  <a href="group__LEUART.html#ga0acc32fe9bb75edec5123e7f155c68ac">More...</a><br /></td></tr>
-<tr class="separator:ga0acc32fe9bb75edec5123e7f155c68ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec9893a933f75974c16bd63ac823fd8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#gaec9893a933f75974c16bd63ac823fd8e">LEUART_TxExt</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart, uint16_t data)</td></tr>
-<tr class="memdesc:gaec9893a933f75974c16bd63ac823fd8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit one 8-9 bit frame with extended control.  <a href="group__LEUART.html#gaec9893a933f75974c16bd63ac823fd8e">More...</a><br /></td></tr>
-<tr class="separator:gaec9893a933f75974c16bd63ac823fd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6e7d1fb455d7b94fe37b616b5ee0a556"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#ga6e7d1fb455d7b94fe37b616b5ee0a556">LEUART_RxDataGet</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart)</td></tr>
 <tr class="memdesc:ga6e7d1fb455d7b94fe37b616b5ee0a556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive one 8 bit frame, (or part of a 9 bit frame).  <a href="group__LEUART.html#ga6e7d1fb455d7b94fe37b616b5ee0a556">More...</a><br /></td></tr>
 <tr class="separator:ga6e7d1fb455d7b94fe37b616b5ee0a556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga087936f9e8fe4de34a34508967f512e0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#ga087936f9e8fe4de34a34508967f512e0">LEUART_RxDataXGet</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart)</td></tr>
 <tr class="memdesc:ga087936f9e8fe4de34a34508967f512e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive one 8-9 bit frame, with extended information.  <a href="group__LEUART.html#ga087936f9e8fe4de34a34508967f512e0">More...</a><br /></td></tr>
 <tr class="separator:ga087936f9e8fe4de34a34508967f512e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9a622af67512b98926d2117f0ea29d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#gaf9a622af67512b98926d2117f0ea29d1">LEUART_RxDmaInEM2Enable</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart, bool enable)</td></tr>
+<tr class="memdesc:gaf9a622af67512b98926d2117f0ea29d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables handling of LEUART RX by DMA in EM2.  <a href="group__LEUART.html#gaf9a622af67512b98926d2117f0ea29d1">More...</a><br /></td></tr>
+<tr class="separator:gaf9a622af67512b98926d2117f0ea29d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41f5c2769d8f3789596111ee6e5e7f3b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#ga41f5c2769d8f3789596111ee6e5e7f3b">LEUART_RxExt</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart)</td></tr>
+<tr class="memdesc:ga41f5c2769d8f3789596111ee6e5e7f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive one 8-9 bit frame, with extended information.  <a href="group__LEUART.html#ga41f5c2769d8f3789596111ee6e5e7f3b">More...</a><br /></td></tr>
+<tr class="separator:ga41f5c2769d8f3789596111ee6e5e7f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43bd574280826803da1d94d87e7d71cc"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#ga43bd574280826803da1d94d87e7d71cc">LEUART_StatusGet</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart)</td></tr>
+<tr class="memdesc:ga43bd574280826803da1d94d87e7d71cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get LEUART STATUS register.  <a href="group__LEUART.html#ga43bd574280826803da1d94d87e7d71cc">More...</a><br /></td></tr>
+<tr class="separator:ga43bd574280826803da1d94d87e7d71cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0acc32fe9bb75edec5123e7f155c68ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#ga0acc32fe9bb75edec5123e7f155c68ac">LEUART_Tx</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart, uint8_t data)</td></tr>
+<tr class="memdesc:ga0acc32fe9bb75edec5123e7f155c68ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit one frame.  <a href="group__LEUART.html#ga0acc32fe9bb75edec5123e7f155c68ac">More...</a><br /></td></tr>
+<tr class="separator:ga0acc32fe9bb75edec5123e7f155c68ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e54fd1a0a16f1e899969f29de49674f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#ga0e54fd1a0a16f1e899969f29de49674f">LEUART_TxDmaInEM2Enable</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart, bool enable)</td></tr>
+<tr class="memdesc:ga0e54fd1a0a16f1e899969f29de49674f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables handling of LEUART TX by DMA in EM2.  <a href="group__LEUART.html#ga0e54fd1a0a16f1e899969f29de49674f">More...</a><br /></td></tr>
+<tr class="separator:ga0e54fd1a0a16f1e899969f29de49674f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec9893a933f75974c16bd63ac823fd8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LEUART.html#gaec9893a933f75974c16bd63ac823fd8e">LEUART_TxExt</a> (<a class="el" href="structLEUART__TypeDef.html">LEUART_TypeDef</a> *leuart, uint16_t data)</td></tr>
+<tr class="memdesc:gaec9893a933f75974c16bd63ac823fd8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit one 8-9 bit frame with extended control.  <a href="group__LEUART.html#gaec9893a933f75974c16bd63ac823fd8e">More...</a><br /></td></tr>
+<tr class="separator:gaec9893a933f75974c16bd63ac823fd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="em__leuart_8h_source.html">em_leuart.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__leuart_8h.html">em_leuart.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:41:33 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:43:03 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

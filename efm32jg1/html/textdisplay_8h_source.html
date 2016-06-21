@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -169,8 +166,8 @@ $(document).ready(function(){initNavTree('textdisplay_8h_source.html','');});
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;EMSTATUS <a class="code" href="group__Textdisplay.html#ga1fe43d3b24f2d4d128e941cc75d41c58">TEXTDISPLAY_Delete</a>      (TEXTDISPLAY_Handle_t  handle);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;EMSTATUS <a class="code" href="group__Textdisplay.html#ga3a2e2388e48b53f5634e78fc6c48bc76">TEXTDISPLAY_WriteChar</a>   (TEXTDISPLAY_Handle_t  handle,</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                  <span class="keywordtype">char</span>                  c);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;EMSTATUS <a class="code" href="group__Textdisplay.html#ga1d0435b6df8ccb2ace0a10da0df9fdd3">TEXTDISPLAY_WriteString</a> (TEXTDISPLAY_Handle_t  handle,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                  <span class="keywordtype">char</span>*                 str);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;EMSTATUS <a class="code" href="group__Textdisplay.html#gab41a8aa41d06a94b8547766bac64c13d">TEXTDISPLAY_WriteString</a> (TEXTDISPLAY_Handle_t  handle,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                  <span class="keyword">const</span> <span class="keywordtype">char</span>*           str);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;EMSTATUS <a class="code" href="group__Textdisplay.html#gad1f296d80e71689ff9a01fafabbe948f">TEXTDISPLAY_LfToCrLf</a>    (TEXTDISPLAY_Handle_t  handle,</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                  <span class="keywordtype">bool</span>                  on);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
@@ -181,11 +178,11 @@ $(document).ready(function(){initNavTree('textdisplay_8h_source.html','');});
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _TEXTDISPLAY_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="group__Textdisplay_html_ga5e3c6a5a426a11121e37b3c27db084f1"><div class="ttname"><a href="group__Textdisplay.html#ga5e3c6a5a426a11121e37b3c27db084f1">TEXTDISPLAY_Config_t</a></div><div class="ttdeci">struct TEXTDISPLAY_Config_t TEXTDISPLAY_Config_t</div></div>
 <div class="ttc" id="group__Textdisplay_html_ga0a9d10a115aa9baddd7c189f0d824570"><div class="ttname"><a href="group__Textdisplay.html#ga0a9d10a115aa9baddd7c189f0d824570">TEXTDISPLAY_New</a></div><div class="ttdeci">EMSTATUS TEXTDISPLAY_New(TEXTDISPLAY_Config_t *config, TEXTDISPLAY_Handle_t *handle)</div><div class="ttdoc">Create a new text display device. </div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8c_source.html#l00210">textdisplay.c:210</a></div></div>
+<div class="ttc" id="group__Textdisplay_html_gab41a8aa41d06a94b8547766bac64c13d"><div class="ttname"><a href="group__Textdisplay.html#gab41a8aa41d06a94b8547766bac64c13d">TEXTDISPLAY_WriteString</a></div><div class="ttdeci">EMSTATUS TEXTDISPLAY_WriteString(TEXTDISPLAY_Handle_t handle, const char *str)</div><div class="ttdoc">Write a string of characters to a text display. </div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8c_source.html#l00454">textdisplay.c:454</a></div></div>
 <div class="ttc" id="structTEXTDISPLAY__Config__t_html_aae4d4c24d67076baa049bb7d8ea9099e"><div class="ttname"><a href="structTEXTDISPLAY__Config__t.html#aae4d4c24d67076baa049bb7d8ea9099e">TEXTDISPLAY_Config_t::lfToCrLf</a></div><div class="ttdeci">bool lfToCrLf</div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8h_source.html#l00082">textdisplay.h:82</a></div></div>
 <div class="ttc" id="structTEXTDISPLAY__Config__t_html_a36d35117d8ebfd29e880790c43e29d6c"><div class="ttname"><a href="structTEXTDISPLAY__Config__t.html#a36d35117d8ebfd29e880790c43e29d6c">TEXTDISPLAY_Config_t::scrollEnable</a></div><div class="ttdeci">bool scrollEnable</div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8h_source.html#l00077">textdisplay.h:77</a></div></div>
 <div class="ttc" id="structTEXTDISPLAY__Config__t_html_ad1414884e0e326add1798e62c610fa33"><div class="ttname"><a href="structTEXTDISPLAY__Config__t.html#ad1414884e0e326add1798e62c610fa33">TEXTDISPLAY_Config_t::displayDeviceNo</a></div><div class="ttdeci">int displayDeviceNo</div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8h_source.html#l00075">textdisplay.h:75</a></div></div>
 <div class="ttc" id="emstatus_8h_html"><div class="ttname"><a href="emstatus_8h.html">emstatus.h</a></div><div class="ttdoc">EMSTATUS definitions. </div></div>
-<div class="ttc" id="group__Textdisplay_html_ga1d0435b6df8ccb2ace0a10da0df9fdd3"><div class="ttname"><a href="group__Textdisplay.html#ga1d0435b6df8ccb2ace0a10da0df9fdd3">TEXTDISPLAY_WriteString</a></div><div class="ttdeci">EMSTATUS TEXTDISPLAY_WriteString(TEXTDISPLAY_Handle_t handle, char *str)</div><div class="ttdoc">Write a string of characters to a text display. </div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8c_source.html#l00454">textdisplay.c:454</a></div></div>
 <div class="ttc" id="group__Textdisplay_html_gad1f296d80e71689ff9a01fafabbe948f"><div class="ttname"><a href="group__Textdisplay.html#gad1f296d80e71689ff9a01fafabbe948f">TEXTDISPLAY_LfToCrLf</a></div><div class="ttdeci">EMSTATUS TEXTDISPLAY_LfToCrLf(TEXTDISPLAY_Handle_t handle, bool on)</div><div class="ttdoc">Enable or disable LF to CR+LF conversion. </div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8c_source.html#l00361">textdisplay.c:361</a></div></div>
 <div class="ttc" id="structTEXTDISPLAY__Config__t_html"><div class="ttname"><a href="structTEXTDISPLAY__Config__t.html">TEXTDISPLAY_Config_t</a></div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8h_source.html#l00073">textdisplay.h:73</a></div></div>
 <div class="ttc" id="group__Textdisplay_html_gac330155089e29b249d24b42ef276c8e8"><div class="ttname"><a href="group__Textdisplay.html#gac330155089e29b249d24b42ef276c8e8">TEXTDISPLAY_Handle_t</a></div><div class="ttdeci">void * TEXTDISPLAY_Handle_t</div><div class="ttdef"><b>Definition:</b> <a href="textdisplay_8h_source.html#l00070">textdisplay.h:70</a></div></div>
@@ -197,7 +194,7 @@ $(document).ready(function(){initNavTree('textdisplay_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="textdisplay_8h.html">textdisplay.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:41 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:40:23 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

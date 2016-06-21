@@ -1,22 +1,22 @@
 var group__DAC =
 [
     [ "DAC_Init_TypeDef", "structDAC__Init__TypeDef.html", [
-      [ "refresh", "structDAC__Init__TypeDef.html#ac2a78ac49c096f75e15f257147b927a2", null ],
-      [ "reference", "structDAC__Init__TypeDef.html#aaba3c2f375f398242af8585493db3212", null ],
-      [ "outMode", "structDAC__Init__TypeDef.html#a1a325a0e267d6e5ddaebd6c29a43d3dc", null ],
-      [ "convMode", "structDAC__Init__TypeDef.html#a4be396b11559d58b038c784907d57f72", null ],
-      [ "prescale", "structDAC__Init__TypeDef.html#ac68fb836392980739bcaa75c374a6f2b", null ],
-      [ "lpEnable", "structDAC__Init__TypeDef.html#ad4f7c1b91d83bd737af35e13383067e9", null ],
       [ "ch0ResetPre", "structDAC__Init__TypeDef.html#a97e40c412e345048f170344ae0c9ef11", null ],
+      [ "convMode", "structDAC__Init__TypeDef.html#a4be396b11559d58b038c784907d57f72", null ],
+      [ "diff", "structDAC__Init__TypeDef.html#a7b6c42818760a114ee9c4266f42d7ea1", null ],
+      [ "lpEnable", "structDAC__Init__TypeDef.html#ad4f7c1b91d83bd737af35e13383067e9", null ],
       [ "outEnablePRS", "structDAC__Init__TypeDef.html#a87b55620482ad0a5bbd1e53e880a4abc", null ],
-      [ "sineEnable", "structDAC__Init__TypeDef.html#af28974c94c029aeace7d3d3c27d17d75", null ],
-      [ "diff", "structDAC__Init__TypeDef.html#a7b6c42818760a114ee9c4266f42d7ea1", null ]
+      [ "outMode", "structDAC__Init__TypeDef.html#a1a325a0e267d6e5ddaebd6c29a43d3dc", null ],
+      [ "prescale", "structDAC__Init__TypeDef.html#ac68fb836392980739bcaa75c374a6f2b", null ],
+      [ "reference", "structDAC__Init__TypeDef.html#aaba3c2f375f398242af8585493db3212", null ],
+      [ "refresh", "structDAC__Init__TypeDef.html#ac2a78ac49c096f75e15f257147b927a2", null ],
+      [ "sineEnable", "structDAC__Init__TypeDef.html#af28974c94c029aeace7d3d3c27d17d75", null ]
     ] ],
     [ "DAC_InitChannel_TypeDef", "structDAC__InitChannel__TypeDef.html", [
       [ "enable", "structDAC__InitChannel__TypeDef.html#ac49bf6cdbe348a2305e39002ba1c4487", null ],
       [ "prsEnable", "structDAC__InitChannel__TypeDef.html#adf71487a252c4aebc69789688654aeb7", null ],
-      [ "refreshEnable", "structDAC__InitChannel__TypeDef.html#ae271f5f72c6a119598dc83b2ff258997", null ],
-      [ "prsSel", "structDAC__InitChannel__TypeDef.html#ae2d2d02f38c842a86e076aa42ea37974", null ]
+      [ "prsSel", "structDAC__InitChannel__TypeDef.html#ae2d2d02f38c842a86e076aa42ea37974", null ],
+      [ "refreshEnable", "structDAC__InitChannel__TypeDef.html#ae271f5f72c6a119598dc83b2ff258997", null ]
     ] ],
     [ "DAC_INIT_DEFAULT", "group__DAC.html#ga80ea2df39483b3e75d2ef0571981d723", null ],
     [ "DAC_INITCHANNEL_DEFAULT", "group__DAC.html#ga740f2cbef0723031cbc6b56cb9810712", null ],
@@ -56,12 +56,12 @@ var group__DAC =
       [ "dacRefresh32", "group__DAC.html#gga5b92900b465aa009a59cd0398e0dbf10a0de1ae2907cbf90a1e05bd2c2d00e5c0", null ],
       [ "dacRefresh64", "group__DAC.html#gga5b92900b465aa009a59cd0398e0dbf10ae4e52481b9823268bde6ead3c9fb10b7", null ]
     ] ],
+    [ "DAC_Channel0OutputSet", "group__DAC.html#ga8c99169a36fa3e2689e00d41fda5a6be", null ],
+    [ "DAC_Channel1OutputSet", "group__DAC.html#ga1ea9a1f5611a62d97fe36c3f943a14d2", null ],
+    [ "DAC_ChannelOutputSet", "group__DAC.html#ga8f0091a380e451ca9b79956556b94195", null ],
     [ "DAC_Enable", "group__DAC.html#ga3efabd2832fe5862fefd86e02accf2b8", null ],
     [ "DAC_Init", "group__DAC.html#gae8fd0951c9fd781d120c8d5e4ce7745d", null ],
     [ "DAC_InitChannel", "group__DAC.html#gaf77b8f5a47f5420264a2b3562664fa0d", null ],
-    [ "DAC_ChannelOutputSet", "group__DAC.html#ga8f0091a380e451ca9b79956556b94195", null ],
-    [ "DAC_Channel0OutputSet", "group__DAC.html#ga8c99169a36fa3e2689e00d41fda5a6be", null ],
-    [ "DAC_Channel1OutputSet", "group__DAC.html#ga1ea9a1f5611a62d97fe36c3f943a14d2", null ],
     [ "DAC_IntClear", "group__DAC.html#ga17ff331912dc9ddd5250803302f26198", null ],
     [ "DAC_IntDisable", "group__DAC.html#gaaf7c34d3c7b5bdd5a87bdd96ad341b6c", null ],
     [ "DAC_IntEnable", "group__DAC.html#ga19d3d4711c28673c3abc291eecc19c9c", null ],

@@ -1,27 +1,27 @@
 var group__I2C =
 [
     [ "I2C_Init_TypeDef", "structI2C__Init__TypeDef.html", [
+      [ "clhr", "structI2C__Init__TypeDef.html#acc90993308843c20b377bbee7d636123", null ],
       [ "enable", "structI2C__Init__TypeDef.html#a1fd77eeee85d3038268a8a7e16314df9", null ],
-      [ "master", "structI2C__Init__TypeDef.html#a14b8b0fe9a200168abb347ce1773a7d4", null ],
-      [ "refFreq", "structI2C__Init__TypeDef.html#aa95bd4e4c981f7324e964ed375c9ed4a", null ],
       [ "freq", "structI2C__Init__TypeDef.html#a21000158b359b35d2dd6e732cd774b20", null ],
-      [ "clhr", "structI2C__Init__TypeDef.html#acc90993308843c20b377bbee7d636123", null ]
+      [ "master", "structI2C__Init__TypeDef.html#a14b8b0fe9a200168abb347ce1773a7d4", null ],
+      [ "refFreq", "structI2C__Init__TypeDef.html#aa95bd4e4c981f7324e964ed375c9ed4a", null ]
     ] ],
     [ "I2C_TransferSeq_TypeDef", "structI2C__TransferSeq__TypeDef.html", [
       [ "addr", "structI2C__TransferSeq__TypeDef.html#a864fcee4abd27c2dab5723c2d2493ed0", null ],
-      [ "flags", "structI2C__TransferSeq__TypeDef.html#aa9eb709e67fbaa4acb9a4964ca5174cb", null ],
+      [ "buf", "structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63", null ],
       [ "data", "structI2C__TransferSeq__TypeDef.html#ac50f3e038b429e01fd5b2bdfede2f674", null ],
-      [ "len", "structI2C__TransferSeq__TypeDef.html#a92b6d16d6d3b3e4d5650740fa306a285", null ],
-      [ "buf", "structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63", null ]
+      [ "flags", "structI2C__TransferSeq__TypeDef.html#aa9eb709e67fbaa4acb9a4964ca5174cb", null ],
+      [ "len", "structI2C__TransferSeq__TypeDef.html#a92b6d16d6d3b3e4d5650740fa306a285", null ]
     ] ],
-    [ "I2C_FREQ_STANDARD_MAX", "group__I2C.html#ga0a2167eb1e00a8da86bf0826f712f0f8", null ],
-    [ "I2C_FREQ_FAST_MAX", "group__I2C.html#ga29a3fbc14b30b68601118a9866e7440d", null ],
-    [ "I2C_FREQ_FASTPLUS_MAX", "group__I2C.html#ga6961334be5d2f1d6e98d8f48de3b040e", null ],
-    [ "I2C_FLAG_WRITE", "group__I2C.html#ga091476f45133e8a6deb9dbd7a3ea6229", null ],
+    [ "I2C_FLAG_10BIT_ADDR", "group__I2C.html#ga6fd13e29a6b6315de051549037ac176f", null ],
     [ "I2C_FLAG_READ", "group__I2C.html#ga0c1779663a5ebf44e956ea3f591b4e61", null ],
+    [ "I2C_FLAG_WRITE", "group__I2C.html#ga091476f45133e8a6deb9dbd7a3ea6229", null ],
     [ "I2C_FLAG_WRITE_READ", "group__I2C.html#gaf9fc47d6ee1c66405dc491f7a4c3b8fc", null ],
     [ "I2C_FLAG_WRITE_WRITE", "group__I2C.html#ga28bb5f9d0559f3af24c0554e497ba2b3", null ],
-    [ "I2C_FLAG_10BIT_ADDR", "group__I2C.html#ga6fd13e29a6b6315de051549037ac176f", null ],
+    [ "I2C_FREQ_FAST_MAX", "group__I2C.html#ga29a3fbc14b30b68601118a9866e7440d", null ],
+    [ "I2C_FREQ_FASTPLUS_MAX", "group__I2C.html#ga6961334be5d2f1d6e98d8f48de3b040e", null ],
+    [ "I2C_FREQ_STANDARD_MAX", "group__I2C.html#ga0a2167eb1e00a8da86bf0826f712f0f8", null ],
     [ "I2C_INIT_DEFAULT", "group__I2C.html#ga5c7fbd27ef311914288d8e7ce02f1528", null ],
     [ "I2C_ClockHLR_TypeDef", "group__I2C.html#gabb1516548b4528328682d6be09a3e3a5", [
       [ "i2cClockHLRStandard", "group__I2C.html#ggabb1516548b4528328682d6be09a3e3a5a72c81018da3424addf47b44341acd111", null ],
@@ -49,9 +49,9 @@ var group__I2C =
     [ "I2C_IntSet", "group__I2C.html#gab6d23302ba9e55d10ee19f20d91f170d", null ],
     [ "I2C_Reset", "group__I2C.html#ga602a1d2c64c05453bf9c1b1d52194678", null ],
     [ "I2C_SlaveAddressGet", "group__I2C.html#ga18042cf363fe66fb94fcd724d07efad2", null ],
-    [ "I2C_SlaveAddressSet", "group__I2C.html#ga6d7459b4e89456387a9ea5576612b01d", null ],
     [ "I2C_SlaveAddressMaskGet", "group__I2C.html#ga0a0296ee95a311687feea28bac21d1ff", null ],
     [ "I2C_SlaveAddressMaskSet", "group__I2C.html#ga9ac1d9e8ab3c9303cfabaafe407b5b1e", null ],
+    [ "I2C_SlaveAddressSet", "group__I2C.html#ga6d7459b4e89456387a9ea5576612b01d", null ],
     [ "I2C_Transfer", "group__I2C.html#ga67983b3dbe7f028a97f765e421b3df56", null ],
     [ "I2C_TransferInit", "group__I2C.html#gae2bf2ecc3d0c4f55e3511d4871b64b16", null ]
 ];

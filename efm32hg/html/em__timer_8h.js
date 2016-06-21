@@ -14,6 +14,12 @@ var em__timer_8h =
       [ "timerClkSelCC1", "group__TIMER.html#gga511d9c88c172605ee06715c274ad9cfaa31e63685e876d6d978d9c79bf83b356a", null ],
       [ "timerClkSelCascade", "group__TIMER.html#gga511d9c88c172605ee06715c274ad9cfaa98d6140c598983b937ee4294e95f8739", null ]
     ] ],
+    [ "TIMER_DtiFaultAction_TypeDef", "group__TIMER.html#gae8ecc03dd4449015adc2fcb5469c691f", [
+      [ "timerDtiFaultActionNone", "group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691faeae2b39b5fad50c713a73a6a03bb6375", null ],
+      [ "timerDtiFaultActionInactive", "group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691fab5142a73cd3ed39af3b2852fff3069e5", null ],
+      [ "timerDtiFaultActionClear", "group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691fa2483f94170c976dde7bfd68eae34f665", null ],
+      [ "timerDtiFaultActionTristate", "group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691faa64dc181c4990a9356429c5046187456", null ]
+    ] ],
     [ "TIMER_Edge_TypeDef", "group__TIMER.html#gaa024137506ad0a0cd518c4572f8ba545", [
       [ "timerEdgeRising", "group__TIMER.html#ggaa024137506ad0a0cd518c4572f8ba545adaf018c66d975a7bd2b75f6a1a9a78cf", null ],
       [ "timerEdgeFalling", "group__TIMER.html#ggaa024137506ad0a0cd518c4572f8ba545a482b6bb958b99cbb87d4fa57a9f00144", null ],
@@ -65,24 +71,18 @@ var em__timer_8h =
       [ "timerPRSSELCh4", "group__TIMER.html#ggaaa9a5454731dae18603a8076f9a9010aaa202f08183cad72260b490b898b89c90", null ],
       [ "timerPRSSELCh5", "group__TIMER.html#ggaaa9a5454731dae18603a8076f9a9010aa9855b9332626a1c0bc1be69611aab7b6", null ]
     ] ],
-    [ "TIMER_DtiFaultAction_TypeDef", "group__TIMER.html#gae8ecc03dd4449015adc2fcb5469c691f", [
-      [ "timerDtiFaultActionNone", "group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691faeae2b39b5fad50c713a73a6a03bb6375", null ],
-      [ "timerDtiFaultActionInactive", "group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691fab5142a73cd3ed39af3b2852fff3069e5", null ],
-      [ "timerDtiFaultActionClear", "group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691fa2483f94170c976dde7bfd68eae34f665", null ],
-      [ "timerDtiFaultActionTristate", "group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691faa64dc181c4990a9356429c5046187456", null ]
-    ] ],
     [ "TIMER_CaptureGet", "group__TIMER.html#ga17f48913c060adae55b26b39f1f39a4c", null ],
+    [ "TIMER_ClearDTIFault", "group__TIMER.html#ga59f5d85009fa218eadf75d992d8b7254", null ],
     [ "TIMER_CompareBufSet", "group__TIMER.html#gaca426134377caec8f8e5d44fe7726a4a", null ],
     [ "TIMER_CompareSet", "group__TIMER.html#ga4ef423dd1b30cc66f3c3d3d51dac5d16", null ],
     [ "TIMER_CounterGet", "group__TIMER.html#ga83e10f77009812d7bfff2cf835ca64d7", null ],
     [ "TIMER_CounterSet", "group__TIMER.html#gadf8070d157063a47b20abe97e146a919", null ],
     [ "TIMER_Enable", "group__TIMER.html#gae3dd36e419641a24d3f44084c216bf71", null ],
+    [ "TIMER_EnableDTI", "group__TIMER.html#ga95411ff86d8a4c40b1b30565ae52360a", null ],
+    [ "TIMER_GetDTIFault", "group__TIMER.html#ga23bbd3fb6710c301b9196d5fb1579c03", null ],
     [ "TIMER_Init", "group__TIMER.html#gad04a80140e22df0cd742e14933e9f028", null ],
     [ "TIMER_InitCC", "group__TIMER.html#ga9b2a3560717e0c174a030d99fa8501b4", null ],
     [ "TIMER_InitDTI", "group__TIMER.html#gafd5d7986d15f1deb971b55e5d70cf32f", null ],
-    [ "TIMER_EnableDTI", "group__TIMER.html#ga95411ff86d8a4c40b1b30565ae52360a", null ],
-    [ "TIMER_GetDTIFault", "group__TIMER.html#ga23bbd3fb6710c301b9196d5fb1579c03", null ],
-    [ "TIMER_ClearDTIFault", "group__TIMER.html#ga59f5d85009fa218eadf75d992d8b7254", null ],
     [ "TIMER_IntClear", "group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57", null ],
     [ "TIMER_IntDisable", "group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9", null ],
     [ "TIMER_IntEnable", "group__TIMER.html#ga10317eb2cd4cf6c5bde768023ea132cd", null ],

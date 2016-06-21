@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Zero Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32zg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32zg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -107,9 +106,10 @@ $(document).ready(function(){initNavTree('group__TempSensor.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">TempSensor<div class="ingroups"><a class="el" href="group__Drivers.html">Drivers</a></div></div>  </div>
+<div class="title">TempSensor<div class="ingroups"><a class="el" href="group__kitdrv.html">Kit Drivers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -150,7 +150,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:gad39f162cc62b2eaeeaf8a0ebb2d0bdaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch current temperature from temperature sensor (in Celsius).  <a href="#gad39f162cc62b2eaeeaf8a0ebb2d0bdaa">More...</a><br /></td></tr>
 <tr class="separator:gad39f162cc62b2eaeeaf8a0ebb2d0bdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga0b9b20a17b8c59faffc6124cc5b4bdb5"></a>
 <div class="memitem">
@@ -211,6 +210,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Convert temperature from Celsius to Fahrenheit. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">temp</td><td>Reference to structure to holding temperature in Celsius to convert. Upon return, it has been changed to Fahrenheit. </td></tr>
@@ -220,7 +221,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="tempsens_8c_source.html#l00032">32</a> of file <a class="el" href="tempsens_8c_source.html">tempsens.c</a>.</p>
 
-<p>References <a class="el" href="tempsens_8h_source.html#l00073">TEMPSENS_Temp_TypeDef::f</a>, and <a class="el" href="tempsens_8h_source.html#l00067">TEMPSENS_Temp_TypeDef::i</a>.</p>
+<p>References <a class="el" href="structTEMPSENS__Temp__TypeDef.html#a4224dac51426b31c17b7f59a76ee1dac">TEMPSENS_Temp_TypeDef::f</a>, and <a class="el" href="structTEMPSENS__Temp__TypeDef.html#aa62d8b12520d6fbf9b467eda98556af9">TEMPSENS_Temp_TypeDef::i</a>.</p>
 
 </div>
 </div>
@@ -259,6 +260,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Read sensor register content. </p>
 <p>If reading the temperature register, when a measurement is completed inside the sensor device, the new measurement may not be stored. For this reason, the temperature should not be polled with a higher frequency than the measurement conversion time for a given resolution configuration. Please refer to sensor device datasheet.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -273,9 +276,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="tempsens_8c_source.html#l00074">74</a> of file <a class="el" href="tempsens_8c_source.html">tempsens.c</a>.</p>
 
-<p>References <a class="el" href="em__i2c_8h_source.html#l00257">I2C_TransferSeq_TypeDef::addr</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">I2C_TransferSeq_TypeDef::buf</a>, <a class="el" href="em__i2c_8h_source.html#l00269">I2C_TransferSeq_TypeDef::data</a>, <a class="el" href="em__i2c_8h_source.html#l00260">I2C_TransferSeq_TypeDef::flags</a>, <a class="el" href="em__i2c_8h_source.html#l00143">I2C_FLAG_WRITE_READ</a>, <a class="el" href="i2cspm_8c_source.html#l00124">I2CSPM_Transfer()</a>, <a class="el" href="em__i2c_8h_source.html#l00180">i2cTransferDone</a>, <a class="el" href="em__i2c_8h_source.html#l00278">I2C_TransferSeq_TypeDef::len</a>, and <a class="el" href="tempsens_8h_source.html#l00053">tempsensRegConfig</a>.</p>
+<p>References <a class="el" href="structI2C__TransferSeq__TypeDef.html#a864fcee4abd27c2dab5723c2d2493ed0">I2C_TransferSeq_TypeDef::addr</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">I2C_TransferSeq_TypeDef::buf</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#ac50f3e038b429e01fd5b2bdfede2f674">I2C_TransferSeq_TypeDef::data</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#aa9eb709e67fbaa4acb9a4964ca5174cb">I2C_TransferSeq_TypeDef::flags</a>, <a class="el" href="group__I2C.html#gaf9fc47d6ee1c66405dc491f7a4c3b8fc">I2C_FLAG_WRITE_READ</a>, <a class="el" href="group__I2CSPM.html#ga076766b20012fb6a0cdaaf0f2c760795">I2CSPM_Transfer()</a>, <a class="el" href="group__I2C.html#gga7c781ec28ae11e3e28892de7aa07a00fa01149f9a11ada8a9b05e7104f873de66">i2cTransferDone</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a92b6d16d6d3b3e4d5650740fa306a285">I2C_TransferSeq_TypeDef::len</a>, and <a class="el" href="group__TempSensor.html#ggaf7cf71b30a49a97a51a7c60a2b9ff225a1dd52cfe57ef1748c0144691177721be">tempsensRegConfig</a>.</p>
 
-<p>Referenced by <a class="el" href="tempsens_8c_source.html#l00209">TEMPSENS_TemperatureGet()</a>.</p>
+<p>Referenced by <a class="el" href="group__TempSensor.html#gad39f162cc62b2eaeeaf8a0ebb2d0bdaa">TEMPSENS_TemperatureGet()</a>.</p>
 
 </div>
 </div>
@@ -314,6 +317,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Write to sensor register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">i2c</td><td>Pointer to I2C peripheral register block.</td></tr>
@@ -327,7 +332,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="tempsens_8c_source.html#l00136">136</a> of file <a class="el" href="tempsens_8c_source.html">tempsens.c</a>.</p>
 
-<p>References <a class="el" href="em__i2c_8h_source.html#l00257">I2C_TransferSeq_TypeDef::addr</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">I2C_TransferSeq_TypeDef::buf</a>, <a class="el" href="em__i2c_8h_source.html#l00269">I2C_TransferSeq_TypeDef::data</a>, <a class="el" href="em__i2c_8h_source.html#l00260">I2C_TransferSeq_TypeDef::flags</a>, <a class="el" href="em__i2c_8h_source.html#l00119">I2C_FLAG_WRITE</a>, <a class="el" href="i2cspm_8c_source.html#l00124">I2CSPM_Transfer()</a>, <a class="el" href="em__i2c_8h_source.html#l00180">i2cTransferDone</a>, <a class="el" href="em__i2c_8h_source.html#l00278">I2C_TransferSeq_TypeDef::len</a>, <a class="el" href="tempsens_8h_source.html#l00053">tempsensRegConfig</a>, and <a class="el" href="tempsens_8h_source.html#l00052">tempsensRegTemp</a>.</p>
+<p>References <a class="el" href="structI2C__TransferSeq__TypeDef.html#a864fcee4abd27c2dab5723c2d2493ed0">I2C_TransferSeq_TypeDef::addr</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a8768a91a4d0d3c66e72e8fdb981b5c63">I2C_TransferSeq_TypeDef::buf</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#ac50f3e038b429e01fd5b2bdfede2f674">I2C_TransferSeq_TypeDef::data</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#aa9eb709e67fbaa4acb9a4964ca5174cb">I2C_TransferSeq_TypeDef::flags</a>, <a class="el" href="group__I2C.html#ga091476f45133e8a6deb9dbd7a3ea6229">I2C_FLAG_WRITE</a>, <a class="el" href="group__I2CSPM.html#ga076766b20012fb6a0cdaaf0f2c760795">I2CSPM_Transfer()</a>, <a class="el" href="group__I2C.html#gga7c781ec28ae11e3e28892de7aa07a00fa01149f9a11ada8a9b05e7104f873de66">i2cTransferDone</a>, <a class="el" href="structI2C__TransferSeq__TypeDef.html#a92b6d16d6d3b3e4d5650740fa306a285">I2C_TransferSeq_TypeDef::len</a>, <a class="el" href="group__TempSensor.html#ggaf7cf71b30a49a97a51a7c60a2b9ff225a1dd52cfe57ef1748c0144691177721be">tempsensRegConfig</a>, and <a class="el" href="group__TempSensor.html#ggaf7cf71b30a49a97a51a7c60a2b9ff225a24f31faa151534dfc82a9d92e4f11129">tempsensRegTemp</a>.</p>
 
 </div>
 </div>
@@ -360,6 +365,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Fetch current temperature from temperature sensor (in Celsius). </p>
 <p>If reading the temperature, when a measurement is completed inside the sensor device, the new measurement may not be stored. For this reason, the temperature should not be polled with a higher frequency than the measurement conversion time for a given resolution configuration. Please refer to sensor device datasheet.</p>
 <dl class="section note"><dt>Note</dt><dd>The sensor on the the DK, STDS75, does not seem to have any check on max temperature limit, ie when exceeding specified max 125 C limit, it will keep increasing 9 bit counter to max representable 9 bit value of 127.5 C and then flip over to negative numbers. There is no limit check in this implementation on such issues.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -374,7 +381,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="tempsens_8c_source.html#l00209">209</a> of file <a class="el" href="tempsens_8c_source.html">tempsens.c</a>.</p>
 
-<p>References <a class="el" href="tempsens_8h_source.html#l00073">TEMPSENS_Temp_TypeDef::f</a>, <a class="el" href="tempsens_8h_source.html#l00067">TEMPSENS_Temp_TypeDef::i</a>, <a class="el" href="tempsens_8c_source.html#l00074">TEMPSENS_RegisterGet()</a>, and <a class="el" href="tempsens_8h_source.html#l00052">tempsensRegTemp</a>.</p>
+<p>References <a class="el" href="structTEMPSENS__Temp__TypeDef.html#a4224dac51426b31c17b7f59a76ee1dac">TEMPSENS_Temp_TypeDef::f</a>, <a class="el" href="structTEMPSENS__Temp__TypeDef.html#aa62d8b12520d6fbf9b467eda98556af9">TEMPSENS_Temp_TypeDef::i</a>, <a class="el" href="group__TempSensor.html#gae77973607cb0dc33faaed18274885717">TEMPSENS_RegisterGet()</a>, and <a class="el" href="group__TempSensor.html#ggaf7cf71b30a49a97a51a7c60a2b9ff225a24f31faa151534dfc82a9d92e4f11129">tempsensRegTemp</a>.</p>
 
 </div>
 </div>
@@ -383,7 +390,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:38:49 for EFM32 Zero Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:34:36 for EFM32 Zero Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

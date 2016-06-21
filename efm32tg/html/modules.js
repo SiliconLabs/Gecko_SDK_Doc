@@ -1,8 +1,8 @@
 var modules =
 [
-    [ "Parts", "group__Parts.html", "group__Parts" ],
-    [ "EM_Library", "group__EM__Library.html", "group__EM__Library" ],
-    [ "EM_Drivers", "group__EM__Drivers.html", "group__EM__Drivers" ],
     [ "BSP", "group__BSP.html", "group__BSP" ],
-    [ "Drivers", "group__Drivers.html", "group__Drivers" ]
+    [ "EMDRV", "group__emdrv.html", "group__emdrv" ],
+    [ "EMLIB", "group__emlib.html", "group__emlib" ],
+    [ "Kit Drivers", "group__kitdrv.html", "group__kitdrv" ],
+    [ "Parts", "group__Parts.html", "group__Parts" ]
 ];

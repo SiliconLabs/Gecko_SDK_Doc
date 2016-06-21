@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32tg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -116,10 +114,23 @@ $(document).ready(function(){initNavTree('em__opamp_8h.html','');});
 <div class="title">em_opamp.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Operational Amplifier (OPAMP) peripheral API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>Operational Amplifier (OPAMP) peripheral API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="em__opamp_8h_source.html">em_opamp.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="em__dac_8h_source.html">em_dac.h</a>&quot;</code><br />
@@ -133,30 +144,18 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga23931b39cc75e704bc079e0dc0478497"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga23931b39cc75e704bc079e0dc0478497">OPA_INIT_UNITY_GAIN</a></td></tr>
-<tr class="separator:ga23931b39cc75e704bc079e0dc0478497"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae5b3f4e4f3fdca9f9c0c166601a732f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#gae5b3f4e4f3fdca9f9c0c166601a732f8">OPA_INIT_UNITY_GAIN_OPA2</a></td></tr>
-<tr class="separator:gae5b3f4e4f3fdca9f9c0c166601a732f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac7dc1995dc74fcc4569afb7e4a93a6c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#gac7dc1995dc74fcc4569afb7e4a93a6c5">OPA_INIT_NON_INVERTING</a></td></tr>
-<tr class="separator:gac7dc1995dc74fcc4569afb7e4a93a6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga52bf2f889356bbd1f8bb634ff461a593"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga52bf2f889356bbd1f8bb634ff461a593">OPA_INIT_NON_INVERTING_OPA2</a></td></tr>
-<tr class="separator:ga52bf2f889356bbd1f8bb634ff461a593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae270957f9325564a7f2e03c41b690ffb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#gae270957f9325564a7f2e03c41b690ffb">OPA_INIT_INVERTING</a></td></tr>
-<tr class="separator:gae270957f9325564a7f2e03c41b690ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga11f347814bf9cfba89c7bd7c519553b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga11f347814bf9cfba89c7bd7c519553b2">OPA_INIT_INVERTING_OPA2</a></td></tr>
-<tr class="separator:ga11f347814bf9cfba89c7bd7c519553b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga96357785937648a5251fdbb59c6a7245"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga96357785937648a5251fdbb59c6a7245">OPA_INIT_CASCADED_NON_INVERTING_OPA0</a></td></tr>
-<tr class="separator:ga96357785937648a5251fdbb59c6a7245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ee39ac052ebd047ca7f88e075a4cb58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga8ee39ac052ebd047ca7f88e075a4cb58">OPA_INIT_CASCADED_NON_INVERTING_OPA1</a></td></tr>
-<tr class="separator:ga8ee39ac052ebd047ca7f88e075a4cb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1da2e9ee9c5e0f55ce83d077cd53e547"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga1da2e9ee9c5e0f55ce83d077cd53e547">OPA_INIT_CASCADED_NON_INVERTING_OPA2</a></td></tr>
-<tr class="separator:ga1da2e9ee9c5e0f55ce83d077cd53e547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9a1dd24490678d5520acdb03af0488a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga9a1dd24490678d5520acdb03af0488a0">OPA_INIT_CASCADED_INVERTING_OPA0</a></td></tr>
 <tr class="separator:ga9a1dd24490678d5520acdb03af0488a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4892ebf4e9f8f89c63ed5af7c41cb738"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga4892ebf4e9f8f89c63ed5af7c41cb738">OPA_INIT_CASCADED_INVERTING_OPA1</a></td></tr>
 <tr class="separator:ga4892ebf4e9f8f89c63ed5af7c41cb738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1df18b290880d83da38190404129e1c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga1df18b290880d83da38190404129e1c7">OPA_INIT_CASCADED_INVERTING_OPA2</a></td></tr>
 <tr class="separator:ga1df18b290880d83da38190404129e1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96357785937648a5251fdbb59c6a7245"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga96357785937648a5251fdbb59c6a7245">OPA_INIT_CASCADED_NON_INVERTING_OPA0</a></td></tr>
+<tr class="separator:ga96357785937648a5251fdbb59c6a7245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ee39ac052ebd047ca7f88e075a4cb58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga8ee39ac052ebd047ca7f88e075a4cb58">OPA_INIT_CASCADED_NON_INVERTING_OPA1</a></td></tr>
+<tr class="separator:ga8ee39ac052ebd047ca7f88e075a4cb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1da2e9ee9c5e0f55ce83d077cd53e547"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga1da2e9ee9c5e0f55ce83d077cd53e547">OPA_INIT_CASCADED_NON_INVERTING_OPA2</a></td></tr>
+<tr class="separator:ga1da2e9ee9c5e0f55ce83d077cd53e547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f489ecb4c8b5a4ce254beb7b800d26b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga6f489ecb4c8b5a4ce254beb7b800d26b">OPA_INIT_DIFF_DRIVER_OPA0</a></td></tr>
 <tr class="separator:ga6f489ecb4c8b5a4ce254beb7b800d26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf262f55cf9a9ac0b1484c6d20d460fa7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#gaf262f55cf9a9ac0b1484c6d20d460fa7">OPA_INIT_DIFF_DRIVER_OPA1</a></td></tr>
@@ -167,18 +166,21 @@ Macros</h2></td></tr>
 <tr class="separator:ga3a450c211b76f44b292c7da2b54648d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2ec29abc3a122acae0b455d8eb2d391e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga2ec29abc3a122acae0b455d8eb2d391e">OPA_INIT_DIFF_RECEIVER_OPA2</a></td></tr>
 <tr class="separator:ga2ec29abc3a122acae0b455d8eb2d391e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae270957f9325564a7f2e03c41b690ffb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#gae270957f9325564a7f2e03c41b690ffb">OPA_INIT_INVERTING</a></td></tr>
+<tr class="separator:gae270957f9325564a7f2e03c41b690ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11f347814bf9cfba89c7bd7c519553b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga11f347814bf9cfba89c7bd7c519553b2">OPA_INIT_INVERTING_OPA2</a></td></tr>
+<tr class="separator:ga11f347814bf9cfba89c7bd7c519553b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac7dc1995dc74fcc4569afb7e4a93a6c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#gac7dc1995dc74fcc4569afb7e4a93a6c5">OPA_INIT_NON_INVERTING</a></td></tr>
+<tr class="separator:gac7dc1995dc74fcc4569afb7e4a93a6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52bf2f889356bbd1f8bb634ff461a593"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga52bf2f889356bbd1f8bb634ff461a593">OPA_INIT_NON_INVERTING_OPA2</a></td></tr>
+<tr class="separator:ga52bf2f889356bbd1f8bb634ff461a593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga23931b39cc75e704bc079e0dc0478497"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga23931b39cc75e704bc079e0dc0478497">OPA_INIT_UNITY_GAIN</a></td></tr>
+<tr class="separator:ga23931b39cc75e704bc079e0dc0478497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5b3f4e4f3fdca9f9c0c166601a732f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#gae5b3f4e4f3fdca9f9c0c166601a732f8">OPA_INIT_UNITY_GAIN_OPA2</a></td></tr>
+<tr class="separator:gae5b3f4e4f3fdca9f9c0c166601a732f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga8ab8b812547585753acc6893f340e32c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga8ab8b812547585753acc6893f340e32c">OPAMP_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__OPAMP.html#gga8ab8b812547585753acc6893f340e32ca61aeb788d20781fee0b8bdcfe6b80d45">OPA0</a> = 0, 
-<br />
-&#160;&#160;<a class="el" href="group__OPAMP.html#gga8ab8b812547585753acc6893f340e32cac3a183a98505fc44f7f6b3ca61878d62">OPA1</a> = 1, 
-<br />
-&#160;&#160;<a class="el" href="group__OPAMP.html#gga8ab8b812547585753acc6893f340e32cac78d738ff7992c7422757e2ab80ceea0">OPA2</a> = 2
-<br />
- }<tr class="separator:ga8ab8b812547585753acc6893f340e32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
 <tr class="memitem:gaa158f1109c96c14b9531b47a76df24bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#gaa158f1109c96c14b9531b47a76df24bd">OPAMP_NegSel_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__OPAMP.html#ggaa158f1109c96c14b9531b47a76df24bda699d7ebb9da2765555e363ee806da948">opaNegSelDisable</a> = DAC_OPA0MUX_NEGSEL_DISABLE, 
 <br />
@@ -189,6 +191,17 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__OPAMP.html#ggaa158f1109c96c14b9531b47a76df24bda709a2599da8ed3b1a29dd9f485411baf">opaNegSelNegPad</a> = DAC_OPA0MUX_NEGSEL_NEGPAD
 <br />
  }<tr class="separator:gaa158f1109c96c14b9531b47a76df24bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:gab82f68a27f2f50473502101e9b1f42ab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#gab82f68a27f2f50473502101e9b1f42ab">OPAMP_OutMode_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__OPAMP.html#ggab82f68a27f2f50473502101e9b1f42abacca2eb9a7048eed506b673dd1fdc53d1">opaOutModeDisable</a> = DAC_OPA0MUX_OUTMODE_DISABLE, 
+<br />
+&#160;&#160;<a class="el" href="group__OPAMP.html#ggab82f68a27f2f50473502101e9b1f42abaf3373e525da39a2c6910bae733124c89">opaOutModeMain</a> = DAC_OPA0MUX_OUTMODE_MAIN, 
+<br />
+&#160;&#160;<a class="el" href="group__OPAMP.html#ggab82f68a27f2f50473502101e9b1f42aba41661676b18c283053dddb133a75c451">opaOutModeAlt</a> = DAC_OPA0MUX_OUTMODE_ALT, 
+<br />
+&#160;&#160;<a class="el" href="group__OPAMP.html#ggab82f68a27f2f50473502101e9b1f42aba084e47f8efd55f716d0a212544111eb7">opaOutModeAll</a> = DAC_OPA0MUX_OUTMODE_ALL
+<br />
+ }<tr class="separator:gab82f68a27f2f50473502101e9b1f42ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ga2c5ecf4f85f9031861b4e81643cb4ff8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga2c5ecf4f85f9031861b4e81643cb4ff8">OPAMP_PosSel_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__OPAMP.html#gga2c5ecf4f85f9031861b4e81643cb4ff8ae21977e809bba2de7b6fb094bc6af119">opaPosSelDisable</a> = DAC_OPA0MUX_POSSEL_DISABLE, 
@@ -203,16 +216,18 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga2c5ecf4f85f9031861b4e81643cb4ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:gab82f68a27f2f50473502101e9b1f42ab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#gab82f68a27f2f50473502101e9b1f42ab">OPAMP_OutMode_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__OPAMP.html#ggab82f68a27f2f50473502101e9b1f42abacca2eb9a7048eed506b673dd1fdc53d1">opaOutModeDisable</a> = DAC_OPA0MUX_OUTMODE_DISABLE, 
+<tr class="memitem:ga847c3ca2ddb170b44bc27816123b0ff6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga847c3ca2ddb170b44bc27816123b0ff6">OPAMP_ResInMux_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__OPAMP.html#gga847c3ca2ddb170b44bc27816123b0ff6a7d3c9577de59fd2cabfd32523a745703">opaResInMuxDisable</a> = DAC_OPA0MUX_RESINMUX_DISABLE, 
 <br />
-&#160;&#160;<a class="el" href="group__OPAMP.html#ggab82f68a27f2f50473502101e9b1f42abaf3373e525da39a2c6910bae733124c89">opaOutModeMain</a> = DAC_OPA0MUX_OUTMODE_MAIN, 
+&#160;&#160;<a class="el" href="group__OPAMP.html#gga847c3ca2ddb170b44bc27816123b0ff6a12123837cbdf5d312e52a2b601f608cd">opaResInMuxOpaIn</a> = DAC_OPA0MUX_RESINMUX_OPA0INP, 
 <br />
-&#160;&#160;<a class="el" href="group__OPAMP.html#ggab82f68a27f2f50473502101e9b1f42aba41661676b18c283053dddb133a75c451">opaOutModeAlt</a> = DAC_OPA0MUX_OUTMODE_ALT, 
+&#160;&#160;<a class="el" href="group__OPAMP.html#gga847c3ca2ddb170b44bc27816123b0ff6a494ac54f539e7f1ecaec7aae14d1c36c">opaResInMuxNegPad</a> = DAC_OPA0MUX_RESINMUX_NEGPAD, 
 <br />
-&#160;&#160;<a class="el" href="group__OPAMP.html#ggab82f68a27f2f50473502101e9b1f42aba084e47f8efd55f716d0a212544111eb7">opaOutModeAll</a> = DAC_OPA0MUX_OUTMODE_ALL
+&#160;&#160;<a class="el" href="group__OPAMP.html#gga847c3ca2ddb170b44bc27816123b0ff6a91b21d07f1fbb0aa15cb881c4b02fa13">opaResInMuxPosPad</a> = DAC_OPA0MUX_RESINMUX_POSPAD, 
 <br />
- }<tr class="separator:gab82f68a27f2f50473502101e9b1f42ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&#160;&#160;<a class="el" href="group__OPAMP.html#gga847c3ca2ddb170b44bc27816123b0ff6a56ddcc191baa1fb9a060e0f6a8690b67">opaResInMuxVss</a> = DAC_OPA0MUX_RESINMUX_VSS
+<br />
+ }<tr class="separator:ga847c3ca2ddb170b44bc27816123b0ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:gaa3e5ca28a695563596b9554fec10f810"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#gaa3e5ca28a695563596b9554fec10f810">OPAMP_ResSel_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__OPAMP.html#ggaa3e5ca28a695563596b9554fec10f810abb15976ca3f888ba03c5cc2c18ea0052">opaResSelDefault</a> = DAC_OPA0MUX_RESSEL_DEFAULT, 
@@ -235,18 +250,14 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:gaa3e5ca28a695563596b9554fec10f810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:ga847c3ca2ddb170b44bc27816123b0ff6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga847c3ca2ddb170b44bc27816123b0ff6">OPAMP_ResInMux_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__OPAMP.html#gga847c3ca2ddb170b44bc27816123b0ff6a7d3c9577de59fd2cabfd32523a745703">opaResInMuxDisable</a> = DAC_OPA0MUX_RESINMUX_DISABLE, 
+<tr class="memitem:ga8ab8b812547585753acc6893f340e32c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__OPAMP.html#ga8ab8b812547585753acc6893f340e32c">OPAMP_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__OPAMP.html#gga8ab8b812547585753acc6893f340e32ca61aeb788d20781fee0b8bdcfe6b80d45">OPA0</a> = 0, 
 <br />
-&#160;&#160;<a class="el" href="group__OPAMP.html#gga847c3ca2ddb170b44bc27816123b0ff6a12123837cbdf5d312e52a2b601f608cd">opaResInMuxOpaIn</a> = DAC_OPA0MUX_RESINMUX_OPA0INP, 
+&#160;&#160;<a class="el" href="group__OPAMP.html#gga8ab8b812547585753acc6893f340e32cac3a183a98505fc44f7f6b3ca61878d62">OPA1</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="group__OPAMP.html#gga847c3ca2ddb170b44bc27816123b0ff6a494ac54f539e7f1ecaec7aae14d1c36c">opaResInMuxNegPad</a> = DAC_OPA0MUX_RESINMUX_NEGPAD, 
+&#160;&#160;<a class="el" href="group__OPAMP.html#gga8ab8b812547585753acc6893f340e32cac78d738ff7992c7422757e2ab80ceea0">OPA2</a> = 2
 <br />
-&#160;&#160;<a class="el" href="group__OPAMP.html#gga847c3ca2ddb170b44bc27816123b0ff6a91b21d07f1fbb0aa15cb881c4b02fa13">opaResInMuxPosPad</a> = DAC_OPA0MUX_RESINMUX_POSPAD, 
-<br />
-&#160;&#160;<a class="el" href="group__OPAMP.html#gga847c3ca2ddb170b44bc27816123b0ff6a56ddcc191baa1fb9a060e0f6a8690b67">opaResInMuxVss</a> = DAC_OPA0MUX_RESINMUX_VSS
-<br />
- }<tr class="separator:ga847c3ca2ddb170b44bc27816123b0ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ }<tr class="separator:ga8ab8b812547585753acc6893f340e32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -258,28 +269,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:gae4961677bcc2a81a88093ab23195e2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and enable an Operational Amplifier.  <a href="group__OPAMP.html#gae4961677bcc2a81a88093ab23195e2c0">More...</a><br /></td></tr>
 <tr class="separator:gae4961677bcc2a81a88093ab23195e2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="em__opamp_8h_source.html">em_opamp.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__opamp_8h.html">em_opamp.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:05 for EFM32 Tiny Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:24:16 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Zero Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32zg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32zg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -243,35 +241,36 @@ $(document).ready(function(){initNavTree('em__timer_8c_source.html','');});
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  timer-&gt;<a class="code" href="structTIMER__TypeDef.html#a1ee7138514fea0e8a4d5f5eac3eb7c37">CTRL</a> = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#ga7c8c1e9b8ad9820374756b6d46a7fb11">_TIMER_CTRL_RESETVALUE</a>;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  timer-&gt;<a class="code" href="structTIMER__TypeDef.html#ad7daaf3fab328bd825165ce12164d432">IEN</a>  = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#ga64d4a3b81de3faf51cd3e98b3dbb2631">_TIMER_IEN_RESETVALUE</a>;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  timer-&gt;<a class="code" href="structTIMER__TypeDef.html#af581b129901f8afffa4ff593716701c7">IFC</a>  = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#ga93308aa297a3c4f6a2148875c58f57ae">_TIMER_IFC_MASK</a>;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  timer-&gt;<a class="code" href="structTIMER__TypeDef.html#af2c184d9656ccbb92e1d041e80af1348">TOP</a>  = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#ga145358cc7a5fb4d46bc5c773ae8f7d1f">_TIMER_TOP_RESETVALUE</a>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  timer-&gt;<a class="code" href="structTIMER__TypeDef.html#a677903a1fa3428a36651262713ecc6e1">TOPB</a> = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#ga4406563c2997a52919558951dfd4dc21">_TIMER_TOPB_RESETVALUE</a>;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  timer-&gt;<a class="code" href="structTIMER__TypeDef.html#ab548464dae995a406062c7d8cd2b87ed">CNT</a>  = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#gaf1bfec7db817b4f73eaf334cfdb2a6df">_TIMER_CNT_RESETVALUE</a>;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="comment">/* Do not reset route register, setting should be done independently */</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="comment">/* (Note: ROUTE register may be locked by DTLOCK register.) */</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordflow">for</span> (i = 0; TIMER_CH_VALID(i); i++)</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  {</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    timer-&gt;<a class="code" href="structTIMER__TypeDef.html#aa68f87ea634a5a4dbfb132a96400c77e">CC</a>[i].<a class="code" href="structTIMER__CC__TypeDef.html#af3a7a604528309ce227e5a048f61e770">CTRL</a> = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#ga271948afe9f2dd4cc49dbf72710335e4">_TIMER_CC_CTRL_RESETVALUE</a>;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    timer-&gt;<a class="code" href="structTIMER__TypeDef.html#aa68f87ea634a5a4dbfb132a96400c77e">CC</a>[i].<a class="code" href="structTIMER__CC__TypeDef.html#acc9438c0f8107f2ad9e358c8afb73bf2">CCV</a>  = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#gadba6740b481b36908cae480e145601cc">_TIMER_CC_CCV_RESETVALUE</a>;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    timer-&gt;<a class="code" href="structTIMER__TypeDef.html#aa68f87ea634a5a4dbfb132a96400c77e">CC</a>[i].<a class="code" href="structTIMER__CC__TypeDef.html#aa3eff4dcde68225978411d7419aa81a9">CCVB</a> = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#ga8e45a9cb36ee4e967f4a522238976957">_TIMER_CC_CCVB_RESETVALUE</a>;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  }</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="comment">/* Reset dead time insertion module, no effect on timers without DTI */</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">#if defined(TIMER_DTLOCK_LOCKKEY_UNLOCK)</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="comment">/* Unlock DTI registers first in case locked */</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  timer-&gt;DTLOCK = TIMER_DTLOCK_LOCKKEY_UNLOCK;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  timer-&gt;DTCTRL   = _TIMER_DTCTRL_RESETVALUE;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  timer-&gt;DTTIME   = _TIMER_DTTIME_RESETVALUE;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  timer-&gt;DTFC     = _TIMER_DTFC_RESETVALUE;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  timer-&gt;DTOGEN   = _TIMER_DTOGEN_RESETVALUE;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  timer-&gt;DTFAULTC = _TIMER_DTFAULTC_MASK;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;}</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  timer-&gt;<a class="code" href="structTIMER__TypeDef.html#a677903a1fa3428a36651262713ecc6e1">TOPB</a> = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#ga4406563c2997a52919558951dfd4dc21">_TIMER_TOPB_RESETVALUE</a>;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="comment">/* Write TOP after TOPB to invalidate TOPB (clear TIMER_STATUS_TOPBV) */</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  timer-&gt;<a class="code" href="structTIMER__TypeDef.html#af2c184d9656ccbb92e1d041e80af1348">TOP</a>  = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#ga145358cc7a5fb4d46bc5c773ae8f7d1f">_TIMER_TOP_RESETVALUE</a>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  timer-&gt;<a class="code" href="structTIMER__TypeDef.html#ab548464dae995a406062c7d8cd2b87ed">CNT</a>  = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#gaf1bfec7db817b4f73eaf334cfdb2a6df">_TIMER_CNT_RESETVALUE</a>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="comment">/* Do not reset route register, setting should be done independently */</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="comment">/* (Note: ROUTE register may be locked by DTLOCK register.) */</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordflow">for</span> (i = 0; TIMER_CH_VALID(i); i++)</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    timer-&gt;<a class="code" href="structTIMER__TypeDef.html#aa68f87ea634a5a4dbfb132a96400c77e">CC</a>[i].<a class="code" href="structTIMER__CC__TypeDef.html#af3a7a604528309ce227e5a048f61e770">CTRL</a> = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#ga271948afe9f2dd4cc49dbf72710335e4">_TIMER_CC_CTRL_RESETVALUE</a>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    timer-&gt;<a class="code" href="structTIMER__TypeDef.html#aa68f87ea634a5a4dbfb132a96400c77e">CC</a>[i].<a class="code" href="structTIMER__CC__TypeDef.html#acc9438c0f8107f2ad9e358c8afb73bf2">CCV</a>  = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#gadba6740b481b36908cae480e145601cc">_TIMER_CC_CCV_RESETVALUE</a>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    timer-&gt;<a class="code" href="structTIMER__TypeDef.html#aa68f87ea634a5a4dbfb132a96400c77e">CC</a>[i].<a class="code" href="structTIMER__CC__TypeDef.html#aa3eff4dcde68225978411d7419aa81a9">CCVB</a> = <a class="code" href="group__EFM32ZG__TIMER__BitFields.html#ga8e45a9cb36ee4e967f4a522238976957">_TIMER_CC_CCVB_RESETVALUE</a>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="comment">/* Reset dead time insertion module, no effect on timers without DTI */</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#if defined(TIMER_DTLOCK_LOCKKEY_UNLOCK)</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="comment">/* Unlock DTI registers first in case locked */</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  timer-&gt;DTLOCK = TIMER_DTLOCK_LOCKKEY_UNLOCK;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  timer-&gt;DTCTRL   = _TIMER_DTCTRL_RESETVALUE;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  timer-&gt;DTTIME   = _TIMER_DTTIME_RESETVALUE;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  timer-&gt;DTFC     = _TIMER_DTFC_RESETVALUE;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  timer-&gt;DTOGEN   = _TIMER_DTOGEN_RESETVALUE;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  timer-&gt;DTFAULTC = _TIMER_DTFAULTC_MASK;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(TIMER_COUNT) &amp;&amp; (TIMER_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(TIMER_COUNT) &amp;&amp; (TIMER_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="group__EFM32ZG__TIMER__BitFields_html_ga271948afe9f2dd4cc49dbf72710335e4"><div class="ttname"><a href="group__EFM32ZG__TIMER__BitFields.html#ga271948afe9f2dd4cc49dbf72710335e4">_TIMER_CC_CTRL_RESETVALUE</a></div><div class="ttdeci">#define _TIMER_CC_CTRL_RESETVALUE</div><div class="ttdef"><b>Definition:</b> <a href="efm32zg__timer_8h_source.html#l00514">efm32zg_timer.h:514</a></div></div>
 <div class="ttc" id="group__EFM32ZG222F32__Peripheral__Declaration_html_gaf1b746ba5ab7d0ab657156ebda0f290c"><div class="ttname"><a href="group__EFM32ZG222F32__Peripheral__Declaration.html#gaf1b746ba5ab7d0ab657156ebda0f290c">TIMER0</a></div><div class="ttdeci">#define TIMER0</div><div class="ttdef"><b>Definition:</b> <a href="efm32zg222f32_8h_source.html#l00290">efm32zg222f32.h:290</a></div></div>
 <div class="ttc" id="group__EFM32ZG__TIMER__BitFields_html_gada70ba8cdf0825fa05c6535b8ffec3f6"><div class="ttname"><a href="group__EFM32ZG__TIMER__BitFields.html#gada70ba8cdf0825fa05c6535b8ffec3f6">_TIMER_CTRL_CLKSEL_SHIFT</a></div><div class="ttdeci">#define _TIMER_CTRL_CLKSEL_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="efm32zg__timer_8h_source.html#l00137">efm32zg_timer.h:137</a></div></div>
@@ -356,7 +355,7 @@ $(document).ready(function(){initNavTree('em__timer_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_b024e35bd40549d46920f272346444ee.html">src</a></li><li class="navelem"><a class="el" href="em__timer_8c.html">em_timer.c</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:38:42 for EFM32 Zero Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:33:54 for EFM32 Zero Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

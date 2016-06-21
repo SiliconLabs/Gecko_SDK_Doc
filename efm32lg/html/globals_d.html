@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li class="current"><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
   <div id="navrow3" class="tabs2">
@@ -1113,6 +1111,9 @@ $(document).ready(function(){initNavTree('globals_d.html','');});
 <li>DEFAULT_IDLE_RATE
 : <a class="el" href="hidkbd_8c.html#a1b3ed427680b005e36dc08bac5e32e04">hidkbd.c</a>
 </li>
+<li>DEFAULT_WDOG
+: <a class="el" href="group__WDOG.html#gaa8a21262e0b67fbe432eed3edfc246fd">em_wdog.h</a>
+</li>
 <li>DEFINE_BUF_QUEUE
 : <a class="el" href="group__UARTDRV.html#ga24318918f06c584749d8a2f8a96be2fc">uartdrv.h</a>
 </li>
@@ -1135,6 +1136,9 @@ $(document).ready(function(){initNavTree('globals_d.html','');});
 </li>
 <li>DIGITAL_LOOPBACK
 : <a class="el" href="ksz8851snl_8c.html#afd5294adf51575bf765d1dc7d126fa91">ksz8851snl.c</a>
+</li>
+<li>disableInterrupts()
+: <a class="el" href="tempdrv_8c.html#adaca966bacd9542b4bfd1a4ecada4606">tempdrv.c</a>
 </li>
 <li>DISPLAY_ADDRESSING_BY_ROWS_AND_COLUMNS
 : <a class="el" href="group__Display.html#gga9bd101ffd5a8bdde4095b5b6e0f44cfca23fa7f2d52cb134a99bd309415e57339">display.h</a>
@@ -1199,6 +1203,9 @@ $(document).ready(function(){initNavTree('globals_d.html','');});
 </li>
 <li>DISPLAY_PixelMatrix_t
 : <a class="el" href="group__Display.html#ga8a775bf2210d707628d704572d9e1c98">display.h</a>
+</li>
+<li>displayBlock()
+: <a class="el" href="segmentlcd_8c.html#af22fd992a5292a586a0647d278aa039e">segmentlcd.c</a>
 </li>
 <li>DMA
 : <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#ga137c9e7c0bc9e12f455df0a6e41c0287">efm32lg995f256.h</a>
@@ -1628,6 +1635,9 @@ $(document).ready(function(){initNavTree('globals_d.html','');});
 </li>
 <li>DMA_ChannelEnabled()
 : <a class="el" href="group__DMA.html#gad699a3954c696e5523826c04befb6db5">em_dma.h</a>
+</li>
+<li>DMA_ChannelRequestEnable()
+: <a class="el" href="group__DMA.html#ga906324e92ed0f9b14f755ec2b2047590">em_dma.h</a>
 </li>
 <li>DMA_CHENC_CH0ENC
 : <a class="el" href="group__EFM32LG__DMA__BitFields.html#ga35d5d3d575383435cd1d1b6e2d9dee92">efm32lg_dma.h</a>
@@ -2995,8 +3005,8 @@ $(document).ready(function(){initNavTree('globals_d.html','');});
 : <a class="el" href="group__DMA.html#gaed62cc3df555ca00b05adbbbe87fade1">em_dma.h</a>
 </li>
 <li>DMA_IRQHandler()
-: <a class="el" href="group__DMA.html#gac1fca8b8a3ce0431d9aebbf432eda751">system_efm32lg.h</a>
-, <a class="el" href="group__DMA.html#gac1fca8b8a3ce0431d9aebbf432eda751">em_dma.h</a>
+: <a class="el" href="group__DMA.html#gac1fca8b8a3ce0431d9aebbf432eda751">em_dma.h</a>
+, <a class="el" href="group__DMA.html#gac1fca8b8a3ce0431d9aebbf432eda751">system_efm32lg.h</a>
 </li>
 <li>DMA_IRQn
 : <a class="el" href="group__EFM32LG995F256.html#gga666eb0caeb12ec0e281415592ae89083a4968eb85558b7cd25e0f0fa1b839f881">efm32lg995f256.h</a>
@@ -3190,10 +3200,6 @@ $(document).ready(function(){initNavTree('globals_d.html','');});
 <li>dmaArbitrate8
 : <a class="el" href="group__DMA.html#gga0b815384b08ec6721a23eb8a29db0c59adafa5e7e79ee8b96bf904a5fe2029e50">em_dma.h</a>
 </li>
-<li>dmaControlBlock
-: <a class="el" href="group__DmaCtrl.html#ga0fc5cf50e34b24c0883a6ef6dce0681c">dmactrl.c</a>
-, <a class="el" href="group__DmaCtrl.html#ga0fc5cf50e34b24c0883a6ef6dce0681c">dmactrl.h</a>
-</li>
 <li>dmaCycleCtrlAuto
 : <a class="el" href="group__DMA.html#ggaf7c5bc2b557c15cabf48a19746df01b7ac7297053ebff4cac9f14432d7f3ab066">em_dma.h</a>
 </li>
@@ -3245,12 +3251,12 @@ $(document).ready(function(){initNavTree('globals_d.html','');});
 , <a class="el" href="group__DMADRV.html#ga73633db63cfd99ba01a68b05c24094ec">dmadrv.c</a>
 </li>
 <li>DMADRV_FreeChannel()
-: <a class="el" href="group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3">dmadrv.c</a>
-, <a class="el" href="group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3">dmadrv.h</a>
+: <a class="el" href="group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3">dmadrv.h</a>
+, <a class="el" href="group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3">dmadrv.c</a>
 </li>
 <li>DMADRV_Init()
-: <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">dmadrv.c</a>
-, <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">dmadrv.h</a>
+: <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">dmadrv.h</a>
+, <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">dmadrv.c</a>
 </li>
 <li>DMADRV_MAX_XFER_COUNT
 : <a class="el" href="group__DMADRV.html#gaf9bcfe1e5a7ead155ba92b8132c5f17f">dmadrv.h</a>
@@ -3260,12 +3266,16 @@ $(document).ready(function(){initNavTree('globals_d.html','');});
 , <a class="el" href="group__DMADRV.html#gab1506de1a628ac908b2f8fe93e370578">dmadrv.h</a>
 </li>
 <li>DMADRV_MemoryPeripheralPingPong()
-: <a class="el" href="group__DMADRV.html#ga887d429df9893aef3b421e2fdd8f8641">dmadrv.h</a>
-, <a class="el" href="group__DMADRV.html#ga887d429df9893aef3b421e2fdd8f8641">dmadrv.c</a>
+: <a class="el" href="group__DMADRV.html#ga887d429df9893aef3b421e2fdd8f8641">dmadrv.c</a>
+, <a class="el" href="group__DMADRV.html#ga887d429df9893aef3b421e2fdd8f8641">dmadrv.h</a>
+</li>
+<li>DMADRV_PauseTransfer()
+: <a class="el" href="group__DMADRV.html#ga3f27a6cff5b646b0faf3eb070ea1393f">dmadrv.c</a>
+, <a class="el" href="group__DMADRV.html#ga3f27a6cff5b646b0faf3eb070ea1393f">dmadrv.h</a>
 </li>
 <li>DMADRV_PeripheralMemory()
-: <a class="el" href="group__DMADRV.html#gaef226beb40700660728baf2cb509a2c4">dmadrv.c</a>
-, <a class="el" href="group__DMADRV.html#gaef226beb40700660728baf2cb509a2c4">dmadrv.h</a>
+: <a class="el" href="group__DMADRV.html#gaef226beb40700660728baf2cb509a2c4">dmadrv.h</a>
+, <a class="el" href="group__DMADRV.html#gaef226beb40700660728baf2cb509a2c4">dmadrv.c</a>
 </li>
 <li>DMADRV_PeripheralMemoryPingPong()
 : <a class="el" href="group__DMADRV.html#gafcabf314184e7d8f82d2164365f36bef">dmadrv.h</a>
@@ -3274,9 +3284,13 @@ $(document).ready(function(){initNavTree('globals_d.html','');});
 <li>DMADRV_Peripheralsignal_t
 : <a class="el" href="group__DMADRV.html#ga9d887cd6a26d26ed74cb19d77b501a94">dmadrv.h</a>
 </li>
+<li>DMADRV_ResumeTransfer()
+: <a class="el" href="group__DMADRV.html#ga4ad4c5b5eff525183a726002afbce071">dmadrv.h</a>
+, <a class="el" href="group__DMADRV.html#ga4ad4c5b5eff525183a726002afbce071">dmadrv.c</a>
+</li>
 <li>DMADRV_StopTransfer()
-: <a class="el" href="group__DMADRV.html#ga3a04cb3aa30ec2fd955281f55538028d">dmadrv.h</a>
-, <a class="el" href="group__DMADRV.html#ga3a04cb3aa30ec2fd955281f55538028d">dmadrv.c</a>
+: <a class="el" href="group__DMADRV.html#ga3a04cb3aa30ec2fd955281f55538028d">dmadrv.c</a>
+, <a class="el" href="group__DMADRV.html#ga3a04cb3aa30ec2fd955281f55538028d">dmadrv.h</a>
 </li>
 <li>DMADRV_TransferActive()
 : <a class="el" href="group__DMADRV.html#ga1a42965073322a9c2b1f8ebb8a67e846">dmadrv.h</a>
@@ -3287,8 +3301,8 @@ $(document).ready(function(){initNavTree('globals_d.html','');});
 , <a class="el" href="group__DMADRV.html#gae6b5ec49230e4f15b78c31c57bfa3967">dmadrv.h</a>
 </li>
 <li>DMADRV_TransferDone()
-: <a class="el" href="group__DMADRV.html#gaa46714c6a19608cff3058c386f1e4c03">dmadrv.c</a>
-, <a class="el" href="group__DMADRV.html#gaa46714c6a19608cff3058c386f1e4c03">dmadrv.h</a>
+: <a class="el" href="group__DMADRV.html#gaa46714c6a19608cff3058c386f1e4c03">dmadrv.h</a>
+, <a class="el" href="group__DMADRV.html#gaa46714c6a19608cff3058c386f1e4c03">dmadrv.c</a>
 </li>
 <li>DMADRV_TransferRemainingCount()
 : <a class="el" href="group__DMADRV.html#ga9a253b47872d205a76b6f1b7b486194d">dmadrv.c</a>
@@ -3666,7 +3680,7 @@ $(document).ready(function(){initNavTree('globals_d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:37:40 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:30:25 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

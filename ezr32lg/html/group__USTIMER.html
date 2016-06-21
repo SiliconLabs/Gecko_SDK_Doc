@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -105,46 +104,23 @@ $(document).ready(function(){initNavTree('group__USTIMER.html','');});
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">USTIMER<div class="ingroups"><a class="el" href="group__EM__Drivers.html">EM_Drivers</a></div></div>  </div>
+<div class="title">USTIMER<div class="ingroups"><a class="el" href="group__emdrv.html">EMDRV</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>USTIMER Microsecond delay timer module, see <a class="el" href="group__USTIMER.html">USTIMER Microsecond delay timer module</a> page for detailed documentation. </p><pre class="fragment"></pre><p>.  
-<a href="#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gafa7a3cfd6fa84e52ff30b19963c550bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafa7a3cfd6fa84e52ff30b19963c550bc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>&#160;&#160;&#160;( <a class="el" href="group__EM__Drivers.html#gad59417e7951d81dfc15ec2757f08148e">ECODE_OK</a> )</td></tr>
-<tr class="memdesc:gafa7a3cfd6fa84e52ff30b19963c550bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Success return value. <br /></td></tr>
-<tr class="separator:gafa7a3cfd6fa84e52ff30b19963c550bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga5c7fa9c799b61638907d4f832a45e58b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init</a> (void)</td></tr>
-<tr class="memdesc:ga5c7fa9c799b61638907d4f832a45e58b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate and initialize the hardware timer used to pace the 1 microsecond delay functions.  <a href="#ga5c7fa9c799b61638907d4f832a45e58b">More...</a><br /></td></tr>
-<tr class="separator:ga5c7fa9c799b61638907d4f832a45e58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae0ab9e930ee6cbd71061142c4ad4e298"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">USTIMER_DeInit</a> (void)</td></tr>
-<tr class="memdesc:gae0ab9e930ee6cbd71061142c4ad4e298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize USTIMER driver.  <a href="#gae0ab9e930ee6cbd71061142c4ad4e298">More...</a><br /></td></tr>
-<tr class="separator:gae0ab9e930ee6cbd71061142c4ad4e298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3a844fc16a527d15450ba4692f6ce047"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">USTIMER_Delay</a> (uint32_t usec)</td></tr>
-<tr class="memdesc:ga3a844fc16a527d15450ba4692f6ce047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay a given number of microseconds.  <a href="#ga3a844fc16a527d15450ba4692f6ce047">More...</a><br /></td></tr>
-<tr class="separator:ga3a844fc16a527d15450ba4692f6ce047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga22982b2c10f35aa2f9dacb7252dfa0af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">USTIMER_DelayIntSafe</a> (uint32_t usec)</td></tr>
-<tr class="memdesc:ga22982b2c10f35aa2f9dacb7252dfa0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay a given number of microseconds.  <a href="#ga22982b2c10f35aa2f9dacb7252dfa0af">More...</a><br /></td></tr>
-<tr class="separator:ga22982b2c10f35aa2f9dacb7252dfa0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-
-
-<h3><a class="anchor" id="ustimer_doc"></a>USTIMER Microsecond delay timer module</h3><div class="textblock">Implements microsecond delays.The delay is implemented using a hardware timer. <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a> must be called prior to using the delay functions. <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a> must also be called if HFCORECLK and/or HFPERCLK is changed.The source files for the USTIMER driver library resides in the emdrv/ustimer folder, and are named <a class="el" href="ustimer_8c.html" title="Microsecond delay functions. ">ustimer.c</a> and <a class="el" href="ustimer_8h.html" title="Microsecond delay function API definition. ">ustimer.h</a>.<ul>
+<p>USTIMER Microsecond delay timer module </p><pre class="fragment"></pre><p>. </p>
+<p>Implements microsecond delays.</p>
+<p>The delay is implemented using a hardware timer. <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a> must be called prior to using the delay functions. <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a> must also be called if HFCORECLK and/or HFPERCLK is changed.</p>
+<p>The source files for the USTIMER driver library resides in the emdrv/ustimer folder, and are named <a class="el" href="ustimer_8c.html" title="Microsecond delay functions. ">ustimer.c</a> and <a class="el" href="ustimer_8h.html" title="Microsecond delay function API definition. ">ustimer.h</a>.</p>
+<ul>
 <li><a class="el" href="group__USTIMER.html#ustimer_intro">Introduction</a> </li>
 <li><a class="el" href="group__USTIMER.html#ustimer_conf">Configuration Options</a> </li>
 <li><a class="el" href="group__USTIMER.html#ustimer_api">The API</a> </li>
 <li><a class="el" href="group__USTIMER.html#ustimer_example">Example</a></li>
 </ul>
 <p><br />
- <h1><a class="anchor" id="ustimer_intro"></a>
+ </p>
+<h1><a class="anchor" id="ustimer_intro"></a>
 Introduction</h1>
 <p>The USTIMER driver implements microsecond delay functions. The delay is timed using a hardware TIMER resource. Two delay functions are available, one which use energy mode EM1 to preserve energy while waiting, and one which performs busy wait.</p>
 <p><br />
@@ -181,37 +157,36 @@ int main( void )
 
   // Wait for 250 microseconds
   USTIMER_Delay( 250 );
-}</pre> </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga5c7fa9c799b61638907d4f832a45e58b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> USTIMER_Init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section note"><dt>Note</dt><dd>Call this function whenever the HFPERCLK and/or HFCORECLK frequency is changed.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>. </dd></dl>
-
-<p>Definition at line <a class="el" href="ustimer_8c_source.html#l00086">86</a> of file <a class="el" href="ustimer_8c_source.html">ustimer.c</a>.</p>
-
-<p>References <a class="el" href="ezr32lg__timer_8h_source.html#l00159">_TIMER_CTRL_PRESC_DIV1</a>, <a class="el" href="ezr32lg__timer_8h_source.html#l00169">_TIMER_CTRL_PRESC_DIV1024</a>, <a class="el" href="em__cmu_8c_source.html#l01369">CMU_ClockEnable()</a>, <a class="el" href="em__cmu_8c_source.html#l01482">CMU_ClockFreqGet()</a>, <a class="el" href="em__cmu_8h_source.html#l00629">cmuClock_CORE</a>, <a class="el" href="em__cmu_8h_source.html#l00382">cmuClock_HFPER</a>, <a class="el" href="ustimer_8h_source.html#l00038">ECODE_EMDRV_USTIMER_OK</a>, <a class="el" href="em__timer_8h_source.html#l00375">TIMER_InitCC_TypeDef::mode</a>, <a class="el" href="em__timer_8h_source.html#l00279">TIMER_Init_TypeDef::prescale</a>, <a class="el" href="ezr32lg__timer_8h_source.html#l00300">TIMER_IEN_CC0</a>, <a class="el" href="em__timer_8c_source.html#l00076">TIMER_Init()</a>, <a class="el" href="em__timer_8h_source.html#l00317">TIMER_INIT_DEFAULT</a>, <a class="el" href="em__timer_8c_source.html#l00130">TIMER_InitCC()</a>, <a class="el" href="em__timer_8h_source.html#l00397">TIMER_INITCC_DEFAULT</a>, <a class="el" href="em__timer_8h_source.html#l00730">TIMER_IntDisable()</a>, <a class="el" href="em__timer_8h_source.html#l00900">TIMER_TopSet()</a>, and <a class="el" href="em__timer_8h_source.html#l00101">timerCCModeCompare</a>.</p>
-
-<p>Referenced by <a class="el" href="ezradio__api__lib_8c_source.html#l00054">ezradio_reset()</a>.</p>
-
-</div>
-</div>
+}</pre> <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gafa7a3cfd6fa84e52ff30b19963c550bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafa7a3cfd6fa84e52ff30b19963c550bc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#gad59417e7951d81dfc15ec2757f08148e">ECODE_OK</a> )</td></tr>
+<tr class="memdesc:gafa7a3cfd6fa84e52ff30b19963c550bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Success return value. <br /></td></tr>
+<tr class="separator:gafa7a3cfd6fa84e52ff30b19963c550bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gae0ab9e930ee6cbd71061142c4ad4e298"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">USTIMER_DeInit</a> (void)</td></tr>
+<tr class="memdesc:gae0ab9e930ee6cbd71061142c4ad4e298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize USTIMER driver.  <a href="#gae0ab9e930ee6cbd71061142c4ad4e298">More...</a><br /></td></tr>
+<tr class="separator:gae0ab9e930ee6cbd71061142c4ad4e298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a844fc16a527d15450ba4692f6ce047"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">USTIMER_Delay</a> (uint32_t usec)</td></tr>
+<tr class="memdesc:ga3a844fc16a527d15450ba4692f6ce047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay a given number of microseconds.  <a href="#ga3a844fc16a527d15450ba4692f6ce047">More...</a><br /></td></tr>
+<tr class="separator:ga3a844fc16a527d15450ba4692f6ce047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22982b2c10f35aa2f9dacb7252dfa0af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">USTIMER_DelayIntSafe</a> (uint32_t usec)</td></tr>
+<tr class="memdesc:ga22982b2c10f35aa2f9dacb7252dfa0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay a given number of microseconds.  <a href="#ga22982b2c10f35aa2f9dacb7252dfa0af">More...</a><br /></td></tr>
+<tr class="separator:ga22982b2c10f35aa2f9dacb7252dfa0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c7fa9c799b61638907d4f832a45e58b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init</a> (void)</td></tr>
+<tr class="memdesc:ga5c7fa9c799b61638907d4f832a45e58b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate and initialize the hardware timer used to pace the 1 microsecond delay functions.  <a href="#ga5c7fa9c799b61638907d4f832a45e58b">More...</a><br /></td></tr>
+<tr class="separator:ga5c7fa9c799b61638907d4f832a45e58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="gae0ab9e930ee6cbd71061142c4ad4e298"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> USTIMER_DeInit </td>
+          <td class="memname"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> USTIMER_DeInit </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -219,14 +194,16 @@ int main( void )
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Deinitialize USTIMER driver. </p>
 <p>Will disable interrupts and turn off the clock to the underlying hardware timer.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>. </dd></dl>
 
 <p>Definition at line <a class="el" href="ustimer_8c_source.html#l00137">137</a> of file <a class="el" href="ustimer_8c_source.html">ustimer.c</a>.</p>
 
-<p>References <a class="el" href="em__cmu_8c_source.html#l01369">CMU_ClockEnable()</a>, <a class="el" href="ustimer_8h_source.html#l00038">ECODE_EMDRV_USTIMER_OK</a>, <a class="el" href="em__timer_8h_source.html#l00613">TIMER_Enable()</a>, <a class="el" href="ezr32lg__timer_8h_source.html#l00300">TIMER_IEN_CC0</a>, <a class="el" href="ezr32lg__timer_8h_source.html#l00432">TIMER_IFC_CC0</a>, <a class="el" href="em__timer_8h_source.html#l00713">TIMER_IntClear()</a>, and <a class="el" href="em__timer_8h_source.html#l00730">TIMER_IntDisable()</a>.</p>
+<p>References <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>, <a class="el" href="group__TIMER.html#gae3dd36e419641a24d3f44084c216bf71">TIMER_Enable()</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gae947ebc7f0a0a7555cfebce47959ccfb">TIMER_IEN_CC0</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga533f75de120d61038ba5164d83d471f6">TIMER_IFC_CC0</a>, <a class="el" href="group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57">TIMER_IntClear()</a>, and <a class="el" href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9">TIMER_IntDisable()</a>.</p>
 
-<p>Referenced by <a class="el" href="ezradio__api__lib_8c_source.html#l00054">ezradio_reset()</a>.</p>
+<p>Referenced by <a class="el" href="group__COMM__Layer.html#gac2d23214b75072bedd593da2815858d3">ezradio_comm_PollCTS()</a>, <a class="el" href="group__API__Layer.html#gad7a48081868b00a765b488f47909396c">ezradio_reset()</a>, and <a class="el" href="group__Plugin__Manager.html#ga55ab56dfaa297c93024dc43239bc8592">ezradioInit()</a>.</p>
 
 </div>
 </div>
@@ -235,7 +212,7 @@ int main( void )
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> USTIMER_Delay </td>
+          <td class="memname"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> USTIMER_Delay </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>usec</em></td><td>)</td>
@@ -243,6 +220,8 @@ int main( void )
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Delay a given number of microseconds. </p>
 <p>The mcu is put in EM1 during the delay.</p>
 <dl class="section note"><dt>Note</dt><dd>This function assumes that the timer interrupt needed to wake the mcu up from EM1 is not blocked. This function is not thread safe.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -255,9 +234,9 @@ int main( void )
 
 <p>Definition at line <a class="el" href="ustimer_8c_source.html#l00168">168</a> of file <a class="el" href="ustimer_8c_source.html">ustimer.c</a>.</p>
 
-<p>References <a class="el" href="ustimer_8h_source.html#l00038">ECODE_EMDRV_USTIMER_OK</a>.</p>
+<p>References <a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>.</p>
 
-<p>Referenced by <a class="el" href="ezradio__api__lib_8c_source.html#l00054">ezradio_reset()</a>.</p>
+<p>Referenced by <a class="el" href="group__COMM__Layer.html#gac2d23214b75072bedd593da2815858d3">ezradio_comm_PollCTS()</a>, <a class="el" href="group__API__Layer.html#gad7a48081868b00a765b488f47909396c">ezradio_reset()</a>, and <a class="el" href="group__Plugin__Manager.html#ga55ab56dfaa297c93024dc43239bc8592">ezradioInit()</a>.</p>
 
 </div>
 </div>
@@ -266,7 +245,7 @@ int main( void )
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__EM__Drivers.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> USTIMER_DelayIntSafe </td>
+          <td class="memname"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> USTIMER_DelayIntSafe </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>usec</em></td><td>)</td>
@@ -274,6 +253,8 @@ int main( void )
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Delay a given number of microseconds. </p>
 <p>This is a busy wait delay not using energy modes to conserve power.</p>
 <dl class="section note"><dt>Note</dt><dd>This function can be used in any context (interrupts can be disabled). This function is thread safe.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -286,7 +267,33 @@ int main( void )
 
 <p>Definition at line <a class="el" href="ustimer_8c_source.html#l00203">203</a> of file <a class="el" href="ustimer_8c_source.html">ustimer.c</a>.</p>
 
-<p>References <a class="el" href="ustimer_8h_source.html#l00038">ECODE_EMDRV_USTIMER_OK</a>.</p>
+<p>References <a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5c7fa9c799b61638907d4f832a45e58b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> USTIMER_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activate and initialize the hardware timer used to pace the 1 microsecond delay functions. </p>
+<dl class="section note"><dt>Note</dt><dd>Call this function whenever the HFPERCLK and/or HFCORECLK frequency is changed.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>. </dd></dl>
+
+<p>Definition at line <a class="el" href="ustimer_8c_source.html#l00086">86</a> of file <a class="el" href="ustimer_8c_source.html">ustimer.c</a>.</p>
+
+<p>References <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gafc86de0d955c2f421bdd9c3b983b0f52">_TIMER_CTRL_PRESC_DIV1</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga79d998fe87dcf52224f3e5eb43aaba8d">_TIMER_CTRL_PRESC_DIV1024</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet()</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea040d340c971448a4607a4a70092bc0f8">cmuClock_CORE</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a>, <a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>, <a class="el" href="structTIMER__InitCC__TypeDef.html#a04dcf1da58bdff3195483c270032f8ef">TIMER_InitCC_TypeDef::mode</a>, <a class="el" href="structTIMER__Init__TypeDef.html#a398fc7a5c956cc0f06eabe740c690d87">TIMER_Init_TypeDef::prescale</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gae947ebc7f0a0a7555cfebce47959ccfb">TIMER_IEN_CC0</a>, <a class="el" href="group__TIMER.html#gad04a80140e22df0cd742e14933e9f028">TIMER_Init()</a>, <a class="el" href="group__TIMER.html#ga8803e04b755a2a22dc9167e109a6be89">TIMER_INIT_DEFAULT</a>, <a class="el" href="group__TIMER.html#ga9b2a3560717e0c174a030d99fa8501b4">TIMER_InitCC()</a>, <a class="el" href="group__TIMER.html#ga1444f0ca7a97773a1152aa886f17b48a">TIMER_INITCC_DEFAULT</a>, <a class="el" href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9">TIMER_IntDisable()</a>, <a class="el" href="group__TIMER.html#gad367b1801475494e0aeab2e4eab1e646">TIMER_TopSet()</a>, and <a class="el" href="group__TIMER.html#ggacaeb01f1c6c64b144b9a5913893bd718a5c0e017e36fa868b76ea0adbe3b1d86e">timerCCModeCompare</a>.</p>
+
+<p>Referenced by <a class="el" href="group__COMM__Layer.html#gac2d23214b75072bedd593da2815858d3">ezradio_comm_PollCTS()</a>, <a class="el" href="group__API__Layer.html#gad7a48081868b00a765b488f47909396c">ezradio_reset()</a>, and <a class="el" href="group__Plugin__Manager.html#ga55ab56dfaa297c93024dc43239bc8592">ezradioInit()</a>.</p>
 
 </div>
 </div>
@@ -295,7 +302,7 @@ int main( void )
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Dec 8 2015 15:41:39 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:43:27 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

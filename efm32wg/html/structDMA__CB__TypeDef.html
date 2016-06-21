@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32wg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -69,13 +68,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
           </span>
         </div>
       </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -111,29 +103,27 @@ $(document).ready(function(){initNavTree('structDMA__CB__TypeDef.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">DMA_CB_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a> &raquo; <a class="el" href="group__DMA.html">DMA</a></div></div>  </div>
+<div class="title">DMA_CB_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group__emlib.html">EMLIB</a> &raquo; <a class="el" href="group__DMA.html">DMA</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Callback structure that can be used to define DMA complete actions. </p>
+<p>A reference to this structure is only stored in the primary descriptor for a channel (if callback feature is used). If callback is required for both primary and alternate descriptor completion, this must be handled by one common callback, using the provided 'primary' parameter with the callback function. </p>
 
-<p>Callback structure that can be used to define DMA complete actions.  
- <a href="structDMA__CB__TypeDef.html#details">More...</a></p>
-
+<p>Definition at line <a class="el" href="em__dma_8h_source.html#l00148">148</a> of file <a class="el" href="em__dma_8h_source.html">em_dma.h</a>.</p>
+</div>
 <p><code>#include &lt;<a class="el" href="em__dma_8h_source.html">em_dma.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:adc5f73283bed3bfb2de3748c960ba612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__DMA.html#gafe909e49269212a92cdc9067d70c5e30">DMA_FuncPtr_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__CB__TypeDef.html#adc5f73283bed3bfb2de3748c960ba612">cbFunc</a></td></tr>
 <tr class="separator:adc5f73283bed3bfb2de3748c960ba612"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8abdebc49467401510597b113b468fcd"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__CB__TypeDef.html#a8abdebc49467401510597b113b468fcd">userPtr</a></td></tr>
-<tr class="separator:a8abdebc49467401510597b113b468fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef49c07ddab2e8e1b9c165059defd121"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__CB__TypeDef.html#aef49c07ddab2e8e1b9c165059defd121">primary</a></td></tr>
 <tr class="separator:aef49c07ddab2e8e1b9c165059defd121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8abdebc49467401510597b113b468fcd"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMA__CB__TypeDef.html#a8abdebc49467401510597b113b468fcd">userPtr</a></td></tr>
+<tr class="separator:a8abdebc49467401510597b113b468fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A reference to this structure is only stored in the primary descriptor for a channel (if callback feature is used). If callback is required for both primary and alternate descriptor completion, this must be handled by one common callback, using the provided 'primary' parameter with the callback function. </p>
-
-<p>Definition at line <a class="el" href="em__dma_8h_source.html#l00148">148</a> of file <a class="el" href="em__dma_8h_source.html">em_dma.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="adc5f73283bed3bfb2de3748c960ba612"></a>
 <div class="memitem">
 <div class="memproto">
@@ -147,24 +137,7 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__dma_8h_source.html#l00155">155</a> of file <a class="el" href="em__dma_8h_source.html">em_dma.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__dma_8c_source.html#l00284">DMA_IRQHandler()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8abdebc49467401510597b113b468fcd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* DMA_CB_TypeDef::userPtr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>User defined pointer to provide with callback function. </p>
-
-<p>Definition at line <a class="el" href="em__dma_8h_source.html#l00158">158</a> of file <a class="el" href="em__dma_8h_source.html">em_dma.h</a>.</p>
-
-<p>Referenced by <a class="el" href="em__dma_8c_source.html#l00284">DMA_IRQHandler()</a>.</p>
+<p>Referenced by <a class="el" href="group__DMA.html#gac1fca8b8a3ce0431d9aebbf432eda751">DMA_IRQHandler()</a>.</p>
 
 </div>
 </div>
@@ -181,7 +154,24 @@ Data Fields</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__dma_8h_source.html#l00165">165</a> of file <a class="el" href="em__dma_8h_source.html">em_dma.h</a>.</p>
 
-<p>Referenced by <a class="el" href="em__dma_8c_source.html#l00596">DMA_ActivateScatterGather()</a>, and <a class="el" href="em__dma_8c_source.html#l00284">DMA_IRQHandler()</a>.</p>
+<p>Referenced by <a class="el" href="group__DMA.html#gabc90358478008982202768d217375a80">DMA_ActivateScatterGather()</a>, and <a class="el" href="group__DMA.html#gac1fca8b8a3ce0431d9aebbf432eda751">DMA_IRQHandler()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8abdebc49467401510597b113b468fcd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* DMA_CB_TypeDef::userPtr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>User defined pointer to provide with callback function. </p>
+
+<p>Definition at line <a class="el" href="em__dma_8h_source.html#l00158">158</a> of file <a class="el" href="em__dma_8h_source.html">em_dma.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__DMA.html#gac1fca8b8a3ce0431d9aebbf432eda751">DMA_IRQHandler()</a>.</p>
 
 </div>
 </div>
@@ -194,7 +184,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structDMA__CB__TypeDef.html">DMA_CB_TypeDef</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:38:21 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:32:37 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

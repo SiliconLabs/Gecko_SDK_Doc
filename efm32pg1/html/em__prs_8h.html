@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Pearl Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32pg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32pg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -115,10 +112,23 @@ $(document).ready(function(){initNavTree('em__prs_8h.html','');});
 <div class="title">em_prs.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Peripheral Reflex System (PRS) peripheral API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>Peripheral Reflex System (PRS) peripheral API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="em__prs_8h_source.html">em_prs.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 </div>
 <p><a href="em__prs_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -144,35 +154,20 @@ Functions</h2></td></tr>
 <tr class="memitem:gabf5756623b5b766e287ca27441bd0f1d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRS.html#gabf5756623b5b766e287ca27441bd0f1d">PRS_PulseTrigger</a> (uint32_t channels)</td></tr>
 <tr class="memdesc:gabf5756623b5b766e287ca27441bd0f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a high pulse (one HFPERCLK) for one or more channels.  <a href="group__PRS.html#gabf5756623b5b766e287ca27441bd0f1d">More...</a><br /></td></tr>
 <tr class="separator:gabf5756623b5b766e287ca27441bd0f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8273dde832f46d40696b4c5025e411c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRS.html#gab8273dde832f46d40696b4c5025e411c">PRS_SourceSignalSet</a> (unsigned int ch, uint32_t source, uint32_t signal, <a class="el" href="group__PRS.html#ga853e2a53ed99eb3a0c5e163e1d33e814">PRS_Edge_TypeDef</a> edge)</td></tr>
-<tr class="memdesc:gab8273dde832f46d40696b4c5025e411c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set source and signal to be used for a channel.  <a href="group__PRS.html#gab8273dde832f46d40696b4c5025e411c">More...</a><br /></td></tr>
-<tr class="separator:gab8273dde832f46d40696b4c5025e411c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf05c066e83d651bfbdcb170af48c6843"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRS.html#gaf05c066e83d651bfbdcb170af48c6843">PRS_SourceAsyncSignalSet</a> (unsigned int ch, uint32_t source, uint32_t signal)</td></tr>
 <tr class="memdesc:gaf05c066e83d651bfbdcb170af48c6843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set source and asynchronous signal to be used for a channel.  <a href="group__PRS.html#gaf05c066e83d651bfbdcb170af48c6843">More...</a><br /></td></tr>
 <tr class="separator:gaf05c066e83d651bfbdcb170af48c6843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8273dde832f46d40696b4c5025e411c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__PRS.html#gab8273dde832f46d40696b4c5025e411c">PRS_SourceSignalSet</a> (unsigned int ch, uint32_t source, uint32_t signal, <a class="el" href="group__PRS.html#ga853e2a53ed99eb3a0c5e163e1d33e814">PRS_Edge_TypeDef</a> edge)</td></tr>
+<tr class="memdesc:gab8273dde832f46d40696b4c5025e411c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set source and signal to be used for a channel.  <a href="group__PRS.html#gab8273dde832f46d40696b4c5025e411c">More...</a><br /></td></tr>
+<tr class="separator:gab8273dde832f46d40696b4c5025e411c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="em__prs_8h_source.html">em_prs.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__prs_8h.html">em_prs.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:39:58 for EFM32 Pearl Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:38:20 for EFM32 Pearl Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32tg-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -49,7 +49,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -74,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -116,10 +114,23 @@ $(document).ready(function(){initNavTree('em__vcmp_8h.html','');});
 <div class="title">em_vcmp.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Voltage Comparator (VCMP) peripheral API. </p>
+<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<h1><a class="anchor" id="License"></a>
+License</h1>
+<p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
+<ol type="1">
+<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
+<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
+<li>This notice may not be removed or altered from any source distribution.</li>
+</ol>
+<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
+<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
 
-<p>Voltage Comparator (VCMP) peripheral API.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
+<p>Definition in file <a class="el" href="em__vcmp_8h_source.html">em_vcmp.h</a>.</p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div>
@@ -137,6 +148,13 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:gab56ac68a10865bcbd08f2978a6cf5d5b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#gab56ac68a10865bcbd08f2978a6cf5d5b">VCMP_Hysteresis_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__VCMP.html#ggab56ac68a10865bcbd08f2978a6cf5d5ba206e40abcd9cb83626a9ca4b4120c629">vcmpHystNone</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__VCMP.html#ggab56ac68a10865bcbd08f2978a6cf5d5ba9c7ff466e5d4da40fcd034d880f0b334">vcmpHyst20mV</a>
+<br />
+ }<tr class="separator:gab56ac68a10865bcbd08f2978a6cf5d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:ga4d4b37ff688f47766c7f11fd44806cc6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga4d4b37ff688f47766c7f11fd44806cc6">VCMP_WarmTime_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__VCMP.html#gga4d4b37ff688f47766c7f11fd44806cc6aa18bd07e3b064e80f710772c03ef6e16">vcmpWarmTime4Cycles</a> = _VCMP_CTRL_WARMTIME_4CYCLES, 
 <br />
@@ -156,54 +174,23 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga4d4b37ff688f47766c7f11fd44806cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:gab56ac68a10865bcbd08f2978a6cf5d5b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#gab56ac68a10865bcbd08f2978a6cf5d5b">VCMP_Hysteresis_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__VCMP.html#ggab56ac68a10865bcbd08f2978a6cf5d5ba206e40abcd9cb83626a9ca4b4120c629">vcmpHystNone</a>, 
-<br />
-&#160;&#160;<a class="el" href="group__VCMP.html#ggab56ac68a10865bcbd08f2978a6cf5d5ba9c7ff466e5d4da40fcd034d880f0b334">vcmpHyst20mV</a>
-<br />
- }<tr class="separator:gab56ac68a10865bcbd08f2978a6cf5d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga52aa53df539c0d68c1e2e0f5b4b40041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga52aa53df539c0d68c1e2e0f5b4b40041">VCMP_Init</a> (const <a class="el" href="structVCMP__Init__TypeDef.html">VCMP_Init_TypeDef</a> *vcmpInit)</td></tr>
-<tr class="memdesc:ga52aa53df539c0d68c1e2e0f5b4b40041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and enable Voltage Comparator.  <a href="group__VCMP.html#ga52aa53df539c0d68c1e2e0f5b4b40041">More...</a><br /></td></tr>
-<tr class="separator:ga52aa53df539c0d68c1e2e0f5b4b40041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab87bb21a4afe57c7721d424e2f8e99c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#gab87bb21a4afe57c7721d424e2f8e99c5">VCMP_LowPowerRefSet</a> (bool enable)</td></tr>
-<tr class="memdesc:gab87bb21a4afe57c7721d424e2f8e99c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable Low Power Reference setting.  <a href="group__VCMP.html#gab87bb21a4afe57c7721d424e2f8e99c5">More...</a><br /></td></tr>
-<tr class="separator:gab87bb21a4afe57c7721d424e2f8e99c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga185203f0a0c2e0343cca51d82b2b21ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga185203f0a0c2e0343cca51d82b2b21ef">VCMP_TriggerSet</a> (int level)</td></tr>
-<tr class="memdesc:ga185203f0a0c2e0343cca51d82b2b21ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure trigger level of voltage comparator.  <a href="group__VCMP.html#ga185203f0a0c2e0343cca51d82b2b21ef">More...</a><br /></td></tr>
-<tr class="separator:ga185203f0a0c2e0343cca51d82b2b21ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd1e72c9db56316c049efb14e3aa2fc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacd1e72c9db56316c049efb14e3aa2fc2"></a>
-__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#gacd1e72c9db56316c049efb14e3aa2fc2">VCMP_Enable</a> (void)</td></tr>
-<tr class="memdesc:gacd1e72c9db56316c049efb14e3aa2fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Voltage Comparator. <br /></td></tr>
-<tr class="separator:gacd1e72c9db56316c049efb14e3aa2fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4d05b8a07f535aea84df53ffcc0904da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4d05b8a07f535aea84df53ffcc0904da"></a>
 __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga4d05b8a07f535aea84df53ffcc0904da">VCMP_Disable</a> (void)</td></tr>
 <tr class="memdesc:ga4d05b8a07f535aea84df53ffcc0904da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable Voltage Comparator. <br /></td></tr>
 <tr class="separator:ga4d05b8a07f535aea84df53ffcc0904da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90bc9473c20571d6a6938b3afbdd26c7"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga90bc9473c20571d6a6938b3afbdd26c7">VCMP_VoltageToLevel</a> (float v)</td></tr>
-<tr class="memdesc:ga90bc9473c20571d6a6938b3afbdd26c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate voltage to trigger level.  <a href="group__VCMP.html#ga90bc9473c20571d6a6938b3afbdd26c7">More...</a><br /></td></tr>
-<tr class="separator:ga90bc9473c20571d6a6938b3afbdd26c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac052041a40fe31b2d6b6536628674b24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac052041a40fe31b2d6b6536628674b24"></a>
-__STATIC_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#gac052041a40fe31b2d6b6536628674b24">VCMP_VDDLower</a> (void)</td></tr>
-<tr class="memdesc:gac052041a40fe31b2d6b6536628674b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if Voltage Comparator indicated VDD &lt; trigger level, else false. <br /></td></tr>
-<tr class="separator:gac052041a40fe31b2d6b6536628674b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ec536ab9b943fcf5c1ec34feb951f13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9ec536ab9b943fcf5c1ec34feb951f13"></a>
-__STATIC_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga9ec536ab9b943fcf5c1ec34feb951f13">VCMP_VDDHigher</a> (void)</td></tr>
-<tr class="memdesc:ga9ec536ab9b943fcf5c1ec34feb951f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if Voltage Comparator indicated VDD &gt; trigger level, else false. <br /></td></tr>
-<tr class="separator:ga9ec536ab9b943fcf5c1ec34feb951f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ded00997c333fd43ebb3c5ad888bac7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8ded00997c333fd43ebb3c5ad888bac7"></a>
-__STATIC_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga8ded00997c333fd43ebb3c5ad888bac7">VCMP_Ready</a> (void)</td></tr>
-<tr class="memdesc:ga8ded00997c333fd43ebb3c5ad888bac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">VCMP output is ready. <br /></td></tr>
-<tr class="separator:ga8ded00997c333fd43ebb3c5ad888bac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd1e72c9db56316c049efb14e3aa2fc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacd1e72c9db56316c049efb14e3aa2fc2"></a>
+__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#gacd1e72c9db56316c049efb14e3aa2fc2">VCMP_Enable</a> (void)</td></tr>
+<tr class="memdesc:gacd1e72c9db56316c049efb14e3aa2fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Voltage Comparator. <br /></td></tr>
+<tr class="separator:gacd1e72c9db56316c049efb14e3aa2fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52aa53df539c0d68c1e2e0f5b4b40041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga52aa53df539c0d68c1e2e0f5b4b40041">VCMP_Init</a> (const <a class="el" href="structVCMP__Init__TypeDef.html">VCMP_Init_TypeDef</a> *vcmpInit)</td></tr>
+<tr class="memdesc:ga52aa53df539c0d68c1e2e0f5b4b40041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure and enable Voltage Comparator.  <a href="group__VCMP.html#ga52aa53df539c0d68c1e2e0f5b4b40041">More...</a><br /></td></tr>
+<tr class="separator:ga52aa53df539c0d68c1e2e0f5b4b40041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga90c047e9c776cad27065458add1486fd"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga90c047e9c776cad27065458add1486fd">VCMP_IntClear</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:ga90c047e9c776cad27065458add1486fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending VCMP interrupts.  <a href="group__VCMP.html#ga90c047e9c776cad27065458add1486fd">More...</a><br /></td></tr>
 <tr class="separator:ga90c047e9c776cad27065458add1486fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f19b07662931f087951ba5ff5af1189"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga4f19b07662931f087951ba5ff5af1189">VCMP_IntSet</a> (uint32_t flags)</td></tr>
-<tr class="memdesc:ga4f19b07662931f087951ba5ff5af1189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one or more pending VCMP interrupts from SW.  <a href="group__VCMP.html#ga4f19b07662931f087951ba5ff5af1189">More...</a><br /></td></tr>
-<tr class="separator:ga4f19b07662931f087951ba5ff5af1189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga67704d1b4bfa3b74f0a5991efc64ef6d"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga67704d1b4bfa3b74f0a5991efc64ef6d">VCMP_IntDisable</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:ga67704d1b4bfa3b74f0a5991efc64ef6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable one or more VCMP interrupts.  <a href="group__VCMP.html#ga67704d1b4bfa3b74f0a5991efc64ef6d">More...</a><br /></td></tr>
 <tr class="separator:ga67704d1b4bfa3b74f0a5991efc64ef6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,29 +203,38 @@ __STATIC_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="memitem:gaffed33ef4b644cd0f52bf99613012473"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#gaffed33ef4b644cd0f52bf99613012473">VCMP_IntGetEnabled</a> (void)</td></tr>
 <tr class="memdesc:gaffed33ef4b644cd0f52bf99613012473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get enabled and pending VCMP interrupt flags.  <a href="group__VCMP.html#gaffed33ef4b644cd0f52bf99613012473">More...</a><br /></td></tr>
 <tr class="separator:gaffed33ef4b644cd0f52bf99613012473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f19b07662931f087951ba5ff5af1189"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga4f19b07662931f087951ba5ff5af1189">VCMP_IntSet</a> (uint32_t flags)</td></tr>
+<tr class="memdesc:ga4f19b07662931f087951ba5ff5af1189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set one or more pending VCMP interrupts from SW.  <a href="group__VCMP.html#ga4f19b07662931f087951ba5ff5af1189">More...</a><br /></td></tr>
+<tr class="separator:ga4f19b07662931f087951ba5ff5af1189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab87bb21a4afe57c7721d424e2f8e99c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#gab87bb21a4afe57c7721d424e2f8e99c5">VCMP_LowPowerRefSet</a> (bool enable)</td></tr>
+<tr class="memdesc:gab87bb21a4afe57c7721d424e2f8e99c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable Low Power Reference setting.  <a href="group__VCMP.html#gab87bb21a4afe57c7721d424e2f8e99c5">More...</a><br /></td></tr>
+<tr class="separator:gab87bb21a4afe57c7721d424e2f8e99c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ded00997c333fd43ebb3c5ad888bac7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8ded00997c333fd43ebb3c5ad888bac7"></a>
+__STATIC_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga8ded00997c333fd43ebb3c5ad888bac7">VCMP_Ready</a> (void)</td></tr>
+<tr class="memdesc:ga8ded00997c333fd43ebb3c5ad888bac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">VCMP output is ready. <br /></td></tr>
+<tr class="separator:ga8ded00997c333fd43ebb3c5ad888bac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga185203f0a0c2e0343cca51d82b2b21ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga185203f0a0c2e0343cca51d82b2b21ef">VCMP_TriggerSet</a> (int level)</td></tr>
+<tr class="memdesc:ga185203f0a0c2e0343cca51d82b2b21ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure trigger level of voltage comparator.  <a href="group__VCMP.html#ga185203f0a0c2e0343cca51d82b2b21ef">More...</a><br /></td></tr>
+<tr class="separator:ga185203f0a0c2e0343cca51d82b2b21ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ec536ab9b943fcf5c1ec34feb951f13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9ec536ab9b943fcf5c1ec34feb951f13"></a>
+__STATIC_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga9ec536ab9b943fcf5c1ec34feb951f13">VCMP_VDDHigher</a> (void)</td></tr>
+<tr class="memdesc:ga9ec536ab9b943fcf5c1ec34feb951f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if Voltage Comparator indicated VDD &gt; trigger level, else false. <br /></td></tr>
+<tr class="separator:ga9ec536ab9b943fcf5c1ec34feb951f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac052041a40fe31b2d6b6536628674b24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac052041a40fe31b2d6b6536628674b24"></a>
+__STATIC_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#gac052041a40fe31b2d6b6536628674b24">VCMP_VDDLower</a> (void)</td></tr>
+<tr class="memdesc:gac052041a40fe31b2d6b6536628674b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if Voltage Comparator indicated VDD &lt; trigger level, else false. <br /></td></tr>
+<tr class="separator:gac052041a40fe31b2d6b6536628674b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90bc9473c20571d6a6938b3afbdd26c7"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VCMP.html#ga90bc9473c20571d6a6938b3afbdd26c7">VCMP_VoltageToLevel</a> (float v)</td></tr>
+<tr class="memdesc:ga90bc9473c20571d6a6938b3afbdd26c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate voltage to trigger level.  <a href="group__VCMP.html#ga90bc9473c20571d6a6938b3afbdd26c7">More...</a><br /></td></tr>
+<tr class="separator:ga90bc9473c20571d6a6938b3afbdd26c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section version"><dt>Version</dt><dd>4.2.1</dd></dl>
-<h1><a class="anchor" id="License"></a>
-License</h1>
-<p><b>(C) Copyright 2015 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
-<p>Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:</p>
-<ol type="1">
-<li>The origin of this software must not be misrepresented; you must not claim that you wrote the original software.</li>
-<li>Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.</li>
-<li>This notice may not be removed or altered from any source distribution.</li>
-</ol>
-<p>DISCLAIMER OF WARRANTY/LIMITATION OF REMEDIES: Silicon Labs has no obligation to support this Software. Silicon Labs is providing the Software "AS IS", with no express or implied warranties of any kind, including, but not limited to, any implied warranties of merchantability or fitness for any particular purpose or warranties against infringement of any proprietary rights of a third party.</p>
-<p>Silicon Labs will not be liable for any consequential, incidental, or special damages, or any other relief, or for any claim by any third party, arising from your use of this Software. </p>
-
-<p>Definition in file <a class="el" href="em__vcmp_8h_source.html">em_vcmp.h</a>.</p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__vcmp_8h.html">em_vcmp.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:36:05 for EFM32 Tiny Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:24:17 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

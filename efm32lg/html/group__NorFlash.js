@@ -4,9 +4,9 @@ var group__NorFlash =
       [ "baseAddress", "structNORFLASH__Info__TypeDef.html#a11a005245e76efa7cca1833ed3e4c58d", null ],
       [ "deviceId", "structNORFLASH__Info__TypeDef.html#ab2dcedf8c100e758720c113db32d6590", null ],
       [ "deviceSize", "structNORFLASH__Info__TypeDef.html#a19f78622a2fe7f4f18ab54e7aaedc573", null ],
+      [ "manufacturerId", "structNORFLASH__Info__TypeDef.html#ab3f645440c81ddde7651b8fe1bf2c9d4", null ],
       [ "sectorCount", "structNORFLASH__Info__TypeDef.html#aaa238c094cf968e866652349d5f8dd43", null ],
-      [ "sectorSize", "structNORFLASH__Info__TypeDef.html#a294fc69338b13b2d44fd3c2cf91f3404", null ],
-      [ "manufacturerId", "structNORFLASH__Info__TypeDef.html#ab3f645440c81ddde7651b8fe1bf2c9d4", null ]
+      [ "sectorSize", "structNORFLASH__Info__TypeDef.html#a294fc69338b13b2d44fd3c2cf91f3404", null ]
     ] ],
     [ "NORFLASH_Status_TypeDef", "group__NorFlash.html#gaa2d42c4ba2e3256aab40b3c4622982ed", [
       [ "NORFLASH_STATUS_OK", "group__NorFlash.html#ggaa2d42c4ba2e3256aab40b3c4622982edab65933785ef6b27088fa022425db8766", null ],
@@ -22,8 +22,8 @@ var group__NorFlash =
     [ "NORFLASH_EraseDevice", "group__NorFlash.html#ga025fa8080933c46bc1a776021e8d4bec", null ],
     [ "NORFLASH_EraseSector", "group__NorFlash.html#ga87d58fd1506fb4f2608c640792793ca0", null ],
     [ "NORFLASH_Init", "group__NorFlash.html#ga8b376f16b4d39c51853a89ffc847d665", null ],
+    [ "NORFLASH_Program", "group__NorFlash.html#ga0598fe2d45292a3c2a78b3d7e80eda96", null ],
     [ "NORFLASH_ProgramByte", "group__NorFlash.html#gaa0a43df437ca71899ffe7b009d7669c4", null ],
     [ "NORFLASH_ProgramWord16", "group__NorFlash.html#gaa2c31f523a01ad46e7a4e2ab330fd345", null ],
-    [ "NORFLASH_ProgramWord32", "group__NorFlash.html#ga221592efbe3deead0ddf678fff051a52", null ],
-    [ "NORFLASH_Program", "group__NorFlash.html#ga0598fe2d45292a3c2a78b3d7e80eda96", null ]
+    [ "NORFLASH_ProgramWord32", "group__NorFlash.html#ga221592efbe3deead0ddf678fff051a52", null ]
 ];

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.2.1</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
    </div>
   </td>
  </tr>
@@ -48,9 +48,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="../../index.html"><span>Documentation&#160;Home</span></a></li>
       <li><a href="http://www.silabs.com"><span>silabs.com</span></a></li>
@@ -75,7 +73,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -113,8 +110,8 @@ $(document).ready(function(){initNavTree('em__rmu_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="em__rmu_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef __SILICON_LABS_EM_RMU_H__</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define __SILICON_LABS_EM_RMU_H__</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef EM_RMU_H</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define EM_RMU_H</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__device_8h.html">em_device.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if defined(RMU_COUNT) &amp;&amp; (RMU_COUNT &gt; 0)</span></div>
@@ -203,8 +200,8 @@ $(document).ready(function(){initNavTree('em__rmu_8h_source.html','');});
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(RMU_COUNT) &amp;&amp; (RMU_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SILICON_LABS_EM_RMU_H__ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="group__RMU_html_gac065bbcb3b26d3f0b5c875df4cbad685"><div class="ttname"><a href="group__RMU.html#gac065bbcb3b26d3f0b5c875df4cbad685">RMU_ResetCauseGet</a></div><div class="ttdeci">uint32_t RMU_ResetCauseGet(void)</div><div class="ttdoc">Get the cause of the last reset. </div><div class="ttdef"><b>Definition:</b> <a href="em__rmu_8c_source.html#l00273">em_rmu.c:273</a></div></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_RMU_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group__RMU_html_gac065bbcb3b26d3f0b5c875df4cbad685"><div class="ttname"><a href="group__RMU.html#gac065bbcb3b26d3f0b5c875df4cbad685">RMU_ResetCauseGet</a></div><div class="ttdeci">uint32_t RMU_ResetCauseGet(void)</div><div class="ttdoc">Get the cause of the last reset. </div><div class="ttdef"><b>Definition:</b> <a href="em__rmu_8c_source.html#l00287">em_rmu.c:287</a></div></div>
 <div class="ttc" id="group__EFM32JG1B__RMU__BitFields_html_gaacf333afd5b0454ca2438891d408c459"><div class="ttname"><a href="group__EFM32JG1B__RMU__BitFields.html#gaacf333afd5b0454ca2438891d408c459">_RMU_CTRL_RESETSTATE_MASK</a></div><div class="ttdeci">#define _RMU_CTRL_RESETSTATE_MASK</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__rmu_8h_source.html#l00107">efm32jg1b_rmu.h:107</a></div></div>
 <div class="ttc" id="group__RMU_html_ga8ac0ad7bdf565905989745354d31cb07"><div class="ttname"><a href="group__RMU.html#ga8ac0ad7bdf565905989745354d31cb07">RMU_Reset_TypeDef</a></div><div class="ttdeci">RMU_Reset_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="em__rmu_8h_source.html#l00075">em_rmu.h:75</a></div></div>
 <div class="ttc" id="em__assert_8h_html"><div class="ttname"><a href="em__assert_8h.html">em_assert.h</a></div><div class="ttdoc">Emlib peripheral API "assert" implementation. </div></div>
@@ -213,7 +210,7 @@ $(document).ready(function(){initNavTree('em__rmu_8h_source.html','');});
 <div class="ttc" id="group__RMU_html_gga8ac0ad7bdf565905989745354d31cb07a438eb9416dce3292b0035aa924cd070e"><div class="ttname"><a href="group__RMU.html#gga8ac0ad7bdf565905989745354d31cb07a438eb9416dce3292b0035aa924cd070e">rmuResetSys</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rmu_8h_source.html#l00092">em_rmu.h:92</a></div></div>
 <div class="ttc" id="group__EFM32JG1B__RMU__BitFields_html_gaf51a640df7247f269818b5419acd5711"><div class="ttname"><a href="group__EFM32JG1B__RMU__BitFields.html#gaf51a640df7247f269818b5419acd5711">_RMU_CTRL_LOCKUPRMODE_MASK</a></div><div class="ttdeci">#define _RMU_CTRL_LOCKUPRMODE_MASK</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__rmu_8h_source.html#l00071">efm32jg1b_rmu.h:71</a></div></div>
 <div class="ttc" id="group__EFM32JG1B__RMU__BitFields_html_ga100ffe4c3a74998724529e5c44c3cee8"><div class="ttname"><a href="group__EFM32JG1B__RMU__BitFields.html#ga100ffe4c3a74998724529e5c44c3cee8">_RMU_CTRL_PINRMODE_LIMITED</a></div><div class="ttdeci">#define _RMU_CTRL_PINRMODE_LIMITED</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__rmu_8h_source.html#l00097">efm32jg1b_rmu.h:97</a></div></div>
-<div class="ttc" id="group__RMU_html_gafad06e5ac32430ed4182d4306d684eb7"><div class="ttname"><a href="group__RMU.html#gafad06e5ac32430ed4182d4306d684eb7">RMU_ResetControl</a></div><div class="ttdeci">void RMU_ResetControl(RMU_Reset_TypeDef reset, RMU_ResetMode_TypeDef mode)</div><div class="ttdoc">Disable/enable reset for various peripherals and signal sources. </div><div class="ttdef"><b>Definition:</b> <a href="em__rmu_8c_source.html#l00204">em_rmu.c:204</a></div></div>
+<div class="ttc" id="group__RMU_html_gafad06e5ac32430ed4182d4306d684eb7"><div class="ttname"><a href="group__RMU.html#gafad06e5ac32430ed4182d4306d684eb7">RMU_ResetControl</a></div><div class="ttdeci">void RMU_ResetControl(RMU_Reset_TypeDef reset, RMU_ResetMode_TypeDef mode)</div><div class="ttdoc">Disable/enable reset for various peripherals and signal sources. </div><div class="ttdef"><b>Definition:</b> <a href="em__rmu_8c_source.html#l00218">em_rmu.c:218</a></div></div>
 <div class="ttc" id="group__EFM32JG1B__RMU__BitFields_html_ga550958468c9f14197ca03583b7626a4f"><div class="ttname"><a href="group__EFM32JG1B__RMU__BitFields.html#ga550958468c9f14197ca03583b7626a4f">_RMU_CTRL_PINRMODE_EXTENDED</a></div><div class="ttdeci">#define _RMU_CTRL_PINRMODE_EXTENDED</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__rmu_8h_source.html#l00098">efm32jg1b_rmu.h:98</a></div></div>
 <div class="ttc" id="group__RMU_html_gga8ac0ad7bdf565905989745354d31cb07a0a2bddc9b6f9c9b15ff4717e1b48f9d5"><div class="ttname"><a href="group__RMU.html#gga8ac0ad7bdf565905989745354d31cb07a0a2bddc9b6f9c9b15ff4717e1b48f9d5">rmuResetWdog</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rmu_8h_source.html#l00086">em_rmu.h:86</a></div></div>
 <div class="ttc" id="group__RMU_html_gaa68fbe3a3279aff1f10fb2fb9f2b98fe"><div class="ttname"><a href="group__RMU.html#gaa68fbe3a3279aff1f10fb2fb9f2b98fe">RMU_ResetMode_TypeDef</a></div><div class="ttdeci">RMU_ResetMode_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="em__rmu_8h_source.html#l00061">em_rmu.h:61</a></div></div>
@@ -222,20 +219,20 @@ $(document).ready(function(){initNavTree('em__rmu_8h_source.html','');});
 <div class="ttc" id="group__EFM32JG1B__RMU__BitFields_html_gab8d2103d916eb4d16589105ef80ebf4d"><div class="ttname"><a href="group__EFM32JG1B__RMU__BitFields.html#gab8d2103d916eb4d16589105ef80ebf4d">_RMU_CTRL_PINRMODE_DISABLED</a></div><div class="ttdeci">#define _RMU_CTRL_PINRMODE_DISABLED</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__rmu_8h_source.html#l00096">efm32jg1b_rmu.h:96</a></div></div>
 <div class="ttc" id="group__EFM32JG1B__RMU__BitFields_html_gade650fe799b8283f96b412eec3bcbb11"><div class="ttname"><a href="group__EFM32JG1B__RMU__BitFields.html#gade650fe799b8283f96b412eec3bcbb11">_RMU_CTRL_WDOGRMODE_MASK</a></div><div class="ttdeci">#define _RMU_CTRL_WDOGRMODE_MASK</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__rmu_8h_source.html#l00059">efm32jg1b_rmu.h:59</a></div></div>
 <div class="ttc" id="group__RMU_html_gab9b82383cb0c20287aea6bcd51abe7b3"><div class="ttname"><a href="group__RMU.html#gab9b82383cb0c20287aea6bcd51abe7b3">RMU_UserResetStateSet</a></div><div class="ttdeci">__STATIC_INLINE void RMU_UserResetStateSet(uint32_t userState)</div><div class="ttdoc">Set user reset state. This state is reset only by a Power-on-reset and a pin reset. </div><div class="ttdef"><b>Definition:</b> <a href="em__rmu_8h_source.html#l00118">em_rmu.h:118</a></div></div>
-<div class="ttc" id="group__EFM32JG1B200F256GM48__Peripheral__Declaration_html_gae61c7bfebd19ce246f292313d9d15ed5"><div class="ttname"><a href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae61c7bfebd19ce246f292313d9d15ed5">RMU</a></div><div class="ttdeci">#define RMU</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b200f256gm48_8h_source.html#l00315">efm32jg1b200f256gm48.h:315</a></div></div>
+<div class="ttc" id="group__EFM32JG1B200F256GM48__Peripheral__Declaration_html_gae61c7bfebd19ce246f292313d9d15ed5"><div class="ttname"><a href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae61c7bfebd19ce246f292313d9d15ed5">RMU</a></div><div class="ttdeci">#define RMU</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b200f256gm48_8h_source.html#l00316">efm32jg1b200f256gm48.h:316</a></div></div>
 <div class="ttc" id="group__EFM32JG1B__RMU__BitFields_html_ga5baa02eba5b869780e37807b03688019"><div class="ttname"><a href="group__EFM32JG1B__RMU__BitFields.html#ga5baa02eba5b869780e37807b03688019">_RMU_CTRL_RESETSTATE_SHIFT</a></div><div class="ttdeci">#define _RMU_CTRL_RESETSTATE_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__rmu_8h_source.html#l00106">efm32jg1b_rmu.h:106</a></div></div>
 <div class="ttc" id="group__EFM32JG1B__RMU__BitFields_html_gaf60ade64466247e110cb9efdd93d9e66"><div class="ttname"><a href="group__EFM32JG1B__RMU__BitFields.html#gaf60ade64466247e110cb9efdd93d9e66">_RMU_CTRL_SYSRMODE_MASK</a></div><div class="ttdeci">#define _RMU_CTRL_SYSRMODE_MASK</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__rmu_8h_source.html#l00083">efm32jg1b_rmu.h:83</a></div></div>
 <div class="ttc" id="group__EFM32JG1B__RMU__BitFields_html_gad0c2db55e35af1073d3878950ccf14da"><div class="ttname"><a href="group__EFM32JG1B__RMU__BitFields.html#gad0c2db55e35af1073d3878950ccf14da">_RMU_CTRL_PINRMODE_FULL</a></div><div class="ttdeci">#define _RMU_CTRL_PINRMODE_FULL</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__rmu_8h_source.html#l00100">efm32jg1b_rmu.h:100</a></div></div>
 <div class="ttc" id="group__EFM32JG1B__RMU__BitFields_html_gab4c78a9144dcb7b870786bdca8e4ca6e"><div class="ttname"><a href="group__EFM32JG1B__RMU__BitFields.html#gab4c78a9144dcb7b870786bdca8e4ca6e">_RMU_CTRL_PINRMODE_MASK</a></div><div class="ttdeci">#define _RMU_CTRL_PINRMODE_MASK</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__rmu_8h_source.html#l00095">efm32jg1b_rmu.h:95</a></div></div>
 <div class="ttc" id="group__RMU_html_gae588b5c75fc61030dcc6ddb980b0df19"><div class="ttname"><a href="group__RMU.html#gae588b5c75fc61030dcc6ddb980b0df19">RMU_UserResetStateGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t RMU_UserResetStateGet(void)</div><div class="ttdoc">Get user reset state. This state is reset only by a Power-on-reset and a pin reset. </div><div class="ttdef"><b>Definition:</b> <a href="em__rmu_8h_source.html#l00134">em_rmu.h:134</a></div></div>
-<div class="ttc" id="group__RMU_html_ga1ebc1af03f738faa79b3e87d60a96ff1"><div class="ttname"><a href="group__RMU.html#ga1ebc1af03f738faa79b3e87d60a96ff1">RMU_ResetCauseClear</a></div><div class="ttdeci">void RMU_ResetCauseClear(void)</div><div class="ttdoc">Clear the reset cause register. </div><div class="ttdef"><b>Definition:</b> <a href="em__rmu_8c_source.html#l00231">em_rmu.c:231</a></div></div>
+<div class="ttc" id="group__RMU_html_ga1ebc1af03f738faa79b3e87d60a96ff1"><div class="ttname"><a href="group__RMU.html#ga1ebc1af03f738faa79b3e87d60a96ff1">RMU_ResetCauseClear</a></div><div class="ttdeci">void RMU_ResetCauseClear(void)</div><div class="ttdoc">Clear the reset cause register. </div><div class="ttdef"><b>Definition:</b> <a href="em__rmu_8c_source.html#l00245">em_rmu.c:245</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__rmu_8h.html">em_rmu.h</a></li>
-    <li class="footer">Generated on Tue Dec 8 2015 15:40:39 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 10 2016 14:40:13 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>
