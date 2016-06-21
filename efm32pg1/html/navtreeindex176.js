@@ -1,5 +1,9 @@
 var NAVTREEINDEX176 =
 {
+"structDISPLAY__Geometry__t.html#aee15912366750fbaa79ee2a54ae65df8":[1,35,2,0,1],
+"structDMA__DESCRIPTOR__TypeDef.html":[1,31,16,0],
+"structDMA__DESCRIPTOR__TypeDef.html#a59055ab94956ea223e1700201c744c0d":[1,31,16,0,1],
+"structDMA__DESCRIPTOR__TypeDef.html#a70bbb5bfebb274e54fabda76b36e717d":[1,31,16,0,0],
 "structDMA__DESCRIPTOR__TypeDef.html#accf30e1911daf44b7b7e01a667378249":[1,31,16,0,3],
 "structDMA__DESCRIPTOR__TypeDef.html#ae61fc0d2f100576660cbb1e9f9d18d9e":[1,31,16,0,2],
 "structEMU__DCDCInit__TypeDef.html":[1,32,10,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX176 =
 "structKSZ8851SLN__mib__s.html#a3be5c3738593d1521397653c324baa16":[1,35,7,0,8],
 "structKSZ8851SLN__mib__s.html#a42ab546ed4fb41d35a45138f72e1cf73":[1,35,7,0,14],
 "structKSZ8851SLN__mib__s.html#a478c04c019162dfe368f3b4a6a3718c3":[1,35,7,0,13],
-"structKSZ8851SLN__mib__s.html#a572e781d36d8dd2e81a6891337c8feb4":[1,35,7,0,3],
-"structKSZ8851SLN__mib__s.html#a6011dbed39c06a65a52efbef6e308216":[1,35,7,0,5],
-"structKSZ8851SLN__mib__s.html#a7463c57810b3a18802f0699bed139132":[1,35,7,0,1],
-"structKSZ8851SLN__mib__s.html#a8bc682f332838e0ae7681a428ca03090":[1,35,7,0,7],
-"structKSZ8851SLN__mib__s.html#a9bd81b3563d96acec6b3af2e80a099f6":[1,35,7,0,12]
+"structKSZ8851SLN__mib__s.html#a572e781d36d8dd2e81a6891337c8feb4":[1,35,7,0,3]
 };

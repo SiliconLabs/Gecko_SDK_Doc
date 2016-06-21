@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Pearl Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32pg1-doc-4.2.0</span>
+   &#160;<span id="projectnumber">efm32pg1-doc-4.2.1</span>
    </div>
   </td>
  </tr>
@@ -106,7 +106,8 @@ $(document).ready(function(){initNavTree('group__EMU.html','');});
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">EMU<div class="ingroups"><a class="el" href="group__EM__Library.html">EM_Library</a></div></div>  </div>
 </div><!--header-->
@@ -114,17 +115,6 @@ $(document).ready(function(){initNavTree('group__EMU.html','');});
 
 <p>Energy Management Unit (EMU) Peripheral API </p><pre class="fragment"></pre><p>.  
 <a href="#details">More...</a></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for EMU:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<center><table><tr><td><img src="group__EMU.png" border="0" alt="" usemap="#group____EMU"/>
-<map name="group____EMU" id="group____EMU">
-<area shape="rect" id="node2" href="group__EM__Library.html" title="EM_Library" alt="" coords="5,5,91,32"/>
-</map>
-</td></tr></table></center>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -183,19 +173,13 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:gabfa67ae54e346d342a4e4bbc8c7ad27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:ga87842440cb0cf01e18480e6d665c581f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga87842440cb0cf01e18480e6d665c581f">EMU_PowerConfig_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__EMU.html#gga87842440cb0cf01e18480e6d665c581fa4c599218aaa5a0c24386f27f59853c2a">emuPowerConfig_NoDcdc</a> = EMU_PWRCFG_PWRCFG_NODCDC, 
-<br />
-&#160;&#160;<a class="el" href="group__EMU.html#gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9">emuPowerConfig_DcdcToDvdd</a> = EMU_PWRCFG_PWRCFG_DCDCTODVDD
-<br />
+<tr class="memitem:ga87842440cb0cf01e18480e6d665c581f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga87842440cb0cf01e18480e6d665c581f">EMU_PowerConfig_TypeDef</a> { <a class="el" href="group__EMU.html#gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9">emuPowerConfig_DcdcToDvdd</a> = EMU_PWRCFG_PWRCFG_DCDCTODVDD
  }<tr class="separator:ga87842440cb0cf01e18480e6d665c581f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ga8dc5324b0e9baa047afdb67739bdb53d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga8dc5324b0e9baa047afdb67739bdb53d">EMU_DcdcMode_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__EMU.html#gga8dc5324b0e9baa047afdb67739bdb53dac8304128b38af414714bc3b44126d2b6">emuDcdcMode_Bypass</a> = EMU_DCDCCTRL_DCDCMODE_BYPASS, 
 <br />
-&#160;&#160;<a class="el" href="group__EMU.html#gga8dc5324b0e9baa047afdb67739bdb53daa876fdc70a4e140199a7bd4e2dcca615">emuDcdcMode_LowNoise</a> = EMU_DCDCCTRL_DCDCMODE_LOWNOISE, 
-<br />
-&#160;&#160;<a class="el" href="group__EMU.html#gga8dc5324b0e9baa047afdb67739bdb53da95b5ad5bc38a2f6cc766728935d74182">emuDcdcMode_Off</a> = EMU_DCDCCTRL_DCDCMODE_OFF
+&#160;&#160;<a class="el" href="group__EMU.html#gga8dc5324b0e9baa047afdb67739bdb53daa876fdc70a4e140199a7bd4e2dcca615">emuDcdcMode_LowNoise</a> = EMU_DCDCCTRL_DCDCMODE_LOWNOISE
 <br />
  }<tr class="separator:ga8dc5324b0e9baa047afdb67739bdb53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -243,6 +227,15 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:gaa527372d08a0a02ef09aa2f7746cb1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:gab4f797c242f11a11e9ad7c893e2e9b04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab4f797c242f11a11e9ad7c893e2e9b04"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>errataFixDcdcHs_TypeDef</b> { <br />
+&#160;&#160;<b>errataFixDcdcHsInit</b>, 
+<br />
+&#160;&#160;<b>errataFixDcdcHsTrimSet</b>, 
+<br />
+&#160;&#160;<b>errataFixDcdcHsLnWaitDone</b>
+<br />
+ }<tr class="separator:gab4f797c242f11a11e9ad7c893e2e9b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -286,6 +279,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="memitem:ga4b8909b4558d78ba21bce5b57f5557dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga4b8909b4558d78ba21bce5b57f5557dc">EMU_DCDCLnRcoBandSet</a> (<a class="el" href="group__EMU.html#gaa7b79860e9ac3e301ab467715432b644">EMU_DcdcLnRcoBand_TypeDef</a> band)</td></tr>
 <tr class="memdesc:ga4b8909b4558d78ba21bce5b57f5557dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set DCDC Low-noise RCO band.  <a href="#ga4b8909b4558d78ba21bce5b57f5557dc">More...</a><br /></td></tr>
 <tr class="separator:ga4b8909b4558d78ba21bce5b57f5557dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5625f85c3d89aba15e151ed8d1b701af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga5625f85c3d89aba15e151ed8d1b701af">EMU_DCDCPowerOff</a> (void)</td></tr>
+<tr class="memdesc:ga5625f85c3d89aba15e151ed8d1b701af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power off the DCDC regulator.  <a href="#ga5625f85c3d89aba15e151ed8d1b701af">More...</a><br /></td></tr>
+<tr class="separator:ga5625f85c3d89aba15e151ed8d1b701af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga83f2bf640fd8916bd425b91f7b7bdba6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga83f2bf640fd8916bd425b91f7b7bdba6">EMU_VmonInit</a> (<a class="el" href="structEMU__VmonInit__TypeDef.html">EMU_VmonInit_TypeDef</a> *vmonInit)</td></tr>
 <tr class="memdesc:ga83f2bf640fd8916bd425b91f7b7bdba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize VMON channel.  <a href="#ga83f2bf640fd8916bd425b91f7b7bdba6">More...</a><br /></td></tr>
 <tr class="separator:ga83f2bf640fd8916bd425b91f7b7bdba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -346,6 +342,12 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga7937ada2f10e2aae57e5f3bc356e032b">EMU_UnlatchPinRetention</a> (void)</td></tr>
 <tr class="memdesc:ga7937ada2f10e2aae57e5f3bc356e032b"><td class="mdescLeft">&#160;</td><td class="mdescRight">When EM4 pin retention is set to emuPinRetentionLatch, then pins are retained through EM4 entry and wakeup. The pin state is released by calling this function. The feature allows peripherals or GPIO to be re-initialized after EM4 exit (reset), and when the initialization is done, this function can release pins and return control to the peripherals or GPIO. <br /></td></tr>
 <tr class="separator:ga7937ada2f10e2aae57e5f3bc356e032b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga17aaaa9de66c9afa855d5bc342bbb362"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga17aaaa9de66c9afa855d5bc342bbb362"></a>
+errataFixDcdcHs_TypeDef&#160;</td><td class="memItemRight" valign="bottom"><b>errataFixDcdcHsState</b> = errataFixDcdcHsInit</td></tr>
+<tr class="separator:ga17aaaa9de66c9afa855d5bc342bbb362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -360,7 +362,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 <p>Default initialization of EM2 and 3 configuration </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00249">249</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00245">245</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 </div>
 </div>
@@ -384,7 +386,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <div class="ttc" id="group__EMU_html_ggabfa67ae54e346d342a4e4bbc8c7ad27ea57870f400ada3f278cebe5079394ebde"><div class="ttname"><a href="group__EMU.html#ggabfa67ae54e346d342a4e4bbc8c7ad27ea57870f400ada3f278cebe5079394ebde">emuPinRetentionDisable</a></div><div class="ttdef"><b>Definition:</b> <a href="em__emu_8h_source.html#l00145">em_emu.h:145</a></div></div>
 </div><!-- fragment --><p>Default initialization of EM4 configuration </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00288">288</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00284">284</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 </div>
 </div>
@@ -407,13 +409,13 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <div class="line"><a class="code" href="group__EMU.html#ggaccf990475418eb1ed67acaed99efa4d0a11b20cbde79a3d9aede0836319b4e6eb">  emuDcdcAnaPeripheralPower_DCDC</a>,<span class="comment">/* Select DCDC as analog power supply (lower power) */</span>                         <a class="code" href="group__EMU.html#ggaf36ca06d495617fe5f5c5bb12954effdade96ecdfd1d16091e2c1eccd5ad65d90">\</a></div>
 <div class="line"><a class="code" href="group__EMU.html#ggaf36ca06d495617fe5f5c5bb12954effdade96ecdfd1d16091e2c1eccd5ad65d90">  emuDcdcLnHighEfficiency</a>,       <span class="comment">/* Use low-noise high-efficiency mode (ignored if emuDcdcMode_LowPower) */</span>     \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__EMU_html_gga8dc5324b0e9baa047afdb67739bdb53daa876fdc70a4e140199a7bd4e2dcca615"><div class="ttname"><a href="group__EMU.html#gga8dc5324b0e9baa047afdb67739bdb53daa876fdc70a4e140199a7bd4e2dcca615">emuDcdcMode_LowNoise</a></div><div class="ttdef"><b>Definition:</b> <a href="em__emu_8h_source.html#l00173">em_emu.h:173</a></div></div>
-<div class="ttc" id="group__EMU_html_gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9"><div class="ttname"><a href="group__EMU.html#gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9">emuPowerConfig_DcdcToDvdd</a></div><div class="ttdef"><b>Definition:</b> <a href="em__emu_8h_source.html#l00162">em_emu.h:162</a></div></div>
-<div class="ttc" id="group__EMU_html_ggaccf990475418eb1ed67acaed99efa4d0a11b20cbde79a3d9aede0836319b4e6eb"><div class="ttname"><a href="group__EMU.html#ggaccf990475418eb1ed67acaed99efa4d0a11b20cbde79a3d9aede0836319b4e6eb">emuDcdcAnaPeripheralPower_DCDC</a></div><div class="ttdef"><b>Definition:</b> <a href="em__emu_8h_source.html#l00186">em_emu.h:186</a></div></div>
-<div class="ttc" id="group__EMU_html_ggaf36ca06d495617fe5f5c5bb12954effdade96ecdfd1d16091e2c1eccd5ad65d90"><div class="ttname"><a href="group__EMU.html#ggaf36ca06d495617fe5f5c5bb12954effdade96ecdfd1d16091e2c1eccd5ad65d90">emuDcdcLnHighEfficiency</a></div><div class="ttdef"><b>Definition:</b> <a href="em__emu_8h_source.html#l00196">em_emu.h:196</a></div></div>
+<div class="ttc" id="group__EMU_html_gga8dc5324b0e9baa047afdb67739bdb53daa876fdc70a4e140199a7bd4e2dcca615"><div class="ttname"><a href="group__EMU.html#gga8dc5324b0e9baa047afdb67739bdb53daa876fdc70a4e140199a7bd4e2dcca615">emuDcdcMode_LowNoise</a></div><div class="ttdef"><b>Definition:</b> <a href="em__emu_8h_source.html#l00171">em_emu.h:171</a></div></div>
+<div class="ttc" id="group__EMU_html_gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9"><div class="ttname"><a href="group__EMU.html#gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9">emuPowerConfig_DcdcToDvdd</a></div><div class="ttdef"><b>Definition:</b> <a href="em__emu_8h_source.html#l00160">em_emu.h:160</a></div></div>
+<div class="ttc" id="group__EMU_html_ggaccf990475418eb1ed67acaed99efa4d0a11b20cbde79a3d9aede0836319b4e6eb"><div class="ttname"><a href="group__EMU.html#ggaccf990475418eb1ed67acaed99efa4d0a11b20cbde79a3d9aede0836319b4e6eb">emuDcdcAnaPeripheralPower_DCDC</a></div><div class="ttdef"><b>Definition:</b> <a href="em__emu_8h_source.html#l00182">em_emu.h:182</a></div></div>
+<div class="ttc" id="group__EMU_html_ggaf36ca06d495617fe5f5c5bb12954effdade96ecdfd1d16091e2c1eccd5ad65d90"><div class="ttname"><a href="group__EMU.html#ggaf36ca06d495617fe5f5c5bb12954effdade96ecdfd1d16091e2c1eccd5ad65d90">emuDcdcLnHighEfficiency</a></div><div class="ttdef"><b>Definition:</b> <a href="em__emu_8h_source.html#l00192">em_emu.h:192</a></div></div>
 </div><!-- fragment --><p>Default DCDC initialization </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00371">371</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00367">367</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 </div>
 </div>
@@ -427,7 +429,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                                                                          \</div>
-<div class="line">  emuVmonChannel_DVDD,          <span class="comment">/* DVDD VMON channel */</span>                    \</div>
+<div class="line">  emuVmonChannel_AVDD,          <span class="comment">/* AVDD VMON channel */</span>                    \</div>
 <div class="line">  3200,                         <span class="comment">/* 3.2 V threshold */</span>                      \</div>
 <div class="line">  false,                        <span class="comment">/* Don&#39;t wake from EM4H on rising edge */</span>  \</div>
 <div class="line">  false,                        <span class="comment">/* Don&#39;t wake from EM4H on falling edge */</span> \</div>
@@ -436,7 +438,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <div class="line">}</div>
 </div><!-- fragment --><p>Default VMON initialization structure </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00411">411</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00407">407</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 </div>
 </div>
@@ -459,7 +461,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <div class="line">}</div>
 </div><!-- fragment --><p>Default VMON Hysteresis initialization structure </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00433">433</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00429">429</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 </div>
 </div>
@@ -546,10 +548,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 <p>Power configurations </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga87842440cb0cf01e18480e6d665c581fa4c599218aaa5a0c24386f27f59853c2a"></a>emuPowerConfig_NoDcdc&#160;</td><td class="fielddoc">
-<p>Disable DCDC </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9"></a>emuPowerConfig_DcdcToDvdd&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9"></a>emuPowerConfig_DcdcToDvdd&#160;</td><td class="fielddoc">
 <p>DCDC is connected to DVDD </p>
 </td></tr>
 </table>
@@ -575,12 +574,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr><td class="fieldname"><a class="anchor" id="gga8dc5324b0e9baa047afdb67739bdb53daa876fdc70a4e140199a7bd4e2dcca615"></a>emuDcdcMode_LowNoise&#160;</td><td class="fielddoc">
 <p>DCDC low-noise mode </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga8dc5324b0e9baa047afdb67739bdb53da95b5ad5bc38a2f6cc766728935d74182"></a>emuDcdcMode_Off&#160;</td><td class="fielddoc">
-<p>DCDC regulator is off </p>
-</td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00168">168</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00166">166</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 </div>
 </div>
@@ -603,7 +599,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00181">181</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00177">177</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 </div>
 </div>
@@ -626,7 +622,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00192">192</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00188">188</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 </div>
 </div>
@@ -667,7 +663,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00205">205</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00201">201</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 </div>
 </div>
@@ -682,7 +678,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 <p>VMON channels </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00229">229</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00225">225</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 </div>
 </div>
@@ -707,9 +703,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00680">680</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00753">753</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
-<p>References <a class="el" href="em__emu_8h_source.html#l00245">EMU_EM23Init_TypeDef::em23VregFullEn</a>, and <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>.</p>
+<p>References <a class="el" href="em__emu_8h_source.html#l00241">EMU_EM23Init_TypeDef::em23VregFullEn</a>, and <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>.</p>
 
 </div>
 </div>
@@ -733,9 +729,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00702">702</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00775">775</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
-<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00222">_EMU_EM4CTRL_EM4IORETMODE_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00199">_EMU_EM4CTRL_EM4STATE_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00208">_EMU_EM4CTRL_RETAINLFRCO_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00213">_EMU_EM4CTRL_RETAINLFXO_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00218">_EMU_EM4CTRL_RETAINULFRCO_MASK</a>, <a class="el" href="em__emu_8h_source.html#l00270">EMU_EM4Init_TypeDef::em4State</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00205">EMU_EM4CTRL_EM4STATE_EM4H</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00206">EMU_EM4CTRL_RETAINLFRCO</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00211">EMU_EM4CTRL_RETAINLFXO</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00216">EMU_EM4CTRL_RETAINULFRCO</a>, <a class="el" href="em__emu_8h_source.html#l00271">EMU_EM4Init_TypeDef::pinRetentionMode</a>, <a class="el" href="em__emu_8h_source.html#l00268">EMU_EM4Init_TypeDef::retainLfrco</a>, <a class="el" href="em__emu_8h_source.html#l00267">EMU_EM4Init_TypeDef::retainLfxo</a>, and <a class="el" href="em__emu_8h_source.html#l00269">EMU_EM4Init_TypeDef::retainUlfrco</a>.</p>
+<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00222">_EMU_EM4CTRL_EM4IORETMODE_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00199">_EMU_EM4CTRL_EM4STATE_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00208">_EMU_EM4CTRL_RETAINLFRCO_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00213">_EMU_EM4CTRL_RETAINLFXO_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00218">_EMU_EM4CTRL_RETAINULFRCO_MASK</a>, <a class="el" href="em__emu_8h_source.html#l00266">EMU_EM4Init_TypeDef::em4State</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00205">EMU_EM4CTRL_EM4STATE_EM4H</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00206">EMU_EM4CTRL_RETAINLFRCO</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00211">EMU_EM4CTRL_RETAINLFXO</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00216">EMU_EM4CTRL_RETAINULFRCO</a>, <a class="el" href="em__emu_8h_source.html#l00267">EMU_EM4Init_TypeDef::pinRetentionMode</a>, <a class="el" href="em__emu_8h_source.html#l00264">EMU_EM4Init_TypeDef::retainLfrco</a>, <a class="el" href="em__emu_8h_source.html#l00263">EMU_EM4Init_TypeDef::retainLfxo</a>, and <a class="el" href="em__emu_8h_source.html#l00265">EMU_EM4Init_TypeDef::retainUlfrco</a>.</p>
 
 </div>
 </div>
@@ -770,37 +766,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </dl>
 <dl class="section user"><dt></dt><dd>The <code>restore</code> option should only be used if all clock control is done via the CMU API. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00363">363</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00413">413</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00322">CMU</a>, <a class="el" href="efm32pg1b__cmu_8h_source.html#l01033">CMU_HFCLKSTATUS_SELECTED_HFRCO</a>, and <a class="el" href="system__efm32pg1b_8h_source.html#l00107">SystemCoreClockUpdate()</a>.</p>
 
 <p>Referenced by <a class="el" href="caplesense_8c_source.html#l00520">CAPLESENSE_Sleep()</a>.</p>
-
-<p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__EMU_gacadc56c5e2a8fb2890edd139b694b25b_cgraph.png" border="0" usemap="#group__EMU_gacadc56c5e2a8fb2890edd139b694b25b_cgraph" alt=""/></div>
-<map name="group__EMU_gacadc56c5e2a8fb2890edd139b694b25b_cgraph" id="group__EMU_gacadc56c5e2a8fb2890edd139b694b25b_cgraph">
-<area shape="rect" id="node3" href="system__efm32pg1b_8h.html#acd24e7ebfd616c851c240233da5d2bba" title="Update CMSIS SystemCoreClock variable. " alt="" coords="163,5,325,32"/>
-<area shape="rect" id="node5" href="system__efm32pg1b_8h.html#af2e6aa1120f0e55e38c83d8387625d16" title="Get the current core clock frequency. " alt="" coords="374,5,514,32"/>
-<area shape="rect" id="node7" href="system__efm32pg1b_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2" title="Get the current HFCLK frequency. " alt="" coords="563,5,691,32"/>
-</map>
-</div>
-</p>
-
-<p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__EMU_gacadc56c5e2a8fb2890edd139b694b25b_icgraph.png" border="0" usemap="#group__EMU_gacadc56c5e2a8fb2890edd139b694b25b_icgraph" alt=""/></div>
-<map name="group__EMU_gacadc56c5e2a8fb2890edd139b694b25b_icgraph" id="group__EMU_gacadc56c5e2a8fb2890edd139b694b25b_icgraph">
-<area shape="rect" id="node3" href="group__CapSense.html#gadbafc1379b79f5eb37389529afb74a1b" title="Send the capacative sense system to sleep mode. " alt="" coords="163,5,298,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -834,25 +804,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </dl>
 <dl class="section user"><dt></dt><dd>The <code>restore</code> option should only be used if all clock control is done via the CMU API. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00470">470</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00529">529</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00322">CMU</a>, <a class="el" href="efm32pg1b__cmu_8h_source.html#l01033">CMU_HFCLKSTATUS_SELECTED_HFRCO</a>, <a class="el" href="em__cmu_8h_source.html#l01318">CMU_Lock()</a>, <a class="el" href="efm32pg1b__cmu_8h_source.html#l01776">CMU_LOCK_LOCKKEY_LOCKED</a>, <a class="el" href="efm32pg1b__cmu_8h_source.html#l00815">CMU_OSCENCMD_LFRCODIS</a>, <a class="el" href="efm32pg1b__cmu_8h_source.html#l00825">CMU_OSCENCMD_LFXODIS</a>, <a class="el" href="em__cmu_8h_source.html#l01374">CMU_Unlock()</a>, and <a class="el" href="system__efm32pg1b_8h_source.html#l00107">SystemCoreClockUpdate()</a>.</p>
-
-<p><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__EMU_ga9e98f9066d91dbd64c3e73254336218f_cgraph.png" border="0" usemap="#group__EMU_ga9e98f9066d91dbd64c3e73254336218f_cgraph" alt=""/></div>
-<map name="group__EMU_ga9e98f9066d91dbd64c3e73254336218f_cgraph" id="group__EMU_ga9e98f9066d91dbd64c3e73254336218f_cgraph">
-<area shape="rect" id="node3" href="group__CMU.html#gaf6b90e2c10eca7c67fe3bc27d8081ae4" title="Lock the CMU in order to protect some of its registers against unintended modification. " alt="" coords="204,5,284,32"/>
-<area shape="rect" id="node5" href="group__CMU.html#ga15ee8874bbe2c87a9b47aa81d3b76f51" title="Unlock the CMU so that writing to locked registers again is possible. " alt="" coords="198,56,290,83"/>
-<area shape="rect" id="node7" href="system__efm32pg1b_8h.html#acd24e7ebfd616c851c240233da5d2bba" title="Update CMSIS SystemCoreClock variable. " alt="" coords="163,107,325,133"/>
-<area shape="rect" id="node9" href="system__efm32pg1b_8h.html#af2e6aa1120f0e55e38c83d8387625d16" title="Get the current core clock frequency. " alt="" coords="374,107,514,133"/>
-<area shape="rect" id="node11" href="system__efm32pg1b_8c.html#ab5991f4c3faeaed3b4f20d5ab515f1f2" title="Get the current HFCLK frequency. " alt="" coords="563,107,691,133"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -871,21 +825,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>Only a power on reset or external reset pin can wake the device from EM4. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00558">558</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00626">626</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
-<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00232">_EMU_EM4CTRL_EM4ENTRY_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00231">_EMU_EM4CTRL_EM4ENTRY_SHIFT</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, and <a class="el" href="em__emu_8h_source.html#l00663">EMU_Unlock()</a>.</p>
-
-<p><div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__EMU_gac92115921464d7435fc714d8b9bd494b_cgraph.png" border="0" usemap="#group__EMU_gac92115921464d7435fc714d8b9bd494b_cgraph" alt=""/></div>
-<map name="group__EMU_gac92115921464d7435fc714d8b9bd494b_cgraph" id="group__EMU_gac92115921464d7435fc714d8b9bd494b_cgraph">
-<area shape="rect" id="node3" href="group__EMU.html#gaae70d64f013a75e2d728b3a6d71e3f62" title="Unlock the EMU so that writing to locked registers again is possible. " alt="" coords="163,5,253,32"/>
-</map>
-</div>
-</p>
+<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00232">_EMU_EM4CTRL_EM4ENTRY_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00231">_EMU_EM4CTRL_EM4ENTRY_SHIFT</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, and <a class="el" href="em__emu_8h_source.html#l00660">EMU_Unlock()</a>.</p>
 
 </div>
 </div>
@@ -910,7 +852,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Only a reset can make the specified memory block(s) available for use after having been powered down. Function will be void for devices not supporting this feature. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00614">614</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00687">687</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00162">_EMU_RAM0CTRL_RAMPOWERDOWN_MASK</a>, and <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>.</p>
 
@@ -933,40 +875,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>However, in order to support this in a safe way, the EMU module must be kept up-to-date on the actual selected configuration. The CMU module must keep the EMU module up-to-date.</p>
 <p>This function is mainly intended for internal use by the CMU module, but if the applications changes oscillator configurations without using the CMU API, this function can be used to keep the EMU module up-to-date. </p>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00663">663</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l00736">736</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00322">CMU</a>.</p>
 
 <p>Referenced by <a class="el" href="em__cmu_8c_source.html#l02406">CMU_ClockSelectSet()</a>, and <a class="el" href="em__cmu_8c_source.html#l03394">CMU_OscillatorEnable()</a>.</p>
-
-<p><div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__EMU_ga3d442fa018de5138afb19a2b85797099_icgraph.png" border="0" usemap="#group__EMU_ga3d442fa018de5138afb19a2b85797099_icgraph" alt=""/></div>
-<map name="group__EMU_ga3d442fa018de5138afb19a2b85797099_icgraph" id="group__EMU_ga3d442fa018de5138afb19a2b85797099_icgraph">
-<area shape="rect" id="node3" href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3" title="Select reference clock/oscillator used for a clock branch. " alt="" coords="400,157,539,184"/>
-<area shape="rect" id="node31" href="group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9" title="Enable/disable oscillator. " alt="" coords="205,247,352,273"/>
-<area shape="rect" id="node5" href="group__BSP__STK.html#gaba9ce74ca657de9f9f903e062cc654ef" title="Initialize board controller communication support (BCC) functionality. " alt="" coords="623,5,711,32"/>
-<area shape="rect" id="node7" href="caplesense_8c.html#a2e4ba8079a4db025c71de23fd97211cc" title="Setup the CMU. " alt="" coords="587,56,747,83"/>
-<area shape="rect" id="node11" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50" title="Intializes UART/LEUART. " alt="" coords="595,107,738,133"/>
-<area shape="rect" id="node17" href="group__RTCDRV.html#ga4419076832c5b4958dea6f1eec0a9bdf" title="Initialize RTCDRV driver. " alt="" coords="619,157,714,184"/>
-<area shape="rect" id="node27" href="group__SegmentLcd.html#ga0818c866cead74ab3902753a770eb4c4" title="Segment LCD Initialization routine for EFM32 STK display. " alt="" coords="607,208,727,235"/>
-<area shape="rect" id="node29" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046" title="Calibrates the microsecond delay loop. " alt="" coords="605,259,729,285"/>
-<area shape="rect" id="node9" href="group__CapSense.html#ga4a9a1233a70703ca91a6bc9fcf05ec19" title="Initializes the capacative sense system without LESENSE. " alt="" coords="809,31,930,57"/>
-<area shape="rect" id="node13" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb" title="Receive a byte from USART/LEUART and put into global buffer. " alt="" coords="796,81,943,108"/>
-<area shape="rect" id="node15" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f" title="Transmit single byte to USART/LEUART. " alt="" coords="795,132,944,159"/>
-<area shape="rect" id="node19" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239" title="Initialize a SPI driver instance. " alt="" coords="824,183,915,209"/>
-<area shape="rect" id="node21" href="group__HAL__Layer.html#gae1cf166781ecf4a2317e0d9d4f504197" title="ezradio_hal_SpiInit" alt="" coords="1000,157,1131,184"/>
-<area shape="rect" id="node25" href="group__ksz8851snl.html#ga12cf356cb196dbc44230f7ad5aa16742" title="KSZ8851SNL_SPI_Init Initialize SPI interface to Ethernet controller. " alt="" coords="993,208,1138,235"/>
-<area shape="rect" id="node23" href="group__Plugin__Manager.html#ga55ab56dfaa297c93024dc43239bc8592" title="Radio Initialization. " alt="" coords="1187,157,1269,184"/>
-<area shape="rect" id="node34" href="group__CMU.html#ga97fc54dc73a1ead5a29fe538e538bd09" title="Set HFXO control registers. " alt="" coords="417,259,522,285"/>
-<area shape="rect" id="node36" href="group__CMU.html#ga188ca4e7b81ed62bf53ea15ea3ffbab6" title="Set LFXO control registers. " alt="" coords="418,309,521,336"/>
-<area shape="rect" id="node38" href="group__DBG.html#gaf17760c5d4350c442202dee4fe8ec15f" title="Enable Serial Wire Output (SWO) pin. " alt="" coords="410,360,529,387"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -983,6 +896,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>Use the function EMU_DCDCPowerDown() to if the power circuit is configured for NODCDC as decribed in Section 11.3.4.3 in the Reference Manual.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dcdcInit</td><td>DCDC initialization structure</td></tr>
@@ -991,24 +905,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if initialization parameters are valid </dd></dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01088">1088</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01204">1204</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
-<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00761">_EMU_DCDCMISCCTRL_LNFORCECCM_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00785">_EMU_DCDCMISCCTRL_LPCMPBIAS_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00707">_EMU_PWRCFG_PWRCFG_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00721">_EMU_PWRCTRL_ANASW_SHIFT</a>, <a class="el" href="em__emu_8h_source.html#l00364">EMU_DCDCInit_TypeDef::anaPeripheralPower</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="em__emu_8h_source.html#l00351">EMU_DCDCInit_TypeDef::dcdcMode</a>, <a class="el" href="em__emu_8h_source.html#l00353">EMU_DCDCInit_TypeDef::em01LoadCurrent_mA</a>, <a class="el" href="em__emu_8h_source.html#l00357">EMU_DCDCInit_TypeDef::em234LoadCurrent_uA</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00791">EMU_DCDCMISCCTRL_LPCMPBIAS_BIAS0</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00792">EMU_DCDCMISCCTRL_LPCMPBIAS_BIAS1</a>, <a class="el" href="em__emu_8c_source.html#l01070">EMU_DCDCModeSet()</a>, <a class="el" href="em__emu_8c_source.html#l01412">EMU_DCDCOptimizeSlice()</a>, <a class="el" href="em__emu_8c_source.html#l01194">EMU_DCDCOutputVoltageSet()</a>, <a class="el" href="em__emu_8h_source.html#l00171">emuDcdcMode_Bypass</a>, <a class="el" href="em__emu_8h_source.html#l00173">emuDcdcMode_LowNoise</a>, <a class="el" href="em__emu_8h_source.html#l00160">emuPowerConfig_NoDcdc</a>, <a class="el" href="em__emu_8h_source.html#l00365">EMU_DCDCInit_TypeDef::lnTransientMode</a>, <a class="el" href="em__emu_8h_source.html#l00361">EMU_DCDCInit_TypeDef::maxCurrent_mA</a>, <a class="el" href="em__emu_8h_source.html#l00352">EMU_DCDCInit_TypeDef::mVout</a>, and <a class="el" href="em__emu_8h_source.html#l00350">EMU_DCDCInit_TypeDef::powerConfig</a>.</p>
-
-<p><div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__EMU_ga82fcb1a93c40723a2035975ec9d06265_cgraph.png" border="0" usemap="#group__EMU_ga82fcb1a93c40723a2035975ec9d06265_cgraph" alt=""/></div>
-<map name="group__EMU_ga82fcb1a93c40723a2035975ec9d06265_cgraph" id="group__EMU_ga82fcb1a93c40723a2035975ec9d06265_cgraph">
-<area shape="rect" id="node3" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164" title="Perform a single&#45;bit write operation on a peripheral register. " alt="" coords="191,5,310,32"/>
-<area shape="rect" id="node5" href="group__EMU.html#gade447bc354ddd2893ac668a7475e76fd" title="Set DCDC regulator operating mode. " alt="" coords="183,56,319,83"/>
-<area shape="rect" id="node7" href="group__EMU.html#ga6319faf1345bdd44228f345c4c279fe8" title="Optimize DCDC slice count based on the estimated average load current in EM0. " alt="" coords="169,107,332,133"/>
-<area shape="rect" id="node9" href="group__EMU.html#gab99ce5b7cbbe4b4da1112dba636e1d71" title="Set DCDC output voltage. " alt="" coords="157,157,344,184"/>
-</map>
-</div>
-</p>
+<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00761">_EMU_DCDCMISCCTRL_LNFORCECCM_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00785">_EMU_DCDCMISCCTRL_LPCMPBIAS_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00707">_EMU_PWRCFG_PWRCFG_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00721">_EMU_PWRCTRL_ANASW_SHIFT</a>, <a class="el" href="em__emu_8h_source.html#l00360">EMU_DCDCInit_TypeDef::anaPeripheralPower</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="em__emu_8h_source.html#l00347">EMU_DCDCInit_TypeDef::dcdcMode</a>, <a class="el" href="em__emu_8h_source.html#l00349">EMU_DCDCInit_TypeDef::em01LoadCurrent_mA</a>, <a class="el" href="em__emu_8h_source.html#l00353">EMU_DCDCInit_TypeDef::em234LoadCurrent_uA</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00791">EMU_DCDCMISCCTRL_LPCMPBIAS_BIAS0</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00792">EMU_DCDCMISCCTRL_LPCMPBIAS_BIAS1</a>, <a class="el" href="em__emu_8c_source.html#l01182">EMU_DCDCModeSet()</a>, <a class="el" href="em__emu_8c_source.html#l01499">EMU_DCDCOptimizeSlice()</a>, <a class="el" href="em__emu_8c_source.html#l01291">EMU_DCDCOutputVoltageSet()</a>, <a class="el" href="em__emu_8h_source.html#l00171">emuDcdcMode_LowNoise</a>, <a class="el" href="em__emu_8h_source.html#l00361">EMU_DCDCInit_TypeDef::lnTransientMode</a>, <a class="el" href="em__emu_8h_source.html#l00357">EMU_DCDCInit_TypeDef::maxCurrent_mA</a>, <a class="el" href="em__emu_8h_source.html#l00348">EMU_DCDCInit_TypeDef::mVout</a>, and <a class="el" href="em__emu_8h_source.html#l00346">EMU_DCDCInit_TypeDef::powerConfig</a>.</p>
 
 </div>
 </div>
@@ -1032,23 +931,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01070">1070</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01182">1182</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
-<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00734">_EMU_DCDCCTRL_DCDCMODE_MASK</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, and <a class="el" href="efm32pg1b__emu_8h_source.html#l00913">EMU_DCDCSYNC_DCDCCTRLBUSY</a>.</p>
+<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00817">_EMU_DCDCCLIMCTRL_BYPLIMEN_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00734">_EMU_DCDCCTRL_DCDCMODE_MASK</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00913">EMU_DCDCSYNC_DCDCCTRLBUSY</a>, and <a class="el" href="em__emu_8h_source.html#l00169">emuDcdcMode_Bypass</a>.</p>
 
-<p>Referenced by <a class="el" href="em__emu_8c_source.html#l01088">EMU_DCDCInit()</a>.</p>
-
-<p><div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__EMU_gade447bc354ddd2893ac668a7475e76fd_icgraph.png" border="0" usemap="#group__EMU_gade447bc354ddd2893ac668a7475e76fd_icgraph" alt=""/></div>
-<map name="group__EMU_gade447bc354ddd2893ac668a7475e76fd_icgraph" id="group__EMU_gade447bc354ddd2893ac668a7475e76fd_icgraph">
-<area shape="rect" id="node3" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265" title="Configure DCDC regulator. " alt="" coords="189,5,293,32"/>
-</map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="em__emu_8c_source.html#l01204">EMU_DCDCInit()</a>.</p>
 
 </div>
 </div>
@@ -1089,23 +976,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the mV parameter is valid </dd></dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01194">1194</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01291">1291</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00682">_DEVINFO_DCDCLNVCTRL0_1V2LNATT0_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00681">_DEVINFO_DCDCLNVCTRL0_1V2LNATT0_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00684">_DEVINFO_DCDCLNVCTRL0_1V8LNATT0_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00683">_DEVINFO_DCDCLNVCTRL0_1V8LNATT0_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00686">_DEVINFO_DCDCLNVCTRL0_1V8LNATT1_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00685">_DEVINFO_DCDCLNVCTRL0_1V8LNATT1_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00688">_DEVINFO_DCDCLNVCTRL0_3V0LNATT1_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00687">_DEVINFO_DCDCLNVCTRL0_3V0LNATT1_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00693">_DEVINFO_DCDCLPVCTRL0_1V2LPATT0LPCMPBIAS0_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00692">_DEVINFO_DCDCLPVCTRL0_1V2LPATT0LPCMPBIAS0_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00697">_DEVINFO_DCDCLPVCTRL0_1V2LPATT0LPCMPBIAS1_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00696">_DEVINFO_DCDCLPVCTRL0_1V2LPATT0LPCMPBIAS1_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00695">_DEVINFO_DCDCLPVCTRL0_1V8LPATT0LPCMPBIAS0_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00694">_DEVINFO_DCDCLPVCTRL0_1V8LPATT0LPCMPBIAS0_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00699">_DEVINFO_DCDCLPVCTRL0_1V8LPATT0LPCMPBIAS1_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00698">_DEVINFO_DCDCLPVCTRL0_1V8LPATT0LPCMPBIAS1_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00704">_DEVINFO_DCDCLPVCTRL1_1V2LPATT0LPCMPBIAS2_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00703">_DEVINFO_DCDCLPVCTRL1_1V2LPATT0LPCMPBIAS2_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00708">_DEVINFO_DCDCLPVCTRL1_1V2LPATT0LPCMPBIAS3_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00707">_DEVINFO_DCDCLPVCTRL1_1V2LPATT0LPCMPBIAS3_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00706">_DEVINFO_DCDCLPVCTRL1_1V8LPATT0LPCMPBIAS2_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00705">_DEVINFO_DCDCLPVCTRL1_1V8LPATT0LPCMPBIAS2_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00710">_DEVINFO_DCDCLPVCTRL1_1V8LPATT0LPCMPBIAS3_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00709">_DEVINFO_DCDCLPVCTRL1_1V8LPATT0LPCMPBIAS3_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00715">_DEVINFO_DCDCLPVCTRL2_1V8LPATT1LPCMPBIAS0_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00714">_DEVINFO_DCDCLPVCTRL2_1V8LPATT1LPCMPBIAS0_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00719">_DEVINFO_DCDCLPVCTRL2_1V8LPATT1LPCMPBIAS1_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00718">_DEVINFO_DCDCLPVCTRL2_1V8LPATT1LPCMPBIAS1_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00717">_DEVINFO_DCDCLPVCTRL2_3V0LPATT1LPCMPBIAS0_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00716">_DEVINFO_DCDCLPVCTRL2_3V0LPATT1LPCMPBIAS0_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00721">_DEVINFO_DCDCLPVCTRL2_3V0LPATT1LPCMPBIAS1_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00720">_DEVINFO_DCDCLPVCTRL2_3V0LPATT1LPCMPBIAS1_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00726">_DEVINFO_DCDCLPVCTRL3_1V8LPATT1LPCMPBIAS2_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00725">_DEVINFO_DCDCLPVCTRL3_1V8LPATT1LPCMPBIAS2_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00730">_DEVINFO_DCDCLPVCTRL3_1V8LPATT1LPCMPBIAS3_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00729">_DEVINFO_DCDCLPVCTRL3_1V8LPATT1LPCMPBIAS3_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00728">_DEVINFO_DCDCLPVCTRL3_3V0LPATT1LPCMPBIAS2_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00727">_DEVINFO_DCDCLPVCTRL3_3V0LPATT1LPCMPBIAS2_SHIFT</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00732">_DEVINFO_DCDCLPVCTRL3_3V0LPATT1LPCMPBIAS3_MASK</a>, <a class="el" href="efm32pg1b__devinfo_8h_source.html#l00731">_DEVINFO_DCDCLPVCTRL3_3V0LPATT1LPCMPBIAS3_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00834">_EMU_DCDCLNVCTRL_LNVREF_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00876">_EMU_DCDCLPVCTRL_LPVREF_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00785">_EMU_DCDCMISCCTRL_LPCMPBIAS_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00784">_EMU_DCDCMISCCTRL_LPCMPBIAS_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00707">_EMU_PWRCFG_PWRCFG_MASK</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00344">DEVINFO</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00825">EMU_DCDCLNVCTRL_LNATT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00867">EMU_DCDCLPVCTRL_LPATT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00791">EMU_DCDCMISCCTRL_LPCMPBIAS_BIAS0</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00792">EMU_DCDCMISCCTRL_LPCMPBIAS_BIAS1</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00793">EMU_DCDCMISCCTRL_LPCMPBIAS_BIAS2</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00795">EMU_DCDCMISCCTRL_LPCMPBIAS_BIAS3</a>, and <a class="el" href="efm32pg1b__emu_8h_source.html#l00715">EMU_PWRCFG_PWRCFG_DCDCTODVDD</a>.</p>
 
-<p>Referenced by <a class="el" href="em__emu_8c_source.html#l01088">EMU_DCDCInit()</a>.</p>
-
-<p><div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__EMU_gab99ce5b7cbbe4b4da1112dba636e1d71_icgraph.png" border="0" usemap="#group__EMU_gab99ce5b7cbbe4b4da1112dba636e1d71_icgraph" alt=""/></div>
-<map name="group__EMU_gab99ce5b7cbbe4b4da1112dba636e1d71_icgraph" id="group__EMU_gab99ce5b7cbbe4b4da1112dba636e1d71_icgraph">
-<area shape="rect" id="node3" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265" title="Configure DCDC regulator. " alt="" coords="240,5,344,32"/>
-</map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="em__emu_8c_source.html#l01204">EMU_DCDCInit()</a>.</p>
 
 </div>
 </div>
@@ -1129,23 +1004,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01412">1412</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01499">1499</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
-<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00902">_EMU_DCDCLNFREQCTRL_RCOBAND_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00901">_EMU_DCDCLNFREQCTRL_RCOBAND_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00761">_EMU_DCDCMISCCTRL_LNFORCECCM_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00769">_EMU_DCDCMISCCTRL_NFETCNT_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00768">_EMU_DCDCMISCCTRL_NFETCNT_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00765">_EMU_DCDCMISCCTRL_PFETCNT_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00764">_EMU_DCDCMISCCTRL_PFETCNT_SHIFT</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, <a class="el" href="em__emu_8h_source.html#l00210">EMU_DcdcLnRcoBand_4MHz</a>, and <a class="el" href="em__emu_8h_source.html#l00212">EMU_DcdcLnRcoBand_5MHz</a>.</p>
+<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00902">_EMU_DCDCLNFREQCTRL_RCOBAND_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00901">_EMU_DCDCLNFREQCTRL_RCOBAND_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00761">_EMU_DCDCMISCCTRL_LNFORCECCM_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00769">_EMU_DCDCMISCCTRL_NFETCNT_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00768">_EMU_DCDCMISCCTRL_NFETCNT_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00765">_EMU_DCDCMISCCTRL_PFETCNT_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00764">_EMU_DCDCMISCCTRL_PFETCNT_SHIFT</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, <a class="el" href="em__emu_8h_source.html#l00206">EMU_DcdcLnRcoBand_4MHz</a>, and <a class="el" href="em__emu_8h_source.html#l00208">EMU_DcdcLnRcoBand_5MHz</a>.</p>
 
-<p>Referenced by <a class="el" href="em__emu_8c_source.html#l01088">EMU_DCDCInit()</a>.</p>
-
-<p><div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__EMU_ga6319faf1345bdd44228f345c4c279fe8_icgraph.png" border="0" usemap="#group__EMU_ga6319faf1345bdd44228f345c4c279fe8_icgraph" alt=""/></div>
-<map name="group__EMU_ga6319faf1345bdd44228f345c4c279fe8_icgraph" id="group__EMU_ga6319faf1345bdd44228f345c4c279fe8_icgraph">
-<area shape="rect" id="node3" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265" title="Configure DCDC regulator. " alt="" coords="216,5,320,32"/>
-</map>
-</div>
-</p>
+<p>Referenced by <a class="el" href="em__emu_8c_source.html#l01204">EMU_DCDCInit()</a>.</p>
 
 </div>
 </div>
@@ -1169,9 +1032,31 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01488">1488</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01575">1575</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00902">_EMU_DCDCLNFREQCTRL_RCOBAND_MASK</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00901">_EMU_DCDCLNFREQCTRL_RCOBAND_SHIFT</a>, and <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5625f85c3d89aba15e151ed8d1b701af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EMU_DCDCPowerOff </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function powers off the DCDC controller. This function should only be used if the external power circuit is wired for no DCDC. If the external power circuit is wired for DCDC usage, then use <a class="el" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265" title="Configure DCDC regulator. ">EMU_DCDCInit()</a> and set the DCDC in bypass mode to disable DCDC.</p>
+<dl class="section return"><dt>Returns</dt><dd>Return false if the DCDC could not be disabled. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01594">1594</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+
+<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00707">_EMU_PWRCFG_PWRCFG_MASK</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, and <a class="el" href="efm32pg1b__emu_8h_source.html#l00744">EMU_DCDCCTRL_DCDCMODE_OFF</a>.</p>
 
 </div>
 </div>
@@ -1196,9 +1081,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01521">1521</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01637">1637</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
-<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00976">_EMU_VMONALTAVDDCTRL_THRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00972">_EMU_VMONALTAVDDCTRL_THRESFINE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00941">_EMU_VMONAVDDCTRL_FALLTHRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00937">_EMU_VMONAVDDCTRL_FALLTHRESFINE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00949">_EMU_VMONAVDDCTRL_RISETHRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00945">_EMU_VMONAVDDCTRL_RISETHRESFINE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01003">_EMU_VMONDVDDCTRL_THRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00999">_EMU_VMONDVDDCTRL_THRESFINE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01035">_EMU_VMONIO0CTRL_THRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01031">_EMU_VMONIO0CTRL_THRESFINE_SHIFT</a>, <a class="el" href="em__emu_8h_source.html#l00402">EMU_VmonInit_TypeDef::channel</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00957">EMU_VMONALTAVDDCTRL_EN</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00967">EMU_VMONALTAVDDCTRL_FALLWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00962">EMU_VMONALTAVDDCTRL_RISEWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00922">EMU_VMONAVDDCTRL_EN</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00932">EMU_VMONAVDDCTRL_FALLWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00927">EMU_VMONAVDDCTRL_RISEWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00984">EMU_VMONDVDDCTRL_EN</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00994">EMU_VMONDVDDCTRL_FALLWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00989">EMU_VMONDVDDCTRL_RISEWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01011">EMU_VMONIO0CTRL_EN</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01021">EMU_VMONIO0CTRL_FALLWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01026">EMU_VMONIO0CTRL_RETDIS</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01016">EMU_VMONIO0CTRL_RISEWU</a>, <a class="el" href="em__emu_8h_source.html#l00406">EMU_VmonInit_TypeDef::enable</a>, <a class="el" href="em__emu_8h_source.html#l00405">EMU_VmonInit_TypeDef::fallWakeup</a>, <a class="el" href="em__emu_8h_source.html#l00407">EMU_VmonInit_TypeDef::retDisable</a>, <a class="el" href="em__emu_8h_source.html#l00404">EMU_VmonInit_TypeDef::riseWakeup</a>, and <a class="el" href="em__emu_8h_source.html#l00403">EMU_VmonInit_TypeDef::threshold</a>.</p>
+<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00976">_EMU_VMONALTAVDDCTRL_THRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00972">_EMU_VMONALTAVDDCTRL_THRESFINE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00941">_EMU_VMONAVDDCTRL_FALLTHRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00937">_EMU_VMONAVDDCTRL_FALLTHRESFINE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00949">_EMU_VMONAVDDCTRL_RISETHRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00945">_EMU_VMONAVDDCTRL_RISETHRESFINE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01003">_EMU_VMONDVDDCTRL_THRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00999">_EMU_VMONDVDDCTRL_THRESFINE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01035">_EMU_VMONIO0CTRL_THRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01031">_EMU_VMONIO0CTRL_THRESFINE_SHIFT</a>, <a class="el" href="em__emu_8h_source.html#l00398">EMU_VmonInit_TypeDef::channel</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00957">EMU_VMONALTAVDDCTRL_EN</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00967">EMU_VMONALTAVDDCTRL_FALLWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00962">EMU_VMONALTAVDDCTRL_RISEWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00922">EMU_VMONAVDDCTRL_EN</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00932">EMU_VMONAVDDCTRL_FALLWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00927">EMU_VMONAVDDCTRL_RISEWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00984">EMU_VMONDVDDCTRL_EN</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00994">EMU_VMONDVDDCTRL_FALLWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00989">EMU_VMONDVDDCTRL_RISEWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01011">EMU_VMONIO0CTRL_EN</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01021">EMU_VMONIO0CTRL_FALLWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01026">EMU_VMONIO0CTRL_RETDIS</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01016">EMU_VMONIO0CTRL_RISEWU</a>, <a class="el" href="em__emu_8h_source.html#l00402">EMU_VmonInit_TypeDef::enable</a>, <a class="el" href="em__emu_8h_source.html#l00401">EMU_VmonInit_TypeDef::fallWakeup</a>, <a class="el" href="em__emu_8h_source.html#l00403">EMU_VmonInit_TypeDef::retDisable</a>, <a class="el" href="em__emu_8h_source.html#l00400">EMU_VmonInit_TypeDef::riseWakeup</a>, and <a class="el" href="em__emu_8h_source.html#l00399">EMU_VmonInit_TypeDef::threshold</a>.</p>
 
 </div>
 </div>
@@ -1223,9 +1108,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01579">1579</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01695">1695</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
-<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00941">_EMU_VMONAVDDCTRL_FALLTHRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00937">_EMU_VMONAVDDCTRL_FALLTHRESFINE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00949">_EMU_VMONAVDDCTRL_RISETHRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00945">_EMU_VMONAVDDCTRL_RISETHRESFINE_SHIFT</a>, <a class="el" href="em__emu_8h_source.html#l00424">EMU_VmonHystInit_TypeDef::channel</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00922">EMU_VMONAVDDCTRL_EN</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00932">EMU_VMONAVDDCTRL_FALLWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00927">EMU_VMONAVDDCTRL_RISEWU</a>, <a class="el" href="em__emu_8h_source.html#l00429">EMU_VmonHystInit_TypeDef::enable</a>, <a class="el" href="em__emu_8h_source.html#l00426">EMU_VmonHystInit_TypeDef::fallThreshold</a>, <a class="el" href="em__emu_8h_source.html#l00428">EMU_VmonHystInit_TypeDef::fallWakeup</a>, <a class="el" href="em__emu_8h_source.html#l00425">EMU_VmonHystInit_TypeDef::riseThreshold</a>, and <a class="el" href="em__emu_8h_source.html#l00427">EMU_VmonHystInit_TypeDef::riseWakeup</a>.</p>
+<p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00941">_EMU_VMONAVDDCTRL_FALLTHRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00937">_EMU_VMONAVDDCTRL_FALLTHRESFINE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00949">_EMU_VMONAVDDCTRL_RISETHRESCOARSE_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00945">_EMU_VMONAVDDCTRL_RISETHRESFINE_SHIFT</a>, <a class="el" href="em__emu_8h_source.html#l00420">EMU_VmonHystInit_TypeDef::channel</a>, <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00922">EMU_VMONAVDDCTRL_EN</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00932">EMU_VMONAVDDCTRL_FALLWU</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00927">EMU_VMONAVDDCTRL_RISEWU</a>, <a class="el" href="em__emu_8h_source.html#l00425">EMU_VmonHystInit_TypeDef::enable</a>, <a class="el" href="em__emu_8h_source.html#l00422">EMU_VmonHystInit_TypeDef::fallThreshold</a>, <a class="el" href="em__emu_8h_source.html#l00424">EMU_VmonHystInit_TypeDef::fallWakeup</a>, <a class="el" href="em__emu_8h_source.html#l00421">EMU_VmonHystInit_TypeDef::riseThreshold</a>, and <a class="el" href="em__emu_8h_source.html#l00423">EMU_VmonHystInit_TypeDef::riseWakeup</a>.</p>
 
 </div>
 </div>
@@ -1260,21 +1145,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01620">1620</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01736">1736</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00958">_EMU_VMONALTAVDDCTRL_EN_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00923">_EMU_VMONAVDDCTRL_EN_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00985">_EMU_VMONDVDDCTRL_EN_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l01012">_EMU_VMONIO0CTRL_EN_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00146">BUS_RegBitWrite()</a>, and <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>.</p>
-
-<p><div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__EMU_ga09300bbda1f03edc7096e49daa2a64eb_cgraph.png" border="0" usemap="#group__EMU_ga09300bbda1f03edc7096e49daa2a64eb_cgraph" alt=""/></div>
-<map name="group__EMU_ga09300bbda1f03edc7096e49daa2a64eb_cgraph" id="group__EMU_ga09300bbda1f03edc7096e49daa2a64eb_cgraph">
-<area shape="rect" id="node3" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164" title="Perform a single&#45;bit write operation on a peripheral register. " alt="" coords="179,5,298,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -1299,21 +1172,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Status of the selected VMON channel. True if channel is triggered. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01661">1661</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8c_source.html#l01777">1777</a> of file <a class="el" href="em__emu_8c_source.html">em_emu.c</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00113">_EMU_STATUS_VMONALTAVDD_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00108">_EMU_STATUS_VMONAVDD_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00118">_EMU_STATUS_VMONDVDD_SHIFT</a>, <a class="el" href="efm32pg1b__emu_8h_source.html#l00123">_EMU_STATUS_VMONIO0_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00185">BUS_RegBitRead()</a>, and <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>.</p>
-
-<p><div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__EMU_ga547c14bc2f1573cb8bb1ef965cc635cd_cgraph.png" border="0" usemap="#group__EMU_ga547c14bc2f1573cb8bb1ef965cc635cd_cgraph" alt=""/></div>
-<map name="group__EMU_ga547c14bc2f1573cb8bb1ef965cc635cd_cgraph" id="group__EMU_ga547c14bc2f1573cb8bb1ef965cc635cd_cgraph">
-<area shape="rect" id="node3" href="group__BUS.html#gaca6b55014161f4c51c9daf4f707eeb7c" title="Perform a single&#45;bit read operation on a peripheral register. " alt="" coords="243,5,360,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -1332,21 +1193,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Status of the VMON. True if all the enabled channels are ready, false if one or more of the enabled channels are not ready. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00494">494</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00491">491</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b__emu_8h_source.html#l00103">_EMU_STATUS_VMONRDY_SHIFT</a>, <a class="el" href="em__bus_8h_source.html#l00185">BUS_RegBitRead()</a>, and <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>.</p>
-
-<p><div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__EMU_gafe10f8365d6b7a829585982be34f08ee_cgraph.png" border="0" usemap="#group__EMU_gafe10f8365d6b7a829585982be34f08ee_cgraph" alt=""/></div>
-<map name="group__EMU_gafe10f8365d6b7a829585982be34f08ee_cgraph" id="group__EMU_gafe10f8365d6b7a829585982be34f08ee_cgraph">
-<area shape="rect" id="node3" href="group__BUS.html#gaca6b55014161f4c51c9daf4f707eeb7c" title="Perform a single&#45;bit read operation on a peripheral register. " alt="" coords="197,5,315,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -1370,7 +1219,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00509">509</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00506">506</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>.</p>
 
@@ -1396,7 +1245,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00523">523</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00520">520</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>.</p>
 
@@ -1423,7 +1272,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00542">542</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00539">539</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>.</p>
 
@@ -1445,7 +1294,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>EMU interrupt sources pending. Returns one or more valid interrupt flags for the EMU module (EMU_IF_nnn). </dd></dl>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00559">559</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00556">556</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>.</p>
 
@@ -1471,7 +1320,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00579">579</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00576">576</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>.</p>
 
@@ -1497,7 +1346,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00596">596</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00593">593</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>.</p>
 
@@ -1518,24 +1367,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>If locking the EMU registers, they must be unlocked prior to using any EMU API functions modifying EMU registers, excluding interrupt control and regulator control if the architecture has a EMU_PWRCTRL register. An exception to this is the energy mode entering API (EMU_EnterEMn()), which can be used when the EMU registers are locked. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00653">653</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00650">650</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>References <a class="el" href="efm32pg1b200f256gm48_8h_source.html#l00320">EMU</a>, and <a class="el" href="efm32pg1b__emu_8h_source.html#l00153">EMU_LOCK_LOCKKEY_LOCK</a>.</p>
 
 <p>Referenced by <a class="el" href="em__rmu_8c_source.html#l00231">RMU_ResetCauseClear()</a>.</p>
-
-<p><div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="group__EMU_gaa102a7feedcfdf0165e8137495e15c81_icgraph.png" border="0" usemap="#group__EMU_gaa102a7feedcfdf0165e8137495e15c81_icgraph" alt=""/></div>
-<map name="group__EMU_gaa102a7feedcfdf0165e8137495e15c81_icgraph" id="group__EMU_gaa102a7feedcfdf0165e8137495e15c81_icgraph">
-<area shape="rect" id="node3" href="group__RMU.html#ga1ebc1af03f738faa79b3e87d60a96ff1" title="Clear the reset cause register. " alt="" coords="133,5,285,32"/>
-<area shape="rect" id="node5" href="group__SLEEP.html#ga01eb28531b3fc9a5c7880b86a98d4b1c" title="Initialize the Sleep module. " alt="" coords="333,5,416,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -1544,7 +1380,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 10 2015 12:22:24 for EFM32 Pearl Gecko Software Documentation by
+    <li class="footer">Generated on Tue Dec 8 2015 15:40:03 for EFM32 Pearl Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

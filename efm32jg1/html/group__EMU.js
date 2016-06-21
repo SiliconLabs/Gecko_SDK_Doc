@@ -55,13 +55,11 @@ var group__EMU =
       [ "emuPinRetentionLatch", "group__EMU.html#ggabfa67ae54e346d342a4e4bbc8c7ad27ead2dc213a479d878dbbd7a07fc71635bd", null ]
     ] ],
     [ "EMU_PowerConfig_TypeDef", "group__EMU.html#ga87842440cb0cf01e18480e6d665c581f", [
-      [ "emuPowerConfig_NoDcdc", "group__EMU.html#gga87842440cb0cf01e18480e6d665c581fa4c599218aaa5a0c24386f27f59853c2a", null ],
       [ "emuPowerConfig_DcdcToDvdd", "group__EMU.html#gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9", null ]
     ] ],
     [ "EMU_DcdcMode_TypeDef", "group__EMU.html#ga8dc5324b0e9baa047afdb67739bdb53d", [
       [ "emuDcdcMode_Bypass", "group__EMU.html#gga8dc5324b0e9baa047afdb67739bdb53dac8304128b38af414714bc3b44126d2b6", null ],
-      [ "emuDcdcMode_LowNoise", "group__EMU.html#gga8dc5324b0e9baa047afdb67739bdb53daa876fdc70a4e140199a7bd4e2dcca615", null ],
-      [ "emuDcdcMode_Off", "group__EMU.html#gga8dc5324b0e9baa047afdb67739bdb53da95b5ad5bc38a2f6cc766728935d74182", null ]
+      [ "emuDcdcMode_LowNoise", "group__EMU.html#gga8dc5324b0e9baa047afdb67739bdb53daa876fdc70a4e140199a7bd4e2dcca615", null ]
     ] ],
     [ "EMU_DcdcAnaPeripheralPower_TypeDef", "group__EMU.html#gaccf990475418eb1ed67acaed99efa4d0", [
       [ "emuDcdcAnaPeripheralPower_AVDD", "group__EMU.html#ggaccf990475418eb1ed67acaed99efa4d0a035bd434069aca951cc17748ecd8267f", null ],
@@ -95,6 +93,7 @@ var group__EMU =
     [ "EMU_DCDCOutputVoltageSet", "group__EMU.html#gab99ce5b7cbbe4b4da1112dba636e1d71", null ],
     [ "EMU_DCDCOptimizeSlice", "group__EMU.html#ga6319faf1345bdd44228f345c4c279fe8", null ],
     [ "EMU_DCDCLnRcoBandSet", "group__EMU.html#ga4b8909b4558d78ba21bce5b57f5557dc", null ],
+    [ "EMU_DCDCPowerOff", "group__EMU.html#ga5625f85c3d89aba15e151ed8d1b701af", null ],
     [ "EMU_VmonInit", "group__EMU.html#ga83f2bf640fd8916bd425b91f7b7bdba6", null ],
     [ "EMU_VmonHystInit", "group__EMU.html#ga1dff87995235b3e9f1100881e11e1868", null ],
     [ "EMU_VmonEnable", "group__EMU.html#ga09300bbda1f03edc7096e49daa2a64eb", null ],

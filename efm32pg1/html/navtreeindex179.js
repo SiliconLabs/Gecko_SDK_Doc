@@ -1,5 +1,9 @@
 var NAVTREEINDEX179 =
 {
+"structSPIDRV__Init.html#a6f015a4e0562e354c4b194d6ee61642f":[1,33,2,0,8],
+"structSPIDRV__Init.html#a6f1a49a0aba2e61a218d17859cde4647":[1,33,2,0,1],
+"structSPIDRV__Init.html#a70850ce8d7d9e382680fa9e0099988c8":[1,33,2,0,0],
+"structSPIDRV__Init.html#a8f766997356aa7384fda2ee968dfac7c":[1,33,2,0,4],
 "structSPIDRV__Init.html#a99dbda3f0f3d2326eed8c74d68e9df39":[1,33,2,0,5],
 "structSPIDRV__Init.html#a9b7e5d04e3bfa608db4cf48054499671":[1,33,2,0,10],
 "structSPIDRV__Init.html#ab064bb25f5af93109e39764c2b5c4a7a":[1,33,2,0,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX179 =
 "structcal__ref__t.html#ac22179926ea5e6796e700b5c130f0531":[2,0,16,1],
 "structcal__ref__t.html#af73d08084a1d8dd21c9e3bf01b3bad4f":[2,0,16,5],
 "structoperand__t.html":[2,0,88],
-"structoperand__t.html#a2085baba44e6aec76bacafcf38462095":[2,0,88,1],
-"structoperand__t.html#a3110d0088d2cc26a4eca11c34c8280ea":[2,0,88,0],
-"structsFlashStatus.html":[2,0,102],
-"structsFlashStatus.html#ae9ca98ab8f89563228684dccbf9878c5":[2,0,102,0],
-"structsFlashStatus.html#afab3f9da4a31eccd380d51725d90f773":[2,0,102,1]
+"structoperand__t.html#a2085baba44e6aec76bacafcf38462095":[2,0,88,1]
 };

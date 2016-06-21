@@ -1,5 +1,9 @@
 var NAVTREEINDEX174 =
 {
+"si1147__i2c_8c.html":[3,0,3,0,1,57],
+"si1147__i2c_8c_source.html":[3,0,3,0,1,57],
+"si1147__i2c_8h.html":[3,0,3,0,1,58],
+"si1147__i2c_8h_source.html":[3,0,3,0,1,58],
 "si114x__algorithm_8c_source.html":[3,0,3,0,1,59],
 "si114x__algorithm_8h.html":[3,0,3,0,1,60],
 "si114x__algorithm_8h_source.html":[3,0,3,0,1,60],
@@ -245,9 +249,5 @@ var NAVTREEINDEX174 =
 "structBC__TypeDef.html#ac6e838afa0d758d0490d889709f1a732":[1,34,1,0,24],
 "structBC__TypeDef.html#ac9787dfcb74fc9c459681aabedfc6aed":[1,34,1,0,9],
 "structBC__TypeDef.html#acc617768485258128d133498da1ab014":[1,34,1,0,14],
-"structBC__TypeDef.html#acd5204792f4312d712ac0e879ea8f56d":[1,34,1,0,38],
-"structBC__TypeDef.html#ad0af6540bea6f437d7881e6233fa1bfa":[1,34,1,0,6],
-"structBC__TypeDef.html#ad16275d732511e36355dcc8968adf0d9":[1,34,1,0,45],
-"structBC__TypeDef.html#ad29817c1eb7227e173195994c555b4e9":[1,34,1,0,37],
-"structBC__TypeDef.html#ad5ae3a1927789a210de19984e7025229":[1,34,1,0,34]
+"structBC__TypeDef.html#acd5204792f4312d712ac0e879ea8f56d":[1,34,1,0,38]
 };

@@ -107,8 +107,8 @@ var NAVTREEINDEX116 =
 "group__EFM32JG1B__PRS__BitFields.html#ga1170f28ed9a5b622641ad3cdc97f84b8":[1,31,38,755],
 "group__EFM32JG1B__PRS__BitFields.html#ga11857e54b77535a319cc7916ed4816e8":[3,0,0,0,0,0,23,859],
 "group__EFM32JG1B__PRS__BitFields.html#ga11857e54b77535a319cc7916ed4816e8":[1,31,38,859],
-"group__EFM32JG1B__PRS__BitFields.html#ga1185d0a95505629c8694e9eff454383d":[1,31,38,49],
 "group__EFM32JG1B__PRS__BitFields.html#ga1185d0a95505629c8694e9eff454383d":[3,0,0,0,0,0,23,49],
+"group__EFM32JG1B__PRS__BitFields.html#ga1185d0a95505629c8694e9eff454383d":[1,31,38,49],
 "group__EFM32JG1B__PRS__BitFields.html#ga1205b2cd1f7614bf3fa8bea2e8275493":[3,0,0,0,0,0,23,680],
 "group__EFM32JG1B__PRS__BitFields.html#ga1205b2cd1f7614bf3fa8bea2e8275493":[1,31,38,680],
 "group__EFM32JG1B__PRS__BitFields.html#ga122e8c2af23b8d1fa904fb8297ebf545":[3,0,0,0,0,0,23,797],
@@ -143,12 +143,12 @@ var NAVTREEINDEX116 =
 "group__EFM32JG1B__PRS__BitFields.html#ga18bc35e1dcec660a6c5a347464b5e9a2":[1,31,38,513],
 "group__EFM32JG1B__PRS__BitFields.html#ga18cdd551fd49475c09dfb211314eb5b1":[3,0,0,0,0,0,23,462],
 "group__EFM32JG1B__PRS__BitFields.html#ga18cdd551fd49475c09dfb211314eb5b1":[1,31,38,462],
-"group__EFM32JG1B__PRS__BitFields.html#ga193ada815791482b205ed931895d0894":[3,0,0,0,0,0,23,463],
 "group__EFM32JG1B__PRS__BitFields.html#ga193ada815791482b205ed931895d0894":[1,31,38,463],
+"group__EFM32JG1B__PRS__BitFields.html#ga193ada815791482b205ed931895d0894":[3,0,0,0,0,0,23,463],
 "group__EFM32JG1B__PRS__BitFields.html#ga1a9ace340ca4ae155a3d54d3919c30bc":[3,0,0,0,0,0,23,593],
 "group__EFM32JG1B__PRS__BitFields.html#ga1a9ace340ca4ae155a3d54d3919c30bc":[1,31,38,593],
-"group__EFM32JG1B__PRS__BitFields.html#ga1b10a5e8d31ad02dc4ac8aa8a2b92e08":[3,0,0,0,0,0,23,229],
 "group__EFM32JG1B__PRS__BitFields.html#ga1b10a5e8d31ad02dc4ac8aa8a2b92e08":[1,31,38,229],
+"group__EFM32JG1B__PRS__BitFields.html#ga1b10a5e8d31ad02dc4ac8aa8a2b92e08":[3,0,0,0,0,0,23,229],
 "group__EFM32JG1B__PRS__BitFields.html#ga1b86512bc515dcff2691a21f3c030231":[3,0,0,0,0,0,23,396],
 "group__EFM32JG1B__PRS__BitFields.html#ga1b86512bc515dcff2691a21f3c030231":[1,31,38,396],
 "group__EFM32JG1B__PRS__BitFields.html#ga1c12066d18f663c7c7f5dddf35e112e1":[3,0,0,0,0,0,23,783],
@@ -249,5 +249,5 @@ var NAVTREEINDEX116 =
 "group__EFM32JG1B__PRS__BitFields.html#ga2ab5f8a8f7976cfe780bb23fc7ca184d":[1,31,38,0],
 "group__EFM32JG1B__PRS__BitFields.html#ga2ac32b68010183dd5b3d45768937361f":[3,0,0,0,0,0,23,649],
 "group__EFM32JG1B__PRS__BitFields.html#ga2ac32b68010183dd5b3d45768937361f":[1,31,38,649],
-"group__EFM32JG1B__PRS__BitFields.html#ga2aebba7c0b4e95b88b107e373111dbdb":[1,31,38,398]
+"group__EFM32JG1B__PRS__BitFields.html#ga2aebba7c0b4e95b88b107e373111dbdb":[3,0,0,0,0,0,23,398]
 };

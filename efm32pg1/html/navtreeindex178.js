@@ -1,5 +1,9 @@
 var NAVTREEINDEX178 =
 {
+"structMSDSCSI__Read10__TypeDef.html#ae8df8693544f0bb680117bb59c17bbd8":[1,35,9,9,1],
+"structMSDSCSI__Read10__TypeDef.html#af761f58e88342d2362a6d63d2510def8":[1,35,9,9,0],
+"structMSDSCSI__Read10__TypeDef.html#afa58ea2515f43971420cfae86d95bfa3":[1,35,9,9,8],
+"structMSDSCSI__ReadCapacityData__TypeDef.html":[1,35,9,8],
 "structMSDSCSI__ReadCapacityData__TypeDef.html#a0a1147829445f6b2e1da2fd86ce45d91":[1,35,9,8,0],
 "structMSDSCSI__ReadCapacityData__TypeDef.html#a345dd2117f77e23f8f991c2568e266e5":[1,35,9,8,1],
 "structMSDSCSI__ReadCapacity__TypeDef.html":[1,35,9,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX178 =
 "structSPIDRV__Init.html#a294b8aa1198583675863883c6c459c46":[1,33,2,0,6],
 "structSPIDRV__Init.html#a61e358241cd643dffef97de8c4d0663d":[1,33,2,0,12],
 "structSPIDRV__Init.html#a692a9bba58acd5a4f9420363b53de9a6":[1,33,2,0,9],
-"structSPIDRV__Init.html#a6ede9845f3c7f74f44e47b9d9198fbf7":[1,33,2,0,11],
-"structSPIDRV__Init.html#a6f015a4e0562e354c4b194d6ee61642f":[1,33,2,0,8],
-"structSPIDRV__Init.html#a6f1a49a0aba2e61a218d17859cde4647":[1,33,2,0,1],
-"structSPIDRV__Init.html#a70850ce8d7d9e382680fa9e0099988c8":[1,33,2,0,0],
-"structSPIDRV__Init.html#a8f766997356aa7384fda2ee968dfac7c":[1,33,2,0,4]
+"structSPIDRV__Init.html#a6ede9845f3c7f74f44e47b9d9198fbf7":[1,33,2,0,11]
 };

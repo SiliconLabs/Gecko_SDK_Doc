@@ -9,6 +9,7 @@ var searchData=
   ['emu_5fdcdcmodeset',['EMU_DCDCModeSet',['../group__EMU.html#gade447bc354ddd2893ac668a7475e76fd',1,'em_emu.c']]],
   ['emu_5fdcdcoptimizeslice',['EMU_DCDCOptimizeSlice',['../group__EMU.html#ga6319faf1345bdd44228f345c4c279fe8',1,'em_emu.c']]],
   ['emu_5fdcdcoutputvoltageset',['EMU_DCDCOutputVoltageSet',['../group__EMU.html#gab99ce5b7cbbe4b4da1112dba636e1d71',1,'em_emu.c']]],
+  ['emu_5fdcdcpoweroff',['EMU_DCDCPowerOff',['../group__EMU.html#ga5625f85c3d89aba15e151ed8d1b701af',1,'em_emu.c']]],
   ['emu_5fem23init',['EMU_EM23Init',['../group__EMU.html#ga27ca632c20c9251019338c5690279974',1,'em_emu.c']]],
   ['emu_5fem2block',['EMU_EM2Block',['../group__EMU.html#ga72910c09de24f4e2f8f170dc06bd8c07',1,'em_emu.h']]],
   ['emu_5fem2unblock',['EMU_EM2UnBlock',['../group__EMU.html#ga9e959a9fd56ac4a2e18877b9b839d795',1,'em_emu.h']]],
