@@ -3,6 +3,7 @@ var searchData=
   ['geometry',['geometry',['../structDISPLAY__Device__t.html#a2831b90b6c0376b8a4e517d4fdb14235',1,'DISPLAY_Device_t']]],
   ['gesture_5ft',['gesture_t',['../group__Si114x.html#ga336655f991c3d44f61e92e4d31c4bf36',1,'si114x_algorithm.h']]],
   ['getprodrev',['GetProdRev',['../system__efm32g_8c.html#a442d0fcb831f601f02d643a64ab80f4c',1,'system_efm32g.c']]],
+  ['glitchdetector',['glitchDetector',['../structCMU__HFXOInit__TypeDef.html#a0d7d86fd3e46e23c6f0568540287af53',1,'CMU_HFXOInit_TypeDef']]],
   ['global_5fsoft_5freset',['GLOBAL_SOFT_RESET',['../ksz8851snl_8c.html#a4286160ca194bc8850c7fc9013fe3779',1,'ksz8851snl.c']]],
   ['gpio',['GPIO',['../group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1',1,'GPIO():&#160;efm32g890f128.h'],['../group__GPIO.html',1,'(Global Namespace)']]],
   ['gpio_5fbase',['GPIO_BASE',['../group__EFM32G890F128__Peripheral__Base.html#gacce3b8a909ed8b957b4e411dfb7cbd91',1,'efm32g890f128.h']]],
@@ -489,6 +490,6 @@ var searchData=
   ['gpiomodewiredandpullupfilter',['gpioModeWiredAndPullUpFilter',['../group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa33eec9af3c04e4b4cb5b8d50a2bcaa78',1,'em_gpio.h']]],
   ['gpiomodewiredor',['gpioModeWiredOr',['../group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa173afb24fa5ff271655e97359901bc80',1,'em_gpio.h']]],
   ['gpiomodewiredorpulldown',['gpioModeWiredOrPullDown',['../group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaaf66857a3bb959e1e0f526b4fe969a0c3',1,'em_gpio.h']]],
-  ['groupnumber',['GroupNumber',['../structSL__ATTRIBUTE__PACKED.html#aaddd6a6e755a56401bc1edc63624d57a',1,'SL_ATTRIBUTE_PACKED']]],
+  ['groupnumber',['GroupNumber',['../structMSDSCSI__Read10__TypeDef.html#afa58ea2515f43971420cfae86d95bfa3',1,'MSDSCSI_Read10_TypeDef::GroupNumber()'],['../structMSDSCSI__Write10__TypeDef.html#accacfbc02998135ecc438b5863063a7b',1,'MSDSCSI_Write10_TypeDef::GroupNumber()'],['../structMSDSCSI__Verify10__TypeDef.html#a78e4e235d994c3abc8711f5c64f794ac',1,'MSDSCSI_Verify10_TypeDef::GroupNumber()']]],
   ['grr',['GRR',['../ksz8851snl_8c.html#a092b1852ba2fbba0bcdd216f3f641b49',1,'ksz8851snl.c']]]
 ];

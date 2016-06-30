@@ -21,7 +21,7 @@ var group__ADC =
     ] ],
     [ "ADC_InitScanInput_TypeDef", "structADC__InitScanInput__TypeDef.html", [
       [ "scanInputEn", "structADC__InitScanInput__TypeDef.html#a36cc0ad89f2c74ed087cf6a59db1f927", null ],
-      [ "scanInputSel", "structADC__InitScanInput__TypeDef.html#ac65ab8a3cbc06539149badd46710d5a2", null ],
+      [ "scanInputSel", "structADC__InitScanInput__TypeDef.html#abf3981851e3bd1083ebaa89ee7a2ce70", null ],
       [ "scanNegSel", "structADC__InitScanInput__TypeDef.html#a53b532aa95f5538e0a66c89a0a02c2a6", null ]
     ] ],
     [ "ADC_InitSingle_TypeDef", "structADC__InitSingle__TypeDef.html", [

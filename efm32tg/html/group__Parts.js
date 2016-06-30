@@ -57,39 +57,39 @@ var group__Parts =
     [ "EFM32TG_WDOG", "group__EFM32TG__WDOG.html", "group__EFM32TG__WDOG" ],
     [ "EFM32TG_WDOG_BitFields", "group__EFM32TG__WDOG__BitFields.html", "group__EFM32TG__WDOG__BitFields" ],
     [ "DMA_CH_TypeDef", "structDMA__CH__TypeDef.html", [
-      [ "CTRL", "structDMA__CH__TypeDef.html#a266a6da8822d29e619c942e30f217de7", null ]
+      [ "CTRL", "structDMA__CH__TypeDef.html#a42c320e31a3b152836f99c5b414378df", null ]
     ] ],
     [ "GPIO_P_TypeDef", "structGPIO__P__TypeDef.html", [
-      [ "CTRL", "structGPIO__P__TypeDef.html#a5b0ed681dcf52fefe424c3145cd5025f", null ],
-      [ "DIN", "structGPIO__P__TypeDef.html#a32cb3813b6bf7534d6e640528741a82e", null ],
-      [ "DOUT", "structGPIO__P__TypeDef.html#a042c3a572e749f67f63d9a094e96d567", null ],
-      [ "DOUTCLR", "structGPIO__P__TypeDef.html#aa4fc7332bb9352c0cbe1f05b64ca370a", null ],
-      [ "DOUTSET", "structGPIO__P__TypeDef.html#a0d8f76be5706698e8e3fee8438c90b6a", null ],
-      [ "DOUTTGL", "structGPIO__P__TypeDef.html#a576341b58cbf31bfc9552f29c0276bca", null ],
-      [ "MODEH", "structGPIO__P__TypeDef.html#aa8a7ce592d8fa594a61cf37d62c1d7d4", null ],
-      [ "MODEL", "structGPIO__P__TypeDef.html#ad28242da58dcd7bf160cfdee1abe70d2", null ],
-      [ "PINLOCKN", "structGPIO__P__TypeDef.html#a8858ff71b6607d96c82d221841686d0d", null ]
+      [ "CTRL", "structGPIO__P__TypeDef.html#a473a74fcee9b697cf642c887f167e900", null ],
+      [ "DIN", "structGPIO__P__TypeDef.html#a8d6bab03ea08dc3e2408dbead3f69e99", null ],
+      [ "DOUT", "structGPIO__P__TypeDef.html#ad49eb368c1fb770c9b3873f27d7f3cf0", null ],
+      [ "DOUTCLR", "structGPIO__P__TypeDef.html#a48b9bb92719a589c4983c4115d3aab1f", null ],
+      [ "DOUTSET", "structGPIO__P__TypeDef.html#a621cfc6fd02e0d852be38d0d66f0a6e9", null ],
+      [ "DOUTTGL", "structGPIO__P__TypeDef.html#ac71a9aad29711f2a75831535cbd2848e", null ],
+      [ "MODEH", "structGPIO__P__TypeDef.html#a4ee759a562af28eccb7c297bfc618855", null ],
+      [ "MODEL", "structGPIO__P__TypeDef.html#a5418724025e260191444b876c75da4bb", null ],
+      [ "PINLOCKN", "structGPIO__P__TypeDef.html#ae2004e79e252f39747bd7ab68d4d2022", null ]
     ] ],
     [ "LESENSE_BUF_TypeDef", "structLESENSE__BUF__TypeDef.html", [
-      [ "DATA", "structLESENSE__BUF__TypeDef.html#af50dc63a54b7ba512b9520fd49a81f92", null ]
+      [ "DATA", "structLESENSE__BUF__TypeDef.html#a0a6246f8f5d30d6a4b15bae78be896ce", null ]
     ] ],
     [ "LESENSE_CH_TypeDef", "structLESENSE__CH__TypeDef.html", [
-      [ "EVAL", "structLESENSE__CH__TypeDef.html#adea024e1676c3ddb1f84c050054bca8f", null ],
-      [ "INTERACT", "structLESENSE__CH__TypeDef.html#abe0b6c577b5a20078618e5987c6f9bd1", null ],
+      [ "EVAL", "structLESENSE__CH__TypeDef.html#a1984b4d40a56cb6c582a76ef018f5e14", null ],
+      [ "INTERACT", "structLESENSE__CH__TypeDef.html#a94b1e94a4cca9d5a689082294c29cfce", null ],
       [ "RESERVED0", "structLESENSE__CH__TypeDef.html#a0768d9423e8ff88ad6847b71a40357bd", null ],
-      [ "TIMING", "structLESENSE__CH__TypeDef.html#a4a0f8abb7c6496436a4fcd1ad7201ffc", null ]
+      [ "TIMING", "structLESENSE__CH__TypeDef.html#aceba55cd81a504cebe984064835443d3", null ]
     ] ],
     [ "LESENSE_ST_TypeDef", "structLESENSE__ST__TypeDef.html", [
-      [ "TCONFA", "structLESENSE__ST__TypeDef.html#adf47148abdb3a7e9216d2c82fd3f9237", null ],
-      [ "TCONFB", "structLESENSE__ST__TypeDef.html#a543c657b4d1b4316a608991d35ed7b9f", null ]
+      [ "TCONFA", "structLESENSE__ST__TypeDef.html#a2211f6a54db2e01c7dffbc24a51f6a94", null ],
+      [ "TCONFB", "structLESENSE__ST__TypeDef.html#a90b3be8fcd6ee7be5c28dfd060fc1776", null ]
     ] ],
     [ "PRS_CH_TypeDef", "structPRS__CH__TypeDef.html", [
-      [ "CTRL", "structPRS__CH__TypeDef.html#a44f30addd8273511c81d535fef2414b2", null ]
+      [ "CTRL", "structPRS__CH__TypeDef.html#a87aaa9a0fa4b70a4e86e3334756ba262", null ]
     ] ],
     [ "TIMER_CC_TypeDef", "structTIMER__CC__TypeDef.html", [
-      [ "CCV", "structTIMER__CC__TypeDef.html#acc9438c0f8107f2ad9e358c8afb73bf2", null ],
-      [ "CCVB", "structTIMER__CC__TypeDef.html#aa3eff4dcde68225978411d7419aa81a9", null ],
-      [ "CCVP", "structTIMER__CC__TypeDef.html#a1673fb669a6ae2f7081d9a5f3f294785", null ],
-      [ "CTRL", "structTIMER__CC__TypeDef.html#af3a7a604528309ce227e5a048f61e770", null ]
+      [ "CCV", "structTIMER__CC__TypeDef.html#a08171cad28467b1a803b3557cc1127d7", null ],
+      [ "CCVB", "structTIMER__CC__TypeDef.html#a954e0fd8b3bda78f99106ad3ebb7fa0f", null ],
+      [ "CCVP", "structTIMER__CC__TypeDef.html#a1345286209ed7a06df44020b776103ca", null ],
+      [ "CTRL", "structTIMER__CC__TypeDef.html#a6cc61bb28f687753c3527f6d0ccfba27", null ]
     ] ]
 ];

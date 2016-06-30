@@ -1,21 +1,21 @@
 var group__EFM32GG__LETIMER =
 [
     [ "LETIMER_TypeDef", "structLETIMER__TypeDef.html", [
-      [ "CMD", "structLETIMER__TypeDef.html#a4d622edac39de396661dc05f28bdd1ea", null ],
-      [ "CNT", "structLETIMER__TypeDef.html#a3cf99da1678db814722381b159fb170c", null ],
-      [ "COMP0", "structLETIMER__TypeDef.html#a65d7ddedb25786b2e84705fbe5c6a731", null ],
-      [ "COMP1", "structLETIMER__TypeDef.html#a8ed0b3c9a45eb5d367c855d620de0599", null ],
-      [ "CTRL", "structLETIMER__TypeDef.html#a3a7727953dfacb40db38296cff2132d9", null ],
-      [ "FREEZE", "structLETIMER__TypeDef.html#a7c6acce276dc547ddb662ecc3ff0a1c5", null ],
-      [ "IEN", "structLETIMER__TypeDef.html#abb6e0f031b75d31c9b4b8e486d773527", null ],
-      [ "IF", "structLETIMER__TypeDef.html#ab1f562e11026330f4ef5b554a8729c34", null ],
-      [ "IFC", "structLETIMER__TypeDef.html#a6ff52c44838ab89abc78aab3e2f9ff96", null ],
-      [ "IFS", "structLETIMER__TypeDef.html#a630292a2c6790293f30d99c8255d9232", null ],
-      [ "REP0", "structLETIMER__TypeDef.html#a1e77b3cb4acb57511bc848c30ad7bf24", null ],
-      [ "REP1", "structLETIMER__TypeDef.html#a499bce517e3b3617c63f472588252a1a", null ],
+      [ "CMD", "structLETIMER__TypeDef.html#ad704ac10e2baa16f7eaafac3ff636c44", null ],
+      [ "CNT", "structLETIMER__TypeDef.html#a3c05c7ca39b663d3e4f3f0c770dfce94", null ],
+      [ "COMP0", "structLETIMER__TypeDef.html#a9ad2af9201f60245645d894abfa3d4a8", null ],
+      [ "COMP1", "structLETIMER__TypeDef.html#a721ef71fab1396b54355883108bc372a", null ],
+      [ "CTRL", "structLETIMER__TypeDef.html#a926fe5f6b8e83a2023d9ca4111cb8397", null ],
+      [ "FREEZE", "structLETIMER__TypeDef.html#a116d1f8d2d79edeee842f415387b96c5", null ],
+      [ "IEN", "structLETIMER__TypeDef.html#afa12565534843d03698363adcddbf4f7", null ],
+      [ "IF", "structLETIMER__TypeDef.html#aef93c5078794f231b2f88be5c0e811aa", null ],
+      [ "IFC", "structLETIMER__TypeDef.html#a3bbc2465ffe3bcade3f770f720ff69bd", null ],
+      [ "IFS", "structLETIMER__TypeDef.html#a890a56b8a2eded96d3a39ce384999afb", null ],
+      [ "REP0", "structLETIMER__TypeDef.html#a0dba6aae60606f5cb5ddb54293cc833e", null ],
+      [ "REP1", "structLETIMER__TypeDef.html#ad2214c3767000bd5bede4ad1fc40e2de", null ],
       [ "RESERVED0", "structLETIMER__TypeDef.html#a8d40529ffe9c423e0afe5497a9a4290b", null ],
-      [ "ROUTE", "structLETIMER__TypeDef.html#afc21e409a2e581b4c19f50c6e60ca56b", null ],
-      [ "STATUS", "structLETIMER__TypeDef.html#a60f8ede923a0fd76912f9c0a685303f5", null ],
-      [ "SYNCBUSY", "structLETIMER__TypeDef.html#a4fdf578f71193bbc6ed1fbc656695011", null ]
+      [ "ROUTE", "structLETIMER__TypeDef.html#a8557848cdf98f8ee951a058624868fd0", null ],
+      [ "STATUS", "structLETIMER__TypeDef.html#a901b92afb10335d72f3c5a700745bfd9", null ],
+      [ "SYNCBUSY", "structLETIMER__TypeDef.html#a26b162e7fead818f93f2242f3feac941", null ]
     ] ]
 ];

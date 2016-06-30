@@ -5,5 +5,6 @@ var searchData=
   ['display',['Display',['../group__Display.html',1,'']]],
   ['dma',['DMA',['../group__DMA.html',1,'']]],
   ['dmactrl',['DmaCtrl',['../group__DmaCtrl.html',1,'']]],
-  ['dmadrv',['DMADRV',['../group__DMADRV.html',1,'']]]
+  ['dmadrv',['DMADRV',['../group__DMADRV.html',1,'']]],
+  ['devices',['Devices',['../group__Parts.html',1,'']]]
 ];

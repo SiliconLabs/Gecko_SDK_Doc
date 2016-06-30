@@ -5,8 +5,8 @@ var searchData=
   ['warmupmode',['warmUpMode',['../structADC__Init__TypeDef.html#ac20d26a2e7384f0f648600e446261629',1,'ADC_Init_TypeDef']]],
   ['watermark_5f4kb',['WATERMARK_4KB',['../ksz8851snl_8c.html#ae78ae160bdcc753d7ecd0c42c8d0c49b',1,'ksz8851snl.c']]],
   ['watermark_5f6kb',['WATERMARK_6KB',['../ksz8851snl_8c.html#ace67331af9e371dffde22d1b5fabf5f1',1,'ksz8851snl.c']]],
-  ['wbus16',['Wbus16',['../structSL__ATTRIBUTE__PACKED.html#ac1ab2829cd1c7ec265c9a46f8c0d4247',1,'SL_ATTRIBUTE_PACKED']]],
-  ['wdata',['WDATA',['../structMSC__TypeDef.html#ae0727ae42639a07fc6517f0f1fe4e247',1,'MSC_TypeDef']]],
+  ['wbus16',['Wbus16',['../structMSDSCSI__InquiryData__TypeDef.html#af08ef6da6baaf4181284ed72824ea0de',1,'MSDSCSI_InquiryData_TypeDef']]],
+  ['wdata',['WDATA',['../structMSC__TypeDef.html#a7c3cf09ded6f9abe2db4c9083d17f3cb',1,'MSC_TypeDef']]],
   ['wdog',['WDOG',['../group__EFM32ZG222F32__Peripheral__Declaration.html#gab938901a5fa5443253fc293ebd0399e3',1,'WDOG():&#160;efm32zg222f32.h'],['../group__WDOG.html',1,'(Global Namespace)']]],
   ['wdog_5fbase',['WDOG_BASE',['../group__EFM32ZG222F32__Peripheral__Base.html#ga0c092d77d4599871d1ebda1a3a28e887',1,'efm32zg222f32.h']]],
   ['wdog_5fclksel_5ftypedef',['WDOG_ClkSel_TypeDef',['../group__WDOG.html#ga84959950c7a90940b7b2aa414648f338',1,'em_wdog.h']]],
@@ -70,7 +70,7 @@ var searchData=
   ['wdogperiod_5f9',['wdogPeriod_9',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505a9ed45af9c6fd5b2d8e3f205b448755d1',1,'em_wdog.h']]],
   ['width',['width',['../structDISPLAY__Geometry__t.html#ae9e35a507b29dfea64883890ff434b53',1,'DISPLAY_Geometry_t']]],
   ['word_5fsize',['WORD_SIZE',['../ksz8851snl_8c.html#a92ed8507d1cd2331ad09275c5c4c1c89',1,'ksz8851snl.c']]],
-  ['writecmd',['WRITECMD',['../structMSC__TypeDef.html#a54618e0654077bed4c5bc9fffabbecbf',1,'MSC_TypeDef']]],
-  ['writectrl',['WRITECTRL',['../structMSC__TypeDef.html#a7403f28e9908a708aad0219453bf6dd8',1,'MSC_TypeDef']]],
-  ['wrprotect',['WrProtect',['../structSL__ATTRIBUTE__PACKED.html#af9a5fb6cc6f06186c72f757f0e904670',1,'SL_ATTRIBUTE_PACKED']]]
+  ['writecmd',['WRITECMD',['../structMSC__TypeDef.html#a8159c7ef51bdf760d62c0f85a1289b69',1,'MSC_TypeDef']]],
+  ['writectrl',['WRITECTRL',['../structMSC__TypeDef.html#a7159c4049af4cbcd06ef7bc91e3d477f',1,'MSC_TypeDef']]],
+  ['wrprotect',['WrProtect',['../structMSDSCSI__Write10__TypeDef.html#a6208efa009ed1de7712170a0545b38c4',1,'MSDSCSI_Write10_TypeDef']]]
 ];

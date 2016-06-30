@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name',['name',['../structSL__ATTRIBUTE__PACKED.html#a1db23a8d6b54e825c0622177fe8a3910',1,'SL_ATTRIBUTE_PACKED::name()'],['../structDISPLAY__Device__t.html#a053be6583f77e45fc0ac34bd10f55985',1,'DISPLAY_Device_t::name()']]],
+  ['name',['name',['../structUSB__StringDescriptor__TypeDef.html#a4d3f267ba701407b5e7f287a527037ad',1,'USB_StringDescriptor_TypeDef::name()'],['../structDISPLAY__Device__t.html#a053be6583f77e45fc0ac34bd10f55985',1,'DISPLAY_Device_t::name()']]],
   ['nand256w3a_5fsparesize',['NAND256W3A_SPARESIZE',['../group__NandFlash.html#gaa9340348b9962d9ef5c0adec85cf4009',1,'nandflash.h']]],
   ['nand_5fspare_5fbadblock_5fpos',['NAND_SPARE_BADBLOCK_POS',['../group__NandFlash.html#gad9fa3a77db2902cb07ca9dbc0004069d',1,'nandflash.h']]],
   ['nand_5fspare_5fecc0_5fpos',['NAND_SPARE_ECC0_POS',['../group__NandFlash.html#ga68202c2af9400be750e866347c1ae77e',1,'nandflash.h']]],
@@ -34,7 +34,7 @@ var searchData=
   ['nextout',['nextOut',['../structOPAMP__Init__TypeDef.html#aa35bd216eb267a79ad629d7dfb6cfba8',1,'OPAMP_Init_TypeDef']]],
   ['nextstate',['nextState',['../structLESENSE__DecStCond__TypeDef.html#a46d3fa48d1809a1a7784651a13ececcf',1,'LESENSE_DecStCond_TypeDef']]],
   ['nminus1',['nMinus1',['../structDMA__CfgLoop__TypeDef.html#a69fe0908e51acbb95ec41d1522b44471',1,'DMA_CfgLoop_TypeDef::nMinus1()'],['../structDMA__CfgDescrSGAlt__TypeDef.html#a682f64b8005ac966a25f71c22781ad17',1,'DMA_CfgDescrSGAlt_TypeDef::nMinus1()']]],
-  ['no_5fflush',['No_Flush',['../structSL__ATTRIBUTE__PACKED.html#aedc901a2418db9f4eb9d562cb4b384a3',1,'SL_ATTRIBUTE_PACKED']]],
+  ['no_5fflush',['No_Flush',['../structMSDSCSI__StartStopUnit__TypeDef.html#aa1ec8edda538071e9fc6291f1fb1d953',1,'MSDSCSI_StartStopUnit_TypeDef']]],
   ['no_5fint',['NO_INT',['../ksz8851snl_8c.html#a359afd6937727dbe8deee27136244dde',1,'ksz8851snl.c']]],
   ['nonmaskableint_5firqn',['NonMaskableInt_IRQn',['../group__EZR32LG330F256R69.html#gga666eb0caeb12ec0e281415592ae89083ade177d9c70c89e084093024b932a4e30',1,'ezr32lg330f256r69.h']]],
   ['norflash',['NorFlash',['../group__NorFlash.html',1,'']]],
@@ -58,7 +58,7 @@ var searchData=
   ['norflash_5fstatus_5ftypedef',['NORFLASH_Status_TypeDef',['../group__NorFlash.html#gaa2d42c4ba2e3256aab40b3c4622982ed',1,'norflash.h']]],
   ['norflash_5fwrite_5ffailure',['NORFLASH_WRITE_FAILURE',['../group__NorFlash.html#ggaa2d42c4ba2e3256aab40b3c4622982eda9a8b9731889d9bf8a6cdfc2be4ce2047',1,'norflash.h']]],
   ['norflash_5fwrite_5ftimeout',['NORFLASH_WRITE_TIMEOUT',['../group__NorFlash.html#ggaa2d42c4ba2e3256aab40b3c4622982eda8c96a8d847f707c4bb30227470340e0f',1,'norflash.h']]],
-  ['normaca',['NormACA',['../structSL__ATTRIBUTE__PACKED.html#a1cd09c26f74f8e5f4051850659d5e2fe',1,'SL_ATTRIBUTE_PACKED']]],
+  ['normaca',['NormACA',['../structMSDSCSI__InquiryData__TypeDef.html#acbbce207ea30d4a0df77858cc788ecd3',1,'MSDSCSI_InquiryData_TypeDef']]],
   ['npen',['npEn',['../structOPAMP__Init__TypeDef.html#ab07747ad69d9f957057cb91fec255e49',1,'OPAMP_Init_TypeDef']]],
   ['nptxfifosize',['nptxFifoSize',['../structUSBH__Init__TypeDef.html#aca7555b01d0e35256d228cedd295a312',1,'USBH_Init_TypeDef']]],
   ['number',['Number',['../structMCU__DISPLAY.html#ad4bf6380e582c0897b03669b5f0b68cc',1,'MCU_DISPLAY']]],

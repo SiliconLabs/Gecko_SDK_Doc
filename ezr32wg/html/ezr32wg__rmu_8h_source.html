@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EZR32 Wonder Gecko Software Documentation: C:/work/s025_sw/Device/SiliconLabs/EZR32WG/Include/ezr32wg_rmu.h Source File</title>
+<title>EZR32 Wonder Gecko Software Documentation: C:/work/s025_sw_ssh/Device/SiliconLabs/EZR32WG/Include/ezr32wg_rmu.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32wg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">ezr32wg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -114,10 +114,10 @@ $(document).ready(function(){initNavTree('ezr32wg__rmu_8h_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structRMU__TypeDef.html">   41</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structRMU__TypeDef.html#a58eddfee4f55a6d9ccf86e5816427165">   43</a></span>&#160;  <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> uint32_t <a class="code" href="structRMU__TypeDef.html#a58eddfee4f55a6d9ccf86e5816427165">CTRL</a>;     </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structRMU__TypeDef.html#ab4fee622790bf04c695067f3cb5a1f42">   44</a></span>&#160;  __I uint32_t  <a class="code" href="structRMU__TypeDef.html#ab4fee622790bf04c695067f3cb5a1f42">RSTCAUSE</a>; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structRMU__TypeDef.html#ae3a36ee54ebc859014ba4bd579719175">   45</a></span>&#160;  __O uint32_t  <a class="code" href="structRMU__TypeDef.html#ae3a36ee54ebc859014ba4bd579719175">CMD</a>;      </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <a class="code" href="structRMU__TypeDef.html">RMU_TypeDef</a>;            </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structRMU__TypeDef.html#a8c82cb9550cba0dcbe9ced2f2f43d9db">   43</a></span>&#160;  __IOM uint32_t <a class="code" href="structRMU__TypeDef.html#a8c82cb9550cba0dcbe9ced2f2f43d9db">CTRL</a>;     </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structRMU__TypeDef.html#a7dcfb06cd5e2797eefd88d12028b9dcc">   44</a></span>&#160;  __IM uint32_t  <a class="code" href="structRMU__TypeDef.html#a7dcfb06cd5e2797eefd88d12028b9dcc">RSTCAUSE</a>; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structRMU__TypeDef.html#a1c299348d8f5791eefcc7cf0419b6605">   45</a></span>&#160;  __OM uint32_t  <a class="code" href="structRMU__TypeDef.html#a1c299348d8f5791eefcc7cf0419b6605">CMD</a>;      </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <a class="code" href="structRMU__TypeDef.html">RMU_TypeDef</a>;             </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">/* Bit fields for RMU CTRL */</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group__EZR32WG__RMU__BitFields.html#ga861d6a48a28544333338e53940c13e8c">   54</a></span>&#160;<span class="preprocessor">#define _RMU_CTRL_RESETVALUE                  0x00000002UL                        </span></div>
@@ -223,18 +223,17 @@ $(document).ready(function(){initNavTree('ezr32wg__rmu_8h_source.html','');});
 <div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="group__EZR32WG__RMU__BitFields.html#ga1137b5b06a17c5e44804399a90256a21">  156</a></span>&#160;<span class="preprocessor">#define _RMU_CMD_RCCLR_MASK                   0x1UL                         </span></div>
 <div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="group__EZR32WG__RMU__BitFields.html#gac4509da5a9113f022277f8ccf3721b33">  157</a></span>&#160;<span class="preprocessor">#define _RMU_CMD_RCCLR_DEFAULT                0x00000000UL                  </span></div>
 <div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="group__EZR32WG__RMU__BitFields.html#gaa0064ded7da52ed5fb933e600b25d816">  158</a></span>&#160;<span class="preprocessor">#define RMU_CMD_RCCLR_DEFAULT                 (_RMU_CMD_RCCLR_DEFAULT &lt;&lt; 0) </span></div>
-<div class="ttc" id="group__BSP__DK_html_gaec43007d9998a0a0e01faede4133d6be"><div class="ttname"><a href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a></div><div class="ttdeci">#define __IO</div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__bcreg__3201_8h_source.html#l00053">bsp_dk_bcreg_3201.h:53</a></div></div>
-<div class="ttc" id="structRMU__TypeDef_html_a58eddfee4f55a6d9ccf86e5816427165"><div class="ttname"><a href="structRMU__TypeDef.html#a58eddfee4f55a6d9ccf86e5816427165">RMU_TypeDef::CTRL</a></div><div class="ttdeci">__IO uint32_t CTRL</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__rmu_8h_source.html#l00043">ezr32wg_rmu.h:43</a></div></div>
-<div class="ttc" id="structRMU__TypeDef_html_ab4fee622790bf04c695067f3cb5a1f42"><div class="ttname"><a href="structRMU__TypeDef.html#ab4fee622790bf04c695067f3cb5a1f42">RMU_TypeDef::RSTCAUSE</a></div><div class="ttdeci">__I uint32_t RSTCAUSE</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__rmu_8h_source.html#l00044">ezr32wg_rmu.h:44</a></div></div>
+<div class="ttc" id="structRMU__TypeDef_html_a7dcfb06cd5e2797eefd88d12028b9dcc"><div class="ttname"><a href="structRMU__TypeDef.html#a7dcfb06cd5e2797eefd88d12028b9dcc">RMU_TypeDef::RSTCAUSE</a></div><div class="ttdeci">__IM uint32_t RSTCAUSE</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__rmu_8h_source.html#l00044">ezr32wg_rmu.h:44</a></div></div>
 <div class="ttc" id="structRMU__TypeDef_html"><div class="ttname"><a href="structRMU__TypeDef.html">RMU_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__rmu_8h_source.html#l00041">ezr32wg_rmu.h:41</a></div></div>
-<div class="ttc" id="structRMU__TypeDef_html_ae3a36ee54ebc859014ba4bd579719175"><div class="ttname"><a href="structRMU__TypeDef.html#ae3a36ee54ebc859014ba4bd579719175">RMU_TypeDef::CMD</a></div><div class="ttdeci">__O uint32_t CMD</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__rmu_8h_source.html#l00045">ezr32wg_rmu.h:45</a></div></div>
+<div class="ttc" id="structRMU__TypeDef_html_a8c82cb9550cba0dcbe9ced2f2f43d9db"><div class="ttname"><a href="structRMU__TypeDef.html#a8c82cb9550cba0dcbe9ced2f2f43d9db">RMU_TypeDef::CTRL</a></div><div class="ttdeci">__IOM uint32_t CTRL</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__rmu_8h_source.html#l00043">ezr32wg_rmu.h:43</a></div></div>
+<div class="ttc" id="structRMU__TypeDef_html_a1c299348d8f5791eefcc7cf0419b6605"><div class="ttname"><a href="structRMU__TypeDef.html#a1c299348d8f5791eefcc7cf0419b6605">RMU_TypeDef::CMD</a></div><div class="ttdeci">__OM uint32_t CMD</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__rmu_8h_source.html#l00045">ezr32wg_rmu.h:45</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4c76ddfc10a27668d6c42d3412320ee0.html">Device</a></li><li class="navelem"><a class="el" href="dir_eca9ef8613423b074c58e28a7f7d2781.html">SiliconLabs</a></li><li class="navelem"><a class="el" href="dir_b61c16802add349c7b2b3dc99347ee9d.html">EZR32WG</a></li><li class="navelem"><a class="el" href="dir_86dfe2bc1ac1b0d751c8d8f36efec13b.html">Include</a></li><li class="navelem"><a class="el" href="ezr32wg__rmu_8h.html">ezr32wg_rmu.h</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:45:03 for EZR32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 11:09:22 for EZR32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

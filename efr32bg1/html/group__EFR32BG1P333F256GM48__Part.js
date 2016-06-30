@@ -5,6 +5,8 @@ var group__EFR32BG1P333F256GM48__Part =
     [ "_EFR_DEVICE", "group__EFR32BG1P333F256GM48__Part.html#gac6341136a3e44e36e955cbc152dbe56f", null ],
     [ "_SILICON_LABS_32B_PLATFORM", "group__EFR32BG1P333F256GM48__Part.html#ga9a2185e66f1c6a74956fcbaa182401b5", null ],
     [ "_SILICON_LABS_32B_PLATFORM_2", "group__EFR32BG1P333F256GM48__Part.html#gaf4e2c663f091e85257bcb5d218f9640c", null ],
+    [ "_SILICON_LABS_32B_PLATFORM_2_GEN", "group__EFR32BG1P333F256GM48__Part.html#gacc5358381a6c92561181d9927bab7432", null ],
+    [ "_SILICON_LABS_32B_PLATFORM_2_GEN_1", "group__EFR32BG1P333F256GM48__Part.html#gafb413ce631ae871fb9c8528a1d479153", null ],
     [ "ACMP_COUNT", "group__EFR32BG1P333F256GM48__Part.html#gaf699e5d5d5575124cca033aa73084d0f", null ],
     [ "ACMP_PRESENT", "group__EFR32BG1P333F256GM48__Part.html#ga8fa1b4aceecdce8d55784699ba61e43a", null ],
     [ "ADC_COUNT", "group__EFR32BG1P333F256GM48__Part.html#ga938c29e0a347b6d862eb64ba860ac871", null ],

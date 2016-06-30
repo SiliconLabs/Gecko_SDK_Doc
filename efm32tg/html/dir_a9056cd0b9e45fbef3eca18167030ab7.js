@@ -30,6 +30,7 @@ var dir_a9056cd0b9e45fbef3eca18167030ab7 =
     [ "em_mpu.h", "em__mpu_8h.html", null ],
     [ "em_msc.h", "em__msc_8h.html", "em__msc_8h" ],
     [ "em_opamp.h", "em__opamp_8h.html", "em__opamp_8h" ],
+    [ "em_part.h", "em__part_8h.html", null ],
     [ "em_pcnt.h", "em__pcnt_8h.html", "em__pcnt_8h" ],
     [ "em_prs.h", "em__prs_8h.html", "em__prs_8h" ],
     [ "em_ramfunc.h", "em__ramfunc_8h.html", "em__ramfunc_8h" ],

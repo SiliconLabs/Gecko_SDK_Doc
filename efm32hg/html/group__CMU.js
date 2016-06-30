@@ -1,5 +1,18 @@
 var group__CMU =
 [
+    [ "CMU_HFXOInit_TypeDef", "structCMU__HFXOInit__TypeDef.html", [
+      [ "boost", "structCMU__HFXOInit__TypeDef.html#ae81f738d34ff363ac5682f04c8380dbc", null ],
+      [ "glitchDetector", "structCMU__HFXOInit__TypeDef.html#a0d7d86fd3e46e23c6f0568540287af53", null ],
+      [ "mode", "structCMU__HFXOInit__TypeDef.html#a89826736b675e301f4f1a4726cf097bd", null ],
+      [ "timeout", "structCMU__HFXOInit__TypeDef.html#a9b411f752813f5e5a11e6ac32cdbccc3", null ]
+    ] ],
+    [ "CMU_LFXOInit_TypeDef", "structCMU__LFXOInit__TypeDef.html", [
+      [ "boost", "structCMU__LFXOInit__TypeDef.html#a9105df279848eaefa0873fb4d92746a7", null ],
+      [ "mode", "structCMU__LFXOInit__TypeDef.html#a9724fd831f9999eff35d5f907a817fb2", null ],
+      [ "timeout", "structCMU__LFXOInit__TypeDef.html#ab7ba8a0cb6e31b5e05c57a1177c761c1", null ]
+    ] ],
+    [ "CMU_HFXOINIT_DEFAULT", "group__CMU.html#ga02fdd8080ad4f5819450cb5a443fc133", null ],
+    [ "CMU_LFXOINIT_DEFAULT", "group__CMU.html#ga2c3466d7404b202612a9540b17295c41", null ],
     [ "cmuClkDiv_1", "group__CMU.html#gad5af061f8ac0481c356787dfcce77c8a", null ],
     [ "cmuClkDiv_1024", "group__CMU.html#gaf46e884afc882e67ed8ca2e529601047", null ],
     [ "cmuClkDiv_128", "group__CMU.html#ga7bac78cdbaaea0a3b9adcee51ceb3d15", null ],
@@ -62,6 +75,7 @@ var group__CMU =
       [ "cmuHFRCOBand_14MHz", "group__CMU.html#gga3f4c73b01d8cc272612aac2c1d223617ab355129875fc82cb5e80447e162e5adc", null ],
       [ "cmuHFRCOBand_21MHz", "group__CMU.html#gga3f4c73b01d8cc272612aac2c1d223617a6eae0057a473fabf5afd56b67dd4b4ef", null ]
     ] ],
+    [ "CMU_LFXOBoost_TypeDef", "group__CMU.html#gad53b9154161b884cd3f944bab2f48be2", null ],
     [ "CMU_Osc_TypeDef", "group__CMU.html#ga095c94cc5b58238856389c523ce12c2a", [
       [ "cmuOsc_LFXO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aadd915148fa7e88d5225d1163f72fbffb", null ],
       [ "cmuOsc_LFRCO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aa1ece1d9d8f5f053487b40faf887136c3", null ],
@@ -70,6 +84,11 @@ var group__CMU =
       [ "cmuOsc_AUXHFRCO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aa99f6f1ae4f5dab8e01d7753505d9d085", null ],
       [ "cmuOsc_USHFRCO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aa213d3e9cfc25d1fc171122d75a3091a8", null ],
       [ "cmuOsc_ULFRCO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aa5af6bd97a9cd27d19b053381b6de27cb", null ]
+    ] ],
+    [ "CMU_OscMode_TypeDef", "group__CMU.html#ga6bc090c288f6457868a9ed4ef1ec9f85", [
+      [ "cmuOscMode_Crystal", "group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85a56d5e85c864b89f78c88cffdf2fa28a1", null ],
+      [ "cmuOscMode_AcCoupled", "group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85ad9c4bbb8551beb14f7a07446f53dae1a", null ],
+      [ "cmuOscMode_External", "group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85a06977cf89bb7bedb0154e73ec70c1ee5", null ]
     ] ],
     [ "CMU_Select_TypeDef", "group__CMU.html#gaeaf3a27499d7441981159c5973546751", [
       [ "cmuSelect_Error", "group__CMU.html#ggaeaf3a27499d7441981159c5973546751a8e224ec773db309e465b674b1501752b", null ],
@@ -109,6 +128,7 @@ var group__CMU =
     [ "CMU_HFRCOBandSet", "group__CMU.html#gab1c6acfc1b842909bb4304c3e336bd0b", null ],
     [ "CMU_HFRCOStartupDelayGet", "group__CMU.html#gaf5bddb45d5e1113799a0ea7310f25fbe", null ],
     [ "CMU_HFRCOStartupDelaySet", "group__CMU.html#ga372be88565a544593e25a69b812706ac", null ],
+    [ "CMU_HFXOInit", "group__CMU.html#ga3e43dce228a2b1891737bbd827dfb015", null ],
     [ "CMU_IntClear", "group__CMU.html#gacad813230403f62cb86dfec5bdf1cd85", null ],
     [ "CMU_IntDisable", "group__CMU.html#gaf0c444c62e6d01286ad89b42e3735a71", null ],
     [ "CMU_IntEnable", "group__CMU.html#ga8064ca9c7a506baca69c559170f137ae", null ],
@@ -117,6 +137,7 @@ var group__CMU =
     [ "CMU_IntSet", "group__CMU.html#ga46e62fbd6f8e0843b5d1fc49a0845355", null ],
     [ "CMU_LCDClkFDIVGet", "group__CMU.html#gad457bf7183e8e8530681e93803321ded", null ],
     [ "CMU_LCDClkFDIVSet", "group__CMU.html#ga72d523a129eb31231432ad1010fa1096", null ],
+    [ "CMU_LFXOInit", "group__CMU.html#ga36fa7c0d6a7e7e7fd621ca184ec5e236", null ],
     [ "CMU_Lock", "group__CMU.html#gaf6b90e2c10eca7c67fe3bc27d8081ae4", null ],
     [ "CMU_Log2ToDiv", "group__CMU.html#ga535e1e8fa3a9131d7151cc549bfb4f29", null ],
     [ "CMU_OscillatorEnable", "group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9", null ],

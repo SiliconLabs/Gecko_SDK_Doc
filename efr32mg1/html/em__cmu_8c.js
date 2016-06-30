@@ -18,13 +18,16 @@ var em__cmu_8c =
     [ "CMU_HFRCOBandGet", "group__CMU.html#ga6e8fd53c566cb4c8075a51f67977fffc", null ],
     [ "CMU_HFRCOBandSet", "group__CMU.html#ga79fa69403fb1b3629042a730d6a15cf6", null ],
     [ "CMU_HFRCODevinfoGet", "group__CMU.html#gac0a818d0ac189b4c802ad83b3dc720ba", null ],
-    [ "CMU_HFXOInit", "group__CMU.html#ga97fc54dc73a1ead5a29fe538e538bd09", null ],
+    [ "CMU_HFXOAutostartEnable", "group__CMU.html#ga08f6efd28bdb595a4ebf7db2531e9104", null ],
+    [ "CMU_HFXOInit", "group__CMU.html#ga3e43dce228a2b1891737bbd827dfb015", null ],
     [ "CMU_LCDClkFDIVGet", "group__CMU.html#gad457bf7183e8e8530681e93803321ded", null ],
     [ "CMU_LCDClkFDIVSet", "group__CMU.html#ga72d523a129eb31231432ad1010fa1096", null ],
-    [ "CMU_LFXOInit", "group__CMU.html#ga188ca4e7b81ed62bf53ea15ea3ffbab6", null ],
+    [ "CMU_LFXOInit", "group__CMU.html#ga36fa7c0d6a7e7e7fd621ca184ec5e236", null ],
     [ "CMU_OscillatorEnable", "group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9", null ],
     [ "CMU_OscillatorTuningGet", "group__CMU.html#gaad396e0b8150709c599f2e5a7dec6e62", null ],
+    [ "CMU_OscillatorTuningOptimize", "group__CMU.html#ga6ceea95a1974bad323ff26e23d72e75e", null ],
     [ "CMU_OscillatorTuningSet", "group__CMU.html#ga1200b660d32b39db023753094a282ae9", null ],
+    [ "CMU_OscillatorTuningWait", "group__CMU.html#gaa6790e6d905b49de33c63bb533282ac9", null ],
     [ "CMU_PCNTClockExternalGet", "group__CMU.html#ga2d640d98deffdf17ec3756fb21fa1012", null ],
     [ "CMU_PCNTClockExternalSet", "group__CMU.html#gac0fede38cfa32965cc8ace2b51a14d5b", null ]
 ];

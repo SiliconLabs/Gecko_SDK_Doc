@@ -1,9 +1,9 @@
 var group__EFM32PG1B__DMA__DESCRIPTOR =
 [
     [ "DMA_DESCRIPTOR_TypeDef", "structDMA__DESCRIPTOR__TypeDef.html", [
-      [ "CTRL", "structDMA__DESCRIPTOR__TypeDef.html#a70bbb5bfebb274e54fabda76b36e717d", null ],
-      [ "DST", "structDMA__DESCRIPTOR__TypeDef.html#ae61fc0d2f100576660cbb1e9f9d18d9e", null ],
-      [ "LINK", "structDMA__DESCRIPTOR__TypeDef.html#accf30e1911daf44b7b7e01a667378249", null ],
-      [ "SRC", "structDMA__DESCRIPTOR__TypeDef.html#a59055ab94956ea223e1700201c744c0d", null ]
+      [ "CTRL", "structDMA__DESCRIPTOR__TypeDef.html#afa34eed41d18b89292e46f58eb7e8244", null ],
+      [ "DST", "structDMA__DESCRIPTOR__TypeDef.html#af19099d5c3d77e837c5b55406d63fb2c", null ],
+      [ "LINK", "structDMA__DESCRIPTOR__TypeDef.html#a1a9307332617039688ca04154343f2df", null ],
+      [ "SRC", "structDMA__DESCRIPTOR__TypeDef.html#adcc358866eaa60e8268500a16c391fe2", null ]
     ] ]
 ];

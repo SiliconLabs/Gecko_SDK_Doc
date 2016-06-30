@@ -1,25 +1,25 @@
 var group__EFR32FG1P__GPIO =
 [
     [ "GPIO_TypeDef", "structGPIO__TypeDef.html", [
-      [ "EM4WUEN", "structGPIO__TypeDef.html#a2bc280d8bf7e82140b83eadc86a800e9", null ],
-      [ "EXTIFALL", "structGPIO__TypeDef.html#a624ccdd3a0e161fd1b175804aafd0c5c", null ],
-      [ "EXTILEVEL", "structGPIO__TypeDef.html#aed8306d69cb92b86ef87a440a6a5a160", null ],
-      [ "EXTIPINSELH", "structGPIO__TypeDef.html#aaf310ff296da5e78b6c8bd03fbfe2ec5", null ],
-      [ "EXTIPINSELL", "structGPIO__TypeDef.html#a42caa3afefa7bd19cba03f05c08e11dd", null ],
-      [ "EXTIPSELH", "structGPIO__TypeDef.html#a8e26e10a9b468b6f5e2d6ef6e9163b89", null ],
-      [ "EXTIPSELL", "structGPIO__TypeDef.html#ac03a2c40b6cb3c668c2d828003568fe8", null ],
-      [ "EXTIRISE", "structGPIO__TypeDef.html#ac122db20a64d8f464f1ecefe26b750e7", null ],
-      [ "IEN", "structGPIO__TypeDef.html#aa1a3df2b324889effdbf1729f6845d9d", null ],
-      [ "IF", "structGPIO__TypeDef.html#a14623cf954a6500b5427b7686fd4a47d", null ],
-      [ "IFC", "structGPIO__TypeDef.html#af3de13266dd7c88900ddeefc7639f824", null ],
-      [ "IFS", "structGPIO__TypeDef.html#a5f2a76dbfc13cdcb6cc55a7e96250cfe", null ],
-      [ "INSENSE", "structGPIO__TypeDef.html#a20ad76ba09d664a2bf8b54cfd2ff84ba", null ],
-      [ "LOCK", "structGPIO__TypeDef.html#af896db84304ad60fc765ba9715ad9440", null ],
-      [ "P", "structGPIO__TypeDef.html#a637898f55d04f0f66bab1db03851110d", null ],
-      [ "RESERVED0", "structGPIO__TypeDef.html#a1a72cd2323efff2eb31716e7f09c3f1a", null ],
+      [ "EM4WUEN", "structGPIO__TypeDef.html#a802512c630a5a409556b17a992d6e2a0", null ],
+      [ "EXTIFALL", "structGPIO__TypeDef.html#a0ecd75dabda39fe28cff98533a9c58ac", null ],
+      [ "EXTILEVEL", "structGPIO__TypeDef.html#a8df59f5b57c53f08a125c277315f4775", null ],
+      [ "EXTIPINSELH", "structGPIO__TypeDef.html#a0e898da80ea8c116b4b8f1538669c54e", null ],
+      [ "EXTIPINSELL", "structGPIO__TypeDef.html#a2bd703130b00a3bdc24ecbe092623312", null ],
+      [ "EXTIPSELH", "structGPIO__TypeDef.html#adc5cf2a5d299cc28ef0a4603cd7210f7", null ],
+      [ "EXTIPSELL", "structGPIO__TypeDef.html#a76c6afefc9eb506544ed97b63120b900", null ],
+      [ "EXTIRISE", "structGPIO__TypeDef.html#aab8215235e085ff8cd4d0cbff525f0e0", null ],
+      [ "IEN", "structGPIO__TypeDef.html#a2ec14dc53e1253c6f84742d2b7e4748b", null ],
+      [ "IF", "structGPIO__TypeDef.html#a535cd86931817b97d0c4741b9e9f4aa6", null ],
+      [ "IFC", "structGPIO__TypeDef.html#a36c3b1cf85e31a5cc554bc0612c66087", null ],
+      [ "IFS", "structGPIO__TypeDef.html#a8e407fa1372c62364d32b673b2cc82ea", null ],
+      [ "INSENSE", "structGPIO__TypeDef.html#af0524a173f4989c7434391245270fce7", null ],
+      [ "LOCK", "structGPIO__TypeDef.html#a9dc559cb4f44fbb88b0ab8f0ce617ab6", null ],
+      [ "P", "structGPIO__TypeDef.html#a87b344a29526c0e14e4e5e03186fad7b", null ],
+      [ "RESERVED0", "structGPIO__TypeDef.html#a4c258805040c1335f12b83ec002d6dda", null ],
       [ "RESERVED1", "structGPIO__TypeDef.html#a80abbea908ccbd4a5fe5dab7c8dee961", null ],
       [ "RESERVED2", "structGPIO__TypeDef.html#af1efabd2aacf7fbd17742d4cab5e5037", null ],
-      [ "ROUTELOC0", "structGPIO__TypeDef.html#a7927855d933a09bba93b084324e3706f", null ],
-      [ "ROUTEPEN", "structGPIO__TypeDef.html#a691a74473fde7500b5c24dd17c35282a", null ]
+      [ "ROUTELOC0", "structGPIO__TypeDef.html#a425a1ed7be85b04f4486461c3c7ee60a", null ],
+      [ "ROUTEPEN", "structGPIO__TypeDef.html#a8edb827c80b82e80efd4c549db7623ef", null ]
     ] ]
 ];

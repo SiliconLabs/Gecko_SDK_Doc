@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Happy Gecko Software Documentation: C:/work/s025_sw/usb/inc/em_usbtypes.h Source File</title>
+<title>EFM32 Happy Gecko Software Documentation: C:/work/s025_sw_ssh/usb/inc/em_usbtypes.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32hg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32hg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -257,8 +257,8 @@ $(document).ready(function(){initNavTree('em__usbtypes_8h_source.html','');});
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  USB_Setup_TypeDef                     *setup;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  USB_Setup_TypeDef                     setupPkt[3];</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <a class="code" href="structUSB__Setup__TypeDef.html">USB_Setup_TypeDef</a>                     *setup;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <a class="code" href="structUSB__Setup__TypeDef.html">USB_Setup_TypeDef</a>                     setupPkt[3];</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  uint8_t                               configurationValue; <span class="comment">/* Must be DWORD aligned */</span></div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">bool</span>                                  remoteWakeupEnabled;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  uint8_t                               numberOfStrings;</div>
@@ -266,8 +266,8 @@ $(document).ready(function(){initNavTree('em__usbtypes_8h_source.html','');});
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <a class="code" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a>                    state;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <a class="code" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a>                    savedState;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <a class="code" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a>                    lastState;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keyword">const</span> USB_DeviceDescriptor_TypeDef    *deviceDescriptor;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keyword">const</span> USB_ConfigurationDescriptor_TypeDef *configDescriptor;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keyword">const</span> <a class="code" href="structUSB__DeviceDescriptor__TypeDef.html">USB_DeviceDescriptor_TypeDef</a>    *deviceDescriptor;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keyword">const</span> <a class="code" href="structUSB__ConfigurationDescriptor__TypeDef.html">USB_ConfigurationDescriptor_TypeDef</a> *configDescriptor;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">void</span> * <span class="keyword">const</span>                    *stringDescriptors;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keyword">const</span> <a class="code" href="structUSBD__Callbacks__TypeDef.html">USBD_Callbacks_TypeDef</a>          *callbacks;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  USBD_Ep_TypeDef                       ep[ NUM_EP_USED + 1 ];</div>
@@ -314,17 +314,20 @@ $(document).ready(function(){initNavTree('em__usbtypes_8h_source.html','');});
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined( USB_PRESENT ) &amp;&amp; ( USB_COUNT == 1 ) */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __EM_USBTYPES_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="em__device_8h_html"><div class="ttname"><a href="em__device_8h.html">em_device.h</a></div><div class="ttdoc">CMSIS Cortex-M Peripheral Access Layer for Silicon Laboratories microcontroller devices. </div></div>
-<div class="ttc" id="group__USB__DEVICE_html_ga437a2e7bf70740fc715ac9a5c7310a6d"><div class="ttname"><a href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a></div><div class="ttdeci">USBD_State_TypeDef</div><div class="ttdoc">USB device state enumerator. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00351">em_usb.h:351</a></div></div>
-<div class="ttc" id="group__USB__COMMON_html_ga2fa15407a4ef650bbd9f69dbddad6977"><div class="ttname"><a href="group__USB__COMMON.html#ga2fa15407a4ef650bbd9f69dbddad6977">USB_XferCompleteCb_TypeDef</a></div><div class="ttdeci">int(* USB_XferCompleteCb_TypeDef)(USB_Status_TypeDef status, uint32_t xferred, uint32_t remaining)</div><div class="ttdoc">USB transfer callback function. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00658">em_usb.h:658</a></div></div>
-<div class="ttc" id="structUSBD__Callbacks__TypeDef_html"><div class="ttname"><a href="structUSBD__Callbacks__TypeDef.html">USBD_Callbacks_TypeDef</a></div><div class="ttdoc">USB Device stack callback structure. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00794">em_usb.h:794</a></div></div>
+<div class="ttc" id="structUSB__Setup__TypeDef_html"><div class="ttname"><a href="structUSB__Setup__TypeDef.html">USB_Setup_TypeDef</a></div><div class="ttdoc">USB Setup request package. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00385">em_usb.h:385</a></div></div>
+<div class="ttc" id="group__USB__DEVICE_html_ga437a2e7bf70740fc715ac9a5c7310a6d"><div class="ttname"><a href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a></div><div class="ttdeci">USBD_State_TypeDef</div><div class="ttdoc">USB device state enumerator. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00366">em_usb.h:366</a></div></div>
+<div class="ttc" id="group__USB__COMMON_html_ga2fa15407a4ef650bbd9f69dbddad6977"><div class="ttname"><a href="group__USB__COMMON.html#ga2fa15407a4ef650bbd9f69dbddad6977">USB_XferCompleteCb_TypeDef</a></div><div class="ttdeci">int(* USB_XferCompleteCb_TypeDef)(USB_Status_TypeDef status, uint32_t xferred, uint32_t remaining)</div><div class="ttdoc">USB transfer callback function. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00676">em_usb.h:676</a></div></div>
+<div class="ttc" id="structUSBD__Callbacks__TypeDef_html"><div class="ttname"><a href="structUSBD__Callbacks__TypeDef.html">USBD_Callbacks_TypeDef</a></div><div class="ttdoc">USB Device stack callback structure. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00812">em_usb.h:812</a></div></div>
 <div class="ttc" id="em__usb_8h_html"><div class="ttname"><a href="em__usb_8h.html">em_usb.h</a></div><div class="ttdoc">USB protocol stack library API for EFM32/EZR32. </div></div>
+<div class="ttc" id="structUSB__ConfigurationDescriptor__TypeDef_html"><div class="ttname"><a href="structUSB__ConfigurationDescriptor__TypeDef.html">USB_ConfigurationDescriptor_TypeDef</a></div><div class="ttdoc">USB Configuration Descriptor. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00438">em_usb.h:438</a></div></div>
+<div class="ttc" id="structUSB__DeviceDescriptor__TypeDef_html"><div class="ttname"><a href="structUSB__DeviceDescriptor__TypeDef.html">USB_DeviceDescriptor_TypeDef</a></div><div class="ttdoc">USB Device Descriptor. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00414">em_usb.h:414</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_425ca660228e0a7b5371953b3088ee5c.html">usb</a></li><li class="navelem"><a class="el" href="dir_979e5b6dc56f376f119fb84cdf190ede.html">inc</a></li><li class="navelem"><a class="el" href="em__usbtypes_8h.html">em_usbtypes.h</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:35:54 for EFM32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:45:25 for EFM32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

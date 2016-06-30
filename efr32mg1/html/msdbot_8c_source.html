@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Mighty Gecko Software Documentation: C:/work/s025_sw/kits/common/drivers/msdbot.c Source File</title>
+<title>EFR32 Mighty Gecko Software Documentation: C:/work/s025_sw_ssh/kits/common/drivers/msdbot.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Mighty Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32mg1-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efr32mg1-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -126,11 +126,11 @@ $(document).ready(function(){initNavTree('msdbot_8c_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/* CSW buffer. */</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;STATIC_UBUF(csw, CSW_LEN);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">static</span> MSDBOT_CSW_TypeDef *pCsw = (MSDBOT_CSW_TypeDef*) csw;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">static</span> <a class="code" href="structMSDBOT__CSW__TypeDef.html">MSDBOT_CSW_TypeDef</a> *pCsw = (<a class="code" href="structMSDBOT__CSW__TypeDef.html">MSDBOT_CSW_TypeDef</a>*) csw;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/* Function prototypes. */</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> CswMeaningful(MSDBOT_CBW_TypeDef *pCbw);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> CswValid(MSDBOT_CBW_TypeDef *pCbw);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> CswMeaningful(<a class="code" href="structMSDBOT__CBW__TypeDef.html">MSDBOT_CBW_TypeDef</a> *pCbw);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> CswValid(<a class="code" href="structMSDBOT__CBW__TypeDef.html">MSDBOT_CBW_TypeDef</a> *pCbw);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> ResetRecovery(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/***************************************************************************/</span></div>
@@ -138,8 +138,8 @@ $(document).ready(function(){initNavTree('msdbot_8c_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="comment">/* Check if typedef&#39;s are properly packed. */</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> ((<span class="keyword">sizeof</span>(MSDBOT_CBW_TypeDef) != CBW_LEN) ||</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      (<span class="keyword">sizeof</span>(MSDBOT_CSW_TypeDef) != CSW_LEN))</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> ((<span class="keyword">sizeof</span>(<a class="code" href="structMSDBOT__CBW__TypeDef.html">MSDBOT_CBW_TypeDef</a>) != CBW_LEN) ||</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      (<span class="keyword">sizeof</span>(<a class="code" href="structMSDBOT__CSW__TypeDef.html">MSDBOT_CSW_TypeDef</a>) != CSW_LEN))</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    DEBUG_USB_API_PUTS(<span class="stringliteral">&quot;\nMSDBOT_Init(), typedef size error&quot;</span>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    EFM_ASSERT(<span class="keyword">false</span>);</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('msdbot_8c_source.html','');});
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  uint32_t           len;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">int</span>                timeout, result, direction, retVal;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  MSDBOT_CBW_TypeDef *pCbw = (MSDBOT_CBW_TypeDef*) cbw;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="structMSDBOT__CBW__TypeDef.html">MSDBOT_CBW_TypeDef</a> *pCbw = (<a class="code" href="structMSDBOT__CBW__TypeDef.html">MSDBOT_CBW_TypeDef</a>*) cbw;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="comment">/* Send CBW. */</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  result = USBH_WriteB(epOut, cbw, CBW_LEN, DEFAULT_TIMEOUT);</div>
@@ -176,8 +176,8 @@ $(document).ready(function(){initNavTree('msdbot_8c_source.html','');});
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  retVal    = 0;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  direction = pCbw-&gt;Direction;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  len       = pCbw-&gt;dCBWDataTransferLength;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  direction = pCbw-&gt;<a class="code" href="structMSDBOT__CBW__TypeDef.html#a084a414ac725c2455e1c15cc56d05abb">Direction</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  len       = pCbw-&gt;<a class="code" href="structMSDBOT__CBW__TypeDef.html#abf7f2eddb63bc80793fc668025fb2727">dCBWDataTransferLength</a>;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">/* Send/receive data (optional phase). */</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordflow">if</span> (len)</div>
@@ -235,7 +235,7 @@ $(document).ready(function(){initNavTree('msdbot_8c_source.html','');});
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordflow">if</span> (CswValid(pCbw) &amp;&amp; CswMeaningful(pCbw))</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">if</span> (pCsw-&gt;bCSWStatus == USB_CLASS_MSD_CSW_CMDPASSED)</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">if</span> (pCsw-&gt;<a class="code" href="structMSDBOT__CSW__TypeDef.html#a5daf21409aa158ed0b93fa25591d9d28">bCSWStatus</a> == USB_CLASS_MSD_CSW_CMDPASSED)</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    {</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="keywordflow">return</span> retVal;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
@@ -247,21 +247,21 @@ $(document).ready(function(){initNavTree('msdbot_8c_source.html','');});
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;}</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> CswMeaningful(MSDBOT_CBW_TypeDef *cbw)</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> CswMeaningful(<a class="code" href="structMSDBOT__CBW__TypeDef.html">MSDBOT_CBW_TypeDef</a> *cbw)</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;{</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordflow">if</span> (((pCsw-&gt;bCSWStatus == USB_CLASS_MSD_CSW_CMDPASSED) ||</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;       (pCsw-&gt;bCSWStatus == USB_CLASS_MSD_CSW_CMDFAILED)) &amp;&amp;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      (pCsw-&gt;dCSWDataResidue &lt;= cbw-&gt;dCBWDataTransferLength))</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="keywordflow">if</span> (((pCsw-&gt;<a class="code" href="structMSDBOT__CSW__TypeDef.html#a5daf21409aa158ed0b93fa25591d9d28">bCSWStatus</a> == USB_CLASS_MSD_CSW_CMDPASSED) ||</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;       (pCsw-&gt;<a class="code" href="structMSDBOT__CSW__TypeDef.html#a5daf21409aa158ed0b93fa25591d9d28">bCSWStatus</a> == USB_CLASS_MSD_CSW_CMDFAILED)) &amp;&amp;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      (pCsw-&gt;<a class="code" href="structMSDBOT__CSW__TypeDef.html#a38b546aca62f3bf00474f1cf5de2c416">dCSWDataResidue</a> &lt;= cbw-&gt;<a class="code" href="structMSDBOT__CBW__TypeDef.html#abf7f2eddb63bc80793fc668025fb2727">dCBWDataTransferLength</a>))</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> CswValid(MSDBOT_CBW_TypeDef *cbw)</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> CswValid(<a class="code" href="structMSDBOT__CBW__TypeDef.html">MSDBOT_CBW_TypeDef</a> *cbw)</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;{</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordflow">if</span> ((pCsw-&gt;dCSWSignature == CSW_SIGNATURE) &amp;&amp;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      (pCsw-&gt;dCSWTag == cbw-&gt;dCBWTag))</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordflow">if</span> ((pCsw-&gt;<a class="code" href="structMSDBOT__CSW__TypeDef.html#a78bd4fd2ef402dfaefe4082b71f14c31">dCSWSignature</a> == CSW_SIGNATURE) &amp;&amp;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      (pCsw-&gt;<a class="code" href="structMSDBOT__CSW__TypeDef.html#af4cfeece9b15c1d8e677b4e3237ea08b">dCSWTag</a> == cbw-&gt;<a class="code" href="structMSDBOT__CBW__TypeDef.html#a51e2064e5f20133e5ce96bb3d79be263">dCBWTag</a>))</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -284,20 +284,29 @@ $(document).ready(function(){initNavTree('msdbot_8c_source.html','');});
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  USBH_UnStallEpB(epOut);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="ttc" id="structMSDBOT__CBW__TypeDef_html_a51e2064e5f20133e5ce96bb3d79be263"><div class="ttname"><a href="structMSDBOT__CBW__TypeDef.html#a51e2064e5f20133e5ce96bb3d79be263">MSDBOT_CBW_TypeDef::dCBWTag</a></div><div class="ttdeci">uint32_t dCBWTag</div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8h_source.html#l00055">msdbot.h:55</a></div></div>
+<div class="ttc" id="structMSDBOT__CBW__TypeDef_html_abf7f2eddb63bc80793fc668025fb2727"><div class="ttname"><a href="structMSDBOT__CBW__TypeDef.html#abf7f2eddb63bc80793fc668025fb2727">MSDBOT_CBW_TypeDef::dCBWDataTransferLength</a></div><div class="ttdeci">uint32_t dCBWDataTransferLength</div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8h_source.html#l00056">msdbot.h:56</a></div></div>
 <div class="ttc" id="group__Msd_html_gga8c250077559bcebe75d58cd631add55ea5bd66cc15a09602931308f19ce3bc75c"><div class="ttname"><a href="group__Msd.html#gga8c250077559bcebe75d58cd631add55ea5bd66cc15a09602931308f19ce3bc75c">MSDBOT_STATUS_OK</a></div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8h_source.html#l00105">msdbot.h:105</a></div></div>
 <div class="ttc" id="group__Msd_html_gga8c250077559bcebe75d58cd631add55ea48317e7c62565dfb151529c680023ae7"><div class="ttname"><a href="group__Msd.html#gga8c250077559bcebe75d58cd631add55ea48317e7c62565dfb151529c680023ae7">MSDBOT_INIT_ERROR</a></div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8h_source.html#l00106">msdbot.h:106</a></div></div>
 <div class="ttc" id="msdbot_8c_html_a924b6ac8bbbb582c299825f371813067"><div class="ttname"><a href="msdbot_8c.html#a924b6ac8bbbb582c299825f371813067">MSDBOT_Xfer</a></div><div class="ttdeci">int MSDBOT_Xfer(void *cbw, void *data)</div><div class="ttdoc">Perform an MSD Bulk Only Transfer (BOT). </div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8c_source.html#l00098">msdbot.c:98</a></div></div>
 <div class="ttc" id="msdbot_8c_html_a2d6610a0f39ffc856a740ff3330ba2e0"><div class="ttname"><a href="msdbot_8c.html#a2d6610a0f39ffc856a740ff3330ba2e0">MSDBOT_Init</a></div><div class="ttdeci">int MSDBOT_Init(USBH_Ep_TypeDef *out, USBH_Ep_TypeDef *in)</div><div class="ttdoc">MSDBOT module initialization. </div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8c_source.html#l00058">msdbot.c:58</a></div></div>
 <div class="ttc" id="msdbot_8h_html"><div class="ttname"><a href="msdbot_8h.html">msdbot.h</a></div><div class="ttdoc">Definitions for the Bulk Only Transport protocol of USB Mass Storage devices. </div></div>
+<div class="ttc" id="structMSDBOT__CSW__TypeDef_html_a38b546aca62f3bf00474f1cf5de2c416"><div class="ttname"><a href="structMSDBOT__CSW__TypeDef.html#a38b546aca62f3bf00474f1cf5de2c416">MSDBOT_CSW_TypeDef::dCSWDataResidue</a></div><div class="ttdeci">uint32_t dCSWDataResidue</div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8h_source.html#l00097">msdbot.h:97</a></div></div>
 <div class="ttc" id="group__Msd_html_gga8c250077559bcebe75d58cd631add55eade395b3a603cea6500ebb8a574e2f4c8"><div class="ttname"><a href="group__Msd.html#gga8c250077559bcebe75d58cd631add55eade395b3a603cea6500ebb8a574e2f4c8">MSDBOT_XFER_ERROR</a></div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8h_source.html#l00108">msdbot.h:108</a></div></div>
+<div class="ttc" id="structMSDBOT__CBW__TypeDef_html"><div class="ttname"><a href="structMSDBOT__CBW__TypeDef.html">MSDBOT_CBW_TypeDef</a></div><div class="ttdoc">Bulk Only Transport (BOT) Command Block Wrapper (CBW) typedef. </div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8h_source.html#l00052">msdbot.h:52</a></div></div>
+<div class="ttc" id="structMSDBOT__CBW__TypeDef_html_a084a414ac725c2455e1c15cc56d05abb"><div class="ttname"><a href="structMSDBOT__CBW__TypeDef.html#a084a414ac725c2455e1c15cc56d05abb">MSDBOT_CBW_TypeDef::Direction</a></div><div class="ttdeci">uint8_t Direction</div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8h_source.html#l00063">msdbot.h:63</a></div></div>
 <div class="ttc" id="group__Msd_html_gga8c250077559bcebe75d58cd631add55ea45b36941d3e46676dea10de80d92a690"><div class="ttname"><a href="group__Msd.html#gga8c250077559bcebe75d58cd631add55ea45b36941d3e46676dea10de80d92a690">MSDBOT_CMD_FAILED</a></div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8h_source.html#l00107">msdbot.h:107</a></div></div>
+<div class="ttc" id="structMSDBOT__CSW__TypeDef_html"><div class="ttname"><a href="structMSDBOT__CSW__TypeDef.html">MSDBOT_CSW_TypeDef</a></div><div class="ttdoc">Bulk Only Transport (BOT) Command Status Wrapper (CSW) typedef. </div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8h_source.html#l00093">msdbot.h:93</a></div></div>
+<div class="ttc" id="structMSDBOT__CSW__TypeDef_html_a78bd4fd2ef402dfaefe4082b71f14c31"><div class="ttname"><a href="structMSDBOT__CSW__TypeDef.html#a78bd4fd2ef402dfaefe4082b71f14c31">MSDBOT_CSW_TypeDef::dCSWSignature</a></div><div class="ttdeci">uint32_t dCSWSignature</div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8h_source.html#l00095">msdbot.h:95</a></div></div>
+<div class="ttc" id="structMSDBOT__CSW__TypeDef_html_a5daf21409aa158ed0b93fa25591d9d28"><div class="ttname"><a href="structMSDBOT__CSW__TypeDef.html#a5daf21409aa158ed0b93fa25591d9d28">MSDBOT_CSW_TypeDef::bCSWStatus</a></div><div class="ttdeci">uint8_t bCSWStatus</div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8h_source.html#l00098">msdbot.h:98</a></div></div>
+<div class="ttc" id="structMSDBOT__CSW__TypeDef_html_af4cfeece9b15c1d8e677b4e3237ea08b"><div class="ttname"><a href="structMSDBOT__CSW__TypeDef.html#af4cfeece9b15c1d8e677b4e3237ea08b">MSDBOT_CSW_TypeDef::dCSWTag</a></div><div class="ttdeci">uint32_t dCSWTag</div><div class="ttdef"><b>Definition:</b> <a href="msdbot_8h_source.html#l00096">msdbot.h:96</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="msdbot_8c.html">msdbot.c</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:50:10 for EFR32 Mighty Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 11:05:16 for EFR32 Mighty Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

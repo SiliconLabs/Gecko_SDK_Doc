@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Tiny Gecko Software Documentation: C:/work/s025_sw/kits/common/drivers/msdscsi.c File Reference</title>
+<title>EFM32 Tiny Gecko Software Documentation: C:/work/s025_sw_ssh/kits/common/drivers/msdscsi.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32tg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('msdscsi_8c.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SCSI interface for Mass Storage Devices (MSD). </p>
-<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -131,16 +131,16 @@ Functions</h2></td></tr>
 <tr class="memitem:a20d1e1bc8c9f66d3bbf9f7ec45a8afeb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#a20d1e1bc8c9f66d3bbf9f7ec45a8afeb">MSDSCSI_Init</a> (USBH_Ep_TypeDef *out, USBH_Ep_TypeDef *in)</td></tr>
 <tr class="memdesc:a20d1e1bc8c9f66d3bbf9f7ec45a8afeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">MSDSCSI module initialization.  <a href="#a20d1e1bc8c9f66d3bbf9f7ec45a8afeb">More...</a><br /></td></tr>
 <tr class="separator:a20d1e1bc8c9f66d3bbf9f7ec45a8afeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8618b70076ea29385d60c816791d253c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#a8618b70076ea29385d60c816791d253c">MSDSCSI_Inquiry</a> (MSDSCSI_InquiryData_TypeDef *data)</td></tr>
+<tr class="memitem:a8618b70076ea29385d60c816791d253c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#a8618b70076ea29385d60c816791d253c">MSDSCSI_Inquiry</a> (<a class="el" href="structMSDSCSI__InquiryData__TypeDef.html">MSDSCSI_InquiryData_TypeDef</a> *data)</td></tr>
 <tr class="memdesc:a8618b70076ea29385d60c816791d253c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a SCSI Inquiry command.  <a href="#a8618b70076ea29385d60c816791d253c">More...</a><br /></td></tr>
 <tr class="separator:a8618b70076ea29385d60c816791d253c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a316bfe2e0c761d50dcaed004a8034bbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#a316bfe2e0c761d50dcaed004a8034bbe">MSDSCSI_Read10</a> (uint32_t lba, uint16_t sectors, void *data)</td></tr>
 <tr class="memdesc:a316bfe2e0c761d50dcaed004a8034bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a SCSI Read(10) command.  <a href="#a316bfe2e0c761d50dcaed004a8034bbe">More...</a><br /></td></tr>
 <tr class="separator:a316bfe2e0c761d50dcaed004a8034bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabf14b7316a5270391c8961f7b7bd1e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#aabf14b7316a5270391c8961f7b7bd1e9">MSDSCSI_ReadCapacity</a> (MSDSCSI_ReadCapacityData_TypeDef *data)</td></tr>
+<tr class="memitem:aabf14b7316a5270391c8961f7b7bd1e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#aabf14b7316a5270391c8961f7b7bd1e9">MSDSCSI_ReadCapacity</a> (<a class="el" href="structMSDSCSI__ReadCapacityData__TypeDef.html">MSDSCSI_ReadCapacityData_TypeDef</a> *data)</td></tr>
 <tr class="memdesc:aabf14b7316a5270391c8961f7b7bd1e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a SCSI Read Capacity command.  <a href="#aabf14b7316a5270391c8961f7b7bd1e9">More...</a><br /></td></tr>
 <tr class="separator:aabf14b7316a5270391c8961f7b7bd1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa04e858f68c0729af7d749a9bbbd64fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#aa04e858f68c0729af7d749a9bbbd64fb">MSDSCSI_RequestSense</a> (MSDSCSI_RequestSenseData_TypeDef *data)</td></tr>
+<tr class="memitem:aa04e858f68c0729af7d749a9bbbd64fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#aa04e858f68c0729af7d749a9bbbd64fb">MSDSCSI_RequestSense</a> (<a class="el" href="structMSDSCSI__RequestSenseData__TypeDef.html">MSDSCSI_RequestSenseData_TypeDef</a> *data)</td></tr>
 <tr class="memdesc:aa04e858f68c0729af7d749a9bbbd64fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a SCSI Request Sense command.  <a href="#aa04e858f68c0729af7d749a9bbbd64fb">More...</a><br /></td></tr>
 <tr class="separator:aa04e858f68c0729af7d749a9bbbd64fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28044689db0ce7f73fe0eb209e01c68e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msdscsi_8c.html#a28044689db0ce7f73fe0eb209e01c68e">MSDSCSI_TestUnitReady</a> (void)</td></tr>
@@ -200,7 +200,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool MSDSCSI_Inquiry </td>
           <td>(</td>
-          <td class="paramtype">MSDSCSI_InquiryData_TypeDef *&#160;</td>
+          <td class="paramtype"><a class="el" href="structMSDSCSI__InquiryData__TypeDef.html">MSDSCSI_InquiryData_TypeDef</a> *&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
@@ -267,7 +267,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="msdscsi_8c_source.html#l00213">213</a> of file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
 
-<p>References <a class="el" href="msdbot_8c.html#a924b6ac8bbbb582c299825f371813067">MSDBOT_Xfer()</a>, <a class="el" href="group__COMMON.html#ga6c4212379594e73a70b66c5557f1eaa3">SL_ALIGN</a>, and <a class="el" href="group__COMMON.html#ga14deffb02010866992cb069907f73846">SL_ATTRIBUTE_ALIGN</a>.</p>
+<p>References <a class="el" href="structMSDSCSI__Read10__TypeDef.html#a0f7d380926a76054cfc9f1ba47e606b0">MSDSCSI_Read10_TypeDef::Lba</a>, <a class="el" href="msdbot_8c.html#a924b6ac8bbbb582c299825f371813067">MSDBOT_Xfer()</a>, <a class="el" href="group__COMMON.html#ga6c4212379594e73a70b66c5557f1eaa3">SL_ALIGN</a>, <a class="el" href="group__COMMON.html#ga14deffb02010866992cb069907f73846">SL_ATTRIBUTE_ALIGN</a>, and <a class="el" href="structMSDSCSI__Read10__TypeDef.html#ac761573476109ed41d9ae45932d3fcf4">MSDSCSI_Read10_TypeDef::TransferLength</a>.</p>
 
 <p>Referenced by <a class="el" href="group__Msd.html#ga8697013d00236b3c6dc0ded028f02c3d">MSDH_ReadSectors()</a>.</p>
 
@@ -280,7 +280,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool MSDSCSI_ReadCapacity </td>
           <td>(</td>
-          <td class="paramtype">MSDSCSI_ReadCapacityData_TypeDef *&#160;</td>
+          <td class="paramtype"><a class="el" href="structMSDSCSI__ReadCapacityData__TypeDef.html">MSDSCSI_ReadCapacityData_TypeDef</a> *&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
@@ -298,7 +298,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="msdscsi_8c_source.html#l00240">240</a> of file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
 
-<p>References <a class="el" href="msdbot_8c.html#a924b6ac8bbbb582c299825f371813067">MSDBOT_Xfer()</a>, and <a class="el" href="group__Msd.html#gab6ed4755185c4e6d8d0de6f8dd021e8c">SCSI_READCAPACITYDATA_LEN</a>.</p>
+<p>References <a class="el" href="structMSDSCSI__ReadCapacityData__TypeDef.html#a0a1147829445f6b2e1da2fd86ce45d91">MSDSCSI_ReadCapacityData_TypeDef::LogicalBlockAddress</a>, <a class="el" href="structMSDSCSI__ReadCapacityData__TypeDef.html#a345dd2117f77e23f8f991c2568e266e5">MSDSCSI_ReadCapacityData_TypeDef::LogicalBlockLength</a>, <a class="el" href="msdbot_8c.html#a924b6ac8bbbb582c299825f371813067">MSDBOT_Xfer()</a>, and <a class="el" href="group__Msd.html#gab6ed4755185c4e6d8d0de6f8dd021e8c">SCSI_READCAPACITYDATA_LEN</a>.</p>
 
 <p>Referenced by <a class="el" href="group__Msd.html#gae8f9b12aff7da92b795ef4c64a5bd242">MSDH_GetBlockSize()</a>, <a class="el" href="group__Msd.html#gaef64501159db49dd5e00287a2487ce68">MSDH_GetSectorCount()</a>, <a class="el" href="group__Msd.html#ga14bdf90c68d29571164a39c8f22f8f73">MSDH_GetSectorSize()</a>, and <a class="el" href="group__Msd.html#gaeb31e6900faf7971679af16d079f6c14">MSDH_Init()</a>.</p>
 
@@ -311,7 +311,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool MSDSCSI_RequestSense </td>
           <td>(</td>
-          <td class="paramtype">MSDSCSI_RequestSenseData_TypeDef *&#160;</td>
+          <td class="paramtype"><a class="el" href="structMSDSCSI__RequestSenseData__TypeDef.html">MSDSCSI_RequestSenseData_TypeDef</a> *&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
@@ -403,7 +403,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="msdscsi_8c_source.html#l00307">307</a> of file <a class="el" href="msdscsi_8c_source.html">msdscsi.c</a>.</p>
 
-<p>References <a class="el" href="msdbot_8c.html#a924b6ac8bbbb582c299825f371813067">MSDBOT_Xfer()</a>, <a class="el" href="group__COMMON.html#ga6c4212379594e73a70b66c5557f1eaa3">SL_ALIGN</a>, and <a class="el" href="group__COMMON.html#ga14deffb02010866992cb069907f73846">SL_ATTRIBUTE_ALIGN</a>.</p>
+<p>References <a class="el" href="structMSDSCSI__Write10__TypeDef.html#a8e61a32441fc28c57dbc04a9962d0386">MSDSCSI_Write10_TypeDef::Lba</a>, <a class="el" href="msdbot_8c.html#a924b6ac8bbbb582c299825f371813067">MSDBOT_Xfer()</a>, <a class="el" href="group__COMMON.html#ga6c4212379594e73a70b66c5557f1eaa3">SL_ALIGN</a>, <a class="el" href="group__COMMON.html#ga14deffb02010866992cb069907f73846">SL_ATTRIBUTE_ALIGN</a>, and <a class="el" href="structMSDSCSI__Write10__TypeDef.html#a5473a605c45f7cda62e548f54d7091dd">MSDSCSI_Write10_TypeDef::TransferLength</a>.</p>
 
 <p>Referenced by <a class="el" href="group__Msd.html#ga364dc7de14926e4b9716addb8cca99d2">MSDH_WriteSectors()</a>.</p>
 
@@ -415,7 +415,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="msdscsi_8c.html">msdscsi.c</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:24:23 for EFM32 Tiny Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:50:51 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

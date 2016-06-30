@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Zero Gecko Software Documentation: C:/work/s025_sw/Device/SiliconLabs/EFM32ZG/Include/efm32zg_dma_descriptor.h Source File</title>
+<title>EFM32 Zero Gecko Software Documentation: C:/work/s025_sw_ssh/Device/SiliconLabs/EFM32ZG/Include/efm32zg_dma_descriptor.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Zero Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32zg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32zg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -114,26 +114,25 @@ $(document).ready(function(){initNavTree('efm32zg__dma__descriptor_8h_source.htm
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structDMA__DESCRIPTOR__TypeDef.html">   40</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">/* Note! Use of double __IO (volatile) qualifier to ensure that both */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">/* Note! Use of double __IOM (volatile) qualifier to ensure that both */</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="comment">/* pointer and referenced memory are declared volatile. */</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structDMA__DESCRIPTOR__TypeDef.html#a5bf72c750745fe78e3db9b02a84b9f17">   44</a></span>&#160;  <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> <span class="keywordtype">void</span> * <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code" href="structDMA__DESCRIPTOR__TypeDef.html#a5bf72c750745fe78e3db9b02a84b9f17">SRCEND</a>;     </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structDMA__DESCRIPTOR__TypeDef.html#a118cb8ab9c8a8fb3f89848e8dd56b3fe">   45</a></span>&#160;  <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> <span class="keywordtype">void</span> * <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> <a class="code" href="structDMA__DESCRIPTOR__TypeDef.html#a118cb8ab9c8a8fb3f89848e8dd56b3fe">DSTEND</a>;     </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structDMA__DESCRIPTOR__TypeDef.html#a70bbb5bfebb274e54fabda76b36e717d">   46</a></span>&#160;  <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> uint32_t    <a class="code" href="structDMA__DESCRIPTOR__TypeDef.html#a70bbb5bfebb274e54fabda76b36e717d">CTRL</a>;       </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structDMA__DESCRIPTOR__TypeDef.html#a4346c88c2a75d91f13030a28b5dbcfbe">   47</a></span>&#160;  <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> uint32_t    <a class="code" href="structDMA__DESCRIPTOR__TypeDef.html#a4346c88c2a75d91f13030a28b5dbcfbe">USER</a>;       </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structDMA__DESCRIPTOR__TypeDef.html#af9b9a56ee217269df715c20c69505495">   44</a></span>&#160;  __IOM <span class="keywordtype">void</span> * __IOM <a class="code" href="structDMA__DESCRIPTOR__TypeDef.html#af9b9a56ee217269df715c20c69505495">SRCEND</a>;   </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structDMA__DESCRIPTOR__TypeDef.html#a11b380df74d0c41e7e9dd82ee03b2c85">   45</a></span>&#160;  __IOM <span class="keywordtype">void</span> * __IOM <a class="code" href="structDMA__DESCRIPTOR__TypeDef.html#a11b380df74d0c41e7e9dd82ee03b2c85">DSTEND</a>;   </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structDMA__DESCRIPTOR__TypeDef.html#afa34eed41d18b89292e46f58eb7e8244">   46</a></span>&#160;  __IOM uint32_t     <a class="code" href="structDMA__DESCRIPTOR__TypeDef.html#afa34eed41d18b89292e46f58eb7e8244">CTRL</a>;     </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structDMA__DESCRIPTOR__TypeDef.html#ac59f4a979eb4f3eac7204af103cf8bea">   47</a></span>&#160;  __IOM uint32_t     <a class="code" href="structDMA__DESCRIPTOR__TypeDef.html#ac59f4a979eb4f3eac7204af103cf8bea">USER</a>;     </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <a class="code" href="structDMA__DESCRIPTOR__TypeDef.html">DMA_DESCRIPTOR_TypeDef</a>;      </div>
-<div class="ttc" id="group__BSP__DK_html_gaec43007d9998a0a0e01faede4133d6be"><div class="ttname"><a href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a></div><div class="ttdeci">#define __IO</div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__bcreg__3201_8h_source.html#l00053">bsp_dk_bcreg_3201.h:53</a></div></div>
-<div class="ttc" id="structDMA__DESCRIPTOR__TypeDef_html_a5bf72c750745fe78e3db9b02a84b9f17"><div class="ttname"><a href="structDMA__DESCRIPTOR__TypeDef.html#a5bf72c750745fe78e3db9b02a84b9f17">DMA_DESCRIPTOR_TypeDef::SRCEND</a></div><div class="ttdeci">__IO void *__IO SRCEND</div><div class="ttdef"><b>Definition:</b> <a href="efm32zg__dma__descriptor_8h_source.html#l00044">efm32zg_dma_descriptor.h:44</a></div></div>
+<div class="ttc" id="structDMA__DESCRIPTOR__TypeDef_html_afa34eed41d18b89292e46f58eb7e8244"><div class="ttname"><a href="structDMA__DESCRIPTOR__TypeDef.html#afa34eed41d18b89292e46f58eb7e8244">DMA_DESCRIPTOR_TypeDef::CTRL</a></div><div class="ttdeci">__IOM uint32_t CTRL</div><div class="ttdef"><b>Definition:</b> <a href="efm32zg__dma__descriptor_8h_source.html#l00046">efm32zg_dma_descriptor.h:46</a></div></div>
+<div class="ttc" id="structDMA__DESCRIPTOR__TypeDef_html_af9b9a56ee217269df715c20c69505495"><div class="ttname"><a href="structDMA__DESCRIPTOR__TypeDef.html#af9b9a56ee217269df715c20c69505495">DMA_DESCRIPTOR_TypeDef::SRCEND</a></div><div class="ttdeci">__IOM void *__IOM SRCEND</div><div class="ttdef"><b>Definition:</b> <a href="efm32zg__dma__descriptor_8h_source.html#l00044">efm32zg_dma_descriptor.h:44</a></div></div>
+<div class="ttc" id="structDMA__DESCRIPTOR__TypeDef_html_ac59f4a979eb4f3eac7204af103cf8bea"><div class="ttname"><a href="structDMA__DESCRIPTOR__TypeDef.html#ac59f4a979eb4f3eac7204af103cf8bea">DMA_DESCRIPTOR_TypeDef::USER</a></div><div class="ttdeci">__IOM uint32_t USER</div><div class="ttdef"><b>Definition:</b> <a href="efm32zg__dma__descriptor_8h_source.html#l00047">efm32zg_dma_descriptor.h:47</a></div></div>
 <div class="ttc" id="structDMA__DESCRIPTOR__TypeDef_html"><div class="ttname"><a href="structDMA__DESCRIPTOR__TypeDef.html">DMA_DESCRIPTOR_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="efm32zg__dma__descriptor_8h_source.html#l00040">efm32zg_dma_descriptor.h:40</a></div></div>
-<div class="ttc" id="structDMA__DESCRIPTOR__TypeDef_html_a4346c88c2a75d91f13030a28b5dbcfbe"><div class="ttname"><a href="structDMA__DESCRIPTOR__TypeDef.html#a4346c88c2a75d91f13030a28b5dbcfbe">DMA_DESCRIPTOR_TypeDef::USER</a></div><div class="ttdeci">__IO uint32_t USER</div><div class="ttdef"><b>Definition:</b> <a href="efm32zg__dma__descriptor_8h_source.html#l00047">efm32zg_dma_descriptor.h:47</a></div></div>
-<div class="ttc" id="structDMA__DESCRIPTOR__TypeDef_html_a70bbb5bfebb274e54fabda76b36e717d"><div class="ttname"><a href="structDMA__DESCRIPTOR__TypeDef.html#a70bbb5bfebb274e54fabda76b36e717d">DMA_DESCRIPTOR_TypeDef::CTRL</a></div><div class="ttdeci">__IO uint32_t CTRL</div><div class="ttdef"><b>Definition:</b> <a href="efm32zg__dma__descriptor_8h_source.html#l00046">efm32zg_dma_descriptor.h:46</a></div></div>
-<div class="ttc" id="structDMA__DESCRIPTOR__TypeDef_html_a118cb8ab9c8a8fb3f89848e8dd56b3fe"><div class="ttname"><a href="structDMA__DESCRIPTOR__TypeDef.html#a118cb8ab9c8a8fb3f89848e8dd56b3fe">DMA_DESCRIPTOR_TypeDef::DSTEND</a></div><div class="ttdeci">__IO void *__IO DSTEND</div><div class="ttdef"><b>Definition:</b> <a href="efm32zg__dma__descriptor_8h_source.html#l00045">efm32zg_dma_descriptor.h:45</a></div></div>
+<div class="ttc" id="structDMA__DESCRIPTOR__TypeDef_html_a11b380df74d0c41e7e9dd82ee03b2c85"><div class="ttname"><a href="structDMA__DESCRIPTOR__TypeDef.html#a11b380df74d0c41e7e9dd82ee03b2c85">DMA_DESCRIPTOR_TypeDef::DSTEND</a></div><div class="ttdeci">__IOM void *__IOM DSTEND</div><div class="ttdef"><b>Definition:</b> <a href="efm32zg__dma__descriptor_8h_source.html#l00045">efm32zg_dma_descriptor.h:45</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4c76ddfc10a27668d6c42d3412320ee0.html">Device</a></li><li class="navelem"><a class="el" href="dir_eca9ef8613423b074c58e28a7f7d2781.html">SiliconLabs</a></li><li class="navelem"><a class="el" href="dir_deda96512d1924d1cc173ebeb3006223.html">EFM32ZG</a></li><li class="navelem"><a class="el" href="dir_80139012ca42b949ea16c9a00fe8a231.html">Include</a></li><li class="navelem"><a class="el" href="efm32zg__dma__descriptor_8h.html">efm32zg_dma_descriptor.h</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:33:39 for EFM32 Zero Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:54:13 for EFM32 Zero Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

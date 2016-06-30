@@ -4,6 +4,8 @@ var em__adc_8h =
     [ "ADC_INIT_DEFAULT", "group__ADC.html#ga4572f863a8d863214dfd0a4b48f653e2", null ],
     [ "ADC_INITSCAN_DEFAULT", "group__ADC.html#gabe964e6cb872ec50ada2c37331a0176d", null ],
     [ "ADC_INITSINGLE_DEFAULT", "group__ADC.html#ga1a0cd333a457f356692138fcf3b2275e", null ],
+    [ "ADC_SCANINPUTSEL_GROUP_NONE", "group__ADC.html#ga7aa0bfc6a8a192b0d4130941ae72f797", null ],
+    [ "ADC_SCANINPUTSEL_NONE", "group__ADC.html#ga80896d1a724ffdecafdde0ba1de39a7e", null ],
     [ "ADC_AcqTime_TypeDef", "group__ADC.html#ga85e06060d63f1b16039d8efa318833d4", [
       [ "adcAcqTime1", "group__ADC.html#gga85e06060d63f1b16039d8efa318833d4a8ce5aa42e27cab1c6155b432a65674c9", null ],
       [ "adcAcqTime2", "group__ADC.html#gga85e06060d63f1b16039d8efa318833d4a52e795b2a9f0380c6e54a036ba54de61", null ],

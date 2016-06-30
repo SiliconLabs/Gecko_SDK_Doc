@@ -1,23 +1,23 @@
 var group__EFM32LG__BURTC =
 [
     [ "BURTC_TypeDef", "structBURTC__TypeDef.html", [
-      [ "CMD", "structBURTC__TypeDef.html#a97d33edf04524170e5ffc7971a572f6e", null ],
-      [ "CNT", "structBURTC__TypeDef.html#ab05f9603631d78760ec340e102845808", null ],
-      [ "COMP0", "structBURTC__TypeDef.html#a32cd87e3fd14a741709c7856e912756b", null ],
-      [ "CTRL", "structBURTC__TypeDef.html#a219c9277f3a4896812881622ddb01503", null ],
-      [ "FREEZE", "structBURTC__TypeDef.html#acebc5c6cfd397ebf425df528f5790426", null ],
-      [ "IEN", "structBURTC__TypeDef.html#acaa50cd1e8ed805e7c81cdeae083d0e8", null ],
-      [ "IF", "structBURTC__TypeDef.html#a7fa09433074f93deffcf51082989c538", null ],
-      [ "IFC", "structBURTC__TypeDef.html#ace940bdf916642f2c545d1df0ed44aac", null ],
-      [ "IFS", "structBURTC__TypeDef.html#a8faa3d71f7adeb6b29da582bcb863cbd", null ],
-      [ "LFXOFDET", "structBURTC__TypeDef.html#a04497707b915459b254ab595ad328779", null ],
-      [ "LOCK", "structBURTC__TypeDef.html#a82038b1cc04e4e376020f6c0d748f703", null ],
-      [ "LPMODE", "structBURTC__TypeDef.html#af068d8975f201865b57abfabc2894bb8", null ],
-      [ "POWERDOWN", "structBURTC__TypeDef.html#a9dd227be3e5033913aeaa799926297a9", null ],
+      [ "CMD", "structBURTC__TypeDef.html#a3c499ed13a8f72b5db8eddbfb55bd705", null ],
+      [ "CNT", "structBURTC__TypeDef.html#a395132557c29e660557168bdf34ebc1e", null ],
+      [ "COMP0", "structBURTC__TypeDef.html#a7d1a3e29724de98e9485d8a39b2cd66d", null ],
+      [ "CTRL", "structBURTC__TypeDef.html#af3f300a4454419e1bed628add2d8132d", null ],
+      [ "FREEZE", "structBURTC__TypeDef.html#a7228e573a2ce57d9e7992817373bc0b1", null ],
+      [ "IEN", "structBURTC__TypeDef.html#a89e8ae774b9b570842a3b6973571745a", null ],
+      [ "IF", "structBURTC__TypeDef.html#a376f357e06a6f9adaa31b12eb022bf70", null ],
+      [ "IFC", "structBURTC__TypeDef.html#a16f30e218f3975d71c6cbc6686059d74", null ],
+      [ "IFS", "structBURTC__TypeDef.html#ab4c1f4c87b15ade910b33287f7e2a592", null ],
+      [ "LFXOFDET", "structBURTC__TypeDef.html#a55e3cf99a2d285ea6fcaf054ef227004", null ],
+      [ "LOCK", "structBURTC__TypeDef.html#a1f6d3092530dcc36f6aaad009988f6a1", null ],
+      [ "LPMODE", "structBURTC__TypeDef.html#a6548b4a98f15b8f2bf8f348a953e9232", null ],
+      [ "POWERDOWN", "structBURTC__TypeDef.html#af916cd4655e1b83934a6fc9e16fd1de2", null ],
       [ "RESERVED0", "structBURTC__TypeDef.html#a23b9bf9d41720b3797c50b2b7f794322", null ],
       [ "RET", "structBURTC__TypeDef.html#af8f20aef2f043f1eb57bc076e7c81fb6", null ],
-      [ "STATUS", "structBURTC__TypeDef.html#a4450004fb54698208113416b54cb467b", null ],
-      [ "SYNCBUSY", "structBURTC__TypeDef.html#ab2ce985eedab1a6a95011ff0eecb3371", null ],
-      [ "TIMESTAMP", "structBURTC__TypeDef.html#a174281336dd15ce7a1c8a1e3603623ae", null ]
+      [ "STATUS", "structBURTC__TypeDef.html#afd238135fd38a2e7caea8791e57a5794", null ],
+      [ "SYNCBUSY", "structBURTC__TypeDef.html#a4a7ce125d523f16c476d27651eaf2f40", null ],
+      [ "TIMESTAMP", "structBURTC__TypeDef.html#a8c51bf990751a2b1131dec339135d110", null ]
     ] ]
 ];

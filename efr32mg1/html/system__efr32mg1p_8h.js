@@ -53,7 +53,7 @@ var system__efr32mg1p_8h =
     [ "USART0_TX_IRQHandler", "system__efr32mg1p_8h.html#aa1ad8819e3b118aa46e7c04efc32593b", null ],
     [ "USART1_RX_IRQHandler", "system__efr32mg1p_8h.html#aa6a5099bafcea7a957c8a7aff925a5c2", null ],
     [ "USART1_TX_IRQHandler", "system__efr32mg1p_8h.html#af7afa223a57cccc216b627b070ad9443", null ],
-    [ "WDOG_IRQHandler", "system__efr32mg1p_8h.html#a34f93cedc7186cc0f72abd12dfa697a0", null ],
+    [ "WDOG0_IRQHandler", "system__efr32mg1p_8h.html#a970719b2bf09cf50a072ae13cf6a9e9c", null ],
     [ "SystemCoreClock", "system__efr32mg1p_8h.html#aa3cd3e43291e81e795d642b79b6088e6", null ],
     [ "SystemHfrcoFreq", "system__efr32mg1p_8h.html#a019e34c770ed2855a9ce73be796f33d5", null ]
 ];

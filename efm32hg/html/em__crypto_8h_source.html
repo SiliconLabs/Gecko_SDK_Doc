@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Happy Gecko Software Documentation: C:/work/s025_sw/emlib/inc/em_crypto.h Source File</title>
+<title>EFM32 Happy Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/inc/em_crypto.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32hg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32hg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -766,151 +766,158 @@ $(document).ready(function(){initNavTree('em__crypto_8h_source.html','');});
 <div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;<span class="comment">/***************************************************************************/</span></div>
 <div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;__STATIC_INLINE uint32_t CRYPTO_IntGetEnabled(CRYPTO_TypeDef *crypto)</div>
 <div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;{</div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;  <span class="keywordflow">return</span> crypto-&gt;IF &amp; crypto-&gt;IEN;</div>
-<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;}</div>
-<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;</div>
-<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> CRYPTO_IntSet(CRYPTO_TypeDef *crypto, uint32_t flags)</div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;{</div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;  crypto-&gt;IFS = flags;</div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;}</div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;</div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;<span class="comment">/*******************************************************************************</span></div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;<span class="comment"> *****    Static inline wrappers for CRYPTO AES functions in order to      *****</span></div>
-<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;<span class="comment"> *****    preserve backwards compatibility with AES module API functions.  *****</span></div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
-<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;</div>
-<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#gab5b6ca62c19d1604d633918bb2657d1d">AES_CBC128</a>(uint8_t * out,</div>
-<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;                       <span class="keyword">const</span> uint8_t * in,</div>
-<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
-<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;                       <span class="keyword">const</span> uint8_t * key,</div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;                       <span class="keyword">const</span> uint8_t * iv,</div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;                       <span class="keywordtype">bool</span> encrypt)</div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;{</div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;  CRYPTO_AES_CBC128(CRYPTO, out, in, len, key, iv, encrypt);</div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;}</div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;</div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> AES_CBC256(uint8_t * out,</div>
-<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;                       <span class="keyword">const</span> uint8_t * in,</div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;                       <span class="keyword">const</span> uint8_t * key,</div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;                       <span class="keyword">const</span> uint8_t * iv,</div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;                       <span class="keywordtype">bool</span> encrypt)</div>
-<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;{</div>
-<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;  CRYPTO_AES_CBC256(CRYPTO, out, in, len, key, iv, encrypt);</div>
-<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;}</div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;</div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#ga0b1883845a5aa60208b496ab7527c761">AES_CFB128</a>(uint8_t * out,</div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;                       <span class="keyword">const</span> uint8_t * in,</div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;                       <span class="keyword">const</span> uint8_t * key,</div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;                       <span class="keyword">const</span> uint8_t * iv,</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;                       <span class="keywordtype">bool</span> encrypt)</div>
-<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;{</div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;  CRYPTO_AES_CFB128(CRYPTO, out, in, len, key, iv, encrypt);</div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;}</div>
-<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;</div>
-<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> AES_CFB256(uint8_t * out,</div>
-<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;                       <span class="keyword">const</span> uint8_t * in,</div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;                       <span class="keyword">const</span> uint8_t * key,</div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;                       <span class="keyword">const</span> uint8_t * iv,</div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;                       <span class="keywordtype">bool</span> encrypt)</div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;{</div>
-<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;  CRYPTO_AES_CFB256(CRYPTO, out, in, len, key, iv, encrypt);</div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;}</div>
-<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;</div>
-<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#ga84ad30201de9ffcc858897609a7813ff">AES_CTR128</a>(uint8_t * out,</div>
-<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;                       <span class="keyword">const</span> uint8_t * in,</div>
-<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;                       <span class="keyword">const</span> uint8_t * key,</div>
-<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;                       uint8_t * ctr,</div>
-<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;                       CRYPTO_AES_CtrFuncPtr_TypeDef ctrFunc)</div>
-<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;{</div>
-<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;  CRYPTO_AES_CTR128(CRYPTO, out, in, len, key, ctr, ctrFunc);</div>
-<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;}</div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;</div>
-<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> AES_CTR256(uint8_t * out,</div>
-<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;                       <span class="keyword">const</span> uint8_t * in,</div>
-<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
-<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;                       <span class="keyword">const</span> uint8_t * key,</div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;                       uint8_t * ctr,</div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;                       CRYPTO_AES_CtrFuncPtr_TypeDef ctrFunc)</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;{</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;  CRYPTO_AES_CTR256(CRYPTO, out, in, len, key, ctr, ctrFunc);</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;}</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;</div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#ga5a0c2448f7c6b17427d2103fde30f33f">AES_CTRUpdate32Bit</a>(uint8_t * ctr)</div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;{</div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;  CRYPTO_AES_CTRUpdate32Bit(ctr);</div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;}</div>
-<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#gad13d72ceabfc5e05ef89d89dda50745a">AES_DecryptKey128</a>(uint8_t * out, <span class="keyword">const</span> uint8_t * in)</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;{</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;  CRYPTO_AES_DecryptKey128(CRYPTO, out, in);</div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;}</div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;</div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> AES_DecryptKey256(uint8_t * out, <span class="keyword">const</span> uint8_t * in)</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;{</div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;  CRYPTO_AES_DecryptKey256(CRYPTO, out, in);</div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;}</div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;</div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#gabe2c25563ac2502fa8d1a9e520689b72">AES_ECB128</a>(uint8_t * out,</div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;                                <span class="keyword">const</span> uint8_t * in,</div>
-<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;                                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;                                <span class="keyword">const</span> uint8_t * key,</div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;                                <span class="keywordtype">bool</span> encrypt)</div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;{</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;  CRYPTO_AES_ECB128(CRYPTO, out, in, len, key, encrypt);</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;}</div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;</div>
-<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> AES_ECB256(uint8_t * out,</div>
-<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;                                <span class="keyword">const</span> uint8_t * in,</div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;                                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
-<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;                                <span class="keyword">const</span> uint8_t * key,</div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;                                <span class="keywordtype">bool</span> encrypt)</div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;{</div>
-<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;  CRYPTO_AES_ECB256(CRYPTO, out, in, len, key, encrypt);</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;}</div>
-<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;</div>
-<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#gac650a8113889ca6bbf6f89d058a1a042">AES_OFB128</a>(uint8_t * out,</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;                                <span class="keyword">const</span> uint8_t * in,</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;                                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;                                <span class="keyword">const</span> uint8_t * key,</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;                                <span class="keyword">const</span> uint8_t * iv)</div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;{</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;  CRYPTO_AES_OFB128(CRYPTO, out, in, len, key, iv);</div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;}</div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;</div>
-<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> AES_OFB256(uint8_t * out,</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;                                <span class="keyword">const</span> uint8_t * in,</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;                                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;                                <span class="keyword">const</span> uint8_t * key,</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;                                <span class="keyword">const</span> uint8_t * iv)</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;{</div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;  CRYPTO_AES_OFB256(CRYPTO, out, in, len, key, iv);</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;}</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;</div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;}</div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;</div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_CRYPTO_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;  uint32_t tmp;</div>
+<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;</div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;  <span class="comment">/* Store IEN in temporary variable in order to define explicit order</span></div>
+<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;<span class="comment">   * of volatile accesses. */</span></div>
+<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;  tmp = crypto-&gt;IEN;</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;  <span class="comment">/* Bitwise AND of pending and enabled interrupts */</span></div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;  <span class="keywordflow">return</span> crypto-&gt;IF &amp; tmp;</div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;}</div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> CRYPTO_IntSet(CRYPTO_TypeDef *crypto, uint32_t flags)</div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;{</div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;  crypto-&gt;IFS = flags;</div>
+<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;}</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;<span class="comment">/*******************************************************************************</span></div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;<span class="comment"> *****    Static inline wrappers for CRYPTO AES functions in order to      *****</span></div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;<span class="comment"> *****    preserve backwards compatibility with AES module API functions.  *****</span></div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#gab5b6ca62c19d1604d633918bb2657d1d">AES_CBC128</a>(uint8_t * out,</div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;                       <span class="keyword">const</span> uint8_t * in,</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;                       <span class="keyword">const</span> uint8_t * key,</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;                       <span class="keyword">const</span> uint8_t * iv,</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;                       <span class="keywordtype">bool</span> encrypt)</div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;{</div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;  CRYPTO_AES_CBC128(CRYPTO, out, in, len, key, iv, encrypt);</div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;}</div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;</div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> AES_CBC256(uint8_t * out,</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;                       <span class="keyword">const</span> uint8_t * in,</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;                       <span class="keyword">const</span> uint8_t * key,</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;                       <span class="keyword">const</span> uint8_t * iv,</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;                       <span class="keywordtype">bool</span> encrypt)</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;{</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;  CRYPTO_AES_CBC256(CRYPTO, out, in, len, key, iv, encrypt);</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;}</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;</div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#ga0b1883845a5aa60208b496ab7527c761">AES_CFB128</a>(uint8_t * out,</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;                       <span class="keyword">const</span> uint8_t * in,</div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;                       <span class="keyword">const</span> uint8_t * key,</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;                       <span class="keyword">const</span> uint8_t * iv,</div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;                       <span class="keywordtype">bool</span> encrypt)</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;{</div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;  CRYPTO_AES_CFB128(CRYPTO, out, in, len, key, iv, encrypt);</div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;}</div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;</div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> AES_CFB256(uint8_t * out,</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;                       <span class="keyword">const</span> uint8_t * in,</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;                       <span class="keyword">const</span> uint8_t * key,</div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;                       <span class="keyword">const</span> uint8_t * iv,</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;                       <span class="keywordtype">bool</span> encrypt)</div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;{</div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;  CRYPTO_AES_CFB256(CRYPTO, out, in, len, key, iv, encrypt);</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;}</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;</div>
+<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#ga84ad30201de9ffcc858897609a7813ff">AES_CTR128</a>(uint8_t * out,</div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;                       <span class="keyword">const</span> uint8_t * in,</div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
+<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;                       <span class="keyword">const</span> uint8_t * key,</div>
+<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;                       uint8_t * ctr,</div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;                       CRYPTO_AES_CtrFuncPtr_TypeDef ctrFunc)</div>
+<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;{</div>
+<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;  CRYPTO_AES_CTR128(CRYPTO, out, in, len, key, ctr, ctrFunc);</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;}</div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;</div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> AES_CTR256(uint8_t * out,</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;                       <span class="keyword">const</span> uint8_t * in,</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;                       <span class="keyword">const</span> uint8_t * key,</div>
+<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;                       uint8_t * ctr,</div>
+<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;                       CRYPTO_AES_CtrFuncPtr_TypeDef ctrFunc)</div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;{</div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;  CRYPTO_AES_CTR256(CRYPTO, out, in, len, key, ctr, ctrFunc);</div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;}</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#ga5a0c2448f7c6b17427d2103fde30f33f">AES_CTRUpdate32Bit</a>(uint8_t * ctr)</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;{</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;  CRYPTO_AES_CTRUpdate32Bit(ctr);</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;}</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#gad13d72ceabfc5e05ef89d89dda50745a">AES_DecryptKey128</a>(uint8_t * out, <span class="keyword">const</span> uint8_t * in)</div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;{</div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;  CRYPTO_AES_DecryptKey128(CRYPTO, out, in);</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;}</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;</div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> AES_DecryptKey256(uint8_t * out, <span class="keyword">const</span> uint8_t * in)</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;{</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;  CRYPTO_AES_DecryptKey256(CRYPTO, out, in);</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;}</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#gabe2c25563ac2502fa8d1a9e520689b72">AES_ECB128</a>(uint8_t * out,</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;                                <span class="keyword">const</span> uint8_t * in,</div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;                                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;                                <span class="keyword">const</span> uint8_t * key,</div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;                                <span class="keywordtype">bool</span> encrypt)</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;{</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;  CRYPTO_AES_ECB128(CRYPTO, out, in, len, key, encrypt);</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;}</div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;</div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> AES_ECB256(uint8_t * out,</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;                                <span class="keyword">const</span> uint8_t * in,</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;                                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;                                <span class="keyword">const</span> uint8_t * key,</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;                                <span class="keywordtype">bool</span> encrypt)</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;{</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;  CRYPTO_AES_ECB256(CRYPTO, out, in, len, key, encrypt);</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;}</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__AES.html#gac650a8113889ca6bbf6f89d058a1a042">AES_OFB128</a>(uint8_t * out,</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;                                <span class="keyword">const</span> uint8_t * in,</div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;                                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;                                <span class="keyword">const</span> uint8_t * key,</div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;                                <span class="keyword">const</span> uint8_t * iv)</div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;{</div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;  CRYPTO_AES_OFB128(CRYPTO, out, in, len, key, iv);</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;}</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;</div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> AES_OFB256(uint8_t * out,</div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;                                <span class="keyword">const</span> uint8_t * in,</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;                                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> len,</div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;                                <span class="keyword">const</span> uint8_t * key,</div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;                                <span class="keyword">const</span> uint8_t * iv)</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;{</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;  CRYPTO_AES_OFB256(CRYPTO, out, in, len, key, iv);</div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;}</div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;</div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;}</div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;</div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_CRYPTO_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="group__AES_html_ga5a0c2448f7c6b17427d2103fde30f33f"><div class="ttname"><a href="group__AES.html#ga5a0c2448f7c6b17427d2103fde30f33f">AES_CTRUpdate32Bit</a></div><div class="ttdeci">void AES_CTRUpdate32Bit(uint8_t *ctr)</div><div class="ttdoc">Update last 32 bits of 128 bit counter, by incrementing with 1. </div><div class="ttdef"><b>Definition:</b> <a href="em__aes_8c_source.html#l00883">em_aes.c:883</a></div></div>
 <div class="ttc" id="group__AES_html_gad13d72ceabfc5e05ef89d89dda50745a"><div class="ttname"><a href="group__AES.html#gad13d72ceabfc5e05ef89d89dda50745a">AES_DecryptKey128</a></div><div class="ttdeci">void AES_DecryptKey128(uint8_t *out, const uint8_t *in)</div><div class="ttdoc">Generate 128 bit decryption key from 128 bit encryption key. The decryption key is used for some ciph...</div><div class="ttdef"><b>Definition:</b> <a href="em__aes_8c_source.html#l00906">em_aes.c:906</a></div></div>
 <div class="ttc" id="em__bus_8h_html"><div class="ttname"><a href="em__bus_8h.html">em_bus.h</a></div><div class="ttdoc">RAM and peripheral bit-field set and clear API. </div></div>
@@ -927,7 +934,7 @@ $(document).ready(function(){initNavTree('em__crypto_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__crypto_8h.html">em_crypto.h</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:35:42 for EFM32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:45:15 for EFM32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

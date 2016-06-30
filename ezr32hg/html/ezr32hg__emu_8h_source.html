@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EZR32 Happy Gecko Software Documentation: C:/work/s025_sw/Device/SiliconLabs/EZR32HG/Include/ezr32hg_emu.h Source File</title>
+<title>EZR32 Happy Gecko Software Documentation: C:/work/s025_sw_ssh/Device/SiliconLabs/EZR32HG/Include/ezr32hg_emu.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32hg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">ezr32hg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -114,12 +114,12 @@ $(document).ready(function(){initNavTree('ezr32hg__emu_8h_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structEMU__TypeDef.html">   41</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structEMU__TypeDef.html#a62e7f961a08efbf60cbe12c01aa43394">   43</a></span>&#160;  <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> uint32_t <a class="code" href="structEMU__TypeDef.html#a62e7f961a08efbf60cbe12c01aa43394">CTRL</a>;         </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structEMU__TypeDef.html#abf232c867d04b7cc843162b8048a396b">   45</a></span>&#160;  uint32_t      RESERVED0[1]; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structEMU__TypeDef.html#a28db2cb3e33748114e51a11988714af1">   46</a></span>&#160;  <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> uint32_t <a class="code" href="structEMU__TypeDef.html#a28db2cb3e33748114e51a11988714af1">LOCK</a>;         </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structEMU__TypeDef.html#a17ed25578a86c636b3e57159ecacaa3c">   48</a></span>&#160;  uint32_t      RESERVED1[6]; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structEMU__TypeDef.html#a2ca231b9fe090ca115884f1119ad784e">   49</a></span>&#160;  <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> uint32_t <a class="code" href="structEMU__TypeDef.html#a2ca231b9fe090ca115884f1119ad784e">AUXCTRL</a>;      </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <a class="code" href="structEMU__TypeDef.html">EMU_TypeDef</a>;                </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structEMU__TypeDef.html#a91883b389b4bffbcbf71b08edd8b7d40">   43</a></span>&#160;  __IOM uint32_t <a class="code" href="structEMU__TypeDef.html#a91883b389b4bffbcbf71b08edd8b7d40">CTRL</a>;         </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structEMU__TypeDef.html#abf232c867d04b7cc843162b8048a396b">   45</a></span>&#160;  uint32_t       RESERVED0[1]; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structEMU__TypeDef.html#af41ea9dcd13052787e89172f767b56cc">   46</a></span>&#160;  __IOM uint32_t <a class="code" href="structEMU__TypeDef.html#af41ea9dcd13052787e89172f767b56cc">LOCK</a>;         </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structEMU__TypeDef.html#a17ed25578a86c636b3e57159ecacaa3c">   48</a></span>&#160;  uint32_t       RESERVED1[6]; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structEMU__TypeDef.html#a0c1a606cd607620ab7d1ad57e60703ea">   49</a></span>&#160;  __IOM uint32_t <a class="code" href="structEMU__TypeDef.html#a0c1a606cd607620ab7d1ad57e60703ea">AUXCTRL</a>;      </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <a class="code" href="structEMU__TypeDef.html">EMU_TypeDef</a>;                 </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">/* Bit fields for EMU CTRL */</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group__EZR32HG__EMU__BitFields.html#gae745d82c57d8a809ea004d2104610f62">   58</a></span>&#160;<span class="preprocessor">#define _EMU_CTRL_RESETVALUE           0x00000000UL                      </span></div>
@@ -165,18 +165,17 @@ $(document).ready(function(){initNavTree('ezr32hg__emu_8h_source.html','');});
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="group__EZR32HG__EMU__BitFields.html#ga7c2ac14e75ea2fe94838f23304213050">  100</a></span>&#160;<span class="preprocessor">#define _EMU_AUXCTRL_HRCCLR_MASK       0x1UL                              </span></div>
 <div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group__EZR32HG__EMU__BitFields.html#ga2e6f19fb02cd5c7da32160e22a32b008">  101</a></span>&#160;<span class="preprocessor">#define _EMU_AUXCTRL_HRCCLR_DEFAULT    0x00000000UL                       </span></div>
 <div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="group__EZR32HG__EMU__BitFields.html#ga17ecdceb909dad909b2571b5c61bdc78">  102</a></span>&#160;<span class="preprocessor">#define EMU_AUXCTRL_HRCCLR_DEFAULT     (_EMU_AUXCTRL_HRCCLR_DEFAULT &lt;&lt; 0) </span></div>
-<div class="ttc" id="structEMU__TypeDef_html_a62e7f961a08efbf60cbe12c01aa43394"><div class="ttname"><a href="structEMU__TypeDef.html#a62e7f961a08efbf60cbe12c01aa43394">EMU_TypeDef::CTRL</a></div><div class="ttdeci">__IO uint32_t CTRL</div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg__emu_8h_source.html#l00043">ezr32hg_emu.h:43</a></div></div>
-<div class="ttc" id="group__BSP__DK_html_gaec43007d9998a0a0e01faede4133d6be"><div class="ttname"><a href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a></div><div class="ttdeci">#define __IO</div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__bcreg__3201_8h_source.html#l00053">bsp_dk_bcreg_3201.h:53</a></div></div>
 <div class="ttc" id="structEMU__TypeDef_html"><div class="ttname"><a href="structEMU__TypeDef.html">EMU_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg__emu_8h_source.html#l00041">ezr32hg_emu.h:41</a></div></div>
-<div class="ttc" id="structEMU__TypeDef_html_a2ca231b9fe090ca115884f1119ad784e"><div class="ttname"><a href="structEMU__TypeDef.html#a2ca231b9fe090ca115884f1119ad784e">EMU_TypeDef::AUXCTRL</a></div><div class="ttdeci">__IO uint32_t AUXCTRL</div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg__emu_8h_source.html#l00049">ezr32hg_emu.h:49</a></div></div>
-<div class="ttc" id="structEMU__TypeDef_html_a28db2cb3e33748114e51a11988714af1"><div class="ttname"><a href="structEMU__TypeDef.html#a28db2cb3e33748114e51a11988714af1">EMU_TypeDef::LOCK</a></div><div class="ttdeci">__IO uint32_t LOCK</div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg__emu_8h_source.html#l00046">ezr32hg_emu.h:46</a></div></div>
+<div class="ttc" id="structEMU__TypeDef_html_a91883b389b4bffbcbf71b08edd8b7d40"><div class="ttname"><a href="structEMU__TypeDef.html#a91883b389b4bffbcbf71b08edd8b7d40">EMU_TypeDef::CTRL</a></div><div class="ttdeci">__IOM uint32_t CTRL</div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg__emu_8h_source.html#l00043">ezr32hg_emu.h:43</a></div></div>
+<div class="ttc" id="structEMU__TypeDef_html_a0c1a606cd607620ab7d1ad57e60703ea"><div class="ttname"><a href="structEMU__TypeDef.html#a0c1a606cd607620ab7d1ad57e60703ea">EMU_TypeDef::AUXCTRL</a></div><div class="ttdeci">__IOM uint32_t AUXCTRL</div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg__emu_8h_source.html#l00049">ezr32hg_emu.h:49</a></div></div>
+<div class="ttc" id="structEMU__TypeDef_html_af41ea9dcd13052787e89172f767b56cc"><div class="ttname"><a href="structEMU__TypeDef.html#af41ea9dcd13052787e89172f767b56cc">EMU_TypeDef::LOCK</a></div><div class="ttdeci">__IOM uint32_t LOCK</div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg__emu_8h_source.html#l00046">ezr32hg_emu.h:46</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4c76ddfc10a27668d6c42d3412320ee0.html">Device</a></li><li class="navelem"><a class="el" href="dir_eca9ef8613423b074c58e28a7f7d2781.html">SiliconLabs</a></li><li class="navelem"><a class="el" href="dir_e201f976040af9fe6dc3309d0d01faf6.html">EZR32HG</a></li><li class="navelem"><a class="el" href="dir_7f8865b241f92928a776012e90f85e2d.html">Include</a></li><li class="navelem"><a class="el" href="ezr32hg__emu_8h.html">ezr32hg_emu.h</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:47:31 for EZR32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:52:16 for EZR32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

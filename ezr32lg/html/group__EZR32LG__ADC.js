@@ -1,21 +1,21 @@
 var group__EZR32LG__ADC =
 [
     [ "ADC_TypeDef", "structADC__TypeDef.html", [
-      [ "BIASPROG", "structADC__TypeDef.html#a671981aa74db23e9b4d94a3e8391dce3", null ],
-      [ "CAL", "structADC__TypeDef.html#a607f6c577a28392d2da363e1a64886f3", null ],
-      [ "CMD", "structADC__TypeDef.html#a2723a9e936500899aa1eeb07f2486d2f", null ],
-      [ "CTRL", "structADC__TypeDef.html#ab4d1f93bdafe7669212ded76243bb7d7", null ],
-      [ "IEN", "structADC__TypeDef.html#abf96119a91d66e04ea3bcdf5d9ab23d6", null ],
-      [ "IF", "structADC__TypeDef.html#aafd5aefddba1fd40cf8c1acbfd2ac159", null ],
-      [ "IFC", "structADC__TypeDef.html#aaab065dd3acdf1c8cd031dc70e3af72f", null ],
-      [ "IFS", "structADC__TypeDef.html#a85c18563bb7bc7451aab4b0d2a3d7b71", null ],
+      [ "BIASPROG", "structADC__TypeDef.html#a87f137fdf6f9d31e17587eb14162c781", null ],
+      [ "CAL", "structADC__TypeDef.html#a61e7190fc4382e543da925be61dbee9e", null ],
+      [ "CMD", "structADC__TypeDef.html#a31645fc242917b63e161e6718482bb14", null ],
+      [ "CTRL", "structADC__TypeDef.html#a54105a77dcb85b9f2969c18b0f8f2cff", null ],
+      [ "IEN", "structADC__TypeDef.html#a96c62ffb539b44b9a8d648fef14bcfdd", null ],
+      [ "IF", "structADC__TypeDef.html#a9d35b461c2fd76abd503b210ea0c4349", null ],
+      [ "IFC", "structADC__TypeDef.html#af9b72389a5579649b89effb8c1223e88", null ],
+      [ "IFS", "structADC__TypeDef.html#aa0b0797d128dc62ed0f626316cb43a94", null ],
       [ "RESERVED0", "structADC__TypeDef.html#a4c092a4bc6cdb755ffee28ae01483bb4", null ],
-      [ "SCANCTRL", "structADC__TypeDef.html#a2e3ee12b5dd89c904116e74ca0e26d76", null ],
-      [ "SCANDATA", "structADC__TypeDef.html#a4ecb9f146ba5421917928ef7ed2caf2c", null ],
-      [ "SCANDATAP", "structADC__TypeDef.html#a58296297e53f2721d0f8922e6d0166ce", null ],
-      [ "SINGLECTRL", "structADC__TypeDef.html#a8c2115647a07691bfa1ab63c64dd5353", null ],
-      [ "SINGLEDATA", "structADC__TypeDef.html#ae9ce94dd939b06105735a9013e247508", null ],
-      [ "SINGLEDATAP", "structADC__TypeDef.html#abf3ae21b40b6a230d2e85fbdf5d49121", null ],
-      [ "STATUS", "structADC__TypeDef.html#a48cdef058741bcf443d7c36fe7fdf186", null ]
+      [ "SCANCTRL", "structADC__TypeDef.html#ab823b09a082f5890d75f5d288a08ec4f", null ],
+      [ "SCANDATA", "structADC__TypeDef.html#aa346084ede0716618e654dc3e6299a10", null ],
+      [ "SCANDATAP", "structADC__TypeDef.html#acdc4c6a709f2f55d9c2316c2e7b34491", null ],
+      [ "SINGLECTRL", "structADC__TypeDef.html#ae414eb7971de962434cc22facf43b77d", null ],
+      [ "SINGLEDATA", "structADC__TypeDef.html#a96390b1a2f7cbb1efa15eaad221d9efb", null ],
+      [ "SINGLEDATAP", "structADC__TypeDef.html#a730fb310cadfd3cb1c746f5d4f905556", null ],
+      [ "STATUS", "structADC__TypeDef.html#a8c6baa13f7376244c6cd74e640fa2de5", null ]
     ] ]
 ];

@@ -1,10 +1,10 @@
 var group__EFM32PG1B__RMU =
 [
     [ "RMU_TypeDef", "structRMU__TypeDef.html", [
-      [ "CMD", "structRMU__TypeDef.html#a54722b13e27f81046f65bcff7172c455", null ],
-      [ "CTRL", "structRMU__TypeDef.html#a58eddfee4f55a6d9ccf86e5816427165", null ],
-      [ "LOCK", "structRMU__TypeDef.html#aaf082c899615bef3513e7881a552b5c6", null ],
-      [ "RST", "structRMU__TypeDef.html#a5612b440cbf17851c1eaeb299939d332", null ],
-      [ "RSTCAUSE", "structRMU__TypeDef.html#ab4fee622790bf04c695067f3cb5a1f42", null ]
+      [ "CMD", "structRMU__TypeDef.html#ac252e26959aba21f8768318c2cc09157", null ],
+      [ "CTRL", "structRMU__TypeDef.html#a8c82cb9550cba0dcbe9ced2f2f43d9db", null ],
+      [ "LOCK", "structRMU__TypeDef.html#ab42a8cfad8669ca423b14ae7df35bcda", null ],
+      [ "RST", "structRMU__TypeDef.html#a56a5ef4570575d5648ca87f9c47a5cbe", null ],
+      [ "RSTCAUSE", "structRMU__TypeDef.html#a7dcfb06cd5e2797eefd88d12028b9dcc", null ]
     ] ]
 ];

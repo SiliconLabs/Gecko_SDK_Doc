@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Jade Gecko Software Documentation: C:/work/s025_sw/kits/common/drivers/cdc.c Source File</title>
+<title>EFM32 Jade Gecko Software Documentation: C:/work/s025_sw_ssh/kits/common/drivers/cdc.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('cdc_8c_source.html','');});
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  uint8_t  bParityType;             </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  uint8_t  bDataBits;               </div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  uint8_t  dummy;                   </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;} <a class="code" href="structSL__ATTRIBUTE__PACKED.html">SL_ATTRIBUTE_PACKED</a> cdcLineCoding_TypeDef;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;} <a class="code" href="group__COMMON.html#gaa8622382a414e46f85b7c7c3e56ecc3a">SL_ATTRIBUTE_PACKED</a> cdcLineCoding_TypeDef;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="group__COMMON.html#ga911e7f1f5d8dc5b4dd025e8c14159977">SL_PACK_END</a>()</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
@@ -429,7 +429,7 @@ $(document).ready(function(){initNavTree('cdc_8c_source.html','');});
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  {</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    uartRxCount = CDC_USB_TX_BUF_SIZ - 1 -</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                  ((dmaControlBlock[ 1 ].<a class="code" href="structDMA__DESCRIPTOR__TypeDef.html#a70bbb5bfebb274e54fabda76b36e717d">CTRL</a> &amp; _DMA_CTRL_N_MINUS_1_MASK)</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                  ((dmaControlBlock[ 1 ].<a class="code" href="structDMA__DESCRIPTOR__TypeDef.html#afa34eed41d18b89292e46f58eb7e8244">CTRL</a> &amp; _DMA_CTRL_N_MINUS_1_MASK)</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                   &gt;&gt; _DMA_CTRL_N_MINUS_1_SHIFT);</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  }</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div>
@@ -466,7 +466,7 @@ $(document).ready(function(){initNavTree('cdc_8c_source.html','');});
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  <span class="keywordtype">int</span>      cnt;</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  uint32_t dmaCtrl;</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  dmaCtrl = dmaControlBlock[ 1 ].<a class="code" href="structDMA__DESCRIPTOR__TypeDef.html#a70bbb5bfebb274e54fabda76b36e717d">CTRL</a>;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  dmaCtrl = dmaControlBlock[ 1 ].<a class="code" href="structDMA__DESCRIPTOR__TypeDef.html#afa34eed41d18b89292e46f58eb7e8244">CTRL</a>;</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  <span class="comment">/* Has the DMA just completed ? */</span></div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  <span class="keywordflow">if</span> ((dmaCtrl &amp; _DMA_CTRL_CYCLE_CTRL_MASK) == DMA_CTRL_CYCLE_CTRL_INVALID)</div>
@@ -677,8 +677,8 @@ $(document).ready(function(){initNavTree('cdc_8c_source.html','');});
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;}</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;</div>
 <div class="ttc" id="em__cmu_8h_html"><div class="ttname"><a href="em__cmu_8h.html">em_cmu.h</a></div><div class="ttdoc">Clock management unit (CMU) API. </div></div>
+<div class="ttc" id="structDMA__DESCRIPTOR__TypeDef_html_afa34eed41d18b89292e46f58eb7e8244"><div class="ttname"><a href="structDMA__DESCRIPTOR__TypeDef.html#afa34eed41d18b89292e46f58eb7e8244">DMA_DESCRIPTOR_TypeDef::CTRL</a></div><div class="ttdeci">__IOM uint32_t CTRL</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__dma__descriptor_8h_source.html#l00044">efm32jg1b_dma_descriptor.h:44</a></div></div>
 <div class="ttc" id="bsp_8h_html"><div class="ttname"><a href="bsp_8h.html">bsp.h</a></div><div class="ttdoc">Board support package API definitions. </div></div>
-<div class="ttc" id="structSL__ATTRIBUTE__PACKED_html"><div class="ttname"><a href="structSL__ATTRIBUTE__PACKED.html">SL_ATTRIBUTE_PACKED</a></div><div class="ttdoc">Bulk Only Transport (BOT) Command Block Wrapper (CBW) typedef. </div><div class="ttdef"><b>Definition:</b> <a href="hidkbd_8h_source.html#l00038">hidkbd.h:38</a></div></div>
 <div class="ttc" id="group__COMMON_html_ga911e7f1f5d8dc5b4dd025e8c14159977"><div class="ttname"><a href="group__COMMON.html#ga911e7f1f5d8dc5b4dd025e8c14159977">SL_PACK_END</a></div><div class="ttdeci">#define SL_PACK_END()</div><div class="ttdef"><b>Definition:</b> <a href="em__common_8h_source.html#l00121">em_common.h:121</a></div></div>
 <div class="ttc" id="group__Cdc_html_gaecd54ce9131e15785ad9cbd5105765d7"><div class="ttname"><a href="group__Cdc.html#gaecd54ce9131e15785ad9cbd5105765d7">CDC_Init</a></div><div class="ttdeci">void CDC_Init(void)</div><div class="ttdoc">CDC device initialization. </div><div class="ttdef"><b>Definition:</b> <a href="cdc_8c_source.html#l00166">cdc.c:166</a></div></div>
 <div class="ttc" id="group__USART_html_ggab911b3b57b0cfe33cc34e7c37693c14ba2abb81782e20df3531cab7e13a0cb9de"><div class="ttname"><a href="group__USART.html#ggab911b3b57b0cfe33cc34e7c37693c14ba2abb81782e20df3531cab7e13a0cb9de">usartEnable</a></div><div class="ttdef"><b>Definition:</b> <a href="em__usart_8h_source.html#l00093">em_usart.h:93</a></div></div>
@@ -704,17 +704,17 @@ $(document).ready(function(){initNavTree('cdc_8c_source.html','');});
 <div class="ttc" id="group__EFM32JG1B__USART__BitFields_html_gaeb941d3dcd824adc4575e9036b4c5627"><div class="ttname"><a href="group__EFM32JG1B__USART__BitFields.html#gaeb941d3dcd824adc4575e9036b4c5627">USART_FRAME_DATABITS_FIVE</a></div><div class="ttdeci">#define USART_FRAME_DATABITS_FIVE</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__usart_8h_source.html#l00269">efm32jg1b_usart.h:269</a></div></div>
 <div class="ttc" id="em__gpio_8h_html"><div class="ttname"><a href="em__gpio_8h.html">em_gpio.h</a></div><div class="ttdoc">General Purpose IO (GPIO) peripheral API. </div></div>
 <div class="ttc" id="group__COMMON_html_ga14deffb02010866992cb069907f73846"><div class="ttname"><a href="group__COMMON.html#ga14deffb02010866992cb069907f73846">SL_ATTRIBUTE_ALIGN</a></div><div class="ttdeci">#define SL_ATTRIBUTE_ALIGN(X)</div><div class="ttdef"><b>Definition:</b> <a href="em__common_8h_source.html#l00124">em_common.h:124</a></div></div>
-<div class="ttc" id="group__CMU_html_ga93913d50050d52b38b0a7c7c08ac81e8"><div class="ttname"><a href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a></div><div class="ttdeci">void CMU_ClockEnable(CMU_Clock_TypeDef clock, bool enable)</div><div class="ttdoc">Enable/disable a clock. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01421">em_cmu.c:1421</a></div></div>
-<div class="ttc" id="structDMA__DESCRIPTOR__TypeDef_html_a70bbb5bfebb274e54fabda76b36e717d"><div class="ttname"><a href="structDMA__DESCRIPTOR__TypeDef.html#a70bbb5bfebb274e54fabda76b36e717d">DMA_DESCRIPTOR_TypeDef::CTRL</a></div><div class="ttdeci">__IO uint32_t CTRL</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__dma__descriptor_8h_source.html#l00044">efm32jg1b_dma_descriptor.h:44</a></div></div>
+<div class="ttc" id="group__CMU_html_ga93913d50050d52b38b0a7c7c08ac81e8"><div class="ttname"><a href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a></div><div class="ttdeci">void CMU_ClockEnable(CMU_Clock_TypeDef clock, bool enable)</div><div class="ttdoc">Enable/disable a clock. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01443">em_cmu.c:1443</a></div></div>
 <div class="ttc" id="group__GPIO_html_gga93ff740308e5b31729d8593a89967cdaa110ef690a2c14c594938e2aa70469abd"><div class="ttname"><a href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa110ef690a2c14c594938e2aa70469abd">gpioModePushPull</a></div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00329">em_gpio.h:329</a></div></div>
 <div class="ttc" id="group__EFM32JG1B__USART__BitFields_html_gaf8bf3e14cdf3f0a0e76c11102b8443e6"><div class="ttname"><a href="group__EFM32JG1B__USART__BitFields.html#gaf8bf3e14cdf3f0a0e76c11102b8443e6">USART_FRAME_STOPBITS_TWO</a></div><div class="ttdeci">#define USART_FRAME_STOPBITS_TWO</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__usart_8h_source.html#l00303">efm32jg1b_usart.h:303</a></div></div>
 <div class="ttc" id="group__CMU_html_gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f"><div class="ttname"><a href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8h_source.html#l00373">em_cmu.h:373</a></div></div>
 <div class="ttc" id="group__USART_html_gadc8f891a4bd89e12d447801bad5ba108"><div class="ttname"><a href="group__USART.html#gadc8f891a4bd89e12d447801bad5ba108">USART_INITASYNC_DEFAULT</a></div><div class="ttdeci">#define USART_INITASYNC_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__usart_8h_source.html#l00313">em_usart.h:313</a></div></div>
+<div class="ttc" id="group__COMMON_html_gaa8622382a414e46f85b7c7c3e56ecc3a"><div class="ttname"><a href="group__COMMON.html#gaa8622382a414e46f85b7c7c3e56ecc3a">SL_ATTRIBUTE_PACKED</a></div><div class="ttdeci">#define SL_ATTRIBUTE_PACKED</div><div class="ttdef"><b>Definition:</b> <a href="em__common_8h_source.html#l00107">em_common.h:107</a></div></div>
 <div class="ttc" id="group__USART_html_ggab8f135534a77aba5382a820b2a35a284a4edad78d0db280db3a3edede718b1bce"><div class="ttname"><a href="group__USART.html#ggab8f135534a77aba5382a820b2a35a284a4edad78d0db280db3a3edede718b1bce">usartOVS16</a></div><div class="ttdef"><b>Definition:</b> <a href="em__usart_8h_source.html#l00100">em_usart.h:100</a></div></div>
 <div class="ttc" id="cdc_8h_html"><div class="ttname"><a href="cdc_8h.html">cdc.h</a></div><div class="ttdoc">USB Communication Device Class (CDC) driver. </div></div>
 <div class="ttc" id="group__INT_html_gaa46adfbe58501552a0614c3f7adda6a5"><div class="ttname"><a href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a></div><div class="ttdeci">__STATIC_INLINE uint32_t INT_Disable(void)</div><div class="ttdoc">Disable interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__int_8h_source.html#l00071">em_int.h:71</a></div></div>
-<div class="ttc" id="group__USART_html_gaf593db61ee6acd852dd9dc01d79a3548"><div class="ttname"><a href="group__USART.html#gaf593db61ee6acd852dd9dc01d79a3548">USART_Enable</a></div><div class="ttdeci">void USART_Enable(USART_TypeDef *usart, USART_Enable_TypeDef enable)</div><div class="ttdoc">Enable/disable USART/UART receiver and/or transmitter. </div><div class="ttdef"><b>Definition:</b> <a href="em__usart_8c_source.html#l00545">em_usart.c:545</a></div></div>
-<div class="ttc" id="group__USART_html_ga5b851444f0fbdca97017c7b927b37f52"><div class="ttname"><a href="group__USART.html#ga5b851444f0fbdca97017c7b927b37f52">USART_InitAsync</a></div><div class="ttdeci">void USART_InitAsync(USART_TypeDef *usart, const USART_InitAsync_TypeDef *init)</div><div class="ttdoc">Init USART/UART for normal asynchronous mode. </div><div class="ttdef"><b>Definition:</b> <a href="em__usart_8c_source.html#l00587">em_usart.c:587</a></div></div>
+<div class="ttc" id="group__USART_html_gaf593db61ee6acd852dd9dc01d79a3548"><div class="ttname"><a href="group__USART.html#gaf593db61ee6acd852dd9dc01d79a3548">USART_Enable</a></div><div class="ttdeci">void USART_Enable(USART_TypeDef *usart, USART_Enable_TypeDef enable)</div><div class="ttdoc">Enable/disable USART/UART receiver and/or transmitter. </div><div class="ttdef"><b>Definition:</b> <a href="em__usart_8c_source.html#l00553">em_usart.c:553</a></div></div>
+<div class="ttc" id="group__USART_html_ga5b851444f0fbdca97017c7b927b37f52"><div class="ttname"><a href="group__USART.html#ga5b851444f0fbdca97017c7b927b37f52">USART_InitAsync</a></div><div class="ttdeci">void USART_InitAsync(USART_TypeDef *usart, const USART_InitAsync_TypeDef *init)</div><div class="ttdoc">Init USART/UART for normal asynchronous mode. </div><div class="ttdef"><b>Definition:</b> <a href="em__usart_8c_source.html#l00595">em_usart.c:595</a></div></div>
 <div class="ttc" id="group__GPIO_html_gga93ff740308e5b31729d8593a89967cdaaaa4999965d92199eb5a93c31026dde42"><div class="ttname"><a href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaaaa4999965d92199eb5a93c31026dde42">gpioModeInput</a></div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00323">em_gpio.h:323</a></div></div>
 <div class="ttc" id="group__EFM32JG1B__USART__BitFields_html_ga8400eee8132d386036a0b7acfb8b5838"><div class="ttname"><a href="group__EFM32JG1B__USART__BitFields.html#ga8400eee8132d386036a0b7acfb8b5838">USART_FRAME_DATABITS_SIX</a></div><div class="ttdeci">#define USART_FRAME_DATABITS_SIX</div><div class="ttdef"><b>Definition:</b> <a href="efm32jg1b__usart_8h_source.html#l00270">efm32jg1b_usart.h:270</a></div></div>
 <div class="ttc" id="em__dma_8h_html"><div class="ttname"><a href="em__dma_8h.html">em_dma.h</a></div><div class="ttdoc">Direct memory access (DMA) API. </div></div>
@@ -728,7 +728,7 @@ $(document).ready(function(){initNavTree('cdc_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="cdc_8c.html">cdc.c</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:40:17 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 11:00:55 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

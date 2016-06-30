@@ -1,13 +1,13 @@
 var group__EZR32WG__ACMP =
 [
     [ "ACMP_TypeDef", "structACMP__TypeDef.html", [
-      [ "CTRL", "structACMP__TypeDef.html#a8cea63f6174c75ddeee8acbc42d9825d", null ],
-      [ "IEN", "structACMP__TypeDef.html#af9616d0b870b89792eee8d1a4de3572b", null ],
-      [ "IF", "structACMP__TypeDef.html#a11f3ce5f423249bfc2ba0071fb5d5cc5", null ],
-      [ "IFC", "structACMP__TypeDef.html#a836bf0a6ba2ccda5d800333a541b4919", null ],
-      [ "IFS", "structACMP__TypeDef.html#a600379f4fe8799c598e2df508da1e9d0", null ],
-      [ "INPUTSEL", "structACMP__TypeDef.html#abde51db76adba1aa353e1ac642ba827a", null ],
-      [ "ROUTE", "structACMP__TypeDef.html#a3d68e7b7d22ec8a489a0cfc3b0bf326b", null ],
-      [ "STATUS", "structACMP__TypeDef.html#aac739030747857e707396985804bfceb", null ]
+      [ "CTRL", "structACMP__TypeDef.html#ad419f9396ed1c004fefc58bf98dfa104", null ],
+      [ "IEN", "structACMP__TypeDef.html#a4a98b087fc59d331104a695aa3e3e139", null ],
+      [ "IF", "structACMP__TypeDef.html#a465b510e0beb936fb5dd15c31d918a15", null ],
+      [ "IFC", "structACMP__TypeDef.html#a892e8b02060af19ca2b63720e92bd29f", null ],
+      [ "IFS", "structACMP__TypeDef.html#a44e5e93938a14e27f9185b4ecd8bc3e4", null ],
+      [ "INPUTSEL", "structACMP__TypeDef.html#af231aef6f22768e0d0c385af48b2b334", null ],
+      [ "ROUTE", "structACMP__TypeDef.html#a29810b81f60dd8c07121d3ef497b8e53", null ],
+      [ "STATUS", "structACMP__TypeDef.html#a5adabc3d84f650556154a920394f4ece", null ]
     ] ]
 ];

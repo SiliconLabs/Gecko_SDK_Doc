@@ -1,19 +1,19 @@
 var group__EFM32ZG__AES =
 [
     [ "AES_TypeDef", "structAES__TypeDef.html", [
-      [ "CMD", "structAES__TypeDef.html#a83f0d9ac7558e02e01276769f97b72ea", null ],
-      [ "CTRL", "structAES__TypeDef.html#a523a9dfa12bcb0a5d6d4476259b520ef", null ],
-      [ "DATA", "structAES__TypeDef.html#a2c8d3addde4d741d5065ee6b4cf509fe", null ],
-      [ "IEN", "structAES__TypeDef.html#ab2f5727b129358903bbd45ed56c691a8", null ],
-      [ "IF", "structAES__TypeDef.html#ae3d71ffa2dff8751e497f5bdff176d1e", null ],
-      [ "IFC", "structAES__TypeDef.html#af881aa0f47d5f0349a103bf9d6ff9ba8", null ],
-      [ "IFS", "structAES__TypeDef.html#ac6a3e8d6f3c3a3e1a3b0f7d13a2eb006", null ],
-      [ "KEYLA", "structAES__TypeDef.html#a17da1486bc36294dce2ddfd108502af6", null ],
-      [ "KEYLB", "structAES__TypeDef.html#a1828ed8b934e9fe808fd5d4f4be742ad", null ],
-      [ "KEYLC", "structAES__TypeDef.html#a628129669bb1ff73ce2796654f73cadf", null ],
-      [ "KEYLD", "structAES__TypeDef.html#aa937aae4a283e8d93cb1419507ea270c", null ],
+      [ "CMD", "structAES__TypeDef.html#a30a09f51c6f69752467648a1f9a3baa9", null ],
+      [ "CTRL", "structAES__TypeDef.html#ae3d6a458e8d49e3ceba04ff87fc3246a", null ],
+      [ "DATA", "structAES__TypeDef.html#a9dbe3031a0fba850aa766bc2ff13d62a", null ],
+      [ "IEN", "structAES__TypeDef.html#a8c7ca42bbb30e876f5c78afe22ecd861", null ],
+      [ "IF", "structAES__TypeDef.html#ab0e6bf0f6c9db921c3390ffdbb13ba87", null ],
+      [ "IFC", "structAES__TypeDef.html#adb1a9462b48d0fafba82dbbac34b9076", null ],
+      [ "IFS", "structAES__TypeDef.html#a84619965f1ca520277c04e3b5789a5bb", null ],
+      [ "KEYLA", "structAES__TypeDef.html#ad418b98ee223ed3d7c484f083e765423", null ],
+      [ "KEYLB", "structAES__TypeDef.html#ab6deb019f10dab06cccc33c697445e9b", null ],
+      [ "KEYLC", "structAES__TypeDef.html#a4de52ccb6cca4dbe69d59ac8345fde2e", null ],
+      [ "KEYLD", "structAES__TypeDef.html#adae6103d0ba38861aea04c5b6eeaadc4", null ],
       [ "RESERVED0", "structAES__TypeDef.html#ac03d3b177d7e4844242582d0cd6a73cf", null ],
-      [ "STATUS", "structAES__TypeDef.html#ab91153c2fc2bd69d569c24bfc0e06508", null ],
-      [ "XORDATA", "structAES__TypeDef.html#aa4c7c5e6f4dc85aa60bd61043aaaac50", null ]
+      [ "STATUS", "structAES__TypeDef.html#a0ba2f0a4fab926fc7f56113b31a92413", null ],
+      [ "XORDATA", "structAES__TypeDef.html#a9dabafcc5b7fdff638e3043b5607ca8a", null ]
     ] ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EZR32 Leopard Gecko Software Documentation: C:/work/s025_sw/kits/common/drivers/msdd.h Source File</title>
+<title>EZR32 Leopard Gecko Software Documentation: C:/work/s025_sw_ssh/kits/common/drivers/msdd.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('msdd_8h_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__Msd.html#ga0dfd9473471d01231de7541cfd7f5ede">MSDD_Handler</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__Msd.html#ga6bab19f6afa0c63c3c735c9bea3b8242">MSDD_Init</a>(<span class="keywordtype">int</span> activityLedPort, uint32_t activityLedPin);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="group__Msd.html#gafd14b40b8d009c6341c92a35b5e9ad42">MSDD_SetupCmd</a>(<span class="keyword">const</span> USB_Setup_TypeDef *setup);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="group__Msd.html#gafd14b40b8d009c6341c92a35b5e9ad42">MSDD_SetupCmd</a>(<span class="keyword">const</span> <a class="code" href="structUSB__Setup__TypeDef.html">USB_Setup_TypeDef</a> *setup);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__Msd.html#ga8ee87f447439d9642c706b68e9905e4a">MSDD_StateChangeEvent</a>(<a class="code" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a> oldState,</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                           <a class="code" href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a> newState);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
@@ -151,7 +151,8 @@ $(document).ready(function(){initNavTree('msdd_8h_source.html','');});
 <div class="ttc" id="structMSDD__CmdStatus__TypeDef_html_a3fa1480adbf416ef5fcc5128c65be4df"><div class="ttname"><a href="structMSDD__CmdStatus__TypeDef.html#a3fa1480adbf416ef5fcc5128c65be4df">MSDD_CmdStatus_TypeDef::direction</a></div><div class="ttdeci">uint8_t direction</div><div class="ttdef"><b>Definition:</b> <a href="msdd_8h_source.html#l00040">msdd.h:40</a></div></div>
 <div class="ttc" id="group__Msd_html_ga8ee87f447439d9642c706b68e9905e4a"><div class="ttname"><a href="group__Msd.html#ga8ee87f447439d9642c706b68e9905e4a">MSDD_StateChangeEvent</a></div><div class="ttdeci">void MSDD_StateChangeEvent(USBD_State_TypeDef oldState, USBD_State_TypeDef newState)</div><div class="ttdoc">Called whenever the USB device has changed its device state. </div><div class="ttdef"><b>Definition:</b> <a href="msdd_8c_source.html#l00410">msdd.c:410</a></div></div>
 <div class="ttc" id="structMSDD__CmdStatus__TypeDef_html_a3459bee80f45f8511927bf70dacd6483"><div class="ttname"><a href="structMSDD__CmdStatus__TypeDef.html#a3459bee80f45f8511927bf70dacd6483">MSDD_CmdStatus_TypeDef::lba</a></div><div class="ttdeci">uint32_t lba</div><div class="ttdef"><b>Definition:</b> <a href="msdd_8h_source.html#l00042">msdd.h:42</a></div></div>
-<div class="ttc" id="group__USB__DEVICE_html_ga437a2e7bf70740fc715ac9a5c7310a6d"><div class="ttname"><a href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a></div><div class="ttdeci">USBD_State_TypeDef</div><div class="ttdoc">USB device state enumerator. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00351">em_usb.h:351</a></div></div>
+<div class="ttc" id="structUSB__Setup__TypeDef_html"><div class="ttname"><a href="structUSB__Setup__TypeDef.html">USB_Setup_TypeDef</a></div><div class="ttdoc">USB Setup request package. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00385">em_usb.h:385</a></div></div>
+<div class="ttc" id="group__USB__DEVICE_html_ga437a2e7bf70740fc715ac9a5c7310a6d"><div class="ttname"><a href="group__USB__DEVICE.html#ga437a2e7bf70740fc715ac9a5c7310a6d">USBD_State_TypeDef</a></div><div class="ttdeci">USBD_State_TypeDef</div><div class="ttdoc">USB device state enumerator. </div><div class="ttdef"><b>Definition:</b> <a href="em__usb_8h_source.html#l00366">em_usb.h:366</a></div></div>
 <div class="ttc" id="structMSDD__CmdStatus__TypeDef_html_a66c60e15e710e653aeaadc8091cad958"><div class="ttname"><a href="structMSDD__CmdStatus__TypeDef.html#a66c60e15e710e653aeaadc8091cad958">MSDD_CmdStatus_TypeDef::xferLen</a></div><div class="ttdeci">uint32_t xferLen</div><div class="ttdef"><b>Definition:</b> <a href="msdd_8h_source.html#l00043">msdd.h:43</a></div></div>
 <div class="ttc" id="group__Msd_html_gafd14b40b8d009c6341c92a35b5e9ad42"><div class="ttname"><a href="group__Msd.html#gafd14b40b8d009c6341c92a35b5e9ad42">MSDD_SetupCmd</a></div><div class="ttdeci">int MSDD_SetupCmd(const USB_Setup_TypeDef *setup)</div><div class="ttdoc">Called whenever a USB setup command is received. This function overrides standard CLEAR_FEATURE comma...</div><div class="ttdef"><b>Definition:</b> <a href="msdd_8c_source.html#l00319">msdd.c:319</a></div></div>
 <div class="ttc" id="group__Msd_html_ga0dfd9473471d01231de7541cfd7f5ede"><div class="ttname"><a href="group__Msd.html#ga0dfd9473471d01231de7541cfd7f5ede">MSDD_Handler</a></div><div class="ttdeci">bool MSDD_Handler(void)</div><div class="ttdoc">Serve the MSD state machine. This function should be called on a regular basis from your main loop...</div><div class="ttdef"><b>Definition:</b> <a href="msdd_8c_source.html#l00246">msdd.c:246</a></div></div>
@@ -163,7 +164,7 @@ $(document).ready(function(){initNavTree('msdd_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="msdd_8h.html">msdd.h</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:42:47 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 11:03:03 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

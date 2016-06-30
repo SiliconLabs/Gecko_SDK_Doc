@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32g-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -783,6 +783,12 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 <li>CMU_HFRCOStartupDelaySet()
 : <a class="el" href="group__CMU.html#ga372be88565a544593e25a69b812706ac">em_cmu.h</a>
 </li>
+<li>CMU_HFXOInit()
+: <a class="el" href="group__CMU.html#ga3e43dce228a2b1891737bbd827dfb015">em_cmu.h</a>
+</li>
+<li>CMU_HFXOINIT_DEFAULT
+: <a class="el" href="group__CMU.html#ga02fdd8080ad4f5819450cb5a443fc133">em_cmu.h</a>
+</li>
 <li>CMU_IEN_AUXHFRCORDY
 : <a class="el" href="group__EFM32G__CMU__BitFields.html#ga800932f13f518dd1f26526c28e4b5e16">efm32g_cmu.h</a>
 </li>
@@ -1185,6 +1191,15 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 <li>CMU_LFRCOCTRL_TUNING_DEFAULT
 : <a class="el" href="group__EFM32G__CMU__BitFields.html#gac630cb9b662caddf7fa11a2831da5bcc">efm32g_cmu.h</a>
 </li>
+<li>CMU_LFXOBoost_TypeDef
+: <a class="el" href="group__CMU.html#gad53b9154161b884cd3f944bab2f48be2">em_cmu.h</a>
+</li>
+<li>CMU_LFXOInit()
+: <a class="el" href="group__CMU.html#ga36fa7c0d6a7e7e7fd621ca184ec5e236">em_cmu.h</a>
+</li>
+<li>CMU_LFXOINIT_DEFAULT
+: <a class="el" href="group__CMU.html#ga2c3466d7404b202612a9540b17295c41">em_cmu.h</a>
+</li>
 <li>CMU_Lock()
 : <a class="el" href="group__CMU.html#gaf6b90e2c10eca7c67fe3bc27d8081ae4">em_cmu.h</a>
 </li>
@@ -1277,6 +1292,9 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 </li>
 <li>CMU_OscillatorTuningSet()
 : <a class="el" href="group__CMU.html#ga1200b660d32b39db023753094a282ae9">em_cmu.h</a>
+</li>
+<li>CMU_OscMode_TypeDef
+: <a class="el" href="group__CMU.html#ga6bc090c288f6457868a9ed4ef1ec9f85">em_cmu.h</a>
 </li>
 <li>CMU_PCNTClockExternalGet()
 : <a class="el" href="group__CMU.html#ga2d640d98deffdf17ec3756fb21fa1012">em_cmu.h</a>
@@ -1671,6 +1689,15 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 <li>cmuOsc_LFXO
 : <a class="el" href="group__CMU.html#gga095c94cc5b58238856389c523ce12c2aadd915148fa7e88d5225d1163f72fbffb">em_cmu.h</a>
 </li>
+<li>cmuOscMode_AcCoupled
+: <a class="el" href="group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85ad9c4bbb8551beb14f7a07446f53dae1a">em_cmu.h</a>
+</li>
+<li>cmuOscMode_Crystal
+: <a class="el" href="group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85a56d5e85c864b89f78c88cffdf2fa28a1">em_cmu.h</a>
+</li>
+<li>cmuOscMode_External
+: <a class="el" href="group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85a06977cf89bb7bedb0154e73ec70c1ee5">em_cmu.h</a>
+</li>
 <li>cmuSelect_AUXHFRCO
 : <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751ac8f1609f0766b0a732ac5e8c59724390">em_cmu.h</a>
 </li>
@@ -1699,8 +1726,8 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 : <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751a67efb812dcf095aa4afc8417ea46c47b">em_cmu.h</a>
 </li>
 <li>Compress()
-: <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.c</a>
-, <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.h</a>
+: <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.h</a>
+, <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.c</a>
 </li>
 <li>convertEMUtoTEMP()
 : <a class="el" href="tempdrv_8c.html#a798654ab0c6e543d7edc325d9a11c0e2">tempdrv.c</a>
@@ -1717,7 +1744,7 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 10 2016 14:22:59 for EFM32 Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:47:33 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

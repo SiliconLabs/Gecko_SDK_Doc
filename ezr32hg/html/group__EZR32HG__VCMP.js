@@ -1,12 +1,12 @@
 var group__EZR32HG__VCMP =
 [
     [ "VCMP_TypeDef", "structVCMP__TypeDef.html", [
-      [ "CTRL", "structVCMP__TypeDef.html#a2fc8c8889d28d239b002969d0c95fae6", null ],
-      [ "IEN", "structVCMP__TypeDef.html#a9c50504ef093b7fffb0b2c27a696eb1d", null ],
-      [ "IF", "structVCMP__TypeDef.html#aebb5d57baa20c2487b38535ef1285498", null ],
-      [ "IFC", "structVCMP__TypeDef.html#a2f7e689d3c3e35c4c6a3db06c6285127", null ],
-      [ "IFS", "structVCMP__TypeDef.html#a77db134d58890090f6f6d31b34974804", null ],
-      [ "INPUTSEL", "structVCMP__TypeDef.html#a7bddf844d940220072e22d0339366e53", null ],
-      [ "STATUS", "structVCMP__TypeDef.html#a0ef633c1f89cf88c46d391b81fc1da24", null ]
+      [ "CTRL", "structVCMP__TypeDef.html#a45a7634352b6e1f9523bf114a02e9585", null ],
+      [ "IEN", "structVCMP__TypeDef.html#a36b0e2fc6fb112d1067700d838556795", null ],
+      [ "IF", "structVCMP__TypeDef.html#a1dd396e79fd79f03e5881c961ac89f4e", null ],
+      [ "IFC", "structVCMP__TypeDef.html#ae98ce5f34211dd302c7e764a0a47b777", null ],
+      [ "IFS", "structVCMP__TypeDef.html#add68a7a46dc12e256b75ce98dd73ccde", null ],
+      [ "INPUTSEL", "structVCMP__TypeDef.html#a60bb981bbdae914e308be658826d8e36", null ],
+      [ "STATUS", "structVCMP__TypeDef.html#afc7f7402bd25d85e7c6bd112b0d1c7e4", null ]
     ] ]
 ];

@@ -1,19 +1,19 @@
 var group__EFR32MG1P__IDAC =
 [
     [ "IDAC_TypeDef", "structIDAC__TypeDef.html", [
-      [ "APORTCONFLICT", "structIDAC__TypeDef.html#ac23c1bf18154509bd021f708a6d5500e", null ],
-      [ "APORTREQ", "structIDAC__TypeDef.html#a6708e1c789c733a05c8d06622f33490e", null ],
-      [ "CTRL", "structIDAC__TypeDef.html#a2ed309a7d3e702a209c80132338b27b7", null ],
-      [ "CURPROG", "structIDAC__TypeDef.html#a7f366dd6b986dbebb6a4ba47ebe0cac7", null ],
-      [ "DUTYCONFIG", "structIDAC__TypeDef.html#ab7440bffdb3140632d4268376c5cf95f", null ],
-      [ "IEN", "structIDAC__TypeDef.html#af2af78974fcd7e09b54f3aa3e3c0587f", null ],
-      [ "IF", "structIDAC__TypeDef.html#ae89c4a7288dc96ee59649d46d150e466", null ],
-      [ "IFC", "structIDAC__TypeDef.html#ab5f34cd85a790aee5b0c1c62a3c86786", null ],
-      [ "IFS", "structIDAC__TypeDef.html#ae8ca9f80a3d08c3232683892a0279cd2", null ],
+      [ "APORTCONFLICT", "structIDAC__TypeDef.html#a3b6e5fd8e1f22a8cabe0bd81e8ca27c1", null ],
+      [ "APORTREQ", "structIDAC__TypeDef.html#af9a2f86054b049b07b472e9403ce7fb4", null ],
+      [ "CTRL", "structIDAC__TypeDef.html#a93ea12248a27c6d8151e674e56f67e80", null ],
+      [ "CURPROG", "structIDAC__TypeDef.html#a416ecc01214f288a5bf9210ec8bb8015", null ],
+      [ "DUTYCONFIG", "structIDAC__TypeDef.html#a59578f0f475a68ba946240199f260cf0", null ],
+      [ "IEN", "structIDAC__TypeDef.html#a623f866683c853294d08f9b50c3ad371", null ],
+      [ "IF", "structIDAC__TypeDef.html#acd3735d26f39bb2656b569dbbdbcd22c", null ],
+      [ "IFC", "structIDAC__TypeDef.html#aae037f71109d115bfb74b898117ca85b", null ],
+      [ "IFS", "structIDAC__TypeDef.html#a76dabab4556c1958bf1b0fee47400ef9", null ],
       [ "RESERVED0", "structIDAC__TypeDef.html#a616bdd79c4eebdb837c562bba36001a0", null ],
       [ "RESERVED1", "structIDAC__TypeDef.html#a893437d501cb47e0b37c25bc41e7924a", null ],
       [ "RESERVED2", "structIDAC__TypeDef.html#a247c8bbaef5b80135ac710fb374c5a67", null ],
       [ "RESERVED3", "structIDAC__TypeDef.html#ada2f4f558b35ef418b2520641494596b", null ],
-      [ "STATUS", "structIDAC__TypeDef.html#a1dbd939450efdad896329ccdc55c1307", null ]
+      [ "STATUS", "structIDAC__TypeDef.html#a73d285ae3136edd41b2b72aad575d44c", null ]
     ] ]
 ];

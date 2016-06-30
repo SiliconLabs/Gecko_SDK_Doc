@@ -1,14 +1,14 @@
 var group__EFR32BG1P__ROMTABLE =
 [
     [ "ROMTABLE_TypeDef", "structROMTABLE__TypeDef.html", [
-      [ "CID0", "structROMTABLE__TypeDef.html#a7331ed7d89635fbacd0eade28165eadc", null ],
-      [ "PID0", "structROMTABLE__TypeDef.html#a023b475cabf7f505c6888dc213556a7e", null ],
-      [ "PID1", "structROMTABLE__TypeDef.html#a50007444baf0c6194967f5983cba8b60", null ],
-      [ "PID2", "structROMTABLE__TypeDef.html#a41cc93f2a1aa3933815826a47a656dd9", null ],
-      [ "PID3", "structROMTABLE__TypeDef.html#aa94b50c00cad6618c909a0ea47d04c2b", null ],
-      [ "PID4", "structROMTABLE__TypeDef.html#ac689061134d6c25f4c752f133f224564", null ],
-      [ "PID5", "structROMTABLE__TypeDef.html#ab630cb5a9f73d499e52d904f3cf6c0e2", null ],
-      [ "PID6", "structROMTABLE__TypeDef.html#a8d7220862a836bcaa159ad0963c5f9a7", null ],
-      [ "PID7", "structROMTABLE__TypeDef.html#a15c5be04fbe943194aa54d156e573e7f", null ]
+      [ "CID0", "structROMTABLE__TypeDef.html#a4bdb95bb5439d2a768cd9e460749b44b", null ],
+      [ "PID0", "structROMTABLE__TypeDef.html#a710f167185ec22fac8a439700d0364a8", null ],
+      [ "PID1", "structROMTABLE__TypeDef.html#ab9229b5b8567dff808c502498f272063", null ],
+      [ "PID2", "structROMTABLE__TypeDef.html#a79ca0794edf04e67627d79634d841a1b", null ],
+      [ "PID3", "structROMTABLE__TypeDef.html#a579a1f67755ff542b7d28d96edb856d3", null ],
+      [ "PID4", "structROMTABLE__TypeDef.html#a5c994ebbac1ab99a24066eba36e6fd07", null ],
+      [ "PID5", "structROMTABLE__TypeDef.html#a57c770fdbb47006ca2f519c396e42a15", null ],
+      [ "PID6", "structROMTABLE__TypeDef.html#ab9c80ef133da4d08f1c8e33a9e120c98", null ],
+      [ "PID7", "structROMTABLE__TypeDef.html#af06e857446e5e3d8679256bd57f5b322", null ]
     ] ]
 ];

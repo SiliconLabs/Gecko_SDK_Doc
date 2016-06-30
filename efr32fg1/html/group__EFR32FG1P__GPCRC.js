@@ -1,15 +1,15 @@
 var group__EFR32FG1P__GPCRC =
 [
     [ "GPCRC_TypeDef", "structGPCRC__TypeDef.html", [
-      [ "CMD", "structGPCRC__TypeDef.html#a91d9501dd06e665db7df2726c47aa177", null ],
-      [ "CTRL", "structGPCRC__TypeDef.html#a5e3bf14256b558eb931cd5dafca35e15", null ],
-      [ "DATA", "structGPCRC__TypeDef.html#a6244c21d54937a749ca31b40553ff575", null ],
-      [ "DATABYTEREV", "structGPCRC__TypeDef.html#a803ab281b2a7b883ac025e2595efa839", null ],
-      [ "DATAREV", "structGPCRC__TypeDef.html#ab498e8f2523cf6bf0ce50d0414b41709", null ],
-      [ "INIT", "structGPCRC__TypeDef.html#a7945c4dc8ecc4566ec62b589a1e120cf", null ],
-      [ "INPUTDATA", "structGPCRC__TypeDef.html#a18c02ec6d556767eb7ade401c4e8d066", null ],
-      [ "INPUTDATABYTE", "structGPCRC__TypeDef.html#a5029b97e38561a700d555da4c8c90d1f", null ],
-      [ "INPUTDATAHWORD", "structGPCRC__TypeDef.html#a5840b8f36dc6940b457ebb615216338a", null ],
-      [ "POLY", "structGPCRC__TypeDef.html#af78753c87d3bf2c6189b0f4f782c2c3f", null ]
+      [ "CMD", "structGPCRC__TypeDef.html#a5f20f6504452517acb34c9c3c28a5238", null ],
+      [ "CTRL", "structGPCRC__TypeDef.html#ad91287527d1234b1406252ea36ba22f2", null ],
+      [ "DATA", "structGPCRC__TypeDef.html#a79c30fbda775a41eff335a99f0dfa2ec", null ],
+      [ "DATABYTEREV", "structGPCRC__TypeDef.html#a49ed5e0af4391a632568aecf3333c5b6", null ],
+      [ "DATAREV", "structGPCRC__TypeDef.html#a50a8cd8920ae444497b5752cd5c346e7", null ],
+      [ "INIT", "structGPCRC__TypeDef.html#a76a385d5e21230205f725178732341d2", null ],
+      [ "INPUTDATA", "structGPCRC__TypeDef.html#ac37748931b3d843a435c54470081a005", null ],
+      [ "INPUTDATABYTE", "structGPCRC__TypeDef.html#a5770095c1373545dcca8d06d0469a092", null ],
+      [ "INPUTDATAHWORD", "structGPCRC__TypeDef.html#a4ad274138399b1a7bef8058dc9ec1360", null ],
+      [ "POLY", "structGPCRC__TypeDef.html#a4e7d9ce9bce5aeeac563fda44db63872", null ]
     ] ]
 ];

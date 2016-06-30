@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32hg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">ezr32hg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -184,6 +184,10 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">uartdrv.c</a>
 , <a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">uartdrv.h</a>
 </li>
+<li>UARTDRV_FlowControlSetPeerStatus()
+: <a class="el" href="group__UARTDRV.html#ga110407a69b9915d78980749b449a106c">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#ga110407a69b9915d78980749b449a106c">uartdrv.c</a>
+</li>
 <li>UARTDRV_FlowControlState
 : <a class="el" href="group__UARTDRV.html#gae5bb048bcc9222f56c9b4b811f3395e0">uartdrv.h</a>
 </li>
@@ -204,21 +208,25 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group__UARTDRV.html#ga762bade408c1a64812467e1f58026899">uartdrv.h</a>
 , <a class="el" href="group__UARTDRV.html#ga762bade408c1a64812467e1f58026899">uartdrv.c</a>
 </li>
+<li>UARTDRV_GetPeripheralStatus()
+: <a class="el" href="group__UARTDRV.html#ga38e53b4e39e17d0f7be9034ef11eb534">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#ga38e53b4e39e17d0f7be9034ef11eb534">uartdrv.c</a>
+</li>
 <li>UARTDRV_GetReceiveDepth()
 : <a class="el" href="group__UARTDRV.html#gab9b0230941575668b73874ffe1ff01e4">uartdrv.h</a>
 , <a class="el" href="group__UARTDRV.html#gab9b0230941575668b73874ffe1ff01e4">uartdrv.c</a>
 </li>
 <li>UARTDRV_GetReceiveStatus()
-: <a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">uartdrv.h</a>
-, <a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">uartdrv.c</a>
+: <a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">uartdrv.c</a>
+, <a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">uartdrv.h</a>
 </li>
 <li>UARTDRV_GetTransmitDepth()
 : <a class="el" href="group__UARTDRV.html#gab467cb6aa9940119e4f03bd860c76266">uartdrv.h</a>
 , <a class="el" href="group__UARTDRV.html#gab467cb6aa9940119e4f03bd860c76266">uartdrv.c</a>
 </li>
 <li>UARTDRV_GetTransmitStatus()
-: <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">uartdrv.c</a>
-, <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">uartdrv.h</a>
+: <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">uartdrv.c</a>
 </li>
 <li>UARTDRV_Handle_t
 : <a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">uartdrv.h</a>
@@ -227,8 +235,19 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group__UARTDRV.html#ga4489cf61eb7d2c13d3cc9058a4b6bb67">uartdrv.h</a>
 </li>
 <li>UARTDRV_Init()
-: <a class="el" href="group__UARTDRV.html#ga2aa9f087a06d6bf96933d657ac4e55d6">uartdrv.h</a>
-, <a class="el" href="group__UARTDRV.html#ga2aa9f087a06d6bf96933d657ac4e55d6">uartdrv.c</a>
+: <a class="el" href="group__UARTDRV.html#gaf212b2cd9be15b726ee708d7a29f52e4">uartdrv.h</a>
+</li>
+<li>UARTDRV_InitLeuart()
+: <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">uartdrv.c</a>
+</li>
+<li>UARTDRV_InitUart()
+: <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">uartdrv.c</a>
+</li>
+<li>UARTDRV_PauseTransmit()
+: <a class="el" href="group__UARTDRV.html#gafa7cbc80545ad814f338c4043de5023c">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#gafa7cbc80545ad814f338c4043de5023c">uartdrv.c</a>
 </li>
 <li>UARTDRV_Receive()
 : <a class="el" href="group__UARTDRV.html#ga1d8a5e61c33176ad32cf3c1330e132c6">uartdrv.h</a>
@@ -238,8 +257,39 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group__UARTDRV.html#ga5d8380296aa482ac95360d3855a2e150">uartdrv.h</a>
 , <a class="el" href="group__UARTDRV.html#ga5d8380296aa482ac95360d3855a2e150">uartdrv.c</a>
 </li>
+<li>UARTDRV_ResumeTransmit()
+: <a class="el" href="group__UARTDRV.html#ga6e83c35be3ad93e6717ce8dc54a155c7">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#ga6e83c35be3ad93e6717ce8dc54a155c7">uartdrv.c</a>
+</li>
+<li>UARTDRV_STATUS_RXBLOCK
+: <a class="el" href="group__UARTDRV.html#ga7b573bb3467bd635486eb4799d33fee0">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_RXDATAV
+: <a class="el" href="group__UARTDRV.html#gaba243ca92943580f517d8e26bf685eb4">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_RXEN
+: <a class="el" href="group__UARTDRV.html#ga6a02414bd5d236de348307e033c63c8d">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_RXFULL
+: <a class="el" href="group__UARTDRV.html#gabdc7062aa9bb1a3ca7860a92377434fd">uartdrv.h</a>
+</li>
 <li>UARTDRV_Status_t
 : <a class="el" href="group__UARTDRV.html#gae1cf3e2748cf7a377fe60f055c07c3a6">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_TXBL
+: <a class="el" href="group__UARTDRV.html#ga38e1f873de1c17b7514274dc5ccacdd7">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_TXC
+: <a class="el" href="group__UARTDRV.html#gafc884d2cf2e6cfde8a54f31175e87b56">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_TXEN
+: <a class="el" href="group__UARTDRV.html#ga0b27ddd2d05453dff2c3df5d001edd0e">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_TXIDLE
+: <a class="el" href="group__UARTDRV.html#ga554f1d42d707fc8af445012d535127c6">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_TXTRI
+: <a class="el" href="group__UARTDRV.html#ga621cdc332c4242305d3aa26bab29bdf4">uartdrv.h</a>
 </li>
 <li>UARTDRV_Transmit()
 : <a class="el" href="group__UARTDRV.html#ga484ac0b78a9eccb0ec6a1d30b7cc3232">uartdrv.h</a>
@@ -4411,8 +4461,8 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group__EZR32HG__USB__BitFields.html#gaa7e22d7075c2d68bbded9496ce78e5d5">ezr32hg_usb.h</a>
 </li>
 <li>USB_GetErrorMsgString()
-: <a class="el" href="group__USB__COMMON.html#gaedc267ca571518980b7f7f4392386844">em_usbhal.c</a>
-, <a class="el" href="group__USB__COMMON.html#gaedc267ca571518980b7f7f4392386844">em_usb.h</a>
+: <a class="el" href="group__USB__COMMON.html#gaedc267ca571518980b7f7f4392386844">em_usb.h</a>
+, <a class="el" href="group__USB__COMMON.html#gaedc267ca571518980b7f7f4392386844">em_usbhal.c</a>
 </li>
 <li>USB_GINTMSK_ENUMDONEMSK
 : <a class="el" href="group__EZR32HG__USB__BitFields.html#ga345354bf626e4185a72ef92c87d0c350">ezr32hg_usb.h</a>
@@ -4862,8 +4912,8 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group__USB__COMMON.html#gaed6de2caf14f9caa049fab82902299cf">em_usb.h</a>
 </li>
 <li>USB_HidScancodeToAscii()
-: <a class="el" href="group__UsbHid.html#ga4e181f001853631347d690910afe4e2f">usbkbdscancodes.c</a>
-, <a class="el" href="group__UsbHid.html#ga4e181f001853631347d690910afe4e2f">usbkbdscancodes.h</a>
+: <a class="el" href="group__UsbHid.html#ga4e181f001853631347d690910afe4e2f">usbkbdscancodes.h</a>
+, <a class="el" href="group__UsbHid.html#ga4e181f001853631347d690910afe4e2f">usbkbdscancodes.c</a>
 </li>
 <li>USB_HUB_DESCRIPTOR
 : <a class="el" href="group__USB__COMMON.html#gaba8e9c165130d7837776daf9d6ddbb8e">em_usb.h</a>
@@ -5184,8 +5234,8 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group__USB__DEVICE.html#gaa981b243246dbd611a4ba8bdd042424a">em_usb.h</a>
 </li>
 <li>USBD_Connect()
-: <a class="el" href="group__USB__DEVICE.html#ga71b9264662d74666e4b058984e3346e5">em_usbd.c</a>
-, <a class="el" href="group__USB__DEVICE.html#ga71b9264662d74666e4b058984e3346e5">em_usb.h</a>
+: <a class="el" href="group__USB__DEVICE.html#ga71b9264662d74666e4b058984e3346e5">em_usb.h</a>
+, <a class="el" href="group__USB__DEVICE.html#ga71b9264662d74666e4b058984e3346e5">em_usbd.c</a>
 </li>
 <li>USBD_DeviceStateChangeCb_TypeDef
 : <a class="el" href="group__USB__DEVICE.html#ga437ac57b8fb58de07cf10ba94740b54a">em_usb.h</a>
@@ -5203,12 +5253,12 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 , <a class="el" href="group__USB__DEVICE.html#gab4e55bb0aacaa90aab28a79e9b131b0f">em_usb.h</a>
 </li>
 <li>USBD_GetUsbStateName()
-: <a class="el" href="group__USB__DEVICE.html#ga7c151fd9cf5ab159d8a74cf65a27975f">em_usbd.c</a>
-, <a class="el" href="group__USB__DEVICE.html#ga7c151fd9cf5ab159d8a74cf65a27975f">em_usb.h</a>
+: <a class="el" href="group__USB__DEVICE.html#ga7c151fd9cf5ab159d8a74cf65a27975f">em_usb.h</a>
+, <a class="el" href="group__USB__DEVICE.html#ga7c151fd9cf5ab159d8a74cf65a27975f">em_usbd.c</a>
 </li>
 <li>USBD_Init()
-: <a class="el" href="group__USB__DEVICE.html#ga0e5f5bd847e7cc1c4c384bb6b7f0ce77">em_usb.h</a>
-, <a class="el" href="group__USB__DEVICE.html#ga0e5f5bd847e7cc1c4c384bb6b7f0ce77">em_usbd.c</a>
+: <a class="el" href="group__USB__DEVICE.html#ga0e5f5bd847e7cc1c4c384bb6b7f0ce77">em_usbd.c</a>
+, <a class="el" href="group__USB__DEVICE.html#ga0e5f5bd847e7cc1c4c384bb6b7f0ce77">em_usb.h</a>
 </li>
 <li>USBD_IsSelfPoweredCb_TypeDef
 : <a class="el" href="group__USB__DEVICE.html#ga8bb00f127c19df8b5b2ac421ae109082">em_usb.h</a>
@@ -5222,8 +5272,8 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 , <a class="el" href="group__USB__DEVICE.html#ga9fb12718f509c578656e4fc08bc40f69">em_usbd.c</a>
 </li>
 <li>USBD_SafeToEnterEM2()
-: <a class="el" href="group__USB__DEVICE.html#ga958a83c23eaa9fd51672808ac7c3fa65">em_usb.h</a>
-, <a class="el" href="group__USB__DEVICE.html#ga958a83c23eaa9fd51672808ac7c3fa65">em_usbd.c</a>
+: <a class="el" href="group__USB__DEVICE.html#ga958a83c23eaa9fd51672808ac7c3fa65">em_usbd.c</a>
+, <a class="el" href="group__USB__DEVICE.html#ga958a83c23eaa9fd51672808ac7c3fa65">em_usb.h</a>
 </li>
 <li>USBD_SetupCmdCb_TypeDef
 : <a class="el" href="group__USB__DEVICE.html#gaf94f2cac2cddd3cc081888cc0d98a3e5">em_usb.h</a>
@@ -5232,8 +5282,8 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group__USB__DEVICE.html#ga6ed47bd813327a60229b6b9e90a331c0">em_usb.h</a>
 </li>
 <li>USBD_StallEp()
-: <a class="el" href="group__USB__DEVICE.html#ga9bf435e62169bfb3ee0a43ef0e9d009d">em_usbd.c</a>
-, <a class="el" href="group__USB__DEVICE.html#ga9bf435e62169bfb3ee0a43ef0e9d009d">em_usb.h</a>
+: <a class="el" href="group__USB__DEVICE.html#ga9bf435e62169bfb3ee0a43ef0e9d009d">em_usb.h</a>
+, <a class="el" href="group__USB__DEVICE.html#ga9bf435e62169bfb3ee0a43ef0e9d009d">em_usbd.c</a>
 </li>
 <li>USBD_STATE_ADDRESSED
 : <a class="el" href="group__USB__DEVICE.html#gga437a2e7bf70740fc715ac9a5c7310a6da8abe2fca377f950a2a9c95316f5246be">em_usb.h</a>
@@ -5311,8 +5361,8 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 , <a class="el" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">ustimer.c</a>
 </li>
 <li>USTIMER_Init()
-: <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">ustimer.h</a>
-, <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">ustimer.c</a>
+: <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">ustimer.c</a>
+, <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">ustimer.h</a>
 </li>
 <li>UV_IRQ_EN
 : <a class="el" href="si114x__uv__index_8c.html#ac0bc067d0ed59e0c3fce84f85b1cccea">si114x_uv_index.c</a>
@@ -5326,7 +5376,7 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 10 2016 14:48:59 for EZR32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:53:26 for EZR32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

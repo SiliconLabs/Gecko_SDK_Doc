@@ -1,5 +1,9 @@
 var em__cmu_8h =
 [
+    [ "CMU_HFXOINIT_DEFAULT", "group__CMU.html#ga02fdd8080ad4f5819450cb5a443fc133", null ],
+    [ "CMU_HFXOINIT_EXTERNAL_CLOCK", "group__CMU.html#ga949b7b861ef51edd8c4551667f6a5222", null ],
+    [ "CMU_LFXOINIT_DEFAULT", "group__CMU.html#ga2c3466d7404b202612a9540b17295c41", null ],
+    [ "CMU_LFXOINIT_EXTERNAL_CLOCK", "group__CMU.html#ga1db40066d3fe7d5911b3c3a0e82810bf", null ],
     [ "cmuClkDiv_1", "group__CMU.html#gad5af061f8ac0481c356787dfcce77c8a", null ],
     [ "cmuClkDiv_1024", "group__CMU.html#gaf46e884afc882e67ed8ca2e529601047", null ],
     [ "cmuClkDiv_128", "group__CMU.html#ga7bac78cdbaaea0a3b9adcee51ceb3d15", null ],
@@ -73,6 +77,10 @@ var em__cmu_8h =
       [ "cmuHFRCOBand_21MHz", "group__CMU.html#gga3f4c73b01d8cc272612aac2c1d223617a6eae0057a473fabf5afd56b67dd4b4ef", null ],
       [ "cmuHFRCOBand_28MHz", "group__CMU.html#gga3f4c73b01d8cc272612aac2c1d223617a5bd37f86ab48956c450290540aa28415", null ]
     ] ],
+    [ "CMU_LFXOBoost_TypeDef", "group__CMU.html#gad53b9154161b884cd3f944bab2f48be2", [
+      [ "cmuLfxoBoost70", "group__CMU.html#ggad53b9154161b884cd3f944bab2f48be2ac32b17a8c98f6b587a9969cf1656ceef", null ],
+      [ "cmuLfxoBoost100", "group__CMU.html#ggad53b9154161b884cd3f944bab2f48be2aea865fd19c977a68b5d9a60768224097", null ]
+    ] ],
     [ "CMU_Osc_TypeDef", "group__CMU.html#ga095c94cc5b58238856389c523ce12c2a", [
       [ "cmuOsc_LFXO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aadd915148fa7e88d5225d1163f72fbffb", null ],
       [ "cmuOsc_LFRCO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aa1ece1d9d8f5f053487b40faf887136c3", null ],
@@ -80,6 +88,11 @@ var em__cmu_8h =
       [ "cmuOsc_HFRCO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aaa6a24807f77c210f7e74bb10a2def5c7", null ],
       [ "cmuOsc_AUXHFRCO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aa99f6f1ae4f5dab8e01d7753505d9d085", null ],
       [ "cmuOsc_ULFRCO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aa5af6bd97a9cd27d19b053381b6de27cb", null ]
+    ] ],
+    [ "CMU_OscMode_TypeDef", "group__CMU.html#ga6bc090c288f6457868a9ed4ef1ec9f85", [
+      [ "cmuOscMode_Crystal", "group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85a56d5e85c864b89f78c88cffdf2fa28a1", null ],
+      [ "cmuOscMode_AcCoupled", "group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85ad9c4bbb8551beb14f7a07446f53dae1a", null ],
+      [ "cmuOscMode_External", "group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85a06977cf89bb7bedb0154e73ec70c1ee5", null ]
     ] ],
     [ "CMU_Select_TypeDef", "group__CMU.html#gaeaf3a27499d7441981159c5973546751", [
       [ "cmuSelect_Error", "group__CMU.html#ggaeaf3a27499d7441981159c5973546751a8e224ec773db309e465b674b1501752b", null ],
@@ -113,6 +126,7 @@ var em__cmu_8h =
     [ "CMU_HFRCOBandSet", "group__CMU.html#gab1c6acfc1b842909bb4304c3e336bd0b", null ],
     [ "CMU_HFRCOStartupDelayGet", "group__CMU.html#gaf5bddb45d5e1113799a0ea7310f25fbe", null ],
     [ "CMU_HFRCOStartupDelaySet", "group__CMU.html#ga372be88565a544593e25a69b812706ac", null ],
+    [ "CMU_HFXOInit", "group__CMU.html#ga3e43dce228a2b1891737bbd827dfb015", null ],
     [ "CMU_IntClear", "group__CMU.html#gacad813230403f62cb86dfec5bdf1cd85", null ],
     [ "CMU_IntDisable", "group__CMU.html#gaf0c444c62e6d01286ad89b42e3735a71", null ],
     [ "CMU_IntEnable", "group__CMU.html#ga8064ca9c7a506baca69c559170f137ae", null ],
@@ -121,6 +135,7 @@ var em__cmu_8h =
     [ "CMU_IntSet", "group__CMU.html#ga46e62fbd6f8e0843b5d1fc49a0845355", null ],
     [ "CMU_LCDClkFDIVGet", "group__CMU.html#gad457bf7183e8e8530681e93803321ded", null ],
     [ "CMU_LCDClkFDIVSet", "group__CMU.html#ga72d523a129eb31231432ad1010fa1096", null ],
+    [ "CMU_LFXOInit", "group__CMU.html#ga36fa7c0d6a7e7e7fd621ca184ec5e236", null ],
     [ "CMU_Lock", "group__CMU.html#gaf6b90e2c10eca7c67fe3bc27d8081ae4", null ],
     [ "CMU_Log2ToDiv", "group__CMU.html#ga535e1e8fa3a9131d7151cc549bfb4f29", null ],
     [ "CMU_OscillatorEnable", "group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9", null ],

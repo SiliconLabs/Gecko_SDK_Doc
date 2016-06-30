@@ -7,6 +7,7 @@ var group__CMU =
       [ "ctuneStartup", "structCMU__HFXOInit__TypeDef.html#afb6d9ec2b05b6de10ce560c9950b2d26", null ],
       [ "ctuneSteadyState", "structCMU__HFXOInit__TypeDef.html#a482ce649d058bb981f4fa8dde88baa26", null ],
       [ "lowPowerMode", "structCMU__HFXOInit__TypeDef.html#ab425b409844273d3d4f85e67ea46a4af", null ],
+      [ "mode", "structCMU__HFXOInit__TypeDef.html#a89826736b675e301f4f1a4726cf097bd", null ],
       [ "regIshSteadyState", "structCMU__HFXOInit__TypeDef.html#a42c9a546d283875f103fb051d0992525", null ],
       [ "thresholdPeakDetect", "structCMU__HFXOInit__TypeDef.html#a0044c42f3b5536a08a95fb84fd37da99", null ],
       [ "timeoutPeakDetect", "structCMU__HFXOInit__TypeDef.html#a2178d15d2c6677696b2884ccfc448927", null ],
@@ -19,6 +20,7 @@ var group__CMU =
     [ "CMU_LFXOInit_TypeDef", "structCMU__LFXOInit__TypeDef.html", [
       [ "ctune", "structCMU__LFXOInit__TypeDef.html#aaca6da27246b3774370ef170f10dde14", null ],
       [ "gain", "structCMU__LFXOInit__TypeDef.html#acffbc8f1777e0538ca90fb2894eca20d", null ],
+      [ "mode", "structCMU__LFXOInit__TypeDef.html#a9724fd831f9999eff35d5f907a817fb2", null ],
       [ "timeout", "structCMU__LFXOInit__TypeDef.html#ab7ba8a0cb6e31b5e05c57a1177c761c1", null ]
     ] ],
     [ "CMU_HFXOINIT_DEFAULT", "group__CMU.html#ga02fdd8080ad4f5819450cb5a443fc133", null ],
@@ -97,6 +99,10 @@ var group__CMU =
       [ "cmuHFRCOFreq_32M0Hz", "group__CMU.html#gga23017ec7c911067b402b38e8cd6118beaf12f853eb173634b56d3e20169ed122f", null ],
       [ "cmuHFRCOFreq_38M0Hz", "group__CMU.html#gga23017ec7c911067b402b38e8cd6118bea25fbed19850de5352d6fd69910f65ff2", null ]
     ] ],
+    [ "CMU_HFXOTuningMode_TypeDef", "group__CMU.html#gaaed6638e3a1f125ec2c9895a7381b0fb", [
+      [ "cmuHFXOTuningMode_ShuntCommand", "group__CMU.html#ggaaed6638e3a1f125ec2c9895a7381b0fbaedc23a388e7043eb90e2ca876de33ee8", null ],
+      [ "cmuHFXOTuningMode_PeakShuntCommand", "group__CMU.html#ggaaed6638e3a1f125ec2c9895a7381b0fba61ecc26caedef6477513684eaf1ba5a9", null ]
+    ] ],
     [ "CMU_Osc_TypeDef", "group__CMU.html#ga095c94cc5b58238856389c523ce12c2a", [
       [ "cmuOsc_LFXO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aadd915148fa7e88d5225d1163f72fbffb", null ],
       [ "cmuOsc_LFRCO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aa1ece1d9d8f5f053487b40faf887136c3", null ],
@@ -104,6 +110,11 @@ var group__CMU =
       [ "cmuOsc_HFRCO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aaa6a24807f77c210f7e74bb10a2def5c7", null ],
       [ "cmuOsc_AUXHFRCO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aa99f6f1ae4f5dab8e01d7753505d9d085", null ],
       [ "cmuOsc_ULFRCO", "group__CMU.html#gga095c94cc5b58238856389c523ce12c2aa5af6bd97a9cd27d19b053381b6de27cb", null ]
+    ] ],
+    [ "CMU_OscMode_TypeDef", "group__CMU.html#ga6bc090c288f6457868a9ed4ef1ec9f85", [
+      [ "cmuOscMode_Crystal", "group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85a56d5e85c864b89f78c88cffdf2fa28a1", null ],
+      [ "cmuOscMode_AcCoupled", "group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85ad9c4bbb8551beb14f7a07446f53dae1a", null ],
+      [ "cmuOscMode_External", "group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85a06977cf89bb7bedb0154e73ec70c1ee5", null ]
     ] ],
     [ "CMU_Select_TypeDef", "group__CMU.html#gaeaf3a27499d7441981159c5973546751", [
       [ "cmuSelect_Error", "group__CMU.html#ggaeaf3a27499d7441981159c5973546751a8e224ec773db309e465b674b1501752b", null ],
@@ -143,7 +154,8 @@ var group__CMU =
     [ "CMU_HFRCODevinfoGet", "group__CMU.html#gac0a818d0ac189b4c802ad83b3dc720ba", null ],
     [ "CMU_HFRCOFreqGet", "group__CMU.html#ga9abad098cc0c6155411302932f62a98c", null ],
     [ "CMU_HFRCOFreqSet", "group__CMU.html#ga32ec16e7b935c5719764bacaae1a9ba1", null ],
-    [ "CMU_HFXOInit", "group__CMU.html#ga97fc54dc73a1ead5a29fe538e538bd09", null ],
+    [ "CMU_HFXOAutostartEnable", "group__CMU.html#ga08f6efd28bdb595a4ebf7db2531e9104", null ],
+    [ "CMU_HFXOInit", "group__CMU.html#ga3e43dce228a2b1891737bbd827dfb015", null ],
     [ "CMU_IntClear", "group__CMU.html#gacad813230403f62cb86dfec5bdf1cd85", null ],
     [ "CMU_IntDisable", "group__CMU.html#gaf0c444c62e6d01286ad89b42e3735a71", null ],
     [ "CMU_IntEnable", "group__CMU.html#ga8064ca9c7a506baca69c559170f137ae", null ],
@@ -152,12 +164,14 @@ var group__CMU =
     [ "CMU_IntSet", "group__CMU.html#ga46e62fbd6f8e0843b5d1fc49a0845355", null ],
     [ "CMU_LCDClkFDIVGet", "group__CMU.html#gad457bf7183e8e8530681e93803321ded", null ],
     [ "CMU_LCDClkFDIVSet", "group__CMU.html#ga72d523a129eb31231432ad1010fa1096", null ],
-    [ "CMU_LFXOInit", "group__CMU.html#ga188ca4e7b81ed62bf53ea15ea3ffbab6", null ],
+    [ "CMU_LFXOInit", "group__CMU.html#ga36fa7c0d6a7e7e7fd621ca184ec5e236", null ],
     [ "CMU_Lock", "group__CMU.html#gaf6b90e2c10eca7c67fe3bc27d8081ae4", null ],
     [ "CMU_Log2ToDiv", "group__CMU.html#ga535e1e8fa3a9131d7151cc549bfb4f29", null ],
     [ "CMU_OscillatorEnable", "group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9", null ],
     [ "CMU_OscillatorTuningGet", "group__CMU.html#gaad396e0b8150709c599f2e5a7dec6e62", null ],
+    [ "CMU_OscillatorTuningOptimize", "group__CMU.html#ga6ceea95a1974bad323ff26e23d72e75e", null ],
     [ "CMU_OscillatorTuningSet", "group__CMU.html#ga1200b660d32b39db023753094a282ae9", null ],
+    [ "CMU_OscillatorTuningWait", "group__CMU.html#gaa6790e6d905b49de33c63bb533282ac9", null ],
     [ "CMU_PCNTClockExternalGet", "group__CMU.html#ga2d640d98deffdf17ec3756fb21fa1012", null ],
     [ "CMU_PCNTClockExternalSet", "group__CMU.html#gac0fede38cfa32965cc8ace2b51a14d5b", null ],
     [ "CMU_PrescToLog2", "group__CMU.html#ga84f0496ce9567252a9cb63da230647a0", null ],

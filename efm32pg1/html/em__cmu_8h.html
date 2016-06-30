@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Pearl Gecko Software Documentation: C:/work/s025_sw/emlib/inc/em_cmu.h File Reference</title>
+<title>EFM32 Pearl Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/inc/em_cmu.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Pearl Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32pg1-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32pg1-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('em__cmu_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Clock management unit (CMU) API. </p>
-<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -161,8 +161,12 @@ Macros</h2></td></tr>
 <tr class="separator:gaf726914359fb70f483732a7c6b446b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga02fdd8080ad4f5819450cb5a443fc133"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#ga02fdd8080ad4f5819450cb5a443fc133">CMU_HFXOINIT_DEFAULT</a></td></tr>
 <tr class="separator:ga02fdd8080ad4f5819450cb5a443fc133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga949b7b861ef51edd8c4551667f6a5222"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>CMU_HFXOINIT_EXTERNAL_CLOCK</b></td></tr>
+<tr class="separator:ga949b7b861ef51edd8c4551667f6a5222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2c3466d7404b202612a9540b17295c41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#ga2c3466d7404b202612a9540b17295c41">CMU_LFXOINIT_DEFAULT</a></td></tr>
 <tr class="separator:ga2c3466d7404b202612a9540b17295c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1db40066d3fe7d5911b3c3a0e82810bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>CMU_LFXOINIT_EXTERNAL_CLOCK</b></td></tr>
+<tr class="separator:ga1db40066d3fe7d5911b3c3a0e82810bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5af061f8ac0481c356787dfcce77c8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#gad5af061f8ac0481c356787dfcce77c8a">cmuClkDiv_1</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:gad5af061f8ac0481c356787dfcce77c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf46e884afc882e67ed8ca2e529601047"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#gaf46e884afc882e67ed8ca2e529601047">cmuClkDiv_1024</a>&#160;&#160;&#160;1024</td></tr>
@@ -318,6 +322,15 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga23017ec7c911067b402b38e8cd6118be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:gaaed6638e3a1f125ec2c9895a7381b0fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#gaaed6638e3a1f125ec2c9895a7381b0fb">CMU_HFXOTuningMode_TypeDef</a> { <br />
+&#160;&#160;<b>cmuHFXOTuningMode_Auto</b> = 0, 
+<br />
+&#160;&#160;<a class="el" href="group__CMU.html#ggaaed6638e3a1f125ec2c9895a7381b0fbaedc23a388e7043eb90e2ca876de33ee8">cmuHFXOTuningMode_ShuntCommand</a> = CMU_CMD_HFXOSHUNTOPTSTART, 
+<br />
+&#160;&#160;<a class="el" href="group__CMU.html#ggaaed6638e3a1f125ec2c9895a7381b0fba61ecc26caedef6477513684eaf1ba5a9">cmuHFXOTuningMode_PeakShuntCommand</a>
+<br />
+ }<tr class="separator:gaaed6638e3a1f125ec2c9895a7381b0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:ga095c94cc5b58238856389c523ce12c2a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#ga095c94cc5b58238856389c523ce12c2a">CMU_Osc_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__CMU.html#gga095c94cc5b58238856389c523ce12c2aadd915148fa7e88d5225d1163f72fbffb">cmuOsc_LFXO</a>, 
 <br />
@@ -332,6 +345,15 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__CMU.html#gga095c94cc5b58238856389c523ce12c2aa5af6bd97a9cd27d19b053381b6de27cb">cmuOsc_ULFRCO</a>
 <br />
  }<tr class="separator:ga095c94cc5b58238856389c523ce12c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga6bc090c288f6457868a9ed4ef1ec9f85"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#ga6bc090c288f6457868a9ed4ef1ec9f85">CMU_OscMode_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85a56d5e85c864b89f78c88cffdf2fa28a1">cmuOscMode_Crystal</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85ad9c4bbb8551beb14f7a07446f53dae1a">cmuOscMode_AcCoupled</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__CMU.html#gga6bc090c288f6457868a9ed4ef1ec9f85a06977cf89bb7bedb0154e73ec70c1ee5">cmuOscMode_External</a>
+<br />
+ }<tr class="separator:ga6bc090c288f6457868a9ed4ef1ec9f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:gaeaf3a27499d7441981159c5973546751"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#gaeaf3a27499d7441981159c5973546751">CMU_Select_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751a8e224ec773db309e465b674b1501752b">cmuSelect_Error</a>, 
@@ -438,9 +460,12 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>CMU_HFRCOStartupD
 <tr class="memitem:ga372be88565a544593e25a69b812706ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga372be88565a544593e25a69b812706ac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CMU_HFRCOStartupDelaySet</b> (uint32_t delay)</td></tr>
 <tr class="separator:ga372be88565a544593e25a69b812706ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97fc54dc73a1ead5a29fe538e538bd09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#ga97fc54dc73a1ead5a29fe538e538bd09">CMU_HFXOInit</a> (<a class="el" href="structCMU__HFXOInit__TypeDef.html">CMU_HFXOInit_TypeDef</a> *hfxoInit)</td></tr>
-<tr class="memdesc:ga97fc54dc73a1ead5a29fe538e538bd09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set HFXO control registers.  <a href="group__CMU.html#ga97fc54dc73a1ead5a29fe538e538bd09">More...</a><br /></td></tr>
-<tr class="separator:ga97fc54dc73a1ead5a29fe538e538bd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08f6efd28bdb595a4ebf7db2531e9104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#ga08f6efd28bdb595a4ebf7db2531e9104">CMU_HFXOAutostartEnable</a> (uint32_t userSel, bool enEM0EM1Start, bool enEM0EM1StartSel)</td></tr>
+<tr class="memdesc:ga08f6efd28bdb595a4ebf7db2531e9104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable HFXO autostart.  <a href="group__CMU.html#ga08f6efd28bdb595a4ebf7db2531e9104">More...</a><br /></td></tr>
+<tr class="separator:ga08f6efd28bdb595a4ebf7db2531e9104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e43dce228a2b1891737bbd827dfb015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#ga3e43dce228a2b1891737bbd827dfb015">CMU_HFXOInit</a> (const <a class="el" href="structCMU__HFXOInit__TypeDef.html">CMU_HFXOInit_TypeDef</a> *hfxoInit)</td></tr>
+<tr class="memdesc:ga3e43dce228a2b1891737bbd827dfb015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set HFXO control registers.  <a href="group__CMU.html#ga3e43dce228a2b1891737bbd827dfb015">More...</a><br /></td></tr>
+<tr class="separator:ga3e43dce228a2b1891737bbd827dfb015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacad813230403f62cb86dfec5bdf1cd85"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#gacad813230403f62cb86dfec5bdf1cd85">CMU_IntClear</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:gacad813230403f62cb86dfec5bdf1cd85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending CMU interrupts.  <a href="group__CMU.html#gacad813230403f62cb86dfec5bdf1cd85">More...</a><br /></td></tr>
 <tr class="separator:gacad813230403f62cb86dfec5bdf1cd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -465,9 +490,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CMU_HFRCOStartupDelay
 <tr class="memitem:ga72d523a129eb31231432ad1010fa1096"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#ga72d523a129eb31231432ad1010fa1096">CMU_LCDClkFDIVSet</a> (uint32_t div)</td></tr>
 <tr class="memdesc:ga72d523a129eb31231432ad1010fa1096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the LCD framerate divisor (FDIV) setting.  <a href="group__CMU.html#ga72d523a129eb31231432ad1010fa1096">More...</a><br /></td></tr>
 <tr class="separator:ga72d523a129eb31231432ad1010fa1096"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga188ca4e7b81ed62bf53ea15ea3ffbab6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#ga188ca4e7b81ed62bf53ea15ea3ffbab6">CMU_LFXOInit</a> (<a class="el" href="structCMU__LFXOInit__TypeDef.html">CMU_LFXOInit_TypeDef</a> *lfxoInit)</td></tr>
-<tr class="memdesc:ga188ca4e7b81ed62bf53ea15ea3ffbab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LFXO control registers.  <a href="group__CMU.html#ga188ca4e7b81ed62bf53ea15ea3ffbab6">More...</a><br /></td></tr>
-<tr class="separator:ga188ca4e7b81ed62bf53ea15ea3ffbab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36fa7c0d6a7e7e7fd621ca184ec5e236"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#ga36fa7c0d6a7e7e7fd621ca184ec5e236">CMU_LFXOInit</a> (const <a class="el" href="structCMU__LFXOInit__TypeDef.html">CMU_LFXOInit_TypeDef</a> *lfxoInit)</td></tr>
+<tr class="memdesc:ga36fa7c0d6a7e7e7fd621ca184ec5e236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LFXO control registers.  <a href="group__CMU.html#ga36fa7c0d6a7e7e7fd621ca184ec5e236">More...</a><br /></td></tr>
+<tr class="separator:ga36fa7c0d6a7e7e7fd621ca184ec5e236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf6b90e2c10eca7c67fe3bc27d8081ae4"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#gaf6b90e2c10eca7c67fe3bc27d8081ae4">CMU_Lock</a> (void)</td></tr>
 <tr class="memdesc:gaf6b90e2c10eca7c67fe3bc27d8081ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the CMU in order to protect some of its registers against unintended modification.  <a href="group__CMU.html#gaf6b90e2c10eca7c67fe3bc27d8081ae4">More...</a><br /></td></tr>
 <tr class="separator:gaf6b90e2c10eca7c67fe3bc27d8081ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -480,9 +505,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CMU_HFRCOStartupDelay
 <tr class="memitem:gaad396e0b8150709c599f2e5a7dec6e62"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#gaad396e0b8150709c599f2e5a7dec6e62">CMU_OscillatorTuningGet</a> (<a class="el" href="group__CMU.html#ga095c94cc5b58238856389c523ce12c2a">CMU_Osc_TypeDef</a> osc)</td></tr>
 <tr class="memdesc:gaad396e0b8150709c599f2e5a7dec6e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get oscillator frequency tuning setting.  <a href="group__CMU.html#gaad396e0b8150709c599f2e5a7dec6e62">More...</a><br /></td></tr>
 <tr class="separator:gaad396e0b8150709c599f2e5a7dec6e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ceea95a1974bad323ff26e23d72e75e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#ga6ceea95a1974bad323ff26e23d72e75e">CMU_OscillatorTuningOptimize</a> (<a class="el" href="group__CMU.html#ga095c94cc5b58238856389c523ce12c2a">CMU_Osc_TypeDef</a> osc, <a class="el" href="group__CMU.html#gaaed6638e3a1f125ec2c9895a7381b0fb">CMU_HFXOTuningMode_TypeDef</a> mode, bool wait)</td></tr>
+<tr class="memdesc:ga6ceea95a1974bad323ff26e23d72e75e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start and optionally wait for oscillator tuning optimization.  <a href="group__CMU.html#ga6ceea95a1974bad323ff26e23d72e75e">More...</a><br /></td></tr>
+<tr class="separator:ga6ceea95a1974bad323ff26e23d72e75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1200b660d32b39db023753094a282ae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#ga1200b660d32b39db023753094a282ae9">CMU_OscillatorTuningSet</a> (<a class="el" href="group__CMU.html#ga095c94cc5b58238856389c523ce12c2a">CMU_Osc_TypeDef</a> osc, uint32_t val)</td></tr>
 <tr class="memdesc:ga1200b660d32b39db023753094a282ae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the oscillator frequency tuning control.  <a href="group__CMU.html#ga1200b660d32b39db023753094a282ae9">More...</a><br /></td></tr>
 <tr class="separator:ga1200b660d32b39db023753094a282ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6790e6d905b49de33c63bb533282ac9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#gaa6790e6d905b49de33c63bb533282ac9">CMU_OscillatorTuningWait</a> (<a class="el" href="group__CMU.html#ga095c94cc5b58238856389c523ce12c2a">CMU_Osc_TypeDef</a> osc, <a class="el" href="group__CMU.html#gaaed6638e3a1f125ec2c9895a7381b0fb">CMU_HFXOTuningMode_TypeDef</a> mode)</td></tr>
+<tr class="memdesc:gaa6790e6d905b49de33c63bb533282ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for oscillator tuning optimization.  <a href="group__CMU.html#gaa6790e6d905b49de33c63bb533282ac9">More...</a><br /></td></tr>
+<tr class="separator:gaa6790e6d905b49de33c63bb533282ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2d640d98deffdf17ec3756fb21fa1012"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CMU.html#ga2d640d98deffdf17ec3756fb21fa1012">CMU_PCNTClockExternalGet</a> (unsigned int instance)</td></tr>
 <tr class="memdesc:ga2d640d98deffdf17ec3756fb21fa1012"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if currently selected PCNTn clock used is external or LFBCLK.  <a href="group__CMU.html#ga2d640d98deffdf17ec3756fb21fa1012">More...</a><br /></td></tr>
 <tr class="separator:ga2d640d98deffdf17ec3756fb21fa1012"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -503,7 +534,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__cmu_8h.html">em_cmu.h</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:38:18 for EFM32 Pearl Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:48:49 for EFM32 Pearl Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

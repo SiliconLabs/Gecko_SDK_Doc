@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32tg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -137,8 +137,7 @@ HIDKBD device configuration options.</h1>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHIDKBD__Init__t.html">HIDKBD_Init_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSL__ATTRIBUTE__PACKED.html">SL_ATTRIBUTE_PACKED</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bulk Only Transport (BOT) Command Block Wrapper (CBW) typedef.  <a href="structSL__ATTRIBUTE__PACKED.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHIDKBD__KeyReport__t.html">HIDKBD_KeyReport_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -152,7 +151,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3ae1e0bbb08a38fcb8aa952613c87268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#ga3ae1e0bbb08a38fcb8aa952613c87268">HIDKBD_Init</a> (<a class="el" href="structHIDKBD__Init__t.html">HIDKBD_Init_t</a> *init)</td></tr>
 <tr class="memdesc:ga3ae1e0bbb08a38fcb8aa952613c87268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize HID Keyboard driver.  <a href="#ga3ae1e0bbb08a38fcb8aa952613c87268">More...</a><br /></td></tr>
 <tr class="separator:ga3ae1e0bbb08a38fcb8aa952613c87268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf010c3e66985e5c5796c8d2f16de788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#gacf010c3e66985e5c5796c8d2f16de788">HIDKBD_KeyboardEvent</a> (HIDKBD_KeyReport_t *report)</td></tr>
+<tr class="memitem:gacf010c3e66985e5c5796c8d2f16de788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#gacf010c3e66985e5c5796c8d2f16de788">HIDKBD_KeyboardEvent</a> (<a class="el" href="structHIDKBD__KeyReport__t.html">HIDKBD_KeyReport_t</a> *report)</td></tr>
 <tr class="memdesc:gacf010c3e66985e5c5796c8d2f16de788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report a keyboard press/release event.  <a href="#gacf010c3e66985e5c5796c8d2f16de788">More...</a><br /></td></tr>
 <tr class="separator:gacf010c3e66985e5c5796c8d2f16de788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa6482849b2bbbb6c800516059ad17453"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HidKeyboard.html#gaa6482849b2bbbb6c800516059ad17453">HIDKBD_SetupCmd</a> (const USB_Setup_TypeDef *setup)</td></tr>
@@ -230,7 +229,7 @@ const char&#160;</td><td class="memItemRight" valign="bottom"><b>HIDKBD_ReportDe
         <tr>
           <td class="memname">void HIDKBD_KeyboardEvent </td>
           <td>(</td>
-          <td class="paramtype">HIDKBD_KeyReport_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="structHIDKBD__KeyReport__t.html">HIDKBD_KeyReport_t</a> *&#160;</td>
           <td class="paramname"><em>report</em></td><td>)</td>
           <td></td>
         </tr>
@@ -240,7 +239,7 @@ const char&#160;</td><td class="memItemRight" valign="bottom"><b>HIDKBD_ReportDe
 <p>Report a keyboard press/release event. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">report</td><td>Pointer to a HIDKBD_KeyReport_t struct with new key pressed information. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">report</td><td>Pointer to a <a class="el" href="structHIDKBD__KeyReport__t.html">HIDKBD_KeyReport_t</a> struct with new key pressed information. </td></tr>
   </table>
   </dd>
 </dl>
@@ -322,7 +321,7 @@ const char&#160;</td><td class="memItemRight" valign="bottom"><b>HIDKBD_ReportDe
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 10 2016 14:24:39 for EFM32 Tiny Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:51:06 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

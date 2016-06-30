@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Wonder Gecko Software Documentation: C:/work/s025_sw/Device/SiliconLabs/EFM32WG/Include/efm32wg_wdog.h Source File</title>
+<title>EFM32 Wonder Gecko Software Documentation: C:/work/s025_sw_ssh/Device/SiliconLabs/EFM32WG/Include/efm32wg_wdog.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32wg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -114,10 +114,10 @@ $(document).ready(function(){initNavTree('efm32wg__wdog_8h_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structWDOG__TypeDef.html">   41</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structWDOG__TypeDef.html#a7b80f565743bdfec115c795e210b7329">   43</a></span>&#160;  <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> uint32_t <a class="code" href="structWDOG__TypeDef.html#a7b80f565743bdfec115c795e210b7329">CTRL</a>;     </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structWDOG__TypeDef.html#a69a0eab04da9e527682424440619c571">   44</a></span>&#160;  <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> uint32_t <a class="code" href="structWDOG__TypeDef.html#a69a0eab04da9e527682424440619c571">CMD</a>;      </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structWDOG__TypeDef.html#a4246f52a0a9f8f794abc5e9f9ca3cd4a">   46</a></span>&#160;  __I uint32_t  <a class="code" href="structWDOG__TypeDef.html#a4246f52a0a9f8f794abc5e9f9ca3cd4a">SYNCBUSY</a>; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <a class="code" href="structWDOG__TypeDef.html">WDOG_TypeDef</a>;           </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structWDOG__TypeDef.html#a0a7204acb2a38120127f305281a93711">   43</a></span>&#160;  __IOM uint32_t <a class="code" href="structWDOG__TypeDef.html#a0a7204acb2a38120127f305281a93711">CTRL</a>;     </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structWDOG__TypeDef.html#a27ba6bb2942bef3ecd8bc1639fcebf27">   44</a></span>&#160;  __IOM uint32_t <a class="code" href="structWDOG__TypeDef.html#a27ba6bb2942bef3ecd8bc1639fcebf27">CMD</a>;      </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structWDOG__TypeDef.html#af9cef8bfaffd520d55d96332047e8d1c">   46</a></span>&#160;  __IM uint32_t  <a class="code" href="structWDOG__TypeDef.html#af9cef8bfaffd520d55d96332047e8d1c">SYNCBUSY</a>; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <a class="code" href="structWDOG__TypeDef.html">WDOG_TypeDef</a>;            </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/* Bit fields for WDOG CTRL */</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group__EFM32WG__WDOG__BitFields.html#gaf13f6a08d90f1f01ffaabdc3743a6d1d">   55</a></span>&#160;<span class="preprocessor">#define _WDOG_CTRL_RESETVALUE            0x00000F00UL                         </span></div>
@@ -196,18 +196,17 @@ $(document).ready(function(){initNavTree('efm32wg__wdog_8h_source.html','');});
 <div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="group__EFM32WG__WDOG__BitFields.html#ga3df4af1e769e0fd4e27e9a9687ce435c">  130</a></span>&#160;<span class="preprocessor">#define _WDOG_SYNCBUSY_CMD_MASK          0x2UL                              </span></div>
 <div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="group__EFM32WG__WDOG__BitFields.html#ga0aad4fd1b53ac9e634a372d7e4dfc954">  131</a></span>&#160;<span class="preprocessor">#define _WDOG_SYNCBUSY_CMD_DEFAULT       0x00000000UL                       </span></div>
 <div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="group__EFM32WG__WDOG__BitFields.html#ga5293074af1b3ac792320b7b83c8188d6">  132</a></span>&#160;<span class="preprocessor">#define WDOG_SYNCBUSY_CMD_DEFAULT        (_WDOG_SYNCBUSY_CMD_DEFAULT &lt;&lt; 1)  </span></div>
-<div class="ttc" id="structWDOG__TypeDef_html_a7b80f565743bdfec115c795e210b7329"><div class="ttname"><a href="structWDOG__TypeDef.html#a7b80f565743bdfec115c795e210b7329">WDOG_TypeDef::CTRL</a></div><div class="ttdeci">__IO uint32_t CTRL</div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__wdog_8h_source.html#l00043">efm32wg_wdog.h:43</a></div></div>
-<div class="ttc" id="group__BSP__DK_html_gaec43007d9998a0a0e01faede4133d6be"><div class="ttname"><a href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a></div><div class="ttdeci">#define __IO</div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__bcreg__3201_8h_source.html#l00053">bsp_dk_bcreg_3201.h:53</a></div></div>
-<div class="ttc" id="structWDOG__TypeDef_html_a69a0eab04da9e527682424440619c571"><div class="ttname"><a href="structWDOG__TypeDef.html#a69a0eab04da9e527682424440619c571">WDOG_TypeDef::CMD</a></div><div class="ttdeci">__IO uint32_t CMD</div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__wdog_8h_source.html#l00044">efm32wg_wdog.h:44</a></div></div>
 <div class="ttc" id="structWDOG__TypeDef_html"><div class="ttname"><a href="structWDOG__TypeDef.html">WDOG_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__wdog_8h_source.html#l00041">efm32wg_wdog.h:41</a></div></div>
-<div class="ttc" id="structWDOG__TypeDef_html_a4246f52a0a9f8f794abc5e9f9ca3cd4a"><div class="ttname"><a href="structWDOG__TypeDef.html#a4246f52a0a9f8f794abc5e9f9ca3cd4a">WDOG_TypeDef::SYNCBUSY</a></div><div class="ttdeci">__I uint32_t SYNCBUSY</div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__wdog_8h_source.html#l00046">efm32wg_wdog.h:46</a></div></div>
+<div class="ttc" id="structWDOG__TypeDef_html_a0a7204acb2a38120127f305281a93711"><div class="ttname"><a href="structWDOG__TypeDef.html#a0a7204acb2a38120127f305281a93711">WDOG_TypeDef::CTRL</a></div><div class="ttdeci">__IOM uint32_t CTRL</div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__wdog_8h_source.html#l00043">efm32wg_wdog.h:43</a></div></div>
+<div class="ttc" id="structWDOG__TypeDef_html_a27ba6bb2942bef3ecd8bc1639fcebf27"><div class="ttname"><a href="structWDOG__TypeDef.html#a27ba6bb2942bef3ecd8bc1639fcebf27">WDOG_TypeDef::CMD</a></div><div class="ttdeci">__IOM uint32_t CMD</div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__wdog_8h_source.html#l00044">efm32wg_wdog.h:44</a></div></div>
+<div class="ttc" id="structWDOG__TypeDef_html_af9cef8bfaffd520d55d96332047e8d1c"><div class="ttname"><a href="structWDOG__TypeDef.html#af9cef8bfaffd520d55d96332047e8d1c">WDOG_TypeDef::SYNCBUSY</a></div><div class="ttdeci">__IM uint32_t SYNCBUSY</div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__wdog_8h_source.html#l00046">efm32wg_wdog.h:46</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4c76ddfc10a27668d6c42d3412320ee0.html">Device</a></li><li class="navelem"><a class="el" href="dir_eca9ef8613423b074c58e28a7f7d2781.html">SiliconLabs</a></li><li class="navelem"><a class="el" href="dir_1516cc1a8e767804e6db4591adad958e.html">EFM32WG</a></li><li class="navelem"><a class="el" href="dir_32549424f4131a731934d0d9d61a9595.html">Include</a></li><li class="navelem"><a class="el" href="efm32wg__wdog_8h.html">efm32wg_wdog.h</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:31:30 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 11:13:40 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

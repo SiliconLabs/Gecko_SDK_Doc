@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Leopard Gecko Software Documentation: C:/work/s025_sw/kits/common/bsp/bsp_bcc.c Source File</title>
+<title>EFM32 Leopard Gecko Software Documentation: C:/work/s025_sw_ssh/kits/common/bsp/bsp_bcc.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32lg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -295,81 +295,84 @@ $(document).ready(function(){initNavTree('bsp__bcc_8c_source.html','');});
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="comment">/* Configure GPIO pin for UART RX */</span></div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <a class="code" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet</a>( BSP_BCC_RXPORT, BSP_BCC_RXPIN, <a class="code" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaaaa4999965d92199eb5a93c31026dde42">gpioModeInput</a>, 1 );</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="comment">/* Enable the switch that enables UART communication. */</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <a class="code" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet</a>( BSP_BCC_ENABLE_PORT, BSP_BCC_ENABLE_PIN, <a class="code" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa110ef690a2c14c594938e2aa70469abd">gpioModePushPull</a>, 1 );</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">    #if defined( BSP_BCC_LEUART )</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    BSP_BCC_LEUART-&gt;ROUTE |= <a class="code" href="group__EFM32LG__LEUART__BitFields.html#ga7cfdaa068ef9f6a56aba1c415a9ddb2a">LEUART_ROUTE_RXPEN</a> | <a class="code" href="group__EFM32LG__LEUART__BitFields.html#gaa7c5407e13f67ec5d81aa7e8935150d1">LEUART_ROUTE_TXPEN</a> | BSP_BCC_LOCATION;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">    #else</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">      #if defined( USART_ROUTEPEN_TXPEN )</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    BSP_BCC_USART-&gt;ROUTEPEN = USART_ROUTEPEN_TXPEN | USART_ROUTEPEN_RXPEN;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    BSP_BCC_USART-&gt;ROUTELOC0 =</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      ( BSP_BCC_USART-&gt;ROUTELOC0 &amp;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        ~( _USART_ROUTELOC0_TXLOC_MASK | _USART_ROUTELOC0_RXLOC_MASK ) )</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      | ( BSP_BCC_TX_LOCATION  &lt;&lt; _USART_ROUTELOC0_TXLOC_SHIFT  )</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      | ( BSP_BCC_RX_LOCATION  &lt;&lt; _USART_ROUTELOC0_RXLOC_SHIFT  );</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">      #else</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    BSP_BCC_USART-&gt;ROUTE |= <a class="code" href="group__EFM32LG__USART__BitFields.html#ga0f947146ef7f2c9eece9657ecb7b1b49">USART_ROUTE_RXPEN</a> | <a class="code" href="group__EFM32LG__USART__BitFields.html#ga3ada99898913bd74970ba2288dde31c6">USART_ROUTE_TXPEN</a> | BSP_BCC_LOCATION;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">      #endif</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  }</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  {</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet</a>( BSP_BCC_ENABLE_PORT, BSP_BCC_ENABLE_PIN, <a class="code" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a>, 0 );</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">    #if defined( BSP_BCC_LEUART )</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      BSP_BCC_LEUART-&gt;ROUTE &amp;= ~(<a class="code" href="group__EFM32LG__LEUART__BitFields.html#ga7cfdaa068ef9f6a56aba1c415a9ddb2a">LEUART_ROUTE_RXPEN</a> | <a class="code" href="group__EFM32LG__LEUART__BitFields.html#gaa7c5407e13f67ec5d81aa7e8935150d1">LEUART_ROUTE_TXPEN</a>);</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">    #else</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor">      #if defined( USART_ROUTEPEN_TXPEN )</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      BSP_BCC_USART-&gt;ROUTEPEN &amp;= ~(USART_ROUTEPEN_TXPEN | USART_ROUTEPEN_RXPEN);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">      #else</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      BSP_BCC_USART-&gt;ROUTE &amp;= ~(<a class="code" href="group__EFM32LG__USART__BitFields.html#ga0f947146ef7f2c9eece9657ecb7b1b49">USART_ROUTE_RXPEN</a> | <a class="code" href="group__EFM32LG__USART__BitFields.html#ga3ada99898913bd74970ba2288dde31c6">USART_ROUTE_TXPEN</a>);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">      #endif</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <a class="code" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet</a>( BSP_BCC_TXPORT, BSP_BCC_TXPIN, <a class="code" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a>, 0 );</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="code" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet</a>( BSP_BCC_RXPORT, BSP_BCC_RXPIN, <a class="code" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a>, 0 );</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  }</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keyword">static</span> uint8_t RxByte( <span class="keywordtype">void</span> )</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;{</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  uint8_t byte;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="comment">/* Poll RX data available flag and return a character when one is available */</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor">#if defined( BSP_BCC_LEUART )</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keywordflow">while</span> (!(BSP_BCC_LEUART-&gt;IF &amp; <a class="code" href="group__EFM32LG__LEUART__BitFields.html#ga748a714528b8712e6883c18f6459bf31">LEUART_IF_RXDATAV</a>)) ;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  byte = BSP_BCC_LEUART-&gt;RXDATA;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordflow">while</span> (!(BSP_BCC_USART-&gt;STATUS &amp; <a class="code" href="group__EFM32LG__USART__BitFields.html#ga749acdeb18324f96dd5c6f8ce7c61d3c">USART_STATUS_RXDATAV</a>)) ;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  byte = BSP_BCC_USART-&gt;RXDATA;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  rxByteCount++;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordflow">return</span> byte;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> TxByte( uint8_t data )</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;{</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="comment">/* Check TX buffer and allow for a pending transfer to complete */</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#if defined( BSP_BCC_LEUART )</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordflow">while</span> (!(BSP_BCC_LEUART-&gt;STATUS &amp; <a class="code" href="group__EFM32LG__LEUART__BitFields.html#ga95e30fca9263d8eba3aa9f23409e95b4">LEUART_STATUS_TXBL</a>)) ;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  BSP_BCC_LEUART-&gt;TXDATA = (uint32_t) data;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keywordflow">while</span> (!(BSP_BCC_USART-&gt;STATUS &amp; <a class="code" href="group__EFM32LG__USART__BitFields.html#gad13379a8833346b1333bab7b43f1ca98">USART_STATUS_TXBL</a>)) ;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  BSP_BCC_USART-&gt;TXDATA = (uint32_t) data;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  txByteCount++;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;}</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">#if defined(BSP_BCC_ENABLE_PORT)</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      <span class="comment">/* Enable the switch that enables UART communication. */</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <a class="code" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet</a>( BSP_BCC_ENABLE_PORT, BSP_BCC_ENABLE_PIN, <a class="code" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa110ef690a2c14c594938e2aa70469abd">gpioModePushPull</a>, 1 );</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;     </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#if defined( BSP_BCC_LEUART )</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    BSP_BCC_LEUART-&gt;ROUTE |= <a class="code" href="group__EFM32LG__LEUART__BitFields.html#ga7cfdaa068ef9f6a56aba1c415a9ddb2a">LEUART_ROUTE_RXPEN</a> | <a class="code" href="group__EFM32LG__LEUART__BitFields.html#gaa7c5407e13f67ec5d81aa7e8935150d1">LEUART_ROUTE_TXPEN</a> | BSP_BCC_LOCATION;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#if defined( USART_ROUTEPEN_TXPEN )</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    BSP_BCC_USART-&gt;ROUTEPEN = USART_ROUTEPEN_TXPEN | USART_ROUTEPEN_RXPEN;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    BSP_BCC_USART-&gt;ROUTELOC0 =</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      ( BSP_BCC_USART-&gt;ROUTELOC0 &amp;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        ~( _USART_ROUTELOC0_TXLOC_MASK | _USART_ROUTELOC0_RXLOC_MASK ) )</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      | ( BSP_BCC_TX_LOCATION  &lt;&lt; _USART_ROUTELOC0_TXLOC_SHIFT  )</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      | ( BSP_BCC_RX_LOCATION  &lt;&lt; _USART_ROUTELOC0_RXLOC_SHIFT  );</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    BSP_BCC_USART-&gt;ROUTE |= <a class="code" href="group__EFM32LG__USART__BitFields.html#ga0f947146ef7f2c9eece9657ecb7b1b49">USART_ROUTE_RXPEN</a> | <a class="code" href="group__EFM32LG__USART__BitFields.html#ga3ada99898913bd74970ba2288dde31c6">USART_ROUTE_TXPEN</a> | BSP_BCC_LOCATION;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#if defined(BSP_BCC_ENABLE_PORT)</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <a class="code" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet</a>( BSP_BCC_ENABLE_PORT, BSP_BCC_ENABLE_PIN, <a class="code" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a>, 0 );</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor">#if defined( BSP_BCC_LEUART )</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      BSP_BCC_LEUART-&gt;ROUTE &amp;= ~(<a class="code" href="group__EFM32LG__LEUART__BitFields.html#ga7cfdaa068ef9f6a56aba1c415a9ddb2a">LEUART_ROUTE_RXPEN</a> | <a class="code" href="group__EFM32LG__LEUART__BitFields.html#gaa7c5407e13f67ec5d81aa7e8935150d1">LEUART_ROUTE_TXPEN</a>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor">#if defined( USART_ROUTEPEN_TXPEN )</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      BSP_BCC_USART-&gt;ROUTEPEN &amp;= ~(USART_ROUTEPEN_TXPEN | USART_ROUTEPEN_RXPEN);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      BSP_BCC_USART-&gt;ROUTE &amp;= ~(<a class="code" href="group__EFM32LG__USART__BitFields.html#ga0f947146ef7f2c9eece9657ecb7b1b49">USART_ROUTE_RXPEN</a> | <a class="code" href="group__EFM32LG__USART__BitFields.html#ga3ada99898913bd74970ba2288dde31c6">USART_ROUTE_TXPEN</a>);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <a class="code" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet</a>( BSP_BCC_TXPORT, BSP_BCC_TXPIN, <a class="code" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a>, 0 );</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <a class="code" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet</a>( BSP_BCC_RXPORT, BSP_BCC_RXPIN, <a class="code" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a>, 0 );</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;}</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="keyword">static</span> uint8_t RxByte( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;{</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  uint8_t byte;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="comment">/* Poll RX data available flag and return a character when one is available */</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="preprocessor">#if defined( BSP_BCC_LEUART )</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordflow">while</span> (!(BSP_BCC_LEUART-&gt;IF &amp; <a class="code" href="group__EFM32LG__LEUART__BitFields.html#ga748a714528b8712e6883c18f6459bf31">LEUART_IF_RXDATAV</a>)) ;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  byte = BSP_BCC_LEUART-&gt;RXDATA;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="keywordflow">while</span> (!(BSP_BCC_USART-&gt;STATUS &amp; <a class="code" href="group__EFM32LG__USART__BitFields.html#ga749acdeb18324f96dd5c6f8ce7c61d3c">USART_STATUS_RXDATAV</a>)) ;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  byte = BSP_BCC_USART-&gt;RXDATA;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  rxByteCount++;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <span class="keywordflow">return</span> byte;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;}</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> TxByte( uint8_t data )</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;{</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="comment">/* Check TX buffer and allow for a pending transfer to complete */</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">#if defined( BSP_BCC_LEUART )</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keywordflow">while</span> (!(BSP_BCC_LEUART-&gt;STATUS &amp; <a class="code" href="group__EFM32LG__LEUART__BitFields.html#ga95e30fca9263d8eba3aa9f23409e95b4">LEUART_STATUS_TXBL</a>)) ;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  BSP_BCC_LEUART-&gt;TXDATA = (uint32_t) data;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  <span class="keywordflow">while</span> (!(BSP_BCC_USART-&gt;STATUS &amp; <a class="code" href="group__EFM32LG__USART__BitFields.html#gad13379a8833346b1333bab7b43f1ca98">USART_STATUS_TXBL</a>)) ;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  BSP_BCC_USART-&gt;TXDATA = (uint32_t) data;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BSP_STK */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  txByteCount++;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;}</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* BSP_STK */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="em__cmu_8h_html"><div class="ttname"><a href="em__cmu_8h.html">em_cmu.h</a></div><div class="ttdoc">Clock management unit (CMU) API. </div></div>
-<div class="ttc" id="group__CMU_html_gae11949f9c2e4033ad63dac48c9a739d3"><div class="ttname"><a href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet</a></div><div class="ttdeci">void CMU_ClockSelectSet(CMU_Clock_TypeDef clock, CMU_Select_TypeDef ref)</div><div class="ttdoc">Select reference clock/oscillator used for a clock branch. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l02415">em_cmu.c:2415</a></div></div>
+<div class="ttc" id="group__CMU_html_gae11949f9c2e4033ad63dac48c9a739d3"><div class="ttname"><a href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet</a></div><div class="ttdeci">void CMU_ClockSelectSet(CMU_Clock_TypeDef clock, CMU_Select_TypeDef ref)</div><div class="ttdoc">Select reference clock/oscillator used for a clock branch. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l02435">em_cmu.c:2435</a></div></div>
 <div class="ttc" id="bsp_8h_html"><div class="ttname"><a href="bsp_8h.html">bsp.h</a></div><div class="ttdoc">Board support package API definitions. </div></div>
 <div class="ttc" id="group__EFM32LG__USART__BitFields_html_gad13379a8833346b1333bab7b43f1ca98"><div class="ttname"><a href="group__EFM32LG__USART__BitFields.html#gad13379a8833346b1333bab7b43f1ca98">USART_STATUS_TXBL</a></div><div class="ttdeci">#define USART_STATUS_TXBL</div><div class="ttdef"><b>Definition:</b> <a href="efm32lg__usart_8h_source.html#l00445">efm32lg_usart.h:445</a></div></div>
 <div class="ttc" id="group__EFM32LG__USART__BitFields_html_ga0f947146ef7f2c9eece9657ecb7b1b49"><div class="ttname"><a href="group__EFM32LG__USART__BitFields.html#ga0f947146ef7f2c9eece9657ecb7b1b49">USART_ROUTE_RXPEN</a></div><div class="ttdeci">#define USART_ROUTE_RXPEN</div><div class="ttdef"><b>Definition:</b> <a href="efm32lg__usart_8h_source.html#l01034">efm32lg_usart.h:1034</a></div></div>
@@ -394,7 +397,7 @@ $(document).ready(function(){initNavTree('bsp__bcc_8c_source.html','');});
 <div class="ttc" id="em__gpio_8h_html"><div class="ttname"><a href="em__gpio_8h.html">em_gpio.h</a></div><div class="ttdoc">General Purpose IO (GPIO) peripheral API. </div></div>
 <div class="ttc" id="group__BSP__STK_html_gaba9ce74ca657de9f9f903e062cc654ef"><div class="ttname"><a href="group__BSP__STK.html#gaba9ce74ca657de9f9f903e062cc654ef">BSP_BccInit</a></div><div class="ttdeci">int BSP_BccInit(void)</div><div class="ttdoc">Initialize board controller communication support (BCC) functionality. </div><div class="ttdef"><b>Definition:</b> <a href="bsp__bcc_8c_source.html#l00089">bsp_bcc.c:89</a></div></div>
 <div class="ttc" id="group__GPIO_html_gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b"><div class="ttname"><a href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a></div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00321">em_gpio.h:321</a></div></div>
-<div class="ttc" id="group__CMU_html_ga93913d50050d52b38b0a7c7c08ac81e8"><div class="ttname"><a href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a></div><div class="ttdeci">void CMU_ClockEnable(CMU_Clock_TypeDef clock, bool enable)</div><div class="ttdoc">Enable/disable a clock. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01421">em_cmu.c:1421</a></div></div>
+<div class="ttc" id="group__CMU_html_ga93913d50050d52b38b0a7c7c08ac81e8"><div class="ttname"><a href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a></div><div class="ttdeci">void CMU_ClockEnable(CMU_Clock_TypeDef clock, bool enable)</div><div class="ttdoc">Enable/disable a clock. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01443">em_cmu.c:1443</a></div></div>
 <div class="ttc" id="group__EFM32LG__LEUART__BitFields_html_ga748a714528b8712e6883c18f6459bf31"><div class="ttname"><a href="group__EFM32LG__LEUART__BitFields.html#ga748a714528b8712e6883c18f6459bf31">LEUART_IF_RXDATAV</a></div><div class="ttdeci">#define LEUART_IF_RXDATAV</div><div class="ttdef"><b>Definition:</b> <a href="efm32lg__leuart_8h_source.html#l00358">efm32lg_leuart.h:358</a></div></div>
 <div class="ttc" id="structBCP__Packet_html_abaf96065478d9057cd08f1f05496a39a"><div class="ttname"><a href="structBCP__Packet.html#abaf96065478d9057cd08f1f05496a39a">BCP_Packet::data</a></div><div class="ttdeci">uint8_t data[BSP_BCP_PACKET_SIZE]</div><div class="ttdef"><b>Definition:</b> <a href="bsp__bcp_8h_source.html#l00101">bsp_bcp.h:101</a></div></div>
 <div class="ttc" id="em__leuart_8h_html"><div class="ttname"><a href="em__leuart_8h.html">em_leuart.h</a></div><div class="ttdoc">Low Energy Universal Asynchronous Receiver/Transmitter (LEUART) peripheral API. </div></div>
@@ -402,13 +405,13 @@ $(document).ready(function(){initNavTree('bsp__bcc_8c_source.html','');});
 <div class="ttc" id="group__BSP__STK_html_ga00b58bdabb2d1f6061899c038d0bcfcf"><div class="ttname"><a href="group__BSP__STK.html#ga00b58bdabb2d1f6061899c038d0bcfcf">BSP_BCP_PACKET_SIZE</a></div><div class="ttdeci">#define BSP_BCP_PACKET_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="bsp__bcp_8h_source.html#l00092">bsp_bcp.h:92</a></div></div>
 <div class="ttc" id="group__BSP__STK_html_ga0b5a131c7411fd2080a5bb00473f81a8"><div class="ttname"><a href="group__BSP__STK.html#ga0b5a131c7411fd2080a5bb00473f81a8">BSP_BccPacketSend</a></div><div class="ttdeci">int BSP_BccPacketSend(BCP_Packet *pkt)</div><div class="ttdoc">Send a packet to the board controller. </div><div class="ttdef"><b>Definition:</b> <a href="bsp__bcc_8c_source.html#l00195">bsp_bcc.c:195</a></div></div>
 <div class="ttc" id="group__GPIO_html_gga93ff740308e5b31729d8593a89967cdaa110ef690a2c14c594938e2aa70469abd"><div class="ttname"><a href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa110ef690a2c14c594938e2aa70469abd">gpioModePushPull</a></div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00329">em_gpio.h:329</a></div></div>
-<div class="ttc" id="group__USART_html_ga4769e1b5d573d6cecc95ca0c7d8e2da2"><div class="ttname"><a href="group__USART.html#ga4769e1b5d573d6cecc95ca0c7d8e2da2">USART_Reset</a></div><div class="ttdeci">void USART_Reset(USART_TypeDef *usart)</div><div class="ttdoc">Reset USART/UART to same state as after a HW reset. </div><div class="ttdef"><b>Definition:</b> <a href="em__usart_8c_source.html#l00874">em_usart.c:874</a></div></div>
+<div class="ttc" id="group__USART_html_ga4769e1b5d573d6cecc95ca0c7d8e2da2"><div class="ttname"><a href="group__USART.html#ga4769e1b5d573d6cecc95ca0c7d8e2da2">USART_Reset</a></div><div class="ttdeci">void USART_Reset(USART_TypeDef *usart)</div><div class="ttdoc">Reset USART/UART to same state as after a HW reset. </div><div class="ttdef"><b>Definition:</b> <a href="em__usart_8c_source.html#l00882">em_usart.c:882</a></div></div>
 <div class="ttc" id="group__CMU_html_gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f"><div class="ttname"><a href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8h_source.html#l00379">em_cmu.h:379</a></div></div>
 <div class="ttc" id="group__CMU_html_gga519ea66a1a21e07f2d1cccc9aa55799eaf6a2ec0ffdc66d9d199e73bdf867614c"><div class="ttname"><a href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaf6a2ec0ffdc66d9d199e73bdf867614c">cmuClock_LFB</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8h_source.html#l00773">em_cmu.h:773</a></div></div>
 <div class="ttc" id="structBCP__Packet_html_a9816c5bfe1cbd04d193f0d89442eec83"><div class="ttname"><a href="structBCP__Packet.html#a9816c5bfe1cbd04d193f0d89442eec83">BCP_Packet::type</a></div><div class="ttdeci">uint8_t type</div><div class="ttdef"><b>Definition:</b> <a href="bsp__bcp_8h_source.html#l00098">bsp_bcp.h:98</a></div></div>
 <div class="ttc" id="group__USART_html_gadc8f891a4bd89e12d447801bad5ba108"><div class="ttname"><a href="group__USART.html#gadc8f891a4bd89e12d447801bad5ba108">USART_INITASYNC_DEFAULT</a></div><div class="ttdeci">#define USART_INITASYNC_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__usart_8h_source.html#l00330">em_usart.h:330</a></div></div>
 <div class="ttc" id="group__BSP__STK_html_ga0bec337d5c82cdeb2dbf240bf1c986b0"><div class="ttname"><a href="group__BSP__STK.html#ga0bec337d5c82cdeb2dbf240bf1c986b0">BSP_BCP_LAST</a></div><div class="ttdeci">#define BSP_BCP_LAST</div><div class="ttdef"><b>Definition:</b> <a href="bsp__bcp_8h_source.html#l00057">bsp_bcp.h:57</a></div></div>
-<div class="ttc" id="group__USART_html_ga5b851444f0fbdca97017c7b927b37f52"><div class="ttname"><a href="group__USART.html#ga5b851444f0fbdca97017c7b927b37f52">USART_InitAsync</a></div><div class="ttdeci">void USART_InitAsync(USART_TypeDef *usart, const USART_InitAsync_TypeDef *init)</div><div class="ttdoc">Init USART/UART for normal asynchronous mode. </div><div class="ttdef"><b>Definition:</b> <a href="em__usart_8c_source.html#l00587">em_usart.c:587</a></div></div>
+<div class="ttc" id="group__USART_html_ga5b851444f0fbdca97017c7b927b37f52"><div class="ttname"><a href="group__USART.html#ga5b851444f0fbdca97017c7b927b37f52">USART_InitAsync</a></div><div class="ttdeci">void USART_InitAsync(USART_TypeDef *usart, const USART_InitAsync_TypeDef *init)</div><div class="ttdoc">Init USART/UART for normal asynchronous mode. </div><div class="ttdef"><b>Definition:</b> <a href="em__usart_8c_source.html#l00595">em_usart.c:595</a></div></div>
 <div class="ttc" id="group__LEUART_html_gacb3f4d665d8aca8088a1eff6adb7f5f8"><div class="ttname"><a href="group__LEUART.html#gacb3f4d665d8aca8088a1eff6adb7f5f8">LEUART_INIT_DEFAULT</a></div><div class="ttdeci">#define LEUART_INIT_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__leuart_8h_source.html#l00132">em_leuart.h:132</a></div></div>
 <div class="ttc" id="group__BSP__STK_html_ga3a84b8923b076ebe66bb7600fc9da103"><div class="ttname"><a href="group__BSP__STK.html#ga3a84b8923b076ebe66bb7600fc9da103">BSP_BCP_MAGIC</a></div><div class="ttdeci">#define BSP_BCP_MAGIC</div><div class="ttdef"><b>Definition:</b> <a href="bsp__bcp_8h_source.html#l00059">bsp_bcp.h:59</a></div></div>
 <div class="ttc" id="group__GPIO_html_gga93ff740308e5b31729d8593a89967cdaaaa4999965d92199eb5a93c31026dde42"><div class="ttname"><a href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaaaa4999965d92199eb5a93c31026dde42">gpioModeInput</a></div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00323">em_gpio.h:323</a></div></div>
@@ -422,7 +425,7 @@ $(document).ready(function(){initNavTree('bsp__bcc_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_0ba1cf5c98b17c4a9647d9c0c7e49f09.html">bsp</a></li><li class="navelem"><a class="el" href="bsp__bcc_8c.html">bsp_bcc.c</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:29:16 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:58:55 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

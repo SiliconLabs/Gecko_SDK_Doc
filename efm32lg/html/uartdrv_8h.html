@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Leopard Gecko Software Documentation: C:/work/s025_sw/emdrv/uartdrv/inc/uartdrv.h File Reference</title>
+<title>EFM32 Leopard Gecko Software Documentation: C:/work/s025_sw_ssh/emdrv/uartdrv/inc/uartdrv.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32lg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -117,15 +117,17 @@ $(document).ready(function(){initNavTree('uartdrv_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>UARTDRV API definition. </p>
-<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
-<p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p><b>Copyright 2016 Silicon Laboratories, Inc, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
 <p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
 <p>Definition in file <a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>.</p>
 </div><div class="textblock"><code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__usart_8h_source.html">em_usart.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="em__leuart_8h_source.html">em_leuart.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__cmu_8h_source.html">em_cmu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ecode_8h_source.html">ecode.h</a>&quot;</code><br />
 <code>#include &quot;uartdrv_config.h&quot;</code><br />
@@ -143,7 +145,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUARTDRV__HandleData.html">UARTDRV_HandleData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUARTDRV__Init__t.html">UARTDRV_Init_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUARTDRV__InitLeuart__t.html">UARTDRV_InitLeuart_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUARTDRV__InitUart__t.html">UARTDRV_InitUart_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -158,6 +162,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga8169d4d7ba0c2c5fec2a9097555c33e9">ECODE_EMDRV_UARTDRV_BUSY</a>&#160;&#160;&#160;(<a class="el" href="group__emdrv.html#ga7917a64f97194a1de1727f6b1d4c9a30">ECODE_EMDRV_UARTDRV_BASE</a> | 0x00000004)</td></tr>
 <tr class="memdesc:ga8169d4d7ba0c2c5fec2a9097555c33e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UART port is busy. <br /></td></tr>
 <tr class="separator:ga8169d4d7ba0c2c5fec2a9097555c33e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30ca7a0bb6fd82c76c98219692e5b33d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga30ca7a0bb6fd82c76c98219692e5b33d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga30ca7a0bb6fd82c76c98219692e5b33d">ECODE_EMDRV_UARTDRV_CLOCK_ERROR</a>&#160;&#160;&#160;(<a class="el" href="group__emdrv.html#ga7917a64f97194a1de1727f6b1d4c9a30">ECODE_EMDRV_UARTDRV_BASE</a> | 0x0000000F)</td></tr>
+<tr class="memdesc:ga30ca7a0bb6fd82c76c98219692e5b33d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unable to set desired baudrate. <br /></td></tr>
+<tr class="separator:ga30ca7a0bb6fd82c76c98219692e5b33d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7801419f35bd50a8593ddc10fe8090e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7801419f35bd50a8593ddc10fe8090e0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga7801419f35bd50a8593ddc10fe8090e0">ECODE_EMDRV_UARTDRV_DMA_ALLOC_ERROR</a>&#160;&#160;&#160;(<a class="el" href="group__emdrv.html#ga7917a64f97194a1de1727f6b1d4c9a30">ECODE_EMDRV_UARTDRV_BASE</a> | 0x0000000E)</td></tr>
 <tr class="memdesc:ga7801419f35bd50a8593ddc10fe8090e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unable to allocated DMA channels. <br /></td></tr>
@@ -202,6 +210,42 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga8e898b24e44ca23c91a95dd86c8456dd">ECODE_EMDRV_UARTDRV_WAITING</a>&#160;&#160;&#160;(<a class="el" href="group__emdrv.html#ga7917a64f97194a1de1727f6b1d4c9a30">ECODE_EMDRV_UARTDRV_BASE</a> | 0x00000001)</td></tr>
 <tr class="memdesc:ga8e898b24e44ca23c91a95dd86c8456dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operation is waiting in queue. <br /></td></tr>
 <tr class="separator:ga8e898b24e44ca23c91a95dd86c8456dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b573bb3467bd635486eb4799d33fee0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7b573bb3467bd635486eb4799d33fee0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga7b573bb3467bd635486eb4799d33fee0">UARTDRV_STATUS_RXBLOCK</a>&#160;&#160;&#160;(1 &lt;&lt; 3)</td></tr>
+<tr class="memdesc:ga7b573bb3467bd635486eb4799d33fee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receiver is blocked; incoming frames will be discarded. <br /></td></tr>
+<tr class="separator:ga7b573bb3467bd635486eb4799d33fee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba243ca92943580f517d8e26bf685eb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaba243ca92943580f517d8e26bf685eb4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#gaba243ca92943580f517d8e26bf685eb4">UARTDRV_STATUS_RXDATAV</a>&#160;&#160;&#160;(1 &lt;&lt; 7)</td></tr>
+<tr class="memdesc:gaba243ca92943580f517d8e26bf685eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data is available in receive buffer. <br /></td></tr>
+<tr class="separator:gaba243ca92943580f517d8e26bf685eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a02414bd5d236de348307e033c63c8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6a02414bd5d236de348307e033c63c8d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga6a02414bd5d236de348307e033c63c8d">UARTDRV_STATUS_RXEN</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
+<tr class="memdesc:ga6a02414bd5d236de348307e033c63c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receiver is enabled. <br /></td></tr>
+<tr class="separator:ga6a02414bd5d236de348307e033c63c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdc7062aa9bb1a3ca7860a92377434fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabdc7062aa9bb1a3ca7860a92377434fd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#gabdc7062aa9bb1a3ca7860a92377434fd">UARTDRV_STATUS_RXFULL</a>&#160;&#160;&#160;(1 &lt;&lt; 8)</td></tr>
+<tr class="memdesc:gabdc7062aa9bb1a3ca7860a92377434fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive buffer is full. <br /></td></tr>
+<tr class="separator:gabdc7062aa9bb1a3ca7860a92377434fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38e1f873de1c17b7514274dc5ccacdd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga38e1f873de1c17b7514274dc5ccacdd7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga38e1f873de1c17b7514274dc5ccacdd7">UARTDRV_STATUS_TXBL</a>&#160;&#160;&#160;(1 &lt;&lt; 6)</td></tr>
+<tr class="memdesc:ga38e1f873de1c17b7514274dc5ccacdd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit buffer is empty. <br /></td></tr>
+<tr class="separator:ga38e1f873de1c17b7514274dc5ccacdd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc884d2cf2e6cfde8a54f31175e87b56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafc884d2cf2e6cfde8a54f31175e87b56"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#gafc884d2cf2e6cfde8a54f31175e87b56">UARTDRV_STATUS_TXC</a>&#160;&#160;&#160;(1 &lt;&lt; 5)</td></tr>
+<tr class="memdesc:gafc884d2cf2e6cfde8a54f31175e87b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit operation is complete, no more data is available in the transmit buffer and shift register. <br /></td></tr>
+<tr class="separator:gafc884d2cf2e6cfde8a54f31175e87b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b27ddd2d05453dff2c3df5d001edd0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0b27ddd2d05453dff2c3df5d001edd0e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga0b27ddd2d05453dff2c3df5d001edd0e">UARTDRV_STATUS_TXEN</a>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
+<tr class="memdesc:ga0b27ddd2d05453dff2c3df5d001edd0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmitter is enabled. <br /></td></tr>
+<tr class="separator:ga0b27ddd2d05453dff2c3df5d001edd0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga554f1d42d707fc8af445012d535127c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga554f1d42d707fc8af445012d535127c6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga554f1d42d707fc8af445012d535127c6">UARTDRV_STATUS_TXIDLE</a>&#160;&#160;&#160;(1 &lt;&lt; 13)</td></tr>
+<tr class="memdesc:ga554f1d42d707fc8af445012d535127c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmitter is idle. <br /></td></tr>
+<tr class="separator:ga554f1d42d707fc8af445012d535127c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga621cdc332c4242305d3aa26bab29bdf4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga621cdc332c4242305d3aa26bab29bdf4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga621cdc332c4242305d3aa26bab29bdf4">UARTDRV_STATUS_TXTRI</a>&#160;&#160;&#160;(1 &lt;&lt; 4)</td></tr>
+<tr class="memdesc:ga621cdc332c4242305d3aa26bab29bdf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmitter is tristated. <br /></td></tr>
+<tr class="separator:ga621cdc332c4242305d3aa26bab29bdf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -232,7 +276,7 @@ typedef <a class="el" href="group__UARTDRV.html#ga4489cf61eb7d2c13d3cc9058a4b6bb
 <tr class="separator:ga4489cf61eb7d2c13d3cc9058a4b6bb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae1cf3e2748cf7a377fe60f055c07c3a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae1cf3e2748cf7a377fe60f055c07c3a6"></a>
 typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#gae1cf3e2748cf7a377fe60f055c07c3a6">UARTDRV_Status_t</a></td></tr>
-<tr class="memdesc:gae1cf3e2748cf7a377fe60f055c07c3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART status return type. <br /></td></tr>
+<tr class="memdesc:gae1cf3e2748cf7a377fe60f055c07c3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART status return type. Bitfield of UARTDRV_STATUS_* values. <br /></td></tr>
 <tr class="separator:gae1cf3e2748cf7a377fe60f055c07c3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -288,14 +332,20 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga8e0d51c55deaa14695b276c3c19cd4a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables transmission when restrained by flow control.  <a href="group__UARTDRV.html#ga8e0d51c55deaa14695b276c3c19cd4a1">More...</a><br /></td></tr>
 <tr class="separator:ga8e0d51c55deaa14695b276c3c19cd4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga793738f4fce0d507867e3a56d36426d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">UARTDRV_FlowControlSet</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, <a class="el" href="group__UARTDRV.html#ga94b9a601c7a7a4b49c4748a355345362">UARTDRV_FlowControlState_t</a> state)</td></tr>
-<tr class="memdesc:ga793738f4fce0d507867e3a56d36426d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set UART flow control state. Set nRTS pin if hardware flow control is enabled.  <a href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">More...</a><br /></td></tr>
+<tr class="memdesc:ga793738f4fce0d507867e3a56d36426d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set UART flow control state. Set nRTS pin if hardware flow control is enabled. Send XON/XOFF if software flow control is enabled.  <a href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">More...</a><br /></td></tr>
 <tr class="separator:ga793738f4fce0d507867e3a56d36426d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga110407a69b9915d78980749b449a106c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga110407a69b9915d78980749b449a106c">UARTDRV_FlowControlSetPeerStatus</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, <a class="el" href="group__UARTDRV.html#ga94b9a601c7a7a4b49c4748a355345362">UARTDRV_FlowControlState_t</a> state)</td></tr>
+<tr class="memdesc:ga110407a69b9915d78980749b449a106c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set peer UART flow control state. Pause/resume transmit accordingly. Only for manual software flow control.  <a href="group__UARTDRV.html#ga110407a69b9915d78980749b449a106c">More...</a><br /></td></tr>
+<tr class="separator:ga110407a69b9915d78980749b449a106c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac978c9e489a78347598b3005bb49545e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__UARTDRV.html#ga20f2dca466c884ed896061f8e90ff816">UARTDRV_Count_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#gac978c9e489a78347598b3005bb49545e">UARTDRV_ForceReceive</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, uint8_t *data, <a class="el" href="group__UARTDRV.html#ga20f2dca466c884ed896061f8e90ff816">UARTDRV_Count_t</a> maxLength)</td></tr>
 <tr class="memdesc:gac978c9e489a78347598b3005bb49545e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct receive without interrupts or callback. Blocking function.  <a href="group__UARTDRV.html#gac978c9e489a78347598b3005bb49545e">More...</a><br /></td></tr>
 <tr class="separator:gac978c9e489a78347598b3005bb49545e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga762bade408c1a64812467e1f58026899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga762bade408c1a64812467e1f58026899">UARTDRV_ForceTransmit</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, uint8_t *data, <a class="el" href="group__UARTDRV.html#ga20f2dca466c884ed896061f8e90ff816">UARTDRV_Count_t</a> count)</td></tr>
 <tr class="memdesc:ga762bade408c1a64812467e1f58026899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direct transmit without interrupts or callback. Blocking function that ignores flow control if enabled.  <a href="group__UARTDRV.html#ga762bade408c1a64812467e1f58026899">More...</a><br /></td></tr>
 <tr class="separator:ga762bade408c1a64812467e1f58026899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38e53b4e39e17d0f7be9034ef11eb534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__UARTDRV.html#gae1cf3e2748cf7a377fe60f055c07c3a6">UARTDRV_Status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga38e53b4e39e17d0f7be9034ef11eb534">UARTDRV_GetPeripheralStatus</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle)</td></tr>
+<tr class="memdesc:ga38e53b4e39e17d0f7be9034ef11eb534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the status of the UART peripheral associated with a given handle.  <a href="group__UARTDRV.html#ga38e53b4e39e17d0f7be9034ef11eb534">More...</a><br /></td></tr>
+<tr class="separator:ga38e53b4e39e17d0f7be9034ef11eb534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab9b0230941575668b73874ffe1ff01e4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#gab9b0230941575668b73874ffe1ff01e4">UARTDRV_GetReceiveDepth</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle)</td></tr>
 <tr class="memdesc:gab9b0230941575668b73874ffe1ff01e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of queued receive operations.  <a href="group__UARTDRV.html#gab9b0230941575668b73874ffe1ff01e4">More...</a><br /></td></tr>
 <tr class="separator:gab9b0230941575668b73874ffe1ff01e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,15 +358,27 @@ Functions</h2></td></tr>
 <tr class="memitem:gae5387109fb659840fa822aa6ae08b81f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__UARTDRV.html#gae1cf3e2748cf7a377fe60f055c07c3a6">UARTDRV_Status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">UARTDRV_GetTransmitStatus</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, uint8_t **buffer, <a class="el" href="group__UARTDRV.html#ga20f2dca466c884ed896061f8e90ff816">UARTDRV_Count_t</a> *bytesSent, <a class="el" href="group__UARTDRV.html#ga20f2dca466c884ed896061f8e90ff816">UARTDRV_Count_t</a> *bytesRemaining)</td></tr>
 <tr class="memdesc:gae5387109fb659840fa822aa6ae08b81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the status of the UART and gather information about any ongoing transmit operations.  <a href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">More...</a><br /></td></tr>
 <tr class="separator:gae5387109fb659840fa822aa6ae08b81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2aa9f087a06d6bf96933d657ac4e55d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga2aa9f087a06d6bf96933d657ac4e55d6">UARTDRV_Init</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, <a class="el" href="structUARTDRV__Init__t.html">UARTDRV_Init_t</a> *initData)</td></tr>
-<tr class="memdesc:ga2aa9f087a06d6bf96933d657ac4e55d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a UART driver instance.  <a href="group__UARTDRV.html#ga2aa9f087a06d6bf96933d657ac4e55d6">More...</a><br /></td></tr>
-<tr class="separator:ga2aa9f087a06d6bf96933d657ac4e55d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf212b2cd9be15b726ee708d7a29f52e4"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#gaf212b2cd9be15b726ee708d7a29f52e4">UARTDRV_Init</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, <a class="el" href="structUARTDRV__InitUart__t.html">UARTDRV_InitUart_t</a> *initData)</td></tr>
+<tr class="memdesc:gaf212b2cd9be15b726ee708d7a29f52e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a U(S)ART driver instance.  <a href="group__UARTDRV.html#gaf212b2cd9be15b726ee708d7a29f52e4">More...</a><br /></td></tr>
+<tr class="separator:gaf212b2cd9be15b726ee708d7a29f52e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga431b9aab5c3ed4d3fdb272889de50c92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, const <a class="el" href="structUARTDRV__InitLeuart__t.html">UARTDRV_InitLeuart_t</a> *initData)</td></tr>
+<tr class="memdesc:ga431b9aab5c3ed4d3fdb272889de50c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a LEUART driver instance.  <a href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">More...</a><br /></td></tr>
+<tr class="separator:ga431b9aab5c3ed4d3fdb272889de50c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1eef6fe085ae579747d5dcc52026e6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, const <a class="el" href="structUARTDRV__InitUart__t.html">UARTDRV_InitUart_t</a> *initData)</td></tr>
+<tr class="memdesc:gab1eef6fe085ae579747d5dcc52026e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a U(S)ART driver instance.  <a href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">More...</a><br /></td></tr>
+<tr class="separator:gab1eef6fe085ae579747d5dcc52026e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa7cbc80545ad814f338c4043de5023c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#gafa7cbc80545ad814f338c4043de5023c">UARTDRV_PauseTransmit</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle)</td></tr>
+<tr class="memdesc:gafa7cbc80545ad814f338c4043de5023c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause an ongoing transmit operation.  <a href="group__UARTDRV.html#gafa7cbc80545ad814f338c4043de5023c">More...</a><br /></td></tr>
+<tr class="separator:gafa7cbc80545ad814f338c4043de5023c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d8a5e61c33176ad32cf3c1330e132c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga1d8a5e61c33176ad32cf3c1330e132c6">UARTDRV_Receive</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, uint8_t *data, <a class="el" href="group__UARTDRV.html#ga20f2dca466c884ed896061f8e90ff816">UARTDRV_Count_t</a> count, <a class="el" href="group__UARTDRV.html#ga75a7670b4c9deaa47bc197bbde9b7fb4">UARTDRV_Callback_t</a> callback)</td></tr>
 <tr class="memdesc:ga1d8a5e61c33176ad32cf3c1330e132c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a non-blocking receive.  <a href="group__UARTDRV.html#ga1d8a5e61c33176ad32cf3c1330e132c6">More...</a><br /></td></tr>
 <tr class="separator:ga1d8a5e61c33176ad32cf3c1330e132c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5d8380296aa482ac95360d3855a2e150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga5d8380296aa482ac95360d3855a2e150">UARTDRV_ReceiveB</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, uint8_t *data, <a class="el" href="group__UARTDRV.html#ga20f2dca466c884ed896061f8e90ff816">UARTDRV_Count_t</a> count)</td></tr>
 <tr class="memdesc:ga5d8380296aa482ac95360d3855a2e150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a blocking receive.  <a href="group__UARTDRV.html#ga5d8380296aa482ac95360d3855a2e150">More...</a><br /></td></tr>
 <tr class="separator:ga5d8380296aa482ac95360d3855a2e150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e83c35be3ad93e6717ce8dc54a155c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga6e83c35be3ad93e6717ce8dc54a155c7">UARTDRV_ResumeTransmit</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle)</td></tr>
+<tr class="memdesc:ga6e83c35be3ad93e6717ce8dc54a155c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume a paused transmit operation.  <a href="group__UARTDRV.html#ga6e83c35be3ad93e6717ce8dc54a155c7">More...</a><br /></td></tr>
+<tr class="separator:ga6e83c35be3ad93e6717ce8dc54a155c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga484ac0b78a9eccb0ec6a1d30b7cc3232"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga484ac0b78a9eccb0ec6a1d30b7cc3232">UARTDRV_Transmit</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, uint8_t *data, <a class="el" href="group__UARTDRV.html#ga20f2dca466c884ed896061f8e90ff816">UARTDRV_Count_t</a> count, <a class="el" href="group__UARTDRV.html#ga75a7670b4c9deaa47bc197bbde9b7fb4">UARTDRV_Callback_t</a> callback)</td></tr>
 <tr class="memdesc:ga484ac0b78a9eccb0ec6a1d30b7cc3232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a non-blocking transmit.  <a href="group__UARTDRV.html#ga484ac0b78a9eccb0ec6a1d30b7cc3232">More...</a><br /></td></tr>
 <tr class="separator:ga484ac0b78a9eccb0ec6a1d30b7cc3232"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,7 +392,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_5d1b5d945f64eccef1842dcc064c269d.html">uartdrv</a></li><li class="navelem"><a class="el" href="dir_84b25c9bd371f61e802f564a18b25745.html">inc</a></li><li class="navelem"><a class="el" href="uartdrv_8h.html">uartdrv.h</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:29:34 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:59:11 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

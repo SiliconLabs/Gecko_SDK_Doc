@@ -8,12 +8,12 @@ var searchData=
   ['uif_5fjoystick',['UIF_JOYSTICK',['../structBC__TypeDef.html#ad0af6540bea6f437d7881e6233fa1bfa',1,'BC_TypeDef']]],
   ['uif_5fleds',['UIF_LEDS',['../structBC__TypeDef.html#a94f2c2119b39b100eaa822c7106b6311',1,'BC_TypeDef']]],
   ['uif_5fpb',['UIF_PB',['../structBC__TypeDef.html#a5e4f37139cd2eb713b1e1fe01faa6524',1,'BC_TypeDef']]],
-  ['uniqueh',['UNIQUEH',['../structDEVINFO__TypeDef.html#a47ab500932632f733cd3d112924ec884',1,'DEVINFO_TypeDef']]],
-  ['uniquel',['UNIQUEL',['../structDEVINFO__TypeDef.html#adee06ca99df3ed15576e834bae80c4b4',1,'DEVINFO_TypeDef']]],
+  ['uniqueh',['UNIQUEH',['../structDEVINFO__TypeDef.html#a884e030f1388fc930dff9033d448f303',1,'DEVINFO_TypeDef']]],
+  ['uniquel',['UNIQUEL',['../structDEVINFO__TypeDef.html#adeb0c331ca40b8495c827039409fbffd',1,'DEVINFO_TypeDef']]],
   ['unmodcarrier',['unmodCarrier',['../structEZRADIODRV__HandleData.html#adee41191751df0fa8727fa4de54a068c',1,'EZRADIODRV_HandleData']]],
   ['used',['used',['../structUARTDRV__Buffer__FifoQueue__t.html#ae0a0e1b396b4f8cc3ac621681c9f2268',1,'UARTDRV_Buffer_FifoQueue_t']]],
   ['usehprot',['useHprot',['../structMSC__ExecConfig__TypeDef.html#a3984dc175ed49f2910786829fbe6b911',1,'MSC_ExecConfig_TypeDef']]],
-  ['user',['USER',['../structDMA__DESCRIPTOR__TypeDef.html#a4346c88c2a75d91f13030a28b5dbcfbe',1,'DMA_DESCRIPTOR_TypeDef']]],
+  ['user',['USER',['../structDMA__DESCRIPTOR__TypeDef.html#ac59f4a979eb4f3eac7204af103cf8bea',1,'DMA_DESCRIPTOR_TypeDef']]],
   ['usercallback',['userCallback',['../structEZRADIODRV__AutoAckHandle.html#ae466fbca495d8f0fd14efac52180f84e',1,'EZRADIODRV_AutoAckHandle::userCallback()'],['../structEZRADIODRV__PacketCrcErrorHandle.html#a6de0d85e13a65076f54a3bc1d3df3ba5',1,'EZRADIODRV_PacketCrcErrorHandle::userCallback()'],['../structEZRADIODRV__PacketRxHandle.html#a7c5ec3b9bb694794f7a98559f1e9dc0e',1,'EZRADIODRV_PacketRxHandle::userCallback()'],['../structEZRADIODRV__PacketTxHandle.html#a821a74dfd1b4e464fd6e48fde8566e06',1,'EZRADIODRV_PacketTxHandle::userCallback()']]],
   ['userptr',['userPtr',['../structDMA__CB__TypeDef.html#a8abdebc49467401510597b113b468fcd',1,'DMA_CB_TypeDef']]]
 ];

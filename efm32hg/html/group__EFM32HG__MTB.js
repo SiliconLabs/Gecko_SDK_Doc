@@ -1,9 +1,9 @@
 var group__EFM32HG__MTB =
 [
     [ "MTB_TypeDef", "structMTB__TypeDef.html", [
-      [ "BASE", "structMTB__TypeDef.html#afa1fda737c68512fa1c11f7936272317", null ],
-      [ "FLOW", "structMTB__TypeDef.html#aa95bb3c8244ef32d0c61c60cbdb643df", null ],
-      [ "MASTER", "structMTB__TypeDef.html#a27fcd3fbf1a78dd2e0180be7ca46ef58", null ],
-      [ "POSITION", "structMTB__TypeDef.html#ab99b20d73ce1e2ea2bca2e9c0c44c5ad", null ]
+      [ "BASE", "structMTB__TypeDef.html#adaaf6b0f15adef2aef7f6765b357c11a", null ],
+      [ "FLOW", "structMTB__TypeDef.html#a2f66a19fdd8d1a95e67db933e7e1fbf8", null ],
+      [ "MASTER", "structMTB__TypeDef.html#a04616b09410f8c1c2f0f332480cc829f", null ],
+      [ "POSITION", "structMTB__TypeDef.html#abf9fcab046c991db226c09ece71f7085", null ]
     ] ]
 ];

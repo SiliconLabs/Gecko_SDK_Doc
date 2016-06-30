@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Tiny Gecko Software Documentation: C:/work/s025_sw/emlib/src/em_ldma.c Source File</title>
+<title>EFM32 Tiny Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/src/em_ldma.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32tg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -296,75 +296,74 @@ $(document).ready(function(){initNavTree('em__ldma_8c_source.html','');});
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  LDMA-&gt;CTRL = tmp;</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <a class="code" href="group__BUS.html#gad226bfe478c81d51681539d935241758">BUS_RegMaskedClear</a>(&amp;LDMA-&gt;CHDONE, chMask);  <span class="comment">/* Clear the done flag.     */</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  LDMA-&gt;LINKLOAD = chMask;                    <span class="comment">/* Enable descriptor load.  */</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  <a class="code" href="group__BUS.html#ga8225a5d4acac280abb182dc118e8df77">BUS_RegMaskedSet</a>(&amp;LDMA-&gt;CHEN, chMask);      <span class="comment">/* Enable channel.          */</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  <span class="comment">/* Critical region end. */</span></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>();</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;}</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="keywordtype">void</span> LDMA_StopTransfer( <span class="keywordtype">int</span> ch )</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;{</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  uint32_t chMask = 1 &lt;&lt; ch;</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  EFM_ASSERT( ch &lt; DMA_CHAN_COUNT );</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  <a class="code" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a>();</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  LDMA-&gt;IEN &amp;= ~chMask;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <a class="code" href="group__BUS.html#gad226bfe478c81d51681539d935241758">BUS_RegMaskedClear</a>(&amp;LDMA-&gt;CHEN, chMask);</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>();</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;}</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="keywordtype">bool</span> LDMA_TransferDone( <span class="keywordtype">int</span> ch )</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;{</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  <span class="keywordtype">bool</span>     retVal = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  uint32_t chMask = 1 &lt;&lt; ch;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  EFM_ASSERT( ch &lt; DMA_CHAN_COUNT );</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  <a class="code" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a>();</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  <span class="keywordflow">if</span> (    ( ( LDMA-&gt;CHEN   &amp; chMask ) == 0      )</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;       &amp;&amp; ( ( LDMA-&gt;CHDONE &amp; chMask ) == chMask ) )</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  {</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    retVal = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  }</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>();</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  <span class="keywordflow">return</span> retVal;</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;}</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;uint32_t LDMA_TransferRemainingCount( <span class="keywordtype">int</span> ch )</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;{</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  uint32_t remaining, done, iflag;</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  uint32_t chMask = 1 &lt;&lt; ch;</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  EFM_ASSERT( ch &lt; DMA_CHAN_COUNT );</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  <a class="code" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a>();</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  iflag  = LDMA-&gt;IF;</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  done   = LDMA-&gt;CHDONE;</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  remaining = LDMA-&gt;CH[ ch ].CTRL;</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>();</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  iflag    &amp;= chMask;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  done     &amp;= chMask;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;  remaining = ( remaining</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                &amp; _LDMA_CH_CTRL_XFERCNT_MASK )</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;              &gt;&gt; _LDMA_CH_CTRL_XFERCNT_SHIFT;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  <span class="keywordflow">if</span> ( done || ( ( remaining == 0 ) &amp;&amp; iflag ) )</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;  {</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  }</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  <span class="keywordflow">return</span> remaining + 1;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;}</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined( LDMA_PRESENT ) &amp;&amp; ( LDMA_COUNT == 1 ) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  LDMA-&gt;LINKLOAD = chMask;      <span class="comment">/* Start transfer by loading descriptor.  */</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  <span class="comment">/* Critical region end. */</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>();</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;}</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="keywordtype">void</span> LDMA_StopTransfer( <span class="keywordtype">int</span> ch )</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;{</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  uint32_t chMask = 1 &lt;&lt; ch;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  EFM_ASSERT( ch &lt; DMA_CHAN_COUNT );</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <a class="code" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a>();</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  LDMA-&gt;IEN &amp;= ~chMask;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  <a class="code" href="group__BUS.html#gad226bfe478c81d51681539d935241758">BUS_RegMaskedClear</a>(&amp;LDMA-&gt;CHEN, chMask);</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>();</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;}</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="keywordtype">bool</span> LDMA_TransferDone( <span class="keywordtype">int</span> ch )</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;{</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  <span class="keywordtype">bool</span>     retVal = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  uint32_t chMask = 1 &lt;&lt; ch;</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  EFM_ASSERT( ch &lt; DMA_CHAN_COUNT );</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;  <a class="code" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a>();</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  <span class="keywordflow">if</span> (    ( ( LDMA-&gt;CHEN   &amp; chMask ) == 0      )</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;       &amp;&amp; ( ( LDMA-&gt;CHDONE &amp; chMask ) == chMask ) )</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  {</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    retVal = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  }</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>();</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  <span class="keywordflow">return</span> retVal;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;}</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;uint32_t LDMA_TransferRemainingCount( <span class="keywordtype">int</span> ch )</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;{</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  uint32_t remaining, done, iflag;</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  uint32_t chMask = 1 &lt;&lt; ch;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  EFM_ASSERT( ch &lt; DMA_CHAN_COUNT );</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  <a class="code" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a>();</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  iflag  = LDMA-&gt;IF;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  done   = LDMA-&gt;CHDONE;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  remaining = LDMA-&gt;CH[ ch ].CTRL;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>();</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  iflag    &amp;= chMask;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  done     &amp;= chMask;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  remaining = ( remaining</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                &amp; _LDMA_CH_CTRL_XFERCNT_MASK )</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;              &gt;&gt; _LDMA_CH_CTRL_XFERCNT_SHIFT;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  <span class="keywordflow">if</span> ( done || ( ( remaining == 0 ) &amp;&amp; iflag ) )</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  {</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  }</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  <span class="keywordflow">return</span> remaining + 1;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;}</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined( LDMA_PRESENT ) &amp;&amp; ( LDMA_COUNT == 1 ) */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="em__cmu_8h_html"><div class="ttname"><a href="em__cmu_8h.html">em_cmu.h</a></div><div class="ttdoc">Clock management unit (CMU) API. </div></div>
 <div class="ttc" id="group__EFM32TG842F32__Core_html_gae3fe3587d5100c787e02102ce3944460"><div class="ttname"><a href="group__EFM32TG842F32__Core.html#gae3fe3587d5100c787e02102ce3944460">__NVIC_PRIO_BITS</a></div><div class="ttdeci">#define __NVIC_PRIO_BITS</div><div class="ttdef"><b>Definition:</b> <a href="efm32tg842f32_8h_source.html#l00098">efm32tg842f32.h:98</a></div></div>
 <div class="ttc" id="group__EFM32TG842F32__Part_html_ga3cec723aa225c0767466f38e8449602c"><div class="ttname"><a href="group__EFM32TG842F32__Part.html#ga3cec723aa225c0767466f38e8449602c">DMA_CHAN_COUNT</a></div><div class="ttdeci">#define DMA_CHAN_COUNT</div><div class="ttdef"><b>Definition:</b> <a href="efm32tg842f32_8h_source.html#l00156">efm32tg842f32.h:156</a></div></div>
@@ -372,8 +371,7 @@ $(document).ready(function(){initNavTree('em__ldma_8c_source.html','');});
 <div class="ttc" id="em__bus_8h_html"><div class="ttname"><a href="em__bus_8h.html">em_bus.h</a></div><div class="ttdoc">RAM and peripheral bit-field set and clear API. </div></div>
 <div class="ttc" id="group__INT_html_gafba0338f70b8fab23d8b5c00ec15df56"><div class="ttname"><a href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a></div><div class="ttdeci">__STATIC_INLINE uint32_t INT_Enable(void)</div><div class="ttdoc">Enable interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__int_8h_source.html#l00094">em_int.h:94</a></div></div>
 <div class="ttc" id="em__int_8h_html"><div class="ttname"><a href="em__int_8h.html">em_int.h</a></div><div class="ttdoc">Interrupt enable/disable unit API. </div></div>
-<div class="ttc" id="group__CMU_html_ga93913d50050d52b38b0a7c7c08ac81e8"><div class="ttname"><a href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a></div><div class="ttdeci">void CMU_ClockEnable(CMU_Clock_TypeDef clock, bool enable)</div><div class="ttdoc">Enable/disable a clock. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01421">em_cmu.c:1421</a></div></div>
-<div class="ttc" id="group__BUS_html_ga8225a5d4acac280abb182dc118e8df77"><div class="ttname"><a href="group__BUS.html#ga8225a5d4acac280abb182dc118e8df77">BUS_RegMaskedSet</a></div><div class="ttdeci">__STATIC_INLINE void BUS_RegMaskedSet(volatile uint32_t *addr, uint32_t mask)</div><div class="ttdoc">Perform a masked set operation on peripheral register address. </div><div class="ttdef"><b>Definition:</b> <a href="em__bus_8h_source.html#l00221">em_bus.h:221</a></div></div>
+<div class="ttc" id="group__CMU_html_ga93913d50050d52b38b0a7c7c08ac81e8"><div class="ttname"><a href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a></div><div class="ttdeci">void CMU_ClockEnable(CMU_Clock_TypeDef clock, bool enable)</div><div class="ttdoc">Enable/disable a clock. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01443">em_cmu.c:1443</a></div></div>
 <div class="ttc" id="em__ldma_8h_html"><div class="ttname"><a href="em__ldma_8h.html">em_ldma.h</a></div><div class="ttdoc">Direct memory access (LDMA) API. </div></div>
 <div class="ttc" id="group__BUS_html_gad226bfe478c81d51681539d935241758"><div class="ttname"><a href="group__BUS.html#gad226bfe478c81d51681539d935241758">BUS_RegMaskedClear</a></div><div class="ttdeci">__STATIC_INLINE void BUS_RegMaskedClear(volatile uint32_t *addr, uint32_t mask)</div><div class="ttdoc">Perform a masked clear operation on peripheral register address. </div><div class="ttdef"><b>Definition:</b> <a href="em__bus_8h_source.html#l00253">em_bus.h:253</a></div></div>
 <div class="ttc" id="group__INT_html_gaa46adfbe58501552a0614c3f7adda6a5"><div class="ttname"><a href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a></div><div class="ttdeci">__STATIC_INLINE uint32_t INT_Disable(void)</div><div class="ttdoc">Disable interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__int_8h_source.html#l00071">em_int.h:71</a></div></div>
@@ -384,7 +382,7 @@ $(document).ready(function(){initNavTree('em__ldma_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_b024e35bd40549d46920f272346444ee.html">src</a></li><li class="navelem"><a class="el" href="em__ldma_8c.html">em_ldma.c</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:23:58 for EFM32 Tiny Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:50:24 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -1,8 +1,8 @@
 var group__EZR32LG__RMU =
 [
     [ "RMU_TypeDef", "structRMU__TypeDef.html", [
-      [ "CMD", "structRMU__TypeDef.html#ae3a36ee54ebc859014ba4bd579719175", null ],
-      [ "CTRL", "structRMU__TypeDef.html#a58eddfee4f55a6d9ccf86e5816427165", null ],
-      [ "RSTCAUSE", "structRMU__TypeDef.html#ab4fee622790bf04c695067f3cb5a1f42", null ]
+      [ "CMD", "structRMU__TypeDef.html#a1c299348d8f5791eefcc7cf0419b6605", null ],
+      [ "CTRL", "structRMU__TypeDef.html#a8c82cb9550cba0dcbe9ced2f2f43d9db", null ],
+      [ "RSTCAUSE", "structRMU__TypeDef.html#a7dcfb06cd5e2797eefd88d12028b9dcc", null ]
     ] ]
 ];

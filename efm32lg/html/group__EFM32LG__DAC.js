@@ -1,24 +1,24 @@
 var group__EFM32LG__DAC =
 [
     [ "DAC_TypeDef", "structDAC__TypeDef.html", [
-      [ "BIASPROG", "structDAC__TypeDef.html#a12a98f5c6f06028eff9c5ac29f493285", null ],
-      [ "CAL", "structDAC__TypeDef.html#ab026f592ddcd972dcf40dc54b4a6141a", null ],
-      [ "CH0CTRL", "structDAC__TypeDef.html#a2379e0cf7d32f314bb6af7e36eec9951", null ],
-      [ "CH0DATA", "structDAC__TypeDef.html#afea01df8bd092bffc1a5a368ae8c5563", null ],
-      [ "CH1CTRL", "structDAC__TypeDef.html#a0d294c80545e4de01c94f13185bfcb80", null ],
-      [ "CH1DATA", "structDAC__TypeDef.html#aa584ec4b79324b1c42e924ddbe0fc0d6", null ],
-      [ "COMBDATA", "structDAC__TypeDef.html#a96ab988183dfbdb68735e59004dc68de", null ],
-      [ "CTRL", "structDAC__TypeDef.html#ad97fd53875c4f5c3d4d2ae296d63876b", null ],
-      [ "IEN", "structDAC__TypeDef.html#a27de0a723e562451e09baa2eda0e6685", null ],
-      [ "IF", "structDAC__TypeDef.html#a65f0e5ecf54a1d0e02d450ef5de36160", null ],
-      [ "IFC", "structDAC__TypeDef.html#a6d7f2644bc238c9755f63df11414cd95", null ],
-      [ "IFS", "structDAC__TypeDef.html#a92e2cdc5e115fe7f1d1baf5a2c58bdfb", null ],
-      [ "OPA0MUX", "structDAC__TypeDef.html#ae0fd8a74dde1d80cc93921c54f0c7890", null ],
-      [ "OPA1MUX", "structDAC__TypeDef.html#acb1b9de6044a04d92d7d4f57e81990c9", null ],
-      [ "OPA2MUX", "structDAC__TypeDef.html#adfe82ec23168a7c6617f7def8925b05c", null ],
-      [ "OPACTRL", "structDAC__TypeDef.html#a13abe46a37f5592a0a65adacac66256f", null ],
-      [ "OPAOFFSET", "structDAC__TypeDef.html#a5aef7fffbdb5e68bdfbdf542382f10fd", null ],
+      [ "BIASPROG", "structDAC__TypeDef.html#a6899f9848c5d51f260b154a094fc26ed", null ],
+      [ "CAL", "structDAC__TypeDef.html#aa56ccb4fea02464f80904edc5557acf3", null ],
+      [ "CH0CTRL", "structDAC__TypeDef.html#ab3af73b7fd7e4bd8eeaac2852a1380ee", null ],
+      [ "CH0DATA", "structDAC__TypeDef.html#a2cba4fe57ce2cae8e387aa0d42486653", null ],
+      [ "CH1CTRL", "structDAC__TypeDef.html#a8e885e6e631bad6c4b9d00afffcd3e22", null ],
+      [ "CH1DATA", "structDAC__TypeDef.html#a3155880e69641fff1470dcec0b45354f", null ],
+      [ "COMBDATA", "structDAC__TypeDef.html#ab0e27a4042b7ae3b8f33ea875a5b6775", null ],
+      [ "CTRL", "structDAC__TypeDef.html#ac2abd47b5cbcf51f0a831abfd88dedb1", null ],
+      [ "IEN", "structDAC__TypeDef.html#a0ff049f578fc679be6e6ef3d073ae24c", null ],
+      [ "IF", "structDAC__TypeDef.html#ad16f29fcf4d7183c5da70cf12866adbd", null ],
+      [ "IFC", "structDAC__TypeDef.html#a745024533fffd6025929a20ed0335757", null ],
+      [ "IFS", "structDAC__TypeDef.html#a76007ae718032e7a91da47cac0dcb5ad", null ],
+      [ "OPA0MUX", "structDAC__TypeDef.html#a35b8c100a5bd5c447fe3cd17f539f0d4", null ],
+      [ "OPA1MUX", "structDAC__TypeDef.html#ada6aa3cc2cf769a03a25d0c2cda0cb89", null ],
+      [ "OPA2MUX", "structDAC__TypeDef.html#a151de0dd582f9e3a1b5b4305a4adeb26", null ],
+      [ "OPACTRL", "structDAC__TypeDef.html#aae15cd74c96e91dcb4ddced32607dbba", null ],
+      [ "OPAOFFSET", "structDAC__TypeDef.html#ad042949266b8cf5112dd58b478b8f24e", null ],
       [ "RESERVED0", "structDAC__TypeDef.html#a6b1ae50658e60c6d26f1fd9ab4fe59eb", null ],
-      [ "STATUS", "structDAC__TypeDef.html#ac1eebdf103c301952179c1e78d2e0955", null ]
+      [ "STATUS", "structDAC__TypeDef.html#ad46a52ed68fd68a20b63046f6ab6c94b", null ]
     ] ]
 ];

@@ -260,8 +260,6 @@ var efr32mg1p__devinfo_8h =
     [ "_DEVINFO_EXTINFO_REV_NONE", "group__EFR32MG1P__DEVINFO__BitFields.html#gaff7e3f629fd0007b9b072fd596444a72", null ],
     [ "_DEVINFO_EXTINFO_REV_REV1", "group__EFR32MG1P__DEVINFO__BitFields.html#ga709e5b7f88430b04fe9a3506aa5857fb", null ],
     [ "_DEVINFO_EXTINFO_REV_SHIFT", "group__EFR32MG1P__DEVINFO__BitFields.html#ga0506d3e0b29c46ca509bc9a1be318ba5", null ],
-    [ "_DEVINFO_EXTINFO_SPARE_MASK", "group__EFR32MG1P__DEVINFO__BitFields.html#ga64679c246c3670bdee73621231656003", null ],
-    [ "_DEVINFO_EXTINFO_SPARE_SHIFT", "group__EFR32MG1P__DEVINFO__BitFields.html#gad3b5c1664098a5ccca882438919c6137", null ],
     [ "_DEVINFO_EXTINFO_TYPE_IS25LQ040B", "group__EFR32MG1P__DEVINFO__BitFields.html#gae54997e064908569a250bb0480074b79", null ],
     [ "_DEVINFO_EXTINFO_TYPE_MASK", "group__EFR32MG1P__DEVINFO__BitFields.html#gac02af203ebb9f9b54886e56dfddc1c21", null ],
     [ "_DEVINFO_EXTINFO_TYPE_NONE", "group__EFR32MG1P__DEVINFO__BitFields.html#ga0db72b5f0e6617c90338c6bc19e7a80e", null ],

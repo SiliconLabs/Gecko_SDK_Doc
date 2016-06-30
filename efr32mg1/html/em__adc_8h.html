@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Mighty Gecko Software Documentation: C:/work/s025_sw/emlib/inc/em_adc.h File Reference</title>
+<title>EFR32 Mighty Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/inc/em_adc.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Mighty Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32mg1-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efr32mg1-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('em__adc_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Analog to Digital Converter (ADC) peripheral API. </p>
-<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -156,6 +156,11 @@ Macros</h2></td></tr>
 <tr class="separator:gabe964e6cb872ec50ada2c37331a0176d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1a0cd333a457f356692138fcf3b2275e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga1a0cd333a457f356692138fcf3b2275e">ADC_INITSINGLE_DEFAULT</a></td></tr>
 <tr class="separator:ga1a0cd333a457f356692138fcf3b2275e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7aa0bfc6a8a192b0d4130941ae72f797"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7aa0bfc6a8a192b0d4130941ae72f797"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC_SCANINPUTSEL_GROUP_NONE</b>&#160;&#160;&#160;0xFFU</td></tr>
+<tr class="separator:ga7aa0bfc6a8a192b0d4130941ae72f797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80896d1a724ffdecafdde0ba1de39a7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC_SCANINPUTSEL_NONE</b></td></tr>
+<tr class="separator:ga80896d1a724ffdecafdde0ba1de39a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -183,9 +188,9 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ga8e7f97d7629d26ae71b9d43c2773c7db"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ADC.html#ga8e7f97d7629d26ae71b9d43c2773c7db">ADC_EM2ClockConfig_TypeDef</a> { <br />
 &#160;&#160;<b>adcEm2Disabled</b> = 0, 
 <br />
-&#160;&#160;<b>adcEm2ClockOnDemand</b> = _ADC_CTRL_ADCCLKMODE_ASYNC | _ADC_CTRL_ASYNCCLKEN_ASNEEDED, 
+&#160;&#160;<b>adcEm2ClockOnDemand</b> = ADC_CTRL_ADCCLKMODE_ASYNC | ADC_CTRL_ASYNCCLKEN_ASNEEDED, 
 <br />
-&#160;&#160;<b>adcEm2ClockAlwaysOn</b> = _ADC_CTRL_ADCCLKMODE_ASYNC | _ADC_CTRL_ASYNCCLKEN_ALWAYSON
+&#160;&#160;<b>adcEm2ClockAlwaysOn</b> = ADC_CTRL_ADCCLKMODE_ASYNC | ADC_CTRL_ASYNCCLKEN_ALWAYSON
 <br />
  }<tr class="separator:ga8e7f97d7629d26ae71b9d43c2773c7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -1100,7 +1105,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__adc_8h.html">em_adc.h</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:50:22 for EFR32 Mighty Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 11:05:26 for EFR32 Mighty Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

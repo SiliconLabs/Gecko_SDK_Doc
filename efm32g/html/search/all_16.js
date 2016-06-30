@@ -6,8 +6,8 @@ var searchData=
   ['watermark_5f4kb',['WATERMARK_4KB',['../ksz8851snl_8c.html#ae78ae160bdcc753d7ecd0c42c8d0c49b',1,'ksz8851snl.c']]],
   ['watermark_5f6kb',['WATERMARK_6KB',['../ksz8851snl_8c.html#ace67331af9e371dffde22d1b5fabf5f1',1,'ksz8851snl.c']]],
   ['wave',['wave',['../structLCD__Init__TypeDef.html#af5fd808ce9e9ba21b3585cf7e0d68d00',1,'LCD_Init_TypeDef']]],
-  ['wbus16',['Wbus16',['../structSL__ATTRIBUTE__PACKED.html#ac1ab2829cd1c7ec265c9a46f8c0d4247',1,'SL_ATTRIBUTE_PACKED']]],
-  ['wdata',['WDATA',['../structMSC__TypeDef.html#ae0727ae42639a07fc6517f0f1fe4e247',1,'MSC_TypeDef']]],
+  ['wbus16',['Wbus16',['../structMSDSCSI__InquiryData__TypeDef.html#af08ef6da6baaf4181284ed72824ea0de',1,'MSDSCSI_InquiryData_TypeDef']]],
+  ['wdata',['WDATA',['../structMSC__TypeDef.html#a7c3cf09ded6f9abe2db4c9083d17f3cb',1,'MSC_TypeDef']]],
   ['wdog',['WDOG',['../group__EFM32G890F128__Peripheral__Declaration.html#gab938901a5fa5443253fc293ebd0399e3',1,'WDOG():&#160;efm32g890f128.h'],['../group__WDOG.html',1,'(Global Namespace)']]],
   ['wdog_5fbase',['WDOG_BASE',['../group__EFM32G890F128__Peripheral__Base.html#ga0c092d77d4599871d1ebda1a3a28e887',1,'efm32g890f128.h']]],
   ['wdog_5fclksel_5ftypedef',['WDOG_ClkSel_TypeDef',['../group__WDOG.html#ga84959950c7a90940b7b2aa414648f338',1,'em_wdog.h']]],
@@ -72,11 +72,11 @@ var searchData=
   ['wepolarity',['wePolarity',['../structEBI__Init__TypeDef.html#a55235db5fde2774de105f3e7b0415a97',1,'EBI_Init_TypeDef']]],
   ['width',['width',['../structDISPLAY__Geometry__t.html#ae9e35a507b29dfea64883890ff434b53',1,'DISPLAY_Geometry_t']]],
   ['word_5fsize',['WORD_SIZE',['../ksz8851snl_8c.html#a92ed8507d1cd2331ad09275c5c4c1c89',1,'ksz8851snl.c']]],
-  ['writecmd',['WRITECMD',['../structMSC__TypeDef.html#a54618e0654077bed4c5bc9fffabbecbf',1,'MSC_TypeDef']]],
-  ['writectrl',['WRITECTRL',['../structMSC__TypeDef.html#a7403f28e9908a708aad0219453bf6dd8',1,'MSC_TypeDef']]],
+  ['writecmd',['WRITECMD',['../structMSC__TypeDef.html#a8159c7ef51bdf760d62c0f85a1289b69',1,'MSC_TypeDef']]],
+  ['writectrl',['WRITECTRL',['../structMSC__TypeDef.html#a7159c4049af4cbcd06ef7bc91e3d477f',1,'MSC_TypeDef']]],
   ['writeholdcycles',['writeHoldCycles',['../structEBI__Init__TypeDef.html#a6593cf3457b5335614f12d7e0443f818',1,'EBI_Init_TypeDef']]],
   ['writesetupcycles',['writeSetupCycles',['../structEBI__Init__TypeDef.html#ac80e60f485ac62a38443c900680804f1',1,'EBI_Init_TypeDef']]],
   ['writestrobecycles',['writeStrobeCycles',['../structEBI__Init__TypeDef.html#a941dde5c6ffa04852c238326682cd62a',1,'EBI_Init_TypeDef']]],
-  ['wrprotect',['WrProtect',['../structSL__ATTRIBUTE__PACKED.html#af9a5fb6cc6f06186c72f757f0e904670',1,'SL_ATTRIBUTE_PACKED']]],
-  ['wrtiming',['WRTIMING',['../structEBI__TypeDef.html#ac3bc4ca5a424cb26b0d45b8054d1c563',1,'EBI_TypeDef']]]
+  ['wrprotect',['WrProtect',['../structMSDSCSI__Write10__TypeDef.html#a6208efa009ed1de7712170a0545b38c4',1,'MSDSCSI_Write10_TypeDef']]],
+  ['wrtiming',['WRTIMING',['../structEBI__TypeDef.html#a52f21f440f3975522b46a41edf853426',1,'EBI_TypeDef']]]
 ];

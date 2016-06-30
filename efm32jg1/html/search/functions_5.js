@@ -18,6 +18,8 @@ var searchData=
   ['emu_5fenterem2',['EMU_EnterEM2',['../group__EMU.html#gacadc56c5e2a8fb2890edd139b694b25b',1,'em_emu.c']]],
   ['emu_5fenterem3',['EMU_EnterEM3',['../group__EMU.html#ga9e98f9066d91dbd64c3e73254336218f',1,'em_emu.c']]],
   ['emu_5fenterem4',['EMU_EnterEM4',['../group__EMU.html#gac92115921464d7435fc714d8b9bd494b',1,'em_emu.c']]],
+  ['emu_5fenterem4h',['EMU_EnterEM4H',['../group__EMU.html#ga2dab46a27384a6d09e5e4f7994643e3e',1,'em_emu.c']]],
+  ['emu_5fenterem4s',['EMU_EnterEM4S',['../group__EMU.html#ga827d92c0313fad744a8751e3d2108ec9',1,'em_emu.c']]],
   ['emu_5fintclear',['EMU_IntClear',['../group__EMU.html#ga65035207a5f6c2392adeef22a0e35197',1,'em_emu.h']]],
   ['emu_5fintdisable',['EMU_IntDisable',['../group__EMU.html#gacfdaa30f1813bac19e3218e035a24cac',1,'em_emu.h']]],
   ['emu_5fintenable',['EMU_IntEnable',['../group__EMU.html#ga1a9ade9bc8f6a8f35089a7b14b102945',1,'em_emu.h']]],

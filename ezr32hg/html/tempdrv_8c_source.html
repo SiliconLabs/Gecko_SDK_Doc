@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EZR32 Happy Gecko Software Documentation: C:/work/s025_sw/emdrv/tempdrv/src/tempdrv.c Source File</title>
+<title>EZR32 Happy Gecko Software Documentation: C:/work/s025_sw_ssh/emdrv/tempdrv/src/tempdrv.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32hg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">ezr32hg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -507,12 +507,12 @@ $(document).ready(function(){initNavTree('tempdrv_8c_source.html','');});
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  DItemp = ((<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>-&gt;CAL &amp; <a class="code" href="group__EZR32HG__DEVINFO__BitFields.html#ga7e12f8cdf56f968f2b2c399b99b09823">_DEVINFO_CAL_TEMP_MASK</a>) &gt;&gt; <a class="code" href="group__EZR32HG__DEVINFO__BitFields.html#gaaa15661a4a5a8cfe5c9f3d99e2224d47">_DEVINFO_CAL_TEMP_SHIFT</a>);</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  DIemu = ((<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>-&gt;EMUTEMP &amp; _DEVINFO_EMUTEMP_EMUTEMPROOM_MASK) &gt;&gt; _DEVINFO_EMUTEMP_EMUTEMPROOM_SHIFT);</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <span class="keywordflow">if</span> ((DItemp == 0xFFFFFFFF ) || (DIemu == 0xFFFFFFFF))</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  {</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <span class="comment">// Missing DI page calibration data, substitute fixed values</span></div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    DItemp = fallbackTEMP;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    DIemu = fallbackEMU;</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <span class="keywordflow">if</span> ((DItemp == (<a class="code" href="group__EZR32HG__DEVINFO__BitFields.html#ga7e12f8cdf56f968f2b2c399b99b09823">_DEVINFO_CAL_TEMP_MASK</a> &gt;&gt; <a class="code" href="group__EZR32HG__DEVINFO__BitFields.html#gaaa15661a4a5a8cfe5c9f3d99e2224d47">_DEVINFO_CAL_TEMP_SHIFT</a>)) </div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;   || (DIemu == (_DEVINFO_EMUTEMP_EMUTEMPROOM_MASK &gt;&gt; _DEVINFO_EMUTEMP_EMUTEMPROOM_SHIFT)))</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  {</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <span class="comment">// Missing DI page calibration data, substitute fixed values</span></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    DItemp = fallbackTEMP;</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    DIemu = fallbackEMU;</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  }</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  <span class="comment">// calculate conversion offsets. Based on assumed slope of 5/8</span></div>
@@ -717,7 +717,7 @@ $(document).ready(function(){initNavTree('tempdrv_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_83a549278dc9c141dffd9e3498c868df.html">tempdrv</a></li><li class="navelem"><a class="el" href="dir_c74885a2b4b04e2f907b4ba21e00c32e.html">src</a></li><li class="navelem"><a class="el" href="tempdrv_8c.html">tempdrv.c</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:47:39 for EZR32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:52:22 for EZR32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

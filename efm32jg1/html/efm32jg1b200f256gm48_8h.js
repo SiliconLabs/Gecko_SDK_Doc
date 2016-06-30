@@ -9,6 +9,8 @@ var efm32jg1b200f256gm48_8h =
     [ "_EFM_DEVICE", "group__EFM32JG1B200F256GM48__Part.html#ga06993c55f195887a7892bba03ab3cc79", null ],
     [ "_SILICON_LABS_32B_PLATFORM", "group__EFM32JG1B200F256GM48__Part.html#ga9a2185e66f1c6a74956fcbaa182401b5", null ],
     [ "_SILICON_LABS_32B_PLATFORM_2", "group__EFM32JG1B200F256GM48__Part.html#gaf4e2c663f091e85257bcb5d218f9640c", null ],
+    [ "_SILICON_LABS_32B_PLATFORM_2_GEN", "group__EFM32JG1B200F256GM48__Part.html#gacc5358381a6c92561181d9927bab7432", null ],
+    [ "_SILICON_LABS_32B_PLATFORM_2_GEN_1", "group__EFM32JG1B200F256GM48__Part.html#gafb413ce631ae871fb9c8528a1d479153", null ],
     [ "ACMP0", "group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga07af77bdc71801553e581ddc858d7656", null ],
     [ "ACMP0_BASE", "group__EFM32JG1B200F256GM48__Peripheral__Base.html#ga5e3f07f21dd6ab0682363834112ce5b5", null ],
     [ "ACMP1", "group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga11c0ac9aab56e3eea735704ecc0039f9", null ],

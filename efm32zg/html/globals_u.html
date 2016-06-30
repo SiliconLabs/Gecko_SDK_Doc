@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Zero Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32zg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32zg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -184,6 +184,10 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">uartdrv.c</a>
 , <a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">uartdrv.h</a>
 </li>
+<li>UARTDRV_FlowControlSetPeerStatus()
+: <a class="el" href="group__UARTDRV.html#ga110407a69b9915d78980749b449a106c">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#ga110407a69b9915d78980749b449a106c">uartdrv.c</a>
+</li>
 <li>UARTDRV_FlowControlState
 : <a class="el" href="group__UARTDRV.html#gae5bb048bcc9222f56c9b4b811f3395e0">uartdrv.h</a>
 </li>
@@ -204,21 +208,25 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group__UARTDRV.html#ga762bade408c1a64812467e1f58026899">uartdrv.h</a>
 , <a class="el" href="group__UARTDRV.html#ga762bade408c1a64812467e1f58026899">uartdrv.c</a>
 </li>
+<li>UARTDRV_GetPeripheralStatus()
+: <a class="el" href="group__UARTDRV.html#ga38e53b4e39e17d0f7be9034ef11eb534">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#ga38e53b4e39e17d0f7be9034ef11eb534">uartdrv.c</a>
+</li>
 <li>UARTDRV_GetReceiveDepth()
 : <a class="el" href="group__UARTDRV.html#gab9b0230941575668b73874ffe1ff01e4">uartdrv.h</a>
 , <a class="el" href="group__UARTDRV.html#gab9b0230941575668b73874ffe1ff01e4">uartdrv.c</a>
 </li>
 <li>UARTDRV_GetReceiveStatus()
-: <a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">uartdrv.h</a>
-, <a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">uartdrv.c</a>
+: <a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">uartdrv.c</a>
+, <a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">uartdrv.h</a>
 </li>
 <li>UARTDRV_GetTransmitDepth()
 : <a class="el" href="group__UARTDRV.html#gab467cb6aa9940119e4f03bd860c76266">uartdrv.h</a>
 , <a class="el" href="group__UARTDRV.html#gab467cb6aa9940119e4f03bd860c76266">uartdrv.c</a>
 </li>
 <li>UARTDRV_GetTransmitStatus()
-: <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">uartdrv.c</a>
-, <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">uartdrv.h</a>
+: <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">uartdrv.c</a>
 </li>
 <li>UARTDRV_Handle_t
 : <a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">uartdrv.h</a>
@@ -227,8 +235,19 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group__UARTDRV.html#ga4489cf61eb7d2c13d3cc9058a4b6bb67">uartdrv.h</a>
 </li>
 <li>UARTDRV_Init()
-: <a class="el" href="group__UARTDRV.html#ga2aa9f087a06d6bf96933d657ac4e55d6">uartdrv.h</a>
-, <a class="el" href="group__UARTDRV.html#ga2aa9f087a06d6bf96933d657ac4e55d6">uartdrv.c</a>
+: <a class="el" href="group__UARTDRV.html#gaf212b2cd9be15b726ee708d7a29f52e4">uartdrv.h</a>
+</li>
+<li>UARTDRV_InitLeuart()
+: <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">uartdrv.c</a>
+</li>
+<li>UARTDRV_InitUart()
+: <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">uartdrv.c</a>
+</li>
+<li>UARTDRV_PauseTransmit()
+: <a class="el" href="group__UARTDRV.html#gafa7cbc80545ad814f338c4043de5023c">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#gafa7cbc80545ad814f338c4043de5023c">uartdrv.c</a>
 </li>
 <li>UARTDRV_Receive()
 : <a class="el" href="group__UARTDRV.html#ga1d8a5e61c33176ad32cf3c1330e132c6">uartdrv.h</a>
@@ -238,8 +257,39 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group__UARTDRV.html#ga5d8380296aa482ac95360d3855a2e150">uartdrv.h</a>
 , <a class="el" href="group__UARTDRV.html#ga5d8380296aa482ac95360d3855a2e150">uartdrv.c</a>
 </li>
+<li>UARTDRV_ResumeTransmit()
+: <a class="el" href="group__UARTDRV.html#ga6e83c35be3ad93e6717ce8dc54a155c7">uartdrv.h</a>
+, <a class="el" href="group__UARTDRV.html#ga6e83c35be3ad93e6717ce8dc54a155c7">uartdrv.c</a>
+</li>
+<li>UARTDRV_STATUS_RXBLOCK
+: <a class="el" href="group__UARTDRV.html#ga7b573bb3467bd635486eb4799d33fee0">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_RXDATAV
+: <a class="el" href="group__UARTDRV.html#gaba243ca92943580f517d8e26bf685eb4">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_RXEN
+: <a class="el" href="group__UARTDRV.html#ga6a02414bd5d236de348307e033c63c8d">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_RXFULL
+: <a class="el" href="group__UARTDRV.html#gabdc7062aa9bb1a3ca7860a92377434fd">uartdrv.h</a>
+</li>
 <li>UARTDRV_Status_t
 : <a class="el" href="group__UARTDRV.html#gae1cf3e2748cf7a377fe60f055c07c3a6">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_TXBL
+: <a class="el" href="group__UARTDRV.html#ga38e1f873de1c17b7514274dc5ccacdd7">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_TXC
+: <a class="el" href="group__UARTDRV.html#gafc884d2cf2e6cfde8a54f31175e87b56">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_TXEN
+: <a class="el" href="group__UARTDRV.html#ga0b27ddd2d05453dff2c3df5d001edd0e">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_TXIDLE
+: <a class="el" href="group__UARTDRV.html#ga554f1d42d707fc8af445012d535127c6">uartdrv.h</a>
+</li>
+<li>UARTDRV_STATUS_TXTRI
+: <a class="el" href="group__UARTDRV.html#ga621cdc332c4242305d3aa26bab29bdf4">uartdrv.h</a>
 </li>
 <li>UARTDRV_Transmit()
 : <a class="el" href="group__UARTDRV.html#ga484ac0b78a9eccb0ec6a1d30b7cc3232">uartdrv.h</a>
@@ -1778,20 +1828,20 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 : <a class="el" href="group__EFM32ZG222F32__Peripheral__Base.html#gafaa164cc1154b4b1ebbcf531f061eaf5">efm32zg222f32.h</a>
 </li>
 <li>USTIMER_DeInit()
-: <a class="el" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">ustimer.c</a>
-, <a class="el" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">ustimer.h</a>
+: <a class="el" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">ustimer.h</a>
+, <a class="el" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">ustimer.c</a>
 </li>
 <li>USTIMER_Delay()
 : <a class="el" href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">ustimer.h</a>
 , <a class="el" href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">ustimer.c</a>
 </li>
 <li>USTIMER_DelayIntSafe()
-: <a class="el" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">ustimer.c</a>
-, <a class="el" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">ustimer.h</a>
+: <a class="el" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">ustimer.h</a>
+, <a class="el" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">ustimer.c</a>
 </li>
 <li>USTIMER_Init()
-: <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">ustimer.c</a>
-, <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">ustimer.h</a>
+: <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">ustimer.h</a>
+, <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">ustimer.c</a>
 </li>
 <li>UV_IRQ_EN
 : <a class="el" href="si114x__uv__index_8c.html#ac0bc067d0ed59e0c3fce84f85b1cccea">si114x_uv_index.c</a>
@@ -1805,7 +1855,7 @@ $(document).ready(function(){initNavTree('globals_u.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 10 2016 14:34:54 for EFM32 Zero Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:55:12 for EFM32 Zero Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

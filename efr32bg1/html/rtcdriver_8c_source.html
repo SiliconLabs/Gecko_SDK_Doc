@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Blue Gecko Software Documentation: C:/work/s025_sw/emdrv/rtcdrv/src/rtcdriver.c Source File</title>
+<title>EFR32 Blue Gecko Software Documentation: C:/work/s025_sw_ssh/emdrv/rtcdrv/src/rtcdriver.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Blue Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32bg1-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efr32bg1-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -684,8 +684,8 @@ $(document).ready(function(){initNavTree('rtcdriver_8c_source.html','');});
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="comment">/***************************************************************************/</span></div>
 <div class="line"><a name="l00705"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#ga3d7c481309659eeada554be33854c103">  705</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__RTCDRV.html#ga3d7c481309659eeada554be33854c103">RTCDRV_TimeRemaining</a>( <a class="code" href="group__RTCDRV.html#gaee916c150e4188cb5647a2cfd3ca1fca">RTCDRV_TimerID_t</a> <span class="keywordtype">id</span>, uint32_t *timeRemaining )</div>
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;{</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;  uint64_t tmp;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;  uint32_t timeLeft, currentCnt, lastRtcStart;</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;  uint64_t ticksLeft;</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;  uint32_t currentCnt, lastRtcStart;</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;</div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;  <span class="comment">// Check if valid timer ID.</span></div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;  <span class="keywordflow">if</span> ( <span class="keywordtype">id</span> &gt;= EMDRV_RTCDRV_NUM_TIMERS ) {</div>
@@ -710,7 +710,7 @@ $(document).ready(function(){initNavTree('rtcdriver_8c_source.html','');});
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__RTCDRV.html#ga6f61a5708b7d1589edebb799eb8521b7">ECODE_EMDRV_RTCDRV_TIMER_NOT_RUNNING</a>;</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;  }</div>
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;  timeLeft     = timer[ id ].remaining;</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;  ticksLeft    = timer[ id ].remaining;</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;  currentCnt   = RTC_COUNTERGET();</div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;  lastRtcStart = lastStart;</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;  <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>();</div>
@@ -718,306 +718,305 @@ $(document).ready(function(){initNavTree('rtcdriver_8c_source.html','');});
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;  <span class="comment">// Get number of RTC clock ticks elapsed since last RTC reschedule.</span></div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;  currentCnt = TIMEDIFF( currentCnt, lastRtcStart );</div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;  <span class="keywordflow">if</span> ( currentCnt &gt; timeLeft ) {</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    timeLeft = 0;</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;  <span class="keywordflow">if</span> ( currentCnt &gt; ticksLeft ) {</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    ticksLeft = 0;</div>
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    timeLeft -= currentCnt;</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    ticksLeft -= currentCnt;</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;  }</div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;  tmp = TICKS_TO_MSEC( timeLeft );</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;  *timeRemaining = tmp;</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>;</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;}</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00761"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#gac9d75dfb6e046529bb9e5b9fc79df272">  761</a></span>&#160;uint32_t <a class="code" href="group__RTCDRV.html#gac9d75dfb6e046529bb9e5b9fc79df272">RTCDRV_GetWallClock</a>( <span class="keywordtype">void</span> )</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;{</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;  <span class="keywordflow">return</span> wallClockTimeBase</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;         + (uint32_t)TICKS_TO_SEC( <a class="code" href="group__RTCDRV.html#ga5950470ac041a5eff659e7e9b016c402">RTCDRV_GetWallClockTicks32</a>() );</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;}</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00777"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#ga5950470ac041a5eff659e7e9b016c402">  777</a></span>&#160;uint32_t <a class="code" href="group__RTCDRV.html#ga5950470ac041a5eff659e7e9b016c402">RTCDRV_GetWallClockTicks32</a>( <span class="keywordtype">void</span> )</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;{</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;  uint32_t overflows, ticks;</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;  <span class="comment">/* Need to re-read data in case overflow cnt is incremented while we read. */</span></div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;  <span class="keywordflow">do</span></div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;  {</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;    overflows = wallClockOverflowCnt;</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    ticks     = RTC_COUNTERGET();</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;  } <span class="keywordflow">while</span> ( overflows != wallClockOverflowCnt );</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;<span class="preprocessor">#if ( RTC_COUNTER_BITS &lt; 32 )</span></div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;  <span class="keywordflow">return</span> ( overflows &lt;&lt; RTC_COUNTER_BITS ) + ticks;</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  <span class="keywordflow">return</span> ticks;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;}</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00804"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#ga84c0a0641d243f1574b865c80cae9736">  804</a></span>&#160;uint64_t <a class="code" href="group__RTCDRV.html#ga84c0a0641d243f1574b865c80cae9736">RTCDRV_GetWallClockTicks64</a>( <span class="keywordtype">void</span> )</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;{</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;  uint64_t overflows, ticks;</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;  <span class="comment">/* Need to re-read data in case overflow cnt is incremented while we read. */</span></div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;  <span class="keywordflow">do</span></div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;  {</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    overflows = wallClockOverflowCnt;</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    ticks     = RTC_COUNTERGET();</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;  } <span class="keywordflow">while</span> ( overflows != wallClockOverflowCnt );</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;  <span class="keywordflow">return</span> ( overflows &lt;&lt; RTC_COUNTER_BITS ) + ticks;</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;}</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00829"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#ga8a56711f0cca956094187d4345964232">  829</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__RTCDRV.html#ga8a56711f0cca956094187d4345964232">RTCDRV_SetWallClock</a>( uint32_t secs )</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;{</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;  wallClockTimeBase = secs - TICKS_TO_SEC( <a class="code" href="group__RTCDRV.html#ga5950470ac041a5eff659e7e9b016c402">RTCDRV_GetWallClockTicks32</a>() );</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>;</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;}</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00846"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#gadc6ac3c03c378a577b1a984941b8e3ff">  846</a></span>&#160;uint64_t  <a class="code" href="group__RTCDRV.html#gadc6ac3c03c378a577b1a984941b8e3ff">RTCDRV_MsecsToTicks</a>( uint32_t ms )</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;{</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;  <span class="keywordflow">return</span> MSEC_TO_TICKS( ms );</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;}</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00862"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#ga05460d0b01eda411ec536833328f43ea">  862</a></span>&#160;uint64_t  <a class="code" href="group__RTCDRV.html#ga05460d0b01eda411ec536833328f43ea">RTCDRV_SecsToTicks</a>( uint32_t secs )</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;{</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;  <span class="keywordflow">return</span> MSEC_TO_TICKS( 1000 * secs );</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;}</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00878"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#ga1bc6098cd0c2ae5d7ef2f24444eb8f1a">  878</a></span>&#160;uint32_t  <a class="code" href="group__RTCDRV.html#ga1bc6098cd0c2ae5d7ef2f24444eb8f1a">RTCDRV_TicksToMsec</a>( uint64_t ticks )</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;{</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;  <span class="keywordflow">return</span> TICKS_TO_MSEC( ticks );</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;}</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00894"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#gac52e05089b461ddb5ca4b2dffa04a575">  894</a></span>&#160;uint32_t  <a class="code" href="group__RTCDRV.html#gac52e05089b461ddb5ca4b2dffa04a575">RTCDRV_TicksToSec</a>( uint64_t ticks )</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;{</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;  <span class="keywordflow">return</span> TICKS_TO_MSEC( ticks ) / 1000;</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;}</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;<span class="preprocessor">#if defined( RTCDRV_USE_RTC )</span></div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;<span class="keywordtype">void</span> RTC_IRQHandler(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;<span class="preprocessor">#elif defined( RTCDRV_USE_RTCC )</span></div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;<span class="keywordtype">void</span> RTCC_IRQHandler(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;{</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;  uint32_t flags, timeElapsed, cnt, timeToNextTimerCompletion;</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;  <a class="code" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a>();</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;  <span class="comment">// CNT will normally be COMP0+1 at this point,</span></div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;  <span class="comment">// unless IRQ latency exceeded one tick period.</span></div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;  flags = RTC_INTGET();</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;  <span class="keywordflow">if</span> ( flags &amp; RTC_COMP_INT ) {</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    <span class="comment">// Stop timer system by disabling the compare IRQ.</span></div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;    <span class="comment">// Update all timers with the time elapsed, call callbacks if needed,</span></div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;    <span class="comment">// then find the timer with the shortest timeout (if any at all) and</span></div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;    <span class="comment">// reenable the compare IRQ if needed.</span></div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;    inTimerIRQ = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;    cnt = RTC_COUNTERGET();</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    <span class="comment">// This loop is repeated if CNT is incremented while processing.</span></div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;    <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;      RTC_INTDISABLE( RTC_COMP_INT );</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;      timeElapsed = TIMEDIFF( cnt, lastStart );</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;      <span class="comment">// Update all timers with elapsed time.</span></div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;      checkAllTimers( timeElapsed );</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;      <span class="comment">// Execute timer callbacks.</span></div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;      executeTimerCallbacks();</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;      <span class="comment">// Restart RTC according to next timeout.</span></div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;      rescheduleRtc( cnt );</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;      cnt = RTC_COUNTERGET();</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;      timeElapsed = TIMEDIFF( cnt, lastStart );</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;      timeToNextTimerCompletion = TIMEDIFF( RTC_COMPAREGET(), lastStart );</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;      <span class="comment">/* If the counter has passed the COMP(ARE) register value since we</span></div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;<span class="comment">         checked the timers, then we should recheck the timers and reschedule</span></div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;<span class="comment">         again. */</span></div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    }</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    <span class="keywordflow">while</span> ( rtcRunning &amp;&amp; (timeElapsed &gt; timeToNextTimerCompletion));</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;    inTimerIRQ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;  }</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;  <span class="keywordflow">if</span> ( flags &amp; RTC_OF_INT )</div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;  {</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;    RTC_INTCLEAR( RTC_OF_INT );</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;    wallClockOverflowCnt++;</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;  }</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;  <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>();</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;}</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> checkAllTimers( uint32_t timeElapsed )</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;{</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;  <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;<span class="preprocessor">#if defined( EMODE_DYNAMIC )</span></div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;  <span class="keywordtype">int</span> numOfTimersRunning = 0;</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;  <span class="comment">// Iterate through the timer table.</span></div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;  <span class="comment">// Update time remaining, check for timeout and rescheduling of periodic</span></div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;  <span class="comment">// timers, check for callbacks.</span></div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;</div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;  <span class="keywordflow">for</span> ( i = 0; i &lt; EMDRV_RTCDRV_NUM_TIMERS; i++ ) {</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    timer[ i ].doCallback = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;    <span class="keywordflow">if</span> ( timer[ i ].running == <span class="keyword">true</span> ) {</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;<span class="preprocessor">#if defined( EMODE_DYNAMIC )</span></div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;      numOfTimersRunning++;</div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;      <span class="keywordflow">if</span> ( timer[ i ].remaining &gt; timeElapsed ) {</div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;        timer[ i ].remaining -= timeElapsed;</div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;        <span class="keywordflow">if</span> ( timer[ i ].timerType == <a class="code" href="group__RTCDRV.html#gga08a8750e466e18aee02bbb692446dac9a26cdf021f3fc64a2122e7f13f9ff64f1">rtcdrvTimerTypeOneshot</a> ) {</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;          timer[ i ].running = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;<span class="preprocessor">#if defined( EMODE_DYNAMIC )</span></div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;          numOfTimersRunning--;</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;          <span class="comment">// Compensate overdue periodic timers to avoid accumlating errors.</span></div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;          timer[ i ].remaining = timer[ i ].ticks - timeElapsed +</div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;                                 timer[ i ].remaining;</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;          <span class="keywordflow">if</span> ( timer[ i ].periodicCompensationUsec &gt; 0 ) {</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;            timer[ i ].periodicDriftUsec += timer[i].periodicCompensationUsec;</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;            <span class="keywordflow">if</span> (timer[ i ].periodicDriftUsec &gt;= TICK_TIME_USEC) {</div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;              <span class="comment">// Add a tick if the timer drift is longer than the time of</span></div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;              <span class="comment">// one tick.</span></div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;              timer[ i ].remaining += 1;</div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;              timer[ i ].periodicDriftUsec -= TICK_TIME_USEC;</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;            }</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;          }</div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;          <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;            timer[ i ].periodicDriftUsec -= timer[i].periodicCompensationUsec;</div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;            <span class="keywordflow">if</span> (timer[ i ].periodicDriftUsec &gt;= TICK_TIME_USEC) {</div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;              <span class="comment">// Subtract one tick if the timer drift is longer than the time</span></div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;              <span class="comment">// of one tick.</span></div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;              timer[ i ].remaining -= 1;</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;              timer[ i ].periodicDriftUsec -= TICK_TIME_USEC;</div>
-<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;            }</div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;          }</div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;        }</div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;        <span class="keywordflow">if</span> ( timer[ i ].callback != NULL ) {</div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;          timer[ i ].doCallback = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;        }</div>
-<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;      }</div>
-<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    }</div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;  }</div>
-<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;</div>
-<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;<span class="preprocessor">#if defined( EMODE_DYNAMIC )</span></div>
-<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;  <span class="comment">// If no timers are running, we can remove block on EM3 and EM4 sleep modes.</span></div>
-<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;  <span class="keywordflow">if</span> ( ( numOfTimersRunning == 0 ) &amp;&amp; ( sleepBlocked == <span class="keyword">true</span> ) ) {</div>
-<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;    sleepBlocked = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;    <a class="code" href="group__SLEEP.html#ga1dd174edab75f62e330d1fb10b902e2d">SLEEP_SleepBlockEnd</a>( <a class="code" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a> );</div>
-<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;  }</div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;}</div>
-<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;</div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> delayTicks( uint32_t ticks )</div>
-<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;{</div>
-<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;  uint32_t startTime;</div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;  <span class="keyword">volatile</span> uint32_t now;</div>
-<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;</div>
-<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;  <span class="keywordflow">if</span> ( ticks ) {</div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;    startTime = RTC_COUNTERGET();</div>
-<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;    <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;      now = RTC_COUNTERGET();</div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;    } <span class="keywordflow">while</span> ( TIMEDIFF( now, startTime ) &lt; ticks );</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;  }</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;}</div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;</div>
-<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> executeTimerCallbacks( <span class="keywordtype">void</span> )</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;{</div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;  <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;</div>
-<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;  <span class="keywordflow">for</span> ( i = 0; i &lt; EMDRV_RTCDRV_NUM_TIMERS; i++ ) {</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;    <span class="keywordflow">if</span> ( timer[ i ].doCallback ) {</div>
-<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;      timer[ i ].callback( i, timer[ i ].user );</div>
-<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;    }</div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;  }</div>
-<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;}</div>
-<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;</div>
-<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> rescheduleRtc( uint32_t rtcCnt )</div>
-<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;{</div>
-<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;  <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;  uint64_t min = UINT64_MAX;</div>
-<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;</div>
-<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;  <span class="comment">// Find the timer with shortest timeout.</span></div>
-<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;  <span class="keywordflow">for</span> ( i = 0; i &lt; EMDRV_RTCDRV_NUM_TIMERS; i++ ) {</div>
-<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;    <span class="keywordflow">if</span> (    ( timer[ i ].running   == <span class="keyword">true</span> )</div>
-<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;         &amp;&amp; ( timer[ i ].remaining &lt;  min  ) ) {</div>
-<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;      min = timer[ i ].remaining;</div>
-<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;    }</div>
-<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;  }</div>
-<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;</div>
-<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;  rtcRunning = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;  <span class="keywordflow">if</span> ( min != UINT64_MAX ) {</div>
-<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;    min = <a class="code" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>( min, RTC_CLOSE_TO_MAX_VALUE );</div>
-<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;<span class="preprocessor">#if defined( RTCDRV_USE_RTC )</span></div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;    <span class="keywordflow">if</span> ( inTimerIRQ == <span class="keyword">false</span> ) {</div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;      lastStart = ( rtcCnt ) &amp; RTC_COUNTER_MASK;</div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;    } <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;    {</div>
-<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;      lastStart = rtcCnt;</div>
-<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;    }</div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;    RTC_INTCLEAR( RTC_COMP_INT );</div>
-<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;</div>
-<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;    RTC_COMPARESET( rtcCnt + min );</div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;</div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;<span class="preprocessor">#if defined( EMODE_DYNAMIC )</span></div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;    <span class="comment">// When RTC is running, we can not allow EM3 or EM4.</span></div>
-<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    <span class="keywordflow">if</span> ( sleepBlocked == <span class="keyword">false</span> ) {</div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;      sleepBlocked = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;      <a class="code" href="group__SLEEP.html#gac26ef85c0817797fb9ec823d38742af7">SLEEP_SleepBlockBegin</a>( <a class="code" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a> );</div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;    }</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;</div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;    rtcRunning = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;</div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;    <span class="comment">// Reenable compare IRQ.</span></div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;    RTC_INTENABLE( RTC_COMP_INT );</div>
-<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;  }</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;}</div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;</div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;<span class="comment">/******** THE REST OF THE FILE IS DOCUMENTATION ONLY !**********************/</span></div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;  *timeRemaining = TICKS_TO_MSEC( ticksLeft );</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;}</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00760"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#gac9d75dfb6e046529bb9e5b9fc79df272">  760</a></span>&#160;uint32_t <a class="code" href="group__RTCDRV.html#gac9d75dfb6e046529bb9e5b9fc79df272">RTCDRV_GetWallClock</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;{</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;  <span class="keywordflow">return</span> wallClockTimeBase</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;         + (uint32_t)TICKS_TO_SEC( <a class="code" href="group__RTCDRV.html#ga5950470ac041a5eff659e7e9b016c402">RTCDRV_GetWallClockTicks32</a>() );</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;}</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00776"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#ga5950470ac041a5eff659e7e9b016c402">  776</a></span>&#160;uint32_t <a class="code" href="group__RTCDRV.html#ga5950470ac041a5eff659e7e9b016c402">RTCDRV_GetWallClockTicks32</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;{</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;  uint32_t overflows, ticks;</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;  <span class="comment">/* Need to re-read data in case overflow cnt is incremented while we read. */</span></div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;  <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;  {</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;    overflows = wallClockOverflowCnt;</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;    ticks     = RTC_COUNTERGET();</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;  } <span class="keywordflow">while</span> ( overflows != wallClockOverflowCnt );</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;<span class="preprocessor">#if ( RTC_COUNTER_BITS &lt; 32 )</span></div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  <span class="keywordflow">return</span> ( overflows &lt;&lt; RTC_COUNTER_BITS ) + ticks;</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  <span class="keywordflow">return</span> ticks;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;}</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00803"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#ga84c0a0641d243f1574b865c80cae9736">  803</a></span>&#160;uint64_t <a class="code" href="group__RTCDRV.html#ga84c0a0641d243f1574b865c80cae9736">RTCDRV_GetWallClockTicks64</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;{</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;  uint64_t overflows, ticks;</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;  <span class="comment">/* Need to re-read data in case overflow cnt is incremented while we read. */</span></div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;  <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;  {</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    overflows = wallClockOverflowCnt;</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    ticks     = RTC_COUNTERGET();</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;  } <span class="keywordflow">while</span> ( overflows != wallClockOverflowCnt );</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;  <span class="keywordflow">return</span> ( overflows &lt;&lt; RTC_COUNTER_BITS ) + ticks;</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;}</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00828"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#ga8a56711f0cca956094187d4345964232">  828</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__RTCDRV.html#ga8a56711f0cca956094187d4345964232">RTCDRV_SetWallClock</a>( uint32_t secs )</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;{</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;  wallClockTimeBase = secs - TICKS_TO_SEC( <a class="code" href="group__RTCDRV.html#ga5950470ac041a5eff659e7e9b016c402">RTCDRV_GetWallClockTicks32</a>() );</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>;</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;}</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00845"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#gadc6ac3c03c378a577b1a984941b8e3ff">  845</a></span>&#160;uint64_t  <a class="code" href="group__RTCDRV.html#gadc6ac3c03c378a577b1a984941b8e3ff">RTCDRV_MsecsToTicks</a>( uint32_t ms )</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;{</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;  <span class="keywordflow">return</span> MSEC_TO_TICKS( ms );</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;}</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00861"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#ga05460d0b01eda411ec536833328f43ea">  861</a></span>&#160;uint64_t  <a class="code" href="group__RTCDRV.html#ga05460d0b01eda411ec536833328f43ea">RTCDRV_SecsToTicks</a>( uint32_t secs )</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;{</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;  <span class="keywordflow">return</span> MSEC_TO_TICKS( 1000 * secs );</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;}</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00877"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#ga1bc6098cd0c2ae5d7ef2f24444eb8f1a">  877</a></span>&#160;uint32_t  <a class="code" href="group__RTCDRV.html#ga1bc6098cd0c2ae5d7ef2f24444eb8f1a">RTCDRV_TicksToMsec</a>( uint64_t ticks )</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;{</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;  <span class="keywordflow">return</span> TICKS_TO_MSEC( ticks );</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;}</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00893"></a><span class="lineno"><a class="line" href="group__RTCDRV.html#gac52e05089b461ddb5ca4b2dffa04a575">  893</a></span>&#160;uint32_t  <a class="code" href="group__RTCDRV.html#gac52e05089b461ddb5ca4b2dffa04a575">RTCDRV_TicksToSec</a>( uint64_t ticks )</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;{</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;  <span class="keywordflow">return</span> TICKS_TO_MSEC( ticks ) / 1000;</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;}</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;<span class="preprocessor">#if defined( RTCDRV_USE_RTC )</span></div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;<span class="keywordtype">void</span> RTC_IRQHandler(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;<span class="preprocessor">#elif defined( RTCDRV_USE_RTCC )</span></div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;<span class="keywordtype">void</span> RTCC_IRQHandler(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;{</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;  uint32_t flags, timeElapsed, cnt, timeToNextTimerCompletion;</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;  <a class="code" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a>();</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;  <span class="comment">// CNT will normally be COMP0+1 at this point,</span></div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;  <span class="comment">// unless IRQ latency exceeded one tick period.</span></div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;  flags = RTC_INTGET();</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;  <span class="keywordflow">if</span> ( flags &amp; RTC_COMP_INT ) {</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;    <span class="comment">// Stop timer system by disabling the compare IRQ.</span></div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    <span class="comment">// Update all timers with the time elapsed, call callbacks if needed,</span></div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;    <span class="comment">// then find the timer with the shortest timeout (if any at all) and</span></div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;    <span class="comment">// reenable the compare IRQ if needed.</span></div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;    inTimerIRQ = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;    cnt = RTC_COUNTERGET();</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;    <span class="comment">// This loop is repeated if CNT is incremented while processing.</span></div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;      RTC_INTDISABLE( RTC_COMP_INT );</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;      timeElapsed = TIMEDIFF( cnt, lastStart );</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;      <span class="comment">// Update all timers with elapsed time.</span></div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;      checkAllTimers( timeElapsed );</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;      <span class="comment">// Execute timer callbacks.</span></div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;      executeTimerCallbacks();</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;      <span class="comment">// Restart RTC according to next timeout.</span></div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;      rescheduleRtc( cnt );</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;      cnt = RTC_COUNTERGET();</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;      timeElapsed = TIMEDIFF( cnt, lastStart );</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;      timeToNextTimerCompletion = TIMEDIFF( RTC_COMPAREGET(), lastStart );</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;      <span class="comment">/* If the counter has passed the COMP(ARE) register value since we</span></div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;<span class="comment">         checked the timers, then we should recheck the timers and reschedule</span></div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;<span class="comment">         again. */</span></div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;    }</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    <span class="keywordflow">while</span> ( rtcRunning &amp;&amp; (timeElapsed &gt; timeToNextTimerCompletion));</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    inTimerIRQ = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;  }</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;<span class="preprocessor">#if defined( EMDRV_RTCDRV_WALLCLOCK_CONFIG )</span></div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;  <span class="keywordflow">if</span> ( flags &amp; RTC_OF_INT )</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;  {</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;    RTC_INTCLEAR( RTC_OF_INT );</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;    wallClockOverflowCnt++;</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;  }</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;  <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>();</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;}</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> checkAllTimers( uint32_t timeElapsed )</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;{</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;  <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;<span class="preprocessor">#if defined( EMODE_DYNAMIC )</span></div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;  <span class="keywordtype">int</span> numOfTimersRunning = 0;</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;  <span class="comment">// Iterate through the timer table.</span></div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;  <span class="comment">// Update time remaining, check for timeout and rescheduling of periodic</span></div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;  <span class="comment">// timers, check for callbacks.</span></div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;</div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;  <span class="keywordflow">for</span> ( i = 0; i &lt; EMDRV_RTCDRV_NUM_TIMERS; i++ ) {</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;    timer[ i ].doCallback = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    <span class="keywordflow">if</span> ( timer[ i ].running == <span class="keyword">true</span> ) {</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;<span class="preprocessor">#if defined( EMODE_DYNAMIC )</span></div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;      numOfTimersRunning++;</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;      <span class="keywordflow">if</span> ( timer[ i ].remaining &gt; timeElapsed ) {</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;        timer[ i ].remaining -= timeElapsed;</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;        <span class="keywordflow">if</span> ( timer[ i ].timerType == <a class="code" href="group__RTCDRV.html#gga08a8750e466e18aee02bbb692446dac9a26cdf021f3fc64a2122e7f13f9ff64f1">rtcdrvTimerTypeOneshot</a> ) {</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;          timer[ i ].running = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;<span class="preprocessor">#if defined( EMODE_DYNAMIC )</span></div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;          numOfTimersRunning--;</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;          <span class="comment">// Compensate overdue periodic timers to avoid accumlating errors.</span></div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;          timer[ i ].remaining = timer[ i ].ticks - timeElapsed +</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;                                 timer[ i ].remaining;</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;          <span class="keywordflow">if</span> ( timer[ i ].periodicCompensationUsec &gt; 0 ) {</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;            timer[ i ].periodicDriftUsec += timer[i].periodicCompensationUsec;</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;            <span class="keywordflow">if</span> (timer[ i ].periodicDriftUsec &gt;= TICK_TIME_USEC) {</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;              <span class="comment">// Add a tick if the timer drift is longer than the time of</span></div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;              <span class="comment">// one tick.</span></div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;              timer[ i ].remaining += 1;</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;              timer[ i ].periodicDriftUsec -= TICK_TIME_USEC;</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;            }</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;          }</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;          <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;            timer[ i ].periodicDriftUsec -= timer[i].periodicCompensationUsec;</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;            <span class="keywordflow">if</span> (timer[ i ].periodicDriftUsec &gt;= TICK_TIME_USEC) {</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;              <span class="comment">// Subtract one tick if the timer drift is longer than the time</span></div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;              <span class="comment">// of one tick.</span></div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;              timer[ i ].remaining -= 1;</div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;              timer[ i ].periodicDriftUsec -= TICK_TIME_USEC;</div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;            }</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;          }</div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;        }</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;        <span class="keywordflow">if</span> ( timer[ i ].callback != NULL ) {</div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;          timer[ i ].doCallback = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;        }</div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;      }</div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;    }</div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;  }</div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;<span class="preprocessor">#if defined( EMODE_DYNAMIC )</span></div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;  <span class="comment">// If no timers are running, we can remove block on EM3 and EM4 sleep modes.</span></div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;  <span class="keywordflow">if</span> ( ( numOfTimersRunning == 0 ) &amp;&amp; ( sleepBlocked == <span class="keyword">true</span> ) ) {</div>
+<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;    sleepBlocked = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;    <a class="code" href="group__SLEEP.html#ga1dd174edab75f62e330d1fb10b902e2d">SLEEP_SleepBlockEnd</a>( <a class="code" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a> );</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;  }</div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;}</div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;</div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> delayTicks( uint32_t ticks )</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;{</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;  uint32_t startTime;</div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;  <span class="keyword">volatile</span> uint32_t now;</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;  <span class="keywordflow">if</span> ( ticks ) {</div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;    startTime = RTC_COUNTERGET();</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;      now = RTC_COUNTERGET();</div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;    } <span class="keywordflow">while</span> ( TIMEDIFF( now, startTime ) &lt; ticks );</div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;  }</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;}</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> executeTimerCallbacks( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;{</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;  <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;  <span class="keywordflow">for</span> ( i = 0; i &lt; EMDRV_RTCDRV_NUM_TIMERS; i++ ) {</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;    <span class="keywordflow">if</span> ( timer[ i ].doCallback ) {</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;      timer[ i ].callback( i, timer[ i ].user );</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;    }</div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;  }</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;}</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> rescheduleRtc( uint32_t rtcCnt )</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;{</div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;  <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;  uint64_t min = UINT64_MAX;</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;</div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;  <span class="comment">// Find the timer with shortest timeout.</span></div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;  <span class="keywordflow">for</span> ( i = 0; i &lt; EMDRV_RTCDRV_NUM_TIMERS; i++ ) {</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;    <span class="keywordflow">if</span> (    ( timer[ i ].running   == <span class="keyword">true</span> )</div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;         &amp;&amp; ( timer[ i ].remaining &lt;  min  ) ) {</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;      min = timer[ i ].remaining;</div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;    }</div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;  }</div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;  rtcRunning = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;  <span class="keywordflow">if</span> ( min != UINT64_MAX ) {</div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;    min = <a class="code" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>( min, RTC_CLOSE_TO_MAX_VALUE );</div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;<span class="preprocessor">#if defined( RTCDRV_USE_RTC )</span></div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;    <span class="keywordflow">if</span> ( inTimerIRQ == <span class="keyword">false</span> ) {</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;      lastStart = ( rtcCnt ) &amp; RTC_COUNTER_MASK;</div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;    } <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;    {</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;      lastStart = rtcCnt;</div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;    }</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;    RTC_INTCLEAR( RTC_COMP_INT );</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;</div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;    RTC_COMPARESET( rtcCnt + min );</div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;</div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;<span class="preprocessor">#if defined( EMODE_DYNAMIC )</span></div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;    <span class="comment">// When RTC is running, we can not allow EM3 or EM4.</span></div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;    <span class="keywordflow">if</span> ( sleepBlocked == <span class="keyword">false</span> ) {</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;      sleepBlocked = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;      <a class="code" href="group__SLEEP.html#gac26ef85c0817797fb9ec823d38742af7">SLEEP_SleepBlockBegin</a>( <a class="code" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a> );</div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;    }</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;    rtcRunning = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;    <span class="comment">// Reenable compare IRQ.</span></div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;    RTC_INTENABLE( RTC_COMP_INT );</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;  }</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;}</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;<span class="comment">/******** THE REST OF THE FILE IS DOCUMENTATION ONLY !**********************/</span></div>
 <div class="ttc" id="em__cmu_8h_html"><div class="ttname"><a href="em__cmu_8h.html">em_cmu.h</a></div><div class="ttdoc">Clock management unit (CMU) API. </div></div>
-<div class="ttc" id="group__CMU_html_gae11949f9c2e4033ad63dac48c9a739d3"><div class="ttname"><a href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet</a></div><div class="ttdeci">void CMU_ClockSelectSet(CMU_Clock_TypeDef clock, CMU_Select_TypeDef ref)</div><div class="ttdoc">Select reference clock/oscillator used for a clock branch. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l02415">em_cmu.c:2415</a></div></div>
-<div class="ttc" id="group__RTCDRV_html_ga05460d0b01eda411ec536833328f43ea"><div class="ttname"><a href="group__RTCDRV.html#ga05460d0b01eda411ec536833328f43ea">RTCDRV_SecsToTicks</a></div><div class="ttdeci">uint64_t RTCDRV_SecsToTicks(uint32_t secs)</div><div class="ttdoc">Convert from seconds to RTC/RTCC ticks. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00862">rtcdriver.c:862</a></div></div>
+<div class="ttc" id="group__CMU_html_gae11949f9c2e4033ad63dac48c9a739d3"><div class="ttname"><a href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet</a></div><div class="ttdeci">void CMU_ClockSelectSet(CMU_Clock_TypeDef clock, CMU_Select_TypeDef ref)</div><div class="ttdoc">Select reference clock/oscillator used for a clock branch. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l02435">em_cmu.c:2435</a></div></div>
+<div class="ttc" id="group__RTCDRV_html_ga05460d0b01eda411ec536833328f43ea"><div class="ttname"><a href="group__RTCDRV.html#ga05460d0b01eda411ec536833328f43ea">RTCDRV_SecsToTicks</a></div><div class="ttdeci">uint64_t RTCDRV_SecsToTicks(uint32_t secs)</div><div class="ttdoc">Convert from seconds to RTC/RTCC ticks. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00861">rtcdriver.c:861</a></div></div>
 <div class="ttc" id="group__SLEEP_html_ga1dd174edab75f62e330d1fb10b902e2d"><div class="ttname"><a href="group__SLEEP.html#ga1dd174edab75f62e330d1fb10b902e2d">SLEEP_SleepBlockEnd</a></div><div class="ttdeci">void SLEEP_SleepBlockEnd(SLEEP_EnergyMode_t eMode)</div><div class="ttdoc">End sleep block in the requested energy mode. </div><div class="ttdef"><b>Definition:</b> <a href="sleep_8c_source.html#l00295">sleep.c:295</a></div></div>
 <div class="ttc" id="group__RTCC_html_ggaca3af9bdf0979b882fa0ea6d5847ff36a66352f5d530239f525b53cecfa120a13"><div class="ttname"><a href="group__RTCC.html#ggaca3af9bdf0979b882fa0ea6d5847ff36a66352f5d530239f525b53cecfa120a13">rtccPRSCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00126">em_rtcc.h:126</a></div></div>
 <div class="ttc" id="group__RTCC_html_gga99b059f50a485234a456503ca956ea1ea30dcaebe744d82e1a92bb4d381ff576f"><div class="ttname"><a href="group__RTCC.html#gga99b059f50a485234a456503ca956ea1ea30dcaebe744d82e1a92bb4d381ff576f">rtccCntModeNormal</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00064">em_rtcc.h:64</a></div></div>
@@ -1034,7 +1033,7 @@ $(document).ready(function(){initNavTree('rtcdriver_8c_source.html','');});
 <div class="ttc" id="group__INT_html_gafba0338f70b8fab23d8b5c00ec15df56"><div class="ttname"><a href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a></div><div class="ttdeci">__STATIC_INLINE uint32_t INT_Enable(void)</div><div class="ttdoc">Enable interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__int_8h_source.html#l00094">em_int.h:94</a></div></div>
 <div class="ttc" id="group__RTCDRV_html_gaef2d97c6223617d158b05e03ee35950a"><div class="ttname"><a href="group__RTCDRV.html#gaef2d97c6223617d158b05e03ee35950a">RTCDRV_AllocateTimer</a></div><div class="ttdeci">Ecode_t RTCDRV_AllocateTimer(RTCDRV_TimerID_t *id)</div><div class="ttdoc">Allocate timer. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00231">rtcdriver.c:231</a></div></div>
 <div class="ttc" id="group__RTCC_html_ggaca22e74b99f507c580c2069a97b0bfe4a4263042eea73841b941f8b8d2fbb42ed"><div class="ttname"><a href="group__RTCC.html#ggaca22e74b99f507c580c2069a97b0bfe4a4263042eea73841b941f8b8d2fbb42ed">rtccDayCompareModeMonth</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00164">em_rtcc.h:164</a></div></div>
-<div class="ttc" id="group__RTCDRV_html_ga8a56711f0cca956094187d4345964232"><div class="ttname"><a href="group__RTCDRV.html#ga8a56711f0cca956094187d4345964232">RTCDRV_SetWallClock</a></div><div class="ttdeci">Ecode_t RTCDRV_SetWallClock(uint32_t secs)</div><div class="ttdoc">Set wallclock time. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00829">rtcdriver.c:829</a></div></div>
+<div class="ttc" id="group__RTCDRV_html_ga8a56711f0cca956094187d4345964232"><div class="ttname"><a href="group__RTCDRV.html#ga8a56711f0cca956094187d4345964232">RTCDRV_SetWallClock</a></div><div class="ttdeci">Ecode_t RTCDRV_SetWallClock(uint32_t secs)</div><div class="ttdoc">Set wallclock time. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00828">rtcdriver.c:828</a></div></div>
 <div class="ttc" id="em__device_8h_html"><div class="ttname"><a href="em__device_8h.html">em_device.h</a></div><div class="ttdoc">CMSIS Cortex-M Peripheral Access Layer for Silicon Laboratories microcontroller devices. </div></div>
 <div class="ttc" id="group__SLEEP_html_gac26ef85c0817797fb9ec823d38742af7"><div class="ttname"><a href="group__SLEEP.html#gac26ef85c0817797fb9ec823d38742af7">SLEEP_SleepBlockBegin</a></div><div class="ttdeci">void SLEEP_SleepBlockBegin(SLEEP_EnergyMode_t eMode)</div><div class="ttdoc">Begin sleep block in the requested energy mode. </div><div class="ttdef"><b>Definition:</b> <a href="sleep_8c_source.html#l00249">sleep.c:249</a></div></div>
 <div class="ttc" id="group__RTCDRV_html_ga3d7c481309659eeada554be33854c103"><div class="ttname"><a href="group__RTCDRV.html#ga3d7c481309659eeada554be33854c103">RTCDRV_TimeRemaining</a></div><div class="ttdeci">Ecode_t RTCDRV_TimeRemaining(RTCDRV_TimerID_t id, uint32_t *timeRemaining)</div><div class="ttdoc">Get time left before a given timer expires. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00705">rtcdriver.c:705</a></div></div>
@@ -1049,19 +1048,19 @@ $(document).ready(function(){initNavTree('rtcdriver_8c_source.html','');});
 <div class="ttc" id="group__RTCDRV_html_ga7d3614e56f17c24103336a37891579a4"><div class="ttname"><a href="group__RTCDRV.html#ga7d3614e56f17c24103336a37891579a4">RTCDRV_StopTimer</a></div><div class="ttdeci">Ecode_t RTCDRV_StopTimer(RTCDRV_TimerID_t id)</div><div class="ttdoc">Stop a given timer. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00670">rtcdriver.c:670</a></div></div>
 <div class="ttc" id="group__RTCDRV_html_ga4419076832c5b4958dea6f1eec0a9bdf"><div class="ttname"><a href="group__RTCDRV.html#ga4419076832c5b4958dea6f1eec0a9bdf">RTCDRV_Init</a></div><div class="ttdeci">Ecode_t RTCDRV_Init(void)</div><div class="ttdoc">Initialize RTCDRV driver. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00325">rtcdriver.c:325</a></div></div>
 <div class="ttc" id="group__RTCDRV_html_ga438d9a6102b0bc78eb9d0f80dd9ae6d4"><div class="ttname"><a href="group__RTCDRV.html#ga438d9a6102b0bc78eb9d0f80dd9ae6d4">ECODE_EMDRV_RTCDRV_ALL_TIMERS_USED</a></div><div class="ttdeci">#define ECODE_EMDRV_RTCDRV_ALL_TIMERS_USED</div><div class="ttdoc">No timers available. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8h_source.html#l00041">rtcdriver.h:41</a></div></div>
-<div class="ttc" id="group__RTCDRV_html_ga5950470ac041a5eff659e7e9b016c402"><div class="ttname"><a href="group__RTCDRV.html#ga5950470ac041a5eff659e7e9b016c402">RTCDRV_GetWallClockTicks32</a></div><div class="ttdeci">uint32_t RTCDRV_GetWallClockTicks32(void)</div><div class="ttdoc">Get wallclock tick count as a 32bit value. At 4 ticks per millisecond, overflow occurs after approxim...</div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00777">rtcdriver.c:777</a></div></div>
-<div class="ttc" id="group__RTCDRV_html_gac9d75dfb6e046529bb9e5b9fc79df272"><div class="ttname"><a href="group__RTCDRV.html#gac9d75dfb6e046529bb9e5b9fc79df272">RTCDRV_GetWallClock</a></div><div class="ttdeci">uint32_t RTCDRV_GetWallClock(void)</div><div class="ttdoc">Get wallclock time. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00761">rtcdriver.c:761</a></div></div>
-<div class="ttc" id="group__RTCDRV_html_ga1bc6098cd0c2ae5d7ef2f24444eb8f1a"><div class="ttname"><a href="group__RTCDRV.html#ga1bc6098cd0c2ae5d7ef2f24444eb8f1a">RTCDRV_TicksToMsec</a></div><div class="ttdeci">uint32_t RTCDRV_TicksToMsec(uint64_t ticks)</div><div class="ttdoc">Convert from RTC/RTCC ticks to milliseconds. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00878">rtcdriver.c:878</a></div></div>
+<div class="ttc" id="group__RTCDRV_html_ga5950470ac041a5eff659e7e9b016c402"><div class="ttname"><a href="group__RTCDRV.html#ga5950470ac041a5eff659e7e9b016c402">RTCDRV_GetWallClockTicks32</a></div><div class="ttdeci">uint32_t RTCDRV_GetWallClockTicks32(void)</div><div class="ttdoc">Get wallclock tick count as a 32bit value. At 4 ticks per millisecond, overflow occurs after approxim...</div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00776">rtcdriver.c:776</a></div></div>
+<div class="ttc" id="group__RTCDRV_html_gac9d75dfb6e046529bb9e5b9fc79df272"><div class="ttname"><a href="group__RTCDRV.html#gac9d75dfb6e046529bb9e5b9fc79df272">RTCDRV_GetWallClock</a></div><div class="ttdeci">uint32_t RTCDRV_GetWallClock(void)</div><div class="ttdoc">Get wallclock time. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00760">rtcdriver.c:760</a></div></div>
+<div class="ttc" id="group__RTCDRV_html_ga1bc6098cd0c2ae5d7ef2f24444eb8f1a"><div class="ttname"><a href="group__RTCDRV.html#ga1bc6098cd0c2ae5d7ef2f24444eb8f1a">RTCDRV_TicksToMsec</a></div><div class="ttdeci">uint32_t RTCDRV_TicksToMsec(uint64_t ticks)</div><div class="ttdoc">Convert from RTC/RTCC ticks to milliseconds. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00877">rtcdriver.c:877</a></div></div>
 <div class="ttc" id="group__RTCC_html_gab7534987a5b7ef7a3616d334f6944278"><div class="ttname"><a href="group__RTCC.html#gab7534987a5b7ef7a3616d334f6944278">RTCC_ChannelInit</a></div><div class="ttdeci">void RTCC_ChannelInit(int ch, RTCC_CCChConf_TypeDef const *confPtr)</div><div class="ttdoc">Configure the selected capture/compare channel of the RTCC. </div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8c_source.html#l00081">em_rtcc.c:81</a></div></div>
 <div class="ttc" id="structRTCC__CCChConf__TypeDef_html"><div class="ttname"><a href="structRTCC__CCChConf__TypeDef.html">RTCC_CCChConf_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00214">em_rtcc.h:214</a></div></div>
-<div class="ttc" id="group__RTCDRV_html_ga84c0a0641d243f1574b865c80cae9736"><div class="ttname"><a href="group__RTCDRV.html#ga84c0a0641d243f1574b865c80cae9736">RTCDRV_GetWallClockTicks64</a></div><div class="ttdeci">uint64_t RTCDRV_GetWallClockTicks64(void)</div><div class="ttdoc">Get wallclock tick count as a 64 bit value. This will never overflow. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00804">rtcdriver.c:804</a></div></div>
-<div class="ttc" id="group__RTCDRV_html_gadc6ac3c03c378a577b1a984941b8e3ff"><div class="ttname"><a href="group__RTCDRV.html#gadc6ac3c03c378a577b1a984941b8e3ff">RTCDRV_MsecsToTicks</a></div><div class="ttdeci">uint64_t RTCDRV_MsecsToTicks(uint32_t ms)</div><div class="ttdoc">Convert from milliseconds to RTC/RTCC ticks. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00846">rtcdriver.c:846</a></div></div>
+<div class="ttc" id="group__RTCDRV_html_ga84c0a0641d243f1574b865c80cae9736"><div class="ttname"><a href="group__RTCDRV.html#ga84c0a0641d243f1574b865c80cae9736">RTCDRV_GetWallClockTicks64</a></div><div class="ttdeci">uint64_t RTCDRV_GetWallClockTicks64(void)</div><div class="ttdoc">Get wallclock tick count as a 64 bit value. This will never overflow. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00803">rtcdriver.c:803</a></div></div>
+<div class="ttc" id="group__RTCDRV_html_gadc6ac3c03c378a577b1a984941b8e3ff"><div class="ttname"><a href="group__RTCDRV.html#gadc6ac3c03c378a577b1a984941b8e3ff">RTCDRV_MsecsToTicks</a></div><div class="ttdeci">uint64_t RTCDRV_MsecsToTicks(uint32_t ms)</div><div class="ttdoc">Convert from milliseconds to RTC/RTCC ticks. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00845">rtcdriver.c:845</a></div></div>
 <div class="ttc" id="em__rtcc_8h_html"><div class="ttname"><a href="em__rtcc_8h.html">em_rtcc.h</a></div><div class="ttdoc">Real Time Counter (RTCC) peripheral API. </div></div>
-<div class="ttc" id="group__CMU_html_ga3ac649cb01dd184676c6bdea7ff3d768"><div class="ttname"><a href="group__CMU.html#ga3ac649cb01dd184676c6bdea7ff3d768">CMU_DivToLog2</a></div><div class="ttdeci">__STATIC_INLINE uint32_t CMU_DivToLog2(CMU_ClkDiv_TypeDef div)</div><div class="ttdoc">Convert dividend to logarithmic value. Only works for even numbers equal to 2^n. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8h_source.html#l01112">em_cmu.h:1112</a></div></div>
+<div class="ttc" id="group__CMU_html_ga3ac649cb01dd184676c6bdea7ff3d768"><div class="ttname"><a href="group__CMU.html#ga3ac649cb01dd184676c6bdea7ff3d768">CMU_DivToLog2</a></div><div class="ttdeci">__STATIC_INLINE uint32_t CMU_DivToLog2(CMU_ClkDiv_TypeDef div)</div><div class="ttdoc">Convert dividend to logarithmic value. Only works for even numbers equal to 2^n. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8h_source.html#l01220">em_cmu.h:1220</a></div></div>
 <div class="ttc" id="group__RTCDRV_html_ga65ef38fa0eb21b4c379512aa087f7686"><div class="ttname"><a href="group__RTCDRV.html#ga65ef38fa0eb21b4c379512aa087f7686">RTCDRV_Delay</a></div><div class="ttdeci">Ecode_t RTCDRV_Delay(uint32_t ms)</div><div class="ttdoc">Millisecond delay function. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00269">rtcdriver.c:269</a></div></div>
 <div class="ttc" id="group__RTCDRV_html_gaa783bf476e7a815f6177c626fef0ac98"><div class="ttname"><a href="group__RTCDRV.html#gaa783bf476e7a815f6177c626fef0ac98">RTCDRV_FreeTimer</a></div><div class="ttdeci">Ecode_t RTCDRV_FreeTimer(RTCDRV_TimerID_t id)</div><div class="ttdoc">Free timer. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00297">rtcdriver.c:297</a></div></div>
 <div class="ttc" id="group__emdrv_html_ga7bf5621660c5ba69ac4dd3044173d35c"><div class="ttname"><a href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a></div><div class="ttdeci">uint32_t Ecode_t</div><div class="ttdoc">Typedef for API function errorcode return values. </div><div class="ttdef"><b>Definition:</b> <a href="ecode_8h_source.html#l00051">ecode.h:51</a></div></div>
-<div class="ttc" id="group__CMU_html_ga93913d50050d52b38b0a7c7c08ac81e8"><div class="ttname"><a href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a></div><div class="ttdeci">void CMU_ClockEnable(CMU_Clock_TypeDef clock, bool enable)</div><div class="ttdoc">Enable/disable a clock. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01421">em_cmu.c:1421</a></div></div>
+<div class="ttc" id="group__CMU_html_ga93913d50050d52b38b0a7c7c08ac81e8"><div class="ttname"><a href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a></div><div class="ttdeci">void CMU_ClockEnable(CMU_Clock_TypeDef clock, bool enable)</div><div class="ttdoc">Enable/disable a clock. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01443">em_cmu.c:1443</a></div></div>
 <div class="ttc" id="group__RTCC_html_gga5262fdbf7e20eef8456121bb4c0128c8a2c0614572ce6d5023f03e71f68f044f4"><div class="ttname"><a href="group__RTCC.html#gga5262fdbf7e20eef8456121bb4c0128c8a2c0614572ce6d5023f03e71f68f044f4">rtccCompMatchOutActionPulse</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00116">em_rtcc.h:116</a></div></div>
 <div class="ttc" id="group__RTCC_html_gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df"><div class="ttname"><a href="group__RTCC.html#gga27eaf41fd1b547e396790d6bab732054abf9166a260a116974ebf7a5a9d3ed3df">rtccCntTickPresc</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00097">em_rtcc.h:97</a></div></div>
 <div class="ttc" id="group__RTCDRV_html_ga786188a1db4e9187fc996c857efe3086"><div class="ttname"><a href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a></div><div class="ttdeci">#define ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</div><div class="ttdoc">Timer is not allocated. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8h_source.html#l00043">rtcdriver.h:43</a></div></div>
@@ -1078,8 +1077,8 @@ $(document).ready(function(){initNavTree('rtcdriver_8c_source.html','');});
 <div class="ttc" id="group__RTCC_html_gad0335cb53922f7fedc244336f5f299b1"><div class="ttname"><a href="group__RTCC.html#gad0335cb53922f7fedc244336f5f299b1">RTCC_CntPresc_TypeDef</a></div><div class="ttdeci">RTCC_CntPresc_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00072">em_rtcc.h:72</a></div></div>
 <div class="ttc" id="group__RTCC_html_ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1"><div class="ttname"><a href="group__RTCC.html#ggaffe824f0dbb1678e31697c966a6c15bfa5717b5fe590c96619dba4ef8d46d2bb1">rtccCompBaseCnt</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00155">em_rtcc.h:155</a></div></div>
 <div class="ttc" id="group__RTCC_html_ggae97fe5bba7812a48b934bd7fdab814fba63e4f13f5335b727ffa7f82207391344"><div class="ttname"><a href="group__RTCC.html#ggae97fe5bba7812a48b934bd7fdab814fba63e4f13f5335b727ffa7f82207391344">rtccCapComChModeCompare</a></div><div class="ttdef"><b>Definition:</b> <a href="em__rtcc_8h_source.html#l00110">em_rtcc.h:110</a></div></div>
-<div class="ttc" id="group__RTCDRV_html_gac52e05089b461ddb5ca4b2dffa04a575"><div class="ttname"><a href="group__RTCDRV.html#gac52e05089b461ddb5ca4b2dffa04a575">RTCDRV_TicksToSec</a></div><div class="ttdeci">uint32_t RTCDRV_TicksToSec(uint64_t ticks)</div><div class="ttdoc">Convert from RTC/RTCC ticks to seconds. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00894">rtcdriver.c:894</a></div></div>
-<div class="ttc" id="group__CMU_html_ga7cc316a8dca5436fcc39d57f5e6c412d"><div class="ttname"><a href="group__CMU.html#ga7cc316a8dca5436fcc39d57f5e6c412d">CMU_ClockDivSet</a></div><div class="ttdeci">void CMU_ClockDivSet(CMU_Clock_TypeDef clock, CMU_ClkDiv_TypeDef div)</div><div class="ttdoc">Set clock divisor/prescaler. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01212">em_cmu.c:1212</a></div></div>
+<div class="ttc" id="group__RTCDRV_html_gac52e05089b461ddb5ca4b2dffa04a575"><div class="ttname"><a href="group__RTCDRV.html#gac52e05089b461ddb5ca4b2dffa04a575">RTCDRV_TicksToSec</a></div><div class="ttdeci">uint32_t RTCDRV_TicksToSec(uint64_t ticks)</div><div class="ttdoc">Convert from RTC/RTCC ticks to seconds. </div><div class="ttdef"><b>Definition:</b> <a href="rtcdriver_8c_source.html#l00893">rtcdriver.c:893</a></div></div>
+<div class="ttc" id="group__CMU_html_ga7cc316a8dca5436fcc39d57f5e6c412d"><div class="ttname"><a href="group__CMU.html#ga7cc316a8dca5436fcc39d57f5e6c412d">CMU_ClockDivSet</a></div><div class="ttdeci">void CMU_ClockDivSet(CMU_Clock_TypeDef clock, CMU_ClkDiv_TypeDef div)</div><div class="ttdoc">Set clock divisor/prescaler. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01234">em_cmu.c:1234</a></div></div>
 <div class="ttc" id="sleep_8h_html"><div class="ttname"><a href="sleep_8h.html">sleep.h</a></div><div class="ttdoc">Energy Modes management driver. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -1087,7 +1086,7 @@ $(document).ready(function(){initNavTree('rtcdriver_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_fb86c39980e83f9b543f683f406d370b.html">rtcdrv</a></li><li class="navelem"><a class="el" href="dir_93cce622d30dc6a58be20f4b6b65a21e.html">src</a></li><li class="navelem"><a class="el" href="rtcdriver_8c.html">rtcdriver.c</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:52:23 for EFR32 Blue Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 10:43:33 for EFR32 Blue Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

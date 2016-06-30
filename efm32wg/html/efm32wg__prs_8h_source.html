@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Wonder Gecko Software Documentation: C:/work/s025_sw/Device/SiliconLabs/EFM32WG/Include/efm32wg_prs.h Source File</title>
+<title>EFM32 Wonder Gecko Software Documentation: C:/work/s025_sw_ssh/Device/SiliconLabs/EFM32WG/Include/efm32wg_prs.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efm32wg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -114,9 +114,9 @@ $(document).ready(function(){initNavTree('efm32wg__prs_8h_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structPRS__TypeDef.html">   41</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structPRS__TypeDef.html#af0742312fe818ea86a530cd7a6cc423f">   43</a></span>&#160;  <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> uint32_t  <a class="code" href="structPRS__TypeDef.html#af0742312fe818ea86a530cd7a6cc423f">SWPULSE</a>;      </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structPRS__TypeDef.html#a2dbecba19e5b8ab594bc797c64d2d6c9">   44</a></span>&#160;  <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> uint32_t  <a class="code" href="structPRS__TypeDef.html#a2dbecba19e5b8ab594bc797c64d2d6c9">SWLEVEL</a>;      </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structPRS__TypeDef.html#a818f70396095caf6db2eb1be61a36756">   45</a></span>&#160;  <a class="code" href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a> uint32_t  <a class="code" href="structPRS__TypeDef.html#a818f70396095caf6db2eb1be61a36756">ROUTE</a>;        </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structPRS__TypeDef.html#acfbc866b2af24f8fad1b6f5d013cc9af">   43</a></span>&#160;  __IOM uint32_t <a class="code" href="structPRS__TypeDef.html#acfbc866b2af24f8fad1b6f5d013cc9af">SWPULSE</a>;      </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structPRS__TypeDef.html#a58ab046c46a2feac215c0130ced07cb0">   44</a></span>&#160;  __IOM uint32_t <a class="code" href="structPRS__TypeDef.html#a58ab046c46a2feac215c0130ced07cb0">SWLEVEL</a>;      </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structPRS__TypeDef.html#a9dbf65859b32f7c830f40d000326b6cd">   45</a></span>&#160;  __IOM uint32_t <a class="code" href="structPRS__TypeDef.html#a9dbf65859b32f7c830f40d000326b6cd">ROUTE</a>;        </div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structPRS__TypeDef.html#a1c3d71a3635872f66084367218111f26">   47</a></span>&#160;  uint32_t       RESERVED0[1]; </div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structPRS__TypeDef.html#a424a6e951609315c3df90acd7584e779">   48</a></span>&#160;  <a class="code" href="structPRS__CH__TypeDef.html">PRS_CH_TypeDef</a> CH[12];       </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <a class="code" href="structPRS__TypeDef.html">PRS_TypeDef</a>;                 </div>
@@ -514,19 +514,18 @@ $(document).ready(function(){initNavTree('efm32wg__prs_8h_source.html','');});
 <div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="group__EFM32WG__PRS__BitFields.html#ga30c73fb349043fcd019f17558f692c0b">  449</a></span>&#160;<span class="preprocessor">#define _PRS_CH_CTRL_ASYNC_MASK                 0x10000000UL                                </span></div>
 <div class="line"><a name="l00450"></a><span class="lineno"><a class="line" href="group__EFM32WG__PRS__BitFields.html#gabc8419e019664888ca2822d992e51350">  450</a></span>&#160;<span class="preprocessor">#define _PRS_CH_CTRL_ASYNC_DEFAULT              0x00000000UL                                </span></div>
 <div class="line"><a name="l00451"></a><span class="lineno"><a class="line" href="group__EFM32WG__PRS__BitFields.html#ga11857e54b77535a319cc7916ed4816e8">  451</a></span>&#160;<span class="preprocessor">#define PRS_CH_CTRL_ASYNC_DEFAULT               (_PRS_CH_CTRL_ASYNC_DEFAULT &lt;&lt; 28)          </span></div>
-<div class="ttc" id="group__BSP__DK_html_gaec43007d9998a0a0e01faede4133d6be"><div class="ttname"><a href="group__BSP__DK.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a></div><div class="ttdeci">#define __IO</div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__bcreg__3201_8h_source.html#l00053">bsp_dk_bcreg_3201.h:53</a></div></div>
+<div class="ttc" id="structPRS__TypeDef_html_a9dbf65859b32f7c830f40d000326b6cd"><div class="ttname"><a href="structPRS__TypeDef.html#a9dbf65859b32f7c830f40d000326b6cd">PRS_TypeDef::ROUTE</a></div><div class="ttdeci">__IOM uint32_t ROUTE</div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__prs_8h_source.html#l00045">efm32wg_prs.h:45</a></div></div>
 <div class="ttc" id="structPRS__TypeDef_html"><div class="ttname"><a href="structPRS__TypeDef.html">PRS_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__prs_8h_source.html#l00041">efm32wg_prs.h:41</a></div></div>
 <div class="ttc" id="structPRS__CH__TypeDef_html"><div class="ttname"><a href="structPRS__CH__TypeDef.html">PRS_CH_TypeDef</a></div><div class="ttdoc">PRS_CH EFM32WG PRS CH. </div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__prs__ch_8h_source.html#l00039">efm32wg_prs_ch.h:39</a></div></div>
-<div class="ttc" id="structPRS__TypeDef_html_a818f70396095caf6db2eb1be61a36756"><div class="ttname"><a href="structPRS__TypeDef.html#a818f70396095caf6db2eb1be61a36756">PRS_TypeDef::ROUTE</a></div><div class="ttdeci">__IO uint32_t ROUTE</div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__prs_8h_source.html#l00045">efm32wg_prs.h:45</a></div></div>
-<div class="ttc" id="structPRS__TypeDef_html_a2dbecba19e5b8ab594bc797c64d2d6c9"><div class="ttname"><a href="structPRS__TypeDef.html#a2dbecba19e5b8ab594bc797c64d2d6c9">PRS_TypeDef::SWLEVEL</a></div><div class="ttdeci">__IO uint32_t SWLEVEL</div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__prs_8h_source.html#l00044">efm32wg_prs.h:44</a></div></div>
-<div class="ttc" id="structPRS__TypeDef_html_af0742312fe818ea86a530cd7a6cc423f"><div class="ttname"><a href="structPRS__TypeDef.html#af0742312fe818ea86a530cd7a6cc423f">PRS_TypeDef::SWPULSE</a></div><div class="ttdeci">__IO uint32_t SWPULSE</div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__prs_8h_source.html#l00043">efm32wg_prs.h:43</a></div></div>
+<div class="ttc" id="structPRS__TypeDef_html_a58ab046c46a2feac215c0130ced07cb0"><div class="ttname"><a href="structPRS__TypeDef.html#a58ab046c46a2feac215c0130ced07cb0">PRS_TypeDef::SWLEVEL</a></div><div class="ttdeci">__IOM uint32_t SWLEVEL</div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__prs_8h_source.html#l00044">efm32wg_prs.h:44</a></div></div>
+<div class="ttc" id="structPRS__TypeDef_html_acfbc866b2af24f8fad1b6f5d013cc9af"><div class="ttname"><a href="structPRS__TypeDef.html#acfbc866b2af24f8fad1b6f5d013cc9af">PRS_TypeDef::SWPULSE</a></div><div class="ttdeci">__IOM uint32_t SWPULSE</div><div class="ttdef"><b>Definition:</b> <a href="efm32wg__prs_8h_source.html#l00043">efm32wg_prs.h:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4c76ddfc10a27668d6c42d3412320ee0.html">Device</a></li><li class="navelem"><a class="el" href="dir_eca9ef8613423b074c58e28a7f7d2781.html">SiliconLabs</a></li><li class="navelem"><a class="el" href="dir_1516cc1a8e767804e6db4591adad958e.html">EFM32WG</a></li><li class="navelem"><a class="el" href="dir_32549424f4131a731934d0d9d61a9595.html">Include</a></li><li class="navelem"><a class="el" href="efm32wg__prs_8h.html">efm32wg_prs.h</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:31:29 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 11:13:39 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Mighty Gecko Software Documentation: C:/work/s025_sw/emdrv/sleep/src/sleep.c File Reference</title>
+<title>EFR32 Mighty Gecko Software Documentation: C:/work/s025_sw_ssh/emdrv/sleep/src/sleep.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Mighty Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32mg1-doc-4.3.0</span>
+   &#160;<span id="projectnumber">efr32mg1-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('sleep_8c.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Energy Modes management driver. </p>
-<dl class="section version"><dt>Version</dt><dd>4.3.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
 <p>This is a energy modes management module consisting of <a class="el" href="sleep_8c.html" title="Energy Modes management driver. ">sleep.c</a> and <a class="el" href="sleep_8h.html" title="Energy Modes management driver. ">sleep.h</a> source files. The main purpose of the module is to ease energy optimization with a simple API. The module allows the system to always sleep in the lowest possible energy mode. Users could set up callbacks that are being called before and after each and every sleep. A counting semaphore is available for each low energy mode (EM1/EM2/EM3) to protect certain system states from being corrupted. This semaphore has limit set to maximum 255 locks.</p>
 <p>The module provides the following public API to the users: <a class="el" href="group__SLEEP.html#ga01eb28531b3fc9a5c7880b86a98d4b1c" title="Initialize the Sleep module. ">SLEEP_Init()</a> <a class="el" href="group__SLEEP.html#ga2845d5d6d00f408dda6894a654fd1adf" title="Sets the system to sleep into the lowest possible energy mode. ">SLEEP_Sleep()</a> <a class="el" href="group__SLEEP.html#gac26ef85c0817797fb9ec823d38742af7" title="Begin sleep block in the requested energy mode. ">SLEEP_SleepBlockBegin()</a> <a class="el" href="group__SLEEP.html#ga1dd174edab75f62e330d1fb10b902e2d" title="End sleep block in the requested energy mode. ">SLEEP_SleepBlockEnd()</a> <a class="el" href="group__SLEEP.html#gaa5cc0b5f4087136c23fda12b840bab8e" title="Force the device to go to EM4 without doing any checks. ">SLEEP_ForceSleepInEM4()</a></p>
 <h1><a class="anchor" id="License"></a>
@@ -159,7 +159,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_a27469ec0b30e17252c3c87413f88395.html">sleep</a></li><li class="navelem"><a class="el" href="dir_45e1549a4d3b118d24ba0c4e52e9e35e.html">src</a></li><li class="navelem"><a class="el" href="sleep_8c.html">sleep.c</a></li>
-    <li class="footer">Generated on Thu Mar 10 2016 14:50:21 for EFR32 Mighty Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 11:05:26 for EFR32 Mighty Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

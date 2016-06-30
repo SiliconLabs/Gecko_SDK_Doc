@@ -1,15 +1,15 @@
 var group__EFM32WG__RTC =
 [
     [ "RTC_TypeDef", "structRTC__TypeDef.html", [
-      [ "CNT", "structRTC__TypeDef.html#afda061c998182467885b559d5114e148", null ],
-      [ "COMP0", "structRTC__TypeDef.html#a0c4687f348dc0fa13c807138b0c1a1b3", null ],
-      [ "COMP1", "structRTC__TypeDef.html#a9dd756adb1296a1a239a3247f699b402", null ],
-      [ "CTRL", "structRTC__TypeDef.html#a8ac5549be3d5dc4f57454914e668c0d0", null ],
-      [ "FREEZE", "structRTC__TypeDef.html#ac52a0c36fdc6fefee42dac634ddb5345", null ],
-      [ "IEN", "structRTC__TypeDef.html#adfca295ccffe1ebf6e94f1df2a8d138c", null ],
-      [ "IF", "structRTC__TypeDef.html#ae0c52ffc67714ea44112e9108a94ee10", null ],
-      [ "IFC", "structRTC__TypeDef.html#acbc427ef1dc8606fbca586dd9855d008", null ],
-      [ "IFS", "structRTC__TypeDef.html#ae42b959e82911e4edfa62dc1c0591230", null ],
-      [ "SYNCBUSY", "structRTC__TypeDef.html#af73c0bdc8e706d17a2dc8b97ca9a5b2c", null ]
+      [ "CNT", "structRTC__TypeDef.html#a966483004e4b48110c1843f2a70a29d5", null ],
+      [ "COMP0", "structRTC__TypeDef.html#a4ac764b36f5b57b32df2e277d50483be", null ],
+      [ "COMP1", "structRTC__TypeDef.html#a35a8ac0621a25cdc531621009442f869", null ],
+      [ "CTRL", "structRTC__TypeDef.html#ab2a1ad68d234e272ad2684d282055463", null ],
+      [ "FREEZE", "structRTC__TypeDef.html#af6a142013a1065f53fe06c840829af5a", null ],
+      [ "IEN", "structRTC__TypeDef.html#aa57f72e707c444f53a5bc0875afebfb1", null ],
+      [ "IF", "structRTC__TypeDef.html#a81f6af1888c133d0808926632d05518c", null ],
+      [ "IFC", "structRTC__TypeDef.html#ac36e7577459854c26f930aea6d1792bd", null ],
+      [ "IFS", "structRTC__TypeDef.html#a343e945de9ac5d8861588f863d0f6318", null ],
+      [ "SYNCBUSY", "structRTC__TypeDef.html#a4762a349a4611f36f55747c42393bc8f", null ]
     ] ]
 ];

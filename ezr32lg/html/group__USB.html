@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.3.0</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-4.4.0</span>
    </div>
   </td>
  </tr>
@@ -630,70 +630,49 @@ Host port control functions</h2>
 Enumeration and query functions</h2>
 <p><a class="el" href="group__USB__HOST.html#gae9ef72709bb00accb740a0350f79fe35">USBH_QueryDeviceB()</a> <br />
  This function will read the device and configuration descriptors from a device at USB address 0. The application must allocate a buffer of sufficent size to hold the data. This data buffer can later be used by all USBH_Q<em>xxx</em> functions to retrieve pointers to any descriptor within any configuration descriptor. Data retrieved by this function must also be passed to USBH_InitDeviceData()
-         before normal device communication can start. Ref. section <a class="el" href="group__USB.html#usb_device_enumeration">Device enumeration and configuration</a>.</p>
+    before normal device communication can start. Ref. section <a class="el" href="group__USB.html#usb_device_enumeration">Device enumeration and configuration</a>.</p>
 <p><a class="el" href="group__USB__HOST.html#ga2ac91d938f8553e31913afdb8d8d80dc">USBH_QGetConfigurationDescriptor()</a> <br />
- Get a pointer to a given configuration descriptor. Parses through a data buffer which must have been previously populated by a call to  USBH_QueryDeviceB() . </p><pre class="fragment">  @ref USBH_QGetDeviceDescriptor() @n
-    Get a pointer to the device descriptor. Parses through a data buffer
-    which must have been previously populated by a call to@htmlonly 
-    USBH_QueryDeviceB() @endhtmlonly.
-
-  @ref USBH_QGetEndpointDescriptor() @n
-    Get a pointer to a given endpoint descriptor within a given interface
-    within a given configuration. Parses through a data buffer which must
-    have been previously populated by a call to@htmlonly USBH_QueryDeviceB().
-    @endhtmlonly
-
-  @ref USBH_QGetInterfaceDescriptor() @n
-    Get a pointer to an interface descriptor within a given configuration.
-    Parses through a data buffer which must have been previously populated
-    by a call to@htmlonly USBH_QueryDeviceB() @endhtmlonly.
-
-  @ref USBH_InitDeviceData() @n
-    Populates device and endpoint data structures with data which must
-    have been retrieved from a device by a call to
-</pre><p>  USBH_QueryDeviceB() . The application must allocate and provide device and endpoint data structures to the host stack. After this function is called the device and endpoint data structures can be used as parameters (<em>handles</em>) to other API functions as needed.</p>
+ Get a pointer to a given configuration descriptor. Parses through a data buffer which must have been previously populated by a call to  USBH_QueryDeviceB(). </p>
+<p><a class="el" href="group__USB__HOST.html#ga4d6a8d78ebde4e394bb25aa62a871b30">USBH_QGetDeviceDescriptor()</a> <br />
+ Get a pointer to the device descriptor. Parses through a data buffer which must have been previously populated by a call to 
+   USBH_QueryDeviceB(). </p>
+<p><a class="el" href="group__USB__HOST.html#ga10e6eb1a2e9802af4ec16254e3d44783">USBH_QGetEndpointDescriptor()</a> <br />
+ Get a pointer to a given endpoint descriptor within a given interface within a given configuration. Parses through a data buffer which must have been previously populated by a call to USBH_QueryDeviceB().
+   </p>
+<p><a class="el" href="group__USB__HOST.html#gabd04b4b1ea26459d6db42aa77b6d592d">USBH_QGetInterfaceDescriptor()</a> <br />
+ Get a pointer to an interface descriptor within a given configuration. Parses through a data buffer which must have been previously populated by a call to USBH_QueryDeviceB(). </p>
+<p><a class="el" href="group__USB__HOST.html#ga50dc10ac598c6c8479319ff58c186266">USBH_InitDeviceData()</a> <br />
+ Populates device and endpoint data structures with data which must have been retrieved from a device by a call to  USBH_QueryDeviceB() . The application must allocate and provide device and endpoint data structures to the host stack. After this function is called the device and endpoint data structures can be used as parameters (<em>handles</em>) to other API functions as needed.</p>
 <p><br />
  </p>
 <h2><a class="anchor" id="usb_host_print"></a>
 Utility functions</h2>
-<pre class="fragment">@ref USBH_PrintString() @n
-  Print an USB string descriptor on the debug serial port with optional leader
-  and trailer strings.
-
-@ref USBH_PrintConfigurationDescriptor(),
-@ref USBH_PrintDeviceDescriptor(),
-@ref USBH_PrintEndpointDescriptor(),
-@ref USBH_PrintInterfaceDescriptor() @n
-  Pretty print descriptors on the debug serial port.
-
-USB_PUTCHAR() @n Transmit a single char on the debug serial port.
-
-USB_PUTS() @n Transmit a zero terminated string on the debug serial port.
-
-USB_PRINTF() @n Transmit "printf" formated data on the debug serial port.
-
-USB_GetErrorMsgString() @n Return an error message string for a given
-error code.
-
-USB_PrintErrorMsgString() @n Format and print a text string given an
-error code, prepends an optional user supplied leader string.
-
-USBTIMER_DelayMs() @n Active wait millisecond delay function. Can also be
-used inside interrupt handlers.
-
-USBTIMER_DelayUs() @n Active wait microsecond delay function. Can also be
-used inside interrupt handlers.
-
-USBTIMER_Init() @n Initialize the timer system. Called by@htmlonly 
-USBH_Init(), @endhtmlonly but your application must call it again to
-reinitialize whenever you change the HFPERCLK frequency.
-
-USBTIMER_Start() @n Start a timer. You can configure the USB device stack
-to provide any number of timers. The timers have 1 ms resolution, your
-application is notified of timeout by means of a callback.
-
-USBTIMER_Stop() @n Stop a timer.
-</pre><p><br />
+<p><a class="el" href="group__USB__HOST.html#ga60806aa452e18cee2002a2a5de015982">USBH_PrintString()</a> <br />
+ Print an USB string descriptor on the debug serial port with optional leader and trailer strings.</p>
+<p><a class="el" href="group__USB__HOST.html#gab7a5bb1a4f4cae3b9cc0556b98d3a4d9">USBH_PrintConfigurationDescriptor()</a>, <a class="el" href="group__USB__HOST.html#ga465475632c744fb3fae7a73e09606fb3">USBH_PrintDeviceDescriptor()</a>, <a class="el" href="group__USB__HOST.html#gabe253e3e072d805774b8714aacf9182c">USBH_PrintEndpointDescriptor()</a>, <a class="el" href="group__USB__HOST.html#ga7a4aa696c25dfd0b99a2cda6e02d7a36">USBH_PrintInterfaceDescriptor()</a> <br />
+ Pretty print descriptors on the debug serial port.</p>
+<p><a class="el" href="group__USB__COMMON.html#gac49ccf1d69a08567d1a5911b0312e735" title="Transmit a single char on the debug serial port. ">USB_PUTCHAR()</a> <br />
+ Transmit a single char on the debug serial port.</p>
+<p><a class="el" href="group__USB__COMMON.html#ga7276e056a2f6aeb99240f72529f41f8f" title="Transmit a zero terminated string on the debug serial port. ">USB_PUTS()</a> <br />
+ Transmit a zero terminated string on the debug serial port.</p>
+<p><a class="el" href="group__USB__COMMON.html#ga43cf32af5653cb2cd27fb6729be245fb" title="Transmit &quot;printf&quot; formated data on the debug serial port. ">USB_PRINTF()</a> <br />
+ Transmit "printf" formated data on the debug serial port.</p>
+<p><a class="el" href="group__USB__COMMON.html#gaedc267ca571518980b7f7f4392386844" title="Return an error message string for a given error code. ">USB_GetErrorMsgString()</a> <br />
+ Return an error message string for a given error code.</p>
+<p><a class="el" href="group__USB__COMMON.html#ga543c505ec86acb344f7f0c00c55fc266" title="Format and print a text string given an error code, prepends an optional user supplied leader string...">USB_PrintErrorMsgString()</a> <br />
+ Format and print a text string given an error code, prepends an optional user supplied leader string.</p>
+<p><a class="el" href="group__USB__COMMON.html#gabb1c11cad365c7c3b99a3e7826035951" title="Active wait millisecond delay function. Can also be used inside interrupt handlers. ">USBTIMER_DelayMs()</a> <br />
+ Active wait millisecond delay function. Can also be used inside interrupt handlers.</p>
+<p><a class="el" href="group__USB__COMMON.html#gafef1ec052374683fb7f26c5d27645e2c" title="Active wait microsecond delay function. Can also be used inside interrupt handlers. ">USBTIMER_DelayUs()</a> <br />
+ Active wait microsecond delay function. Can also be used inside interrupt handlers.</p>
+<p><a class="el" href="group__USB__COMMON.html#ga21c87b800d87fd731173dd4f48f23c28" title="Activate the hardware timer used to pace the 1 millisecond timer system. ">USBTIMER_Init()</a> <br />
+ Initialize the timer system. Called by 
+  USBH_Init(),  but your application must call it again to reinitialize whenever you change the HFPERCLK frequency.</p>
+<p><a class="el" href="group__USB__COMMON.html#gac2a406f16d989b04c4fc5b37d5c10b45" title="Start a timer. ">USBTIMER_Start()</a> <br />
+ Start a timer. You can configure the USB device stack to provide any number of timers. The timers have 1 ms resolution, your application is notified of timeout by means of a callback.</p>
+<p><a class="el" href="group__USB__COMMON.html#gab73c922427cf0d509788a8063451703f" title="Stop a timer. ">USBTIMER_Stop()</a> <br />
+ Stop a timer.</p>
+<p><br />
  </p>
 <h1><a class="anchor" id="usb_host_conf"></a>
 Configuring the host stack</h1>
@@ -735,7 +714,7 @@ extern int RETARGET_WriteChar(char c);
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 10 2016 14:43:29 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Mon Jun 13 2016 11:03:43 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>
