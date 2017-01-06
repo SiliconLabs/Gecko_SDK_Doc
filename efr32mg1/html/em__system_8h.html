@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Mighty Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/inc/em_system.h File Reference</title>
+<title>EFR32 Mighty Gecko 1 Software Documentation: c:/work/super/platform/emlib/inc/em_system.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EFR32 Mighty Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32mg1-doc-4.4.0</span>
+   <div id="projectname">EFR32 Mighty Gecko 1 Software Documentation
+   &#160;<span id="projectnumber">efr32mg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('em__system_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>System API. </p>
-<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -136,6 +136,8 @@ License</h1>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSYSTEM__CalAddrVal__TypeDef.html">SYSTEM_CalAddrVal_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSYSTEM__ChipRevision__TypeDef.html">SYSTEM_ChipRevision_TypeDef</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -189,17 +191,13 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa6cc0cd3fb894977099156a8fb69e7cf1">systemPartFamilyBlue1V</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32BG1V, 
 <br />
-&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aaa2773dc6a096d3fe290b8c6b67de2c44">systemPartFamilyZappy1P</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32ZG1P, 
-<br />
-&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa245c59d98baf6c91854cdd88f06a82d4">systemPartFamilyZappy1B</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32ZG1B, 
-<br />
-&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa7956f609b89903bf361b4e6912e078a9">systemPartFamilyZappy1V</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32ZG1V, 
-<br />
 &#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa16519506bc923bfd904427167a3e4c98">systemPartFamilyFlex1P</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32FG1P, 
 <br />
 &#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa77928d7b65be397413eb7d1befd3e44a">systemPartFamilyFlex1B</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32FG1B, 
 <br />
 &#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aac138e157cb640c4560a2b10402688c39">systemPartFamilyFlex1V</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32FG1V, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa62629ff1a9b6dcb4f777bf932e747fea">systemPartFamilyMighty2P</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32MG2P, 
 <br />
 &#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa489b6eb51f431130db9d250c44137fbe">systemPartFamilyGecko</a> = _DEVINFO_PART_DEVICE_FAMILY_G, 
 <br />
@@ -231,9 +229,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2a8be52c7eeb3f5d395ee7791e5c8bf8"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga2a8be52c7eeb3f5d395ee7791e5c8bf8">SYSTEM_GetCalibrationTemperature</a> (void)</td></tr>
 <tr class="memdesc:ga2a8be52c7eeb3f5d395ee7791e5c8bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the calibration temperature (in degrees Celsius).  <a href="group__SYSTEM.html#ga2a8be52c7eeb3f5d395ee7791e5c8bf8">More...</a><br /></td></tr>
 <tr class="separator:ga2a8be52c7eeb3f5d395ee7791e5c8bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga786913c991338e29650617d89aec3768"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga786913c991338e29650617d89aec3768"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>SYSTEM_GetCalibrationValue</b> (volatile uint32_t *regAddress)</td></tr>
-<tr class="separator:ga786913c991338e29650617d89aec3768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84a2becba34bea4a4d718d4dfe14c4db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga84a2becba34bea4a4d718d4dfe14c4db">SYSTEM_GetCalibrationValue</a> (volatile uint32_t *regAddress)</td></tr>
+<tr class="memdesc:ga84a2becba34bea4a4d718d4dfe14c4db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get factory calibration value for a given peripheral register.  <a href="group__SYSTEM.html#ga84a2becba34bea4a4d718d4dfe14c4db">More...</a><br /></td></tr>
+<tr class="separator:ga84a2becba34bea4a4d718d4dfe14c4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf92e0afdba824102eb010f5418069b49"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#gaf92e0afdba824102eb010f5418069b49">SYSTEM_GetDevinfoRev</a> (void)</td></tr>
 <tr class="memdesc:gaf92e0afdba824102eb010f5418069b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DEVINFO revision.  <a href="group__SYSTEM.html#gaf92e0afdba824102eb010f5418069b49">More...</a><br /></td></tr>
 <tr class="separator:gaf92e0afdba824102eb010f5418069b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,8 +262,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>SYSTEM_GetCalibra
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__system_8h.html">em_system.h</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 11:05:29 for EFR32 Mighty Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__system_8h.html">em_system.h</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 16:04:29 for EFR32 Mighty Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32hg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32hg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('group__DMADRV.html','');});
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>DMADRV Direct Memory Access Driver. </p><pre class="fragment"></pre><p>. </p>
+<p>DMADRV Direct Memory Access Driver. </p>
 <ul>
 <li><a class="el" href="group__DMADRV.html#dmadrv_intro">Introduction</a> </li>
 <li><a class="el" href="group__DMADRV.html#dmadrv_conf">Configuration Options</a> </li>
@@ -410,7 +410,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>When doing ping-pong transfers, return true to continue or false to stop transfers. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8h_source.html#l00081">81</a> of file <a class="el" href="dmadrv_8h_source.html">dmadrv.h</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8h_source.html#l00080">80</a> of file <a class="el" href="dmadrv_8h_source.html">dmadrv.h</a>.</p>
 
 </div>
 </div>
@@ -438,7 +438,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="dmadrv_8h_source.html#l00296">296</a> of file <a class="el" href="dmadrv_8h_source.html">dmadrv.h</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8h_source.html#l00295">295</a> of file <a class="el" href="dmadrv_8h_source.html">dmadrv.h</a>.</p>
 
 </div>
 </div>
@@ -555,7 +555,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="dmadrv_8h_source.html#l00091">91</a> of file <a class="el" href="dmadrv_8h_source.html">dmadrv.h</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8h_source.html#l00090">90</a> of file <a class="el" href="dmadrv_8h_source.html">dmadrv.h</a>.</p>
 
 </div>
 </div>
@@ -596,7 +596,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00131">131</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
-<p>References <a class="el" href="group__DMADRV.html#gaab97205f395c359f6d639347bb9f0f5f">ECODE_EMDRV_DMADRV_CHANNELS_EXHAUSTED</a>, <a class="el" href="group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64">ECODE_EMDRV_DMADRV_NOT_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, and <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>.</p>
+<p>References <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__DMADRV.html#gaab97205f395c359f6d639347bb9f0f5f">ECODE_EMDRV_DMADRV_CHANNELS_EXHAUSTED</a>, <a class="el" href="group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64">ECODE_EMDRV_DMADRV_NOT_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, and <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>.</p>
 
 <p>Referenced by <a class="el" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239">SPIDRV_Init()</a>.</p>
 
@@ -620,9 +620,9 @@ Functions</h2></td></tr>
 <p>If no DMA channels are currently allocated, it will disable DMA hardware and mask associated interrupts.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00176">176</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00177">177</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
-<p>References <a class="el" href="group__EFM32HG__DMA__BitFields.html#gab90198e1bedf914a70db25cc68aedb99">_DMA_CONFIG_RESETVALUE</a>, <a class="el" href="group__EFM32HG__DMA__BitFields.html#gad8d20c7381f385979f3dbb7f94757890">_DMA_IEN_RESETVALUE</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea6f64be54830f8f2c8f40192330ab2eb0">cmuClock_DMA</a>, <a class="el" href="group__EFM32HG322F64__Peripheral__Declaration.html#ga137c9e7c0bc9e12f455df0a6e41c0287">DMA</a>, <a class="el" href="group__EFM32HG322F64.html#gga666eb0caeb12ec0e281415592ae89083a4968eb85558b7cd25e0f0fa1b839f881">DMA_IRQn</a>, <a class="el" href="group__DMADRV.html#ga7414a4bd6c8211ada153e2129e04f183">ECODE_EMDRV_DMADRV_IN_USE</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, and <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>.</p>
+<p>References <a class="el" href="group__EFM32HG__DMA__BitFields.html#gab90198e1bedf914a70db25cc68aedb99">_DMA_CONFIG_RESETVALUE</a>, <a class="el" href="group__EFM32HG__DMA__BitFields.html#gad8d20c7381f385979f3dbb7f94757890">_DMA_IEN_RESETVALUE</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea6f64be54830f8f2c8f40192330ab2eb0">cmuClock_DMA</a>, <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__EFM32HG322F64__Peripheral__Declaration.html#ga137c9e7c0bc9e12f455df0a6e41c0287">DMA</a>, <a class="el" href="group__EFM32HG322F64.html#gga666eb0caeb12ec0e281415592ae89083a4968eb85558b7cd25e0f0fa1b839f881">DMA_IRQn</a>, <a class="el" href="group__DMADRV.html#ga7414a4bd6c8211ada153e2129e04f183">ECODE_EMDRV_DMADRV_IN_USE</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, and <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>.</p>
 
 <p>Referenced by <a class="el" href="group__SPIDRV.html#ga1bebced0f8f5b3a3ac582916e4b13460">SPIDRV_DeInit()</a>, and <a class="el" href="group__UARTDRV.html#ga3b4222031534ab6d54ca068b5fa6e596">UARTDRV_DeInit()</a>.</p>
 
@@ -651,9 +651,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00223">223</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00225">225</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
-<p>References <a class="el" href="group__DMADRV.html#ga3c5f5833c747aec203d10853194ff348">ECODE_EMDRV_DMADRV_ALREADY_FREED</a>, <a class="el" href="group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64">ECODE_EMDRV_DMADRV_NOT_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, and <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>.</p>
+<p>References <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__DMADRV.html#ga3c5f5833c747aec203d10853194ff348">ECODE_EMDRV_DMADRV_ALREADY_FREED</a>, <a class="el" href="group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64">ECODE_EMDRV_DMADRV_NOT_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, and <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>.</p>
 
 <p>Referenced by <a class="el" href="group__SPIDRV.html#ga1bebced0f8f5b3a3ac582916e4b13460">SPIDRV_DeInit()</a>, and <a class="el" href="group__UARTDRV.html#ga3b4222031534ab6d54ca068b5fa6e596">UARTDRV_DeInit()</a>.</p>
 
@@ -677,9 +677,9 @@ Functions</h2></td></tr>
 <p>The DMA hw is initialized.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00258">258</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00262">262</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
-<p>References <a class="el" href="group__DMA.html#ga1b244c27cc74059907a25a806eac9b90">DMA_Init()</a>, <a class="el" href="group__EFM32HG322F64.html#gga666eb0caeb12ec0e281415592ae89083a4968eb85558b7cd25e0f0fa1b839f881">DMA_IRQn</a>, <a class="el" href="group__DMADRV.html#ga7c91611d3f79a7496ba2dee2639f7965">ECODE_EMDRV_DMADRV_ALREADY_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, and <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>.</p>
+<p>References <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__DMA.html#ga1b244c27cc74059907a25a806eac9b90">DMA_Init()</a>, <a class="el" href="group__EFM32HG322F64.html#gga666eb0caeb12ec0e281415592ae89083a4968eb85558b7cd25e0f0fa1b839f881">DMA_IRQn</a>, <a class="el" href="group__DMADRV.html#ga7c91611d3f79a7496ba2dee2639f7965">ECODE_EMDRV_DMADRV_ALREADY_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, and <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>.</p>
 
 <p>Referenced by <a class="el" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239">SPIDRV_Init()</a>, <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart()</a>, and <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a>.</p>
 
@@ -768,7 +768,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00402">402</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00406">406</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
 </div>
 </div>
@@ -862,7 +862,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00469">469</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00473">473</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
 </div>
 </div>
@@ -889,7 +889,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00641">641</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00645">645</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
 <p>References <a class="el" href="group__DMA.html#ga906324e92ed0f9b14f755ec2b2047590">DMA_ChannelRequestEnable()</a>, <a class="el" href="group__DMADRV.html#ga04c887be3eba7ea848f6b6bd25c16600">ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED</a>, <a class="el" href="group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64">ECODE_EMDRV_DMADRV_NOT_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, and <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>.</p>
 
@@ -980,7 +980,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00535">535</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00539">539</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
 </div>
 </div>
@@ -1074,7 +1074,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00602">602</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00606">606</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
 </div>
 </div>
@@ -1101,7 +1101,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00678">678</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00682">682</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
 <p>References <a class="el" href="group__DMA.html#ga906324e92ed0f9b14f755ec2b2047590">DMA_ChannelRequestEnable()</a>, <a class="el" href="group__DMADRV.html#ga04c887be3eba7ea848f6b6bd25c16600">ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED</a>, <a class="el" href="group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64">ECODE_EMDRV_DMADRV_NOT_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, and <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>.</p>
 
@@ -1132,7 +1132,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00715">715</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00719">719</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
 <p>References <a class="el" href="group__DMA.html#gab7d47175069b1952534467bf115eb02e">DMA_ChannelEnable()</a>, <a class="el" href="group__DMADRV.html#ga04c887be3eba7ea848f6b6bd25c16600">ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED</a>, <a class="el" href="group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64">ECODE_EMDRV_DMADRV_NOT_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, and <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>.</p>
 
@@ -1174,7 +1174,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00755">755</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00759">759</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
 <p>References <a class="el" href="group__DMA.html#gad699a3954c696e5523826c04befb6db5">DMA_ChannelEnabled()</a>, <a class="el" href="group__DMADRV.html#ga04c887be3eba7ea848f6b6bd25c16600">ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED</a>, <a class="el" href="group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64">ECODE_EMDRV_DMADRV_NOT_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, and <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>.</p>
 
@@ -1217,7 +1217,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00807">807</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00811">811</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32HG322F64__Peripheral__Declaration.html#ga137c9e7c0bc9e12f455df0a6e41c0287">DMA</a>, <a class="el" href="group__DMADRV.html#ga04c887be3eba7ea848f6b6bd25c16600">ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED</a>, <a class="el" href="group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64">ECODE_EMDRV_DMADRV_NOT_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, and <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>.</p>
 
@@ -1258,9 +1258,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00860">860</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00864">864</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
-<p>References <a class="el" href="group__EFM32HG__DMACTRL__BitFields.html#ga08f4f9629d30c112adb6d3ecb0e3aeb3">_DMA_CTRL_N_MINUS_1_MASK</a>, <a class="el" href="group__EFM32HG__DMACTRL__BitFields.html#ga5797c23bef48a60b6b8ca46fd03ae75a">_DMA_CTRL_N_MINUS_1_SHIFT</a>, <a class="el" href="structDMA__DESCRIPTOR__TypeDef.html#afa34eed41d18b89292e46f58eb7e8244">DMA_DESCRIPTOR_TypeDef::CTRL</a>, <a class="el" href="group__EFM32HG322F64__Peripheral__Declaration.html#ga137c9e7c0bc9e12f455df0a6e41c0287">DMA</a>, <a class="el" href="group__DMADRV.html#ga04c887be3eba7ea848f6b6bd25c16600">ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED</a>, <a class="el" href="group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64">ECODE_EMDRV_DMADRV_NOT_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, and <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>.</p>
+<p>References <a class="el" href="group__EFM32HG__DMACTRL__BitFields.html#ga08f4f9629d30c112adb6d3ecb0e3aeb3">_DMA_CTRL_N_MINUS_1_MASK</a>, <a class="el" href="group__EFM32HG__DMACTRL__BitFields.html#ga5797c23bef48a60b6b8ca46fd03ae75a">_DMA_CTRL_N_MINUS_1_SHIFT</a>, <a class="el" href="group__CORE.html#ga3b0354ed174362818a7e22916917d43a">CORE_ATOMIC_SECTION</a>, <a class="el" href="group__EFM32HG322F64__Peripheral__Declaration.html#ga137c9e7c0bc9e12f455df0a6e41c0287">DMA</a>, <a class="el" href="group__DMADRV.html#ga04c887be3eba7ea848f6b6bd25c16600">ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED</a>, <a class="el" href="group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64">ECODE_EMDRV_DMADRV_NOT_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, and <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>.</p>
 
 </div>
 </div>
@@ -1299,11 +1299,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a> on success. On failure an appropriate DMADRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00926">926</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
+<p>Definition at line <a class="el" href="dmadrv_8c_source.html#l00930">930</a> of file <a class="el" href="dmadrv_8c_source.html">dmadrv.c</a>.</p>
 
-<p>References <a class="el" href="group__EFM32HG__DMACTRL__BitFields.html#ga08f4f9629d30c112adb6d3ecb0e3aeb3">_DMA_CTRL_N_MINUS_1_MASK</a>, <a class="el" href="group__EFM32HG__DMACTRL__BitFields.html#ga5797c23bef48a60b6b8ca46fd03ae75a">_DMA_CTRL_N_MINUS_1_SHIFT</a>, <a class="el" href="structDMA__DESCRIPTOR__TypeDef.html#afa34eed41d18b89292e46f58eb7e8244">DMA_DESCRIPTOR_TypeDef::CTRL</a>, <a class="el" href="group__EFM32HG322F64__Peripheral__Declaration.html#ga137c9e7c0bc9e12f455df0a6e41c0287">DMA</a>, <a class="el" href="group__DMADRV.html#ga04c887be3eba7ea848f6b6bd25c16600">ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED</a>, <a class="el" href="group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64">ECODE_EMDRV_DMADRV_NOT_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, and <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>.</p>
+<p>References <a class="el" href="group__EFM32HG__DMACTRL__BitFields.html#ga08f4f9629d30c112adb6d3ecb0e3aeb3">_DMA_CTRL_N_MINUS_1_MASK</a>, <a class="el" href="group__EFM32HG__DMACTRL__BitFields.html#ga5797c23bef48a60b6b8ca46fd03ae75a">_DMA_CTRL_N_MINUS_1_SHIFT</a>, <a class="el" href="group__CORE.html#ga3b0354ed174362818a7e22916917d43a">CORE_ATOMIC_SECTION</a>, <a class="el" href="group__EFM32HG322F64__Peripheral__Declaration.html#ga137c9e7c0bc9e12f455df0a6e41c0287">DMA</a>, <a class="el" href="group__DMADRV.html#ga04c887be3eba7ea848f6b6bd25c16600">ECODE_EMDRV_DMADRV_CH_NOT_ALLOCATED</a>, <a class="el" href="group__DMADRV.html#ga718c15920e4f1c5885827eb903e70d64">ECODE_EMDRV_DMADRV_NOT_INITIALIZED</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__DMADRV.html#ga3b8e93e5fab3ce4f3f12f137c7b83410">ECODE_EMDRV_DMADRV_PARAM_ERROR</a>, and <a class="el" href="group__RetargetIo.html#gaedeffc7d23da25d52b9a50045189fe2b">initialized</a>.</p>
 
-<p>Referenced by <a class="el" href="group__SPIDRV.html#ga071d128b28b8acff08396fb090b8025a">SPIDRV_AbortTransfer()</a>, <a class="el" href="group__SPIDRV.html#ga7d440db45246649580c6c5b08eb332da">SPIDRV_GetTransferStatus()</a>, <a class="el" href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">UARTDRV_Abort()</a>, <a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">UARTDRV_GetReceiveStatus()</a>, and <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">UARTDRV_GetTransmitStatus()</a>.</p>
+<p>Referenced by <a class="el" href="group__SPIDRV.html#ga071d128b28b8acff08396fb090b8025a">SPIDRV_AbortTransfer()</a>, <a class="el" href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">UARTDRV_Abort()</a>, <a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">UARTDRV_GetReceiveStatus()</a>, and <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">UARTDRV_GetTransmitStatus()</a>.</p>
 
 </div>
 </div>
@@ -1312,7 +1312,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 10:45:48 for EFM32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 15:53:29 for EFM32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

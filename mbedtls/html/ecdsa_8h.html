@@ -70,15 +70,12 @@ Include dependency graph for ecdsa.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="ecdsa_8h__incl.png" border="0" usemap="#ecdsa_8h" alt=""/></div>
 <map name="ecdsa_8h" id="ecdsa_8h">
-<area shape="rect" id="node3" href="ecp_8h.html" title="Elliptic curves over GF(p) " alt="" coords="381,80,435,107"/>
-<area shape="rect" id="node36" href="md_8h.html" title="md.h" alt="" coords="460,80,511,107"/>
-<area shape="rect" id="node5" href="bignum_8h.html" title="Multi&#45;precision integer library. " alt="" coords="373,155,448,181"/>
-<area shape="rect" id="node22" href="ecp__alt_8h.html" title="Elliptic curves over GF(p) " alt="" coords="275,155,349,181"/>
-<area shape="rect" id="node7" href="config-sl-crypto-all-acceleration_8h.html" title="config&#45;sl&#45;crypto&#45;all\l&#45;acceleration.h" alt="" coords="59,305,185,346"/>
-<area shape="rect" id="node11" href="config_8h.html" title="Compatibility names (set of defines) " alt="" coords="49,395,167,421"/>
-<area shape="rect" id="node13" href="check__config_8h.html" title="Consistency checks for configuration options. " alt="" coords="5,469,115,496"/>
-<area shape="rect" id="node25" href="cryptodrv_8h.html" title="cryptodrv.h" alt="" coords="280,229,365,256"/>
-<area shape="rect" id="node29" href="mbedtls__ecode_8h.html" title="Silicon Labs specific mbedtls error code definitions. " alt="" coords="262,312,383,339"/>
+<area shape="rect" id="node3" href="ecp_8h.html" title="Elliptic curves over GF(p) " alt="" coords="282,80,336,107"/>
+<area shape="rect" id="node22" href="md_8h.html" title="Generic message digest wrapper. " alt="" coords="367,155,417,181"/>
+<area shape="rect" id="node5" href="bignum_8h.html" title="Multi&#45;precision integer library. " alt="" coords="267,155,341,181"/>
+<area shape="rect" id="node7" href="config-sl-crypto-all-acceleration_8h.html" title="config&#45;sl&#45;crypto&#45;all\l&#45;acceleration.h" alt="" coords="119,230,245,271"/>
+<area shape="rect" id="node11" href="config_8h.html" title="Compatibility names (set of defines) " alt="" coords="124,320,241,347"/>
+<area shape="rect" id="node13" href="check__config_8h.html" title="Consistency checks for configuration options. " alt="" coords="176,395,285,421"/>
 </map>
 </div>
 </div>
@@ -86,7 +83,7 @@ Include dependency graph for ecdsa.h:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aeb07d11aef4d847c5cc5cfba49547136"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#aeb07d11aef4d847c5cc5cfba49547136">MBEDTLS_ECDSA_MAX_LEN</a>&#160;&#160;&#160;( 3 + 2 * ( 3 + <a class="el" href="group__sl__crypto__ecp.html#gaba9fdfc8a8dd423182616e5708abf607">MBEDTLS_ECP_MAX_BYTES</a> ) )</td></tr>
+<tr class="memitem:aeb07d11aef4d847c5cc5cfba49547136"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#aeb07d11aef4d847c5cc5cfba49547136">MBEDTLS_ECDSA_MAX_LEN</a>&#160;&#160;&#160;( 3 + 2 * ( 3 + <a class="el" href="ecp_8h.html#aba9fdfc8a8dd423182616e5708abf607">MBEDTLS_ECP_MAX_BYTES</a> ) )</td></tr>
 <tr class="memdesc:aeb07d11aef4d847c5cc5cfba49547136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum size of an ECDSA signature in bytes.  <a href="#aeb07d11aef4d847c5cc5cfba49547136">More...</a><br /></td></tr>
 <tr class="separator:aeb07d11aef4d847c5cc5cfba49547136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -110,7 +107,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a8085ade3e127118aa615f65cb1d393d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a8085ade3e127118aa615f65cb1d393d5">mbedtls_ecdsa_read_signature</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, const unsigned char *hash, size_t hlen, const unsigned char *sig, size_t slen)</td></tr>
 <tr class="memdesc:a8085ade3e127118aa615f65cb1d393d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read and verify an ECDSA signature.  <a href="#a8085ade3e127118aa615f65cb1d393d5">More...</a><br /></td></tr>
 <tr class="separator:a8085ade3e127118aa615f65cb1d393d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab909bd06650e761e9fd176a86bd1ce17"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#ab909bd06650e761e9fd176a86bd1ce17">mbedtls_ecdsa_genkey</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, <a class="el" href="group__sl__crypto__ecp.html#gaf79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a> gid, int(*f_rng)(void *, unsigned char *, size_t), void *p_rng)</td></tr>
+<tr class="memitem:ab909bd06650e761e9fd176a86bd1ce17"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#ab909bd06650e761e9fd176a86bd1ce17">mbedtls_ecdsa_genkey</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, <a class="el" href="ecp_8h.html#af79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a> gid, int(*f_rng)(void *, unsigned char *, size_t), void *p_rng)</td></tr>
 <tr class="memdesc:ab909bd06650e761e9fd176a86bd1ce17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an ECDSA keypair on the given curve.  <a href="#ab909bd06650e761e9fd176a86bd1ce17">More...</a><br /></td></tr>
 <tr class="separator:ab909bd06650e761e9fd176a86bd1ce17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6de8efd872cfe1bc2ee93b4a5584226c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecdsa_8h.html#a6de8efd872cfe1bc2ee93b4a5584226c">mbedtls_ecdsa_from_keypair</a> (<a class="el" href="ecdsa_8h.html#a86ad4c743272c83310c20585ec7a182f">mbedtls_ecdsa_context</a> *ctx, const <a class="el" href="structmbedtls__ecp__keypair.html">mbedtls_ecp_keypair</a> *key)</td></tr>
@@ -129,7 +126,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define MBEDTLS_ECDSA_MAX_LEN&#160;&#160;&#160;( 3 + 2 * ( 3 + <a class="el" href="group__sl__crypto__ecp.html#gaba9fdfc8a8dd423182616e5708abf607">MBEDTLS_ECP_MAX_BYTES</a> ) )</td>
+          <td class="memname">#define MBEDTLS_ECDSA_MAX_LEN&#160;&#160;&#160;( 3 + 2 * ( 3 + <a class="el" href="ecp_8h.html#aba9fdfc8a8dd423182616e5708abf607">MBEDTLS_ECP_MAX_BYTES</a> ) )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -231,7 +228,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__sl__crypto__ecp.html#gaf79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="ecp_8h.html#af79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a>&#160;</td>
           <td class="paramname"><em>gid</em>, </td>
         </tr>
         <tr>
@@ -576,7 +573,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 13 2016 11:17:18 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 16:12:41 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

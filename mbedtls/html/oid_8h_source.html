@@ -403,9 +403,9 @@
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_ECP_C)</span></div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="keywordtype">int</span> mbedtls_oid_get_ec_grp( <span class="keyword">const</span> <a class="code" href="structmbedtls__asn1__buf.html">mbedtls_asn1_buf</a> *oid, <a class="code" href="group__sl__crypto__ecp.html#gaf79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a> *grp_id );</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="keywordtype">int</span> mbedtls_oid_get_ec_grp( <span class="keyword">const</span> <a class="code" href="structmbedtls__asn1__buf.html">mbedtls_asn1_buf</a> *oid, <a class="code" href="ecp_8h.html#af79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a> *grp_id );</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="keywordtype">int</span> mbedtls_oid_get_oid_by_ec_grp( <a class="code" href="group__sl__crypto__ecp.html#gaf79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a> grp_id,</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="keywordtype">int</span> mbedtls_oid_get_oid_by_ec_grp( <a class="code" href="ecp_8h.html#af79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a> grp_id,</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                           <span class="keyword">const</span> <span class="keywordtype">char</span> **oid, <span class="keywordtype">size_t</span> *olen );</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_ECP_C */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;</div>
@@ -456,18 +456,18 @@
 <div class="ttc" id="structmbedtls__asn1__buf_html"><div class="ttname"><a href="structmbedtls__asn1__buf.html">mbedtls_asn1_buf</a></div><div class="ttdoc">Type-length-value structure that allows for ASN1 using DER. </div><div class="ttdef"><b>Definition:</b> <a href="asn1_8h_source.html#l00118">asn1.h:118</a></div></div>
 <div class="ttc" id="oid_8h_html_af64b657d5ecb14c7035bf5ecf88d4458"><div class="ttname"><a href="oid_8h.html#af64b657d5ecb14c7035bf5ecf88d4458">mbedtls_oid_get_oid_by_pk_alg</a></div><div class="ttdeci">int mbedtls_oid_get_oid_by_pk_alg(mbedtls_pk_type_t pk_alg, const char **oid, size_t *olen)</div><div class="ttdoc">Translate pk_type into PublicKeyAlgorithm OID. </div></div>
 <div class="ttc" id="cipher_8h_html"><div class="ttname"><a href="cipher_8h.html">cipher.h</a></div><div class="ttdoc">Generic cipher wrapper. </div></div>
+<div class="ttc" id="ecp_8h_html_af79e530ea8f8416480f805baa20b1a2d"><div class="ttname"><a href="ecp_8h.html#af79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a></div><div class="ttdeci">mbedtls_ecp_group_id</div><div class="ttdoc">Domain parameters (curve, subgroup and generator) identifiers. </div><div class="ttdef"><b>Definition:</b> <a href="ecp_8h_source.html#l00060">ecp.h:60</a></div></div>
 <div class="ttc" id="x509_8h_html"><div class="ttname"><a href="x509_8h.html">x509.h</a></div><div class="ttdoc">X.509 generic defines and structures. </div></div>
 <div class="ttc" id="oid_8h_html_a027b5bb24a69578666631ffea74064a1"><div class="ttname"><a href="oid_8h.html#a027b5bb24a69578666631ffea74064a1">mbedtls_oid_get_attr_short_name</a></div><div class="ttdeci">int mbedtls_oid_get_attr_short_name(const mbedtls_asn1_buf *oid, const char **short_name)</div><div class="ttdoc">Translate an X.509 attribute type OID into the short name (e.g. </div></div>
-<div class="ttc" id="md_8h_html"><div class="ttname"><a href="md_8h.html">md.h</a></div></div>
+<div class="ttc" id="md_8h_html"><div class="ttname"><a href="md_8h.html">md.h</a></div><div class="ttdoc">Generic message digest wrapper. </div></div>
 <div class="ttc" id="structmbedtls__oid__descriptor__t_html_a9a0c9f82eed2f753d0fa0c4727c21ffa"><div class="ttname"><a href="structmbedtls__oid__descriptor__t.html#a9a0c9f82eed2f753d0fa0c4727c21ffa">mbedtls_oid_descriptor_t::asn1</a></div><div class="ttdeci">const char * asn1</div><div class="ttdef"><b>Definition:</b> <a href="oid_8h_source.html#l00383">oid.h:383</a></div></div>
 <div class="ttc" id="structmbedtls__oid__descriptor__t_html_a5b447674c65045cf4f855bd1c728f109"><div class="ttname"><a href="structmbedtls__oid__descriptor__t.html#a5b447674c65045cf4f855bd1c728f109">mbedtls_oid_descriptor_t::description</a></div><div class="ttdeci">const char * description</div><div class="ttdef"><b>Definition:</b> <a href="oid_8h_source.html#l00386">oid.h:386</a></div></div>
 <div class="ttc" id="oid_8h_html_afdf526c6529dce3f967ed018f28bed07"><div class="ttname"><a href="oid_8h.html#afdf526c6529dce3f967ed018f28bed07">mbedtls_oid_get_numeric_string</a></div><div class="ttdeci">int mbedtls_oid_get_numeric_string(char *buf, size_t size, const mbedtls_asn1_buf *oid)</div><div class="ttdoc">Translate an ASN.1 OID into its numeric representation (e.g. </div></div>
 <div class="ttc" id="md_8h_html_a219313cb40503ec3e34a857ab98b2296"><div class="ttname"><a href="md_8h.html#a219313cb40503ec3e34a857ab98b2296">mbedtls_md_type_t</a></div><div class="ttdeci">mbedtls_md_type_t</div><div class="ttdef"><b>Definition:</b> <a href="md_8h_source.html#l00039">md.h:39</a></div></div>
-<div class="ttc" id="group__sl__crypto__ecp_html_gaf79e530ea8f8416480f805baa20b1a2d"><div class="ttname"><a href="group__sl__crypto__ecp.html#gaf79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a></div><div class="ttdeci">mbedtls_ecp_group_id</div><div class="ttdoc">Domain parameters (curve, subgroup and generator) identifiers. </div><div class="ttdef"><b>Definition:</b> <a href="ecp__alt_8h_source.html#l00059">ecp_alt.h:59</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 13 2016 11:17:14 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 16:12:40 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

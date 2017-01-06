@@ -16,7 +16,7 @@ var searchData=
   ['devicesize',['deviceSize',['../structNANDFLASH__Info__TypeDef.html#a50ce1667eeb1d371798ed0fff1a82b5c',1,'NANDFLASH_Info_TypeDef::deviceSize()'],['../structNORFLASH__Info__TypeDef.html#a19f78622a2fe7f4f18ab54e7aaedc573',1,'NORFLASH_Info_TypeDef::deviceSize()']]],
   ['diff',['diff',['../structADC__InitScan__TypeDef.html#a5a3ec4ec81c389a5a72b6c7b0cf797d7',1,'ADC_InitScan_TypeDef::diff()'],['../structADC__InitSingle__TypeDef.html#a8ca356b274b37427cf2ab20bdd085a08',1,'ADC_InitSingle_TypeDef::diff()']]],
   ['din',['DIN',['../structGPIO__P__TypeDef.html#a8d6bab03ea08dc3e2408dbead3f69e99',1,'GPIO_P_TypeDef']]],
-  ['direction',['direction',['../structMSDD__CmdStatus__TypeDef.html#a3fa1480adbf416ef5fcc5128c65be4df',1,'MSDD_CmdStatus_TypeDef::direction()'],['../structMSDBOT__CBW__TypeDef.html#a084a414ac725c2455e1c15cc56d05abb',1,'MSDBOT_CBW_TypeDef::Direction()']]],
+  ['direction',['Direction',['../structMSDBOT__CBW__TypeDef.html#a084a414ac725c2455e1c15cc56d05abb',1,'MSDBOT_CBW_TypeDef::Direction()'],['../structMSDD__CmdStatus__TypeDef.html#a3fa1480adbf416ef5fcc5128c65be4df',1,'MSDD_CmdStatus_TypeDef::direction()']]],
   ['directrx',['directRx',['../structEZRADIODRV__HandleData.html#a5baff53e6ac565ad2afc0542264176b9',1,'EZRADIODRV_HandleData']]],
   ['directtx',['directTx',['../structEZRADIODRV__HandleData.html#a83ef2f44ed706ee64db88e687a549fa2',1,'EZRADIODRV_HandleData']]],
   ['display_5fctrl',['DISPLAY_CTRL',['../structBC__TypeDef.html#ac9787dfcb74fc9c459681aabedfc6aed',1,'BC_TypeDef']]],

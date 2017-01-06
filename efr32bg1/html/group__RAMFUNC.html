@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Blue Gecko Software Documentation: RAMFUNC</title>
+<title>EFR32 Blue Gecko 1 Software Documentation: RAMFUNC</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EFR32 Blue Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32bg1-doc-4.4.0</span>
+   <div id="projectname">EFR32 Blue Gecko 1 Software Documentation
+   &#160;<span id="projectnumber">efr32bg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -109,96 +109,61 @@ $(document).ready(function(){initNavTree('group__RAMFUNC.html','');});
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>RAM code support. </p>
 <p>This module provides support for executing code from RAM. A unified method to manage RAM code across all supported tools is provided.</p>
-<dl class="section note"><dt>Note</dt><dd>Functions executing from RAM should not be declared as static.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Other cross-compiler support macros are implemented in <a class="el" href="group__COMMON.html">COMMON</a>.</dd>
+<dd>
+Functions executing from RAM should not be declared as static.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>With GCC in hosted mode (default), standard library facilities are available to the tool regardless of the section attribute. Calls to standard libraries placed in the default section may therefore occur. To disable hosted mode, add '-ffreestanding' to the build command line. This is the only way to guarantee no calls to standard libraries with GCC. Read more at <a href="https://gcc.gnu.org/onlinedocs/gcc-5.3.0/gcc/Standards.html">https://gcc.gnu.org/onlinedocs/gcc-5.3.0/gcc/Standards.html</a></dd></dl>
 <p><br />
  </p>
 <h1><a class="anchor" id="ramfunc_usage"></a>
 Usage</h1>
-<p>In your .h file: </p><pre class="fragment">  #include "em_ramfunc.h"
+<p>In your .h file: </p><pre class="fragment">#include "em_ramfunc.h"
 
-  RAMFUNC_DECLARATOR
-  void MyPrint(const char* string);</pre><p>Issues have been observed with armgcc when there is no declarator. It is recommended to have a declarator also for internal functions, but move the declarator to the .c file.</p>
-<p>In your .c file: </p><pre class="fragment">  #include "em_ramfunc.h"
+SL_RAMFUNC_DECLARATOR
+void MyPrint(const char* string);
+</pre><p>Issues have been observed with armgcc when there is no declarator. It is recommended to have a declarator also for internal functions, but move the declarator to the .c file.</p>
+<p>In your .c file: </p><pre class="fragment">#include "em_ramfunc.h"
 
-  RAMFUNC_DEFINITION_BEGIN
-  void MyPrint(const char* string)
-  {
-  ...
-  }
-  RAMFUNC_DEFINITION_END</pre> <table class="memberdecls">
+SL_RAMFUNC_DEFINITION_BEGIN
+void MyPrint(const char* string)
+{
+...
+}
+SL_RAMFUNC_DEFINITION_END
+</pre> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gac32af03519e3aa8ca7eefb1455cc74df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#gac32af03519e3aa8ca7eefb1455cc74df">RAMFUNC_DECLARATOR</a></td></tr>
-<tr class="separator:gac32af03519e3aa8ca7eefb1455cc74df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5a91149cd62035f2487e4668e3fe6a80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#ga5a91149cd62035f2487e4668e3fe6a80">RAMFUNC_DEFINITION_BEGIN</a></td></tr>
-<tr class="separator:ga5a91149cd62035f2487e4668e3fe6a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac42a0ebdb3b8e68d1e987ce4ceb09da8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#gac42a0ebdb3b8e68d1e987ce4ceb09da8">RAMFUNC_DEFINITION_END</a></td></tr>
-<tr class="separator:gac42a0ebdb3b8e68d1e987ce4ceb09da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ec00e8521eb58ab1a00337875d4e1ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#ga9ec00e8521eb58ab1a00337875d4e1ed">RAMFUNC_DISABLE</a></td></tr>
-<tr class="memdesc:ga9ec00e8521eb58ab1a00337875d4e1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">By compiling with the define RAMFUNC_DISABLE, code placed in RAM by the RAMFUNC macros will be placed in Flash instead.  <a href="#ga9ec00e8521eb58ab1a00337875d4e1ed">More...</a><br /></td></tr>
-<tr class="separator:ga9ec00e8521eb58ab1a00337875d4e1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6abbc7f869eec9fb47e57427587c556"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac6abbc7f869eec9fb47e57427587c556"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#gac6abbc7f869eec9fb47e57427587c556">SL_RAMFUNC_DECLARATOR</a></td></tr>
+<tr class="memdesc:gac6abbc7f869eec9fb47e57427587c556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiler ported function declarator for RAM code. <br /></td></tr>
+<tr class="separator:gac6abbc7f869eec9fb47e57427587c556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1eec71bc8997b89ddc68a43b4ffe41b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1eec71bc8997b89ddc68a43b4ffe41b0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#ga1eec71bc8997b89ddc68a43b4ffe41b0">SL_RAMFUNC_DEFINITION_BEGIN</a></td></tr>
+<tr class="memdesc:ga1eec71bc8997b89ddc68a43b4ffe41b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiler ported function definition begin marker for RAM code. <br /></td></tr>
+<tr class="separator:ga1eec71bc8997b89ddc68a43b4ffe41b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga194f7f5b6888133f06fe1b84d2434cfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga194f7f5b6888133f06fe1b84d2434cfe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#ga194f7f5b6888133f06fe1b84d2434cfe">SL_RAMFUNC_DEFINITION_END</a></td></tr>
+<tr class="memdesc:ga194f7f5b6888133f06fe1b84d2434cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiler ported function definition end marker for RAM code. <br /></td></tr>
+<tr class="separator:ga194f7f5b6888133f06fe1b84d2434cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f737c3d340003b5b947eef7a4c21263"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#ga2f737c3d340003b5b947eef7a4c21263">SL_RAMFUNC_DISABLE</a></td></tr>
+<tr class="memdesc:ga2f737c3d340003b5b947eef7a4c21263"><td class="mdescLeft">&#160;</td><td class="mdescRight">This define is not present by default. By compiling with the define <a class="el" href="group__RAMFUNC.html#ga2f737c3d340003b5b947eef7a4c21263">SL_RAMFUNC_DISABLE</a>, code placed in RAM by the SL_RAMFUNC macros will be placed in default code space (Flash) instead.  <a href="#ga2f737c3d340003b5b947eef7a4c21263">More...</a><br /></td></tr>
+<tr class="separator:ga2f737c3d340003b5b947eef7a4c21263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="gac32af03519e3aa8ca7eefb1455cc74df"></a>
+<a class="anchor" id="ga2f737c3d340003b5b947eef7a4c21263"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define RAMFUNC_DECLARATOR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Compiler ported function declarator for RAM code. </p>
-
-<p>Definition at line <a class="el" href="em__ramfunc_8h_source.html#l00108">108</a> of file <a class="el" href="em__ramfunc_8h_source.html">em_ramfunc.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga5a91149cd62035f2487e4668e3fe6a80"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RAMFUNC_DEFINITION_BEGIN</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Compiler ported function definition begin marker for RAM code. </p>
-
-<p>Definition at line <a class="el" href="em__ramfunc_8h_source.html#l00111">111</a> of file <a class="el" href="em__ramfunc_8h_source.html">em_ramfunc.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gac42a0ebdb3b8e68d1e987ce4ceb09da8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RAMFUNC_DEFINITION_END</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Compiler ported function definition end marker for RAM code. </p>
-
-<p>Definition at line <a class="el" href="em__ramfunc_8h_source.html#l00114">114</a> of file <a class="el" href="em__ramfunc_8h_source.html">em_ramfunc.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga9ec00e8521eb58ab1a00337875d4e1ed"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RAMFUNC_DISABLE</td>
+          <td class="memname">#define SL_RAMFUNC_DISABLE</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>By compiling with the define RAMFUNC_DISABLE, code placed in RAM by the RAMFUNC macros will be placed in Flash instead. </p>
+<p>This define is not present by default. By compiling with the define <a class="el" href="group__RAMFUNC.html#ga2f737c3d340003b5b947eef7a4c21263">SL_RAMFUNC_DISABLE</a>, code placed in RAM by the SL_RAMFUNC macros will be placed in default code space (Flash) instead. </p>
 <dl class="section note"><dt>Note</dt><dd>This define is not present by default. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__ramfunc_8h_source.html#l00103">103</a> of file <a class="el" href="em__ramfunc_8h_source.html">em_ramfunc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__ramfunc_8h_source.html#l00107">107</a> of file <a class="el" href="em__ramfunc_8h_source.html">em_ramfunc.h</a>.</p>
 
 </div>
 </div>
@@ -207,7 +172,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 10:44:13 for EFR32 Blue Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 15:52:35 for EFR32 Blue Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('group__UARTDRV.html','');});
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>UARTDRV Universal asynchronous receiver/transmitter driver </p><pre class="fragment"></pre><p>. </p>
+<p>UARTDRV Universal Asynchronous Receiver/Transmitter Driver. </p>
 <p>The source files for the UART driver library resides in the emdrv/uartdrv folder, and are named <a class="el" href="uartdrv_8c.html" title="UARTDRV API implementation. ">uartdrv.c</a> and <a class="el" href="uartdrv_8h.html" title="UARTDRV API definition. ">uartdrv.h</a>.</p>
 <ul>
 <li><a class="el" href="group__UARTDRV.html#uartdrv_intro">Introduction</a> </li>
@@ -131,16 +131,17 @@ Introduction</h1>
  </p>
 <h1><a class="anchor" id="uartdrv_conf"></a>
 Configuration Options</h1>
-<p>Some properties of the UARTDRV driver are compile-time configurable. These properties are set in a file named uartdrv_config.h. A template for this file, containing default values, resides in the emdrv/config folder. To configure UARTDRV for your application, provide your own configuration file. These are the available configuration parameters with default values defined. </p><div class="fragment"><div class="line"><span class="comment">// Maximum concurrent receive operations</span></div>
+<p>Some properties of the UARTDRV driver are compile-time configurable. These properties are set in a file named uartdrv_config.h. A template for this file, containing default values, resides in the emdrv/config folder. To configure UARTDRV for your application, provide your own configuration file, or override the defines on the compiler command line. These are the available configuration parameters with default values defined. </p><div class="fragment"><div class="line"><span class="comment">// Size of the receive operation queue</span></div>
 <div class="line"><span class="preprocessor">#define EMDRV_UARTDRV_MAX_CONCURRENT_RX_BUFS    6</span></div>
 <div class="line"></div>
-<div class="line"><span class="comment">// Maximum concurrent transmit operations</span></div>
+<div class="line"><span class="comment">// Size of the transmit operation queue</span></div>
 <div class="line"><span class="preprocessor">#define EMDRV_UARTDRV_MAX_CONCURRENT_TX_BUFS    6</span></div>
 <div class="line"></div>
 <div class="line"><span class="comment">// Set to 1 to enable hardware flow control</span></div>
-<div class="line"><span class="preprocessor">#define EMDRV_UARTDRV_HW_FLOW_CONTROL_ENABLE    1</span></div>
+<div class="line"><span class="preprocessor">#define EMDRV_UARTDRV_FLOW_CONTROL_ENABLE       1</span></div>
 <div class="line"></div>
-<div class="line"><span class="comment">// Maximum number of driver instances. This maximum applies only when EMDRV_UARTDRV_HW_FLOW_CONTROL_ENABLE = 1</span></div>
+<div class="line"><span class="comment">// Maximum number of driver instances.</span></div>
+<div class="line"><span class="comment">// This maximum applies only when EMDRV_UARTDRV_FLOW_CONTROL_ENABLE = 1</span></div>
 <div class="line"><span class="preprocessor">#define EMDRV_UARTDRV_MAX_DRIVER_INSTANCES      4</span></div>
 <div class="line"></div>
 <div class="line"><span class="comment">// UART software flow control code: request peer to start TX</span></div>
@@ -155,30 +156,30 @@ Configuration Options</h1>
 The API</h1>
 <p>This section contain brief descriptions of the functions in the API. You will find detailed information on input and output parameters and return values by clicking on the hyperlinked function names. Most functions return an error code, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> is returned on success, see <a class="el" href="ecode_8h.html">ecode.h</a> and <a class="el" href="uartdrv_8h.html">uartdrv.h</a> for other error codes.</p>
 <p>Your application code must include one header file: <em><a class="el" href="uartdrv_8h.html" title="UARTDRV API definition. ">uartdrv.h</a></em>.</p>
-<p><a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a>, <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart()</a>, <a class="el" href="group__UARTDRV.html#ga3b4222031534ab6d54ca068b5fa6e596">UARTDRV_DeInit()</a> <br />
+<p><a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a>, <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart()</a> and <a class="el" href="group__UARTDRV.html#ga3b4222031534ab6d54ca068b5fa6e596">UARTDRV_DeInit()</a> <br />
  These functions initialize and deinitialize the UARTDRV driver. Typically  UARTDRV_InitUart()  (for UART/USART) or  UARTDRV_InitLeuart()  (for LEUART) are called once in your startup code.</p>
-<p><a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">UARTDRV_GetReceiveStatus()</a>, <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">UARTDRV_GetTransmitStatus()</a> <br />
+<p><a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">UARTDRV_GetReceiveStatus()</a> and <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">UARTDRV_GetTransmitStatus()</a> <br />
  Query the status of a current transmit or receive operations. Reports number of items (frames) transmitted and remaining.</p>
-<p><a class="el" href="group__UARTDRV.html#gab9b0230941575668b73874ffe1ff01e4">UARTDRV_GetReceiveDepth()</a>, <a class="el" href="group__UARTDRV.html#gab467cb6aa9940119e4f03bd860c76266">UARTDRV_GetTransmitDepth()</a> <br />
+<p><a class="el" href="group__UARTDRV.html#gab9b0230941575668b73874ffe1ff01e4">UARTDRV_GetReceiveDepth()</a> and <a class="el" href="group__UARTDRV.html#gab467cb6aa9940119e4f03bd860c76266">UARTDRV_GetTransmitDepth()</a> <br />
  Get the number of queued receive or transmit operations.</p>
 <p><a class="el" href="group__UARTDRV.html#ga484ac0b78a9eccb0ec6a1d30b7cc3232">UARTDRV_Transmit()</a>, <a class="el" href="group__UARTDRV.html#ga1d8a5e61c33176ad32cf3c1330e132c6" title="Start a non-blocking receive. ">UARTDRV_Receive()</a> <br />
  <a class="el" href="group__UARTDRV.html#ga58f8120e861e2d9335e2acceec1ae4f7" title="Start a blocking transmit. ">UARTDRV_TransmitB()</a>, <a class="el" href="group__UARTDRV.html#ga5d8380296aa482ac95360d3855a2e150" title="Start a blocking receive. ">UARTDRV_ReceiveB()</a> <br />
- <a class="el" href="group__UARTDRV.html#ga762bade408c1a64812467e1f58026899" title="Direct transmit without interrupts or callback. Blocking function that ignores flow control if enable...">UARTDRV_ForceTransmit()</a>, <a class="el" href="group__UARTDRV.html#gac978c9e489a78347598b3005bb49545e" title="Direct receive without interrupts or callback. Blocking function. ">UARTDRV_ForceReceive()</a> <br />
+ <a class="el" href="group__UARTDRV.html#ga762bade408c1a64812467e1f58026899" title="Direct transmit without interrupts or callback. Blocking function that ignores flow control if enable...">UARTDRV_ForceTransmit()</a> and <a class="el" href="group__UARTDRV.html#gac978c9e489a78347598b3005bb49545e" title="Direct receive without interrupts or callback. Blocking function. ">UARTDRV_ForceReceive()</a> <br />
  Transfer functions come in both blocking and non-blocking versions, the blocking versions have an uppercase B (for Blocking) at the end of their function name. Blocking functions will not return before the transfer has completed. The non-blocking functions signal transfer completion with a callback function. <a class="el" href="group__UARTDRV.html#ga762bade408c1a64812467e1f58026899">UARTDRV_ForceTransmit()</a> and <a class="el" href="group__UARTDRV.html#gac978c9e489a78347598b3005bb49545e">UARTDRV_ForceReceive()</a> are also blocking. These two functions access the UART peripheral directly without using DMA or interrupts. <a class="el" href="group__UARTDRV.html#ga762bade408c1a64812467e1f58026899">UARTDRV_ForceTransmit()</a> does not respect flow control. <a class="el" href="group__UARTDRV.html#gac978c9e489a78347598b3005bb49545e">UARTDRV_ForceReceive()</a> forces RTS low.</p>
 <p><a class="el" href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">UARTDRV_Abort()</a> <br />
- Abort current transmit or receive operations.</p>
-<p><a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">UARTDRV_FlowControlSet()</a>, <a class="el" href="group__UARTDRV.html#ga54bed0223f912f7a5a5e1c4a62356ffe" title="Checks the self&#39;s flow control status. ">UARTDRV_FlowControlGetSelfStatus()</a>, <a class="el" href="group__UARTDRV.html#ga110407a69b9915d78980749b449a106c" title="Set peer UART flow control state. Pause/resume transmit accordingly. Only for manual software flow co...">UARTDRV_FlowControlSetPeerStatus()</a>, <a class="el" href="group__UARTDRV.html#ga3ba0e9be643afcefc0962dcdb2e635a7" title="Checks the peer&#39;s flow control status. ">UARTDRV_FlowControlGetPeerStatus()</a> <br />
+ Abort current transmit or receive operations, and remove all queued operations.</p>
+<p><a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">UARTDRV_FlowControlSet()</a>, <a class="el" href="group__UARTDRV.html#ga54bed0223f912f7a5a5e1c4a62356ffe">UARTDRV_FlowControlGetSelfStatus()</a>, <a class="el" href="group__UARTDRV.html#ga110407a69b9915d78980749b449a106c">UARTDRV_FlowControlSetPeerStatus()</a> and <a class="el" href="group__UARTDRV.html#ga3ba0e9be643afcefc0962dcdb2e635a7">UARTDRV_FlowControlGetPeerStatus()</a> <br />
  Set and get flow control status of self or peer device. Note that the return value from these two functions depends on the flow control mode set by <a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">UARTDRV_FlowControlSet()</a>, <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a> or <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart()</a>.</p>
 <p><a class="el" href="group__UARTDRV.html#ga8e0d51c55deaa14695b276c3c19cd4a1">UARTDRV_FlowControlIgnoreRestrain()</a> <br />
  Enables transmission when restrained by flow control.</p>
-<p><a class="el" href="group__UARTDRV.html#gafa7cbc80545ad814f338c4043de5023c">UARTDRV_PauseTransmit()</a>, <a class="el" href="group__UARTDRV.html#ga6e83c35be3ad93e6717ce8dc54a155c7" title="Resume a paused transmit operation. ">UARTDRV_ResumeTransmit()</a> <br />
+<p><a class="el" href="group__UARTDRV.html#gafa7cbc80545ad814f338c4043de5023c">UARTDRV_PauseTransmit()</a> and <a class="el" href="group__UARTDRV.html#ga6e83c35be3ad93e6717ce8dc54a155c7">UARTDRV_ResumeTransmit()</a> <br />
  Pause a currently active transmit operation by preventing the DMA from loading the UART fifo. Will not override HW flow control state (if applicable), but can be used in conjunction.</p>
 <p><br />
  </p>
 <h1><a class="anchor" id="uartdrv_fc"></a>
 Flow Control Support</h1>
-<p>If UART flow control is not required, make sure EMDRV_UARTDRV_HW_FLOW_CONTROL_ENABLE is set to 0. This reduces the code size and complexity of the driver.</p>
-<p>There are two types of flow control supported, hardware and software. To enable any of these, set EMDRV_UARTDRV_HW_FLOW_CONTROL_ENABLE to 1 in uartdrv_config.h.</p>
+<p>If UART flow control is not required, make sure EMDRV_UARTDRV_FLOW_CONTROL_ENABLE is set to 0. This reduces the code size and complexity of the driver.</p>
+<p>There are two types of flow control supported, hardware and software. To enable any of these, set EMDRV_UARTDRV_FLOW_CONTROL_ENABLE to 1 in uartdrv_config.h.</p>
 <p><br />
  </p>
 <h2><a class="anchor" id="uartdrv_fc_hw"></a>
@@ -187,7 +188,7 @@ Hardware Flow Control</h2>
 <dl class="section user"><dt>Peripheral Hardware Flow Control</dt><dd></dd></dl>
 <p>Newer devices, such as EFR32MG1 and EFM32PG1, natively support CTS/RTS in the USART peripheral hardware. To enable hardware flow control, perform the following steps:</p>
 <ul>
-<li>Set EMDRV_UARTDRV_HW_FLOW_CONTROL_ENABLE to 1.</li>
+<li>Set EMDRV_UARTDRV_FLOW_CONTROL_ENABLE to 1.</li>
 <li>In the <a class="el" href="structUARTDRV__InitUart__t.html">UARTDRV_InitUart_t</a> struct passed to <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a>, set <a class="el" href="structUARTDRV__InitUart__t.html#a3f84fe6551700d3c1a5ba21a0adbf919">UARTDRV_InitUart_t::fcType</a> = uartdrvFlowControlHwUart.</li>
 <li>Define the pins for CTS and RTS by setting ctsPort, ctsPin, rtsPort and rtsPin in the init struct.</li>
 <li>Also define the CTS and RTS locations by setting portLocationCts and portLocationRts in the init struct.</li>
@@ -196,7 +197,7 @@ Hardware Flow Control</h2>
 <p>To support hardware flow control on devices that don't have UART CTS/RTS hardware support, the driver includes the GPIOINT driver to emulate a hardware implementation of UART CTS/RTS flow control on these devices.</p>
 <p>To enable hardware flow control, perform the following steps:</p>
 <ul>
-<li>Set EMDRV_UARTDRV_HW_FLOW_CONTROL_ENABLE to 1.</li>
+<li>Set EMDRV_UARTDRV_FLOW_CONTROL_ENABLE to 1.</li>
 <li>UART/USART: In the <a class="el" href="structUARTDRV__InitUart__t.html">UARTDRV_InitUart_t</a> struct passed to <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a>, set <a class="el" href="structUARTDRV__InitUart__t.html#a3f84fe6551700d3c1a5ba21a0adbf919">UARTDRV_InitUart_t::fcType</a> = uartdrvFlowControlHw.</li>
 <li>LEUART: In the <a class="el" href="structUARTDRV__InitLeuart__t.html">UARTDRV_InitLeuart_t</a> struct passed to <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart()</a>, set <a class="el" href="structUARTDRV__InitLeuart__t.html#aef4cefd9f8be70562558a7b07197ec05">UARTDRV_InitLeuart_t::fcType</a> = uartdrvFlowControlHw.</li>
 <li>Define the pins for CTS and RTS by setting ctsPort, ctsPin, rtsPort and rtsPin in the same init struct.</li>
@@ -210,12 +211,12 @@ Software Flow Control</h2>
 <p>UART software flow control uses in-band signaling, meaning the receiver sends special flow control characters to the transmitter and thereby removes the need for dedicated wires for flow control. The two symbols UARTDRV_FC_SW_XON and UARTDRV_FC_SW_XOFF are defined in uartdrv_config.h.</p>
 <p>To enable support for software flow control, perform the following steps:</p>
 <ul>
-<li>Set EMDRV_UARTDRV_HW_FLOW_CONTROL_ENABLE to 1.</li>
+<li>Set EMDRV_UARTDRV_FLOW_CONTROL_ENABLE to 1.</li>
 <li>UART/USART: In the <a class="el" href="structUARTDRV__InitUart__t.html">UARTDRV_InitUart_t</a> struct passed to <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a>, set <a class="el" href="structUARTDRV__InitUart__t.html#a3f84fe6551700d3c1a5ba21a0adbf919">UARTDRV_InitUart_t::fcType</a> = uartdrvFlowControlSw.</li>
 <li>LEUART: In the <a class="el" href="structUARTDRV__InitLeuart__t.html">UARTDRV_InitLeuart_t</a> struct passed to <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart()</a>, set <a class="el" href="structUARTDRV__InitLeuart__t.html#aef4cefd9f8be70562558a7b07197ec05">UARTDRV_InitLeuart_t::fcType</a> = uartdrvFlowControlSw.</li>
 </ul>
 <dl class="section note"><dt>Note</dt><dd>Software flow control is partial only.</dd></dl>
-<p>The application must monitor buffers and make decisions on when to send XON/ XOFF. XON/XOFF can be sent to the peer using <a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">UARTDRV_FlowControlSet()</a>. Though <a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">UARTDRV_FlowControlSet()</a> will pause the active transmit operation to send a flow control character, there is no way to guarantee the order. If the application implements a specific packet format where the flow control codes may appear only in fixed positions, then the application should not use <a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">UARTDRV_FlowControlSet()</a>, but implement read and write of XON/XOFF into packet buffers. If the application code fully implements all the flow control logic, then EMDRV_UARTDRV_HW_FLOW_CONTROL_ENABLE should be set to 0 to reduce code space.</p>
+<p>The application must monitor buffers and make decisions on when to send XON/ XOFF. XON/XOFF can be sent to the peer using <a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">UARTDRV_FlowControlSet()</a>. Though <a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">UARTDRV_FlowControlSet()</a> will pause the active transmit operation to send a flow control character, there is no way to guarantee the order. If the application implements a specific packet format where the flow control codes may appear only in fixed positions, then the application should not use <a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">UARTDRV_FlowControlSet()</a>, but implement read and write of XON/XOFF into packet buffers. If the application code fully implements all the flow control logic, then EMDRV_UARTDRV_FLOW_CONTROL_ENABLE should be set to 0 to reduce code space.</p>
 <p><br />
  </p>
 <h1><a class="anchor" id="uartdrv_example"></a>
@@ -223,42 +224,51 @@ Example</h1>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="uartdrv_8h.html">uartdrv.h</a>&quot;</span></div>
 <div class="line"></div>
 <div class="line"><span class="comment">// Define receive/transmit operation queues</span></div>
-<div class="line"><a class="code" href="group__UARTDRV.html#ga24318918f06c584749d8a2f8a96be2fc">DEFINE_BUF_QUEUE</a>(EMDRV_UARTDRV_MAX_CONCURRENT_RX_BUFS, rxBufferQueueI0);</div>
-<div class="line"><a class="code" href="group__UARTDRV.html#ga24318918f06c584749d8a2f8a96be2fc">DEFINE_BUF_QUEUE</a>(EMDRV_UARTDRV_MAX_CONCURRENT_TX_BUFS, txBufferQueueI0);</div>
+<div class="line"><a class="code" href="group__UARTDRV.html#ga24318918f06c584749d8a2f8a96be2fc">DEFINE_BUF_QUEUE</a>(EMDRV_UARTDRV_MAX_CONCURRENT_RX_BUFS, rxBufferQueue);</div>
+<div class="line"><a class="code" href="group__UARTDRV.html#ga24318918f06c584749d8a2f8a96be2fc">DEFINE_BUF_QUEUE</a>(EMDRV_UARTDRV_MAX_CONCURRENT_TX_BUFS, txBufferQueue);</div>
 <div class="line"></div>
-<div class="line"><span class="comment">// Configuration for USART0, location 1</span></div>
+<div class="line"><span class="comment">// Configuration for USART1, location 0</span></div>
 <div class="line"><span class="preprocessor">#define MY_UART                                     \</span></div>
 <div class="line"><span class="preprocessor">{                                                   \</span></div>
 <div class="line"><span class="preprocessor">  USART1,                                           \</span></div>
 <div class="line"><span class="preprocessor">  115200,                                           \</span></div>
-<div class="line"><span class="preprocessor">  _USART_ROUTE_LOCATION_LOC1,                       \</span></div>
+<div class="line"><span class="preprocessor">  _USART_ROUTE_LOCATION_LOC0,                       \</span></div>
 <div class="line"><span class="preprocessor">  usartStopbits1,                                   \</span></div>
 <div class="line"><span class="preprocessor">  usartNoParity,                                    \</span></div>
 <div class="line"><span class="preprocessor">  usartOVS16,                                       \</span></div>
 <div class="line"><span class="preprocessor">  false,                                            \</span></div>
 <div class="line"><span class="preprocessor">  uartdrvFlowControlHw,                             \</span></div>
-<div class="line"><span class="preprocessor">  gpioPortD,                                        \</span></div>
-<div class="line"><span class="preprocessor">  2,                                                \</span></div>
-<div class="line"><span class="preprocessor">  gpioPortD,                                        \</span></div>
-<div class="line"><span class="preprocessor">  3,                                                \</span></div>
-<div class="line"><span class="preprocessor">  (UARTDRV_Buffer_FifoQueue_t *)&amp;rxBufferQueueI0,   \</span></div>
-<div class="line"><span class="preprocessor">  (UARTDRV_Buffer_FifoQueue_t *)&amp;txBufferQueueI0    \</span></div>
+<div class="line"><span class="preprocessor">  gpioPortE,                                        \</span></div>
+<div class="line"><span class="preprocessor">  12,                                               \</span></div>
+<div class="line"><span class="preprocessor">  gpioPortE,                                        \</span></div>
+<div class="line"><span class="preprocessor">  13,                                               \</span></div>
+<div class="line"><span class="preprocessor">  (UARTDRV_Buffer_FifoQueue_t *)&amp;rxBufferQueue,     \</span></div>
+<div class="line"><span class="preprocessor">  (UARTDRV_Buffer_FifoQueue_t *)&amp;txBufferQueue      \</span></div>
 <div class="line"><span class="preprocessor">}</span></div>
 <div class="line"></div>
 <div class="line"><a class="code" href="structUARTDRV__HandleData.html">UARTDRV_HandleData_t</a> handleData;</div>
 <div class="line"><a class="code" href="structUARTDRV__HandleData.html">UARTDRV_Handle_t</a> handle = &amp;handleData;</div>
+<div class="line">uint8_t buffer[64];</div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
+<div class="line"><span class="keywordtype">void</span> callback(<a class="code" href="structUARTDRV__HandleData.html">UARTDRV_Handle_t</a> handle,</div>
+<div class="line">              <a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> transferStatus,</div>
+<div class="line">              uint8_t *data,</div>
+<div class="line">              <a class="code" href="group__UARTDRV.html#ga20f2dca466c884ed896061f8e90ff816">UARTDRV_Count_t</a> transferCount)</div>
 <div class="line">{</div>
-<div class="line">  uint8_t buffer[10];</div>
-<div class="line">  <a class="code" href="structUARTDRV__InitUart__t.html">UARTDRV_InitUart_t</a> initData = MY_UART;</div>
+<div class="line">  (void)handle;</div>
+<div class="line">  (void)transferStatus;</div>
+<div class="line">  (void)data;</div>
+<div class="line">  (void)transferCount;</div>
+<div class="line">}</div>
 <div class="line"></div>
+<div class="line"><span class="keywordtype">void</span> uartdrv_example(<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">  <span class="comment">// Initialize driver handle</span></div>
+<div class="line">  <a class="code" href="structUARTDRV__InitUart__t.html">UARTDRV_InitUart_t</a> initData = MY_UART;</div>
 <div class="line">  <a class="code" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart</a>(handle, &amp;initData);</div>
 <div class="line"></div>
 <div class="line">  <span class="comment">// Transmit data using a non-blocking transmit function</span></div>
-<div class="line">  <a class="code" href="group__UARTDRV.html#ga484ac0b78a9eccb0ec6a1d30b7cc3232">UARTDRV_Transmit</a>(handle, buffer, 10);</div>
-<div class="line"></div>
-<div class="line">  <span class="keywordflow">while</span> (1) {}</div>
+<div class="line">  <a class="code" href="group__UARTDRV.html#ga484ac0b78a9eccb0ec6a1d30b7cc3232">UARTDRV_Transmit</a>(handle, buffer, 64, callback);</div>
 <div class="line">}</div>
 </div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -443,7 +453,7 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga0abd859c2a17dafe03abceeb4c96a12a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">UARTDRV_Abort</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, <a class="el" href="group__UARTDRV.html#ga458cf4e5cd800c561d4405a07a5d2e8e">UARTDRV_AbortType_t</a> type)</td></tr>
-<tr class="memdesc:ga0abd859c2a17dafe03abceeb4c96a12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort an ongoing UART transfer.  <a href="#ga0abd859c2a17dafe03abceeb4c96a12a">More...</a><br /></td></tr>
+<tr class="memdesc:ga0abd859c2a17dafe03abceeb4c96a12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort ongoing UART transfers.  <a href="#ga0abd859c2a17dafe03abceeb4c96a12a">More...</a><br /></td></tr>
 <tr class="separator:ga0abd859c2a17dafe03abceeb4c96a12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3b4222031534ab6d54ca068b5fa6e596"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga3b4222031534ab6d54ca068b5fa6e596">UARTDRV_DeInit</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle)</td></tr>
 <tr class="memdesc:ga3b4222031534ab6d54ca068b5fa6e596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize a UART driver instance.  <a href="#ga3b4222031534ab6d54ca068b5fa6e596">More...</a><br /></td></tr>
@@ -552,7 +562,7 @@ Functions</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><p>Macros to define fifo and buffer queues, can't use a typedef becuase the size of the fifo array in the queues can change. </p>
 
-<p>Definition at line <a class="el" href="uartdrv_8h_source.html#l00152">152</a> of file <a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8h_source.html#l00151">151</a> of file <a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>.</p>
 
 </div>
 </div>
@@ -578,7 +588,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8h_source.html#l00125">125</a> of file <a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8h_source.html#l00124">124</a> of file <a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>.</p>
 
 </div>
 </div>
@@ -619,7 +629,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="uartdrv_8h_source.html#l00090">90</a> of file <a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8h_source.html#l00089">89</a> of file <a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>.</p>
 
 </div>
 </div>
@@ -646,7 +656,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="uartdrv_8h_source.html#l00082">82</a> of file <a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8h_source.html#l00081">81</a> of file <a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>.</p>
 
 </div>
 </div>
@@ -676,7 +686,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="uartdrv_8h_source.html#l00073">73</a> of file <a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8h_source.html#l00072">72</a> of file <a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>.</p>
 
 </div>
 </div>
@@ -705,19 +715,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Abort an ongoing UART transfer. </p>
+<p>Abort ongoing UART transfers. </p>
+<p>All ongoing or queued operations of the given abort type will be aborted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Pointer to a UART driver handle.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Abort type</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Abort type &ndash; whether to abort only TX, only RX or both.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success, <a class="el" href="group__UARTDRV.html#ga1c71e9adb59ea02dd52b94ee2958ada4">ECODE_EMDRV_UARTDRV_IDLE</a> if the UART is idle. On failure an appropriate UARTDRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01393">1393</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01442">1442</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
-<p>References <a class="el" href="structUARTDRV__Buffer__t.html#a112d253dae134fb234446a32cdae9667">UARTDRV_Buffer_t::callback</a>, <a class="el" href="group__DMADRV.html#ga3a04cb3aa30ec2fd955281f55538028d">DMADRV_StopTransfer()</a>, <a class="el" href="group__DMADRV.html#ga9a253b47872d205a76b6f1b7b486194d">DMADRV_TransferRemainingCount()</a>, <a class="el" href="group__UARTDRV.html#ga1babd131ff80b65efe93b29061670691">ECODE_EMDRV_UARTDRV_ABORTED</a>, <a class="el" href="group__UARTDRV.html#ga1c71e9adb59ea02dd52b94ee2958ada4">ECODE_EMDRV_UARTDRV_IDLE</a>, <a class="el" href="group__UARTDRV.html#gaeecd32d7c68e1de2820634d5184b51d6">ECODE_EMDRV_UARTDRV_ILLEGAL_HANDLE</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a7ef7a5698876e44f2a1a8da35c1b906e">UARTDRV_Buffer_t::itemsRemaining</a>, <a class="el" href="group__RetargetIo.html#ga1f76982f95d8c7b6336003b274ec752f">rxBuffer</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a2338aaeaa915194aaa5014b9a5e14b93">UARTDRV_Buffer_t::transferStatus</a>, <a class="el" href="group__UARTDRV.html#gga7b3eb02ccaea26685afc6dd9e69c8501a5b90c991d501a119c840f51b42340a38">uartdrvAbortAll</a>, <a class="el" href="group__UARTDRV.html#gga7b3eb02ccaea26685afc6dd9e69c8501a5197a339405e8f2c9c6e61cbb5336c7c">uartdrvAbortReceive</a>, and <a class="el" href="group__UARTDRV.html#gga7b3eb02ccaea26685afc6dd9e69c8501a56c15ee0b09d981b5e43871929f2e551">uartdrvAbortTransmit</a>.</p>
+<p>References <a class="el" href="structUARTDRV__Buffer__t.html#a112d253dae134fb234446a32cdae9667">UARTDRV_Buffer_t::callback</a>, <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__DMADRV.html#ga3a04cb3aa30ec2fd955281f55538028d">DMADRV_StopTransfer()</a>, <a class="el" href="group__DMADRV.html#ga9a253b47872d205a76b6f1b7b486194d">DMADRV_TransferRemainingCount()</a>, <a class="el" href="group__UARTDRV.html#ga1babd131ff80b65efe93b29061670691">ECODE_EMDRV_UARTDRV_ABORTED</a>, <a class="el" href="group__UARTDRV.html#ga1c71e9adb59ea02dd52b94ee2958ada4">ECODE_EMDRV_UARTDRV_IDLE</a>, <a class="el" href="group__UARTDRV.html#gaeecd32d7c68e1de2820634d5184b51d6">ECODE_EMDRV_UARTDRV_ILLEGAL_HANDLE</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a7ef7a5698876e44f2a1a8da35c1b906e">UARTDRV_Buffer_t::itemsRemaining</a>, <a class="el" href="group__RetargetIo.html#ga1f76982f95d8c7b6336003b274ec752f">rxBuffer</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a2338aaeaa915194aaa5014b9a5e14b93">UARTDRV_Buffer_t::transferStatus</a>, <a class="el" href="group__UARTDRV.html#ga38e53b4e39e17d0f7be9034ef11eb534">UARTDRV_GetPeripheralStatus()</a>, <a class="el" href="group__UARTDRV.html#ga554f1d42d707fc8af445012d535127c6">UARTDRV_STATUS_TXIDLE</a>, <a class="el" href="group__UARTDRV.html#gga7b3eb02ccaea26685afc6dd9e69c8501a5b90c991d501a119c840f51b42340a38">uartdrvAbortAll</a>, <a class="el" href="group__UARTDRV.html#gga7b3eb02ccaea26685afc6dd9e69c8501a5197a339405e8f2c9c6e61cbb5336c7c">uartdrvAbortReceive</a>, <a class="el" href="group__UARTDRV.html#gga7b3eb02ccaea26685afc6dd9e69c8501a56c15ee0b09d981b5e43871929f2e551">uartdrvAbortTransmit</a>, and <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a70c8bed3ae9395cb48e38e98ac9c9814">uartdrvFlowControlHwUart</a>.</p>
 
 </div>
 </div>
@@ -744,9 +755,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. On failure an appropriate UARTDRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01330">1330</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01376">1376</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
-<p>References <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__DMADRV.html#ga73633db63cfd99ba01a68b05c24094ec">DMADRV_DeInit()</a>, <a class="el" href="group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3">DMADRV_FreeChannel()</a>, <a class="el" href="group__DMADRV.html#ga3a04cb3aa30ec2fd955281f55538028d">DMADRV_StopTransfer()</a>, <a class="el" href="group__UARTDRV.html#gaeecd32d7c68e1de2820634d5184b51d6">ECODE_EMDRV_UARTDRV_ILLEGAL_HANDLE</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister()</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga0f8c9b7ce3798a56f52276a8dd1ca447">LEUART_CMD_RXDIS</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga61f4b181bda50ef7e192e80a538311a4">LEUART_CMD_TXDIS</a>, <a class="el" href="group__LEUART.html#gac1d2e66b6eb2ef53079453ebc2f1e5fa">LEUART_Reset()</a>, <a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">UARTDRV_FlowControlSet()</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a70c8bed3ae9395cb48e38e98ac9c9814">uartdrvFlowControlHwUart</a>, <a class="el" href="group__UARTDRV.html#ggae5bb048bcc9222f56c9b4b811f3395e0ae8a25b944922fad849995ff5b616a79c">uartdrvFlowControlOn</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#gac0ef86d42e99b381d332bbeaabd33d2d">USART_CMD_RXDIS</a>, and <a class="el" href="group__EZR32LG__USART__BitFields.html#ga6ed7afdff9c6c6c6ba34b4f7cf40f9c3">USART_CMD_TXDIS</a>.</p>
+<p>References <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__DMADRV.html#ga73633db63cfd99ba01a68b05c24094ec">DMADRV_DeInit()</a>, <a class="el" href="group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3">DMADRV_FreeChannel()</a>, <a class="el" href="group__DMADRV.html#ga3a04cb3aa30ec2fd955281f55538028d">DMADRV_StopTransfer()</a>, <a class="el" href="group__UARTDRV.html#gaeecd32d7c68e1de2820634d5184b51d6">ECODE_EMDRV_UARTDRV_ILLEGAL_HANDLE</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister()</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga0f8c9b7ce3798a56f52276a8dd1ca447">LEUART_CMD_RXDIS</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga61f4b181bda50ef7e192e80a538311a4">LEUART_CMD_TXDIS</a>, <a class="el" href="group__LEUART.html#gac1d2e66b6eb2ef53079453ebc2f1e5fa">LEUART_Reset()</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#gad5592ab2d96573a88d6620f2ee273400">LEUART_SYNCBUSY_CMD</a>, <a class="el" href="group__UARTDRV.html#ga793738f4fce0d507867e3a56d36426d2">UARTDRV_FlowControlSet()</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a70c8bed3ae9395cb48e38e98ac9c9814">uartdrvFlowControlHwUart</a>, <a class="el" href="group__UARTDRV.html#ggae5bb048bcc9222f56c9b4b811f3395e0ae8a25b944922fad849995ff5b616a79c">uartdrvFlowControlOn</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#gac0ef86d42e99b381d332bbeaabd33d2d">USART_CMD_RXDIS</a>, and <a class="el" href="group__EZR32LG__USART__BitFields.html#ga6ed7afdff9c6c6c6ba34b4f7cf40f9c3">USART_CMD_TXDIS</a>.</p>
 
 </div>
 </div>
@@ -773,7 +784,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns uartdrvFlowControlOn if clear to send. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01720">1720</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01802">1802</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 </div>
 </div>
@@ -800,7 +811,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns uartdrvFlowControlOn if requesting to send. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01735">1735</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01817">1817</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 </div>
 </div>
@@ -827,7 +838,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01750">1750</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01832">1832</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 <p>References <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>.</p>
 
@@ -867,7 +878,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01657">1657</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01739">1739</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 <p>References <a class="el" href="group__UARTDRV.html#ga1d1f73b8d3778cdd8622ef6ff21bb4ff">ECODE_EMDRV_UARTDRV_ILLEGAL_OPERATION</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__UARTDRV.html#ggae5bb048bcc9222f56c9b4b811f3395e0ae854b0adf4c13f331af47f31e4cde5b5">uartdrvFlowControlAuto</a>, and <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a70c8bed3ae9395cb48e38e98ac9c9814">uartdrvFlowControlHwUart</a>.</p>
 
@@ -909,7 +920,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01687">1687</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01769">1769</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 <p>References <a class="el" href="group__UARTDRV.html#ga1d1f73b8d3778cdd8622ef6ff21bb4ff">ECODE_EMDRV_UARTDRV_ILLEGAL_OPERATION</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__UARTDRV.html#gafa7cbc80545ad814f338c4043de5023c">UARTDRV_PauseTransmit()</a>, <a class="el" href="group__UARTDRV.html#ga6e83c35be3ad93e6717ce8dc54a155c7">UARTDRV_ResumeTransmit()</a>, <a class="el" href="group__UARTDRV.html#ggae5bb048bcc9222f56c9b4b811f3395e0ae854b0adf4c13f331af47f31e4cde5b5">uartdrvFlowControlAuto</a>, <a class="el" href="group__UARTDRV.html#ggae5bb048bcc9222f56c9b4b811f3395e0a6c793820b2ac1a1bf2b59ddc491cbcbf">uartdrvFlowControlOff</a>, <a class="el" href="group__UARTDRV.html#ggae5bb048bcc9222f56c9b4b811f3395e0ae8a25b944922fad849995ff5b616a79c">uartdrvFlowControlOn</a>, and <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a4de371e6825d68340370c295f04af810">uartdrvFlowControlSw</a>.</p>
 
@@ -956,7 +967,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes received. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01771">1771</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01853">1853</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 <p>References <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga0198f2782cadfdf7b183a3a77c16201b">LEUART_STATUS_RXDATAV</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#gac629dd926a639e264a612b6c1315ceec">LEUART_STATUS_RXENS</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#ga749acdeb18324f96dd5c6f8ce7c61d3c">USART_STATUS_RXDATAV</a>, and <a class="el" href="group__EZR32LG__USART__BitFields.html#gab81745447d6c570bc0e6c4f7d9aee912">USART_STATUS_RXENS</a>.</p>
 
@@ -1003,9 +1014,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01856">1856</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01938">1938</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
-<p>References <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga95e30fca9263d8eba3aa9f23409e95b4">LEUART_STATUS_TXBL</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#gaf45f863fff02be654e0933d67efd6dda">LEUART_STATUS_TXC</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga82d5d2eb995f5c97a6dd85f2224b09d4">LEUART_STATUS_TXENS</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#gad13379a8833346b1333bab7b43f1ca98">USART_STATUS_TXBL</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#ga254be5ee02775938e4095374ab9c66b4">USART_STATUS_TXC</a>, and <a class="el" href="group__EZR32LG__USART__BitFields.html#gaabbc11ee06540874d859317d41231fbc">USART_STATUS_TXENS</a>.</p>
+<p>References <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#gaf45f863fff02be654e0933d67efd6dda">LEUART_STATUS_TXC</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga82d5d2eb995f5c97a6dd85f2224b09d4">LEUART_STATUS_TXENS</a>, <a class="el" href="group__LEUART.html#ga0acc32fe9bb75edec5123e7f155c68ac">LEUART_Tx()</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#ga254be5ee02775938e4095374ab9c66b4">USART_STATUS_TXC</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#gaabbc11ee06540874d859317d41231fbc">USART_STATUS_TXENS</a>, and <a class="el" href="group__USART.html#gabdac7c0c6cc0b6aa998bf8d688f46591">USART_Tx()</a>.</p>
 
 </div>
 </div>
@@ -1032,11 +1043,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UART status value </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01465">1465</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01547">1547</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 <p>References <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga3f4f214eb2e2f8533940e14f7582966c">LEUART_STATUS_RXBLOCK</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga0198f2782cadfdf7b183a3a77c16201b">LEUART_STATUS_RXDATAV</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#gac629dd926a639e264a612b6c1315ceec">LEUART_STATUS_RXENS</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga95e30fca9263d8eba3aa9f23409e95b4">LEUART_STATUS_TXBL</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#gaf45f863fff02be654e0933d67efd6dda">LEUART_STATUS_TXC</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga82d5d2eb995f5c97a6dd85f2224b09d4">LEUART_STATUS_TXENS</a>, <a class="el" href="group__UARTDRV.html#ga7b573bb3467bd635486eb4799d33fee0">UARTDRV_STATUS_RXBLOCK</a>, <a class="el" href="group__UARTDRV.html#gaba243ca92943580f517d8e26bf685eb4">UARTDRV_STATUS_RXDATAV</a>, <a class="el" href="group__UARTDRV.html#ga6a02414bd5d236de348307e033c63c8d">UARTDRV_STATUS_RXEN</a>, <a class="el" href="group__UARTDRV.html#ga38e1f873de1c17b7514274dc5ccacdd7">UARTDRV_STATUS_TXBL</a>, <a class="el" href="group__UARTDRV.html#gafc884d2cf2e6cfde8a54f31175e87b56">UARTDRV_STATUS_TXC</a>, <a class="el" href="group__UARTDRV.html#ga0b27ddd2d05453dff2c3df5d001edd0e">UARTDRV_STATUS_TXEN</a>, and <a class="el" href="group__UARTDRV.html#ga554f1d42d707fc8af445012d535127c6">UARTDRV_STATUS_TXIDLE</a>.</p>
 
-<p>Referenced by <a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">UARTDRV_GetReceiveStatus()</a>, and <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">UARTDRV_GetTransmitStatus()</a>.</p>
+<p>Referenced by <a class="el" href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">UARTDRV_Abort()</a>, <a class="el" href="group__UARTDRV.html#ga34806bf9fc4d876aa6ae725ce060541b">UARTDRV_GetReceiveStatus()</a>, and <a class="el" href="group__UARTDRV.html#gae5387109fb659840fa822aa6ae08b81f">UARTDRV_GetTransmitStatus()</a>.</p>
 
 </div>
 </div>
@@ -1063,7 +1074,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of queued operations. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01528">1528</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01610">1610</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1126,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UART status. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01550">1550</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01632">1632</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 <p>References <a class="el" href="structUARTDRV__Buffer__t.html#a5a5d3aca959efba50963a3bd8c38b3ab">UARTDRV_Buffer_t::data</a>, <a class="el" href="group__DMADRV.html#ga9a253b47872d205a76b6f1b7b486194d">DMADRV_TransferRemainingCount()</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__RetargetIo.html#ga1f76982f95d8c7b6336003b274ec752f">rxBuffer</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a1a8c8eda97abe547b767e51be23bca6f">UARTDRV_Buffer_t::transferCount</a>, and <a class="el" href="group__UARTDRV.html#ga38e53b4e39e17d0f7be9034ef11eb534">UARTDRV_GetPeripheralStatus()</a>.</p>
 
@@ -1144,7 +1155,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of queued operations. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01592">1592</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01674">1674</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 </div>
 </div>
@@ -1196,7 +1207,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>UART status. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01613">1613</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01695">1695</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 <p>References <a class="el" href="structUARTDRV__Buffer__t.html#a5a5d3aca959efba50963a3bd8c38b3ab">UARTDRV_Buffer_t::data</a>, <a class="el" href="group__DMADRV.html#ga9a253b47872d205a76b6f1b7b486194d">DMADRV_TransferRemainingCount()</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a1a8c8eda97abe547b767e51be23bca6f">UARTDRV_Buffer_t::transferCount</a>, and <a class="el" href="group__UARTDRV.html#ga38e53b4e39e17d0f7be9034ef11eb534">UARTDRV_GetPeripheralStatus()</a>.</p>
 
@@ -1227,7 +1238,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize a U(S)ART driver instance. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>This function is deprecated. Use <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a> instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>Pointer to a UARTDRV handle, refer to <a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a>.</td></tr>
@@ -1237,7 +1248,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. On failure an appropriate UARTDRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8h_source.html#l00364">364</a> of file <a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8h_source.html#l00363">363</a> of file <a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>.</p>
 
 <p>References <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a>.</p>
 
@@ -1277,9 +1288,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. On failure an appropriate UARTDRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01136">1136</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01179">1179</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
-<p>References <a class="el" href="group__EZR32LG__CMU__BitFields.html#ga49eb8673c0327d9bbe4a2988b1dc347f">_CMU_LFBPRESC0_MASK</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga23b7af81ae4a76a32b3ca329d1ace273">_LEUART_ROUTE_LOCATION_SHIFT</a>, <a class="el" href="structLEUART__Init__TypeDef.html#acbd4d3f3da828242a1fb84d4fdca4644">LEUART_Init_TypeDef::baudrate</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#ad7845a5d3485696cbe95f71898e64813">UARTDRV_InitLeuart_t::baudRate</a>, <a class="el" href="structLEUART__TypeDef.html#a821e6b687d5d4441ef62c2d86a4da83f">LEUART_TypeDef::CMD</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>, <a class="el" href="group__CMU.html#ga7cc316a8dca5436fcc39d57f5e6c412d">CMU_ClockDivSet()</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet()</a>, <a class="el" href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet()</a>, <a class="el" href="group__EZR32LG__CMU__BitFields.html#ga0ca1c88f9e3303793b26bcb62048c66a">CMU_STATUS_LFXOENS</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaadef20e56d0b5f877854266fefb9d7d9">cmuClock_GPIO</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea5a6fb325e4fa1fad5103c47916498b11">cmuClock_HFLE</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eab299812e3fb65fa219a834d38eb63b46">cmuClock_LEUART0</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaea324635a5e0f56e7d30792b24dc6528">cmuClock_LEUART1</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaf6a2ec0ffdc66d9d199e73bdf867614c">cmuClock_LFB</a>, <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751aab1ec2c1fdaeddd9f8bc9d562e7051ee">cmuSelect_HFCLKLE</a>, <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751a67efb812dcf095aa4afc8417ea46c47b">cmuSelect_LFXO</a>, <a class="el" href="structLEUART__Init__TypeDef.html#a981cbba621fffd9483a8d24530105ff0">LEUART_Init_TypeDef::databits</a>, <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">DMADRV_Init()</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94af811d74a1e48252bd51c3d7beeaf75bc">dmadrvPeripheralSignal_LEUART0_RXDATAV</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94ad2a146e0731c8a3da96131d8b4ba72a4">dmadrvPeripheralSignal_LEUART0_TXBL</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94ad198d7fcb0287a43169f21a58360fab0">dmadrvPeripheralSignal_LEUART1_RXDATAV</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94aba0833252ef94d8508c132888fb0ad4f">dmadrvPeripheralSignal_LEUART1_TXBL</a>, <a class="el" href="group__UARTDRV.html#ga30ca7a0bb6fd82c76c98219692e5b33d">ECODE_EMDRV_UARTDRV_CLOCK_ERROR</a>, <a class="el" href="group__UARTDRV.html#gaeecd32d7c68e1de2820634d5184b51d6">ECODE_EMDRV_UARTDRV_ILLEGAL_HANDLE</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__UARTDRV.html#gac79962a620c2d706928e43c9f7d27766">ECODE_EMDRV_UARTDRV_PARAM_ERROR</a>, <a class="el" href="structLEUART__Init__TypeDef.html#aade3f9f0b946a8591c2a5c28139c98b7">LEUART_Init_TypeDef::enable</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#aef4cefd9f8be70562558a7b07197ec05">UARTDRV_InitLeuart_t::fcType</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#gab1eac25b2f0c2d4cf1e46d642608ea3c">LEUART0</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#gad9c073b2be41e498262c333e37e605c5">LEUART1</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#gaa014a026c6946a2ac8dd274d948f7f15">LEUART_CMD_CLEARRX</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga38cfd438b0932e49bd2be58fdea3e6bb">LEUART_CMD_CLEARTX</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga2e02b23b73ca434a853720c269638c20">LEUART_CTRL_DATABITS_EIGHT</a>, <a class="el" href="group__LEUART.html#gaac8ffe82df5bc3b66519380843251228">LEUART_Enable()</a>, <a class="el" href="group__LEUART.html#ga14ed413542c26fb88fd1237f9eb99bd5">LEUART_Init()</a>, <a class="el" href="group__LEUART.html#gacb3f4d665d8aca8088a1eff6adb7f5f8">LEUART_INIT_DEFAULT</a>, <a class="el" href="group__LEUART.html#gac7d9d111138799c46cb48b96689242b0">LEUART_IntClear()</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga7cfdaa068ef9f6a56aba1c415a9ddb2a">LEUART_ROUTE_RXPEN</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#gaa7c5407e13f67ec5d81aa7e8935150d1">LEUART_ROUTE_TXPEN</a>, <a class="el" href="group__LEUART.html#ggac19b101f40ce0d0a0920f82abebc129ea5458da948a3ff4bfe9ffb0a893cc4c64">leuartDisable</a>, <a class="el" href="group__LEUART.html#ggac19b101f40ce0d0a0920f82abebc129ea82e5ffc6c326024c7031e5bf693d0691">leuartEnableTx</a>, <a class="el" href="structLEUART__Init__TypeDef.html#afa912a942160b5cd9486d16c9d2ef7c5">LEUART_Init_TypeDef::parity</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#a1fe61f1346248c38f4ee14c6eb47855b">UARTDRV_InitLeuart_t::parity</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#a8b46cc33e38152df9439810b4ed78638">UARTDRV_InitLeuart_t::port</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#ad5aef946eedd7acb15ab9e0f0175819e">UARTDRV_InitLeuart_t::portLocation</a>, <a class="el" href="structLEUART__TypeDef.html#a1b975d95ff0b132b3a1c68803a770590">LEUART_TypeDef::ROUTE</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#ad6235fe4e52091aadb497c685bc41521">UARTDRV_InitLeuart_t::rxQueue</a>, <a class="el" href="structLEUART__Init__TypeDef.html#a133a4f2914310868f1291b9d45bbe864">LEUART_Init_TypeDef::stopbits</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#a34983d0e90fbba37e7e921143308a255">UARTDRV_InitLeuart_t::stopBits</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#ac2802ace4a1c5e4ad24c3cb31baf1046">UARTDRV_InitLeuart_t::txQueue</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a913edb6e0dbe54138d15da54f92cadda">uartdrvFlowControlHw</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a70c8bed3ae9395cb48e38e98ac9c9814">uartdrvFlowControlHwUart</a>, and <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73afb13e9c9f236dbccf530081cac5a884d">uartdrvFlowControlNone</a>.</p>
+<p>References <a class="el" href="group__EZR32LG__CMU__BitFields.html#ga9cd6b2890ee5d31873efad4e90bf17a9">_CMU_LFBPRESC0_LEUART0_MASK</a>, <a class="el" href="group__EZR32LG__CMU__BitFields.html#ga15eeda323f30b0b27cc659b63f756c2b">_CMU_LFBPRESC0_LEUART0_SHIFT</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga23b7af81ae4a76a32b3ca329d1ace273">_LEUART_ROUTE_LOCATION_SHIFT</a>, <a class="el" href="structLEUART__Init__TypeDef.html#acbd4d3f3da828242a1fb84d4fdca4644">LEUART_Init_TypeDef::baudrate</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#ad7845a5d3485696cbe95f71898e64813">UARTDRV_InitLeuart_t::baudRate</a>, <a class="el" href="structLEUART__TypeDef.html#a821e6b687d5d4441ef62c2d86a4da83f">LEUART_TypeDef::CMD</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>, <a class="el" href="group__CMU.html#ga7cc316a8dca5436fcc39d57f5e6c412d">CMU_ClockDivSet()</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet()</a>, <a class="el" href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet()</a>, <a class="el" href="group__EZR32LG__CMU__BitFields.html#ga0ca1c88f9e3303793b26bcb62048c66a">CMU_STATUS_LFXOENS</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaadef20e56d0b5f877854266fefb9d7d9">cmuClock_GPIO</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea5a6fb325e4fa1fad5103c47916498b11">cmuClock_HFLE</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eab299812e3fb65fa219a834d38eb63b46">cmuClock_LEUART0</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaea324635a5e0f56e7d30792b24dc6528">cmuClock_LEUART1</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaf6a2ec0ffdc66d9d199e73bdf867614c">cmuClock_LFB</a>, <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751aab1ec2c1fdaeddd9f8bc9d562e7051ee">cmuSelect_HFCLKLE</a>, <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751a67efb812dcf095aa4afc8417ea46c47b">cmuSelect_LFXO</a>, <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="structLEUART__Init__TypeDef.html#a981cbba621fffd9483a8d24530105ff0">LEUART_Init_TypeDef::databits</a>, <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">DMADRV_Init()</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94af811d74a1e48252bd51c3d7beeaf75bc">dmadrvPeripheralSignal_LEUART0_RXDATAV</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94ad2a146e0731c8a3da96131d8b4ba72a4">dmadrvPeripheralSignal_LEUART0_TXBL</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94ad198d7fcb0287a43169f21a58360fab0">dmadrvPeripheralSignal_LEUART1_RXDATAV</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94aba0833252ef94d8508c132888fb0ad4f">dmadrvPeripheralSignal_LEUART1_TXBL</a>, <a class="el" href="group__UARTDRV.html#ga30ca7a0bb6fd82c76c98219692e5b33d">ECODE_EMDRV_UARTDRV_CLOCK_ERROR</a>, <a class="el" href="group__UARTDRV.html#gaeecd32d7c68e1de2820634d5184b51d6">ECODE_EMDRV_UARTDRV_ILLEGAL_HANDLE</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__UARTDRV.html#gac79962a620c2d706928e43c9f7d27766">ECODE_EMDRV_UARTDRV_PARAM_ERROR</a>, <a class="el" href="structLEUART__Init__TypeDef.html#aade3f9f0b946a8591c2a5c28139c98b7">LEUART_Init_TypeDef::enable</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#aef4cefd9f8be70562558a7b07197ec05">UARTDRV_InitLeuart_t::fcType</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#gab1eac25b2f0c2d4cf1e46d642608ea3c">LEUART0</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#gad9c073b2be41e498262c333e37e605c5">LEUART1</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#gaa014a026c6946a2ac8dd274d948f7f15">LEUART_CMD_CLEARRX</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga38cfd438b0932e49bd2be58fdea3e6bb">LEUART_CMD_CLEARTX</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga2e02b23b73ca434a853720c269638c20">LEUART_CTRL_DATABITS_EIGHT</a>, <a class="el" href="group__LEUART.html#gaac8ffe82df5bc3b66519380843251228">LEUART_Enable()</a>, <a class="el" href="group__LEUART.html#ga14ed413542c26fb88fd1237f9eb99bd5">LEUART_Init()</a>, <a class="el" href="group__LEUART.html#gacb3f4d665d8aca8088a1eff6adb7f5f8">LEUART_INIT_DEFAULT</a>, <a class="el" href="group__LEUART.html#gac7d9d111138799c46cb48b96689242b0">LEUART_IntClear()</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#ga7cfdaa068ef9f6a56aba1c415a9ddb2a">LEUART_ROUTE_RXPEN</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#gaa7c5407e13f67ec5d81aa7e8935150d1">LEUART_ROUTE_TXPEN</a>, <a class="el" href="group__EZR32LG__LEUART__BitFields.html#gad5592ab2d96573a88d6620f2ee273400">LEUART_SYNCBUSY_CMD</a>, <a class="el" href="group__LEUART.html#ggac19b101f40ce0d0a0920f82abebc129ea5458da948a3ff4bfe9ffb0a893cc4c64">leuartDisable</a>, <a class="el" href="group__LEUART.html#ggac19b101f40ce0d0a0920f82abebc129ea82e5ffc6c326024c7031e5bf693d0691">leuartEnableTx</a>, <a class="el" href="structLEUART__Init__TypeDef.html#afa912a942160b5cd9486d16c9d2ef7c5">LEUART_Init_TypeDef::parity</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#a1fe61f1346248c38f4ee14c6eb47855b">UARTDRV_InitLeuart_t::parity</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#a8b46cc33e38152df9439810b4ed78638">UARTDRV_InitLeuart_t::port</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#ad5aef946eedd7acb15ab9e0f0175819e">UARTDRV_InitLeuart_t::portLocation</a>, <a class="el" href="structLEUART__TypeDef.html#a1b975d95ff0b132b3a1c68803a770590">LEUART_TypeDef::ROUTE</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#ad6235fe4e52091aadb497c685bc41521">UARTDRV_InitLeuart_t::rxQueue</a>, <a class="el" href="structLEUART__Init__TypeDef.html#a133a4f2914310868f1291b9d45bbe864">LEUART_Init_TypeDef::stopbits</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#a34983d0e90fbba37e7e921143308a255">UARTDRV_InitLeuart_t::stopBits</a>, <a class="el" href="structLEUART__TypeDef.html#a2e877f5c8ac38b8978cba17ac24aa82d">LEUART_TypeDef::SYNCBUSY</a>, <a class="el" href="system__ezr32lg_8c.html#a186aefb7bb200c8fda0fc0a4d4b2aa14">SystemLFXOClockGet()</a>, <a class="el" href="structUARTDRV__InitLeuart__t.html#ac2802ace4a1c5e4ad24c3cb31baf1046">UARTDRV_InitLeuart_t::txQueue</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a913edb6e0dbe54138d15da54f92cadda">uartdrvFlowControlHw</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a70c8bed3ae9395cb48e38e98ac9c9814">uartdrvFlowControlHwUart</a>, and <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73afb13e9c9f236dbccf530081cac5a884d">uartdrvFlowControlNone</a>.</p>
 
 </div>
 </div>
@@ -1317,9 +1328,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. On failure an appropriate UARTDRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l00927">927</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l00969">969</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
-<p>References <a class="el" href="group__EZR32LG__USART__BitFields.html#ga6d82d8b5cbcd345dcdb354b32e770f92">_USART_ROUTE_LOCATION_SHIFT</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a6345c5ed0591f167f3172d1e878c0934">UARTDRV_InitUart_t::baudRate</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#a855780b7add2ef1015437999b40df6f7">USART_InitAsync_TypeDef::baudrate</a>, <a class="el" href="structUSART__TypeDef.html#a05095420dcc6de819fcd905946737bca">USART_TypeDef::CMD</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaadef20e56d0b5f877854266fefb9d7d9">cmuClock_GPIO</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaf7fb02660d1771ecac3aa9e8b33f79c5">cmuClock_UART0</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaa36e258cd2711897031f716bc3a8d790">cmuClock_UART1</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea2534c9738452f9d183268b46140e0433">cmuClock_USART1</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea52f5356cc30ba80b7a4cf59b4ee02f79">cmuClock_USART2</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#a5cf85fd86d5e437153dca7e08b34ec6c">USART_InitAsync_TypeDef::databits</a>, <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">DMADRV_Init()</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94ae975dc9f538d4cb2979fc5b5ee2c8de2">dmadrvPeripheralSignal_UART0_RXDATAV</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94aad9d3f67e4c17a2e29aeadb6be0e6ef5">dmadrvPeripheralSignal_UART0_TXBL</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94a4dfbefcb966186bbccbe5324ef5fd488">dmadrvPeripheralSignal_UART1_RXDATAV</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94abe0f4b8d524a1083ee7e0db05ace3837">dmadrvPeripheralSignal_UART1_TXBL</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94ad9c9e0c14c22649844a82149c4f1bf72">dmadrvPeripheralSignal_USART1_RXDATAV</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94a14d938537b90719aca30a7a47f82dbcf">dmadrvPeripheralSignal_USART1_TXBL</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94a149e7c19ba737648e73eda0b65e21ca4">dmadrvPeripheralSignal_USART2_RXDATAV</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94ae6f7543fb216acef484e5ca368cc36a3">dmadrvPeripheralSignal_USART2_TXBL</a>, <a class="el" href="group__UARTDRV.html#gaeecd32d7c68e1de2820634d5184b51d6">ECODE_EMDRV_UARTDRV_ILLEGAL_HANDLE</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__UARTDRV.html#gac79962a620c2d706928e43c9f7d27766">ECODE_EMDRV_UARTDRV_PARAM_ERROR</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#aea7e095827f502b61b22ea39edd59bb5">USART_InitAsync_TypeDef::enable</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a3f84fe6551700d3c1a5ba21a0adbf919">UARTDRV_InitUart_t::fcType</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a9f84c5753bb0d5096b411fde26aa9196">UARTDRV_InitUart_t::mvdis</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#a0adbf58d6e033dfde1d43e76b7757ba7">USART_InitAsync_TypeDef::mvdis</a>, <a class="el" href="structUARTDRV__InitUart__t.html#ab6371f8a6226a2295226fe5e4805ed9f">UARTDRV_InitUart_t::oversampling</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#aad69d456670f5d2629a60dbbef977c49">USART_InitAsync_TypeDef::oversampling</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a0e2704687d9d258619ea9f0cfc9300b1">UARTDRV_InitUart_t::parity</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#a66f70af4c5fd9b0db4a02afe491f1517">USART_InitAsync_TypeDef::parity</a>, <a class="el" href="structUARTDRV__InitUart__t.html#aa19d14c682e0cdd535952383eee27c08">UARTDRV_InitUart_t::port</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a5fe3adb80d81f06dbf6150506c5f205b">UARTDRV_InitUart_t::portLocation</a>, <a class="el" href="structUSART__TypeDef.html#ab192d617ac01511da7338170b4da2c47">USART_TypeDef::ROUTE</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a7080bc416d1e6b7c5eab504bf448e4d7">UARTDRV_InitUart_t::rxQueue</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a3a9bd3ad88eb3db3e10fb79b4402ab14">UARTDRV_InitUart_t::stopBits</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#af8b618c4bebd42dd748eb00a39a05ee2">USART_InitAsync_TypeDef::stopbits</a>, <a class="el" href="structUARTDRV__InitUart__t.html#acf4d00b6a128b4585f101eabadeaed85">UARTDRV_InitUart_t::txQueue</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0508661f121639ffdee7de2353a0def2">UART0</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a913edb6e0dbe54138d15da54f92cadda">uartdrvFlowControlHw</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a70c8bed3ae9395cb48e38e98ac9c9814">uartdrvFlowControlHwUart</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73afb13e9c9f236dbccf530081cac5a884d">uartdrvFlowControlNone</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga92871691058ff7ccffd7635930cb08da">USART1</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#gaf114a9eab03ca08a6fb720e511595930">USART2</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#ga092fe8eda54932a8512c4d13bb3a8ce3">USART_CMD_CLEARRX</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#ga71675e097d9442e4c85ea522890e7682">USART_CMD_CLEARTX</a>, <a class="el" href="group__USART.html#gaf593db61ee6acd852dd9dc01d79a3548">USART_Enable()</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#gafd9fe80f753af0acb878cc786a786cb8">USART_FRAME_DATABITS_EIGHT</a>, <a class="el" href="group__USART.html#ga5b851444f0fbdca97017c7b927b37f52">USART_InitAsync()</a>, <a class="el" href="group__USART.html#gadc8f891a4bd89e12d447801bad5ba108">USART_INITASYNC_DEFAULT</a>, <a class="el" href="group__USART.html#gafd14f04ce72926161d83886b971ed310">USART_IntClear()</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#ga0f947146ef7f2c9eece9657ecb7b1b49">USART_ROUTE_RXPEN</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#ga3ada99898913bd74970ba2288dde31c6">USART_ROUTE_TXPEN</a>, <a class="el" href="group__USART.html#ggab911b3b57b0cfe33cc34e7c37693c14ba7d35b8fed019bb16bfc28f64152303fd">usartDisable</a>, <a class="el" href="group__USART.html#ggab911b3b57b0cfe33cc34e7c37693c14ba2abb81782e20df3531cab7e13a0cb9de">usartEnable</a>, and <a class="el" href="group__USART.html#ggab911b3b57b0cfe33cc34e7c37693c14ba7ed050fc1c7868d3f6cbc877602aaed5">usartEnableTx</a>.</p>
+<p>References <a class="el" href="group__EZR32LG__USART__BitFields.html#ga6d82d8b5cbcd345dcdb354b32e770f92">_USART_ROUTE_LOCATION_SHIFT</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a6345c5ed0591f167f3172d1e878c0934">UARTDRV_InitUart_t::baudRate</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#a855780b7add2ef1015437999b40df6f7">USART_InitAsync_TypeDef::baudrate</a>, <a class="el" href="structUSART__TypeDef.html#a05095420dcc6de819fcd905946737bca">USART_TypeDef::CMD</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaadef20e56d0b5f877854266fefb9d7d9">cmuClock_GPIO</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaf7fb02660d1771ecac3aa9e8b33f79c5">cmuClock_UART0</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaa36e258cd2711897031f716bc3a8d790">cmuClock_UART1</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea2534c9738452f9d183268b46140e0433">cmuClock_USART1</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea52f5356cc30ba80b7a4cf59b4ee02f79">cmuClock_USART2</a>, <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#a5cf85fd86d5e437153dca7e08b34ec6c">USART_InitAsync_TypeDef::databits</a>, <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">DMADRV_Init()</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94ae975dc9f538d4cb2979fc5b5ee2c8de2">dmadrvPeripheralSignal_UART0_RXDATAV</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94aad9d3f67e4c17a2e29aeadb6be0e6ef5">dmadrvPeripheralSignal_UART0_TXBL</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94a4dfbefcb966186bbccbe5324ef5fd488">dmadrvPeripheralSignal_UART1_RXDATAV</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94abe0f4b8d524a1083ee7e0db05ace3837">dmadrvPeripheralSignal_UART1_TXBL</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94ad9c9e0c14c22649844a82149c4f1bf72">dmadrvPeripheralSignal_USART1_RXDATAV</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94a14d938537b90719aca30a7a47f82dbcf">dmadrvPeripheralSignal_USART1_TXBL</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94a149e7c19ba737648e73eda0b65e21ca4">dmadrvPeripheralSignal_USART2_RXDATAV</a>, <a class="el" href="group__DMADRV.html#gga9d887cd6a26d26ed74cb19d77b501a94ae6f7543fb216acef484e5ca368cc36a3">dmadrvPeripheralSignal_USART2_TXBL</a>, <a class="el" href="group__UARTDRV.html#gaeecd32d7c68e1de2820634d5184b51d6">ECODE_EMDRV_UARTDRV_ILLEGAL_HANDLE</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__UARTDRV.html#gac79962a620c2d706928e43c9f7d27766">ECODE_EMDRV_UARTDRV_PARAM_ERROR</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#aea7e095827f502b61b22ea39edd59bb5">USART_InitAsync_TypeDef::enable</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a3f84fe6551700d3c1a5ba21a0adbf919">UARTDRV_InitUart_t::fcType</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a9f84c5753bb0d5096b411fde26aa9196">UARTDRV_InitUart_t::mvdis</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#a0adbf58d6e033dfde1d43e76b7757ba7">USART_InitAsync_TypeDef::mvdis</a>, <a class="el" href="structUARTDRV__InitUart__t.html#ab6371f8a6226a2295226fe5e4805ed9f">UARTDRV_InitUart_t::oversampling</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#aad69d456670f5d2629a60dbbef977c49">USART_InitAsync_TypeDef::oversampling</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a0e2704687d9d258619ea9f0cfc9300b1">UARTDRV_InitUart_t::parity</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#a66f70af4c5fd9b0db4a02afe491f1517">USART_InitAsync_TypeDef::parity</a>, <a class="el" href="structUARTDRV__InitUart__t.html#aa19d14c682e0cdd535952383eee27c08">UARTDRV_InitUart_t::port</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a5fe3adb80d81f06dbf6150506c5f205b">UARTDRV_InitUart_t::portLocation</a>, <a class="el" href="structUSART__TypeDef.html#ab192d617ac01511da7338170b4da2c47">USART_TypeDef::ROUTE</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a7080bc416d1e6b7c5eab504bf448e4d7">UARTDRV_InitUart_t::rxQueue</a>, <a class="el" href="structUARTDRV__InitUart__t.html#a3a9bd3ad88eb3db3e10fb79b4402ab14">UARTDRV_InitUart_t::stopBits</a>, <a class="el" href="structUSART__InitAsync__TypeDef.html#af8b618c4bebd42dd748eb00a39a05ee2">USART_InitAsync_TypeDef::stopbits</a>, <a class="el" href="structUARTDRV__InitUart__t.html#acf4d00b6a128b4585f101eabadeaed85">UARTDRV_InitUart_t::txQueue</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0508661f121639ffdee7de2353a0def2">UART0</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga8d69bf04d07af4fbbab5a8bd291f65ff">UART1</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a913edb6e0dbe54138d15da54f92cadda">uartdrvFlowControlHw</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a70c8bed3ae9395cb48e38e98ac9c9814">uartdrvFlowControlHwUart</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73afb13e9c9f236dbccf530081cac5a884d">uartdrvFlowControlNone</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga92871691058ff7ccffd7635930cb08da">USART1</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#gaf114a9eab03ca08a6fb720e511595930">USART2</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#ga092fe8eda54932a8512c4d13bb3a8ce3">USART_CMD_CLEARRX</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#ga71675e097d9442e4c85ea522890e7682">USART_CMD_CLEARTX</a>, <a class="el" href="group__USART.html#gaf593db61ee6acd852dd9dc01d79a3548">USART_Enable()</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#gafd9fe80f753af0acb878cc786a786cb8">USART_FRAME_DATABITS_EIGHT</a>, <a class="el" href="group__USART.html#ga5b851444f0fbdca97017c7b927b37f52">USART_InitAsync()</a>, <a class="el" href="group__USART.html#gadc8f891a4bd89e12d447801bad5ba108">USART_INITASYNC_DEFAULT</a>, <a class="el" href="group__USART.html#gafd14f04ce72926161d83886b971ed310">USART_IntClear()</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#ga0f947146ef7f2c9eece9657ecb7b1b49">USART_ROUTE_RXPEN</a>, <a class="el" href="group__EZR32LG__USART__BitFields.html#ga3ada99898913bd74970ba2288dde31c6">USART_ROUTE_TXPEN</a>, <a class="el" href="group__USART.html#ggab911b3b57b0cfe33cc34e7c37693c14ba7d35b8fed019bb16bfc28f64152303fd">usartDisable</a>, <a class="el" href="group__USART.html#ggab911b3b57b0cfe33cc34e7c37693c14ba2abb81782e20df3531cab7e13a0cb9de">usartEnable</a>, and <a class="el" href="group__USART.html#ggab911b3b57b0cfe33cc34e7c37693c14ba7ed050fc1c7868d3f6cbc877602aaed5">usartEnableTx</a>.</p>
 
 <p>Referenced by <a class="el" href="group__UARTDRV.html#gaf212b2cd9be15b726ee708d7a29f52e4">UARTDRV_Init()</a>.</p>
 
@@ -1348,7 +1359,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. On failure an appropriate UARTDRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01937">1937</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l02013">2013</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 <p>References <a class="el" href="group__DMADRV.html#ga3f27a6cff5b646b0faf3eb070ea1393f">DMADRV_PauseTransfer()</a>, <a class="el" href="group__DMADRV.html#ga1a42965073322a9c2b1f8ebb8a67e846">DMADRV_TransferActive()</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__UARTDRV.html#gaeecd32d7c68e1de2820634d5184b51d6">ECODE_EMDRV_UARTDRV_ILLEGAL_HANDLE</a>, <a class="el" href="group__UARTDRV.html#ga1d1f73b8d3778cdd8622ef6ff21bb4ff">ECODE_EMDRV_UARTDRV_ILLEGAL_OPERATION</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, and <a class="el" href="group__UARTDRV.html#ggae5bb048bcc9222f56c9b4b811f3395e0ae8a25b944922fad849995ff5b616a79c">uartdrvFlowControlOn</a>.</p>
 
@@ -1404,7 +1415,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l01980">1980</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l02056">2056</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 <p>References <a class="el" href="structUARTDRV__Buffer__t.html#a112d253dae134fb234446a32cdae9667">UARTDRV_Buffer_t::callback</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a5a5d3aca959efba50963a3bd8c38b3ab">UARTDRV_Buffer_t::data</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__UARTDRV.html#ga8e898b24e44ca23c91a95dd86c8456dd">ECODE_EMDRV_UARTDRV_WAITING</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a7ef7a5698876e44f2a1a8da35c1b906e">UARTDRV_Buffer_t::itemsRemaining</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a1a8c8eda97abe547b767e51be23bca6f">UARTDRV_Buffer_t::transferCount</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a2338aaeaa915194aaa5014b9a5e14b93">UARTDRV_Buffer_t::transferStatus</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a70c8bed3ae9395cb48e38e98ac9c9814">uartdrvFlowControlHwUart</a>, and <a class="el" href="group__UARTDRV.html#ggae5bb048bcc9222f56c9b4b811f3395e0ae8a25b944922fad849995ff5b616a79c">uartdrvFlowControlOn</a>.</p>
 
@@ -1451,7 +1462,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l02035">2035</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l02111">2111</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 <p>References <a class="el" href="structUARTDRV__Buffer__t.html#a112d253dae134fb234446a32cdae9667">UARTDRV_Buffer_t::callback</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a5a5d3aca959efba50963a3bd8c38b3ab">UARTDRV_Buffer_t::data</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__UARTDRV.html#ga8e898b24e44ca23c91a95dd86c8456dd">ECODE_EMDRV_UARTDRV_WAITING</a>, <a class="el" href="group__EMU.html#gaed0c4092bd3adc7a6679e1e2903d1267">EMU_EnterEM1()</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a7ef7a5698876e44f2a1a8da35c1b906e">UARTDRV_Buffer_t::itemsRemaining</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a1a8c8eda97abe547b767e51be23bca6f">UARTDRV_Buffer_t::transferCount</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a2338aaeaa915194aaa5014b9a5e14b93">UARTDRV_Buffer_t::transferStatus</a>, <a class="el" href="group__UARTDRV.html#ggaaf1c5185723fc794e00c2cd4a7e33d73a70c8bed3ae9395cb48e38e98ac9c9814">uartdrvFlowControlHwUart</a>, and <a class="el" href="group__UARTDRV.html#ggae5bb048bcc9222f56c9b4b811f3395e0ae8a25b944922fad849995ff5b616a79c">uartdrvFlowControlOn</a>.</p>
 
@@ -1480,7 +1491,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. On failure an appropriate UARTDRV <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> is returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l02089">2089</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l02165">2165</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 <p>References <a class="el" href="group__DMADRV.html#ga4ad4c5b5eff525183a726002afbce071">DMADRV_ResumeTransfer()</a>, <a class="el" href="group__DMADRV.html#ga1a42965073322a9c2b1f8ebb8a67e846">DMADRV_TransferActive()</a>, <a class="el" href="group__DMADRV.html#gac20848ba30d8793ad1344fc442aae4c4">ECODE_EMDRV_DMADRV_OK</a>, <a class="el" href="group__UARTDRV.html#gaeecd32d7c68e1de2820634d5184b51d6">ECODE_EMDRV_UARTDRV_ILLEGAL_HANDLE</a>, <a class="el" href="group__UARTDRV.html#ga1d1f73b8d3778cdd8622ef6ff21bb4ff">ECODE_EMDRV_UARTDRV_ILLEGAL_OPERATION</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, and <a class="el" href="group__UARTDRV.html#ggae5bb048bcc9222f56c9b4b811f3395e0ae8a25b944922fad849995ff5b616a79c">uartdrvFlowControlOn</a>.</p>
 
@@ -1536,9 +1547,9 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l02129">2129</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l02205">2205</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
-<p>References <a class="el" href="structUARTDRV__Buffer__t.html#a112d253dae134fb234446a32cdae9667">UARTDRV_Buffer_t::callback</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a5a5d3aca959efba50963a3bd8c38b3ab">UARTDRV_Buffer_t::data</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__UARTDRV.html#ga8e898b24e44ca23c91a95dd86c8456dd">ECODE_EMDRV_UARTDRV_WAITING</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a7ef7a5698876e44f2a1a8da35c1b906e">UARTDRV_Buffer_t::itemsRemaining</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a1a8c8eda97abe547b767e51be23bca6f">UARTDRV_Buffer_t::transferCount</a>, and <a class="el" href="structUARTDRV__Buffer__t.html#a2338aaeaa915194aaa5014b9a5e14b93">UARTDRV_Buffer_t::transferStatus</a>.</p>
+<p>References <a class="el" href="structUARTDRV__Buffer__t.html#a112d253dae134fb234446a32cdae9667">UARTDRV_Buffer_t::callback</a>, <a class="el" href="group__CORE.html#ga3b0354ed174362818a7e22916917d43a">CORE_ATOMIC_SECTION</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a5a5d3aca959efba50963a3bd8c38b3ab">UARTDRV_Buffer_t::data</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__UARTDRV.html#ga8e898b24e44ca23c91a95dd86c8456dd">ECODE_EMDRV_UARTDRV_WAITING</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a7ef7a5698876e44f2a1a8da35c1b906e">UARTDRV_Buffer_t::itemsRemaining</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a1a8c8eda97abe547b767e51be23bca6f">UARTDRV_Buffer_t::transferCount</a>, and <a class="el" href="structUARTDRV__Buffer__t.html#a2338aaeaa915194aaa5014b9a5e14b93">UARTDRV_Buffer_t::transferStatus</a>.</p>
 
 </div>
 </div>
@@ -1583,7 +1594,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a> on success. </dd></dl>
 
-<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l02182">2182</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="uartdrv_8c_source.html#l02258">2258</a> of file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 
 <p>References <a class="el" href="structUARTDRV__Buffer__t.html#a112d253dae134fb234446a32cdae9667">UARTDRV_Buffer_t::callback</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a5a5d3aca959efba50963a3bd8c38b3ab">UARTDRV_Buffer_t::data</a>, <a class="el" href="group__UARTDRV.html#gab58e66dca86247dadeb887240b081bfb">ECODE_EMDRV_UARTDRV_OK</a>, <a class="el" href="group__UARTDRV.html#ga8e898b24e44ca23c91a95dd86c8456dd">ECODE_EMDRV_UARTDRV_WAITING</a>, <a class="el" href="group__EMU.html#gaed0c4092bd3adc7a6679e1e2903d1267">EMU_EnterEM1()</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a7ef7a5698876e44f2a1a8da35c1b906e">UARTDRV_Buffer_t::itemsRemaining</a>, <a class="el" href="structUARTDRV__Buffer__t.html#a1a8c8eda97abe547b767e51be23bca6f">UARTDRV_Buffer_t::transferCount</a>, and <a class="el" href="structUARTDRV__Buffer__t.html#a2338aaeaa915194aaa5014b9a5e14b93">UARTDRV_Buffer_t::transferStatus</a>.</p>
 
@@ -1594,7 +1605,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 11:03:42 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 16:03:34 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

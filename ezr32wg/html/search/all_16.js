@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['valid',['valid',['../structMSDD__CmdStatus__TypeDef.html#a0eb28e74638f8ca64f0cf141a4cb3055',1,'MSDD_CmdStatus_TypeDef::valid()'],['../structMSDSCSI__RequestSenseData__TypeDef.html#ac486480a4989efbebbaccf3cbafc3b68',1,'MSDSCSI_RequestSenseData_TypeDef::Valid()']]],
+  ['valid',['Valid',['../structMSDSCSI__RequestSenseData__TypeDef.html#ac486480a4989efbebbaccf3cbafc3b68',1,'MSDSCSI_RequestSenseData_TypeDef::Valid()'],['../structMSDD__CmdStatus__TypeDef.html#a0eb28e74638f8ca64f0cf141a4cb3055',1,'MSDD_CmdStatus_TypeDef::valid()']]],
   ['valid_5fframe_5fmask',['VALID_FRAME_MASK',['../ksz8851snl_8c.html#aeaa8fab8c4bb775b6dd1fc7532911f25',1,'ksz8851snl.c']]],
   ['value',['VALUE',['../structCALIBRATE__TypeDef.html#afed449925331ba5fb66a3912414a2f2f',1,'CALIBRATE_TypeDef']]],
   ['vcmp',['VCMP',['../group__EZR32WG330F256R69__Peripheral__Declaration.html#ga2df0e11fc4a10e1e7ea0e83042a5c77d',1,'VCMP():&#160;ezr32wg330f256r69.h'],['../group__VCMP.html',1,'(Global Namespace)']]],

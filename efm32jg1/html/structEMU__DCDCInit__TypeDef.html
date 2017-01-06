@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('structEMU__DCDCInit__TypeDef.html','')
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>DCDC initialization structure </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00343">343</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00381">381</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="em__emu_8h_source.html">em_emu.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -117,6 +117,8 @@ $(document).ready(function(){initNavTree('structEMU__DCDCInit__TypeDef.html','')
 Data Fields</h2></td></tr>
 <tr class="memitem:a6feeab2ff282bb9e52b3faee2e142144"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EMU.html#gaccf990475418eb1ed67acaed99efa4d0">EMU_DcdcAnaPeripheralPower_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEMU__DCDCInit__TypeDef.html#a6feeab2ff282bb9e52b3faee2e142144">anaPeripheralPower</a></td></tr>
 <tr class="separator:a6feeab2ff282bb9e52b3faee2e142144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae734a01432ba01b8b1e2ba0dff2e63bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EMU.html#gabba8a5896d1f04f6d70aad9d59cb0f67">EMU_DcdcLnCompCtrl_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEMU__DCDCInit__TypeDef.html#ae734a01432ba01b8b1e2ba0dff2e63bf">dcdcLnCompCtrl</a></td></tr>
+<tr class="separator:ae734a01432ba01b8b1e2ba0dff2e63bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa590866671caeeb9baa8faeb99cc668e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__EMU.html#ga8dc5324b0e9baa047afdb67739bdb53d">EMU_DcdcMode_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEMU__DCDCInit__TypeDef.html#aa590866671caeeb9baa8faeb99cc668e">dcdcMode</a></td></tr>
 <tr class="separator:aa590866671caeeb9baa8faeb99cc668e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a364a11154458edb63b18429e3e0f8ee0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEMU__DCDCInit__TypeDef.html#a364a11154458edb63b18429e3e0f8ee0">em01LoadCurrent_mA</a></td></tr>
@@ -144,7 +146,24 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Select analog peripheral power in DCDC-to-DVDD mode </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00360">360</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00398">398</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265">EMU_DCDCInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae734a01432ba01b8b1e2ba0dff2e63bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__EMU.html#gabba8a5896d1f04f6d70aad9d59cb0f67">EMU_DcdcLnCompCtrl_TypeDef</a> EMU_DCDCInit_TypeDef::dcdcLnCompCtrl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DCDC Low-noise mode compensator control. </p>
+
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00405">405</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265">EMU_DCDCInit()</a>.</p>
 
@@ -159,9 +178,9 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>DCDC regulator operating mode in EM0 </p>
+<p>DCDC regulator operating mode in EM0/1 </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00346">346</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00384">384</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265">EMU_DCDCInit()</a>.</p>
 
@@ -176,9 +195,9 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Estimated average load current in EM0 (mA). This estimate is also used for EM1 optimization, so if EM1 current is expected to be higher than EM0, then this parameter should hold the higher EM1 current. </p>
+<p>Estimated average load current in EM0/1 (mA). This estimate is also used for EM1 optimization, so if EM1 current is expected to be higher than EM0, then this parameter should hold the higher EM1 current. </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00348">348</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00386">386</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265">EMU_DCDCInit()</a>.</p>
 
@@ -195,7 +214,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Estimated average load current in EM2 (uA). This estimate is also used for EM3 and 4 optimization, so if EM3 or 4 current is expected to be higher than EM2, then this parameter should hold the higher EM3 or 4 current. </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00352">352</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00390">390</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265">EMU_DCDCInit()</a>.</p>
 
@@ -212,7 +231,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Maximum average DCDC output current (mA). This can be set to the maximum for the power source, for example the maximum for a battery. </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00356">356</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00394">394</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265">EMU_DCDCInit()</a>.</p>
 
@@ -229,7 +248,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Target output voltage (mV) </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00347">347</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00385">385</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265">EMU_DCDCInit()</a>.</p>
 
@@ -246,7 +265,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Device external power configuration </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00345">345</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00383">383</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265">EMU_DCDCInit()</a>.</p>
 
@@ -263,14 +282,14 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Low-noise reverse current control. NOTE: this parameter uses special encoding: &gt;= 0 is forced CCM mode where the parameter is used as the reverse current threshold in mA. -1 is encoded as emuDcdcLnHighEfficiencyMode (EFM32 only) </p>
 
-<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00362">362</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
+<p>Definition at line <a class="el" href="em__emu_8h_source.html#l00400">400</a> of file <a class="el" href="em__emu_8h_source.html">em_emu.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265">EMU_DCDCInit()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/work/s025_sw_ssh/emlib/inc/<a class="el" href="em__emu_8h_source.html">em_emu.h</a></li>
+<li>c:/work/super/platform/emlib/inc/<a class="el" href="em__emu_8h_source.html">em_emu.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -278,7 +297,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structEMU__DCDCInit__TypeDef.html">EMU_DCDCInit_TypeDef</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 11:01:30 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 16:01:11 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

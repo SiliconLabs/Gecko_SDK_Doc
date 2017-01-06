@@ -49,19 +49,11 @@
 <p>Definition at line <a class="el" href="sha1__alt_8h_source.html#l00058">58</a> of file <a class="el" href="sha1__alt_8h_source.html">sha1_alt.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="sha1__alt_8h_source.html">sha1_alt.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for mbedtls_sha1_context:</div>
-<div class="dyncontent">
-<div class="center"><img src="structmbedtls__sha1__context__coll__graph.png" border="0" usemap="#mbedtls__sha1__context_coll__map" alt="Collaboration graph"/></div>
-<map name="mbedtls__sha1__context_coll__map" id="mbedtls__sha1__context_coll__map">
-<area shape="rect" id="node2" href="struct_c_r_y_p_t_o_d_r_v___context__t.html" title="CRYPTODRV operation context. " alt="" coords="5,5,171,32"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a408d3fe4616a11e149a4a38ecc2d2171"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__sha1__context.html#a408d3fe4616a11e149a4a38ecc2d2171">cryptodrv_ctx</a></td></tr>
-<tr class="separator:a408d3fe4616a11e149a4a38ecc2d2171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9c6676bcda2d05d94363fce78de002"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__sha1__context.html#abb9c6676bcda2d05d94363fce78de002">state</a> [8]</td></tr>
+<tr class="separator:abb9c6676bcda2d05d94363fce78de002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19789ddfacc37f47eb34e26ae718997e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__sha1__context.html#a19789ddfacc37f47eb34e26ae718997e">total</a> [2]</td></tr>
 <tr class="separator:a19789ddfacc37f47eb34e26ae718997e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3dcb1efeeb082beb006590a84ef22ec"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__sha1__context.html#ae3dcb1efeeb082beb006590a84ef22ec">buffer</a> [64]</td></tr>
@@ -83,18 +75,18 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a408d3fe4616a11e149a4a38ecc2d2171"></a>
+<a class="anchor" id="abb9c6676bcda2d05d94363fce78de002"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a> mbedtls_sha1_context::cryptodrv_ctx</td>
+          <td class="memname">uint32_t mbedtls_sha1_context::state[8]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>CRYPTODRV Context </p>
+<p>intermediate digest state </p>
 
-<p>Definition at line <a class="el" href="sha1__alt_8h_source.html#l00061">61</a> of file <a class="el" href="sha1__alt_8h_source.html">sha1_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="sha1__alt_8h_source.html#l00063">63</a> of file <a class="el" href="sha1__alt_8h_source.html">sha1_alt.h</a>.</p>
 
 </div>
 </div>
@@ -119,7 +111,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 13 2016 11:17:25 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 16:12:43 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

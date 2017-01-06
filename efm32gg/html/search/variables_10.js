@@ -19,7 +19,7 @@ var searchData=
   ['pdisplaypoweron',['pDisplayPowerOn',['../structDISPLAY__Device__t.html#a2b7ff8185f64514a3a6d73b4d57fec28',1,'DISPLAY_Device_t']]],
   ['pdriverrefresh',['pDriverRefresh',['../structDISPLAY__Device__t.html#a89e9d90aca1d26eac8d1ef40bdc09e04',1,'DISPLAY_Device_t']]],
   ['pen',['pen',['../structTOUCH__Pos__TypeDef.html#a3342832b63f5484e9dbc923353159810',1,'TOUCH_Pos_TypeDef']]],
-  ['perctrl',['perCtrl',['../structLESENSE__Init__TypeDef.html#adb9e9a504176c27cad3b527e9473a208',1,'LESENSE_Init_TypeDef::perCtrl()'],['../structLESENSE__TypeDef.html#af0531c1904e58636608a4f7cb3d85ef4',1,'LESENSE_TypeDef::PERCTRL()']]],
+  ['perctrl',['PERCTRL',['../structLESENSE__TypeDef.html#af0531c1904e58636608a4f7cb3d85ef4',1,'LESENSE_TypeDef::PERCTRL()'],['../structLESENSE__Init__TypeDef.html#adb9e9a504176c27cad3b527e9473a208',1,'LESENSE_Init_TypeDef::perCtrl()']]],
   ['pericon',['PERICON',['../structBC__TypeDef.html#aa74968e049dff38370251d255e5ca139',1,'BC_TypeDef']]],
   ['peripheral',['peripheral',['../structDMA__CfgDescrSGAlt__TypeDef.html#ae772b4145bf98c306ccd9e220d20eb5b',1,'DMA_CfgDescrSGAlt_TypeDef']]],
   ['peripheraldevicetype',['PeripheralDeviceType',['../structMSDSCSI__InquiryData__TypeDef.html#a0c64c6241cf39c0cc18b2f869f7bc910',1,'MSDSCSI_InquiryData_TypeDef']]],

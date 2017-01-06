@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Leopard Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/inc/em_common.h File Reference</title>
+<title>EFM32 Leopard Gecko Software Documentation: c:/work/super/platform/emlib/inc/em_common.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32lg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('em__common_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General purpose utilities. </p>
-<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -135,30 +135,47 @@ License</h1>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga65ed831691a1570be10aa35f5538bdb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga65ed831691a1570be10aa35f5538bdb9">EFM32_ALIGN</a>(X)        &#160;&#160;&#160;<a class="el" href="group__COMMON.html#ga6c4212379594e73a70b66c5557f1eaa3">SL_ALIGN</a>(X)</td></tr>
-<tr class="separator:ga65ed831691a1570be10aa35f5538bdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga479bd259176d34174477d788c43545dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga479bd259176d34174477d788c43545dd">EFM32_MAX</a>(a,  b)      &#160;&#160;&#160;<a class="el" href="group__COMMON.html#gac33644dcb925ed2bde0b5fc7a5fd9cfe">SL_MAX</a>(a, b)</td></tr>
-<tr class="separator:ga479bd259176d34174477d788c43545dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f57cbb0a8c3a16a48f31520350cf6b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga4f57cbb0a8c3a16a48f31520350cf6b4">EFM32_MIN</a>(a,  b)      &#160;&#160;&#160;<a class="el" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>(a, b)</td></tr>
-<tr class="separator:ga4f57cbb0a8c3a16a48f31520350cf6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd5ced4310004cf38e7e0ce5f3616c9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#gacd5ced4310004cf38e7e0ce5f3616c9b">EFM32_PACK_END</a>()    &#160;&#160;&#160;<a class="el" href="group__COMMON.html#ga911e7f1f5d8dc5b4dd025e8c14159977">SL_PACK_END</a>()</td></tr>
-<tr class="separator:gacd5ced4310004cf38e7e0ce5f3616c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga09edca56e303bddfac51da43893d6f48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga09edca56e303bddfac51da43893d6f48">EFM32_PACK_START</a>(X)&#160;&#160;&#160;<a class="el" href="group__COMMON.html#ga4b1aea3e52adaa7882e0e0299cead0fc">SL_PACK_START</a>(X)</td></tr>
-<tr class="separator:ga09edca56e303bddfac51da43893d6f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c4212379594e73a70b66c5557f1eaa3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga6c4212379594e73a70b66c5557f1eaa3">SL_ALIGN</a>(X)</td></tr>
+<tr class="memitem:ga6c4212379594e73a70b66c5557f1eaa3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6c4212379594e73a70b66c5557f1eaa3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga6c4212379594e73a70b66c5557f1eaa3">SL_ALIGN</a>(X)</td></tr>
+<tr class="memdesc:ga6c4212379594e73a70b66c5557f1eaa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for aligning a variable. <br />
+ Use this macro before the variable definition. <br />
+ X denotes the storage alignment value in bytes. <br />
+ To be gcc compatible use <a class="el" href="group__COMMON.html#ga14deffb02010866992cb069907f73846" title="GCC style macro for aligning a variable. ">SL_ATTRIBUTE_ALIGN(X)</a> before the ; on normal variables. Use <a class="el" href="group__COMMON.html#ga14deffb02010866992cb069907f73846" title="GCC style macro for aligning a variable. ">SL_ATTRIBUTE_ALIGN(X)</a> before the opening { on struct variables. <br /></td></tr>
 <tr class="separator:ga6c4212379594e73a70b66c5557f1eaa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga14deffb02010866992cb069907f73846"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga14deffb02010866992cb069907f73846">SL_ATTRIBUTE_ALIGN</a>(X)&#160;&#160;&#160;__attribute__ ((aligned(X)))</td></tr>
+<tr class="memitem:ga14deffb02010866992cb069907f73846"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga14deffb02010866992cb069907f73846"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga14deffb02010866992cb069907f73846">SL_ATTRIBUTE_ALIGN</a>(X)&#160;&#160;&#160;__attribute__ ((aligned(X)))</td></tr>
+<tr class="memdesc:ga14deffb02010866992cb069907f73846"><td class="mdescLeft">&#160;</td><td class="mdescRight">GCC style macro for aligning a variable. <br /></td></tr>
 <tr class="separator:ga14deffb02010866992cb069907f73846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa8622382a414e46f85b7c7c3e56ecc3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#gaa8622382a414e46f85b7c7c3e56ecc3a">SL_ATTRIBUTE_PACKED</a>&#160;&#160;&#160;__attribute__ ((packed))</td></tr>
+<tr class="memitem:gaa8622382a414e46f85b7c7c3e56ecc3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa8622382a414e46f85b7c7c3e56ecc3a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#gaa8622382a414e46f85b7c7c3e56ecc3a">SL_ATTRIBUTE_PACKED</a>&#160;&#160;&#160;__attribute__ ((packed))</td></tr>
+<tr class="memdesc:gaa8622382a414e46f85b7c7c3e56ecc3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">GCC style macro for handling packed structs. <br /></td></tr>
 <tr class="separator:gaa8622382a414e46f85b7c7c3e56ecc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac33644dcb925ed2bde0b5fc7a5fd9cfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#gac33644dcb925ed2bde0b5fc7a5fd9cfe">SL_MAX</a>(a,  b)&#160;&#160;&#160;({__typeof__(a) _a = (a); __typeof__(b) _b = (b); _a &gt; _b ? _a : _b;})</td></tr>
+<tr class="memitem:gac9141d4fff890b3c5d3bb4bbef73259e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#gac9141d4fff890b3c5d3bb4bbef73259e">SL_ATTRIBUTE_SECTION</a>(X)&#160;&#160;&#160;__attribute__ ((section(X)))</td></tr>
+<tr class="separator:gac9141d4fff890b3c5d3bb4bbef73259e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac33644dcb925ed2bde0b5fc7a5fd9cfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac33644dcb925ed2bde0b5fc7a5fd9cfe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#gac33644dcb925ed2bde0b5fc7a5fd9cfe">SL_MAX</a>(a,  b)&#160;&#160;&#160;__extension__({__typeof__(a) _a = (a); __typeof__(b) _b = (b); _a &gt; _b ? _a : _b;})</td></tr>
+<tr class="memdesc:gac33644dcb925ed2bde0b5fc7a5fd9cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for getting maximum value. No sideeffects, a and b are evaluated once only. <br /></td></tr>
 <tr class="separator:gac33644dcb925ed2bde0b5fc7a5fd9cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9569b0ba06efef226b0a82109eef3ec3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>(a,  b)&#160;&#160;&#160;({__typeof__(a) _a = (a); __typeof__(b) _b = (b); _a &lt; _b ? _a : _b;})</td></tr>
+<tr class="memitem:ga9569b0ba06efef226b0a82109eef3ec3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9569b0ba06efef226b0a82109eef3ec3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>(a,  b)&#160;&#160;&#160;__extension__({__typeof__(a) _a = (a); __typeof__(b) _b = (b); _a &lt; _b ? _a : _b;})</td></tr>
+<tr class="memdesc:ga9569b0ba06efef226b0a82109eef3ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for getting minimum value. No sideeffects, a and b are evaluated once only. <br /></td></tr>
 <tr class="separator:ga9569b0ba06efef226b0a82109eef3ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga911e7f1f5d8dc5b4dd025e8c14159977"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga911e7f1f5d8dc5b4dd025e8c14159977">SL_PACK_END</a>()</td></tr>
+<tr class="memitem:ga911e7f1f5d8dc5b4dd025e8c14159977"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga911e7f1f5d8dc5b4dd025e8c14159977"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga911e7f1f5d8dc5b4dd025e8c14159977">SL_PACK_END</a>()</td></tr>
+<tr class="memdesc:ga911e7f1f5d8dc5b4dd025e8c14159977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for handling packed structs. <br />
+ Use this macro after the struct definition. <br />
+ With GCC, add SL_ATTRIBUTE_PACKED after the closing } of the struct definition. <br /></td></tr>
 <tr class="separator:ga911e7f1f5d8dc5b4dd025e8c14159977"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4b1aea3e52adaa7882e0e0299cead0fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga4b1aea3e52adaa7882e0e0299cead0fc">SL_PACK_START</a>(x)</td></tr>
+<tr class="memitem:ga4b1aea3e52adaa7882e0e0299cead0fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4b1aea3e52adaa7882e0e0299cead0fc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga4b1aea3e52adaa7882e0e0299cead0fc">SL_PACK_START</a>(x)</td></tr>
+<tr class="memdesc:ga4b1aea3e52adaa7882e0e0299cead0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for handling packed structs. <br />
+ Use this macro before the struct definition. <br />
+ X denotes the maximum alignment of struct members. X is not supported with GCC. GCC always use 1 byte maximum alignment. <br /></td></tr>
 <tr class="separator:ga4b1aea3e52adaa7882e0e0299cead0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e33efc3fbeb9ceb617349303d98796a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6e33efc3fbeb9ceb617349303d98796a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga6e33efc3fbeb9ceb617349303d98796a">SL_WEAK</a>&#160;&#160;&#160;__attribute__ ((weak))</td></tr>
+<tr class="memdesc:ga6e33efc3fbeb9ceb617349303d98796a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for defining a weak symbol. <br /></td></tr>
+<tr class="separator:ga6e33efc3fbeb9ceb617349303d98796a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -174,8 +191,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__common_8h.html">em_common.h</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 10:59:12 for EFM32 Leopard Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__common_8h.html">em_common.h</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 15:59:57 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

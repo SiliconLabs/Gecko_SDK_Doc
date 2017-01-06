@@ -1,6 +1,6 @@
 var retargetswo_8c =
 [
     [ "RETARGET_ReadChar", "group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb", null ],
-    [ "RETARGET_WriteChar", "group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f", null ],
-    [ "setupSWOForPrint", "group__RetargetSWO.html#ga014e7b798b9c569ad86b5e57d1ef2200", null ]
+    [ "RETARGET_SwoInit", "group__RetargetIo.html#gaf86de46689133bfc01be3d84e5a3f3e5", null ],
+    [ "RETARGET_WriteChar", "group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f", null ]
 ];

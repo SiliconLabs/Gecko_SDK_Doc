@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Zero Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32zg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32zg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -110,9 +110,20 @@ $(document).ready(function(){initNavTree('group__IDAC.html','');});
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Current Digital to Analog Conversion (IDAC) Peripheral API. </p>
-<p>This module contains functions to control the IDAC peripheral of Silicon Labs 32-bit MCUs and SoCs. The IDAC can sink or source a configurable constant current, to bias internal circuits, or together with the <a class="el" href="group__ADC.html">ADC</a> measure capacitance by injecting a controlled current into a component. </p>
-<table class="memberdecls">
+<p>Current Digital-to-Analog Converter (IDAC) Peripheral API. </p>
+<p>The current digital-to-analog converter (IDAC) can source or sink a configurable constant current, which can be output on, or sinked from pin or ADC. The current is configurable with several ranges of various step sizes. The IDAC can be used with PRS and it can operate down to EM3.</p>
+<p>The following steps are necessary for basic operation:</p>
+<p>Clock enable: </p><div class="fragment"><div class="line"><span class="comment">/* IDAC is a HFPERCLK peripheral */</span></div>
+<div class="line"><a class="code" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a>(<a class="code" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a class="code" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a>(<a class="code" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea3eb5c1a289ec02390f4268f3a3cabfdf">cmuClock_IDAC0</a>, <span class="keyword">true</span>);</div>
+</div><!-- fragment --><p>Initialize the peripheral with default settings and modify selected fields such as output select: </p><div class="fragment"><div class="line"><span class="comment">/* Initialize with default settings. Change output to ADC. */</span></div>
+<div class="line"><a class="code" href="structIDAC__Init__TypeDef.html">IDAC_Init_TypeDef</a> init = <a class="code" href="group__IDAC.html#gad4fdb3535bcbe74279cb50553823cccd">IDAC_INIT_DEFAULT</a>;</div>
+<div class="line">init.<a class="code" href="structIDAC__Init__TypeDef.html#a73024982aa23263a084b0fada9ced096">outMode</a> = <a class="code" href="group__IDAC.html#gga58be7eed3e51f941d9b788b53aedf4c5abc400f9c67ef2cf61e1c518cc7fc58e9">idacOutputADC</a>;</div>
+<div class="line"><a class="code" href="group__IDAC.html#gad7063a3bf61e7e317fd131637e9323db">IDAC_Init</a>(<a class="code" href="group__EFM32ZG222F32__Peripheral__Declaration.html#ga6e5df673dd3355df3040d6f2e48dfdd8">IDAC0</a>, &amp;init);</div>
+</div><!-- fragment --><p>Set output: </p><div class="fragment"><div class="line"><span class="comment">/* Set 50nA step and enable output */</span></div>
+<div class="line"><a class="code" href="group__IDAC.html#gad246741d61cb9e83bb73650267b9dfc6">IDAC_StepSet</a>(<a class="code" href="group__EFM32ZG222F32__Peripheral__Declaration.html#ga6e5df673dd3355df3040d6f2e48dfdd8">IDAC0</a>, 0);</div>
+<div class="line"><a class="code" href="group__IDAC.html#gadb7157da10f33ecceb87bad6cc753df3">IDAC_OutEnable</a>(<a class="code" href="group__EFM32ZG222F32__Peripheral__Declaration.html#ga6e5df673dd3355df3040d6f2e48dfdd8">IDAC0</a>, <span class="keyword">true</span>);</div>
+</div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIDAC__Init__TypeDef.html">IDAC_Init_TypeDef</a></td></tr>
@@ -196,11 +207,11 @@ Functions</h2></td></tr>
 <div class="line"><a class="code" href="group__IDAC.html#ggadd77491cecf587b26365844200cd0597a2d295cc98553229021294580d3af82f5">  idacPRSSELCh0</a>,    \</div>
 <div class="line">  false                              \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__IDAC_html_ggadd77491cecf587b26365844200cd0597a2d295cc98553229021294580d3af82f5"><div class="ttname"><a href="group__IDAC.html#ggadd77491cecf587b26365844200cd0597a2d295cc98553229021294580d3af82f5">idacPRSSELCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__idac_8h_source.html#l00113">em_idac.h:113</a></div></div>
-<div class="ttc" id="group__IDAC_html_gga58be7eed3e51f941d9b788b53aedf4c5a42eaf5d4663d61934ca68a1835a3f930"><div class="ttname"><a href="group__IDAC.html#gga58be7eed3e51f941d9b788b53aedf4c5a42eaf5d4663d61934ca68a1835a3f930">idacOutputPin</a></div><div class="ttdef"><b>Definition:</b> <a href="em__idac_8h_source.html#l00070">em_idac.h:70</a></div></div>
+<div class="ttc" id="group__IDAC_html_ggadd77491cecf587b26365844200cd0597a2d295cc98553229021294580d3af82f5"><div class="ttname"><a href="group__IDAC.html#ggadd77491cecf587b26365844200cd0597a2d295cc98553229021294580d3af82f5">idacPRSSELCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__idac_8h_source.html#l00139">em_idac.h:139</a></div></div>
+<div class="ttc" id="group__IDAC_html_gga58be7eed3e51f941d9b788b53aedf4c5a42eaf5d4663d61934ca68a1835a3f930"><div class="ttname"><a href="group__IDAC.html#gga58be7eed3e51f941d9b788b53aedf4c5a42eaf5d4663d61934ca68a1835a3f930">idacOutputPin</a></div><div class="ttdef"><b>Definition:</b> <a href="em__idac_8h_source.html#l00096">em_idac.h:96</a></div></div>
 </div><!-- fragment --><p>Default config for IDAC init structure. </p>
 
-<p>Definition at line <a class="el" href="em__idac_8h_source.html#l00174">174</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
+<p>Definition at line <a class="el" href="em__idac_8h_source.html#l00200">200</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
 
 </div>
 </div>
@@ -224,7 +235,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__idac_8h_source.html#l00067">67</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
+<p>Definition at line <a class="el" href="em__idac_8h_source.html#l00093">93</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +264,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__idac_8h_source.html#l00111">111</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
+<p>Definition at line <a class="el" href="em__idac_8h_source.html#l00137">137</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +293,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__idac_8h_source.html#l00133">133</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
+<p>Definition at line <a class="el" href="em__idac_8h_source.html#l00159">159</a> of file <a class="el" href="em__idac_8h_source.html">em_idac.h</a>.</p>
 
 </div>
 </div>
@@ -353,14 +364,6 @@ Functions</h2></td></tr>
 <p>Initialize IDAC. </p>
 <p>Initializes IDAC according to the initialization structure parameter, and sets the default calibration value stored in the DEVINFO structure.</p>
 <dl class="section note"><dt>Note</dt><dd>This function will disable the IDAC prior to configuration.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>Pointer to IDAC initialization structure.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Configure the IDAC according to initialization structure parameters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
@@ -478,14 +481,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set the current range of the IDAC output. </p>
-<p>This function sets the current range of the IDAC output. The function also updates the IDAC calibration register (IDAC_CAL) with the default calibration value (from DEVINFO, factory setting) corresponding to the specified range.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">idac</td><td>Pointer to IDAC peripheral register block.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>Current range value.</td></tr>
-  </table>
-  </dd>
-</dl>
 <p>This function sets the current range of the IDAC output. The function also updates the IDAC calibration register (IDAC_CAL) with the default calibration value from DEVINFO (factory calibration) corresponding to the specified range.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -573,7 +568,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 10:54:51 for EFM32 Zero Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 15:57:51 for EFM32 Zero Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

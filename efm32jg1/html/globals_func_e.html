@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -240,6 +240,9 @@ $(document).ready(function(){initNavTree('globals_func_e.html','');});
 <li>EMU_PowerUnlock()
 : <a class="el" href="group__EMU.html#ga29da45db4e157186e87a2fd309f3e169">em_emu.h</a>
 </li>
+<li>EMU_SetBiasMode()
+: <a class="el" href="group__EMU.html#ga7c407db6178a3e2336702a23a882db61">em_emu.h</a>
+</li>
 <li>EMU_UnlatchPinRetention()
 : <a class="el" href="group__EMU.html#ga7937ada2f10e2aae57e5f3bc356e032b">em_emu.h</a>
 </li>
@@ -263,6 +266,15 @@ $(document).ready(function(){initNavTree('globals_func_e.html','');});
 </li>
 <li>EMU_VmonStatusGet()
 : <a class="el" href="group__EMU.html#gafe10f8365d6b7a829585982be34f08ee">em_emu.h</a>
+</li>
+<li>errataCallback()
+: <a class="el" href="tempdrv_8c.html#a3a493a27c12a1d4a0da8f3cebf9320aa">tempdrv.c</a>
+</li>
+<li>errataInit()
+: <a class="el" href="tempdrv_8c.html#a8eb151e16851e377635f639382b86851">tempdrv.c</a>
+</li>
+<li>errataStateUpdate()
+: <a class="el" href="tempdrv_8c.html#a5376406f97f0caea18d2126ffb1216ff">tempdrv.c</a>
 </li>
 <li>ezradio_change_state()
 : <a class="el" href="group__API__Layer.html#ga235ff2f0e61232797b5d3930b9319c5f">ezradio_api_lib.h</a>
@@ -297,8 +309,8 @@ $(document).ready(function(){initNavTree('globals_func_e.html','');});
 , <a class="el" href="group__COMM__Layer.html#ga6316768a0f0661af747171605e86f401">ezradio_comm.c</a>
 </li>
 <li>ezradio_configuration_init()
-: <a class="el" href="group__API__Layer.html#ga5e458f080841a7423743d53e2217d1e5">ezradio_api_lib_add.h</a>
-, <a class="el" href="group__API__Layer.html#ga5e458f080841a7423743d53e2217d1e5">ezradio_api_lib_add.c</a>
+: <a class="el" href="group__API__Layer.html#ga5e458f080841a7423743d53e2217d1e5">ezradio_api_lib_add.c</a>
+, <a class="el" href="group__API__Layer.html#ga5e458f080841a7423743d53e2217d1e5">ezradio_api_lib_add.h</a>
 </li>
 <li>ezradio_ezconfig_check()
 : <a class="el" href="group__API__Layer.html#ga34050d696c76dfc0e2f210ac3465cdf0">ezradio_api_lib_add.h</a>
@@ -421,24 +433,24 @@ $(document).ready(function(){initNavTree('globals_func_e.html','');});
 , <a class="el" href="group__HAL__Layer.html#gabf61af8f57a9c92ea50311df53a7d825">ezradio_hal.c</a>
 </li>
 <li>ezradio_hal_NirqLevel()
-: <a class="el" href="group__HAL__Layer.html#gaabf77038901412b5b640149538ec5cbe">ezradio_hal.h</a>
-, <a class="el" href="group__HAL__Layer.html#gaabf77038901412b5b640149538ec5cbe">ezradio_hal.c</a>
+: <a class="el" href="group__HAL__Layer.html#gaabf77038901412b5b640149538ec5cbe">ezradio_hal.c</a>
+, <a class="el" href="group__HAL__Layer.html#gaabf77038901412b5b640149538ec5cbe">ezradio_hal.h</a>
 </li>
 <li>ezradio_hal_SetNsel()
 : <a class="el" href="group__HAL__Layer.html#gae80c58c4f19b8e2b56c033c94bcb0f10">ezradio_hal.h</a>
 , <a class="el" href="group__HAL__Layer.html#gae80c58c4f19b8e2b56c033c94bcb0f10">ezradio_hal.c</a>
 </li>
 <li>ezradio_hal_SpiInit()
-: <a class="el" href="group__HAL__Layer.html#gae1cf166781ecf4a2317e0d9d4f504197">ezradio_hal.c</a>
-, <a class="el" href="group__HAL__Layer.html#gae1cf166781ecf4a2317e0d9d4f504197">ezradio_hal.h</a>
+: <a class="el" href="group__HAL__Layer.html#gae1cf166781ecf4a2317e0d9d4f504197">ezradio_hal.h</a>
+, <a class="el" href="group__HAL__Layer.html#gae1cf166781ecf4a2317e0d9d4f504197">ezradio_hal.c</a>
 </li>
 <li>ezradio_hal_SpiReadByte()
 : <a class="el" href="group__HAL__Layer.html#ga23ca775cc658644f29ceacbcc471606a">ezradio_hal.h</a>
 , <a class="el" href="group__HAL__Layer.html#ga23ca775cc658644f29ceacbcc471606a">ezradio_hal.c</a>
 </li>
 <li>ezradio_hal_SpiReadData()
-: <a class="el" href="group__HAL__Layer.html#ga9c4c63403aaa9f22f75391e4c767d298">ezradio_hal.h</a>
-, <a class="el" href="group__HAL__Layer.html#ga9c4c63403aaa9f22f75391e4c767d298">ezradio_hal.c</a>
+: <a class="el" href="group__HAL__Layer.html#ga9c4c63403aaa9f22f75391e4c767d298">ezradio_hal.c</a>
+, <a class="el" href="group__HAL__Layer.html#ga9c4c63403aaa9f22f75391e4c767d298">ezradio_hal.h</a>
 </li>
 <li>ezradio_hal_SpiWriteByte()
 : <a class="el" href="group__HAL__Layer.html#ga52e4a984325c6446291b13b1a63e3dff">ezradio_hal.h</a>
@@ -453,8 +465,8 @@ $(document).ready(function(){initNavTree('globals_func_e.html','');});
 , <a class="el" href="group__HAL__Layer.html#ga7b4e804cd30d3d5071d61ce8205f4346">ezradio_hal.c</a>
 </li>
 <li>ezradio_ircal()
-: <a class="el" href="group__API__Layer.html#ga539bfe0739c7c40efd8b5ce2230ba2d8">ezradio_api_lib_add.c</a>
-, <a class="el" href="group__API__Layer.html#ga539bfe0739c7c40efd8b5ce2230ba2d8">ezradio_api_lib_add.h</a>
+: <a class="el" href="group__API__Layer.html#ga539bfe0739c7c40efd8b5ce2230ba2d8">ezradio_api_lib_add.h</a>
+, <a class="el" href="group__API__Layer.html#ga539bfe0739c7c40efd8b5ce2230ba2d8">ezradio_api_lib_add.c</a>
 </li>
 <li>ezradio_ircal_manual()
 : <a class="el" href="group__API__Layer.html#ga50e5aeb4468316b1c8bd9005806b7f05">ezradio_api_lib_add.h</a>
@@ -477,12 +489,12 @@ $(document).ready(function(){initNavTree('globals_func_e.html','');});
 , <a class="el" href="group__API__Layer.html#ga18c87c07ae75e6a7a378e2ebe9d618c1">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_read_rx_fifo()
-: <a class="el" href="group__API__Layer.html#ga329c4c3b314e2db479997a6b5bcf2ab0">ezradio_api_lib.h</a>
-, <a class="el" href="group__API__Layer.html#ga329c4c3b314e2db479997a6b5bcf2ab0">ezradio_api_lib.c</a>
+: <a class="el" href="group__API__Layer.html#ga329c4c3b314e2db479997a6b5bcf2ab0">ezradio_api_lib.c</a>
+, <a class="el" href="group__API__Layer.html#ga329c4c3b314e2db479997a6b5bcf2ab0">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_request_device_state()
-: <a class="el" href="group__API__Layer.html#ga9f990f8ebde64b6ef0c051f397430c53">ezradio_api_lib.c</a>
-, <a class="el" href="group__API__Layer.html#ga9f990f8ebde64b6ef0c051f397430c53">ezradio_api_lib.h</a>
+: <a class="el" href="group__API__Layer.html#ga9f990f8ebde64b6ef0c051f397430c53">ezradio_api_lib.h</a>
+, <a class="el" href="group__API__Layer.html#ga9f990f8ebde64b6ef0c051f397430c53">ezradio_api_lib.c</a>
 </li>
 <li>ezradio_reset()
 : <a class="el" href="group__API__Layer.html#gad7a48081868b00a765b488f47909396c">ezradio_api_lib.c</a>
@@ -497,8 +509,8 @@ $(document).ready(function(){initNavTree('globals_func_e.html','');});
 , <a class="el" href="group__API__Layer.html#ga5f37f9c7237c880623753bbd9c772876">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_start_rx()
-: <a class="el" href="group__API__Layer.html#ga6bebb6e764046173bd4b58db3d5f30c2">ezradio_api_lib.h</a>
-, <a class="el" href="group__API__Layer.html#ga6bebb6e764046173bd4b58db3d5f30c2">ezradio_api_lib.c</a>
+: <a class="el" href="group__API__Layer.html#ga6bebb6e764046173bd4b58db3d5f30c2">ezradio_api_lib.c</a>
+, <a class="el" href="group__API__Layer.html#ga6bebb6e764046173bd4b58db3d5f30c2">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_start_rx_fast()
 : <a class="el" href="group__API__Layer.html#ga2afe6af0c962076145f252f0e18d97ee">ezradio_api_lib.c</a>
@@ -513,36 +525,36 @@ $(document).ready(function(){initNavTree('globals_func_e.html','');});
 , <a class="el" href="group__API__Layer.html#gae98048c6798c02b17ce19356390a265a">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_tx_hop()
-: <a class="el" href="group__API__Layer.html#ga3fc1fea6da81ea1d332f7ad430aa3be6">ezradio_api_lib_add.c</a>
-, <a class="el" href="group__API__Layer.html#ga3fc1fea6da81ea1d332f7ad430aa3be6">ezradio_api_lib_add.h</a>
+: <a class="el" href="group__API__Layer.html#ga3fc1fea6da81ea1d332f7ad430aa3be6">ezradio_api_lib_add.h</a>
+, <a class="el" href="group__API__Layer.html#ga3fc1fea6da81ea1d332f7ad430aa3be6">ezradio_api_lib_add.c</a>
 </li>
 <li>ezradio_write_ezconfig_array()
-: <a class="el" href="group__API__Layer.html#ga48c934c7d9a3a297087572137693cdf7">ezradio_api_lib_add.c</a>
-, <a class="el" href="group__API__Layer.html#ga48c934c7d9a3a297087572137693cdf7">ezradio_api_lib_add.h</a>
+: <a class="el" href="group__API__Layer.html#ga48c934c7d9a3a297087572137693cdf7">ezradio_api_lib_add.h</a>
+, <a class="el" href="group__API__Layer.html#ga48c934c7d9a3a297087572137693cdf7">ezradio_api_lib_add.c</a>
 </li>
 <li>ezradio_write_tx_fifo()
 : <a class="el" href="group__API__Layer.html#ga352edd05911a66d9fe2b2e7c11d2df22">ezradio_api_lib.c</a>
 , <a class="el" href="group__API__Layer.html#ga352edd05911a66d9fe2b2e7c11d2df22">ezradio_api_lib.h</a>
 </li>
 <li>ezradioDisableAutoAck()
-: <a class="el" href="group__Auto__ACK__Plugin.html#ga3315ed2a380411a885d067d6edfd5ef1">ezradio_auto_ack_plugin.c</a>
-, <a class="el" href="group__Auto__ACK__Plugin.html#ga3315ed2a380411a885d067d6edfd5ef1">ezradio_auto_ack_plugin.h</a>
+: <a class="el" href="group__Auto__ACK__Plugin.html#ga3315ed2a380411a885d067d6edfd5ef1">ezradio_auto_ack_plugin.h</a>
+, <a class="el" href="group__Auto__ACK__Plugin.html#ga3315ed2a380411a885d067d6edfd5ef1">ezradio_auto_ack_plugin.c</a>
 </li>
 <li>ezradioEnableAutoAck()
-: <a class="el" href="group__Auto__ACK__Plugin.html#ga7b688d87c592a1a68ed3f7f0378405d8">ezradio_auto_ack_plugin.h</a>
-, <a class="el" href="group__Auto__ACK__Plugin.html#ga7b688d87c592a1a68ed3f7f0378405d8">ezradio_auto_ack_plugin.c</a>
+: <a class="el" href="group__Auto__ACK__Plugin.html#ga7b688d87c592a1a68ed3f7f0378405d8">ezradio_auto_ack_plugin.c</a>
+, <a class="el" href="group__Auto__ACK__Plugin.html#ga7b688d87c592a1a68ed3f7f0378405d8">ezradio_auto_ack_plugin.h</a>
 </li>
 <li>ezradioInit()
 : <a class="el" href="group__Plugin__Manager.html#ga55ab56dfaa297c93024dc43239bc8592">ezradio_plugin_manager.h</a>
 , <a class="el" href="group__Plugin__Manager.html#ga55ab56dfaa297c93024dc43239bc8592">ezradio_plugin_manager.c</a>
 </li>
 <li>ezradioPluginManager()
-: <a class="el" href="group__Plugin__Manager.html#ga32fa115744a93d5a0e56b5c33b8231bb">ezradio_plugin_manager.c</a>
-, <a class="el" href="group__Plugin__Manager.html#ga32fa115744a93d5a0e56b5c33b8231bb">ezradio_plugin_manager.h</a>
+: <a class="el" href="group__Plugin__Manager.html#ga32fa115744a93d5a0e56b5c33b8231bb">ezradio_plugin_manager.h</a>
+, <a class="el" href="group__Plugin__Manager.html#ga32fa115744a93d5a0e56b5c33b8231bb">ezradio_plugin_manager.c</a>
 </li>
 <li>ezradioResetTRxFifo()
-: <a class="el" href="group__Plugin__Manager.html#ga5a552425d8e40d1eefd78cc82b5dd7b5">ezradio_plugin_manager.h</a>
-, <a class="el" href="group__Plugin__Manager.html#ga5a552425d8e40d1eefd78cc82b5dd7b5">ezradio_plugin_manager.c</a>
+: <a class="el" href="group__Plugin__Manager.html#ga5a552425d8e40d1eefd78cc82b5dd7b5">ezradio_plugin_manager.c</a>
+, <a class="el" href="group__Plugin__Manager.html#ga5a552425d8e40d1eefd78cc82b5dd7b5">ezradio_plugin_manager.h</a>
 </li>
 <li>ezradioSkipAutoAck()
 : <a class="el" href="group__Auto__ACK__Plugin.html#gaba316aaed73770198e15b3814fcfcce3">ezradio_auto_ack_plugin.h</a>
@@ -553,8 +565,8 @@ $(document).ready(function(){initNavTree('globals_func_e.html','');});
 , <a class="el" href="group__Direct__Receive__Plugin.html#ga9a1aa8ea909b1667cf73d2227773251f">ezradio_direct_receive_plugin.h</a>
 </li>
 <li>ezradioStartDirectTransmit()
-: <a class="el" href="group__Direct__Transmit__Plugin.html#gab765dcab5e4aab236830b5f2cd764f17">ezradio_direct_transmit_plugin.c</a>
-, <a class="el" href="group__Direct__Transmit__Plugin.html#gab765dcab5e4aab236830b5f2cd764f17">ezradio_direct_transmit_plugin.h</a>
+: <a class="el" href="group__Direct__Transmit__Plugin.html#gab765dcab5e4aab236830b5f2cd764f17">ezradio_direct_transmit_plugin.h</a>
+, <a class="el" href="group__Direct__Transmit__Plugin.html#gab765dcab5e4aab236830b5f2cd764f17">ezradio_direct_transmit_plugin.c</a>
 </li>
 <li>ezradioStartPn9()
 : <a class="el" href="group__PN9__Plugin.html#ga6730098ec7ed97f93ad79079d6db3ab3">ezradio_pn9_plugin.c</a>
@@ -565,8 +577,8 @@ $(document).ready(function(){initNavTree('globals_func_e.html','');});
 , <a class="el" href="group__Receive__Plugin.html#gae2761df30f35463d361937ddee63eed0">ezradio_receive_plugin.c</a>
 </li>
 <li>ezradioStartTransmitBasic()
-: <a class="el" href="group__Transmit__Plugin.html#gaf702a16bfb588bfed9cbc7c639ba650f">ezradio_transmit_plugin.h</a>
-, <a class="el" href="group__Transmit__Plugin.html#gaf702a16bfb588bfed9cbc7c639ba650f">ezradio_transmit_plugin.c</a>
+: <a class="el" href="group__Transmit__Plugin.html#gaf702a16bfb588bfed9cbc7c639ba650f">ezradio_transmit_plugin.c</a>
+, <a class="el" href="group__Transmit__Plugin.html#gaf702a16bfb588bfed9cbc7c639ba650f">ezradio_transmit_plugin.h</a>
 </li>
 <li>ezradioStartTransmitConfigured()
 : <a class="el" href="group__Transmit__Plugin.html#ga62e3d76389ad50afc7f77002f8750cb8">ezradio_transmit_plugin.c</a>
@@ -577,20 +589,20 @@ $(document).ready(function(){initNavTree('globals_func_e.html','');});
 , <a class="el" href="group__Transmit__Plugin.html#ga348cad1485fa0c671d91af6751488ec1">ezradio_transmit_plugin.c</a>
 </li>
 <li>ezradioStartTransmitDefault()
-: <a class="el" href="group__Transmit__Plugin.html#gade85938593abc8d7c6246eeaa9536a61">ezradio_transmit_plugin.h</a>
-, <a class="el" href="group__Transmit__Plugin.html#gade85938593abc8d7c6246eeaa9536a61">ezradio_transmit_plugin.c</a>
+: <a class="el" href="group__Transmit__Plugin.html#gade85938593abc8d7c6246eeaa9536a61">ezradio_transmit_plugin.c</a>
+, <a class="el" href="group__Transmit__Plugin.html#gade85938593abc8d7c6246eeaa9536a61">ezradio_transmit_plugin.h</a>
 </li>
 <li>ezradioStartTransmitSmart()
-: <a class="el" href="group__Transmit__Plugin.html#gaf0c60b70ac28ad2c13779b041b923153">ezradio_transmit_plugin.c</a>
-, <a class="el" href="group__Transmit__Plugin.html#gaf0c60b70ac28ad2c13779b041b923153">ezradio_transmit_plugin.h</a>
+: <a class="el" href="group__Transmit__Plugin.html#gaf0c60b70ac28ad2c13779b041b923153">ezradio_transmit_plugin.h</a>
+, <a class="el" href="group__Transmit__Plugin.html#gaf0c60b70ac28ad2c13779b041b923153">ezradio_transmit_plugin.c</a>
 </li>
 <li>ezradioStartUnmodulatedCarrier()
-: <a class="el" href="group__Unmod__Carrier__Plugin.html#ga52403c3b77b358386eb55a5bcdf8f3d8">ezradio_unmod_carrier_plugin.h</a>
-, <a class="el" href="group__Unmod__Carrier__Plugin.html#ga52403c3b77b358386eb55a5bcdf8f3d8">ezradio_unmod_carrier_plugin.c</a>
+: <a class="el" href="group__Unmod__Carrier__Plugin.html#ga52403c3b77b358386eb55a5bcdf8f3d8">ezradio_unmod_carrier_plugin.c</a>
+, <a class="el" href="group__Unmod__Carrier__Plugin.html#ga52403c3b77b358386eb55a5bcdf8f3d8">ezradio_unmod_carrier_plugin.h</a>
 </li>
 <li>ezradioStopDirectReceive()
-: <a class="el" href="group__Direct__Receive__Plugin.html#ga110cc9713875e0e8ce1e87aa7a66b536">ezradio_direct_receive_plugin.c</a>
-, <a class="el" href="group__Direct__Receive__Plugin.html#ga110cc9713875e0e8ce1e87aa7a66b536">ezradio_direct_receive_plugin.h</a>
+: <a class="el" href="group__Direct__Receive__Plugin.html#ga110cc9713875e0e8ce1e87aa7a66b536">ezradio_direct_receive_plugin.h</a>
+, <a class="el" href="group__Direct__Receive__Plugin.html#ga110cc9713875e0e8ce1e87aa7a66b536">ezradio_direct_receive_plugin.c</a>
 </li>
 <li>ezradioStopDirectTransmit()
 : <a class="el" href="group__Direct__Transmit__Plugin.html#gaaeb98ca48e265d89240b188fb685f02c">ezradio_direct_transmit_plugin.h</a>
@@ -601,8 +613,8 @@ $(document).ready(function(){initNavTree('globals_func_e.html','');});
 , <a class="el" href="group__PN9__Plugin.html#ga721700326b2545601f947f24fed72676">ezradio_pn9_plugin.c</a>
 </li>
 <li>ezradioStopUnmodulatedCarrier()
-: <a class="el" href="group__Unmod__Carrier__Plugin.html#ga597d48cd98b47dc8811996c67c475e91">ezradio_unmod_carrier_plugin.h</a>
-, <a class="el" href="group__Unmod__Carrier__Plugin.html#ga597d48cd98b47dc8811996c67c475e91">ezradio_unmod_carrier_plugin.c</a>
+: <a class="el" href="group__Unmod__Carrier__Plugin.html#ga597d48cd98b47dc8811996c67c475e91">ezradio_unmod_carrier_plugin.c</a>
+, <a class="el" href="group__Unmod__Carrier__Plugin.html#ga597d48cd98b47dc8811996c67c475e91">ezradio_unmod_carrier_plugin.h</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -610,7 +622,7 @@ $(document).ready(function(){initNavTree('globals_func_e.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 11:01:42 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 16:01:18 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

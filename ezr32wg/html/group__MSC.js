@@ -11,6 +11,9 @@ var group__MSC =
     [ "EM_MSC_RUN_FROM_FLASH", "group__MSC.html#ga1135aa8aedb12568145f653bc8abdc31", null ],
     [ "MSC_EXECCONFIG_DEFAULT", "group__MSC.html#gae0b31656af85df71ad9ec519d7b1c923", null ],
     [ "MSC_PROGRAM_TIMEOUT", "group__MSC.html#ga2ccebeae7857abb74bd22341b7761583", null ],
+    [ "MSC_RAMFUNC_DECLARATOR", "group__MSC.html#ga2dd6e97914fb97828408b0dd5069deaa", null ],
+    [ "MSC_RAMFUNC_DEFINITION_BEGIN", "group__MSC.html#gafb4f9fbaaf4d586c394bbefe0a77afed", null ],
+    [ "MSC_RAMFUNC_DEFINITION_END", "group__MSC.html#ga78d9074971767d304eed774cd2c5c806", null ],
     [ "MSC_BusStrategy_Typedef", "group__MSC.html#ga6850b8a5bb5ae189bb3e380d3137f103", [
       [ "mscBusStrategyCPU", "group__MSC.html#gga6850b8a5bb5ae189bb3e380d3137f103a93d7920b0b1256375377e3bd3da53b50", null ],
       [ "mscBusStrategyDMA", "group__MSC.html#gga6850b8a5bb5ae189bb3e380d3137f103a7ed30ae1ac4f59e222b5cf7e8dc4dc81", null ],

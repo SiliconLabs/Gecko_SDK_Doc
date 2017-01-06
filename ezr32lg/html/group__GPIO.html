@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -612,7 +612,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8c_source.html#l00357">357</a> of file <a class="el" href="em__gpio_8c_source.html">em_gpio.c</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8c_source.html#l00361">361</a> of file <a class="el" href="em__gpio_8c_source.html">em_gpio.c</a>.</p>
 
 <p>References <a class="el" href="group__EZR32LG__GPIO__BitFields.html#ga6f1cbf4acc006854a0e5f7d03839c5ed">_GPIO_EM4WUEN_MASK</a>, <a class="el" href="group__EZR32LG__GPIO__BitFields.html#ga18e4890b5c622fd01c2b09793d5a6339">_GPIO_EM4WUPOL_MASK</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>, <a class="el" href="group__EZR32LG__GPIO__BitFields.html#ga7bf603b4eef5886c42985eac58dc0a5a">GPIO_CMD_EM4WUCLR</a>, <a class="el" href="group__GPIO.html#ga9373299464cb309d7251c73de17d0d66">GPIO_EM4SetPinRetention()</a>, and <a class="el" href="group__GPIO.html#ga1c840f8a9d9ee23d76f3f51000f9cc5d">GPIO_IntClear()</a>.</p>
 
@@ -727,9 +727,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>Configure GPIO external pin interrupt. </p>
 <p>If reconfiguring a GPIO interrupt that is already enabled, it is generally recommended to disable it first, see GPIO_Disable().</p>
 <p>The actual GPIO interrupt handler must be in place before enabling the interrupt.</p>
-<p>Notice that any pending interrupt for the selected pin is cleared by this function.</p>
-<dl class="section note"><dt>Note</dt><dd>On platform 1 devices the interrupt number parameter is not used. The interrupt number used on these devices is hardwired to the same number as the pin number. <br />
- On platform 2 devices, interrupt number can be selected freely within the same group as pin number, the groups are 0-3, 4-7, 8-11 and 12-15.</dd></dl>
+<p>Notice that any pending interrupt for the selected interrupt is cleared by this function.</p>
+<dl class="section note"><dt>Note</dt><dd>On platform 1 devices the pin number parameter is not used. The pin number used on these devices is hardwired to the interrupt with the same number. <br />
+ On platform 2 devices, pin number can be selected freely within a group. Interrupt numbers are divided into 4 groups (intNo / 4) and valid pin number within the interrupt groups are: 0: pins 0-3 1: pins 4-7 2: pins 8-11 3: pins 12-15</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port to associate with <code>pin</code>.</td></tr>
@@ -742,7 +742,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8c_source.html#l00176">176</a> of file <a class="el" href="em__gpio_8c_source.html">em_gpio.c</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8c_source.html#l00181">181</a> of file <a class="el" href="em__gpio_8c_source.html">em_gpio.c</a>.</p>
 
 <p>References <a class="el" href="group__EZR32LG__GPIO__BitFields.html#gaab9f723532f42eff71b8dba7aa1aa1c1">_GPIO_EXTIPSELH_EXTIPSEL8_MASK</a>, <a class="el" href="group__EZR32LG__GPIO__BitFields.html#ga8c8479acade33861512677afd1d6a93b">_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT</a>, <a class="el" href="group__EZR32LG__GPIO__BitFields.html#ga2d3b08a7b482c5c8b0fe9323a8241bb6">_GPIO_EXTIPSELL_EXTIPSEL0_MASK</a>, <a class="el" href="group__EZR32LG__GPIO__BitFields.html#ga8153c4c39e17dfb0f504df6c2cd3f9b1">_GPIO_EXTIPSELL_EXTIPSEL1_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite()</a>, and <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -822,7 +822,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 
 <p>References <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
-<p>Referenced by <a class="el" href="group__GPIO.html#gad65109dacead0351fa390749d8682137">GPIO_EM4EnablePinWakeup()</a>.</p>
+<p>Referenced by <a class="el" href="group__GPIO.html#gad65109dacead0351fa390749d8682137">GPIO_EM4EnablePinWakeup()</a>, and <a class="el" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister()</a>.</p>
 
 </div>
 </div>
@@ -872,7 +872,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>If reconfiguring a GPIO interrupt that is already enabled, it is generally recommended to disable it first, see GPIO_Disable().</p>
 <p>The actual GPIO interrupt handler must be in place before enabling the interrupt.</p>
 <p>Notice that any pending interrupt for the selected pin is cleared by this function.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Deprecated function. New code should use <a class="el" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig()</a>.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Deprecated function. New code should use <a class="el" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig()</a>.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>A certain pin number can only be associated with one port. Ie, if GPIO interrupt 1 is assigned to port A/pin 1, then it is not possible to use pin 1 from any other ports for interrupts. Please refer to the reference manual. On devices which implement GPIO_EXTIPINSEL registers a more flexible approach is possible, refer to <a class="el" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig()</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -999,6 +999,8 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 
 <p>References <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
+<p>Referenced by <a class="el" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ga95700a5be7f020297ed30fafcca08b74"></a>
@@ -1105,7 +1107,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The pin mode. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8c_source.html#l00325">325</a> of file <a class="el" href="em__gpio_8c_source.html">em_gpio.c</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8c_source.html#l00329">329</a> of file <a class="el" href="em__gpio_8c_source.html">em_gpio.c</a>.</p>
 
 <p>References <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -1158,7 +1160,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8c_source.html#l00265">265</a> of file <a class="el" href="em__gpio_8c_source.html">em_gpio.c</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8c_source.html#l00269">269</a> of file <a class="el" href="em__gpio_8c_source.html">em_gpio.c</a>.</p>
 
 <p>References <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>, <a class="el" href="group__GPIO.html#ga607f3a5f3d881bb145101566f1664aba">GPIO_PinOutClear()</a>, <a class="el" href="group__GPIO.html#gab08f054efbb07aaff57d616974c9c536">GPIO_PinOutSet()</a>, and <a class="el" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a>.</p>
 
@@ -1559,7 +1561,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 11:03:40 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 16:03:33 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

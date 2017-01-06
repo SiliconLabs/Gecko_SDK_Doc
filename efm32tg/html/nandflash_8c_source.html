@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Tiny Gecko Software Documentation: C:/work/s025_sw_ssh/kits/common/drivers/nandflash.c Source File</title>
+<title>EFM32 Tiny Gecko Software Documentation: c:/work/super/hardware/kit/common/drivers/nandflash.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32tg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -781,7 +781,7 @@ $(document).ready(function(){initNavTree('nandflash_8c_source.html','');});
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;</div>
 <div class="ttc" id="structNANDFLASH__Info__TypeDef_html_ad61a70b5bebfac7669e503164a0809b6"><div class="ttname"><a href="structNANDFLASH__Info__TypeDef.html#ad61a70b5bebfac7669e503164a0809b6">NANDFLASH_Info_TypeDef::blockSize</a></div><div class="ttdeci">uint32_t blockSize</div><div class="ttdef"><b>Definition:</b> <a href="nandflash_8h_source.html#l00064">nandflash.h:64</a></div></div>
 <div class="ttc" id="group__DMA_html_gga19fed692b981a8dc7e3a5d6b0f281540af372081fe5f67e55ac6ac355eaa2c7ba"><div class="ttname"><a href="group__DMA.html#gga19fed692b981a8dc7e3a5d6b0f281540af372081fe5f67e55ac6ac355eaa2c7ba">dmaDataSize4</a></div><div class="ttdef"><b>Definition:</b> <a href="em__dma_8h_source.html#l00078">em_dma.h:78</a></div></div>
-<div class="ttc" id="group__EFM32TG842F32__Part_html_ga3cec723aa225c0767466f38e8449602c"><div class="ttname"><a href="group__EFM32TG842F32__Part.html#ga3cec723aa225c0767466f38e8449602c">DMA_CHAN_COUNT</a></div><div class="ttdeci">#define DMA_CHAN_COUNT</div><div class="ttdef"><b>Definition:</b> <a href="efm32tg842f32_8h_source.html#l00156">efm32tg842f32.h:156</a></div></div>
+<div class="ttc" id="group__EFM32TG842F32__Part_html_ga3cec723aa225c0767466f38e8449602c"><div class="ttname"><a href="group__EFM32TG842F32__Part.html#ga3cec723aa225c0767466f38e8449602c">DMA_CHAN_COUNT</a></div><div class="ttdeci">#define DMA_CHAN_COUNT</div><div class="ttdef"><b>Definition:</b> <a href="efm32tg842f32_8h_source.html#l00158">efm32tg842f32.h:158</a></div></div>
 <div class="ttc" id="structNANDFLASH__Info__TypeDef_html_a18af4ceede2c81c5139a20e68724b810"><div class="ttname"><a href="structNANDFLASH__Info__TypeDef.html#a18af4ceede2c81c5139a20e68724b810">NANDFLASH_Info_TypeDef::deviceCode</a></div><div class="ttdeci">uint8_t deviceCode</div><div class="ttdef"><b>Definition:</b> <a href="nandflash_8h_source.html#l00060">nandflash.h:60</a></div></div>
 <div class="ttc" id="group__DMA_html_gga0b815384b08ec6721a23eb8a29db0c59accf356c49fd20db0bd4b29c26cec7cec"><div class="ttname"><a href="group__DMA.html#gga0b815384b08ec6721a23eb8a29db0c59accf356c49fd20db0bd4b29c26cec7cec">dmaArbitrate1</a></div><div class="ttdef"><b>Definition:</b> <a href="em__dma_8h_source.html#l00101">em_dma.h:101</a></div></div>
 <div class="ttc" id="structDMA__Init__TypeDef_html_a5f223fedb2ef5d2a8e7b219631520c4d"><div class="ttname"><a href="structDMA__Init__TypeDef.html#a5f223fedb2ef5d2a8e7b219631520c4d">DMA_Init_TypeDef::hprot</a></div><div class="ttdeci">uint8_t hprot</div><div class="ttdef"><b>Definition:</b> <a href="em__dma_8h_source.html#l00335">em_dma.h:335</a></div></div>
@@ -820,7 +820,7 @@ $(document).ready(function(){initNavTree('nandflash_8c_source.html','');});
 <div class="ttc" id="group__NandFlash_html_ga29aff61f11d96570357f048c5599f103"><div class="ttname"><a href="group__NandFlash.html#ga29aff61f11d96570357f048c5599f103">NANDFLASH_DeviceInfo</a></div><div class="ttdeci">NANDFLASH_Info_TypeDef * NANDFLASH_DeviceInfo(void)</div><div class="ttdoc">Return a pointer to a NANDFLASH_Info_TypeDef structure, which contain vital nand flash device informa...</div><div class="ttdef"><b>Definition:</b> <a href="nandflash_8c_source.html#l00248">nandflash.c:248</a></div></div>
 <div class="ttc" id="group__DMA_html_gadaa5cd30f373b3e8150b64c26e53f2cd"><div class="ttname"><a href="group__DMA.html#gadaa5cd30f373b3e8150b64c26e53f2cd">DMA_ActivateAuto</a></div><div class="ttdeci">void DMA_ActivateAuto(unsigned int channel, bool primary, void *dst, void *src, unsigned int nMinus1)</div><div class="ttdoc">Activate DMA auto-request cycle (used for memory-memory transfers). </div><div class="ttdef"><b>Definition:</b> <a href="em__dma_8c_source.html#l00386">em_dma.c:386</a></div></div>
 <div class="ttc" id="group__NandFlash_html_ga68202c2af9400be750e866347c1ae77e"><div class="ttname"><a href="group__NandFlash.html#ga68202c2af9400be750e866347c1ae77e">NAND_SPARE_ECC0_POS</a></div><div class="ttdeci">#define NAND_SPARE_ECC0_POS</div><div class="ttdef"><b>Definition:</b> <a href="nandflash_8h_source.html#l00038">nandflash.h:38</a></div></div>
-<div class="ttc" id="group__EFM32TG842F32__Peripheral__Declaration_html_ga1037b18e2d226fe7d327d4a6f17a21c1"><div class="ttname"><a href="group__EFM32TG842F32__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a></div><div class="ttdeci">#define GPIO</div><div class="ttdef"><b>Definition:</b> <a href="efm32tg842f32_8h_source.html#l00329">efm32tg842f32.h:329</a></div></div>
+<div class="ttc" id="group__EFM32TG842F32__Peripheral__Declaration_html_ga1037b18e2d226fe7d327d4a6f17a21c1"><div class="ttname"><a href="group__EFM32TG842F32__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a></div><div class="ttdeci">#define GPIO</div><div class="ttdef"><b>Definition:</b> <a href="efm32tg842f32_8h_source.html#l00332">efm32tg842f32.h:332</a></div></div>
 <div class="ttc" id="structNANDFLASH__Info__TypeDef_html"><div class="ttname"><a href="structNANDFLASH__Info__TypeDef.html">NANDFLASH_Info_TypeDef</a></div><div class="ttdoc">NANDFLASH device information structure. </div><div class="ttdef"><b>Definition:</b> <a href="nandflash_8h_source.html#l00056">nandflash.h:56</a></div></div>
 <div class="ttc" id="group__DMA_html_ggaade1a68a6cbf32800b8ac4046a133988a56ebf7629a95d65ff0c5a40030cc6102"><div class="ttname"><a href="group__DMA.html#ggaade1a68a6cbf32800b8ac4046a133988a56ebf7629a95d65ff0c5a40030cc6102">dmaDataIncNone</a></div><div class="ttdef"><b>Definition:</b> <a href="em__dma_8h_source.html#l00069">em_dma.h:69</a></div></div>
 <div class="ttc" id="structNANDFLASH__Info__TypeDef_html_a8bd465d15390d99ec898ab23d9c8cbb6"><div class="ttname"><a href="structNANDFLASH__Info__TypeDef.html#a8bd465d15390d99ec898ab23d9c8cbb6">NANDFLASH_Info_TypeDef::dmaCh</a></div><div class="ttdeci">int dmaCh</div><div class="ttdef"><b>Definition:</b> <a href="nandflash_8h_source.html#l00067">nandflash.h:67</a></div></div>
@@ -840,8 +840,8 @@ $(document).ready(function(){initNavTree('nandflash_8c_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="nandflash_8c.html">nandflash.c</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 10:50:30 for EFM32 Tiny Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_f4316de2dfb04db90651672103de31d6.html">hardware</a></li><li class="navelem"><a class="el" href="dir_76f2117c008bb27e945cccbe289eb43d.html">kit</a></li><li class="navelem"><a class="el" href="dir_60376687895b74e627fb8a241c3f339a.html">common</a></li><li class="navelem"><a class="el" href="dir_4f5ba988b7de2a6efab62310c4bddab1.html">drivers</a></li><li class="navelem"><a class="el" href="nandflash_8c.html">nandflash.c</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 15:55:50 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

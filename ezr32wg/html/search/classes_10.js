@@ -6,5 +6,6 @@ var searchData=
   ['si114xportconfig',['Si114xPortConfig',['../structSi114xPortConfig.html',1,'']]],
   ['spidrv_5fhandledata',['SPIDRV_HandleData',['../structSPIDRV__HandleData.html',1,'']]],
   ['spidrv_5finit',['SPIDRV_Init',['../structSPIDRV__Init.html',1,'']]],
+  ['system_5fcaladdrval_5ftypedef',['SYSTEM_CalAddrVal_TypeDef',['../structSYSTEM__CalAddrVal__TypeDef.html',1,'']]],
   ['system_5fchiprevision_5ftypedef',['SYSTEM_ChipRevision_TypeDef',['../structSYSTEM__ChipRevision__TypeDef.html',1,'']]]
 ];

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Pearl Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32pg1-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32pg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -101,13 +101,14 @@ $(document).ready(function(){initNavTree('group__EZRADIODRV.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#groups">Modules</a>  </div>
+<a href="#groups">Modules</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">EZRADIODRV<div class="ingroups"><a class="el" href="group__emdrv.html">EMDRV</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>EzRadio Peripheral Interface module, see ezradiodrv_doc page for detailed documentation. </p><pre class="fragment"></pre><p>. </p>
+<p>EZR32 EzRadio Peripheral Interface Driver. </p>
 <p>The source files for the EzRadio driver library resides in the emdrv/ezradiodrv folder. The file hierarchy is shown in the <a class="el" href="group__EZRADIODRV.html#ezradiodrv_file_list">File List</a>.</p>
 <ul>
 <li><a class="el" href="group__EZRADIODRV.html#ezradiodrv_intro">Introduction</a></li>
@@ -256,14 +257,10 @@ Plugin Manager</h4>
  This function manages the behavior of each enabled plugin. This has to be called in a cyclic manner in your code. It can be either repeated asyncronously or in a timed fashion.</p>
 <h4><a class="anchor" id="ezradiodrv_plugin_transmit"></a>
 Transmit Plugin</h4>
-<pre class="fragment">    ezradioStartTransmitBasic(), ezradioStartTransmitConfigured() @n
-    ezradioStartTransmitCustom(), ezradioStartTransmitDefault() @n
-    ezradioStartTransmitSmart() @n
-      Start transmission functions. Each provides different level of
-      configuration for the transmission. Each starts an asynchronous
-      transmission. The registered callback function is called at the
-      end of the transmission.
-</pre><h4><a class="anchor" id="ezradiodrv_plugin_receive"></a>
+<p>Start transmission functions. <br />
+ <a class="el" href="group__Transmit__Plugin.html#gaf702a16bfb588bfed9cbc7c639ba650f" title="Start basic transmission. Radio transmits with data only in the first field in this case...">ezradioStartTransmitBasic()</a>, <a class="el" href="group__Transmit__Plugin.html#ga62e3d76389ad50afc7f77002f8750cb8" title="Start transmission using the packet parameters from the generated configuration header file...">ezradioStartTransmitConfigured()</a>, <a class="el" href="group__Transmit__Plugin.html#ga348cad1485fa0c671d91af6751488ec1" title="Start transmission using the packet parameters from pktLengthConf. ">ezradioStartTransmitCustom()</a>, <a class="el" href="group__Transmit__Plugin.html#gade85938593abc8d7c6246eeaa9536a61" title="Start a default transmission using the packet information previously set to radioHandle. Depending on the information in the radioHandle parameter the function decides which transmission function has to be called. ">ezradioStartTransmitDefault()</a> and <a class="el" href="group__Transmit__Plugin.html#gaf0c60b70ac28ad2c13779b041b923153" title="Start a smart transmission. Depending on the information in the pktLengthConf parameter the function ...">ezradioStartTransmitSmart()</a> <br />
+ Each provides different level of configuration for the transmission. Each starts an asynchronous transmission. The registered callback function is called at the end of the transmission.</p>
+<h4><a class="anchor" id="ezradiodrv_plugin_receive"></a>
 Receive &amp; CRC Error Plugins</h4>
 <p><a class="el" href="group__Receive__Plugin.html#gae2761df30f35463d361937ddee63eed0" title="Set Radio to RX mode, packet length is always coming from the radio configuration. ">ezradioStartRx()</a> <br />
  Starts an asynchronous reception. The registered callback function is called at the end of the transmission. <br />
@@ -363,24 +360,31 @@ Radio HAL Layer</h2>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
 <tr class="memitem:group__API__Layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__API__Layer.html">API_Layer</a></td></tr>
-<tr class="memdesc:group__API__Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">EzRadio API Layer, see <a class="el" href="group__EZRADIODRV.html#ezradiodrv_api">Radio API Layer</a> on page ezradiodrv_doc for detailed documentation. </p><pre class="fragment"></pre><p>. <br /></td></tr>
+<tr class="memdesc:group__API__Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">EzRadio API Layer </p><pre class="fragment"></pre><p>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__COMM__Layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMM__Layer.html">COMM_Layer</a></td></tr>
-<tr class="memdesc:group__COMM__Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">EzRadio Communication Layer, see <a class="el" href="group__EZRADIODRV.html#ezradiodrv_comm">Communication Layer</a> on page ezradiodrv_doc for detailed documentation. </p><pre class="fragment"></pre><p>. <br /></td></tr>
+<tr class="memdesc:group__COMM__Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">EzRadio Communication Layer </p><pre class="fragment"></pre><p>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__HAL__Layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HAL__Layer.html">HAL_Layer</a></td></tr>
-<tr class="memdesc:group__HAL__Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">EzRadio HAL Layer, see <a class="el" href="group__EZRADIODRV.html#ezradiodrv_hal">Radio HAL Layer</a> on page ezradiodrv_doc for detailed documentation. </p><pre class="fragment"></pre><p>. <br /></td></tr>
+<tr class="memdesc:group__HAL__Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">EzRadio HAL Layer </p><pre class="fragment"></pre><p>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__Plugin__System"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Plugin__System.html">Plugin_System</a></td></tr>
-<tr class="memdesc:group__Plugin__System"><td class="mdescLeft">&#160;</td><td class="mdescRight">EzRadio Plugin System Layer, see <a class="el" href="group__EZRADIODRV.html#ezradiodrv_plugin">Plugin System Layer</a> on page ezradiodrv_doc for detailed documentation. </p><pre class="fragment"></pre><p>. <br /></td></tr>
+<tr class="memdesc:group__Plugin__System"><td class="mdescLeft">&#160;</td><td class="mdescRight">EzRadio Plugin System Layer, see <a class="el" href="group__EZRADIODRV.html#ezradiodrv_plugin">Plugin System Layer</a> for detailed documentation. </p><pre class="fragment"></pre><p>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga60807231e8b1c37d45be09e7a695bc67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga60807231e8b1c37d45be09e7a695bc67"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EZRADIODRV.html#ga60807231e8b1c37d45be09e7a695bc67">EZRADIODRV_COMM_CTS_RETRY</a>&#160;&#160;&#160;10000</td></tr>
+<tr class="memdesc:ga60807231e8b1c37d45be09e7a695bc67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of wait-for-CTS retries. <br /></td></tr>
+<tr class="separator:ga60807231e8b1c37d45be09e7a695bc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 10:49:08 for EFM32 Pearl Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 15:55:18 for EFM32 Pearl Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -1,6 +1,7 @@
 var group__RetargetIo =
 [
     [ "RXBUFSIZE", "group__RetargetIo.html#ga4a941b75a2cf56698a1e769d8214fd50", null ],
+    [ "setupSWOForPrint", "group__RetargetIo.html#gaaace16deac1c92d18d149d54957deec8", null ],
     [ "_close", "group__RetargetIo.html#ga5aab5e2acfd600e3667dc915a2bbc7cb", null ],
     [ "_exit", "group__RetargetIo.html#gabc96bd69b58b2deaddb484478d911c1b", null ],
     [ "_fstat", "group__RetargetIo.html#ga41eef54307912a82d20e71c3d47315aa", null ],
@@ -15,6 +16,7 @@ var group__RetargetIo =
     [ "RETARGET_ReadChar", "group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb", null ],
     [ "RETARGET_SerialCrLf", "group__RetargetIo.html#ga9e36c68713259dd181ef349430ba0096", null ],
     [ "RETARGET_SerialInit", "group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50", null ],
+    [ "RETARGET_SwoInit", "group__RetargetIo.html#gaf86de46689133bfc01be3d84e5a3f3e5", null ],
     [ "RETARGET_TextDisplayInit", "group__RetargetIo.html#ga1f514c0ebfe9dd2c24f293be0edfaf9b", null ],
     [ "RETARGET_TftCrLf", "group__RetargetIo.html#ga72e624a3e4aaef1e0376eb96404c8b6f", null ],
     [ "RETARGET_TftInit", "group__RetargetIo.html#gad444352f46f856ffcb6cb255e3ef5d7b", null ],

@@ -49,19 +49,11 @@
 <p>Definition at line <a class="el" href="sha256__alt_8h_source.html#l00058">58</a> of file <a class="el" href="sha256__alt_8h_source.html">sha256_alt.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="sha256__alt_8h_source.html">sha256_alt.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for mbedtls_sha256_context:</div>
-<div class="dyncontent">
-<div class="center"><img src="structmbedtls__sha256__context__coll__graph.png" border="0" usemap="#mbedtls__sha256__context_coll__map" alt="Collaboration graph"/></div>
-<map name="mbedtls__sha256__context_coll__map" id="mbedtls__sha256__context_coll__map">
-<area shape="rect" id="node2" href="struct_c_r_y_p_t_o_d_r_v___context__t.html" title="CRYPTODRV operation context. " alt="" coords="5,5,171,32"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a310295cdca3d338c0668a2f6840b33e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__sha256__context.html#a310295cdca3d338c0668a2f6840b33e1">cryptodrv_ctx</a></td></tr>
-<tr class="separator:a310295cdca3d338c0668a2f6840b33e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88df25a0934134bd8b686152ba763322"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__sha256__context.html#a88df25a0934134bd8b686152ba763322">state</a> [8]</td></tr>
+<tr class="separator:a88df25a0934134bd8b686152ba763322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7444610a95153450180924862b2a0fa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__sha256__context.html#ab7444610a95153450180924862b2a0fa">total</a> [2]</td></tr>
 <tr class="separator:ab7444610a95153450180924862b2a0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb4c87a904e9d4099592c5bf7ff0b308"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__sha256__context.html#adb4c87a904e9d4099592c5bf7ff0b308">buffer</a> [64]</td></tr>
@@ -85,21 +77,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a310295cdca3d338c0668a2f6840b33e1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a> mbedtls_sha256_context::cryptodrv_ctx</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>CRYPTODRV Context </p>
-
-<p>Definition at line <a class="el" href="sha256__alt_8h_source.html#l00061">61</a> of file <a class="el" href="sha256__alt_8h_source.html">sha256_alt.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ac73158ffb252c4bd2ccb991653619cc1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -112,6 +89,21 @@ Data Fields</h2></td></tr>
 <p>0 =&gt; SHA-256, else SHA-224 </p>
 
 <p>Definition at line <a class="el" href="sha256__alt_8h_source.html#l00067">67</a> of file <a class="el" href="sha256__alt_8h_source.html">sha256_alt.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a88df25a0934134bd8b686152ba763322"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t mbedtls_sha256_context::state[8]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>intermediate digest state </p>
+
+<p>Definition at line <a class="el" href="sha256__alt_8h_source.html#l00063">63</a> of file <a class="el" href="sha256__alt_8h_source.html">sha256_alt.h</a>.</p>
 
 </div>
 </div>
@@ -136,7 +128,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 13 2016 11:17:25 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 16:12:43 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

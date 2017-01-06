@@ -84,7 +84,7 @@ var searchData=
   ['spidrv_5fstransmitb',['SPIDRV_STransmitB',['../group__SPIDRV.html#ga950e481559e49f805c4c65701f272df5',1,'SPIDRV_STransmitB(SPIDRV_Handle_t handle, const void *buffer, int count, int timeoutMs):&#160;spidrv.c'],['../group__SPIDRV.html#ga950e481559e49f805c4c65701f272df5',1,'SPIDRV_STransmitB(SPIDRV_Handle_t handle, const void *buffer, int count, int timeoutMs):&#160;spidrv.c']]],
   ['system_5fchiprevisionget',['SYSTEM_ChipRevisionGet',['../group__SYSTEM.html#ga6470ed38937ffd0b8b509334c5add7dd',1,'em_system.c']]],
   ['system_5fgetcalibrationtemperature',['SYSTEM_GetCalibrationTemperature',['../group__SYSTEM.html#ga2a8be52c7eeb3f5d395ee7791e5c8bf8',1,'em_system.h']]],
-  ['system_5fgetcalibrationvalue',['SYSTEM_GetCalibrationValue',['../group__SYSTEM.html#ga786913c991338e29650617d89aec3768',1,'em_system.c']]],
+  ['system_5fgetcalibrationvalue',['SYSTEM_GetCalibrationValue',['../group__SYSTEM.html#ga84a2becba34bea4a4d718d4dfe14c4db',1,'em_system.c']]],
   ['system_5fgetfamily',['SYSTEM_GetFamily',['../group__SYSTEM.html#ga5b5bb91ac7916b37ce069dd75fc94196',1,'em_system.h']]],
   ['system_5fgetflashpagesize',['SYSTEM_GetFlashPageSize',['../group__SYSTEM.html#ga9708a581c8fe3a02fc6ac92175a3860a',1,'em_system.h']]],
   ['system_5fgetflashsize',['SYSTEM_GetFlashSize',['../group__SYSTEM.html#gacf4974847994d28b5e03e1cb6d76f5c0',1,'em_system.h']]],

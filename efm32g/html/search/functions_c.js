@@ -20,6 +20,7 @@ var searchData=
   ['mpu_5fenable',['MPU_Enable',['../group__MPU.html#ga0e68f22ed2a7f26043d94953b18742c8',1,'em_mpu.h']]],
   ['msc_5fdeinit',['MSC_Deinit',['../group__MSC.html#gadb2eab07fedfb79fba5a3abdd8b5c96a',1,'em_msc.c']]],
   ['msc_5ferasepage',['MSC_ErasePage',['../group__MSC.html#gadda32c196889602693a0c178da83a1f9',1,'em_msc.c']]],
+  ['msc_5fexecconfigset',['MSC_ExecConfigSet',['../group__MSC.html#gabefc7774cd8e2ddf3c77895ca8198775',1,'em_msc.c']]],
   ['msc_5finit',['MSC_Init',['../group__MSC.html#gaa02df815c14caedbc2fd0a8910d2e055',1,'em_msc.c']]],
   ['msc_5fintclear',['MSC_IntClear',['../group__MSC.html#ga3e99a1115d2fdec306e3ebd3a9c5e3b4',1,'em_msc.h']]],
   ['msc_5fintdisable',['MSC_IntDisable',['../group__MSC.html#gae93719c876be33cc035e8a4791c4c9fe',1,'em_msc.h']]],

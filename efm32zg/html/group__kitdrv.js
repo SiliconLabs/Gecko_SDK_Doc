@@ -14,7 +14,6 @@ var group__kitdrv =
     [ "NandFlash", "group__NandFlash.html", "group__NandFlash" ],
     [ "NorFlash", "group__NorFlash.html", "group__NorFlash" ],
     [ "RetargetIo", "group__RetargetIo.html", "group__RetargetIo" ],
-    [ "RetargetSWO", "group__RetargetSWO.html", "group__RetargetSWO" ],
     [ "SegmentLcd", "group__SegmentLcd.html", "group__SegmentLcd" ],
     [ "Si114x", "group__Si114x.html", "group__Si114x" ],
     [ "Si7013", "group__Si7013.html", "group__Si7013" ],

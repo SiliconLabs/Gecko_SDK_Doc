@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Blue Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/inc/em_ramfunc.h File Reference</title>
+<title>EFR32 Blue Gecko 1 Software Documentation: c:/work/super/platform/emlib/inc/em_ramfunc.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EFR32 Blue Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32bg1-doc-4.4.0</span>
+   <div id="projectname">EFR32 Blue Gecko 1 Software Documentation
+   &#160;<span id="projectnumber">efr32bg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('em__ramfunc_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>RAM code support. </p>
-<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -132,23 +132,29 @@ License</h1>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gac32af03519e3aa8ca7eefb1455cc74df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#gac32af03519e3aa8ca7eefb1455cc74df">RAMFUNC_DECLARATOR</a></td></tr>
-<tr class="separator:gac32af03519e3aa8ca7eefb1455cc74df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5a91149cd62035f2487e4668e3fe6a80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#ga5a91149cd62035f2487e4668e3fe6a80">RAMFUNC_DEFINITION_BEGIN</a></td></tr>
-<tr class="separator:ga5a91149cd62035f2487e4668e3fe6a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac42a0ebdb3b8e68d1e987ce4ceb09da8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#gac42a0ebdb3b8e68d1e987ce4ceb09da8">RAMFUNC_DEFINITION_END</a></td></tr>
-<tr class="separator:gac42a0ebdb3b8e68d1e987ce4ceb09da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ec00e8521eb58ab1a00337875d4e1ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#ga9ec00e8521eb58ab1a00337875d4e1ed">RAMFUNC_DISABLE</a></td></tr>
-<tr class="memdesc:ga9ec00e8521eb58ab1a00337875d4e1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">By compiling with the define RAMFUNC_DISABLE, code placed in RAM by the RAMFUNC macros will be placed in Flash instead.  <a href="group__RAMFUNC.html#ga9ec00e8521eb58ab1a00337875d4e1ed">More...</a><br /></td></tr>
-<tr class="separator:ga9ec00e8521eb58ab1a00337875d4e1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6abbc7f869eec9fb47e57427587c556"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac6abbc7f869eec9fb47e57427587c556"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#gac6abbc7f869eec9fb47e57427587c556">SL_RAMFUNC_DECLARATOR</a></td></tr>
+<tr class="memdesc:gac6abbc7f869eec9fb47e57427587c556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiler ported function declarator for RAM code. <br /></td></tr>
+<tr class="separator:gac6abbc7f869eec9fb47e57427587c556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1eec71bc8997b89ddc68a43b4ffe41b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1eec71bc8997b89ddc68a43b4ffe41b0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#ga1eec71bc8997b89ddc68a43b4ffe41b0">SL_RAMFUNC_DEFINITION_BEGIN</a></td></tr>
+<tr class="memdesc:ga1eec71bc8997b89ddc68a43b4ffe41b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiler ported function definition begin marker for RAM code. <br /></td></tr>
+<tr class="separator:ga1eec71bc8997b89ddc68a43b4ffe41b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga194f7f5b6888133f06fe1b84d2434cfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga194f7f5b6888133f06fe1b84d2434cfe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#ga194f7f5b6888133f06fe1b84d2434cfe">SL_RAMFUNC_DEFINITION_END</a></td></tr>
+<tr class="memdesc:ga194f7f5b6888133f06fe1b84d2434cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiler ported function definition end marker for RAM code. <br /></td></tr>
+<tr class="separator:ga194f7f5b6888133f06fe1b84d2434cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f737c3d340003b5b947eef7a4c21263"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RAMFUNC.html#ga2f737c3d340003b5b947eef7a4c21263">SL_RAMFUNC_DISABLE</a></td></tr>
+<tr class="memdesc:ga2f737c3d340003b5b947eef7a4c21263"><td class="mdescLeft">&#160;</td><td class="mdescRight">This define is not present by default. By compiling with the define <a class="el" href="group__RAMFUNC.html#ga2f737c3d340003b5b947eef7a4c21263">SL_RAMFUNC_DISABLE</a>, code placed in RAM by the SL_RAMFUNC macros will be placed in default code space (Flash) instead.  <a href="group__RAMFUNC.html#ga2f737c3d340003b5b947eef7a4c21263">More...</a><br /></td></tr>
+<tr class="separator:ga2f737c3d340003b5b947eef7a4c21263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__ramfunc_8h.html">em_ramfunc.h</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 10:43:55 for EFR32 Blue Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__ramfunc_8h.html">em_ramfunc.h</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 15:52:29 for EFR32 Blue Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

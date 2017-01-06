@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/inc/em_system.h File Reference</title>
+<title>EFM32 Gecko Software Documentation: c:/work/super/platform/emlib/inc/em_system.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32g-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('em__system_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>System API. </p>
-<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -136,6 +136,8 @@ License</h1>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSYSTEM__CalAddrVal__TypeDef.html">SYSTEM_CalAddrVal_TypeDef</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSYSTEM__ChipRevision__TypeDef.html">SYSTEM_ChipRevision_TypeDef</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -189,9 +191,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2a8be52c7eeb3f5d395ee7791e5c8bf8"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga2a8be52c7eeb3f5d395ee7791e5c8bf8">SYSTEM_GetCalibrationTemperature</a> (void)</td></tr>
 <tr class="memdesc:ga2a8be52c7eeb3f5d395ee7791e5c8bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the calibration temperature (in degrees Celsius).  <a href="group__SYSTEM.html#ga2a8be52c7eeb3f5d395ee7791e5c8bf8">More...</a><br /></td></tr>
 <tr class="separator:ga2a8be52c7eeb3f5d395ee7791e5c8bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga786913c991338e29650617d89aec3768"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga786913c991338e29650617d89aec3768">SYSTEM_GetCalibrationValue</a> (volatile uint32_t *regAddress)</td></tr>
-<tr class="memdesc:ga786913c991338e29650617d89aec3768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get factory calibration value for a given peripheral register.  <a href="group__SYSTEM.html#ga786913c991338e29650617d89aec3768">More...</a><br /></td></tr>
-<tr class="separator:ga786913c991338e29650617d89aec3768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84a2becba34bea4a4d718d4dfe14c4db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga84a2becba34bea4a4d718d4dfe14c4db">SYSTEM_GetCalibrationValue</a> (volatile uint32_t *regAddress)</td></tr>
+<tr class="memdesc:ga84a2becba34bea4a4d718d4dfe14c4db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get factory calibration value for a given peripheral register.  <a href="group__SYSTEM.html#ga84a2becba34bea4a4d718d4dfe14c4db">More...</a><br /></td></tr>
+<tr class="separator:ga84a2becba34bea4a4d718d4dfe14c4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5b5bb91ac7916b37ce069dd75fc94196"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE <a class="el" href="group__SYSTEM.html#ga45f33557f44ae73db1c70765a2a29e5a">SYSTEM_PartFamily_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga5b5bb91ac7916b37ce069dd75fc94196">SYSTEM_GetFamily</a> (void)</td></tr>
 <tr class="memdesc:ga5b5bb91ac7916b37ce069dd75fc94196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get family identifier of the MCU.  <a href="group__SYSTEM.html#ga5b5bb91ac7916b37ce069dd75fc94196">More...</a><br /></td></tr>
 <tr class="separator:ga5b5bb91ac7916b37ce069dd75fc94196"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,8 +221,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__system_8h.html">em_system.h</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 10:47:03 for EFM32 Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__system_8h.html">em_system.h</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 15:54:14 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

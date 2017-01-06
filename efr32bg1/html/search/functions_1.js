@@ -51,5 +51,6 @@ var searchData=
   ['aes_5fecb128',['AES_ECB128',['../group__CRYPTO.html#ga0dfffaf497122ce5e379fde2ddbced51',1,'em_crypto.h']]],
   ['aes_5fecb256',['AES_ECB256',['../group__CRYPTO.html#gafc999731395c855f4777dc1f8293a1f5',1,'em_crypto.h']]],
   ['aes_5fofb128',['AES_OFB128',['../group__CRYPTO.html#ga4bd99c7e14d534b2473269616f0aff8b',1,'em_crypto.h']]],
-  ['aes_5fofb256',['AES_OFB256',['../group__CRYPTO.html#ga827551dddd2d52c896f2c3e7957b024c',1,'em_crypto.h']]]
+  ['aes_5fofb256',['AES_OFB256',['../group__CRYPTO.html#ga827551dddd2d52c896f2c3e7957b024c',1,'em_crypto.h']]],
+  ['assertefm',['assertEFM',['../group__ASSERT.html#gacb36abec8b531cd85414c572a17f2811',1,'em_assert.c']]]
 ];

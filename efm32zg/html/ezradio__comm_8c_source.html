@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Zero Gecko Software Documentation: C:/work/s025_sw_ssh/emdrv/ezradiodrv/common/src/ezradio_comm.c Source File</title>
+<title>EFM32 Zero Gecko Software Documentation: c:/work/super/platform/emdrv/ezradiodrv/common/src/ezradio_comm.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Zero Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32zg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32zg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('ezradio__comm_8c_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gpiointerrupt_8h.html">gpiointerrupt.h</a>&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ustimer_8h.html">ustimer.h</a>&quot;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;ezradiodrv_config.h&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ezradiodrv__config_8h.html">ezradiodrv_config.h</a>&quot;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ezradio__hal_8h.html">ezradio_hal.h</a>&quot;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ezradio__comm_8h.html">ezradio_comm.h</a>&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('ezradio__comm_8c_source.html','');});
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group__COMM__Layer.html#ga45656b02cb2cf46e29c8f509203e08b4">   54</a></span>&#160;uint8_t <a class="code" href="group__COMM__Layer.html#ga45656b02cb2cf46e29c8f509203e08b4">ezradio_comm_GetResp</a>(uint8_t byteCount, uint8_t* pData)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  uint16_t errCnt = EZRADIODRV_COMM_CTS_RETRY;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  uint16_t errCnt = <a class="code" href="group__EZRADIODRV.html#ga60807231e8b1c37d45be09e7a695bc67">EZRADIODRV_COMM_CTS_RETRY</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  uint8_t ret = 0;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#if !defined(EZRADIODRV_SPI_4WIRE_MODE)</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  uint8_t rxCtsVal;</div>
@@ -292,7 +292,7 @@ $(document).ready(function(){initNavTree('ezradio__comm_8c_source.html','');});
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;{</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">#ifdef EZRADIODRV_COMM_USE_GPIO1_FOR_CTS</span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  uint8_t ret = 0;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  uint16_t errCnt = EZRADIODRV_COMM_CTS_RETRY;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  uint16_t errCnt = <a class="code" href="group__EZRADIODRV.html#ga60807231e8b1c37d45be09e7a695bc67">EZRADIODRV_COMM_CTS_RETRY</a>;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <a class="code" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init</a>();</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keywordflow">while</span>(!ezradio_hal_Gpio1Level())</div>
@@ -328,11 +328,13 @@ $(document).ready(function(){initNavTree('ezradio__comm_8c_source.html','');});
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;}</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
 <div class="ttc" id="group__HAL__Layer_html_gae80c58c4f19b8e2b56c033c94bcb0f10"><div class="ttname"><a href="group__HAL__Layer.html#gae80c58c4f19b8e2b56c033c94bcb0f10">ezradio_hal_SetNsel</a></div><div class="ttdeci">void ezradio_hal_SetNsel(void)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00165">ezradio_hal.c:165</a></div></div>
+<div class="ttc" id="group__EZRADIODRV_html_ga60807231e8b1c37d45be09e7a695bc67"><div class="ttname"><a href="group__EZRADIODRV.html#ga60807231e8b1c37d45be09e7a695bc67">EZRADIODRV_COMM_CTS_RETRY</a></div><div class="ttdeci">#define EZRADIODRV_COMM_CTS_RETRY</div><div class="ttdoc">Number of wait-for-CTS retries. </div><div class="ttdef"><b>Definition:</b> <a href="ezradiodrv__config_8h_source.html#l00046">ezradiodrv_config.h:46</a></div></div>
 <div class="ttc" id="group__COMM__Layer_html_ga26dddf452edc3e30c29cdab7d9fef1a7"><div class="ttname"><a href="group__COMM__Layer.html#ga26dddf452edc3e30c29cdab7d9fef1a7">ezradio_comm_ClearCTS</a></div><div class="ttdeci">void ezradio_comm_ClearCTS()</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__comm_8c_source.html#l00278">ezradio_comm.c:278</a></div></div>
 <div class="ttc" id="group__USTIMER_html_ga5c7fa9c799b61638907d4f832a45e58b"><div class="ttname"><a href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init</a></div><div class="ttdeci">Ecode_t USTIMER_Init(void)</div><div class="ttdoc">Activate and initialize the hardware timer used to pace the 1 microsecond delay functions. </div><div class="ttdef"><b>Definition:</b> <a href="ustimer_8c_source.html#l00086">ustimer.c:86</a></div></div>
 <div class="ttc" id="ezradio__hal_8h_html"><div class="ttname"><a href="ezradio__hal_8h.html">ezradio_hal.h</a></div><div class="ttdoc">This file contains EZRadio HAL. </div></div>
 <div class="ttc" id="group__HAL__Layer_html_ga7b4e804cd30d3d5071d61ce8205f4346"><div class="ttname"><a href="group__HAL__Layer.html#ga7b4e804cd30d3d5071d61ce8205f4346">ezradio_hal_SpiWriteReadData</a></div><div class="ttdeci">void ezradio_hal_SpiWriteReadData(uint8_t byteCount, uint8_t *txData, uint8_t *rxData)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00241">ezradio_hal.c:241</a></div></div>
 <div class="ttc" id="group__HAL__Layer_html_ga4121044d05b7372b071773d4582204f5"><div class="ttname"><a href="group__HAL__Layer.html#ga4121044d05b7372b071773d4582204f5">ezradio_hal_SpiWriteData</a></div><div class="ttdeci">void ezradio_hal_SpiWriteData(uint8_t byteCount, uint8_t *pData)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00218">ezradio_hal.c:218</a></div></div>
+<div class="ttc" id="ezradiodrv__config_8h_html"><div class="ttname"><a href="ezradiodrv__config_8h.html">ezradiodrv_config.h</a></div><div class="ttdoc">EZRADIODRV configuration file. </div></div>
 <div class="ttc" id="em__gpio_8h_html"><div class="ttname"><a href="em__gpio_8h.html">em_gpio.h</a></div><div class="ttdoc">General Purpose IO (GPIO) peripheral API. </div></div>
 <div class="ttc" id="group__HAL__Layer_html_ga52e4a984325c6446291b13b1a63e3dff"><div class="ttname"><a href="group__HAL__Layer.html#ga52e4a984325c6446291b13b1a63e3dff">ezradio_hal_SpiWriteByte</a></div><div class="ttdeci">void ezradio_hal_SpiWriteByte(uint8_t byteToWrite)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00197">ezradio_hal.c:197</a></div></div>
 <div class="ttc" id="group__COMM__Layer_html_gac2d23214b75072bedd593da2815858d3"><div class="ttname"><a href="group__COMM__Layer.html#gac2d23214b75072bedd593da2815858d3">ezradio_comm_PollCTS</a></div><div class="ttdeci">uint8_t ezradio_comm_PollCTS(void)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__comm_8c_source.html#l00247">ezradio_comm.c:247</a></div></div>
@@ -355,8 +357,8 @@ $(document).ready(function(){initNavTree('ezradio__comm_8c_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_74d66e5e415af18c005205f87c017a4f.html">ezradiodrv</a></li><li class="navelem"><a class="el" href="dir_318d8263568d560f171ee5482256b513.html">common</a></li><li class="navelem"><a class="el" href="dir_884f56f4b739cb051a4a00f0c18d867c.html">src</a></li><li class="navelem"><a class="el" href="ezradio__comm_8c.html">ezradio_comm.c</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 10:54:15 for EFM32 Zero Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_a9326de1addf90fcea92508392adbd27.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_f6c6775b2232fe76f89b93d653eaad54.html">ezradiodrv</a></li><li class="navelem"><a class="el" href="dir_2e3e4d2cf0ddb0faf79fa75caa6878fc.html">common</a></li><li class="navelem"><a class="el" href="dir_cf720498dd7b5d21eebc416af0604ad4.html">src</a></li><li class="navelem"><a class="el" href="ezradio__comm_8c.html">ezradio_comm.c</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 15:57:34 for EFM32 Zero Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

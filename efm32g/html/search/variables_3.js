@@ -7,6 +7,7 @@ var searchData=
   ['calibrationmatrix',['calibrationMatrix',['../touch_8c.html#adb83b736ec0cb3304d00c162e0b9e10e',1,'touch.c']]],
   ['callback',['callback',['../structUARTDRV__Buffer__t.html#a112d253dae134fb234446a32cdae9667',1,'UARTDRV_Buffer_t::callback()'],['../structTEMPDRV__CallbackSet__t.html#a8309753a1ec3512a0b52d56f58dd8d5b',1,'TEMPDRV_CallbackSet_t::callback()']]],
   ['calref',['calref',['../si114x__functions_8c.html#a72f540d27e28b37188b27b9932925730',1,'si114x_functions.c']]],
+  ['calvalue',['calValue',['../structSYSTEM__CalAddrVal__TypeDef.html#a4fa1c82dcec415044e0f154de26da638',1,'SYSTEM_CalAddrVal_TypeDef']]],
   ['cb',['cb',['../structDMA__CfgChannel__TypeDef.html#a78962c32d00b2867da5e1df1aa2898af',1,'DMA_CfgChannel_TypeDef']]],
   ['cbfunc',['cbFunc',['../structDMA__CB__TypeDef.html#adc5f73283bed3bfb2de3748c960ba612',1,'DMA_CB_TypeDef']]],
   ['cblength',['CBLength',['../structMSDBOT__CBW__TypeDef.html#a7734eca37fa0af5bad63b96c7c472179',1,'MSDBOT_CBW_TypeDef']]],

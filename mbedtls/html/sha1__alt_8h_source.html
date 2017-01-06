@@ -78,9 +78,9 @@
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structmbedtls__sha1__context.html">   58</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#if defined( MBEDTLS_SLCL_PLUGINS )</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structmbedtls__sha1__context.html#a408d3fe4616a11e149a4a38ecc2d2171">   61</a></span>&#160;    <a class="code" href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a>  <a class="code" href="structmbedtls__sha1__context.html#a408d3fe4616a11e149a4a38ecc2d2171">cryptodrv_ctx</a>; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a>  cryptodrv_ctx; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    uint32_t state[8];            </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structmbedtls__sha1__context.html#abb9c6676bcda2d05d94363fce78de002">   63</a></span>&#160;    uint32_t state[8];            </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structmbedtls__sha1__context.html#a19789ddfacc37f47eb34e26ae718997e">   65</a></span>&#160;    uint32_t total[2];          </div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structmbedtls__sha1__context.html#ae3dcb1efeeb082beb006590a84ef22ec">   66</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> buffer[64];   </div>
@@ -93,8 +93,8 @@
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#if defined( MBEDTLS_SLCL_PLUGINS )</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__sl__crypto__sha1.html#gae5fee78c156f9b6f16d562c80ef21a7b">mbedtls_sha1_set_device_instance</a>(<a class="code" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a>* ctx,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                    <span class="keywordtype">int</span>                    devno);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">int</span> mbedtls_sha1_set_device_instance(<a class="code" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a>* ctx,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>           devno);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #if defined( MBEDTLS_SLCL_PLUGINS ) */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__sl__crypto__sha1.html#ga1d06f1cd6dc5b2849d08749eef1975f8">mbedtls_sha1_clone</a>( <a class="code" href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a> *dst,</div>
@@ -123,20 +123,18 @@
 <div class="ttc" id="config_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div><div class="ttdoc">Compatibility names (set of defines) </div></div>
 <div class="ttc" id="group__sl__crypto__sha1_html_ga344b085d739a8d033b43c8ddb3e50d38"><div class="ttname"><a href="group__sl__crypto__sha1.html#ga344b085d739a8d033b43c8ddb3e50d38">mbedtls_sha1_update</a></div><div class="ttdeci">void mbedtls_sha1_update(mbedtls_sha1_context *ctx, const unsigned char *input, size_t ilen)</div><div class="ttdoc">SHA-1 process buffer. </div></div>
 <div class="ttc" id="group__sl__crypto__sha1_html_gac514b3f4625a18e51de6247b685bacff"><div class="ttname"><a href="group__sl__crypto__sha1.html#gac514b3f4625a18e51de6247b685bacff">mbedtls_sha1_starts</a></div><div class="ttdeci">int mbedtls_sha1_starts(mbedtls_sha1_context *ctx)</div><div class="ttdoc">SHA-1 context setup. </div></div>
-<div class="ttc" id="group__sl__crypto__sha1_html_gae5fee78c156f9b6f16d562c80ef21a7b"><div class="ttname"><a href="group__sl__crypto__sha1.html#gae5fee78c156f9b6f16d562c80ef21a7b">mbedtls_sha1_set_device_instance</a></div><div class="ttdeci">int mbedtls_sha1_set_device_instance(mbedtls_sha1_context *ctx, int devno)</div><div class="ttdoc">Set the device instance of an SHA1 context. </div></div>
 <div class="ttc" id="group__sl__crypto__sha1_html_gaf0cc8deb8dd30a095c6023c498418d24"><div class="ttname"><a href="group__sl__crypto__sha1.html#gaf0cc8deb8dd30a095c6023c498418d24">mbedtls_sha1_init</a></div><div class="ttdeci">void mbedtls_sha1_init(mbedtls_sha1_context *ctx)</div><div class="ttdoc">Initialize SHA-1 context. </div></div>
 <div class="ttc" id="group__sl__crypto__sha1_html_gaef1702ca25626ec73756b686a307d859"><div class="ttname"><a href="group__sl__crypto__sha1.html#gaef1702ca25626ec73756b686a307d859">mbedtls_sha1_finish</a></div><div class="ttdeci">void mbedtls_sha1_finish(mbedtls_sha1_context *ctx, unsigned char output[20])</div><div class="ttdoc">SHA-1 final digest. </div></div>
-<div class="ttc" id="struct_c_r_y_p_t_o_d_r_v___context__t_html"><div class="ttname"><a href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a></div><div class="ttdoc">CRYPTODRV operation context. </div><div class="ttdef"><b>Definition:</b> <a href="cryptodrv_8h_source.html#l00091">cryptodrv.h:91</a></div></div>
+<div class="ttc" id="struct_c_r_y_p_t_o_d_r_v___context__t_html"><div class="ttname"><a href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a></div><div class="ttdoc">CRYPTODRV operation context. </div><div class="ttdef"><b>Definition:</b> <a href="cryptodrv_8h_source.html#l00112">cryptodrv.h:112</a></div></div>
 <div class="ttc" id="group__sl__crypto__sha1_html_ga70417cbb2e95ce553501caef9bd6e076"><div class="ttname"><a href="group__sl__crypto__sha1.html#ga70417cbb2e95ce553501caef9bd6e076">mbedtls_sha1_process</a></div><div class="ttdeci">void mbedtls_sha1_process(mbedtls_sha1_context *ctx, const unsigned char data[64])</div></div>
 <div class="ttc" id="structmbedtls__sha1__context_html"><div class="ttname"><a href="structmbedtls__sha1__context.html">mbedtls_sha1_context</a></div><div class="ttdoc">SHA-1 context structure. </div><div class="ttdef"><b>Definition:</b> <a href="sha1__alt_8h_source.html#l00058">sha1_alt.h:58</a></div></div>
 <div class="ttc" id="group__sl__crypto__sha1_html_ga1d06f1cd6dc5b2849d08749eef1975f8"><div class="ttname"><a href="group__sl__crypto__sha1.html#ga1d06f1cd6dc5b2849d08749eef1975f8">mbedtls_sha1_clone</a></div><div class="ttdeci">void mbedtls_sha1_clone(mbedtls_sha1_context *dst, const mbedtls_sha1_context *src)</div><div class="ttdoc">Clone (the state of) a SHA-1 context. </div></div>
-<div class="ttc" id="structmbedtls__sha1__context_html_a408d3fe4616a11e149a4a38ecc2d2171"><div class="ttname"><a href="structmbedtls__sha1__context.html#a408d3fe4616a11e149a4a38ecc2d2171">mbedtls_sha1_context::cryptodrv_ctx</a></div><div class="ttdeci">CRYPTODRV_Context_t cryptodrv_ctx</div><div class="ttdef"><b>Definition:</b> <a href="sha1__alt_8h_source.html#l00061">sha1_alt.h:61</a></div></div>
 <div class="ttc" id="sl__crypto_8h_html"><div class="ttname"><a href="sl__crypto_8h.html">sl_crypto.h</a></div><div class="ttdoc">Silicon Labs specific mbedTLS defintitions. </div></div>
 <div class="ttc" id="group__sl__crypto__sha1_html_ga126091a4e884966454dca38c97770a24"><div class="ttname"><a href="group__sl__crypto__sha1.html#ga126091a4e884966454dca38c97770a24">mbedtls_sha1_free</a></div><div class="ttdeci">void mbedtls_sha1_free(mbedtls_sha1_context *ctx)</div><div class="ttdoc">Clear SHA-1 context. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 13 2016 11:17:15 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 16:12:40 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

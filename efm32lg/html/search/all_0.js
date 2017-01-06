@@ -8132,6 +8132,8 @@ var searchData=
   ['_5fsbrk',['_sbrk',['../group__RetargetIo.html#gaae54d7b9578ba1fc171ce6f30f4c68a3',1,'retargetio.c']]],
   ['_5fsilicon_5flabs_5f32b_5fplatform',['_SILICON_LABS_32B_PLATFORM',['../group__EFM32LG995F256__Part.html#ga9a2185e66f1c6a74956fcbaa182401b5',1,'efm32lg995f256.h']]],
   ['_5fsilicon_5flabs_5f32b_5fplatform_5f1',['_SILICON_LABS_32B_PLATFORM_1',['../group__EFM32LG995F256__Part.html#gadfe7757d548718f80cc349d4c7911ad1',1,'efm32lg995f256.h']]],
+  ['_5fsilicon_5flabs_5f32b_5fseries',['_SILICON_LABS_32B_SERIES',['../group__EFM32LG995F256__Part.html#ga34fba21792e0a4776657c3cc76ac91fd',1,'efm32lg995f256.h']]],
+  ['_5fsilicon_5flabs_5f32b_5fseries_5f0',['_SILICON_LABS_32B_SERIES_0',['../group__EFM32LG995F256__Part.html#ga1a84e29ae2965aef779fdb6f6d93cd95',1,'efm32lg995f256.h']]],
   ['_5ftimer_5fcc_5fccv_5fccv_5fdefault',['_TIMER_CC_CCV_CCV_DEFAULT',['../group__EFM32LG__TIMER__BitFields.html#ga636098a4699ec69198a50ff7916feab5',1,'efm32lg_timer.h']]],
   ['_5ftimer_5fcc_5fccv_5fccv_5fmask',['_TIMER_CC_CCV_CCV_MASK',['../group__EFM32LG__TIMER__BitFields.html#gab6490aa269feed25627d37105575619a',1,'efm32lg_timer.h']]],
   ['_5ftimer_5fcc_5fccv_5fccv_5fshift',['_TIMER_CC_CCV_CCV_SHIFT',['../group__EFM32LG__TIMER__BitFields.html#gaa52ae7dfcedf768b4dadb7810eead1dd',1,'efm32lg_timer.h']]],

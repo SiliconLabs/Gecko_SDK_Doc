@@ -47,7 +47,9 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ccm.h File Reference</div>  </div>
 </div><!--header-->
@@ -62,26 +64,26 @@
 
 <p>Definition in file <a class="el" href="ccm_8h_source.html">ccm.h</a>.</p>
 </div><div class="textblock"><code>#include &quot;<a class="el" href="cipher_8h_source.html">cipher.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ccm__alt_8h_source.html">ccm_alt.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ccm.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="ccm_8h__incl.png" border="0" usemap="#ccm_8h" alt=""/></div>
 <map name="ccm_8h" id="ccm_8h">
-<area shape="rect" id="node3" href="cipher_8h.html" title="Generic cipher wrapper. " alt="" coords="77,80,144,107"/>
-<area shape="rect" id="node18" href="ccm__alt_8h.html" title="Counter with CBC&#45;MAC (CCM) for 128&#45;bit block ciphers. " alt="" coords="221,80,299,107"/>
-<area shape="rect" id="node5" href="config-sl-crypto-all-acceleration_8h.html" title="config&#45;sl&#45;crypto&#45;all\l&#45;acceleration.h" alt="" coords="98,305,224,346"/>
-<area shape="rect" id="node9" href="config_8h.html" title="Compatibility names (set of defines) " alt="" coords="151,395,268,421"/>
-<area shape="rect" id="node11" href="check__config_8h.html" title="Consistency checks for configuration options. " alt="" coords="107,469,216,496"/>
-<area shape="rect" id="node21" href="aesdrv_8h.html" title="Definitions for AES based ciphers with CRYPTO hw acceleration. " alt="" coords="278,155,348,181"/>
-<area shape="rect" id="node40" href="sl__crypto_8h.html" title="Silicon Labs specific mbedTLS defintitions. " alt="" coords="491,155,577,181"/>
-<area shape="rect" id="node25" href="mbedtls__ecode_8h.html" title="Silicon Labs specific mbedtls error code definitions. " alt="" coords="561,312,681,339"/>
-<area shape="rect" id="node31" href="cryptodrv_8h.html" title="cryptodrv.h" alt="" coords="401,229,487,256"/>
+<area shape="rect" id="node3" href="cipher_8h.html" title="Generic cipher wrapper. " alt="" coords="209,80,276,107"/>
+<area shape="rect" id="node5" href="config-sl-crypto-all-acceleration_8h.html" title="config&#45;sl&#45;crypto&#45;all\l&#45;acceleration.h" alt="" coords="119,155,245,197"/>
+<area shape="rect" id="node9" href="config_8h.html" title="Compatibility names (set of defines) " alt="" coords="124,245,241,272"/>
+<area shape="rect" id="node11" href="check__config_8h.html" title="Consistency checks for configuration options. " alt="" coords="176,320,285,347"/>
 </map>
 </div>
 </div>
 <p><a href="ccm_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCM context structure.  <a href="structmbedtls__ccm__context.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a6ad00876b856ad8ac9f366fa7e1cf463"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a6ad00876b856ad8ac9f366fa7e1cf463">MBEDTLS_ERR_CCM_BAD_INPUT</a>&#160;&#160;&#160;-0x000D</td></tr>
@@ -90,6 +92,24 @@ Macros</h2></td></tr>
 <tr class="memitem:ae7fda1fbbd14f096374da7ccd54f9d3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#ae7fda1fbbd14f096374da7ccd54f9d3e">MBEDTLS_ERR_CCM_AUTH_FAILED</a>&#160;&#160;&#160;-0x000F</td></tr>
 <tr class="memdesc:ae7fda1fbbd14f096374da7ccd54f9d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticated decryption failed.  <a href="#ae7fda1fbbd14f096374da7ccd54f9d3e">More...</a><br /></td></tr>
 <tr class="separator:ae7fda1fbbd14f096374da7ccd54f9d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abaeb0629dfac72016fda58a4f7870040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#abaeb0629dfac72016fda58a4f7870040">mbedtls_ccm_init</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx)</td></tr>
+<tr class="memdesc:abaeb0629dfac72016fda58a4f7870040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize CCM context (just makes references valid) Makes the context ready for <a class="el" href="ccm_8h.html#a464d8e724738b4bbd5b415ca0580f1b1" title="CCM initialization (encryption and decryption) ">mbedtls_ccm_setkey()</a> or <a class="el" href="ccm_8h.html#a2bd8130a83c6633a4dfd61b181cdabac" title="Free a CCM context and underlying cipher sub-context. ">mbedtls_ccm_free()</a>.  <a href="#abaeb0629dfac72016fda58a4f7870040">More...</a><br /></td></tr>
+<tr class="separator:abaeb0629dfac72016fda58a4f7870040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464d8e724738b4bbd5b415ca0580f1b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a464d8e724738b4bbd5b415ca0580f1b1">mbedtls_ccm_setkey</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, <a class="el" href="cipher_8h.html#af5b069ffd0b2ad31225e42ee4ee29b1b">mbedtls_cipher_id_t</a> cipher, const unsigned char *key, unsigned int keybits)</td></tr>
+<tr class="memdesc:a464d8e724738b4bbd5b415ca0580f1b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCM initialization (encryption and decryption)  <a href="#a464d8e724738b4bbd5b415ca0580f1b1">More...</a><br /></td></tr>
+<tr class="separator:a464d8e724738b4bbd5b415ca0580f1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd8130a83c6633a4dfd61b181cdabac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a2bd8130a83c6633a4dfd61b181cdabac">mbedtls_ccm_free</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx)</td></tr>
+<tr class="memdesc:a2bd8130a83c6633a4dfd61b181cdabac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a CCM context and underlying cipher sub-context.  <a href="#a2bd8130a83c6633a4dfd61b181cdabac">More...</a><br /></td></tr>
+<tr class="separator:a2bd8130a83c6633a4dfd61b181cdabac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64de697edfefbff94d7eb0d9a8de926f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a64de697edfefbff94d7eb0d9a8de926f">mbedtls_ccm_encrypt_and_tag</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, size_t length, const unsigned char *iv, size_t iv_len, const unsigned char *add, size_t add_len, const unsigned char *input, unsigned char *output, unsigned char *tag, size_t tag_len)</td></tr>
+<tr class="memdesc:a64de697edfefbff94d7eb0d9a8de926f"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCM buffer encryption.  <a href="#a64de697edfefbff94d7eb0d9a8de926f">More...</a><br /></td></tr>
+<tr class="separator:a64de697edfefbff94d7eb0d9a8de926f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc9dfe246064185498f005d8bf22622"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ccm_8h.html#a8dc9dfe246064185498f005d8bf22622">mbedtls_ccm_auth_decrypt</a> (<a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *ctx, size_t length, const unsigned char *iv, size_t iv_len, const unsigned char *add, size_t add_len, const unsigned char *input, unsigned char *output, const unsigned char *tag, size_t tag_len)</td></tr>
+<tr class="memdesc:a8dc9dfe246064185498f005d8bf22622"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCM buffer authenticated decryption.  <a href="#a8dc9dfe246064185498f005d8bf22622">More...</a><br /></td></tr>
+<tr class="separator:a8dc9dfe246064185498f005d8bf22622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ae7fda1fbbd14f096374da7ccd54f9d3e"></a>
@@ -124,10 +144,294 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a8dc9dfe246064185498f005d8bf22622"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mbedtls_ccm_auth_decrypt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>iv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iv_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>add</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>add_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tag_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CCM buffer authenticated decryption. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>CCM context </td></tr>
+    <tr><td class="paramname">length</td><td>length of the input data </td></tr>
+    <tr><td class="paramname">iv</td><td>initialization vector </td></tr>
+    <tr><td class="paramname">iv_len</td><td>length of IV </td></tr>
+    <tr><td class="paramname">add</td><td>additional data </td></tr>
+    <tr><td class="paramname">add_len</td><td>length of additional data </td></tr>
+    <tr><td class="paramname">input</td><td>buffer holding the input data </td></tr>
+    <tr><td class="paramname">output</td><td>buffer for holding the output data </td></tr>
+    <tr><td class="paramname">tag</td><td>buffer holding the tag </td></tr>
+    <tr><td class="paramname">tag_len</td><td>length of the tag</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successful and authenticated, MBEDTLS_ERR_CCM_AUTH_FAILED if tag does not match </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a64de697edfefbff94d7eb0d9a8de926f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mbedtls_ccm_encrypt_and_tag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>iv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>iv_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>add</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>add_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>tag_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CCM buffer encryption. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>CCM context </td></tr>
+    <tr><td class="paramname">length</td><td>length of the input data in bytes </td></tr>
+    <tr><td class="paramname">iv</td><td>nonce (initialization vector) </td></tr>
+    <tr><td class="paramname">iv_len</td><td>length of IV in bytes must be 2, 3, 4, 5, 6, 7 or 8 </td></tr>
+    <tr><td class="paramname">add</td><td>additional data </td></tr>
+    <tr><td class="paramname">add_len</td><td>length of additional data in bytes must be less than 2^16 - 2^8 </td></tr>
+    <tr><td class="paramname">input</td><td>buffer holding the input data </td></tr>
+    <tr><td class="paramname">output</td><td>buffer for holding the output data must be at least 'length' bytes wide </td></tr>
+    <tr><td class="paramname">tag</td><td>buffer for holding the tag </td></tr>
+    <tr><td class="paramname">tag_len</td><td>length of the tag to generate in bytes must be 4, 6, 8, 10, 14 or 16</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The tag is written to a separate buffer. To get the tag concatenated with the output as in the CCM spec, use tag = output + length and make sure the output buffer is at least length + tag_len wide.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successful </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2bd8130a83c6633a4dfd61b181cdabac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mbedtls_ccm_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free a CCM context and underlying cipher sub-context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>CCM context to free </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abaeb0629dfac72016fda58a4f7870040"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mbedtls_ccm_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize CCM context (just makes references valid) Makes the context ready for <a class="el" href="ccm_8h.html#a464d8e724738b4bbd5b415ca0580f1b1" title="CCM initialization (encryption and decryption) ">mbedtls_ccm_setkey()</a> or <a class="el" href="ccm_8h.html#a2bd8130a83c6633a4dfd61b181cdabac" title="Free a CCM context and underlying cipher sub-context. ">mbedtls_ccm_free()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>CCM context to initialize </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a464d8e724738b4bbd5b415ca0580f1b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mbedtls_ccm_setkey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmbedtls__ccm__context.html">mbedtls_ccm_context</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cipher_8h.html#af5b069ffd0b2ad31225e42ee4ee29b1b">mbedtls_cipher_id_t</a>&#160;</td>
+          <td class="paramname"><em>cipher</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>keybits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CCM initialization (encryption and decryption) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>CCM context to be initialized </td></tr>
+    <tr><td class="paramname">cipher</td><td>cipher to use (a 128-bit block cipher) </td></tr>
+    <tr><td class="paramname">key</td><td>encryption key </td></tr>
+    <tr><td class="paramname">keybits</td><td>key size in bits (must be acceptable by the cipher)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successful, or a cipher specific error code </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 13 2016 11:17:17 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 16:12:41 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

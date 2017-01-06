@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Tiny Gecko Software Documentation: C:/work/s025_sw_ssh/emdrv/uartdrv/src/uartdrv.c File Reference</title>
+<title>EFM32 Tiny Gecko Software Documentation: c:/work/super/platform/emdrv/uartdrv/src/uartdrv.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32tg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('uartdrv_8c.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>UARTDRV API implementation. </p>
-<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -121,12 +121,11 @@ License</h1>
 
 <p>Definition in file <a class="el" href="uartdrv_8c_source.html">uartdrv.c</a>.</p>
 </div><div class="textblock"><code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__device_8h_source.html">em_device.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__emu_8h_source.html">em_emu.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="em__int_8h_source.html">em_int.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="em__usart_8h_source.html">em_usart.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="uartdrv_8h_source.html">uartdrv.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="em__core_8h_source.html">em_core.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gpiointerrupt_8h_source.html">gpiointerrupt.h</a>&quot;</code><br />
 </div>
 <p><a href="uartdrv_8c_source.html">Go to the source code of this file.</a></p>
@@ -134,7 +133,7 @@ License</h1>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga0abd859c2a17dafe03abceeb4c96a12a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">UARTDRV_Abort</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle, <a class="el" href="group__UARTDRV.html#ga458cf4e5cd800c561d4405a07a5d2e8e">UARTDRV_AbortType_t</a> type)</td></tr>
-<tr class="memdesc:ga0abd859c2a17dafe03abceeb4c96a12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort an ongoing UART transfer.  <a href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">More...</a><br /></td></tr>
+<tr class="memdesc:ga0abd859c2a17dafe03abceeb4c96a12a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort ongoing UART transfers.  <a href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">More...</a><br /></td></tr>
 <tr class="separator:ga0abd859c2a17dafe03abceeb4c96a12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3b4222031534ab6d54ca068b5fa6e596"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__UARTDRV.html#ga3b4222031534ab6d54ca068b5fa6e596">UARTDRV_DeInit</a> (<a class="el" href="group__UARTDRV.html#ga559d69d7978a815087a905fb13af15ea">UARTDRV_Handle_t</a> handle)</td></tr>
 <tr class="memdesc:ga3b4222031534ab6d54ca068b5fa6e596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize a UART driver instance.  <a href="group__UARTDRV.html#ga3b4222031534ab6d54ca068b5fa6e596">More...</a><br /></td></tr>
@@ -205,8 +204,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_5d1b5d945f64eccef1842dcc064c269d.html">uartdrv</a></li><li class="navelem"><a class="el" href="dir_36aa6552346fc987b9e85b7c0c25ef64.html">src</a></li><li class="navelem"><a class="el" href="uartdrv_8c.html">uartdrv.c</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 10:50:40 for EFM32 Tiny Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_a9326de1addf90fcea92508392adbd27.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_644a69419050f5d2ad0dd76dae344789.html">uartdrv</a></li><li class="navelem"><a class="el" href="dir_6a03c8ff8caceae3111100a5cee9d403.html">src</a></li><li class="navelem"><a class="el" href="uartdrv_8c.html">uartdrv.c</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 15:56:04 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

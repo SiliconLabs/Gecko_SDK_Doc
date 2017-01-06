@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32lg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -346,14 +346,89 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 : <a class="el" href="group__CMU.html#ga15ee8874bbe2c87a9b47aa81d3b76f51">em_cmu.h</a>
 </li>
 <li>Compress()
-: <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.c</a>
-, <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.h</a>
+: <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.h</a>
+, <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.c</a>
 </li>
-<li>convertEMUtoTEMP()
-: <a class="el" href="tempdrv_8c.html#a798654ab0c6e543d7edc325d9a11c0e2">tempdrv.c</a>
+<li>convertToEmu()
+: <a class="el" href="tempdrv_8c.html#a6689e3e2bb1dc6fec64b4fab3beb5af6">tempdrv.c</a>
 </li>
-<li>convertTEMPtoEMU()
-: <a class="el" href="tempdrv_8c.html#a8442646d166cb0ea7de0bb09390b33ce">tempdrv.c</a>
+<li>convertToTemp()
+: <a class="el" href="tempdrv_8c.html#a9f45838966c07a0c71bc13d4cffdffc8">tempdrv.c</a>
+</li>
+<li>CORE_AtomicDisableIrq()
+: <a class="el" href="group__CORE.html#gafdfbbd11ed59822d754a25ddd9805b38">em_core.h</a>
+</li>
+<li>CORE_AtomicEnableIrq()
+: <a class="el" href="group__CORE.html#ga82849c67cf5d03bf6d9e8b56d3d9008d">em_core.h</a>
+</li>
+<li>CORE_CriticalDisableIrq()
+: <a class="el" href="group__CORE.html#ga27d5f5d8592e4d6de95a50c44a51ce9f">em_core.h</a>
+</li>
+<li>CORE_CriticalEnableIrq()
+: <a class="el" href="group__CORE.html#gad9b01a782ebe5720b3505c30126c7596">em_core.h</a>
+</li>
+<li>CORE_EnterAtomic()
+: <a class="el" href="group__CORE.html#ga61bd0aa238e5eed1e725c007755576a5">em_core.h</a>
+</li>
+<li>CORE_EnterCritical()
+: <a class="el" href="group__CORE.html#ga420c5e796d60862f374fe02797bc67cc">em_core.h</a>
+</li>
+<li>CORE_EnterNvicMask()
+: <a class="el" href="group__CORE.html#ga510268c9357cb2cffddd9dd75ddf7fab">em_core.h</a>
+</li>
+<li>CORE_ExitAtomic()
+: <a class="el" href="group__CORE.html#ga669cd1707198be603ef5d36605d0d20b">em_core.h</a>
+</li>
+<li>CORE_ExitCritical()
+: <a class="el" href="group__CORE.html#gae3486ed889fc97ae4dcbc840fedb9421">em_core.h</a>
+</li>
+<li>CORE_GetNvicEnabledMask()
+: <a class="el" href="group__CORE.html#gaaa32f111ee6cdd5e854b489a04a79b68">em_core.h</a>
+</li>
+<li>CORE_GetNvicMaskDisableState()
+: <a class="el" href="group__CORE.html#gaadb9b9a49a92a6857c600cffb4a8b384">em_core.h</a>
+</li>
+<li>CORE_GetNvicRamTableHandler()
+: <a class="el" href="group__CORE.html#ga68c6a016bb6c8b59618aa256a718e8f0">em_core.h</a>
+</li>
+<li>CORE_InIrqContext()
+: <a class="el" href="group__CORE.html#ga34622f7414387576c9f16a0ec5770db8">em_core.h</a>
+</li>
+<li>CORE_InitNvicVectorTable()
+: <a class="el" href="group__CORE.html#gaea8eb75f2f2a86503a47bf96c76ae332">em_core.h</a>
+</li>
+<li>CORE_IrqIsBlocked()
+: <a class="el" href="group__CORE.html#gad0e48322a9b05fd1d265e55a1c38af8a">em_core.h</a>
+</li>
+<li>CORE_IrqIsDisabled()
+: <a class="el" href="group__CORE.html#gadae68b1a852ef2fd42d15dd7d5ee9933">em_core.h</a>
+</li>
+<li>CORE_NvicDisableMask()
+: <a class="el" href="group__CORE.html#ga818266df617b6e900b124d30f4cf7db4">em_core.h</a>
+</li>
+<li>CORE_NvicEnableMask()
+: <a class="el" href="group__CORE.html#gafd594b0671e10977a3655f289439af09">em_core.h</a>
+</li>
+<li>CORE_NvicIRQDisabled()
+: <a class="el" href="group__CORE.html#ga788fc3ea8bf0a931e5b3c9266a543c25">em_core.h</a>
+</li>
+<li>CORE_NvicMaskClearIRQ()
+: <a class="el" href="group__CORE.html#ga9cf82cce035328e4558db771ecfe8720">em_core.h</a>
+</li>
+<li>CORE_NvicMaskSetIRQ()
+: <a class="el" href="group__CORE.html#ga74cc1f2c3a9c786f1108eba8305b4a02">em_core.h</a>
+</li>
+<li>CORE_SetNvicRamTableHandler()
+: <a class="el" href="group__CORE.html#gaff18df16b51922db178fed08846f2814">em_core.h</a>
+</li>
+<li>CORE_YieldAtomic()
+: <a class="el" href="group__CORE.html#gae827216d8f44d661d6ff49a5cf5ce025">em_core.h</a>
+</li>
+<li>CORE_YieldCritical()
+: <a class="el" href="group__CORE.html#ga768aa167717431945535a3677f6c6797">em_core.h</a>
+</li>
+<li>CORE_YieldNvicMask()
+: <a class="el" href="group__CORE.html#ga3c84177a6c8922b997d9a0bb94ec0ff9">em_core.h</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -361,7 +436,7 @@ $(document).ready(function(){initNavTree('globals_func_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 10:59:51 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 16:00:17 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -81,7 +81,7 @@ var searchData=
   ['uniquel',['UNIQUEL',['../structDEVINFO__TypeDef.html#adeb0c331ca40b8495c827039409fbffd',1,'DEVINFO_TypeDef']]],
   ['unmod_5fcarrier_5fplugin',['Unmod_Carrier_Plugin',['../group__Unmod__Carrier__Plugin.html',1,'']]],
   ['unmodcarrier',['unmodCarrier',['../structEZRADIODRV__HandleData.html#adee41191751df0fa8727fa4de54a068c',1,'EZRADIODRV_HandleData']]],
-  ['updateinterrupts',['updateInterrupts',['../tempdrv_8c.html#a3d3c1e0a68bb10fdeef9360d1c56c18a',1,'tempdrv.c']]],
+  ['updateinterrupts',['updateInterrupts',['../tempdrv_8c.html#a2eb0a16de52bf17b2923dfd60592c789',1,'tempdrv.c']]],
   ['usagefault_5firqn',['UsageFault_IRQn',['../group__EFM32TG842F32.html#gga666eb0caeb12ec0e281415592ae89083a6895237c9443601ac832efa635dd8bbf',1,'efm32tg842f32.h']]],
   ['usart',['USART',['../group__USART.html',1,'']]],
   ['usart0',['USART0',['../group__EFM32TG842F32__Peripheral__Declaration.html#gaff8eb8989518e5d5bc5410d3fcba9138',1,'efm32tg842f32.h']]],

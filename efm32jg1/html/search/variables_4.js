@@ -25,6 +25,7 @@ var searchData=
   ['dcbwtag',['dCBWTag',['../structMSDBOT__CBW__TypeDef.html#a51e2064e5f20133e5ce96bb3d79be263',1,'MSDBOT_CBW_TypeDef']]],
   ['dcdcclimctrl',['DCDCCLIMCTRL',['../structEMU__TypeDef.html#a620ee81ef0935d4e0d443e75f6f0e0e6',1,'EMU_TypeDef']]],
   ['dcdcctrl',['DCDCCTRL',['../structEMU__TypeDef.html#a30fbc8c6b985009b4d8ccf0ffa4fd427',1,'EMU_TypeDef']]],
+  ['dcdclncompctrl',['dcdcLnCompCtrl',['../structEMU__DCDCInit__TypeDef.html#ae734a01432ba01b8b1e2ba0dff2e63bf',1,'EMU_DCDCInit_TypeDef']]],
   ['dcdclnfreqctrl',['DCDCLNFREQCTRL',['../structEMU__TypeDef.html#aded62c846471930466c0ca16bcaa2ac8',1,'EMU_TypeDef']]],
   ['dcdclnvctrl',['DCDCLNVCTRL',['../structEMU__TypeDef.html#adac189f4ade114e1aa5adee39b5795fd',1,'EMU_TypeDef']]],
   ['dcdclnvctrl0',['DCDCLNVCTRL0',['../structDEVINFO__TypeDef.html#a1d54af98f0ffd444b94b329bdc6a71ff',1,'DEVINFO_TypeDef']]],

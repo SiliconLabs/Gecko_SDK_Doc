@@ -43,7 +43,7 @@
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>mbed TLS configuration for Silicon Labs CRYPTO hardware acceleration </p>
-<p>mbed TLS configuration is composed of settings in this Silicon Labs specific CRYPTO hardware acceleration file located in mbedtls and the mbed TLS configuration file in <a class="el" href="config_8h.html" title="Compatibility names (set of defines) ">mbedtls/include/mbedtls/config.h</a>. This configuration can be used as a starting point to evaluate hardware acceleration available on Silicon Labs devices. </p>
+<p>mbed TLS configuration is composed of settings in this Silicon Labs specific CRYPTO hardware acceleration file located in mbedtls/configs and the mbed TLS configuration file in <a class="el" href="config_8h.html" title="Compatibility names (set of defines) ">mbedtls/include/mbedtls/config.h</a>. This configuration can be used as a starting point to evaluate hardware acceleration available on Silicon Labs devices. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 SECTION: System support</h2></td></tr>
@@ -52,17 +52,50 @@ SECTION: System support</h2></td></tr>
 <tr class="memitem:ga6eb06bd9262371cafc5e51e40285d4bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga6eb06bd9262371cafc5e51e40285d4bb">MBEDTLS_HAVE_ASM</a></td></tr>
 <tr class="memdesc:ga6eb06bd9262371cafc5e51e40285d4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The compiler has support for asm().  <a href="#ga6eb06bd9262371cafc5e51e40285d4bb">More...</a><br /></td></tr>
 <tr class="separator:ga6eb06bd9262371cafc5e51e40285d4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae6beebdf8a3b2934564826b52ebc258"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gaae6beebdf8a3b2934564826b52ebc258">MBEDTLS_HAVE_SSE2</a></td></tr>
+<tr class="memdesc:gaae6beebdf8a3b2934564826b52ebc258"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPU supports SSE2 instruction set.  <a href="#gaae6beebdf8a3b2934564826b52ebc258">More...</a><br /></td></tr>
+<tr class="separator:gaae6beebdf8a3b2934564826b52ebc258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0d2a3e0e00f099a570fa56a0c4cf0d35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga0d2a3e0e00f099a570fa56a0c4cf0d35">MBEDTLS_HAVE_TIME</a></td></tr>
 <tr class="memdesc:ga0d2a3e0e00f099a570fa56a0c4cf0d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">System has time.h and time().  <a href="#ga0d2a3e0e00f099a570fa56a0c4cf0d35">More...</a><br /></td></tr>
 <tr class="separator:ga0d2a3e0e00f099a570fa56a0c4cf0d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6309908be96df5277599f10d22bd91b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga6309908be96df5277599f10d22bd91b7">MBEDTLS_HAVE_TIME_DATE</a></td></tr>
 <tr class="memdesc:ga6309908be96df5277599f10d22bd91b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">System has time.h and time(), gmtime() and the clock is correct.  <a href="#ga6309908be96df5277599f10d22bd91b7">More...</a><br /></td></tr>
 <tr class="separator:ga6309908be96df5277599f10d22bd91b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae58dba1b4a4c30f8c4d2f0e6080351af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gae58dba1b4a4c30f8c4d2f0e6080351af">MBEDTLS_PLATFORM_MEMORY</a></td></tr>
+<tr class="memdesc:gae58dba1b4a4c30f8c4d2f0e6080351af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the memory allocation layer.  <a href="#gae58dba1b4a4c30f8c4d2f0e6080351af">More...</a><br /></td></tr>
+<tr class="separator:gae58dba1b4a4c30f8c4d2f0e6080351af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga177299909ee6cd36ec008af9c0e617ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga177299909ee6cd36ec008af9c0e617ff">MBEDTLS_PLATFORM_NO_STD_FUNCTIONS</a></td></tr>
+<tr class="memdesc:ga177299909ee6cd36ec008af9c0e617ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not assign standard functions in the platform layer (e.g.  <a href="#ga177299909ee6cd36ec008af9c0e617ff">More...</a><br /></td></tr>
+<tr class="separator:ga177299909ee6cd36ec008af9c0e617ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82288117b1bf6d937a690a6f54edda2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga82288117b1bf6d937a690a6f54edda2d">MBEDTLS_PLATFORM_XXX_ALT</a></td></tr>
+<tr class="memdesc:ga82288117b1bf6d937a690a6f54edda2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uncomment a macro to let mbed TLS support the function in the platform abstraction layer.  <a href="#ga82288117b1bf6d937a690a6f54edda2d">More...</a><br /></td></tr>
+<tr class="separator:ga82288117b1bf6d937a690a6f54edda2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01eac966e946fa97fc412562e5aeb14b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga01eac966e946fa97fc412562e5aeb14b">MBEDTLS_DEPRECATED_WARNING</a></td></tr>
+<tr class="memdesc:ga01eac966e946fa97fc412562e5aeb14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark deprecated functions so that they generate a warning if used.  <a href="#ga01eac966e946fa97fc412562e5aeb14b">More...</a><br /></td></tr>
+<tr class="separator:ga01eac966e946fa97fc412562e5aeb14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6a272ea0766583ef6c0b9971c730076"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gad6a272ea0766583ef6c0b9971c730076">MBEDTLS_DEPRECATED_REMOVED</a></td></tr>
+<tr class="memdesc:gad6a272ea0766583ef6c0b9971c730076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove deprecated functions so that they generate an error if used.  <a href="#gad6a272ea0766583ef6c0b9971c730076">More...</a><br /></td></tr>
+<tr class="separator:gad6a272ea0766583ef6c0b9971c730076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 SECTION: mbed TLS feature support</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp8f0b0106a7a4e184a997e9c5ed1eed97"></a>This section sets support for features that are or are not needed within the modules that are enabled. </p>
 </td></tr>
+<tr class="memitem:ga1e89493a11be33a3517f9b24ffce0e09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga1e89493a11be33a3517f9b24ffce0e09">MBEDTLS__MODULE_NAME__ALT</a></td></tr>
+<tr class="memdesc:ga1e89493a11be33a3517f9b24ffce0e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uncomment a macro to let mbed TLS use your alternate core implementation of a symmetric crypto or hash module (e.g.  <a href="#ga1e89493a11be33a3517f9b24ffce0e09">More...</a><br /></td></tr>
+<tr class="separator:ga1e89493a11be33a3517f9b24ffce0e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3eb8560f0b2f4a237d75ffc7e5b92715"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga3eb8560f0b2f4a237d75ffc7e5b92715">MBEDTLS__FUNCTION_NAME__ALT</a></td></tr>
+<tr class="memdesc:ga3eb8560f0b2f4a237d75ffc7e5b92715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uncomment a macro to let mbed TLS use you alternate core implementation of symmetric crypto or hash function.  <a href="#ga3eb8560f0b2f4a237d75ffc7e5b92715">More...</a><br /></td></tr>
+<tr class="separator:ga3eb8560f0b2f4a237d75ffc7e5b92715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a0f22be83a0b34bd8e8251b77a680a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga1a0f22be83a0b34bd8e8251b77a680a0">MBEDTLS_ENTROPY_HARDWARE_ALT</a></td></tr>
+<tr class="memdesc:ga1a0f22be83a0b34bd8e8251b77a680a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uncomment this macro to let mbed TLS use your own implementation of a hardware entropy collector.  <a href="#ga1a0f22be83a0b34bd8e8251b77a680a0">More...</a><br /></td></tr>
+<tr class="separator:ga1a0f22be83a0b34bd8e8251b77a680a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0aaa3f0466b5ae15ff9bf176f632a3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gaa0aaa3f0466b5ae15ff9bf176f632a3d">MBEDTLS_AES_ROM_TABLES</a></td></tr>
+<tr class="memdesc:gaa0aaa3f0466b5ae15ff9bf176f632a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the AES tables in ROM.  <a href="#gaa0aaa3f0466b5ae15ff9bf176f632a3d">More...</a><br /></td></tr>
+<tr class="separator:gaa0aaa3f0466b5ae15ff9bf176f632a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20e18a582cad78b9b45868de1edbd513"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga20e18a582cad78b9b45868de1edbd513">MBEDTLS_CAMELLIA_SMALL_MEMORY</a></td></tr>
+<tr class="memdesc:ga20e18a582cad78b9b45868de1edbd513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use less ROM for the Camellia implementation (saves about 768 bytes).  <a href="#ga20e18a582cad78b9b45868de1edbd513">More...</a><br /></td></tr>
+<tr class="separator:ga20e18a582cad78b9b45868de1edbd513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae0290beb1dc98ac21d930144d34ae2d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gae0290beb1dc98ac21d930144d34ae2d0">MBEDTLS_CIPHER_MODE_CBC</a></td></tr>
 <tr class="memdesc:gae0290beb1dc98ac21d930144d34ae2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Cipher Block Chaining mode (CBC) for symmetric ciphers.  <a href="#gae0290beb1dc98ac21d930144d34ae2d0">More...</a><br /></td></tr>
 <tr class="separator:gae0290beb1dc98ac21d930144d34ae2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -72,6 +105,12 @@ SECTION: mbed TLS feature support</h2></td></tr>
 <tr class="memitem:ga5bc21fd94f62fae79688ad096ef5c2d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga5bc21fd94f62fae79688ad096ef5c2d8">MBEDTLS_CIPHER_MODE_CTR</a></td></tr>
 <tr class="memdesc:ga5bc21fd94f62fae79688ad096ef5c2d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable Counter Block Cipher mode (CTR) for symmetric ciphers.  <a href="#ga5bc21fd94f62fae79688ad096ef5c2d8">More...</a><br /></td></tr>
 <tr class="separator:ga5bc21fd94f62fae79688ad096ef5c2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga83cc0903ed6bb07061aa0f5c0e5b0382"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga83cc0903ed6bb07061aa0f5c0e5b0382">MBEDTLS_CIPHER_NULL_CIPHER</a></td></tr>
+<tr class="memdesc:ga83cc0903ed6bb07061aa0f5c0e5b0382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable NULL cipher.  <a href="#ga83cc0903ed6bb07061aa0f5c0e5b0382">More...</a><br /></td></tr>
+<tr class="separator:ga83cc0903ed6bb07061aa0f5c0e5b0382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00b8849c5ce5423d37d3f9b2fe6d20f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga00b8849c5ce5423d37d3f9b2fe6d20f1">MBEDTLS_CIPHER_PADDING_XXX</a></td></tr>
+<tr class="memdesc:ga00b8849c5ce5423d37d3f9b2fe6d20f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uncomment or comment macros to add support for specific padding modes in the cipher layer with cipher modes that support padding (e.g.  <a href="#ga00b8849c5ce5423d37d3f9b2fe6d20f1">More...</a><br /></td></tr>
+<tr class="separator:ga00b8849c5ce5423d37d3f9b2fe6d20f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0f53acf64658fe68c1e532a9434c31f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga0f53acf64658fe68c1e532a9434c31f0">MBEDTLS_CIPHER_PADDING_PKCS7</a></td></tr>
 <tr class="separator:ga0f53acf64658fe68c1e532a9434c31f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae97ea80bdee414503dbc0f9927aa4f78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gae97ea80bdee414503dbc0f9927aa4f78">MBEDTLS_CIPHER_PADDING_ONE_AND_ZEROS</a></td></tr>
@@ -80,9 +119,15 @@ SECTION: mbed TLS feature support</h2></td></tr>
 <tr class="separator:gabf958fb428f93be154b13d074821a850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80b6971fec5fcd09de71ada9ab6f53c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga80b6971fec5fcd09de71ada9ab6f53c2">MBEDTLS_CIPHER_PADDING_ZEROS</a></td></tr>
 <tr class="separator:ga80b6971fec5fcd09de71ada9ab6f53c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9aaebc5c4f3b47b232f5a47ea80e9cef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga9aaebc5c4f3b47b232f5a47ea80e9cef">MBEDTLS_ENABLE_WEAK_CIPHERSUITES</a></td></tr>
+<tr class="memdesc:ga9aaebc5c4f3b47b232f5a47ea80e9cef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable weak ciphersuites in SSL / TLS.  <a href="#ga9aaebc5c4f3b47b232f5a47ea80e9cef">More...</a><br /></td></tr>
+<tr class="separator:ga9aaebc5c4f3b47b232f5a47ea80e9cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa50e586e2dcca9ffae22edc28bdd82a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gaa50e586e2dcca9ffae22edc28bdd82a9">MBEDTLS_REMOVE_ARC4_CIPHERSUITES</a></td></tr>
 <tr class="memdesc:gaa50e586e2dcca9ffae22edc28bdd82a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove RC4 ciphersuites by default in SSL / TLS.  <a href="#gaa50e586e2dcca9ffae22edc28bdd82a9">More...</a><br /></td></tr>
 <tr class="separator:gaa50e586e2dcca9ffae22edc28bdd82a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14236526e3dedb28c71d75c62c4cb0f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga14236526e3dedb28c71d75c62c4cb0f1">MBEDTLS_ECP_XXXX_ENABLED</a></td></tr>
+<tr class="memdesc:ga14236526e3dedb28c71d75c62c4cb0f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables specific curves within the Elliptic Curve module.  <a href="#ga14236526e3dedb28c71d75c62c4cb0f1">More...</a><br /></td></tr>
+<tr class="separator:ga14236526e3dedb28c71d75c62c4cb0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8c45e2be551b48e4feb1453fff99b8d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga8c45e2be551b48e4feb1453fff99b8d5">MBEDTLS_ECP_DP_SECP192R1_ENABLED</a></td></tr>
 <tr class="separator:ga8c45e2be551b48e4feb1453fff99b8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga53ca938afec54658ef4b643c60ed617c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga53ca938afec54658ef4b643c60ed617c">MBEDTLS_ECP_DP_SECP224R1_ENABLED</a></td></tr>
@@ -143,6 +188,9 @@ SECTION: mbed TLS feature support</h2></td></tr>
 <tr class="memitem:gaa21769532291089a98bb9051516709c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gaa21769532291089a98bb9051516709c6">MBEDTLS_KEY_EXCHANGE_ECDH_RSA_ENABLED</a></td></tr>
 <tr class="memdesc:gaa21769532291089a98bb9051516709c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the ECDH-RSA based ciphersuite modes in SSL / TLS.  <a href="#gaa21769532291089a98bb9051516709c6">More...</a><br /></td></tr>
 <tr class="separator:gaa21769532291089a98bb9051516709c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9580ac865324c142232c3e0bc654e14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gac9580ac865324c142232c3e0bc654e14">MBEDTLS_KEY_EXCHANGE_ECJPAKE_ENABLED</a></td></tr>
+<tr class="memdesc:gac9580ac865324c142232c3e0bc654e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the ECJPAKE based ciphersuite modes in SSL / TLS.  <a href="#gac9580ac865324c142232c3e0bc654e14">More...</a><br /></td></tr>
+<tr class="separator:gac9580ac865324c142232c3e0bc654e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6d2d68f07e8d1b00d1e6f47d162cedc9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga6d2d68f07e8d1b00d1e6f47d162cedc9">MBEDTLS_PK_PARSE_EC_EXTENDED</a></td></tr>
 <tr class="memdesc:ga6d2d68f07e8d1b00d1e6f47d162cedc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enhance support for reading EC keys using variants of SEC1 not allowed by RFC 5915 and RFC 5480.  <a href="#ga6d2d68f07e8d1b00d1e6f47d162cedc9">More...</a><br /></td></tr>
 <tr class="separator:ga6d2d68f07e8d1b00d1e6f47d162cedc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +203,18 @@ SECTION: mbed TLS feature support</h2></td></tr>
 <tr class="memitem:ga29dbd0110b545e25201e3babd907738d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga29dbd0110b545e25201e3babd907738d">MBEDTLS_FS_IO</a></td></tr>
 <tr class="memdesc:ga29dbd0110b545e25201e3babd907738d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable functions that use the filesystem.  <a href="#ga29dbd0110b545e25201e3babd907738d">More...</a><br /></td></tr>
 <tr class="separator:ga29dbd0110b545e25201e3babd907738d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7975b148abc283e6ee41854637185e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gaf7975b148abc283e6ee41854637185e1">MBEDTLS_NO_DEFAULT_ENTROPY_SOURCES</a></td></tr>
+<tr class="memdesc:gaf7975b148abc283e6ee41854637185e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not add default entropy sources.  <a href="#gaf7975b148abc283e6ee41854637185e1">More...</a><br /></td></tr>
+<tr class="separator:gaf7975b148abc283e6ee41854637185e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0afc8d757b975eaa78d7a2052348f084"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga0afc8d757b975eaa78d7a2052348f084">MBEDTLS_ENTROPY_FORCE_SHA256</a></td></tr>
+<tr class="memdesc:ga0afc8d757b975eaa78d7a2052348f084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the entropy accumulator to use a SHA-256 accumulator instead of the default SHA-512 based one (if both are available).  <a href="#ga0afc8d757b975eaa78d7a2052348f084">More...</a><br /></td></tr>
+<tr class="separator:ga0afc8d757b975eaa78d7a2052348f084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d84b57d940e214aec774c288f538267"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga2d84b57d940e214aec774c288f538267">MBEDTLS_MEMORY_DEBUG</a></td></tr>
+<tr class="memdesc:ga2d84b57d940e214aec774c288f538267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable debugging of buffer allocator memory issues.  <a href="#ga2d84b57d940e214aec774c288f538267">More...</a><br /></td></tr>
+<tr class="separator:ga2d84b57d940e214aec774c288f538267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga83f3304f871a4b1dc4fad7e98e793789"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga83f3304f871a4b1dc4fad7e98e793789">MBEDTLS_MEMORY_BACKTRACE</a></td></tr>
+<tr class="memdesc:ga83f3304f871a4b1dc4fad7e98e793789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include backtrace information with each allocated block.  <a href="#ga83f3304f871a4b1dc4fad7e98e793789">More...</a><br /></td></tr>
+<tr class="separator:ga83f3304f871a4b1dc4fad7e98e793789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga62e934fe1c7e54c9342fe5d84d3ea888"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga62e934fe1c7e54c9342fe5d84d3ea888">MBEDTLS_PK_RSA_ALT_SUPPORT</a></td></tr>
 <tr class="memdesc:ga62e934fe1c7e54c9342fe5d84d3ea888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Support external private RSA keys (eg from a HSM) in the PK layer.  <a href="#ga62e934fe1c7e54c9342fe5d84d3ea888">More...</a><br /></td></tr>
 <tr class="separator:ga62e934fe1c7e54c9342fe5d84d3ea888"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,12 +224,24 @@ SECTION: mbed TLS feature support</h2></td></tr>
 <tr class="memitem:ga45f7284cdb45e4505ff79bd40116c338"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga45f7284cdb45e4505ff79bd40116c338">MBEDTLS_PKCS1_V21</a></td></tr>
 <tr class="memdesc:ga45f7284cdb45e4505ff79bd40116c338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable support for PKCS#1 v2.1 encoding.  <a href="#ga45f7284cdb45e4505ff79bd40116c338">More...</a><br /></td></tr>
 <tr class="separator:ga45f7284cdb45e4505ff79bd40116c338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdcc720facc10a3688d62ce9937df8e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gacdcc720facc10a3688d62ce9937df8e0">MBEDTLS_RSA_NO_CRT</a></td></tr>
+<tr class="memdesc:gacdcc720facc10a3688d62ce9937df8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not use the Chinese Remainder Theorem for the RSA private operation.  <a href="#gacdcc720facc10a3688d62ce9937df8e0">More...</a><br /></td></tr>
+<tr class="separator:gacdcc720facc10a3688d62ce9937df8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad70d6eb71def154fc4cefa0d0ec90d96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gad70d6eb71def154fc4cefa0d0ec90d96">MBEDTLS_SELF_TEST</a></td></tr>
 <tr class="memdesc:gad70d6eb71def154fc4cefa0d0ec90d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the checkup functions (*_self_test).  <a href="#gad70d6eb71def154fc4cefa0d0ec90d96">More...</a><br /></td></tr>
 <tr class="separator:gad70d6eb71def154fc4cefa0d0ec90d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37056e26ff582813ab505fa8e59287b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga37056e26ff582813ab505fa8e59287b6">MBEDTLS_SHA256_SMALLER</a></td></tr>
+<tr class="memdesc:ga37056e26ff582813ab505fa8e59287b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable an implementation of SHA-256 that has lower ROM footprint but also lower performance.  <a href="#ga37056e26ff582813ab505fa8e59287b6">More...</a><br /></td></tr>
+<tr class="separator:ga37056e26ff582813ab505fa8e59287b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd7fdcac5f6d598ade117bf370f388fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gadd7fdcac5f6d598ade117bf370f388fe">MBEDTLS_SSL_AEAD_RANDOM_IV</a></td></tr>
+<tr class="memdesc:gadd7fdcac5f6d598ade117bf370f388fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random IV rather than using the record sequence number as a nonce for ciphersuites using and AEAD algorithm (GCM or CCM).  <a href="#gadd7fdcac5f6d598ade117bf370f388fe">More...</a><br /></td></tr>
+<tr class="separator:gadd7fdcac5f6d598ade117bf370f388fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0c0ea1b637ed407466a3788ff622423b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga0c0ea1b637ed407466a3788ff622423b">MBEDTLS_SSL_ALL_ALERT_MESSAGES</a></td></tr>
 <tr class="memdesc:ga0c0ea1b637ed407466a3788ff622423b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable sending of alert messages in case of encountered errors as per RFC.  <a href="#ga0c0ea1b637ed407466a3788ff622423b">More...</a><br /></td></tr>
 <tr class="separator:ga0c0ea1b637ed407466a3788ff622423b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f7e00e92f146c9248dfcb2f4c9debfc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga7f7e00e92f146c9248dfcb2f4c9debfc">MBEDTLS_SSL_DEBUG_ALL</a></td></tr>
+<tr class="memdesc:ga7f7e00e92f146c9248dfcb2f4c9debfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the debug messages in SSL module for all issues.  <a href="#ga7f7e00e92f146c9248dfcb2f4c9debfc">More...</a><br /></td></tr>
+<tr class="separator:ga7f7e00e92f146c9248dfcb2f4c9debfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga80e8e0fb5fea758fa451d1268201aded"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga80e8e0fb5fea758fa451d1268201aded">MBEDTLS_SSL_ENCRYPT_THEN_MAC</a></td></tr>
 <tr class="memdesc:ga80e8e0fb5fea758fa451d1268201aded"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable support for Encrypt-then-MAC, RFC 7366.  <a href="#ga80e8e0fb5fea758fa451d1268201aded">More...</a><br /></td></tr>
 <tr class="separator:ga80e8e0fb5fea758fa451d1268201aded"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,12 +251,21 @@ SECTION: mbed TLS feature support</h2></td></tr>
 <tr class="memitem:ga3c3f1b0b74be9770d9ed4382f80f5fd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga3c3f1b0b74be9770d9ed4382f80f5fd9">MBEDTLS_SSL_FALLBACK_SCSV</a></td></tr>
 <tr class="memdesc:ga3c3f1b0b74be9770d9ed4382f80f5fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable support for FALLBACK_SCSV (draft-ietf-tls-downgrade-scsv-00).  <a href="#ga3c3f1b0b74be9770d9ed4382f80f5fd9">More...</a><br /></td></tr>
 <tr class="separator:ga3c3f1b0b74be9770d9ed4382f80f5fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36d3a612701a9919864241d8757de3a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga36d3a612701a9919864241d8757de3a0">MBEDTLS_SSL_HW_RECORD_ACCEL</a></td></tr>
+<tr class="memdesc:ga36d3a612701a9919864241d8757de3a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable hooking functions in SSL module for hardware acceleration of individual records.  <a href="#ga36d3a612701a9919864241d8757de3a0">More...</a><br /></td></tr>
+<tr class="separator:ga36d3a612701a9919864241d8757de3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga01edb9e5a9ceaed235ac9a4bd19f5fe5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga01edb9e5a9ceaed235ac9a4bd19f5fe5">MBEDTLS_SSL_CBC_RECORD_SPLITTING</a></td></tr>
 <tr class="memdesc:ga01edb9e5a9ceaed235ac9a4bd19f5fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable 1/n-1 record splitting for CBC mode in SSLv3 and TLS 1.0.  <a href="#ga01edb9e5a9ceaed235ac9a4bd19f5fe5">More...</a><br /></td></tr>
 <tr class="separator:ga01edb9e5a9ceaed235ac9a4bd19f5fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga313f12fd8fd65b5c831a912808133140"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga313f12fd8fd65b5c831a912808133140">MBEDTLS_SSL_RENEGOTIATION</a></td></tr>
 <tr class="memdesc:ga313f12fd8fd65b5c831a912808133140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable support for TLS renegotiation.  <a href="#ga313f12fd8fd65b5c831a912808133140">More...</a><br /></td></tr>
 <tr class="separator:ga313f12fd8fd65b5c831a912808133140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30ec7589dce5c8fc315303ec82920011"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga30ec7589dce5c8fc315303ec82920011">MBEDTLS_SSL_SRV_SUPPORT_SSLV2_CLIENT_HELLO</a></td></tr>
+<tr class="memdesc:ga30ec7589dce5c8fc315303ec82920011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable support for receiving and parsing SSLv2 Client Hello messages for the SSL Server module (MBEDTLS_SSL_SRV_C).  <a href="#ga30ec7589dce5c8fc315303ec82920011">More...</a><br /></td></tr>
+<tr class="separator:ga30ec7589dce5c8fc315303ec82920011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae29207b42956ccaac4ca3a925162067"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gaae29207b42956ccaac4ca3a925162067">MBEDTLS_SSL_SRV_RESPECT_CLIENT_PREFERENCE</a></td></tr>
+<tr class="memdesc:gaae29207b42956ccaac4ca3a925162067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pick the ciphersuite according to the client's preferences rather than ours in the SSL Server module (MBEDTLS_SSL_SRV_C).  <a href="#gaae29207b42956ccaac4ca3a925162067">More...</a><br /></td></tr>
+<tr class="separator:gaae29207b42956ccaac4ca3a925162067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga82777395be62d667a657dc1372d6b975"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga82777395be62d667a657dc1372d6b975">MBEDTLS_SSL_MAX_FRAGMENT_LENGTH</a></td></tr>
 <tr class="memdesc:ga82777395be62d667a657dc1372d6b975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable support for RFC 6066 max_fragment_length extension in SSL.  <a href="#ga82777395be62d667a657dc1372d6b975">More...</a><br /></td></tr>
 <tr class="separator:ga82777395be62d667a657dc1372d6b975"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,9 +311,21 @@ SECTION: mbed TLS feature support</h2></td></tr>
 <tr class="memitem:ga72145b227eb7d34764ceb73cac9ab68d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga72145b227eb7d34764ceb73cac9ab68d">MBEDTLS_SSL_TRUNCATED_HMAC</a></td></tr>
 <tr class="memdesc:ga72145b227eb7d34764ceb73cac9ab68d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable support for RFC 6066 truncated HMAC in SSL.  <a href="#ga72145b227eb7d34764ceb73cac9ab68d">More...</a><br /></td></tr>
 <tr class="separator:ga72145b227eb7d34764ceb73cac9ab68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe7c4328406cacf7873f59024bf7047b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gabe7c4328406cacf7873f59024bf7047b">MBEDTLS_THREADING_ALT</a></td></tr>
+<tr class="memdesc:gabe7c4328406cacf7873f59024bf7047b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide your own alternate threading implementation.  <a href="#gabe7c4328406cacf7873f59024bf7047b">More...</a><br /></td></tr>
+<tr class="separator:gabe7c4328406cacf7873f59024bf7047b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa63c4047f878fda72db99162c13a328f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gaa63c4047f878fda72db99162c13a328f">MBEDTLS_THREADING_PTHREAD</a></td></tr>
+<tr class="memdesc:gaa63c4047f878fda72db99162c13a328f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the pthread wrapper layer for the threading layer.  <a href="#gaa63c4047f878fda72db99162c13a328f">More...</a><br /></td></tr>
+<tr class="separator:gaa63c4047f878fda72db99162c13a328f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9695236b5192ac4a15afe1681adbb990"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga9695236b5192ac4a15afe1681adbb990">MBEDTLS_VERSION_FEATURES</a></td></tr>
 <tr class="memdesc:ga9695236b5192ac4a15afe1681adbb990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow run-time checking of compile-time enabled features.  <a href="#ga9695236b5192ac4a15afe1681adbb990">More...</a><br /></td></tr>
 <tr class="separator:ga9695236b5192ac4a15afe1681adbb990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d205ac6795441227a9978cc49f99c3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga7d205ac6795441227a9978cc49f99c3b">MBEDTLS_X509_ALLOW_EXTENSIONS_NON_V3</a></td></tr>
+<tr class="memdesc:ga7d205ac6795441227a9978cc49f99c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set, the X509 parser will not break-off when parsing an X509 certificate and encountering an extension in a v1 or v2 certificate.  <a href="#ga7d205ac6795441227a9978cc49f99c3b">More...</a><br /></td></tr>
+<tr class="separator:ga7d205ac6795441227a9978cc49f99c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32e9a25fc17d6859676443ed48d13849"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga32e9a25fc17d6859676443ed48d13849">MBEDTLS_X509_ALLOW_UNSUPPORTED_CRITICAL_EXTENSION</a></td></tr>
+<tr class="memdesc:ga32e9a25fc17d6859676443ed48d13849"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set, the X509 parser will not break-off when parsing an X509 certificate and encountering an unknown critical extension.  <a href="#ga32e9a25fc17d6859676443ed48d13849">More...</a><br /></td></tr>
+<tr class="separator:ga32e9a25fc17d6859676443ed48d13849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabd88bc05d444b57cf1be11fedf58c98a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gabd88bc05d444b57cf1be11fedf58c98a">MBEDTLS_X509_CHECK_KEY_USAGE</a></td></tr>
 <tr class="memdesc:gabd88bc05d444b57cf1be11fedf58c98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable verification of the keyUsage extension (CA and leaf certificates).  <a href="#gabd88bc05d444b57cf1be11fedf58c98a">More...</a><br /></td></tr>
 <tr class="separator:gabd88bc05d444b57cf1be11fedf58c98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,6 +335,9 @@ SECTION: mbed TLS feature support</h2></td></tr>
 <tr class="memitem:ga0510bbca604b868f3150a38f65623e8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga0510bbca604b868f3150a38f65623e8b">MBEDTLS_X509_RSASSA_PSS_SUPPORT</a></td></tr>
 <tr class="memdesc:ga0510bbca604b868f3150a38f65623e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable parsing and verification of X.509 certificates, CRLs and CSRS signed with RSASSA-PSS (aka PKCS#1 v2.1).  <a href="#ga0510bbca604b868f3150a38f65623e8b">More...</a><br /></td></tr>
 <tr class="separator:ga0510bbca604b868f3150a38f65623e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafaedfe155368fb34400b7ac91e24d625"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gafaedfe155368fb34400b7ac91e24d625">MBEDTLS_ZLIB_SUPPORT</a></td></tr>
+<tr class="memdesc:gafaedfe155368fb34400b7ac91e24d625"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set, the SSL/TLS module uses ZLIB to support compression and decompression of packet data.  <a href="#gafaedfe155368fb34400b7ac91e24d625">More...</a><br /></td></tr>
+<tr class="separator:gafaedfe155368fb34400b7ac91e24d625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 SECTION: mbed TLS modules</h2></td></tr>
@@ -301,6 +397,9 @@ SECTION: mbed TLS modules</h2></td></tr>
 <tr class="memitem:gac5796bd242fe0f33d66f9e2cc3c2b490"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gac5796bd242fe0f33d66f9e2cc3c2b490">MBEDTLS_ECDSA_C</a></td></tr>
 <tr class="memdesc:gac5796bd242fe0f33d66f9e2cc3c2b490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the elliptic curve DSA library.  <a href="#gac5796bd242fe0f33d66f9e2cc3c2b490">More...</a><br /></td></tr>
 <tr class="separator:gac5796bd242fe0f33d66f9e2cc3c2b490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4c97c30b6084ceb60392781b93c9f58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gaf4c97c30b6084ceb60392781b93c9f58">MBEDTLS_ECJPAKE_C</a></td></tr>
+<tr class="memdesc:gaf4c97c30b6084ceb60392781b93c9f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the elliptic curve J-PAKE library.  <a href="#gaf4c97c30b6084ceb60392781b93c9f58">More...</a><br /></td></tr>
+<tr class="separator:gaf4c97c30b6084ceb60392781b93c9f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae9d24fd58758d905e43ace39f9798b46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gae9d24fd58758d905e43ace39f9798b46">MBEDTLS_ECP_C</a></td></tr>
 <tr class="memdesc:gae9d24fd58758d905e43ace39f9798b46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the elliptic curve over GF(p) library.  <a href="#gae9d24fd58758d905e43ace39f9798b46">More...</a><br /></td></tr>
 <tr class="separator:gae9d24fd58758d905e43ace39f9798b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,15 +412,27 @@ SECTION: mbed TLS modules</h2></td></tr>
 <tr class="memitem:ga1302769eb08072aaf2d8cd6ca9ac206b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga1302769eb08072aaf2d8cd6ca9ac206b">MBEDTLS_GCM_C</a></td></tr>
 <tr class="memdesc:ga1302769eb08072aaf2d8cd6ca9ac206b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the Galois/Counter Mode (GCM) for AES.  <a href="#ga1302769eb08072aaf2d8cd6ca9ac206b">More...</a><br /></td></tr>
 <tr class="separator:ga1302769eb08072aaf2d8cd6ca9ac206b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4864324c21df5402f4e80ebc95c62a99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga4864324c21df5402f4e80ebc95c62a99">MBEDTLS_HAVEGE_C</a></td></tr>
+<tr class="memdesc:ga4864324c21df5402f4e80ebc95c62a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the HAVEGE random generator.  <a href="#ga4864324c21df5402f4e80ebc95c62a99">More...</a><br /></td></tr>
+<tr class="separator:ga4864324c21df5402f4e80ebc95c62a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ddaec887496f6a2b18975d52afc87d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga3ddaec887496f6a2b18975d52afc87d5">MBEDTLS_HMAC_DRBG_C</a></td></tr>
 <tr class="memdesc:ga3ddaec887496f6a2b18975d52afc87d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the HMAC_DRBG random generator.  <a href="#ga3ddaec887496f6a2b18975d52afc87d5">More...</a><br /></td></tr>
 <tr class="separator:ga3ddaec887496f6a2b18975d52afc87d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17195cf7384dbcab5bae3f1d2971fb03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga17195cf7384dbcab5bae3f1d2971fb03">MBEDTLS_MD_C</a></td></tr>
 <tr class="memdesc:ga17195cf7384dbcab5bae3f1d2971fb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the generic message digest layer.  <a href="#ga17195cf7384dbcab5bae3f1d2971fb03">More...</a><br /></td></tr>
 <tr class="separator:ga17195cf7384dbcab5bae3f1d2971fb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ed2da94286aa1595a58d7168a0b0937"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga5ed2da94286aa1595a58d7168a0b0937">MBEDTLS_MD2_C</a></td></tr>
+<tr class="memdesc:ga5ed2da94286aa1595a58d7168a0b0937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the MD2 hash algorithm.  <a href="#ga5ed2da94286aa1595a58d7168a0b0937">More...</a><br /></td></tr>
+<tr class="separator:ga5ed2da94286aa1595a58d7168a0b0937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga945089db190a5a70b2d37598a0dad567"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga945089db190a5a70b2d37598a0dad567">MBEDTLS_MD4_C</a></td></tr>
+<tr class="memdesc:ga945089db190a5a70b2d37598a0dad567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the MD4 hash algorithm.  <a href="#ga945089db190a5a70b2d37598a0dad567">More...</a><br /></td></tr>
+<tr class="separator:ga945089db190a5a70b2d37598a0dad567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga76686ebb937ad5cc1623638965c4bc22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga76686ebb937ad5cc1623638965c4bc22">MBEDTLS_MD5_C</a></td></tr>
 <tr class="memdesc:ga76686ebb937ad5cc1623638965c4bc22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the MD5 hash algorithm.  <a href="#ga76686ebb937ad5cc1623638965c4bc22">More...</a><br /></td></tr>
 <tr class="separator:ga76686ebb937ad5cc1623638965c4bc22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf9ef263440eefbeed71972dc561d869"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gaaf9ef263440eefbeed71972dc561d869">MBEDTLS_MEMORY_BUFFER_ALLOC_C</a></td></tr>
+<tr class="memdesc:gaaf9ef263440eefbeed71972dc561d869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the buffer allocator implementation that makes use of a (stack) based buffer to 'allocate' dynamic memory.  <a href="#gaaf9ef263440eefbeed71972dc561d869">More...</a><br /></td></tr>
+<tr class="separator:gaaf9ef263440eefbeed71972dc561d869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae73dbeb395510070a756ed6689459b30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gae73dbeb395510070a756ed6689459b30">MBEDTLS_NET_C</a></td></tr>
 <tr class="memdesc:gae73dbeb395510070a756ed6689459b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the TCP/IP networking routines.  <a href="#gae73dbeb395510070a756ed6689459b30">More...</a><br /></td></tr>
 <tr class="separator:gae73dbeb395510070a756ed6689459b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,6 +460,9 @@ SECTION: mbed TLS modules</h2></td></tr>
 <tr class="memitem:ga2d9853334811c4e2220fb5c6266e908e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga2d9853334811c4e2220fb5c6266e908e">MBEDTLS_PKCS5_C</a></td></tr>
 <tr class="memdesc:ga2d9853334811c4e2220fb5c6266e908e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable PKCS#5 functions.  <a href="#ga2d9853334811c4e2220fb5c6266e908e">More...</a><br /></td></tr>
 <tr class="separator:ga2d9853334811c4e2220fb5c6266e908e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb3b23b353c10032e6afaa9e1ba3c2a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gadb3b23b353c10032e6afaa9e1ba3c2a6">MBEDTLS_PKCS11_C</a></td></tr>
+<tr class="memdesc:gadb3b23b353c10032e6afaa9e1ba3c2a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable wrapper for PKCS#11 smartcard support.  <a href="#gadb3b23b353c10032e6afaa9e1ba3c2a6">More...</a><br /></td></tr>
+<tr class="separator:gadb3b23b353c10032e6afaa9e1ba3c2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga66477e50d4c1e5cf01f3f63010596c1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga66477e50d4c1e5cf01f3f63010596c1f">MBEDTLS_PKCS12_C</a></td></tr>
 <tr class="memdesc:ga66477e50d4c1e5cf01f3f63010596c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable PKCS#12 PBE functions.  <a href="#ga66477e50d4c1e5cf01f3f63010596c1f">More...</a><br /></td></tr>
 <tr class="separator:ga66477e50d4c1e5cf01f3f63010596c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -388,6 +502,9 @@ SECTION: mbed TLS modules</h2></td></tr>
 <tr class="memitem:ga85f2821433dbf22916e865a49f2652df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga85f2821433dbf22916e865a49f2652df">MBEDTLS_SSL_TLS_C</a></td></tr>
 <tr class="memdesc:ga85f2821433dbf22916e865a49f2652df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the generic SSL/TLS code.  <a href="#ga85f2821433dbf22916e865a49f2652df">More...</a><br /></td></tr>
 <tr class="separator:ga85f2821433dbf22916e865a49f2652df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga599a23e8bca30ab3fe9ce9151a40f06b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga599a23e8bca30ab3fe9ce9151a40f06b">MBEDTLS_THREADING_C</a></td></tr>
+<tr class="memdesc:ga599a23e8bca30ab3fe9ce9151a40f06b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the threading abstraction layer.  <a href="#ga599a23e8bca30ab3fe9ce9151a40f06b">More...</a><br /></td></tr>
+<tr class="separator:ga599a23e8bca30ab3fe9ce9151a40f06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga207ef8366f5c438b28881e473b3ca87f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga207ef8366f5c438b28881e473b3ca87f">MBEDTLS_TIMING_C</a></td></tr>
 <tr class="memdesc:ga207ef8366f5c438b28881e473b3ca87f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the portable timing interface.  <a href="#ga207ef8366f5c438b28881e473b3ca87f">More...</a><br /></td></tr>
 <tr class="separator:ga207ef8366f5c438b28881e473b3ca87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -423,12 +540,18 @@ SECTION: mbed TLS modules</h2></td></tr>
 SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp3a1bfb7f92835742a003ec110550255f"></a>This section sets Silicon Labs Acceleration settings. </p>
 </td></tr>
+<tr class="memitem:ga455d88c0fd36cd530b0cad47892eb91f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga455d88c0fd36cd530b0cad47892eb91f">MBEDTLS_TIMING_ALT</a></td></tr>
+<tr class="memdesc:ga455d88c0fd36cd530b0cad47892eb91f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uncomment to provide your own alternate implementation for <a class="el" href="timing_8h.html#aeec9ae2577ce34ab01f2d213b99d07e1" title="Return the CPU cycle counter value. ">mbedtls_timing_hardclock()</a>, <a class="el" href="timing_8h.html#a427660928e1e0339d497390c167f895c" title="Return the elapsed time in milliseconds. ">mbedtls_timing_get_timer()</a>, <a class="el" href="timing_8h.html#a7ea7574e836da0dc51b4b16c4033ede3" title="Setup an alarm clock. ">mbedtls_set_alarm()</a>, mbedtls_set/get_delay()  <a href="#ga455d88c0fd36cd530b0cad47892eb91f">More...</a><br /></td></tr>
+<tr class="separator:ga455d88c0fd36cd530b0cad47892eb91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga50fe70e2e5da2dda496e0432261136a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga50fe70e2e5da2dda496e0432261136a5">MBEDTLS_NO_PLATFORM_ENTROPY</a></td></tr>
 <tr class="memdesc:ga50fe70e2e5da2dda496e0432261136a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not use built-in platform entropy functions.  <a href="#ga50fe70e2e5da2dda496e0432261136a5">More...</a><br /></td></tr>
 <tr class="separator:ga50fe70e2e5da2dda496e0432261136a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaccac92f6d5d0f51d52472410fea8256b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gaccac92f6d5d0f51d52472410fea8256b">MBEDTLS_SLCL_PLUGINS</a></td></tr>
 <tr class="memdesc:gaccac92f6d5d0f51d52472410fea8256b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable slcl_xxx.c plugins including support for CRYPTO preemption, asynchronous API support, DMA and BUFC I/O modes, and support for classic EFM32 devices with AES module, EFM32GG, etc.  <a href="#gaccac92f6d5d0f51d52472410fea8256b">More...</a><br /></td></tr>
 <tr class="separator:gaccac92f6d5d0f51d52472410fea8256b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab6b976802eb430ad0eb9c54947356ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gaab6b976802eb430ad0eb9c54947356ad">MBEDTLS_CRYPTO_DEVICE_PREEMPTION</a></td></tr>
+<tr class="memdesc:gaab6b976802eb430ad0eb9c54947356ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable CRYPTO preemption.  <a href="#gaab6b976802eb430ad0eb9c54947356ad">More...</a><br /></td></tr>
+<tr class="separator:gaab6b976802eb430ad0eb9c54947356ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa26fe7f0ff88b6531a7bd48825ad9356"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gaa26fe7f0ff88b6531a7bd48825ad9356">MBEDTLS_AES_ALT</a></td></tr>
 <tr class="memdesc:gaa26fe7f0ff88b6531a7bd48825ad9356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable hardware acceleration for the AES block cipher.  <a href="#gaa26fe7f0ff88b6531a7bd48825ad9356">More...</a><br /></td></tr>
 <tr class="separator:gaa26fe7f0ff88b6531a7bd48825ad9356"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -454,6 +577,20 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <tr class="memitem:ga0038d6cbaf97b8bc19b4e6444ff890a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga0038d6cbaf97b8bc19b4e6444ff890a4">MBEDTLS_MPI_MODULAR_DIVISION_ALT</a></td></tr>
 <tr class="memdesc:ga0038d6cbaf97b8bc19b4e6444ff890a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable hardware acceleration for the elliptic curve over GF(p) library.  <a href="#ga0038d6cbaf97b8bc19b4e6444ff890a4">More...</a><br /></td></tr>
 <tr class="separator:ga0038d6cbaf97b8bc19b4e6444ff890a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d0b057d3d7d7d63a9b3b1e3651f2bd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga4d0b057d3d7d7d63a9b3b1e3651f2bd4">MBEDTLS_ECP_ALT</a></td></tr>
+<tr class="separator:ga4d0b057d3d7d7d63a9b3b1e3651f2bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22ca360d0c8f88e868c0720f1384cacd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga22ca360d0c8f88e868c0720f1384cacd">MBEDTLS_ECP_GROUP_LOAD_ALT</a></td></tr>
+<tr class="memdesc:ga22ca360d0c8f88e868c0720f1384cacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable CRYPTO preemption for the elliptic curve over GF(p) library.  <a href="#ga22ca360d0c8f88e868c0720f1384cacd">More...</a><br /></td></tr>
+<tr class="separator:ga22ca360d0c8f88e868c0720f1384cacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga901a159afa9fc7b72a00a9dd7fefd1e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga901a159afa9fc7b72a00a9dd7fefd1e0">MBEDTLS_CRYPTO_CRITICAL_REGION_ALT</a></td></tr>
+<tr class="memdesc:ga901a159afa9fc7b72a00a9dd7fefd1e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable user defined alternative implementation of CRYPTO critical regions when CRYPTO preemption is enabled.  <a href="#ga901a159afa9fc7b72a00a9dd7fefd1e0">More...</a><br /></td></tr>
+<tr class="separator:ga901a159afa9fc7b72a00a9dd7fefd1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f5333f3138062e4c768f012c9a846f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga2f5333f3138062e4c768f012c9a846f7">MBEDTLS_INCLUDE_ASYNCH_API</a></td></tr>
+<tr class="memdesc:ga2f5333f3138062e4c768f012c9a846f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable asynchronous (non-blocking) API support.  <a href="#ga2f5333f3138062e4c768f012c9a846f7">More...</a><br /></td></tr>
+<tr class="separator:ga2f5333f3138062e4c768f012c9a846f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad695335fadc013b83a2830447411cf6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#gad695335fadc013b83a2830447411cf6c">MBEDTLS_INCLUDE_IO_MODE_DMA</a></td></tr>
+<tr class="memdesc:gad695335fadc013b83a2830447411cf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable support for moving data to/from CRYPTO with DMA.  <a href="#gad695335fadc013b83a2830447411cf6c">More...</a><br /></td></tr>
+<tr class="separator:gad695335fadc013b83a2830447411cf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga50f834040de78ba167cb15a524fdba22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__config.html#ga50f834040de78ba167cb15a524fdba22">MBEDTLS_SHA1_ALT</a></td></tr>
 <tr class="memdesc:ga50f834040de78ba167cb15a524fdba22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable hardware acceleration for the SHA1 cryptographic hash algorithm.  <a href="#ga50f834040de78ba167cb15a524fdba22">More...</a><br /></td></tr>
 <tr class="separator:ga50f834040de78ba167cb15a524fdba22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -478,6 +615,43 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <tr class="separator:ga6c2a0ec24ee2e843114131f1087653cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga3eb8560f0b2f4a237d75ffc7e5b92715"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS__FUNCTION_NAME__ALT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uncomment a macro to let mbed TLS use you alternate core implementation of symmetric crypto or hash function. </p>
+<p>Keep in mind that function prototypes should remain the same.</p>
+<p>This replaces only one function. The header file from mbed TLS is still used, in contrast to the MBEDTLS__MODULE_NAME__ALT flags.</p>
+<p>Example: In case you uncomment MBEDTLS_SHA256_PROCESS_ALT, mbed TLS will no longer provide the <a class="el" href="group__sl__crypto__sha1.html#ga70417cbb2e95ce553501caef9bd6e076">mbedtls_sha1_process()</a> function, but it will still provide the other function (using your <a class="el" href="group__sl__crypto__sha1.html#ga70417cbb2e95ce553501caef9bd6e076">mbedtls_sha1_process()</a> function) and the definition of <a class="el" href="structmbedtls__sha1__context.html" title="SHA-1 context structure. ">mbedtls_sha1_context</a>, so your implementation of mbedtls_sha1_process must be compatible with this definition.</p>
+<p>Note: if you use the AES_xxx_ALT macros, then is is recommended to also set MBEDTLS_AES_ROM_TABLES in order to help the linker garbage-collect the AES tables.</p>
+<p>Uncomment a macro to enable alternate implementation of the corresponding function. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga1e89493a11be33a3517f9b24ffce0e09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS__MODULE_NAME__ALT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uncomment a macro to let mbed TLS use your alternate core implementation of a symmetric crypto or hash module (e.g. </p>
+<p>platform specific assembly optimized implementations). Keep in mind that the function prototypes should remain the same.</p>
+<p>This replaces the whole module. If you only want to replace one of the functions, use one of the MBEDTLS__FUNCTION_NAME__ALT flags.</p>
+<p>Example: In case you uncomment MBEDTLS_AES_ALT, mbed TLS will no longer provide the "struct mbedtls_aes_context" definition and omit the base function declarations and implementations. "aes_alt.h" will be included from "aes.h" to include the new function definitions.</p>
+<p>Uncomment a macro to enable alternate implementation of the corresponding module. </p>
+
+</div>
+</div>
 <a class="anchor" id="gaa26fe7f0ff88b6531a7bd48825ad9356"></a>
 <div class="memitem">
 <div class="memproto">
@@ -492,7 +666,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>Module: sl_crypto/src/sl_aes.c or sl_crypto/src/slcl_aes.c if MBEDTLS_SLCL_PLUGINS is defined.</p>
 <p>See MBEDTLS_AES_C for more information. </p>
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00077">77</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00099">99</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -512,6 +686,21 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>PEM_PARSE uses AES for decrypting encrypted keys. </p>
 
 <p>Definition at line <a class="el" href="config_8h_source.html#l01443">1443</a> of file <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa0aaa3f0466b5ae15ff9bf176f632a3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_AES_ROM_TABLES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Store the AES tables in ROM. </p>
+<p>Uncomment this macro to store the AES tables in ROM. </p>
 
 </div>
 </div>
@@ -657,6 +846,21 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga20e18a582cad78b9b45868de1edbd513"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_CAMELLIA_SMALL_MEMORY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use less ROM for the Camellia implementation (saves about 768 bytes). </p>
+<p>Uncomment this macro to use less memory for Camellia. </p>
+
+</div>
+</div>
 <a class="anchor" id="gaec73bdcf39041cc9a10fc6924fbe896f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -671,8 +875,6 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>Module: sl_crypto/src/slcl_ccm.c</p>
 <p>Requires: MBEDTLS_SLCL_PLUGINS</p>
 <p>See MBEDTLS_CCM_C for more information. </p>
-
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00092">92</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -779,6 +981,23 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga83cc0903ed6bb07061aa0f5c0e5b0382"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_CIPHER_NULL_CIPHER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable NULL cipher. </p>
+<p>Warning: Only do so when you know what you are doing. This allows for encryption or channels without any security!</p>
+<p>Requires MBEDTLS_ENABLE_WEAK_CIPHERSUITES as well to enable the following ciphersuites: MBEDTLS_TLS_ECDH_ECDSA_WITH_NULL_SHA MBEDTLS_TLS_ECDH_RSA_WITH_NULL_SHA MBEDTLS_TLS_ECDHE_ECDSA_WITH_NULL_SHA MBEDTLS_TLS_ECDHE_RSA_WITH_NULL_SHA MBEDTLS_TLS_ECDHE_PSK_WITH_NULL_SHA384 MBEDTLS_TLS_ECDHE_PSK_WITH_NULL_SHA256 MBEDTLS_TLS_ECDHE_PSK_WITH_NULL_SHA MBEDTLS_TLS_DHE_PSK_WITH_NULL_SHA384 MBEDTLS_TLS_DHE_PSK_WITH_NULL_SHA256 MBEDTLS_TLS_DHE_PSK_WITH_NULL_SHA MBEDTLS_TLS_RSA_WITH_NULL_SHA256 MBEDTLS_TLS_RSA_WITH_NULL_SHA MBEDTLS_TLS_RSA_WITH_NULL_MD5 MBEDTLS_TLS_RSA_PSK_WITH_NULL_SHA384 MBEDTLS_TLS_RSA_PSK_WITH_NULL_SHA256 MBEDTLS_TLS_RSA_PSK_WITH_NULL_SHA MBEDTLS_TLS_PSK_WITH_NULL_SHA384 MBEDTLS_TLS_PSK_WITH_NULL_SHA256 MBEDTLS_TLS_PSK_WITH_NULL_SHA</p>
+<p>Uncomment this macro to enable the NULL cipher and ciphersuites </p>
+
+</div>
+</div>
 <a class="anchor" id="gae97ea80bdee414503dbc0f9927aa4f78"></a>
 <div class="memitem">
 <div class="memproto">
@@ -804,6 +1023,23 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="config_8h_source.html#l00381">381</a> of file <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga00b8849c5ce5423d37d3f9b2fe6d20f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_CIPHER_PADDING_XXX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uncomment or comment macros to add support for specific padding modes in the cipher layer with cipher modes that support padding (e.g. </p>
+<p>CBC)</p>
+<p>If you disable all padding modes, only full blocks can be used with CBC.</p>
+<p>Enable padding modes in the cipher layer. </p>
 
 </div>
 </div>
@@ -849,8 +1085,6 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>Module: sl_crypto/src/slcl_cmac.c</p>
 <p>Requires: MBEDTLS_SLCL_PLUGINS, MBEDTLS_CMAC_C and (CRYPTO_COUNT &gt; 0) </p>
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00122">122</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ga44adbf6ab596bdbcff486313978eee04"></a>
@@ -868,7 +1102,41 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>Module: sl_crypto/src/slcl_cmac.c</p>
 <p>Requires: MBEDTLS_SLCL_PLUGINS, MBEDTLS_CMAC_ALT and (CRYPTO_COUNT &gt; 0) </p>
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00107">107</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+</div>
+</div>
+<a class="anchor" id="ga901a159afa9fc7b72a00a9dd7fefd1e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_CRYPTO_CRITICAL_REGION_ALT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable user defined alternative implementation of CRYPTO critical regions when CRYPTO preemption is enabled. </p>
+<p>Module: sl_crypto/src/cryptodrv.c</p>
+<p>Requires: MBEDTLS_SLCL_PLUGINS MBEDTLS_CRYPTO_DEVICE_PREEMPTION and (CRYPTO_COUNT &gt; 0)</p>
+<p>Comment/uncomment macros to disable/enable </p>
+
+</div>
+</div>
+<a class="anchor" id="gaab6b976802eb430ad0eb9c54947356ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_CRYPTO_DEVICE_PREEMPTION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable CRYPTO preemption. </p>
+<p>The CRYPTO preemption support allows a higher priority thread to preempt a lower priority thread that currently owns the CRYPTO module. The context of the lower priority thread will be saved and restored when the higher priority thread is done and releases the ownership of CRYPTO.</p>
+<p>Module: sl_crypto/src/cryptodrv.c</p>
+<p>Caller: sl_crypto/src/slcl_aes.c sl_crypto/src/slcl_ccm.c sl_crypto/src/slcl_cmac.c sl_crypto/src/slcl_ecp.c sl_crypto/src/slcl_sha1.c sl_crypto/src/slcl_sha256.c</p>
+<p>Requires: MBEDTLS_SLCL_PLUGINS and (CRYPTO_COUNT &gt; 0)</p>
+<p>Comment/uncomment macros to disable/enable </p>
 
 </div>
 </div>
@@ -906,6 +1174,39 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>This module provides debugging functions. </p>
 
 <p>Definition at line <a class="el" href="config_8h_source.html#l01652">1652</a> of file <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gad6a272ea0766583ef6c0b9971c730076"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_DEPRECATED_REMOVED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove deprecated functions so that they generate an error if used. </p>
+<p>Functions deprecated in one version will usually be removed in the next version. You can enable this to help you prepare the transition to a new major version by making sure your code is not using these functions.</p>
+<p>Uncomment to get errors on using deprecated functions. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga01eac966e946fa97fc412562e5aeb14b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_DEPRECATED_WARNING</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mark deprecated functions so that they generate a warning if used. </p>
+<p>Functions deprecated in one version will usually be removed in the next version. You can enable this to help you prepare the transition to a new major version by making sure your code is not using these functions.</p>
+<p>This only works with GCC and Clang. With other compilers, you may want to use MBEDTLS_DEPRECATED_REMOVED</p>
+<p>Uncomment to get warnings on using deprecated functions. </p>
 
 </div>
 </div>
@@ -1003,6 +1304,36 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gaf4c97c30b6084ceb60392781b93c9f58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_ECJPAKE_C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the elliptic curve J-PAKE library. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This is currently experimental. EC J-PAKE support is based on the Thread v1.0.0 specification; incompatible changes to the specification might still happen. For this reason, this is disabled by default.</dd></dl>
+<p>Module: library/ecjpake.c Caller:</p>
+<p>This module is used by the following key exchanges: ECJPAKE</p>
+<p>Requires: MBEDTLS_ECP_C, MBEDTLS_MD_C </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4d0b057d3d7d7d63a9b3b1e3651f2bd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_ECP_ALT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="gae9d24fd58758d905e43ace39f9798b46"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1031,7 +1362,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00150">150</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00172">172</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1376,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00148">148</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00170">170</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -1059,7 +1390,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00149">149</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00171">171</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -1143,7 +1474,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00307">307</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00328">328</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -1185,7 +1516,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00308">308</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00329">329</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -1227,7 +1558,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00309">309</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00330">330</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -1283,7 +1614,25 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00325">325</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00346">346</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga22ca360d0c8f88e868c0720f1384cacd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_ECP_GROUP_LOAD_ALT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable CRYPTO preemption for the elliptic curve over GF(p) library. </p>
+<p>Module: sl_crypto/src/slcl_ecp.c</p>
+<p>Caller: library/ecp.c library/ecdh.c library/ecdsa.c library/ecjpake.c</p>
+<p>Requires: MBEDTLS_BIGNUM_C, MBEDTLS_ECP_C, MBEDTLS_ECP_DEVICE_ALT, MBEDTLS_SLCL_PLUGINS MBEDTLS_CRYPTO_DEVICE_PREEMPTION at least one MBEDTLS_ECP_DP_XXX_ENABLED and (CRYPTO_COUNT &gt; 0)</p>
+<p>Comment/uncomment macros to disable/enable </p>
 
 </div>
 </div>
@@ -1297,7 +1646,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00312">312</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00333">333</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -1311,7 +1660,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00328">328</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00349">349</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -1343,7 +1692,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00151">151</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00173">173</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -1357,7 +1706,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00152">152</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00174">174</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -1371,7 +1720,40 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00324">324</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00345">345</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga14236526e3dedb28c71d75c62c4cb0f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_ECP_XXXX_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables specific curves within the Elliptic Curve module. </p>
+<p>By default all supported curves are enabled.</p>
+<p>Comment macros to disable the curve and functions for it </p>
+
+</div>
+</div>
+<a class="anchor" id="ga9aaebc5c4f3b47b232f5a47ea80e9cef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_ENABLE_WEAK_CIPHERSUITES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable weak ciphersuites in SSL / TLS. </p>
+<p>Warning: Only do so when you know what you are doing. This allows for channels with virtually no security at all!</p>
+<p>This enables the following ciphersuites: MBEDTLS_TLS_RSA_WITH_DES_CBC_SHA MBEDTLS_TLS_DHE_RSA_WITH_DES_CBC_SHA</p>
+<p>Uncomment this macro to enable weak ciphersuites </p>
 
 </div>
 </div>
@@ -1391,6 +1773,39 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>This module provides a generic entropy pool </p>
 
 <p>Definition at line <a class="el" href="config_8h_source.html#l01770">1770</a> of file <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0afc8d757b975eaa78d7a2052348f084"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_ENTROPY_FORCE_SHA256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Force the entropy accumulator to use a SHA-256 accumulator instead of the default SHA-512 based one (if both are available). </p>
+<p>Requires: MBEDTLS_SHA256_C</p>
+<p>On 32-bit systems SHA-256 can be much faster than SHA-512. Use this option if you have performance concerns.</p>
+<p>This option is only useful if both MBEDTLS_SHA256_C and MBEDTLS_SHA512_C are defined. Otherwise the available hash module is used. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga1a0f22be83a0b34bd8e8251b77a680a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_ENTROPY_HARDWARE_ALT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uncomment this macro to let mbed TLS use your own implementation of a hardware entropy collector. </p>
+<p>Your function must be called <code>mbedtls_hardware_poll()</code>, have the same prototype as declared in <a class="el" href="entropy__poll_8h.html" title="Platform-specific and custom entropy polling functions. ">entropy_poll.h</a>, and accept NULL as first argument.</p>
+<p>Uncomment to use your own hardware entropy collector. </p>
 
 </div>
 </div>
@@ -1501,6 +1916,21 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gaae6beebdf8a3b2934564826b52ebc258"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_HAVE_SSE2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CPU supports SSE2 instruction set. </p>
+<p>Uncomment if the CPU supports SSE2 (IA-32 specific). </p>
+
+</div>
+</div>
 <a class="anchor" id="ga0d2a3e0e00f099a570fa56a0c4cf0d35"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1537,6 +1967,25 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga4864324c21df5402f4e80ebc95c62a99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_HAVEGE_C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the HAVEGE random generator. </p>
+<p>Warning: the HAVEGE random generator is not suitable for virtualized environments</p>
+<p>Warning: the HAVEGE random generator is dependent on timing and specific processor traits. It is therefore not advised to use HAVEGE as your applications primary random generator or primary entropy pool input. As a secondary input to your entropy pool, it IS able add the (limited) extra entropy it provides.</p>
+<p>Module: library/havege.c Caller:</p>
+<p>Requires: MBEDTLS_TIMING_C</p>
+<p>Uncomment to enable the HAVEGE random generator. </p>
+
+</div>
+</div>
 <a class="anchor" id="ga3ddaec887496f6a2b18975d52afc87d5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1553,6 +2002,40 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>Uncomment to enable the HMAC_DRBG random number geerator. </p>
 
 <p>Definition at line <a class="el" href="config_8h_source.html#l01833">1833</a> of file <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2f5333f3138062e4c768f012c9a846f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_INCLUDE_ASYNCH_API</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable asynchronous (non-blocking) API support. </p>
+<p>Module: sl_crypto/src/slcl_aes.c sl_crypto/src/slcl_ccm.c</p>
+<p>Requires: MBEDTLS_SLCL_PLUGINS MBEDTLS_AES_ALT or MBEDTLS_CCM_ALT and (CRYPTO_COUNT &gt; 0)</p>
+<p>Comment/uncomment macros to disable/enable </p>
+
+</div>
+</div>
+<a class="anchor" id="gad695335fadc013b83a2830447411cf6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_INCLUDE_IO_MODE_DMA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable support for moving data to/from CRYPTO with DMA. </p>
+<p>Module: sl_crypto/src/slcl_aes.c sl_crypto/src/slcl_ccm.c</p>
+<p>Requires: MBEDTLS_SLCL_PLUGINS MBEDTLS_AES_ALT or MBEDTLS_CCM_ALT and (CRYPTO_COUNT &gt; 0)</p>
+<p>Comment/uncomment macros to disable/enable </p>
 
 </div>
 </div>
@@ -1682,6 +2165,23 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gac9580ac865324c142232c3e0bc654e14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_KEY_EXCHANGE_ECJPAKE_ENABLED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the ECJPAKE based ciphersuite modes in SSL / TLS. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This is currently experimental. EC J-PAKE support is based on the Thread v1.0.0 specification; incompatible changes to the specification might still happen. For this reason, this is disabled by default.</dd></dl>
+<p>Requires: MBEDTLS_ECJPAKE_C MBEDTLS_SHA256_C MBEDTLS_ECP_DP_SECP256R1_ENABLED</p>
+<p>This enables the following ciphersuites (if other requisites are enabled as well): MBEDTLS_TLS_ECJPAKE_WITH_AES_128_CCM_8 </p>
+
+</div>
+</div>
 <a class="anchor" id="gad40b43f5e34794970572576ef3984bae"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1735,6 +2235,38 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga5ed2da94286aa1595a58d7168a0b0937"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_MD2_C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the MD2 hash algorithm. </p>
+<p>Module: library/mbedtls_md2.c Caller:</p>
+<p>Uncomment to enable support for (rare) MD2-signed X.509 certs. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga945089db190a5a70b2d37598a0dad567"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_MD4_C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the MD4 hash algorithm. </p>
+<p>Module: library/mbedtls_md4.c Caller:</p>
+<p>Uncomment to enable support for (rare) MD4-signed X.509 certs. </p>
+
+</div>
+</div>
 <a class="anchor" id="ga76686ebb937ad5cc1623638965c4bc22"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1771,6 +2303,57 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga83f3304f871a4b1dc4fad7e98e793789"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_MEMORY_BACKTRACE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Include backtrace information with each allocated block. </p>
+<p>Requires: MBEDTLS_MEMORY_BUFFER_ALLOC_C GLIBC-compatible backtrace() an backtrace_symbols() support</p>
+<p>Uncomment this macro to include backtrace information </p>
+
+</div>
+</div>
+<a class="anchor" id="gaaf9ef263440eefbeed71972dc561d869"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_MEMORY_BUFFER_ALLOC_C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the buffer allocator implementation that makes use of a (stack) based buffer to 'allocate' dynamic memory. </p>
+<p>(replaces calloc() and free() calls)</p>
+<p>Module: library/memory_buffer_alloc.c</p>
+<p>Requires: MBEDTLS_PLATFORM_C MBEDTLS_PLATFORM_MEMORY (to use it within mbed TLS)</p>
+<p>Enable this module to enable the buffer memory allocator. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga2d84b57d940e214aec774c288f538267"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_MEMORY_DEBUG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable debugging of buffer allocator memory issues. </p>
+<p>Automatically prints (to stderr) all (fatal) messages on memory allocation issues. Enables function for 'debug output' of allocated memory.</p>
+<p>Requires: MBEDTLS_MEMORY_BUFFER_ALLOC_C</p>
+<p>Uncomment this macro to let the buffer allocator print out error messages. </p>
+
+</div>
+</div>
 <a class="anchor" id="ga02bfffc46b7b2e10c0080d29bb56e6b0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1781,7 +2364,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00314">314</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00335">335</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -1799,7 +2382,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>Module: sl_crypto/src/sl_ecp.c or sl_crypto/src/slcl_ecp.c if MBEDTLS_SLCL_PLUGINS is defined. Caller: library/ecp.c library/ecdh.c library/ecdsa.c library/ecjpake.c</p>
 <p>Requires: MBEDTLS_BIGNUM_C, MBEDTLS_ECP_C and at least one MBEDTLS_ECP_DP_XXX_ENABLED and (CRYPTO_COUNT &gt; 0) </p>
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00153">153</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00175">175</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -1821,6 +2404,23 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gaf7975b148abc283e6ee41854637185e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_NO_DEFAULT_ENTROPY_SOURCES</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do not add default entropy sources. </p>
+<p>These are the platform specific, mbedtls_timing_hardclock and HAVEGE based poll functions.</p>
+<p>This is useful to have more control over the added entropy sources in an application.</p>
+<p>Uncomment this macro to prevent loading of default entropy functions. </p>
+
+</div>
+</div>
 <a class="anchor" id="ga50fe70e2e5da2dda496e0432261136a5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1835,7 +2435,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>This is useful if your platform does not support standards like the /dev/urandom or Windows CryptoAPI.</p>
 <p>Uncomment this macro to disable the built-in platform entropy functions. </p>
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00334">334</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00355">355</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -2006,6 +2606,23 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gadb3b23b353c10032e6afaa9e1ba3c2a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_PKCS11_C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable wrapper for PKCS#11 smartcard support. </p>
+<p>Module: library/pkcs11.c Caller: library/pk.c</p>
+<p>Requires: MBEDTLS_PK_C</p>
+<p>This module enables SSL/TLS PKCS #11 smartcard support. Requires the presence of the PKCS#11 helper library (libpkcs11-helper) </p>
+
+</div>
+</div>
 <a class="anchor" id="ga66477e50d4c1e5cf01f3f63010596c1f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2101,6 +2718,62 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gae58dba1b4a4c30f8c4d2f0e6080351af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_PLATFORM_MEMORY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the memory allocation layer. </p>
+<p>By default mbed TLS uses the system-provided calloc() and free(). This allows different allocators (self-implemented or provided) to be provided to the platform abstraction layer.</p>
+<p>Enabling MBEDTLS_PLATFORM_MEMORY without the MBEDTLS_PLATFORM_{FREE,CALLOC}_MACROs will provide "mbedtls_platform_set_calloc_free()" allowing you to set an alternative calloc() and free() function pointer at runtime.</p>
+<p>Enabling MBEDTLS_PLATFORM_MEMORY and specifying MBEDTLS_PLATFORM_{CALLOC,FREE}_MACROs will allow you to specify the alternate function at compile time.</p>
+<p>Requires: MBEDTLS_PLATFORM_C</p>
+<p>Enable this layer to allow use of alternative memory allocators. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga177299909ee6cd36ec008af9c0e617ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_PLATFORM_NO_STD_FUNCTIONS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do not assign standard functions in the platform layer (e.g. </p>
+<p>calloc() to MBEDTLS_PLATFORM_STD_CALLOC and printf() to MBEDTLS_PLATFORM_STD_PRINTF)</p>
+<p>This makes sure there are no linking errors on platforms that do not support these functions. You will HAVE to provide alternatives, either at runtime via the platform_set_xxx() functions or at compile time by setting the MBEDTLS_PLATFORM_STD_XXX defines, or enabling a MBEDTLS_PLATFORM_XXX_MACRO.</p>
+<p>Requires: MBEDTLS_PLATFORM_C</p>
+<p>Uncomment to prevent default assignment of standard functions in the platform layer. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga82288117b1bf6d937a690a6f54edda2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_PLATFORM_XXX_ALT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uncomment a macro to let mbed TLS support the function in the platform abstraction layer. </p>
+<p>Example: In case you uncomment MBEDTLS_PLATFORM_PRINTF_ALT, mbed TLS will provide a function "mbedtls_platform_set_printf()" that allows you to set an alternative printf function pointer.</p>
+<p>All these define require MBEDTLS_PLATFORM_C to be defined!</p>
+<dl class="section note"><dt>Note</dt><dd>MBEDTLS_PLATFORM_SNPRINTF_ALT is required on Windows; it will be enabled automatically by <a class="el" href="check__config_8h.html" title="Consistency checks for configuration options. ">check_config.h</a></dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>MBEDTLS_PLATFORM_XXX_ALT cannot be defined at the same time as MBEDTLS_PLATFORM_XXX_MACRO!</dd></dl>
+<p>Uncomment a macro to enable alternate implementation of specific base platform function </p>
+
+</div>
+</div>
 <a class="anchor" id="gaa50e586e2dcca9ffae22edc28bdd82a9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2155,6 +2828,21 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gacdcc720facc10a3688d62ce9937df8e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_RSA_NO_CRT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do not use the Chinese Remainder Theorem for the RSA private operation. </p>
+<p>Uncomment this macro to disable the use of CRT in RSA. </p>
+
+</div>
+</div>
 <a class="anchor" id="gad70d6eb71def154fc4cefa0d0ec90d96"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2185,7 +2873,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>Module: sl_crypto/src/sl_sha1.c or sl_crypto/src/slcl_sha1.c if MBEDTLS_SLCL_PLUGINS is defined. Caller: library/mbedtls_md.c library/ssl_cli.c library/ssl_srv.c library/ssl_tls.c library/x509write_crt.c</p>
 <p>Requires: MBEDTLS_SHA1_C and (CRYPTO_COUNT &gt; 0) See MBEDTLS_SHA1_C for more information. </p>
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00262">262</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00283">283</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -2221,7 +2909,7 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>Module: sl_crypto/src/sl_sha256.c or sl_crypto/src/slcl_sha256.c if MBEDTLS_SLCL_PLUGINS is defined. Caller: library/entropy.c library/mbedtls_md.c library/ssl_cli.c library/ssl_srv.c library/ssl_tls.c</p>
 <p>Requires: MBEDTLS_SHA256_C and (CRYPTO_COUNT &gt; 0) See MBEDTLS_SHA256_C for more information. </p>
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00284">284</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00305">305</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
 
 </div>
 </div>
@@ -2240,6 +2928,22 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>This module adds support for SHA-224 and SHA-256. This module is required for the SSL/TLS 1.2 PRF function. </p>
 
 <p>Definition at line <a class="el" href="config_8h_source.html#l02153">2153</a> of file <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga37056e26ff582813ab505fa8e59287b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_SHA256_SMALLER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable an implementation of SHA-256 that has lower ROM footprint but also lower performance. </p>
+<p>The default implementation is meant to be a reasonnable compromise between performance and size. This version optimizes more aggressively for size at the expense of performance. Eg on Cortex-M4 it reduces the size of <a class="el" href="group__sl__crypto__sha256.html#ga1166c1d669de6fe668623612d936f402">mbedtls_sha256_process()</a> from ~2KB to ~0.5KB for a performance hit of about 30%.</p>
+<p>Uncomment to enable the smaller implementation of SHA256. </p>
 
 </div>
 </div>
@@ -2275,7 +2979,21 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>Module: sl_crypto/src/slcl_xxx.c</p>
 <p>Comment/uncomment to disable/enable. </p>
 
-<p>Definition at line <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html#l00063">63</a> of file <a class="el" href="config-sl-crypto-all-acceleration_8h_source.html">config-sl-crypto-all-acceleration.h</a>.</p>
+</div>
+</div>
+<a class="anchor" id="gadd7fdcac5f6d598ade117bf370f388fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_SSL_AEAD_RANDOM_IV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a random IV rather than using the record sequence number as a nonce for ciphersuites using and AEAD algorithm (GCM or CCM). </p>
+<p>Using the sequence number is generally recommended.</p>
+<p>Uncomment this macro to always use random IVs with AEAD ciphersuites. </p>
 
 </div>
 </div>
@@ -2384,6 +3102,23 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>Module: library/ssl_cookie.c Caller: </p>
 
 <p>Definition at line <a class="el" href="config_8h_source.html#l02190">2190</a> of file <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7f7e00e92f146c9248dfcb2f4c9debfc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_SSL_DEBUG_ALL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the debug messages in SSL module for all issues. </p>
+<p>Debug messages have been disabled in some places to prevent timing attacks due to (unbalanced) debugging function calls.</p>
+<p>If you need all error reporting you should enable this during debugging, but remove this for production servers that should log as well.</p>
+<p>Uncomment this macro to report all debug messages on errors introducing a timing side-channel. </p>
 
 </div>
 </div>
@@ -2536,6 +3271,21 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>Comment this macro to disable support for FALLBACK_SCSV </p>
 
 <p>Definition at line <a class="el" href="config_8h_source.html#l00988">988</a> of file <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga36d3a612701a9919864241d8757de3a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_SSL_HW_RECORD_ACCEL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable hooking functions in SSL module for hardware acceleration of individual records. </p>
+<p>Uncomment this macro to enable hooking functions. </p>
 
 </div>
 </div>
@@ -2720,6 +3470,36 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gaae29207b42956ccaac4ca3a925162067"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_SSL_SRV_RESPECT_CLIENT_PREFERENCE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pick the ciphersuite according to the client's preferences rather than ours in the SSL Server module (MBEDTLS_SSL_SRV_C). </p>
+<p>Uncomment this macro to respect client's ciphersuite order </p>
+
+</div>
+</div>
+<a class="anchor" id="ga30ec7589dce5c8fc315303ec82920011"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_SSL_SRV_SUPPORT_SSLV2_CLIENT_HELLO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable support for receiving and parsing SSLv2 Client Hello messages for the SSL Server module (MBEDTLS_SSL_SRV_C). </p>
+<p>Uncomment this macro to enable support for SSLv2 Client Hello messages. </p>
+
+</div>
+</div>
 <a class="anchor" id="ga0ce8705f94c4fa4b35e818ee72d3cc76"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2771,6 +3551,75 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>Comment this macro to disable support for truncated HMAC in SSL </p>
 
 <p>Definition at line <a class="el" href="config_8h_source.html#l01230">1230</a> of file <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gabe7c4328406cacf7873f59024bf7047b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_THREADING_ALT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provide your own alternate threading implementation. </p>
+<p>Requires: MBEDTLS_THREADING_C</p>
+<p>Uncomment this to allow your own alternate threading implementation. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga599a23e8bca30ab3fe9ce9151a40f06b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_THREADING_C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the threading abstraction layer. </p>
+<p>By default mbed TLS assumes it is used in a non-threaded environment or that contexts are not shared between threads. If you do intend to use contexts between threads, you will need to enable this layer to prevent race conditions.</p>
+<p>Module: library/threading.c</p>
+<p>This allows different threading implementations (self-implemented or provided).</p>
+<p>You will have to enable either MBEDTLS_THREADING_ALT or MBEDTLS_THREADING_PTHREAD.</p>
+<p>Enable this layer to allow use of mutexes within mbed TLS </p>
+
+</div>
+</div>
+<a class="anchor" id="gaa63c4047f878fda72db99162c13a328f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_THREADING_PTHREAD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable the pthread wrapper layer for the threading layer. </p>
+<p>Requires: MBEDTLS_THREADING_C</p>
+<p>Uncomment this to enable pthread mutexes. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga455d88c0fd36cd530b0cad47892eb91f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_TIMING_ALT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Uncomment to provide your own alternate implementation for <a class="el" href="timing_8h.html#aeec9ae2577ce34ab01f2d213b99d07e1" title="Return the CPU cycle counter value. ">mbedtls_timing_hardclock()</a>, <a class="el" href="timing_8h.html#a427660928e1e0339d497390c167f895c" title="Return the elapsed time in milliseconds. ">mbedtls_timing_get_timer()</a>, <a class="el" href="timing_8h.html#a7ea7574e836da0dc51b4b16c4033ede3" title="Setup an alarm clock. ">mbedtls_set_alarm()</a>, mbedtls_set/get_delay() </p>
+<p>Enable timing support for SiliconLabs devices including mbedtls_timing_init(), mbedtls_timing_free() and <a class="el" href="timing_8h.html#aeec9ae2577ce34ab01f2d213b99d07e1" title="Return the CPU cycle counter value. ">mbedtls_timing_hardclock()</a> using the DWT cycle counter to return timestamps.</p>
+<p>Only works if you have MBEDTLS_TIMING_C enabled.</p>
+<p>You will need to provide a header "timing_alt.h" and an implementation at compile time.</p>
+<p>Requires MBEDTLS_TIMING_C and DWT (defined by ARM CMSIS interface for some Cortex-M cores). </p>
 
 </div>
 </div>
@@ -2826,6 +3675,37 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 <p>Comment this to disable run-time checking and save ROM space </p>
 
 <p>Definition at line <a class="el" href="config_8h_source.html#l01265">1265</a> of file <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7d205ac6795441227a9978cc49f99c3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_X509_ALLOW_EXTENSIONS_NON_V3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If set, the X509 parser will not break-off when parsing an X509 certificate and encountering an extension in a v1 or v2 certificate. </p>
+<p>Uncomment to prevent an error. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga32e9a25fc17d6859676443ed48d13849"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_X509_ALLOW_UNSUPPORTED_CRITICAL_EXTENSION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If set, the X509 parser will not break-off when parsing an X509 certificate and encountering an unknown critical extension. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Depending on your PKI use, enabling this can be a security risk!</dd></dl>
+<p>Uncomment to prevent an error. </p>
 
 </div>
 </div>
@@ -3034,10 +3914,29 @@ SECTION: Silicon Labs Acceleration settings</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gafaedfe155368fb34400b7ac91e24d625"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_ZLIB_SUPPORT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If set, the SSL/TLS module uses ZLIB to support compression and decompression of packet data. </p>
+<dl class="section warning"><dt>Warning</dt><dd>TLS-level compression MAY REDUCE SECURITY! See for example the CRIME attack. Before enabling this option, you should examine with care if CRIME or similar exploits may be a applicable to your use case.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Currently compression can't be used with DTLS.</dd></dl>
+<p>Used in: library/ssl_tls.c library/ssl_cli.c library/ssl_srv.c</p>
+<p>This feature requires zlib library and headers to be present.</p>
+<p>Uncomment to enable use of ZLIB </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 13 2016 11:17:24 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 16:12:43 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

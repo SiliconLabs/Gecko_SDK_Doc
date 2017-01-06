@@ -79,123 +79,121 @@
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">//#define MBEDTLS_SLCL_PLUGINS</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/* Enable MBEDTLS_SLCL_PLUGINS in order to generate documentation: */</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#if defined(DOXY_DOC_ONLY)</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gaccac92f6d5d0f51d52472410fea8256b">   63</a></span>&#160;<span class="preprocessor">#define MBEDTLS_SLCL_PLUGINS</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gaa26fe7f0ff88b6531a7bd48825ad9356">   77</a></span>&#160;<span class="preprocessor">#define MBEDTLS_AES_ALT</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS)</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gaec73bdcf39041cc9a10fc6924fbe896f">   92</a></span>&#160;<span class="preprocessor">#define MBEDTLS_CCM_ALT</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS) &amp;&amp; defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga44adbf6ab596bdbcff486313978eee04">  107</a></span>&#160;<span class="preprocessor">#define MBEDTLS_CMAC_C</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS) &amp;&amp; defined(MBEDTLS_CMAC_C) &amp;&amp; \</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">  defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gabb151e58e0bb2ad7aa3b9a8e0fb5fe77">  122</a></span>&#160;<span class="preprocessor">#define MBEDTLS_CMAC_ALT</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#if defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gaff5740539b67afab673968b3ac0118e6">  148</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_DEVICE_ALT</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga3ee9ff97ea401aa5351a336a47cabbaf">  149</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_DOUBLE_JAC_ALT</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga743936e62321f743f2e2a59064d78eb2">  150</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_DEVICE_ADD_MIXED_ALT</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gad6e63f4eb07794248dcebe5a1a4f4594">  151</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_NORMALIZE_JAC_ALT</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gac9a5000c306147f41cdaafa81acc905c">  152</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_NORMALIZE_JAC_MANY_ALT</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga0038d6cbaf97b8bc19b4e6444ff890a4">  153</a></span>&#160;<span class="preprocessor">#define MBEDTLS_MPI_MODULAR_DIVISION_ALT</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS) &amp;&amp; defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">//#define MBEDTLS_ECP_ALT</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">//#define MBEDTLS_ECP_GROUP_LOAD_ALT</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">//#define MBEDTLS_CRYPTO_DEVICE_PREEMPTION</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS) &amp;&amp; defined(MBEDTLS_CRYPTO_DEVICE_PREEMPTION) &amp;&amp; \</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">  defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">//#define MBEDTLS_CRYPTO_CRITICAL_REGION_ALT</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS) &amp;&amp; \</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">  (defined(MBEDTLS_AES_ALT) || defined(MBEDTLS_CCM_ALT)) &amp;&amp; \</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">  defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment">//#define MBEDTLS_INCLUDE_ASYNCH_API</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS) &amp;&amp; \</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">  (defined(MBEDTLS_AES_ALT) || defined(MBEDTLS_CCM_ALT)) &amp;&amp; \</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">  defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">//#define MBEDTLS_INCLUDE_IO_MODE_DMA</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#if defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga50f834040de78ba167cb15a524fdba22">  262</a></span>&#160;<span class="preprocessor">#define MBEDTLS_SHA1_ALT</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS) &amp;&amp; defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">//#define MBEDTLS_CRYPTO_DEVICE_PREEMPTION</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gaa26fe7f0ff88b6531a7bd48825ad9356">   99</a></span>&#160;<span class="preprocessor">#define MBEDTLS_AES_ALT</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS)</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#define MBEDTLS_CCM_ALT</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS) &amp;&amp; defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#define MBEDTLS_CMAC_C</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS) &amp;&amp; defined(MBEDTLS_CMAC_C) &amp;&amp; \</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">  defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#define MBEDTLS_CMAC_ALT</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#if defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gaff5740539b67afab673968b3ac0118e6">  170</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_DEVICE_ALT</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga3ee9ff97ea401aa5351a336a47cabbaf">  171</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_DOUBLE_JAC_ALT</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga743936e62321f743f2e2a59064d78eb2">  172</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_DEVICE_ADD_MIXED_ALT</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gad6e63f4eb07794248dcebe5a1a4f4594">  173</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_NORMALIZE_JAC_ALT</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gac9a5000c306147f41cdaafa81acc905c">  174</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_NORMALIZE_JAC_MANY_ALT</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga0038d6cbaf97b8bc19b4e6444ff890a4">  175</a></span>&#160;<span class="preprocessor">#define MBEDTLS_MPI_MODULAR_DIVISION_ALT</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS) &amp;&amp; defined(MBEDTLS_CRYPTO_DEVICE_PREEMPTION) &amp;&amp; defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_ALT</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_GROUP_LOAD_ALT</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS) &amp;&amp; defined(MBEDTLS_CRYPTO_DEVICE_PREEMPTION) &amp;&amp; \</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">  defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">//#define MBEDTLS_CRYPTO_CRITICAL_REGION_ALT</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS) &amp;&amp; \</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">  (defined(MBEDTLS_AES_ALT) || defined(MBEDTLS_CCM_ALT)) &amp;&amp; \</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">  defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment">//#define MBEDTLS_INCLUDE_ASYNCH_API</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SLCL_PLUGINS) &amp;&amp; \</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">  (defined(MBEDTLS_AES_ALT) || defined(MBEDTLS_CCM_ALT)) &amp;&amp; \</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">  defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">//#define MBEDTLS_INCLUDE_IO_MODE_DMA</span></div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#if defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga2bcb06530a302f01bd89495d00002125">  284</a></span>&#160;<span class="preprocessor">#define MBEDTLS_SHA256_ALT</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #if !defined(NO_CRYPTO_ACCELERATION) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#if defined (DWT)</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">#define MBEDTLS_TIMING_ALT</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">/* Default ECC configuration for Silicon Labs devices: */</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">/* ECC curves supported by CRYPTO hardware module: */</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga8c45e2be551b48e4feb1453fff99b8d5">  307</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_DP_SECP192R1_ENABLED</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga53ca938afec54658ef4b643c60ed617c">  308</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_DP_SECP224R1_ENABLED</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gaa7661e25bab8f0e87060ee05f1216fe4">  309</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_DP_SECP256R1_ENABLED</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment">/* Save RAM by adjusting to our exact needs */</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga98099ce7241e89e42ba34b79e770a0ab">  312</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_MAX_BITS   256</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">#ifndef MBEDTLS_MPI_MAX_SIZE</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga02bfffc46b7b2e10c0080d29bb56e6b0">  314</a></span>&#160;<span class="preprocessor">#define MBEDTLS_MPI_MAX_SIZE    32 // 384 bits is 48 bytes</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">/* </span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">   Set MBEDTLS_ECP_WINDOW_SIZE to configure</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">   ECC point multiplication window size, see ecp.h:</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">   2 = Save RAM at the expense of speed</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">   3 = Improve speed at the expense of RAM</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">   4 = Optimize speed at the expense of RAM</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga0e14e10966cfd209e80d66a16b6c94ec">  324</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_WINDOW_SIZE        3</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gab5f2493612bbc9538cb749e85c5e46af">  325</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_FIXED_POINT_OPTIM  0</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#if defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga50f834040de78ba167cb15a524fdba22">  283</a></span>&#160;<span class="preprocessor">#define MBEDTLS_SHA1_ALT</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#if defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0)</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga2bcb06530a302f01bd89495d00002125">  305</a></span>&#160;<span class="preprocessor">#define MBEDTLS_SHA256_ALT</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #if !defined(NO_CRYPTO_ACCELERATION) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">#if defined (DWT)</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">#define MBEDTLS_TIMING_ALT</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">/* Default ECC configuration for Silicon Labs devices: */</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment">/* Significant speed benefit at the expense of some ROM */</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga6c2a0ec24ee2e843114131f1087653cf">  328</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_NIST_OPTIM</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment">/* Include the default mbedtls config file */</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">mbedtls/config.h</a>&quot;</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#undef MBEDTLS_FS_IO</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga50fe70e2e5da2dda496e0432261136a5">  334</a></span>&#160;<span class="preprocessor">#define MBEDTLS_NO_PLATFORM_ENTROPY</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment">/* Hardware entropy source is not yet supported. Uncomment this macro to </span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">   provide your own implementation of an entropy collector. */</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">//#define MBEDTLS_ENTROPY_HARDWARE_ALT</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">/* Exclude and/or change default config here. E.g.: */</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment">//#undef MBEDTLS_ECP_DP_SECP384R1_ENABLED</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">//#undef MBEDTLS_ECP_DP_SECP521R1_ENABLED</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment">//#undef MBEDTLS_ECP_DP_BP384R1_ENABLED</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment">//#undef MBEDTLS_ECP_DP_BP512R1_ENABLED</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment">//#undef MBEDTLS_SHA512_C</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="check__config_8h.html">mbedtls/check_config.h</a>&quot;</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment">/* ECC curves supported by CRYPTO hardware module: */</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga8c45e2be551b48e4feb1453fff99b8d5">  328</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_DP_SECP192R1_ENABLED</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga53ca938afec54658ef4b643c60ed617c">  329</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_DP_SECP224R1_ENABLED</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gaa7661e25bab8f0e87060ee05f1216fe4">  330</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_DP_SECP256R1_ENABLED</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment">/* Save RAM by adjusting to our exact needs */</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga98099ce7241e89e42ba34b79e770a0ab">  333</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_MAX_BITS   256</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">#ifndef MBEDTLS_MPI_MAX_SIZE</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga02bfffc46b7b2e10c0080d29bb56e6b0">  335</a></span>&#160;<span class="preprocessor">#define MBEDTLS_MPI_MAX_SIZE    32 // 384 bits is 48 bytes</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">/* </span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">   Set MBEDTLS_ECP_WINDOW_SIZE to configure</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment">   ECC point multiplication window size, see ecp.h:</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">   2 = Save RAM at the expense of speed</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment">   3 = Improve speed at the expense of RAM</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment">   4 = Optimize speed at the expense of RAM</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga0e14e10966cfd209e80d66a16b6c94ec">  345</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_WINDOW_SIZE        3</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#gab5f2493612bbc9538cb749e85c5e46af">  346</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_FIXED_POINT_OPTIM  0</span></div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_CONFIG_SL_CRYPTO_ALL_ACCELERATION_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment">/* Significant speed benefit at the expense of some ROM */</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga6c2a0ec24ee2e843114131f1087653cf">  349</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECP_NIST_OPTIM</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment">/* Include the default mbedtls config file */</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="config_8h.html">mbedtls/config.h</a>&quot;</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="preprocessor">#undef MBEDTLS_FS_IO</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="group__sl__crypto__config.html#ga50fe70e2e5da2dda496e0432261136a5">  355</a></span>&#160;<span class="preprocessor">#define MBEDTLS_NO_PLATFORM_ENTROPY</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">/* Hardware entropy source is not yet supported. Uncomment this macro to </span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">   provide your own implementation of an entropy collector. */</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">//#define MBEDTLS_ENTROPY_HARDWARE_ALT</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">/* Exclude and/or change default config here. E.g.: */</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">//#undef MBEDTLS_ECP_DP_SECP384R1_ENABLED</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">//#undef MBEDTLS_ECP_DP_SECP521R1_ENABLED</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">//#undef MBEDTLS_ECP_DP_BP384R1_ENABLED</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">//#undef MBEDTLS_ECP_DP_BP512R1_ENABLED</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">//#undef MBEDTLS_SHA512_C</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="check__config_8h.html">mbedtls/check_config.h</a>&quot;</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_CONFIG_SL_CRYPTO_ALL_ACCELERATION_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="config_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div><div class="ttdoc">Compatibility names (set of defines) </div></div>
 <div class="ttc" id="check__config_8h_html"><div class="ttname"><a href="check__config_8h.html">check_config.h</a></div><div class="ttdoc">Consistency checks for configuration options. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 13 2016 11:17:13 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 16:12:39 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

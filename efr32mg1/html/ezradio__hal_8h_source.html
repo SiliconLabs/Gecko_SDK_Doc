@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Mighty Gecko Software Documentation: C:/work/s025_sw_ssh/emdrv/ezradiodrv/common/inc/ezradio_hal.h Source File</title>
+<title>EFR32 Mighty Gecko 1 Software Documentation: c:/work/super/platform/emdrv/ezradiodrv/common/inc/ezradio_hal.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EFR32 Mighty Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32mg1-doc-4.4.0</span>
+   <div id="projectname">EFR32 Mighty Gecko 1 Software Documentation
+   &#160;<span id="projectnumber">efr32mg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -117,47 +117,48 @@ $(document).ready(function(){initNavTree('ezradio__hal_8h_source.html','');});
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;ezradiodrv_config.h&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ezradiodrv__config_8h.html">ezradiodrv_config.h</a>&quot;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/***************************************************************************/</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/***************************************************************************/</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#gabf61af8f57a9c92ea50311df53a7d825">ezradio_hal_GpioInit</a>( <a class="code" href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a> ezradioIrqCallback, <span class="keywordtype">bool</span> enablePTI );</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#gae1cf166781ecf4a2317e0d9d4f504197">ezradio_hal_SpiInit</a>( <span class="keywordtype">void</span> );</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga2ed0dd8b886f54f697fa930ce6706363">ezradio_hal_AssertShutdown</a>  (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga2806bc95f89976726016169ea2b3339c">ezradio_hal_DeassertShutdown</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga09c7ef4b4780a8089505f54ef1f26fd5">ezradio_hal_ClearNsel</a>       (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#gae80c58c4f19b8e2b56c033c94bcb0f10">ezradio_hal_SetNsel</a>         (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;uint8_t <a class="code" href="group__HAL__Layer.html#gaabf77038901412b5b640149538ec5cbe">ezradio_hal_NirqLevel</a>       (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#if defined(EZRADIODRV_DISABLE_PTI) &amp;&amp; defined(EZRADIODRV_COMM_USE_GPIO1_FOR_CTS)</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;uint8_t ezradio_hal_Gpio1Level(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga52e4a984325c6446291b13b1a63e3dff">ezradio_hal_SpiWriteByte</a>    (uint8_t byteToWrite);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga23ca775cc658644f29ceacbcc471606a">ezradio_hal_SpiReadByte</a>     (uint8_t* readByte);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga4121044d05b7372b071773d4582204f5">ezradio_hal_SpiWriteData</a>    (uint8_t byteCount, uint8_t* pData);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga9c4c63403aaa9f22f75391e4c767d298">ezradio_hal_SpiReadData</a>     (uint8_t byteCount, uint8_t* pData);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__HAL__Layer.html#ga7b4e804cd30d3d5071d61ce8205f4346">ezradio_hal_SpiWriteReadData</a>(uint8_t byteCount, uint8_t* txData, uint8_t* rxData);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif //_EZRADIO_HAL_H_</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#gabf61af8f57a9c92ea50311df53a7d825">ezradio_hal_GpioInit</a>( <a class="code" href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a> ezradioIrqCallback, <span class="keywordtype">bool</span> enablePTI );</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#gae1cf166781ecf4a2317e0d9d4f504197">ezradio_hal_SpiInit</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga2ed0dd8b886f54f697fa930ce6706363">ezradio_hal_AssertShutdown</a>  (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga2806bc95f89976726016169ea2b3339c">ezradio_hal_DeassertShutdown</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga09c7ef4b4780a8089505f54ef1f26fd5">ezradio_hal_ClearNsel</a>       (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#gae80c58c4f19b8e2b56c033c94bcb0f10">ezradio_hal_SetNsel</a>         (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;uint8_t <a class="code" href="group__HAL__Layer.html#gaabf77038901412b5b640149538ec5cbe">ezradio_hal_NirqLevel</a>       (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#if defined(EZRADIODRV_DISABLE_PTI) &amp;&amp; defined(EZRADIODRV_COMM_USE_GPIO1_FOR_CTS)</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;uint8_t ezradio_hal_Gpio1Level(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga52e4a984325c6446291b13b1a63e3dff">ezradio_hal_SpiWriteByte</a>    (uint8_t byteToWrite);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga23ca775cc658644f29ceacbcc471606a">ezradio_hal_SpiReadByte</a>     (uint8_t* readByte);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga4121044d05b7372b071773d4582204f5">ezradio_hal_SpiWriteData</a>    (uint8_t byteCount, uint8_t* pData);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span>    <a class="code" href="group__HAL__Layer.html#ga9c4c63403aaa9f22f75391e4c767d298">ezradio_hal_SpiReadData</a>     (uint8_t byteCount, uint8_t* pData);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__HAL__Layer.html#ga7b4e804cd30d3d5071d61ce8205f4346">ezradio_hal_SpiWriteReadData</a>(uint8_t byteCount, uint8_t* txData, uint8_t* rxData);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif //_EZRADIO_HAL_H_</span></div>
 <div class="ttc" id="group__HAL__Layer_html_gae80c58c4f19b8e2b56c033c94bcb0f10"><div class="ttname"><a href="group__HAL__Layer.html#gae80c58c4f19b8e2b56c033c94bcb0f10">ezradio_hal_SetNsel</a></div><div class="ttdeci">void ezradio_hal_SetNsel(void)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00165">ezradio_hal.c:165</a></div></div>
 <div class="ttc" id="group__HAL__Layer_html_gae1cf166781ecf4a2317e0d9d4f504197"><div class="ttname"><a href="group__HAL__Layer.html#gae1cf166781ecf4a2317e0d9d4f504197">ezradio_hal_SpiInit</a></div><div class="ttdeci">void ezradio_hal_SpiInit(void)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00126">ezradio_hal.c:126</a></div></div>
 <div class="ttc" id="group__HAL__Layer_html_ga2ed0dd8b886f54f697fa930ce6706363"><div class="ttname"><a href="group__HAL__Layer.html#ga2ed0dd8b886f54f697fa930ce6706363">ezradio_hal_AssertShutdown</a></div><div class="ttdeci">void ezradio_hal_AssertShutdown(void)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00141">ezradio_hal.c:141</a></div></div>
 <div class="ttc" id="group__HAL__Layer_html_gabf61af8f57a9c92ea50311df53a7d825"><div class="ttname"><a href="group__HAL__Layer.html#gabf61af8f57a9c92ea50311df53a7d825">ezradio_hal_GpioInit</a></div><div class="ttdeci">void ezradio_hal_GpioInit(GPIOINT_IrqCallbackPtr_t ezradioIrqCallback, bool enablePTI)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00066">ezradio_hal.c:66</a></div></div>
 <div class="ttc" id="group__HAL__Layer_html_ga7b4e804cd30d3d5071d61ce8205f4346"><div class="ttname"><a href="group__HAL__Layer.html#ga7b4e804cd30d3d5071d61ce8205f4346">ezradio_hal_SpiWriteReadData</a></div><div class="ttdeci">void ezradio_hal_SpiWriteReadData(uint8_t byteCount, uint8_t *txData, uint8_t *rxData)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00241">ezradio_hal.c:241</a></div></div>
 <div class="ttc" id="group__HAL__Layer_html_ga4121044d05b7372b071773d4582204f5"><div class="ttname"><a href="group__HAL__Layer.html#ga4121044d05b7372b071773d4582204f5">ezradio_hal_SpiWriteData</a></div><div class="ttdeci">void ezradio_hal_SpiWriteData(uint8_t byteCount, uint8_t *pData)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00218">ezradio_hal.c:218</a></div></div>
+<div class="ttc" id="ezradiodrv__config_8h_html"><div class="ttname"><a href="ezradiodrv__config_8h.html">ezradiodrv_config.h</a></div><div class="ttdoc">EZRADIODRV configuration file. </div></div>
 <div class="ttc" id="group__HAL__Layer_html_ga52e4a984325c6446291b13b1a63e3dff"><div class="ttname"><a href="group__HAL__Layer.html#ga52e4a984325c6446291b13b1a63e3dff">ezradio_hal_SpiWriteByte</a></div><div class="ttdeci">void ezradio_hal_SpiWriteByte(uint8_t byteToWrite)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00197">ezradio_hal.c:197</a></div></div>
 <div class="ttc" id="group__HAL__Layer_html_ga9c4c63403aaa9f22f75391e4c767d298"><div class="ttname"><a href="group__HAL__Layer.html#ga9c4c63403aaa9f22f75391e4c767d298">ezradio_hal_SpiReadData</a></div><div class="ttdeci">void ezradio_hal_SpiReadData(uint8_t byteCount, uint8_t *pData)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00229">ezradio_hal.c:229</a></div></div>
 <div class="ttc" id="group__HAL__Layer_html_ga23ca775cc658644f29ceacbcc471606a"><div class="ttname"><a href="group__HAL__Layer.html#ga23ca775cc658644f29ceacbcc471606a">ezradio_hal_SpiReadByte</a></div><div class="ttdeci">void ezradio_hal_SpiReadByte(uint8_t *readByte)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00207">ezradio_hal.c:207</a></div></div>
-<div class="ttc" id="group__GPIOINT_html_ga0359e46b02264e5bae93e0a1224190b4"><div class="ttname"><a href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a></div><div class="ttdeci">void(* GPIOINT_IrqCallbackPtr_t)(uint8_t pin)</div><div class="ttdoc">GPIO interrupt callback function pointer. </div><div class="ttdef"><b>Definition:</b> <a href="gpiointerrupt_8h_source.html#l00047">gpiointerrupt.h:47</a></div></div>
+<div class="ttc" id="group__GPIOINT_html_ga0359e46b02264e5bae93e0a1224190b4"><div class="ttname"><a href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a></div><div class="ttdeci">void(* GPIOINT_IrqCallbackPtr_t)(uint8_t pin)</div><div class="ttdoc">GPIO interrupt callback function pointer. </div><div class="ttdef"><b>Definition:</b> <a href="gpiointerrupt_8h_source.html#l00046">gpiointerrupt.h:46</a></div></div>
 <div class="ttc" id="group__HAL__Layer_html_ga09c7ef4b4780a8089505f54ef1f26fd5"><div class="ttname"><a href="group__HAL__Layer.html#ga09c7ef4b4780a8089505f54ef1f26fd5">ezradio_hal_ClearNsel</a></div><div class="ttdeci">void ezradio_hal_ClearNsel(void)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00157">ezradio_hal.c:157</a></div></div>
 <div class="ttc" id="group__HAL__Layer_html_gaabf77038901412b5b640149538ec5cbe"><div class="ttname"><a href="group__HAL__Layer.html#gaabf77038901412b5b640149538ec5cbe">ezradio_hal_NirqLevel</a></div><div class="ttdeci">uint8_t ezradio_hal_NirqLevel(void)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00175">ezradio_hal.c:175</a></div></div>
 <div class="ttc" id="group__HAL__Layer_html_ga2806bc95f89976726016169ea2b3339c"><div class="ttname"><a href="group__HAL__Layer.html#ga2806bc95f89976726016169ea2b3339c">ezradio_hal_DeassertShutdown</a></div><div class="ttdeci">void ezradio_hal_DeassertShutdown(void)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__hal_8c_source.html#l00149">ezradio_hal.c:149</a></div></div>
@@ -166,8 +167,8 @@ $(document).ready(function(){initNavTree('ezradio__hal_8h_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_74d66e5e415af18c005205f87c017a4f.html">ezradiodrv</a></li><li class="navelem"><a class="el" href="dir_318d8263568d560f171ee5482256b513.html">common</a></li><li class="navelem"><a class="el" href="dir_804dd120e0965964b734107086b7bfad.html">inc</a></li><li class="navelem"><a class="el" href="ezradio__hal_8h.html">ezradio_hal.h</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 11:05:03 for EFR32 Mighty Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_a9326de1addf90fcea92508392adbd27.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_f6c6775b2232fe76f89b93d653eaad54.html">ezradiodrv</a></li><li class="navelem"><a class="el" href="dir_2e3e4d2cf0ddb0faf79fa75caa6878fc.html">common</a></li><li class="navelem"><a class="el" href="dir_4e6c2c6d53733089fe648640a03377f9.html">inc</a></li><li class="navelem"><a class="el" href="ezradio__hal_8h.html">ezradio_hal.h</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 16:04:15 for EFR32 Mighty Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

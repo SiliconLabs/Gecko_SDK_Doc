@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EZR32 Leopard Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/src/em_idac.c Source File</title>
+<title>EZR32 Leopard Gecko Software Documentation: c:/work/super/platform/emlib/src/em_idac.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -118,15 +118,17 @@ $(document).ready(function(){initNavTree('em__idac_8c_source.html','');});
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/***************************************************************************/</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/* Fix for errata IDAC_E101 - IDAC output current degradation */</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#if defined(_EFM32_ZERO_FAMILY) || defined(_EFM32_HAPPY_FAMILY)</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define ERRATA_FIX_IDAC_E101_EN</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">/* Fix for errata IDAC_E101 - IDAC output current degradation */</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#if defined(_EFM32_ZERO_FAMILY) || defined(_EFM32_HAPPY_FAMILY)</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#define ERRATA_FIX_IDAC_E101_EN</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/*******************************************************************************</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> **************************   GLOBAL FUNCTIONS   *******************************</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">/*******************************************************************************</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> **************************   GLOBAL FUNCTIONS   *******************************</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/***************************************************************************/</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> IDAC_Init(IDAC_TypeDef *idac, <span class="keyword">const</span> IDAC_Init_TypeDef *init)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  uint32_t tmp;</div>
@@ -354,15 +356,15 @@ $(document).ready(function(){initNavTree('em__idac_8c_source.html','');});
 <div class="ttc" id="em__assert_8h_html"><div class="ttname"><a href="em__assert_8h.html">em_assert.h</a></div><div class="ttdoc">Emlib peripheral API "assert" implementation. </div></div>
 <div class="ttc" id="em__bus_8h_html"><div class="ttname"><a href="em__bus_8h.html">em_bus.h</a></div><div class="ttdoc">RAM and peripheral bit-field set and clear API. </div></div>
 <div class="ttc" id="em__idac_8h_html"><div class="ttname"><a href="em__idac_8h.html">em_idac.h</a></div><div class="ttdoc">Current Digital to Analog Converter (IDAC) peripheral API. </div></div>
-<div class="ttc" id="group__EZR32LG330F256R69__Peripheral__Declaration_html_ga0fcf54e71ec010df38f8b7a9c1166f1f"><div class="ttname"><a href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a></div><div class="ttdeci">#define DEVINFO</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg330f256r69_8h_source.html#l00429">ezr32lg330f256r69.h:429</a></div></div>
+<div class="ttc" id="group__EZR32LG330F256R69__Peripheral__Declaration_html_ga0fcf54e71ec010df38f8b7a9c1166f1f"><div class="ttname"><a href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a></div><div class="ttdeci">#define DEVINFO</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg330f256r69_8h_source.html#l00432">ezr32lg330f256r69.h:432</a></div></div>
 <div class="ttc" id="group__BUS_html_gaf8574f14855448ecae32c5a9dd0c7164"><div class="ttname"><a href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite</a></div><div class="ttdeci">__STATIC_INLINE void BUS_RegBitWrite(volatile uint32_t *addr, unsigned int bit, unsigned int val)</div><div class="ttdoc">Perform a single-bit write operation on a peripheral register. </div><div class="ttdef"><b>Definition:</b> <a href="em__bus_8h_source.html#l00148">em_bus.h:148</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_b024e35bd40549d46920f272346444ee.html">src</a></li><li class="navelem"><a class="el" href="em__idac_8c.html">em_idac.c</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 11:02:57 for EZR32 Leopard Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a221e95e59b6f0aa21c4dd4fafd285f8.html">src</a></li><li class="navelem"><a class="el" href="em__idac_8c.html">em_idac.c</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 16:03:18 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -26,7 +26,7 @@ var searchData=
   ['udelay_5fcalibrate',['UDELAY_Calibrate',['../group__Udelay.html#ga523f858d15b74728046ceca9796f3046',1,'UDELAY_Calibrate(void):&#160;udelay.c'],['../group__Udelay.html#ga523f858d15b74728046ceca9796f3046',1,'UDELAY_Calibrate(void):&#160;udelay.c']]],
   ['udelay_5fdelay',['UDELAY_Delay',['../group__Udelay.html#ga7b02c652fea1e8305b266ec0356a5ad5',1,'UDELAY_Delay(uint32_t usecs):&#160;udelay.c'],['../group__Udelay.html#ga7b02c652fea1e8305b266ec0356a5ad5',1,'UDELAY_Delay(uint32_t usecs):&#160;udelay.c']]],
   ['uncompress',['Uncompress',['../group__Si114x.html#gac9f2901f83ad5922cd94c220dc93ea8a',1,'Uncompress(uint8_t input):&#160;si114x_functions.c'],['../group__Si114x.html#gac9f2901f83ad5922cd94c220dc93ea8a',1,'Uncompress(uint8_t input):&#160;si114x_functions.c']]],
-  ['updateinterrupts',['updateInterrupts',['../tempdrv_8c.html#a3d3c1e0a68bb10fdeef9360d1c56c18a',1,'tempdrv.c']]],
+  ['updateinterrupts',['updateInterrupts',['../tempdrv_8c.html#a2eb0a16de52bf17b2923dfd60592c789',1,'tempdrv.c']]],
   ['usart_5fbaudrateasyncset',['USART_BaudrateAsyncSet',['../group__USART.html#ga373a66831daf2d2fe59c04b327e0c9a1',1,'em_usart.c']]],
   ['usart_5fbaudratecalc',['USART_BaudrateCalc',['../group__USART.html#gac3af64b304f10a2ea679526f8fe3a9fb',1,'em_usart.c']]],
   ['usart_5fbaudrateget',['USART_BaudrateGet',['../group__USART.html#ga9f78987c84c2023fe907867833cdfab4',1,'em_usart.c']]],

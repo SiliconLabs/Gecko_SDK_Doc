@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Jade Gecko Software Documentation: C:/work/s025_sw_ssh/emdrv/nvm/inc/nvm.h File Reference</title>
+<title>EFM32 Jade Gecko Software Documentation: c:/work/super/platform/emdrv/nvm/inc/nvm.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('nvm_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Non-Volatile Memory Wear-Leveling driver API. </p>
-<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -133,34 +133,34 @@ License</h1>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:gacb8a7f9574d3b638baa9975a1d2d525b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacb8a7f9574d3b638baa9975a1d2d525b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gacb8a7f9574d3b638baa9975a1d2d525b">ECODE_EMDRV_NVM_ADDR_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000001 )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gacb8a7f9574d3b638baa9975a1d2d525b">ECODE_EMDRV_NVM_ADDR_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7a26d8fb5894576e86204682ee788728">ECODE_EMDRV_NVM_BASE</a> | 0x00000001 )</td></tr>
 <tr class="memdesc:gacb8a7f9574d3b638baa9975a1d2d525b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid address. <br /></td></tr>
 <tr class="separator:gacb8a7f9574d3b638baa9975a1d2d525b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae4e262fa99ff77f50f342100567e579"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaae4e262fa99ff77f50f342100567e579"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gaae4e262fa99ff77f50f342100567e579">ECODE_EMDRV_NVM_ALIGNMENT_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000002 )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gaae4e262fa99ff77f50f342100567e579">ECODE_EMDRV_NVM_ALIGNMENT_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7a26d8fb5894576e86204682ee788728">ECODE_EMDRV_NVM_BASE</a> | 0x00000002 )</td></tr>
 <tr class="memdesc:gaae4e262fa99ff77f50f342100567e579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid data alignment. <br /></td></tr>
 <tr class="separator:gaae4e262fa99ff77f50f342100567e579"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga513abf6d9830442da42feae5d3aa3793"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga513abf6d9830442da42feae5d3aa3793"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga513abf6d9830442da42feae5d3aa3793">ECODE_EMDRV_NVM_DATA_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000003 )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga513abf6d9830442da42feae5d3aa3793">ECODE_EMDRV_NVM_DATA_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7a26d8fb5894576e86204682ee788728">ECODE_EMDRV_NVM_BASE</a> | 0x00000003 )</td></tr>
 <tr class="memdesc:ga513abf6d9830442da42feae5d3aa3793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid input data or format. <br /></td></tr>
 <tr class="separator:ga513abf6d9830442da42feae5d3aa3793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad67929c11d6b7520bf992dc6dcfc4d2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad67929c11d6b7520bf992dc6dcfc4d2c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gad67929c11d6b7520bf992dc6dcfc4d2c">ECODE_EMDRV_NVM_ERROR</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000007 )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gad67929c11d6b7520bf992dc6dcfc4d2c">ECODE_EMDRV_NVM_ERROR</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7a26d8fb5894576e86204682ee788728">ECODE_EMDRV_NVM_BASE</a> | 0x00000007 )</td></tr>
 <tr class="memdesc:gad67929c11d6b7520bf992dc6dcfc4d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">General error. <br /></td></tr>
 <tr class="separator:gad67929c11d6b7520bf992dc6dcfc4d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2345b10d783d735ed6be169a918ec991"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2345b10d783d735ed6be169a918ec991"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga2345b10d783d735ed6be169a918ec991">ECODE_EMDRV_NVM_NO_PAGES_AVAILABLE</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000005 )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga2345b10d783d735ed6be169a918ec991">ECODE_EMDRV_NVM_NO_PAGES_AVAILABLE</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7a26d8fb5894576e86204682ee788728">ECODE_EMDRV_NVM_BASE</a> | 0x00000005 )</td></tr>
 <tr class="memdesc:ga2345b10d783d735ed6be169a918ec991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization didn't find any pages available to allocate. <br /></td></tr>
 <tr class="separator:ga2345b10d783d735ed6be169a918ec991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae332cf766a19b67f1ed35c9d9e95bd20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gae332cf766a19b67f1ed35c9d9e95bd20">ECODE_EMDRV_NVM_OK</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#gad59417e7951d81dfc15ec2757f08148e">ECODE_OK</a> )</td></tr>
 <tr class="memdesc:gae332cf766a19b67f1ed35c9d9e95bd20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Success return value.  <a href="group__NVM.html#gae332cf766a19b67f1ed35c9d9e95bd20">More...</a><br /></td></tr>
 <tr class="separator:gae332cf766a19b67f1ed35c9d9e95bd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6ea441c3105ea4a18a10a3b042bd7d86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6ea441c3105ea4a18a10a3b042bd7d86"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga6ea441c3105ea4a18a10a3b042bd7d86">ECODE_EMDRV_NVM_PAGE_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000006 )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga6ea441c3105ea4a18a10a3b042bd7d86">ECODE_EMDRV_NVM_PAGE_INVALID</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7a26d8fb5894576e86204682ee788728">ECODE_EMDRV_NVM_BASE</a> | 0x00000006 )</td></tr>
 <tr class="memdesc:ga6ea441c3105ea4a18a10a3b042bd7d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Could not find the page specified. <br /></td></tr>
 <tr class="separator:ga6ea441c3105ea4a18a10a3b042bd7d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga903849e2678082db4030a0f553ea508a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga903849e2678082db4030a0f553ea508a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga903849e2678082db4030a0f553ea508a">ECODE_EMDRV_NVM_WRITE_LOCK</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7e8592ecd56d0333b6e9904cc62909c6">ECODE_EMDRV_SPIDRV_BASE</a> | 0x00000004 )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#ga903849e2678082db4030a0f553ea508a">ECODE_EMDRV_NVM_WRITE_LOCK</a>&#160;&#160;&#160;( <a class="el" href="group__emdrv.html#ga7a26d8fb5894576e86204682ee788728">ECODE_EMDRV_NVM_BASE</a> | 0x00000004 )</td></tr>
 <tr class="memdesc:ga903849e2678082db4030a0f553ea508a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A write is currently in progress. <br /></td></tr>
 <tr class="separator:ga903849e2678082db4030a0f553ea508a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaddbc995da5f67dc3b176213f32008a62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__NVM.html#gaddbc995da5f67dc3b176213f32008a62">NVM_ERASE_RETAINCOUNT</a>&#160;&#160;&#160;0xffffffffUL</td></tr>
@@ -194,8 +194,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_f6ffa9f3776c543fb9a0872acda4412e.html">nvm</a></li><li class="navelem"><a class="el" href="dir_56141e2e670288a8a9f6c68cc1519d1e.html">inc</a></li><li class="navelem"><a class="el" href="nvm_8h.html">nvm.h</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 11:01:05 for EFM32 Jade Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_a9326de1addf90fcea92508392adbd27.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_8b6740cb63529f304b81356793b1cf7e.html">nvm</a></li><li class="navelem"><a class="el" href="dir_4f6ececa4f69b6c46de68f8cfa06d740.html">inc</a></li><li class="navelem"><a class="el" href="nvm_8h.html">nvm.h</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 16:01:00 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Mighty Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/src/em_emu.c File Reference</title>
+<title>EFR32 Mighty Gecko 1 Software Documentation: c:/work/super/platform/emlib/src/em_emu.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EFR32 Mighty Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32mg1-doc-4.4.0</span>
+   <div id="projectname">EFR32 Mighty Gecko 1 Software Documentation
+   &#160;<span id="projectnumber">efr32mg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('em__emu_8c.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Energy Management Unit (EMU) Peripheral API. </p>
-<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -141,6 +141,30 @@ License</h1>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga1a88f4d36fc06db60e86d7c1aca66989"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1a88f4d36fc06db60e86d7c1aca66989"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_GENERIC_DCDCLPCTRL_LPCMPHYSSELEM234H_MASK</b>&#160;&#160;&#160;<a class="el" href="group__EFR32MG1P__EMU__BitFields.html#ga6f664e884c7baae5ad0d4602f9a3a2a6">_EMU_DCDCLPCTRL_LPCMPHYSSEL_MASK</a></td></tr>
+<tr class="separator:ga1a88f4d36fc06db60e86d7c1aca66989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9228d96d2ad431492f31c2cb5d8c65d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9228d96d2ad431492f31c2cb5d8c65d7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_GENERIC_DCDCLPCTRL_LPCMPHYSSELEM234H_SHIFT</b>&#160;&#160;&#160;<a class="el" href="group__EFR32MG1P__EMU__BitFields.html#gad9e8746c19eb5bd90f5534675584f780">_EMU_DCDCLPCTRL_LPCMPHYSSEL_SHIFT</a></td></tr>
+<tr class="separator:ga9228d96d2ad431492f31c2cb5d8c65d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa564787cde9a5766ae1aeb98e3fc2f00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa564787cde9a5766ae1aeb98e3fc2f00"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_GENERIC_DCDCMISCCTRL_LPCMPBIASEM234H_MASK</b>&#160;&#160;&#160;<a class="el" href="group__EFR32MG1P__EMU__BitFields.html#gad93b413a843313e7d04eb4f7237289c3">_EMU_DCDCMISCCTRL_LPCMPBIAS_MASK</a></td></tr>
+<tr class="separator:gaa564787cde9a5766ae1aeb98e3fc2f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b56c93ad55fd52437b8b6d622573752"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0b56c93ad55fd52437b8b6d622573752"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>_GENERIC_DCDCMISCCTRL_LPCMPBIASEM234H_SHIFT</b>&#160;&#160;&#160;<a class="el" href="group__EFR32MG1P__EMU__BitFields.html#ga5ee6dada544e16b1d7a43c4b2606a7a3">_EMU_DCDCMISCCTRL_LPCMPBIAS_SHIFT</a></td></tr>
+<tr class="separator:ga0b56c93ad55fd52437b8b6d622573752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4948358dd6d26270b0f8fd66690921"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e4948358dd6d26270b0f8fd66690921"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CMU_ULFRCOCTRL</b>&#160;&#160;&#160;(*(volatile uint32_t *) (<a class="el" href="group__EFR32MG1P233F256GM48__Peripheral__Base.html#ga2c124644784e7939e5f1c1bf917f4c8c">CMU_BASE</a> + 0x03C))</td></tr>
+<tr class="separator:a9e4948358dd6d26270b0f8fd66690921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b3e596a08ac19a4de4d851805be796"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1b3e596a08ac19a4de4d851805be796"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EMU_BIASCONF</b>&#160;&#160;&#160;(*(volatile uint32_t *) (<a class="el" href="group__EFR32MG1P233F256GM48__Peripheral__Base.html#ga61fd6590fabeb9f46d757e426bef70b4">EMU_BASE</a> + 0x164))</td></tr>
+<tr class="separator:ad1b3e596a08ac19a4de4d851805be796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1e56950cf45cc9303e37a274e19bf4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add1e56950cf45cc9303e37a274e19bf4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EMU_BIASTESTCTRL</b>&#160;&#160;&#160;(*(volatile uint32_t *) (<a class="el" href="group__EFR32MG1P233F256GM48__Peripheral__Base.html#ga61fd6590fabeb9f46d757e426bef70b4">EMU_BASE</a> + 0x19C))</td></tr>
+<tr class="separator:add1e56950cf45cc9303e37a274e19bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2f93c52e8c7e2a3b1c55195f865b02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a2f93c52e8c7e2a3b1c55195f865b02"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EMU_TESTLOCK</b>&#160;&#160;&#160;(*(volatile uint32_t *) (<a class="el" href="group__EFR32MG1P233F256GM48__Peripheral__Base.html#ga61fd6590fabeb9f46d757e426bef70b4">EMU_BASE</a> + 0x190))</td></tr>
+<tr class="separator:a0a2f93c52e8c7e2a3b1c55195f865b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad65f5ee239deda4b6da304f19aa6dd0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad65f5ee239deda4b6da304f19aa6dd0b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>PWRCFG_DCDCTODVDD_VMAX</b>&#160;&#160;&#160;3000</td></tr>
 <tr class="separator:gad65f5ee239deda4b6da304f19aa6dd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +178,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>errataFixDcdcHsInit</b>, 
 <br />
 &#160;&#160;<b>errataFixDcdcHsTrimSet</b>, 
+<br />
+&#160;&#160;<b>errataFixDcdcHsBypassLn</b>, 
 <br />
 &#160;&#160;<b>errataFixDcdcHsLnWaitDone</b>
 <br />
@@ -204,6 +230,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga49eb5750384ff279aae225ab5922e9f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga49eb5750384ff279aae225ab5922e9f1">EMU_MemPwrDown</a> (uint32_t blocks)</td></tr>
 <tr class="memdesc:ga49eb5750384ff279aae225ab5922e9f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power down memory block.  <a href="group__EMU.html#ga49eb5750384ff279aae225ab5922e9f1">More...</a><br /></td></tr>
 <tr class="separator:ga49eb5750384ff279aae225ab5922e9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c407db6178a3e2336702a23a882db61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga7c407db6178a3e2336702a23a882db61">EMU_SetBiasMode</a> (<a class="el" href="group__EMU.html#ga2129dd5f98c1be1dbc727887f7175c85">EMU_BiasMode_TypeDef</a> mode)</td></tr>
+<tr class="memdesc:ga7c407db6178a3e2336702a23a882db61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjust the bias refresh rate.  <a href="group__EMU.html#ga7c407db6178a3e2336702a23a882db61">More...</a><br /></td></tr>
+<tr class="separator:ga7c407db6178a3e2336702a23a882db61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3d442fa018de5138afb19a2b85797099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga3d442fa018de5138afb19a2b85797099">EMU_UpdateOscConfig</a> (void)</td></tr>
 <tr class="memdesc:ga3d442fa018de5138afb19a2b85797099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update EMU module with CMU oscillator selection/enable status.  <a href="group__EMU.html#ga3d442fa018de5138afb19a2b85797099">More...</a><br /></td></tr>
 <tr class="separator:ga3d442fa018de5138afb19a2b85797099"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,8 +260,8 @@ errataFixDcdcHs_TypeDef&#160;</td><td class="memItemRight" valign="bottom"><b>er
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_b024e35bd40549d46920f272346444ee.html">src</a></li><li class="navelem"><a class="el" href="em__emu_8c.html">em_emu.c</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 11:05:30 for EFR32 Mighty Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a221e95e59b6f0aa21c4dd4fafd285f8.html">src</a></li><li class="navelem"><a class="el" href="em__emu_8c.html">em_emu.c</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 16:04:29 for EFR32 Mighty Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/src/em_msc.c File Reference</title>
+<title>EFM32 Gecko Software Documentation: c:/work/super/platform/emlib/src/em_msc.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32g-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('em__msc_8c.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Flash controller (MSC) Peripheral API. </p>
-<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -129,7 +129,6 @@ License</h1>
 <p>Definition in file <a class="el" href="em__msc_8c_source.html">em_msc.c</a>.</p>
 </div><div class="textblock"><code>#include &quot;<a class="el" href="em__msc_8h_source.html">em_msc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__system_8h_source.html">em_system.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="em__int_8h_source.html">em_int.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__assert_8h_source.html">em_assert.h</a>&quot;</code><br />
 </div>
 <p><a href="em__msc_8c_source.html">Go to the source code of this file.</a></p>
@@ -140,13 +139,16 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MSC.html#gadb2eab07fedfb79fba5a3abdd8b5c96a">MSC_Deinit</a> (void)</td></tr>
 <tr class="memdesc:gadb2eab07fedfb79fba5a3abdd8b5c96a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables the flash controller for writing. <br /></td></tr>
 <tr class="separator:gadb2eab07fedfb79fba5a3abdd8b5c96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadda32c196889602693a0c178da83a1f9"><td class="memItemLeft" align="right" valign="top">MSC_RAMFUNC_DECLARATOR <a class="el" href="group__MSC.html#gaa548bd1d520a543e249b6a85338b59c0">MSC_Status_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MSC.html#gadda32c196889602693a0c178da83a1f9">MSC_ErasePage</a> (uint32_t *startAddress)</td></tr>
+<tr class="memitem:gadda32c196889602693a0c178da83a1f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__MSC.html#ga2dd6e97914fb97828408b0dd5069deaa">MSC_RAMFUNC_DECLARATOR</a> <a class="el" href="group__MSC.html#gaa548bd1d520a543e249b6a85338b59c0">MSC_Status_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MSC.html#gadda32c196889602693a0c178da83a1f9">MSC_ErasePage</a> (uint32_t *startAddress)</td></tr>
 <tr class="memdesc:gadda32c196889602693a0c178da83a1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases a page in flash memory.  <a href="group__MSC.html#gadda32c196889602693a0c178da83a1f9">More...</a><br /></td></tr>
 <tr class="separator:gadda32c196889602693a0c178da83a1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabefc7774cd8e2ddf3c77895ca8198775"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MSC.html#gabefc7774cd8e2ddf3c77895ca8198775">MSC_ExecConfigSet</a> (<a class="el" href="structMSC__ExecConfig__TypeDef.html">MSC_ExecConfig_TypeDef</a> *execConfig)</td></tr>
+<tr class="memdesc:gabefc7774cd8e2ddf3c77895ca8198775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set MSC code execution configuration.  <a href="group__MSC.html#gabefc7774cd8e2ddf3c77895ca8198775">More...</a><br /></td></tr>
+<tr class="separator:gabefc7774cd8e2ddf3c77895ca8198775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa02df815c14caedbc2fd0a8910d2e055"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MSC.html#gaa02df815c14caedbc2fd0a8910d2e055">MSC_Init</a> (void)</td></tr>
 <tr class="memdesc:gaa02df815c14caedbc2fd0a8910d2e055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the flash controller for writing.  <a href="group__MSC.html#gaa02df815c14caedbc2fd0a8910d2e055">More...</a><br /></td></tr>
 <tr class="separator:gaa02df815c14caedbc2fd0a8910d2e055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf3cda393f9f4def6df58a6b3c2301965"><td class="memItemLeft" align="right" valign="top">MSC_RAMFUNC_DECLARATOR <a class="el" href="group__MSC.html#gaa548bd1d520a543e249b6a85338b59c0">MSC_Status_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MSC.html#gaf3cda393f9f4def6df58a6b3c2301965">MSC_WriteWord</a> (uint32_t *address, void const *data, uint32_t numBytes)</td></tr>
+<tr class="memitem:gaf3cda393f9f4def6df58a6b3c2301965"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__MSC.html#ga2dd6e97914fb97828408b0dd5069deaa">MSC_RAMFUNC_DECLARATOR</a> <a class="el" href="group__MSC.html#gaa548bd1d520a543e249b6a85338b59c0">MSC_Status_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MSC.html#gaf3cda393f9f4def6df58a6b3c2301965">MSC_WriteWord</a> (uint32_t *address, void const *data, uint32_t numBytes)</td></tr>
 <tr class="memdesc:gaf3cda393f9f4def6df58a6b3c2301965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes data to flash memory. This function is interrupt safe, but slower than MSC_WriteWordFast(), which writes to flash with interrupts disabled. Write data must be aligned to words and contain a number of bytes that is divisable by four.  <a href="group__MSC.html#gaf3cda393f9f4def6df58a6b3c2301965">More...</a><br /></td></tr>
 <tr class="separator:gaf3cda393f9f4def6df58a6b3c2301965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -155,8 +157,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_b024e35bd40549d46920f272346444ee.html">src</a></li><li class="navelem"><a class="el" href="em__msc_8c.html">em_msc.c</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 10:47:05 for EFM32 Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a221e95e59b6f0aa21c4dd4fafd285f8.html">src</a></li><li class="navelem"><a class="el" href="em__msc_8c.html">em_msc.c</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 15:54:14 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -11,6 +11,9 @@ var group__MSC =
     [ "EM_MSC_RUN_FROM_FLASH", "group__MSC.html#ga1135aa8aedb12568145f653bc8abdc31", null ],
     [ "MSC_EXECCONFIG_DEFAULT", "group__MSC.html#gae0b31656af85df71ad9ec519d7b1c923", null ],
     [ "MSC_PROGRAM_TIMEOUT", "group__MSC.html#ga2ccebeae7857abb74bd22341b7761583", null ],
+    [ "MSC_RAMFUNC_DECLARATOR", "group__MSC.html#ga2dd6e97914fb97828408b0dd5069deaa", null ],
+    [ "MSC_RAMFUNC_DEFINITION_BEGIN", "group__MSC.html#gafb4f9fbaaf4d586c394bbefe0a77afed", null ],
+    [ "MSC_RAMFUNC_DEFINITION_END", "group__MSC.html#ga78d9074971767d304eed774cd2c5c806", null ],
     [ "MSC_Status_TypeDef", "group__MSC.html#gaa548bd1d520a543e249b6a85338b59c0", [
       [ "mscReturnOk", "group__MSC.html#ggaa548bd1d520a543e249b6a85338b59c0a1194171cf80ee1904596c838b67bf8dc", null ],
       [ "mscReturnInvalidAddr", "group__MSC.html#ggaa548bd1d520a543e249b6a85338b59c0a9e4a7b0e66a5e0ce269c24448ad53ce9", null ],

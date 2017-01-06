@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32wg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -109,7 +109,14 @@ $(document).ready(function(){initNavTree('group__AES.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Advanced Encryption Standard Accelerator (AES) Peripheral API. </p>
-<p>This API is intended for use on Silicon Labs target devices, and the following input/output notations should be noted:</p>
+<p>The AES peripheral supports AES block cipher encryption and decryption with 128 bit and 256 bit keys. The following block cipher modes are supported: </p><ul>
+<li>CBC - Cipher Block Chaining mode </li>
+<li>CFB - Cipher Feedback mode </li>
+<li>CTR - Counter mode </li>
+<li>ECB - Electronic Code Book mode </li>
+<li>OFB - Output Feedback mode</li>
+</ul>
+<p>The following input/output notations should be noted:</p>
 <ul>
 <li>Input/output data (plaintext, ciphertext, key etc) are treated as byte arrays, starting with most significant byte. Ie, 32 bytes of plaintext (B0...B31) is located in memory in the same order, with B0 at the lower address and B31 at the higher address.</li>
 </ul>
@@ -127,9 +134,27 @@ $(document).ready(function(){initNavTree('group__AES.html','');});
 <li>Wikipedia - Cipher modes, <a href="http://en.wikipedia.org/wiki/Cipher_modes">http://en.wikipedia.org/wiki/Cipher_modes</a></li>
 </ul>
 <ul>
-<li>Recommendation for Block Cipher Modes of Operation, NIST Special Publication 800-38A, 2001 Edition, <a href="http://csrc.nist.gov/publications/nistpubs/800-38a/sp800-38a.pdf">http://csrc.nist.gov/publications/nistpubs/800-38a/sp800-38a.pdf</a> </li>
+<li>Recommendation for Block Cipher Modes of Operation, NIST Special Publication 800-38A, 2001 Edition, <a href="http://csrc.nist.gov/publications/nistpubs/800-38a/sp800-38a.pdf">http://csrc.nist.gov/publications/nistpubs/800-38a/sp800-38a.pdf</a></li>
 </ul>
-<table class="memberdecls">
+<p>E.g. the following example shows how to perform an AES-128 CBC encryption:</p>
+<p>Enable clocks: </p><div class="fragment"><div class="line"><span class="comment">/* AES is a HFCORECLK peripheral */</span></div>
+<div class="line"><a class="code" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a>(<a class="code" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaf2b29b78b61e5f546dd232bbb94bff62">cmuClock_AES</a>, <span class="keyword">true</span>);</div>
+</div><!-- fragment --><p>Execute AES-128 CBC encryption: </p><div class="fragment"><div class="line"><span class="comment">/* Encrypt a plaintext message (64 bytes) using the AES CBC block cipher mode with a 128 bits key and initial vector (iv) of 16 bytes.  */</span></div>
+<div class="line"><span class="keyword">const</span> uint8_t plaintext[64] = {0x6B, 0xC1, 0xBE, 0xE2, 0x2E, 0x40, 0x9F, 0x96,</div>
+<div class="line">                            0xE9, 0x3D, 0x7E, 0x11, 0x73, 0x93, 0x17, 0x2A,</div>
+<div class="line">                            0xAE, 0x2D, 0x8A, 0x57, 0x1E, 0x03, 0xAC, 0x9C,</div>
+<div class="line">                            0x9E, 0xB7, 0x6F, 0xAC, 0x45, 0xAF, 0x8E, 0x51,</div>
+<div class="line">                            0x30, 0xC8, 0x1C, 0x46, 0xA3, 0x5C, 0xE4, 0x11,</div>
+<div class="line">                            0xE5, 0xFB, 0xC1, 0x19, 0x1A, 0x0A, 0x52, 0xEF,</div>
+<div class="line">                            0xF6, 0x9F, 0x24, 0x45, 0xDF, 0x4F, 0x9B, 0x17,</div>
+<div class="line">                            0xAD, 0x2B, 0x41, 0x7B, 0xE6, 0x6C, 0x37, 0x10};</div>
+<div class="line"><span class="keyword">const</span> uint8_t key[16] = {0x2B, 0x7E, 0x15, 0x16, 0x28, 0xAE, 0xD2, 0xA6,</div>
+<div class="line">                      0xAB, 0xF7, 0x15, 0x88, 0x09, 0xCF, 0x4F, 0x3C};</div>
+<div class="line"><span class="keyword">const</span> uint8_t iv[16] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,</div>
+<div class="line">                     0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F};</div>
+<div class="line">uint8_t ciphertext[64]; <span class="comment">/* Output buffer for encrypted data (ciphertext). */</span></div>
+<div class="line"><a class="code" href="group__AES.html#gab5b6ca62c19d1604d633918bb2657d1d">AES_CBC128</a>(ciphertext, plaintext, 64, key, iv, <span class="keyword">true</span>);  <span class="comment">/* true means encrypt. */</span></div>
+</div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga8dce778bfd76b83df47ad78d80b10874"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__AES.html#ga8dce778bfd76b83df47ad78d80b10874">AES_CtrFuncPtr_TypeDef</a>) (uint8_t *ctr)</td></tr>
@@ -212,7 +237,7 @@ Functions</h2></td></tr>
 <li>ctr - Ptr to byte array (16 bytes) holding counter to be modified. </li>
 </ul>
 
-<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00066">66</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00116">116</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
 
 </div>
 </div>
@@ -305,7 +330,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00157">157</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00124">124</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaf85a949d2fa144cdc27e83036517c1f3">AES_CTRL_DATASTART</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gad7942a17c43e34c9a709ee672b0650b5">AES_CTRL_DECRYPT</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#ga1468754b3a06e69a7e9031b006a7b2e5">AES_CTRL_KEYBUFEN</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#ga0057e9d96f77afe5da4d1dc3be8a964c">AES_CTRL_XORSTART</a>, and <a class="el" href="group__EFM32WG__AES__BitFields.html#ga5bdabaad1ccc56bdaf2ad8f00715037e">AES_STATUS_RUNNING</a>.</p>
 
@@ -374,7 +399,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00322">322</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00289">289</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaa33da7d34783ab0ddcb2f6848140b99f">AES_CTRL_AES256</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaf85a949d2fa144cdc27e83036517c1f3">AES_CTRL_DATASTART</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gad7942a17c43e34c9a709ee672b0650b5">AES_CTRL_DECRYPT</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#ga0057e9d96f77afe5da4d1dc3be8a964c">AES_CTRL_XORSTART</a>, and <a class="el" href="group__EFM32WG__AES__BitFields.html#ga5bdabaad1ccc56bdaf2ad8f00715037e">AES_STATUS_RUNNING</a>.</p>
 
@@ -468,7 +493,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00486">486</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00453">453</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaf85a949d2fa144cdc27e83036517c1f3">AES_CTRL_DATASTART</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#ga1468754b3a06e69a7e9031b006a7b2e5">AES_CTRL_KEYBUFEN</a>, and <a class="el" href="group__EFM32WG__AES__BitFields.html#ga5bdabaad1ccc56bdaf2ad8f00715037e">AES_STATUS_RUNNING</a>.</p>
 
@@ -537,7 +562,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00595">595</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00562">562</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaa33da7d34783ab0ddcb2f6848140b99f">AES_CTRL_AES256</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaf85a949d2fa144cdc27e83036517c1f3">AES_CTRL_DATASTART</a>, and <a class="el" href="group__EFM32WG__AES__BitFields.html#ga5bdabaad1ccc56bdaf2ad8f00715037e">AES_STATUS_RUNNING</a>.</p>
 
@@ -629,7 +654,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00720">720</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00687">687</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaf85a949d2fa144cdc27e83036517c1f3">AES_CTRL_DATASTART</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#ga1468754b3a06e69a7e9031b006a7b2e5">AES_CTRL_KEYBUFEN</a>, and <a class="el" href="group__EFM32WG__AES__BitFields.html#ga5bdabaad1ccc56bdaf2ad8f00715037e">AES_STATUS_RUNNING</a>.</p>
 
@@ -698,7 +723,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00818">818</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00785">785</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaa33da7d34783ab0ddcb2f6848140b99f">AES_CTRL_AES256</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaf85a949d2fa144cdc27e83036517c1f3">AES_CTRL_DATASTART</a>, and <a class="el" href="group__EFM32WG__AES__BitFields.html#ga5bdabaad1ccc56bdaf2ad8f00715037e">AES_STATUS_RUNNING</a>.</p>
 
@@ -728,7 +753,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00883">883</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00850">850</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
 
 </div>
 </div>
@@ -766,7 +791,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00906">906</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00873">873</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#ga716b9bb8751e59757b8e859fb29aaaed">AES_CMD_START</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gafa98bb9096f0ebdf1c2221b8b5ea50f5">AES_IF_DONE</a>, <a class="el" href="group__AES.html#ga23db99a6412ea76cadd2a92e27fe91c0">AES_IntClear()</a>, and <a class="el" href="group__EFM32WG__AES__BitFields.html#ga5bdabaad1ccc56bdaf2ad8f00715037e">AES_STATUS_RUNNING</a>.</p>
 
@@ -806,7 +831,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00951">951</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8c_source.html#l00918">918</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#ga716b9bb8751e59757b8e859fb29aaaed">AES_CMD_START</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaa33da7d34783ab0ddcb2f6848140b99f">AES_CTRL_AES256</a>, and <a class="el" href="group__EFM32WG__AES__BitFields.html#ga5bdabaad1ccc56bdaf2ad8f00715037e">AES_STATUS_RUNNING</a>.</p>
 
@@ -887,7 +912,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8c_source.html#l01034">1034</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8c_source.html#l01001">1001</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaf85a949d2fa144cdc27e83036517c1f3">AES_CTRL_DATASTART</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gad7942a17c43e34c9a709ee672b0650b5">AES_CTRL_DECRYPT</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#ga1468754b3a06e69a7e9031b006a7b2e5">AES_CTRL_KEYBUFEN</a>, and <a class="el" href="group__EFM32WG__AES__BitFields.html#ga5bdabaad1ccc56bdaf2ad8f00715037e">AES_STATUS_RUNNING</a>.</p>
 
@@ -949,7 +974,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8c_source.html#l01135">1135</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8c_source.html#l01102">1102</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaa33da7d34783ab0ddcb2f6848140b99f">AES_CTRL_AES256</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaf85a949d2fa144cdc27e83036517c1f3">AES_CTRL_DATASTART</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gad7942a17c43e34c9a709ee672b0650b5">AES_CTRL_DECRYPT</a>, and <a class="el" href="group__EFM32WG__AES__BitFields.html#ga5bdabaad1ccc56bdaf2ad8f00715037e">AES_STATUS_RUNNING</a>.</p>
 
@@ -977,7 +1002,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00150">150</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00200">200</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>.</p>
 
@@ -1007,7 +1032,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00164">164</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00214">214</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>.</p>
 
@@ -1036,7 +1061,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00183">183</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00233">233</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>.</p>
 
@@ -1060,7 +1085,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>AES interrupt sources pending. A bitwise logic OR combination of valid interrupt flags for the AES module (AES_IF_nnn). </dd></dl>
 
-<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00200">200</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00250">250</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>.</p>
 
@@ -1088,7 +1113,7 @@ Functions</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00220">220</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00270">270</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>.</p>
 
@@ -1116,7 +1141,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00237">237</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8h_source.html#l00287">287</a> of file <a class="el" href="em__aes_8h_source.html">em_aes.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>.</p>
 
@@ -1205,7 +1230,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8c_source.html#l01246">1246</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8c_source.html#l01213">1213</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#ga716b9bb8751e59757b8e859fb29aaaed">AES_CMD_START</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#ga1468754b3a06e69a7e9031b006a7b2e5">AES_CTRL_KEYBUFEN</a>, and <a class="el" href="group__EFM32WG__AES__BitFields.html#ga5bdabaad1ccc56bdaf2ad8f00715037e">AES_STATUS_RUNNING</a>.</p>
 
@@ -1267,7 +1292,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__aes_8c_source.html#l01332">1332</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
+<p>Definition at line <a class="el" href="em__aes_8c_source.html#l01299">1299</a> of file <a class="el" href="em__aes_8c_source.html">em_aes.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga5412ac9ff64f4ab68c289a0da739eaef">AES</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#ga716b9bb8751e59757b8e859fb29aaaed">AES_CMD_START</a>, <a class="el" href="group__EFM32WG__AES__BitFields.html#gaa33da7d34783ab0ddcb2f6848140b99f">AES_CTRL_AES256</a>, and <a class="el" href="group__EFM32WG__AES__BitFields.html#ga5bdabaad1ccc56bdaf2ad8f00715037e">AES_STATUS_RUNNING</a>.</p>
 
@@ -1278,7 +1303,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 11:14:20 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 16:10:19 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

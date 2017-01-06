@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -248,7 +248,7 @@ Functions</h2></td></tr>
 <p>Clear the reset cause register. </p>
 <p>This function clears all the reset cause bits of the RSTCAUSE register. The reset cause bits must be cleared by SW before a new reset occurs, otherwise reset causes may accumulate. See <a class="el" href="group__RMU.html#gac065bbcb3b26d3f0b5c875df4cbad685">RMU_ResetCauseGet()</a>. </p>
 
-<p>Definition at line <a class="el" href="em__rmu_8c_source.html#l00245">245</a> of file <a class="el" href="em__rmu_8c_source.html">em_rmu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__rmu_8c_source.html#l00249">249</a> of file <a class="el" href="em__rmu_8c_source.html">em_rmu.c</a>.</p>
 
 <p>References <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#ga15d2c2b1e853b541f1d74797b62c8ac0">EMU</a>, <a class="el" href="group__EMU.html#gaa102a7feedcfdf0165e8137495e15c81">EMU_Lock()</a>, <a class="el" href="group__EFM32JG1B__EMU__BitFields.html#ga02eab989ebf7e66f2577b7d40fdd9e5a">EMU_LOCK_LOCKKEY_LOCKED</a>, <a class="el" href="group__EMU.html#gaae70d64f013a75e2d728b3a6d71e3f62">EMU_Unlock()</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae61c7bfebd19ce246f292313d9d15ed5">RMU</a>, and <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#ga701a3d0c2e1757732c4c7f262b8c51fc">RMU_CMD_RCCLR</a>.</p>
 
@@ -274,9 +274,9 @@ Functions</h2></td></tr>
 <p>In order to be useful, the reset cause must be cleared by software before a new reset occurs, otherwise reset causes may accumulate. See <a class="el" href="group__RMU.html#ga1ebc1af03f738faa79b3e87d60a96ff1">RMU_ResetCauseClear()</a>. This function call will return the main cause for reset, which can be a bit mask (several causes), and clear away "noise".</p>
 <dl class="section return"><dt>Returns</dt><dd>Reset cause mask. Please consult the reference manual for description of the reset cause mask. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__rmu_8c_source.html#l00287">287</a> of file <a class="el" href="em__rmu_8c_source.html">em_rmu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__rmu_8c_source.html#l00291">291</a> of file <a class="el" href="em__rmu_8c_source.html">em_rmu.c</a>.</p>
 
-<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae61c7bfebd19ce246f292313d9d15ed5">RMU</a>, <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#gacb406861c24ee7e522f2ea1506b07876">RMU_RSTCAUSE_EM4RST</a>, <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#ga3e7ba6f7a92071345b78d766d57c0708">RMU_RSTCAUSE_EXTRST</a>, <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#gad0464d12ea21cf28feeffaa7ef78da64">RMU_RSTCAUSE_LOCKUPRST</a>, <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#gaf9c128b107d56a104a067cc93bff771e">RMU_RSTCAUSE_SYSREQRST</a>, and <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#gae7e0205a750945f1f17a7b10cc4b3bd7">RMU_RSTCAUSE_WDOGRST</a>.</p>
+<p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Base.html#ga61fd6590fabeb9f46d757e426bef70b4">EMU_BASE</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae61c7bfebd19ce246f292313d9d15ed5">RMU</a>, <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#ga0da987dfd4c5c89f77857d699ef32542">RMU_RSTCAUSE_AVDDBOD</a>, <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#ga74255321627a24e1d5cf1920153dcd19">RMU_RSTCAUSE_DECBOD</a>, <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#ga3d40a71f237e9964b0feb689611176db">RMU_RSTCAUSE_DVDDBOD</a>, <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#gacb406861c24ee7e522f2ea1506b07876">RMU_RSTCAUSE_EM4RST</a>, <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#ga3e7ba6f7a92071345b78d766d57c0708">RMU_RSTCAUSE_EXTRST</a>, <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#gad0464d12ea21cf28feeffaa7ef78da64">RMU_RSTCAUSE_LOCKUPRST</a>, <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#gaf9c128b107d56a104a067cc93bff771e">RMU_RSTCAUSE_SYSREQRST</a>, and <a class="el" href="group__EFM32JG1B__RMU__BitFields.html#gae7e0205a750945f1f17a7b10cc4b3bd7">RMU_RSTCAUSE_WDOGRST</a>.</p>
 
 <p>Referenced by <a class="el" href="group__SLEEP.html#ga01eb28531b3fc9a5c7880b86a98d4b1c">SLEEP_Init()</a>.</p>
 
@@ -315,7 +315,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__rmu_8c_source.html#l00218">218</a> of file <a class="el" href="em__rmu_8c_source.html">em_rmu.c</a>.</p>
+<p>Definition at line <a class="el" href="em__rmu_8c_source.html#l00222">222</a> of file <a class="el" href="em__rmu_8c_source.html">em_rmu.c</a>.</p>
 
 <p>References <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae61c7bfebd19ce246f292313d9d15ed5">RMU</a>, and <a class="el" href="group__COMMON.html#ga8df7f6d52e31dad26a89799b7e63adb0">SL_CTZ()</a>.</p>
 
@@ -377,7 +377,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 11:01:25 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 16:01:08 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

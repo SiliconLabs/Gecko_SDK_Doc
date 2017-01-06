@@ -2,6 +2,7 @@ var searchData=
 [
   ['cmu_5fclkdiv_5ftypedef',['CMU_ClkDiv_TypeDef',['../group__CMU.html#ga44da9c73a703ac0f9c9f101aa43414c3',1,'em_cmu.h']]],
   ['cmu_5fclkpresc_5ftypedef',['CMU_ClkPresc_TypeDef',['../group__CMU.html#ga16f3a418cc7c5112e0ec66e762989345',1,'em_cmu.h']]],
+  ['core_5firqstate_5ft',['CORE_irqState_t',['../group__CORE.html#ga4b715be4b95b8b0ac6c7b188f517177b',1,'em_core.h']]],
   ['crypto_5faes_5fctrfuncptr_5ftypedef',['CRYPTO_AES_CtrFuncPtr_TypeDef',['../group__CRYPTO.html#ga5802cdbda204f89d52c406878cbaa855',1,'em_crypto.h']]],
   ['crypto_5fdata260_5ftypedef',['CRYPTO_Data260_TypeDef',['../group__CRYPTO.html#ga971cb59aa4fb3d70b8a1c1962a2b7c57',1,'em_crypto.h']]],
   ['crypto_5fdata_5ftypedef',['CRYPTO_Data_TypeDef',['../group__CRYPTO.html#ga6bbe911697c04ae4a7b5b5a1fc74af25',1,'em_crypto.h']]],

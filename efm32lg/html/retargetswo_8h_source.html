@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Leopard Gecko Software Documentation: C:/work/s025_sw_ssh/kits/common/drivers/retargetswo.h Source File</title>
+<title>EFM32 Leopard Gecko Software Documentation: c:/work/super/hardware/kit/common/drivers/retargetswo.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32lg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -113,32 +113,33 @@ $(document).ready(function(){initNavTree('retargetswo_8h_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef RETARGETSWO_H</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define RETARGETSWO_H</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;segmentlcdconfig.h&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/* Regular functions */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__RetargetSWO.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar</a>(<span class="keywordtype">char</span> c);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__RetargetSWO.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> setupSWOForPrint(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="group__RetargetSWO_html_ga5af724185f484056b02b42f4ab184bfb"><div class="ttname"><a href="group__RetargetSWO.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar</a></div><div class="ttdeci">int RETARGET_ReadChar(void)</div><div class="ttdoc">Receive a byte from USART/LEUART and put into global buffer. </div><div class="ttdef"><b>Definition:</b> <a href="retargetserial_8c_source.html#l00210">retargetserial.c:210</a></div></div>
-<div class="ttc" id="group__RetargetSWO_html_ga856ae0b788dccadc2c83a6e67409be5f"><div class="ttname"><a href="group__RetargetSWO.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar</a></div><div class="ttdeci">int RETARGET_WriteChar(char c)</div><div class="ttdoc">Transmit single byte to USART/LEUART. </div><div class="ttdef"><b>Definition:</b> <a href="retargetserial_8c_source.html#l00240">retargetserial.c:240</a></div></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar</a>(<span class="keywordtype">char</span> c);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__RetargetIo.html#gaf86de46689133bfc01be3d84e5a3f3e5">RETARGET_SwoInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group__RetargetIo.html#gaaace16deac1c92d18d149d54957deec8">   41</a></span>&#160;<span class="preprocessor">#define setupSWOForPrint RETARGET_SwoInit</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="group__RetargetIo_html_ga5af724185f484056b02b42f4ab184bfb"><div class="ttname"><a href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar</a></div><div class="ttdeci">int RETARGET_ReadChar(void)</div><div class="ttdoc">Receive a byte from USART/LEUART and put into global buffer. </div><div class="ttdef"><b>Definition:</b> <a href="retargetserial_8c_source.html#l00210">retargetserial.c:210</a></div></div>
+<div class="ttc" id="group__RetargetIo_html_ga856ae0b788dccadc2c83a6e67409be5f"><div class="ttname"><a href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar</a></div><div class="ttdeci">int RETARGET_WriteChar(char c)</div><div class="ttdoc">Transmit single byte to USART/LEUART. </div><div class="ttdef"><b>Definition:</b> <a href="retargetserial_8c_source.html#l00241">retargetserial.c:241</a></div></div>
+<div class="ttc" id="group__RetargetIo_html_gaf86de46689133bfc01be3d84e5a3f3e5"><div class="ttname"><a href="group__RetargetIo.html#gaf86de46689133bfc01be3d84e5a3f3e5">RETARGET_SwoInit</a></div><div class="ttdeci">void RETARGET_SwoInit(void)</div><div class="ttdoc">Setup SWO for output. </div><div class="ttdef"><b>Definition:</b> <a href="retargetswo_8c_source.html#l00047">retargetswo.c:47</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="retargetswo_8h.html">retargetswo.h</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 10:58:59 for EFM32 Leopard Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_f4316de2dfb04db90651672103de31d6.html">hardware</a></li><li class="navelem"><a class="el" href="dir_76f2117c008bb27e945cccbe289eb43d.html">kit</a></li><li class="navelem"><a class="el" href="dir_60376687895b74e627fb8a241c3f339a.html">common</a></li><li class="navelem"><a class="el" href="dir_4f5ba988b7de2a6efab62310c4bddab1.html">drivers</a></li><li class="navelem"><a class="el" href="retargetswo_8h.html">retargetswo.h</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 15:59:40 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

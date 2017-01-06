@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Blue Gecko Software Documentation: C:/work/s025_sw_ssh/kits/common/drivers/retargetswo.h File Reference</title>
+<title>EFR32 Blue Gecko 1 Software Documentation: c:/work/super/hardware/kit/common/drivers/retargetswo.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EFR32 Blue Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32bg1-doc-4.4.0</span>
+   <div id="projectname">EFR32 Blue Gecko 1 Software Documentation
+   &#160;<span id="projectnumber">efr32bg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -106,43 +106,49 @@ $(document).ready(function(){initNavTree('retargetswo_8h.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">retargetswo.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>EFM32 Segment LCD Display driver, header file. </p>
-<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
+<div class="textblock"><p>Retarget stdout to SWO. </p>
+<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
 <p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
 <p>Definition in file <a class="el" href="retargetswo_8h_source.html">retargetswo.h</a>.</p>
-</div><div class="textblock"><code>#include &quot;segmentlcdconfig.h&quot;</code><br />
 </div>
 <p><a href="retargetswo_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gaaace16deac1c92d18d149d54957deec8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gaaace16deac1c92d18d149d54957deec8">setupSWOForPrint</a>&#160;&#160;&#160;<a class="el" href="group__RetargetIo.html#gaf86de46689133bfc01be3d84e5a3f3e5">RETARGET_SwoInit</a></td></tr>
+<tr class="separator:gaaace16deac1c92d18d149d54957deec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5af724185f484056b02b42f4ab184bfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetSWO.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar</a> (void)</td></tr>
-<tr class="memdesc:ga5af724185f484056b02b42f4ab184bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a byte from USART/LEUART and put into global buffer.  <a href="group__RetargetSWO.html#ga5af724185f484056b02b42f4ab184bfb">More...</a><br /></td></tr>
+<tr class="memitem:ga5af724185f484056b02b42f4ab184bfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar</a> (void)</td></tr>
+<tr class="memdesc:ga5af724185f484056b02b42f4ab184bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a byte from USART/LEUART and put into global buffer.  <a href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">More...</a><br /></td></tr>
 <tr class="separator:ga5af724185f484056b02b42f4ab184bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga856ae0b788dccadc2c83a6e67409be5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetSWO.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar</a> (char c)</td></tr>
-<tr class="memdesc:ga856ae0b788dccadc2c83a6e67409be5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit single byte to USART/LEUART.  <a href="group__RetargetSWO.html#ga856ae0b788dccadc2c83a6e67409be5f">More...</a><br /></td></tr>
+<tr class="memitem:gaf86de46689133bfc01be3d84e5a3f3e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf86de46689133bfc01be3d84e5a3f3e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#gaf86de46689133bfc01be3d84e5a3f3e5">RETARGET_SwoInit</a> (void)</td></tr>
+<tr class="memdesc:gaf86de46689133bfc01be3d84e5a3f3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup SWO for output. <br /></td></tr>
+<tr class="separator:gaf86de46689133bfc01be3d84e5a3f3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga856ae0b788dccadc2c83a6e67409be5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">RETARGET_WriteChar</a> (char c)</td></tr>
+<tr class="memdesc:ga856ae0b788dccadc2c83a6e67409be5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit single byte to USART/LEUART.  <a href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">More...</a><br /></td></tr>
 <tr class="separator:ga856ae0b788dccadc2c83a6e67409be5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga014e7b798b9c569ad86b5e57d1ef2200"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga014e7b798b9c569ad86b5e57d1ef2200"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setupSWOForPrint</b> (void)</td></tr>
-<tr class="separator:ga014e7b798b9c569ad86b5e57d1ef2200"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_39bdcf4cee9880e493b49f6c513c9c12.html">kits</a></li><li class="navelem"><a class="el" href="dir_2ddd81adf1084e08d4a1faaf495cad2b.html">common</a></li><li class="navelem"><a class="el" href="dir_cc3c188b11859047547455b780583817.html">drivers</a></li><li class="navelem"><a class="el" href="retargetswo_8h.html">retargetswo.h</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 10:44:01 for EFR32 Blue Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_f4316de2dfb04db90651672103de31d6.html">hardware</a></li><li class="navelem"><a class="el" href="dir_76f2117c008bb27e945cccbe289eb43d.html">kit</a></li><li class="navelem"><a class="el" href="dir_60376687895b74e627fb8a241c3f339a.html">common</a></li><li class="navelem"><a class="el" href="dir_4f5ba988b7de2a6efab62310c4bddab1.html">drivers</a></li><li class="navelem"><a class="el" href="retargetswo_8h.html">retargetswo.h</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 15:52:23 for EFR32 Blue Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

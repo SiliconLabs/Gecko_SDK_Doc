@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32hg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">ezr32hg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -110,8 +110,8 @@ $(document).ready(function(){initNavTree('group__TEMPDRV.html','');});
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>TEMPDRV Temperature sensor driver </p><pre class="fragment"></pre><p>. </p>
-<p>The source files for the TEMP driver library resides in the emdrv/tempdrv folder, and are named <a class="el" href="tempdrv_8c.html" title="TEMPDRV API implementation. ">tempdrv.c</a> and <a class="el" href="tempdrv_8h.html" title="TEMPDRV API definition. ">tempdrv.h</a>.</p>
+<p>TEMPDRV Temperature Sensor Driver. </p>
+<p>The source files for the TEMP driver library resides in the emdrv/tempdrv folder, and consists of <a class="el" href="tempdrv_8c.html" title="TEMPDRV API implementation. ">tempdrv.c</a> and <a class="el" href="tempdrv_8h.html" title="TEMPDRV API definition. ">tempdrv.h</a>.</p>
 <ul>
 <li><a class="el" href="group__TEMPDRV.html#tempdrv_intro">Introduction</a> </li>
 <li><a class="el" href="group__TEMPDRV.html#tempdrv_conf">Configuration Options</a> </li>
@@ -121,12 +121,14 @@ $(document).ready(function(){initNavTree('group__TEMPDRV.html','');});
  </p>
 <h1><a class="anchor" id="tempdrv_intro"></a>
 Introduction</h1>
-<p>The TEMP driver supports temperature capabilities on the EFR32 EMU peripheral, but not the ADC peripheral. TEMPDRV provides an interface to course grained, low power interrupts on temperature change.</p>
+<p>TEMPDRV gives the user a nice interface to the EMU internal temperature sensor which is present on the EFR32 and some EFM32 devices. The TEMPDRV supports application specific callbacks at given temperature thresholds. The EMU internal temperature sensor is running in EM0-EM4H and is capable of waking up the core on temperature change. The EMU temperature sensor is running continuously and measurements are taken every 250 ms.</p>
+<dl class="section note"><dt>Note</dt><dd>The TEMPDRV is using the EMU peripheral and not the ADC peripheral. The ADC contains another internal temperature sensor which is not touched by the TEMPDRV.</dd></dl>
+<p>The TEMPDRV also provides an important errata fix for the EFR32 first generation devices when operating at high temperature environments (above 50&deg;C). The errata document for the EFR32 describes the errata which is called "EMU_E201 - High Temperature Operation". To implement the errata fix in a user application it is enough to include the TEMPDRV and call <a class="el" href="group__TEMPDRV.html#gabe27ab8076564a44b71038c79603ccab">TEMPDRV_Init()</a> at the start of the program. This will activate the errata fix code which is modifying registers based on changes in the EMU temperature.</p>
 <p><br />
  </p>
 <h1><a class="anchor" id="tempdrv_conf"></a>
 Configuration Options</h1>
-<p>Some properties of the TEMPDRV driver are compile-time configurable. These properties are set in a file named tempdrv_config.h. A template for this file, containing default values, resides in the emdrv/config folder. To configure TEMPDRV for your application, provide your own configuration file. These are the available configuration parameters with default values defined. </p><pre class="fragment">  // Callback table depth (for high and low callbacks each)
+<p>Some properties of the TEMPDRV driver are compile-time configurable. These properties are set in a file named tempdrv_config.h. A template for this file, containing default values, resides in the emdrv/tempdrv/config folder. To configure TEMPDRV for your application, provide your own configuration file. These are the available configuration parameters with default values defined. </p><pre class="fragment">  // Callback table depth (for high and low callbacks each)
   #define TEMPDRV_CALLBACK_DEPTH 5
 
   // Allow temperature sensor to wake the device up from EM4
@@ -139,13 +141,13 @@ Configuration Options</h1>
  </p>
 <h1><a class="anchor" id="tempdrv_api"></a>
 The API</h1>
-<p>This section contain brief descriptions of the functions in the API. You will find detailed information on input and output parameters and return values by clicking on the hyperlinked function names. Most functions return an error code, <a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a> is returned on success, see <a class="el" href="ecode_8h.html">ecode.h</a> and <a class="el" href="tempdrv_8h.html">tempdrv.h</a> for other error codes.</p>
+<p>This section contain brief descriptions of the functions in the API. You will find detailed information on input and output parameters and return values by clicking on the function names. Most functions return an error code, <a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a> is returned on success, see <a class="el" href="ecode_8h.html">ecode.h</a> and <a class="el" href="tempdrv_8h.html">tempdrv.h</a> for other error codes.</p>
 <p>Your application code must include one header file: <em><a class="el" href="tempdrv_8h.html" title="TEMPDRV API definition. ">tempdrv.h</a></em>.</p>
-<p><a class="el" href="group__TEMPDRV.html#ga9840f98f0e92bbc1ebadf6c2b6fc390b">TEMPDRV_Init()</a>, <a class="el" href="group__TEMPDRV.html#gafd7dfe891f924f053f93c1d3d6f9ce9d">TEMPDRV_DeInit()</a> <br />
+<p><a class="el" href="group__TEMPDRV.html#gabe27ab8076564a44b71038c79603ccab">TEMPDRV_Init()</a>, <a class="el" href="group__TEMPDRV.html#gac8ef7bf57730754ee441069c7577d40f">TEMPDRV_DeInit()</a> <br />
  These functions initializes or deinitializes the TEMPDRV driver. This will erase any registered callbacks and disabled all interrupts. Typically  TEMPDRV_Init()  is called once in your startup code.</p>
 <p><a class="el" href="group__TEMPDRV.html#gaa2605b8e10e33fcf3bfb47395c25b33f">TEMPDRV_Enable()</a> <br />
  Enable or disable the temperature driver without losing any registered callbacks.</p>
-<p><a class="el" href="group__TEMPDRV.html#ga2751bf86315e9c956026dc2c3dc880a1">TEMPDRV_GetTemp()</a> <br />
+<p><a class="el" href="group__TEMPDRV.html#ga2451a4de601c4b8fdd6b482bc61073d6">TEMPDRV_GetTemp()</a> <br />
  Get the current temperature in degrees Celsius. This measurement is based on a conversion from the EMU temperature sensor and calibration data that is stored in the DI page.</p>
 <p><a class="el" href="group__TEMPDRV.html#ga6c9336d963284dd604c7c6b537ebca1c">TEMPDRV_RegisterCallback()</a>, <a class="el" href="group__TEMPDRV.html#gaef379d8cf403513296a758eb84f8c3fa">TEMPDRV_UnregisterCallback()</a> <br />
  Callbacks can be registered for rising or falling thresholds and will called as soon as the temperature matches the specified threshold. Multiple callbacks at the same temperature are not permitted, nor are mismatches between temperature and limit (e. g temperature is lower than current but the limit is set to high). Additionally, unregistering a callback will remove all entries of matching callbacks.</p>
@@ -175,7 +177,7 @@ int main(void)
 Macros</h2></td></tr>
 <tr class="memitem:ga5922e6001e3e546dabe59ee7b498cd4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5922e6001e3e546dabe59ee7b498cd4b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga5922e6001e3e546dabe59ee7b498cd4b">ECODE_EMDRV_TEMPDRV_BAD_LIMIT</a>&#160;&#160;&#160;(<a class="el" href="group__emdrv.html#ga5fa27c8c44db6a790f15639f0749a51f">ECODE_EMDRV_TEMPDRV_BASE</a> | 0x00000003)</td></tr>
-<tr class="memdesc:ga5922e6001e3e546dabe59ee7b498cd4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tempearture mismatch with limit. <br /></td></tr>
+<tr class="memdesc:ga5922e6001e3e546dabe59ee7b498cd4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature mismatch with limit. <br /></td></tr>
 <tr class="separator:ga5922e6001e3e546dabe59ee7b498cd4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad29c9bb04b03b3c6b6667605f70122be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad29c9bb04b03b3c6b6667605f70122be"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#gad29c9bb04b03b3c6b6667605f70122be">ECODE_EMDRV_TEMPDRV_DUP_TEMP</a>&#160;&#160;&#160;(<a class="el" href="group__emdrv.html#ga5fa27c8c44db6a790f15639f0749a51f">ECODE_EMDRV_TEMPDRV_BASE</a> | 0x00000008)</td></tr>
@@ -212,44 +214,43 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga4aa8ca73cd9509ce26843f3fe1ca496e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga4aa8ca73cd9509ce26843f3fe1ca496e">TEMPDRV_Callback_t</a>) (int8_t temp, TEMPDRV_LimitType_t limit)</td></tr>
-<tr class="memdesc:ga4aa8ca73cd9509ce26843f3fe1ca496e"><td class="mdescLeft">&#160;</td><td class="mdescRight">TEMPDRV temperature limit interrupt callback function.  <a href="#ga4aa8ca73cd9509ce26843f3fe1ca496e">More...</a><br /></td></tr>
+<tr class="memitem:ga4aa8ca73cd9509ce26843f3fe1ca496e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga4aa8ca73cd9509ce26843f3fe1ca496e">TEMPDRV_Callback_t</a>) (int8_t temp, <a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a> limit)</td></tr>
+<tr class="memdesc:ga4aa8ca73cd9509ce26843f3fe1ca496e"><td class="mdescLeft">&#160;</td><td class="mdescRight">TEMPDRV temperature limit callback function.  <a href="#ga4aa8ca73cd9509ce26843f3fe1ca496e">More...</a><br /></td></tr>
 <tr class="separator:ga4aa8ca73cd9509ce26843f3fe1ca496e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f2efd642ec50891de724a67191c5545"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5f2efd642ec50891de724a67191c5545"></a>
-typedef enum TEMPDRV_LimitType&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPDRV_LimitType_t</b></td></tr>
+<tr class="memitem:ga5f2efd642ec50891de724a67191c5545"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__TEMPDRV.html#ga0e0c05e85e286ed17a27d0db06e8a6ed">TEMPDRV_LimitType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a></td></tr>
 <tr class="separator:ga5f2efd642ec50891de724a67191c5545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga0e0c05e85e286ed17a27d0db06e8a6ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0e0c05e85e286ed17a27d0db06e8a6ed"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TEMPDRV_LimitType</b> { <br />
-&#160;&#160;<b>TEMPDRV_LIMIT_LOW</b> = 0, 
+<tr class="memitem:ga0e0c05e85e286ed17a27d0db06e8a6ed"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga0e0c05e85e286ed17a27d0db06e8a6ed">TEMPDRV_LimitType</a> { <br />
+&#160;&#160;<a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda734424d063813f9260b8abefd5112600">TEMPDRV_LIMIT_LOW</a> = 0, 
 <br />
-&#160;&#160;<b>TEMPDRV_LIMIT_HIGH</b> = 1
+&#160;&#160;<a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda70580b3c7a1ecc80921e5362b288a224">TEMPDRV_LIMIT_HIGH</a> = 1
 <br />
  }<tr class="separator:ga0e0c05e85e286ed17a27d0db06e8a6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gafd7dfe891f924f053f93c1d3d6f9ce9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#gafd7dfe891f924f053f93c1d3d6f9ce9d">TEMPDRV_DeInit</a> ()</td></tr>
-<tr class="memdesc:gafd7dfe891f924f053f93c1d3d6f9ce9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initialize the TEMP driver.  <a href="#gafd7dfe891f924f053f93c1d3d6f9ce9d">More...</a><br /></td></tr>
-<tr class="separator:gafd7dfe891f924f053f93c1d3d6f9ce9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8ef7bf57730754ee441069c7577d40f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#gac8ef7bf57730754ee441069c7577d40f">TEMPDRV_DeInit</a> (void)</td></tr>
+<tr class="memdesc:gac8ef7bf57730754ee441069c7577d40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initialize the TEMP driver.  <a href="#gac8ef7bf57730754ee441069c7577d40f">More...</a><br /></td></tr>
+<tr class="separator:gac8ef7bf57730754ee441069c7577d40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa2605b8e10e33fcf3bfb47395c25b33f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#gaa2605b8e10e33fcf3bfb47395c25b33f">TEMPDRV_Enable</a> (bool enable)</td></tr>
-<tr class="memdesc:gaa2605b8e10e33fcf3bfb47395c25b33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the TEMP driver.  <a href="#gaa2605b8e10e33fcf3bfb47395c25b33f">More...</a><br /></td></tr>
+<tr class="memdesc:gaa2605b8e10e33fcf3bfb47395c25b33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the TEMP driver.  <a href="#gaa2605b8e10e33fcf3bfb47395c25b33f">More...</a><br /></td></tr>
 <tr class="separator:gaa2605b8e10e33fcf3bfb47395c25b33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga61719ed2fb153a5acc03a8b2a85925f6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga61719ed2fb153a5acc03a8b2a85925f6">TEMPDRV_GetActiveCallbacks</a> (TEMPDRV_LimitType_t limit)</td></tr>
+<tr class="memitem:ga61719ed2fb153a5acc03a8b2a85925f6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga61719ed2fb153a5acc03a8b2a85925f6">TEMPDRV_GetActiveCallbacks</a> (<a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a> limit)</td></tr>
 <tr class="memdesc:ga61719ed2fb153a5acc03a8b2a85925f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of active callbacks for a limit.  <a href="#ga61719ed2fb153a5acc03a8b2a85925f6">More...</a><br /></td></tr>
 <tr class="separator:ga61719ed2fb153a5acc03a8b2a85925f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2751bf86315e9c956026dc2c3dc880a1"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga2751bf86315e9c956026dc2c3dc880a1">TEMPDRV_GetTemp</a> ()</td></tr>
-<tr class="memdesc:ga2751bf86315e9c956026dc2c3dc880a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current temperature.  <a href="#ga2751bf86315e9c956026dc2c3dc880a1">More...</a><br /></td></tr>
-<tr class="separator:ga2751bf86315e9c956026dc2c3dc880a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9840f98f0e92bbc1ebadf6c2b6fc390b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga9840f98f0e92bbc1ebadf6c2b6fc390b">TEMPDRV_Init</a> ()</td></tr>
-<tr class="memdesc:ga9840f98f0e92bbc1ebadf6c2b6fc390b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the TEMP driver.  <a href="#ga9840f98f0e92bbc1ebadf6c2b6fc390b">More...</a><br /></td></tr>
-<tr class="separator:ga9840f98f0e92bbc1ebadf6c2b6fc390b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f943cecfc0bc233de33180c13b2beec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga4f943cecfc0bc233de33180c13b2beec">TEMPDRV_IRQHandler</a> ()</td></tr>
-<tr class="memdesc:ga4f943cecfc0bc233de33180c13b2beec"><td class="mdescLeft">&#160;</td><td class="mdescRight">TEMPDRV IRQ Handler.  <a href="#ga4f943cecfc0bc233de33180c13b2beec">More...</a><br /></td></tr>
-<tr class="separator:ga4f943cecfc0bc233de33180c13b2beec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c9336d963284dd604c7c6b537ebca1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga6c9336d963284dd604c7c6b537ebca1c">TEMPDRV_RegisterCallback</a> (int8_t temp, TEMPDRV_LimitType_t limit, <a class="el" href="group__TEMPDRV.html#ga4aa8ca73cd9509ce26843f3fe1ca496e">TEMPDRV_Callback_t</a> callback)</td></tr>
+<tr class="memitem:ga2451a4de601c4b8fdd6b482bc61073d6"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga2451a4de601c4b8fdd6b482bc61073d6">TEMPDRV_GetTemp</a> (void)</td></tr>
+<tr class="memdesc:ga2451a4de601c4b8fdd6b482bc61073d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current temperature.  <a href="#ga2451a4de601c4b8fdd6b482bc61073d6">More...</a><br /></td></tr>
+<tr class="separator:ga2451a4de601c4b8fdd6b482bc61073d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe27ab8076564a44b71038c79603ccab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#gabe27ab8076564a44b71038c79603ccab">TEMPDRV_Init</a> (void)</td></tr>
+<tr class="memdesc:gabe27ab8076564a44b71038c79603ccab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the TEMP driver.  <a href="#gabe27ab8076564a44b71038c79603ccab">More...</a><br /></td></tr>
+<tr class="separator:gabe27ab8076564a44b71038c79603ccab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a84c867daa872d148b663ce82e0926c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga6a84c867daa872d148b663ce82e0926c">TEMPDRV_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:ga6a84c867daa872d148b663ce82e0926c"><td class="mdescLeft">&#160;</td><td class="mdescRight">TEMPDRV IRQ Handler.  <a href="#ga6a84c867daa872d148b663ce82e0926c">More...</a><br /></td></tr>
+<tr class="separator:ga6a84c867daa872d148b663ce82e0926c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c9336d963284dd604c7c6b537ebca1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga6c9336d963284dd604c7c6b537ebca1c">TEMPDRV_RegisterCallback</a> (int8_t temp, <a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a> limit, <a class="el" href="group__TEMPDRV.html#ga4aa8ca73cd9509ce26843f3fe1ca496e">TEMPDRV_Callback_t</a> callback)</td></tr>
 <tr class="memdesc:ga6c9336d963284dd604c7c6b537ebca1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback in the TEMP driver.  <a href="#ga6c9336d963284dd604c7c6b537ebca1c">More...</a><br /></td></tr>
 <tr class="separator:ga6c9336d963284dd604c7c6b537ebca1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaef379d8cf403513296a758eb84f8c3fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#gaef379d8cf403513296a758eb84f8c3fa">TEMPDRV_UnregisterCallback</a> (<a class="el" href="group__TEMPDRV.html#ga4aa8ca73cd9509ce26843f3fe1ca496e">TEMPDRV_Callback_t</a> callback)</td></tr>
@@ -262,33 +263,71 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* TEMPDRV_Callback_t) (int8_t temp, TEMPDRV_LimitType_t limit)</td>
+          <td class="memname">typedef void(* TEMPDRV_Callback_t) (int8_t temp, <a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a> limit)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>TEMPDRV temperature limit interrupt callback function. </p>
-<p>The callback function is called when the current temperature is equal to either the lower or upper limit.</p>
+<p>TEMPDRV temperature limit callback function. </p>
+<p>This callback function is called from interrupt context. The callback function is called when the current temperature is equal to or exceeds one of the temperature limits that have been registered with the driver.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">temp</td><td>The current temperature</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">temp</td><td>The current temperature at the time when the EMU temperature triggers an interrupt. Note that this is not necessarily the same temperature as was specified when registering a callback.</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">limit</td><td>The upper/lower limit reached </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="tempdrv_8h_source.html#l00086">86</a> of file <a class="el" href="tempdrv_8h_source.html">tempdrv.h</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8h_source.html#l00091">91</a> of file <a class="el" href="tempdrv_8h_source.html">tempdrv.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5f2efd642ec50891de724a67191c5545"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="group__TEMPDRV.html#ga0e0c05e85e286ed17a27d0db06e8a6ed">TEMPDRV_LimitType</a>  <a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temperature limit. This is used in the TEMPDRV to specify the direction of temperature change. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ga0e0c05e85e286ed17a27d0db06e8a6ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__TEMPDRV.html#ga0e0c05e85e286ed17a27d0db06e8a6ed">TEMPDRV_LimitType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temperature limit. This is used in the TEMPDRV to specify the direction of temperature change. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga0e0c05e85e286ed17a27d0db06e8a6eda734424d063813f9260b8abefd5112600"></a>TEMPDRV_LIMIT_LOW&#160;</td><td class="fielddoc">
+<p>Temperature low. Used to specify that a temperature is decreasing. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga0e0c05e85e286ed17a27d0db06e8a6eda70580b3c7a1ecc80921e5362b288a224"></a>TEMPDRV_LIMIT_HIGH&#160;</td><td class="fielddoc">
+<p>Temperature high. Used to specify that a temperature is increasing. </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="tempdrv_8h_source.html#l00069">69</a> of file <a class="el" href="tempdrv_8h_source.html">tempdrv.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gafd7dfe891f924f053f93c1d3d6f9ce9d"></a>
+<a class="anchor" id="gac8ef7bf57730754ee441069c7577d40f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> TEMPDRV_DeInit </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -296,11 +335,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>De-initialize the TEMP driver. </p>
+<p>This will clear all the registered callbacks and disable the EMU IRQ in the NVIC.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a> on success. </dd></dl>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00531">531</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00598">598</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
-<p>References <a class="el" href="tempdrv_8c.html#adaca966bacd9542b4bfd1a4ecada4606">disableInterrupts()</a>, and <a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a>.</p>
+<p>References <a class="el" href="tempdrv_8c.html#abc64c30b03d8d883fec1d195c184f13f">disableInterrupts()</a>, and <a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a>.</p>
 
 </div>
 </div>
@@ -318,18 +358,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enable the TEMP driver. </p>
+<p>Enable or disable the TEMP driver. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Boolean to enable or disable the TEMP driver</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>true to enable the TEMP driver, false to disable the TEMP driver.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a> on success. </dd></dl>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00551">551</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00619">619</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
-<p>References <a class="el" href="tempdrv_8c.html#adaca966bacd9542b4bfd1a4ecada4606">disableInterrupts()</a>, <a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a>, and <a class="el" href="tempdrv_8c.html#a3d3c1e0a68bb10fdeef9360d1c56c18a">updateInterrupts()</a>.</p>
+<p>References <a class="el" href="tempdrv_8c.html#abc64c30b03d8d883fec1d195c184f13f">disableInterrupts()</a>, <a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a>, and <a class="el" href="tempdrv_8c.html#a2eb0a16de52bf17b2923dfd60592c789">updateInterrupts()</a>.</p>
 
 </div>
 </div>
@@ -340,7 +380,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">uint8_t TEMPDRV_GetActiveCallbacks </td>
           <td>(</td>
-          <td class="paramtype">TEMPDRV_LimitType_t&#160;</td>
+          <td class="paramtype"><a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a>&#160;</td>
           <td class="paramname"><em>limit</em></td><td>)</td>
           <td></td>
         </tr>
@@ -350,23 +390,26 @@ Functions</h2></td></tr>
 <p>Get the number of active callbacks for a limit. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">limit</td><td>Limit type, refer to TEMPDRV_LimitType_t.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">limit</td><td>Limit type, refer to <a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of active callbacks </dd></dl>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00577">577</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00646">646</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+
+<p>References <a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda70580b3c7a1ecc80921e5362b288a224">TEMPDRV_LIMIT_HIGH</a>, and <a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda734424d063813f9260b8abefd5112600">TEMPDRV_LIMIT_LOW</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga2751bf86315e9c956026dc2c3dc880a1"></a>
+<a class="anchor" id="ga2451a4de601c4b8fdd6b482bc61073d6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int8_t TEMPDRV_GetTemp </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -376,21 +419,22 @@ Functions</h2></td></tr>
 <p>Get the current temperature. </p>
 <dl class="section return"><dt>Returns</dt><dd>Current temperature in degrees Celsius. </dd></dl>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00615">615</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00684">684</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
-<p>References <a class="el" href="tempdrv_8c.html#a798654ab0c6e543d7edc325d9a11c0e2">convertEMUtoTEMP()</a>, and <a class="el" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga15d2c2b1e853b541f1d74797b62c8ac0">EMU</a>.</p>
+<p>References <a class="el" href="tempdrv_8c.html#a9f45838966c07a0c71bc13d4cffdffc8">convertToTemp()</a>, and <a class="el" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga15d2c2b1e853b541f1d74797b62c8ac0">EMU</a>.</p>
 
-<p>Referenced by <a class="el" href="group__TEMPDRV.html#ga4f943cecfc0bc233de33180c13b2beec">TEMPDRV_IRQHandler()</a>, and <a class="el" href="group__TEMPDRV.html#ga6c9336d963284dd604c7c6b537ebca1c">TEMPDRV_RegisterCallback()</a>.</p>
+<p>Referenced by <a class="el" href="group__TEMPDRV.html#ga6a84c867daa872d148b663ce82e0926c">TEMPDRV_IRQHandler()</a>, and <a class="el" href="group__TEMPDRV.html#ga6c9336d963284dd604c7c6b537ebca1c">TEMPDRV_RegisterCallback()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga9840f98f0e92bbc1ebadf6c2b6fc390b"></a>
+<a class="anchor" id="gabe27ab8076564a44b71038c79603ccab"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> TEMPDRV_Init </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -398,15 +442,16 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize the TEMP driver. </p>
+<p>This will clear all the registered callbacks and enable the EMU IRQ in the NVIC. Calling this function will also enable the EMU_E201 errata fix for first generation Pearl, Jade and EFR32 devices.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a> on success. </dd></dl>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00485">485</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00548">548</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
-<p>References <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#ga7e12f8cdf56f968f2b2c399b99b09823">_DEVINFO_CAL_TEMP_MASK</a>, <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#gaaa15661a4a5a8cfe5c9f3d99e2224d47">_DEVINFO_CAL_TEMP_SHIFT</a>, <a class="el" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>, <a class="el" href="tempdrv_8c.html#adaca966bacd9542b4bfd1a4ecada4606">disableInterrupts()</a>, <a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a>, and <a class="el" href="tempdrv_8c.html#a3d3c1e0a68bb10fdeef9360d1c56c18a">updateInterrupts()</a>.</p>
+<p>References <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#ga7e12f8cdf56f968f2b2c399b99b09823">_DEVINFO_CAL_TEMP_MASK</a>, <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#gaaa15661a4a5a8cfe5c9f3d99e2224d47">_DEVINFO_CAL_TEMP_SHIFT</a>, <a class="el" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>, <a class="el" href="tempdrv_8c.html#abc64c30b03d8d883fec1d195c184f13f">disableInterrupts()</a>, <a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a>, and <a class="el" href="tempdrv_8c.html#a2eb0a16de52bf17b2923dfd60592c789">updateInterrupts()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga4f943cecfc0bc233de33180c13b2beec"></a>
+<a class="anchor" id="ga6a84c867daa872d148b663ce82e0926c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -422,11 +467,13 @@ Functions</h2></td></tr>
 
 <p>TEMPDRV IRQ Handler. </p>
 <p>This IRQ Handler should be called from within the EMU_IRQ_Handler in order to enable TEMPDRV callbacks. This is included by default with EMU_CUSTOM_IRQ_HANDLER defined as false.</p>
-<p>TEMPDRV IRQ Handler. </p>
+<p>TEMPDRV IRQ Handler.</p>
+<p>This function must be called by the EMU interrupt handler in order to support the TEMPDRV callback mechanism.</p>
+<p>This function handles the EMU_IF_TEMPHIGH, EMU_IF_TEMPLOW interrupt flags from the EMU internal temperature sensor. </p>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00089">89</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00109">109</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
-<p>References <a class="el" href="structTEMPDRV__CallbackSet__t.html#a8309753a1ec3512a0b52d56f58dd8d5b">TEMPDRV_CallbackSet_t::callback</a>, <a class="el" href="group__TEMPDRV.html#ga2751bf86315e9c956026dc2c3dc880a1">TEMPDRV_GetTemp()</a>, and <a class="el" href="tempdrv_8c.html#a3d3c1e0a68bb10fdeef9360d1c56c18a">updateInterrupts()</a>.</p>
+<p>References <a class="el" href="structTEMPDRV__CallbackSet__t.html#a8309753a1ec3512a0b52d56f58dd8d5b">TEMPDRV_CallbackSet_t::callback</a>, <a class="el" href="group__TEMPDRV.html#ga2451a4de601c4b8fdd6b482bc61073d6">TEMPDRV_GetTemp()</a>, <a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda70580b3c7a1ecc80921e5362b288a224">TEMPDRV_LIMIT_HIGH</a>, <a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda734424d063813f9260b8abefd5112600">TEMPDRV_LIMIT_LOW</a>, and <a class="el" href="tempdrv_8c.html#a2eb0a16de52bf17b2923dfd60592c789">updateInterrupts()</a>.</p>
 
 <p>Referenced by <a class="el" href="tempdrv_8c.html#a4fda42f1f4ae172145a1a67b8521d50c">EMU_IRQHandler()</a>.</p>
 
@@ -445,7 +492,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TEMPDRV_LimitType_t&#160;</td>
+          <td class="paramtype"><a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a>&#160;</td>
           <td class="paramname"><em>limit</em>, </td>
         </tr>
         <tr>
@@ -463,19 +510,37 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Register a callback in the TEMP driver. </p>
+<p>This function is used for registering an application callback when the temperature changes. Note that when calling this function an application must specify the direction of the temperature change, use <a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda734424d063813f9260b8abefd5112600">TEMPDRV_LIMIT_LOW</a> to receive a callback when the temperature drops below the specified temp and use <a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda70580b3c7a1ecc80921e5362b288a224">TEMPDRV_LIMIT_HIGH</a> to receive a callback when the temperature increases above the specified temp.</p>
+<dl class="section note"><dt>Note</dt><dd>The user registered callback will be cleared once it's called. This means that the callback functions are not persistent, and have to be managed by the application. This feature can be used to implement a user controlled hysteresis. So for instance to register a callback at 50&deg;C with a 5&deg;C hysteresis you can first register a callback at 50&deg;C or above using this function, and when the callback fires you can use this function again to register a callback when the temperature decreases to 45&deg;C or below. Each time a callback fires you only need to call the <a class="el" href="group__TEMPDRV.html#ga6c9336d963284dd604c7c6b537ebca1c">TEMPDRV_RegisterCallback()</a> function, there is no need to call <a class="el" href="group__TEMPDRV.html#gaef379d8cf403513296a758eb84f8c3fa">TEMPDRV_UnregisterCallback()</a>.</dd></dl>
+<p>It's important to know the current temperature before calling this function. Attempting to register a callback that would fire immediately is not supported and will result in a return value of <a class="el" href="group__TEMPDRV.html#ga5922e6001e3e546dabe59ee7b498cd4b">ECODE_EMDRV_TEMPDRV_BAD_LIMIT</a>. Examples of an illegal scenario would be to register a callback for a temperature that is higher than the current temperature and with a limit set to <a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda734424d063813f9260b8abefd5112600">TEMPDRV_LIMIT_LOW</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">temp</td><td>Temperature to trigger on.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">limit</td><td>Limit type, refer to TEMPDRV_LimitType_t.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>Callback to call when temperature threshold reached.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">temp</td><td>Temperature to trigger on given in number of &deg;C.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">limit</td><td>Limit type, refer to <a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a>. Using <a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda734424d063813f9260b8abefd5112600">TEMPDRV_LIMIT_LOW</a> will register a callback when the EMU temperature reaches temp &deg;C or lower, and using <a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda70580b3c7a1ecc80921e5362b288a224">TEMPDRV_LIMIT_HIGH</a> will register a callback when the EMU temperature reaches temp &deg;C or higher.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>User defined function to call when temperature threshold is reached or passed.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a> on success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li><a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a> on success.</li>
+</ul>
+<ul>
+<li><a class="el" href="group__TEMPDRV.html#ga16c0d13930ebaa5e7266d1d8eaa1f1f3">ECODE_EMDRV_TEMPDRV_PARAM_ERROR</a> if the callback is NULL.</li>
+</ul>
+<ul>
+<li><a class="el" href="group__TEMPDRV.html#gafd85bfb6bd99830723e466043064b70b">ECODE_EMDRV_TEMPDRV_NO_INIT</a> if the user has forgot to call <a class="el" href="group__TEMPDRV.html#gabe27ab8076564a44b71038c79603ccab">TEMPDRV_Init()</a> before attempting to register a callback.</li>
+</ul>
+<ul>
+<li><a class="el" href="group__TEMPDRV.html#ga5922e6001e3e546dabe59ee7b498cd4b">ECODE_EMDRV_TEMPDRV_BAD_LIMIT</a> is returned if temp is below the current temperature and  is <a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda734424d063813f9260b8abefd5112600">TEMPDRV_LIMIT_LOW</a>. It is also returned if temp is above the current temperature and  is <a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda70580b3c7a1ecc80921e5362b288a224">TEMPDRV_LIMIT_HIGH</a>.</li>
+</ul>
+<ul>
+<li><a class="el" href="group__TEMPDRV.html#gad29c9bb04b03b3c6b6667605f70122be">ECODE_EMDRV_TEMPDRV_DUP_TEMP</a> is returned if a duplicate callback is detected. A duplicate callback is if you attempt to register a new callback with the same temp and the same limit as some already registered callback. </li>
+</ul>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00635">635</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00751">751</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
-<p>References <a class="el" href="tempdrv_8c.html#a678508f99f5e9246d47a1dc19f791fa0">addCallback()</a>, <a class="el" href="tempdrv_8c.html#a491d81c1f5c7c96d9c96cc946f45e171">checkForDuplicates()</a>, <a class="el" href="group__TEMPDRV.html#ga5922e6001e3e546dabe59ee7b498cd4b">ECODE_EMDRV_TEMPDRV_BAD_LIMIT</a>, <a class="el" href="group__TEMPDRV.html#gad29c9bb04b03b3c6b6667605f70122be">ECODE_EMDRV_TEMPDRV_DUP_TEMP</a>, <a class="el" href="group__TEMPDRV.html#gafd85bfb6bd99830723e466043064b70b">ECODE_EMDRV_TEMPDRV_NO_INIT</a>, <a class="el" href="group__TEMPDRV.html#ga16c0d13930ebaa5e7266d1d8eaa1f1f3">ECODE_EMDRV_TEMPDRV_PARAM_ERROR</a>, and <a class="el" href="group__TEMPDRV.html#ga2751bf86315e9c956026dc2c3dc880a1">TEMPDRV_GetTemp()</a>.</p>
+<p>References <a class="el" href="tempdrv_8c.html#a678508f99f5e9246d47a1dc19f791fa0">addCallback()</a>, <a class="el" href="tempdrv_8c.html#a491d81c1f5c7c96d9c96cc946f45e171">checkForDuplicates()</a>, <a class="el" href="group__TEMPDRV.html#ga5922e6001e3e546dabe59ee7b498cd4b">ECODE_EMDRV_TEMPDRV_BAD_LIMIT</a>, <a class="el" href="group__TEMPDRV.html#gad29c9bb04b03b3c6b6667605f70122be">ECODE_EMDRV_TEMPDRV_DUP_TEMP</a>, <a class="el" href="group__TEMPDRV.html#gafd85bfb6bd99830723e466043064b70b">ECODE_EMDRV_TEMPDRV_NO_INIT</a>, <a class="el" href="group__TEMPDRV.html#ga16c0d13930ebaa5e7266d1d8eaa1f1f3">ECODE_EMDRV_TEMPDRV_PARAM_ERROR</a>, <a class="el" href="group__TEMPDRV.html#ga2451a4de601c4b8fdd6b482bc61073d6">TEMPDRV_GetTemp()</a>, <a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda70580b3c7a1ecc80921e5362b288a224">TEMPDRV_LIMIT_HIGH</a>, and <a class="el" href="group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda734424d063813f9260b8abefd5112600">TEMPDRV_LIMIT_LOW</a>.</p>
 
 </div>
 </div>
@@ -500,9 +565,18 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a> on success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li><a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a> on success.</li>
+</ul>
+<ul>
+<li><a class="el" href="group__TEMPDRV.html#ga16c0d13930ebaa5e7266d1d8eaa1f1f3">ECODE_EMDRV_TEMPDRV_PARAM_ERROR</a> if the callback is NULL.</li>
+</ul>
+<ul>
+<li><a class="el" href="group__TEMPDRV.html#ga4ef99c3ae96678c1205ac881892d1c83">ECODE_EMDRV_TEMPDRV_NO_CALLBACK</a> if the callback was not found. </li>
+</ul>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00693">693</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00814">814</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
 <p>References <a class="el" href="group__TEMPDRV.html#ga4ef99c3ae96678c1205ac881892d1c83">ECODE_EMDRV_TEMPDRV_NO_CALLBACK</a>, <a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a>, <a class="el" href="group__TEMPDRV.html#ga16c0d13930ebaa5e7266d1d8eaa1f1f3">ECODE_EMDRV_TEMPDRV_PARAM_ERROR</a>, and <a class="el" href="tempdrv_8c.html#aa101ba6e20c4ad8edde6915c6d2171aa">removeCallback()</a>.</p>
 
@@ -513,7 +587,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 10:53:07 for EZR32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 15:57:04 for EZR32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

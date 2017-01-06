@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EZR32 Wonder Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/src/em_opamp.c Source File</title>
+<title>EZR32 Wonder Gecko Software Documentation: c:/work/super/platform/emlib/src/em_opamp.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32wg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">ezr32wg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('em__opamp_8c_source.html','');});
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordflow">if</span> (init-&gt;<a class="code" href="structOPAMP__Init__TypeDef.html#add09b8acf3961a7b67f4275b534ed064">defaultOffset</a>)</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    {</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      offset = <a class="code" href="group__SYSTEM.html#ga786913c991338e29650617d89aec3768">SYSTEM_GetCalibrationValue</a>(&amp;dac-&gt;<a class="code" href="structDAC__TypeDef.html#aa56ccb4fea02464f80904edc5557acf3">CAL</a>);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      offset = <a class="code" href="group__SYSTEM.html#ga84a2becba34bea4a4d718d4dfe14c4db">SYSTEM_GetCalibrationValue</a>(&amp;dac-&gt;<a class="code" href="structDAC__TypeDef.html#aa56ccb4fea02464f80904edc5557acf3">CAL</a>);</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      dac-&gt;<a class="code" href="structDAC__TypeDef.html#aa56ccb4fea02464f80904edc5557acf3">CAL</a> = (dac-&gt;<a class="code" href="structDAC__TypeDef.html#aa56ccb4fea02464f80904edc5557acf3">CAL</a> &amp; ~<a class="code" href="group__EZR32WG__DAC__BitFields.html#ga029a8700bec34862fc8627b632bb6775">_DAC_CAL_CH0OFFSET_MASK</a>)</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                 | (offset &amp;  <a class="code" href="group__EZR32WG__DAC__BitFields.html#ga029a8700bec34862fc8627b632bb6775">_DAC_CAL_CH0OFFSET_MASK</a>);</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('em__opamp_8c_source.html','');});
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">if</span> (init-&gt;<a class="code" href="structOPAMP__Init__TypeDef.html#add09b8acf3961a7b67f4275b534ed064">defaultOffset</a>)</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    {</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      offset = <a class="code" href="group__SYSTEM.html#ga786913c991338e29650617d89aec3768">SYSTEM_GetCalibrationValue</a>(&amp;dac-&gt;<a class="code" href="structDAC__TypeDef.html#aa56ccb4fea02464f80904edc5557acf3">CAL</a>);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      offset = <a class="code" href="group__SYSTEM.html#ga84a2becba34bea4a4d718d4dfe14c4db">SYSTEM_GetCalibrationValue</a>(&amp;dac-&gt;<a class="code" href="structDAC__TypeDef.html#aa56ccb4fea02464f80904edc5557acf3">CAL</a>);</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      dac-&gt;<a class="code" href="structDAC__TypeDef.html#aa56ccb4fea02464f80904edc5557acf3">CAL</a> = (dac-&gt;<a class="code" href="structDAC__TypeDef.html#aa56ccb4fea02464f80904edc5557acf3">CAL</a> &amp; ~<a class="code" href="group__EZR32WG__DAC__BitFields.html#gaed21a05964a94ff9f98b445fd9a31b03">_DAC_CAL_CH1OFFSET_MASK</a>)</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                 | (offset &amp;  <a class="code" href="group__EZR32WG__DAC__BitFields.html#gaed21a05964a94ff9f98b445fd9a31b03">_DAC_CAL_CH1OFFSET_MASK</a>);</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    }</div>
@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('em__opamp_8c_source.html','');});
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">if</span> (init-&gt;<a class="code" href="structOPAMP__Init__TypeDef.html#add09b8acf3961a7b67f4275b534ed064">defaultOffset</a>)</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    {</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      offset = <a class="code" href="group__SYSTEM.html#ga786913c991338e29650617d89aec3768">SYSTEM_GetCalibrationValue</a>(&amp;dac-&gt;<a class="code" href="structDAC__TypeDef.html#ad042949266b8cf5112dd58b478b8f24e">OPAOFFSET</a>);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      offset = <a class="code" href="group__SYSTEM.html#ga84a2becba34bea4a4d718d4dfe14c4db">SYSTEM_GetCalibrationValue</a>(&amp;dac-&gt;<a class="code" href="structDAC__TypeDef.html#ad042949266b8cf5112dd58b478b8f24e">OPAOFFSET</a>);</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;      dac-&gt;<a class="code" href="structDAC__TypeDef.html#ad042949266b8cf5112dd58b478b8f24e">OPAOFFSET</a> = (dac-&gt;<a class="code" href="structDAC__TypeDef.html#ad042949266b8cf5112dd58b478b8f24e">OPAOFFSET</a> &amp; ~<a class="code" href="group__EZR32WG__DAC__BitFields.html#ga54065e8af329d37f7a8c798617b8aa6c">_DAC_OPAOFFSET_OPA2OFFSET_MASK</a>)</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                       | (offset       &amp;  <a class="code" href="group__EZR32WG__DAC__BitFields.html#ga54065e8af329d37f7a8c798617b8aa6c">_DAC_OPAOFFSET_OPA2OFFSET_MASK</a>);</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    }</div>
@@ -342,7 +342,7 @@ $(document).ready(function(){initNavTree('em__opamp_8c_source.html','');});
 <div class="ttc" id="group__EZR32WG__DAC__BitFields_html_ga029a8700bec34862fc8627b632bb6775"><div class="ttname"><a href="group__EZR32WG__DAC__BitFields.html#ga029a8700bec34862fc8627b632bb6775">_DAC_CAL_CH0OFFSET_MASK</a></div><div class="ttdeci">#define _DAC_CAL_CH0OFFSET_MASK</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__dac_8h_source.html#l00379">ezr32wg_dac.h:379</a></div></div>
 <div class="ttc" id="structDAC__TypeDef_html_aa56ccb4fea02464f80904edc5557acf3"><div class="ttname"><a href="structDAC__TypeDef.html#aa56ccb4fea02464f80904edc5557acf3">DAC_TypeDef::CAL</a></div><div class="ttdeci">__IOM uint32_t CAL</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__dac_8h_source.html#l00054">ezr32wg_dac.h:54</a></div></div>
 <div class="ttc" id="structOPAMP__Init__TypeDef_html_a46da494ce7f49c18b98d8e6c378624a3"><div class="ttname"><a href="structOPAMP__Init__TypeDef.html#a46da494ce7f49c18b98d8e6c378624a3">OPAMP_Init_TypeDef::negSel</a></div><div class="ttdeci">OPAMP_NegSel_TypeDef negSel</div><div class="ttdef"><b>Definition:</b> <a href="em__opamp_8h_source.html#l00135">em_opamp.h:135</a></div></div>
-<div class="ttc" id="group__SYSTEM_html_ga786913c991338e29650617d89aec3768"><div class="ttname"><a href="group__SYSTEM.html#ga786913c991338e29650617d89aec3768">SYSTEM_GetCalibrationValue</a></div><div class="ttdeci">uint32_t SYSTEM_GetCalibrationValue(volatile uint32_t *regAddress)</div><div class="ttdoc">Get factory calibration value for a given peripheral register. </div><div class="ttdef"><b>Definition:</b> <a href="em__system_8c_source.html#l00095">em_system.c:95</a></div></div>
+<div class="ttc" id="group__SYSTEM_html_ga84a2becba34bea4a4d718d4dfe14c4db"><div class="ttname"><a href="group__SYSTEM.html#ga84a2becba34bea4a4d718d4dfe14c4db">SYSTEM_GetCalibrationValue</a></div><div class="ttdeci">bool SYSTEM_GetCalibrationValue(volatile uint32_t *regAddress)</div><div class="ttdoc">Get factory calibration value for a given peripheral register. </div><div class="ttdef"><b>Definition:</b> <a href="em__system_8c_source.html#l00093">em_system.c:93</a></div></div>
 <div class="ttc" id="structOPAMP__Init__TypeDef_html_ae7f7cea11df855842be350561162d118"><div class="ttname"><a href="structOPAMP__Init__TypeDef.html#ae7f7cea11df855842be350561162d118">OPAMP_Init_TypeDef::lpfNegPadDisable</a></div><div class="ttdeci">bool lpfNegPadDisable</div><div class="ttdef"><b>Definition:</b> <a href="em__opamp_8h_source.html#l00170">em_opamp.h:170</a></div></div>
 <div class="ttc" id="group__EZR32WG__DAC__BitFields_html_ga6f0a66d7f1110487e2eb2f0e8fa5fae2"><div class="ttname"><a href="group__EZR32WG__DAC__BitFields.html#ga6f0a66d7f1110487e2eb2f0e8fa5fae2">DAC_OPA2MUX_PPEN</a></div><div class="ttdeci">#define DAC_OPA2MUX_PPEN</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__dac_8h_source.html#l00745">ezr32wg_dac.h:745</a></div></div>
 <div class="ttc" id="group__EZR32WG__DAC__BitFields_html_ga492db6cc4d0a55c4c097448de3195528"><div class="ttname"><a href="group__EZR32WG__DAC__BitFields.html#ga492db6cc4d0a55c4c097448de3195528">DAC_OPACTRL_OPA0EN</a></div><div class="ttdeci">#define DAC_OPACTRL_OPA0EN</div><div class="ttdef"><b>Definition:</b> <a href="ezr32wg__dac_8h_source.html#l00416">ezr32wg_dac.h:416</a></div></div>
@@ -398,8 +398,8 @@ $(document).ready(function(){initNavTree('em__opamp_8c_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_b024e35bd40549d46920f272346444ee.html">src</a></li><li class="navelem"><a class="el" href="em__opamp_8c.html">em_opamp.c</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 11:09:35 for EZR32 Wonder Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a221e95e59b6f0aa21c4dd4fafd285f8.html">src</a></li><li class="navelem"><a class="el" href="em__opamp_8c.html">em_opamp.c</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 16:06:29 for EZR32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

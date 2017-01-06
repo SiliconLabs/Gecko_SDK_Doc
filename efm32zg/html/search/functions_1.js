@@ -45,5 +45,6 @@ var searchData=
   ['aes_5fintget',['AES_IntGet',['../group__AES.html#gae7ec6a859651936fb72513965a415638',1,'em_aes.h']]],
   ['aes_5fintgetenabled',['AES_IntGetEnabled',['../group__AES.html#gab027d148043c0fec187940c9493e3fb6',1,'em_aes.h']]],
   ['aes_5fintset',['AES_IntSet',['../group__AES.html#ga1ff2f03bbd50feb38fd38c7167a90742',1,'em_aes.h']]],
-  ['aes_5fofb128',['AES_OFB128',['../group__AES.html#gac650a8113889ca6bbf6f89d058a1a042',1,'em_aes.c']]]
+  ['aes_5fofb128',['AES_OFB128',['../group__AES.html#gac650a8113889ca6bbf6f89d058a1a042',1,'em_aes.c']]],
+  ['assertefm',['assertEFM',['../group__ASSERT.html#gacb36abec8b531cd85414c572a17f2811',1,'em_assert.c']]]
 ];

@@ -3,11 +3,12 @@ var group__emlib =
     [ "ACMP", "group__ACMP.html", "group__ACMP" ],
     [ "ADC", "group__ADC.html", "group__ADC" ],
     [ "AES", "group__AES.html", "group__AES" ],
-    [ "BITBAND", "group__BITBAND.html", "group__BITBAND" ],
+    [ "ASSERT", "group__ASSERT.html", "group__ASSERT" ],
     [ "BUS", "group__BUS.html", "group__BUS" ],
     [ "CHIP", "group__CHIP.html", "group__CHIP" ],
     [ "CMU", "group__CMU.html", "group__CMU" ],
     [ "COMMON", "group__COMMON.html", "group__COMMON" ],
+    [ "CORE", "group__CORE.html", "group__CORE" ],
     [ "DMA", "group__DMA.html", "group__DMA" ],
     [ "EMU", "group__EMU.html", "group__EMU" ],
     [ "GPIO", "group__GPIO.html", "group__GPIO" ],
@@ -26,5 +27,6 @@ var group__emlib =
     [ "USART", "group__USART.html", "group__USART" ],
     [ "VCMP", "group__VCMP.html", "group__VCMP" ],
     [ "VERSION", "group__VERSION.html", "group__VERSION" ],
-    [ "WDOG", "group__WDOG.html", "group__WDOG" ]
+    [ "WDOG", "group__WDOG.html", "group__WDOG" ],
+    [ "DEBUG_EFM", "group__emlib.html#ga3f6a69d0437d90c1f2c51c635a2bf973", null ]
 ];

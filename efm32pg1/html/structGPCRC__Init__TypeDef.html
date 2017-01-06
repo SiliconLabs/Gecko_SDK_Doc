@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Pearl Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32pg1-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32pg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('structGPCRC__Init__TypeDef.html','');}
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>CRC initialization structure. </p>
 
-<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00062">62</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00102">102</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -142,7 +142,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Enable automatic initialization by re-seeding the CRC result based on the init value after reading one of the CRC data registers </p>
 
-<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00115">115</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00155">155</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__GPCRC.html#gaa2700b08c1e94b0827e57275cb0beac8">GPCRC_Init()</a>.</p>
 
@@ -160,7 +160,7 @@ Data Fields</h2></td></tr>
 <p>CRC polynomial value. The GPCRC support either a fixed 32-bit polynomial or a user configurable 16 bit polynomial. The fixed 32-bit polynomial is the one used in IEEE 802.3, which has the value 0x04C11DB7. To use the 32-bit fixed polynomial just assign 0x04C11DB7 to the crcPoly field. To use a 16-bit polynomial assign a value to crcPoly where the upper 16 bit's are zero.</p>
 <p>The polynomial should be written in normal bit order. So for instance if you want to use the CRC-16 polynomial X^16 + X^15 + X^2 + 1 then we can first convert it to hex representation and remove the highest order term of the polynomial. This would give us 0x8005 as the value to write into crcPoly. </p>
 
-<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00078">78</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00118">118</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__GPCRC.html#gaa2700b08c1e94b0827e57275cb0beac8">GPCRC_Init()</a>.</p>
 
@@ -177,7 +177,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Enable/disable GPCRC when initialization is completed. </p>
 
-<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00118">118</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00158">158</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__GPCRC.html#gaa2700b08c1e94b0827e57275cb0beac8">GPCRC_Init()</a>.</p>
 
@@ -194,7 +194,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Enable/disable byte mode. When byte mode is enabled then all input is treated as single byte input, even though the input is a 32-bit word or a 16-bit half word. Only the least significant byte of the data-word will be used for CRC calculation for all writes. </p>
 
-<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00109">109</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00149">149</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__GPCRC.html#gaa2700b08c1e94b0827e57275cb0beac8">GPCRC_Init()</a>.</p>
 
@@ -211,7 +211,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>CRC initialization value. This value is assigned to the GPCRC_INIT register. The initValue is loaded into the data register when calling the <a class="el" href="group__GPCRC.html#ga91aefdca0dd8859ef0a3e34fb2870f2d">GPCRC_Start</a> function or when one of the data registers are read while <a class="el" href="structGPCRC__Init__TypeDef.html#a98ea48b7c5eea7d5248e69ebfbcf4e8e">autoInit</a> is enabled. </p>
 
-<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00086">86</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00126">126</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__GPCRC.html#gaa2700b08c1e94b0827e57275cb0beac8">GPCRC_Init()</a>.</p>
 
@@ -228,7 +228,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Reverse bits within each input byte. This setting enables or disable byte level bit reversal. When byte-level bit reversal is enabled then each byte of input data will be reversed before entering the CRC calculation. </p>
 
-<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00101">101</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00141">141</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__GPCRC.html#gaa2700b08c1e94b0827e57275cb0beac8">GPCRC_Init()</a>.</p>
 
@@ -245,14 +245,14 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Reverse byte order. This has an effect when sending a 32-bit word or 16-bit half word input to the CRC calculation. When set to true the input bytes are reversed before entering the CRC calculation. When set to false the input bytes stay in the same order. </p>
 
-<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00094">94</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpcrc_8h_source.html#l00134">134</a> of file <a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__GPCRC.html#gaa2700b08c1e94b0827e57275cb0beac8">GPCRC_Init()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>C:/work/s025_sw_ssh/emlib/inc/<a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a></li>
+<li>c:/work/super/platform/emlib/inc/<a class="el" href="em__gpcrc_8h_source.html">em_gpcrc.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -260,7 +260,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structGPCRC__Init__TypeDef.html">GPCRC_Init_TypeDef</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 10:49:13 for EFM32 Pearl Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 15:55:21 for EFM32 Pearl Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

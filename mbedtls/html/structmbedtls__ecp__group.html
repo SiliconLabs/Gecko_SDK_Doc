@@ -40,7 +40,7 @@
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">mbedtls_ecp_group Struct Reference<div class="ingroups"><a class="el" href="group__sl__crypto.html">Silicon Labs CRYPTO Hardware Acceleration Plugins</a> &raquo; <a class="el" href="group__sl__crypto__ecp.html">Elliptic curves over GF(p)</a></div></div>  </div>
+<div class="title">mbedtls_ecp_group Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -49,27 +49,26 @@
 <li>Short Weierstrass y^2 = x^3 + A x + B mod P (SEC1 + RFC 4492)</li>
 <li>Montgomery, y^2 = x^3 + A x^2 + x mod P (Curve25519 + draft) In both cases, a generator G for a prime-order subgroup is fixed. In the short weierstrass, this subgroup is actually the whole curve, and its cardinal is denoted by N.</li>
 </ol>
-<p>In the case of Short Weierstrass curves, our code requires that N is an odd prime. (Use odd in <a class="el" href="group__sl__crypto__ecp.html#ga4d005045c302e100c78bdc587e8f0e6a" title="Multiplication by an integer: R = m * P (Not thread-safe to use same group in multiple threads) ...">mbedtls_ecp_mul()</a> and prime in <a class="el" href="ecdsa_8h.html#af10f6fda2169862871d0ac07555c8641" title="Compute ECDSA signature of a previously hashed message. ">mbedtls_ecdsa_sign()</a> for blinding.)</p>
+<p>In the case of Short Weierstrass curves, our code requires that N is an odd prime. (Use odd in <a class="el" href="ecp_8h.html#a4d005045c302e100c78bdc587e8f0e6a" title="Multiplication by an integer: R = m * P (Not thread-safe to use same group in multiple threads) ...">mbedtls_ecp_mul()</a> and prime in <a class="el" href="ecdsa_8h.html#af10f6fda2169862871d0ac07555c8641" title="Compute ECDSA signature of a previously hashed message. ">mbedtls_ecdsa_sign()</a> for blinding.)</p>
 <p>In the case of Montgomery curves, we don't store A but (A + 2) / 4 which is the quantity actually used in the formulas. Also, nbits is not the size of N but the required size for private keys.</p>
 <p>If modp is NULL, reduction modulo P is done using a generic algorithm. Otherwise, it must point to a function that takes an <a class="el" href="structmbedtls__mpi.html" title="MPI structure. ">mbedtls_mpi</a> in the range 0..2^(2*pbits)-1 and transforms it in-place in an integer of little more than pbits, so that the integer may be efficiently brought in the 0..P-1 range by a few additions or substractions. It must return 0 on success and non-zero on failure. </p>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00135">135</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00136">136</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 </div>
-<p><code>#include &lt;<a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="ecp_8h_source.html">ecp.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for mbedtls_ecp_group:</div>
 <div class="dyncontent">
 <div class="center"><img src="structmbedtls__ecp__group__coll__graph.png" border="0" usemap="#mbedtls__ecp__group_coll__map" alt="Collaboration graph"/></div>
 <map name="mbedtls__ecp__group_coll__map" id="mbedtls__ecp__group_coll__map">
-<area shape="rect" id="node2" href="struct_c_r_y_p_t_o_d_r_v___context__t.html" title="CRYPTODRV operation context. " alt="" coords="5,141,171,168"/>
-<area shape="rect" id="node4" href="structmbedtls__ecp__point.html" title="ECP point structure (jacobian coordinates) " alt="" coords="256,141,387,168"/>
-<area shape="rect" id="node6" href="structmbedtls__mpi.html" title="MPI structure. " alt="" coords="207,5,303,32"/>
+<area shape="rect" id="node2" href="structmbedtls__ecp__point.html" title="ECP point structure (jacobian coordinates) " alt="" coords="73,141,204,168"/>
+<area shape="rect" id="node4" href="structmbedtls__mpi.html" title="MPI structure. " alt="" coords="24,5,120,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a3e572cd2e40e1c23fc9a7a6aef7122d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__sl__crypto__ecp.html#gaf79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__ecp__group.html#a3e572cd2e40e1c23fc9a7a6aef7122d6">id</a></td></tr>
+<tr class="memitem:a3e572cd2e40e1c23fc9a7a6aef7122d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ecp_8h.html#af79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__ecp__group.html#a3e572cd2e40e1c23fc9a7a6aef7122d6">id</a></td></tr>
 <tr class="separator:a3e572cd2e40e1c23fc9a7a6aef7122d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae049e9c949bf5d30e71b4b31819f6007"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmbedtls__mpi.html">mbedtls_mpi</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__ecp__group.html#ae049e9c949bf5d30e71b4b31819f6007">P</a></td></tr>
 <tr class="separator:ae049e9c949bf5d30e71b4b31819f6007"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,8 +98,6 @@ Data Fields</h2></td></tr>
 <tr class="separator:a4beb01054d800f047b5479f4e0e8d7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b9a1bf79d2023dbc3807dc7e12059af"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__ecp__group.html#a4b9a1bf79d2023dbc3807dc7e12059af">T_size</a></td></tr>
 <tr class="separator:a4b9a1bf79d2023dbc3807dc7e12059af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c4cdb9f9e98e13fdab53d4f2337a209"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__ecp__group.html#a9c4cdb9f9e98e13fdab53d4f2337a209">cryptodrv_ctx</a></td></tr>
-<tr class="separator:a9c4cdb9f9e98e13fdab53d4f2337a209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="af6ab87eb277c78f786ca58ed3fd78825"></a>
@@ -116,7 +113,7 @@ Data Fields</h2></td></tr>
 <li>A in the equation, or 2. (A + 2) / 4 </li>
 </ol>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00139">139</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00140">140</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -133,21 +130,7 @@ Data Fields</h2></td></tr>
 <li>B in the equation, or 2. unused </li>
 </ol>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00140">140</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9c4cdb9f9e98e13fdab53d4f2337a209"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a> mbedtls_ecp_group::cryptodrv_ctx</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00153">153</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00141">141</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -162,7 +145,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>generator of the (sub)group used </p>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00141">141</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00142">142</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -177,7 +160,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>internal: 1 if the constants are static </p>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00145">145</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00146">146</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -186,13 +169,13 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__sl__crypto__ecp.html#gaf79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a> mbedtls_ecp_group::id</td>
+          <td class="memname"><a class="el" href="ecp_8h.html#af79e530ea8f8416480f805baa20b1a2d">mbedtls_ecp_group_id</a> mbedtls_ecp_group::id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>internal group identifier </p>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00137">137</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00138">138</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -207,7 +190,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>function for fast reduction mod P </p>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00146">146</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00147">147</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -224,7 +207,7 @@ Data Fields</h2></td></tr>
 <li>the order of G, or 2. unused </li>
 </ol>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00142">142</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00143">143</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -239,7 +222,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>number of bits in 1. P, or 2. private keys </p>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00144">144</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00145">145</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +237,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>prime modulus of the base field </p>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00138">138</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00139">139</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -269,7 +252,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>number of bits in P </p>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00143">143</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00144">144</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -284,7 +267,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>pre-computed points for ecp_mul_comb() </p>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00150">150</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00151">151</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -299,7 +282,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>unused </p>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00149">149</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00150">150</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +297,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>unused </p>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00148">148</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00149">149</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -329,7 +312,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>unused </p>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00147">147</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00148">148</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
@@ -344,17 +327,17 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>number for pre-computed points </p>
 
-<p>Definition at line <a class="el" href="ecp__alt_8h_source.html#l00151">151</a> of file <a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ecp_8h_source.html#l00152">152</a> of file <a class="el" href="ecp_8h_source.html">ecp.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="ecp__alt_8h_source.html">ecp_alt.h</a></li>
+<li><a class="el" href="ecp_8h_source.html">ecp.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 13 2016 11:17:25 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 16:12:43 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

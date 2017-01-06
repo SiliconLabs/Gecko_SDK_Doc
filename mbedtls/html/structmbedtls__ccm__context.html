@@ -40,124 +40,54 @@
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">mbedtls_ccm_context Struct Reference<div class="ingroups"><a class="el" href="group__sl__crypto.html">Silicon Labs CRYPTO Hardware Acceleration Plugins</a> &raquo; <a class="el" href="group__sl__crypto__ccm.html">CBC-MAC (CCM) for 128-bit block ciphers</a></div></div>  </div>
+<div class="title">mbedtls_ccm_context Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>CCM context structure. </p>
 
-<p>Definition at line <a class="el" href="ccm__alt_8h_source.html#l00066">66</a> of file <a class="el" href="ccm__alt_8h_source.html">ccm_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ccm_8h_source.html#l00046">46</a> of file <a class="el" href="ccm_8h_source.html">ccm.h</a>.</p>
 </div>
-<p><code>#include &lt;<a class="el" href="ccm__alt_8h_source.html">ccm_alt.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="ccm_8h_source.html">ccm.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for mbedtls_ccm_context:</div>
 <div class="dyncontent">
 <div class="center"><img src="structmbedtls__ccm__context__coll__graph.png" border="0" usemap="#mbedtls__ccm__context_coll__map" alt="Collaboration graph"/></div>
 <map name="mbedtls__ccm__context_coll__map" id="mbedtls__ccm__context_coll__map">
-<area shape="rect" id="node2" href="struct_a_e_s_d_r_v___context__t.html" title="Main AESDRV context structure. " alt="" coords="84,195,223,221"/>
-<area shape="rect" id="node4" href="struct_c_r_y_p_t_o_d_r_v___context__t.html" title="CRYPTODRV operation context. " alt="" coords="5,96,171,123"/>
-<area shape="rect" id="node6" href="union_a_e_s_d_r_v___io_mode_specific__t.html" title="Data I/O mode specific configuration structure. " alt="" coords="195,96,377,123"/>
-<area shape="rect" id="node8" href="struct_a_e_s_d_r_v___dma_config__t.html" title="DMA I/O mode specific configuration structure. " alt="" coords="208,5,365,32"/>
-<area shape="rect" id="node10" href="unionmbedtls__device__io__mode__specific.html" title="Data I/O mode specific configuration structure. " alt="" coords="247,187,413,229"/>
+<area shape="rect" id="node2" href="structmbedtls__cipher__context__t.html" title="Generic cipher context. " alt="" coords="5,187,176,213"/>
+<area shape="rect" id="node4" href="structmbedtls__cipher__info__t.html" title="Cipher information. " alt="" coords="17,96,164,123"/>
+<area shape="rect" id="node6" href="structmbedtls__cipher__base__t.html" title="Base cipher information. " alt="" coords="13,5,168,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a90d4dbf7440893a38d89cafd8a16556a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_e_s_d_r_v___context__t.html">AESDRV_Context_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__ccm__context.html#a90d4dbf7440893a38d89cafd8a16556a">aesdrv_ctx</a></td></tr>
-<tr class="separator:a90d4dbf7440893a38d89cafd8a16556a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8c8f320ca0a993ed7f7987e4ba92f9c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__ccm__context.html#ae8c8f320ca0a993ed7f7987e4ba92f9c">keybits</a></td></tr>
-<tr class="separator:ae8c8f320ca0a993ed7f7987e4ba92f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7666dec70302d0e3692227e98d8480eb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__ccm__context.html#a7666dec70302d0e3692227e98d8480eb">key</a> [8]</td></tr>
-<tr class="separator:a7666dec70302d0e3692227e98d8480eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad014162a436b2d9fa60ee6a04ecc0995"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8">mbedtls_device_io_mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__ccm__context.html#ad014162a436b2d9fa60ee6a04ecc0995">io_mode</a></td></tr>
-<tr class="separator:ad014162a436b2d9fa60ee6a04ecc0995"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5faeff868e86fde6ed9a452ea186765"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionmbedtls__device__io__mode__specific.html">mbedtls_device_io_mode_specific</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__ccm__context.html#ab5faeff868e86fde6ed9a452ea186765">io_mode_specific</a></td></tr>
-<tr class="separator:ab5faeff868e86fde6ed9a452ea186765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d270f32b6d211bc94be981ac7572b1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmbedtls__cipher__context__t.html">mbedtls_cipher_context_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__ccm__context.html#a6d270f32b6d211bc94be981ac7572b1e">cipher_ctx</a></td></tr>
+<tr class="separator:a6d270f32b6d211bc94be981ac7572b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a90d4dbf7440893a38d89cafd8a16556a"></a>
+<a class="anchor" id="a6d270f32b6d211bc94be981ac7572b1e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_a_e_s_d_r_v___context__t.html">AESDRV_Context_t</a> mbedtls_ccm_context::aesdrv_ctx</td>
+          <td class="memname"><a class="el" href="structmbedtls__cipher__context__t.html">mbedtls_cipher_context_t</a> mbedtls_ccm_context::cipher_ctx</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>AESDRV context </p>
+<p>cipher context used </p>
 
-<p>Definition at line <a class="el" href="ccm__alt_8h_source.html#l00068">68</a> of file <a class="el" href="ccm__alt_8h_source.html">ccm_alt.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad014162a436b2d9fa60ee6a04ecc0995"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8">mbedtls_device_io_mode</a> mbedtls_ccm_context::io_mode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>I/O mode </p>
-
-<p>Definition at line <a class="el" href="ccm__alt_8h_source.html#l00071">71</a> of file <a class="el" href="ccm__alt_8h_source.html">ccm_alt.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab5faeff868e86fde6ed9a452ea186765"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="unionmbedtls__device__io__mode__specific.html">mbedtls_device_io_mode_specific</a> mbedtls_ccm_context::io_mode_specific</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>IO mode specific data. </p>
-
-<p>Definition at line <a class="el" href="ccm__alt_8h_source.html#l00072">72</a> of file <a class="el" href="ccm__alt_8h_source.html">ccm_alt.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7666dec70302d0e3692227e98d8480eb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t mbedtls_ccm_context::key[8]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>AES key 128 or 256 bits </p>
-
-<p>Definition at line <a class="el" href="ccm__alt_8h_source.html#l00070">70</a> of file <a class="el" href="ccm__alt_8h_source.html">ccm_alt.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae8c8f320ca0a993ed7f7987e4ba92f9c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int mbedtls_ccm_context::keybits</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>size of key </p>
-
-<p>Definition at line <a class="el" href="ccm__alt_8h_source.html#l00069">69</a> of file <a class="el" href="ccm__alt_8h_source.html">ccm_alt.h</a>.</p>
+<p>Definition at line <a class="el" href="ccm_8h_source.html#l00047">47</a> of file <a class="el" href="ccm_8h_source.html">ccm.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="ccm__alt_8h_source.html">ccm_alt.h</a></li>
+<li><a class="el" href="ccm_8h_source.html">ccm.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 13 2016 11:17:25 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 16:12:43 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

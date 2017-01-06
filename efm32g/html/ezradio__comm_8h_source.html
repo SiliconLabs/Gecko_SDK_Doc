@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Gecko Software Documentation: C:/work/s025_sw_ssh/emdrv/ezradiodrv/common/inc/ezradio_comm.h Source File</title>
+<title>EFM32 Gecko Software Documentation: c:/work/super/platform/emdrv/ezradiodrv/common/inc/ezradio_comm.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32g-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -120,27 +120,27 @@ $(document).ready(function(){initNavTree('ezradio__comm_8h_source.html','');});
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/***************************************************************************/</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/***************************************************************************/</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#if defined(EZRADIODRV_SPI_4WIRE_MODE)</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define EZRADIODRV_MAX_CTS_BUFF_SIZE 257</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="group__COMM__Layer.html#ga3be6bf56cfb1e196af67cb55fe708643">ezradio_comm_CtsWentHigh</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;uint8_t <a class="code" href="group__COMM__Layer.html#ga45656b02cb2cf46e29c8f509203e08b4">ezradio_comm_GetResp</a>(uint8_t byteCount, uint8_t* pData);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__COMM__Layer.html#ga038a27f7a6883bc6640fe1187a98eed9">ezradio_comm_SendCmd</a>(uint8_t byteCount, uint8_t* pData);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__COMM__Layer.html#gafc9ec03055010c4c5cbfed6d8637de71">ezradio_comm_ReadData</a>(uint8_t cmd, uint8_t pollCts, uint8_t byteCount, uint8_t* pData);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__COMM__Layer.html#ga6316768a0f0661af747171605e86f401">ezradio_comm_WriteData</a>(uint8_t cmd, uint8_t pollCts, uint8_t byteCount, uint8_t* pData);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;uint8_t <a class="code" href="group__COMM__Layer.html#gac2d23214b75072bedd593da2815858d3">ezradio_comm_PollCTS</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;uint8_t <a class="code" href="group__COMM__Layer.html#ga67ac511d7cfce9c8cb00cd31113ff9a4">ezradio_comm_SendCmdGetResp</a>(uint8_t cmdByteCount, uint8_t* pCmdData,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                  uint8_t respByteCount, uint8_t* pRespData);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__COMM__Layer.html#ga26dddf452edc3e30c29cdab7d9fef1a7">ezradio_comm_ClearCTS</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif //_EZRADIO_COMM_H_</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#if defined(EZRADIODRV_SPI_4WIRE_MODE)</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#define EZRADIODRV_MAX_CTS_BUFF_SIZE 257</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="group__COMM__Layer.html#ga3be6bf56cfb1e196af67cb55fe708643">ezradio_comm_CtsWentHigh</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;uint8_t <a class="code" href="group__COMM__Layer.html#ga45656b02cb2cf46e29c8f509203e08b4">ezradio_comm_GetResp</a>(uint8_t byteCount, uint8_t* pData);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__COMM__Layer.html#ga038a27f7a6883bc6640fe1187a98eed9">ezradio_comm_SendCmd</a>(uint8_t byteCount, uint8_t* pData);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__COMM__Layer.html#gafc9ec03055010c4c5cbfed6d8637de71">ezradio_comm_ReadData</a>(uint8_t cmd, uint8_t pollCts, uint8_t byteCount, uint8_t* pData);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__COMM__Layer.html#ga6316768a0f0661af747171605e86f401">ezradio_comm_WriteData</a>(uint8_t cmd, uint8_t pollCts, uint8_t byteCount, uint8_t* pData);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;uint8_t <a class="code" href="group__COMM__Layer.html#gac2d23214b75072bedd593da2815858d3">ezradio_comm_PollCTS</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;uint8_t <a class="code" href="group__COMM__Layer.html#ga67ac511d7cfce9c8cb00cd31113ff9a4">ezradio_comm_SendCmdGetResp</a>(uint8_t cmdByteCount, uint8_t* pCmdData,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                  uint8_t respByteCount, uint8_t* pRespData);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__COMM__Layer.html#ga26dddf452edc3e30c29cdab7d9fef1a7">ezradio_comm_ClearCTS</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif //_EZRADIO_COMM_H_</span></div>
 <div class="ttc" id="group__COMM__Layer_html_ga26dddf452edc3e30c29cdab7d9fef1a7"><div class="ttname"><a href="group__COMM__Layer.html#ga26dddf452edc3e30c29cdab7d9fef1a7">ezradio_comm_ClearCTS</a></div><div class="ttdeci">void ezradio_comm_ClearCTS(void)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__comm_8c_source.html#l00278">ezradio_comm.c:278</a></div></div>
 <div class="ttc" id="group__COMM__Layer_html_gac2d23214b75072bedd593da2815858d3"><div class="ttname"><a href="group__COMM__Layer.html#gac2d23214b75072bedd593da2815858d3">ezradio_comm_PollCTS</a></div><div class="ttdeci">uint8_t ezradio_comm_PollCTS(void)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__comm_8c_source.html#l00247">ezradio_comm.c:247</a></div></div>
 <div class="ttc" id="group__COMM__Layer_html_ga45656b02cb2cf46e29c8f509203e08b4"><div class="ttname"><a href="group__COMM__Layer.html#ga45656b02cb2cf46e29c8f509203e08b4">ezradio_comm_GetResp</a></div><div class="ttdeci">uint8_t ezradio_comm_GetResp(uint8_t byteCount, uint8_t *pData)</div><div class="ttdef"><b>Definition:</b> <a href="ezradio__comm_8c_source.html#l00054">ezradio_comm.c:54</a></div></div>
@@ -154,8 +154,8 @@ $(document).ready(function(){initNavTree('ezradio__comm_8h_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_74d66e5e415af18c005205f87c017a4f.html">ezradiodrv</a></li><li class="navelem"><a class="el" href="dir_318d8263568d560f171ee5482256b513.html">common</a></li><li class="navelem"><a class="el" href="dir_804dd120e0965964b734107086b7bfad.html">inc</a></li><li class="navelem"><a class="el" href="ezradio__comm_8h.html">ezradio_comm.h</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 10:46:40 for EFM32 Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_a9326de1addf90fcea92508392adbd27.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_f6c6775b2232fe76f89b93d653eaad54.html">ezradiodrv</a></li><li class="navelem"><a class="el" href="dir_2e3e4d2cf0ddb0faf79fa75caa6878fc.html">common</a></li><li class="navelem"><a class="el" href="dir_4e6c2c6d53733089fe648640a03377f9.html">inc</a></li><li class="navelem"><a class="el" href="ezradio__comm_8h.html">ezradio_comm.h</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 15:54:02 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

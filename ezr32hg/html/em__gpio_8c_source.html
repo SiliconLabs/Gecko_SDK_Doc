@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EZR32 Happy Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/src/em_gpio.c Source File</title>
+<title>EZR32 Happy Gecko Software Documentation: c:/work/super/platform/emlib/src/em_gpio.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32hg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">ezr32hg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -166,182 +166,181 @@ $(document).ready(function(){initNavTree('em__gpio_8c_source.html','');});
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">  176</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig</a>(<a class="code" href="group__GPIO.html#gafe496583dfd425fc03c413d49459efe6">GPIO_Port_TypeDef</a> port,</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pin,</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> intNo,</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                       <span class="keywordtype">bool</span> risingEdge,</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                       <span class="keywordtype">bool</span> fallingEdge,</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                       <span class="keywordtype">bool</span> enable)</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  uint32_t tmp;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#if !defined(_GPIO_EXTIPINSELL_MASK)</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  (void)intNo;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#if defined(_GPIO_EXTIPINSELL_MASK)</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  EFM_ASSERT(GPIO_INTNO_PIN_VALID(intNo, pin));</div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">  181</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig</a>(<a class="code" href="group__GPIO.html#gafe496583dfd425fc03c413d49459efe6">GPIO_Port_TypeDef</a> port,</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pin,</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> intNo,</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                       <span class="keywordtype">bool</span> risingEdge,</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                       <span class="keywordtype">bool</span> fallingEdge,</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                       <span class="keywordtype">bool</span> enable)</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;{</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  uint32_t tmp;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#if !defined(_GPIO_EXTIPINSELL_MASK)</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  (void)pin;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="comment">/* There are two registers controlling the interrupt configuration:</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">   * The EXTIPSELL register controls pins 0-7 and EXTIPSELH controls</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">   * pins 8-15. */</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordflow">if</span> (pin &lt; 8)</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite</a>(&amp;<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTIPSELL,</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                       <a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga2d3b08a7b482c5c8b0fe9323a8241bb6">_GPIO_EXTIPSELL_EXTIPSEL0_MASK</a></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                       &lt;&lt; (<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga8153c4c39e17dfb0f504df6c2cd3f9b1">_GPIO_EXTIPSELL_EXTIPSEL1_SHIFT</a> * pin),</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                       port &lt;&lt; (<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga8153c4c39e17dfb0f504df6c2cd3f9b1">_GPIO_EXTIPSELL_EXTIPSEL1_SHIFT</a> * pin));</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  {</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    tmp = pin - 8;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite</a>(&amp;<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTIPSELH,</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                       <a class="code" href="group__EZR32HG__GPIO__BitFields.html#gaab9f723532f42eff71b8dba7aa1aa1c1">_GPIO_EXTIPSELH_EXTIPSEL8_MASK</a></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                       &lt;&lt; (<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga8c8479acade33861512677afd1d6a93b">_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT</a> * tmp),</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                       port &lt;&lt; (<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga8c8479acade33861512677afd1d6a93b">_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT</a> * tmp));</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#if defined(_GPIO_EXTIPINSELL_MASK)</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="comment">/* There are two registers controlling the interrupt/pin number mapping:</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">   * The EXTIPINSELL register controls interrupt 0-7 and EXTIPINSELH controls</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">   * interrupt 8-15. */</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordflow">if</span> (intNo &lt; 8)</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  {</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <a class="code" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite</a>(&amp;<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTIPINSELL,</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                       _GPIO_EXTIPINSELL_EXTIPINSEL0_MASK</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                       &lt;&lt; (_GPIO_EXTIPINSELL_EXTIPINSEL1_SHIFT * intNo),</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                       (pin &amp; _GPIO_EXTIPINSELL_EXTIPINSEL0_MASK)</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                       &lt;&lt; (_GPIO_EXTIPINSELL_EXTIPINSEL1_SHIFT * intNo));</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  }</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  {</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    tmp = intNo - 8;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite</a>(&amp;<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTIPINSELH,</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                       _GPIO_EXTIPINSELH_EXTIPINSEL8_MASK</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                       &lt;&lt; (_GPIO_EXTIPINSELH_EXTIPINSEL9_SHIFT * tmp),</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                       (pin &amp; _GPIO_EXTIPINSELH_EXTIPINSEL8_MASK)</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                       &lt;&lt; (<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga8c8479acade33861512677afd1d6a93b">_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT</a> * tmp));</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  }</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="comment">/* Enable/disable rising edge */</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <a class="code" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite</a>(&amp;(<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTIRISE), pin, risingEdge);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="comment">/* Enable/disable falling edge */</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <a class="code" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite</a>(&amp;(<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTIFALL), pin, fallingEdge);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="comment">/* Clear any pending interrupt */</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;IFC = 1 &lt;&lt; pin;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="comment">/* Finally enable/disable interrupt */</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <a class="code" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite</a>(&amp;(<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;IEN), pin, enable);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#if defined(_GPIO_EXTIPINSELL_MASK)</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  EFM_ASSERT(GPIO_INTNO_PIN_VALID(intNo, pin));</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="comment">/* There are two registers controlling the interrupt configuration:</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">   * The EXTIPSELL register controls pins 0-7 and EXTIPSELH controls</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">   * pins 8-15. */</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordflow">if</span> (intNo &lt; 8)</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite</a>(&amp;<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTIPSELL,</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                       <a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga2d3b08a7b482c5c8b0fe9323a8241bb6">_GPIO_EXTIPSELL_EXTIPSEL0_MASK</a></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                       &lt;&lt; (<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga8153c4c39e17dfb0f504df6c2cd3f9b1">_GPIO_EXTIPSELL_EXTIPSEL1_SHIFT</a> * intNo),</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                       port &lt;&lt; (<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga8153c4c39e17dfb0f504df6c2cd3f9b1">_GPIO_EXTIPSELL_EXTIPSEL1_SHIFT</a> * intNo));</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    tmp = intNo - 8;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <a class="code" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite</a>(&amp;<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTIPSELH,</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                       <a class="code" href="group__EZR32HG__GPIO__BitFields.html#gaab9f723532f42eff71b8dba7aa1aa1c1">_GPIO_EXTIPSELH_EXTIPSEL8_MASK</a></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                       &lt;&lt; (<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga8c8479acade33861512677afd1d6a93b">_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT</a> * tmp),</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                       port &lt;&lt; (<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga8c8479acade33861512677afd1d6a93b">_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT</a> * tmp));</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor">#if defined(_GPIO_EXTIPINSELL_MASK)</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="comment">/* There are two registers controlling the interrupt/pin number mapping:</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">   * The EXTIPINSELL register controls interrupt 0-7 and EXTIPINSELH controls</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">   * interrupt 8-15. */</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordflow">if</span> (intNo &lt; 8)</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="code" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite</a>(&amp;<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTIPINSELL,</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                       _GPIO_EXTIPINSELL_EXTIPINSEL0_MASK</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                       &lt;&lt; (_GPIO_EXTIPINSELL_EXTIPINSEL1_SHIFT * intNo),</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                       ((pin % 4) &amp; _GPIO_EXTIPINSELL_EXTIPINSEL0_MASK)</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                       &lt;&lt; (_GPIO_EXTIPINSELL_EXTIPINSEL1_SHIFT * intNo));</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="code" href="group__BUS.html#ga9e878ccba24fcbf97b5bcb8b53356e76">BUS_RegMaskedWrite</a>(&amp;<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTIPINSELH,</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                       _GPIO_EXTIPINSELH_EXTIPINSEL8_MASK</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                       &lt;&lt; (_GPIO_EXTIPINSELH_EXTIPINSEL9_SHIFT * tmp),</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                       ((pin % 4) &amp; _GPIO_EXTIPINSELH_EXTIPINSEL8_MASK)</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                       &lt;&lt; (<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga8c8479acade33861512677afd1d6a93b">_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT</a> * tmp));</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="comment">/* Enable/disable rising edge */</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <a class="code" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite</a>(&amp;(<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTIRISE), intNo, risingEdge);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="comment">/* Enable/disable falling edge */</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <a class="code" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite</a>(&amp;(<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTIFALL), intNo, fallingEdge);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="comment">/* Clear any pending interrupt */</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;IFC = 1 &lt;&lt; intNo;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">  265</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet</a>(<a class="code" href="group__GPIO.html#gafe496583dfd425fc03c413d49459efe6">GPIO_Port_TypeDef</a> port,</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pin,</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                     <a class="code" href="group__GPIO.html#ga93ff740308e5b31729d8593a89967cda">GPIO_Mode_TypeDef</a> mode,</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> out)</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;{</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="comment">/* If disabling pin, do not modify DOUT in order to reduce chance for */</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="comment">/* glitch/spike (may not be sufficient precaution in all use cases) */</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordflow">if</span> (mode != <a class="code" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a>)</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">if</span> (out)</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    {</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      <a class="code" href="group__GPIO.html#gab08f054efbb07aaff57d616974c9c536">GPIO_PinOutSet</a>(port, pin);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    }</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="comment">/* Finally enable/disable interrupt */</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <a class="code" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite</a>(&amp;(<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;IEN), intNo, enable);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">  269</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet</a>(<a class="code" href="group__GPIO.html#gafe496583dfd425fc03c413d49459efe6">GPIO_Port_TypeDef</a> port,</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pin,</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                     <a class="code" href="group__GPIO.html#ga93ff740308e5b31729d8593a89967cda">GPIO_Mode_TypeDef</a> mode,</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> out)</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;{</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="comment">/* If disabling pin, do not modify DOUT in order to reduce chance for */</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="comment">/* glitch/spike (may not be sufficient precaution in all use cases) */</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  <span class="keywordflow">if</span> (mode != <a class="code" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a>)</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordflow">if</span> (out)</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    {</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      <a class="code" href="group__GPIO.html#ga607f3a5f3d881bb145101566f1664aba">GPIO_PinOutClear</a>(port, pin);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      <a class="code" href="group__GPIO.html#gab08f054efbb07aaff57d616974c9c536">GPIO_PinOutSet</a>(port, pin);</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    }</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  }</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="comment">/* There are two registers controlling the pins for each port. The MODEL</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">   * register controls pins 0-7 and MODEH controls pins 8-15. */</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordflow">if</span> (pin &lt; 8)</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].MODEL = (<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].MODEL &amp; ~(0xF &lt;&lt; (pin * 4)))</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                          | (mode &lt;&lt; (pin * 4));</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  }</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  {</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].MODEH = (<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].MODEH &amp; ~(0xF &lt;&lt; ((pin - 8) * 4)))</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                          | (mode &lt;&lt; ((pin - 8) * 4));</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  }</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="keywordflow">if</span> (mode == <a class="code" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a>)</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordflow">if</span> (out)</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      <a class="code" href="group__GPIO.html#gab08f054efbb07aaff57d616974c9c536">GPIO_PinOutSet</a>(port, pin);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    }</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      <a class="code" href="group__GPIO.html#ga607f3a5f3d881bb145101566f1664aba">GPIO_PinOutClear</a>(port, pin);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  }</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="comment">/* There are two registers controlling the pins for each port. The MODEL</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">   * register controls pins 0-7 and MODEH controls pins 8-15. */</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordflow">if</span> (pin &lt; 8)</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].MODEL = (<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].MODEL &amp; ~(0xF &lt;&lt; (pin * 4)))</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                          | (mode &lt;&lt; (pin * 4));</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].MODEH = (<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].MODEH &amp; ~(0xF &lt;&lt; ((pin - 8) * 4)))</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                          | (mode &lt;&lt; ((pin - 8) * 4));</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordflow">if</span> (mode == <a class="code" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a>)</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  {</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">if</span> (out)</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    {</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <a class="code" href="group__GPIO.html#ga607f3a5f3d881bb145101566f1664aba">GPIO_PinOutClear</a>(port, pin);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <a class="code" href="group__GPIO.html#gab08f054efbb07aaff57d616974c9c536">GPIO_PinOutSet</a>(port, pin);</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    }</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  }</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;}</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno"><a class="line" href="group__GPIO.html#ga990ec8d9113570947735485259acdabe">  325</a></span>&#160;<a class="code" href="group__GPIO.html#ga93ff740308e5b31729d8593a89967cda">GPIO_Mode_TypeDef</a> <a class="code" href="group__GPIO.html#ga990ec8d9113570947735485259acdabe">GPIO_PinModeGet</a>(<a class="code" href="group__GPIO.html#gafe496583dfd425fc03c413d49459efe6">GPIO_Port_TypeDef</a> port,</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pin)</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;{</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordflow">if</span> (pin &lt; 8)</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="group__GPIO.html#ga93ff740308e5b31729d8593a89967cda">GPIO_Mode_TypeDef</a>) ((<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].MODEL &gt;&gt; (pin * 4)) &amp; 0xF);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  }</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <a class="code" href="group__GPIO.html#ga607f3a5f3d881bb145101566f1664aba">GPIO_PinOutClear</a>(port, pin);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    }</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;}</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno"><a class="line" href="group__GPIO.html#ga990ec8d9113570947735485259acdabe">  329</a></span>&#160;<a class="code" href="group__GPIO.html#ga93ff740308e5b31729d8593a89967cda">GPIO_Mode_TypeDef</a> <a class="code" href="group__GPIO.html#ga990ec8d9113570947735485259acdabe">GPIO_PinModeGet</a>(<a class="code" href="group__GPIO.html#gafe496583dfd425fc03c413d49459efe6">GPIO_Port_TypeDef</a> port,</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pin)</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;{</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  EFM_ASSERT(GPIO_PORT_PIN_VALID(port, pin));</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keywordflow">if</span> (pin &lt; 8)</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  {</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="group__GPIO.html#ga93ff740308e5b31729d8593a89967cda">GPIO_Mode_TypeDef</a>) ((<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].MODEH &gt;&gt; ((pin - 8) * 4)) &amp; 0xF);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="group__GPIO.html#ga93ff740308e5b31729d8593a89967cda">GPIO_Mode_TypeDef</a>) ((<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].MODEL &gt;&gt; (pin * 4)) &amp; 0xF);</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  }</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;}</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor">#if defined( _GPIO_EM4WUEN_MASK )</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="group__GPIO.html#gad65109dacead0351fa390749d8682137">  357</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__GPIO.html#gad65109dacead0351fa390749d8682137">GPIO_EM4EnablePinWakeup</a>(uint32_t pinmask, uint32_t polaritymask)</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;{</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  EFM_ASSERT((pinmask &amp; ~<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga6f1cbf4acc006854a0e5f7d03839c5ed">_GPIO_EM4WUEN_MASK</a>) == 0);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="preprocessor">#if defined( _GPIO_EM4WUPOL_MASK )</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  EFM_ASSERT((polaritymask &amp; ~<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga18e4890b5c622fd01c2b09793d5a6339">_GPIO_EM4WUPOL_MASK</a>) == 0);</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EM4WUPOL &amp;= ~pinmask;               <span class="comment">/* Set wakeup polarity */</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EM4WUPOL |= pinmask &amp; polaritymask;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor">#elif defined( _GPIO_EXTILEVEL_MASK )</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  EFM_ASSERT((polaritymask &amp; ~_GPIO_EXTILEVEL_MASK) == 0);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTILEVEL &amp;= ~pinmask;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTILEVEL |= pinmask &amp; polaritymask;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EM4WUEN  |= pinmask;                <span class="comment">/* Enable wakeup */</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <a class="code" href="group__GPIO.html#ga9373299464cb309d7251c73de17d0d66">GPIO_EM4SetPinRetention</a>(<span class="keyword">true</span>);            <span class="comment">/* Enable pin retention */</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">#if defined( _GPIO_CMD_EM4WUCLR_MASK )</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;CMD = <a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga7bf603b4eef5886c42985eac58dc0a5a">GPIO_CMD_EM4WUCLR</a>;            <span class="comment">/* Clear wake-up logic */</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor">#elif defined( _GPIO_IFC_EM4WU_MASK )</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <a class="code" href="group__GPIO.html#ga1c840f8a9d9ee23d76f3f51000f9cc5d">GPIO_IntClear</a>(pinmask);</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;}</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(GPIO_COUNT) &amp;&amp; (GPIO_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="group__GPIO.html#ga93ff740308e5b31729d8593a89967cda">GPIO_Mode_TypeDef</a>) ((<a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].MODEH &gt;&gt; ((pin - 8) * 4)) &amp; 0xF);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor">#if defined( _GPIO_EM4WUEN_MASK )</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment">/**************************************************************************/</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno"><a class="line" href="group__GPIO.html#gad65109dacead0351fa390749d8682137">  361</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__GPIO.html#gad65109dacead0351fa390749d8682137">GPIO_EM4EnablePinWakeup</a>(uint32_t pinmask, uint32_t polaritymask)</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;{</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  EFM_ASSERT((pinmask &amp; ~<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga6f1cbf4acc006854a0e5f7d03839c5ed">_GPIO_EM4WUEN_MASK</a>) == 0);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor">#if defined( _GPIO_EM4WUPOL_MASK )</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  EFM_ASSERT((polaritymask &amp; ~<a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga18e4890b5c622fd01c2b09793d5a6339">_GPIO_EM4WUPOL_MASK</a>) == 0);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EM4WUPOL &amp;= ~pinmask;               <span class="comment">/* Set wakeup polarity */</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EM4WUPOL |= pinmask &amp; polaritymask;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="preprocessor">#elif defined( _GPIO_EXTILEVEL_MASK )</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  EFM_ASSERT((polaritymask &amp; ~_GPIO_EXTILEVEL_MASK) == 0);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTILEVEL &amp;= ~pinmask;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EXTILEVEL |= pinmask &amp; polaritymask;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;EM4WUEN  |= pinmask;                <span class="comment">/* Enable wakeup */</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <a class="code" href="group__GPIO.html#ga9373299464cb309d7251c73de17d0d66">GPIO_EM4SetPinRetention</a>(<span class="keyword">true</span>);            <span class="comment">/* Enable pin retention */</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor">#if defined( _GPIO_CMD_EM4WUCLR_MASK )</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <a class="code" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;CMD = <a class="code" href="group__EZR32HG__GPIO__BitFields.html#ga7bf603b4eef5886c42985eac58dc0a5a">GPIO_CMD_EM4WUCLR</a>;            <span class="comment">/* Clear wake-up logic */</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor">#elif defined( _GPIO_IFC_EM4WU_MASK )</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <a class="code" href="group__GPIO.html#ga1c840f8a9d9ee23d76f3f51000f9cc5d">GPIO_IntClear</a>(pinmask);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;}</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* defined(GPIO_COUNT) &amp;&amp; (GPIO_COUNT &gt; 0) */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="group__GPIO_html_gafe496583dfd425fc03c413d49459efe6"><div class="ttname"><a href="group__GPIO.html#gafe496583dfd425fc03c413d49459efe6">GPIO_Port_TypeDef</a></div><div class="ttdeci">GPIO_Port_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00251">em_gpio.h:251</a></div></div>
 <div class="ttc" id="group__EZR32HG__GPIO__BitFields_html_ga6f1cbf4acc006854a0e5f7d03839c5ed"><div class="ttname"><a href="group__EZR32HG__GPIO__BitFields.html#ga6f1cbf4acc006854a0e5f7d03839c5ed">_GPIO_EM4WUEN_MASK</a></div><div class="ttdeci">#define _GPIO_EM4WUEN_MASK</div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg__gpio_8h_source.html#l01094">ezr32hg_gpio.h:1094</a></div></div>
 <div class="ttc" id="group__EZR32HG__GPIO__BitFields_html_ga8153c4c39e17dfb0f504df6c2cd3f9b1"><div class="ttname"><a href="group__EZR32HG__GPIO__BitFields.html#ga8153c4c39e17dfb0f504df6c2cd3f9b1">_GPIO_EXTIPSELL_EXTIPSEL1_SHIFT</a></div><div class="ttdeci">#define _GPIO_EXTIPSELL_EXTIPSEL1_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg__gpio_8h_source.html#l00737">ezr32hg_gpio.h:737</a></div></div>
 <div class="ttc" id="group__GPIO_html_ga1c840f8a9d9ee23d76f3f51000f9cc5d"><div class="ttname"><a href="group__GPIO.html#ga1c840f8a9d9ee23d76f3f51000f9cc5d">GPIO_IntClear</a></div><div class="ttdeci">__STATIC_INLINE void GPIO_IntClear(uint32_t flags)</div><div class="ttdoc">Clear one or more pending GPIO interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00571">em_gpio.h:571</a></div></div>
-<div class="ttc" id="group__GPIO_html_ga990ec8d9113570947735485259acdabe"><div class="ttname"><a href="group__GPIO.html#ga990ec8d9113570947735485259acdabe">GPIO_PinModeGet</a></div><div class="ttdeci">GPIO_Mode_TypeDef GPIO_PinModeGet(GPIO_Port_TypeDef port, unsigned int pin)</div><div class="ttdoc">Get the mode for a GPIO pin. </div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8c_source.html#l00325">em_gpio.c:325</a></div></div>
+<div class="ttc" id="group__GPIO_html_ga990ec8d9113570947735485259acdabe"><div class="ttname"><a href="group__GPIO.html#ga990ec8d9113570947735485259acdabe">GPIO_PinModeGet</a></div><div class="ttdeci">GPIO_Mode_TypeDef GPIO_PinModeGet(GPIO_Port_TypeDef port, unsigned int pin)</div><div class="ttdoc">Get the mode for a GPIO pin. </div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8c_source.html#l00329">em_gpio.c:329</a></div></div>
 <div class="ttc" id="group__GPIO_html_ga2e5db302df7c3695b41b582094ca6c15"><div class="ttname"><a href="group__GPIO.html#ga2e5db302df7c3695b41b582094ca6c15">GPIO_DbgLocationSet</a></div><div class="ttdeci">void GPIO_DbgLocationSet(unsigned int location)</div><div class="ttdoc">Sets the pin location of the debug pins (Serial Wire interface). </div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8c_source.html#l00083">em_gpio.c:83</a></div></div>
 <div class="ttc" id="group__EZR32HG__GPIO__BitFields_html_ga7bf603b4eef5886c42985eac58dc0a5a"><div class="ttname"><a href="group__EZR32HG__GPIO__BitFields.html#ga7bf603b4eef5886c42985eac58dc0a5a">GPIO_CMD_EM4WUCLR</a></div><div class="ttdeci">#define GPIO_CMD_EM4WUCLR</div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg__gpio_8h_source.html#l01086">ezr32hg_gpio.h:1086</a></div></div>
-<div class="ttc" id="group__GPIO_html_gad65109dacead0351fa390749d8682137"><div class="ttname"><a href="group__GPIO.html#gad65109dacead0351fa390749d8682137">GPIO_EM4EnablePinWakeup</a></div><div class="ttdeci">void GPIO_EM4EnablePinWakeup(uint32_t pinmask, uint32_t polaritymask)</div><div class="ttdoc">Enable GPIO pin wake-up from EM4. When the function exits, EM4 mode can be safely entered...</div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8c_source.html#l00357">em_gpio.c:357</a></div></div>
-<div class="ttc" id="group__GPIO_html_gac954a361034e059b980964055f6d735a"><div class="ttname"><a href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig</a></div><div class="ttdeci">void GPIO_ExtIntConfig(GPIO_Port_TypeDef port, unsigned int pin, unsigned int intNo, bool risingEdge, bool fallingEdge, bool enable)</div><div class="ttdoc">Configure GPIO external pin interrupt. </div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8c_source.html#l00176">em_gpio.c:176</a></div></div>
+<div class="ttc" id="group__GPIO_html_gad65109dacead0351fa390749d8682137"><div class="ttname"><a href="group__GPIO.html#gad65109dacead0351fa390749d8682137">GPIO_EM4EnablePinWakeup</a></div><div class="ttdeci">void GPIO_EM4EnablePinWakeup(uint32_t pinmask, uint32_t polaritymask)</div><div class="ttdoc">Enable GPIO pin wake-up from EM4. When the function exits, EM4 mode can be safely entered...</div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8c_source.html#l00361">em_gpio.c:361</a></div></div>
+<div class="ttc" id="group__GPIO_html_gac954a361034e059b980964055f6d735a"><div class="ttname"><a href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig</a></div><div class="ttdeci">void GPIO_ExtIntConfig(GPIO_Port_TypeDef port, unsigned int pin, unsigned int intNo, bool risingEdge, bool fallingEdge, bool enable)</div><div class="ttdoc">Configure GPIO external pin interrupt. </div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8c_source.html#l00181">em_gpio.c:181</a></div></div>
 <div class="ttc" id="group__GPIO_html_ga93ff740308e5b31729d8593a89967cda"><div class="ttname"><a href="group__GPIO.html#ga93ff740308e5b31729d8593a89967cda">GPIO_Mode_TypeDef</a></div><div class="ttdeci">GPIO_Mode_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00318">em_gpio.h:318</a></div></div>
 <div class="ttc" id="group__GPIO_html_ga74243df78de8e19283d234307fd96259"><div class="ttname"><a href="group__GPIO.html#ga74243df78de8e19283d234307fd96259">GPIO_DriveModeSet</a></div><div class="ttdeci">void GPIO_DriveModeSet(GPIO_Port_TypeDef port, GPIO_DriveMode_TypeDef mode)</div><div class="ttdoc">Sets the drive mode for a GPIO port. </div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8c_source.html#l00106">em_gpio.c:106</a></div></div>
-<div class="ttc" id="group__GPIO_html_gab6751992334a136efe8750a1d01a850d"><div class="ttname"><a href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet</a></div><div class="ttdeci">void GPIO_PinModeSet(GPIO_Port_TypeDef port, unsigned int pin, GPIO_Mode_TypeDef mode, unsigned int out)</div><div class="ttdoc">Set the mode for a GPIO pin. </div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8c_source.html#l00265">em_gpio.c:265</a></div></div>
+<div class="ttc" id="group__GPIO_html_gab6751992334a136efe8750a1d01a850d"><div class="ttname"><a href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet</a></div><div class="ttdeci">void GPIO_PinModeSet(GPIO_Port_TypeDef port, unsigned int pin, GPIO_Mode_TypeDef mode, unsigned int out)</div><div class="ttdoc">Set the mode for a GPIO pin. </div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8c_source.html#l00269">em_gpio.c:269</a></div></div>
 <div class="ttc" id="em__gpio_8h_html"><div class="ttname"><a href="em__gpio_8h.html">em_gpio.h</a></div><div class="ttdoc">General Purpose IO (GPIO) peripheral API. </div></div>
 <div class="ttc" id="group__GPIO_html_gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b"><div class="ttname"><a href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a></div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00321">em_gpio.h:321</a></div></div>
 <div class="ttc" id="group__GPIO_html_gab08f054efbb07aaff57d616974c9c536"><div class="ttname"><a href="group__GPIO.html#gab08f054efbb07aaff57d616974c9c536">GPIO_PinOutSet</a></div><div class="ttdeci">__STATIC_INLINE void GPIO_PinOutSet(GPIO_Port_TypeDef port, unsigned int pin)</div><div class="ttdoc">Set a single pin in GPIO data out register to 1. </div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00753">em_gpio.h:753</a></div></div>
@@ -354,7 +353,7 @@ $(document).ready(function(){initNavTree('em__gpio_8c_source.html','');});
 <div class="ttc" id="group__GPIO_html_ga607f3a5f3d881bb145101566f1664aba"><div class="ttname"><a href="group__GPIO.html#ga607f3a5f3d881bb145101566f1664aba">GPIO_PinOutClear</a></div><div class="ttdeci">__STATIC_INLINE void GPIO_PinOutClear(GPIO_Port_TypeDef port, unsigned int pin)</div><div class="ttdoc">Set a single pin in GPIO data out port register to 0. </div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00708">em_gpio.h:708</a></div></div>
 <div class="ttc" id="group__BUS_html_gaf8574f14855448ecae32c5a9dd0c7164"><div class="ttname"><a href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite</a></div><div class="ttdeci">__STATIC_INLINE void BUS_RegBitWrite(volatile uint32_t *addr, unsigned int bit, unsigned int val)</div><div class="ttdoc">Perform a single-bit write operation on a peripheral register. </div><div class="ttdef"><b>Definition:</b> <a href="em__bus_8h_source.html#l00148">em_bus.h:148</a></div></div>
 <div class="ttc" id="group__EZR32HG__GPIO__BitFields_html_gaf15659194606e9c0fee88052979b6c86"><div class="ttname"><a href="group__EZR32HG__GPIO__BitFields.html#gaf15659194606e9c0fee88052979b6c86">_GPIO_P_CTRL_DRIVEMODE_SHIFT</a></div><div class="ttdeci">#define _GPIO_P_CTRL_DRIVEMODE_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg__gpio_8h_source.html#l00073">ezr32hg_gpio.h:73</a></div></div>
-<div class="ttc" id="group__EZR32HG320F64R69__Peripheral__Declaration_html_ga1037b18e2d226fe7d327d4a6f17a21c1"><div class="ttname"><a href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a></div><div class="ttdeci">#define GPIO</div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg320f64r69_8h_source.html#l00348">ezr32hg320f64r69.h:348</a></div></div>
+<div class="ttc" id="group__EZR32HG320F64R69__Peripheral__Declaration_html_ga1037b18e2d226fe7d327d4a6f17a21c1"><div class="ttname"><a href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a></div><div class="ttdeci">#define GPIO</div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg320f64r69_8h_source.html#l00351">ezr32hg320f64r69.h:351</a></div></div>
 <div class="ttc" id="group__EZR32HG__GPIO__BitFields_html_ga8c8479acade33861512677afd1d6a93b"><div class="ttname"><a href="group__EZR32HG__GPIO__BitFields.html#ga8c8479acade33861512677afd1d6a93b">_GPIO_EXTIPSELH_EXTIPSEL9_SHIFT</a></div><div class="ttdeci">#define _GPIO_EXTIPSELH_EXTIPSEL9_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg__gpio_8h_source.html#l00869">ezr32hg_gpio.h:869</a></div></div>
 <div class="ttc" id="group__GPIO_html_ga9373299464cb309d7251c73de17d0d66"><div class="ttname"><a href="group__GPIO.html#ga9373299464cb309d7251c73de17d0d66">GPIO_EM4SetPinRetention</a></div><div class="ttdeci">__STATIC_INLINE void GPIO_EM4SetPinRetention(bool enable)</div><div class="ttdoc">Enable GPIO pin retention of output enable, output value, pull enable and pull direction in EM4...</div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00513">em_gpio.h:513</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -362,8 +361,8 @@ $(document).ready(function(){initNavTree('em__gpio_8c_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_b024e35bd40549d46920f272346444ee.html">src</a></li><li class="navelem"><a class="el" href="em__gpio_8c.html">em_gpio.c</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 10:52:27 for EZR32 Happy Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a221e95e59b6f0aa21c4dd4fafd285f8.html">src</a></li><li class="navelem"><a class="el" href="em__gpio_8c.html">em_gpio.c</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 15:56:50 for EZR32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

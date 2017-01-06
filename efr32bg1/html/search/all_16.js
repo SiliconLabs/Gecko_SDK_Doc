@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['valid',['valid',['../structMSDD__CmdStatus__TypeDef.html#a0eb28e74638f8ca64f0cf141a4cb3055',1,'MSDD_CmdStatus_TypeDef::valid()'],['../structMSDSCSI__RequestSenseData__TypeDef.html#ac486480a4989efbebbaccf3cbafc3b68',1,'MSDSCSI_RequestSenseData_TypeDef::Valid()']]],
+  ['valid',['Valid',['../structMSDSCSI__RequestSenseData__TypeDef.html#ac486480a4989efbebbaccf3cbafc3b68',1,'MSDSCSI_RequestSenseData_TypeDef::Valid()'],['../structMSDD__CmdStatus__TypeDef.html#a0eb28e74638f8ca64f0cf141a4cb3055',1,'MSDD_CmdStatus_TypeDef::valid()']]],
   ['valid_5fframe_5fmask',['VALID_FRAME_MASK',['../ksz8851snl_8c.html#aeaa8fab8c4bb775b6dd1fc7532911f25',1,'ksz8851snl.c']]],
   ['vddcheck',['VddCheck',['../group__VddCheck.html',1,'']]],
   ['vddcheck_2ec',['vddcheck.c',['../vddcheck_8c.html',1,'']]],

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EZR32 Happy Gecko Software Documentation: C:/work/s025_sw_ssh/emdrv/gpiointerrupt/src/gpiointerrupt.c Source File</title>
+<title>EZR32 Happy Gecko Software Documentation: c:/work/super/platform/emdrv/gpiointerrupt/src/gpiointerrupt.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32hg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">ezr32hg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('gpiointerrupt_8c_source.html','');});
 <div class="contents">
 <a href="gpiointerrupt_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************/</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__gpio_8h.html">em_gpio.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__int_8h.html">em_int.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__core_8h.html">em_core.h</a>&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gpiointerrupt_8h.html">gpiointerrupt.h</a>&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__assert_8h.html">em_assert.h</a>&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="em__common_8h.html">em_common.h</a>&quot;</span></div>
@@ -164,89 +164,86 @@ $(document).ready(function(){initNavTree('gpiointerrupt_8c_source.html','');});
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">/***************************************************************************/</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">   91</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister</a>(uint8_t pin, <a class="code" href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a> callbackPtr)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a>();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="comment">/* Dispatcher is used */</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  gpioCallbacks[pin] = callbackPtr;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> GPIOINT_IRQDispatcher(uint32_t iflags)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  uint32_t irqIdx;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a> callback;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="comment">/* check for all flags set in IF register */</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordflow">while</span>(iflags)</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    irqIdx = <a class="code" href="group__COMMON.html#ga8df7f6d52e31dad26a89799b7e63adb0">SL_CTZ</a>(iflags);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">/* clear flag*/</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    iflags &amp;= ~(1 &lt;&lt; irqIdx);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    callback = gpioCallbacks[irqIdx];</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">if</span> (callback)</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <span class="comment">/* call user callback */</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      callback(irqIdx);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keywordtype">void</span> GPIO_EVEN_IRQHandler(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  uint32_t iflags;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="comment">/* Get all even interrupts. */</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  iflags = <a class="code" href="group__GPIO.html#ga55d11c01de82f0152d8727d551cff7bb">GPIO_IntGetEnabled</a>() &amp; 0x00005555;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="comment">/* Clean only even interrupts. */</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <a class="code" href="group__GPIO.html#ga1c840f8a9d9ee23d76f3f51000f9cc5d">GPIO_IntClear</a>(iflags);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  GPIOINT_IRQDispatcher(iflags);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keywordtype">void</span> GPIO_ODD_IRQHandler(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  uint32_t iflags;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="comment">/* Get all odd interrupts. */</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  iflags = <a class="code" href="group__GPIO.html#ga55d11c01de82f0152d8727d551cff7bb">GPIO_IntGetEnabled</a>() &amp; 0x0000AAAA;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="comment">/* Clean only even interrupts. */</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <a class="code" href="group__GPIO.html#ga1c840f8a9d9ee23d76f3f51000f9cc5d">GPIO_IntClear</a>(iflags);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  GPIOINT_IRQDispatcher(iflags);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">/******** THE REST OF THE FILE IS DOCUMENTATION ONLY !**********************/</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="group__CORE.html#ga3b0354ed174362818a7e22916917d43a">CORE_ATOMIC_SECTION</a>(</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">/* Dispatcher is used */</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    gpioCallbacks[pin] = callbackPtr;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  )</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> GPIOINT_IRQDispatcher(uint32_t iflags)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  uint32_t irqIdx;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a> callback;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="comment">/* check for all flags set in IF register */</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">while</span>(iflags)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    irqIdx = <a class="code" href="group__COMMON.html#ga8df7f6d52e31dad26a89799b7e63adb0">SL_CTZ</a>(iflags);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">/* clear flag*/</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    iflags &amp;= ~(1 &lt;&lt; irqIdx);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    callback = gpioCallbacks[irqIdx];</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span> (callback)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <span class="comment">/* call user callback */</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      callback(irqIdx);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keywordtype">void</span> GPIO_EVEN_IRQHandler(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;{</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  uint32_t iflags;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="comment">/* Get all even interrupts. */</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  iflags = <a class="code" href="group__GPIO.html#ga55d11c01de82f0152d8727d551cff7bb">GPIO_IntGetEnabled</a>() &amp; 0x00005555;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="comment">/* Clean only even interrupts. */</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <a class="code" href="group__GPIO.html#ga1c840f8a9d9ee23d76f3f51000f9cc5d">GPIO_IntClear</a>(iflags);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  GPIOINT_IRQDispatcher(iflags);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">void</span> GPIO_ODD_IRQHandler(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  uint32_t iflags;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="comment">/* Get all odd interrupts. */</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  iflags = <a class="code" href="group__GPIO.html#ga55d11c01de82f0152d8727d551cff7bb">GPIO_IntGetEnabled</a>() &amp; 0x0000AAAA;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="comment">/* Clean only odd interrupts. */</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <a class="code" href="group__GPIO.html#ga1c840f8a9d9ee23d76f3f51000f9cc5d">GPIO_IntClear</a>(iflags);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  GPIOINT_IRQDispatcher(iflags);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">/******** THE REST OF THE FILE IS DOCUMENTATION ONLY !**********************/</span></div>
 <div class="ttc" id="em__assert_8h_html"><div class="ttname"><a href="em__assert_8h.html">em_assert.h</a></div><div class="ttdoc">Emlib peripheral API "assert" implementation. </div></div>
 <div class="ttc" id="group__GPIO_html_ga55d11c01de82f0152d8727d551cff7bb"><div class="ttname"><a href="group__GPIO.html#ga55d11c01de82f0152d8727d551cff7bb">GPIO_IntGetEnabled</a></div><div class="ttdeci">__STATIC_INLINE uint32_t GPIO_IntGetEnabled(void)</div><div class="ttdoc">Get enabled and pending GPIO interrupt flags. Useful for handling more interrupt sources in the same ...</div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00632">em_gpio.h:632</a></div></div>
 <div class="ttc" id="group__GPIO_html_ga1c840f8a9d9ee23d76f3f51000f9cc5d"><div class="ttname"><a href="group__GPIO.html#ga1c840f8a9d9ee23d76f3f51000f9cc5d">GPIO_IntClear</a></div><div class="ttdeci">__STATIC_INLINE void GPIO_IntClear(uint32_t flags)</div><div class="ttdoc">Clear one or more pending GPIO interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__gpio_8h_source.html#l00571">em_gpio.h:571</a></div></div>
-<div class="ttc" id="group__INT_html_gafba0338f70b8fab23d8b5c00ec15df56"><div class="ttname"><a href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a></div><div class="ttdeci">__STATIC_INLINE uint32_t INT_Enable(void)</div><div class="ttdoc">Enable interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__int_8h_source.html#l00094">em_int.h:94</a></div></div>
 <div class="ttc" id="group__GPIOINT_html_gaffd9a793482ef44c0871654a9e60836e"><div class="ttname"><a href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister</a></div><div class="ttdeci">void GPIOINT_CallbackRegister(uint8_t pin, GPIOINT_IrqCallbackPtr_t callbackPtr)</div><div class="ttdoc">Registers user callback for given pin number. </div><div class="ttdef"><b>Definition:</b> <a href="gpiointerrupt_8c_source.html#l00091">gpiointerrupt.c:91</a></div></div>
 <div class="ttc" id="em__common_8h_html"><div class="ttname"><a href="em__common_8h.html">em_common.h</a></div><div class="ttdoc">General purpose utilities. </div></div>
 <div class="ttc" id="group__EZR32HG320F64R69_html_gga666eb0caeb12ec0e281415592ae89083aea7f153c746f85b7c55712687c96b582"><div class="ttname"><a href="group__EZR32HG320F64R69.html#gga666eb0caeb12ec0e281415592ae89083aea7f153c746f85b7c55712687c96b582">GPIO_ODD_IRQn</a></div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg320f64r69_8h_source.html#l00067">ezr32hg320f64r69.h:67</a></div></div>
-<div class="ttc" id="em__int_8h_html"><div class="ttname"><a href="em__int_8h.html">em_int.h</a></div><div class="ttdoc">Interrupt enable/disable unit API. </div></div>
+<div class="ttc" id="group__CORE_html_ga3b0354ed174362818a7e22916917d43a"><div class="ttname"><a href="group__CORE.html#ga3b0354ed174362818a7e22916917d43a">CORE_ATOMIC_SECTION</a></div><div class="ttdeci">#define CORE_ATOMIC_SECTION(yourcode)</div><div class="ttdef"><b>Definition:</b> <a href="em__core_8h_source.html#l00126">em_core.h:126</a></div></div>
 <div class="ttc" id="em__gpio_8h_html"><div class="ttname"><a href="em__gpio_8h.html">em_gpio.h</a></div><div class="ttdoc">General Purpose IO (GPIO) peripheral API. </div></div>
-<div class="ttc" id="group__GPIOINT_html_ga0359e46b02264e5bae93e0a1224190b4"><div class="ttname"><a href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a></div><div class="ttdeci">void(* GPIOINT_IrqCallbackPtr_t)(uint8_t pin)</div><div class="ttdoc">GPIO interrupt callback function pointer. </div><div class="ttdef"><b>Definition:</b> <a href="gpiointerrupt_8h_source.html#l00047">gpiointerrupt.h:47</a></div></div>
-<div class="ttc" id="group__COMMON_html_ga8df7f6d52e31dad26a89799b7e63adb0"><div class="ttname"><a href="group__COMMON.html#ga8df7f6d52e31dad26a89799b7e63adb0">SL_CTZ</a></div><div class="ttdeci">__STATIC_INLINE uint32_t SL_CTZ(uint32_t value)</div><div class="ttdoc">Count trailing number of zero&#39;s. Use CLZ instruction if available. </div><div class="ttdef"><b>Definition:</b> <a href="em__common_8h_source.html#l00146">em_common.h:146</a></div></div>
+<div class="ttc" id="em__core_8h_html"><div class="ttname"><a href="em__core_8h.html">em_core.h</a></div><div class="ttdoc">Core interrupt handling API. </div></div>
+<div class="ttc" id="group__GPIOINT_html_ga0359e46b02264e5bae93e0a1224190b4"><div class="ttname"><a href="group__GPIOINT.html#ga0359e46b02264e5bae93e0a1224190b4">GPIOINT_IrqCallbackPtr_t</a></div><div class="ttdeci">void(* GPIOINT_IrqCallbackPtr_t)(uint8_t pin)</div><div class="ttdoc">GPIO interrupt callback function pointer. </div><div class="ttdef"><b>Definition:</b> <a href="gpiointerrupt_8h_source.html#l00046">gpiointerrupt.h:46</a></div></div>
+<div class="ttc" id="group__COMMON_html_ga8df7f6d52e31dad26a89799b7e63adb0"><div class="ttname"><a href="group__COMMON.html#ga8df7f6d52e31dad26a89799b7e63adb0">SL_CTZ</a></div><div class="ttdeci">__STATIC_INLINE uint32_t SL_CTZ(uint32_t value)</div><div class="ttdoc">Count trailing number of zero&#39;s. Use CLZ instruction if available. </div><div class="ttdef"><b>Definition:</b> <a href="em__common_8h_source.html#l00185">em_common.h:185</a></div></div>
 <div class="ttc" id="group__GPIOINT_html_gac93e5702d7693ab3efbbccd9782b22e0"><div class="ttname"><a href="group__GPIOINT.html#gac93e5702d7693ab3efbbccd9782b22e0">GPIOINT_Init</a></div><div class="ttdeci">void GPIOINT_Init(void)</div><div class="ttdoc">Initialization of GPIOINT module. </div><div class="ttdef"><b>Definition:</b> <a href="gpiointerrupt_8c_source.html#l00067">gpiointerrupt.c:67</a></div></div>
 <div class="ttc" id="group__EZR32HG320F64R69_html_gga666eb0caeb12ec0e281415592ae89083a2b0ef649b523e210cc63ccda4d064df3"><div class="ttname"><a href="group__EZR32HG320F64R69.html#gga666eb0caeb12ec0e281415592ae89083a2b0ef649b523e210cc63ccda4d064df3">GPIO_EVEN_IRQn</a></div><div class="ttdef"><b>Definition:</b> <a href="ezr32hg320f64r69_8h_source.html#l00063">ezr32hg320f64r69.h:63</a></div></div>
 <div class="ttc" id="gpiointerrupt_8h_html"><div class="ttname"><a href="gpiointerrupt_8h.html">gpiointerrupt.h</a></div><div class="ttdoc">GPIOINT API definition. </div></div>
-<div class="ttc" id="group__INT_html_gaa46adfbe58501552a0614c3f7adda6a5"><div class="ttname"><a href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a></div><div class="ttdeci">__STATIC_INLINE uint32_t INT_Disable(void)</div><div class="ttdoc">Disable interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__int_8h_source.html#l00071">em_int.h:71</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_a4c7865bbce7a8303b6f974c12c308c9.html">gpiointerrupt</a></li><li class="navelem"><a class="el" href="dir_c5ad3f970d8ed2847153434ab25b7519.html">src</a></li><li class="navelem"><a class="el" href="gpiointerrupt_8c.html">gpiointerrupt.c</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 10:52:21 for EZR32 Happy Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_a9326de1addf90fcea92508392adbd27.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_8f6e96d1d29a4ebc3c1532c967c45eeb.html">gpiointerrupt</a></li><li class="navelem"><a class="el" href="dir_505e2c608a671c65ec0acd6de9d9d222.html">src</a></li><li class="navelem"><a class="el" href="gpiointerrupt_8c.html">gpiointerrupt.c</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 15:56:47 for EZR32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['valid',['valid',['../structMSDD__CmdStatus__TypeDef.html#a0eb28e74638f8ca64f0cf141a4cb3055',1,'MSDD_CmdStatus_TypeDef::valid()'],['../structMSDSCSI__RequestSenseData__TypeDef.html#ac486480a4989efbebbaccf3cbafc3b68',1,'MSDSCSI_RequestSenseData_TypeDef::Valid()']]],
+  ['valid',['Valid',['../structMSDSCSI__RequestSenseData__TypeDef.html#ac486480a4989efbebbaccf3cbafc3b68',1,'MSDSCSI_RequestSenseData_TypeDef::Valid()'],['../structMSDD__CmdStatus__TypeDef.html#a0eb28e74638f8ca64f0cf141a4cb3055',1,'MSDD_CmdStatus_TypeDef::valid()']]],
   ['value',['VALUE',['../structCALIBRATE__TypeDef.html#afed449925331ba5fb66a3912414a2f2f',1,'CALIBRATE_TypeDef']]],
   ['vddlevel',['vddLevel',['../structACMP__CapsenseInit__TypeDef.html#ac6c45a058c3881092795487edf418c4a',1,'ACMP_CapsenseInit_TypeDef::vddLevel()'],['../structACMP__Init__TypeDef.html#a1d3145c20d24f1b53279187cfd771a31',1,'ACMP_Init_TypeDef::vddLevel()']]],
   ['verification',['Verification',['../structMSDSCSI__Verify10__TypeDef.html#a30481a394fbcd76dca996efc1c1d6f57',1,'MSDSCSI_Verify10_TypeDef']]],

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32g-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('group__RTCDRV.html','');});
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Real-time clock driver. </p><pre class="fragment"></pre><p>. </p>
+<p>Real-time Clock Driver. </p>
 <p>The source files for the RTCDRV device driver library resides in the emdrv/rtcdrv folder, and are named <a class="el" href="rtcdriver_8c.html" title="RTCDRV timer API implementation. ">rtcdriver.c</a> and <a class="el" href="rtcdriver_8h.html" title="RTCDRV timer API definition. ">rtcdriver.h</a>.</p>
 <ul>
 <li><a class="el" href="group__RTCDRV.html#rtcdrv_intro">Introduction</a> </li>
@@ -337,7 +337,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8h_source.html#l00064">64</a> of file <a class="el" href="rtcdriver_8h_source.html">rtcdriver.h</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8h_source.html#l00063">63</a> of file <a class="el" href="rtcdriver_8h_source.html">rtcdriver.h</a>.</p>
 
 </div>
 </div>
@@ -362,7 +362,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="rtcdriver_8h_source.html#l00067">67</a> of file <a class="el" href="rtcdriver_8h_source.html">rtcdriver.h</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8h_source.html#l00066">66</a> of file <a class="el" href="rtcdriver_8h_source.html">rtcdriver.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +395,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00231">231</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
-<p>References <a class="el" href="group__RTCDRV.html#ga438d9a6102b0bc78eb9d0f80dd9ae6d4">ECODE_EMDRV_RTCDRV_ALL_TIMERS_USED</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__RTCDRV.html#gad9070ac5c8805b44a4fe2e284d75cc7d">ECODE_EMDRV_RTCDRV_PARAM_ERROR</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, and <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>.</p>
+<p>References <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__RTCDRV.html#ga438d9a6102b0bc78eb9d0f80dd9ae6d4">ECODE_EMDRV_RTCDRV_ALL_TIMERS_USED</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, and <a class="el" href="group__RTCDRV.html#gad9070ac5c8805b44a4fe2e284d75cc7d">ECODE_EMDRV_RTCDRV_PARAM_ERROR</a>.</p>
 
 <p>Referenced by <a class="el" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239">SPIDRV_Init()</a>.</p>
 
@@ -419,7 +419,7 @@ Functions</h2></td></tr>
 <p>Will disable interrupts and turn off the clock to the underlying hardware timer. If integration with SLEEP module is enabled it will remove any restriction that are set on energy mode usage.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00418">418</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00417">417</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
 <p>References <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eacedf32067074558f64c468650acfaef1">cmuClock_RTC</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__RTC.html#ga19213bbf2d6cb73d55cec086a98493e6">RTC_Enable()</a>, <a class="el" href="group__SLEEP.html#ga1dd174edab75f62e330d1fb10b902e2d">SLEEP_SleepBlockEnd()</a>, and <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a>.</p>
 
@@ -448,7 +448,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00269">269</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00270">270</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
 <p>References <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>.</p>
 
@@ -481,9 +481,9 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a> on success.<br />
  <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a> if id has an illegal value. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00297">297</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00298">298</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
-<p>References <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, and <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>.</p>
+<p>References <a class="el" href="group__CORE.html#ga3b0354ed174362818a7e22916917d43a">CORE_ATOMIC_SECTION</a>, <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a>, and <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>.</p>
 
 <p>Referenced by <a class="el" href="group__SPIDRV.html#ga1bebced0f8f5b3a3ac582916e4b13460">SPIDRV_DeInit()</a>.</p>
 
@@ -506,7 +506,7 @@ Functions</h2></td></tr>
 <p>Get wallclock time. </p>
 <dl class="section return"><dt>Returns</dt><dd>Seconds elapsed since RTCDRV was initialized. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00760">760</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00767">767</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
 <p>References <a class="el" href="group__RTCDRV.html#ga5950470ac041a5eff659e7e9b016c402">RTCDRV_GetWallClockTicks32()</a>.</p>
 
@@ -529,7 +529,7 @@ Functions</h2></td></tr>
 <p>Get wallclock tick count as a 32bit value. At 4 ticks per millisecond, overflow occurs after approximately 12.5 days. </p>
 <dl class="section return"><dt>Returns</dt><dd>Wallclock tick counter. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00776">776</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00783">783</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
 <p>Referenced by <a class="el" href="group__RTCDRV.html#gac9d75dfb6e046529bb9e5b9fc79df272">RTCDRV_GetWallClock()</a>, and <a class="el" href="group__RTCDRV.html#ga8a56711f0cca956094187d4345964232">RTCDRV_SetWallClock()</a>.</p>
 
@@ -552,7 +552,7 @@ Functions</h2></td></tr>
 <p>Get wallclock tick count as a 64 bit value. This will never overflow. </p>
 <dl class="section return"><dt>Returns</dt><dd>Wallclock tick counter. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00803">803</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00810">810</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
 </div>
 </div>
@@ -574,7 +574,7 @@ Functions</h2></td></tr>
 <p>Will enable all necessary clocks. Initializes internal datastructures and configures the underlying hardware timer.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00325">325</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00324">324</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
 <p>References <a class="el" href="group__CMU.html#ga7cc316a8dca5436fcc39d57f5e6c412d">CMU_ClockDivSet()</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet()</a>, <a class="el" href="group__CMU.html#ga3ac649cb01dd184676c6bdea7ff3d768">CMU_DivToLog2()</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea555db71790d226b22932597eddc65003">cmuClock_LFA</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eacedf32067074558f64c468650acfaef1">cmuClock_RTC</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__RTC.html#ga693d1c349834ec6be942f5b27258f6e9">RTC_Init()</a>, <a class="el" href="group__SLEEP.html#gac26ef85c0817797fb9ec823d38742af7">SLEEP_SleepBlockBegin()</a>, and <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a>.</p>
 
@@ -619,9 +619,9 @@ Functions</h2></td></tr>
  <a class="el" href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a> if the timer is not reserved.<br />
  <a class="el" href="group__RTCDRV.html#gad9070ac5c8805b44a4fe2e284d75cc7d">ECODE_EMDRV_RTCDRV_PARAM_ERROR</a> if an invalid isRunning pointer was supplied. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00469">469</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00468">468</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
-<p>References <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__RTCDRV.html#gad9070ac5c8805b44a4fe2e284d75cc7d">ECODE_EMDRV_RTCDRV_PARAM_ERROR</a>, <a class="el" href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, and <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>.</p>
+<p>References <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__RTCDRV.html#gad9070ac5c8805b44a4fe2e284d75cc7d">ECODE_EMDRV_RTCDRV_PARAM_ERROR</a>, and <a class="el" href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a>.</p>
 
 </div>
 </div>
@@ -648,7 +648,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of ticks. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00845">845</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00852">852</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
 </div>
 </div>
@@ -675,7 +675,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of ticks. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00861">861</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00868">868</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
 </div>
 </div>
@@ -702,7 +702,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00828">828</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00835">835</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
 <p>References <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, and <a class="el" href="group__RTCDRV.html#ga5950470ac041a5eff659e7e9b016c402">RTCDRV_GetWallClockTicks32()</a>.</p>
 
@@ -766,9 +766,9 @@ Functions</h2></td></tr>
  <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a> if id has an illegal value.<br />
  <a class="el" href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a> if the timer is not reserved. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00514">514</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00515">515</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
-<p>References <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>, <a class="el" href="group__RTCDRV.html#gga08a8750e466e18aee02bbb692446dac9af9e2c16ec81453d483001682fdc84f5b">rtcdrvTimerTypePeriodic</a>, <a class="el" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>, <a class="el" href="group__SLEEP.html#gac26ef85c0817797fb9ec823d38742af7">SLEEP_SleepBlockBegin()</a>, and <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a>.</p>
+<p>References <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a>, <a class="el" href="group__RTCDRV.html#gga08a8750e466e18aee02bbb692446dac9af9e2c16ec81453d483001682fdc84f5b">rtcdrvTimerTypePeriodic</a>, <a class="el" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>, <a class="el" href="group__SLEEP.html#gac26ef85c0817797fb9ec823d38742af7">SLEEP_SleepBlockBegin()</a>, and <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a>.</p>
 
 <p>Referenced by <a class="el" href="group__SPIDRV.html#gaa4a1d07a7cfa1b461231b81ee9bd7208">SPIDRV_SReceive()</a>, <a class="el" href="group__SPIDRV.html#gaacf21de6f56b73897137afe66c8a55fc">SPIDRV_SReceiveB()</a>, <a class="el" href="group__SPIDRV.html#ga3b0e6cefe8389131f8cda2d3422ca165">SPIDRV_STransfer()</a>, <a class="el" href="group__SPIDRV.html#ga2117731649ff7375202f3db7c7eaea14">SPIDRV_STransferB()</a>, <a class="el" href="group__SPIDRV.html#gab17e267c072c9fa5424ac0dbb6d162b4">SPIDRV_STransmit()</a>, and <a class="el" href="group__SPIDRV.html#ga950e481559e49f805c4c65701f272df5">SPIDRV_STransmitB()</a>.</p>
 
@@ -799,9 +799,9 @@ Functions</h2></td></tr>
  <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a> if id has an illegal value. <br />
  <a class="el" href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a> if the timer is not reserved. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00670">670</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00674">674</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
-<p>References <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, and <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>.</p>
+<p>References <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, and <a class="el" href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a>.</p>
 
 <p>Referenced by <a class="el" href="group__SPIDRV.html#ga071d128b28b8acff08396fb090b8025a">SPIDRV_AbortTransfer()</a>, and <a class="el" href="group__SPIDRV.html#ga1bebced0f8f5b3a3ac582916e4b13460">SPIDRV_DeInit()</a>.</p>
 
@@ -830,7 +830,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of milliseconds. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00877">877</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00884">884</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
 </div>
 </div>
@@ -857,7 +857,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of seconds. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00893">893</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00900">900</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
 </div>
 </div>
@@ -899,9 +899,9 @@ Functions</h2></td></tr>
  <a class="el" href="group__RTCDRV.html#ga6f61a5708b7d1589edebb799eb8521b7">ECODE_EMDRV_RTCDRV_TIMER_NOT_RUNNING</a> if the timer is not running.<br />
  <a class="el" href="group__RTCDRV.html#gad9070ac5c8805b44a4fe2e284d75cc7d">ECODE_EMDRV_RTCDRV_PARAM_ERROR</a> if an invalid timeRemaining pointer was supplied. </dd></dl>
 
-<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00705">705</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
+<p>Definition at line <a class="el" href="rtcdriver_8c_source.html#l00711">711</a> of file <a class="el" href="rtcdriver_8c_source.html">rtcdriver.c</a>.</p>
 
-<p>References <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__RTCDRV.html#gad9070ac5c8805b44a4fe2e284d75cc7d">ECODE_EMDRV_RTCDRV_PARAM_ERROR</a>, <a class="el" href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a>, <a class="el" href="group__RTCDRV.html#ga6f61a5708b7d1589edebb799eb8521b7">ECODE_EMDRV_RTCDRV_TIMER_NOT_RUNNING</a>, <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, and <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>.</p>
+<p>References <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__RTCDRV.html#gad9070ac5c8805b44a4fe2e284d75cc7d">ECODE_EMDRV_RTCDRV_PARAM_ERROR</a>, <a class="el" href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a>, and <a class="el" href="group__RTCDRV.html#ga6f61a5708b7d1589edebb799eb8521b7">ECODE_EMDRV_RTCDRV_TIMER_NOT_RUNNING</a>.</p>
 
 </div>
 </div>
@@ -910,7 +910,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 10:47:19 for EFM32 Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 15:54:20 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

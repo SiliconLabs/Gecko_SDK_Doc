@@ -79,7 +79,7 @@ var searchData=
   ['uniquel',['UNIQUEL',['../structDEVINFO__TypeDef.html#adeb0c331ca40b8495c827039409fbffd',1,'DEVINFO_TypeDef']]],
   ['unmod_5fcarrier_5fplugin',['Unmod_Carrier_Plugin',['../group__Unmod__Carrier__Plugin.html',1,'']]],
   ['unmodcarrier',['unmodCarrier',['../structEZRADIODRV__HandleData.html#adee41191751df0fa8727fa4de54a068c',1,'EZRADIODRV_HandleData']]],
-  ['updateinterrupts',['updateInterrupts',['../tempdrv_8c.html#a3d3c1e0a68bb10fdeef9360d1c56c18a',1,'tempdrv.c']]],
+  ['updateinterrupts',['updateInterrupts',['../tempdrv_8c.html#a2eb0a16de52bf17b2923dfd60592c789',1,'tempdrv.c']]],
   ['usart',['USART',['../group__USART.html',1,'']]],
   ['usart1',['USART1',['../group__EFM32ZG222F32__Peripheral__Declaration.html#ga92871691058ff7ccffd7635930cb08da',1,'efm32zg222f32.h']]],
   ['usart1_5fbase',['USART1_BASE',['../group__EFM32ZG222F32__Peripheral__Base.html#ga86162ab3f740db9026c1320d46938b4d',1,'efm32zg222f32.h']]],

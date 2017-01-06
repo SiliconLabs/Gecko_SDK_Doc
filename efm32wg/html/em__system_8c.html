@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Wonder Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/src/em_system.c File Reference</title>
+<title>EFM32 Wonder Gecko Software Documentation: c:/work/super/platform/emlib/src/em_system.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32wg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('em__system_8c.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>System Peripheral API. </p>
-<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -129,6 +129,7 @@ License</h1>
 <p>Definition in file <a class="el" href="em__system_8c_source.html">em_system.c</a>.</p>
 </div><div class="textblock"><code>#include &quot;<a class="el" href="em__system_8h_source.html">em_system.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="em__assert_8h_source.html">em_assert.h</a>&quot;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
 </div>
 <p><a href="em__system_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -137,17 +138,17 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6470ed38937ffd0b8b509334c5add7dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga6470ed38937ffd0b8b509334c5add7dd">SYSTEM_ChipRevisionGet</a> (<a class="el" href="structSYSTEM__ChipRevision__TypeDef.html">SYSTEM_ChipRevision_TypeDef</a> *rev)</td></tr>
 <tr class="memdesc:ga6470ed38937ffd0b8b509334c5add7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get chip major/minor revision.  <a href="group__SYSTEM.html#ga6470ed38937ffd0b8b509334c5add7dd">More...</a><br /></td></tr>
 <tr class="separator:ga6470ed38937ffd0b8b509334c5add7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga786913c991338e29650617d89aec3768"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga786913c991338e29650617d89aec3768">SYSTEM_GetCalibrationValue</a> (volatile uint32_t *regAddress)</td></tr>
-<tr class="memdesc:ga786913c991338e29650617d89aec3768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get factory calibration value for a given peripheral register.  <a href="group__SYSTEM.html#ga786913c991338e29650617d89aec3768">More...</a><br /></td></tr>
-<tr class="separator:ga786913c991338e29650617d89aec3768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84a2becba34bea4a4d718d4dfe14c4db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SYSTEM.html#ga84a2becba34bea4a4d718d4dfe14c4db">SYSTEM_GetCalibrationValue</a> (volatile uint32_t *regAddress)</td></tr>
+<tr class="memdesc:ga84a2becba34bea4a4d718d4dfe14c4db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get factory calibration value for a given peripheral register.  <a href="group__SYSTEM.html#ga84a2becba34bea4a4d718d4dfe14c4db">More...</a><br /></td></tr>
+<tr class="separator:ga84a2becba34bea4a4d718d4dfe14c4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_b024e35bd40549d46920f272346444ee.html">src</a></li><li class="navelem"><a class="el" href="em__system_8c.html">em_system.c</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 11:14:06 for EFM32 Wonder Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a221e95e59b6f0aa21c4dd4fafd285f8.html">src</a></li><li class="navelem"><a class="el" href="em__system_8c.html">em_system.c</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 16:10:14 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

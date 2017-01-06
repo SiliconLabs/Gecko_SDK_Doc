@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Mighty Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/inc/em_int.h Source File</title>
+<title>EFR32 Mighty Gecko 1 Software Documentation: c:/work/super/platform/emlib/inc/em_int.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EFR32 Mighty Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32mg1-doc-4.4.0</span>
+   <div id="projectname">EFR32 Mighty Gecko 1 Software Documentation
+   &#160;<span id="projectnumber">efr32mg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -125,57 +125,59 @@ $(document).ready(function(){initNavTree('em__int_8h_source.html','');});
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define UINT32_MAX ((uint32_t)(0xFFFFFFFF))</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">   71</a></span>&#160;__STATIC_INLINE uint32_t <a class="code" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  __disable_irq();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a> &lt; UINT32_MAX)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a>++;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">   94</a></span>&#160;__STATIC_INLINE uint32_t <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  uint32_t retVal;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a> &gt; 0)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a>--;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    retVal = <a class="code" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (retVal == 0)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      __enable_irq();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> retVal;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_INT_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="group__INT_html_gafba0338f70b8fab23d8b5c00ec15df56"><div class="ttname"><a href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a></div><div class="ttdeci">__STATIC_INLINE uint32_t INT_Enable(void)</div><div class="ttdoc">Enable interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__int_8h_source.html#l00094">em_int.h:94</a></div></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#warning &quot;The INT module is deprecated and marked for removal in a later release. Please use the new CORE module instead. See \&quot;Porting from em_int\&quot; in the CORE documentation for instructions.&quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">   78</a></span>&#160;__STATIC_INLINE uint32_t <a class="code" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  __disable_irq();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a> &lt; UINT32_MAX)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a>++;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">  105</a></span>&#160;__STATIC_INLINE uint32_t <a class="code" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  uint32_t retVal;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a> &gt; 0)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a>--;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    retVal = <a class="code" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">if</span> (retVal == 0)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      __enable_irq();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> retVal;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_INT_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group__INT_html_gafba0338f70b8fab23d8b5c00ec15df56"><div class="ttname"><a href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable</a></div><div class="ttdeci">__STATIC_INLINE uint32_t INT_Enable(void)</div><div class="ttdoc">Enable interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__int_8h_source.html#l00105">em_int.h:105</a></div></div>
 <div class="ttc" id="em__device_8h_html"><div class="ttname"><a href="em__device_8h.html">em_device.h</a></div><div class="ttdoc">CMSIS Cortex-M Peripheral Access Layer for Silicon Laboratories microcontroller devices. </div></div>
-<div class="ttc" id="group__INT_html_ga2b05202b72fa3edd46f1d9fc94f2f451"><div class="ttname"><a href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a></div><div class="ttdeci">uint32_t INT_LockCnt</div><div class="ttdef"><b>Definition:</b> <a href="em__int_8c_source.html#l00070">em_int.c:70</a></div></div>
-<div class="ttc" id="group__INT_html_gaa46adfbe58501552a0614c3f7adda6a5"><div class="ttname"><a href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a></div><div class="ttdeci">__STATIC_INLINE uint32_t INT_Disable(void)</div><div class="ttdoc">Disable interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__int_8h_source.html#l00071">em_int.h:71</a></div></div>
+<div class="ttc" id="group__INT_html_ga2b05202b72fa3edd46f1d9fc94f2f451"><div class="ttname"><a href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a></div><div class="ttdeci">uint32_t INT_LockCnt</div><div class="ttdef"><b>Definition:</b> <a href="em__int_8c_source.html#l00075">em_int.c:75</a></div></div>
+<div class="ttc" id="group__INT_html_gaa46adfbe58501552a0614c3f7adda6a5"><div class="ttname"><a href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable</a></div><div class="ttdeci">__STATIC_INLINE uint32_t INT_Disable(void)</div><div class="ttdoc">Disable interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__int_8h_source.html#l00078">em_int.h:78</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__int_8h.html">em_int.h</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 11:05:09 for EFR32 Mighty Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__int_8h.html">em_int.h</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 16:04:18 for EFR32 Mighty Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

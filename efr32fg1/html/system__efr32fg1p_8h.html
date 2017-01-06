@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Flex Gecko Software Documentation: C:/work/s025_sw_ssh/Device/SiliconLabs/EFR32FG1P/Include/system_efr32fg1p.h File Reference</title>
+<title>EFR32 Flex Gecko 1 Software Documentation: c:/work/super/platform/Device/SiliconLabs/EFR32FG1P/Include/system_efr32fg1p.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EFR32 Flex Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32fg1-doc-4.4.0</span>
+   <div id="projectname">EFR32 Flex Gecko 1 Software Documentation
+   &#160;<span id="projectnumber">efr32fg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('system__efr32fg1p_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>CMSIS Cortex-M3/M4 System Layer for EFR32 devices. </p>
-<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -164,9 +164,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CRYPTO_IRQHandler</b>
 <tr class="memitem:adbdfb05858cc36fc520974df37ec3cb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbdfb05858cc36fc520974df37ec3cb0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugMon_Handler</b> (void)</td></tr>
 <tr class="separator:adbdfb05858cc36fc520974df37ec3cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fda42f1f4ae172145a1a67b8521d50c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fda42f1f4ae172145a1a67b8521d50c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efr32fg1p_8h.html#a4fda42f1f4ae172145a1a67b8521d50c">EMU_IRQHandler</a> (void)</td></tr>
-<tr class="memdesc:a4fda42f1f4ae172145a1a67b8521d50c"><td class="mdescLeft">&#160;</td><td class="mdescRight">EMU Interrupt Handler. <br /></td></tr>
+<tr class="memitem:a4fda42f1f4ae172145a1a67b8521d50c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__efr32fg1p_8h.html#a4fda42f1f4ae172145a1a67b8521d50c">EMU_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a4fda42f1f4ae172145a1a67b8521d50c"><td class="mdescLeft">&#160;</td><td class="mdescRight">EMU Interrupt Handler.  <a href="#a4fda42f1f4ae172145a1a67b8521d50c">More...</a><br /></td></tr>
 <tr class="separator:a4fda42f1f4ae172145a1a67b8521d50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c7a131a40ec0f4f4aedbdad5f15b399"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c7a131a40ec0f4f4aedbdad5f15b399"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FRC_IRQHandler</b> (void)</td></tr>
@@ -311,6 +310,29 @@ Variables</h2></td></tr>
 <tr class="separator:a019e34c770ed2855a9ce73be796f33d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a4fda42f1f4ae172145a1a67b8521d50c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EMU_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EMU Interrupt Handler. </p>
+<p>The EMU_IRQHandler provided by TEMPDRV will call TEMPDRV_IRQ_Handler. Configure EMU_CUSTOM_IRQ_HANDLER = true if the application wants to implement its own EMU_IRQHandler. This is typically needed if one of the non-temperature related EMU interrupt flags are in use. </p>
+
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00092">92</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+
+<p>References <a class="el" href="group__TEMPDRV.html#ga6a84c867daa872d148b663ce82e0926c">TEMPDRV_IRQHandler()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af2e6aa1120f0e55e38c83d8387625d16"></a>
 <div class="memitem">
 <div class="memproto">
@@ -519,6 +541,8 @@ This is an EFR32 proprietary function, not part of the CMSIS definition.</dd></d
 
 <p>Definition at line <a class="el" href="system__efr32fg1p_8c_source.html#l00343">343</a> of file <a class="el" href="system__efr32fg1p_8c_source.html">system_efr32fg1p.c</a>.</p>
 
+<p>Referenced by <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart()</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ace8c3b705bdbdc9172fbc7f2415dfd8b"></a>
@@ -667,8 +691,8 @@ This is an EFR32 proprietary function, not part of the CMSIS definition.</dd></d
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4c76ddfc10a27668d6c42d3412320ee0.html">Device</a></li><li class="navelem"><a class="el" href="dir_eca9ef8613423b074c58e28a7f7d2781.html">SiliconLabs</a></li><li class="navelem"><a class="el" href="dir_8f4612d6639992add8a147561a5fd6be.html">EFR32FG1P</a></li><li class="navelem"><a class="el" href="dir_4013e35c082b1795dcc1e36c0b5d70e4.html">Include</a></li><li class="navelem"><a class="el" href="system__efr32fg1p_8h.html">system_efr32fg1p.h</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 11:07:24 for EFR32 Flex Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_c4a1fdb7ca03bb51345d1f932823000b.html">Device</a></li><li class="navelem"><a class="el" href="dir_86b3dc2c16a929258fb30f3df54c71bb.html">SiliconLabs</a></li><li class="navelem"><a class="el" href="dir_2e5c4df87a5bd697e438d53476c57035.html">EFR32FG1P</a></li><li class="navelem"><a class="el" href="dir_f7d5e6d4362bf0582236a5db2c83dafd.html">Include</a></li><li class="navelem"><a class="el" href="system__efr32fg1p_8h.html">system_efr32fg1p.h</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 16:05:28 for EFR32 Flex Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

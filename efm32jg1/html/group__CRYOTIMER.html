@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -111,9 +111,42 @@ $(document).ready(function(){initNavTree('group__CRYOTIMER.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Ultra Low Energy Timer/Counter (CRYOTIMER) Peripheral API. </p>
-<p>The user is responsible for choosing which oscillator to use for the CRYOTIMER. The oscillator that is choosen must be enabled and ready before calling this <a class="el" href="group__CRYOTIMER.html#ga2fc2bf012253672d3870b45b736fb821">CRYOTIMER_Init</a> function. See <a class="el" href="group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9">CMU_OscillatorEnable</a> for details of how to enable and wait for an oscillator to become ready. Note that ULFRCO is always ready while LFRCO and LFXO must be enable by the user.</p>
+<p>The CRYOTIMER is a 32 bit counter which operates on a low frequency oscillator, and is capable of running in all Energy Modes. It can provide periodic wakeup events and PRS signals which can be used to wake up peripherals from any energy mode. The CRYOTIMER provides a very wide range of periods for the interrupts facilitating flexible ultra-low energy operation. Because of its simplicity, the CRYOTIMER is a lower energy solution for periodically waking up the MCU compared to the RTCC.</p>
+<p>To configure the CRYOTIMER you call the <a class="el" href="group__CRYOTIMER.html#ga2fc2bf012253672d3870b45b736fb821">CRYOTIMER_Init</a> function. This function will configure the CRYOTIMER peripheral according to the user configuration.</p>
+<p>When using the CRYOTIMER the user has to choose which oscillator to use as the CRYOTIMER clock. The CRYOTIMER supports 3 low frequency clock these are LFXO, LFRCO and ULFRCO. The oscillator that is chosen must be enabled and ready before calling this <a class="el" href="group__CRYOTIMER.html#ga2fc2bf012253672d3870b45b736fb821">CRYOTIMER_Init</a> function. See <a class="el" href="group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9">CMU_OscillatorEnable</a> for details of how to enable and wait for an oscillator to become ready. Note that ULFRCO is always ready while LFRCO <a class="el" href="group__CMU.html#gga095c94cc5b58238856389c523ce12c2aa1ece1d9d8f5f053487b40faf887136c3">cmuOsc_LFRCO</a> and LFXO <a class="el" href="group__CMU.html#gga095c94cc5b58238856389c523ce12c2aadd915148fa7e88d5225d1163f72fbffb">cmuOsc_LFXO</a> must be enabled by the user.</p>
 <p>Note that the only oscillator which is running in EM3 is ULFRCO. Keep this in mind when choosing which oscillator to use for the CRYOTIMER.</p>
-<p>Special care must be taken if the user wants the CRYOTIMER to run during EM4. All the low frequency oscillators can be used in EM4, however the oscillator that is used must be be configured to be retained when going into EM4. This can be configured by using functions in the <a class="el" href="group__EMU.html">EMU</a> module. See <a class="el" href="group__EMU.html#ga06bca70635ca5004a01c35eeafa15690">EMU_EM4Init</a> and <a class="el" href="structEMU__EM4Init__TypeDef.html">EMU_EM4Init_TypeDef</a>. If an oscillator is retained in EM4 the user is also responsible for unlatching the retained configuration on a wakeup from EM4. </p>
+<p>Here is an example of how to use the CRYOTIMER to generate an interrupt at a configurable period.</p>
+<div class="fragment"><div class="line"><span class="comment">/* Enable clock to CRYOTIMER module */</span></div>
+<div class="line"><a class="code" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a>(<a class="code" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaba530e2d3ac5c8eb737a9c801ace4cc0">cmuClock_CRYOTIMER</a> ,<span class="keyword">true</span>);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">/* Configure the CRYOTIMER to use the ULFRCO which is running at 1 KHz</span></div>
+<div class="line"><span class="comment"> * and trigger an interrupt every 128/1000 = 0,128s using the period</span></div>
+<div class="line"><span class="comment"> * interrupt. */</span></div>
+<div class="line"><a class="code" href="structCRYOTIMER__Init__TypeDef.html">CRYOTIMER_Init_TypeDef</a> init = <a class="code" href="group__CRYOTIMER.html#gad8eb3451130bb396e2c1932417560f4b">CRYOTIMER_INIT_DEFAULT</a>;</div>
+<div class="line">init.<a class="code" href="structCRYOTIMER__Init__TypeDef.html#a51a7b5db3f57bc905174c887d4069057">osc</a> = <a class="code" href="group__CRYOTIMER.html#ggae75ded142f45aa60088d6fa1e4109238a1ec3a8105f16ed1c602d5710e50c001d">cryotimerOscULFRCO</a>;</div>
+<div class="line">init.<a class="code" href="structCRYOTIMER__Init__TypeDef.html#a8a0045a9bdae75210409fccaf7a4bb33">presc</a> = <a class="code" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426ab9533eebaa3ece0dba62c4a7896cc5cf">cryotimerPresc_1</a>;</div>
+<div class="line">init.<a class="code" href="structCRYOTIMER__Init__TypeDef.html#a36b9e2885ad984813efb15c46b465c01">period</a> = <a class="code" href="group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21abadef52964ed1af1832b6e9db4baf612af">cryotimerPeriod_128</a>;</div>
+<div class="line"><a class="code" href="group__CRYOTIMER.html#ga2fc2bf012253672d3870b45b736fb821">CRYOTIMER_Init</a>(&amp;init);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">/* Now we enable the period interrupt in the CRYOTIMER and we enable</span></div>
+<div class="line"><span class="comment"> * the CRYOTIMER IRQ in the NVIC. */</span></div>
+<div class="line"><a class="code" href="group__CRYOTIMER.html#ga36965b7d939b999d83628d531c825916">CRYOTIMER_IntEnable</a>(<a class="code" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga3619fdd3ea4af6b465bfc8c1c3953159">CRYOTIMER_IEN_PERIOD</a>);</div>
+<div class="line">NVIC_EnableIRQ(<a class="code" href="group__EFM32JG1B200F256GM48.html#gga666eb0caeb12ec0e281415592ae89083af5f388d079596963ad1b60696ce60933">CRYOTIMER_IRQn</a>);</div>
+</div><!-- fragment --><p>To use the CRYOTIMER in EM4 the user has to enable EM4 wakeup in the CRYOTIMER. This can be done either in the <a class="el" href="structCRYOTIMER__Init__TypeDef.html">CRYOTIMER_Init_TypeDef</a> structure when initializing the CRYOTIMER or at a later time by using <a class="el" href="group__CRYOTIMER.html#gabe18934adcd131e47da8c492388c36e0">CRYOTIMER_EM4WakeupEnable</a>.</p>
+<p>Note that when using the CRYOTIMER to wakeup from EM4 the application has the responsibility to clear the wakeup event. This is done by calling <a class="el" href="group__CRYOTIMER.html#ga3e76c6554781a0b5f865691c5712dbe1">CRYOTIMER_IntClear</a>. If the user does not clear the wakeup event then the wakeup event will stay pending and will cause an immediate wakeup the next time the application attempts to enter EM4.</p>
+<p>Here is an example of how to use the CRYOTIMER to wakeup from EM4 after a configurable amount of time.</p>
+<div class="fragment"><div class="line"><span class="comment">/* Enable clock to CRYOTIMER module */</span></div>
+<div class="line"><a class="code" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a>(<a class="code" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaba530e2d3ac5c8eb737a9c801ace4cc0">cmuClock_CRYOTIMER</a> ,<span class="keyword">true</span>);</div>
+<div class="line"></div>
+<div class="line"><span class="comment">/* Configure the CRYOTIMER to use the ULFRCO which is running at 1 KHz</span></div>
+<div class="line"><span class="comment"> * and trigger an EM4 wakeup every 1024/1000 = 1,024s. */</span></div>
+<div class="line"><a class="code" href="structCRYOTIMER__Init__TypeDef.html">CRYOTIMER_Init_TypeDef</a> init = <a class="code" href="group__CRYOTIMER.html#gad8eb3451130bb396e2c1932417560f4b">CRYOTIMER_INIT_DEFAULT</a>;</div>
+<div class="line">init.<a class="code" href="structCRYOTIMER__Init__TypeDef.html#a51a7b5db3f57bc905174c887d4069057">osc</a> = <a class="code" href="group__CRYOTIMER.html#ggae75ded142f45aa60088d6fa1e4109238a1ec3a8105f16ed1c602d5710e50c001d">cryotimerOscULFRCO</a>;</div>
+<div class="line">init.<a class="code" href="structCRYOTIMER__Init__TypeDef.html#a8a0045a9bdae75210409fccaf7a4bb33">presc</a> = <a class="code" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426ab9533eebaa3ece0dba62c4a7896cc5cf">cryotimerPresc_1</a>;</div>
+<div class="line">init.<a class="code" href="structCRYOTIMER__Init__TypeDef.html#a36b9e2885ad984813efb15c46b465c01">period</a> = <a class="code" href="group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21aba0202d7410da12e06d7770941e7cc3dc5">cryotimerPeriod_1k</a>;</div>
+<div class="line">init.<a class="code" href="structCRYOTIMER__Init__TypeDef.html#a13946506fd773b553ead76b7bf1fa8b3">em4Wakeup</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a class="code" href="group__CRYOTIMER.html#ga2fc2bf012253672d3870b45b736fb821">CRYOTIMER_Init</a>(&amp;init);</div>
+</div><!-- fragment --><p>All the low frequency oscillators can be used in EM4, however the oscillator that is used must be be configured to be retained when going into EM4. This can be configured by using functions in the <a class="el" href="group__EMU.html">EMU</a> module. See <a class="el" href="group__EMU.html#ga06bca70635ca5004a01c35eeafa15690">EMU_EM4Init</a> and <a class="el" href="structEMU__EM4Init__TypeDef.html">EMU_EM4Init_TypeDef</a>. If an oscillator is retained in EM4 the user is also responsible for unlatching the retained configuration on a wakeup from EM4. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -282,12 +315,12 @@ Functions</h2></td></tr>
 <div class="line"><a class="code" href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426ab9533eebaa3ece0dba62c4a7896cc5cf">  cryotimerPresc_1</a>,      <span class="comment">/* LF Oscillator frequency undivided.                */</span> <a class="code" href="group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21aba09e4b0c5e061b6692d995afa27bddc09">\</a></div>
 <div class="line"><a class="code" href="group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21aba09e4b0c5e061b6692d995afa27bddc09">  cryotimerPeriod_4096m</a>, <span class="comment">/* Wakeup event after 4096M pre-scaled clock cycles. */</span> \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__CRYOTIMER_html_gga4f17c6369fd634d476c354a45a1fa426ab9533eebaa3ece0dba62c4a7896cc5cf"><div class="ttname"><a href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426ab9533eebaa3ece0dba62c4a7896cc5cf">cryotimerPresc_1</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00086">em_cryotimer.h:86</a></div></div>
-<div class="ttc" id="group__CRYOTIMER_html_ggae75ded142f45aa60088d6fa1e4109238acc2acf2b665c6cd9e7566a1579361578"><div class="ttname"><a href="group__CRYOTIMER.html#ggae75ded142f45aa60088d6fa1e4109238acc2acf2b665c6cd9e7566a1579361578">cryotimerOscLFRCO</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00099">em_cryotimer.h:99</a></div></div>
-<div class="ttc" id="group__CRYOTIMER_html_gga5ce9dab679451bb96883b7f9846d21aba09e4b0c5e061b6692d995afa27bddc09"><div class="ttname"><a href="group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21aba09e4b0c5e061b6692d995afa27bddc09">cryotimerPeriod_4096m</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00139">em_cryotimer.h:139</a></div></div>
+<div class="ttc" id="group__CRYOTIMER_html_gga4f17c6369fd634d476c354a45a1fa426ab9533eebaa3ece0dba62c4a7896cc5cf"><div class="ttname"><a href="group__CRYOTIMER.html#gga4f17c6369fd634d476c354a45a1fa426ab9533eebaa3ece0dba62c4a7896cc5cf">cryotimerPresc_1</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00121">em_cryotimer.h:121</a></div></div>
+<div class="ttc" id="group__CRYOTIMER_html_ggae75ded142f45aa60088d6fa1e4109238acc2acf2b665c6cd9e7566a1579361578"><div class="ttname"><a href="group__CRYOTIMER.html#ggae75ded142f45aa60088d6fa1e4109238acc2acf2b665c6cd9e7566a1579361578">cryotimerOscLFRCO</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00134">em_cryotimer.h:134</a></div></div>
+<div class="ttc" id="group__CRYOTIMER_html_gga5ce9dab679451bb96883b7f9846d21aba09e4b0c5e061b6692d995afa27bddc09"><div class="ttname"><a href="group__CRYOTIMER.html#gga5ce9dab679451bb96883b7f9846d21aba09e4b0c5e061b6692d995afa27bddc09">cryotimerPeriod_4096m</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cryotimer_8h_source.html#l00174">em_cryotimer.h:174</a></div></div>
 </div><!-- fragment --><p>Default CRYOTIMER init structure. </p>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00173">173</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00208">208</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 </div>
 </div>
@@ -314,7 +347,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00097">97</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00132">132</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 </div>
 </div>
@@ -430,7 +463,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00105">105</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00140">140</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 </div>
 </div>
@@ -471,7 +504,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00084">84</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00119">119</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 </div>
 </div>
@@ -493,7 +526,7 @@ Functions</h2></td></tr>
 <p>Get the CRYOTIMER counter value. </p>
 <dl class="section return"><dt>Returns</dt><dd>Returns the current CRYOTIMER counter value. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00318">318</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00355">355</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
@@ -521,7 +554,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00330">330</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00367">367</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#gac2b483211f970a1557febdc0fd140e2c">_CRYOTIMER_EM4WUEN_EM4WU_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
@@ -551,7 +584,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00342">342</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00379">379</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga1a4e6e8fa16b148cc33b037e2f67e357">_CRYOTIMER_CTRL_EN_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
@@ -603,12 +636,12 @@ Functions</h2></td></tr>
 <p>Clear the CRYOTIMER period interrupt. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to clear. Use CRYOTIMER_IFC_PERIOD </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to clear. Use <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga648933c1aa0a2bf5f82db34354e17f5f">CRYOTIMER_IFC_PERIOD</a> </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00194">194</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00229">229</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#gaa804edac34845b4bb890e8cf9b7b2734">_CRYOTIMER_IFC_MASK</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
@@ -631,12 +664,12 @@ Functions</h2></td></tr>
 <p>Disable one or more CRYOTIMER interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to disable. Use CRYOTIMER_IEN_PERIOD. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to disable. Use <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga3619fdd3ea4af6b465bfc8c1c3953159">CRYOTIMER_IEN_PERIOD</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00255">255</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00291">291</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga492745f622f4ccba8a873986a081d742">_CRYOTIMER_IEN_MASK</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
@@ -659,12 +692,12 @@ Functions</h2></td></tr>
 <p>Enable one or more CRYOTIMER interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to enable. Use CRYOTIMER_IEN_PERIOD. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to enable. Use <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga3619fdd3ea4af6b465bfc8c1c3953159">CRYOTIMER_IEN_PERIOD</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00243">243</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00279">279</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga492745f622f4ccba8a873986a081d742">_CRYOTIMER_IEN_MASK</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
@@ -686,9 +719,9 @@ Functions</h2></td></tr>
 
 <p>Get the CRYOTIMER interrupt flag. </p>
 <dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>Pending CRYOTIMER interrupt sources. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pending CRYOTIMER interrupt sources. The only interrupt source available for the CRYOTIMER is <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#gae8dcc0615b6b04002f2019dcfa4eea1f">CRYOTIMER_IF_PERIOD</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00209">209</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00245">245</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
@@ -716,7 +749,7 @@ Functions</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00228">228</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00264">264</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga492745f622f4ccba8a873986a081d742">_CRYOTIMER_IEN_MASK</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
@@ -740,12 +773,12 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Writes 1 to the interrupt flag set register.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to set to pending. Use CRYOTIMER_IFS_PERIOD. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>CRYOTIMER interrupt sources to set to pending. Use <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga4bf8b063d1b22d2f9c6bb1be9c0621c2">CRYOTIMER_IFS_PERIOD</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00270">270</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00307">307</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga4b3d2c92b7dbbcddc809f6c30269cc3e">_CRYOTIMER_IFS_MASK</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
@@ -769,7 +802,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Gets the duration between the Interrupts/Wakeup events in the CRYOTIMER.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Duration between the interrupts/wakeup events. Returns the value of the PERIODSEL register. The number of clock cycles can be calculated as the 2^n where n is the return value of this function. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00306">306</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00343">343</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
@@ -798,7 +831,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00288">288</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__cryotimer_8h_source.html#l00325">325</a> of file <a class="el" href="em__cryotimer_8h_source.html">em_cryotimer.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32JG1B__CRYOTIMER__BitFields.html#ga2e0769c0ec0d8ca0831991062beec655">_CRYOTIMER_PERIODSEL_MASK</a>, and <a class="el" href="group__EFM32JG1B200F256GM48__Peripheral__Declaration.html#gae58438cda38393910068e844f8f30dca">CRYOTIMER</a>.</p>
 
@@ -809,7 +842,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 11:01:24 for EFM32 Jade Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 16:01:07 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

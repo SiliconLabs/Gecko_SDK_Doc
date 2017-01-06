@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32hg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32hg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -109,6 +109,7 @@ $(document).ready(function(){initNavTree('group__INT.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Safe nesting of interrupt disable/enable API. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>These functions are deprecated and marked for removal in a later release. Please use the <a class="el" href="group__CORE.html">CORE</a> module instead. See <a class="el" href="group__CORE.html#core_porting">Porting from em_int</a> for information on how to convert existing code bases to use <a class="el" href="group__CORE.html">CORE</a>.</dd></dl>
 <p>This module contains functions to safely disable and enable interrupts at CPU level. <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5" title="Disable interrupts. ">INT_Disable()</a> disables interrupts globally and increments a lock level counter (counting semaphore). <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56" title="Enable interrupts. ">INT_Enable()</a> decrements the lock level counter and enable interrupts if the counter reaches zero.</p>
 <p>These functions would normally be used to secure critical regions, and to make sure that a critical section that calls into another critical section does not unintentionally terminate the callee critical section.</p>
 <p>These functions should also be used inside interrupt handlers: </p><pre class="fragment">*  void SysTick_Handler(void)
@@ -150,14 +151,13 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Disable interrupts. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>This function is deprecated and marked for removal in a later release. Please use the new CORE module instead.</dd></dl>
 <p>Disable interrupts and increment lock level counter.</p>
 <dl class="section return"><dt>Returns</dt><dd>The resulting interrupt disable nesting level. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__int_8h_source.html#l00071">71</a> of file <a class="el" href="em__int_8h_source.html">em_int.h</a>.</p>
+<p>Definition at line <a class="el" href="em__int_8h_source.html#l00078">78</a> of file <a class="el" href="em__int_8h_source.html">em_int.h</a>.</p>
 
 <p>References <a class="el" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a>.</p>
-
-<p>Referenced by <a class="el" href="group__CapSense.html#ga4a9a1233a70703ca91a6bc9fcf05ec19">CAPLESENSE_Init()</a>, <a class="el" href="group__DMADRV.html#gab503e066820cd13fd612f4365d4d07b2">DMADRV_AllocateChannel()</a>, <a class="el" href="group__DMADRV.html#ga73633db63cfd99ba01a68b05c24094ec">DMADRV_DeInit()</a>, <a class="el" href="group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3">DMADRV_FreeChannel()</a>, <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">DMADRV_Init()</a>, <a class="el" href="group__DMADRV.html#gaa46714c6a19608cff3058c386f1e4c03">DMADRV_TransferDone()</a>, <a class="el" href="group__DMADRV.html#ga9a253b47872d205a76b6f1b7b486194d">DMADRV_TransferRemainingCount()</a>, <a class="el" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister()</a>, <a class="el" href="group__RetargetSWO.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar()</a>, <a class="el" href="group__RTCDRV.html#gaef2d97c6223617d158b05e03ee35950a">RTCDRV_AllocateTimer()</a>, <a class="el" href="group__RTCDRV.html#gaa783bf476e7a815f6177c626fef0ac98">RTCDRV_FreeTimer()</a>, <a class="el" href="group__RTCDRV.html#ga0ad8d9097523a568e484ad9f6920ba88">RTCDRV_IsRunning()</a>, <a class="el" href="group__RTCDRV.html#gaeee47cebc2ca33e571c965b90e1386d9">RTCDRV_StartTimer()</a>, <a class="el" href="group__RTCDRV.html#ga7d3614e56f17c24103336a37891579a4">RTCDRV_StopTimer()</a>, <a class="el" href="group__RTCDRV.html#ga3d7c481309659eeada554be33854c103">RTCDRV_TimeRemaining()</a>, <a class="el" href="group__SLEEP.html#ga2845d5d6d00f408dda6894a654fd1adf">SLEEP_Sleep()</a>, <a class="el" href="group__SPIDRV.html#ga071d128b28b8acff08396fb090b8025a">SPIDRV_AbortTransfer()</a>, <a class="el" href="group__SPIDRV.html#ga7d440db45246649580c6c5b08eb332da">SPIDRV_GetTransferStatus()</a>, <a class="el" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239">SPIDRV_Init()</a>, <a class="el" href="group__SPIDRV.html#gaea943a66137078855a6511a75fb27437">SPIDRV_MTransferSingleItemB()</a>, <a class="el" href="group__SPIDRV.html#ga3e6e2f999eb2ef0fd16df41339e6dc84">SPIDRV_SetBitrate()</a>, <a class="el" href="group__SPIDRV.html#ga54ce984fad9b30b3e8e860b6ada5b77a">SPIDRV_SetFramelength()</a>, <a class="el" href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">UARTDRV_Abort()</a>, <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart()</a>, <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a>, <a class="el" href="group__UARTDRV.html#ga484ac0b78a9eccb0ec6a1d30b7cc3232">UARTDRV_Transmit()</a>, <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a>, <a class="el" href="group__USB__DEVICE.html#ga325117af9b3a9ad1df068cf3b19dc1ba">USBD_AbortAllTransfers()</a>, <a class="el" href="group__USB__DEVICE.html#ga83f32dfa4f6a5d010e413967850c52b2">USBD_AbortTransfer()</a>, <a class="el" href="group__USB__DEVICE.html#ga71b9264662d74666e4b058984e3346e5">USBD_Connect()</a>, <a class="el" href="group__USB__DEVICE.html#ga2d952f8cf9bde552cfd5559ae47e70fc">USBD_Disconnect()</a>, <a class="el" href="group__USB__DEVICE.html#ga0e5f5bd847e7cc1c4c384bb6b7f0ce77">USBD_Init()</a>, <a class="el" href="group__USB__DEVICE.html#ga9e0a1cf705301d9e035feff27ea41cda">USBD_Read()</a>, <a class="el" href="group__USB__DEVICE.html#ga9fb12718f509c578656e4fc08bc40f69">USBD_RemoteWakeup()</a>, <a class="el" href="group__USB__DEVICE.html#ga9bf435e62169bfb3ee0a43ef0e9d009d">USBD_StallEp()</a>, <a class="el" href="group__USB__DEVICE.html#gacb0ed1c21fd4aecfe96060ea87a617a8">USBD_UnStallEp()</a>, <a class="el" href="group__USB__DEVICE.html#ga656c8d2935af97156bc0babdc43c32ee">USBD_Write()</a>, <a class="el" href="group__USB__COMMON.html#gac2a406f16d989b04c4fc5b37d5c10b45">USBTIMER_Start()</a>, and <a class="el" href="group__USB__COMMON.html#gab73c922427cf0d509788a8063451703f">USBTIMER_Stop()</a>.</p>
 
 </div>
 </div>
@@ -176,14 +176,13 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enable interrupts. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>This function is deprecated and marked for removal in a later release. Please use the new CORE module instead.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The resulting interrupt disable nesting level.</dd></dl>
 <p>Decrement interrupt lock level counter and enable interrupts if counter reached zero. </p>
 
-<p>Definition at line <a class="el" href="em__int_8h_source.html#l00094">94</a> of file <a class="el" href="em__int_8h_source.html">em_int.h</a>.</p>
+<p>Definition at line <a class="el" href="em__int_8h_source.html#l00105">105</a> of file <a class="el" href="em__int_8h_source.html">em_int.h</a>.</p>
 
 <p>References <a class="el" href="group__INT.html#ga2b05202b72fa3edd46f1d9fc94f2f451">INT_LockCnt</a>.</p>
-
-<p>Referenced by <a class="el" href="group__CapSense.html#ga4a9a1233a70703ca91a6bc9fcf05ec19">CAPLESENSE_Init()</a>, <a class="el" href="group__DMADRV.html#gab503e066820cd13fd612f4365d4d07b2">DMADRV_AllocateChannel()</a>, <a class="el" href="group__DMADRV.html#ga73633db63cfd99ba01a68b05c24094ec">DMADRV_DeInit()</a>, <a class="el" href="group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3">DMADRV_FreeChannel()</a>, <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">DMADRV_Init()</a>, <a class="el" href="group__DMADRV.html#gaa46714c6a19608cff3058c386f1e4c03">DMADRV_TransferDone()</a>, <a class="el" href="group__DMADRV.html#ga9a253b47872d205a76b6f1b7b486194d">DMADRV_TransferRemainingCount()</a>, <a class="el" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister()</a>, <a class="el" href="group__RetargetSWO.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar()</a>, <a class="el" href="group__RTCDRV.html#gaef2d97c6223617d158b05e03ee35950a">RTCDRV_AllocateTimer()</a>, <a class="el" href="group__RTCDRV.html#gaa783bf476e7a815f6177c626fef0ac98">RTCDRV_FreeTimer()</a>, <a class="el" href="group__RTCDRV.html#ga0ad8d9097523a568e484ad9f6920ba88">RTCDRV_IsRunning()</a>, <a class="el" href="group__RTCDRV.html#gaeee47cebc2ca33e571c965b90e1386d9">RTCDRV_StartTimer()</a>, <a class="el" href="group__RTCDRV.html#ga7d3614e56f17c24103336a37891579a4">RTCDRV_StopTimer()</a>, <a class="el" href="group__RTCDRV.html#ga3d7c481309659eeada554be33854c103">RTCDRV_TimeRemaining()</a>, <a class="el" href="group__SLEEP.html#ga2845d5d6d00f408dda6894a654fd1adf">SLEEP_Sleep()</a>, <a class="el" href="group__SPIDRV.html#ga071d128b28b8acff08396fb090b8025a">SPIDRV_AbortTransfer()</a>, <a class="el" href="group__SPIDRV.html#ga7d440db45246649580c6c5b08eb332da">SPIDRV_GetTransferStatus()</a>, <a class="el" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239">SPIDRV_Init()</a>, <a class="el" href="group__SPIDRV.html#gaea943a66137078855a6511a75fb27437">SPIDRV_MTransferSingleItemB()</a>, <a class="el" href="group__SPIDRV.html#ga3e6e2f999eb2ef0fd16df41339e6dc84">SPIDRV_SetBitrate()</a>, <a class="el" href="group__SPIDRV.html#ga54ce984fad9b30b3e8e860b6ada5b77a">SPIDRV_SetFramelength()</a>, <a class="el" href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">UARTDRV_Abort()</a>, <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart()</a>, <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a>, <a class="el" href="group__UARTDRV.html#ga484ac0b78a9eccb0ec6a1d30b7cc3232">UARTDRV_Transmit()</a>, <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a>, <a class="el" href="group__USB__DEVICE.html#ga325117af9b3a9ad1df068cf3b19dc1ba">USBD_AbortAllTransfers()</a>, <a class="el" href="group__USB__DEVICE.html#ga83f32dfa4f6a5d010e413967850c52b2">USBD_AbortTransfer()</a>, <a class="el" href="group__USB__DEVICE.html#ga71b9264662d74666e4b058984e3346e5">USBD_Connect()</a>, <a class="el" href="group__USB__DEVICE.html#ga2d952f8cf9bde552cfd5559ae47e70fc">USBD_Disconnect()</a>, <a class="el" href="group__USB__DEVICE.html#ga0e5f5bd847e7cc1c4c384bb6b7f0ce77">USBD_Init()</a>, <a class="el" href="group__USB__DEVICE.html#ga9e0a1cf705301d9e035feff27ea41cda">USBD_Read()</a>, <a class="el" href="group__USB__DEVICE.html#ga9fb12718f509c578656e4fc08bc40f69">USBD_RemoteWakeup()</a>, <a class="el" href="group__USB__DEVICE.html#ga9bf435e62169bfb3ee0a43ef0e9d009d">USBD_StallEp()</a>, <a class="el" href="group__USB__DEVICE.html#gacb0ed1c21fd4aecfe96060ea87a617a8">USBD_UnStallEp()</a>, <a class="el" href="group__USB__DEVICE.html#ga656c8d2935af97156bc0babdc43c32ee">USBD_Write()</a>, <a class="el" href="group__USB__COMMON.html#gac2a406f16d989b04c4fc5b37d5c10b45">USBTIMER_Start()</a>, and <a class="el" href="group__USB__COMMON.html#gab73c922427cf0d509788a8063451703f">USBTIMER_Stop()</a>.</p>
 
 </div>
 </div>
@@ -199,7 +198,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>Interrupt lock level counter. Set to zero initially as we normally enter main with interrupts enabled </p>
 
-<p>Definition at line <a class="el" href="em__int_8c_source.html#l00070">70</a> of file <a class="el" href="em__int_8c_source.html">em_int.c</a>.</p>
+<p>Definition at line <a class="el" href="em__int_8c_source.html#l00075">75</a> of file <a class="el" href="em__int_8c_source.html">em_int.c</a>.</p>
 
 <p>Referenced by <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5">INT_Disable()</a>, and <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56">INT_Enable()</a>.</p>
 
@@ -210,7 +209,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 10:45:46 for EFM32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 15:53:28 for EFM32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

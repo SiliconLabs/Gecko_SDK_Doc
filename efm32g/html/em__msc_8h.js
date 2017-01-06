@@ -15,6 +15,7 @@ var em__msc_8h =
     ] ],
     [ "MSC_Deinit", "group__MSC.html#gadb2eab07fedfb79fba5a3abdd8b5c96a", null ],
     [ "MSC_ErasePage", "group__MSC.html#gadda32c196889602693a0c178da83a1f9", null ],
+    [ "MSC_ExecConfigSet", "group__MSC.html#gabefc7774cd8e2ddf3c77895ca8198775", null ],
     [ "MSC_Init", "group__MSC.html#gaa02df815c14caedbc2fd0a8910d2e055", null ],
     [ "MSC_IntClear", "group__MSC.html#ga3e99a1115d2fdec306e3ebd3a9c5e3b4", null ],
     [ "MSC_IntDisable", "group__MSC.html#gae93719c876be33cc035e8a4791c4c9fe", null ],

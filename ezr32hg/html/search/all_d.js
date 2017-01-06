@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['magic',['magic',['../structBCP__Packet__.html#aaf7b261a823481710ab67531e7e21111',1,'BCP_Packet_::magic()'],['../structBCP__Packet.html#a3a792f124d8f9985820b16959977a5b4',1,'BCP_Packet::magic()'],['../structBCP__PacketHeader.html#a2c263dd3b621b7bc4b2f5ef5eb5efc8e',1,'BCP_PacketHeader::magic()'],['../structBC__TypeDef.html#a67bf0459db0bb440ae47aacc9ad706ad',1,'BC_TypeDef::MAGIC()']]],
+  ['magic',['MAGIC',['../structBC__TypeDef.html#a67bf0459db0bb440ae47aacc9ad706ad',1,'BC_TypeDef::MAGIC()'],['../structBCP__Packet__.html#aaf7b261a823481710ab67531e7e21111',1,'BCP_Packet_::magic()'],['../structBCP__Packet.html#a3a792f124d8f9985820b16959977a5b4',1,'BCP_Packet::magic()'],['../structBCP__PacketHeader.html#a2c263dd3b621b7bc4b2f5ef5eb5efc8e',1,'BCP_PacketHeader::magic()']]],
   ['major',['major',['../structSYSTEM__ChipRevision__TypeDef.html#a79ebea0f9a0321ec622d9098afe5bdd1',1,'SYSTEM_ChipRevision_TypeDef']]],
   ['manufacturercode',['manufacturerCode',['../structNANDFLASH__Info__TypeDef.html#a86fa0f38e71a4d26d3e5708c50f0e28b',1,'NANDFLASH_Info_TypeDef']]],
   ['manufacturerid',['manufacturerId',['../structNORFLASH__Info__TypeDef.html#ab3f645440c81ddde7651b8fe1bf2c9d4',1,'NORFLASH_Info_TypeDef']]],
@@ -156,6 +156,9 @@ var searchData=
   ['msc_5fmasslock_5flockkey_5funlock',['MSC_MASSLOCK_LOCKKEY_UNLOCK',['../group__EZR32HG__MSC__BitFields.html#ga3d8e50e1ea3ca300191eb50259ea67c9',1,'ezr32hg_msc.h']]],
   ['msc_5fmasslock_5flockkey_5funlocked',['MSC_MASSLOCK_LOCKKEY_UNLOCKED',['../group__EZR32HG__MSC__BitFields.html#ga02b992c8339e247d6c1f108710498857',1,'ezr32hg_msc.h']]],
   ['msc_5fprogram_5ftimeout',['MSC_PROGRAM_TIMEOUT',['../group__MSC.html#ga2ccebeae7857abb74bd22341b7761583',1,'em_msc.h']]],
+  ['msc_5framfunc_5fdeclarator',['MSC_RAMFUNC_DECLARATOR',['../group__MSC.html#ga2dd6e97914fb97828408b0dd5069deaa',1,'em_msc.h']]],
+  ['msc_5framfunc_5fdefinition_5fbegin',['MSC_RAMFUNC_DEFINITION_BEGIN',['../group__MSC.html#gafb4f9fbaaf4d586c394bbefe0a77afed',1,'em_msc.h']]],
+  ['msc_5framfunc_5fdefinition_5fend',['MSC_RAMFUNC_DEFINITION_END',['../group__MSC.html#ga78d9074971767d304eed774cd2c5c806',1,'em_msc.h']]],
   ['msc_5freadctrl_5faidis',['MSC_READCTRL_AIDIS',['../group__EZR32HG__MSC__BitFields.html#ga7ee45f70f3c442dfbc1d59c0ea99b24e',1,'ezr32hg_msc.h']]],
   ['msc_5freadctrl_5faidis_5fdefault',['MSC_READCTRL_AIDIS_DEFAULT',['../group__EZR32HG__MSC__BitFields.html#gaa1d2722d40683675b0cf45856212023c',1,'ezr32hg_msc.h']]],
   ['msc_5freadctrl_5fifcdis',['MSC_READCTRL_IFCDIS',['../group__EZR32HG__MSC__BitFields.html#gac866e69144dbbeb5eedeccb9ef4ca0a6',1,'ezr32hg_msc.h']]],

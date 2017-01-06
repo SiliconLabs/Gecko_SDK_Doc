@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32lg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('group__Cdc.html','');});
 <p>Implements USB Communication Device Class (CDC).</p>
 <h1><a class="anchor" id="cdc_intro"></a>
 CDC implementation.</h1>
-<p>The source code of the CDC implementation resides in <a class="el" href="cdc_8c.html" title="USB Communication Device Class (CDC) driver. ">kits/common/drivers/cdc.c</a> and <a class="el" href="cdc_8h.html" title="USB Communication Device Class (CDC) driver. ">cdc.h</a>. This driver implements a basic USB to RS232 bridge.</p>
+<p>The source code of the CDC implementation resides in kits/common/drivers/cdc.c and <a class="el" href="cdc_8h.html" title="USB Communication Device Class (CDC) driver. ">cdc.h</a>. This driver implements a basic USB to RS232 bridge.</p>
 <h1><a class="anchor" id="cdc_config"></a>
 CDC device configuration options.</h1>
 <p>This section contains a description of the configuration options for the driver. The options are #define's  which are expected to be found in the application "usbconfig.h" header file. The values shown below are from the Giant Gecko DK3750 CDC example.</p>
@@ -194,7 +194,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>USB_STATUS_OK if command accepted. USB_STATUS_REQ_UNHANDLED when command is unknown, the USB device stack will handle the request. </dd></dl>
 
-<p>Definition at line <a class="el" href="cdc_8c_source.html#l00182">182</a> of file <a class="el" href="cdc_8c_source.html">cdc.c</a>.</p>
+<p>Definition at line <a class="el" href="cdc_8c_source.html#l00183">183</a> of file <a class="el" href="cdc_8c_source.html">cdc.c</a>.</p>
 
 <p>References <a class="el" href="structUSB__Setup__TypeDef.html#ae5029ab72d017ffc7ecbe319250b673a">USB_Setup_TypeDef::bRequest</a>, <a class="el" href="structUSB__Setup__TypeDef.html#a913c1d707e48c96242f64002e8b60e6f">USB_Setup_TypeDef::Direction</a>, <a class="el" href="structUSB__Setup__TypeDef.html#a70a468962d098b9d66fb2b564412bc71">USB_Setup_TypeDef::Recipient</a>, <a class="el" href="structUSB__Setup__TypeDef.html#ad727d3a73acb94b1d0ba37542a21959b">USB_Setup_TypeDef::Type</a>, <a class="el" href="group__USB__COMMON.html#ga6a417528ccce3c580c60a91da473151a">USB_CDC_GETLINECODING</a>, <a class="el" href="group__USB__COMMON.html#gaf920d182c6f903fb470728f673575765">USB_CDC_SETCTRLLINESTATE</a>, <a class="el" href="group__USB__COMMON.html#ga966e7808b885ae6550ee7e4db352f73f">USB_CDC_SETLINECODING</a>, <a class="el" href="group__USB__COMMON.html#gadbfebb23903d05393b65f468838f78c0">USB_SETUP_DIR_IN</a>, <a class="el" href="group__USB__COMMON.html#ga59754621c21db801e11513ba06a3a02e">USB_SETUP_RECIPIENT_INTERFACE</a>, <a class="el" href="group__USB__COMMON.html#gacf3fd30992e9fe01f1bac9aaa7fea61b">USB_SETUP_TYPE_CLASS</a>, <a class="el" href="group__USB__COMMON.html#gga889b575b566a663621c33eebf46272c1a7fc3604700f290c08102ab7a60dbeac2">USB_STATUS_OK</a>, <a class="el" href="group__USB__COMMON.html#gga889b575b566a663621c33eebf46272c1ae32e2e8da1dce5b54ea6542adabec3a4">USB_STATUS_REQ_UNHANDLED</a>, <a class="el" href="group__USB__DEVICE.html#ga9e0a1cf705301d9e035feff27ea41cda">USBD_Read()</a>, <a class="el" href="group__USB__DEVICE.html#ga656c8d2935af97156bc0babdc43c32ee">USBD_Write()</a>, <a class="el" href="structUSB__Setup__TypeDef.html#ae906e4bb150f8c859e7bc945bec15761">USB_Setup_TypeDef::wIndex</a>, <a class="el" href="structUSB__Setup__TypeDef.html#a144a954da389673e95ee9fbdae12d347">USB_Setup_TypeDef::wLength</a>, and <a class="el" href="structUSB__Setup__TypeDef.html#a668bf675fd2d40afb995d23e6e03a7d3">USB_Setup_TypeDef::wValue</a>.</p>
 
@@ -233,7 +233,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="cdc_8c_source.html#l00240">240</a> of file <a class="el" href="cdc_8c_source.html">cdc.c</a>.</p>
+<p>Definition at line <a class="el" href="cdc_8c_source.html#l00241">241</a> of file <a class="el" href="cdc_8c_source.html">cdc.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32LG995F256__Peripheral__Declaration.html#ga137c9e7c0bc9e12f455df0a6e41c0287">DMA</a>, <a class="el" href="group__DMA.html#ga6b72fd4e3bcc36e68cca16e5fa243a11">DMA_ActivateBasic()</a>, <a class="el" href="group__USB__DEVICE.html#ga9e0a1cf705301d9e035feff27ea41cda">USBD_Read()</a>, <a class="el" href="group__USB__DEVICE.html#gga437a2e7bf70740fc715ac9a5c7310a6da44c1920b09ea1062ea4d7ac31a846509">USBD_STATE_CONFIGURED</a>, <a class="el" href="group__USB__DEVICE.html#gga437a2e7bf70740fc715ac9a5c7310a6da74e1d49afc6b25e202cc9e42f595f4ed">USBD_STATE_SUSPENDED</a>, <a class="el" href="group__USB__COMMON.html#gac2a406f16d989b04c4fc5b37d5c10b45">USBTIMER_Start()</a>, and <a class="el" href="group__USB__COMMON.html#gab73c922427cf0d509788a8063451703f">USBTIMER_Stop()</a>.</p>
 
@@ -244,7 +244,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 10:59:32 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 16:00:06 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -1,10 +1,19 @@
 var em__emu_8c =
 [
+    [ "_GENERIC_DCDCLPCTRL_LPCMPHYSSELEM234H_MASK", "group__EMU.html#ga1a88f4d36fc06db60e86d7c1aca66989", null ],
+    [ "_GENERIC_DCDCLPCTRL_LPCMPHYSSELEM234H_SHIFT", "group__EMU.html#ga9228d96d2ad431492f31c2cb5d8c65d7", null ],
+    [ "_GENERIC_DCDCMISCCTRL_LPCMPBIASEM234H_MASK", "group__EMU.html#gaa564787cde9a5766ae1aeb98e3fc2f00", null ],
+    [ "_GENERIC_DCDCMISCCTRL_LPCMPBIASEM234H_SHIFT", "group__EMU.html#ga0b56c93ad55fd52437b8b6d622573752", null ],
+    [ "CMU_ULFRCOCTRL", "em__emu_8c.html#a9e4948358dd6d26270b0f8fd66690921", null ],
+    [ "EMU_BIASCONF", "em__emu_8c.html#ad1b3e596a08ac19a4de4d851805be796", null ],
+    [ "EMU_BIASTESTCTRL", "em__emu_8c.html#add1e56950cf45cc9303e37a274e19bf4", null ],
+    [ "EMU_TESTLOCK", "em__emu_8c.html#a0a2f93c52e8c7e2a3b1c55195f865b02", null ],
     [ "PWRCFG_DCDCTODVDD_VMAX", "group__EMU.html#gad65f5ee239deda4b6da304f19aa6dd0b", null ],
     [ "PWRCFG_DCDCTODVDD_VMIN", "group__EMU.html#ga94ca8fbb79bbfc2d1a0613dfa6fe3506", null ],
     [ "errataFixDcdcHs_TypeDef", "group__EMU.html#gab4f797c242f11a11e9ad7c893e2e9b04", [
       [ "errataFixDcdcHsInit", "group__EMU.html#ggab4f797c242f11a11e9ad7c893e2e9b04ad63f3986faf561aba3410ca517fa603e", null ],
       [ "errataFixDcdcHsTrimSet", "group__EMU.html#ggab4f797c242f11a11e9ad7c893e2e9b04a27895aaeaf1a6dcf9b02e8ac5e63a3f3", null ],
+      [ "errataFixDcdcHsBypassLn", "group__EMU.html#ggab4f797c242f11a11e9ad7c893e2e9b04a9ab4e42ebc314a0e6f3c5adaa0680c03", null ],
       [ "errataFixDcdcHsLnWaitDone", "group__EMU.html#ggab4f797c242f11a11e9ad7c893e2e9b04a126990697a5232e7644ab0465eb5633a", null ]
     ] ],
     [ "EMU_DCDCInit", "group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265", null ],
@@ -21,6 +30,7 @@ var em__emu_8c =
     [ "EMU_EnterEM4H", "group__EMU.html#ga2dab46a27384a6d09e5e4f7994643e3e", null ],
     [ "EMU_EnterEM4S", "group__EMU.html#ga827d92c0313fad744a8751e3d2108ec9", null ],
     [ "EMU_MemPwrDown", "group__EMU.html#ga49eb5750384ff279aae225ab5922e9f1", null ],
+    [ "EMU_SetBiasMode", "group__EMU.html#ga7c407db6178a3e2336702a23a882db61", null ],
     [ "EMU_UpdateOscConfig", "group__EMU.html#ga3d442fa018de5138afb19a2b85797099", null ],
     [ "EMU_VmonChannelStatusGet", "group__EMU.html#ga547c14bc2f1573cb8bb1ef965cc635cd", null ],
     [ "EMU_VmonEnable", "group__EMU.html#ga09300bbda1f03edc7096e49daa2a64eb", null ],

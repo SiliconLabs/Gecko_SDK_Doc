@@ -15,12 +15,12 @@ var tempdrv_8h =
       [ "TEMPDRV_LIMIT_LOW", "group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda734424d063813f9260b8abefd5112600", null ],
       [ "TEMPDRV_LIMIT_HIGH", "group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda70580b3c7a1ecc80921e5362b288a224", null ]
     ] ],
-    [ "TEMPDRV_DeInit", "group__TEMPDRV.html#gafd7dfe891f924f053f93c1d3d6f9ce9d", null ],
+    [ "TEMPDRV_DeInit", "group__TEMPDRV.html#gac8ef7bf57730754ee441069c7577d40f", null ],
     [ "TEMPDRV_Enable", "group__TEMPDRV.html#gaa2605b8e10e33fcf3bfb47395c25b33f", null ],
     [ "TEMPDRV_GetActiveCallbacks", "group__TEMPDRV.html#ga61719ed2fb153a5acc03a8b2a85925f6", null ],
-    [ "TEMPDRV_GetTemp", "group__TEMPDRV.html#ga2751bf86315e9c956026dc2c3dc880a1", null ],
-    [ "TEMPDRV_Init", "group__TEMPDRV.html#ga9840f98f0e92bbc1ebadf6c2b6fc390b", null ],
-    [ "TEMPDRV_IRQHandler", "group__TEMPDRV.html#ga4f943cecfc0bc233de33180c13b2beec", null ],
+    [ "TEMPDRV_GetTemp", "group__TEMPDRV.html#ga2451a4de601c4b8fdd6b482bc61073d6", null ],
+    [ "TEMPDRV_Init", "group__TEMPDRV.html#gabe27ab8076564a44b71038c79603ccab", null ],
+    [ "TEMPDRV_IRQHandler", "group__TEMPDRV.html#ga6a84c867daa872d148b663ce82e0926c", null ],
     [ "TEMPDRV_RegisterCallback", "group__TEMPDRV.html#ga6c9336d963284dd604c7c6b537ebca1c", null ],
     [ "TEMPDRV_UnregisterCallback", "group__TEMPDRV.html#gaef379d8cf403513296a758eb84f8c3fa", null ]
 ];

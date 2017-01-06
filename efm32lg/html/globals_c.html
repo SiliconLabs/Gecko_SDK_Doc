@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32lg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -2053,8 +2053,8 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 : <a class="el" href="group__CMU.html#ggaeaf3a27499d7441981159c5973546751a697562863050d6dd51342bde4ea381f5">em_cmu.h</a>
 </li>
 <li>Compress()
-: <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.h</a>
-, <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.c</a>
+: <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.c</a>
+, <a class="el" href="group__Si114x.html#ga7c9076d1e45e3ff09387c78e614ea9bf">si114x_functions.h</a>
 </li>
 <li>CONFIG_DESC_BM_REMOTEWAKEUP
 : <a class="el" href="group__USB__COMMON.html#gad69d76a5459f09a53591df538f4335d9">em_usb.h</a>
@@ -2071,11 +2071,185 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 <li>CONFIG_DESC_MAXPOWER_mA
 : <a class="el" href="group__USB__COMMON.html#ga74dae1d42500a1b618c5df4a4a07d36f">em_usb.h</a>
 </li>
-<li>convertEMUtoTEMP()
-: <a class="el" href="tempdrv_8c.html#a798654ab0c6e543d7edc325d9a11c0e2">tempdrv.c</a>
+<li>convertToEmu()
+: <a class="el" href="tempdrv_8c.html#a6689e3e2bb1dc6fec64b4fab3beb5af6">tempdrv.c</a>
 </li>
-<li>convertTEMPtoEMU()
-: <a class="el" href="tempdrv_8c.html#a8442646d166cb0ea7de0bb09390b33ce">tempdrv.c</a>
+<li>convertToTemp()
+: <a class="el" href="tempdrv_8c.html#a9f45838966c07a0c71bc13d4cffdffc8">tempdrv.c</a>
+</li>
+<li>CORE_ATOMIC_BASE_PRIORITY_LEVEL
+: <a class="el" href="group__CORE.html#gadf7237e6f40425caeb2ac56efb97b43b">em_core.c</a>
+</li>
+<li>CORE_ATOMIC_IRQ_DISABLE
+: <a class="el" href="group__CORE.html#ga2f64d43ec58a00b2802a06661482f360">em_core.h</a>
+</li>
+<li>CORE_ATOMIC_IRQ_ENABLE
+: <a class="el" href="group__CORE.html#gaa05397e4e56ec8bcc7428cbc348675c5">em_core.h</a>
+</li>
+<li>CORE_ATOMIC_METHOD
+: <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">em_core.c</a>
+</li>
+<li>CORE_ATOMIC_METHOD_BASEPRI
+: <a class="el" href="group__CORE.html#gac18143c65838eabfc2388d2344dc429d">em_core.h</a>
+</li>
+<li>CORE_ATOMIC_METHOD_PRIMASK
+: <a class="el" href="group__CORE.html#gaeba348aed5c4f0007a030f1c8820ee60">em_core.h</a>
+</li>
+<li>CORE_ATOMIC_SECTION
+: <a class="el" href="group__CORE.html#ga3b0354ed174362818a7e22916917d43a">em_core.h</a>
+</li>
+<li>CORE_AtomicDisableIrq()
+: <a class="el" href="group__CORE.html#gafdfbbd11ed59822d754a25ddd9805b38">em_core.h</a>
+</li>
+<li>CORE_AtomicEnableIrq()
+: <a class="el" href="group__CORE.html#ga82849c67cf5d03bf6d9e8b56d3d9008d">em_core.h</a>
+</li>
+<li>CORE_CRITICAL_IRQ_DISABLE
+: <a class="el" href="group__CORE.html#gafb3c7fbc4fd8df38110da033d99d9193">em_core.h</a>
+</li>
+<li>CORE_CRITICAL_IRQ_ENABLE
+: <a class="el" href="group__CORE.html#ga2d0a41dba824d038ae5c6dd71135f6c9">em_core.h</a>
+</li>
+<li>CORE_CRITICAL_SECTION
+: <a class="el" href="group__CORE.html#gad817d908619afc82a790744650da0e28">em_core.h</a>
+</li>
+<li>CORE_CriticalDisableIrq()
+: <a class="el" href="group__CORE.html#ga27d5f5d8592e4d6de95a50c44a51ce9f">em_core.h</a>
+</li>
+<li>CORE_CriticalEnableIrq()
+: <a class="el" href="group__CORE.html#gad9b01a782ebe5720b3505c30126c7596">em_core.h</a>
+</li>
+<li>CORE_DECLARE_IRQ_STATE
+: <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">em_core.h</a>
+</li>
+<li>CORE_DECLARE_NVIC_MASK
+: <a class="el" href="group__CORE.html#gae27ad5b77c1ba6261c46b8cd857c70e8">em_core.h</a>
+</li>
+<li>CORE_DECLARE_NVIC_STATE
+: <a class="el" href="group__CORE.html#ga48fa5531aa876b474dcb262d883a49fb">em_core.h</a>
+</li>
+<li>CORE_DECLARE_NVIC_ZEROMASK
+: <a class="el" href="group__CORE.html#ga116f3ebd47a391ed8f3eeccdc7b644bc">em_core.h</a>
+</li>
+<li>CORE_DEFAULT_VECTOR_TABLE_ENTRIES
+: <a class="el" href="group__CORE.html#ga7e6140d4c99fe9fb63c6575e063d8e52">em_core.h</a>
+</li>
+<li>CORE_ENTER_ATOMIC
+: <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">em_core.h</a>
+</li>
+<li>CORE_ENTER_CRITICAL
+: <a class="el" href="group__CORE.html#ga104c343f87cc88f212ed0288c34605b6">em_core.h</a>
+</li>
+<li>CORE_ENTER_NVIC
+: <a class="el" href="group__CORE.html#gaed344c90cda4ba26bc1753621404ef3f">em_core.h</a>
+</li>
+<li>CORE_EnterAtomic()
+: <a class="el" href="group__CORE.html#ga61bd0aa238e5eed1e725c007755576a5">em_core.h</a>
+</li>
+<li>CORE_EnterCritical()
+: <a class="el" href="group__CORE.html#ga420c5e796d60862f374fe02797bc67cc">em_core.h</a>
+</li>
+<li>CORE_EnterNvicMask()
+: <a class="el" href="group__CORE.html#ga510268c9357cb2cffddd9dd75ddf7fab">em_core.h</a>
+</li>
+<li>CORE_EXIT_ATOMIC
+: <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">em_core.h</a>
+</li>
+<li>CORE_EXIT_CRITICAL
+: <a class="el" href="group__CORE.html#ga601f69551d42ed58ec0fe19bbb160fc9">em_core.h</a>
+</li>
+<li>CORE_EXIT_NVIC
+: <a class="el" href="group__CORE.html#ga7ddc8f41b2279dc722951f70e1b4d360">em_core.h</a>
+</li>
+<li>CORE_ExitAtomic()
+: <a class="el" href="group__CORE.html#ga669cd1707198be603ef5d36605d0d20b">em_core.h</a>
+</li>
+<li>CORE_ExitCritical()
+: <a class="el" href="group__CORE.html#gae3486ed889fc97ae4dcbc840fedb9421">em_core.h</a>
+</li>
+<li>CORE_GetNvicEnabledMask()
+: <a class="el" href="group__CORE.html#gaaa32f111ee6cdd5e854b489a04a79b68">em_core.h</a>
+</li>
+<li>CORE_GetNvicMaskDisableState()
+: <a class="el" href="group__CORE.html#gaadb9b9a49a92a6857c600cffb4a8b384">em_core.h</a>
+</li>
+<li>CORE_GetNvicRamTableHandler()
+: <a class="el" href="group__CORE.html#ga68c6a016bb6c8b59618aa256a718e8f0">em_core.h</a>
+</li>
+<li>CORE_IN_IRQ_CONTEXT
+: <a class="el" href="group__CORE.html#gaa3647caacba87489cde4ad619b4648f9">em_core.h</a>
+</li>
+<li>CORE_InIrqContext()
+: <a class="el" href="group__CORE.html#ga34622f7414387576c9f16a0ec5770db8">em_core.h</a>
+</li>
+<li>CORE_InitNvicVectorTable()
+: <a class="el" href="group__CORE.html#gaea8eb75f2f2a86503a47bf96c76ae332">em_core.h</a>
+</li>
+<li>CORE_INTERRUPT_ENTRY
+: <a class="el" href="group__CORE.html#gae4ec0cf323631243d122be29ed5624c6">em_core.c</a>
+</li>
+<li>CORE_INTERRUPT_EXIT
+: <a class="el" href="group__CORE.html#ga672ddcad939a4b922b35204d6a857027">em_core.c</a>
+</li>
+<li>CORE_IRQ_DISABLED
+: <a class="el" href="group__CORE.html#gaf623664dc4f7330771673351533b1f00">em_core.h</a>
+</li>
+<li>CORE_IrqIsBlocked()
+: <a class="el" href="group__CORE.html#gad0e48322a9b05fd1d265e55a1c38af8a">em_core.h</a>
+</li>
+<li>CORE_IrqIsDisabled()
+: <a class="el" href="group__CORE.html#gadae68b1a852ef2fd42d15dd7d5ee9933">em_core.h</a>
+</li>
+<li>CORE_irqState_t
+: <a class="el" href="group__CORE.html#ga4b715be4b95b8b0ac6c7b188f517177b">em_core.h</a>
+</li>
+<li>CORE_NVIC_DISABLE
+: <a class="el" href="group__CORE.html#ga35546df26cd66e630f0f9d72e184a78f">em_core.h</a>
+</li>
+<li>CORE_NVIC_ENABLE
+: <a class="el" href="group__CORE.html#gab59861bfde8b24cb757ee618ba8ed267">em_core.h</a>
+</li>
+<li>CORE_NVIC_REG_WORDS
+: <a class="el" href="group__CORE.html#ga507bd4d5cc348a56722265d6b45994f2">em_core.h</a>
+</li>
+<li>CORE_NVIC_SECTION
+: <a class="el" href="group__CORE.html#ga4c0bca677a57296417a006814d216cae">em_core.h</a>
+</li>
+<li>CORE_NvicDisableMask()
+: <a class="el" href="group__CORE.html#ga818266df617b6e900b124d30f4cf7db4">em_core.h</a>
+</li>
+<li>CORE_NvicEnableMask()
+: <a class="el" href="group__CORE.html#gafd594b0671e10977a3655f289439af09">em_core.h</a>
+</li>
+<li>CORE_NvicIRQDisabled()
+: <a class="el" href="group__CORE.html#ga788fc3ea8bf0a931e5b3c9266a543c25">em_core.h</a>
+</li>
+<li>CORE_NvicMaskClearIRQ()
+: <a class="el" href="group__CORE.html#ga9cf82cce035328e4558db771ecfe8720">em_core.h</a>
+</li>
+<li>CORE_NvicMaskSetIRQ()
+: <a class="el" href="group__CORE.html#ga74cc1f2c3a9c786f1108eba8305b4a02">em_core.h</a>
+</li>
+<li>CORE_SetNvicRamTableHandler()
+: <a class="el" href="group__CORE.html#gaff18df16b51922db178fed08846f2814">em_core.h</a>
+</li>
+<li>CORE_YIELD_ATOMIC
+: <a class="el" href="group__CORE.html#ga7e0133147f95d9e0a8c2f4a27ea687b1">em_core.h</a>
+</li>
+<li>CORE_YIELD_CRITICAL
+: <a class="el" href="group__CORE.html#gac0241da47b2e862f408427f6774e85d6">em_core.h</a>
+</li>
+<li>CORE_YIELD_NVIC
+: <a class="el" href="group__CORE.html#ga962e9521116075baf35aeeb234652d90">em_core.h</a>
+</li>
+<li>CORE_YieldAtomic()
+: <a class="el" href="group__CORE.html#gae827216d8f44d661d6ff49a5cf5ce025">em_core.h</a>
+</li>
+<li>CORE_YieldCritical()
+: <a class="el" href="group__CORE.html#ga768aa167717431945535a3677f6c6797">em_core.h</a>
+</li>
+<li>CORE_YieldNvicMask()
+: <a class="el" href="group__CORE.html#ga3c84177a6c8922b997d9a0bb94ec0ff9">em_core.h</a>
 </li>
 <li>currentChannel
 : <a class="el" href="caplesense_8c.html#af1489d9f1912bd31cd050fe18ee643e7">caplesense.c</a>
@@ -2086,7 +2260,7 @@ $(document).ready(function(){initNavTree('globals_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 10:59:50 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 16:00:16 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

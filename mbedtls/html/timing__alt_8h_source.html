@@ -73,11 +73,11 @@
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__sl__crypto__timing.html#gae529d584fa70900efd4e7e73331c2eca">mbedtls_timing_init</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> mbedtls_timing_init( <span class="keywordtype">void</span> );</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__sl__crypto__timing.html#gabf8ea47b200c82581cc908c3d6757853">mbedtls_timing_free</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> mbedtls_timing_free( <span class="keywordtype">void</span> );</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group__sl__crypto__timing.html#ga4f3a7f5d8fc51163cb4fca383599e20a">   68</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="group__sl__crypto__timing.html#ga4f3a7f5d8fc51163cb4fca383599e20a">mbedtls_timing_hardclock</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="timing_8h.html#aeec9ae2577ce34ab01f2d213b99d07e1">mbedtls_timing_hardclock</a>( <span class="keywordtype">void</span> )</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span>( DWT-&gt;CYCCNT );</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
@@ -90,14 +90,12 @@
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_TIMING_ALT */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_TIMING_ALT_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="group__sl__crypto__timing_html_gae529d584fa70900efd4e7e73331c2eca"><div class="ttname"><a href="group__sl__crypto__timing.html#gae529d584fa70900efd4e7e73331c2eca">mbedtls_timing_init</a></div><div class="ttdeci">void mbedtls_timing_init(void)</div><div class="ttdoc">Initialize timing resources. </div></div>
-<div class="ttc" id="group__sl__crypto__timing_html_ga4f3a7f5d8fc51163cb4fca383599e20a"><div class="ttname"><a href="group__sl__crypto__timing.html#ga4f3a7f5d8fc51163cb4fca383599e20a">mbedtls_timing_hardclock</a></div><div class="ttdeci">static unsigned long mbedtls_timing_hardclock(void)</div><div class="ttdoc">Return the CPU cycle counter value. </div><div class="ttdef"><b>Definition:</b> <a href="timing__alt_8h_source.html#l00068">timing_alt.h:68</a></div></div>
+<div class="ttc" id="timing_8h_html_aeec9ae2577ce34ab01f2d213b99d07e1"><div class="ttname"><a href="timing_8h.html#aeec9ae2577ce34ab01f2d213b99d07e1">mbedtls_timing_hardclock</a></div><div class="ttdeci">unsigned long mbedtls_timing_hardclock(void)</div><div class="ttdoc">Return the CPU cycle counter value. </div></div>
 <div class="ttc" id="config_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div><div class="ttdoc">Compatibility names (set of defines) </div></div>
-<div class="ttc" id="group__sl__crypto__timing_html_gabf8ea47b200c82581cc908c3d6757853"><div class="ttname"><a href="group__sl__crypto__timing.html#gabf8ea47b200c82581cc908c3d6757853">mbedtls_timing_free</a></div><div class="ttdeci">void mbedtls_timing_free(void)</div><div class="ttdoc">Stop and free up timing resources. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 13 2016 11:17:16 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 16:12:40 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

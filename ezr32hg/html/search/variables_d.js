@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['magic',['magic',['../structBCP__Packet__.html#aaf7b261a823481710ab67531e7e21111',1,'BCP_Packet_::magic()'],['../structBCP__Packet.html#a3a792f124d8f9985820b16959977a5b4',1,'BCP_Packet::magic()'],['../structBCP__PacketHeader.html#a2c263dd3b621b7bc4b2f5ef5eb5efc8e',1,'BCP_PacketHeader::magic()'],['../structBC__TypeDef.html#a67bf0459db0bb440ae47aacc9ad706ad',1,'BC_TypeDef::MAGIC()']]],
+  ['magic',['MAGIC',['../structBC__TypeDef.html#a67bf0459db0bb440ae47aacc9ad706ad',1,'BC_TypeDef::MAGIC()'],['../structBCP__Packet__.html#aaf7b261a823481710ab67531e7e21111',1,'BCP_Packet_::magic()'],['../structBCP__Packet.html#a3a792f124d8f9985820b16959977a5b4',1,'BCP_Packet::magic()'],['../structBCP__PacketHeader.html#a2c263dd3b621b7bc4b2f5ef5eb5efc8e',1,'BCP_PacketHeader::magic()']]],
   ['major',['major',['../structSYSTEM__ChipRevision__TypeDef.html#a79ebea0f9a0321ec622d9098afe5bdd1',1,'SYSTEM_ChipRevision_TypeDef']]],
   ['manufacturercode',['manufacturerCode',['../structNANDFLASH__Info__TypeDef.html#a86fa0f38e71a4d26d3e5708c50f0e28b',1,'NANDFLASH_Info_TypeDef']]],
   ['manufacturerid',['manufacturerId',['../structNORFLASH__Info__TypeDef.html#ab3f645440c81ddde7651b8fe1bf2c9d4',1,'NORFLASH_Info_TypeDef']]],

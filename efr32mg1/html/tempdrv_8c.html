@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Mighty Gecko Software Documentation: C:/work/s025_sw_ssh/emdrv/tempdrv/src/tempdrv.c File Reference</title>
+<title>EFR32 Mighty Gecko 1 Software Documentation: c:/work/super/platform/emdrv/tempdrv/src/tempdrv.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EFR32 Mighty Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32mg1-doc-4.4.0</span>
+   <div id="projectname">EFR32 Mighty Gecko 1 Software Documentation
+   &#160;<span id="projectnumber">efr32mg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('tempdrv_8c.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>TEMPDRV API implementation. </p>
-<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>(C) Copyright 2014 Silicon Labs, <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -147,6 +147,15 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a26d55d448a25aa6b33485dcc5d23c094"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26d55d448a25aa6b33485dcc5d23c094"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ERRATA_HIGH_LIMIT</b>&#160;&#160;&#160;80</td></tr>
+<tr class="separator:a26d55d448a25aa6b33485dcc5d23c094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27861b963724966d7b90f992d84484b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27861b963724966d7b90f992d84484b9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ERRATA_HYSTERESIS</b>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a27861b963724966d7b90f992d84484b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ea21ff513b21a5a0960600ce6cf4ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59ea21ff513b21a5a0960600ce6cf4ae"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ERRATA_MID_LIMIT</b>&#160;&#160;&#160;65</td></tr>
+<tr class="separator:a59ea21ff513b21a5a0960600ce6cf4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0f5888af1fe304b5140543d0cd7a6a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0f5888af1fe304b5140543d0cd7a6a7"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPDRV_</b></td></tr>
 <tr class="separator:af0f5888af1fe304b5140543d0cd7a6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +165,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ae94e465dd1ca0de38d8804f8fe4756ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae94e465dd1ca0de38d8804f8fe4756ba"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPDRV_CUSTOM_CALLBACK_INDEX</b>&#160;&#160;&#160;TEMPDRV_INT_CALLBACK_DEPTH</td></tr>
 <tr class="separator:ae94e465dd1ca0de38d8804f8fe4756ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e9d2e8cbe41b79e0e8fa0fb0fe14339"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e9d2e8cbe41b79e0e8fa0fb0fe14339"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPDRV_ERRATA_FIX</b></td></tr>
+<tr class="separator:a7e9d2e8cbe41b79e0e8fa0fb0fe14339"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11f2f4b8d10f418788b95dc06926b2c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11f2f4b8d10f418788b95dc06926b2c6"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>TEMPDRV_INT_CALLBACK_DEPTH</b>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a11f2f4b8d10f418788b95dc06926b2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,19 +175,17 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ac955f86de2b5fc7dec5df7ddaa045a3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac955f86de2b5fc7dec5df7ddaa045a3b"></a>
-typedef enum ErrataState&#160;</td><td class="memItemRight" valign="bottom"><b>ErrataState_t</b></td></tr>
+typedef enum <a class="el" href="tempdrv_8c.html#adc2a5dbe74ff05fe3d158606ddfd019f">ErrataState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ErrataState_t</b></td></tr>
 <tr class="separator:ac955f86de2b5fc7dec5df7ddaa045a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:adc2a5dbe74ff05fe3d158606ddfd019f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc2a5dbe74ff05fe3d158606ddfd019f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ErrataState</b> { <br />
-&#160;&#160;<b>ERRATA_LOW</b> = 0, 
+<tr class="memitem:adc2a5dbe74ff05fe3d158606ddfd019f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#adc2a5dbe74ff05fe3d158606ddfd019f">ErrataState</a> { <br />
+&#160;&#160;<a class="el" href="tempdrv_8c.html#adc2a5dbe74ff05fe3d158606ddfd019fad92f2b13a6f8b07759d91ca8f1171f2e">ERRATA_LOW</a> = 0, 
 <br />
-&#160;&#160;<b>ERRATA_MIDLOW</b> = 1, 
+&#160;&#160;<a class="el" href="tempdrv_8c.html#adc2a5dbe74ff05fe3d158606ddfd019fa7f85e6cf1b6acf5093f9acb17918dd1c">ERRATA_MID</a> = 1, 
 <br />
-&#160;&#160;<b>ERRATA_MIDHIGH</b> = 2, 
-<br />
-&#160;&#160;<b>ERRATA_HIGH</b> = 3
+&#160;&#160;<a class="el" href="tempdrv_8c.html#adc2a5dbe74ff05fe3d158606ddfd019fa782f27169dde96bd1390261a3a96a256">ERRATA_HIGH</a> = 2
 <br />
  }<tr class="separator:adc2a5dbe74ff05fe3d158606ddfd019f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -183,67 +193,66 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a678508f99f5e9246d47a1dc19f791fa0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a678508f99f5e9246d47a1dc19f791fa0">addCallback</a> (<a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackSet_t</a> *set, int8_t temp, <a class="el" href="group__TEMPDRV.html#ga4aa8ca73cd9509ce26843f3fe1ca496e">TEMPDRV_Callback_t</a> callback)</td></tr>
-<tr class="memdesc:a678508f99f5e9246d47a1dc19f791fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to add a callback to the set, error if no space or invalid temp.  <a href="#a678508f99f5e9246d47a1dc19f791fa0">More...</a><br /></td></tr>
+<tr class="memdesc:a678508f99f5e9246d47a1dc19f791fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to add a callback to a set.  <a href="#a678508f99f5e9246d47a1dc19f791fa0">More...</a><br /></td></tr>
 <tr class="separator:a678508f99f5e9246d47a1dc19f791fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a491d81c1f5c7c96d9c96cc946f45e171"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a491d81c1f5c7c96d9c96cc946f45e171">checkForDuplicates</a> (<a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackSet_t</a> *set, int8_t temp)</td></tr>
 <tr class="memdesc:a491d81c1f5c7c96d9c96cc946f45e171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if another callback has registered the same temperature.  <a href="#a491d81c1f5c7c96d9c96cc946f45e171">More...</a><br /></td></tr>
 <tr class="separator:a491d81c1f5c7c96d9c96cc946f45e171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a798654ab0c6e543d7edc325d9a11c0e2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a798654ab0c6e543d7edc325d9a11c0e2">convertEMUtoTEMP</a> (uint8_t emu, int8_t *temp)</td></tr>
-<tr class="memdesc:a798654ab0c6e543d7edc325d9a11c0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert EMU value to degrees Celsius.  <a href="#a798654ab0c6e543d7edc325d9a11c0e2">More...</a><br /></td></tr>
-<tr class="separator:a798654ab0c6e543d7edc325d9a11c0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8442646d166cb0ea7de0bb09390b33ce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a8442646d166cb0ea7de0bb09390b33ce">convertTEMPtoEMU</a> (int8_t temp, uint8_t *emu)</td></tr>
-<tr class="memdesc:a8442646d166cb0ea7de0bb09390b33ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert degrees Celsius to EMU value.  <a href="#a8442646d166cb0ea7de0bb09390b33ce">More...</a><br /></td></tr>
-<tr class="separator:a8442646d166cb0ea7de0bb09390b33ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaca966bacd9542b4bfd1a4ecada4606"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaca966bacd9542b4bfd1a4ecada4606"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#adaca966bacd9542b4bfd1a4ecada4606">disableInterrupts</a> ()</td></tr>
-<tr class="memdesc:adaca966bacd9542b4bfd1a4ecada4606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn off interrupts. <br /></td></tr>
-<tr class="separator:adaca966bacd9542b4bfd1a4ecada4606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fda42f1f4ae172145a1a67b8521d50c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fda42f1f4ae172145a1a67b8521d50c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a4fda42f1f4ae172145a1a67b8521d50c">EMU_IRQHandler</a> (void)</td></tr>
-<tr class="memdesc:a4fda42f1f4ae172145a1a67b8521d50c"><td class="mdescLeft">&#160;</td><td class="mdescRight">EMU Interrupt Handler. <br /></td></tr>
+<tr class="memitem:a6689e3e2bb1dc6fec64b4fab3beb5af6"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a6689e3e2bb1dc6fec64b4fab3beb5af6">convertToEmu</a> (int8_t temp)</td></tr>
+<tr class="memdesc:a6689e3e2bb1dc6fec64b4fab3beb5af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a temperature in &deg;C to an EMU sensor value.  <a href="#a6689e3e2bb1dc6fec64b4fab3beb5af6">More...</a><br /></td></tr>
+<tr class="separator:a6689e3e2bb1dc6fec64b4fab3beb5af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f45838966c07a0c71bc13d4cffdffc8"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a9f45838966c07a0c71bc13d4cffdffc8">convertToTemp</a> (uint8_t emu)</td></tr>
+<tr class="memdesc:a9f45838966c07a0c71bc13d4cffdffc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert EMU value to degrees Celsius.  <a href="#a9f45838966c07a0c71bc13d4cffdffc8">More...</a><br /></td></tr>
+<tr class="separator:a9f45838966c07a0c71bc13d4cffdffc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc64c30b03d8d883fec1d195c184f13f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc64c30b03d8d883fec1d195c184f13f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#abc64c30b03d8d883fec1d195c184f13f">disableInterrupts</a> (void)</td></tr>
+<tr class="memdesc:abc64c30b03d8d883fec1d195c184f13f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn off and clear EMU temperature related interrupts. <br /></td></tr>
+<tr class="separator:abc64c30b03d8d883fec1d195c184f13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fda42f1f4ae172145a1a67b8521d50c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a4fda42f1f4ae172145a1a67b8521d50c">EMU_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:a4fda42f1f4ae172145a1a67b8521d50c"><td class="mdescLeft">&#160;</td><td class="mdescRight">EMU Interrupt Handler.  <a href="#a4fda42f1f4ae172145a1a67b8521d50c">More...</a><br /></td></tr>
 <tr class="separator:a4fda42f1f4ae172145a1a67b8521d50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a493a27c12a1d4a0da8f3cebf9320aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a493a27c12a1d4a0da8f3cebf9320aa"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a3a493a27c12a1d4a0da8f3cebf9320aa">errataCallback</a> (int8_t temp, TEMPDRV_LimitType_t limit)</td></tr>
-<tr class="memdesc:a3a493a27c12a1d4a0da8f3cebf9320aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Errata Callback- handles hysteresis temperature thresholds. <br /></td></tr>
+<tr class="memitem:a3a493a27c12a1d4a0da8f3cebf9320aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a3a493a27c12a1d4a0da8f3cebf9320aa">errataCallback</a> (int8_t temp, <a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a> limit)</td></tr>
+<tr class="memdesc:a3a493a27c12a1d4a0da8f3cebf9320aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Errata Callback.  <a href="#a3a493a27c12a1d4a0da8f3cebf9320aa">More...</a><br /></td></tr>
 <tr class="separator:a3a493a27c12a1d4a0da8f3cebf9320aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f9ac634073f1310e209dbb7d81aed67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f9ac634073f1310e209dbb7d81aed67"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a2f9ac634073f1310e209dbb7d81aed67">errataInit</a> ()</td></tr>
-<tr class="memdesc:a2f9ac634073f1310e209dbb7d81aed67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Errata Initialization- sets first callbacks based on current temp. <br /></td></tr>
-<tr class="separator:a2f9ac634073f1310e209dbb7d81aed67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb151e16851e377635f639382b86851"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a8eb151e16851e377635f639382b86851">errataInit</a> (void)</td></tr>
+<tr class="memdesc:a8eb151e16851e377635f639382b86851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Errata Initialization.  <a href="#a8eb151e16851e377635f639382b86851">More...</a><br /></td></tr>
+<tr class="separator:a8eb151e16851e377635f639382b86851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5376406f97f0caea18d2126ffb1216ff"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a5376406f97f0caea18d2126ffb1216ff">errataStateUpdate</a> (int8_t temp)</td></tr>
+<tr class="memdesc:a5376406f97f0caea18d2126ffb1216ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Errata State Update.  <a href="#a5376406f97f0caea18d2126ffb1216ff">More...</a><br /></td></tr>
+<tr class="separator:a5376406f97f0caea18d2126ffb1216ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fcaa663dc3a2d01dba0bb1c0222cacb"><td class="memItemLeft" align="right" valign="top">static int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a3fcaa663dc3a2d01dba0bb1c0222cacb">findCallbackSpace</a> (<a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackSet_t</a> *set)</td></tr>
 <tr class="memdesc:a3fcaa663dc3a2d01dba0bb1c0222cacb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find an empty spot for callback in set.  <a href="#a3fcaa663dc3a2d01dba0bb1c0222cacb">More...</a><br /></td></tr>
 <tr class="separator:a3fcaa663dc3a2d01dba0bb1c0222cacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa101ba6e20c4ad8edde6915c6d2171aa"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#aa101ba6e20c4ad8edde6915c6d2171aa">removeCallback</a> (<a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackSet_t</a> *set, <a class="el" href="group__TEMPDRV.html#ga4aa8ca73cd9509ce26843f3fe1ca496e">TEMPDRV_Callback_t</a> callback)</td></tr>
 <tr class="memdesc:aa101ba6e20c4ad8edde6915c6d2171aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a callback from the set.  <a href="#aa101ba6e20c4ad8edde6915c6d2171aa">More...</a><br /></td></tr>
 <tr class="separator:aa101ba6e20c4ad8edde6915c6d2171aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd7dfe891f924f053f93c1d3d6f9ce9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#gafd7dfe891f924f053f93c1d3d6f9ce9d">TEMPDRV_DeInit</a> ()</td></tr>
-<tr class="memdesc:gafd7dfe891f924f053f93c1d3d6f9ce9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initialize the TEMP driver.  <a href="group__TEMPDRV.html#gafd7dfe891f924f053f93c1d3d6f9ce9d">More...</a><br /></td></tr>
-<tr class="separator:gafd7dfe891f924f053f93c1d3d6f9ce9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8ef7bf57730754ee441069c7577d40f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#gac8ef7bf57730754ee441069c7577d40f">TEMPDRV_DeInit</a> (void)</td></tr>
+<tr class="memdesc:gac8ef7bf57730754ee441069c7577d40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initialize the TEMP driver.  <a href="group__TEMPDRV.html#gac8ef7bf57730754ee441069c7577d40f">More...</a><br /></td></tr>
+<tr class="separator:gac8ef7bf57730754ee441069c7577d40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa2605b8e10e33fcf3bfb47395c25b33f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#gaa2605b8e10e33fcf3bfb47395c25b33f">TEMPDRV_Enable</a> (bool enable)</td></tr>
-<tr class="memdesc:gaa2605b8e10e33fcf3bfb47395c25b33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the TEMP driver.  <a href="group__TEMPDRV.html#gaa2605b8e10e33fcf3bfb47395c25b33f">More...</a><br /></td></tr>
+<tr class="memdesc:gaa2605b8e10e33fcf3bfb47395c25b33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the TEMP driver.  <a href="group__TEMPDRV.html#gaa2605b8e10e33fcf3bfb47395c25b33f">More...</a><br /></td></tr>
 <tr class="separator:gaa2605b8e10e33fcf3bfb47395c25b33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga61719ed2fb153a5acc03a8b2a85925f6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga61719ed2fb153a5acc03a8b2a85925f6">TEMPDRV_GetActiveCallbacks</a> (TEMPDRV_LimitType_t limit)</td></tr>
+<tr class="memitem:ga61719ed2fb153a5acc03a8b2a85925f6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga61719ed2fb153a5acc03a8b2a85925f6">TEMPDRV_GetActiveCallbacks</a> (<a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a> limit)</td></tr>
 <tr class="memdesc:ga61719ed2fb153a5acc03a8b2a85925f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of active callbacks for a limit.  <a href="group__TEMPDRV.html#ga61719ed2fb153a5acc03a8b2a85925f6">More...</a><br /></td></tr>
 <tr class="separator:ga61719ed2fb153a5acc03a8b2a85925f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2751bf86315e9c956026dc2c3dc880a1"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga2751bf86315e9c956026dc2c3dc880a1">TEMPDRV_GetTemp</a> ()</td></tr>
-<tr class="memdesc:ga2751bf86315e9c956026dc2c3dc880a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current temperature.  <a href="group__TEMPDRV.html#ga2751bf86315e9c956026dc2c3dc880a1">More...</a><br /></td></tr>
-<tr class="separator:ga2751bf86315e9c956026dc2c3dc880a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9840f98f0e92bbc1ebadf6c2b6fc390b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga9840f98f0e92bbc1ebadf6c2b6fc390b">TEMPDRV_Init</a> ()</td></tr>
-<tr class="memdesc:ga9840f98f0e92bbc1ebadf6c2b6fc390b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the TEMP driver.  <a href="group__TEMPDRV.html#ga9840f98f0e92bbc1ebadf6c2b6fc390b">More...</a><br /></td></tr>
-<tr class="separator:ga9840f98f0e92bbc1ebadf6c2b6fc390b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f943cecfc0bc233de33180c13b2beec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga4f943cecfc0bc233de33180c13b2beec">TEMPDRV_IRQHandler</a> (void)</td></tr>
-<tr class="memdesc:ga4f943cecfc0bc233de33180c13b2beec"><td class="mdescLeft">&#160;</td><td class="mdescRight">TEMPDRV Interrupt Handler.  <a href="group__TEMPDRV.html#ga4f943cecfc0bc233de33180c13b2beec">More...</a><br /></td></tr>
-<tr class="separator:ga4f943cecfc0bc233de33180c13b2beec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c9336d963284dd604c7c6b537ebca1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga6c9336d963284dd604c7c6b537ebca1c">TEMPDRV_RegisterCallback</a> (int8_t temp, TEMPDRV_LimitType_t limit, <a class="el" href="group__TEMPDRV.html#ga4aa8ca73cd9509ce26843f3fe1ca496e">TEMPDRV_Callback_t</a> callback)</td></tr>
+<tr class="memitem:ga2451a4de601c4b8fdd6b482bc61073d6"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga2451a4de601c4b8fdd6b482bc61073d6">TEMPDRV_GetTemp</a> (void)</td></tr>
+<tr class="memdesc:ga2451a4de601c4b8fdd6b482bc61073d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current temperature.  <a href="group__TEMPDRV.html#ga2451a4de601c4b8fdd6b482bc61073d6">More...</a><br /></td></tr>
+<tr class="separator:ga2451a4de601c4b8fdd6b482bc61073d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe27ab8076564a44b71038c79603ccab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#gabe27ab8076564a44b71038c79603ccab">TEMPDRV_Init</a> (void)</td></tr>
+<tr class="memdesc:gabe27ab8076564a44b71038c79603ccab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the TEMP driver.  <a href="group__TEMPDRV.html#gabe27ab8076564a44b71038c79603ccab">More...</a><br /></td></tr>
+<tr class="separator:gabe27ab8076564a44b71038c79603ccab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a84c867daa872d148b663ce82e0926c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga6a84c867daa872d148b663ce82e0926c">TEMPDRV_IRQHandler</a> (void)</td></tr>
+<tr class="memdesc:ga6a84c867daa872d148b663ce82e0926c"><td class="mdescLeft">&#160;</td><td class="mdescRight">TEMPDRV Interrupt Handler.  <a href="group__TEMPDRV.html#ga6a84c867daa872d148b663ce82e0926c">More...</a><br /></td></tr>
+<tr class="separator:ga6a84c867daa872d148b663ce82e0926c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c9336d963284dd604c7c6b537ebca1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#ga6c9336d963284dd604c7c6b537ebca1c">TEMPDRV_RegisterCallback</a> (int8_t temp, <a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a> limit, <a class="el" href="group__TEMPDRV.html#ga4aa8ca73cd9509ce26843f3fe1ca496e">TEMPDRV_Callback_t</a> callback)</td></tr>
 <tr class="memdesc:ga6c9336d963284dd604c7c6b537ebca1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback in the TEMP driver.  <a href="group__TEMPDRV.html#ga6c9336d963284dd604c7c6b537ebca1c">More...</a><br /></td></tr>
 <tr class="separator:ga6c9336d963284dd604c7c6b537ebca1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaef379d8cf403513296a758eb84f8c3fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TEMPDRV.html#gaef379d8cf403513296a758eb84f8c3fa">TEMPDRV_UnregisterCallback</a> (<a class="el" href="group__TEMPDRV.html#ga4aa8ca73cd9509ce26843f3fe1ca496e">TEMPDRV_Callback_t</a> callback)</td></tr>
 <tr class="memdesc:gaef379d8cf403513296a758eb84f8c3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a callback in the TEMP driver.  <a href="group__TEMPDRV.html#gaef379d8cf403513296a758eb84f8c3fa">More...</a><br /></td></tr>
 <tr class="separator:gaef379d8cf403513296a758eb84f8c3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d3c1e0a68bb10fdeef9360d1c56c18a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d3c1e0a68bb10fdeef9360d1c56c18a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a3d3c1e0a68bb10fdeef9360d1c56c18a">updateInterrupts</a> ()</td></tr>
-<tr class="memdesc:a3d3c1e0a68bb10fdeef9360d1c56c18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update interrupts based on active callbacks. <br /></td></tr>
-<tr class="separator:a3d3c1e0a68bb10fdeef9360d1c56c18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb0a16de52bf17b2923dfd60592c789"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tempdrv_8c.html#a2eb0a16de52bf17b2923dfd60592c789">updateInterrupts</a> (void)</td></tr>
+<tr class="memdesc:a2eb0a16de52bf17b2923dfd60592c789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update interrupts based on active callbacks.  <a href="#a2eb0a16de52bf17b2923dfd60592c789">More...</a><br /></td></tr>
+<tr class="separator:a2eb0a16de52bf17b2923dfd60592c789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -253,13 +262,12 @@ static int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>calibration
 <tr class="memitem:a63bd8e74d267b07b943e63bb381d6303"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63bd8e74d267b07b943e63bb381d6303"></a>
 static int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>calibrationTEMP</b></td></tr>
 <tr class="separator:a63bd8e74d267b07b943e63bb381d6303"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed86f5d0b8f507eff02966a0bfed20dc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackSet_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>errataHighTemp</b> [4]</td></tr>
-<tr class="separator:aed86f5d0b8f507eff02966a0bfed20dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bb5995938d80307a4b146c61dda3e8f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackSet_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>errataLowTemp</b> [4]</td></tr>
-<tr class="separator:a7bb5995938d80307a4b146c61dda3e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad13c7eddbb4b1ea2273aa35907c75491"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad13c7eddbb4b1ea2273aa35907c75491"></a>
-ErrataState_t&#160;</td><td class="memItemRight" valign="bottom"><b>errataState</b></td></tr>
-<tr class="separator:ad13c7eddbb4b1ea2273aa35907c75491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfcf2219dc912c1427182ec1c91cf794"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfcf2219dc912c1427182ec1c91cf794"></a>
+static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackSet_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>errataHighTemp</b> [3]</td></tr>
+<tr class="separator:adfcf2219dc912c1427182ec1c91cf794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f67be5bef315c1b2b76c8bb6a2a564"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6f67be5bef315c1b2b76c8bb6a2a564"></a>
+static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackSet_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>errataLowTemp</b> [3]</td></tr>
+<tr class="separator:ab6f67be5bef315c1b2b76c8bb6a2a564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a36f7a4742e060bbf77809625dcda4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a36f7a4742e060bbf77809625dcda4c"></a>
 static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>fallbackEMU</b> = 0x90</td></tr>
 <tr class="separator:a7a36f7a4742e060bbf77809625dcda4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,6 +296,32 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
 static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackSet_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tempdrvLowCallbacks</b> [TEMPDRV_CALLBACK_DEPTH]</td></tr>
 <tr class="separator:a9db9999c14586e93309848d0772b9b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="adc2a5dbe74ff05fe3d158606ddfd019f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="tempdrv_8c.html#adc2a5dbe74ff05fe3d158606ddfd019f">ErrataState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="adc2a5dbe74ff05fe3d158606ddfd019fad92f2b13a6f8b07759d91ca8f1171f2e"></a>ERRATA_LOW&#160;</td><td class="fielddoc">
+<p>Low temperature &lt;65&deg;C. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adc2a5dbe74ff05fe3d158606ddfd019fa7f85e6cf1b6acf5093f9acb17918dd1c"></a>ERRATA_MID&#160;</td><td class="fielddoc">
+<p>Medium temperature &gt;65&deg;C and &lt;80&deg;C. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="adc2a5dbe74ff05fe3d158606ddfd019fa782f27169dde96bd1390261a3a96a256"></a>ERRATA_HIGH&#160;</td><td class="fielddoc">
+<p>High temperature &gt;80&deg;C. </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00141">141</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a678508f99f5e9246d47a1dc19f791fa0"></a>
 <div class="memitem">
@@ -327,7 +361,7 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
 </table>
 </div><div class="memdoc">
 
-<p>Attempt to add a callback to the set, error if no space or invalid temp. </p>
+<p>Attempt to add a callback to a set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">set</td><td>Callback set to add callback to</td></tr>
@@ -336,11 +370,15 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a> on success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li><a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a> on success. </li>
+<li><a class="el" href="group__TEMPDRV.html#ga7841b58a4cfc6a3c71a5f42930db361b">ECODE_EMDRV_TEMPDRV_NO_SPACE</a> if there is no space left for callbacks. </li>
+</ul>
+</dd></dl>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00263">263</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00316">316</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
-<p>References <a class="el" href="structTEMPDRV__CallbackSet__t.html#a8309753a1ec3512a0b52d56f58dd8d5b">TEMPDRV_CallbackSet_t::callback</a>, <a class="el" href="tempdrv_8c.html#a8442646d166cb0ea7de0bb09390b33ce">convertTEMPtoEMU()</a>, <a class="el" href="group__TEMPDRV.html#ga7841b58a4cfc6a3c71a5f42930db361b">ECODE_EMDRV_TEMPDRV_NO_SPACE</a>, <a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a>, <a class="el" href="tempdrv_8c.html#a3fcaa663dc3a2d01dba0bb1c0222cacb">findCallbackSpace()</a>, and <a class="el" href="tempdrv_8c.html#a3d3c1e0a68bb10fdeef9360d1c56c18a">updateInterrupts()</a>.</p>
+<p>References <a class="el" href="structTEMPDRV__CallbackSet__t.html#a8309753a1ec3512a0b52d56f58dd8d5b">TEMPDRV_CallbackSet_t::callback</a>, <a class="el" href="tempdrv_8c.html#a6689e3e2bb1dc6fec64b4fab3beb5af6">convertToEmu()</a>, <a class="el" href="group__TEMPDRV.html#ga7841b58a4cfc6a3c71a5f42930db361b">ECODE_EMDRV_TEMPDRV_NO_SPACE</a>, <a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a>, <a class="el" href="tempdrv_8c.html#a3fcaa663dc3a2d01dba0bb1c0222cacb">findCallbackSpace()</a>, <a class="el" href="structTEMPDRV__CallbackSet__t.html#a68e98c17e021c6cddf407ff25783c1f1">TEMPDRV_CallbackSet_t::temp</a>, and <a class="el" href="tempdrv_8c.html#a2eb0a16de52bf17b2923dfd60592c789">updateInterrupts()</a>.</p>
 
 <p>Referenced by <a class="el" href="group__TEMPDRV.html#ga6c9336d963284dd604c7c6b537ebca1c">TEMPDRV_RegisterCallback()</a>.</p>
 
@@ -386,17 +424,17 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if duplicate is found. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if a duplicate is found, <code>false</code> if no duplicates is found. </dd></dl>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00320">320</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00375">375</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
-<p>References <a class="el" href="tempdrv_8c.html#a8442646d166cb0ea7de0bb09390b33ce">convertTEMPtoEMU()</a>.</p>
+<p>References <a class="el" href="tempdrv_8c.html#a6689e3e2bb1dc6fec64b4fab3beb5af6">convertToEmu()</a>.</p>
 
 <p>Referenced by <a class="el" href="group__TEMPDRV.html#ga6c9336d963284dd604c7c6b537ebca1c">TEMPDRV_RegisterCallback()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a798654ab0c6e543d7edc325d9a11c0e2"></a>
+<a class="anchor" id="a6689e3e2bb1dc6fec64b4fab3beb5af6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -404,21 +442,48 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> convertEMUtoTEMP </td>
+          <td class="memname">static uint8_t convertToEmu </td>
+          <td>(</td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>temp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert a temperature in &deg;C to an EMU sensor value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">temp</td><td>Temperature to convert in degrees Celsius</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>EMU temperature sensor value that represents the given temperature </dd></dl>
+
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00431">431</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+
+<p>Referenced by <a class="el" href="tempdrv_8c.html#a678508f99f5e9246d47a1dc19f791fa0">addCallback()</a>, <a class="el" href="tempdrv_8c.html#a491d81c1f5c7c96d9c96cc946f45e171">checkForDuplicates()</a>, and <a class="el" href="tempdrv_8c.html#a8eb151e16851e377635f639382b86851">errataInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f45838966c07a0c71bc13d4cffdffc8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int8_t convertToTemp </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>emu</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>emu</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int8_t *&#160;</td>
-          <td class="paramname"><em>temp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -432,21 +497,41 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">emu</td><td>EMU value to convert</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">temp</td><td>Pointer to store temperature</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a> on success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>temperature in degrees Celsius </dd></dl>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00351">351</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00405">405</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
-<p>References <a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a>, <a class="el" href="group__TEMPDRV.html#ga1345c6bb062ca1ef1c4ccf67fec91734">ECODE_EMDRV_TEMPDRV_TEMP_OVER</a>, and <a class="el" href="group__TEMPDRV.html#gaae481b2daedf020e0b48a445470d8058">ECODE_EMDRV_TEMPDRV_TEMP_UNDER</a>.</p>
-
-<p>Referenced by <a class="el" href="group__TEMPDRV.html#ga2751bf86315e9c956026dc2c3dc880a1">TEMPDRV_GetTemp()</a>.</p>
+<p>Referenced by <a class="el" href="group__TEMPDRV.html#ga2451a4de601c4b8fdd6b482bc61073d6">TEMPDRV_GetTemp()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8442646d166cb0ea7de0bb09390b33ce"></a>
+<a class="anchor" id="a4fda42f1f4ae172145a1a67b8521d50c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EMU_IRQHandler </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EMU Interrupt Handler. </p>
+<p>The EMU_IRQHandler provided by TEMPDRV will call TEMPDRV_IRQ_Handler. Configure EMU_CUSTOM_IRQ_HANDLER = true if the application wants to implement its own EMU_IRQHandler. This is typically needed if one of the non-temperature related EMU interrupt flags are in use. </p>
+
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00092">92</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+
+<p>References <a class="el" href="group__TEMPDRV.html#ga6a84c867daa872d148b663ce82e0926c">TEMPDRV_IRQHandler()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a493a27c12a1d4a0da8f3cebf9320aa"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -454,7 +539,7 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> convertTEMPtoEMU </td>
+          <td class="memname">static void errataCallback </td>
           <td>(</td>
           <td class="paramtype">int8_t&#160;</td>
           <td class="paramname"><em>temp</em>, </td>
@@ -462,8 +547,8 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>emu</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__TEMPDRV.html#ga5f2efd642ec50891de724a67191c5545">TEMPDRV_LimitType_t</a>&#160;</td>
+          <td class="paramname"><em>limit</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -478,21 +563,80 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
 </table>
 </div><div class="memdoc">
 
-<p>Convert degrees Celsius to EMU value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">temp</td><td>Temperature to convert</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">emu</td><td>Pointer to store EMU value</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a> on success. </dd></dl>
+<p>Errata Callback. </p>
+<p>This function is called by the TEMPDRV_IRQHandler and will change the state depending on the current temperature. </p>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00379">379</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00167">167</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
-<p>References <a class="el" href="group__TEMPDRV.html#ga620fe8d54452e312610d24450e8f41b8">ECODE_EMDRV_TEMPDRV_OK</a>, <a class="el" href="group__TEMPDRV.html#ga1345c6bb062ca1ef1c4ccf67fec91734">ECODE_EMDRV_TEMPDRV_TEMP_OVER</a>, and <a class="el" href="group__TEMPDRV.html#gaae481b2daedf020e0b48a445470d8058">ECODE_EMDRV_TEMPDRV_TEMP_UNDER</a>.</p>
+<p>References <a class="el" href="tempdrv_8c.html#a5376406f97f0caea18d2126ffb1216ff">errataStateUpdate()</a>.</p>
 
-<p>Referenced by <a class="el" href="tempdrv_8c.html#a678508f99f5e9246d47a1dc19f791fa0">addCallback()</a>, and <a class="el" href="tempdrv_8c.html#a491d81c1f5c7c96d9c96cc946f45e171">checkForDuplicates()</a>.</p>
+<p>Referenced by <a class="el" href="tempdrv_8c.html#a8eb151e16851e377635f639382b86851">errataInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8eb151e16851e377635f639382b86851"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void errataInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Errata Initialization. </p>
+<p>Initialize the temperature thresholds based on calibration values and initializes the errata fix based on the current temperature. </p>
+
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00235">235</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+
+<p>References <a class="el" href="structTEMPDRV__CallbackSet__t.html#a8309753a1ec3512a0b52d56f58dd8d5b">TEMPDRV_CallbackSet_t::callback</a>, <a class="el" href="tempdrv_8c.html#a6689e3e2bb1dc6fec64b4fab3beb5af6">convertToEmu()</a>, <a class="el" href="tempdrv_8c.html#adc2a5dbe74ff05fe3d158606ddfd019fa782f27169dde96bd1390261a3a96a256">ERRATA_HIGH</a>, <a class="el" href="tempdrv_8c.html#adc2a5dbe74ff05fe3d158606ddfd019fad92f2b13a6f8b07759d91ca8f1171f2e">ERRATA_LOW</a>, <a class="el" href="tempdrv_8c.html#adc2a5dbe74ff05fe3d158606ddfd019fa7f85e6cf1b6acf5093f9acb17918dd1c">ERRATA_MID</a>, <a class="el" href="tempdrv_8c.html#a3a493a27c12a1d4a0da8f3cebf9320aa">errataCallback()</a>, <a class="el" href="tempdrv_8c.html#a5376406f97f0caea18d2126ffb1216ff">errataStateUpdate()</a>, <a class="el" href="structSYSTEM__ChipRevision__TypeDef.html#a79ebea0f9a0321ec622d9098afe5bdd1">SYSTEM_ChipRevision_TypeDef::major</a>, <a class="el" href="group__SYSTEM.html#ga6470ed38937ffd0b8b509334c5add7dd">SYSTEM_ChipRevisionGet()</a>, <a class="el" href="structTEMPDRV__CallbackSet__t.html#a68e98c17e021c6cddf407ff25783c1f1">TEMPDRV_CallbackSet_t::temp</a>, and <a class="el" href="group__TEMPDRV.html#ga2451a4de601c4b8fdd6b482bc61073d6">TEMPDRV_GetTemp()</a>.</p>
+
+<p>Referenced by <a class="el" href="group__TEMPDRV.html#gabe27ab8076564a44b71038c79603ccab">TEMPDRV_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5376406f97f0caea18d2126ffb1216ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void errataStateUpdate </td>
+          <td>(</td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>temp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Errata State Update. </p>
+<p>Updates registers based on the current temperature </p>
+
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00180">180</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+
+<p>References <a class="el" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga15d2c2b1e853b541f1d74797b62c8ac0">EMU</a>, <a class="el" href="group__EFR32MG1P__EMU__BitFields.html#gaa4f98431fa52caf9fe477e10c6ad1362">EMU_LOCK_LOCKKEY_LOCK</a>, <a class="el" href="group__EFR32MG1P__EMU__BitFields.html#ga02eab989ebf7e66f2577b7d40fdd9e5a">EMU_LOCK_LOCKKEY_LOCKED</a>, <a class="el" href="group__EFR32MG1P__EMU__BitFields.html#gab15970618edce7afd7a7bb2c1871e2d1">EMU_LOCK_LOCKKEY_UNLOCK</a>, <a class="el" href="group__EMU.html#ga7c407db6178a3e2336702a23a882db61">EMU_SetBiasMode()</a>, <a class="el" href="tempdrv_8c.html#adc2a5dbe74ff05fe3d158606ddfd019fa782f27169dde96bd1390261a3a96a256">ERRATA_HIGH</a>, <a class="el" href="tempdrv_8c.html#adc2a5dbe74ff05fe3d158606ddfd019fad92f2b13a6f8b07759d91ca8f1171f2e">ERRATA_LOW</a>, and <a class="el" href="tempdrv_8c.html#adc2a5dbe74ff05fe3d158606ddfd019fa7f85e6cf1b6acf5093f9acb17918dd1c">ERRATA_MID</a>.</p>
+
+<p>Referenced by <a class="el" href="tempdrv_8c.html#a3a493a27c12a1d4a0da8f3cebf9320aa">errataCallback()</a>, and <a class="el" href="tempdrv_8c.html#a8eb151e16851e377635f639382b86851">errataInit()</a>.</p>
 
 </div>
 </div>
@@ -525,9 +669,9 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="index.html">EFR32 Mighty Gecko Software Documentation</a> of empty space if found, -1 if none </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>index of empty space if found, -1 if none </dd></dl>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00237">237</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00284">284</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
 <p>Referenced by <a class="el" href="tempdrv_8c.html#a678508f99f5e9246d47a1dc19f791fa0">addCallback()</a>.</p>
 
@@ -573,18 +717,17 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True on success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> on success and <code>false</code> if the callback was not found. </dd></dl>
 
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00292">292</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00344">344</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
-<p>References <a class="el" href="structTEMPDRV__CallbackSet__t.html#a8309753a1ec3512a0b52d56f58dd8d5b">TEMPDRV_CallbackSet_t::callback</a>, <a class="el" href="structTEMPDRV__CallbackSet__t.html#a68e98c17e021c6cddf407ff25783c1f1">TEMPDRV_CallbackSet_t::temp</a>, and <a class="el" href="tempdrv_8c.html#a3d3c1e0a68bb10fdeef9360d1c56c18a">updateInterrupts()</a>.</p>
+<p>References <a class="el" href="structTEMPDRV__CallbackSet__t.html#a8309753a1ec3512a0b52d56f58dd8d5b">TEMPDRV_CallbackSet_t::callback</a>, <a class="el" href="structTEMPDRV__CallbackSet__t.html#a68e98c17e021c6cddf407ff25783c1f1">TEMPDRV_CallbackSet_t::temp</a>, and <a class="el" href="tempdrv_8c.html#a2eb0a16de52bf17b2923dfd60592c789">updateInterrupts()</a>.</p>
 
 <p>Referenced by <a class="el" href="group__TEMPDRV.html#gaef379d8cf403513296a758eb84f8c3fa">TEMPDRV_UnregisterCallback()</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="aed86f5d0b8f507eff02966a0bfed20dc"></a>
+<a class="anchor" id="a2eb0a16de52bf17b2923dfd60592c789"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -592,7 +735,11 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackSet_t</a> errataHighTemp[4]</td>
+          <td class="memname">static void updateInterrupts </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -601,40 +748,15 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {{<a class="code" href="tempdrv_8c.html#a3a493a27c12a1d4a0da8f3cebf9320aa">errataCallback</a>,150},</div>
-<div class="line">                                                  {<a class="code" href="tempdrv_8c.html#a3a493a27c12a1d4a0da8f3cebf9320aa">errataCallback</a>,135},</div>
-<div class="line">                                                  {<a class="code" href="tempdrv_8c.html#a3a493a27c12a1d4a0da8f3cebf9320aa">errataCallback</a>,124},</div>
-<div class="line">                                                  {NULL,0}}</div>
-<div class="ttc" id="tempdrv_8c_html_a3a493a27c12a1d4a0da8f3cebf9320aa"><div class="ttname"><a href="tempdrv_8c.html#a3a493a27c12a1d4a0da8f3cebf9320aa">errataCallback</a></div><div class="ttdeci">static void errataCallback(int8_t temp, TEMPDRV_LimitType_t limit)</div><div class="ttdoc">Errata Callback- handles hysteresis temperature thresholds. </div><div class="ttdef"><b>Definition:</b> <a href="tempdrv_8c_source.html#l00139">tempdrv.c:139</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00131">131</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
 
-</div>
-</div>
-<a class="anchor" id="a7bb5995938d80307a4b146c61dda3e8f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackSet_t</a> errataLowTemp[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {{NULL,0},</div>
-<div class="line">                                                 {<a class="code" href="tempdrv_8c.html#a3a493a27c12a1d4a0da8f3cebf9320aa">errataCallback</a>,155},</div>
-<div class="line">                                                 {<a class="code" href="tempdrv_8c.html#a3a493a27c12a1d4a0da8f3cebf9320aa">errataCallback</a>,140},</div>
-<div class="line">                                                 {<a class="code" href="tempdrv_8c.html#a3a493a27c12a1d4a0da8f3cebf9320aa">errataCallback</a>,129}}</div>
-<div class="ttc" id="tempdrv_8c_html_a3a493a27c12a1d4a0da8f3cebf9320aa"><div class="ttname"><a href="tempdrv_8c.html#a3a493a27c12a1d4a0da8f3cebf9320aa">errataCallback</a></div><div class="ttdeci">static void errataCallback(int8_t temp, TEMPDRV_LimitType_t limit)</div><div class="ttdoc">Errata Callback- handles hysteresis temperature thresholds. </div><div class="ttdef"><b>Definition:</b> <a href="tempdrv_8c_source.html#l00139">tempdrv.c:139</a></div></div>
-</div><!-- fragment -->
-<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00127">127</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+<p>Update interrupts based on active callbacks. </p>
+<p>There can only be two temperature thresholds active in the EMU sensor at a single point in time. One threshold for increasing temperature and one threshold for decreasing temperature. The responsibility of this function is to always select which temperature thresholds that should be activated in the EMU sensor at any given time. </p>
+
+<p>Definition at line <a class="el" href="tempdrv_8c_source.html#l00467">467</a> of file <a class="el" href="tempdrv_8c_source.html">tempdrv.c</a>.</p>
+
+<p>References <a class="el" href="group__EFR32MG1P__EMU__BitFields.html#gae36bf944b94b22d4d7ce3a17bf15cdfb">_EMU_TEMPLIMITS_TEMPHIGH_MASK</a>, <a class="el" href="group__EFR32MG1P__EMU__BitFields.html#ga69d82319a55a6657a2a59fbbcb8ec8fe">_EMU_TEMPLIMITS_TEMPHIGH_SHIFT</a>, <a class="el" href="group__EFR32MG1P__EMU__BitFields.html#ga4f661cf8579b0ede9176cc27903fffbb">_EMU_TEMPLIMITS_TEMPLOW_MASK</a>, <a class="el" href="group__EFR32MG1P__EMU__BitFields.html#ga7ab021962ca1d889d1e6e59f08a4f8c3">_EMU_TEMPLIMITS_TEMPLOW_SHIFT</a>, <a class="el" href="structTEMPDRV__CallbackSet__t.html#a8309753a1ec3512a0b52d56f58dd8d5b">TEMPDRV_CallbackSet_t::callback</a>, <a class="el" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga15d2c2b1e853b541f1d74797b62c8ac0">EMU</a>, <a class="el" href="group__EFR32MG1P__EMU__BitFields.html#gadd8b3305eca9658a0e0e4969d2d18321">EMU_IEN_TEMPHIGH</a>, <a class="el" href="group__EFR32MG1P__EMU__BitFields.html#gaa1dae367b287515f5a0bdef153ceea1a">EMU_IEN_TEMPLOW</a>, <a class="el" href="group__EMU.html#gacfdaa30f1813bac19e3218e035a24cac">EMU_IntDisable()</a>, <a class="el" href="group__EMU.html#ga1a9ade9bc8f6a8f35089a7b14b102945">EMU_IntEnable()</a>, and <a class="el" href="structTEMPDRV__CallbackSet__t.html#a68e98c17e021c6cddf407ff25783c1f1">TEMPDRV_CallbackSet_t::temp</a>.</p>
+
+<p>Referenced by <a class="el" href="tempdrv_8c.html#a678508f99f5e9246d47a1dc19f791fa0">addCallback()</a>, <a class="el" href="tempdrv_8c.html#aa101ba6e20c4ad8edde6915c6d2171aa">removeCallback()</a>, <a class="el" href="group__TEMPDRV.html#gaa2605b8e10e33fcf3bfb47395c25b33f">TEMPDRV_Enable()</a>, <a class="el" href="group__TEMPDRV.html#gabe27ab8076564a44b71038c79603ccab">TEMPDRV_Init()</a>, and <a class="el" href="group__TEMPDRV.html#ga6a84c867daa872d148b663ce82e0926c">TEMPDRV_IRQHandler()</a>.</p>
 
 </div>
 </div>
@@ -643,8 +765,8 @@ static <a class="el" href="structTEMPDRV__CallbackSet__t.html">TEMPDRV_CallbackS
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_869e36f48abce443fd96f9229da795d0.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_83a549278dc9c141dffd9e3498c868df.html">tempdrv</a></li><li class="navelem"><a class="el" href="dir_c74885a2b4b04e2f907b4ba21e00c32e.html">src</a></li><li class="navelem"><a class="el" href="tempdrv_8c.html">tempdrv.c</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 11:05:26 for EFR32 Mighty Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_a9326de1addf90fcea92508392adbd27.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_a6283a626913f3fbd7018fb8aa1ebfb9.html">tempdrv</a></li><li class="navelem"><a class="el" href="dir_42255701f9fee3c03ba91db17402e962.html">src</a></li><li class="navelem"><a class="el" href="tempdrv_8c.html">tempdrv.c</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 16:04:27 for EFR32 Mighty Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -10,6 +10,8 @@ var searchData=
   ['tccprescdiv2',['tccPrescDiv2',['../group__PCNT.html#gga8fb875f2c878db7df25ad528b8551ed0ae0eda2cf63868c6b89f1b0212e6034a5',1,'em_pcnt.h']]],
   ['tccprescdiv4',['tccPrescDiv4',['../group__PCNT.html#gga8fb875f2c878db7df25ad528b8551ed0a095dffeb885a72b39a01ece4d6bd9b70',1,'em_pcnt.h']]],
   ['tccprescdiv8',['tccPrescDiv8',['../group__PCNT.html#gga8fb875f2c878db7df25ad528b8551ed0af72a068299b016c05446355e1e74d618',1,'em_pcnt.h']]],
+  ['tempdrv_5flimit_5fhigh',['TEMPDRV_LIMIT_HIGH',['../group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda70580b3c7a1ecc80921e5362b288a224',1,'tempdrv.h']]],
+  ['tempdrv_5flimit_5flow',['TEMPDRV_LIMIT_LOW',['../group__TEMPDRV.html#gga0e0c05e85e286ed17a27d0db06e8a6eda734424d063813f9260b8abefd5112600',1,'tempdrv.h']]],
   ['tempsensregconfig',['tempsensRegConfig',['../group__TempSensor.html#ggaf7cf71b30a49a97a51a7c60a2b9ff225a1dd52cfe57ef1748c0144691177721be',1,'tempsens.h']]],
   ['tempsensreghysteresis',['tempsensRegHysteresis',['../group__TempSensor.html#ggaf7cf71b30a49a97a51a7c60a2b9ff225ad7dacda3622062bfb3080c3a17276839',1,'tempsens.h']]],
   ['tempsensregshutdown',['tempsensRegShutdown',['../group__TempSensor.html#ggaf7cf71b30a49a97a51a7c60a2b9ff225a8513f9aa87533fe17ee758fd6a999fab',1,'tempsens.h']]],

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Jade Gecko Software Documentation: C:/work/s025_sw_ssh/emlib/inc/em_assert.h File Reference</title>
+<title>EFM32 Jade Gecko Software Documentation: c:/work/super/platform/emlib/inc/em_assert.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Jade Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32jg1-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32jg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -105,22 +105,16 @@ $(document).ready(function(){initNavTree('em__assert_8h.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">em_assert.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Emlib peripheral API "assert" implementation. </p>
-<dl class="section version"><dt>Version</dt><dd>4.4.0</dd></dl>
-<p>By default, EMLIB library assert usage is not included in order to reduce footprint and processing overhead. Further, EMLIB assert usage is decoupled from ISO C assert handling (NDEBUG usage), to allow a user to use ISO C assert without including EMLIB assert statements.</p>
-<p>Below are available defines for controlling EMLIB assert inclusion. The defines are typically defined for a project to be used by the preprocessor.</p>
-<ul>
-<li>If DEBUG_EFM is defined, the internal EMLIB library assert handling will be used, which may be a quite rudimentary implementation.</li>
-</ul>
-<ul>
-<li>If DEBUG_EFM_USER is defined instead, the user must provide their own assert handling routine (assertEFM()).</li>
-</ul>
-<p>As indicated above, if none of the above defines are used, EMLIB assert statements are not compiled.</p>
+<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -136,13 +130,30 @@ License</h1>
 <p>Definition in file <a class="el" href="em__assert_8h_source.html">em_assert.h</a>.</p>
 </div>
 <p><a href="em__assert_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga3f6a69d0437d90c1f2c51c635a2bf973"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3f6a69d0437d90c1f2c51c635a2bf973"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__emlib.html#ga3f6a69d0437d90c1f2c51c635a2bf973">DEBUG_EFM</a></td></tr>
+<tr class="memdesc:ga3f6a69d0437d90c1f2c51c635a2bf973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Included for documentation purposes only. This define is not present by default. <a class="el" href="group__emlib.html#ga3f6a69d0437d90c1f2c51c635a2bf973">DEBUG_EFM</a> should be defined from the compiler to enable the default internal assert handler. <br /></td></tr>
+<tr class="separator:ga3f6a69d0437d90c1f2c51c635a2bf973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7b8c16d4be402b7fd3c52c124236259"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf7b8c16d4be402b7fd3c52c124236259"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>EFM_ASSERT</b>(expr)    &#160;&#160;&#160;((expr) ? ((void)0) : <a class="el" href="group__ASSERT.html#gacb36abec8b531cd85414c572a17f2811">assertEFM</a>(__FILE__, __LINE__))</td></tr>
+<tr class="separator:gaf7b8c16d4be402b7fd3c52c124236259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gacb36abec8b531cd85414c572a17f2811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ASSERT.html#gacb36abec8b531cd85414c572a17f2811">assertEFM</a> (const char *file, int line)</td></tr>
+<tr class="memdesc:gacb36abec8b531cd85414c572a17f2811"><td class="mdescLeft">&#160;</td><td class="mdescRight">EFM internal assert handling.  <a href="group__ASSERT.html#gacb36abec8b531cd85414c572a17f2811">More...</a><br /></td></tr>
+<tr class="separator:gacb36abec8b531cd85414c572a17f2811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b87c9fa9320234f602b7b6764d52d08c.html">emlib</a></li><li class="navelem"><a class="el" href="dir_a9056cd0b9e45fbef3eca18167030ab7.html">inc</a></li><li class="navelem"><a class="el" href="em__assert_8h.html">em_assert.h</a></li>
-    <li class="footer">Generated on Mon Jun 13 2016 11:01:06 for EFM32 Jade Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__assert_8h.html">em_assert.h</a></li>
+    <li class="footer">Generated on Tue Sep 27 2016 16:01:00 for EFM32 Jade Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

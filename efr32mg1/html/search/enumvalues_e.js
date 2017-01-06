@@ -47,12 +47,10 @@ var searchData=
   ['systempartfamilymighty1b',['systemPartFamilyMighty1B',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa4075ce1c6a65fd2ecb7c92391ad4b37f',1,'em_system.h']]],
   ['systempartfamilymighty1p',['systemPartFamilyMighty1P',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aac39a6c432497541adb240186e058ca1e',1,'em_system.h']]],
   ['systempartfamilymighty1v',['systemPartFamilyMighty1V',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa1f852596d4dbf7d4b40f72c46d6211dd',1,'em_system.h']]],
+  ['systempartfamilymighty2p',['systemPartFamilyMighty2P',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa62629ff1a9b6dcb4f777bf932e747fea',1,'em_system.h']]],
   ['systempartfamilytiny',['systemPartFamilyTiny',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa61c8f81ba612497c56992b8b283c7b9c',1,'em_system.h']]],
   ['systempartfamilyunknown',['systemPartFamilyUnknown',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa0b598eb0a295177ef566285afaf9e660',1,'em_system.h']]],
   ['systempartfamilywonder',['systemPartFamilyWonder',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa0e0bb21fba94341125d8ea6ebf6d6ade',1,'em_system.h']]],
-  ['systempartfamilyzappy1b',['systemPartFamilyZappy1B',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa245c59d98baf6c91854cdd88f06a82d4',1,'em_system.h']]],
-  ['systempartfamilyzappy1p',['systemPartFamilyZappy1P',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aaa2773dc6a096d3fe290b8c6b67de2c44',1,'em_system.h']]],
-  ['systempartfamilyzappy1v',['systemPartFamilyZappy1V',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa7956f609b89903bf361b4e6912e078a9',1,'em_system.h']]],
   ['systempartfamilyzero',['systemPartFamilyZero',['../group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aaf3c188b459bedab760142df3e5ede098',1,'em_system.h']]],
   ['systick_5firqn',['SysTick_IRQn',['../group__EFR32MG1P233F256GM48.html#gga666eb0caeb12ec0e281415592ae89083a6dbff8f8543325f3474cbae2446776e7',1,'efr32mg1p233f256gm48.h']]]
 ];

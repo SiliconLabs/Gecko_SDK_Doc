@@ -77,9 +77,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6b9b9823b990de9685820fe59f1d9e1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__sha256.html#ga6b9b9823b990de9685820fe59f1d9e1d">mbedtls_sha256_free</a> (<a class="el" href="structmbedtls__sha256__context.html">mbedtls_sha256_context</a> *ctx)</td></tr>
 <tr class="memdesc:ga6b9b9823b990de9685820fe59f1d9e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear SHA-256 context.  <a href="#ga6b9b9823b990de9685820fe59f1d9e1d">More...</a><br /></td></tr>
 <tr class="separator:ga6b9b9823b990de9685820fe59f1d9e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8f2b15eada1d667f64edcedb1901eecc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__sha256.html#ga8f2b15eada1d667f64edcedb1901eecc">mbedtls_sha256_set_device_instance</a> (<a class="el" href="structmbedtls__sha256__context.html">mbedtls_sha256_context</a> *ctx, int devno)</td></tr>
-<tr class="memdesc:ga8f2b15eada1d667f64edcedb1901eecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the device instance of an SHA256 context.  <a href="#ga8f2b15eada1d667f64edcedb1901eecc">More...</a><br /></td></tr>
-<tr class="separator:ga8f2b15eada1d667f64edcedb1901eecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9a43913c6b6804ed84b432665af01f35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sl__crypto__sha256.html#ga9a43913c6b6804ed84b432665af01f35">mbedtls_sha256_clone</a> (<a class="el" href="structmbedtls__sha256__context.html">mbedtls_sha256_context</a> *dst, const <a class="el" href="structmbedtls__sha256__context.html">mbedtls_sha256_context</a> *src)</td></tr>
 <tr class="memdesc:ga9a43913c6b6804ed84b432665af01f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone (the state of) a SHA-256 context.  <a href="#ga9a43913c6b6804ed84b432665af01f35">More...</a><br /></td></tr>
 <tr class="separator:ga9a43913c6b6804ed84b432665af01f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,43 +306,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga8f2b15eada1d667f64edcedb1901eecc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int mbedtls_sha256_set_device_instance </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmbedtls__sha256__context.html">mbedtls_sha256_context</a> *&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>devno</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the device instance of an SHA256 context. </p>
-<p>This function sets the AES/CRYPTO device instance of an SHA256 context. Subsequent calls to SHA256 API functions with this context will use the new AES/CRYPTO device instance.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>SHA256 device context.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">devno</td><td>AES/CRYPTO hardware device instance to use.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if success. Error code if failure, see <a class="el" href="sha256_8h.html">sha256.h</a>. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ga2678f92d712139f588120de452faff62"></a>
 <div class="memitem">
 <div class="memproto">
@@ -426,7 +386,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 13 2016 11:17:24 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 16:12:43 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

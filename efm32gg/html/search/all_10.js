@@ -216,7 +216,7 @@ var searchData=
   ['per_5fmem_5fbits',['PER_MEM_BITS',['../group__EFM32GG995F1024__Part.html#ga68761796c8bf5edb78552cd9ca4d1c40',1,'efm32gg995f1024.h']]],
   ['per_5fmem_5fend',['PER_MEM_END',['../group__EFM32GG995F1024__Part.html#gae450c39dce790f2831d1d0be8a88b5a6',1,'efm32gg995f1024.h']]],
   ['per_5fmem_5fsize',['PER_MEM_SIZE',['../group__EFM32GG995F1024__Part.html#ga1400ebf17a17c2eead5ccca811cca387',1,'efm32gg995f1024.h']]],
-  ['perctrl',['perCtrl',['../structLESENSE__Init__TypeDef.html#adb9e9a504176c27cad3b527e9473a208',1,'LESENSE_Init_TypeDef::perCtrl()'],['../structLESENSE__TypeDef.html#af0531c1904e58636608a4f7cb3d85ef4',1,'LESENSE_TypeDef::PERCTRL()']]],
+  ['perctrl',['PERCTRL',['../structLESENSE__TypeDef.html#af0531c1904e58636608a4f7cb3d85ef4',1,'LESENSE_TypeDef::PERCTRL()'],['../structLESENSE__Init__TypeDef.html#adb9e9a504176c27cad3b527e9473a208',1,'LESENSE_Init_TypeDef::perCtrl()']]],
   ['performi2ctransfer',['performI2CTransfer',['../cpt112s__i2c_8c.html#a0be56a687b1624b76fec1289ef075017',1,'cpt112s_i2c.c']]],
   ['pericon',['PERICON',['../structBC__TypeDef.html#aa74968e049dff38370251d255e5ca139',1,'BC_TypeDef']]],
   ['peripheral',['peripheral',['../structDMA__CfgDescrSGAlt__TypeDef.html#ae772b4145bf98c306ccd9e220d20eb5b',1,'DMA_CfgDescrSGAlt_TypeDef']]],

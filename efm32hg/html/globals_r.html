@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32hg-doc-4.4.0</span>
+   &#160;<span id="projectnumber">efm32hg-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -172,18 +172,6 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <li>RAM_MEM_SIZE
 : <a class="el" href="group__EFM32HG322F64__Part.html#ga0e28b64b617c6ed6cd921da22b52280d">efm32hg322f64.h</a>
 </li>
-<li>RAMFUNC_DECLARATOR
-: <a class="el" href="group__RAMFUNC.html#gac32af03519e3aa8ca7eefb1455cc74df">em_ramfunc.h</a>
-</li>
-<li>RAMFUNC_DEFINITION_BEGIN
-: <a class="el" href="group__RAMFUNC.html#ga5a91149cd62035f2487e4668e3fe6a80">em_ramfunc.h</a>
-</li>
-<li>RAMFUNC_DEFINITION_END
-: <a class="el" href="group__RAMFUNC.html#gac42a0ebdb3b8e68d1e987ce4ceb09da8">em_ramfunc.h</a>
-</li>
-<li>RAMFUNC_DISABLE
-: <a class="el" href="group__RAMFUNC.html#ga9ec00e8521eb58ab1a00337875d4e1ed">em_ramfunc.h</a>
-</li>
 <li>REG_MASK
 : <a class="el" href="ksz8851snl__spi_8c.html#aa6a4859af8e250ed21bc057b7540a461">ksz8851snl_spi.c</a>
 </li>
@@ -203,12 +191,11 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="group__RetargetIo.html#ga8254ba1c7ef3b88b42fc5d2b971e58ef">retargetserial.c</a>
 </li>
 <li>RETARGET_ReadChar()
-: <a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">retargetio.c</a>
-, <a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">retargetserial.c</a>
+: <a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">retargetserial.c</a>
 , <a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">retargetswo.c</a>
-, <a class="el" href="group__RetargetSWO.html#ga5af724185f484056b02b42f4ab184bfb">retargetswo.h</a>
 , <a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">retargettextdisplay.c</a>
 , <a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">retargettft.c</a>
+, <a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">retargetio.c</a>
 </li>
 <li>RETARGET_SerialCrLf()
 : <a class="el" href="group__RetargetIo.html#ga9e36c68713259dd181ef349430ba0096">retargetserial.c</a>
@@ -217,6 +204,10 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <li>RETARGET_SerialInit()
 : <a class="el" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50">retargetserial.c</a>
 , <a class="el" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50">retargetserial.h</a>
+</li>
+<li>RETARGET_SwoInit()
+: <a class="el" href="group__RetargetIo.html#gaf86de46689133bfc01be3d84e5a3f3e5">retargetswo.c</a>
+, <a class="el" href="group__RetargetIo.html#gaf86de46689133bfc01be3d84e5a3f3e5">retargetswo.h</a>
 </li>
 <li>RETARGET_TextDisplayInit()
 : <a class="el" href="group__RetargetIo.html#ga1f514c0ebfe9dd2c24f293be0edfaf9b">retargettextdisplay.c</a>
@@ -238,7 +229,6 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 : <a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">retargetio.c</a>
 , <a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">retargetserial.c</a>
 , <a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">retargetswo.c</a>
-, <a class="el" href="group__RetargetSWO.html#ga856ae0b788dccadc2c83a6e67409be5f">retargetswo.h</a>
 , <a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">retargettextdisplay.c</a>
 , <a class="el" href="group__RetargetIo.html#ga856ae0b788dccadc2c83a6e67409be5f">retargettft.c</a>
 </li>
@@ -592,8 +582,8 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 , <a class="el" href="group__RTCDRV.html#ga0ad8d9097523a568e484ad9f6920ba88">rtcdriver.c</a>
 </li>
 <li>RTCDRV_MsecsToTicks()
-: <a class="el" href="group__RTCDRV.html#gadc6ac3c03c378a577b1a984941b8e3ff">rtcdriver.c</a>
-, <a class="el" href="group__RTCDRV.html#gadc6ac3c03c378a577b1a984941b8e3ff">rtcdriver.h</a>
+: <a class="el" href="group__RTCDRV.html#gadc6ac3c03c378a577b1a984941b8e3ff">rtcdriver.h</a>
+, <a class="el" href="group__RTCDRV.html#gadc6ac3c03c378a577b1a984941b8e3ff">rtcdriver.c</a>
 </li>
 <li>RTCDRV_SecsToTicks()
 : <a class="el" href="group__RTCDRV.html#ga05460d0b01eda411ec536833328f43ea">rtcdriver.h</a>
@@ -798,7 +788,7 @@ $(document).ready(function(){initNavTree('globals_r.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 10:46:02 for EFM32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 15:53:38 for EFM32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

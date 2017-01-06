@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Blue Gecko Software Documentation: CRYPTO</title>
+<title>EFR32 Blue Gecko 1 Software Documentation: CRYPTO</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">EFR32 Blue Gecko Software Documentation
-   &#160;<span id="projectnumber">efr32bg1-doc-4.4.0</span>
+   <div id="projectname">EFR32 Blue Gecko 1 Software Documentation
+   &#160;<span id="projectnumber">efr32bg1-doc-5.0.0</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,8 @@ $(document).ready(function(){initNavTree('group__CRYPTO.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Cryptography accelerator peripheral API. </p>
-<p>This API is intended for use on Silicon Labs target devices, and provides a thin software interface for the functions of the crypto module, including </p><ul>
+<p>In order for cryptographic support, users are recommended to consider the crypto APIs of the mbedTLS library provided by Silicon Labs instead of the interface provided in <a class="el" href="em__crypto_8h.html" title="Cryptography accelerator peripheral API. ">em_crypto.h</a>. The mbedTLS library provides a much richer crypto API, including hardware acceleration of several functions.</p>
+<p>The main purpose of <a class="el" href="em__crypto_8h.html" title="Cryptography accelerator peripheral API. ">em_crypto.h</a> is to implement a thin software interface for the CRYPTO hardware functions especially for the accelerated APIs of the mbedTLS library. Additionally <a class="el" href="em__crypto_8h.html" title="Cryptography accelerator peripheral API. ">em_crypto.h</a> implement the AES API of the <a class="el" href="em__aes_8h.html" title="Advanced encryption standard (AES) accelerator peripheral API. ">em_aes.h</a> (supported by classic EFM32) for backwards compatibility. The following list summarizes the <a class="el" href="em__crypto_8h.html" title="Cryptography accelerator peripheral API. ">em_crypto.h</a> inteface: </p><ul>
 <li>AES (Advanced Encryption Standard) <a class="el" href="group__CRYPTO.html#crypto_aes">AES</a> </li>
 <li>SHA (Secure Hash Algorithm) <a class="el" href="group__CRYPTO.html#crypto_sha">SHA</a> </li>
 <li>Big Integer multiplier <a class="el" href="group__CRYPTO.html#crypto_mul">CRYPTO_Mul</a> </li>
@@ -524,7 +525,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="group__EFR32BG1P__CRYPTO__BitFields_html_ga9f94a803a0677337610acfd657f47317"><div class="ttname"><a href="group__EFR32BG1P__CRYPTO__BitFields.html#ga9f94a803a0677337610acfd657f47317">CRYPTO_CMD_INSTR_END</a></div><div class="ttdeci">#define CRYPTO_CMD_INSTR_END</div><div class="ttdef"><b>Definition:</b> <a href="efr32bg1p__crypto_8h_source.html#l00452">efr32bg1p_crypto.h:452</a></div></div>
 </div><!-- fragment --><p>Default instruction sequence consisting of all ENDs. The user can initialize the instruction sequence with this default value set, and fill in the desired operations from step 1. The first END instruction marks the end of the sequence. </p>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00418">418</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00552">552</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -539,7 +540,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The max number of crypto instructions in an instruction sequence </p>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00403">403</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00537">537</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -563,7 +564,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00444">444</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00578">578</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -579,7 +580,7 @@ Functions</h2></td></tr>
 <p>CRYPTO data type used for data load functions. This data type is capable of storing a 260 bits value as used by the <a class="el" href="group__CRYPTO.html#ga94590bc77a38093cc93813a76462723b">CRYPTO_DData0Write260</a> function.</p>
 <p>Note that this data type is multiple of 32 bit words, so the actual storage used by this type is 32x9=288 bits. </p>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00317">317</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00451">451</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -594,7 +595,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>CRYPTO data types used for data load functions. This data type is capable of storing a 128 bits value as used in the crypto DATA registers </p>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00289">289</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00423">423</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -609,7 +610,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>CRYPTO 128 bit Data register pointer type. The 128 bit registers are used to load 128 bit values as input and output data for cryptographic and big integer arithmetic functions of the CRYPTO module. </p>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00330">330</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00464">464</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -624,7 +625,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>CRYPTO data type used for data load functions. This data type is capable of storing a 256 bits value as used in the crypto DDATA registers </p>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00296">296</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00430">430</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -639,7 +640,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>CRYPTO 256 bit DData (Double Data) register pointer type. The 256 bit registers are used to load 256 bit values as input and output data for cryptographic and big integer arithmetic functions of the CRYPTO module. </p>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00337">337</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00471">471</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -654,7 +655,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Instruction sequence type. The user should fill in the desired operations from step1, then step2 etc. The CRYPTO_CMD_INSTR_END marks the end of the sequence. Bit fields are used to format the memory layout of the struct equal to the sequence registers in the CRYPTO module. </p>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00412">412</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00546">546</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -669,7 +670,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>CRYPTO data type used for data load functions. This data type is capable of storing 256 bits as used in the crypto KEYBUF register. </p>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00323">323</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00457">457</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -684,7 +685,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>CRYPTO data type used for data load functions. This data type is capable of storing a 512 bits value as used in the crypto QDATA registers </p>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00307">307</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00441">441</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -699,7 +700,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>CRYPTO 512 bit QData (Quad data) register pointer type. The 512 bit registers are used to load 512 bit values as input and output data for cryptographic and big integer arithmetic functions of the CRYPTO module. </p>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00344">344</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00478">478</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -714,7 +715,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>SHA-1 Digest type. </p>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00428">428</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00562">562</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -729,7 +730,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>SHA-256 Digest type. </p>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00431">431</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00565">565</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -759,7 +760,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00385">385</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00519">519</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -782,7 +783,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00394">394</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00528">528</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -844,7 +845,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00347">347</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00481">481</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -870,7 +871,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00367">367</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00501">501</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -896,7 +897,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00377">377</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00511">511</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 </div>
 </div>
@@ -950,9 +951,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AES Cipher-block chaining (CBC) cipher mode encryption/decryption, 128 bit key. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gaeb6def3d30d34bfdf51b27584fa12cd5">CRYPTO_AES_CBC128</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gaeb6def3d30d34bfdf51b27584fa12cd5">CRYPTO_AES_CBC128</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01204">1204</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01338">1338</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga8d2c8b580fbac177ae2a8820cc26dc62">CRYPTO</a>, and <a class="el" href="group__CRYPTO.html#gaeb6def3d30d34bfdf51b27584fa12cd5">CRYPTO_AES_CBC128()</a>.</p>
 
@@ -1007,9 +1008,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AES Cipher-block chaining (CBC) cipher mode encryption/decryption, 256 bit key. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gaffc938e89096b64e5a133616560a033d">CRYPTO_AES_CBC256</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gaffc938e89096b64e5a133616560a033d">CRYPTO_AES_CBC256</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01223">1223</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01357">1357</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga8d2c8b580fbac177ae2a8820cc26dc62">CRYPTO</a>, and <a class="el" href="group__CRYPTO.html#gaffc938e89096b64e5a133616560a033d">CRYPTO_AES_CBC256()</a>.</p>
 
@@ -1064,9 +1065,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AES Cipher feedback (CFB) cipher mode encryption/decryption, 128 bit key. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#ga5f78e4620f9dae4625582daa235ec173">CRYPTO_AES_CFB128</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#ga5f78e4620f9dae4625582daa235ec173">CRYPTO_AES_CFB128</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01241">1241</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01375">1375</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga8d2c8b580fbac177ae2a8820cc26dc62">CRYPTO</a>, and <a class="el" href="group__CRYPTO.html#ga5f78e4620f9dae4625582daa235ec173">CRYPTO_AES_CFB128()</a>.</p>
 
@@ -1121,9 +1122,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AES Cipher feedback (CFB) cipher mode encryption/decryption, 256 bit key. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gaffaac8c737e90045c0c6ddecd277fa48">CRYPTO_AES_CFB256</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gaffaac8c737e90045c0c6ddecd277fa48">CRYPTO_AES_CFB256</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01259">1259</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01393">1393</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga8d2c8b580fbac177ae2a8820cc26dc62">CRYPTO</a>, and <a class="el" href="group__CRYPTO.html#gaffaac8c737e90045c0c6ddecd277fa48">CRYPTO_AES_CFB256()</a>.</p>
 
@@ -1178,9 +1179,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AES Counter (CTR) cipher mode encryption/decryption, 128 bit key. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gacd9f0b6b4f21e552dbfeb42cefa4502d">CRYPTO_AES_CTR128</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gacd9f0b6b4f21e552dbfeb42cefa4502d">CRYPTO_AES_CTR128</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01277">1277</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01411">1411</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga8d2c8b580fbac177ae2a8820cc26dc62">CRYPTO</a>, and <a class="el" href="group__CRYPTO.html#gacd9f0b6b4f21e552dbfeb42cefa4502d">CRYPTO_AES_CTR128()</a>.</p>
 
@@ -1235,9 +1236,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AES Counter (CTR) cipher mode encryption/decryption, 256 bit key. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#ga46e17e5df7826def31ffa6aa4bfc2e3c">CRYPTO_AES_CTR256</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#ga46e17e5df7826def31ffa6aa4bfc2e3c">CRYPTO_AES_CTR256</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01295">1295</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01429">1429</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga8d2c8b580fbac177ae2a8820cc26dc62">CRYPTO</a>, and <a class="el" href="group__CRYPTO.html#ga46e17e5df7826def31ffa6aa4bfc2e3c">CRYPTO_AES_CTR256()</a>.</p>
 
@@ -1258,9 +1259,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Update last 32 bits of 128 bit counter, by incrementing with 1. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gaefc7014b21de2dad652165abb63cf2aa">CRYPTO_AES_CTRUpdate32Bit</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gaefc7014b21de2dad652165abb63cf2aa">CRYPTO_AES_CTRUpdate32Bit</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01313">1313</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01447">1447</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gaefc7014b21de2dad652165abb63cf2aa">CRYPTO_AES_CTRUpdate32Bit()</a>.</p>
 
@@ -1291,9 +1292,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate 128 bit AES decryption key from 128 bit encryption key. The decryption key is used for some cipher modes when decrypting. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#ga653d34811343bb81e16eef92d5b55e3f">CRYPTO_AES_DecryptKey128</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#ga653d34811343bb81e16eef92d5b55e3f">CRYPTO_AES_DecryptKey128</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01327">1327</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01461">1461</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga8d2c8b580fbac177ae2a8820cc26dc62">CRYPTO</a>, and <a class="el" href="group__CRYPTO.html#ga653d34811343bb81e16eef92d5b55e3f">CRYPTO_AES_DecryptKey128()</a>.</p>
 
@@ -1324,9 +1325,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate 256 bit AES decryption key from 256 bit encryption key. The decryption key is used for some cipher modes when decrypting. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gaa505eced0d007fa990357bb62b0d8bf5">CRYPTO_AES_DecryptKey256</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gaa505eced0d007fa990357bb62b0d8bf5">CRYPTO_AES_DecryptKey256</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01341">1341</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01475">1475</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga8d2c8b580fbac177ae2a8820cc26dc62">CRYPTO</a>, and <a class="el" href="group__CRYPTO.html#gaa505eced0d007fa990357bb62b0d8bf5">CRYPTO_AES_DecryptKey256()</a>.</p>
 
@@ -1375,9 +1376,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AES Electronic Codebook (ECB) cipher mode encryption/decryption, 128 bit key. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gac048785bdc09e0c18c038bebf481927d">CRYPTO_AES_ECB128</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gac048785bdc09e0c18c038bebf481927d">CRYPTO_AES_ECB128</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01355">1355</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01489">1489</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga8d2c8b580fbac177ae2a8820cc26dc62">CRYPTO</a>, and <a class="el" href="group__CRYPTO.html#gac048785bdc09e0c18c038bebf481927d">CRYPTO_AES_ECB128()</a>.</p>
 
@@ -1426,9 +1427,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AES Electronic Codebook (ECB) cipher mode encryption/decryption, 256 bit key. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gadac6a3d5d88bc0534d5b2a4d0ea66556">CRYPTO_AES_ECB256</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gadac6a3d5d88bc0534d5b2a4d0ea66556">CRYPTO_AES_ECB256</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01373">1373</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01507">1507</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga8d2c8b580fbac177ae2a8820cc26dc62">CRYPTO</a>, and <a class="el" href="group__CRYPTO.html#gadac6a3d5d88bc0534d5b2a4d0ea66556">CRYPTO_AES_ECB256()</a>.</p>
 
@@ -1477,9 +1478,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AES Output feedback (OFB) cipher mode encryption/decryption, 128 bit key. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#ga991cbcf6167506f343ebe850b3c31226">CRYPTO_AES_OFB128</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#ga991cbcf6167506f343ebe850b3c31226">CRYPTO_AES_OFB128</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01390">1390</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01524">1524</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga8d2c8b580fbac177ae2a8820cc26dc62">CRYPTO</a>, and <a class="el" href="group__CRYPTO.html#ga991cbcf6167506f343ebe850b3c31226">CRYPTO_AES_OFB128()</a>.</p>
 
@@ -1528,9 +1529,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AES Output feedback (OFB) cipher mode encryption/decryption, 256 bit key. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gada145a1aca12da17faa2df119abc32bc">CRYPTO_AES_OFB256</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>This function is present to preserve backwards compatibility. Use <a class="el" href="group__CRYPTO.html#gada145a1aca12da17faa2df119abc32bc">CRYPTO_AES_OFB256</a> instead. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01407">1407</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01541">1541</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga8d2c8b580fbac177ae2a8820cc26dc62">CRYPTO</a>, and <a class="el" href="group__CRYPTO.html#gada145a1aca12da17faa2df119abc32bc">CRYPTO_AES_OFB256()</a>.</p>
 
@@ -1631,7 +1632,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00927">927</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00800">800</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gace39a6e51d350ffb4590f6fafd03255e">CRYPTO_AES_CBCx()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga484ff1efb0583cec9edf3c339e4892bc">CRYPTO_CTRL_AES_AES128</a>, <a class="el" href="group__CRYPTO.html#ggab04d5148b33affc27d8b8fd65b22a837a17f94c9048bc2866a5c93dad6389b858">cryptoKey128Bits</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>.</p>
 
@@ -1709,7 +1710,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00973">973</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00846">846</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gace39a6e51d350ffb4590f6fafd03255e">CRYPTO_AES_CBCx()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gab509c35626f969ff5b0afcc1ecafd8ca">CRYPTO_CTRL_AES_AES256</a>, <a class="el" href="group__CRYPTO.html#ggab04d5148b33affc27d8b8fd65b22a837a0fe58cf60850173eabdbb3c817f56885">cryptoKey256Bits</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>.</p>
 
@@ -1802,7 +1803,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01577">1577</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01450">1450</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaa52f860e239b0ad34cd8eda406bd2998">_CRYPTO_SEQ0_INSTR0_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaddab5222d5b786a1cb33c408c8bfe2eb">_CRYPTO_SEQ0_INSTR1_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga1b3df7c4abe1c6e25bb8b87ecc1ae232">_CRYPTO_SEQ0_INSTR2_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gac0298e58bcc53ee66bc82b572d07e70d">_CRYPTO_SEQ0_INSTR3_SHIFT</a>, <a class="el" href="group__CRYPTO.html#gacd22514cd349359f3fdfb92504d31a83">CRYPTO_AES_ProcessLoop()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaaa998dcac4c169b3882945ad6b655e42">CRYPTO_CMD_INSTR_AESDEC</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga9bd5dcd639fcc5cec88589b88ff01131">CRYPTO_CMD_INSTR_AESENC</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga17ccaa9794a026557f094fe8745ae0c7">CRYPTO_CMD_INSTR_DATA1TODATA0</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gad223a98ea0568198b206f7149fdb7f08">CRYPTO_CMD_INSTR_DATA1TODATA0XOR</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gab043f28084c2748f43c630479ca09705">CRYPTO_CMD_INSTR_DATA1TODATA2</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga0a4e8b808dda048b594b1004c7bcd32a">CRYPTO_CMD_INSTR_DATA2TODATA0XOR</a>, <a class="el" href="group__CRYPTO.html#ga98ce739aaeb1bb84dcab1993fe4c10d0">CRYPTO_DataWrite()</a>, <a class="el" href="group__CRYPTO.html#gafa3be243a1fa088ec78f8cab833283dc">CRYPTO_KeyBufWrite()</a>, <a class="el" href="structCRYPTO__TypeDef.html#a4e9c7c62a857b0d0d85abbb1a4f409d5">CRYPTO_TypeDef::DATA0</a>, <a class="el" href="structCRYPTO__TypeDef.html#a379449b8e784851f593160c1a319f8f2">CRYPTO_TypeDef::DATA1</a>, <a class="el" href="structCRYPTO__TypeDef.html#ad3f757aab9bce92408761e59b16a7151">CRYPTO_TypeDef::DATA2</a>, <a class="el" href="structCRYPTO__TypeDef.html#a451c1c5a38eb472bec19c4f46fe07b90">CRYPTO_TypeDef::SEQ0</a>, <a class="el" href="structCRYPTO__TypeDef.html#a17938b405c85b5b58f8a4077ce94c66e">CRYPTO_TypeDef::SEQ1</a>, and <a class="el" href="structCRYPTO__TypeDef.html#aa5ce686951feb75b9317c52da242f7e8">CRYPTO_TypeDef::WAC</a>.</p>
 
@@ -1905,7 +1906,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01046">1046</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00919">919</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gaac00bd519d96525978498fadebe31791">CRYPTO_AES_CFBx()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga484ff1efb0583cec9edf3c339e4892bc">CRYPTO_CTRL_AES_AES128</a>, <a class="el" href="group__CRYPTO.html#ggab04d5148b33affc27d8b8fd65b22a837a17f94c9048bc2866a5c93dad6389b858">cryptoKey128Bits</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>.</p>
 
@@ -1983,7 +1984,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01089">1089</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00962">962</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gaac00bd519d96525978498fadebe31791">CRYPTO_AES_CFBx()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gab509c35626f969ff5b0afcc1ecafd8ca">CRYPTO_CTRL_AES_AES256</a>, <a class="el" href="group__CRYPTO.html#ggab04d5148b33affc27d8b8fd65b22a837a0fe58cf60850173eabdbb3c817f56885">cryptoKey256Bits</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>.</p>
 
@@ -2076,7 +2077,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01661">1661</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01534">1534</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaa52f860e239b0ad34cd8eda406bd2998">_CRYPTO_SEQ0_INSTR0_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaddab5222d5b786a1cb33c408c8bfe2eb">_CRYPTO_SEQ0_INSTR1_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga1b3df7c4abe1c6e25bb8b87ecc1ae232">_CRYPTO_SEQ0_INSTR2_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gac0298e58bcc53ee66bc82b572d07e70d">_CRYPTO_SEQ0_INSTR3_SHIFT</a>, <a class="el" href="group__CRYPTO.html#gacd22514cd349359f3fdfb92504d31a83">CRYPTO_AES_ProcessLoop()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga9bd5dcd639fcc5cec88589b88ff01131">CRYPTO_CMD_INSTR_AESENC</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gad223a98ea0568198b206f7149fdb7f08">CRYPTO_CMD_INSTR_DATA1TODATA0XOR</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gab043f28084c2748f43c630479ca09705">CRYPTO_CMD_INSTR_DATA1TODATA2</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga7da9bc0a745a86690824ca21f47d0d93">CRYPTO_CMD_INSTR_DATA2TODATA0</a>, <a class="el" href="group__CRYPTO.html#ga98ce739aaeb1bb84dcab1993fe4c10d0">CRYPTO_DataWrite()</a>, <a class="el" href="group__CRYPTO.html#gafa3be243a1fa088ec78f8cab833283dc">CRYPTO_KeyBufWrite()</a>, <a class="el" href="structCRYPTO__TypeDef.html#a4e9c7c62a857b0d0d85abbb1a4f409d5">CRYPTO_TypeDef::DATA0</a>, <a class="el" href="structCRYPTO__TypeDef.html#a379449b8e784851f593160c1a319f8f2">CRYPTO_TypeDef::DATA1</a>, <a class="el" href="structCRYPTO__TypeDef.html#ad3f757aab9bce92408761e59b16a7151">CRYPTO_TypeDef::DATA2</a>, <a class="el" href="structCRYPTO__TypeDef.html#a451c1c5a38eb472bec19c4f46fe07b90">CRYPTO_TypeDef::SEQ0</a>, <a class="el" href="structCRYPTO__TypeDef.html#a17938b405c85b5b58f8a4077ce94c66e">CRYPTO_TypeDef::SEQ1</a>, and <a class="el" href="structCRYPTO__TypeDef.html#aa5ce686951feb75b9317c52da242f7e8">CRYPTO_TypeDef::WAC</a>.</p>
 
@@ -2177,7 +2178,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01165">1165</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01038">1038</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#ga0fcd0838cbdac1ea0489da387c3b69f0">CRYPTO_AES_CTRx()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga484ff1efb0583cec9edf3c339e4892bc">CRYPTO_CTRL_AES_AES128</a>, <a class="el" href="group__CRYPTO.html#ggab04d5148b33affc27d8b8fd65b22a837a17f94c9048bc2866a5c93dad6389b858">cryptoKey128Bits</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>.</p>
 
@@ -2255,7 +2256,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01211">1211</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01084">1084</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#ga0fcd0838cbdac1ea0489da387c3b69f0">CRYPTO_AES_CTRx()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gab509c35626f969ff5b0afcc1ecafd8ca">CRYPTO_CTRL_AES_AES256</a>, <a class="el" href="group__CRYPTO.html#ggab04d5148b33affc27d8b8fd65b22a837a0fe58cf60850173eabdbb3c817f56885">cryptoKey256Bits</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>.</p>
 
@@ -2287,7 +2288,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01237">1237</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01110">1110</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>Referenced by <a class="el" href="group__CRYPTO.html#ga563d9cbc62810b93d1817a74d277038f">AES_CTRUpdate32Bit()</a>.</p>
 
@@ -2378,7 +2379,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01749">1749</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01622">1622</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaa52f860e239b0ad34cd8eda406bd2998">_CRYPTO_SEQ0_INSTR0_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaddab5222d5b786a1cb33c408c8bfe2eb">_CRYPTO_SEQ0_INSTR1_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga1b3df7c4abe1c6e25bb8b87ecc1ae232">_CRYPTO_SEQ0_INSTR2_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gac0298e58bcc53ee66bc82b572d07e70d">_CRYPTO_SEQ0_INSTR3_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gab6004e660ebd079c15edce8af6fe7cbc">_CRYPTO_SEQ1_INSTR4_SHIFT</a>, <a class="el" href="group__CRYPTO.html#gacd22514cd349359f3fdfb92504d31a83">CRYPTO_AES_ProcessLoop()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga9bd5dcd639fcc5cec88589b88ff01131">CRYPTO_CMD_INSTR_AESENC</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaccf9011bae3692d61ef81e10c4a75a1c">CRYPTO_CMD_INSTR_DATA0TODATA3</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga90b804053b5222b24fface7799df6078">CRYPTO_CMD_INSTR_DATA1INC</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga17ccaa9794a026557f094fe8745ae0c7">CRYPTO_CMD_INSTR_DATA1TODATA0</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga0a4e8b808dda048b594b1004c7bcd32a">CRYPTO_CMD_INSTR_DATA2TODATA0XOR</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga46fd95775474dbf91a671b6c436d096e">CRYPTO_CTRL_INCWIDTH_INCWIDTH4</a>, <a class="el" href="group__CRYPTO.html#gaf7b93c251ece7ee753fe5f0d040015ed">CRYPTO_DataRead()</a>, <a class="el" href="group__CRYPTO.html#ga98ce739aaeb1bb84dcab1993fe4c10d0">CRYPTO_DataWrite()</a>, <a class="el" href="group__CRYPTO.html#gafa3be243a1fa088ec78f8cab833283dc">CRYPTO_KeyBufWrite()</a>, <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>, <a class="el" href="structCRYPTO__TypeDef.html#a4e9c7c62a857b0d0d85abbb1a4f409d5">CRYPTO_TypeDef::DATA0</a>, <a class="el" href="structCRYPTO__TypeDef.html#a379449b8e784851f593160c1a319f8f2">CRYPTO_TypeDef::DATA1</a>, <a class="el" href="structCRYPTO__TypeDef.html#ad3f757aab9bce92408761e59b16a7151">CRYPTO_TypeDef::DATA2</a>, <a class="el" href="structCRYPTO__TypeDef.html#a451c1c5a38eb472bec19c4f46fe07b90">CRYPTO_TypeDef::SEQ0</a>, <a class="el" href="structCRYPTO__TypeDef.html#a17938b405c85b5b58f8a4077ce94c66e">CRYPTO_TypeDef::SEQ1</a>, and <a class="el" href="structCRYPTO__TypeDef.html#aa5ce686951feb75b9317c52da242f7e8">CRYPTO_TypeDef::WAC</a>.</p>
 
@@ -2427,7 +2428,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01262">1262</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01135">1135</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="structCRYPTO__TypeDef.html#ab390c17ed7f6d2accb1594c62ead5264">CRYPTO_TypeDef::CMD</a>, <a class="el" href="group__CRYPTO.html#gafa237c4eba8834f79e3f131a385a76e4">CRYPTO_BurstFromCrypto()</a>, <a class="el" href="group__CRYPTO.html#gaca41b63a70f98785f4ee47f5a7f2c8d4">CRYPTO_BurstToCrypto()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga9bd5dcd639fcc5cec88589b88ff01131">CRYPTO_CMD_INSTR_AESENC</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga484ff1efb0583cec9edf3c339e4892bc">CRYPTO_CTRL_AES_AES128</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gad4a81bf18af6e58fbaf1903f6a22a000">CRYPTO_IF_INSTRDONE</a>, <a class="el" href="group__CRYPTO.html#ga8cb52137701354a83464fdbd7ffaed62">CRYPTO_IntClear()</a>, <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>, <a class="el" href="structCRYPTO__TypeDef.html#ac1b126ca729d88fb8cb114e561621cac">CRYPTO_TypeDef::KEY</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a0dd9f242e7abfb2de25ef97478f1720f">CRYPTO_TypeDef::KEYBUF</a>.</p>
 
@@ -2476,7 +2477,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01299">1299</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01172">1172</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="structCRYPTO__TypeDef.html#ab390c17ed7f6d2accb1594c62ead5264">CRYPTO_TypeDef::CMD</a>, <a class="el" href="group__CRYPTO.html#gafa237c4eba8834f79e3f131a385a76e4">CRYPTO_BurstFromCrypto()</a>, <a class="el" href="group__CRYPTO.html#gaca41b63a70f98785f4ee47f5a7f2c8d4">CRYPTO_BurstToCrypto()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga9bd5dcd639fcc5cec88589b88ff01131">CRYPTO_CMD_INSTR_AESENC</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gab509c35626f969ff5b0afcc1ecafd8ca">CRYPTO_CTRL_AES_AES256</a>, <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>, <a class="el" href="structCRYPTO__TypeDef.html#ac1b126ca729d88fb8cb114e561621cac">CRYPTO_TypeDef::KEY</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a0dd9f242e7abfb2de25ef97478f1720f">CRYPTO_TypeDef::KEYBUF</a>.</p>
 
@@ -2566,7 +2567,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01374">1374</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01247">1247</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gaf64aa73430719e5b075863d3809a3a7b">CRYPTO_AES_ECBx()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga484ff1efb0583cec9edf3c339e4892bc">CRYPTO_CTRL_AES_AES128</a>, <a class="el" href="group__CRYPTO.html#ggab04d5148b33affc27d8b8fd65b22a837a17f94c9048bc2866a5c93dad6389b858">cryptoKey128Bits</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>.</p>
 
@@ -2637,7 +2638,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01416">1416</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01289">1289</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gaf64aa73430719e5b075863d3809a3a7b">CRYPTO_AES_ECBx()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gab509c35626f969ff5b0afcc1ecafd8ca">CRYPTO_CTRL_AES_AES256</a>, <a class="el" href="group__CRYPTO.html#ggab04d5148b33affc27d8b8fd65b22a837a0fe58cf60850173eabdbb3c817f56885">cryptoKey256Bits</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>.</p>
 
@@ -2723,7 +2724,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01817">1817</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01690">1690</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaa52f860e239b0ad34cd8eda406bd2998">_CRYPTO_SEQ0_INSTR0_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaddab5222d5b786a1cb33c408c8bfe2eb">_CRYPTO_SEQ0_INSTR1_SHIFT</a>, <a class="el" href="group__CRYPTO.html#gacd22514cd349359f3fdfb92504d31a83">CRYPTO_AES_ProcessLoop()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaaa998dcac4c169b3882945ad6b655e42">CRYPTO_CMD_INSTR_AESDEC</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga9bd5dcd639fcc5cec88589b88ff01131">CRYPTO_CMD_INSTR_AESENC</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga29177d33eb517ab8843b9ecb86387cbe">CRYPTO_CMD_INSTR_DATA0TODATA1</a>, <a class="el" href="group__CRYPTO.html#gafa3be243a1fa088ec78f8cab833283dc">CRYPTO_KeyBufWrite()</a>, <a class="el" href="structCRYPTO__TypeDef.html#a4e9c7c62a857b0d0d85abbb1a4f409d5">CRYPTO_TypeDef::DATA0</a>, <a class="el" href="structCRYPTO__TypeDef.html#a379449b8e784851f593160c1a319f8f2">CRYPTO_TypeDef::DATA1</a>, <a class="el" href="structCRYPTO__TypeDef.html#a451c1c5a38eb472bec19c4f46fe07b90">CRYPTO_TypeDef::SEQ0</a>, and <a class="el" href="structCRYPTO__TypeDef.html#aa5ce686951feb75b9317c52da242f7e8">CRYPTO_TypeDef::WAC</a>.</p>
 
@@ -2821,7 +2822,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01487">1487</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01360">1360</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gab27cfc84117f8843b269c196987dbc27">CRYPTO_AES_OFBx()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga484ff1efb0583cec9edf3c339e4892bc">CRYPTO_CTRL_AES_AES128</a>, <a class="el" href="group__CRYPTO.html#ggab04d5148b33affc27d8b8fd65b22a837a17f94c9048bc2866a5c93dad6389b858">cryptoKey128Bits</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>.</p>
 
@@ -2892,7 +2893,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01526">1526</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01399">1399</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gab27cfc84117f8843b269c196987dbc27">CRYPTO_AES_OFBx()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gab509c35626f969ff5b0afcc1ecafd8ca">CRYPTO_CTRL_AES_AES256</a>, <a class="el" href="group__CRYPTO.html#ggab04d5148b33affc27d8b8fd65b22a837a0fe58cf60850173eabdbb3c817f56885">cryptoKey256Bits</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>.</p>
 
@@ -2978,7 +2979,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01880">1880</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01753">1753</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaa52f860e239b0ad34cd8eda406bd2998">_CRYPTO_SEQ0_INSTR0_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaddab5222d5b786a1cb33c408c8bfe2eb">_CRYPTO_SEQ0_INSTR1_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga1b3df7c4abe1c6e25bb8b87ecc1ae232">_CRYPTO_SEQ0_INSTR2_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gac0298e58bcc53ee66bc82b572d07e70d">_CRYPTO_SEQ0_INSTR3_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gab6004e660ebd079c15edce8af6fe7cbc">_CRYPTO_SEQ1_INSTR4_SHIFT</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaec33525adc6def3305d3e32409cf24d1">_CRYPTO_SEQ1_INSTR5_SHIFT</a>, <a class="el" href="group__CRYPTO.html#gacd22514cd349359f3fdfb92504d31a83">CRYPTO_AES_ProcessLoop()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga9bd5dcd639fcc5cec88589b88ff01131">CRYPTO_CMD_INSTR_AESENC</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga29177d33eb517ab8843b9ecb86387cbe">CRYPTO_CMD_INSTR_DATA0TODATA1</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gab0a6ad0de2ccf5a2cae4d0ea1933faca">CRYPTO_CMD_INSTR_DATA0TODATA2</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gad223a98ea0568198b206f7149fdb7f08">CRYPTO_CMD_INSTR_DATA1TODATA0XOR</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga7da9bc0a745a86690824ca21f47d0d93">CRYPTO_CMD_INSTR_DATA2TODATA0</a>, <a class="el" href="group__CRYPTO.html#ga98ce739aaeb1bb84dcab1993fe4c10d0">CRYPTO_DataWrite()</a>, <a class="el" href="group__CRYPTO.html#gafa3be243a1fa088ec78f8cab833283dc">CRYPTO_KeyBufWrite()</a>, <a class="el" href="structCRYPTO__TypeDef.html#a4e9c7c62a857b0d0d85abbb1a4f409d5">CRYPTO_TypeDef::DATA0</a>, <a class="el" href="structCRYPTO__TypeDef.html#a379449b8e784851f593160c1a319f8f2">CRYPTO_TypeDef::DATA1</a>, <a class="el" href="structCRYPTO__TypeDef.html#ad3f757aab9bce92408761e59b16a7151">CRYPTO_TypeDef::DATA2</a>, <a class="el" href="structCRYPTO__TypeDef.html#a451c1c5a38eb472bec19c4f46fe07b90">CRYPTO_TypeDef::SEQ0</a>, <a class="el" href="structCRYPTO__TypeDef.html#a17938b405c85b5b58f8a4077ce94c66e">CRYPTO_TypeDef::SEQ1</a>, and <a class="el" href="structCRYPTO__TypeDef.html#aa5ce686951feb75b9317c52da242f7e8">CRYPTO_TypeDef::WAC</a>.</p>
 
@@ -3056,7 +3057,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01938">1938</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l01811">1811</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaa173073064c731d68e12b3e0b191896e">_CRYPTO_SEQCTRL_LENGTHA_SHIFT</a>, <a class="el" href="structCRYPTO__TypeDef.html#ab390c17ed7f6d2accb1594c62ead5264">CRYPTO_TypeDef::CMD</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga2587ba0f1caa96df38c55ffcbf2cfa7c">CRYPTO_CMD_SEQSTART</a>, <a class="el" href="group__CRYPTO.html#gaf7b93c251ece7ee753fe5f0d040015ed">CRYPTO_DataRead()</a>, <a class="el" href="group__CRYPTO.html#ga98ce739aaeb1bb84dcab1993fe4c10d0">CRYPTO_DataWrite()</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a5e1a5398d7924edca29eb7fdae82bc43">CRYPTO_TypeDef::SEQCTRL</a>.</p>
 
@@ -3098,7 +3099,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00580">580</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00714">714</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__CRYPTO.html#ga653d34811343bb81e16eef92d5b55e3f">CRYPTO_AES_DecryptKey128()</a>, <a class="el" href="group__CRYPTO.html#gaa505eced0d007fa990357bb62b0d8bf5">CRYPTO_AES_DecryptKey256()</a>, <a class="el" href="group__CRYPTO.html#gaf7b93c251ece7ee753fe5f0d040015ed">CRYPTO_DataRead()</a>, <a class="el" href="group__CRYPTO.html#ga4f86b3a472b453c34c83d8ce68d9e224">CRYPTO_DDataRead()</a>, <a class="el" href="group__CRYPTO.html#gab45e90c7488174ba86aa85e3d434d43a">CRYPTO_KeyRead()</a>, and <a class="el" href="group__CRYPTO.html#ga19f80d6498e088afce295674faa45af1">CRYPTO_QDataRead()</a>.</p>
 
@@ -3138,7 +3139,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00548">548</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00682">682</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__CRYPTO.html#ga653d34811343bb81e16eef92d5b55e3f">CRYPTO_AES_DecryptKey128()</a>, <a class="el" href="group__CRYPTO.html#gaa505eced0d007fa990357bb62b0d8bf5">CRYPTO_AES_DecryptKey256()</a>, <a class="el" href="group__CRYPTO.html#ga98ce739aaeb1bb84dcab1993fe4c10d0">CRYPTO_DataWrite()</a>, <a class="el" href="group__CRYPTO.html#gabe780f35a77400c0caa255a2b09d6042">CRYPTO_DDataWrite()</a>, <a class="el" href="group__CRYPTO.html#ga6cd1132e6e1d87affa52f7f60626014d">CRYPTO_KeyBuf128Write()</a>, <a class="el" href="group__CRYPTO.html#gafa3be243a1fa088ec78f8cab833283dc">CRYPTO_KeyBufWrite()</a>, and <a class="el" href="group__CRYPTO.html#ga973e1734cde5f97d4dd19e35b83e4583">CRYPTO_QDataWrite()</a>.</p>
 
@@ -3168,7 +3169,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns 'true' if carry is 1, and 'false' if carry is 0. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00781">781</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00915">915</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga8f561d8a57ae54913114d7d8d7ff98b8">_CRYPTO_DSTATUS_CARRY_MASK</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga07413710ddf4e1890e4b46ee948ede2f">_CRYPTO_DSTATUS_CARRY_SHIFT</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a4eaa2184b0e881cc55119fe4a7eaa304">CRYPTO_TypeDef::DSTATUS</a>.</p>
 
@@ -3210,7 +3211,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00624">624</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00758">758</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gafa237c4eba8834f79e3f131a385a76e4">CRYPTO_BurstFromCrypto()</a>.</p>
 
@@ -3252,7 +3253,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00606">606</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00740">740</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gaca41b63a70f98785f4ee47f5a7f2c8d4">CRYPTO_BurstToCrypto()</a>.</p>
 
@@ -3284,7 +3285,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns the 4 LSbits of DDATA0. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00801">801</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00935">935</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga7cd4f3e9507accdabc5d996b41b58d83">_CRYPTO_DSTATUS_DDATA0LSBS_MASK</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga76b646d97e06103b79cb5151708f5341">_CRYPTO_DSTATUS_DDATA0LSBS_SHIFT</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a4eaa2184b0e881cc55119fe4a7eaa304">CRYPTO_TypeDef::DSTATUS</a>.</p>
 
@@ -3324,7 +3325,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00823">823</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00957">957</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga24e9277156c860ee97d165c59ce07b35">_CRYPTO_DSTATUS_DDATA0MSBS_MASK</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga082d3778b87dd90480a0145fa779131d">_CRYPTO_DSTATUS_DDATA0MSBS_SHIFT</a>, <a class="el" href="group__CRYPTO.html#ga4f86b3a472b453c34c83d8ce68d9e224">CRYPTO_DDataRead()</a>, <a class="el" href="structCRYPTO__TypeDef.html#ab14b387d041409fb9fe8612a6c1d2001">CRYPTO_TypeDef::DDATA0</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a4eaa2184b0e881cc55119fe4a7eaa304">CRYPTO_TypeDef::DSTATUS</a>.</p>
 
@@ -3364,7 +3365,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00847">847</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00981">981</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga9ed46a79685d56aa5d3c9dd9ec59b543">_CRYPTO_DDATA0BYTE32_DDATA0BYTE32_MASK</a>, <a class="el" href="group__CRYPTO.html#gabe780f35a77400c0caa255a2b09d6042">CRYPTO_DDataWrite()</a>, <a class="el" href="structCRYPTO__TypeDef.html#ab14b387d041409fb9fe8612a6c1d2001">CRYPTO_TypeDef::DDATA0</a>, and <a class="el" href="structCRYPTO__TypeDef.html#abcc3b966bd986b3ea60adf2647f234d6">CRYPTO_TypeDef::DDATA0BYTE32</a>.</p>
 
@@ -3394,7 +3395,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns 'true' if MSbit is 1, and 'false' if MSbit is 0. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00870">870</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01004">1004</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga6cdd252739d88c60dc0c0ddb7805b5fe">_CRYPTO_DSTATUS_DDATA1MSB_MASK</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gada96cd261f5e09befd9705c52103779d">_CRYPTO_DSTATUS_DDATA1MSB_SHIFT</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a4eaa2184b0e881cc55119fe4a7eaa304">CRYPTO_TypeDef::DSTATUS</a>.</p>
 
@@ -3434,7 +3435,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00661">661</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00795">795</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gafa237c4eba8834f79e3f131a385a76e4">CRYPTO_BurstFromCrypto()</a>.</p>
 
@@ -3476,7 +3477,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00642">642</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00776">776</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gaca41b63a70f98785f4ee47f5a7f2c8d4">CRYPTO_BurstToCrypto()</a>.</p>
 
@@ -3518,7 +3519,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00524">524</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00658">658</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga9708e4b822a4684dc97fea73dafcf502">_CRYPTO_CTRL_INCWIDTH_MASK</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>.</p>
 
@@ -3548,7 +3549,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns 'true' if the instruction sequence is done, and 'false' if not. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00935">935</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01069">1069</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga15e0af287d6ad69b602714a7cacc118c">CRYPTO_STATUS_INSTRRUNNING</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaeb7a45be12bec4ffb0b8a864c24b0590">CRYPTO_STATUS_SEQRUNNING</a>, and <a class="el" href="structCRYPTO__TypeDef.html#ac47dbbcb5f601185fb3f24cc937394a2">CRYPTO_TypeDef::STATUS</a>.</p>
 
@@ -3579,7 +3580,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00916">916</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01050">1050</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="structCRYPTO__TypeDef.html#ab390c17ed7f6d2accb1594c62ead5264">CRYPTO_TypeDef::CMD</a>, and <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga2587ba0f1caa96df38c55ffcbf2cfa7c">CRYPTO_CMD_SEQSTART</a>.</p>
 
@@ -3621,7 +3622,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00893">893</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01027">1027</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="structCRYPTO__TypeDef.html#a451c1c5a38eb472bec19c4f46fe07b90">CRYPTO_TypeDef::SEQ0</a>, <a class="el" href="structCRYPTO__TypeDef.html#a17938b405c85b5b58f8a4077ce94c66e">CRYPTO_TypeDef::SEQ1</a>, <a class="el" href="structCRYPTO__TypeDef.html#aac9a2a5352ecfca12af5694637f95f11">CRYPTO_TypeDef::SEQ2</a>, <a class="el" href="structCRYPTO__TypeDef.html#a775c5374f3ddcfa033ac12f7c563f671">CRYPTO_TypeDef::SEQ3</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a72cb91054df92dbc9a27b8d896026511">CRYPTO_TypeDef::SEQ4</a>.</p>
 
@@ -3650,7 +3651,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00953">953</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01087">1087</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gacbca6255464ec3dcec1881e560fb7669">CRYPTO_InstructionSequenceDone()</a>.</p>
 
@@ -3679,7 +3680,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00970">970</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01104">1104</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gad4a81bf18af6e58fbaf1903f6a22a000">CRYPTO_IF_INSTRDONE</a>, <a class="el" href="structCRYPTO__TypeDef.html#a0425b64c87e6ba741ddaf83c41a70690">CRYPTO_TypeDef::IF</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a1a91349c5bae3cb1353aff90b822c4e4">CRYPTO_TypeDef::IFC</a>.</p>
 
@@ -3718,7 +3719,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01084">1084</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01218">1218</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="structCRYPTO__TypeDef.html#a1a91349c5bae3cb1353aff90b822c4e4">CRYPTO_TypeDef::IFC</a>.</p>
 
@@ -3759,7 +3760,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01100">1100</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01234">1234</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="structCRYPTO__TypeDef.html#a57282dbfc1c39b593a8d60202accc958">CRYPTO_TypeDef::IEN</a>.</p>
 
@@ -3799,7 +3800,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01121">1121</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01255">1255</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="structCRYPTO__TypeDef.html#a57282dbfc1c39b593a8d60202accc958">CRYPTO_TypeDef::IEN</a>.</p>
 
@@ -3829,7 +3830,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>CRYPTO interrupt sources pending. A bitwise logic OR combination of valid interrupt flags for the CRYPTO module (CRYPTO_IF_nnn). </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01140">1140</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01274">1274</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="structCRYPTO__TypeDef.html#a0425b64c87e6ba741ddaf83c41a70690">CRYPTO_TypeDef::IF</a>.</p>
 
@@ -3863,7 +3864,7 @@ Functions</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01162">1162</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01296">1296</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="structCRYPTO__TypeDef.html#a57282dbfc1c39b593a8d60202accc958">CRYPTO_TypeDef::IEN</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a0425b64c87e6ba741ddaf83c41a70690">CRYPTO_TypeDef::IF</a>.</p>
 
@@ -3902,7 +3903,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01185">1185</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l01319">1319</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="structCRYPTO__TypeDef.html#af6552da0c7473184a904ce85bbf0996a">CRYPTO_TypeDef::IFS</a>.</p>
 
@@ -3942,7 +3943,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00762">762</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00896">896</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gaca41b63a70f98785f4ee47f5a7f2c8d4">CRYPTO_BurstToCrypto()</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a0dd9f242e7abfb2de25ef97478f1720f">CRYPTO_TypeDef::KEYBUF</a>.</p>
 
@@ -3989,7 +3990,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00726">726</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00860">860</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga084036129d1d3f920af56b65a232adfe">_CRYPTO_CTRL_AES_AES128</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga5fde015dec55583f21c20863df587129">_CRYPTO_CTRL_AES_AES256</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gafb4797df93ef8caca6d313d5fbcd7bdc">_CRYPTO_CTRL_AES_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="group__CRYPTO.html#gaca41b63a70f98785f4ee47f5a7f2c8d4">CRYPTO_BurstToCrypto()</a>, <a class="el" href="group__CRYPTO.html#gabe780f35a77400c0caa255a2b09d6042">CRYPTO_DDataWrite()</a>, <a class="el" href="group__CRYPTO.html#ggab04d5148b33affc27d8b8fd65b22a837a0fe58cf60850173eabdbb3c817f56885">cryptoKey256Bits</a>, <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>, <a class="el" href="structCRYPTO__TypeDef.html#a54d1a15022d0e6f9412663f2d7c0a54f">CRYPTO_TypeDef::DDATA4</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a0dd9f242e7abfb2de25ef97478f1720f">CRYPTO_TypeDef::KEYBUF</a>.</p>
 
@@ -4038,7 +4039,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00371">371</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00244">244</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gafa237c4eba8834f79e3f131a385a76e4">CRYPTO_BurstFromCrypto()</a>, <a class="el" href="group__CRYPTO.html#ggab04d5148b33affc27d8b8fd65b22a837a0fe58cf60850173eabdbb3c817f56885">cryptoKey256Bits</a>, and <a class="el" href="structCRYPTO__TypeDef.html#ac1b126ca729d88fb8cb114e561621cac">CRYPTO_TypeDef::KEY</a>.</p>
 
@@ -4087,7 +4088,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00317">317</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00190">190</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga59e6f978d4b2ecd74b40a5a029a95183">_CRYPTO_WAC_MODOP_MASK</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga80b9e6cb6df7bac6a7ff218d5d08a97c">_CRYPTO_WAC_MODULUS_MASK</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga4dbd8c59d3c36e33228560f486d95d7f">CRYPTO_WAC_MODOP_BINARY</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga013e800d57b478fca96543f1987e9d72">CRYPTO_WAC_MODOP_REGULAR</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177daf95ec013d97474ddc9988a1f2a7de46c">cryptoModulusBin128</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177da45098c6dde751e1213152dcac184c753">cryptoModulusBin256</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177da60d51eceb5935e76b24f17958ebca3ab">cryptoModulusEccB163</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177da62e551b29f8269eb7ed4943504331b32">cryptoModulusEccB163KOrder</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177daf2504c1370738b400237e8f2e756f3f1">cryptoModulusEccB163Order</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177dae3c38b61af6b8e3c570bf6c7cbdd979c">cryptoModulusEccB233</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177daaf8d597d31cd5d93ca4c9dff8bf3d37e">cryptoModulusEccB233KOrder</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177da45e24adf65970d88b20746893e007758">cryptoModulusEccB233Order</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177da571e0704a4e8a8b1547c9524e9db15f4">cryptoModulusEccP192</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177da55b382066fbf5279876469a2596d108f">cryptoModulusEccP192Order</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177dae6197980adc1247cb4d3b8838bafb496">cryptoModulusEccP224</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177da78100aa70eada4749efcf21f1f36caa7">cryptoModulusEccP224Order</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177daaff296003e98028198c05f7c6656df7f">cryptoModulusEccP256</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177da8fd0194c77bdac34f2d1aeb155d873df">cryptoModulusEccP256Order</a>, <a class="el" href="group__CRYPTO.html#gga2d7bdc2c721b4d27fdf7b448c0cf177da5a918b20ab709395a53c50559d10684a">cryptoModulusGcmBin128</a>, and <a class="el" href="structCRYPTO__TypeDef.html#aa5ce686951feb75b9317c52da242f7e8">CRYPTO_TypeDef::WAC</a>.</p>
 
@@ -4161,7 +4162,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00685">685</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00558">558</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="structCRYPTO__TypeDef.html#ab390c17ed7f6d2accb1594c62ead5264">CRYPTO_TypeDef::CMD</a>, <a class="el" href="group__CRYPTO.html#ga71910832ecbdece7172bda32b5a8ef0e">CRYPTO_CarryIsSet()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga654221e5edf4e09cfe42dffdb14cc798">CRYPTO_CMD_INSTR_ADDIC</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga5d9f3a74c43c899f6f428951a07cddd3">CRYPTO_CMD_INSTR_CCLR</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga55b81b77dfa6bdda0e1f1c5142e4ce38">CRYPTO_CMD_INSTR_CLR</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga17ccaa9794a026557f094fe8745ae0c7">CRYPTO_CMD_INSTR_DATA1TODATA0</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga8c35370a5563fc1d5a33e7b412af0f4b">CRYPTO_CMD_INSTR_DATATODMA0</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga1267357b0dc432ff842520e40ebdd44f">CRYPTO_CMD_INSTR_DDATA0TODDATA2</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaa3bc2e08a0992b3d16581e01de984848">CRYPTO_CMD_INSTR_DDATA2TODDATA1</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaabb66216e12f8e2a4734885b4210bf6a">CRYPTO_CMD_INSTR_DMA0TODATA</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gad96c14748e1993e2a655a6c07c42bfe2">CRYPTO_CMD_INSTR_DMA1TODATA</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga52572f6e741be73f7cba8ead57023fe7">CRYPTO_CMD_INSTR_MULO</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga151b72a38c67b7ff9477ed3d507785dc">CRYPTO_CMD_INSTR_SELDDATA0DDATA2</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga95e9a55e84771a0ab4b431d42f3f64b8">CRYPTO_CMD_INSTR_SELDDATA1DDATA3</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga985df6262fe686222f5ee911b0440fd8">CRYPTO_CMD_INSTR_SELDDATA2DDATA3</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga78da21539e8f3ea881a2b80ad0e56478">CRYPTO_CTRL_DMA0MODE_FULL</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga260b3e45ad0d0d7d6f5db478d9547d71">CRYPTO_CTRL_DMA0RSEL_DATA0</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga9baa2802f0039637babed87010f2b00e">CRYPTO_CTRL_DMA1MODE_FULL</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaadc1ad2fdce1ee666306be2be6cd2356">CRYPTO_CTRL_DMA1RSEL_DATA1</a>, <a class="el" href="group__CRYPTO.html#gaf7b93c251ece7ee753fe5f0d040015ed">CRYPTO_DataRead()</a>, <a class="el" href="group__CRYPTO.html#ga98ce739aaeb1bb84dcab1993fe4c10d0">CRYPTO_DataWrite()</a>, <a class="el" href="group__CRYPTO.html#ga4741d0012d60bd16f03a81aefba5d318">CRYPTO_InstructionSequenceExecute()</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gab94b152fd30a13ad5e6bc6729f9391c7">CRYPTO_SEQCTRL_BLOCKSIZE_16BYTES</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gaac53b78f0e239552448eac342b5ee655">CRYPTO_WAC_MULWIDTH_MUL128</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga15e4ed0c86e4492e376140746f0fafa3">CRYPTO_WAC_RESULTWIDTH_256BIT</a>, <a class="el" href="group__CRYPTO.html#ga236c76a0c844700a45d704154edf4a65">cryptoBigintIncrement()</a>, <a class="el" href="group__CRYPTO.html#gac1951a7e8ad4895bd4c54f7e3f7a36d4">cryptoBigintZeroize()</a>, <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>, <a class="el" href="structCRYPTO__TypeDef.html#a4e9c7c62a857b0d0d85abbb1a4f409d5">CRYPTO_TypeDef::DATA0</a>, <a class="el" href="structCRYPTO__TypeDef.html#a379449b8e784851f593160c1a319f8f2">CRYPTO_TypeDef::DATA1</a>, <a class="el" href="structCRYPTO__TypeDef.html#ad3f757aab9bce92408761e59b16a7151">CRYPTO_TypeDef::DATA2</a>, <a class="el" href="structCRYPTO__TypeDef.html#a5e1a5398d7924edca29eb7fdae82bc43">CRYPTO_TypeDef::SEQCTRL</a>, and <a class="el" href="structCRYPTO__TypeDef.html#aa5ce686951feb75b9317c52da242f7e8">CRYPTO_TypeDef::WAC</a>.</p>
 
@@ -4201,7 +4202,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00482">482</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00616">616</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga92a4026f73c4195c408c330218789743">_CRYPTO_WAC_MULWIDTH_MASK</a>, and <a class="el" href="structCRYPTO__TypeDef.html#aa5ce686951feb75b9317c52da242f7e8">CRYPTO_TypeDef::WAC</a>.</p>
 
@@ -4241,7 +4242,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00701">701</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00835">835</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gafa237c4eba8834f79e3f131a385a76e4">CRYPTO_BurstFromCrypto()</a>.</p>
 
@@ -4281,7 +4282,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00680">680</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00814">814</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__CRYPTO.html#gaca41b63a70f98785f4ee47f5a7f2c8d4">CRYPTO_BurstToCrypto()</a>.</p>
 
@@ -4323,7 +4324,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00503">503</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8h_source.html#l00637">637</a> of file <a class="el" href="em__crypto_8h_source.html">em_crypto.h</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga887eec486f3a7661f0b944d232b6f342">_CRYPTO_WAC_RESULTWIDTH_MASK</a>, and <a class="el" href="structCRYPTO__TypeDef.html#aa5ce686951feb75b9317c52da242f7e8">CRYPTO_TypeDef::WAC</a>.</p>
 
@@ -4379,7 +4380,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00404">404</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00277">277</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga700713fd49d64d79af8f6e2e131f116e">CRYPTO_CMD_INSTR_DDATA0TODDATA1</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga25e764b0567086c6be59d7e130390961">CRYPTO_CMD_INSTR_DDATA1TODDATA0</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga1fd97c9d3d3b46664b1c7c6d651598b1">CRYPTO_CMD_INSTR_MADD32</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga7ab1378dd9d1f6c47ca73c13b251fe1d">CRYPTO_CMD_INSTR_SELDDATA0DDATA1</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga42da672f108536e0891a42cb7cbd5e8c">CRYPTO_CMD_INSTR_SHA</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga7deee4e774a907051ae2e21cb7f5854d">CRYPTO_CTRL_SHA_SHA1</a>, <a class="el" href="group__CRYPTO.html#gabe780f35a77400c0caa255a2b09d6042">CRYPTO_DDataWrite()</a>, <a class="el" href="group__CRYPTO.html#ga973e1734cde5f97d4dd19e35b83e4583">CRYPTO_QDataWrite()</a>, <a class="el" href="group__CRYPTO.html#ga7300144c00712f8362d56104e1855a2e">CRYPTO_ResultWidthSet()</a>, <a class="el" href="group__CRYPTO.html#gga8fa558edbd6903baeea49f8a6a28f00da53f3a21566586273e9b3d475a38e63aa">cryptoResult256Bits</a>, <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>, <a class="el" href="structCRYPTO__TypeDef.html#af867db86d410defd2f60e8d49d7869d4">CRYPTO_TypeDef::DDATA0BIG</a>, <a class="el" href="structCRYPTO__TypeDef.html#a4fdbb383763411a7560624b7d507f587">CRYPTO_TypeDef::DDATA1</a>, <a class="el" href="structCRYPTO__TypeDef.html#ae20887beec62449a6d984e3c6fa64ee0">CRYPTO_TypeDef::QDATA1BIG</a>, <a class="el" href="structCRYPTO__TypeDef.html#a5e1a5398d7924edca29eb7fdae82bc43">CRYPTO_TypeDef::SEQCTRL</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a9669fdfb08fa8df20af8313dd47fd5f4">CRYPTO_TypeDef::SEQCTRLB</a>.</p>
 
@@ -4433,7 +4434,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00534">534</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00407">407</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>References <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga700713fd49d64d79af8f6e2e131f116e">CRYPTO_CMD_INSTR_DDATA0TODDATA1</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga25e764b0567086c6be59d7e130390961">CRYPTO_CMD_INSTR_DDATA1TODDATA0</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga1fd97c9d3d3b46664b1c7c6d651598b1">CRYPTO_CMD_INSTR_MADD32</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga7ab1378dd9d1f6c47ca73c13b251fe1d">CRYPTO_CMD_INSTR_SELDDATA0DDATA1</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#ga42da672f108536e0891a42cb7cbd5e8c">CRYPTO_CMD_INSTR_SHA</a>, <a class="el" href="group__EFR32BG1P__CRYPTO__BitFields.html#gafcf9d2a5c8a9427367a463ce6c767728">CRYPTO_CTRL_SHA_SHA2</a>, <a class="el" href="group__CRYPTO.html#ga4f86b3a472b453c34c83d8ce68d9e224">CRYPTO_DDataRead()</a>, <a class="el" href="group__CRYPTO.html#gabe780f35a77400c0caa255a2b09d6042">CRYPTO_DDataWrite()</a>, <a class="el" href="group__CRYPTO.html#ga973e1734cde5f97d4dd19e35b83e4583">CRYPTO_QDataWrite()</a>, <a class="el" href="group__CRYPTO.html#ga7300144c00712f8362d56104e1855a2e">CRYPTO_ResultWidthSet()</a>, <a class="el" href="group__CRYPTO.html#gga8fa558edbd6903baeea49f8a6a28f00da53f3a21566586273e9b3d475a38e63aa">cryptoResult256Bits</a>, <a class="el" href="structCRYPTO__TypeDef.html#a6be4f8a83d5df01632663e1a402b659a">CRYPTO_TypeDef::CTRL</a>, <a class="el" href="structCRYPTO__TypeDef.html#af867db86d410defd2f60e8d49d7869d4">CRYPTO_TypeDef::DDATA0BIG</a>, <a class="el" href="structCRYPTO__TypeDef.html#a4fdbb383763411a7560624b7d507f587">CRYPTO_TypeDef::DDATA1</a>, <a class="el" href="structCRYPTO__TypeDef.html#ae20887beec62449a6d984e3c6fa64ee0">CRYPTO_TypeDef::QDATA1BIG</a>, <a class="el" href="structCRYPTO__TypeDef.html#a5e1a5398d7924edca29eb7fdae82bc43">CRYPTO_TypeDef::SEQCTRL</a>, and <a class="el" href="structCRYPTO__TypeDef.html#a9669fdfb08fa8df20af8313dd47fd5f4">CRYPTO_TypeDef::SEQCTRLB</a>.</p>
 
@@ -4472,7 +4473,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00658">658</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00531">531</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>Referenced by <a class="el" href="group__CRYPTO.html#ga82b33dfb89440f37783d0feb689e55b8">CRYPTO_Mul()</a>.</p>
 
@@ -4511,7 +4512,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00644">644</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
+<p>Definition at line <a class="el" href="em__crypto_8c_source.html#l00517">517</a> of file <a class="el" href="em__crypto_8c_source.html">em_crypto.c</a>.</p>
 
 <p>Referenced by <a class="el" href="group__CRYPTO.html#ga82b33dfb89440f37783d0feb689e55b8">CRYPTO_Mul()</a>.</p>
 
@@ -4522,7 +4523,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 13 2016 10:44:12 for EFR32 Blue Gecko Software Documentation by
+    <li class="footer">Generated on Tue Sep 27 2016 15:52:35 for EFR32 Blue Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

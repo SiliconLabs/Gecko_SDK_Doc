@@ -1,5 +1,9 @@
 var group__SYSTEM =
 [
+    [ "SYSTEM_CalAddrVal_TypeDef", "structSYSTEM__CalAddrVal__TypeDef.html", [
+      [ "address", "structSYSTEM__CalAddrVal__TypeDef.html#a9244d73091f31b991553872b1ff9c9f1", null ],
+      [ "calValue", "structSYSTEM__CalAddrVal__TypeDef.html#a4fa1c82dcec415044e0f154de26da638", null ]
+    ] ],
     [ "SYSTEM_ChipRevision_TypeDef", "structSYSTEM__ChipRevision__TypeDef.html", [
       [ "family", "structSYSTEM__ChipRevision__TypeDef.html#a47b64ea4d787f0fd06b2e218a16cac1c", null ],
       [ "major", "structSYSTEM__ChipRevision__TypeDef.html#a79ebea0f9a0321ec622d9098afe5bdd1", null ],
@@ -24,12 +28,10 @@ var group__SYSTEM =
       [ "systemPartFamilyBlue1P", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aae64879630b382cc9f0dbfbd893890333", null ],
       [ "systemPartFamilyBlue1B", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa0bc2eb97890c35b0419791a032c94989", null ],
       [ "systemPartFamilyBlue1V", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa6cc0cd3fb894977099156a8fb69e7cf1", null ],
-      [ "systemPartFamilyZappy1P", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aaa2773dc6a096d3fe290b8c6b67de2c44", null ],
-      [ "systemPartFamilyZappy1B", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa245c59d98baf6c91854cdd88f06a82d4", null ],
-      [ "systemPartFamilyZappy1V", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa7956f609b89903bf361b4e6912e078a9", null ],
       [ "systemPartFamilyFlex1P", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa16519506bc923bfd904427167a3e4c98", null ],
       [ "systemPartFamilyFlex1B", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa77928d7b65be397413eb7d1befd3e44a", null ],
       [ "systemPartFamilyFlex1V", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aac138e157cb640c4560a2b10402688c39", null ],
+      [ "systemPartFamilyMighty2P", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa62629ff1a9b6dcb4f777bf932e747fea", null ],
       [ "systemPartFamilyGecko", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa489b6eb51f431130db9d250c44137fbe", null ],
       [ "systemPartFamilyGiant", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa70ee164d396d9fc32265f174b5c25e47", null ],
       [ "systemPartFamilyTiny", "group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa61c8f81ba612497c56992b8b283c7b9c", null ],
@@ -41,6 +43,7 @@ var group__SYSTEM =
     ] ],
     [ "SYSTEM_ChipRevisionGet", "group__SYSTEM.html#ga6470ed38937ffd0b8b509334c5add7dd", null ],
     [ "SYSTEM_GetCalibrationTemperature", "group__SYSTEM.html#ga2a8be52c7eeb3f5d395ee7791e5c8bf8", null ],
+    [ "SYSTEM_GetCalibrationValue", "group__SYSTEM.html#ga84a2becba34bea4a4d718d4dfe14c4db", null ],
     [ "SYSTEM_GetDevinfoRev", "group__SYSTEM.html#gaf92e0afdba824102eb010f5418069b49", null ],
     [ "SYSTEM_GetFamily", "group__SYSTEM.html#ga5b5bb91ac7916b37ce069dd75fc94196", null ],
     [ "SYSTEM_GetFlashPageSize", "group__SYSTEM.html#ga9708a581c8fe3a02fc6ac92175a3860a", null ],
