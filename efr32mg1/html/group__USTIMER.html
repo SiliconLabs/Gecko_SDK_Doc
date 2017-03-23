@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Mighty Gecko 1 Software Documentation
-   &#160;<span id="projectnumber">efr32mg1-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efr32mg1-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('group__USTIMER.html','');});
  </p>
 <h1><a class="anchor" id="ustimer_intro"></a>
 Introduction</h1>
-<p>The USTIMER driver implements microsecond delay functions. The delay is timed using a hardware TIMER resource. Two delay functions are available, one which use energy mode EM1 to preserve energy while waiting, and one which performs busy wait.</p>
+<p>The USTIMER driver implements microsecond delay functions. The delay is timed using a hardware TIMER or WTIMER resource. Two delay functions are available, one which uses energy mode EM1 to preserve energy while waiting, and one which performs busy wait.</p>
 <p><br />
  </p>
 <h1><a class="anchor" id="ustimer_conf"></a>
@@ -141,9 +141,9 @@ The API</h1>
 <p>This section contain brief descriptions of the functions in the API. You will find detailed information on input and output parameters and return values by clicking on the hyperlinked function names. Most functions return an error code, <a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a> is returned on success, see <a class="el" href="ecode_8h.html">ecode.h</a> and <a class="el" href="ustimer_8h.html">ustimer.h</a> for other error codes.</p>
 <p>Your application code must include one header file: <em><a class="el" href="ustimer_8h.html" title="Microsecond delay function API definition. ">ustimer.h</a></em>.</p>
 <p><a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a>, <a class="el" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">USTIMER_DeInit()</a> <br />
- These functions initializes or deinitializes the USTIMER driver. Typically  USTIMER_Init()  is called once in your startup code.</p>
-<p><a class="el" href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">USTIMER_Delay()</a> Delay a given number of microseconds. The mcu is put in EM1 during the delay.</p>
-<p><a class="el" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">USTIMER_DelayIntSafe()</a> Delay a given number of microseconds. The mcu is not put in EM1 during the delay. This function can be called in any context and is also thread safe.</p>
+ These functions initialize and deinitialize the USTIMER driver. Typically  USTIMER_Init()  is called once in your startup code.</p>
+<p><a class="el" href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">USTIMER_Delay()</a> Delay a given number of microseconds. The MCU enters EM1 during the delay.</p>
+<p><a class="el" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">USTIMER_DelayIntSafe()</a> Delay a given number of microseconds. The MCU stays in EM0 during the delay. This function can be called in any context and is also thread safe.</p>
 <p><br />
  </p>
 <h1><a class="anchor" id="ustimer_example"></a>
@@ -156,7 +156,7 @@ int main( void )
   USTIMER_Init();
 
   // Wait for 250 microseconds
-  USTIMER_Delay( 250 );
+  USTIMER_Delay(250);
 }</pre> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -199,7 +199,7 @@ Functions</h2></td></tr>
 <p>Will disable interrupts and turn off the clock to the underlying hardware timer.</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="ustimer_8c_source.html#l00137">137</a> of file <a class="el" href="ustimer_8c_source.html">ustimer.c</a>.</p>
+<p>Definition at line <a class="el" href="ustimer_8c_source.html#l00190">190</a> of file <a class="el" href="ustimer_8c_source.html">ustimer.c</a>.</p>
 
 <p>References <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>, <a class="el" href="group__TIMER.html#gae3dd36e419641a24d3f44084c216bf71">TIMER_Enable()</a>, <a class="el" href="group__EFR32MG1P__TIMER__BitFields.html#gae947ebc7f0a0a7555cfebce47959ccfb">TIMER_IEN_CC0</a>, <a class="el" href="group__EFR32MG1P__TIMER__BitFields.html#ga533f75de120d61038ba5164d83d471f6">TIMER_IFC_CC0</a>, <a class="el" href="group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57">TIMER_IntClear()</a>, and <a class="el" href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9">TIMER_IntDisable()</a>.</p>
 
@@ -232,7 +232,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="ustimer_8c_source.html#l00168">168</a> of file <a class="el" href="ustimer_8c_source.html">ustimer.c</a>.</p>
+<p>Definition at line <a class="el" href="ustimer_8c_source.html#l00221">221</a> of file <a class="el" href="ustimer_8c_source.html">ustimer.c</a>.</p>
 
 <p>References <a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>.</p>
 
@@ -265,7 +265,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="ustimer_8c_source.html#l00203">203</a> of file <a class="el" href="ustimer_8c_source.html">ustimer.c</a>.</p>
+<p>Definition at line <a class="el" href="ustimer_8c_source.html#l00256">256</a> of file <a class="el" href="ustimer_8c_source.html">ustimer.c</a>.</p>
 
 <p>References <a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>.</p>
 
@@ -289,7 +289,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Call this function whenever the HFPERCLK and/or HFCORECLK frequency is changed.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="ustimer_8c_source.html#l00086">86</a> of file <a class="el" href="ustimer_8c_source.html">ustimer.c</a>.</p>
+<p>Definition at line <a class="el" href="ustimer_8c_source.html#l00139">139</a> of file <a class="el" href="ustimer_8c_source.html">ustimer.c</a>.</p>
 
 <p>References <a class="el" href="group__EFR32MG1P__TIMER__BitFields.html#gafc86de0d955c2f421bdd9c3b983b0f52">_TIMER_CTRL_PRESC_DIV1</a>, <a class="el" href="group__EFR32MG1P__TIMER__BitFields.html#ga79d998fe87dcf52224f3e5eb43aaba8d">_TIMER_CTRL_PRESC_DIV1024</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet()</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea040d340c971448a4607a4a70092bc0f8">cmuClock_CORE</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a>, <a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>, <a class="el" href="structTIMER__InitCC__TypeDef.html#a04dcf1da58bdff3195483c270032f8ef">TIMER_InitCC_TypeDef::mode</a>, <a class="el" href="structTIMER__Init__TypeDef.html#a398fc7a5c956cc0f06eabe740c690d87">TIMER_Init_TypeDef::prescale</a>, <a class="el" href="group__EFR32MG1P__TIMER__BitFields.html#gae947ebc7f0a0a7555cfebce47959ccfb">TIMER_IEN_CC0</a>, <a class="el" href="group__TIMER.html#gad04a80140e22df0cd742e14933e9f028">TIMER_Init()</a>, <a class="el" href="group__TIMER.html#ga8803e04b755a2a22dc9167e109a6be89">TIMER_INIT_DEFAULT</a>, <a class="el" href="group__TIMER.html#ga9b2a3560717e0c174a030d99fa8501b4">TIMER_InitCC()</a>, <a class="el" href="group__TIMER.html#ga1444f0ca7a97773a1152aa886f17b48a">TIMER_INITCC_DEFAULT</a>, <a class="el" href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9">TIMER_IntDisable()</a>, <a class="el" href="group__TIMER.html#gad367b1801475494e0aeab2e4eab1e646">TIMER_TopSet()</a>, and <a class="el" href="group__TIMER.html#ggacaeb01f1c6c64b144b9a5913893bd718a5c0e017e36fa868b76ea0adbe3b1d86e">timerCCModeCompare</a>.</p>
 
@@ -302,7 +302,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 16:04:35 for EFR32 Mighty Gecko 1 Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:45:06 for EFR32 Mighty Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -51,6 +51,7 @@ var group__ACMP =
       [ "acmpResistor7", "group__ACMP.html#ggaf50197241694fe457b4c378106792961aa68f15fe3142629f843c867c25cf146a", null ]
     ] ],
     [ "ACMP_Channel_TypeDef", "group__ACMP.html#ga0971c188cd2a1aeff32dd621f851af17", null ],
+    [ "ACMP_ExternalInput_Typedef", "group__ACMP.html#ga64be8370eb2121aae541d2802822a5a4", null ],
     [ "ACMP_HysteresisLevel_TypeDef", "group__ACMP.html#ga216306eec0ad9c6d68aa3c6819378001", [
       [ "acmpHysteresisLevel0", "group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a0b356c23ff07532fd9c8ed5cd82e41fd", null ],
       [ "acmpHysteresisLevel1", "group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001adfafa0cbeefb24869ef36a5445dd2330", null ],
@@ -88,6 +89,7 @@ var group__ACMP =
     [ "ACMP_ChannelSet", "group__ACMP.html#gaf2552815d97fa6b5cf035cf20727e322", null ],
     [ "ACMP_Disable", "group__ACMP.html#gaab980ab061d6799cc4bf756b141733d2", null ],
     [ "ACMP_Enable", "group__ACMP.html#ga6962a2f6816e64c36b88111ab368a6ac", null ],
+    [ "ACMP_ExternalInputSelect", "group__ACMP.html#ga46330ae94706d57b5c32890d744e775e", null ],
     [ "ACMP_GPIOSetup", "group__ACMP.html#ga7a312099dc46377af2714277236716d3", null ],
     [ "ACMP_Init", "group__ACMP.html#gad04e5819cd2d6ca5a275e8cc047f9ecf", null ],
     [ "ACMP_IntClear", "group__ACMP.html#ga8bcba309288cc9ee7ac36b57169d667a", null ],

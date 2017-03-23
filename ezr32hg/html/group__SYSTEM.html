@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32hg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">ezr32hg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -314,7 +314,7 @@ Functions</h2></td></tr>
 <p>Get the calibration temperature (in degrees Celsius). </p>
 <dl class="section return"><dt>Returns</dt><dd>The calibration temperature in Celsius. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00434">434</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00466">466</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
 
 <p>References <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#ga7e12f8cdf56f968f2b2c399b99b09823">_DEVINFO_CAL_TEMP_MASK</a>, <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#gaaa15661a4a5a8cfe5c9f3d99e2224d47">_DEVINFO_CAL_TEMP_SHIFT</a>, and <a class="el" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>.</p>
 
@@ -367,7 +367,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This function retrievs the family id by reading the chip's device info structure in flash memory. The user can retrieve the family id directly by reading the DEVINFO-&gt;PART item and decode with the mask and shift #defines defined in &lt;part_family&gt;_devinfo.h (please refer to code below for details).</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The family identifier of the MCU. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00419">419</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00451">451</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
 
 <p>References <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#ga2fe450e17ca85457a2dbbd079b25e103">_DEVINFO_PART_DEVICE_FAMILY_MASK</a>, <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#ga25202e4e467dd87ceda706048f6db095">_DEVINFO_PART_DEVICE_FAMILY_SHIFT</a>, and <a class="el" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>.</p>
 
@@ -388,10 +388,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the flash page size in bytes. </p>
-<dl class="section note"><dt>Note</dt><dd>This function retrievs the correct value by reading the chip device info structure. If your binary is made for one specific device only, the #define FLASH_PAGE_SIZE can be used instead.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function retrievs the correct value by reading the chip device info structure. If your binary is made for one specific device only, <a class="el" href="group__EZR32HG320F64R69__Part.html#ga4cc14e2c99ae7f8e5a8e371d03c8532c">FLASH_PAGE_SIZE</a> can be used instead.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The page size of the internal flash in bytes. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00351">351</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00383">383</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
 
 <p>References <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#gae766d99b9de4b45c7f8f4a5ce3a27e99">_DEVINFO_MEMINFO_FLASH_PAGE_SIZE_MASK</a>, <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#ga80f313804aad14d56c4eeb01c696b006">_DEVINFO_MEMINFO_FLASH_PAGE_SIZE_SHIFT</a>, <a class="el" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>, <a class="el" href="group__EZR32HG320F64R69__Part.html#ga4cc14e2c99ae7f8e5a8e371d03c8532c">FLASH_PAGE_SIZE</a>, and <a class="el" href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev()</a>.</p>
 
@@ -412,10 +412,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the flash size (in KB). </p>
-<dl class="section note"><dt>Note</dt><dd>This function retrievs the correct value by reading the chip device info structure. If your binary is made for one specific device only, the #define FLASH_SIZE can be used instead.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function retrievs the correct value by reading the chip device info structure. If your binary is made for one specific device only, <a class="el" href="group__EZR32HG320F64R69__Part.html#gae69620948dea1b76e0ab7843ab719db7">FLASH_SIZE</a> can be used instead.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The size of the internal flash (in KB). </dd></dl>
 
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00324">324</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00356">356</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
 
 <p>References <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#gad4061d6bde2c33b8762ff7ec426bb74a">_DEVINFO_MSIZE_FLASH_MASK</a>, <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#ga12a8c9d21c16050c5fdc7b0511c70ac5">_DEVINFO_MSIZE_FLASH_SHIFT</a>, <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#ga2cd07c11c0a648d6bcfbc55521f8c93b">_DEVINFO_MSIZE_SRAM_MASK</a>, <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#ga6f649e21ba1240b56f9e7e411ef341d3">_DEVINFO_MSIZE_SRAM_SHIFT</a>, <a class="el" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>, and <a class="el" href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev()</a>.</p>
 
@@ -438,7 +438,7 @@ Functions</h2></td></tr>
 <p>Get part number of the MCU. </p>
 <dl class="section return"><dt>Returns</dt><dd>The part number of the MCU. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00399">399</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00431">431</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
 
 <p>References <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#ga77e71bccf547f7c372fca4d09e109057">_DEVINFO_PART_DEVICE_NUMBER_MASK</a>, <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#gaaa3d36b30fbbe180271eddbefb3fdbb1">_DEVINFO_PART_DEVICE_NUMBER_SHIFT</a>, and <a class="el" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>.</p>
 
@@ -461,7 +461,7 @@ Functions</h2></td></tr>
 <p>Get the production revision for this part. </p>
 <dl class="section return"><dt>Returns</dt><dd>Production revision for this part. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00280">280</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00303">303</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
 
 <p>References <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#gafa63a8f8e63c487fe8ad94c79656708a">_DEVINFO_PART_PROD_REV_MASK</a>, <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#gaa7759fc4f4ea4980064ecd281c4d15ff">_DEVINFO_PART_PROD_REV_SHIFT</a>, and <a class="el" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>.</p>
 
@@ -484,10 +484,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the SRAM size (in KB). </p>
-<dl class="section note"><dt>Note</dt><dd>This function retrievs the correct value by reading the chip device info structure. If your binary is made for one specific device only, the #define SRAM_SIZE can be used instead.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function retrievs the correct value by reading the chip device info structure. If your binary is made for one specific device only, <a class="el" href="group__EZR32HG320F64R69__Part.html#ga10a9c742edabf5e945a1c509b7e1451e">SRAM_SIZE</a> can be used instead.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The size of the internal SRAM (in KB). </dd></dl>
 
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00298">298</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00321">321</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
 
 <p>References <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#gad4061d6bde2c33b8762ff7ec426bb74a">_DEVINFO_MSIZE_FLASH_MASK</a>, <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#ga12a8c9d21c16050c5fdc7b0511c70ac5">_DEVINFO_MSIZE_FLASH_SHIFT</a>, <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#ga2cd07c11c0a648d6bcfbc55521f8c93b">_DEVINFO_MSIZE_SRAM_MASK</a>, <a class="el" href="group__EZR32HG__DEVINFO__BitFields.html#ga6f649e21ba1240b56f9e7e411ef341d3">_DEVINFO_MSIZE_SRAM_SHIFT</a>, <a class="el" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>, and <a class="el" href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev()</a>.</p>
 
@@ -510,7 +510,7 @@ Functions</h2></td></tr>
 <p>Get the unique number for this device. </p>
 <dl class="section return"><dt>Returns</dt><dd>Unique number for this device. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__system_8h_source.html#l00267">267</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
+<p>Definition at line <a class="el" href="em__system_8h_source.html#l00290">290</a> of file <a class="el" href="em__system_8h_source.html">em_system.h</a>.</p>
 
 <p>References <a class="el" href="group__EZR32HG320F64R69__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>.</p>
 
@@ -521,7 +521,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 15:57:03 for EZR32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:45:30 for EZR32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

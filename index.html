@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8" />
-<title>Gecko SDK Documentation</title>
+<title>Gecko HAL & Driver API Reference Guide</title>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,600italic,700italic);
 * {
@@ -66,115 +66,160 @@ p {
 
 <body>
 	<header>
-		<h1>Gecko SDK Documentation</h1>
+		<h1>Gecko HAL & Driver API Reference Guide</h1>
 	</header>
 	<div class="content">
 		<div>
-			<p>
-				Welcome to the documentation for the Gecko SDK for Silicon Labs 32-bit MCUs and SoCs.
-				The Gecko SDK contains device header files, the EMLIB Peripheral Library, EnergyAware
-				Driver library, middleware and support for Starter Kits and Development Kits. Please select
-				your device family from the list below.
+			<p>				 
+				This API reference guide covers CMSIS, EMLIB Peripheral Library, EnergyAware 
+				Driver library, middleware and development kit support for Silicon Labs MCUs and Wireless MCUs. 
 			</p>
 			<div>
-				<div style="clear:both; padding-top: 20px;">
-				<h2>EFM32 Microcontrollers</h2>
-				<div class="family" id="family-efm32g">
-					<h3>EFM32 Gecko</h3>
-					<ul><li><a href="./efm32g/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efm32tg">
-					<h3>EFM32 Tiny Gecko</h3>
-					<ul><li><a href="./efm32tg/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efm32gg">
-					<h3>EFM32 Giant Gecko</h3>
-					<ul><li><a href="./efm32gg/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efm32lg">
-					<h3>EFM32 Leopard Gecko</h3>
-					<ul><li><a href="./efm32lg/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efm32wg">
-					<h3>EFM32 Wonder Gecko</h3>
-					<ul><li><a href="./efm32wg/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efm32zg">
-					<h3>EFM32 Zero Gecko</h3>
-					<ul><li><a href="./efm32zg/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efm32hg">
-					<h3>EFM32 Happy Gecko</h3>
-					<ul><li><a href="./efm32hg/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efm32pg1">
-					<h3>EFM32 Pearl Gecko</h3>
-					<ul><li><a href="./efm32pg1/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efm32jg1">
-					<h3>EFM32 Jade Gecko</h3>
-					<ul><li><a href="./efm32jg1/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				</div>
-				<div style="clear:both; padding-top: 20px;">
-				<h2>EZR32 Sub-GHz Wireless MCUs</h2>
-				<div class="family" id="family-ezr32lg">
-					<h3>EZR32 Leopard Gecko</h3>
-					<ul><li><a href="./ezr32lg/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-ezr32wg">
-					<h3>EZR32 Wonder Gecko</h3>
-					<ul><li><a href="./ezr32wg/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-ezr32hg">
-					<h3>EZR32 Happy Gecko</h3>
-					<ul><li><a href="./ezr32hg/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				</div>
-				<div style="clear:both; padding-top: 20px;">
-				<h2>EFR32 2.4 GHz and Sub-GHz Wireless MCUs</h2>
-				<div class="family" id="family-efr32bg1">
-					<h3>EFR32 Blue Gecko 1</h3>
-					<ul><li><a href="./efr32bg1/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efr32fg1">
-					<h3>EFR32 Flex Gecko 1</h3>
-					<ul><li><a href="./efr32fg1/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efr32mg1">
-					<h3>EFR32 Mighty Gecko 1</h3>
-					<ul><li><a href="./efr32mg1/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efr32bg12">
-					<h3>EFR32 Blue Gecko 12</h3>
-					<ul><li><a href="./efr32bg12/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efr32fg12">
-					<h3>EFR32 Flex Gecko 12</h3>
-					<ul><li><a href="./efr32fg12/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efr32mg12">
-					<h3>EFR32 Mighty Gecko 12</h3>
-					<ul><li><a href="./efr32mg12/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				<div class="family" id="family-efr32mg2">
-					<h3>EFR32 Mighty Gecko 2</h3>
-					<ul><li><a href="./efr32mg2/html/index.html">Software Documentation</a></li></ul>
-				</div>
-				</div>
+				
+<div style="clear:both; padding-top: 20px;">
+  <h2>EFM32 Microcontrollers</h2>
+  <div class="family" id="family-efm32g">
+    <ul>
+      <li><a href="./efm32g/html/index.html">EFM32 Gecko</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efm32tg">
+    <ul>
+      <li><a href="./efm32tg/html/index.html">EFM32 Tiny Gecko</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efm32gg">
+    <ul>
+      <li><a href="./efm32gg/html/index.html">EFM32 Giant Gecko</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efm32lg">
+    <ul>
+      <li><a href="./efm32lg/html/index.html">EFM32 Leopard Gecko</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efm32wg">
+    <ul>
+      <li><a href="./efm32wg/html/index.html">EFM32 Wonder Gecko</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efm32zg">
+    <ul>
+      <li><a href="./efm32zg/html/index.html">EFM32 Zero Gecko</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efm32hg">
+    <ul>
+      <li><a href="./efm32hg/html/index.html">EFM32 Happy Gecko</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efm32pg1">
+    <ul>
+      <li><a href="./efm32pg1/html/index.html">EFM32 Pearl Gecko 1</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efm32pg12">
+    <ul>
+      <li><a href="./efm32pg12/html/index.html">EFM32 Pearl Gecko 12</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efm32jg1">
+    <ul>
+      <li><a href="./efm32jg1/html/index.html">EFM32 Jade Gecko 1</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efm32jg12">
+    <ul>
+      <li><a href="./efm32jg12/html/index.html">EFM32 Jade Gecko 12</a></li>
+    </ul>
+  </div>
+</div>
+
+<div style="clear:both; padding-top: 20px;">
+  <h2>EFR32 2.4 GHz and Sub-GHz Wireless MCUs</h2>
+  <div class="family" id="family-efr32mg1">
+    <ul>
+      <li><a href="./efr32mg1/html/index.html">EFR32 Mighty Gecko 1</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efr32bg1">
+    <ul>
+      <li><a href="./efr32bg1/html/index.html">EFR32 Blue Gecko 1</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efr32fg1">
+    <ul>
+      <li><a href="./efr32fg1/html/index.html">EFR32 Flex Gecko 1</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efr32mg12">
+    <ul>
+      <li><a href="./efr32mg12/html/index.html">EFR32 Mighty Gecko 12</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efr32bg12">
+    <ul>
+      <li><a href="./efr32bg12/html/index.html">EFR32 Blue Gecko 12</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efr32fg12">
+    <ul>
+      <li><a href="./efr32fg12/html/index.html">EFR32 Flex Gecko 12</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efr32mg13">
+    <ul>
+      <li><a href="./efr32mg13/html/index.html">EFR32 Mighty Gecko 13</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efr32bg13">
+    <ul>
+      <li><a href="./efr32bg13/html/index.html">EFR32 Blue Gecko 13</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-efr32fg13">
+    <ul>
+      <li><a href="./efr32fg13/html/index.html">EFR32 Flex Gecko 13</a></li>
+    </ul>
+  </div>
+</div>
+
+<div style="clear:both; padding-top: 20px;">
+  <h2>EZR32 Sub-GHz Wireless MCUs</h2>
+  <div class="family" id="family-ezr32lg">
+    <ul>
+      <li><a href="./ezr32lg/html/index.html">EZR32 Leopard Gecko</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-ezr32wg">
+    <ul>
+      <li><a href="./ezr32wg/html/index.html">EZR32 Wonder Gecko</a></li>
+    </ul>
+  </div>
+  <div class="family" id="family-ezr32hg">
+    <ul>
+      <li><a href="./ezr32hg/html/index.html">EZR32 Happy Gecko</a></li>
+    </ul>
+  </div>
+</div>
+
 			</div>
 		</div>
 		<div style="clear:both; padding-top: 20px;">
-			<h2>ARM CMSIS Documentation</h2>
-			<ul>
-				<li><a href="./CMSIS/index.html">ARM CMSIS Documentation</a></li>
-			</ul>
+      <div>
+        <h2>ARM CMSIS Documentation</h2>
+        <ul>
+          <li><a href="./CMSIS/index.html">ARM CMSIS Documentation</a></li>
+        </ul>
+      </div>
 		</div>
 		<div style="clear:both; padding-top: 20px;">
-			<h2>ARM mbed TLS Documentation</h2>
-			<ul>
-				<li><a href="./mbedtls/html/index.html">ARM mbed TLS Documentation</a></li>
-			</ul>
+      <div>
+        <h2>ARM mbed TLS Documentation</h2>
+        <ul>
+          <li><a href="./mbedtls/html/index.html">ARM mbed TLS Documentation</a></li>
+        </ul>
+      </div>
 		</div>
 	</div>
 </body>

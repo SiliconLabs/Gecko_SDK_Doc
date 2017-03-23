@@ -13,6 +13,8 @@ var ezr32hg320f64r69_8h =
     [ "_SILICON_LABS_32B_PLATFORM_1", "group__EZR32HG320F64R69__Part.html#gadfe7757d548718f80cc349d4c7911ad1", null ],
     [ "_SILICON_LABS_32B_SERIES", "group__EZR32HG320F64R69__Part.html#ga34fba21792e0a4776657c3cc76ac91fd", null ],
     [ "_SILICON_LABS_32B_SERIES_0", "group__EZR32HG320F64R69__Part.html#ga1a84e29ae2965aef779fdb6f6d93cd95", null ],
+    [ "_SILICON_LABS_GECKO_INTERNAL_SDID", "group__EZR32HG320F64R69__Part.html#ga429d0461ae665806a9fe64d8845114f3", null ],
+    [ "_SILICON_LABS_GECKO_INTERNAL_SDID_77", "group__EZR32HG320F64R69__Part.html#ga01c6e568cffa67e687053a58059f1d92", null ],
     [ "ADC0", "group__EZR32HG320F64R69__Peripheral__Declaration.html#ga0d2ea0f4a8dd17bf08e69d05deacbcb5", null ],
     [ "ADC0_BASE", "group__EZR32HG320F64R69__Peripheral__Base.html#ga0aa6c0c068af7a61c770bc6d4322d63e", null ],
     [ "ADC_COUNT", "group__EZR32HG320F64R69__Part.html#ga938c29e0a347b6d862eb64ba860ac871", null ],

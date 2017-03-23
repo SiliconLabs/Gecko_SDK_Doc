@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Tiny Gecko Software Documentation: c:/work/super/platform/emlib/inc/em_common.h File Reference</title>
+<title>EFM32 Tiny Gecko Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/platform/emlib/inc/em_common.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efm32tg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('em__common_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General purpose utilities. </p>
-<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.1.2</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -160,6 +160,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>(a,  b)&#160;&#160;&#160;__extension__({__typeof__(a) _a = (a); __typeof__(b) _b = (b); _a &lt; _b ? _a : _b;})</td></tr>
 <tr class="memdesc:ga9569b0ba06efef226b0a82109eef3ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for getting minimum value. No sideeffects, a and b are evaluated once only. <br /></td></tr>
 <tr class="separator:ga9569b0ba06efef226b0a82109eef3ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2aa8835a23ecccc5db17082017b32707"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2aa8835a23ecccc5db17082017b32707"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga2aa8835a23ecccc5db17082017b32707">SL_NORETURN</a>&#160;&#160;&#160;__attribute__ ((noreturn))</td></tr>
+<tr class="memdesc:ga2aa8835a23ecccc5db17082017b32707"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for handling non-returning functions. <br /></td></tr>
+<tr class="separator:ga2aa8835a23ecccc5db17082017b32707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga911e7f1f5d8dc5b4dd025e8c14159977"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga911e7f1f5d8dc5b4dd025e8c14159977"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga911e7f1f5d8dc5b4dd025e8c14159977">SL_PACK_END</a>()</td></tr>
 <tr class="memdesc:ga911e7f1f5d8dc5b4dd025e8c14159977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro for handling packed structs. <br />
@@ -179,11 +183,11 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga360287cd806ff1d1520498417c41bb6c"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga360287cd806ff1d1520498417c41bb6c">EFM32_CTZ</a> (uint32_t value)</td></tr>
-<tr class="memdesc:ga360287cd806ff1d1520498417c41bb6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count trailing number of zero's. Use CLZ instruction if available.  <a href="group__COMMON.html#ga360287cd806ff1d1520498417c41bb6c">More...</a><br /></td></tr>
+<tr class="memitem:ga360287cd806ff1d1520498417c41bb6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga360287cd806ff1d1520498417c41bb6c"></a>
+__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>EFM32_CTZ</b> (uint32_t value)</td></tr>
 <tr class="separator:ga360287cd806ff1d1520498417c41bb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8df7f6d52e31dad26a89799b7e63adb0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__COMMON.html#ga8df7f6d52e31dad26a89799b7e63adb0">SL_CTZ</a> (uint32_t value)</td></tr>
-<tr class="memdesc:ga8df7f6d52e31dad26a89799b7e63adb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count trailing number of zero's. Use CLZ instruction if available.  <a href="group__COMMON.html#ga8df7f6d52e31dad26a89799b7e63adb0">More...</a><br /></td></tr>
+<tr class="memdesc:ga8df7f6d52e31dad26a89799b7e63adb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count trailing number of zeros. Use CLZ instruction if available.  <a href="group__COMMON.html#ga8df7f6d52e31dad26a89799b7e63adb0">More...</a><br /></td></tr>
 <tr class="separator:ga8df7f6d52e31dad26a89799b7e63adb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -191,8 +195,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__common_8h.html">em_common.h</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 15:56:04 for EFM32 Tiny Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_57c5670a54251515d5dc3137dddf203b.html">platform</a></li><li class="navelem"><a class="el" href="dir_74d47fbdcea7cda18072cc4be639af5a.html">emlib</a></li><li class="navelem"><a class="el" href="dir_bf479292f56c204ab5b202f2f7ed0583.html">inc</a></li><li class="navelem"><a class="el" href="em__common_8h.html">em_common.h</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:39:48 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

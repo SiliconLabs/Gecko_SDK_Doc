@@ -1,6 +1,7 @@
 var searchData=
 [
   ['t10vendorid',['T10VendorId',['../structMSDSCSI__InquiryData__TypeDef.html#a8ff7e4545aad486ef5fe789179a10641',1,'MSDSCSI_InquiryData_TypeDef']]],
+  ['t_5ffine',['t_fine',['../structbmp280__calib__param__t.html#a4b79c05ff63804adc3ace0cf7e68cadc',1,'bmp280_calib_param_t']]],
   ['tail',['tail',['../structUARTDRV__Buffer__FifoQueue__t.html#ae1d7de19a057e30c5cedff5e5f0b5764',1,'UARTDRV_Buffer_FifoQueue_t']]],
   ['tailgate',['tailgate',['../structADC__Init__TypeDef.html#abb40c65ecf8b039794fb7196e720f3cf',1,'ADC_Init_TypeDef']]],
   ['tconfa',['TCONFA',['../structLESENSE__ST__TypeDef.html#a2211f6a54db2e01c7dffbc24a51f6a94',1,'LESENSE_ST_TypeDef']]],
@@ -29,12 +30,13 @@ var searchData=
   ['timebase',['timebase',['../structADC__Init__TypeDef.html#a8a4fdc6c3ba9c0b3bad5270e2614134e',1,'ADC_Init_TypeDef::timebase()'],['../structMSC__TypeDef.html#a9aafff29e61601a2676ddbc7c27c9192',1,'MSC_TypeDef::TIMEBASE()']]],
   ['timectrl',['timeCtrl',['../structLESENSE__Init__TypeDef.html#a26e37c0392e9a5a4e5607e930eabc843',1,'LESENSE_Init_TypeDef']]],
   ['timeout',['timeout',['../structCMU__LFXOInit__TypeDef.html#ab7ba8a0cb6e31b5e05c57a1177c761c1',1,'CMU_LFXOInit_TypeDef::timeout()'],['../structCMU__HFXOInit__TypeDef.html#a9b411f752813f5e5a11e6ac32cdbccc3',1,'CMU_HFXOInit_TypeDef::timeout()'],['../structUSBH__Ep__TypeDef.html#afc297ff52c3bd575b40e26b843364564',1,'USBH_Ep_TypeDef::timeout()']]],
-  ['timestamp',['timeStamp',['../structBURTC__Init__TypeDef.html#ae40c7fd4915e32f7f97d61c34c125f22',1,'BURTC_Init_TypeDef::timeStamp()'],['../structBURTC__TypeDef.html#a8c51bf990751a2b1131dec339135d110',1,'BURTC_TypeDef::TIMESTAMP()'],['../structSI114X__IRQ__SAMPLE.html#aef503c6fac0b87f37c1e278b8e3404cf',1,'SI114X_IRQ_SAMPLE::timestamp()']]],
+  ['timestamp',['timeStamp',['../structBURTC__Init__TypeDef.html#ae40c7fd4915e32f7f97d61c34c125f22',1,'BURTC_Init_TypeDef::timeStamp()'],['../structSI114X__IRQ__SAMPLE.html#aef503c6fac0b87f37c1e278b8e3404cf',1,'SI114X_IRQ_SAMPLE::timestamp()'],['../structBURTC__TypeDef.html#a8c51bf990751a2b1131dec339135d110',1,'BURTC_TypeDef::TIMESTAMP()']]],
   ['timing',['TIMING',['../structLESENSE__CH__TypeDef.html#aceba55cd81a504cebe984064835443d3',1,'LESENSE_CH_TypeDef']]],
   ['toggle',['toggle',['../structUSBH__Ep__TypeDef.html#a8b219c0a9405e783a1eb1f4285849dd4',1,'USBH_Ep_TypeDef']]],
-  ['top',['top',['../structLCD__FrameCountInit__TypeDef.html#ae657913edc5e10162d8499e885a185af',1,'LCD_FrameCountInit_TypeDef::top()'],['../structPCNT__Init__TypeDef.html#aed74c73c9af92c58c89902b0a98556a2',1,'PCNT_Init_TypeDef::top()'],['../structPCNT__TypeDef.html#aa9a20a67191a959ba850b2ddf81a0c74',1,'PCNT_TypeDef::TOP()'],['../structTIMER__TypeDef.html#adad8e4c50781cac90a9ea0b58a6620f8',1,'TIMER_TypeDef::TOP()']]],
+  ['top',['TOP',['../structPCNT__TypeDef.html#aa9a20a67191a959ba850b2ddf81a0c74',1,'PCNT_TypeDef::TOP()'],['../structTIMER__TypeDef.html#adad8e4c50781cac90a9ea0b58a6620f8',1,'TIMER_TypeDef::TOP()'],['../structLCD__FrameCountInit__TypeDef.html#ae657913edc5e10162d8499e885a185af',1,'LCD_FrameCountInit_TypeDef::top()'],['../structPCNT__Init__TypeDef.html#aed74c73c9af92c58c89902b0a98556a2',1,'PCNT_Init_TypeDef::top()']]],
   ['topb',['TOPB',['../structPCNT__TypeDef.html#aece00a19365abfbb51936fef2e73e77e',1,'PCNT_TypeDef::TOPB()'],['../structTIMER__TypeDef.html#a4b13b32d4cd857acb56bf9ae249c0e07',1,'TIMER_TypeDef::TOPB()']]],
   ['topblocks',['TopBlocks',['../structMCU__DISPLAY.html#ac58a875e238421f4ea1dbcbfcd421ca6',1,'MCU_DISPLAY']]],
+  ['touchdeltadiv16',['touchDeltaDiv16',['../structSensorStruct__t.html#a9e39e5031fc48d1fbaae73bd511f5c49',1,'SensorStruct_t']]],
   ['tpgs',['Tpgs',['../structMSDSCSI__InquiryData__TypeDef.html#acb06d0448ff8250d25901fddf4de41d0',1,'MSDSCSI_InquiryData_TypeDef']]],
   ['transfercount',['transferCount',['../structUARTDRV__Buffer__t.html#a1a8c8eda97abe547b767e51be23bca6f',1,'UARTDRV_Buffer_t']]],
   ['transferlength',['TransferLength',['../structMSDSCSI__Read10__TypeDef.html#ac761573476109ed41d9ae45932d3fcf4',1,'MSDSCSI_Read10_TypeDef::TransferLength()'],['../structMSDSCSI__Write10__TypeDef.html#a5473a605c45f7cda62e548f54d7091dd',1,'MSDSCSI_Write10_TypeDef::TransferLength()']]],

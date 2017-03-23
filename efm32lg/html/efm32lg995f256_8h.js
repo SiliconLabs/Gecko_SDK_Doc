@@ -11,6 +11,8 @@ var efm32lg995f256_8h =
     [ "_SILICON_LABS_32B_PLATFORM_1", "group__EFM32LG995F256__Part.html#gadfe7757d548718f80cc349d4c7911ad1", null ],
     [ "_SILICON_LABS_32B_SERIES", "group__EFM32LG995F256__Part.html#ga34fba21792e0a4776657c3cc76ac91fd", null ],
     [ "_SILICON_LABS_32B_SERIES_0", "group__EFM32LG995F256__Part.html#ga1a84e29ae2965aef779fdb6f6d93cd95", null ],
+    [ "_SILICON_LABS_GECKO_INTERNAL_SDID", "group__EFM32LG995F256__Part.html#ga429d0461ae665806a9fe64d8845114f3", null ],
+    [ "_SILICON_LABS_GECKO_INTERNAL_SDID_74", "group__EFM32LG995F256__Part.html#ga643844d42ccc51cc2493940815b6eadd", null ],
     [ "ACMP0", "group__EFM32LG995F256__Peripheral__Declaration.html#ga07af77bdc71801553e581ddc858d7656", null ],
     [ "ACMP0_BASE", "group__EFM32LG995F256__Peripheral__Base.html#ga5e3f07f21dd6ab0682363834112ce5b5", null ],
     [ "ACMP1", "group__EFM32LG995F256__Peripheral__Declaration.html#ga11c0ac9aab56e3eea735704ecc0039f9", null ],

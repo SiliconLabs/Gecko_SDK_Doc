@@ -65,8 +65,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="mbedtls__ecode_8h__dep__incl.png" border="0" usemap="#mbedtls__ecode_8hdep" alt=""/></div>
 <map name="mbedtls__ecode_8hdep" id="mbedtls__ecode_8hdep">
-<area shape="rect" id="node3" href="aesdrv_8h.html" title="Definitions for AES based ciphers with CRYPTO hw acceleration. " alt="" coords="30,155,100,181"/>
-<area shape="rect" id="node5" href="cryptodrv_8h.html" title="cryptodrv.h" alt="" coords="63,80,148,107"/>
+<area shape="rect" id="node3" href="aesdrv_8h.html" title="Definitions for AES based ciphers with CRYPTO hw acceleration. " alt="" coords="25,453,95,480"/>
+<area shape="rect" id="node5" href="slcl__device_8h.html" title="slcl_device.h" alt="" coords="67,304,163,331"/>
+<area shape="rect" id="node7" href="cryptodrv_8h.html" title="cryptodrv.h" alt="" coords="72,379,157,405"/>
+<area shape="rect" id="node10" href="slpal__common_8h.html" title="slpal_common.h" alt="" coords="97,80,215,107"/>
+<area shape="rect" id="node18" href="trng_8h.html" title="True Random Number Generator (TRNG) driver for Silicon Labs devices. " alt="" coords="305,80,359,107"/>
+<area shape="rect" id="node12" href="slpal__baremetal_8h.html" title="slpal_baremetal.h" alt="" coords="94,155,217,181"/>
+<area shape="rect" id="node14" href="slpal_8h.html" title="slpal.h" alt="" coords="110,229,169,256"/>
+<area shape="rect" id="node20" href="entropy__alt_8h.html" title="entropy_alt.h" alt="" coords="294,155,391,181"/>
+<area shape="rect" id="node22" href="entropy_8h.html" title="Entropy accumulator implementation. " alt="" coords="305,229,380,256"/>
 </map>
 </div>
 </div>
@@ -77,6 +84,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a5fb09d28a56f691319804e6e64f8ebc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mbedtls__ecode_8h.html#a5fb09d28a56f691319804e6e64f8ebc2">MBEDTLS_ECODE_BASE</a>&#160;&#160;&#160;( 0xF1000000 )</td></tr>
 <tr class="memdesc:a5fb09d28a56f691319804e6e64f8ebc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This file defines the Silicon Labs specific mbedtls error code layout and values.  <a href="#a5fb09d28a56f691319804e6e64f8ebc2">More...</a><br /></td></tr>
 <tr class="separator:a5fb09d28a56f691319804e6e64f8ebc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae378bf0951afb39536a436faadf38e42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mbedtls__ecode_8h.html#ae378bf0951afb39536a436faadf38e42">MBEDTLS_ERR_DEVICE_BASE</a>&#160;&#160;&#160;( <a class="el" href="mbedtls__ecode_8h.html#a5fb09d28a56f691319804e6e64f8ebc2">MBEDTLS_ECODE_BASE</a> | 0x00001000 )</td></tr>
+<tr class="separator:ae378bf0951afb39536a436faadf38e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a845ae07763670150ef71e9184c7434d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mbedtls__ecode_8h.html#a845ae07763670150ef71e9184c7434d8">MBEDTLS_ECODE_AESDRV_BASE</a>&#160;&#160;&#160;( <a class="el" href="mbedtls__ecode_8h.html#a5fb09d28a56f691319804e6e64f8ebc2">MBEDTLS_ECODE_BASE</a> | 0x00005000 )</td></tr>
 <tr class="separator:a845ae07763670150ef71e9184c7434d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a84e3c16d127c93247d0e670484e51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mbedtls__ecode_8h.html#aa9a84e3c16d127c93247d0e670484e51">MBEDTLS_ECODE_ECC_BASE</a>&#160;&#160;&#160;( <a class="el" href="mbedtls__ecode_8h.html#a5fb09d28a56f691319804e6e64f8ebc2">MBEDTLS_ECODE_BASE</a> | 0x00006000 )</td></tr>
@@ -88,6 +97,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a0e29547c7bf8e45d313b15666ff06aa3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mbedtls__ecode_8h.html#a0e29547c7bf8e45d313b15666ff06aa3">MBEDTLS_ERR_CMAC_BASE</a>&#160;&#160;&#160;( <a class="el" href="mbedtls__ecode_8h.html#a845ae07763670150ef71e9184c7434d8">MBEDTLS_ECODE_AESDRV_BASE</a> | 0xf00)</td></tr>
 <tr class="memdesc:a0e29547c7bf8e45d313b15666ff06aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base value of error codes for CMAC submodule (of AESDRV module).  <a href="#a0e29547c7bf8e45d313b15666ff06aa3">More...</a><br /></td></tr>
 <tr class="separator:a0e29547c7bf8e45d313b15666ff06aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a427a9c812380331dc27621c07abcbbbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mbedtls__ecode_8h.html#a427a9c812380331dc27621c07abcbbbb">MBEDTLS_ERR_TRNG_BASE</a>&#160;&#160;&#160;( <a class="el" href="mbedtls__ecode_8h.html#a5fb09d28a56f691319804e6e64f8ebc2">MBEDTLS_ECODE_BASE</a> | 0x0000E000 )</td></tr>
+<tr class="memdesc:a427a9c812380331dc27621c07abcbbbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base value of error codes for TRNG submodule.  <a href="#a427a9c812380331dc27621c07abcbbbb">More...</a><br /></td></tr>
+<tr class="separator:a427a9c812380331dc27621c07abcbbbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa89faed58bfd6a7999f8cf6d6021845"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mbedtls__ecode_8h.html#afa89faed58bfd6a7999f8cf6d6021845">MBEDTLS_ERR_SLPAL_BASE</a>&#160;&#160;&#160;( <a class="el" href="mbedtls__ecode_8h.html#a5fb09d28a56f691319804e6e64f8ebc2">MBEDTLS_ECODE_BASE</a> | 0x0000F000 )</td></tr>
+<tr class="memdesc:afa89faed58bfd6a7999f8cf6d6021845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base value of error codes for SLPAL submodule.  <a href="#afa89faed58bfd6a7999f8cf6d6021845">More...</a><br /></td></tr>
+<tr class="separator:afa89faed58bfd6a7999f8cf6d6021845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a845ae07763670150ef71e9184c7434d8"></a>
@@ -101,7 +116,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Base value for AESDRV error codes. </p>
 
-<p>Definition at line <a class="el" href="mbedtls__ecode_8h_source.html#l00058">58</a> of file <a class="el" href="mbedtls__ecode_8h_source.html">mbedtls_ecode.h</a>.</p>
+<p>Definition at line <a class="el" href="mbedtls__ecode_8h_source.html#l00059">59</a> of file <a class="el" href="mbedtls__ecode_8h_source.html">mbedtls_ecode.h</a>.</p>
 
 </div>
 </div>
@@ -137,7 +152,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Base value for CRYPTO error codes. </p>
 
-<p>Definition at line <a class="el" href="mbedtls__ecode_8h_source.html#l00061">61</a> of file <a class="el" href="mbedtls__ecode_8h_source.html">mbedtls_ecode.h</a>.</p>
+<p>Definition at line <a class="el" href="mbedtls__ecode_8h_source.html#l00062">62</a> of file <a class="el" href="mbedtls__ecode_8h_source.html">mbedtls_ecode.h</a>.</p>
 
 </div>
 </div>
@@ -152,7 +167,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Base value for ECC error codes. </p>
 
-<p>Definition at line <a class="el" href="mbedtls__ecode_8h_source.html#l00059">59</a> of file <a class="el" href="mbedtls__ecode_8h_source.html">mbedtls_ecode.h</a>.</p>
+<p>Definition at line <a class="el" href="mbedtls__ecode_8h_source.html#l00060">60</a> of file <a class="el" href="mbedtls__ecode_8h_source.html">mbedtls_ecode.h</a>.</p>
 
 </div>
 </div>
@@ -167,7 +182,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Base value for SHA error codes. </p>
 
-<p>Definition at line <a class="el" href="mbedtls__ecode_8h_source.html#l00060">60</a> of file <a class="el" href="mbedtls__ecode_8h_source.html">mbedtls_ecode.h</a>.</p>
+<p>Definition at line <a class="el" href="mbedtls__ecode_8h_source.html#l00061">61</a> of file <a class="el" href="mbedtls__ecode_8h_source.html">mbedtls_ecode.h</a>.</p>
 
 </div>
 </div>
@@ -183,14 +198,61 @@ Macros</h2></td></tr>
 
 <p>Base value of error codes for CMAC submodule (of AESDRV module). </p>
 
-<p>Definition at line <a class="el" href="mbedtls__ecode_8h_source.html#l00062">62</a> of file <a class="el" href="mbedtls__ecode_8h_source.html">mbedtls_ecode.h</a>.</p>
+<p>Definition at line <a class="el" href="mbedtls__ecode_8h_source.html#l00063">63</a> of file <a class="el" href="mbedtls__ecode_8h_source.html">mbedtls_ecode.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae378bf0951afb39536a436faadf38e42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_ERR_DEVICE_BASE&#160;&#160;&#160;( <a class="el" href="mbedtls__ecode_8h.html#a5fb09d28a56f691319804e6e64f8ebc2">MBEDTLS_ECODE_BASE</a> | 0x00001000 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Base value for DEVICE error codes. </p>
+
+<p>Definition at line <a class="el" href="mbedtls__ecode_8h_source.html#l00058">58</a> of file <a class="el" href="mbedtls__ecode_8h_source.html">mbedtls_ecode.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa89faed58bfd6a7999f8cf6d6021845"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_ERR_SLPAL_BASE&#160;&#160;&#160;( <a class="el" href="mbedtls__ecode_8h.html#a5fb09d28a56f691319804e6e64f8ebc2">MBEDTLS_ECODE_BASE</a> | 0x0000F000 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Base value of error codes for SLPAL submodule. </p>
+
+<p>Definition at line <a class="el" href="mbedtls__ecode_8h_source.html#l00065">65</a> of file <a class="el" href="mbedtls__ecode_8h_source.html">mbedtls_ecode.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a427a9c812380331dc27621c07abcbbbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MBEDTLS_ERR_TRNG_BASE&#160;&#160;&#160;( <a class="el" href="mbedtls__ecode_8h.html#a5fb09d28a56f691319804e6e64f8ebc2">MBEDTLS_ECODE_BASE</a> | 0x0000E000 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Base value of error codes for TRNG submodule. </p>
+
+<p>Definition at line <a class="el" href="mbedtls__ecode_8h_source.html#l00064">64</a> of file <a class="el" href="mbedtls__ecode_8h_source.html">mbedtls_ecode.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2016 16:12:41 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 9 2017 20:48:04 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

@@ -1,5 +1,25 @@
 var searchData=
 [
+  ['lavender',['Lavender',['../glib__color_8h.html#ae53b9f54a6a40088c91189caa4552cb5',1,'glib_color.h']]],
+  ['lavenderblush',['LavenderBlush',['../glib__color_8h.html#abdc035b2ec7912f07c408501c22a60ae',1,'glib_color.h']]],
+  ['lawngreen',['LawnGreen',['../glib__color_8h.html#aea5293acd817f9a3b51650b5e28f5967',1,'glib_color.h']]],
+  ['lemonchiffon',['LemonChiffon',['../glib__color_8h.html#abe3638a189799511b2b084ba473d232f',1,'glib_color.h']]],
+  ['lightblue',['LightBlue',['../glib__color_8h.html#a53cfaefa9e9d6512dc22389f6b7bbf75',1,'glib_color.h']]],
+  ['lightcoral',['LightCoral',['../glib__color_8h.html#a7034bf42e83cce38ce3869e545498eaa',1,'glib_color.h']]],
+  ['lightcyan',['LightCyan',['../glib__color_8h.html#a94932fa02ebbac8e616407a749489f2c',1,'glib_color.h']]],
+  ['lightgoldenrodyellow',['LightGoldenrodYellow',['../glib__color_8h.html#a9c240854c1c338c18c77d9d86cd10e23',1,'glib_color.h']]],
+  ['lightgreen',['LightGreen',['../glib__color_8h.html#a8b1831e32de55c692b5801ccd44e6d6c',1,'glib_color.h']]],
+  ['lightgrey',['LightGrey',['../glib__color_8h.html#a58bffc10fbc18f1078baa27f95060c0a',1,'glib_color.h']]],
+  ['lightpink',['LightPink',['../glib__color_8h.html#ac4896c64d899e52a3152a872dc1d340e',1,'glib_color.h']]],
+  ['lightsalmon',['LightSalmon',['../glib__color_8h.html#acef97f29c87a3b44c5bc1311ea4e766b',1,'glib_color.h']]],
+  ['lightseagreen',['LightSeaGreen',['../glib__color_8h.html#ac30786f1720ec373a39266c985f457b9',1,'glib_color.h']]],
+  ['lightskyblue',['LightSkyBlue',['../glib__color_8h.html#a25c999a5607916ec1fde8d94af213b74',1,'glib_color.h']]],
+  ['lightslategray',['LightSlateGray',['../glib__color_8h.html#a961bd7f4090fb7137f990f79cfd42d3f',1,'glib_color.h']]],
+  ['lightsteelblue',['LightSteelBlue',['../glib__color_8h.html#add80ad5d9b1618505f1a158a8f38bbbf',1,'glib_color.h']]],
+  ['lightyellow',['LightYellow',['../glib__color_8h.html#a4ec24cca20372ebb18106f044fd0a9f7',1,'glib_color.h']]],
+  ['lime',['Lime',['../glib__color_8h.html#af56c787bf9bee8fd3df2ccf96e8b6d47',1,'glib_color.h']]],
+  ['limegreen',['LimeGreen',['../glib__color_8h.html#a39b236069622308f9daff51ca24b6d77',1,'glib_color.h']]],
+  ['linen',['Linen',['../glib__color_8h.html#a889cda089a2bc020da4cce6f655921ef',1,'glib_color.h']]],
   ['lines',['LINES',['../retargettft_8c.html#a321ae946de24c36489276616d13c46cd',1,'retargettft.c']]],
   ['lsb_5fmask',['LSB_MASK',['../ksz8851snl_8c.html#a338d54179ac0da2af2363e3a930bf374',1,'ksz8851snl.c']]]
 ];

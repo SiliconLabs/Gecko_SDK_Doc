@@ -4,5 +4,6 @@ var searchData=
   ['fpuaccessfull',['fpuAccessFull',['../group__SYSTEM.html#ggacad9a0706dbf7fea35b1fef36749c3f2aff91130285c709df0fcde71d63a5a0eb',1,'em_system.h']]],
   ['fpuaccessprivilegedonly',['fpuAccessPrivilegedOnly',['../group__SYSTEM.html#ggacad9a0706dbf7fea35b1fef36749c3f2aeb09b6bea1d4e3f5115e212cc508ddac',1,'em_system.h']]],
   ['fpuaccessreserved',['fpuAccessReserved',['../group__SYSTEM.html#ggacad9a0706dbf7fea35b1fef36749c3f2a237395a9a2b73004d49e7075b10212a2',1,'em_system.h']]],
-  ['fpueh_5firqn',['FPUEH_IRQn',['../group__EFM32PG1B200F256GM48.html#gga666eb0caeb12ec0e281415592ae89083afaeaa167e3d353d9a747c7685e1e5b61',1,'efm32pg1b200f256gm48.h']]]
+  ['fpueh_5firqn',['FPUEH_IRQn',['../group__EFM32PG1B200F256GM48.html#gga666eb0caeb12ec0e281415592ae89083afaeaa167e3d353d9a747c7685e1e5b61',1,'efm32pg1b200f256gm48.h']]],
+  ['fullfont',['FullFont',['../group__glib.html#ggac4b5c9184dd449f7023ebbbb6788360da5fcd281c16e89427bb69867c6a785d20',1,'glib.h']]]
 ];

@@ -10,6 +10,7 @@ var searchData=
   ['emupower_5fmainbu',['emuPower_MainBU',['../group__EMU.html#gga10d22ac0d94024e589c77a265fe8ad99a75ce0a5ffd7e68ab350b708cb61ccf2f',1,'em_emu.h']]],
   ['emupower_5fnodiode',['emuPower_NoDiode',['../group__EMU.html#gga10d22ac0d94024e589c77a265fe8ad99ae4d74981a1184c22339a55eedfe6f99b',1,'em_emu.h']]],
   ['emupower_5fnone',['emuPower_None',['../group__EMU.html#gga10d22ac0d94024e589c77a265fe8ad99a4f8cde79f9eb2fa6f3446de59f1d2fba',1,'em_emu.h']]],
+  ['emupowerconfig_5fdcdctodvdd',['emuPowerConfig_DcdcToDvdd',['../group__EMU.html#gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9',1,'em_emu.h']]],
   ['emuprobe_5fbuin',['emuProbe_BUIN',['../group__EMU.html#gga30c5ddc1f074c2400fe8efd6a67eeec7ab2257309215c3438d1d218cbbc93e97c',1,'em_emu.h']]],
   ['emuprobe_5fbuout',['emuProbe_BUOUT',['../group__EMU.html#gga30c5ddc1f074c2400fe8efd6a67eeec7ae09672f6efe3376bec2e25f7159c5e25',1,'em_emu.h']]],
   ['emuprobe_5fdisable',['emuProbe_Disable',['../group__EMU.html#gga30c5ddc1f074c2400fe8efd6a67eeec7ad42740c242495edd6bb30d04b292ec43',1,'em_emu.h']]],

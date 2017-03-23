@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32g-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efm32g-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -280,7 +280,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00281">281</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00384">384</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 </div>
 </div>
@@ -345,7 +345,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00318">318</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00421">421</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 </div>
 </div>
@@ -360,7 +360,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><div class="memdoc">
 <p>GPIO ports ids. </p>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00251">251</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00345">345</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 </div>
 </div>
@@ -423,7 +423,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00390">390</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00493">493</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G__GPIO__BitFields.html#gafb5524f90cd798843e04dd47feb6782e">_GPIO_ROUTE_SWCLKPEN_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -456,7 +456,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00413">413</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00516">516</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G__GPIO__BitFields.html#gad3179dfec8817216079cd68a9ed12c27">_GPIO_ROUTE_SWDIOPEN_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -489,7 +489,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00438">438</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00541">541</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G__GPIO__BitFields.html#ga94ff78e2551aaaf5b18f27929dce1643">_GPIO_ROUTE_SWOPEN_SHIFT</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -590,8 +590,8 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>If reconfiguring a GPIO interrupt that is already enabled, it is generally recommended to disable it first, see GPIO_Disable().</p>
 <p>The actual GPIO interrupt handler must be in place before enabling the interrupt.</p>
 <p>Notice that any pending interrupt for the selected interrupt is cleared by this function.</p>
-<dl class="section note"><dt>Note</dt><dd>On platform 1 devices the pin number parameter is not used. The pin number used on these devices is hardwired to the interrupt with the same number. <br />
- On platform 2 devices, pin number can be selected freely within a group. Interrupt numbers are divided into 4 groups (intNo / 4) and valid pin number within the interrupt groups are: 0: pins 0-3 1: pins 4-7 2: pins 8-11 3: pins 12-15</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>On series 0 devices the pin number parameter is not used. The pin number used on these devices is hardwired to the interrupt with the same number. <br />
+ On series 1 devices, pin number can be selected freely within a group. Interrupt numbers are divided into 4 groups (intNo / 4) and valid pin number within the interrupt groups are: 0: pins 0-3 1: pins 4-7 2: pins 8-11 3: pins 12-15</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port to associate with <code>pin</code>.</td></tr>
@@ -650,7 +650,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00559">559</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00662">662</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -680,11 +680,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00571">571</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00674">674</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
-<p>Referenced by <a class="el" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister()</a>.</p>
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#gad3ae7d5bcfa428e268ac7e32ecb24c6e">BOARD_picGetFwRevision()</a>, and <a class="el" href="group__GPIOINT.html#gaffd9a793482ef44c0871654a9e60836e">GPIOINT_CallbackRegister()</a>.</p>
 
 </div>
 </div>
@@ -734,7 +734,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>If reconfiguring a GPIO interrupt that is already enabled, it is generally recommended to disable it first, see GPIO_Disable().</p>
 <p>The actual GPIO interrupt handler must be in place before enabling the interrupt.</p>
 <p>Notice that any pending interrupt for the selected pin is cleared by this function.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Deprecated function. New code should use <a class="el" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig()</a>.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Deprecated function. New code should use <a class="el" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig()</a>.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>A certain pin number can only be associated with one port. Ie, if GPIO interrupt 1 is assigned to port A/pin 1, then it is not possible to use pin 1 from any other ports for interrupts. Please refer to the reference manual. On devices which implement GPIO_EXTIPINSEL registers a more flexible approach is possible, refer to <a class="el" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig()</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -747,11 +747,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l01001">1001</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l01104">1104</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig()</a>.</p>
 
-<p>Referenced by <a class="el" href="group__HAL__Layer.html#gabf61af8f57a9c92ea50311df53a7d825">ezradio_hal_GpioInit()</a>.</p>
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#gad14824889b3f0fb3d93c1d96d477dde3">BOARD_init()</a>, <a class="el" href="group__BOARD__Functions.html#ga3bcde55381db660fd296b15481383109">BOARD_pushButtonEnableIRQ()</a>, <a class="el" href="group__HAL__Layer.html#gabf61af8f57a9c92ea50311df53a7d825">ezradio_hal_GpioInit()</a>, <a class="el" href="si7210_8c.html#a3594254aaaf40bfcfd95d3e4d98295c1">SI7210_config()</a>, and <a class="el" href="si7210_8c.html#a42cebfe5fa578084e99cd278d30a5394">SI7210_deInit()</a>.</p>
 
 </div>
 </div>
@@ -777,9 +777,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00583">583</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00686">686</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
+
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#gad3ae7d5bcfa428e268ac7e32ecb24c6e">BOARD_picGetFwRevision()</a>.</p>
 
 </div>
 </div>
@@ -806,9 +808,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00600">600</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00703">703</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
+
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#gad3ae7d5bcfa428e268ac7e32ecb24c6e">BOARD_picGetFwRevision()</a>.</p>
 
 </div>
 </div>
@@ -829,7 +833,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <p>Get pending GPIO interrupts. </p>
 <dl class="section return"><dt>Returns</dt><dd>GPIO interrupt sources pending. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00612">612</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00715">715</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -857,7 +861,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00632">632</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00735">735</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -887,7 +891,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00651">651</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00754">754</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -927,11 +931,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The pin value, 0 or 1. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00678">678</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00781">781</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__BUS.html#gaca6b55014161f4c51c9daf4f707eeb7c">BUS_RegBitRead()</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
-<p>Referenced by <a class="el" href="touch_8c.html#a3611206d185a38b740457a748712c457">ADC0_IRQHandler()</a>, <a class="el" href="group__BSP__DK.html#ga5d856abb3eda44db619c8bacd9a7db4d">BSP_McuBoard_UsbVbusOcFlagGet()</a>, <a class="el" href="group__HAL__Layer.html#gaabf77038901412b5b640149538ec5cbe">ezradio_hal_NirqLevel()</a>, and <a class="el" href="group__Touch.html#ga96801185fed6bc54edb1334680c00095">TOUCH_IsBusy()</a>.</p>
+<p>Referenced by <a class="el" href="touch_8c.html#a3611206d185a38b740457a748712c457">ADC0_IRQHandler()</a>, <a class="el" href="group__BSP__DK.html#ga5d856abb3eda44db619c8bacd9a7db4d">BSP_McuBoard_UsbVbusOcFlagGet()</a>, <a class="el" href="group__HAL__Layer.html#gaabf77038901412b5b640149538ec5cbe">ezradio_hal_NirqLevel()</a>, <a class="el" href="group__IMU__Functions.html#ga993d8848b7b8076951f843c917c8c80e">IMU_isDataReadyFlag()</a>, and <a class="el" href="group__Touch.html#ga96801185fed6bc54edb1334680c00095">TOUCH_IsBusy()</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1030,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 
 <p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>, <a class="el" href="group__GPIO.html#ga607f3a5f3d881bb145101566f1664aba">GPIO_PinOutClear()</a>, <a class="el" href="group__GPIO.html#gab08f054efbb07aaff57d616974c9c536">GPIO_PinOutSet()</a>, and <a class="el" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa690ce16290ecc7613e1ae11aa339330b">gpioModeDisabled</a>.</p>
 
-<p>Referenced by <a class="el" href="touch_8c.html#a3611206d185a38b740457a748712c457">ADC0_IRQHandler()</a>, <a class="el" href="group__BSP__STK.html#gabc1abde18d5b254ec16527564df7d416">BSP_BccPinsEnable()</a>, <a class="el" href="group__BSP__DK.html#ga7315c4cb51f3a3a2d3b4585afedd34b4">BSP_BusControlModeSet()</a>, <a class="el" href="group__BSP__STK.html#ga03b1ff40234468f05b725c7997d8bd84">BSP_EbiInit()</a>, <a class="el" href="group__BSP__DK.html#ga5e5a647557924398191541b25705f5eb">BSP_McuBoard_DeInit()</a>, <a class="el" href="group__BSP__DK.html#gafcfe834e0ea4a7780cd2dafda28a4aac">BSP_McuBoard_Init()</a>, <a class="el" href="group__BSP__DK.html#gaf8bb3eb2381d1762457f1360ed6785af">BSP_McuBoard_UsbVbusPowerEnable()</a>, <a class="el" href="caplesense_8c.html#a396cd017e7532802444b258813ee331b">CAPLESENSE_setupGPIO()</a>, <a class="el" href="group__DBG.html#gaf17760c5d4350c442202dee4fe8ec15f">DBG_SWOEnable()</a>, <a class="el" href="group__HAL__Layer.html#gabf61af8f57a9c92ea50311df53a7d825">ezradio_hal_GpioInit()</a>, <a class="el" href="group__I2CSPM.html#ga65556785bb5d714b23e1149d8ed742e5">I2CSPM_Init()</a>, <a class="el" href="group__ksz8851snl.html#ga12cf356cb196dbc44230f7ad5aa16742">KSZ8851SNL_SPI_Init()</a>, <a class="el" href="group__MicroSd.html#ga0dfabd5e4e437eb3207e0bbc370efd24">MICROSD_Deinit()</a>, <a class="el" href="group__MicroSd.html#ga3e6c324243ac41ecf09bd04a746b0cd5">MICROSD_Init()</a>, <a class="el" href="group__Msd.html#ga6bab19f6afa0c63c3c735c9bea3b8242">MSDD_Init()</a>, <a class="el" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50">RETARGET_SerialInit()</a>, <a class="el" href="cpt112s__i2c_8c.html#a3245984004b050943aa774dbb41fdc6c">setupI2C()</a>, <a class="el" href="group__Tft.html#ga2466fe58c7700827edd224e2ab84f3ea">SPI_TFT_Init()</a>, and <a class="el" href="group__Tft.html#ga7548cd4534fbfc9c5b9740252223e646">TFT_DirectGPIOConfig()</a>.</p>
+<p>Referenced by <a class="el" href="touch_8c.html#a3611206d185a38b740457a748712c457">ADC0_IRQHandler()</a>, <a class="el" href="group__BOARD__Functions.html#gae89f874b683f7064e0e7a8a40690ca68">BOARD_flashDeepPowerDown()</a>, <a class="el" href="group__BOARD__Functions.html#gad14824889b3f0fb3d93c1d96d477dde3">BOARD_init()</a>, <a class="el" href="group__BSP__STK.html#gabc1abde18d5b254ec16527564df7d416">BSP_BccPinsEnable()</a>, <a class="el" href="group__BSP__DK.html#ga7315c4cb51f3a3a2d3b4585afedd34b4">BSP_BusControlModeSet()</a>, <a class="el" href="group__BSP__STK.html#ga03b1ff40234468f05b725c7997d8bd84">BSP_EbiInit()</a>, <a class="el" href="group__BSP__DK.html#ga5e5a647557924398191541b25705f5eb">BSP_McuBoard_DeInit()</a>, <a class="el" href="group__BSP__DK.html#gafcfe834e0ea4a7780cd2dafda28a4aac">BSP_McuBoard_Init()</a>, <a class="el" href="group__BSP__DK.html#gaf8bb3eb2381d1762457f1360ed6785af">BSP_McuBoard_UsbVbusPowerEnable()</a>, <a class="el" href="caplesense_8c.html#a396cd017e7532802444b258813ee331b">CAPLESENSE_setupGPIO()</a>, <a class="el" href="group__DBG.html#gaf17760c5d4350c442202dee4fe8ec15f">DBG_SWOEnable()</a>, <a class="el" href="group__HAL__Layer.html#gabf61af8f57a9c92ea50311df53a7d825">ezradio_hal_GpioInit()</a>, <a class="el" href="group__I2CSPM.html#ga65556785bb5d714b23e1149d8ed742e5">I2CSPM_Init()</a>, <a class="el" href="group__ICM20648__Functions.html#ga4835c2dec83fef4f6036bb646ad6f46a">ICM20648_spiInit()</a>, <a class="el" href="group__ksz8851snl.html#ga12cf356cb196dbc44230f7ad5aa16742">KSZ8851SNL_SPI_Init()</a>, <a class="el" href="group__MicroSd.html#ga0dfabd5e4e437eb3207e0bbc370efd24">MICROSD_Deinit()</a>, <a class="el" href="group__MicroSd.html#ga3e6c324243ac41ecf09bd04a746b0cd5">MICROSD_Init()</a>, <a class="el" href="group__Msd.html#ga6bab19f6afa0c63c3c735c9bea3b8242">MSDD_Init()</a>, <a class="el" href="group__RetargetIo.html#gab455176edfa0f3414d104e5d6d64cc50">RETARGET_SerialInit()</a>, <a class="el" href="cpt112s__i2c_8c.html#a3245984004b050943aa774dbb41fdc6c">setupI2C()</a>, <a class="el" href="si7210_8c.html#a42cebfe5fa578084e99cd278d30a5394">SI7210_deInit()</a>, <a class="el" href="si7210_8c.html#a5573e3170a3b94286b0ab916c568dade">SI7210_init()</a>, <a class="el" href="group__Tft.html#ga2466fe58c7700827edd224e2ab84f3ea">SPI_TFT_Init()</a>, <a class="el" href="group__Tft.html#ga7548cd4534fbfc9c5b9740252223e646">TFT_DirectGPIOConfig()</a>, and <a class="el" href="group__Util__Functions.html#ga0752cd0533176c129ba84c51e7bf3b0a">UTIL_shutdown()</a>.</p>
 
 </div>
 </div>
@@ -1064,11 +1068,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00708">708</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00811">811</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
-<p>Referenced by <a class="el" href="group__BSP__DK.html#ga45a69e86ad47085ff622d136f0ad4b96">BSP_McuBoard_UsbStatusLedEnable()</a>, <a class="el" href="group__HAL__Layer.html#ga09c7ef4b4780a8089505f54ef1f26fd5">ezradio_hal_ClearNsel()</a>, <a class="el" href="group__HAL__Layer.html#ga2806bc95f89976726016169ea2b3339c">ezradio_hal_DeassertShutdown()</a>, <a class="el" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet()</a>, <a class="el" href="group__I2CSPM.html#ga65556785bb5d714b23e1149d8ed742e5">I2CSPM_Init()</a>, <a class="el" href="ksz8851snl__spi_8c.html#ab3cd4983675d048afb998f29244de6c0">KSZ8851SNL_SPI_SetChipSelect()</a>, and <a class="el" href="group__Tft.html#gafff213d551c13e16238fb4fdc8235588">SPI_TFT_WriteRegister()</a>.</p>
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#gae89f874b683f7064e0e7a8a40690ca68">BOARD_flashDeepPowerDown()</a>, <a class="el" href="group__BOARD__Functions.html#ga2e9af6dac4a03f41b09d848647e0d838">BOARD_ledSet()</a>, <a class="el" href="group__BOARD__Functions.html#gad3ae7d5bcfa428e268ac7e32ecb24c6e">BOARD_picGetFwRevision()</a>, <a class="el" href="group__BSP__DK.html#ga45a69e86ad47085ff622d136f0ad4b96">BSP_McuBoard_UsbStatusLedEnable()</a>, <a class="el" href="group__HAL__Layer.html#ga09c7ef4b4780a8089505f54ef1f26fd5">ezradio_hal_ClearNsel()</a>, <a class="el" href="group__HAL__Layer.html#ga2806bc95f89976726016169ea2b3339c">ezradio_hal_DeassertShutdown()</a>, <a class="el" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet()</a>, <a class="el" href="group__I2CSPM.html#ga65556785bb5d714b23e1149d8ed742e5">I2CSPM_Init()</a>, <a class="el" href="ksz8851snl__spi_8c.html#ab3cd4983675d048afb998f29244de6c0">KSZ8851SNL_SPI_SetChipSelect()</a>, and <a class="el" href="group__Tft.html#gafff213d551c13e16238fb4fdc8235588">SPI_TFT_WriteRegister()</a>.</p>
 
 </div>
 </div>
@@ -1106,7 +1110,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The DOUT setting for the requested pin, 0 or 1. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00731">731</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00834">834</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__BUS.html#gaca6b55014161f4c51c9daf4f707eeb7c">BUS_RegBitRead()</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -1146,11 +1150,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00753">753</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00856">856</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
-<p>Referenced by <a class="el" href="group__BSP__DK.html#ga45a69e86ad47085ff622d136f0ad4b96">BSP_McuBoard_UsbStatusLedEnable()</a>, <a class="el" href="group__HAL__Layer.html#ga2ed0dd8b886f54f697fa930ce6706363">ezradio_hal_AssertShutdown()</a>, <a class="el" href="group__HAL__Layer.html#gae80c58c4f19b8e2b56c033c94bcb0f10">ezradio_hal_SetNsel()</a>, <a class="el" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet()</a>, <a class="el" href="group__I2CSPM.html#ga65556785bb5d714b23e1149d8ed742e5">I2CSPM_Init()</a>, <a class="el" href="ksz8851snl__spi_8c.html#ab3cd4983675d048afb998f29244de6c0">KSZ8851SNL_SPI_SetChipSelect()</a>, and <a class="el" href="group__Tft.html#gafff213d551c13e16238fb4fdc8235588">SPI_TFT_WriteRegister()</a>.</p>
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#gae89f874b683f7064e0e7a8a40690ca68">BOARD_flashDeepPowerDown()</a>, <a class="el" href="group__BOARD__Functions.html#ga2e9af6dac4a03f41b09d848647e0d838">BOARD_ledSet()</a>, <a class="el" href="group__BOARD__Functions.html#gad3ae7d5bcfa428e268ac7e32ecb24c6e">BOARD_picGetFwRevision()</a>, <a class="el" href="group__BSP__DK.html#ga45a69e86ad47085ff622d136f0ad4b96">BSP_McuBoard_UsbStatusLedEnable()</a>, <a class="el" href="group__HAL__Layer.html#ga2ed0dd8b886f54f697fa930ce6706363">ezradio_hal_AssertShutdown()</a>, <a class="el" href="group__HAL__Layer.html#gae80c58c4f19b8e2b56c033c94bcb0f10">ezradio_hal_SetNsel()</a>, <a class="el" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet()</a>, <a class="el" href="group__I2CSPM.html#ga65556785bb5d714b23e1149d8ed742e5">I2CSPM_Init()</a>, <a class="el" href="ksz8851snl__spi_8c.html#ab3cd4983675d048afb998f29244de6c0">KSZ8851SNL_SPI_SetChipSelect()</a>, and <a class="el" href="group__Tft.html#gafff213d551c13e16238fb4fdc8235588">SPI_TFT_WriteRegister()</a>.</p>
 
 </div>
 </div>
@@ -1188,7 +1192,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00778">778</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00881">881</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -1216,9 +1220,11 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00792">792</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00895">895</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
+
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#ga69adc4b5cb4667f6702f71f96cf1d2b7">BOARD_pushButtonGetState()</a>.</p>
 
 </div>
 </div>
@@ -1256,7 +1262,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00814">814</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00917">917</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__BUS.html#gad226bfe478c81d51681539d935241758">BUS_RegMaskedClear()</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -1285,7 +1291,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The data out setting for the requested port. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00834">834</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00937">937</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -1325,7 +1331,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00856">856</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00959">959</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__BUS.html#ga8225a5d4acac280abb182dc118e8df77">BUS_RegMaskedSet()</a>, and <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -1372,7 +1378,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00884">884</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00987">987</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -1412,7 +1418,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l00908">908</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
+<p>Definition at line <a class="el" href="em__gpio_8h_source.html#l01011">1011</a> of file <a class="el" href="em__gpio_8h_source.html">em_gpio.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32G890F128__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>.</p>
 
@@ -1423,7 +1429,7 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 15:54:19 for EFM32 Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:44:34 for EFM32 Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

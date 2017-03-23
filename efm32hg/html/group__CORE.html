@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32hg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efm32hg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -127,8 +127,8 @@ Introduction</h1>
 <p>The purpose of the CORE interrupt API is to provide simple and safe means to disable and enable interrupts to protect sections of code.</p>
 <p>This is often referred to as "critical sections" and this module provide support for three types of critical sections, each with different interrupt blocking capabilities.</p>
 <ul>
-<li><b>CRITICAL</b> section: Inside a critical sections all interrupts are disabled (except for fault handlers). The PRIMASK register is used for interrupt disable/enable. </li>
-<li><b>ATOMIC</b> section: Interrupts with priority equal to or lower than a given level are disabled. The interrupt disable priority level is defined at compile time. The BASEPRI register is used for interrupt disable/enable. </li>
+<li><b>CRITICAL</b> section: Inside a critical sections all interrupts are disabled (except for fault handlers). The PRIMASK register is always used for interrupt disable/enable. </li>
+<li><b>ATOMIC</b> section: This type of section is configurable and the default method is to use PRIMASK. With BASEPRI configuration, interrupts with priority equal to or lower than a given configurable level are disabled. The interrupt disable priority level is defined at compile time. The BASEPRI register is not available for all architectures. </li>
 <li><b>NVIC mask</b> section: Disable NVIC (external interrupts) on an individual manner.</li>
 </ul>
 <p>em_core also has an API for manipulating RAM based interrupt vector tables.</p>
@@ -381,7 +381,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga818266df617b6e900b124d30f4cf7db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable NVIC interrupts.  <a href="#ga818266df617b6e900b124d30f4cf7db4">More...</a><br /></td></tr>
 <tr class="separator:ga818266df617b6e900b124d30f4cf7db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafd594b0671e10977a3655f289439af09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CORE.html#gafd594b0671e10977a3655f289439af09">CORE_NvicEnableMask</a> (const <a class="el" href="structCORE__nvicMask__t.html">CORE_nvicMask_t</a> *enable)</td></tr>
-<tr class="memdesc:gafd594b0671e10977a3655f289439af09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current NVIC interrupt enable mask.  <a href="#gafd594b0671e10977a3655f289439af09">More...</a><br /></td></tr>
+<tr class="memdesc:gafd594b0671e10977a3655f289439af09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current NVIC interrupt enable mask.  <a href="#gafd594b0671e10977a3655f289439af09">More...</a><br /></td></tr>
 <tr class="separator:gafd594b0671e10977a3655f289439af09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga788fc3ea8bf0a931e5b3c9266a543c25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__CORE.html#ga788fc3ea8bf0a931e5b3c9266a543c25">CORE_NvicIRQDisabled</a> (<a class="el" href="group__EFM32HG322F64.html#gac3af4a32370fb28c4ade8bf2add80251">IRQn_Type</a> irqN)</td></tr>
 <tr class="memdesc:ga788fc3ea8bf0a931e5b3c9266a543c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a NVIC interrupt is disabled.  <a href="#ga788fc3ea8bf0a931e5b3c9266a543c25">More...</a><br /></td></tr>
@@ -417,7 +417,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The interrupt priority level disabled within ATOMIC regions. Interrupts with priority level equal to or lower than this definition will be disabled within ATOMIC regions. </p>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00269">269</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00271">271</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>Referenced by <a class="el" href="group__CORE.html#gafdfbbd11ed59822d754a25ddd9805b38">CORE_AtomicDisableIrq()</a>, <a class="el" href="group__CORE.html#ga61bd0aa238e5eed1e725c007755576a5">CORE_EnterAtomic()</a>, <a class="el" href="group__CORE.html#gadae68b1a852ef2fd42d15dd7d5ee9933">CORE_IrqIsDisabled()</a>, and <a class="el" href="group__CORE.html#gae827216d8f44d661d6ff49a5cf5ce025">CORE_YieldAtomic()</a>.</p>
 
@@ -470,7 +470,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Specify which method to use when implementing ATOMIC sections. You can select between BASEPRI or PRIMASK method. </p><dl class="section note"><dt>Note</dt><dd>On Cortex-M0+ devices only PRIMASK can be used. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00276">276</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00278">278</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 </div>
 </div>
@@ -715,7 +715,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__core_8h_source.html#l00138">138</a> of file <a class="el" href="em__core_8h_source.html">em_core.h</a>.</p>
 
-<p>Referenced by <a class="el" href="group__CapSense.html#ga4a9a1233a70703ca91a6bc9fcf05ec19">CAPLESENSE_Init()</a>, <a class="el" href="group__DMADRV.html#gab503e066820cd13fd612f4365d4d07b2">DMADRV_AllocateChannel()</a>, <a class="el" href="group__DMADRV.html#ga73633db63cfd99ba01a68b05c24094ec">DMADRV_DeInit()</a>, <a class="el" href="group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3">DMADRV_FreeChannel()</a>, <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">DMADRV_Init()</a>, <a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar()</a>, <a class="el" href="group__RTCDRV.html#gaef2d97c6223617d158b05e03ee35950a">RTCDRV_AllocateTimer()</a>, <a class="el" href="group__RTCDRV.html#ga0ad8d9097523a568e484ad9f6920ba88">RTCDRV_IsRunning()</a>, <a class="el" href="group__RTCDRV.html#gaeee47cebc2ca33e571c965b90e1386d9">RTCDRV_StartTimer()</a>, <a class="el" href="group__RTCDRV.html#ga7d3614e56f17c24103336a37891579a4">RTCDRV_StopTimer()</a>, <a class="el" href="group__RTCDRV.html#ga3d7c481309659eeada554be33854c103">RTCDRV_TimeRemaining()</a>, <a class="el" href="group__SLEEP.html#ga2845d5d6d00f408dda6894a654fd1adf">SLEEP_Sleep()</a>, <a class="el" href="group__SPIDRV.html#ga071d128b28b8acff08396fb090b8025a">SPIDRV_AbortTransfer()</a>, <a class="el" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239">SPIDRV_Init()</a>, <a class="el" href="group__SPIDRV.html#gaea943a66137078855a6511a75fb27437">SPIDRV_MTransferSingleItemB()</a>, <a class="el" href="group__SPIDRV.html#ga3e6e2f999eb2ef0fd16df41339e6dc84">SPIDRV_SetBitrate()</a>, <a class="el" href="group__SPIDRV.html#ga54ce984fad9b30b3e8e860b6ada5b77a">SPIDRV_SetFramelength()</a>, <a class="el" href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">UARTDRV_Abort()</a>, <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart()</a>, <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a>, <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a>, <a class="el" href="group__USB__DEVICE.html#ga83f32dfa4f6a5d010e413967850c52b2">USBD_AbortTransfer()</a>, <a class="el" href="group__USB__DEVICE.html#ga0e5f5bd847e7cc1c4c384bb6b7f0ce77">USBD_Init()</a>, <a class="el" href="group__USB__DEVICE.html#ga9e0a1cf705301d9e035feff27ea41cda">USBD_Read()</a>, <a class="el" href="group__USB__DEVICE.html#ga9fb12718f509c578656e4fc08bc40f69">USBD_RemoteWakeup()</a>, <a class="el" href="group__USB__DEVICE.html#ga656c8d2935af97156bc0babdc43c32ee">USBD_Write()</a>, <a class="el" href="group__USB__COMMON.html#gac2a406f16d989b04c4fc5b37d5c10b45">USBTIMER_Start()</a>, and <a class="el" href="group__USB__COMMON.html#gab73c922427cf0d509788a8063451703f">USBTIMER_Stop()</a>.</p>
+<p>Referenced by <a class="el" href="group__CapSense.html#ga4a9a1233a70703ca91a6bc9fcf05ec19">CAPLESENSE_Init()</a>, <a class="el" href="group__DMADRV.html#gab503e066820cd13fd612f4365d4d07b2">DMADRV_AllocateChannel()</a>, <a class="el" href="group__DMADRV.html#ga73633db63cfd99ba01a68b05c24094ec">DMADRV_DeInit()</a>, <a class="el" href="group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3">DMADRV_FreeChannel()</a>, <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">DMADRV_Init()</a>, <a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar()</a>, <a class="el" href="group__RTCDRV.html#gaef2d97c6223617d158b05e03ee35950a">RTCDRV_AllocateTimer()</a>, <a class="el" href="group__RTCDRV.html#ga0ad8d9097523a568e484ad9f6920ba88">RTCDRV_IsRunning()</a>, <a class="el" href="group__RTCDRV.html#gaeee47cebc2ca33e571c965b90e1386d9">RTCDRV_StartTimer()</a>, <a class="el" href="group__RTCDRV.html#ga7d3614e56f17c24103336a37891579a4">RTCDRV_StopTimer()</a>, <a class="el" href="group__RTCDRV.html#ga3d7c481309659eeada554be33854c103">RTCDRV_TimeRemaining()</a>, <a class="el" href="group__SPIDRV.html#ga071d128b28b8acff08396fb090b8025a">SPIDRV_AbortTransfer()</a>, <a class="el" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239">SPIDRV_Init()</a>, <a class="el" href="group__SPIDRV.html#gaea943a66137078855a6511a75fb27437">SPIDRV_MTransferSingleItemB()</a>, <a class="el" href="group__SPIDRV.html#ga3e6e2f999eb2ef0fd16df41339e6dc84">SPIDRV_SetBitrate()</a>, <a class="el" href="group__SPIDRV.html#ga54ce984fad9b30b3e8e860b6ada5b77a">SPIDRV_SetFramelength()</a>, <a class="el" href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">UARTDRV_Abort()</a>, <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart()</a>, <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a>, <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a>, <a class="el" href="group__USB__DEVICE.html#ga83f32dfa4f6a5d010e413967850c52b2">USBD_AbortTransfer()</a>, <a class="el" href="group__USB__DEVICE.html#ga0e5f5bd847e7cc1c4c384bb6b7f0ce77">USBD_Init()</a>, <a class="el" href="group__USB__DEVICE.html#ga9e0a1cf705301d9e035feff27ea41cda">USBD_Read()</a>, <a class="el" href="group__USB__DEVICE.html#ga9fb12718f509c578656e4fc08bc40f69">USBD_RemoteWakeup()</a>, <a class="el" href="group__USB__DEVICE.html#ga656c8d2935af97156bc0babdc43c32ee">USBD_Write()</a>, <a class="el" href="group__USB__COMMON.html#gac2a406f16d989b04c4fc5b37d5c10b45">USBTIMER_Start()</a>, and <a class="el" href="group__USB__COMMON.html#gab73c922427cf0d509788a8063451703f">USBTIMER_Stop()</a>.</p>
 
 </div>
 </div>
@@ -734,6 +734,8 @@ Functions</h2></td></tr>
 <p>Enter CRITICAL section. Assumes that a <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a> exist in scope. </p>
 
 <p>Definition at line <a class="el" href="em__core_8h_source.html#l00106">106</a> of file <a class="el" href="em__core_8h_source.html">em_core.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__SLEEP.html#ga2845d5d6d00f408dda6894a654fd1adf">SLEEP_Sleep()</a>.</p>
 
 </div>
 </div>
@@ -777,7 +779,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="em__core_8h_source.html#l00142">142</a> of file <a class="el" href="em__core_8h_source.html">em_core.h</a>.</p>
 
-<p>Referenced by <a class="el" href="group__CapSense.html#ga4a9a1233a70703ca91a6bc9fcf05ec19">CAPLESENSE_Init()</a>, <a class="el" href="group__DMADRV.html#gab503e066820cd13fd612f4365d4d07b2">DMADRV_AllocateChannel()</a>, <a class="el" href="group__DMADRV.html#ga73633db63cfd99ba01a68b05c24094ec">DMADRV_DeInit()</a>, <a class="el" href="group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3">DMADRV_FreeChannel()</a>, <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">DMADRV_Init()</a>, <a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar()</a>, <a class="el" href="group__RTCDRV.html#gaef2d97c6223617d158b05e03ee35950a">RTCDRV_AllocateTimer()</a>, <a class="el" href="group__RTCDRV.html#ga0ad8d9097523a568e484ad9f6920ba88">RTCDRV_IsRunning()</a>, <a class="el" href="group__RTCDRV.html#gaeee47cebc2ca33e571c965b90e1386d9">RTCDRV_StartTimer()</a>, <a class="el" href="group__RTCDRV.html#ga7d3614e56f17c24103336a37891579a4">RTCDRV_StopTimer()</a>, <a class="el" href="group__RTCDRV.html#ga3d7c481309659eeada554be33854c103">RTCDRV_TimeRemaining()</a>, <a class="el" href="group__SLEEP.html#ga2845d5d6d00f408dda6894a654fd1adf">SLEEP_Sleep()</a>, <a class="el" href="group__SPIDRV.html#ga071d128b28b8acff08396fb090b8025a">SPIDRV_AbortTransfer()</a>, <a class="el" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239">SPIDRV_Init()</a>, <a class="el" href="group__SPIDRV.html#gaea943a66137078855a6511a75fb27437">SPIDRV_MTransferSingleItemB()</a>, <a class="el" href="group__SPIDRV.html#ga3e6e2f999eb2ef0fd16df41339e6dc84">SPIDRV_SetBitrate()</a>, <a class="el" href="group__SPIDRV.html#ga54ce984fad9b30b3e8e860b6ada5b77a">SPIDRV_SetFramelength()</a>, <a class="el" href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">UARTDRV_Abort()</a>, <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart()</a>, <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a>, <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a>, <a class="el" href="group__USB__DEVICE.html#ga83f32dfa4f6a5d010e413967850c52b2">USBD_AbortTransfer()</a>, <a class="el" href="group__USB__DEVICE.html#ga0e5f5bd847e7cc1c4c384bb6b7f0ce77">USBD_Init()</a>, <a class="el" href="group__USB__DEVICE.html#ga9e0a1cf705301d9e035feff27ea41cda">USBD_Read()</a>, <a class="el" href="group__USB__DEVICE.html#ga9fb12718f509c578656e4fc08bc40f69">USBD_RemoteWakeup()</a>, <a class="el" href="group__USB__DEVICE.html#ga656c8d2935af97156bc0babdc43c32ee">USBD_Write()</a>, <a class="el" href="group__USB__COMMON.html#gac2a406f16d989b04c4fc5b37d5c10b45">USBTIMER_Start()</a>, and <a class="el" href="group__USB__COMMON.html#gab73c922427cf0d509788a8063451703f">USBTIMER_Stop()</a>.</p>
+<p>Referenced by <a class="el" href="group__CapSense.html#ga4a9a1233a70703ca91a6bc9fcf05ec19">CAPLESENSE_Init()</a>, <a class="el" href="group__DMADRV.html#gab503e066820cd13fd612f4365d4d07b2">DMADRV_AllocateChannel()</a>, <a class="el" href="group__DMADRV.html#ga73633db63cfd99ba01a68b05c24094ec">DMADRV_DeInit()</a>, <a class="el" href="group__DMADRV.html#gab4453539f4d22aa650324685a9f197e3">DMADRV_FreeChannel()</a>, <a class="el" href="group__DMADRV.html#ga43d0052d81f16e72914f85248a8554b1">DMADRV_Init()</a>, <a class="el" href="group__RetargetIo.html#ga5af724185f484056b02b42f4ab184bfb">RETARGET_ReadChar()</a>, <a class="el" href="group__RTCDRV.html#gaef2d97c6223617d158b05e03ee35950a">RTCDRV_AllocateTimer()</a>, <a class="el" href="group__RTCDRV.html#ga0ad8d9097523a568e484ad9f6920ba88">RTCDRV_IsRunning()</a>, <a class="el" href="group__RTCDRV.html#gaeee47cebc2ca33e571c965b90e1386d9">RTCDRV_StartTimer()</a>, <a class="el" href="group__RTCDRV.html#ga7d3614e56f17c24103336a37891579a4">RTCDRV_StopTimer()</a>, <a class="el" href="group__RTCDRV.html#ga3d7c481309659eeada554be33854c103">RTCDRV_TimeRemaining()</a>, <a class="el" href="group__SPIDRV.html#ga071d128b28b8acff08396fb090b8025a">SPIDRV_AbortTransfer()</a>, <a class="el" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239">SPIDRV_Init()</a>, <a class="el" href="group__SPIDRV.html#gaea943a66137078855a6511a75fb27437">SPIDRV_MTransferSingleItemB()</a>, <a class="el" href="group__SPIDRV.html#ga3e6e2f999eb2ef0fd16df41339e6dc84">SPIDRV_SetBitrate()</a>, <a class="el" href="group__SPIDRV.html#ga54ce984fad9b30b3e8e860b6ada5b77a">SPIDRV_SetFramelength()</a>, <a class="el" href="group__UARTDRV.html#ga0abd859c2a17dafe03abceeb4c96a12a">UARTDRV_Abort()</a>, <a class="el" href="group__UARTDRV.html#ga431b9aab5c3ed4d3fdb272889de50c92">UARTDRV_InitLeuart()</a>, <a class="el" href="group__UARTDRV.html#gab1eef6fe085ae579747d5dcc52026e6d">UARTDRV_InitUart()</a>, <a class="el" href="group__Udelay.html#ga523f858d15b74728046ceca9796f3046">UDELAY_Calibrate()</a>, <a class="el" href="group__USB__DEVICE.html#ga83f32dfa4f6a5d010e413967850c52b2">USBD_AbortTransfer()</a>, <a class="el" href="group__USB__DEVICE.html#ga0e5f5bd847e7cc1c4c384bb6b7f0ce77">USBD_Init()</a>, <a class="el" href="group__USB__DEVICE.html#ga9e0a1cf705301d9e035feff27ea41cda">USBD_Read()</a>, <a class="el" href="group__USB__DEVICE.html#ga9fb12718f509c578656e4fc08bc40f69">USBD_RemoteWakeup()</a>, <a class="el" href="group__USB__DEVICE.html#ga656c8d2935af97156bc0babdc43c32ee">USBD_Write()</a>, <a class="el" href="group__USB__COMMON.html#gac2a406f16d989b04c4fc5b37d5c10b45">USBTIMER_Start()</a>, and <a class="el" href="group__USB__COMMON.html#gab73c922427cf0d509788a8063451703f">USBTIMER_Stop()</a>.</p>
 
 </div>
 </div>
@@ -796,6 +798,8 @@ Functions</h2></td></tr>
 <p>Exit CRITICAL section. Assumes that a <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a> exist in scope. </p>
 
 <p>Definition at line <a class="el" href="em__core_8h_source.html#l00110">110</a> of file <a class="el" href="em__core_8h_source.html">em_core.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__SLEEP.html#ga2845d5d6d00f408dda6894a654fd1adf">SLEEP_Sleep()</a>.</p>
 
 </div>
 </div>
@@ -849,7 +853,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Placeholder for optional interrupt handler entry code. This might be needed when working with an RTOS. </p>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00285">285</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00287">287</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 </div>
 </div>
@@ -867,7 +871,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Placeholder for optional interrupt handler exit code. This might be needed when working with an RTOS. </p>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00291">291</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00293">293</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 </div>
 </div>
@@ -1093,7 +1097,7 @@ Functions</h2></td></tr>
 <p>Disable interrupts with priority lower or equal to <a class="el" href="group__CORE.html#gadf7237e6f40425caeb2ac56efb97b43b">CORE_ATOMIC_BASE_PRIORITY_LEVEL</a>. Sets core BASEPRI register to CORE_ATOMIC_BASE_PRIORITY_LEVEL.</p>
 <dl class="section note"><dt>Note</dt><dd>If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE_ATOMIC_METHOD</a> is <a class="el" href="group__CORE.html#gaeba348aed5c4f0007a030f1c8820ee60">CORE_ATOMIC_METHOD_PRIMASK</a>, this function is identical to <a class="el" href="group__CORE.html#ga27d5f5d8592e4d6de95a50c44a51ce9f">CORE_CriticalDisableIrq()</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00388">388</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00390">390</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32HG322F64__Core.html#gae3fe3587d5100c787e02102ce3944460">__NVIC_PRIO_BITS</a>, and <a class="el" href="group__CORE.html#gadf7237e6f40425caeb2ac56efb97b43b">CORE_ATOMIC_BASE_PRIORITY_LEVEL</a>.</p>
 
@@ -1119,7 +1123,7 @@ Functions</h2></td></tr>
 <dd>
 If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE_ATOMIC_METHOD</a> is <a class="el" href="group__CORE.html#gaeba348aed5c4f0007a030f1c8820ee60">CORE_ATOMIC_METHOD_PRIMASK</a>, this function is identical to <a class="el" href="group__CORE.html#gad9b01a782ebe5720b3505c30126c7596">CORE_CriticalEnableIrq()</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00412">412</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00414">414</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 </div>
 </div>
@@ -1140,7 +1144,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 <p>Disable interrupts. </p>
 <p>Disable all interrupts by setting PRIMASK. (Fault exception handlers will still be enabled). </p>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00311">311</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00313">313</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 </div>
 </div>
@@ -1161,7 +1165,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 <p>Enable interrupts. </p>
 <p>Enable interrupts by clearing PRIMASK. </p>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00322">322</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00324">324</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 </div>
 </div>
@@ -1184,7 +1188,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 <dl class="section note"><dt>Note</dt><dd>If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE_ATOMIC_METHOD</a> is <a class="el" href="group__CORE.html#gaeba348aed5c4f0007a030f1c8820ee60">CORE_ATOMIC_METHOD_PRIMASK</a>, this function is identical to <a class="el" href="group__CORE.html#ga420c5e796d60862f374fe02797bc67cc">CORE_EnterCritical()</a>.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The value of BASEPRI register prior to ATOMIC section entry. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00435">435</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00437">437</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32HG322F64__Core.html#gae3fe3587d5100c787e02102ce3944460">__NVIC_PRIO_BITS</a>, and <a class="el" href="group__CORE.html#gadf7237e6f40425caeb2ac56efb97b43b">CORE_ATOMIC_BASE_PRIORITY_LEVEL</a>.</p>
 
@@ -1208,7 +1212,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 <p>When a CRITICAL section is entered, all interrupts (except fault handlers) are disabled.</p>
 <dl class="section return"><dt>Returns</dt><dd>The value of PRIMASK register prior to CRITICAL section entry. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00337">337</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00339">339</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 </div>
 </div>
@@ -1246,7 +1250,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00513">513</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00515">515</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="group__CORE.html#gad817d908619afc82a790744650da0e28">CORE_CRITICAL_SECTION</a>.</p>
 
@@ -1275,7 +1279,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 </dl>
 <dl class="section note"><dt>Note</dt><dd>If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE_ATOMIC_METHOD</a> is set to <a class="el" href="group__CORE.html#gaeba348aed5c4f0007a030f1c8820ee60">CORE_ATOMIC_METHOD_PRIMASK</a>, this function is identical to <a class="el" href="group__CORE.html#gae3486ed889fc97ae4dcbc840fedb9421">CORE_ExitCritical()</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00461">461</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00463">463</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 </div>
 </div>
@@ -1301,7 +1305,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00353">353</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00355">355</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 </div>
 </div>
@@ -1327,7 +1331,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00726">726</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00728">728</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="group__CORE.html#gad817d908619afc82a790744650da0e28">CORE_CRITICAL_SECTION</a>.</p>
 
@@ -1356,7 +1360,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if all NVIC interrupt mask bits are clear. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00743">743</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00745">745</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="structCORE__nvicMask__t.html#a4cccf12e99e45609625447624e39a22b">CORE_nvicMask_t::a</a>, and <a class="el" href="group__CORE.html#gad817d908619afc82a790744650da0e28">CORE_CRITICAL_SECTION</a>.</p>
 
@@ -1386,7 +1390,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 <dl class="section return"><dt>Returns</dt><dd>The handler address.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Uses the interrupt vector table defined by current VTOR register value. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00798">798</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00800">800</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32HG322F64__Part.html#ga1f5541236b626715663b8cc3ec32e50d">EXT_IRQ_COUNT</a>.</p>
 
@@ -1410,7 +1414,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 <dl class="section return"><dt>Returns</dt><dd>True if cpu in handler mode (currently executing an interrupt handler). <br />
  False if cpu in thread mode. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00645">645</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00647">647</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 </div>
 </div>
@@ -1476,7 +1480,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00854">854</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00856">856</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32HG322F64__Part.html#gaaabb815afa7349a3515b55233083b28d">RAM_MEM_BASE</a>, and <a class="el" href="group__EFM32HG322F64__Part.html#ga0e28b64b617c6ed6cd921da22b52280d">RAM_MEM_SIZE</a>.</p>
 
@@ -1505,9 +1509,11 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if interrupt disabled or blocked. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00660">660</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00662">662</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32HG322F64__Core.html#gae3fe3587d5100c787e02102ce3944460">__NVIC_PRIO_BITS</a>, <a class="el" href="group__CORE.html#ga788fc3ea8bf0a931e5b3c9266a543c25">CORE_NvicIRQDisabled()</a>, <a class="el" href="group__EFM32HG322F64__Part.html#ga1f5541236b626715663b8cc3ec32e50d">EXT_IRQ_COUNT</a>, and <a class="el" href="group__EFM32HG322F64.html#gga666eb0caeb12ec0e281415592ae89083a4ce820b3cc6cf3a796b41aadc0cf1237">SVCall_IRQn</a>.</p>
+
+<p>Referenced by <a class="el" href="group__UARTDRV.html#ga762bade408c1a64812467e1f58026899">UARTDRV_ForceTransmit()</a>.</p>
 
 </div>
 </div>
@@ -1528,7 +1534,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 <p>Check if interrupts are disabled. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if interrupts are disabled. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00707">707</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00709">709</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32HG322F64__Core.html#gae3fe3587d5100c787e02102ce3944460">__NVIC_PRIO_BITS</a>, and <a class="el" href="group__CORE.html#gadf7237e6f40425caeb2ac56efb97b43b">CORE_ATOMIC_BASE_PRIORITY_LEVEL</a>.</p>
 
@@ -1556,7 +1562,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00529">529</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00531">531</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="group__CORE.html#gad817d908619afc82a790744650da0e28">CORE_CRITICAL_SECTION</a>.</p>
 
@@ -1576,7 +1582,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
       </table>
 </div><div class="memdoc">
 
-<p>Get current NVIC interrupt enable mask. </p>
+<p>Set current NVIC interrupt enable mask. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">enable</td><td>Mask specifying which NVIC interrupts are currently enabled. </td></tr>
@@ -1584,7 +1590,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00543">543</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00545">545</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="group__CORE.html#gad817d908619afc82a790744650da0e28">CORE_CRITICAL_SECTION</a>.</p>
 
@@ -1613,7 +1619,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if interrupt disabled. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00776">776</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00778">778</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="structCORE__nvicMask__t.html#a4cccf12e99e45609625447624e39a22b">CORE_nvicMask_t::a</a>, and <a class="el" href="group__EFM32HG322F64__Part.html#ga1f5541236b626715663b8cc3ec32e50d">EXT_IRQ_COUNT</a>.</p>
 
@@ -1654,7 +1660,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00631">631</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00633">633</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="structCORE__nvicMask__t.html#a4cccf12e99e45609625447624e39a22b">CORE_nvicMask_t::a</a>, and <a class="el" href="group__EFM32HG322F64__Part.html#ga1f5541236b626715663b8cc3ec32e50d">EXT_IRQ_COUNT</a>.</p>
 
@@ -1693,7 +1699,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00615">615</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00617">617</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="structCORE__nvicMask__t.html#a4cccf12e99e45609625447624e39a22b">CORE_nvicMask_t::a</a>, and <a class="el" href="group__EFM32HG322F64__Part.html#ga1f5541236b626715663b8cc3ec32e50d">EXT_IRQ_COUNT</a>.</p>
 
@@ -1733,7 +1739,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Uses the interrupt vector table defined by current VTOR register value. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00817">817</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00819">819</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32HG322F64__Part.html#ga1f5541236b626715663b8cc3ec32e50d">EXT_IRQ_COUNT</a>.</p>
 
@@ -1758,7 +1764,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 <dd>
 If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE_ATOMIC_METHOD</a> is <a class="el" href="group__CORE.html#gaeba348aed5c4f0007a030f1c8820ee60">CORE_ATOMIC_METHOD_PRIMASK</a>, this function is identical to <a class="el" href="group__CORE.html#ga768aa167717431945535a3677f6c6797">CORE_YieldCritical()</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00484">484</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00486">486</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32HG322F64__Core.html#gae3fe3587d5100c787e02102ce3944460">__NVIC_PRIO_BITS</a>, and <a class="el" href="group__CORE.html#gadf7237e6f40425caeb2ac56efb97b43b">CORE_ATOMIC_BASE_PRIORITY_LEVEL</a>.</p>
 
@@ -1781,7 +1787,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 <p>Brief interrupt enable/disable sequence to allow handling of pending interrupts. </p>
 <dl class="section note"><dt>Note</dt><dd>Usully used within a CRITICAL section. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00368">368</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00370">370</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 </div>
 </div>
@@ -1806,9 +1812,9 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Usully used within a NVIC mask section. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Usually used within a NVIC mask section. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__core_8c_source.html#l00561">561</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
+<p>Definition at line <a class="el" href="em__core_8c_source.html#l00563">563</a> of file <a class="el" href="em__core_8c_source.html">em_core.c</a>.</p>
 
 <p>References <a class="el" href="structCORE__nvicMask__t.html#a4cccf12e99e45609625447624e39a22b">CORE_nvicMask_t::a</a>, and <a class="el" href="group__CORE.html#gad817d908619afc82a790744650da0e28">CORE_CRITICAL_SECTION</a>.</p>
 
@@ -1819,7 +1825,7 @@ If <a class="el" href="group__CORE.html#ga3a3362b0f3a8415dcae958dfda16b8e2">CORE
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 15:53:28 for EFM32 Happy Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:44:13 for EFM32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

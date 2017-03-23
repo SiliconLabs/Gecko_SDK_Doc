@@ -1,12 +1,15 @@
 var searchData=
 [
-  ['magic',['MAGIC',['../structBC__TypeDef.html#a67bf0459db0bb440ae47aacc9ad706ad',1,'BC_TypeDef::MAGIC()'],['../structBCP__Packet__.html#aaf7b261a823481710ab67531e7e21111',1,'BCP_Packet_::magic()'],['../structBCP__Packet.html#a3a792f124d8f9985820b16959977a5b4',1,'BCP_Packet::magic()'],['../structBCP__PacketHeader.html#a2c263dd3b621b7bc4b2f5ef5eb5efc8e',1,'BCP_PacketHeader::magic()']]],
+  ['mag',['mag',['../structSI1133__Coeff__TypeDef.html#ada62f712f8d6a5c0e1f23a76a85d2e0c',1,'SI1133_Coeff_TypeDef']]],
+  ['magic',['magic',['../struct____BMP__Header.html#a9d2ce9a5220e472cae082b09ba50a01f',1,'__BMP_Header::magic()'],['../structBCP__Packet__.html#aaf7b261a823481710ab67531e7e21111',1,'BCP_Packet_::magic()'],['../structBCP__Packet.html#a3a792f124d8f9985820b16959977a5b4',1,'BCP_Packet::magic()'],['../structBCP__PacketHeader.html#a2c263dd3b621b7bc4b2f5ef5eb5efc8e',1,'BCP_PacketHeader::magic()'],['../structBC__TypeDef.html#a67bf0459db0bb440ae47aacc9ad706ad',1,'BC_TypeDef::MAGIC()']]],
   ['major',['major',['../structSYSTEM__ChipRevision__TypeDef.html#a79ebea0f9a0321ec622d9098afe5bdd1',1,'SYSTEM_ChipRevision_TypeDef']]],
   ['manufacturercode',['manufacturerCode',['../structNANDFLASH__Info__TypeDef.html#a86fa0f38e71a4d26d3e5708c50f0e28b',1,'NANDFLASH_Info_TypeDef']]],
   ['manufacturerid',['manufacturerId',['../structNORFLASH__Info__TypeDef.html#ab3f645440c81ddde7651b8fe1bf2c9d4',1,'NORFLASH_Info_TypeDef']]],
+  ['manufacturerstring',['manufacturerString',['../structUSBX__Init__t.html#a1d841a91461cd90860fda4fd373bc554',1,'USBX_Init_t']]],
   ['masslock',['MASSLOCK',['../structMSC__TypeDef.html#a4317fc61af3f0be753589133d9e3be02',1,'MSC_TypeDef']]],
   ['master',['master',['../structI2C__Init__TypeDef.html#a14b8b0fe9a200168abb347ce1773a7d4',1,'I2C_Init_TypeDef::master()'],['../structUSART__InitSync__TypeDef.html#a7fa8a23b2760a83766019d3309169386',1,'USART_InitSync_TypeDef::master()'],['../structMTB__TypeDef.html#a04616b09410f8c1c2f0f332480cc829f',1,'MTB_TypeDef::MASTER()']]],
   ['maxburst',['maxBurst',['../structMSDD__CmdStatus__TypeDef.html#a1bce10e179842e78b63f6b9e0c1cbdbd',1,'MSDD_CmdStatus_TypeDef']]],
+  ['maxpower',['maxPower',['../structUSBX__Init__t.html#af64be6f0b746c5d76893f0fe3fe1ff82',1,'USBX_Init_t']]],
   ['mbox_5ftxctrl',['MBOX_TXCTRL',['../structBC__TypeDef.html#a7cc1cd3dd05df0726626615276e4e052',1,'BC_TypeDef']]],
   ['mbox_5ftxdata',['MBOX_TXDATA',['../structBC__TypeDef.html#ad16275d732511e36355dcc8968adf0d9',1,'BC_TypeDef']]],
   ['mbox_5ftxstatus0',['MBOX_TXSTATUS0',['../structBC__TypeDef.html#aa15a3c8690b800c923b5b7373a05762f',1,'BC_TypeDef']]],

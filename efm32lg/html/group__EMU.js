@@ -40,6 +40,9 @@ var group__EMU =
       [ "emuPower_MainBU", "group__EMU.html#gga10d22ac0d94024e589c77a265fe8ad99a75ce0a5ffd7e68ab350b708cb61ccf2f", null ],
       [ "emuPower_NoDiode", "group__EMU.html#gga10d22ac0d94024e589c77a265fe8ad99ae4d74981a1184c22339a55eedfe6f99b", null ]
     ] ],
+    [ "EMU_PowerConfig_TypeDef", "group__EMU.html#ga87842440cb0cf01e18480e6d665c581f", [
+      [ "emuPowerConfig_DcdcToDvdd", "group__EMU.html#gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9", null ]
+    ] ],
     [ "EMU_Probe_TypeDef", "group__EMU.html#ga30c5ddc1f074c2400fe8efd6a67eeec7", [
       [ "emuProbe_Disable", "group__EMU.html#gga30c5ddc1f074c2400fe8efd6a67eeec7ad42740c242495edd6bb30d04b292ec43", null ],
       [ "emuProbe_VDDDReg", "group__EMU.html#gga30c5ddc1f074c2400fe8efd6a67eeec7a7a6d8b1bba4fb493e85c5d57adc76a3b", null ],
@@ -52,15 +55,22 @@ var group__EMU =
       [ "emuRes_Res2", "group__EMU.html#gga847cd1db4dd72a604c1cc7f63119a45fa5280465c35c052fb6f47b4793f15b897", null ],
       [ "emuRes_Res3", "group__EMU.html#gga847cd1db4dd72a604c1cc7f63119a45fa0a0a7abecf9869edc4e8a0128a8123dd", null ]
     ] ],
-    [ "EMU_BUPDInit", "group__EMU.html#ga3711dafbd1f74eed5fa2920efa9aaa9b", null ],
+    [ "EMU_BUPDInit", "group__EMU.html#ga7dc4f8e2bc4be77fe0acc22ae25168c5", null ],
     [ "EMU_BUPinEnable", "group__EMU.html#ga423641b01d143cf598391ff9d772bb23", null ],
     [ "EMU_BUReady", "group__EMU.html#gaae0a7a99d097087a971eb729d0082ab7", null ],
     [ "EMU_BUThresholdSet", "group__EMU.html#ga7656edeb5375a9d995c79dcdcfdba2e3", null ],
     [ "EMU_BUThresRangeSet", "group__EMU.html#ga1ea702e017a7d98426a3a2516fe08520", null ],
-    [ "EMU_EM23Init", "group__EMU.html#ga27ca632c20c9251019338c5690279974", null ],
+    [ "EMU_DCDCConductionModeSet", "group__EMU.html#ga04e1192310f75a52ad4ae5a5aaf3e6a4", null ],
+    [ "EMU_DCDCInit", "group__EMU.html#ga9537dcfde6aace1ae4fcb1c949d10da0", null ],
+    [ "EMU_DCDCLnRcoBandSet", "group__EMU.html#ga4b8909b4558d78ba21bce5b57f5557dc", null ],
+    [ "EMU_DCDCModeSet", "group__EMU.html#gade447bc354ddd2893ac668a7475e76fd", null ],
+    [ "EMU_DCDCOptimizeSlice", "group__EMU.html#ga06bec9f178a2d2741c07735e138305b3", null ],
+    [ "EMU_DCDCOutputVoltageSet", "group__EMU.html#gab99ce5b7cbbe4b4da1112dba636e1d71", null ],
+    [ "EMU_DCDCPowerOff", "group__EMU.html#ga5625f85c3d89aba15e151ed8d1b701af", null ],
+    [ "EMU_EM23Init", "group__EMU.html#ga8d66846de92bb95a33a37a9f2357e247", null ],
     [ "EMU_EM2Block", "group__EMU.html#ga72910c09de24f4e2f8f170dc06bd8c07", null ],
     [ "EMU_EM2UnBlock", "group__EMU.html#ga9e959a9fd56ac4a2e18877b9b839d795", null ],
-    [ "EMU_EM4Init", "group__EMU.html#ga06bca70635ca5004a01c35eeafa15690", null ],
+    [ "EMU_EM4Init", "group__EMU.html#gabf5fb49f95c827b6ef45597595e5505c", null ],
     [ "EMU_EM4Lock", "group__EMU.html#gaa07523b26da61b61201e56e1b55b64b2", null ],
     [ "EMU_EnterEM1", "group__EMU.html#gaed0c4092bd3adc7a6679e1e2903d1267", null ],
     [ "EMU_EnterEM2", "group__EMU.html#gacadc56c5e2a8fb2890edd139b694b25b", null ],
@@ -74,6 +84,8 @@ var group__EMU =
     [ "EMU_IntSet", "group__EMU.html#gadc9443791457603e4643d4c1184aeb65", null ],
     [ "EMU_Lock", "group__EMU.html#gaa102a7feedcfdf0165e8137495e15c81", null ],
     [ "EMU_MemPwrDown", "group__EMU.html#ga49eb5750384ff279aae225ab5922e9f1", null ],
+    [ "EMU_RamPowerDown", "group__EMU.html#ga9b023a731a664add13a0ee090ce1db69", null ],
+    [ "EMU_Restore", "group__EMU.html#gaff9e6aa2435b13a50a1dfa1f7547ad12", null ],
     [ "EMU_Unlock", "group__EMU.html#gaae70d64f013a75e2d728b3a6d71e3f62", null ],
     [ "EMU_UpdateOscConfig", "group__EMU.html#ga3d442fa018de5138afb19a2b85797099", null ]
 ];

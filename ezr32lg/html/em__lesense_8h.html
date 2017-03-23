@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EZR32 Leopard Gecko Software Documentation: c:/work/super/platform/emlib/inc/em_lesense.h File Reference</title>
+<title>EZR32 Leopard Gecko Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/platform/emlib/inc/em_lesense.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('em__lesense_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Low Energy Sensor (LESENSE) peripheral API. </p>
-<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.1.2</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -179,6 +179,10 @@ Macros</h2></td></tr>
 <tr class="separator:ga130bb6e5e802e4b28f993753de2ee313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa8b03f76f26cf06cbc09efae88e4336a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaa8b03f76f26cf06cbc09efae88e4336a">LESENSE_INIT_DEFAULT</a></td></tr>
 <tr class="separator:gaa8b03f76f26cf06cbc09efae88e4336a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae21de722cc8d6864311f98e89608dd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaae21de722cc8d6864311f98e89608dd6">LESENSE_NUM_CHANNELS</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:gaae21de722cc8d6864311f98e89608dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36f4e64f9d121f04e761a64d8b4a8231"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga36f4e64f9d121f04e761a64d8b4a8231">LESENSE_NUM_DECODER_STATES</a>&#160;&#160;&#160;(<a class="el" href="group__EZR32LG__LESENSE__BitFields.html#ga504e454dfaad620bcd9c8a7984ef1780">_LESENSE_DECSTATE_DECSTATE_MASK</a> + 1)</td></tr>
+<tr class="separator:ga36f4e64f9d121f04e761a64d8b4a8231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac1c18b05d96c2ddb0ca4ff5f7cc61f4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gac1c18b05d96c2ddb0ca4ff5f7cc61f4c">LESENSE_PERCTRL_DESC_DEFAULT</a></td></tr>
 <tr class="separator:gac1c18b05d96c2ddb0ca4ff5f7cc61f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe5c7dff185ddcd7047f2b35da859bbd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gabe5c7dff185ddcd7047f2b35da859bbd">LESENSE_SCAN_CONF_DEFAULT</a></td></tr>
@@ -272,7 +276,7 @@ Enumerations</h2></td></tr>
  }<tr class="separator:gaff36cd1e8c65cae36da232832e03dd1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ga58e8af54c9773f66b045a6a17b10cc3a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga58e8af54c9773f66b045a6a17b10cc3a">LESENSE_ChSampleMode_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__LESENSE.html#gga58e8af54c9773f66b045a6a17b10cc3aabbcdd490433e76649dc885858a5f261a">lesenseSampleModeCounter</a> = LESENSE_CH_INTERACT_SAMPLE_COUNTER, 
+&#160;&#160;<a class="el" href="group__LESENSE.html#gga58e8af54c9773f66b045a6a17b10cc3aabbcdd490433e76649dc885858a5f261a">lesenseSampleModeCounter</a> = 0x0 &lt;&lt; _LESENSE_CH_INTERACT_SAMPLE_SHIFT, 
 <br />
 &#160;&#160;<a class="el" href="group__LESENSE.html#gga58e8af54c9773f66b045a6a17b10cc3aa304ef9d9636059c8f847084887310088">lesenseSampleModeACMP</a> = LESENSE_CH_INTERACT_SAMPLE_ACMP
 <br />
@@ -446,42 +450,42 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5e74a058bf6cb6a84b1b207ad7d0abcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga5e74a058bf6cb6a84b1b207ad7d0abcd">LESENSE_AltExConfig</a> (<a class="el" href="structLESENSE__ConfAltEx__TypeDef.html">LESENSE_ConfAltEx_TypeDef</a> const *confAltEx)</td></tr>
-<tr class="memdesc:ga5e74a058bf6cb6a84b1b207ad7d0abcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the LESENSE alternate excitation modes.  <a href="group__LESENSE.html#ga5e74a058bf6cb6a84b1b207ad7d0abcd">More...</a><br /></td></tr>
-<tr class="separator:ga5e74a058bf6cb6a84b1b207ad7d0abcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac40301c926bfd10cf52c7a37e3fbd719"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gac40301c926bfd10cf52c7a37e3fbd719">LESENSE_AltExConfig</a> (const <a class="el" href="structLESENSE__ConfAltEx__TypeDef.html">LESENSE_ConfAltEx_TypeDef</a> *confAltEx)</td></tr>
+<tr class="memdesc:gac40301c926bfd10cf52c7a37e3fbd719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the LESENSE alternate excitation modes.  <a href="group__LESENSE.html#gac40301c926bfd10cf52c7a37e3fbd719">More...</a><br /></td></tr>
+<tr class="separator:gac40301c926bfd10cf52c7a37e3fbd719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaebe21d230636d75d99dea2cc315305a0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaebe21d230636d75d99dea2cc315305a0">LESENSE_ChannelActiveGet</a> (void)</td></tr>
 <tr class="memdesc:gaebe21d230636d75d99dea2cc315305a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the currently active channel index.  <a href="group__LESENSE.html#gaebe21d230636d75d99dea2cc315305a0">More...</a><br /></td></tr>
 <tr class="separator:gaebe21d230636d75d99dea2cc315305a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24763a5f55c777f3021963a4f7809a96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga24763a5f55c777f3021963a4f7809a96">LESENSE_ChannelAllConfig</a> (<a class="el" href="structLESENSE__ChAll__TypeDef.html">LESENSE_ChAll_TypeDef</a> const *confChAll)</td></tr>
-<tr class="memdesc:ga24763a5f55c777f3021963a4f7809a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure all (16) LESENSE sensor channels.  <a href="group__LESENSE.html#ga24763a5f55c777f3021963a4f7809a96">More...</a><br /></td></tr>
-<tr class="separator:ga24763a5f55c777f3021963a4f7809a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6aa126a4b073bd48954c8903da1bf47f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga6aa126a4b073bd48954c8903da1bf47f">LESENSE_ChannelConfig</a> (<a class="el" href="structLESENSE__ChDesc__TypeDef.html">LESENSE_ChDesc_TypeDef</a> const *confCh, uint32_t const chIdx)</td></tr>
-<tr class="memdesc:ga6aa126a4b073bd48954c8903da1bf47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure a single LESENSE sensor channel.  <a href="group__LESENSE.html#ga6aa126a4b073bd48954c8903da1bf47f">More...</a><br /></td></tr>
-<tr class="separator:ga6aa126a4b073bd48954c8903da1bf47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga611f48ec1dcb0e3f6007a5245fcbac7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga611f48ec1dcb0e3f6007a5245fcbac7f">LESENSE_ChannelEnable</a> (uint8_t const chIdx, bool const enaScanCh, bool const enaPin)</td></tr>
-<tr class="memdesc:ga611f48ec1dcb0e3f6007a5245fcbac7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable LESENSE scan channel and the pin assigned to it.  <a href="group__LESENSE.html#ga611f48ec1dcb0e3f6007a5245fcbac7f">More...</a><br /></td></tr>
-<tr class="separator:ga611f48ec1dcb0e3f6007a5245fcbac7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b6111131d7b5d5d902e3bd6473e5fab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga4b6111131d7b5d5d902e3bd6473e5fab">LESENSE_ChannelAllConfig</a> (const <a class="el" href="structLESENSE__ChAll__TypeDef.html">LESENSE_ChAll_TypeDef</a> *confChAll)</td></tr>
+<tr class="memdesc:ga4b6111131d7b5d5d902e3bd6473e5fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure all (16) LESENSE sensor channels.  <a href="group__LESENSE.html#ga4b6111131d7b5d5d902e3bd6473e5fab">More...</a><br /></td></tr>
+<tr class="separator:ga4b6111131d7b5d5d902e3bd6473e5fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea5de81162fddc14155f27f38fa79d20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaea5de81162fddc14155f27f38fa79d20">LESENSE_ChannelConfig</a> (const <a class="el" href="structLESENSE__ChDesc__TypeDef.html">LESENSE_ChDesc_TypeDef</a> *confCh, uint32_t chIdx)</td></tr>
+<tr class="memdesc:gaea5de81162fddc14155f27f38fa79d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure a single LESENSE sensor channel.  <a href="group__LESENSE.html#gaea5de81162fddc14155f27f38fa79d20">More...</a><br /></td></tr>
+<tr class="separator:gaea5de81162fddc14155f27f38fa79d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8f11a4d13a561ad6599335e221e92f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaf8f11a4d13a561ad6599335e221e92f4">LESENSE_ChannelEnable</a> (uint8_t chIdx, bool enaScanCh, bool enaPin)</td></tr>
+<tr class="memdesc:gaf8f11a4d13a561ad6599335e221e92f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable LESENSE scan channel and the pin assigned to it.  <a href="group__LESENSE.html#gaf8f11a4d13a561ad6599335e221e92f4">More...</a><br /></td></tr>
+<tr class="separator:gaf8f11a4d13a561ad6599335e221e92f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad39d66ad78cc0a5499bbf213e8b9bc6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gad39d66ad78cc0a5499bbf213e8b9bc6b">LESENSE_ChannelEnableMask</a> (uint16_t chMask, uint16_t pinMask)</td></tr>
 <tr class="memdesc:gad39d66ad78cc0a5499bbf213e8b9bc6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable LESENSE scan channel and the pin assigned to it.  <a href="group__LESENSE.html#gad39d66ad78cc0a5499bbf213e8b9bc6b">More...</a><br /></td></tr>
 <tr class="separator:gad39d66ad78cc0a5499bbf213e8b9bc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0f60936997170e7563c97552b99bb88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaa0f60936997170e7563c97552b99bb88">LESENSE_ChannelThresSet</a> (uint8_t const chIdx, uint16_t const acmpThres, uint16_t const cntThres)</td></tr>
-<tr class="memdesc:gaa0f60936997170e7563c97552b99bb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LESENSE channel threshold parameters.  <a href="group__LESENSE.html#gaa0f60936997170e7563c97552b99bb88">More...</a><br /></td></tr>
-<tr class="separator:gaa0f60936997170e7563c97552b99bb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga81efdc1593d4cbdd8e599f8cd1a42aa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga81efdc1593d4cbdd8e599f8cd1a42aa1">LESENSE_ChannelTimingSet</a> (uint8_t const chIdx, uint8_t const exTime, uint8_t const sampleDelay, uint8_t const measDelay)</td></tr>
-<tr class="memdesc:ga81efdc1593d4cbdd8e599f8cd1a42aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LESENSE channel timing parameters.  <a href="group__LESENSE.html#ga81efdc1593d4cbdd8e599f8cd1a42aa1">More...</a><br /></td></tr>
-<tr class="separator:ga81efdc1593d4cbdd8e599f8cd1a42aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ffd0b11de75b11d122d5a62d1a7fbab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga1ffd0b11de75b11d122d5a62d1a7fbab">LESENSE_ClkDivSet</a> (<a class="el" href="group__LESENSE.html#gad75ff5fe98fbe7fe30e79150803c1d7d">LESENSE_ChClk_TypeDef</a> const clk, <a class="el" href="group__LESENSE.html#ga87cfed7d62c2ab576068a3beda57b1d0">LESENSE_ClkPresc_TypeDef</a> const clkDiv)</td></tr>
-<tr class="memdesc:ga1ffd0b11de75b11d122d5a62d1a7fbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set clock division for LESENSE timers.  <a href="group__LESENSE.html#ga1ffd0b11de75b11d122d5a62d1a7fbab">More...</a><br /></td></tr>
-<tr class="separator:ga1ffd0b11de75b11d122d5a62d1a7fbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab77af68ee8b46ed509e570f8c0b18e47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gab77af68ee8b46ed509e570f8c0b18e47">LESENSE_ChannelThresSet</a> (uint8_t chIdx, uint16_t acmpThres, uint16_t cntThres)</td></tr>
+<tr class="memdesc:gab77af68ee8b46ed509e570f8c0b18e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LESENSE channel threshold parameters.  <a href="group__LESENSE.html#gab77af68ee8b46ed509e570f8c0b18e47">More...</a><br /></td></tr>
+<tr class="separator:gab77af68ee8b46ed509e570f8c0b18e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bc2ec714a8ceb1a29fcf5769724059e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga8bc2ec714a8ceb1a29fcf5769724059e">LESENSE_ChannelTimingSet</a> (uint8_t chIdx, uint8_t exTime, uint8_t sampleDelay, uint16_t measDelay)</td></tr>
+<tr class="memdesc:ga8bc2ec714a8ceb1a29fcf5769724059e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LESENSE channel timing parameters.  <a href="group__LESENSE.html#ga8bc2ec714a8ceb1a29fcf5769724059e">More...</a><br /></td></tr>
+<tr class="separator:ga8bc2ec714a8ceb1a29fcf5769724059e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b1ce951e3a547fdc391dab22908d436"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga9b1ce951e3a547fdc391dab22908d436">LESENSE_ClkDivSet</a> (<a class="el" href="group__LESENSE.html#gad75ff5fe98fbe7fe30e79150803c1d7d">LESENSE_ChClk_TypeDef</a> clk, <a class="el" href="group__LESENSE.html#ga87cfed7d62c2ab576068a3beda57b1d0">LESENSE_ClkPresc_TypeDef</a> clkDiv)</td></tr>
+<tr class="memdesc:ga9b1ce951e3a547fdc391dab22908d436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set clock division for LESENSE timers.  <a href="group__LESENSE.html#ga9b1ce951e3a547fdc391dab22908d436">More...</a><br /></td></tr>
+<tr class="separator:ga9b1ce951e3a547fdc391dab22908d436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga13e2e54c63941457aa18aed1c4462cd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga13e2e54c63941457aa18aed1c4462cd4">LESENSE_DecoderStart</a> (void)</td></tr>
 <tr class="memdesc:ga13e2e54c63941457aa18aed1c4462cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start LESENSE decoder.  <a href="group__LESENSE.html#ga13e2e54c63941457aa18aed1c4462cd4">More...</a><br /></td></tr>
 <tr class="separator:ga13e2e54c63941457aa18aed1c4462cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c9e0e09e723fa04321bc17773b1e253"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga5c9e0e09e723fa04321bc17773b1e253">LESENSE_DecoderStateAllConfig</a> (<a class="el" href="structLESENSE__DecStAll__TypeDef.html">LESENSE_DecStAll_TypeDef</a> const *confDecStAll)</td></tr>
-<tr class="memdesc:ga5c9e0e09e723fa04321bc17773b1e253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure all LESENSE decoder states.  <a href="group__LESENSE.html#ga5c9e0e09e723fa04321bc17773b1e253">More...</a><br /></td></tr>
-<tr class="separator:ga5c9e0e09e723fa04321bc17773b1e253"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaef8bc2c145fcae89fc4a3b6516bb4654"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaef8bc2c145fcae89fc4a3b6516bb4654">LESENSE_DecoderStateConfig</a> (<a class="el" href="structLESENSE__DecStDesc__TypeDef.html">LESENSE_DecStDesc_TypeDef</a> const *confDecSt, uint32_t const decSt)</td></tr>
-<tr class="memdesc:gaef8bc2c145fcae89fc4a3b6516bb4654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure a single LESENSE decoder state.  <a href="group__LESENSE.html#gaef8bc2c145fcae89fc4a3b6516bb4654">More...</a><br /></td></tr>
-<tr class="separator:gaef8bc2c145fcae89fc4a3b6516bb4654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5529ef6ab4838a70159578598d3b01da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga5529ef6ab4838a70159578598d3b01da">LESENSE_DecoderStateAllConfig</a> (const <a class="el" href="structLESENSE__DecStAll__TypeDef.html">LESENSE_DecStAll_TypeDef</a> *confDecStAll)</td></tr>
+<tr class="memdesc:ga5529ef6ab4838a70159578598d3b01da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure all LESENSE decoder states.  <a href="group__LESENSE.html#ga5529ef6ab4838a70159578598d3b01da">More...</a><br /></td></tr>
+<tr class="separator:ga5529ef6ab4838a70159578598d3b01da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffe3b519da7fa700e344e9e49ad1f100"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaffe3b519da7fa700e344e9e49ad1f100">LESENSE_DecoderStateConfig</a> (const <a class="el" href="structLESENSE__DecStDesc__TypeDef.html">LESENSE_DecStDesc_TypeDef</a> *confDecSt, uint32_t decSt)</td></tr>
+<tr class="memdesc:gaffe3b519da7fa700e344e9e49ad1f100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure a single LESENSE decoder state.  <a href="group__LESENSE.html#gaffe3b519da7fa700e344e9e49ad1f100">More...</a><br /></td></tr>
+<tr class="separator:gaffe3b519da7fa700e344e9e49ad1f100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga26346866d73087ef74712b35b18fa596"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga26346866d73087ef74712b35b18fa596">LESENSE_DecoderStateGet</a> (void)</td></tr>
 <tr class="memdesc:ga26346866d73087ef74712b35b18fa596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current state of the LESENSE decoder.  <a href="group__LESENSE.html#ga26346866d73087ef74712b35b18fa596">More...</a><br /></td></tr>
 <tr class="separator:ga26346866d73087ef74712b35b18fa596"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -491,9 +495,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga020ef394a68b9bcbf68cd8d2a2d4f2da"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga020ef394a68b9bcbf68cd8d2a2d4f2da">LESENSE_DecoderStop</a> (void)</td></tr>
 <tr class="memdesc:ga020ef394a68b9bcbf68cd8d2a2d4f2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop LESENSE decoder.  <a href="group__LESENSE.html#ga020ef394a68b9bcbf68cd8d2a2d4f2da">More...</a><br /></td></tr>
 <tr class="separator:ga020ef394a68b9bcbf68cd8d2a2d4f2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a398212f9973311040dee0752bb587d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga0a398212f9973311040dee0752bb587d">LESENSE_Init</a> (<a class="el" href="structLESENSE__Init__TypeDef.html">LESENSE_Init_TypeDef</a> const *init, bool const reqReset)</td></tr>
-<tr class="memdesc:ga0a398212f9973311040dee0752bb587d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the LESENSE module.  <a href="group__LESENSE.html#ga0a398212f9973311040dee0752bb587d">More...</a><br /></td></tr>
-<tr class="separator:ga0a398212f9973311040dee0752bb587d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86cbdb3201b07de4b4b314bd68b63cac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac">LESENSE_Init</a> (const <a class="el" href="structLESENSE__Init__TypeDef.html">LESENSE_Init_TypeDef</a> *init, bool reqReset)</td></tr>
+<tr class="memdesc:ga86cbdb3201b07de4b4b314bd68b63cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the LESENSE module.  <a href="group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac">More...</a><br /></td></tr>
+<tr class="separator:ga86cbdb3201b07de4b4b314bd68b63cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga994502fe555c22c4223a52f567662361"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga994502fe555c22c4223a52f567662361">LESENSE_IntClear</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:ga994502fe555c22c4223a52f567662361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending LESENSE interrupts.  <a href="group__LESENSE.html#ga994502fe555c22c4223a52f567662361">More...</a><br /></td></tr>
 <tr class="separator:ga994502fe555c22c4223a52f567662361"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -521,12 +525,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1bb23d00276c3abbee5584b125106927"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga1bb23d00276c3abbee5584b125106927">LESENSE_ResultBufferClear</a> (void)</td></tr>
 <tr class="memdesc:ga1bb23d00276c3abbee5584b125106927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear result buffer.  <a href="group__LESENSE.html#ga1bb23d00276c3abbee5584b125106927">More...</a><br /></td></tr>
 <tr class="separator:ga1bb23d00276c3abbee5584b125106927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8655dcda510a74ab5e0c2fdc7aded58"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gae8655dcda510a74ab5e0c2fdc7aded58">LESENSE_ScanFreqSet</a> (uint32_t refFreq, uint32_t const scanFreq)</td></tr>
-<tr class="memdesc:gae8655dcda510a74ab5e0c2fdc7aded58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scan frequency for periodic scanning.  <a href="group__LESENSE.html#gae8655dcda510a74ab5e0c2fdc7aded58">More...</a><br /></td></tr>
-<tr class="separator:gae8655dcda510a74ab5e0c2fdc7aded58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0333bb6df6eaa9833919e0e7519b658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaa0333bb6df6eaa9833919e0e7519b658">LESENSE_ScanModeSet</a> (<a class="el" href="group__LESENSE.html#ga5e540ba859daf09ac666c039d21af1a9">LESENSE_ScanMode_TypeDef</a> const scanMode, bool const start)</td></tr>
-<tr class="memdesc:gaa0333bb6df6eaa9833919e0e7519b658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scan mode of the LESENSE channels.  <a href="group__LESENSE.html#gaa0333bb6df6eaa9833919e0e7519b658">More...</a><br /></td></tr>
-<tr class="separator:gaa0333bb6df6eaa9833919e0e7519b658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga774d8a3ba9620c84fd9db4e252560efa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga774d8a3ba9620c84fd9db4e252560efa">LESENSE_ScanFreqSet</a> (uint32_t refFreq, uint32_t scanFreq)</td></tr>
+<tr class="memdesc:ga774d8a3ba9620c84fd9db4e252560efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scan frequency for periodic scanning.  <a href="group__LESENSE.html#ga774d8a3ba9620c84fd9db4e252560efa">More...</a><br /></td></tr>
+<tr class="separator:ga774d8a3ba9620c84fd9db4e252560efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61b7b6a97a033f983f6daec531f5186b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga61b7b6a97a033f983f6daec531f5186b">LESENSE_ScanModeSet</a> (<a class="el" href="group__LESENSE.html#ga5e540ba859daf09ac666c039d21af1a9">LESENSE_ScanMode_TypeDef</a> scanMode, bool start)</td></tr>
+<tr class="memdesc:ga61b7b6a97a033f983f6daec531f5186b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scan mode of the LESENSE channels.  <a href="group__LESENSE.html#ga61b7b6a97a033f983f6daec531f5186b">More...</a><br /></td></tr>
+<tr class="separator:ga61b7b6a97a033f983f6daec531f5186b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga26c2f4a57fb232a0a74b8b13bf7b3acd"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga26c2f4a57fb232a0a74b8b13bf7b3acd">LESENSE_ScanResultDataBufferGet</a> (uint32_t idx)</td></tr>
 <tr class="memdesc:ga26c2f4a57fb232a0a74b8b13bf7b3acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get data from the result data buffer.  <a href="group__LESENSE.html#ga26c2f4a57fb232a0a74b8b13bf7b3acd">More...</a><br /></td></tr>
 <tr class="separator:ga26c2f4a57fb232a0a74b8b13bf7b3acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -545,9 +549,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2ee5eb4f4f582c371a1fd3bf24d10205"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga2ee5eb4f4f582c371a1fd3bf24d10205">LESENSE_SensorStateGet</a> (void)</td></tr>
 <tr class="memdesc:ga2ee5eb4f4f582c371a1fd3bf24d10205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current state of the LESENSE sensor.  <a href="group__LESENSE.html#ga2ee5eb4f4f582c371a1fd3bf24d10205">More...</a><br /></td></tr>
 <tr class="separator:ga2ee5eb4f4f582c371a1fd3bf24d10205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae2e4883549fbd7cce4ec059c3c550bda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gae2e4883549fbd7cce4ec059c3c550bda">LESENSE_StartDelaySet</a> (uint8_t const startDelay)</td></tr>
-<tr class="memdesc:gae2e4883549fbd7cce4ec059c3c550bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set start delay of sensor interaction on each channel.  <a href="group__LESENSE.html#gae2e4883549fbd7cce4ec059c3c550bda">More...</a><br /></td></tr>
-<tr class="separator:gae2e4883549fbd7cce4ec059c3c550bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b0dac3ef7efd0f80c7bfe5b6537289a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga8b0dac3ef7efd0f80c7bfe5b6537289a">LESENSE_StartDelaySet</a> (uint8_t startDelay)</td></tr>
+<tr class="memdesc:ga8b0dac3ef7efd0f80c7bfe5b6537289a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set start delay of sensor interaction on each channel.  <a href="group__LESENSE.html#ga8b0dac3ef7efd0f80c7bfe5b6537289a">More...</a><br /></td></tr>
+<tr class="separator:ga8b0dac3ef7efd0f80c7bfe5b6537289a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad80bdc3858c24311db2e8f9d5e1c2f5f"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gad80bdc3858c24311db2e8f9d5e1c2f5f">LESENSE_StatusGet</a> (void)</td></tr>
 <tr class="memdesc:gad80bdc3858c24311db2e8f9d5e1c2f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current status of LESENSE.  <a href="group__LESENSE.html#gad80bdc3858c24311db2e8f9d5e1c2f5f">More...</a><br /></td></tr>
 <tr class="separator:gad80bdc3858c24311db2e8f9d5e1c2f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -560,8 +564,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__lesense_8h.html">em_lesense.h</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 16:03:26 for EZR32 Leopard Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_57c5670a54251515d5dc3137dddf203b.html">platform</a></li><li class="navelem"><a class="el" href="dir_74d47fbdcea7cda18072cc4be639af5a.html">emlib</a></li><li class="navelem"><a class="el" href="dir_bf479292f56c204ab5b202f2f7ed0583.html">inc</a></li><li class="navelem"><a class="el" href="em__lesense_8h.html">em_lesense.h</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:41 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

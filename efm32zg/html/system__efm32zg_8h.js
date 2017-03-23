@@ -28,7 +28,7 @@ var system__efm32zg_8h =
     [ "SystemLFXOClockSet", "system__efm32zg_8h.html#ace8c3b705bdbdc9172fbc7f2415dfd8b", null ],
     [ "SystemMaxCoreClockGet", "system__efm32zg_8h.html#a64cc4ea6124c6503b120933d91edf1a0", null ],
     [ "SystemULFRCOClockGet", "system__efm32zg_8h.html#a88eecfafda55942454a9e10912b3f224", null ],
-    [ "SysTick_Handler", "system__efm32zg_8h.html#ab5e09814056d617c521549e542639b7e", null ],
+    [ "SysTick_Handler", "group__Util__Functions.html#gab5e09814056d617c521549e542639b7e", null ],
     [ "TIMER0_IRQHandler", "system__efm32zg_8h.html#a5f89e5f7418d3a10f49b2faeab3711dd", null ],
     [ "TIMER1_IRQHandler", "system__efm32zg_8h.html#a92d71bbc9344a6aaf8858148035f3f9d", null ],
     [ "USART1_RX_IRQHandler", "system__efm32zg_8h.html#aa6a5099bafcea7a957c8a7aff925a5c2", null ],

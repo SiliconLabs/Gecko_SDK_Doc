@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['valid',['valid',['../structMSDD__CmdStatus__TypeDef.html#a0eb28e74638f8ca64f0cf141a4cb3055',1,'MSDD_CmdStatus_TypeDef::valid()'],['../structMSDSCSI__RequestSenseData__TypeDef.html#ac486480a4989efbebbaccf3cbafc3b68',1,'MSDSCSI_RequestSenseData_TypeDef::Valid()']]],
+  ['valid',['Valid',['../structMSDSCSI__RequestSenseData__TypeDef.html#ac486480a4989efbebbaccf3cbafc3b68',1,'MSDSCSI_RequestSenseData_TypeDef::Valid()'],['../structMSDD__CmdStatus__TypeDef.html#a0eb28e74638f8ca64f0cf141a4cb3055',1,'MSDD_CmdStatus_TypeDef::valid()']]],
   ['value',['VALUE',['../structCALIBRATE__TypeDef.html#afed449925331ba5fb66a3912414a2f2f',1,'CALIBRATE_TypeDef']]],
   ['vddlevel',['vddLevel',['../structACMP__CapsenseInit__TypeDef.html#ac6c45a058c3881092795487edf418c4a',1,'ACMP_CapsenseInit_TypeDef::vddLevel()'],['../structACMP__Init__TypeDef.html#a1d3145c20d24f1b53279187cfd771a31',1,'ACMP_Init_TypeDef::vddLevel()']]],
+  ['vendorid',['vendorId',['../structUSBX__Init__t.html#addcc33cc7b6098a6456222ca7d5a65d5',1,'USBX_Init_t']]],
   ['verification',['Verification',['../structMSDSCSI__Verify10__TypeDef.html#a30481a394fbcd76dca996efc1c1d6f57',1,'MSDSCSI_Verify10_TypeDef']]],
   ['version',['Version',['../structMSDSCSI__InquiryData__TypeDef.html#a19b18638a490b73406a2a934e9846bb3',1,'MSDSCSI_InquiryData_TypeDef']]],
   ['vis',['vis',['../structSI114X__IRQ__SAMPLE.html#a434aca5bbede919398acb1412d64aace',1,'SI114X_IRQ_SAMPLE']]],
@@ -13,6 +14,7 @@ var searchData=
   ['voutmed',['voutMed',['../structEMU__BUPDInit__TypeDef.html#ae8fe2b760360ac23c8478a3da6b8a69c',1,'EMU_BUPDInit_TypeDef']]],
   ['voutstrong',['voutStrong',['../structEMU__BUPDInit__TypeDef.html#a6b23988160d0275df86c6a25cf6c3817',1,'EMU_BUPDInit_TypeDef']]],
   ['voutweak',['voutWeak',['../structEMU__BUPDInit__TypeDef.html#a197f070820890e5be326cf61d7daf92b',1,'EMU_BUPDInit_TypeDef']]],
+  ['vpixelspermeter',['vPixelsPerMeter',['../struct____BMP__Header.html#adfac3b1f53b04ab7653b1f41a1468ba8',1,'__BMP_Header']]],
   ['vporchback',['vPorchBack',['../structEBI__TFTInit__TypeDef.html#ab0841ee0a1b6bec522c5779c5a92a018',1,'EBI_TFTInit_TypeDef']]],
   ['vporchfront',['vPorchFront',['../structEBI__TFTInit__TypeDef.html#a7785c70c6f38730e1b5f386a9a224210',1,'EBI_TFTInit_TypeDef']]],
   ['vpulsewidth',['vPulseWidth',['../structEBI__TFTInit__TypeDef.html#a0c554a38215f7b80acd06e77cf2d17dd',1,'EBI_TFTInit_TypeDef']]],

@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['cmu_5fauxhfrcoband_5ftypedef',['CMU_AUXHFRCOBand_TypeDef',['../group__CMU.html#ga4fa40a5d9521a8bee9b0faa7c70a60cb',1,'em_cmu.h']]],
-  ['cmu_5fclock_5ftypedef',['CMU_Clock_TypeDef',['../group__CMU.html#ga519ea66a1a21e07f2d1cccc9aa55799e',1,'em_cmu.h']]],
-  ['cmu_5fhfrcoband_5ftypedef',['CMU_HFRCOBand_TypeDef',['../group__CMU.html#ga3f4c73b01d8cc272612aac2c1d223617',1,'em_cmu.h']]],
-  ['cmu_5flfxoboost_5ftypedef',['CMU_LFXOBoost_TypeDef',['../group__CMU.html#gad53b9154161b884cd3f944bab2f48be2',1,'em_cmu.h']]],
-  ['cmu_5fosc_5ftypedef',['CMU_Osc_TypeDef',['../group__CMU.html#ga095c94cc5b58238856389c523ce12c2a',1,'em_cmu.h']]],
-  ['cmu_5foscmode_5ftypedef',['CMU_OscMode_TypeDef',['../group__CMU.html#ga6bc090c288f6457868a9ed4ef1ec9f85',1,'em_cmu.h']]],
-  ['cmu_5fselect_5ftypedef',['CMU_Select_TypeDef',['../group__CMU.html#gaeaf3a27499d7441981159c5973546751',1,'em_cmu.h']]]
+  ['bsp_5fbuscontrol_5ftypedef',['BSP_BusControl_TypeDef',['../group__BSP__DK.html#ga99e5f8bb95a6456c357d5b686dbb6fb3',1,'bsp.h']]],
+  ['bsp_5fdisplay_5ftypedef',['BSP_Display_TypeDef',['../group__BSP__DK.html#ga2dc0e02483c77ca9536927c6495db343',1,'bsp.h']]],
+  ['bsp_5fperipheral_5ftypedef',['BSP_Peripheral_TypeDef',['../group__BSP__DK.html#ga978526e7803d063aeea2bba759571289',1,'BSP_Peripheral_TypeDef():&#160;bsp.h'],['../group__BSP__STK.html#ga978526e7803d063aeea2bba759571289',1,'BSP_Peripheral_TypeDef():&#160;bsp.h']]]
 ];

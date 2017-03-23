@@ -1,15 +1,14 @@
 var searchData=
 [
-  ['rmu_5freset_5ftypedef',['RMU_Reset_TypeDef',['../group__RMU.html#ga8ac0ad7bdf565905989745354d31cb07',1,'em_rmu.h']]],
-  ['rmu_5fresetmode_5ftypedef',['RMU_ResetMode_TypeDef',['../group__RMU.html#gaa68fbe3a3279aff1f10fb2fb9f2b98fe',1,'em_rmu.h']]],
-  ['rtcc_5fcapcomchmode_5ftypedef',['RTCC_CapComChMode_TypeDef',['../group__RTCC.html#gae97fe5bba7812a48b934bd7fdab814fb',1,'em_rtcc.h']]],
-  ['rtcc_5fcntmode_5ftypedef',['RTCC_CntMode_TypeDef',['../group__RTCC.html#ga99b059f50a485234a456503ca956ea1e',1,'em_rtcc.h']]],
-  ['rtcc_5fcntpresc_5ftypedef',['RTCC_CntPresc_TypeDef',['../group__RTCC.html#gad0335cb53922f7fedc244336f5f299b1',1,'em_rtcc.h']]],
-  ['rtcc_5fcompbase_5ftypedef',['RTCC_CompBase_TypeDef',['../group__RTCC.html#gaffe824f0dbb1678e31697c966a6c15bf',1,'em_rtcc.h']]],
-  ['rtcc_5fcompmatchoutaction_5ftypedef',['RTCC_CompMatchOutAction_TypeDef',['../group__RTCC.html#ga5262fdbf7e20eef8456121bb4c0128c8',1,'em_rtcc.h']]],
-  ['rtcc_5fdaycomparemode_5ftypedef',['RTCC_DayCompareMode_TypeDef',['../group__RTCC.html#gaca22e74b99f507c580c2069a97b0bfe4',1,'em_rtcc.h']]],
-  ['rtcc_5finedgesel_5ftypedef',['RTCC_InEdgeSel_TypeDef',['../group__RTCC.html#ga25aa199b54a7dbaa388ce94cd1c250cb',1,'em_rtcc.h']]],
-  ['rtcc_5fprescmode_5ftypedef',['RTCC_PrescMode_TypeDef',['../group__RTCC.html#ga27eaf41fd1b547e396790d6bab732054',1,'em_rtcc.h']]],
-  ['rtcc_5fprssel_5ftypedef',['RTCC_PRSSel_TypeDef',['../group__RTCC.html#gaca3af9bdf0979b882fa0ea6d5847ff36',1,'em_rtcc.h']]],
-  ['rtcdrv_5ftimertype_5ft',['RTCDRV_TimerType_t',['../group__RTCDRV.html#ga08a8750e466e18aee02bbb692446dac9',1,'rtcdriver.h']]]
+  ['opamp_5fdrvstr_5ftypedef',['OPAMP_DrvStr_Typedef',['../group__OPAMP.html#ga185c6251e35c16d9a7fcf66c94667e93',1,'em_opamp.h']]],
+  ['opamp_5fnegsel_5ftypedef',['OPAMP_NegSel_TypeDef',['../group__OPAMP.html#gaa158f1109c96c14b9531b47a76df24bd',1,'em_opamp.h']]],
+  ['opamp_5foutmode_5ftypedef',['OPAMP_OutMode_TypeDef',['../group__OPAMP.html#gab82f68a27f2f50473502101e9b1f42ab',1,'em_opamp.h']]],
+  ['opamp_5foutscale_5ftypedef',['OPAMP_OutScale_Typedef',['../group__OPAMP.html#ga38f5021ec934f854a50bf6573eaf0134',1,'em_opamp.h']]],
+  ['opamp_5fpossel_5ftypedef',['OPAMP_PosSel_TypeDef',['../group__OPAMP.html#ga2c5ecf4f85f9031861b4e81643cb4ff8',1,'em_opamp.h']]],
+  ['opamp_5fprsmode_5ftypedef',['OPAMP_PrsMode_TypeDef',['../group__OPAMP.html#ga6c9c813d5a0148686d740c9eb006dfea',1,'em_opamp.h']]],
+  ['opamp_5fprsout_5ftypedef',['OPAMP_PrsOut_TypeDef',['../group__OPAMP.html#gaaf167f9a2dc54ce09169e50d9905a1b6',1,'em_opamp.h']]],
+  ['opamp_5fprssel_5ftypedef',['OPAMP_PrsSel_TypeDef',['../group__OPAMP.html#ga3f461d31c93fc98aebee4ba56b1274a3',1,'em_opamp.h']]],
+  ['opamp_5fresinmux_5ftypedef',['OPAMP_ResInMux_TypeDef',['../group__OPAMP.html#ga847c3ca2ddb170b44bc27816123b0ff6',1,'em_opamp.h']]],
+  ['opamp_5fressel_5ftypedef',['OPAMP_ResSel_TypeDef',['../group__OPAMP.html#gaa3e5ca28a695563596b9554fec10f810',1,'em_opamp.h']]],
+  ['opamp_5ftypedef',['OPAMP_TypeDef',['../group__OPAMP.html#ga8ab8b812547585753acc6893f340e32c',1,'em_opamp.h']]]
 ];

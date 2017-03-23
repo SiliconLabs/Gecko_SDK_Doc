@@ -59,7 +59,7 @@ var group__EFM32PG1B__CMU =
       [ "RESERVED21", "structCMU__TypeDef.html#adca495dcf26c9c14a78e8269e125b9f5", null ],
       [ "RESERVED22", "structCMU__TypeDef.html#a765789f31e9ab98b965c6f145ef7d148", null ],
       [ "RESERVED23", "structCMU__TypeDef.html#abbd90e66ce4f5d6969af97a05fb1ae46", null ],
-      [ "RESERVED3", "structCMU__TypeDef.html#aeddc0ed337de3d93f07a3eaeb2e8b628", null ],
+      [ "RESERVED3", "structCMU__TypeDef.html#a1e19c536cbb9b820857bdad47b007962", null ],
       [ "RESERVED4", "structCMU__TypeDef.html#a8fd51150a41944d1656dd8461fb3d24b", null ],
       [ "RESERVED5", "structCMU__TypeDef.html#a5a32c85a07eef0a162a85a37cc6e2e9d", null ],
       [ "RESERVED6", "structCMU__TypeDef.html#a6295534db440300ea89e9136cf126896", null ],
@@ -69,6 +69,7 @@ var group__EFM32PG1B__CMU =
       [ "ROUTELOC0", "structCMU__TypeDef.html#a07279d624b9893ddcd27f373bd8e3e3a", null ],
       [ "ROUTEPEN", "structCMU__TypeDef.html#a2cd91294efa4db233529335539cfc8ef", null ],
       [ "STATUS", "structCMU__TypeDef.html#ad337eed7d5cc9371c7721bed2e80757f", null ],
-      [ "SYNCBUSY", "structCMU__TypeDef.html#a8ead4c858247890c98316fc1c4ca33cc", null ]
+      [ "SYNCBUSY", "structCMU__TypeDef.html#a8ead4c858247890c98316fc1c4ca33cc", null ],
+      [ "ULFRCOCTRL", "structCMU__TypeDef.html#ae811fe6b5c0def0f64492adc5d6ed529", null ]
     ] ]
 ];

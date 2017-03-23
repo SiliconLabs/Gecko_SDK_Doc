@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32wg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">ezr32wg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -117,8 +117,12 @@ Macros</h2></td></tr>
 <tr class="separator:ga2717d611b19996956dd7b208d4908f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga163283b6e5356adee23c481eef0de4da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#ga163283b6e5356adee23c481eef0de4da">BSP_INIT_DK_SPI</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:ga163283b6e5356adee23c481eef0de4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15b1985bbabc83228c1abf53304fd474"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#ga15b1985bbabc83228c1abf53304fd474">BSP_INIT_IOEXP</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="separator:ga15b1985bbabc83228c1abf53304fd474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad2f961beb04ec0c5e54224e91bb1e890"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#gad2f961beb04ec0c5e54224e91bb1e890">BSP_STATUS_ILLEGAL_PARAM</a>&#160;&#160;&#160;(-1)</td></tr>
 <tr class="separator:gad2f961beb04ec0c5e54224e91bb1e890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7dea37d8560dcda0ceebf9275b4ffa9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#ga7dea37d8560dcda0ceebf9275b4ffa9e">BSP_STATUS_IOEXP_FAILURE</a>&#160;&#160;&#160;(-4)</td></tr>
+<tr class="separator:ga7dea37d8560dcda0ceebf9275b4ffa9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ebeba724e7cbb9198d36dbe0d0e4a2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#ga3ebeba724e7cbb9198d36dbe0d0e4a2c">BSP_STATUS_NOT_IMPLEMENTED</a>&#160;&#160;&#160;(-2)</td></tr>
 <tr class="separator:ga3ebeba724e7cbb9198d36dbe0d0e4a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9162f17feaee1b332cf4ce40f51a0e30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#ga9162f17feaee1b332cf4ce40f51a0e30">BSP_STATUS_OK</a>&#160;&#160;&#160;0</td></tr>
@@ -155,6 +159,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa1d7f74ca14b30270a60546fb8fe9083"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#gaa1d7f74ca14b30270a60546fb8fe9083">BSP_LedToggle</a> (int ledNo)</td></tr>
 <tr class="memdesc:gaa1d7f74ca14b30270a60546fb8fe9083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle a single LED.  <a href="#gaa1d7f74ca14b30270a60546fb8fe9083">More...</a><br /></td></tr>
 <tr class="separator:gaa1d7f74ca14b30270a60546fb8fe9083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18ee56d221a2a21cb67f7320e78f3401"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#ga18ee56d221a2a21cb67f7320e78f3401">BSP_PeripheralAccess</a> (<a class="el" href="group__BSP__DK.html#ga978526e7803d063aeea2bba759571289">BSP_Peripheral_TypeDef</a> perf, bool enable)</td></tr>
+<tr class="memdesc:ga18ee56d221a2a21cb67f7320e78f3401"><td class="mdescLeft">&#160;</td><td class="mdescRight">DK Peripheral Access Control Enable or disable access to on-board peripherals through switches and SPI switch where applicable. Turn off conflicting peripherals when enabling another.  <a href="#ga18ee56d221a2a21cb67f7320e78f3401">More...</a><br /></td></tr>
+<tr class="separator:ga18ee56d221a2a21cb67f7320e78f3401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5061043f8bb64d1b0130fe4185916916"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#ga5061043f8bb64d1b0130fe4185916916">BSP_TraceProfilerEnable</a> (bool enable)</td></tr>
 <tr class="memdesc:ga5061043f8bb64d1b0130fe4185916916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set or clear word in user page which enables or disables SWO in BSP_TraceProfilerSetup. If BSP_TraceProfilerEnable(false) has been run, no example project will enable SWO trace.  <a href="#ga5061043f8bb64d1b0130fe4185916916">More...</a><br /></td></tr>
 <tr class="separator:ga5061043f8bb64d1b0130fe4185916916"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,7 +184,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Mode flag for <a class="el" href="group__BSPCOMMON.html#ga8289bda0de5688289312df216c8b7a63">BSP_Init()</a>, init board controller communication. </p>
 
-<p>Definition at line <a class="el" href="bsp_8h_source.html#l00053">53</a> of file <a class="el" href="bsp_8h_source.html">bsp.h</a>.</p>
+<p>Definition at line <a class="el" href="bsp_8h_source.html#l00054">54</a> of file <a class="el" href="bsp_8h_source.html">bsp.h</a>.</p>
 
 </div>
 </div>
@@ -192,7 +199,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Mode flag for <a class="el" href="group__BSPCOMMON.html#ga8289bda0de5688289312df216c8b7a63">BSP_Init()</a>, init DK in EBI mode (DK3x50 only). </p>
 
-<p>Definition at line <a class="el" href="bsp_8h_source.html#l00052">52</a> of file <a class="el" href="bsp_8h_source.html">bsp.h</a>.</p>
+<p>Definition at line <a class="el" href="bsp_8h_source.html#l00053">53</a> of file <a class="el" href="bsp_8h_source.html">bsp.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__BSPCOMMON.html#ga62212ee545974d4926ccc426a5734729">BSP_Disable()</a>, <a class="el" href="group__BSPCOMMON.html#ga8289bda0de5688289312df216c8b7a63">BSP_Init()</a>, <a class="el" href="group__BSP__DK.html#ga4044b087f6c29f36df7e29ade3bafb49">BSP_RegisterRead()</a>, and <a class="el" href="group__BSP__DK.html#ga80f89f8fce2cc70dfe2cc20c87027134">BSP_RegisterWrite()</a>.</p>
 
@@ -209,9 +216,24 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Mode flag for <a class="el" href="group__BSPCOMMON.html#ga8289bda0de5688289312df216c8b7a63">BSP_Init()</a>, init DK in SPI mode (DK3x50 only). </p>
 
-<p>Definition at line <a class="el" href="bsp_8h_source.html#l00051">51</a> of file <a class="el" href="bsp_8h_source.html">bsp.h</a>.</p>
+<p>Definition at line <a class="el" href="bsp_8h_source.html#l00052">52</a> of file <a class="el" href="bsp_8h_source.html">bsp.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__BSPCOMMON.html#ga62212ee545974d4926ccc426a5734729">BSP_Disable()</a>, and <a class="el" href="group__BSPCOMMON.html#ga8289bda0de5688289312df216c8b7a63">BSP_Init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga15b1985bbabc83228c1abf53304fd474"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_INIT_IOEXP&#160;&#160;&#160;0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mode flag for <a class="el" href="group__BSPCOMMON.html#ga8289bda0de5688289312df216c8b7a63">BSP_Init()</a>, init io-expander on some radio boards </p>
+
+<p>Definition at line <a class="el" href="bsp_8h_source.html#l00055">55</a> of file <a class="el" href="bsp_8h_source.html">bsp.h</a>.</p>
 
 </div>
 </div>
@@ -229,6 +251,21 @@ Functions</h2></td></tr>
 <p>Definition at line <a class="el" href="bsp_8h_source.html#l00046">46</a> of file <a class="el" href="bsp_8h_source.html">bsp.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__BSP__DK.html#ga7315c4cb51f3a3a2d3b4585afedd34b4">BSP_BusControlModeSet()</a>, <a class="el" href="group__BSPCOMMON.html#ga6a279f7836be1c7ca5422e363e16aac3">BSP_LedClear()</a>, <a class="el" href="group__BSPCOMMON.html#ga95c80e6f19a9e86fb9a6244e81cb367c">BSP_LedGet()</a>, <a class="el" href="group__BSPCOMMON.html#ga650892d504ec3942e61c0cc11837ec8e">BSP_LedSet()</a>, and <a class="el" href="group__BSPCOMMON.html#gaa1d7f74ca14b30270a60546fb8fe9083">BSP_LedToggle()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7dea37d8560dcda0ceebf9275b4ffa9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BSP_STATUS_IOEXP_FAILURE&#160;&#160;&#160;(-4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>BSP API return code, io-expander communication failed </p>
+
+<p>Definition at line <a class="el" href="bsp_8h_source.html#l00049">49</a> of file <a class="el" href="bsp_8h_source.html">bsp.h</a>.</p>
 
 </div>
 </div>
@@ -527,6 +564,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga18ee56d221a2a21cb67f7320e78f3401"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BSP_PeripheralAccess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__BSP__DK.html#ga978526e7803d063aeea2bba759571289">BSP_Peripheral_TypeDef</a>&#160;</td>
+          <td class="paramname"><em>perf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DK Peripheral Access Control Enable or disable access to on-board peripherals through switches and SPI switch where applicable. Turn off conflicting peripherals when enabling another. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">perf</td><td>Which peripheral to configure. Use enum <a class="el" href="group__BSP__STK.html#ga978526e7803d063aeea2bba759571289">BSP_Peripheral_TypeDef</a> or BSP_Peripheral_Typedef according to DK type.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>If true, set up access to peripheral, if false disable access.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__BSPCOMMON.html#ga9162f17feaee1b332cf4ce40f51a0e30">BSP_STATUS_OK</a>. </dd></dl>
+
+<p>Definition at line <a class="el" href="bsp__dk__3201_8c_source.html#l00461">461</a> of file <a class="el" href="bsp__dk__3201_8c_source.html">bsp_dk_3201.c</a>.</p>
+
+<p>References <a class="el" href="group__BSP__DK.html#gab044edc7e9080301b0d9da0c3e0a9c51">BC_PERICON_ANALOG_DIFF_SHIFT</a>, <a class="el" href="group__BSP__DK.html#ga5d7e577e69427eb0ada497e1c55c825e">BC_PERICON_ANALOG_SE_SHIFT</a>, <a class="el" href="group__BSP__DK.html#gad5aa566c0bb6f48de813bc49b04906ba">BC_PERICON_AUDIO_IN_SHIFT</a>, <a class="el" href="group__BSP__DK.html#ga12022769c2408470cee9f6f4c612e375">BC_PERICON_AUDIO_OUT_SEL_SHIFT</a>, <a class="el" href="group__BSP__DK.html#ga645569b0348ead2ea149d4189cfedabd">BC_PERICON_AUDIO_OUT_SHIFT</a>, <a class="el" href="group__BSP__DK.html#gab7fd7f06eb49d8e408ff52bd8d279bda">BC_PERICON_I2C_SHIFT</a>, <a class="el" href="group__BSP__DK.html#ga725da3c63f00660854075454a139e1cf">BC_PERICON_I2S_ETH_SEL_SHIFT</a>, <a class="el" href="group__BSP__DK.html#ga592d34d06d2be0bb074c169f78d6c0fe">BC_PERICON_I2S_ETH_SHIFT</a>, <a class="el" href="group__BSP__DK.html#ga7145b393491ff6cd6f3d6b6ef959d5e5">BC_PERICON_RS232_LEUART_SHIFT</a>, <a class="el" href="group__BSP__DK.html#ga4f64e07200b900a43181424b29847add">BC_PERICON_RS232_SHUTDOWN_SHIFT</a>, <a class="el" href="group__BSP__DK.html#ga30dbd992822d367be7fe271d16b622dd">BC_PERICON_RS232_UART_SHIFT</a>, <a class="el" href="group__BSP__DK.html#gaf2e66a8078d5937b649effe486c255d7">BC_PERICON_SPI_SHIFT</a>, <a class="el" href="group__BSP__DK.html#ga998760054ff6e15992905c80d9f1d8f7">BC_PERICON_TOUCH_SHIFT</a>, <a class="el" href="group__BSP__DK.html#gab588eb89ae4b9b0e1593b070e2156bfc">BC_PERICON_TRACE_SHIFT</a>, <a class="el" href="group__BSP__DK.html#ga12ce42235734e893cce2ebc3abe1a6c5">BC_REGISTER</a>, <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289ad93e25cae5a6055f75ccc8b74a33bee9">BSP_ANALOG_DIFF</a>, <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289ae75fc3ff8186b3418a13c345f2bbc098">BSP_ANALOG_SE</a>, <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a91e25b14ca42149386b528a220bad0c1">BSP_AUDIO_IN</a>, <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a218b4fa9f9e60fd622f025e847369a65">BSP_AUDIO_OUT</a>, <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a92cc6711102e4fab9a97d3a300f68a95">BSP_ETH</a>, <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289af5b774032fff4d7dfedcb50705958ef6">BSP_I2C</a>, <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a74dd792f904c887e510e739881121f47">BSP_I2S</a>, <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a083b9a980e1df709fa6e02814b159d93">BSP_MICROSD</a>, <a class="el" href="group__BSP__DK.html#ga4044b087f6c29f36df7e29ade3bafb49">BSP_RegisterRead()</a>, <a class="el" href="group__BSP__DK.html#ga80f89f8fce2cc70dfe2cc20c87027134">BSP_RegisterWrite()</a>, <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289abff6ba4882409c28bb2344fb32c77845">BSP_RS232_LEUART</a>, <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a7ee2fe6799b66928489b136505bfd15a">BSP_RS232_SHUTDOWN</a>, <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289adce62ece06c8cb0512b4ea478f7f86ee">BSP_RS232_UART</a>, <a class="el" href="group__BSPCOMMON.html#ga9162f17feaee1b332cf4ce40f51a0e30">BSP_STATUS_OK</a>, <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a743380f59f663a0f28e428573fe858bc">BSP_TFT</a>, <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a10caa20cd86554aec51e23406ddb1f58">BSP_TOUCH</a>, and <a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a9e14c14c71eec858142df90d845d0393">BSP_TRACE</a>.</p>
+
+<p>Referenced by <a class="el" href="group__Tft.html#gafae3e95323a15ac1b4b6ed6fa3c13e9b">TFT_DirectInit()</a>, and <a class="el" href="group__Touch.html#ga7998398248274366ad0d8cc3abc63f35">TOUCH_Init()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga5061043f8bb64d1b0130fe4185916916"></a>
 <div class="memitem">
 <div class="memproto">
@@ -574,7 +653,7 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if energyAware Profiler/SWO is enabled, false if not </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If first word of the user page is zero, this will not enable SWO profiler output. </dd></dl>
 
-<p>Definition at line <a class="el" href="bsp__trace_8c_source.html#l00134">134</a> of file <a class="el" href="bsp__trace_8c_source.html">bsp_trace.c</a>.</p>
+<p>Definition at line <a class="el" href="bsp__trace_8c_source.html#l00169">169</a> of file <a class="el" href="bsp__trace_8c_source.html">bsp_trace.c</a>.</p>
 
 <p>References <a class="el" href="group__BSPCOMMON.html#ga4a6a024ad2590efc86f27e8d384d48e4">BSP_TraceSwoSetup()</a>.</p>
 
@@ -597,7 +676,7 @@ Functions</h2></td></tr>
 <p>Configure trace output for energyAware Profiler. </p>
 <dl class="section note"><dt>Note</dt><dd>Enabling trace will add 80uA current for the EFM32_Gxxx_STK. DK's needs to be initialized with SPI-mode: <pre class="fragment">BSP_Init(BSP_INIT_DK_SPI); </pre> </dd></dl>
 
-<p>Definition at line <a class="el" href="bsp__trace_8c_source.html#l00063">63</a> of file <a class="el" href="bsp__trace_8c_source.html">bsp_trace.c</a>.</p>
+<p>Definition at line <a class="el" href="bsp__trace_8c_source.html#l00098">98</a> of file <a class="el" href="bsp__trace_8c_source.html">bsp_trace.c</a>.</p>
 
 <p>References <a class="el" href="group__EZR32WG__GPIO__BitFields.html#ga06f8dae6e57a72bc7b4462653aaea13e">_GPIO_ROUTE_SWLOCATION_MASK</a>, <a class="el" href="group__EZR32WG330F256R69__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>, <a class="el" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet()</a>, <a class="el" href="group__EZR32WG__CMU__BitFields.html#gabb6fef20a072f7c7e0e3697d251f1632">CMU_HFPERCLKEN0_GPIO</a>, <a class="el" href="group__EZR32WG__CMU__BitFields.html#ga65e320f6e3b2ac38c2c382bfefb999f6">CMU_OSCENCMD_AUXHFRCOEN</a>, <a class="el" href="group__EZR32WG__CMU__BitFields.html#ga3d4be9332b8a631b28ddbc2f0963519c">CMU_STATUS_AUXHFRCORDY</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea4a31a9bbbcc14bcdc445994af5bf31ea">cmuClock_DBG</a>, <a class="el" href="group__EZR32WG330F256R69__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>, and <a class="el" href="group__EZR32WG__GPIO__BitFields.html#gae9c301970a26a946ada7eb12aff69f33">GPIO_ROUTE_SWOPEN</a>.</p>
 
@@ -610,7 +689,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 16:06:46 for EZR32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:47:56 for EZR32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

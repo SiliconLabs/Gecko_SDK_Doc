@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ksz8851sln_5fmib_5ft',['KSZ8851SLN_mib_t',['../group__ksz8851snl.html#ga12ffde4611132f0e103166084b7b2fd3',1,'ksz8851snl.h']]]
+  ['imu_5fsensorfusion',['IMU_SensorFusion',['../group__IMU__Typedefs.html#ga33f4e5c3dca2d32a5ed49e090788405c',1,'imu.h']]],
+  ['irqn_5ftype',['IRQn_Type',['../group__EFM32WG995F256.html#gac3af4a32370fb28c4ade8bf2add80251',1,'efm32wg995f256.h']]]
 ];

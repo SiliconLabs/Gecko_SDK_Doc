@@ -9,6 +9,7 @@ var searchData=
   ['nminus1',['nMinus1',['../structDMA__CfgLoop__TypeDef.html#a69fe0908e51acbb95ec41d1522b44471',1,'DMA_CfgLoop_TypeDef::nMinus1()'],['../structDMA__CfgDescrSGAlt__TypeDef.html#a682f64b8005ac966a25f71c22781ad17',1,'DMA_CfgDescrSGAlt_TypeDef::nMinus1()']]],
   ['no_5fflush',['No_Flush',['../structMSDSCSI__StartStopUnit__TypeDef.html#aa1ec8edda538071e9fc6291f1fb1d953',1,'MSDSCSI_StartStopUnit_TypeDef']]],
   ['noidle',['noIdle',['../structEBI__Init__TypeDef.html#ac8b12a5e4764ea2506786bf29ea53bdc',1,'EBI_Init_TypeDef']]],
+  ['noise_5flevel',['noise_level',['../group__cslib__group.html#ga88e5a9e92ec1280894a8cfdc0d4ab0c0',1,'cslib.h']]],
   ['normaca',['NormACA',['../structMSDSCSI__InquiryData__TypeDef.html#acbbce207ea30d4a0df77858cc788ecd3',1,'MSDSCSI_InquiryData_TypeDef']]],
   ['npen',['npEn',['../structOPAMP__Init__TypeDef.html#ab07747ad69d9f957057cb91fec255e49',1,'OPAMP_Init_TypeDef']]],
   ['nptxfifosize',['nptxFifoSize',['../structUSBH__Init__TypeDef.html#aca7555b01d0e35256d228cedd295a312',1,'USBH_Init_TypeDef']]],

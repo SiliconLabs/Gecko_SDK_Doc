@@ -1,10 +1,13 @@
 var searchData=
 [
   ['a',['a',['../structCORE__nvicMask__t.html#a4cccf12e99e45609625447624e39a22b',1,'CORE_nvicMask_t']]],
+  ['aaccumulator',['aAccumulator',['../struct__IMU__SensorFusion.html#ac380297514db5fd43f06e2518969d01e',1,'_IMU_SensorFusion']]],
+  ['aaccumulatorcount',['aAccumulatorCount',['../struct__IMU__SensorFusion.html#aa48ee38376712d7cb72d55705947d67e',1,'_IMU_SensorFusion']]],
   ['acc',['Acc',['../structMSDSCSI__InquiryData__TypeDef.html#a1e3866e2688ebed6a706c681994d035d',1,'MSDSCSI_InquiryData_TypeDef']]],
   ['accesspermission',['accessPermission',['../structMPU__RegionInit__TypeDef.html#a8f5380dac41dceb78c333c6b1176aa94',1,'MPU_RegionInit_TypeDef']]],
   ['ackmode',['ackMode',['../structEZRADIODRV__AutoAckHandle.html#ac13022d152d904492feb8cc13b122cc3',1,'EZRADIODRV_AutoAckHandle']]],
   ['acqtime',['acqTime',['../structADC__InitScan__TypeDef.html#afe0305e5c4ff30be937adf199052ffc5',1,'ADC_InitScan_TypeDef::acqTime()'],['../structADC__InitSingle__TypeDef.html#ab5774ab856a328f3f01e238cf92f96a9',1,'ADC_InitSingle_TypeDef::acqTime()']]],
+  ['activeindicator',['activeIndicator',['../structSensorStruct__t.html#a85942c9321adc454d4ffc09ad8440899',1,'SensorStruct_t']]],
   ['activelowout',['activeLowOut',['../structTIMER__InitDTI__TypeDef.html#a306dc6cba072085c6b68239e431f1708',1,'TIMER_InitDTI_TypeDef']]],
   ['adc0cal0',['ADC0CAL0',['../structDEVINFO__TypeDef.html#a333f69dff837b4690daab94d757eb427',1,'DEVINFO_TypeDef']]],
   ['adc0cal1',['ADC0CAL1',['../structDEVINFO__TypeDef.html#a2c2d83b38b9b7137f0c52f38fe9b8e60',1,'DEVINFO_TypeDef']]],
@@ -19,7 +22,7 @@ var searchData=
   ['addr',['addr',['../structI2C__TransferSeq__TypeDef.html#a864fcee4abd27c2dab5723c2d2493ed0',1,'I2C_TransferSeq_TypeDef']]],
   ['addr16',['Addr16',['../structMSDSCSI__InquiryData__TypeDef.html#a4c0f5cb4bfc659027655dfb1fe99f4aa',1,'MSDSCSI_InquiryData_TypeDef']]],
   ['addrb',['ADDRB',['../structMSC__TypeDef.html#a21f6d689005b5dc472f014fe5d194965',1,'MSC_TypeDef']]],
-  ['address',['ADDRESS',['../structCALIBRATE__TypeDef.html#a407e7d6eb1f569ed020e82cec4b906c8',1,'CALIBRATE_TypeDef::ADDRESS()'],['../structSYSTEM__CalAddrVal__TypeDef.html#a9244d73091f31b991553872b1ff9c9f1',1,'SYSTEM_CalAddrVal_TypeDef::address()']]],
+  ['address',['address',['../structSYSTEM__CalAddrVal__TypeDef.html#a9244d73091f31b991553872b1ff9c9f1',1,'SYSTEM_CalAddrVal_TypeDef::address()'],['../structCALIBRATE__TypeDef.html#a407e7d6eb1f569ed020e82cec4b906c8',1,'CALIBRATE_TypeDef::ADDRESS()']]],
   ['addressmode',['addressMode',['../structDISPLAY__Device__t.html#ab7cfe713ba0e68920ea9d3a3cd037164',1,'DISPLAY_Device_t']]],
   ['addrholdcycles',['addrHoldCycles',['../structEBI__Init__TypeDef.html#a264b0935d2aec7b7d83c3d1320fcba50',1,'EBI_Init_TypeDef']]],
   ['addrsetupcycles',['addrSetupCycles',['../structEBI__Init__TypeDef.html#acca7e044126716e91f26fc43011b850e',1,'EBI_Init_TypeDef']]],
@@ -28,6 +31,7 @@ var searchData=
   ['alepolarity',['alePolarity',['../structEBI__Init__TypeDef.html#a908c2184402b534321ac8aacd27175e7',1,'EBI_Init_TypeDef']]],
   ['allocationlength',['AllocationLength',['../structMSDSCSI__Inquiry__TypeDef.html#a425c76925763cc8e363882b9a16493e0',1,'MSDSCSI_Inquiry_TypeDef::AllocationLength()'],['../structMSDSCSI__RequestSense__TypeDef.html#af731f84bb4dd977080536bc124573bc5',1,'MSDSCSI_RequestSense_TypeDef::AllocationLength()']]],
   ['altctrlbase',['ALTCTRLBASE',['../structDMA__TypeDef.html#af4b27429351984d7628e90dd258a8b64',1,'DMA_TypeDef']]],
+  ['anglecorrection',['angleCorrection',['../struct__IMU__SensorFusion.html#a0f0c2387f33a117bd5d3ea66ec31517a',1,'_IMU_SensorFusion']]],
   ['animlogic',['animLogic',['../structLCD__AnimInit__TypeDef.html#a98a50ff76a3708719ac999ab94e27cb2',1,'LCD_AnimInit_TypeDef']]],
   ['arb_5fctrl',['ARB_CTRL',['../structBC__TypeDef.html#a7166ee52d3e4e1d08f5dc870010de561',1,'BC_TypeDef']]],
   ['arbrate',['arbRate',['../structDMA__CfgDescr__TypeDef.html#a415afa217ec9a94adbbea7df76fbe161',1,'DMA_CfgDescr_TypeDef::arbRate()'],['../structDMA__CfgDescrSGAlt__TypeDef.html#a11927ca5e753b91a064ffa6648589949',1,'DMA_CfgDescrSGAlt_TypeDef::arbRate()']]],
@@ -38,6 +42,7 @@ var searchData=
   ['arega',['AREGA',['../structLCD__TypeDef.html#aa22bc2db3dc5f9b72e255a3859c2de53',1,'LCD_TypeDef']]],
   ['aregb',['AREGB',['../structLCD__TypeDef.html#a5c4d837a4c404d55fe6eb2ee79ac29c6',1,'LCD_TypeDef']]],
   ['aring',['ARing',['../structMCU__DISPLAY.html#ae91408f747b60a2ac1f6cfa398bf47f9',1,'MCU_DISPLAY']]],
+  ['asamplerate',['aSampleRate',['../struct__IMU__SensorFusion.html#a6ba9013e2f91e18d3574b2727523eefc',1,'_IMU_SensorFusion']]],
   ['asc',['Asc',['../structMSDSCSI__RequestSenseData__TypeDef.html#ae0baccfc938c332b732deee5233089ea',1,'MSDSCSI_RequestSenseData_TypeDef']]],
   ['ascq',['Ascq',['../structMSDSCSI__RequestSenseData__TypeDef.html#a972f2db484c72a4bd90d86460ea7b05d',1,'MSDSCSI_RequestSenseData_TypeDef']]],
   ['ashift',['AShift',['../structLCD__AnimInit__TypeDef.html#a603dd63e5d3ccef8b058f49ea4467257',1,'LCD_AnimInit_TypeDef']]],
@@ -46,5 +51,6 @@ var searchData=
   ['autorestart',['autoRestart',['../structTIMER__InitDTI__TypeDef.html#a35e8fe87df028dd4934a4588e2b6c242',1,'TIMER_InitDTI_TypeDef']]],
   ['aux',['aux',['../structSI114X__IRQ__SAMPLE.html#a9d399ea3107effe02b8638a7c9a85a0f',1,'SI114X_IRQ_SAMPLE']]],
   ['auxctrl',['AUXCTRL',['../structEMU__TypeDef.html#a0c1a606cd607620ab7d1ad57e60703ea',1,'EMU_TypeDef']]],
-  ['auxhfrcoctrl',['AUXHFRCOCTRL',['../structCMU__TypeDef.html#adf09a4cef9ab835b0a5e1fef6394880a',1,'CMU_TypeDef']]]
+  ['auxhfrcoctrl',['AUXHFRCOCTRL',['../structCMU__TypeDef.html#adf09a4cef9ab835b0a5e1fef6394880a',1,'CMU_TypeDef']]],
+  ['avector',['aVector',['../struct__IMU__SensorFusion.html#a2f838f17bfa1ed422f04f429e8af360a',1,'_IMU_SensorFusion']]]
 ];

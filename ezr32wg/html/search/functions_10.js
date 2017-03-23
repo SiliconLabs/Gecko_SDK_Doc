@@ -32,6 +32,7 @@ var searchData=
   ['rtc_5fintgetenabled',['RTC_IntGetEnabled',['../group__RTC.html#gaa8d562567017516058b59b765190d314',1,'em_rtc.h']]],
   ['rtc_5fintset',['RTC_IntSet',['../group__RTC.html#ga1bb5c0890ca9d48a8e70a2a237226e43',1,'em_rtc.h']]],
   ['rtc_5freset',['RTC_Reset',['../group__RTC.html#gae1afe76d35fac641cdad34913ca63c95',1,'em_rtc.c']]],
+  ['rtccb',['rtcCb',['../group__Util__Functions.html#ga976129d140fbed5f15512e23fc06ff09',1,'util_sleep.c']]],
   ['rtcdrv_5fallocatetimer',['RTCDRV_AllocateTimer',['../group__RTCDRV.html#gaef2d97c6223617d158b05e03ee35950a',1,'RTCDRV_AllocateTimer(RTCDRV_TimerID_t *id):&#160;rtcdriver.c'],['../group__RTCDRV.html#gaef2d97c6223617d158b05e03ee35950a',1,'RTCDRV_AllocateTimer(RTCDRV_TimerID_t *id):&#160;rtcdriver.c']]],
   ['rtcdrv_5fdeinit',['RTCDRV_DeInit',['../group__RTCDRV.html#gae82ea6fa74f6bbc161b86a34385d63bf',1,'RTCDRV_DeInit(void):&#160;rtcdriver.c'],['../group__RTCDRV.html#gae82ea6fa74f6bbc161b86a34385d63bf',1,'RTCDRV_DeInit(void):&#160;rtcdriver.c']]],
   ['rtcdrv_5fdelay',['RTCDRV_Delay',['../group__RTCDRV.html#ga65ef38fa0eb21b4c379512aa087f7686',1,'RTCDRV_Delay(uint32_t ms):&#160;rtcdriver.c'],['../group__RTCDRV.html#ga65ef38fa0eb21b4c379512aa087f7686',1,'RTCDRV_Delay(uint32_t ms):&#160;rtcdriver.c']]],

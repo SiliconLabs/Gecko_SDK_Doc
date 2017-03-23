@@ -1,7 +1,8 @@
 var searchData=
 [
   ['head',['head',['../structUARTDRV__Buffer__FifoQueue__t.html#a098bc39f083739e5a6e32093a094593c',1,'UARTDRV_Buffer_FifoQueue_t']]],
-  ['height',['height',['../structDISPLAY__Geometry__t.html#a03ff0be9b964a10dcdf7dc02b73814b8',1,'DISPLAY_Geometry_t']]],
+  ['headersize',['headerSize',['../struct____BMP__Header.html#aa9e0687cf6115e1d3ca5f9459d8efe60',1,'__BMP_Header']]],
+  ['height',['height',['../struct____BMP__Header.html#acec41e9bac2e069de7cc444ec30202a5',1,'__BMP_Header::height()'],['../structDISPLAY__Geometry__t.html#a03ff0be9b964a10dcdf7dc02b73814b8',1,'DISPLAY_Geometry_t::height()']]],
   ['hfbusclken0',['HFBUSCLKEN0',['../structCMU__TypeDef.html#a058eed07abe3b86de84199b0367e002b',1,'CMU_TypeDef']]],
   ['hfclksel',['HFCLKSEL',['../structCMU__TypeDef.html#ae5da0a638612dc0cf9b12c60eaffe7b8',1,'CMU_TypeDef']]],
   ['hfclkstatus',['HFCLKSTATUS',['../structCMU__TypeDef.html#a1759c4632247d1004f3c3d585795f83e',1,'CMU_TypeDef']]],
@@ -27,6 +28,7 @@ var searchData=
   ['hfxotrimstatus',['HFXOTRIMSTATUS',['../structCMU__TypeDef.html#a573a0a3a1d8974778ea3f62165c99326',1,'CMU_TypeDef']]],
   ['hiddescriptor',['hidDescriptor',['../structHIDKBD__Init__t.html#a1abc15bb9c1f43a76634bb23488e87dd',1,'HIDKBD_Init_t']]],
   ['hisup',['HiSup',['../structMSDSCSI__InquiryData__TypeDef.html#a877dca1a45dd4447f46e88fcf1586ba7',1,'MSDSCSI_InquiryData_TypeDef']]],
+  ['hpixelspermeter',['hPixelsPerMeter',['../struct____BMP__Header.html#a0773aee07ed35391202851f637701ce3',1,'__BMP_Header']]],
   ['hw_5fversion',['HW_VERSION',['../structBC__TypeDef.html#a54f8cf0a391f950ca84f3c1e1c1bde21',1,'BC_TypeDef']]],
   ['hyst',['hyst',['../structPCNT__Init__TypeDef.html#a0b5c589f5083a032275acb525753c114',1,'PCNT_Init_TypeDef']]],
   ['hysteresis0',['HYSTERESIS0',['../structACMP__TypeDef.html#aaa6d118ee45255fce3daea36f7290e89',1,'ACMP_TypeDef']]],

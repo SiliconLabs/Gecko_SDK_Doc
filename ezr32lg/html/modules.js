@@ -5,5 +5,5 @@ var modules =
     [ "EMDRV", "group__emdrv.html", "group__emdrv" ],
     [ "EMLIB", "group__emlib.html", "group__emlib" ],
     [ "Kit Drivers", "group__kitdrv.html", "group__kitdrv" ],
-    [ "USB", "group__USB.html", "group__USB" ]
+    [ "Platform Middleware", "group__middleware.html", "group__middleware" ]
 ];

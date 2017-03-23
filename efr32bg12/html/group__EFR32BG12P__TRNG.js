@@ -10,12 +10,10 @@ var group__EFR32BG12P__TRNG =
       [ "KEY1", "structTRNG__TypeDef.html#af998abf357da73092890932b1f870fe5", null ],
       [ "KEY2", "structTRNG__TypeDef.html#a0157bc4183cad737fe0d090631133bf3", null ],
       [ "KEY3", "structTRNG__TypeDef.html#ac70b492e4ccb882f2dd500e48b91c98b", null ],
-      [ "PROP1THRES", "structTRNG__TypeDef.html#aac8fdc4265804d660a3ddef4fe1c98c1", null ],
-      [ "PROP2THRES", "structTRNG__TypeDef.html#a2e27e6a8523f2513231cc3a7dde58c03", null ],
-      [ "REPTHRES", "structTRNG__TypeDef.html#a1de6e1b100f1174be8e1797fef8d6bd2", null ],
       [ "RESERVED0", "structTRNG__TypeDef.html#a059262a7a3a49df609105259f56bfb8b", null ],
-      [ "RESERVED1", "structTRNG__TypeDef.html#a0f00cb87b4125b904bc1e627e67de2c0", null ],
-      [ "STATUS", "structTRNG__TypeDef.html#a3a0b1e8b1b3f8ca50960750e31267943", null ],
+      [ "RESERVED1", "structTRNG__TypeDef.html#a53abb43c103a5b9a1bee7aa506dca717", null ],
+      [ "RESERVED2", "structTRNG__TypeDef.html#a893ec2e6d0fb42344693e16773a4717d", null ],
+      [ "STATUS", "structTRNG__TypeDef.html#a66274e1cb8ca4285ec348c28de999a5b", null ],
       [ "TESTDATA", "structTRNG__TypeDef.html#a4c09e65fecadb711c25bfd221068bd09", null ]
     ] ]
 ];

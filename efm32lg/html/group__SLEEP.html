@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efm32lg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -284,7 +284,7 @@ Functions</h2></td></tr>
 <p>This function unblocks the low energy sleep block then goes to EM4.</p>
 <dl class="section note"><dt>Note</dt><dd>Regular RAM is not retained in EM4 and the wake up causes a reset. If the configuration option SLEEP_EM4_WAKEUP_CALLBACK_ENABLED is set to true, the <a class="el" href="group__SLEEP.html#ga01eb28531b3fc9a5c7880b86a98d4b1c" title="Initialize the Sleep module. ">SLEEP_Init()</a> function checks for the reset cause and calls the EM4 wakeup callback. </dd></dl>
 
-<p>Definition at line <a class="el" href="sleep_8c_source.html#l00215">215</a> of file <a class="el" href="sleep_8c_source.html">sleep.c</a>.</p>
+<p>Definition at line <a class="el" href="sleep_8c_source.html#l00214">214</a> of file <a class="el" href="sleep_8c_source.html">sleep.c</a>.</p>
 
 <p>References <a class="el" href="group__EMU.html#ga9e959a9fd56ac4a2e18877b9b839d795">EMU_EM2UnBlock()</a>, and <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa9c8db2c2a85e7cf34523539dfb6e0c38">sleepEM4</a>.</p>
 
@@ -359,7 +359,7 @@ Lowest energy mode that the system can be set to. Possible values: <ul>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="sleep_8c_source.html#l00332">332</a> of file <a class="el" href="sleep_8c_source.html">sleep.c</a>.</p>
+<p>Definition at line <a class="el" href="sleep_8c_source.html#l00331">331</a> of file <a class="el" href="sleep_8c_source.html">sleep.c</a>.</p>
 
 <p>References <a class="el" href="group__SLEEP.html#ga5eb562f111da99f4c90ffb674ae39307">SLEEP_LOWEST_ENERGY_MODE_DEFAULT</a>, <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa56f509425c165a08ec70b4d8142161c2">sleepEM1</a>, <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aabb50ecf70376fe1fb99995fea5bc14a8">sleepEM2</a>, and <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a>.</p>
 
@@ -398,7 +398,7 @@ Energy Mode that was entered. Possible values: <ul>
 
 <p>Definition at line <a class="el" href="sleep_8c_source.html#l00179">179</a> of file <a class="el" href="sleep_8c_source.html">sleep.c</a>.</p>
 
-<p>References <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__SLEEP.html#gaeb054dce581519f0f29d46d372a7abb2">SLEEP_LowestEnergyModeGet()</a>, <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7e989a57904991a6e3144b97f75410bd">sleepEM0</a>, <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa56f509425c165a08ec70b4d8142161c2">sleepEM1</a>, and <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a>.</p>
+<p>References <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#ga104c343f87cc88f212ed0288c34605b6">CORE_ENTER_CRITICAL</a>, <a class="el" href="group__CORE.html#ga601f69551d42ed58ec0fe19bbb160fc9">CORE_EXIT_CRITICAL</a>, <a class="el" href="group__SLEEP.html#gaeb054dce581519f0f29d46d372a7abb2">SLEEP_LowestEnergyModeGet()</a>, <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7e989a57904991a6e3144b97f75410bd">sleepEM0</a>, <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa56f509425c165a08ec70b4d8142161c2">sleepEM1</a>, and <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a>.</p>
 
 </div>
 </div>
@@ -447,7 +447,7 @@ Blocking a critical system state from a certain energy mode makes sure that the 
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sleep_8c_source.html#l00250">250</a> of file <a class="el" href="sleep_8c_source.html">sleep.c</a>.</p>
+<p>Definition at line <a class="el" href="sleep_8c_source.html#l00249">249</a> of file <a class="el" href="sleep_8c_source.html">sleep.c</a>.</p>
 
 <p>References <a class="el" href="group__EMU.html#ga72910c09de24f4e2f8f170dc06bd8c07">EMU_EM2Block()</a>, <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aabb50ecf70376fe1fb99995fea5bc14a8">sleepEM2</a>, <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a>, and <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa9c8db2c2a85e7cf34523539dfb6e0c38">sleepEM4</a>.</p>
 
@@ -506,7 +506,7 @@ Release restriction for entering certain energy mode. Every call of this functio
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sleep_8c_source.html#l00296">296</a> of file <a class="el" href="sleep_8c_source.html">sleep.c</a>.</p>
+<p>Definition at line <a class="el" href="sleep_8c_source.html#l00295">295</a> of file <a class="el" href="sleep_8c_source.html">sleep.c</a>.</p>
 
 <p>References <a class="el" href="group__EMU.html#ga9e959a9fd56ac4a2e18877b9b839d795">EMU_EM2UnBlock()</a>, <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aabb50ecf70376fe1fb99995fea5bc14a8">sleepEM2</a>, <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a>, and <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa9c8db2c2a85e7cf34523539dfb6e0c38">sleepEM4</a>.</p>
 
@@ -519,7 +519,7 @@ Release restriction for entering certain energy mode. Every call of this functio
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 16:00:06 for EFM32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:09 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

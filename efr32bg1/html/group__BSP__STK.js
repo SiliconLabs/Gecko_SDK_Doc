@@ -39,6 +39,26 @@ var group__BSP__STK =
     [ "BSP_BCP_TEST_REPLY", "group__BSP__STK.html#ga4a2281b28a75bd8c4487de46f1c4b655", null ],
     [ "BSP_BCP_VOLTAGE_REPLY", "group__BSP__STK.html#ga490e671df42b4175fa225205ec2f48c8", null ],
     [ "BSP_BCP_VOLTAGE_REQ", "group__BSP__STK.html#gab5be77a938905f62c3e5461d551d3f87", null ],
+    [ "BSP_Peripheral_TypeDef", "group__BSP__STK.html#ga978526e7803d063aeea2bba759571289", [
+      [ "BSP_RS232_SHUTDOWN", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a7ee2fe6799b66928489b136505bfd15a", null ],
+      [ "BSP_RS232_UART", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289adce62ece06c8cb0512b4ea478f7f86ee", null ],
+      [ "BSP_RS232_LEUART", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289abff6ba4882409c28bb2344fb32c77845", null ],
+      [ "BSP_I2C", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289af5b774032fff4d7dfedcb50705958ef6", null ],
+      [ "BSP_ETH", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a92cc6711102e4fab9a97d3a300f68a95", null ],
+      [ "BSP_I2S", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a74dd792f904c887e510e739881121f47", null ],
+      [ "BSP_TRACE", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a9e14c14c71eec858142df90d845d0393", null ],
+      [ "BSP_TOUCH", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a10caa20cd86554aec51e23406ddb1f58", null ],
+      [ "BSP_AUDIO_IN", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a91e25b14ca42149386b528a220bad0c1", null ],
+      [ "BSP_AUDIO_OUT", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a218b4fa9f9e60fd622f025e847369a65", null ],
+      [ "BSP_ANALOG_DIFF", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289ad93e25cae5a6055f75ccc8b74a33bee9", null ],
+      [ "BSP_ANALOG_SE", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289ae75fc3ff8186b3418a13c345f2bbc098", null ],
+      [ "BSP_MICROSD", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a083b9a980e1df709fa6e02814b159d93", null ],
+      [ "BSP_TFT", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a743380f59f663a0f28e428573fe858bc", null ],
+      [ "BSP_IOEXP_LEDS", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a7041f79cbfb87047fea33f429198eeb8", null ],
+      [ "BSP_IOEXP_SENSORS", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a252c0e71ef750aa548e6c8debe0a166e", null ],
+      [ "BSP_IOEXP_DISPLAY", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289afee6666bd01a8e5b92e0db33dad42794", null ],
+      [ "BSP_IOEXP_VCOM", "group__BSP__STK.html#gga978526e7803d063aeea2bba759571289af389457ed3ce92bf9924dbc21a246036", null ]
+    ] ],
     [ "BSP_BccDeInit", "group__BSP__STK.html#gac3192060c8ac4b2c6f4293aed6b2747a", null ],
     [ "BSP_BccInit", "group__BSP__STK.html#gaba9ce74ca657de9f9f903e062cc654ef", null ],
     [ "BSP_BccPacketReceive", "group__BSP__STK.html#ga7c4e0d4b56b273ec994f61e0f459c4fe", null ],
@@ -47,5 +67,6 @@ var group__BSP__STK =
     [ "BSP_CurrentGet", "group__BSP__STK.html#gab4e9e65adf7c92f14550927e0957fe6b", null ],
     [ "BSP_EbiDeInit", "group__BSP__STK.html#ga6ffd79cca52f9182c8465d83341d15f7", null ],
     [ "BSP_EbiInit", "group__BSP__STK.html#ga03b1ff40234468f05b725c7997d8bd84", null ],
+    [ "BSP_IOExpGetDeviceId", "group__BSP__STK.html#ga02e6d90384575784588039dfd7120e51", null ],
     [ "BSP_VoltageGet", "group__BSP__STK.html#ga49f47507e5d6c286a2913807671803aa", null ]
 ];

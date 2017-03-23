@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['valid',['valid',['../structMSDD__CmdStatus__TypeDef.html#a0eb28e74638f8ca64f0cf141a4cb3055',1,'MSDD_CmdStatus_TypeDef::valid()'],['../structMSDSCSI__RequestSenseData__TypeDef.html#ac486480a4989efbebbaccf3cbafc3b68',1,'MSDSCSI_RequestSenseData_TypeDef::Valid()']]],
+  ['valid',['Valid',['../structMSDSCSI__RequestSenseData__TypeDef.html#ac486480a4989efbebbaccf3cbafc3b68',1,'MSDSCSI_RequestSenseData_TypeDef::Valid()'],['../structMSDD__CmdStatus__TypeDef.html#a0eb28e74638f8ca64f0cf141a4cb3055',1,'MSDD_CmdStatus_TypeDef::valid()']]],
   ['valid_5fframe_5fmask',['VALID_FRAME_MASK',['../ksz8851snl_8c.html#aeaa8fab8c4bb775b6dd1fc7532911f25',1,'ksz8851snl.c']]],
   ['value',['VALUE',['../structCALIBRATE__TypeDef.html#afed449925331ba5fb66a3912414a2f2f',1,'CALIBRATE_TypeDef']]],
   ['vcmp',['VCMP',['../group__EFM32G890F128__Peripheral__Declaration.html#ga2df0e11fc4a10e1e7ea0e83042a5c77d',1,'VCMP():&#160;efm32g890f128.h'],['../group__VCMP.html',1,'(Global Namespace)']]],
@@ -88,13 +88,16 @@ var searchData=
   ['vddcheck_5finit',['VDDCHECK_Init',['../group__VddCheck.html#gab3b6f35557b826311fc4de286db457fb',1,'VDDCHECK_Init(void):&#160;vddcheck.c'],['../group__VddCheck.html#gab3b6f35557b826311fc4de286db457fb',1,'VDDCHECK_Init(void):&#160;vddcheck.c']]],
   ['vddcheck_5flowvoltage',['VDDCHECK_LowVoltage',['../group__VddCheck.html#ga9281f4ae6f1c6b5f31205fb3cc138e0e',1,'VDDCHECK_LowVoltage(float vdd):&#160;vddcheck.c'],['../group__VddCheck.html#ga9281f4ae6f1c6b5f31205fb3cc138e0e',1,'VDDCHECK_LowVoltage(float vdd):&#160;vddcheck.c']]],
   ['vddlevel',['vddLevel',['../structACMP__CapsenseInit__TypeDef.html#ac6c45a058c3881092795487edf418c4a',1,'ACMP_CapsenseInit_TypeDef::vddLevel()'],['../structACMP__Init__TypeDef.html#a1d3145c20d24f1b53279187cfd771a31',1,'ACMP_Init_TypeDef::vddLevel()']]],
+  ['vendorid',['vendorId',['../structUSBX__Init__t.html#addcc33cc7b6098a6456222ca7d5a65d5',1,'USBX_Init_t']]],
   ['verification',['Verification',['../structMSDSCSI__Verify10__TypeDef.html#a30481a394fbcd76dca996efc1c1d6f57',1,'MSDSCSI_Verify10_TypeDef']]],
   ['version',['Version',['../structMSDSCSI__InquiryData__TypeDef.html#a19b18638a490b73406a2a934e9846bb3',1,'MSDSCSI_InquiryData_TypeDef::Version()'],['../group__VERSION.html',1,'(Global Namespace)']]],
+  ['violet',['Violet',['../glib__color_8h.html#acbc399a788665e749295b2cf71c0023e',1,'glib_color.h']]],
   ['vis',['vis',['../structSI114X__IRQ__SAMPLE.html#a434aca5bbede919398acb1412d64aace',1,'SI114X_IRQ_SAMPLE']]],
   ['vispd_5fadchi_5fwhled',['vispd_adchi_whled',['../structcal__ref__t.html#a0a6e163ff6ea04fd48947c6ff5fac5ac',1,'cal_ref_t']]],
   ['vispd_5fadclo_5fwhled',['vispd_adclo_whled',['../structcal__ref__t.html#ac1c15fdb1f3a80f4c150b74727f56198',1,'cal_ref_t']]],
   ['vispd_5fcorrection',['vispd_correction',['../structSI114X__CAL__S.html#a92961490b1a4ae8a444b7de381528d92',1,'SI114X_CAL_S']]],
   ['vlcd',['vlcd',['../structLCD__Init__TypeDef.html#aab685e0b3ed3beed09d6c64d4e28956e',1,'LCD_Init_TypeDef']]],
+  ['vpixelspermeter',['vPixelsPerMeter',['../struct____BMP__Header.html#adfac3b1f53b04ab7653b1f41a1468ba8',1,'__BMP_Header']]],
   ['vrprotect',['VrProtect',['../structMSDSCSI__Verify10__TypeDef.html#ae54d995272dc054a0e9fbbd81f3f068c',1,'MSDSCSI_Verify10_TypeDef']]],
   ['vs1',['Vs1',['../structMSDSCSI__InquiryData__TypeDef.html#ad69b6988740c3012da6579229731cf93',1,'MSDSCSI_InquiryData_TypeDef']]],
   ['vs2',['Vs2',['../structMSDSCSI__InquiryData__TypeDef.html#a93bd09979d33921c72bd7183f3372a4a',1,'MSDSCSI_InquiryData_TypeDef']]]

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['opamp_5finit_5ftypedef',['OPAMP_Init_TypeDef',['../structOPAMP__Init__TypeDef.html',1,'']]],
-  ['operand_5ft',['operand_t',['../structoperand__t.html',1,'']]]
+  ['nandflash_5finfo_5ftypedef',['NANDFLASH_Info_TypeDef',['../structNANDFLASH__Info__TypeDef.html',1,'']]],
+  ['norflash_5finfo_5ftypedef',['NORFLASH_Info_TypeDef',['../structNORFLASH__Info__TypeDef.html',1,'']]],
+  ['number_5ftypedef',['NUMBER_TypeDef',['../structNUMBER__TypeDef.html',1,'']]]
 ];

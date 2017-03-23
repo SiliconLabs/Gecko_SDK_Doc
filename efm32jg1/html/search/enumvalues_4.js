@@ -5,6 +5,8 @@ var searchData=
   ['emubodmode_5finactive',['emuBODMode_Inactive',['../group__EMU.html#gga7453aecd1fc0cf2d035df6178dfb9a16a0c3b74c9a8136ea916a2ed80e8327ee6',1,'em_emu.h']]],
   ['emudcdcanaperipheralpower_5favdd',['emuDcdcAnaPeripheralPower_AVDD',['../group__EMU.html#ggaccf990475418eb1ed67acaed99efa4d0a035bd434069aca951cc17748ecd8267f',1,'em_emu.h']]],
   ['emudcdcanaperipheralpower_5fdcdc',['emuDcdcAnaPeripheralPower_DCDC',['../group__EMU.html#ggaccf990475418eb1ed67acaed99efa4d0a11b20cbde79a3d9aede0836319b4e6eb',1,'em_emu.h']]],
+  ['emudcdcconductionmode_5fcontinuousln',['emuDcdcConductionMode_ContinuousLN',['../group__EMU.html#gga45189ee92413218bfa0bb32e86c08205aa03ed679017808311942e7278080be33',1,'em_emu.h']]],
+  ['emudcdcconductionmode_5fdiscontinuousln',['emuDcdcConductionMode_DiscontinuousLN',['../group__EMU.html#gga45189ee92413218bfa0bb32e86c08205ad5cc162bbf982de5726920d927cdd372',1,'em_emu.h']]],
   ['emudcdclncompctrl_5f1u0f',['emuDcdcLnCompCtrl_1u0F',['../group__EMU.html#ggabba8a5896d1f04f6d70aad9d59cb0f67aa311d8c0e15f9cb1a0bc5dde18a8a573',1,'em_emu.h']]],
   ['emudcdclncompctrl_5f4u7f',['emuDcdcLnCompCtrl_4u7F',['../group__EMU.html#ggabba8a5896d1f04f6d70aad9d59cb0f67a600a54e10fd5138d295ad5eff54f487e',1,'em_emu.h']]],
   ['emudcdclnrcoband_5f10mhz',['emuDcdcLnRcoBand_10MHz',['../group__EMU.html#ggaa7b79860e9ac3e301ab467715432b644aaaa57266f2b96887797ba646a7c8c3f6',1,'em_emu.h']]],

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['leuart_5finit_5ftypedef',['LEUART_Init_TypeDef',['../structLEUART__Init__TypeDef.html',1,'']]],
-  ['leuart_5ftypedef',['LEUART_TypeDef',['../structLEUART__TypeDef.html',1,'']]]
+  ['ksz8851sln_5fmib_5fs',['KSZ8851SLN_mib_s',['../structKSZ8851SLN__mib__s.html',1,'']]]
 ];

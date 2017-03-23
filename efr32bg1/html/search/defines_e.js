@@ -7,8 +7,17 @@ var searchData=
   ['pal_5femstatus_5finvalid_5fparam',['PAL_EMSTATUS_INVALID_PARAM',['../displaypal_8h.html#a7be796b7529c66a24983fd8994496626',1,'displaypal.h']]],
   ['pal_5femstatus_5fok',['PAL_EMSTATUS_OK',['../displaypal_8h.html#a97f867e9b427f430e0c666c5e76abab7',1,'displaypal.h']]],
   ['pal_5femstatus_5frepeat_5ffailed',['PAL_EMSTATUS_REPEAT_FAILED',['../displaypal_8h.html#a98b51c4c08e19ba2acc86ea01a0546d5',1,'displaypal.h']]],
+  ['palegoldenrod',['PaleGoldenrod',['../glib__color_8h.html#a87b59deaa5aaffb1a57f84d4fe58c595',1,'glib_color.h']]],
+  ['palegreen',['PaleGreen',['../glib__color_8h.html#a8f473b87aabe3835048a65432eae12d4',1,'glib_color.h']]],
+  ['paleturquoise',['PaleTurquoise',['../glib__color_8h.html#a1d1b45fe65e777203c1b093252b5ec58',1,'glib_color.h']]],
+  ['palevioletred',['PaleVioletRed',['../glib__color_8h.html#a3de3c75adcdb064e141487a09a3cfada',1,'PaleVioletRed():&#160;glib_color.h'],['../glib__color_8h.html#a3de3c75adcdb064e141487a09a3cfada',1,'PaleVioletRed():&#160;glib_color.h']]],
+  ['papayawhip',['PapayaWhip',['../glib__color_8h.html#a2a64d5ffbb64fed66bc34c6e70fba991',1,'glib_color.h']]],
+  ['peachpuff',['PeachPuff',['../glib__color_8h.html#af774cc09449ae557facff32233fe3a6d',1,'glib_color.h']]],
+  ['peru',['Peru',['../glib__color_8h.html#a920638b08c810c394d745a24aae1c70c',1,'glib_color.h']]],
   ['phy_5freset',['PHY_RESET',['../ksz8851snl_8c.html#a6f5048620b3dde8583f7f1118e9de187',1,'ksz8851snl.c']]],
   ['phyrr',['PHYRR',['../ksz8851snl_8c.html#a899443e7d74043411fea3eee7d9de9f6',1,'ksz8851snl.c']]],
+  ['pink',['Pink',['../glib__color_8h.html#a5729db18002d801c80e8cd4b7d970a63',1,'glib_color.h']]],
+  ['plum',['Plum',['../glib__color_8h.html#a673aed60df5cf3fabfb6bed658042231',1,'glib_color.h']]],
   ['pmecr',['PMECR',['../ksz8851snl_8c.html#adeb3a4d09a3fed3e809b1c96c21b4241',1,'ksz8851snl.c']]],
   ['port1_5fan_5fdone',['PORT1_AN_DONE',['../ksz8851snl_8c.html#a87fa607805ba7061f1d6a4cf6764f116',1,'ksz8851snl.c']]],
   ['port1_5fauto_5fmdix_5fdisable',['PORT1_AUTO_MDIX_DISABLE',['../ksz8851snl_8c.html#a05ce5d40b4a0db4562ea465c6b4dfd6b',1,'ksz8851snl.c']]],
@@ -26,5 +35,8 @@ var searchData=
   ['port1_5fled_5foff',['PORT1_LED_OFF',['../ksz8851snl_8c.html#a575284288b451b99168a28eace28f027',1,'ksz8851snl.c']]],
   ['port1_5flink_5fgood',['PORT1_LINK_GOOD',['../ksz8851snl_8c.html#a8aa99936d570f6e85ff73a9ffe372815',1,'ksz8851snl.c']]],
   ['port1_5fpower_5fdown',['PORT1_POWER_DOWN',['../ksz8851snl_8c.html#a9b79326b86c4ac564fdde7c91a04112a',1,'ksz8851snl.c']]],
-  ['port1_5ftx_5fdisable',['PORT1_TX_DISABLE',['../ksz8851snl_8c.html#a158a44e04fcb947359a5ffb566e95d40',1,'ksz8851snl.c']]]
+  ['port1_5ftx_5fdisable',['PORT1_TX_DISABLE',['../ksz8851snl_8c.html#a158a44e04fcb947359a5ffb566e95d40',1,'ksz8851snl.c']]],
+  ['powderblue',['PowderBlue',['../glib__color_8h.html#aa6fe69d48c653c7fa56e8733a197b650',1,'glib_color.h']]],
+  ['properties_5fdescriptor_5fsize',['PROPERTIES_DESCRIPTOR_SIZE',['../em__usbxpress__descriptors_8h.html#a9fe81ef85a33a4bf8d7209bb7a64d6ee',1,'em_usbxpress_descriptors.h']]],
+  ['purple',['Purple',['../glib__color_8h.html#a5168ce33eb581e85fbfa454e89012bfb',1,'glib_color.h']]]
 ];

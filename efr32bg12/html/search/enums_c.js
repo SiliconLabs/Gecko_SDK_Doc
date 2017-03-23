@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['segmentlcd_5fblockmode_5ftypedef',['SegmentLCD_BlockMode_TypeDef',['../group__SegmentLcd.html#gafbcfe27efe1304334520446550824d87',1,'segmentlcd.h']]],
-  ['sleep_5fenergymode_5ft',['SLEEP_EnergyMode_t',['../group__SLEEP.html#gaafb23646b17401bdad763d0fb0c7ff9a',1,'sleep.h']]],
-  ['spidrv_5fbitorder',['SPIDRV_BitOrder',['../group__SPIDRV.html#ga25c5e9421435cbb3cdd8e7da486426dd',1,'spidrv.h']]],
-  ['spidrv_5fclockmode',['SPIDRV_ClockMode',['../group__SPIDRV.html#gaa1b4721388b623f0242d0cadd4a3b3ef',1,'spidrv.h']]],
-  ['spidrv_5fcscontrol',['SPIDRV_CsControl',['../group__SPIDRV.html#gaec2cac185e42ded3da0d3e2d5cd56226',1,'spidrv.h']]],
-  ['spidrv_5fslavestart',['SPIDRV_SlaveStart',['../group__SPIDRV.html#ga5e653c9b53ec8c873a24192257bd8312',1,'spidrv.h']]],
-  ['spidrv_5ftype',['SPIDRV_Type',['../group__SPIDRV.html#gad47b70bb6c11a6a2842f7dc8dab31824',1,'spidrv.h']]],
-  ['system_5ffpuaccess_5ftypedef',['SYSTEM_FpuAccess_TypeDef',['../group__SYSTEM.html#gacad9a0706dbf7fea35b1fef36749c3f2',1,'em_system.h']]],
-  ['system_5fpartfamily_5ftypedef',['SYSTEM_PartFamily_TypeDef',['../group__SYSTEM.html#ga45f33557f44ae73db1c70765a2a29e5a',1,'em_system.h']]]
+  ['pcnt_5fcntevent_5ftypedef',['PCNT_CntEvent_TypeDef',['../group__PCNT.html#gaf5d5d7081a8e56ad0571addc1028ac5c',1,'em_pcnt.h']]],
+  ['pcnt_5fmode_5ftypedef',['PCNT_Mode_TypeDef',['../group__PCNT.html#ga2fb0fc7f68c902b71b271ba5687643a4',1,'em_pcnt.h']]],
+  ['pcnt_5fprsinput_5ftypedef',['PCNT_PRSInput_TypeDef',['../group__PCNT.html#gae186a75007f832e0de80ccae92528104',1,'em_pcnt.h']]],
+  ['pcnt_5fprssel_5ftypedef',['PCNT_PRSSel_TypeDef',['../group__PCNT.html#ga1e54a6fa69a7da44510c6f38ced54486',1,'em_pcnt.h']]],
+  ['pcnt_5ftcccomp_5ftypedef',['PCNT_TCCComp_Typedef',['../group__PCNT.html#gaf97608795b1177e482c654ab1067c5d1',1,'em_pcnt.h']]],
+  ['pcnt_5ftccmode_5ftypedef',['PCNT_TCCMode_TypeDef',['../group__PCNT.html#ga4bd1cdf1efa4057b9dfcb9a39622476f',1,'em_pcnt.h']]],
+  ['pcnt_5ftccpresc_5ftypedef',['PCNT_TCCPresc_Typedef',['../group__PCNT.html#ga8fb875f2c878db7df25ad528b8551ed0',1,'em_pcnt.h']]],
+  ['prs_5fedge_5ftypedef',['PRS_Edge_TypeDef',['../group__PRS.html#ga853e2a53ed99eb3a0c5e163e1d33e814',1,'em_prs.h']]]
 ];

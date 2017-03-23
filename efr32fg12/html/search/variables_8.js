@@ -1,7 +1,10 @@
 var searchData=
 [
+  ['halfdrvstr',['halfDrvStr',['../structOPAMP__Init__TypeDef.html#a502ac1e749b7f18921c43d3e7948ff4b',1,'OPAMP_Init_TypeDef']]],
+  ['hcmdisable',['hcmDisable',['../structOPAMP__Init__TypeDef.html#a05ded6707730217045bf21a46352b59c',1,'OPAMP_Init_TypeDef']]],
   ['head',['head',['../structUARTDRV__Buffer__FifoQueue__t.html#a098bc39f083739e5a6e32093a094593c',1,'UARTDRV_Buffer_FifoQueue_t']]],
-  ['height',['height',['../structDISPLAY__Geometry__t.html#a03ff0be9b964a10dcdf7dc02b73814b8',1,'DISPLAY_Geometry_t']]],
+  ['headersize',['headerSize',['../struct____BMP__Header.html#aa9e0687cf6115e1d3ca5f9459d8efe60',1,'__BMP_Header']]],
+  ['height',['height',['../struct____BMP__Header.html#acec41e9bac2e069de7cc444ec30202a5',1,'__BMP_Header::height()'],['../structDISPLAY__Geometry__t.html#a03ff0be9b964a10dcdf7dc02b73814b8',1,'DISPLAY_Geometry_t::height()']]],
   ['hfbusclken0',['HFBUSCLKEN0',['../structCMU__TypeDef.html#a058eed07abe3b86de84199b0367e002b',1,'CMU_TypeDef']]],
   ['hfclksel',['HFCLKSEL',['../structCMU__TypeDef.html#ae5da0a638612dc0cf9b12c60eaffe7b8',1,'CMU_TypeDef']]],
   ['hfclkstatus',['HFCLKSTATUS',['../structCMU__TypeDef.html#a1759c4632247d1004f3c3d585795f83e',1,'CMU_TypeDef']]],
@@ -10,10 +13,6 @@ var searchData=
   ['hfperclken0',['HFPERCLKEN0',['../structCMU__TypeDef.html#a19d1046d01221afdc0f621ebb295778c',1,'CMU_TypeDef']]],
   ['hfperpresc',['HFPERPRESC',['../structCMU__TypeDef.html#a088303aa4992075b264cf4de301d3661',1,'CMU_TypeDef']]],
   ['hfpresc',['HFPRESC',['../structCMU__TypeDef.html#ac8433b1bdd3ff3616296aab4765f84c3',1,'CMU_TypeDef']]],
-  ['hfradioaltclken0',['HFRADIOALTCLKEN0',['../structCMU__TypeDef.html#a9e9d7b0922945db37a33236b367181ea',1,'CMU_TypeDef']]],
-  ['hfradioaltpresc',['HFRADIOALTPRESC',['../structCMU__TypeDef.html#ace9ff8e9f375ead32428cbaa5f539674',1,'CMU_TypeDef']]],
-  ['hfradioclken0',['HFRADIOCLKEN0',['../structCMU__TypeDef.html#a27eb814875c0031ae42270f62ce06cf9',1,'CMU_TypeDef']]],
-  ['hfradiopresc',['HFRADIOPRESC',['../structCMU__TypeDef.html#a09abe9cbc62a8ff43ece6e46ae827902',1,'CMU_TypeDef']]],
   ['hfrcocal0',['HFRCOCAL0',['../structDEVINFO__TypeDef.html#a86fc0e2b0fd6148ad27907d0af2e73cb',1,'DEVINFO_TypeDef']]],
   ['hfrcocal10',['HFRCOCAL10',['../structDEVINFO__TypeDef.html#ac38323e26791b7041e8a52c5d9341878',1,'DEVINFO_TypeDef']]],
   ['hfrcocal11',['HFRCOCAL11',['../structDEVINFO__TypeDef.html#aa822ea466c1adf1644a3c19a4856b67c',1,'DEVINFO_TypeDef']]],
@@ -31,10 +30,15 @@ var searchData=
   ['hfxotrimstatus',['HFXOTRIMSTATUS',['../structCMU__TypeDef.html#a573a0a3a1d8974778ea3f62165c99326',1,'CMU_TypeDef']]],
   ['hiddescriptor',['hidDescriptor',['../structHIDKBD__Init__t.html#a1abc15bb9c1f43a76634bb23488e87dd',1,'HIDKBD_Init_t']]],
   ['hisup',['HiSup',['../structMSDSCSI__InquiryData__TypeDef.html#a877dca1a45dd4447f46e88fcf1586ba7',1,'MSDSCSI_InquiryData_TypeDef']]],
+  ['hpixelspermeter',['hPixelsPerMeter',['../struct____BMP__Header.html#a0773aee07ed35391202851f637701ce3',1,'__BMP_Header']]],
   ['hw_5fversion',['HW_VERSION',['../structBC__TypeDef.html#a54f8cf0a391f950ca84f3c1e1c1bde21',1,'BC_TypeDef']]],
   ['hyst',['hyst',['../structPCNT__Init__TypeDef.html#a0b5c589f5083a032275acb525753c114',1,'PCNT_Init_TypeDef']]],
   ['hysteresis0',['HYSTERESIS0',['../structACMP__TypeDef.html#aaa6d118ee45255fce3daea36f7290e89',1,'ACMP_TypeDef']]],
   ['hysteresis1',['HYSTERESIS1',['../structACMP__TypeDef.html#a7056486cd46ba6dea4d1343c17bd1c2b',1,'ACMP_TypeDef']]],
   ['hysteresislevel_5f0',['hysteresisLevel_0',['../structACMP__CapsenseInit__TypeDef.html#a3ab2156b230c73382e4c80fcbeeb303e',1,'ACMP_CapsenseInit_TypeDef::hysteresisLevel_0()'],['../structACMP__Init__TypeDef.html#a221134a5202736b09f486a5884f2fb30',1,'ACMP_Init_TypeDef::hysteresisLevel_0()']]],
-  ['hysteresislevel_5f1',['hysteresisLevel_1',['../structACMP__CapsenseInit__TypeDef.html#aba3904615f5ece958350b87ff18bbc2c',1,'ACMP_CapsenseInit_TypeDef::hysteresisLevel_1()'],['../structACMP__Init__TypeDef.html#a3abc52d86114fa7b5bc4e50b5b63ecd2',1,'ACMP_Init_TypeDef::hysteresisLevel_1()']]]
+  ['hysteresislevel_5f1',['hysteresisLevel_1',['../structACMP__CapsenseInit__TypeDef.html#aba3904615f5ece958350b87ff18bbc2c',1,'ACMP_CapsenseInit_TypeDef::hysteresisLevel_1()'],['../structACMP__Init__TypeDef.html#a3abc52d86114fa7b5bc4e50b5b63ecd2',1,'ACMP_Init_TypeDef::hysteresisLevel_1()']]],
+  ['hystirq',['hystIRQ',['../structLESENSE__DecCtrlDesc__TypeDef.html#a91516249dc15be0d3e61bd7c1f61f9d9',1,'LESENSE_DecCtrlDesc_TypeDef']]],
+  ['hystprs0',['hystPRS0',['../structLESENSE__DecCtrlDesc__TypeDef.html#a45c2dc19aee44f568b51c254ef6b2144',1,'LESENSE_DecCtrlDesc_TypeDef']]],
+  ['hystprs1',['hystPRS1',['../structLESENSE__DecCtrlDesc__TypeDef.html#a41fde2b89334589a125674f52bd32d67',1,'LESENSE_DecCtrlDesc_TypeDef']]],
+  ['hystprs2',['hystPRS2',['../structLESENSE__DecCtrlDesc__TypeDef.html#a15407d1e6210ffea38a464681d0c58e8',1,'LESENSE_DecCtrlDesc_TypeDef']]]
 ];

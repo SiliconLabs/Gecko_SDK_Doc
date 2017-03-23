@@ -179,8 +179,6 @@ var em__acmp_8h =
       [ "acmpInputAPORT4YCH14", "group__ACMP.html#gga0971c188cd2a1aeff32dd621f851af17af6bc1f93d97d73ac700d63415ce1973b", null ],
       [ "acmpInputAPORT4XCH15", "group__ACMP.html#gga0971c188cd2a1aeff32dd621f851af17ac94abfa437971de956230bb09becf3e9", null ],
       [ "acmpInputAPORT4XCH31", "group__ACMP.html#gga0971c188cd2a1aeff32dd621f851af17ad07c9d4437738dbe51c1a21d559ff1d8", null ],
-      [ "acmpInputDACOUT0", "group__ACMP.html#gga0971c188cd2a1aeff32dd621f851af17a4b40e6c551497ae367bf7df6a2af80ed", null ],
-      [ "acmpInputDACOUT1", "group__ACMP.html#gga0971c188cd2a1aeff32dd621f851af17a2657c39abbab6a635075df56446f2e45", null ],
       [ "acmpInputVLP", "group__ACMP.html#gga0971c188cd2a1aeff32dd621f851af17a77136ff1690c33727efbd2cc704498f9", null ],
       [ "acmpInputVBDIV", "group__ACMP.html#gga0971c188cd2a1aeff32dd621f851af17a0c9c51d92810f4f429294cf027b1ae4a", null ],
       [ "acmpInputVADIV", "group__ACMP.html#gga0971c188cd2a1aeff32dd621f851af17a3addf389a72d008c1c026b1061a30434", null ],

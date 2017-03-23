@@ -12,6 +12,7 @@ var searchData=
   ['ebimoded8a8',['ebiModeD8A8',['../group__EBI.html#gga476667a09de244839afb6de3980ca0bda65e86d54d6f4b8358078d98e8a68b0ef',1,'em_ebi.h']]],
   ['emubodmode_5factive',['emuBODMode_Active',['../group__EMU.html#gga7453aecd1fc0cf2d035df6178dfb9a16ab8a638e18a8c50b6406dc807e8ed727d',1,'em_emu.h']]],
   ['emubodmode_5finactive',['emuBODMode_Inactive',['../group__EMU.html#gga7453aecd1fc0cf2d035df6178dfb9a16a0c3b74c9a8136ea916a2ed80e8327ee6',1,'em_emu.h']]],
+  ['emupowerconfig_5fdcdctodvdd',['emuPowerConfig_DcdcToDvdd',['../group__EMU.html#gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9',1,'em_emu.h']]],
   ['ezradio_5fconfig_5fcommand_5ferror',['EZRADIO_CONFIG_COMMAND_ERROR',['../group__API__Layer.html#gga0a0400f1e4c5eae1df893aec358d5b5ca33ac7e1d9f0696eca05b880549b15a62',1,'ezradio_api_lib.h']]],
   ['ezradio_5fconfig_5fcts_5ftimeout',['EZRADIO_CONFIG_CTS_TIMEOUT',['../group__API__Layer.html#gga0a0400f1e4c5eae1df893aec358d5b5ca81144c68401a91261ec1f606f4292009',1,'ezradio_api_lib.h']]],
   ['ezradio_5fconfig_5fno_5fpatch',['EZRADIO_CONFIG_NO_PATCH',['../group__API__Layer.html#gga0a0400f1e4c5eae1df893aec358d5b5cabc3e61fa71c1912f063960b58d9352cb',1,'ezradio_api_lib.h']]],

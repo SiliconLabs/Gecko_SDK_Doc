@@ -1,6 +1,27 @@
 var searchData=
 [
+  ['darkblue',['DarkBlue',['../glib__color_8h.html#a7bfd500a844c3c605dbf3661b5918b4c',1,'glib_color.h']]],
+  ['darkcyan',['DarkCyan',['../glib__color_8h.html#a4a3f0cfe7132120d7a919710fd710382',1,'glib_color.h']]],
+  ['darkgoldenrod',['DarkGoldenrod',['../glib__color_8h.html#a2734efe110332fd203e2685967575456',1,'glib_color.h']]],
+  ['darkgray',['DarkGray',['../glib__color_8h.html#aa8ab1883da58e6ed8cbef636ad79a3b4',1,'glib_color.h']]],
+  ['darkgreen',['DarkGreen',['../glib__color_8h.html#a6272b9dfc83f6629b350dbc923e2e184',1,'glib_color.h']]],
+  ['darkkhaki',['DarkKhaki',['../glib__color_8h.html#a25481547c5e4f2b6c5347ab447b53e67',1,'glib_color.h']]],
+  ['darkmagenta',['DarkMagenta',['../glib__color_8h.html#adda976a16006e00339531c3ea7966f16',1,'glib_color.h']]],
+  ['darkolivegreen',['DarkOliveGreen',['../glib__color_8h.html#abc68c8b8203bf1cc5feddeba5fc1ffca',1,'glib_color.h']]],
+  ['darkorange',['DarkOrange',['../glib__color_8h.html#ae050dca1e495fc2ace9bd287915afb2f',1,'glib_color.h']]],
+  ['darkorchid',['DarkOrchid',['../glib__color_8h.html#a57cb47fa84655f742a3be181f05ce88b',1,'glib_color.h']]],
+  ['darkred',['DarkRed',['../glib__color_8h.html#a389ef2aa5df30e580ec3f4bd97a160a7',1,'glib_color.h']]],
+  ['darksalmon',['DarkSalmon',['../glib__color_8h.html#afb4066d432e6512a53a6e145f8553d26',1,'glib_color.h']]],
+  ['darkseagreen',['DarkSeaGreen',['../glib__color_8h.html#a98d5e69984bd0f173a8c369cc74f34af',1,'glib_color.h']]],
+  ['darkslateblue',['DarkSlateBlue',['../glib__color_8h.html#acd8e9b2d6e73b264db124907e2c1ef31',1,'glib_color.h']]],
+  ['darkslategray',['DarkSlateGray',['../glib__color_8h.html#a94d0eac0ae72fa3d0986c525f3b8abdf',1,'glib_color.h']]],
+  ['darkturquoise',['DarkTurquoise',['../glib__color_8h.html#a65505d27ab64f6045c696b22d813a63f',1,'glib_color.h']]],
+  ['darkviolet',['DarkViolet',['../glib__color_8h.html#a85036e64f684ded8db400e122a23775c',1,'glib_color.h']]],
+  ['deeppink',['DeepPink',['../glib__color_8h.html#ac352b59dc456c1b23e6b2d35ddcd8b31',1,'glib_color.h']]],
+  ['deepskyblue',['DeepSkyBlue',['../glib__color_8h.html#aa27ffeef4d7ce599dd0e015731738b07',1,'glib_color.h']]],
   ['default_5fidle_5frate',['DEFAULT_IDLE_RATE',['../hidkbd_8c.html#a1b3ed427680b005e36dc08bac5e32e04',1,'hidkbd.c']]],
   ['digital_5floopback',['DIGITAL_LOOPBACK',['../ksz8851snl_8c.html#afd5294adf51575bf765d1dc7d126fa91',1,'ksz8851snl.c']]],
-  ['display_5femstatus_5fbase',['DISPLAY_EMSTATUS_BASE',['../emstatus_8h.html#a70a6e7a9589859ffdceaa0ad60b615b9',1,'emstatus.h']]]
+  ['dimgray',['DimGray',['../glib__color_8h.html#a08dfa14009a8287a6f36f878277c7bca',1,'glib_color.h']]],
+  ['display_5femstatus_5fbase',['DISPLAY_EMSTATUS_BASE',['../emstatus_8h.html#a70a6e7a9589859ffdceaa0ad60b615b9',1,'emstatus.h']]],
+  ['dodgerblue',['DodgerBlue',['../glib__color_8h.html#a0e78263229baa958a073735aa029a2d0',1,'glib_color.h']]]
 ];

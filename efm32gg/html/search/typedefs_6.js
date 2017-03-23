@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['irqn_5ftype',['IRQn_Type',['../group__EFM32GG995F1024.html#gac3af4a32370fb28c4ade8bf2add80251',1,'efm32gg995f1024.h']]]
+  ['hidkbd_5fsetreportfunc_5ft',['HIDKBD_SetReportFunc_t',['../group__HidKeyboard.html#ga649c40d8591a065fc283aa8f02e812fd',1,'hidkbd.h']]]
 ];

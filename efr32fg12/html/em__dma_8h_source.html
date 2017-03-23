@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Flex Gecko 12 Software Documentation: c:/work/super/platform/emlib/inc/em_dma.h Source File</title>
+<title>EFR32 Flex Gecko 12 Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/platform/emlib/inc/em_dma.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Flex Gecko 12 Software Documentation
-   &#160;<span id="projectnumber">efr32fg12-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efr32fg12-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -273,21 +273,21 @@ $(document).ready(function(){initNavTree('em__dma_8h_source.html','');});
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="keywordtype">void</span> DMA_ActivateAuto(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> channel,</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                      <span class="keywordtype">bool</span> primary,</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                      <span class="keywordtype">void</span> *dst,</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                      <span class="keywordtype">void</span> *src,</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                      <span class="keyword">const</span> <span class="keywordtype">void</span> *src,</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nMinus1);</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="keywordtype">void</span> DMA_ActivateBasic(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> channel,</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                       <span class="keywordtype">bool</span> primary,</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                       <span class="keywordtype">bool</span> useBurst,</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                       <span class="keywordtype">void</span> *dst,</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                       <span class="keywordtype">void</span> *src,</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                       <span class="keyword">const</span> <span class="keywordtype">void</span> *src,</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                       <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nMinus1);</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="keywordtype">void</span> DMA_ActivatePingPong(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> channel,</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                          <span class="keywordtype">bool</span> useBurst,</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                          <span class="keywordtype">void</span> *primDst,</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                          <span class="keywordtype">void</span> *primSrc,</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                          <span class="keyword">const</span> <span class="keywordtype">void</span> *primSrc,</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> primNMinus1,</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                          <span class="keywordtype">void</span> *altDst,</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                          <span class="keywordtype">void</span> *altSrc,</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                          <span class="keyword">const</span> <span class="keywordtype">void</span> *altSrc,</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> altNMinus1);</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="keywordtype">void</span> DMA_ActivateScatterGather(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> channel,</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                               <span class="keywordtype">bool</span> useBurst,</div>
@@ -347,7 +347,7 @@ $(document).ready(function(){initNavTree('em__dma_8h_source.html','');});
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                         <span class="keywordtype">bool</span> primary,</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                         <span class="keywordtype">bool</span> useBurst,</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                         <span class="keywordtype">void</span> *dst,</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                         <span class="keywordtype">void</span> *src,</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">void</span> *src,</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nMinus1,</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                         <span class="keywordtype">bool</span> last);</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="keywordtype">void</span> DMA_Reset(<span class="keywordtype">void</span>);</div>
@@ -409,8 +409,8 @@ $(document).ready(function(){initNavTree('em__dma_8h_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__dma_8h.html">em_dma.h</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 16:09:00 for EFR32 Flex Gecko 12 Software Documentation by
+    <li class="navelem"><a class="el" href="dir_57c5670a54251515d5dc3137dddf203b.html">platform</a></li><li class="navelem"><a class="el" href="dir_74d47fbdcea7cda18072cc4be639af5a.html">emlib</a></li><li class="navelem"><a class="el" href="dir_bf479292f56c204ab5b202f2f7ed0583.html">inc</a></li><li class="navelem"><a class="el" href="em__dma_8h.html">em_dma.h</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:42:17 for EFR32 Flex Gecko 12 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

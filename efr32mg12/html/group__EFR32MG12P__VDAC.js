@@ -13,7 +13,7 @@ var group__EFR32MG12P__VDAC =
       [ "IF", "structVDAC__TypeDef.html#a423fa077629a8444ec9e449497c9eca1", null ],
       [ "IFC", "structVDAC__TypeDef.html#ae3018f78ec29e212c65948ff46a37c53", null ],
       [ "IFS", "structVDAC__TypeDef.html#ab9569036006d55022a06611cd0e03055", null ],
-      [ "OPA", "structVDAC__TypeDef.html#af098cd4c6645e05a1287f1713121620d", null ],
+      [ "OPA", "structVDAC__TypeDef.html#a61e8e8dc5d9b01a0ad50914eb0617267", null ],
       [ "RESERVED0", "structVDAC__TypeDef.html#af373293bdff834073ed64103f55c7935", null ],
       [ "STATUS", "structVDAC__TypeDef.html#a5fc9915655cd3f09287aaeccd03ee0ad", null ]
     ] ]

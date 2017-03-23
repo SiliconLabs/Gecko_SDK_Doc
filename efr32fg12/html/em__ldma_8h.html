@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Flex Gecko 12 Software Documentation: c:/work/super/platform/emlib/inc/em_ldma.h File Reference</title>
+<title>EFR32 Flex Gecko 12 Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/platform/emlib/inc/em_ldma.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Flex Gecko 12 Software Documentation
-   &#160;<span id="projectnumber">efr32fg12-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efr32fg12-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('em__ldma_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Direct memory access (LDMA) API. </p>
-<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.1.2</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -360,9 +360,39 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea743d58c7d17cc9883b49a4ab874e07fe">ldmaPeripheralSignal_ADC0_SINGLE</a> = LDMA_CH_REQSEL_SIGSEL_ADC0SINGLE | LDMA_CH_REQSEL_SOURCESEL_ADC0, 
 <br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea4dd74e9ba770e512af86bdb2be9f4b31">ldmaPeripheralSignal_CRYPTO0_DATA0RD</a> = LDMA_CH_REQSEL_SIGSEL_CRYPTO0DATA0RD | LDMA_CH_REQSEL_SOURCESEL_CRYPTO0, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea39a6c41ec1698cd791a2640235f0c751">ldmaPeripheralSignal_CRYPTO0_DATA0WR</a> = LDMA_CH_REQSEL_SIGSEL_CRYPTO0DATA0WR | LDMA_CH_REQSEL_SOURCESEL_CRYPTO0, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea7e6eefbc6e5fcb6cee9115ccd520231d">ldmaPeripheralSignal_CRYPTO0_DATA0XWR</a> = LDMA_CH_REQSEL_SIGSEL_CRYPTO0DATA0XWR | LDMA_CH_REQSEL_SOURCESEL_CRYPTO0, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea00c7bfd117999fc16c6f2df825b6b1cc">ldmaPeripheralSignal_CRYPTO0_DATA1RD</a> = LDMA_CH_REQSEL_SIGSEL_CRYPTO0DATA1RD | LDMA_CH_REQSEL_SOURCESEL_CRYPTO0, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea5db7f183689bd2355328fe77a6c1283f">ldmaPeripheralSignal_CRYPTO0_DATA1WR</a> = LDMA_CH_REQSEL_SIGSEL_CRYPTO0DATA1WR | LDMA_CH_REQSEL_SOURCESEL_CRYPTO0, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beeab09506e9bf4b8ee4765e0081ed1fce66">ldmaPeripheralSignal_CRYPTO1_DATA0RD</a> = LDMA_CH_REQSEL_SIGSEL_CRYPTO1DATA0RD | LDMA_CH_REQSEL_SOURCESEL_CRYPTO1, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea577e9bfe7e43f9faeecbe55b9d0fc65f">ldmaPeripheralSignal_CRYPTO1_DATA0WR</a> = LDMA_CH_REQSEL_SIGSEL_CRYPTO1DATA0WR | LDMA_CH_REQSEL_SOURCESEL_CRYPTO1, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea58e18f93c17b38685c968db14ad23883">ldmaPeripheralSignal_CRYPTO1_DATA0XWR</a> = LDMA_CH_REQSEL_SIGSEL_CRYPTO1DATA0XWR | LDMA_CH_REQSEL_SOURCESEL_CRYPTO1, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea875f9ee588c70288c0996fdb3bf4cf5b">ldmaPeripheralSignal_CRYPTO1_DATA1RD</a> = LDMA_CH_REQSEL_SIGSEL_CRYPTO1DATA1RD | LDMA_CH_REQSEL_SOURCESEL_CRYPTO1, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea44d35f648a86f56755073e6e94fe95d9">ldmaPeripheralSignal_CRYPTO1_DATA1WR</a> = LDMA_CH_REQSEL_SIGSEL_CRYPTO1DATA1WR | LDMA_CH_REQSEL_SOURCESEL_CRYPTO1, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea5a9597103c652d7914bcc70b91109459">ldmaPeripheralSignal_CSEN_BSLN</a> = LDMA_CH_REQSEL_SIGSEL_CSENBSLN | LDMA_CH_REQSEL_SOURCESEL_CSEN, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea35ec4f3f20a9fd2abdf57cefcab5cf84">ldmaPeripheralSignal_CSEN_DATA</a> = LDMA_CH_REQSEL_SIGSEL_CSENDATA | LDMA_CH_REQSEL_SOURCESEL_CSEN, 
+<br />
 &#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea55bbe2c26b4faafd444258c8bbe7b85f">ldmaPeripheralSignal_I2C0_RXDATAV</a> = LDMA_CH_REQSEL_SIGSEL_I2C0RXDATAV | LDMA_CH_REQSEL_SOURCESEL_I2C0, 
 <br />
 &#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea9ba50954250343b02feeb322d1f48512">ldmaPeripheralSignal_I2C0_TXBL</a> = LDMA_CH_REQSEL_SIGSEL_I2C0TXBL | LDMA_CH_REQSEL_SOURCESEL_I2C0, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea5b13f8a5fdc44ea21bd214dc76982363">ldmaPeripheralSignal_I2C1_RXDATAV</a> = LDMA_CH_REQSEL_SIGSEL_I2C1RXDATAV | LDMA_CH_REQSEL_SOURCESEL_I2C1, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea81bb438539ae5586ee3169e8337446d6">ldmaPeripheralSignal_I2C1_TXBL</a> = LDMA_CH_REQSEL_SIGSEL_I2C1TXBL | LDMA_CH_REQSEL_SOURCESEL_I2C1, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea2d8fa8d786dcf5051e69ff75841ba2af">ldmaPeripheralSignal_LESENSE_BUFDATAV</a> = LDMA_CH_REQSEL_SIGSEL_LESENSEBUFDATAV | LDMA_CH_REQSEL_SOURCESEL_LESENSE, 
 <br />
 &#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea6f05b6f8b71eb07537c5beb6441033a1">ldmaPeripheralSignal_LEUART0_RXDATAV</a> = LDMA_CH_REQSEL_SIGSEL_LEUART0RXDATAV | LDMA_CH_REQSEL_SOURCESEL_LEUART0, 
 <br />
@@ -408,7 +438,45 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea5cf44af4c98b316e3e4e48df19ec6146">ldmaPeripheralSignal_USART1_TXBLRIGHT</a> = LDMA_CH_REQSEL_SIGSEL_USART1TXBLRIGHT | LDMA_CH_REQSEL_SOURCESEL_USART1, 
 <br />
-&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea5f56d39a7addb3f4a56d853191f20797">ldmaPeripheralSignal_USART1_TXEMPTY</a> = LDMA_CH_REQSEL_SIGSEL_USART1TXEMPTY | LDMA_CH_REQSEL_SOURCESEL_USART1
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea5f56d39a7addb3f4a56d853191f20797">ldmaPeripheralSignal_USART1_TXEMPTY</a> = LDMA_CH_REQSEL_SIGSEL_USART1TXEMPTY | LDMA_CH_REQSEL_SOURCESEL_USART1, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea8d6803c0c561bfe60086de57258d28da">ldmaPeripheralSignal_USART2_RXDATAV</a> = LDMA_CH_REQSEL_SIGSEL_USART2RXDATAV | LDMA_CH_REQSEL_SOURCESEL_USART2, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea1768556907b3b9e66b9569bfb53a7348">ldmaPeripheralSignal_USART2_TXBL</a> = LDMA_CH_REQSEL_SIGSEL_USART2TXBL | LDMA_CH_REQSEL_SOURCESEL_USART2, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beeafdad2f6e741769b587d74f6d3a9b3680">ldmaPeripheralSignal_USART2_TXEMPTY</a> = LDMA_CH_REQSEL_SIGSEL_USART2TXEMPTY | LDMA_CH_REQSEL_SOURCESEL_USART2, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beeae763059779929a79d20101c8a473160c">ldmaPeripheralSignal_USART3_RXDATAV</a> = LDMA_CH_REQSEL_SIGSEL_USART3RXDATAV | LDMA_CH_REQSEL_SOURCESEL_USART3, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beeaa8876b1f939f2b8c7bc8b2c31acac22b">ldmaPeripheralSignal_USART3_RXDATAVRIGHT</a> = LDMA_CH_REQSEL_SIGSEL_USART3RXDATAVRIGHT | LDMA_CH_REQSEL_SOURCESEL_USART3, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beeabdf51b20d9ffb93bd95b8bb73709d051">ldmaPeripheralSignal_USART3_TXBL</a> = LDMA_CH_REQSEL_SIGSEL_USART3TXBL | LDMA_CH_REQSEL_SOURCESEL_USART3, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea71dbf50d37c69d5010912303e9b850af">ldmaPeripheralSignal_USART3_TXBLRIGHT</a> = LDMA_CH_REQSEL_SIGSEL_USART3TXBLRIGHT | LDMA_CH_REQSEL_SOURCESEL_USART3, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea1d544a3cbe3fd1113e0fbb9cffe70d22">ldmaPeripheralSignal_USART3_TXEMPTY</a> = LDMA_CH_REQSEL_SIGSEL_USART3TXEMPTY | LDMA_CH_REQSEL_SOURCESEL_USART3, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beeab50fe75dcaefeef4077b21703b8f3a83">ldmaPeripheralSignal_VDAC0_CH0</a> = LDMA_CH_REQSEL_SIGSEL_VDAC0CH0 | LDMA_CH_REQSEL_SOURCESEL_VDAC0, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beeaa3433bda499b7f232ad755e80f42f477">ldmaPeripheralSignal_VDAC0_CH1</a> = LDMA_CH_REQSEL_SIGSEL_VDAC0CH1 | LDMA_CH_REQSEL_SOURCESEL_VDAC0, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea2175df417f433e329ef057b02eb8c376">ldmaPeripheralSignal_WTIMER0_CC0</a> = LDMA_CH_REQSEL_SIGSEL_WTIMER0CC0 | LDMA_CH_REQSEL_SOURCESEL_WTIMER0, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea51865c9fcc85dd6e9de1d382f5cb2bfb">ldmaPeripheralSignal_WTIMER0_CC1</a> = LDMA_CH_REQSEL_SIGSEL_WTIMER0CC1 | LDMA_CH_REQSEL_SOURCESEL_WTIMER0, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beead62a55dbac3ebec22aef9dcceb759eaa">ldmaPeripheralSignal_WTIMER0_CC2</a> = LDMA_CH_REQSEL_SIGSEL_WTIMER0CC2 | LDMA_CH_REQSEL_SOURCESEL_WTIMER0, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beeacd97da2f9a75f31300dd76c84785b229">ldmaPeripheralSignal_WTIMER0_UFOF</a> = LDMA_CH_REQSEL_SIGSEL_WTIMER0UFOF | LDMA_CH_REQSEL_SOURCESEL_WTIMER0, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea03e8df3ee231b6031684ea6ac4a091ca">ldmaPeripheralSignal_WTIMER1_CC0</a> = LDMA_CH_REQSEL_SIGSEL_WTIMER1CC0 | LDMA_CH_REQSEL_SOURCESEL_WTIMER1, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea94e976b09b2da9b5f53a45b536275ee6">ldmaPeripheralSignal_WTIMER1_CC1</a> = LDMA_CH_REQSEL_SIGSEL_WTIMER1CC1 | LDMA_CH_REQSEL_SOURCESEL_WTIMER1, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beeae6997993934a88f7a5c2f87efc5ec077">ldmaPeripheralSignal_WTIMER1_CC2</a> = LDMA_CH_REQSEL_SIGSEL_WTIMER1CC2 | LDMA_CH_REQSEL_SOURCESEL_WTIMER1, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea3dc311b4f7bed8587d2a8502982d93c6">ldmaPeripheralSignal_WTIMER1_CC3</a> = LDMA_CH_REQSEL_SIGSEL_WTIMER1CC3 | LDMA_CH_REQSEL_SOURCESEL_WTIMER1, 
+<br />
+&#160;&#160;<a class="el" href="group__LDMA.html#gga4cd64c56c0374044e338834ada233beea91ac4222036743ed4e89c63a47a7e5ee">ldmaPeripheralSignal_WTIMER1_UFOF</a> = LDMA_CH_REQSEL_SIGSEL_WTIMER1UFOF | LDMA_CH_REQSEL_SOURCESEL_WTIMER1
 <br />
  }<tr class="separator:ga4cd64c56c0374044e338834ada233bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -460,8 +528,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__ldma_8h.html">em_ldma.h</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 16:09:10 for EFR32 Flex Gecko 12 Software Documentation by
+    <li class="navelem"><a class="el" href="dir_57c5670a54251515d5dc3137dddf203b.html">platform</a></li><li class="navelem"><a class="el" href="dir_74d47fbdcea7cda18072cc4be639af5a.html">emlib</a></li><li class="navelem"><a class="el" href="dir_bf479292f56c204ab5b202f2f7ed0583.html">inc</a></li><li class="navelem"><a class="el" href="em__ldma_8h.html">em_ldma.h</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:42:19 for EFR32 Flex Gecko 12 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

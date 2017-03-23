@@ -92,6 +92,5 @@ var searchData=
   ['adcwarmupkeepadcwarm',['adcWarmupKeepADCWarm',['../group__ADC.html#gga3990fbf520d66567df3de07ac040d6c5abfde4333060e0f79b1a4ec3076a75ee2',1,'em_adc.h']]],
   ['adcwarmupkeepinslowacq',['adcWarmupKeepInSlowAcq',['../group__ADC.html#gga3990fbf520d66567df3de07ac040d6c5a227d0fc724fe970bd000e1dc24773e28',1,'em_adc.h']]],
   ['adcwarmupkeepinstandby',['adcWarmupKeepInStandby',['../group__ADC.html#gga3990fbf520d66567df3de07ac040d6c5a4fd0fc6ea02c947d29caa413fd23347e',1,'em_adc.h']]],
-  ['adcwarmupnormal',['adcWarmupNormal',['../group__ADC.html#gga3990fbf520d66567df3de07ac040d6c5a0b495546dd9a182c1c0867d48a3162ca',1,'em_adc.h']]],
-  ['agc_5firqn',['AGC_IRQn',['../group__EFR32BG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083a2190207d34965d5170f00c8c6ba71274',1,'efr32bg12p433f1024gl125.h']]]
+  ['adcwarmupnormal',['adcWarmupNormal',['../group__ADC.html#gga3990fbf520d66567df3de07ac040d6c5a0b495546dd9a182c1c0867d48a3162ca',1,'em_adc.h']]]
 ];

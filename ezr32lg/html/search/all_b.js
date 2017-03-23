@@ -9,6 +9,7 @@ var searchData=
   ['keylb',['KEYLB',['../structAES__TypeDef.html#ab6deb019f10dab06cccc33c697445e9b',1,'AES_TypeDef']]],
   ['keylc',['KEYLC',['../structAES__TypeDef.html#a4de52ccb6cca4dbe69d59ac8345fde2e',1,'AES_TypeDef']]],
   ['keyld',['KEYLD',['../structAES__TypeDef.html#adae6103d0ba38861aea04c5b6eeaadc4',1,'AES_TypeDef']]],
+  ['khaki',['Khaki',['../glib__color_8h.html#a8c1bb58eb392b2293f627e15845a7df5',1,'glib_color.h']]],
   ['kit_20drivers',['Kit Drivers',['../group__kitdrv.html',1,'']]],
   ['ksz8851sln_5fmib_5fs',['KSZ8851SLN_mib_s',['../structKSZ8851SLN__mib__s.html',1,'']]],
   ['ksz8851sln_5fmib_5ft',['KSZ8851SLN_mib_t',['../group__ksz8851snl.html#ga12ffde4611132f0e103166084b7b2fd3',1,'ksz8851snl.h']]],

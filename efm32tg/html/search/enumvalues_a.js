@@ -1,19 +1,14 @@
 var searchData=
 [
-  ['nandflash_5fecc_5ferror',['NANDFLASH_ECC_ERROR',['../group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a015251afa4ae85548ba1239c4825d699',1,'nandflash.h']]],
-  ['nandflash_5fecc_5funcorrectable',['NANDFLASH_ECC_UNCORRECTABLE',['../group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773af5863d48609dca796592be1a067e080f',1,'nandflash.h']]],
-  ['nandflash_5finvalid_5faddress',['NANDFLASH_INVALID_ADDRESS',['../group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a8d605a0e6e4998814d4c4dfdba0323dd',1,'nandflash.h']]],
-  ['nandflash_5finvalid_5fdevice',['NANDFLASH_INVALID_DEVICE',['../group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a6434929fd0044be49277f4b3c5b95d26',1,'nandflash.h']]],
-  ['nandflash_5finvalid_5fsetup',['NANDFLASH_INVALID_SETUP',['../group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a504fbafcb79cd7d9fc26007e6e3e6772',1,'nandflash.h']]],
-  ['nandflash_5fnot_5finitialized',['NANDFLASH_NOT_INITIALIZED',['../group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773ab8d069e1e61cae1f551dedeca98b56e2',1,'nandflash.h']]],
-  ['nandflash_5fstatus_5fok',['NANDFLASH_STATUS_OK',['../group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773a6b6589ecb6a873a559ee78eafd250a87',1,'nandflash.h']]],
-  ['nandflash_5fwrite_5ferror',['NANDFLASH_WRITE_ERROR',['../group__NandFlash.html#gga1f0b4320b42b215cd63dac9ef5f70773ae747e446bff895ff1c9fe46e1db04c67',1,'nandflash.h']]],
-  ['nonmaskableint_5firqn',['NonMaskableInt_IRQn',['../group__EFM32TG842F32.html#gga666eb0caeb12ec0e281415592ae89083ade177d9c70c89e084093024b932a4e30',1,'efm32tg842f32.h']]],
-  ['norflash_5finvalid_5faddress',['NORFLASH_INVALID_ADDRESS',['../group__NorFlash.html#ggaa2d42c4ba2e3256aab40b3c4622982eda661353cc6b1f4f8dd9e4cd1a19820ef4',1,'norflash.h']]],
-  ['norflash_5fmisaligned_5faddress',['NORFLASH_MISALIGNED_ADDRESS',['../group__NorFlash.html#ggaa2d42c4ba2e3256aab40b3c4622982eda9c4e7c6d88540dcce6d7d2d3f14a1176',1,'norflash.h']]],
-  ['norflash_5fnonuniform_5fgeometry',['NORFLASH_NONUNIFORM_GEOMETRY',['../group__NorFlash.html#ggaa2d42c4ba2e3256aab40b3c4622982eda11e30bc9bd54d5811f27c61572be3caf',1,'norflash.h']]],
-  ['norflash_5fnot_5fcfi_5fdevice',['NORFLASH_NOT_CFI_DEVICE',['../group__NorFlash.html#ggaa2d42c4ba2e3256aab40b3c4622982eda136c43ec2e61bc2a4a0b3783876d4538',1,'norflash.h']]],
-  ['norflash_5fstatus_5fok',['NORFLASH_STATUS_OK',['../group__NorFlash.html#ggaa2d42c4ba2e3256aab40b3c4622982edab65933785ef6b27088fa022425db8766',1,'norflash.h']]],
-  ['norflash_5fwrite_5ffailure',['NORFLASH_WRITE_FAILURE',['../group__NorFlash.html#ggaa2d42c4ba2e3256aab40b3c4622982eda9a8b9731889d9bf8a6cdfc2be4ce2047',1,'norflash.h']]],
-  ['norflash_5fwrite_5ftimeout',['NORFLASH_WRITE_TIMEOUT',['../group__NorFlash.html#ggaa2d42c4ba2e3256aab40b3c4622982eda8c96a8d847f707c4bb30227470340e0f',1,'norflash.h']]]
+  ['memorymanagement_5firqn',['MemoryManagement_IRQn',['../group__EFM32TG842F32.html#gga666eb0caeb12ec0e281415592ae89083a33ff1cf7098de65d61b6354fee6cd5aa',1,'efm32tg842f32.h']]],
+  ['msc_5firqn',['MSC_IRQn',['../group__EFM32TG842F32.html#gga666eb0caeb12ec0e281415592ae89083ab1ccf928eff148e2df2c7c7718e0060d',1,'efm32tg842f32.h']]],
+  ['mscreturninvalidaddr',['mscReturnInvalidAddr',['../group__MSC.html#ggaa548bd1d520a543e249b6a85338b59c0a9e4a7b0e66a5e0ce269c24448ad53ce9',1,'em_msc.h']]],
+  ['mscreturnlocked',['mscReturnLocked',['../group__MSC.html#ggaa548bd1d520a543e249b6a85338b59c0a6665fd5d688be1ae3622da00e3c44e80',1,'em_msc.h']]],
+  ['mscreturnok',['mscReturnOk',['../group__MSC.html#ggaa548bd1d520a543e249b6a85338b59c0a1194171cf80ee1904596c838b67bf8dc',1,'em_msc.h']]],
+  ['mscreturntimeout',['mscReturnTimeOut',['../group__MSC.html#ggaa548bd1d520a543e249b6a85338b59c0a60b2f4d7977d34fde474915d77a86e82',1,'em_msc.h']]],
+  ['mscreturnunaligned',['mscReturnUnaligned',['../group__MSC.html#ggaa548bd1d520a543e249b6a85338b59c0a2cd0f16db1ef497f581731cb74bc2bfc',1,'em_msc.h']]],
+  ['msdbot_5fcmd_5ffailed',['MSDBOT_CMD_FAILED',['../group__Msd.html#gga8c250077559bcebe75d58cd631add55ea45b36941d3e46676dea10de80d92a690',1,'msdbot.h']]],
+  ['msdbot_5finit_5ferror',['MSDBOT_INIT_ERROR',['../group__Msd.html#gga8c250077559bcebe75d58cd631add55ea48317e7c62565dfb151529c680023ae7',1,'msdbot.h']]],
+  ['msdbot_5fstatus_5fok',['MSDBOT_STATUS_OK',['../group__Msd.html#gga8c250077559bcebe75d58cd631add55ea5bd66cc15a09602931308f19ce3bc75c',1,'msdbot.h']]],
+  ['msdbot_5fxfer_5ferror',['MSDBOT_XFER_ERROR',['../group__Msd.html#gga8c250077559bcebe75d58cd631add55eade395b3a603cea6500ebb8a574e2f4c8',1,'msdbot.h']]]
 ];

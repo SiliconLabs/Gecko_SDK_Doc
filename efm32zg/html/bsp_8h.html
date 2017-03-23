@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Zero Gecko Software Documentation: c:/work/super/hardware/kit/common/bsp/bsp.h File Reference</title>
+<title>EFM32 Zero Gecko Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/hardware/kit/common/bsp/bsp.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Zero Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32zg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efm32zg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -115,10 +115,10 @@ $(document).ready(function(){initNavTree('bsp_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Board support package API definitions. </p>
-<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.1.1</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
-<p><b>Copyright 2015 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
+<p><b>Copyright 2016 Silicon Labs, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
 <p>This file is licensed under the Silabs License Agreement. See the file "Silabs_License_Agreement.txt" for details. Before using this software for any purpose, you must agree to the terms of that agreement. </p>
 
 <p>Definition in file <a class="el" href="bsp_8h_source.html">bsp.h</a>.</p>
@@ -136,8 +136,12 @@ Macros</h2></td></tr>
 <tr class="separator:ga2717d611b19996956dd7b208d4908f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga163283b6e5356adee23c481eef0de4da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#ga163283b6e5356adee23c481eef0de4da">BSP_INIT_DK_SPI</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:ga163283b6e5356adee23c481eef0de4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15b1985bbabc83228c1abf53304fd474"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#ga15b1985bbabc83228c1abf53304fd474">BSP_INIT_IOEXP</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="separator:ga15b1985bbabc83228c1abf53304fd474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad2f961beb04ec0c5e54224e91bb1e890"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#gad2f961beb04ec0c5e54224e91bb1e890">BSP_STATUS_ILLEGAL_PARAM</a>&#160;&#160;&#160;(-1)</td></tr>
 <tr class="separator:gad2f961beb04ec0c5e54224e91bb1e890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7dea37d8560dcda0ceebf9275b4ffa9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#ga7dea37d8560dcda0ceebf9275b4ffa9e">BSP_STATUS_IOEXP_FAILURE</a>&#160;&#160;&#160;(-4)</td></tr>
+<tr class="separator:ga7dea37d8560dcda0ceebf9275b4ffa9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ebeba724e7cbb9198d36dbe0d0e4a2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#ga3ebeba724e7cbb9198d36dbe0d0e4a2c">BSP_STATUS_NOT_IMPLEMENTED</a>&#160;&#160;&#160;(-2)</td></tr>
 <tr class="separator:ga3ebeba724e7cbb9198d36dbe0d0e4a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9162f17feaee1b332cf4ce40f51a0e30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#ga9162f17feaee1b332cf4ce40f51a0e30">BSP_STATUS_OK</a>&#160;&#160;&#160;0</td></tr>
@@ -182,33 +186,80 @@ Enumerations</h2></td></tr>
  }<tr class="separator:ga2dc0e02483c77ca9536927c6495db343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ga978526e7803d063aeea2bba759571289"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__DK.html#ga978526e7803d063aeea2bba759571289">BSP_Peripheral_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289a7ee2fe6799b66928489b136505bfd15a">BSP_RS232_SHUTDOWN</a>, 
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a7ee2fe6799b66928489b136505bfd15a">BSP_RS232_SHUTDOWN</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289adce62ece06c8cb0512b4ea478f7f86ee">BSP_RS232_UART</a>, 
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289adce62ece06c8cb0512b4ea478f7f86ee">BSP_RS232_UART</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289abff6ba4882409c28bb2344fb32c77845">BSP_RS232_LEUART</a>, 
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289abff6ba4882409c28bb2344fb32c77845">BSP_RS232_LEUART</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289af5b774032fff4d7dfedcb50705958ef6">BSP_I2C</a>, 
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289af5b774032fff4d7dfedcb50705958ef6">BSP_I2C</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289a92cc6711102e4fab9a97d3a300f68a95">BSP_ETH</a>, 
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a92cc6711102e4fab9a97d3a300f68a95">BSP_ETH</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289a74dd792f904c887e510e739881121f47">BSP_I2S</a>, 
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a74dd792f904c887e510e739881121f47">BSP_I2S</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289a9e14c14c71eec858142df90d845d0393">BSP_TRACE</a>, 
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a9e14c14c71eec858142df90d845d0393">BSP_TRACE</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289a10caa20cd86554aec51e23406ddb1f58">BSP_TOUCH</a>, 
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a10caa20cd86554aec51e23406ddb1f58">BSP_TOUCH</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289a91e25b14ca42149386b528a220bad0c1">BSP_AUDIO_IN</a>, 
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a91e25b14ca42149386b528a220bad0c1">BSP_AUDIO_IN</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289a218b4fa9f9e60fd622f025e847369a65">BSP_AUDIO_OUT</a>, 
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a218b4fa9f9e60fd622f025e847369a65">BSP_AUDIO_OUT</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289ad93e25cae5a6055f75ccc8b74a33bee9">BSP_ANALOG_DIFF</a>, 
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289ad93e25cae5a6055f75ccc8b74a33bee9">BSP_ANALOG_DIFF</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289ae75fc3ff8186b3418a13c345f2bbc098">BSP_ANALOG_SE</a>, 
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289ae75fc3ff8186b3418a13c345f2bbc098">BSP_ANALOG_SE</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289a083b9a980e1df709fa6e02814b159d93">BSP_MICROSD</a>, 
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a083b9a980e1df709fa6e02814b159d93">BSP_MICROSD</a>, 
 <br />
-&#160;&#160;<a class="el" href="group__BSP__DK.html#gga978526e7803d063aeea2bba759571289a743380f59f663a0f28e428573fe858bc">BSP_TFT</a>
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a743380f59f663a0f28e428573fe858bc">BSP_TFT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a7041f79cbfb87047fea33f429198eeb8">BSP_IOEXP_LEDS</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a252c0e71ef750aa548e6c8debe0a166e">BSP_IOEXP_SENSORS</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289afee6666bd01a8e5b92e0db33dad42794">BSP_IOEXP_DISPLAY</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289af389457ed3ce92bf9924dbc21a246036">BSP_IOEXP_VCOM</a>
+<br />
+ }<tr class="separator:ga978526e7803d063aeea2bba759571289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+<tr class="memitem:ga978526e7803d063aeea2bba759571289"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga978526e7803d063aeea2bba759571289">BSP_Peripheral_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a7ee2fe6799b66928489b136505bfd15a">BSP_RS232_SHUTDOWN</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289adce62ece06c8cb0512b4ea478f7f86ee">BSP_RS232_UART</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289abff6ba4882409c28bb2344fb32c77845">BSP_RS232_LEUART</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289af5b774032fff4d7dfedcb50705958ef6">BSP_I2C</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a92cc6711102e4fab9a97d3a300f68a95">BSP_ETH</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a74dd792f904c887e510e739881121f47">BSP_I2S</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a9e14c14c71eec858142df90d845d0393">BSP_TRACE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a10caa20cd86554aec51e23406ddb1f58">BSP_TOUCH</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a91e25b14ca42149386b528a220bad0c1">BSP_AUDIO_IN</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a218b4fa9f9e60fd622f025e847369a65">BSP_AUDIO_OUT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289ad93e25cae5a6055f75ccc8b74a33bee9">BSP_ANALOG_DIFF</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289ae75fc3ff8186b3418a13c345f2bbc098">BSP_ANALOG_SE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a083b9a980e1df709fa6e02814b159d93">BSP_MICROSD</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a743380f59f663a0f28e428573fe858bc">BSP_TFT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a7041f79cbfb87047fea33f429198eeb8">BSP_IOEXP_LEDS</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a252c0e71ef750aa548e6c8debe0a166e">BSP_IOEXP_SENSORS</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289afee6666bd01a8e5b92e0db33dad42794">BSP_IOEXP_DISPLAY</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289af389457ed3ce92bf9924dbc21a246036">BSP_IOEXP_VCOM</a>
 <br />
  }<tr class="separator:ga978526e7803d063aeea2bba759571289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -278,6 +329,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga617da68215423d7c8030742077ebafa7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__DK.html#ga617da68215423d7c8030742077ebafa7">BSP_InterruptFlagsSet</a> (uint16_t flags)</td></tr>
 <tr class="memdesc:ga617da68215423d7c8030742077ebafa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set board controller interrupt flags.  <a href="group__BSP__DK.html#ga617da68215423d7c8030742077ebafa7">More...</a><br /></td></tr>
 <tr class="separator:ga617da68215423d7c8030742077ebafa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02e6d90384575784588039dfd7120e51"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga02e6d90384575784588039dfd7120e51">BSP_IOExpGetDeviceId</a> (void)</td></tr>
+<tr class="memdesc:ga02e6d90384575784588039dfd7120e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get IO Expander Device id.  <a href="group__BSP__STK.html#ga02e6d90384575784588039dfd7120e51">More...</a><br /></td></tr>
+<tr class="separator:ga02e6d90384575784588039dfd7120e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga51f23681a8efd61b19c6359b3515e294"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__DK.html#ga51f23681a8efd61b19c6359b3515e294">BSP_JoystickGet</a> (void)</td></tr>
 <tr class="memdesc:ga51f23681a8efd61b19c6359b3515e294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get status of joystick on the DK.  <a href="group__BSP__DK.html#ga51f23681a8efd61b19c6359b3515e294">More...</a><br /></td></tr>
 <tr class="separator:ga51f23681a8efd61b19c6359b3515e294"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,8 +371,8 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf8bb3eb2381d1762457f1360ed6785af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__DK.html#gaf8bb3eb2381d1762457f1360ed6785af">BSP_McuBoard_UsbVbusPowerEnable</a> (bool enable)</td></tr>
 <tr class="memdesc:gaf8bb3eb2381d1762457f1360ed6785af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable MCU plugin board VBUS power switch.  <a href="group__BSP__DK.html#gaf8bb3eb2381d1762457f1360ed6785af">More...</a><br /></td></tr>
 <tr class="separator:gaf8bb3eb2381d1762457f1360ed6785af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga18ee56d221a2a21cb67f7320e78f3401"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__DK.html#ga18ee56d221a2a21cb67f7320e78f3401">BSP_PeripheralAccess</a> (<a class="el" href="group__BSP__DK.html#ga978526e7803d063aeea2bba759571289">BSP_Peripheral_TypeDef</a> perf, bool enable)</td></tr>
-<tr class="memdesc:ga18ee56d221a2a21cb67f7320e78f3401"><td class="mdescLeft">&#160;</td><td class="mdescRight">DK Peripheral Access Control Enable or disable access to on-board peripherals through switches and SPI switch where applicable. Turn off conflicting peripherals when enabling another.  <a href="group__BSP__DK.html#ga18ee56d221a2a21cb67f7320e78f3401">More...</a><br /></td></tr>
+<tr class="memitem:ga18ee56d221a2a21cb67f7320e78f3401"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSPCOMMON.html#ga18ee56d221a2a21cb67f7320e78f3401">BSP_PeripheralAccess</a> (<a class="el" href="group__BSP__DK.html#ga978526e7803d063aeea2bba759571289">BSP_Peripheral_TypeDef</a> perf, bool enable)</td></tr>
+<tr class="memdesc:ga18ee56d221a2a21cb67f7320e78f3401"><td class="mdescLeft">&#160;</td><td class="mdescRight">DK Peripheral Access Control Enable or disable access to on-board peripherals through switches and SPI switch where applicable. Turn off conflicting peripherals when enabling another.  <a href="group__BSPCOMMON.html#ga18ee56d221a2a21cb67f7320e78f3401">More...</a><br /></td></tr>
 <tr class="separator:ga18ee56d221a2a21cb67f7320e78f3401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga443eadf2891d8501295b8f220f579b20"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__DK.html#ga443eadf2891d8501295b8f220f579b20">BSP_PushButtonsGet</a> (void)</td></tr>
 <tr class="memdesc:ga443eadf2891d8501295b8f220f579b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get status of the pushbutton switches on the DK.  <a href="group__BSP__DK.html#ga443eadf2891d8501295b8f220f579b20">More...</a><br /></td></tr>
@@ -338,8 +392,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f4316de2dfb04db90651672103de31d6.html">hardware</a></li><li class="navelem"><a class="el" href="dir_76f2117c008bb27e945cccbe289eb43d.html">kit</a></li><li class="navelem"><a class="el" href="dir_60376687895b74e627fb8a241c3f339a.html">common</a></li><li class="navelem"><a class="el" href="dir_42a3a807a294f57586410e2baebe6a54.html">bsp</a></li><li class="navelem"><a class="el" href="bsp_8h.html">bsp.h</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 15:57:40 for EFM32 Zero Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_47b141814df81f488c4f7eaff9a67e18.html">hardware</a></li><li class="navelem"><a class="el" href="dir_af96359f81902c5c0c02a782680fb1d9.html">kit</a></li><li class="navelem"><a class="el" href="dir_5d4a48348b1da31968333dd38c7667cf.html">common</a></li><li class="navelem"><a class="el" href="dir_3e04ba8f218ed53a3ee016a950b479cb.html">bsp</a></li><li class="navelem"><a class="el" href="bsp_8h.html">bsp.h</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:40:04 for EFM32 Zero Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

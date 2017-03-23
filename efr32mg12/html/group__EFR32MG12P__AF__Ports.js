@@ -1,4 +1,4 @@
 var group__EFR32MG12P__AF__Ports =
 [
-    [ "AF_CMU_CLK0_PORT", "group__EFR32MG12P__AF__Ports.html#gad259d88d756336e0f8edfc9815e66bd3", null ]
+    [ "AF_CMU_CLK0_PORT", "group__EFR32MG12P__AF__Ports.html#ga5ea396f20c6f962ddc913c3d0485a3fd", null ]
 ];

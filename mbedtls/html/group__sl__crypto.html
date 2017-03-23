@@ -50,16 +50,18 @@
 <h1><a class="anchor" id="Introduction"></a>
 Introduction</h1>
 <p>The mbedtls/sl_crypto folder includes alternative implementations (plugins) from Silicon Labs for some of the mbed TLS library functions, including AES, CCM, CMAC, ECC (ECP, ECDH, ECDSA, ECJPAKE), SHA1 and SHA256. The plugins use the AES and CRYPTO hardware modules to accelerate the standard mbed TLS library functions that are implemented in C. The CRYPTO hardware module is incorporated in the new generations of MCUs from Silicon Labs and the AES hardware module is incorporated in the classic EFM32 MCUs from Silicon Labs.</p>
-<p>There are two groups of Silicon Labs CRYPTO Hardware Acceleration Plugins:</p>
-<ol type="1">
-<li>Optimized for single threaded applications.<ul>
+<h2><a class="anchor" id="sl_crypto_plugin_classes"></a>
+Plugin Classes</h2>
+<p>There are two classes of CRYPTO Hardware Acceleration Plugins:</p>
+<ul>
+<li>Class 1: Optimized for single threaded applications.<ul>
 <li>sl_ecp.c</li>
 <li>sl_aes.c</li>
 <li>sl_sha1.c</li>
 <li>sl_sha256.c</li>
 </ul>
 </li>
-<li>Plugins including CRYPTO preemption for multi-threaded application support. Some modules support asynchronous (non-blocking) APIs<ul>
+<li>Class 2: Plugins including CRYPTO preemption for multi-threaded application support.<ul>
 <li>slcl_aes.c</li>
 <li>slcl_ccm.c</li>
 <li>slcl_cmac.c</li>
@@ -68,26 +70,67 @@ Introduction</h1>
 <li>slcl_sha256.c</li>
 </ul>
 </li>
-</ol>
-<p>The plugins of group 1 do <em>not</em> support multi-threading. I.e. the user application is responsible for not calling the mbedtls interfaces using CRYPTO plugins with more than one thread concurrently. Group 1 plugins use less memory footprint (RAM and ROM) than group 2 plugins. Generally the group 1 plugins should be faster than the group 2 plugins. The group 1 plugins only support device with the CRYPTO hardware module (EFR32, EFM32PG, etc.) Classic EFM32 devices with the AES hw module are not supported.</p>
-<p>sl_aes.c includes alternative implementations of the functions defined in '<a class="el" href="aes_8h.html" title="AES block cipher. ">mbedtls/include/mbedtls/aes.h</a>' in order to accelerate the AES interface of mbedtls on devices incorporating the CRYPTO module. See '<a class="el" href="aes__alt_8h.html" title="AES block cipher. ">mbedtls/sl_crypto/include/aes_alt.h</a>' for plugin specific definitions.</p>
-<p>sl_ecp.c includes alternative implementations of some functions in the 'mbedtls/library/ecp.c' file in order to accelerate ECC point multiplication (the mbedtls_ecp_mul function) on 3 Short Weierstrass curves, namely secp192r1, secp224r1 and secp256r1. The api of ecp.c is unchanged defined in '<a class="el" href="ecp_8h.html" title="Elliptic curves over GF(p) ">mbedtls/include/mbedtls/ecp.h</a>' which is used by other ECC modules like '<a class="el" href="ecdh_8h.html" title="Elliptic curve Diffie-Hellman. ">mbedtls/include/mbedtls/ecdh.h</a>', '<a class="el" href="ecdsa_8h.html" title="Elliptic curve DSA. ">mbedtls/include/mbedtls/ecdsa.h</a>' and '<a class="el" href="ecjpake_8h.html" title="Elliptic curve J-PAKE. ">mbedtls/include/mbedtls/ecjpake.h</a>'.</p>
-<p>sl_sha1.c includes alternative implementations of the functions defined in '<a class="el" href="sha1_8h.html" title="SHA-1 cryptographic hash function. ">mbedtls/include/mbedtls/sha1.h</a>' in order to accelerate SHA-1 interface of mbedtls. See '<a class="el" href="sha1__alt_8h.html" title="SHA-1 cryptographic hash function. ">mbedtls/sl_crypto/include/sha1_alt.h</a>' for plugin specific definitions.</p>
-<p>sl_sha256.c includes alternative implementations of the functions defined in '<a class="el" href="sha256_8h.html" title="SHA-224 and SHA-256 cryptographic hash function. ">mbedtls/include/mbedtls/sha256.h</a>' in order to accelerate SHA-256 interface of mbedtls. See '<a class="el" href="sha256__alt_8h.html" title="SHA-224 and SHA-256 cryptographic hash function. ">mbedtls/sl_crypto/include/sha256_alt.h</a>' for plugin specific definitions.</p>
-<p>The plugins in group 2 support</p><ul>
-<li>multi-threaded applications by implementing CRYPTO preemption.</li>
-<li>asynchronous (non-blocking) APIs (in slcl_aes.c and slcl_ccm.c only)</li>
-<li>BUFC and DMA to move data to/from CRYPTO registers</li>
 </ul>
-<p>The CRYPTO preemption support is enabled by compiling with the MBEDTLS_CRYPTO_DEVICE_PREEMPTION. The CRYPTO preemption support allows a higher priority thread to preempt a lower priority thread that currently owns the CRYPTO module. The context of the lower priority thread will be saved and restored when the higher priority thread is done and releases the ownership of CRYPTO. The CRYPTO plugins implement critical regions in order to protect critical CRYPTO sequences from being preempted. The default entry/exit of critical regions support FreeRTOS and disables interrupts and locks threads. Optionally the application developer can replace the default and provide an application specific implementation of the critical region enter/exit functions by compiling with the macro MBEDTLS_CRYPTO_CRITICAL_REGION_ALT.</p>
-<p>The asynchronous (non-blocking) APIs supported by the slcl_ccm.c and slcl_cmac.c plugins can be enabled by compiling with the macro MBEDTLS_INCLUDE_ASYNCH_API.</p>
-<p>The group 2 plugins (e.g. slcl_cmac.c) implement additional Silicon Labs specific APIs, which are not covered by the standard mbedtls interface, including the standard error code interface. Therefore the plugins use a different bit layout for error code values called ecode which is defined in <a class="el" href="mbedtls__ecode_8h.html" title="Silicon Labs specific mbedtls error code definitions. ">mbedtls_ecode.h</a>.</p>
+<p>The plugins of class 1 do not support multi-threaded environments. I.e. the user application is responsible for not calling the mbed TLS interfaces using CRYPTO plugins with more than one thread concurrently. Class 1 plugins use less memory footprint (RAM and Flash) than class 2 plugins. Generally, class 1 plugins should be faster than class 2 plugins. Class 1 plugins only support device with the CRYPTO hardware module (EFR32, EFM32PG, etc.) Classic EFM32 devices with the AES hardware module are not supported.</p>
+<h3><a class="anchor" id="sl_crypto_plugin_class_1"></a>
+Class 1 Plugins</h3>
+<p>sl_aes.c includes alternative implementations of the functions defined in '<a class="el" href="aes_8h.html" title="AES block cipher. ">mbedtls/include/mbedtls/aes.h</a>' in order to accelerate the AES interface of mbed TLS on devices incorporating the CRYPTO module. See '<a class="el" href="aes__alt_8h.html" title="AES block cipher. ">mbedtls/sl_crypto/include/aes_alt.h</a>' for plugin specific definitions.</p>
+<p>sl_ecp.c includes alternative implementations of some functions in the 'mbedtls/library/ecp.c' file in order to accelerate ECC point multiplication (the mbedtls_ecp_mul function) on 3 Short Weierstrass curves, namely secp192r1, secp224r1 and secp256r1. The api of ecp.c is unchanged defined in '<a class="el" href="ecp_8h.html" title="Elliptic curves over GF(p) ">mbedtls/include/mbedtls/ecp.h</a>' which is used by other ECC modules like '<a class="el" href="ecdh_8h.html" title="Elliptic curve Diffie-Hellman. ">mbedtls/include/mbedtls/ecdh.h</a>', '<a class="el" href="ecdsa_8h.html" title="Elliptic curve DSA. ">mbedtls/include/mbedtls/ecdsa.h</a>' and '<a class="el" href="ecjpake_8h.html" title="Elliptic curve J-PAKE. ">mbedtls/include/mbedtls/ecjpake.h</a>'.</p>
+<p>sl_sha1.c includes alternative implementations of the functions defined in '<a class="el" href="sha1_8h.html" title="SHA-1 cryptographic hash function. ">mbedtls/include/mbedtls/sha1.h</a>' in order to accelerate SHA-1 interface of mbed TLS. See '<a class="el" href="sha1__alt_8h.html" title="SHA-1 cryptographic hash function. ">mbedtls/sl_crypto/include/sha1_alt.h</a>' for plugin specific definitions.</p>
+<p>sl_sha256.c includes alternative implementations of the functions defined in '<a class="el" href="sha256_8h.html" title="SHA-224 and SHA-256 cryptographic hash function. ">mbedtls/include/mbedtls/sha256.h</a>' in order to accelerate SHA-256 interface of mbed TLS. See '<a class="el" href="sha256__alt_8h.html" title="SHA-224 and SHA-256 cryptographic hash function. ">mbedtls/sl_crypto/include/sha256_alt.h</a>' for plugin specific definitions.</p>
+<h3><a class="anchor" id="sl_crypto_plugin_class_2"></a>
+Class 2 Plugins</h3>
+<p>The plugins in class 2 supports</p><ul>
+<li>multi-threaded applications by implementing CRYPTO preemption (<a class="el" href="group__sl__crypto.html#slcl_preemption">CRYPTO Device Preemption</a>)</li>
+<li>yield CPU core when the CRYPTO device is busy (<a class="el" href="group__sl__crypto.html#slcl_yield_when_busy">Yield When CRYPTO is Busy</a>)</li>
+<li>DMA to move data to/from CRYPTO registers (<a class="el" href="group__sl__crypto.html#slcl_dma">Alternative Data Transfer with DMA</a>)</li>
+</ul>
+<p>Please refer to <a class="el" href="group__sl__crypto.html#slcl_initialization">Class 2 Plugins Initialization</a> in order for details on how to enable and initialize the class 2 plugins.</p>
+<p>Class 2 plugins (e.g. slcl_cmac.c) implement additional Silicon Labs specific APIs, which are not covered by the standard mbed TLS interface, including the standard error code interface. Therefore the plugins use a different bit layout for error code values called ecode which is defined in <a class="el" href="mbedtls__ecode_8h.html" title="Silicon Labs specific mbedtls error code definitions. ">mbedtls_ecode.h</a>.</p>
 <p>slcl_aes.c includes alternative implementations of the functions defined in '<a class="el" href="aes_8h.html" title="AES block cipher. ">mbedtls/include/mbedtls/aes.h</a>'. Classic EFM32s (EFM32GG, EFM32WG, etc.) with AES hardware module is supported, in addition to devices with the CRYPTO hardware module. See '<a class="el" href="aes__alt_8h.html" title="AES block cipher. ">mbedtls/sl_crypto/include/aes_alt.h</a>' for plugin specific definitions.</p>
 <p>slcl_ccm.c includes alternative implementations of the functions defined in '<a class="el" href="ccm_8h.html" title="Counter with CBC-MAC (CCM) for 128-bit block ciphers. ">mbedtls/include/mbedtls/ccm.h</a>'. Classic EFM32s (EFM32GG, EFM32WG, etc.) with AES hardware module is supported, in addition to devices with the CRYPTO hardware module. See '<a class="el" href="ccm__alt_8h.html" title="Counter with CBC-MAC (CCM) for 128-bit block ciphers. ">mbedtls/sl_crypto/include/ccm_alt.h</a>' for plugin specific definitions.</p>
 <p>slcl_cmac.c implements functions to generate and verify CMAC authentication tags. The API is defined in '<a class="el" href="cmac__alt_8h.html" title="CMAC cipher mode based on 128 bit AES. ">mbedtls/sl_crypto/include/cmac_alt.h</a>'.</p>
 <p>slcl_ecp.c includes alternative implementations of some functions in the 'mbedtls/library/ecp.c' file in order to accelerate ECC point multiplication (specifically the mbedtls_ecp_mul function) on 3 Short Weierstrass curves, namely secp192r1, secp224r1 and secp256r1. The interface is defined in '<a class="el" href="ecp__alt_8h.html" title="Elliptic curves over GF(p) ">mbedtls/sl_crypto/include/ecp_alt.h</a>' which is used by other ECC modules like '<a class="el" href="ecdh_8h.html" title="Elliptic curve Diffie-Hellman. ">mbedtls/include/mbedtls/ecdh.h</a>', '<a class="el" href="ecdsa_8h.html" title="Elliptic curve DSA. ">mbedtls/include/mbedtls/ecdsa.h</a>' and '<a class="el" href="ecjpake_8h.html" title="Elliptic curve J-PAKE. ">mbedtls/include/mbedtls/ecjpake.h</a>'.</p>
-<p>slcl_sha1.c includes alternative implementations of the functions defined in '<a class="el" href="sha1_8h.html" title="SHA-1 cryptographic hash function. ">mbedtls/include/mbedtls/sha1.h</a>' in order to accelerate SHA-1 interface of mbedtls. See '<a class="el" href="sha1__alt_8h.html" title="SHA-1 cryptographic hash function. ">mbedtls/sl_crypto/include/sha1_alt.h</a>' for plugin specific definitions.</p>
-<p>slcl_sha256.c includes alternative implementations of the functions defined in '<a class="el" href="sha256_8h.html" title="SHA-224 and SHA-256 cryptographic hash function. ">mbedtls/include/mbedtls/sha256.h</a>' in order to accelerate SHA-256 interface of mbedtls. See '<a class="el" href="sha256__alt_8h.html" title="SHA-224 and SHA-256 cryptographic hash function. ">mbedtls/sl_crypto/include/sha256_alt.h</a>' for plugin specific definitions.</p>
+<p>slcl_sha1.c includes alternative implementations of the functions defined in '<a class="el" href="sha1_8h.html" title="SHA-1 cryptographic hash function. ">mbedtls/include/mbedtls/sha1.h</a>' in order to accelerate SHA-1 interface of mbed TLS. See '<a class="el" href="sha1__alt_8h.html" title="SHA-1 cryptographic hash function. ">mbedtls/sl_crypto/include/sha1_alt.h</a>' for plugin specific definitions.</p>
+<p>slcl_sha256.c includes alternative implementations of the functions defined in '<a class="el" href="sha256_8h.html" title="SHA-224 and SHA-256 cryptographic hash function. ">mbedtls/include/mbedtls/sha256.h</a>' in order to accelerate SHA-256 interface of mbed TLS. See '<a class="el" href="sha256__alt_8h.html" title="SHA-224 and SHA-256 cryptographic hash function. ">mbedtls/sl_crypto/include/sha256_alt.h</a>' for plugin specific definitions.</p>
+<h3><a class="anchor" id="slcl_initialization"></a>
+Class 2 Plugins Initialization</h3>
+<p>Define <a class="el" href="group__sl__crypto__config.html#gaccac92f6d5d0f51d52472410fea8256b">MBEDTLS_SLCL_PLUGINS</a> to enable class 2 plugins. The class 2 plugins use CRYPTO device context structures in order to manage the CRYPTO operations, one for each CRYPTO device. By default the device structures are initialized internally in order for backwards compatibility. However the internal initialization consumes some RAM because the device structures are instantiated statically inside the mbedTLS library. The user application may define MBEDTLS_DEVICE_INIT_INTERNAL_DISABLE in order to disable the internal device initialization, and take responsibility of allocating and initializing the device context structures itself. If MBEDTLS_DEVICE_INIT_INTERNAL_DISABLE is defined the user application is required to call <a class="el" href="slcl__device_8h.html#a7830a8492cebd4779c45b9080919ecf0">mbedtls_device_init</a> and <a class="el" href="slcl__device_8h.html#acccc25acfe524aa7e8af6f85f600930e">mbedtls_device_set_instance</a> before any other mbedTLS API calls in order to initialize the CRYPTO device context structure(s) (<a class="el" href="structmbedtls__device__context.html">mbedtls_device_context</a>) to be used in subsequent calls to the mbedTLS API. E.g. the code example below initializes all CRYPTO devices present, e.g. the single CRYPTO device on an EFR32MG1 or both CRYPTO device on an EFR32MG2:</p>
+<pre class="fragment">  mbedtls_device_context mbedtls_device_ctx[MBEDTLS_DEVICE_COUNT];
+  int device_instance;
+
+  for (device_instance=0; device_instance&lt;MBEDTLS_DEVICE_COUNT; device_instance++)
+  {
+    mbedtls_device_init(&amp;mbedtls_device_ctx[device_instance]);
+    mbedtls_device_set_instance(&amp;mbedtls_device_ctx[device_instance],
+                                device_instance);
+  }
+</pre><p>In subsequent calls to the mbedTLS API involving the SLCL plugins the user application can select which CRYPTO device to use by calling any of the mbedtls_xxx_set_device_instance functions associated with the particular SLCL plugin to use: E.g. </p><ul>
+<li>mbedtls_aes_set_device_instance </li>
+<li>mbedtls_ccm_set_device_instance </li>
+<li>mbedtls_cmac_set_device_instance </li>
+<li>mbedtls_ecp_set_device_instance </li>
+<li>mbedtls_sha1_set_device_instance </li>
+<li>mbedtls_ahs256_set_device_instance</li>
+</ul>
+<p><br />
+ </p>
+<h3><a class="anchor" id="slcl_preemption"></a>
+CRYPTO Device Preemption</h3>
+<p>The CRYPTO preemption support is enabled by compiling with <a class="el" href="group__sl__crypto__config.html#gaab6b976802eb430ad0eb9c54947356ad">MBEDTLS_CRYPTO_DEVICE_PREEMPTION</a> defined. The CRYPTO preemption support allows a higher priority thread to preempt a lower priority thread that currently owns the CRYPTO module. The context (hardware state) of the lower priority thread will be saved and restored when the higher priority thread is done and releases the ownership of the CRYPTO hardware device.</p>
+<p>When CRYPTO preemption is enabled the SLCL plugins implements critical regions in order to protect critical CRYPTO sequences from being preempted. The critical regions make use of a CRYPTO device lock object which is a mutex that supports priority inheritance in order to avoid deadlock situations from occurring. The device lock mutex is a member of the <a class="el" href="structmbedtls__device__context.html">mbedtls_device_context</a> structure and is initialized by the <a class="el" href="slcl__device_8h.html#a7830a8492cebd4779c45b9080919ecf0">mbedtls_device_init</a> function. The user application should carefully assign priorities to the different threads in the application.</p>
+<p>CRYPTO preemption is internal functionality. The application is not directly exposed to preemption support. The user application threads can call into multiple mbedTLS APIs concurrently and the SLCL plugins will handle the preemption automatically. If there is a current thread owning the CRYPTO device when another challenging thread calls an mbedTLS API there will be an arbitration process. If the current owner is inside a critical region the challenger will need to wait until the owner exits the critial region. By default the challenger will not wait, and return an error code immediately. However the user application can specify the number of ticks to wait by calling the associated mbedtls_xxx_set_device_lock_wait_ticks function, e.g. mbedtls_ccm_set_device_lock_wait_ticks. When the current owner is not inside any critical regions the challenger will arbitrate for ownership. If the challenger has higher priority than the current owner, the challenger will preempt the current owner by storing the context and assume ownership.</p>
+<p>The SLCL plugins requires a few services from the platform/OS mbedTLS is running on. The services are implemented in a OS abstraction layer called SLPAL which provides a common interface for the supported platforms/OSes. In the current version there are support for Micrium uC/OS-III, FreeRTOS and bare-metal (no OS).</p>
+<p><br />
+ </p>
+<h3><a class="anchor" id="slcl_yield_when_busy"></a>
+Yield When CRYPTO is Busy</h3>
+<p>The slcl_ecp.c plugin accelerates ECC algorithms and needs some rather lengthy CRYPTO instruction sequences. The longest instruction sequences will consume more than 1000 clock cycles and in order to utilize these cycles the slcl_ecp.c plugin can yield the CPU core to other thread(s) while waiting for the CRYPTO hardware to complete the instruction sequence. This can be enabled by compiling with <a class="el" href="group__sl__crypto__config.html#ga979040a921259c3d7ad00ad4ff5f2e42">MBEDTLS_DEVICE_YIELD_WHEN_BUSY</a>.</p>
+<p><br />
+ </p>
+<h3><a class="anchor" id="slcl_dma"></a>
+Alternative Data Transfer with DMA</h3>
+<p>The slcl_aes.c and slcl_ccm.c plugins support alernative mechanisms for moving data to/from CRYPTO registers. By default the CPU core will move data with load and store instructions. Alternatively the user application can select DMA to move data. The user application can select DMA I/O mode by calling the functions mbedtls_aes_set_device_io_mode and mbedtls_ccm_set_device_io_mode. <a class="el" href="group__sl__crypto__config.html#gad695335fadc013b83a2830447411cf6c">MBEDTLS_INCLUDE_IO_MODE_DMA</a> is required in order to use the DMA option.</p>
 <p><br />
  </p>
 <h1><a class="anchor" id="Configuration"></a>
@@ -136,7 +179,7 @@ Modules</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2016 16:12:42 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 9 2017 20:48:05 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

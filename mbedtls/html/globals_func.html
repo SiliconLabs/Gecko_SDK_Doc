@@ -54,6 +54,7 @@
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li class="current"><a href="globals_func.html#index_m"><span>m</span></a></li>
+      <li><a href="globals_func_s.html#index_s"><span>s</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -383,6 +384,15 @@
 <li>mbedtls_des_setkey_enc()
 : <a class="el" href="des_8h.html#a69e09a8459bfffdc473dec3be141d5bb">des.h</a>
 </li>
+<li>mbedtls_device_free()
+: <a class="el" href="slcl__device_8h.html#aa6eb48145f44b103cd7fe12c38a14e07">slcl_device.h</a>
+</li>
+<li>mbedtls_device_init()
+: <a class="el" href="slcl__device_8h.html#a7830a8492cebd4779c45b9080919ecf0">slcl_device.h</a>
+</li>
+<li>mbedtls_device_set_instance()
+: <a class="el" href="slcl__device_8h.html#acccc25acfe524aa7e8af6f85f600930e">slcl_device.h</a>
+</li>
 <li>mbedtls_dhm_calc_secret()
 : <a class="el" href="dhm_8h.html#ac3985de01420d018ed91daec9e7d7969">dhm.h</a>
 </li>
@@ -585,22 +595,22 @@
 : <a class="el" href="ecp_8h.html#aa98adfe68b926724607d8fcab61397a9">ecp.h</a>
 </li>
 <li>mbedtls_entropy_add_source()
-: <a class="el" href="entropy_8h.html#ad1bf424d076142e9aeec9e68207f5aaa">entropy.h</a>
+: <a class="el" href="entropy__alt_8h.html#ad1bf424d076142e9aeec9e68207f5aaa">entropy_alt.h</a>
 </li>
 <li>mbedtls_entropy_free()
-: <a class="el" href="entropy_8h.html#a06778439f8a0e2daa2d3b444e06ad8dd">entropy.h</a>
+: <a class="el" href="entropy__alt_8h.html#a06778439f8a0e2daa2d3b444e06ad8dd">entropy_alt.h</a>
 </li>
 <li>mbedtls_entropy_func()
-: <a class="el" href="entropy_8h.html#a81765f6cdf4e5111bcb9f4324f3234cb">entropy.h</a>
+: <a class="el" href="entropy__alt_8h.html#a81765f6cdf4e5111bcb9f4324f3234cb">entropy_alt.h</a>
 </li>
 <li>mbedtls_entropy_gather()
-: <a class="el" href="entropy_8h.html#ac49de4b842e7d56cfcd1088286a09b7d">entropy.h</a>
+: <a class="el" href="entropy__alt_8h.html#ac49de4b842e7d56cfcd1088286a09b7d">entropy_alt.h</a>
 </li>
 <li>mbedtls_entropy_init()
-: <a class="el" href="entropy_8h.html#aa901e027093c6fe65dee5760db78aced">entropy.h</a>
+: <a class="el" href="entropy__alt_8h.html#aa901e027093c6fe65dee5760db78aced">entropy_alt.h</a>
 </li>
 <li>mbedtls_entropy_update_manual()
-: <a class="el" href="entropy_8h.html#aa79492f288cc3202ea455564be855d64">entropy.h</a>
+: <a class="el" href="entropy__alt_8h.html#aa79492f288cc3202ea455564be855d64">entropy_alt.h</a>
 </li>
 <li>mbedtls_gcm_auth_decrypt()
 : <a class="el" href="gcm_8h.html#af264b64b26c4720188b530cfccddb4ef">gcm.h</a>
@@ -1119,7 +1129,7 @@
 : <a class="el" href="group__sl__crypto__sha1.html#ga70417cbb2e95ce553501caef9bd6e076">sha1_alt.h</a>
 </li>
 <li>mbedtls_sha1_self_test()
-: <a class="el" href="sha1_8h.html#a3666efb450a6bbe9588d6b835dc566cf">sha1.h</a>
+: <a class="el" href="group__sl__crypto__sha1.html#ga34aca9f6fb67ca83f417d5931b37fc2e">sha1_alt.h</a>
 </li>
 <li>mbedtls_sha1_starts()
 : <a class="el" href="group__sl__crypto__sha1.html#gac514b3f4625a18e51de6247b685bacff">sha1_alt.h</a>
@@ -1146,7 +1156,7 @@
 : <a class="el" href="group__sl__crypto__sha256.html#ga1166c1d669de6fe668623612d936f402">sha256_alt.h</a>
 </li>
 <li>mbedtls_sha256_self_test()
-: <a class="el" href="sha256_8h.html#af1d395a98568e0c71fe4740f73ba8cd7">sha256.h</a>
+: <a class="el" href="group__sl__crypto__sha256.html#ga322b8eabc56aae727e37cb821b8cb05d">sha256_alt.h</a>
 </li>
 <li>mbedtls_sha256_starts()
 : <a class="el" href="group__sl__crypto__sha256.html#ga2678f92d712139f588120de452faff62">sha256_alt.h</a>
@@ -1431,6 +1441,27 @@
 <li>mbedtls_timing_set_delay()
 : <a class="el" href="timing_8h.html#aeb3497ab85adabf7db89d81c34e2ef92">timing.h</a>
 </li>
+<li>mbedtls_trng_check_conditioning()
+: <a class="el" href="group__sl__crypto__trng.html#ga987bc2a769eca92ef81c865e95f26fb8">trng.h</a>
+</li>
+<li>mbedtls_trng_check_entropy()
+: <a class="el" href="group__sl__crypto__trng.html#ga9dc92e7f58972d20cff0738a8eb404ec">trng.h</a>
+</li>
+<li>mbedtls_trng_free()
+: <a class="el" href="group__sl__crypto__trng.html#ga105f7fb57c7a0843f4b750c54636c53b">trng.h</a>
+</li>
+<li>mbedtls_trng_init()
+: <a class="el" href="group__sl__crypto__trng.html#ga846a87535364a7764897e35dcd362401">trng.h</a>
+</li>
+<li>mbedtls_trng_poll()
+: <a class="el" href="group__sl__crypto__trng.html#gac8319b2bf9b23885f5401a98f0d16db1">trng.h</a>
+</li>
+<li>mbedtls_trng_set_key()
+: <a class="el" href="group__sl__crypto__trng.html#ga7ad4ef01d236b535ab156175708f1eeb">trng.h</a>
+</li>
+<li>mbedtls_trng_soft_reset()
+: <a class="el" href="group__sl__crypto__trng.html#ga76cbaf4739ffb9abfb88f341c6918548">trng.h</a>
+</li>
 <li>mbedtls_x509_crl_free()
 : <a class="el" href="group__x509__module.html#gaeb19c3326889f9e493fbd605c1113b96">x509_crl.h</a>
 </li>
@@ -1525,7 +1556,7 @@
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2016 16:12:45 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 9 2017 20:48:05 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

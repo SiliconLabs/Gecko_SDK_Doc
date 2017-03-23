@@ -6,7 +6,7 @@ var group__LESENSE =
       [ "idleConf", "structLESENSE__AltExDesc__TypeDef.html#a96f207768d514f07fbc057819ae4790d", null ]
     ] ],
     [ "LESENSE_ChAll_TypeDef", "structLESENSE__ChAll__TypeDef.html", [
-      [ "Ch", "structLESENSE__ChAll__TypeDef.html#a82109d6631bdb3d32a848070fe949300", null ]
+      [ "Ch", "structLESENSE__ChAll__TypeDef.html#a87b5fe3bb3fe5675f25ec66233112b21", null ]
     ] ],
     [ "LESENSE_ChDesc_TypeDef", "structLESENSE__ChDesc__TypeDef.html", [
       [ "acmpThres", "structLESENSE__ChDesc__TypeDef.html#ab67e673cce7b2a4e2578b048522cb77e", null ],
@@ -21,7 +21,7 @@ var group__LESENSE =
       [ "exTime", "structLESENSE__ChDesc__TypeDef.html#ad093954f2d9c4287ee5d154a9ad5febf", null ],
       [ "intMode", "structLESENSE__ChDesc__TypeDef.html#a8668fd0a8e54e42aa63e0f4f3b49280d", null ],
       [ "invRes", "structLESENSE__ChDesc__TypeDef.html#a826a97fc3e96ea07fbb2f1d14e75941f", null ],
-      [ "measDelay", "structLESENSE__ChDesc__TypeDef.html#aa3619553f8da233f208eba09d8503604", null ],
+      [ "measDelay", "structLESENSE__ChDesc__TypeDef.html#a96548abaa1115f4d53aa5be3625c8b49", null ],
       [ "sampleClk", "structLESENSE__ChDesc__TypeDef.html#a77d43773b5fc86531848887e6441897a", null ],
       [ "sampleDelay", "structLESENSE__ChDesc__TypeDef.html#a77e5a3b5966c40fb1c02264416b52299", null ],
       [ "sampleMode", "structLESENSE__ChDesc__TypeDef.html#aec17109b3dde2f28c614938e2208f64a", null ],
@@ -63,7 +63,7 @@ var group__LESENSE =
       [ "prsCount", "structLESENSE__DecCtrlDesc__TypeDef.html#abc13b6e87beafc1fca272d21fc021b01", null ]
     ] ],
     [ "LESENSE_DecStAll_TypeDef", "structLESENSE__DecStAll__TypeDef.html", [
-      [ "St", "structLESENSE__DecStAll__TypeDef.html#a073877278849c84179f8a987b768afc6", null ]
+      [ "St", "structLESENSE__DecStAll__TypeDef.html#a6054d7959493a82abf50e38991971e1b", null ]
     ] ],
     [ "LESENSE_DecStCond_TypeDef", "structLESENSE__DecStCond__TypeDef.html", [
       [ "compMask", "structLESENSE__DecStCond__TypeDef.html#a2b691472ac41a5bf8a3f70f869596ba3", null ],
@@ -97,6 +97,7 @@ var group__LESENSE =
       [ "warmupMode", "structLESENSE__PerCtrlDesc__TypeDef.html#aabd26c94c44e5794faf8844ab43a784e", null ]
     ] ],
     [ "LESENSE_TimeCtrlDesc_TypeDef", "structLESENSE__TimeCtrlDesc__TypeDef.html", [
+      [ "delayAuxStartup", "structLESENSE__TimeCtrlDesc__TypeDef.html#aa50fe96deb39ad8f33d1ac7643e4b6c2", null ],
       [ "startDelay", "structLESENSE__TimeCtrlDesc__TypeDef.html#a53f5087d40b622dcdd37b013c6f09699", null ]
     ] ],
     [ "LESENSE_ALTEX_CH_CONF_DEFAULT", "group__LESENSE.html#ga24aaa1d470e442c25bdea8f7131efab2", null ],
@@ -106,6 +107,8 @@ var group__LESENSE =
     [ "LESENSE_DECCTRL_DESC_DEFAULT", "group__LESENSE.html#ga05d61d702307917f962b5af09755c496", null ],
     [ "LESENSE_DECODER_CONF_DEFAULT", "group__LESENSE.html#ga130bb6e5e802e4b28f993753de2ee313", null ],
     [ "LESENSE_INIT_DEFAULT", "group__LESENSE.html#gaa8b03f76f26cf06cbc09efae88e4336a", null ],
+    [ "LESENSE_NUM_CHANNELS", "group__LESENSE.html#gaae21de722cc8d6864311f98e89608dd6", null ],
+    [ "LESENSE_NUM_DECODER_STATES", "group__LESENSE.html#ga36f4e64f9d121f04e761a64d8b4a8231", null ],
     [ "LESENSE_PERCTRL_DESC_DEFAULT", "group__LESENSE.html#gac1c18b05d96c2ddb0ca4ff5f7cc61f4c", null ],
     [ "LESENSE_SCAN_CONF_DEFAULT", "group__LESENSE.html#gabe5c7dff185ddcd7047f2b35da859bbd", null ],
     [ "LESENSE_ST_CONF_DEFAULT", "group__LESENSE.html#gae4fea3639bac6abd3d3087204dcb1f7d", null ],
@@ -248,22 +251,22 @@ var group__LESENSE =
       [ "lesenseWarmupModeDAC", "group__LESENSE.html#ggae77285c42dc4aa211c3cc753abdf4645a1271080e73bccde93e6196f9697d7660", null ],
       [ "lesenseWarmupModeKeepWarm", "group__LESENSE.html#ggae77285c42dc4aa211c3cc753abdf4645a305a3dfd71fd36ec5bbf1814923c1263", null ]
     ] ],
-    [ "LESENSE_AltExConfig", "group__LESENSE.html#ga5e74a058bf6cb6a84b1b207ad7d0abcd", null ],
+    [ "LESENSE_AltExConfig", "group__LESENSE.html#gac40301c926bfd10cf52c7a37e3fbd719", null ],
     [ "LESENSE_ChannelActiveGet", "group__LESENSE.html#gaebe21d230636d75d99dea2cc315305a0", null ],
-    [ "LESENSE_ChannelAllConfig", "group__LESENSE.html#ga24763a5f55c777f3021963a4f7809a96", null ],
-    [ "LESENSE_ChannelConfig", "group__LESENSE.html#ga6aa126a4b073bd48954c8903da1bf47f", null ],
-    [ "LESENSE_ChannelEnable", "group__LESENSE.html#ga611f48ec1dcb0e3f6007a5245fcbac7f", null ],
+    [ "LESENSE_ChannelAllConfig", "group__LESENSE.html#ga4b6111131d7b5d5d902e3bd6473e5fab", null ],
+    [ "LESENSE_ChannelConfig", "group__LESENSE.html#gaea5de81162fddc14155f27f38fa79d20", null ],
+    [ "LESENSE_ChannelEnable", "group__LESENSE.html#gaf8f11a4d13a561ad6599335e221e92f4", null ],
     [ "LESENSE_ChannelEnableMask", "group__LESENSE.html#gad39d66ad78cc0a5499bbf213e8b9bc6b", null ],
-    [ "LESENSE_ChannelThresSet", "group__LESENSE.html#gaa0f60936997170e7563c97552b99bb88", null ],
-    [ "LESENSE_ChannelTimingSet", "group__LESENSE.html#ga81efdc1593d4cbdd8e599f8cd1a42aa1", null ],
-    [ "LESENSE_ClkDivSet", "group__LESENSE.html#ga1ffd0b11de75b11d122d5a62d1a7fbab", null ],
+    [ "LESENSE_ChannelThresSet", "group__LESENSE.html#gab77af68ee8b46ed509e570f8c0b18e47", null ],
+    [ "LESENSE_ChannelTimingSet", "group__LESENSE.html#ga8bc2ec714a8ceb1a29fcf5769724059e", null ],
+    [ "LESENSE_ClkDivSet", "group__LESENSE.html#ga9b1ce951e3a547fdc391dab22908d436", null ],
     [ "LESENSE_DecoderStart", "group__LESENSE.html#ga13e2e54c63941457aa18aed1c4462cd4", null ],
-    [ "LESENSE_DecoderStateAllConfig", "group__LESENSE.html#ga5c9e0e09e723fa04321bc17773b1e253", null ],
-    [ "LESENSE_DecoderStateConfig", "group__LESENSE.html#gaef8bc2c145fcae89fc4a3b6516bb4654", null ],
+    [ "LESENSE_DecoderStateAllConfig", "group__LESENSE.html#ga5529ef6ab4838a70159578598d3b01da", null ],
+    [ "LESENSE_DecoderStateConfig", "group__LESENSE.html#gaffe3b519da7fa700e344e9e49ad1f100", null ],
     [ "LESENSE_DecoderStateGet", "group__LESENSE.html#ga26346866d73087ef74712b35b18fa596", null ],
     [ "LESENSE_DecoderStateSet", "group__LESENSE.html#gad164d8048a3c0112d352c0b6447d66b1", null ],
     [ "LESENSE_DecoderStop", "group__LESENSE.html#ga020ef394a68b9bcbf68cd8d2a2d4f2da", null ],
-    [ "LESENSE_Init", "group__LESENSE.html#ga0a398212f9973311040dee0752bb587d", null ],
+    [ "LESENSE_Init", "group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac", null ],
     [ "LESENSE_IntClear", "group__LESENSE.html#ga994502fe555c22c4223a52f567662361", null ],
     [ "LESENSE_IntDisable", "group__LESENSE.html#ga822a0537ced6051e6b21c3b1bf60d2be", null ],
     [ "LESENSE_IntEnable", "group__LESENSE.html#gafefe1cdd68c34d8897088ef121456132", null ],
@@ -273,15 +276,15 @@ var group__LESENSE =
     [ "LESENSE_RAMPowerDown", "group__LESENSE.html#ga9ee8e095e147450d5fe1e8db24ceb781", null ],
     [ "LESENSE_Reset", "group__LESENSE.html#ga40f43668fc902a37ce1be07c83e7771b", null ],
     [ "LESENSE_ResultBufferClear", "group__LESENSE.html#ga1bb23d00276c3abbee5584b125106927", null ],
-    [ "LESENSE_ScanFreqSet", "group__LESENSE.html#gae8655dcda510a74ab5e0c2fdc7aded58", null ],
-    [ "LESENSE_ScanModeSet", "group__LESENSE.html#gaa0333bb6df6eaa9833919e0e7519b658", null ],
+    [ "LESENSE_ScanFreqSet", "group__LESENSE.html#ga774d8a3ba9620c84fd9db4e252560efa", null ],
+    [ "LESENSE_ScanModeSet", "group__LESENSE.html#ga61b7b6a97a033f983f6daec531f5186b", null ],
     [ "LESENSE_ScanResultDataBufferGet", "group__LESENSE.html#ga26c2f4a57fb232a0a74b8b13bf7b3acd", null ],
     [ "LESENSE_ScanResultDataGet", "group__LESENSE.html#ga75de0322234f80b2bdcece55cef7144e", null ],
     [ "LESENSE_ScanResultGet", "group__LESENSE.html#gacb70c06f9976dc498b2295020faab890", null ],
     [ "LESENSE_ScanStart", "group__LESENSE.html#gaa78676d3eb250d8ebdc6f08ee249704c", null ],
     [ "LESENSE_ScanStop", "group__LESENSE.html#ga6fff645ccb362fbeba4e4ea1e0b0fcb3", null ],
     [ "LESENSE_SensorStateGet", "group__LESENSE.html#ga2ee5eb4f4f582c371a1fd3bf24d10205", null ],
-    [ "LESENSE_StartDelaySet", "group__LESENSE.html#gae2e4883549fbd7cce4ec059c3c550bda", null ],
+    [ "LESENSE_StartDelaySet", "group__LESENSE.html#ga8b0dac3ef7efd0f80c7bfe5b6537289a", null ],
     [ "LESENSE_StatusGet", "group__LESENSE.html#gad80bdc3858c24311db2e8f9d5e1c2f5f", null ],
     [ "LESENSE_StatusWait", "group__LESENSE.html#gaf9ff24d9d9e534fbc56ca6498b3933ae", null ]
 ];

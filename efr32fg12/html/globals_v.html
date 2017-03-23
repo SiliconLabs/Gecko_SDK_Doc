@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Flex Gecko 12 Software Documentation
-   &#160;<span id="projectnumber">efr32fg12-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efr32fg12-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -331,6 +331,15 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <li>VDAC_CH1DATA_DATA_DEFAULT
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf391b6229255eea0fa1daac60aed55c5">efr32fg12p_vdac.h</a>
 </li>
+<li>VDAC_Channel0OutputSet()
+: <a class="el" href="group__VDAC.html#ga538201f1bcef2db6a1a31faf8393e4bc">em_vdac.h</a>
+</li>
+<li>VDAC_Channel1OutputSet()
+: <a class="el" href="group__VDAC.html#ga42c10c7f78f2a58c4a0daee3fb7b036e">em_vdac.h</a>
+</li>
+<li>VDAC_ChannelOutputSet()
+: <a class="el" href="group__VDAC.html#ga396e4580dca390077ece2f62754af78b">em_vdac.h</a>
+</li>
 <li>VDAC_CMD_CH0DIS
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga3d953d24713f3e745de641fd7ac9ac6e">efr32fg12p_vdac.h</a>
 </li>
@@ -489,6 +498,9 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 </li>
 <li>VDAC_CTRL_WARMUPMODE_NORMAL
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1964ec9213fe13fd6367180e942816f2">efr32fg12p_vdac.h</a>
+</li>
+<li>VDAC_Enable()
+: <a class="el" href="group__VDAC.html#gac6d43478ec909b6a625252382cd8ee5d">em_vdac.h</a>
 </li>
 <li>VDAC_IEN_CH0BL
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga997c0548b46061dc7533e60fa058489d">efr32fg12p_vdac.h</a>
@@ -898,6 +910,36 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <li>VDAC_IFS_OPA2PRSTIMEDERR_DEFAULT
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gac48fa507bbff1b5681bdbfdffd151f5e">efr32fg12p_vdac.h</a>
 </li>
+<li>VDAC_Init()
+: <a class="el" href="group__VDAC.html#ga4a18eee1055ae21c6881160b39c95dde">em_vdac.h</a>
+</li>
+<li>VDAC_INIT_DEFAULT
+: <a class="el" href="group__VDAC.html#ga4cea7d9693e5c7974b2984a820b2e34c">em_vdac.h</a>
+</li>
+<li>VDAC_InitChannel()
+: <a class="el" href="group__VDAC.html#ga3dd56b3b10e1a8259995d4d4dc74f436">em_vdac.h</a>
+</li>
+<li>VDAC_INITCHANNEL_DEFAULT
+: <a class="el" href="group__VDAC.html#ga09db25f388bee1c74bec484420d55e30">em_vdac.h</a>
+</li>
+<li>VDAC_IntClear()
+: <a class="el" href="group__VDAC.html#ga0125b81124501ec5273e41451b601db5">em_vdac.h</a>
+</li>
+<li>VDAC_IntDisable()
+: <a class="el" href="group__VDAC.html#gad98e6cdcc5637e981a55cc026143ea27">em_vdac.h</a>
+</li>
+<li>VDAC_IntEnable()
+: <a class="el" href="group__VDAC.html#ga8510cbea16c6d0c810281f73975abe9f">em_vdac.h</a>
+</li>
+<li>VDAC_IntGet()
+: <a class="el" href="group__VDAC.html#gaf85df28b35e9dc690f561c3f6ae97f04">em_vdac.h</a>
+</li>
+<li>VDAC_IntGetEnabled()
+: <a class="el" href="group__VDAC.html#ga3f7a832b742cafe49ad118491aaa6fac">em_vdac.h</a>
+</li>
+<li>VDAC_IntSet()
+: <a class="el" href="group__VDAC.html#ga2b5f4acdaf70ca40d00c76501ed46c1b">em_vdac.h</a>
+</li>
 <li>VDAC_OFFSET
 : <a class="el" href="group__EFR32FG12P433F1024GL125__Peripheral__Offsets.html#gac38e26bede3f9726492c852fe8df01d4">efr32fg12p433f1024gl125.h</a>
 </li>
@@ -1132,150 +1174,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <li>VDAC_OPA_MUX_GAIN3X_DEFAULT
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga5d65cf55215e3407411bcbd549081a44">efr32fg12p_vdac.h</a>
 </li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH0
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga204fdd49c5fe69b3efa8f717f61876c7">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH1
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa054f77b3af713d18d7f4f4ccf04ea78">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH10
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf06947c7e8893f7f0861da472e34fc79">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH11
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga59804f92ceb98c0b0d8d682263ba084b">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH12
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga0ca2ddde6f292e6a4b8710c3856fecd2">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH13
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga2e712c1f970475227afaae91f86480bc">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH14
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga61cc26dbc4d4d0b889a4f1f6445b6576">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH15
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga858597147b96814ac915064e19fa6fa6">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gae2f9c0fecdbbc6f0da7e7446d38124bb">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH3
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga79412323d6de76fc3381a0b49bd6b9dc">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH4
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gad2be7b9822b030386c70e2684283c12a">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH5
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gafa68068bae78a80c19e5473f10a93aec">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH6
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gac80512034c3a5c0203eb1546267bccb9">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH7
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gae00bfba343353d0d7ac3a446609f5cc4">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH8
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga2f086510abd8288a3da75f7270791d56">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0XCH9
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga47a63b19b5a8aab304bc4db36c9f85e7">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH0
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga874ef22b44d877e9917102df6b98bd5a">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH1
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga5facaf858dd3ad36b619689683b4a445">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH10
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga29b4a0bae785b06783a1e2f272062be0">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH11
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga8bed626eb67a682f86f3447488e9af9a">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH12
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga0a4e7e55dd63c525ffc9ac055c60ad16">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH13
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa4ec81d3cd6e100eebb5e86f21560fd9">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH14
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga0ad35aefb3ffd63490680ddd154323b9">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH15
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga5074142384cc06007e8fa62a591ad162">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gae9a0c98d813f7cc223cb046cfcfd3218">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH3
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaee7fd8ebc7137d6718e293f29f4d683c">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH4
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga6aa75fefba4bc62240d776986a4c6d61">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH5
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga490bcda55a8da4ad71400c4e99557c34">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH6
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gad689c916319197a6e0504f487a8b1a43">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH7
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga6176e7d7d8eb28b14ab1cbc20ece42f7">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH8
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gae9ace9e2585d2c0cc1665baa3288483a">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT0YCH9
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga97e7d1b3625446b4cfabc9fb31090ec9">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH0
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gad880404c7396b06b505a463467221227">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH10
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gabec43c3327ffd427fdbdc9c356e2aab3">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH12
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaae8a5353fbfbaa172395cc6677b08bc3">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH14
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1d2f52ff9767fd360482617f9cf0e499">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH16
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga3fa6829aae253399c5502e54e89b2bb2">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH18
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gadb7c08e37f2aa021cc3a20105aac6895">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab5c9aca7ff14575c36b13e12f04b83e2">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH20
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa49f49a6586e716d0bb3f5c51dc7e19a">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH22
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga46e3477beff1d6a2e7a3005b8a1c3249">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH24
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga32ab541dfd8590808e90a57812af88f6">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH26
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab51e07f038c71f2836fe4174993a4506">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH28
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga15bcab30225084d44119648c065147cc">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH30
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga48d9878714375772600b9bd14c7036ad">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH4
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaff5dc94ef2e9006ee71959b561c89f15">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH6
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gabd79d38f3343e63f2f2f16a20c6d0a68">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT1XCH8
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga6e86f21b161e03004fe95e245c7c23b9">efr32fg12p_vdac.h</a>
-</li>
 <li>VDAC_OPA_MUX_NEGSEL_APORT1YCH1
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga7a850e82095d526ecbb3b54c14711d33">efr32fg12p_vdac.h</a>
 </li>
@@ -1323,54 +1221,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 </li>
 <li>VDAC_OPA_MUX_NEGSEL_APORT1YCH9
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga4d94b4caef96121778447e9e5070594f">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH1
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga154e5f1e21596240791e7fb9d73e6267">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH11
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gace700713f8116a8e22a896a9afaa4b9a">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH13
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaff732351828c70a552038676d6ad0e2b">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH15
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1cdd3bf3ceadca7732a63fd3b9591caa">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH17
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab72ee8de439828da190a4452bb5f869f">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH19
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab343ce0b8251f6499e739f2618b32757">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaddb4403ffcc2a47e518dbbcc8d419176">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH21
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa4d97cec66436274b5a1e28d0b097b67">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH23
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga4f3a2ddd7cfecad65ae31c9747eaaa98">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH25
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga8666aaa288fc27e83ffff7a70a5ee18c">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH27
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gad7c13b794bd3563be87b3ab0506a6d7c">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH29
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1d164fe3e3cede97bff69bc93774d611">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH31
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga5ced95bf719160e1d9386840d59c55d9">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH5
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab0b060218c1188b66078627774b3982f">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH7
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gac40d9a9c00985279b2fed6c6a7e91c79">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT2XCH9
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga7b1fbfc0f5c2ad6edbde228e41c1e2e6">efr32fg12p_vdac.h</a>
 </li>
 <li>VDAC_OPA_MUX_NEGSEL_APORT2YCH0
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf350c7ea47483fecb429e0b58b458ce3">efr32fg12p_vdac.h</a>
@@ -1420,54 +1270,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <li>VDAC_OPA_MUX_NEGSEL_APORT2YCH8
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa2a9ceaae811398c8d1480459cff3187">efr32fg12p_vdac.h</a>
 </li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH0
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab3a3a0e125a38ce9ccbbac538df784ca">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH10
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab8b2b40312664b88798f0a043d7ee450">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH12
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gabe464bd446959b76725036add77b3085">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH14
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga9422a0c696960084c17b7edffef24b3b">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH16
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1f661a4c16807ce49c0d80d5e10a0f73">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH18
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab896e6e188d55973f78257bba02f1ce3">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga62061d45407b49d2f3395ccb1c474da7">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH20
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga092d64ca00324b15fe979dea71b91764">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH22
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga0276d86c00187825d3df4e20db073b35">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH24
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga55f88a2556a5e5c87025eaa1c7fdddb8">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH26
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gacf218e203550c409837733a32445a502">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH28
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga9f2bcd7b6a68101c5bfe24a33761cb2c">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH30
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gabb4253e22d7d21391797f856c5f4e641">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH4
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga127338f5612dbe06fc8441e44fadb15c">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH6
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab2e6b36a020c8ec1a4dbc9aaafafedb5">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT3XCH8
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga8191287d55b26acfbf4bde9ced9d57f0">efr32fg12p_vdac.h</a>
-</li>
 <li>VDAC_OPA_MUX_NEGSEL_APORT3YCH1
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gad5f0a1107f5abc5c03c4bcd71b4d5c37">efr32fg12p_vdac.h</a>
 </li>
@@ -1515,54 +1317,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 </li>
 <li>VDAC_OPA_MUX_NEGSEL_APORT3YCH9
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1aa7b16edfd774a491d8f40d556dc331">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH1
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gada501b8f8dfaf85a5253c924524c2b25">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH11
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga780f33c93a5b026cca1d54c1129ccb51">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH13
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga4961c7fc058eb53049bc48870555ce6c">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH15
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga24de554f5be147a1491530d3a29dd8ac">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH17
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf11721fe0a3f55677a2d915a12f81d28">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH19
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga3ae8cf93a41fa8d58c21341858e6dd55">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH21
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf88685c492eae7a0255c7402fbf32ad4">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH23
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gabc667df93e9c347b3c54d368b58b5b6d">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH25
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga9119ac54896899007f075798a41ee5b8">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH27
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga81a40837c489f4f379b80ba5bd3a4566">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH29
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga963c5452038fc1a8286f78dfd9fa05c8">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH3
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga494308f33d470baf01d1b809003fe1f0">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH31
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga3c90434ade71aa709a3160b6b5e90cc0">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH5
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga2c0decc3dd1350e7508d5539d57f9cf6">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH7
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gac31f95146fda2a0daba6e2411c5009be">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_NEGSEL_APORT4XCH9
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab2c143ae3d3bb2dc7f767e8925e04107">efr32fg12p_vdac.h</a>
 </li>
 <li>VDAC_OPA_MUX_NEGSEL_APORT4YCH0
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga27b1baf0e155036f025566fe1e6cad08">efr32fg12p_vdac.h</a>
@@ -1627,102 +1381,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <li>VDAC_OPA_MUX_NEGSEL_UG
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga28855cd4b93bc612f8d2db7d372bfbc8">efr32fg12p_vdac.h</a>
 </li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH0
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga59f8a29645cf298abd531e8e73a2043e">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH1
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gadabe85ba8c4a7991b952ed6b89d38fd0">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH10
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga2b049b0dfa6a1a91e6bbe28a5549d92a">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH11
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga96be86a5c195e06e0063ff1e23e813c2">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH12
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga32522b9b90228a1f30908a234a2f9ae9">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH13
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga87b8301b1c3e5fa8e5e959f911f3ddc8">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH14
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaebdd1d64c666f99792246f6c0bdf09e2">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH15
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa2942afece50c3ed9a7b544b38cffe3d">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga0b0eb58fe5ba5831e418acf6f2c8e9f5">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH3
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga7f9a1f1a9ea012bae35ec314dd3c3b92">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH4
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga046ffc873d0ca7a554943a238d29b1d0">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH5
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gae90505cc6afc507568a8dec63bb096ed">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH6
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gadc340714a79adc2e401a19ed9a96b7ae">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH7
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf9735b1ba7be2acba051cc9f0ee08a25">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH8
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga2c2a70437242c8591aaa41cc899c2eeb">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0XCH9
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga8885328d0fc9a3ded6e7f888698bb41e">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH0
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga4e862b462501ed1013afd6918eac3e9f">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH1
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga7ba024e9144e134e87e87b6e57f2e1f5">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH10
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gafaa552c3b55db78f548940045ee72392">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH11
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gac36a0a9a1c6626c3e8c98a96237f74f1">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH12
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga2ddb9c24f9cf3de786c6474353b8755b">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH13
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga33a6081368cdbbba55fce2099d63c703">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH14
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab305d1904847d8f41f2320cabb1ea0ff">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH15
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaccbe9d6367f072754b6f7e139cae9824">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gabc8a1289a098cb1d39632d05a8eea0e2">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH3
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gac8c140efc182e2423b05bed4d756f643">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH4
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gabf57b1c64d359bab7f8d162c23386469">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH5
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gae42119ea3b6b44a3905db5fd55fbc627">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH6
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gac9e799dbc9a5260986b9bdb1908da3d7">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH7
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga38f62512bae765974a74c3958277f8dd">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH8
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab831e6825e437b4a0319b46574846bd3">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT0YCH9
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaca2091a2120c646083e8c5f8a4d55509">efr32fg12p_vdac.h</a>
-</li>
 <li>VDAC_OPA_MUX_POSSEL_APORT1XCH0
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gade0e3379f35d3599895d3e3d5d6b4407">efr32fg12p_vdac.h</a>
 </li>
@@ -1771,54 +1429,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <li>VDAC_OPA_MUX_POSSEL_APORT1XCH8
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga8c90b2be0d3975b54c42e5b4b5c20f5f">efr32fg12p_vdac.h</a>
 </li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH1
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga21cf20ad677d3aafd7a5360d340ce7bf">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH11
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa638e942fa3c2df8ddae520ede7b7b92">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH13
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga02f82e71e64475b1596cd639500c87ed">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH15
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga79ea511d27447ae7914408df996fb9ac">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH17
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga73d5e959af64852563a5c97239394cee">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH19
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab5c2ecfe46a623fcc623a2bd470848bc">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH21
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga456343e66c0de072f76ae0c25fda52cc">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH23
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga7164392c13a31938925e95ec0758aeb4">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH25
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga960964b2beb2a9a4b383a162327fe213">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH27
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga25e01280a2ec40322d63d1b3370fc0f2">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH29
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gafff02c6ca65cd6c5f3a5e6ebe0fee92d">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH3
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga3a727bdf8e44ae5d978739968f443978">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH31
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1be51c0879f9973d66842ab4e81bdabe">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH5
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga19ff7f94564ebf5c14f5e764c04434df">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH7
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga58d038068719d5e801e15603ac893fc5">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT1YCH9
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gae87762b47e8069976dbe6fdeb97fe810">efr32fg12p_vdac.h</a>
-</li>
 <li>VDAC_OPA_MUX_POSSEL_APORT2XCH1
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga5d9f687d134d68c283f5d19f1de9d36f">efr32fg12p_vdac.h</a>
 </li>
@@ -1837,9 +1447,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <li>VDAC_OPA_MUX_POSSEL_APORT2XCH19
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga6d9183a6e80658c5c13d19478daf7dde">efr32fg12p_vdac.h</a>
 </li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2XCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab18c0fd3f9463843bf3a83ce3177758e">efr32fg12p_vdac.h</a>
-</li>
 <li>VDAC_OPA_MUX_POSSEL_APORT2XCH21
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga50dd3fb121eef6ecf180882d0e451890">efr32fg12p_vdac.h</a>
 </li>
@@ -1855,6 +1462,9 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <li>VDAC_OPA_MUX_POSSEL_APORT2XCH29
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1d496c0680b9e5ac53341cce2245be65">efr32fg12p_vdac.h</a>
 </li>
+<li>VDAC_OPA_MUX_POSSEL_APORT2XCH3
+: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaeaddd13e251f37a0eaf6f25b4f1f4c58">efr32fg12p_vdac.h</a>
+</li>
 <li>VDAC_OPA_MUX_POSSEL_APORT2XCH31
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gac87b8193905c431d1138fc0edc8dd38e">efr32fg12p_vdac.h</a>
 </li>
@@ -1866,54 +1476,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 </li>
 <li>VDAC_OPA_MUX_POSSEL_APORT2XCH9
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gae04a71165e44657144311ab20fbdd6bb">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH0
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga38e8e9d2ede4cba1ce971f8017982523">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH10
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga58b2562757bb29d86028e4388debe888">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH12
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga7056b21b12d64e504f5c58a81114f021">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH14
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga20e5107d9ee8354f14e5aeefcb5a39be">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH16
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gacbd2f67373e3384796566afd4af76c6b">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH18
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga15d233ed567d0dc98caf60dc2b63baf5">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa6d8b7385653887970d2bbda92fa71a8">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH20
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gabb4a47243acb83296b3def4bfaf82463">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH22
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga217b4bc17331087c4946aa4a2cffdfd5">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH24
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab081b6676c9a0fe2a5ab3f139d914df8">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH26
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf8c0cdc0129952fdfc755986ad5461d8">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH28
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gac1fd759ba891ff2f95829fd474584436">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH30
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga9f1dbc28685540fb44711e001c0014aa">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH4
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gacda0c2feccb0fdd410497c86190f4a08">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH6
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab2eec77358a85c871acb167379c5a69f">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT2YCH8
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gad22f827436c78b1f7b5bbc36f7d8519c">efr32fg12p_vdac.h</a>
 </li>
 <li>VDAC_OPA_MUX_POSSEL_APORT3XCH0
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gafb2c80cc76f9419a737cb74867d53386">efr32fg12p_vdac.h</a>
@@ -1963,54 +1525,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <li>VDAC_OPA_MUX_POSSEL_APORT3XCH8
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga04e3987dd877a6ee97c374ca7485b3a8">efr32fg12p_vdac.h</a>
 </li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH1
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gafc6a5168f318bd346fb745628a9b2bbf">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH11
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga757a8f0adf4d098f6e9e3440b000cb96">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH13
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gacac54eee944522dec566ad556f7c59af">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH15
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga3f8b580943b752fd812dba32d7b48be2">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH17
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga88430bcc5f5d083e6495c32f1214d5b5">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH19
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga701baa2f0ee2ed26ddcb05134b576100">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH21
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga31d9e31087b346f6ee4ab389604505cf">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH23
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga0b6ae83e63cb77bb0dd9d493e1c6531d">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH25
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga86ff36fc6b44bbfb2d6441bde617aadc">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH27
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gabae3c9693986a01db43c4fb405a43838">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH29
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga2d605448deb30a22a7e240382af0d81f">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH3
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gac851d67a8ed8083624785028a085ab35">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH31
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga7bf9beb161c830838987abd59b9aa283">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH5
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga3e78d810c042aec04a936267f1c661e2">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH7
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga5cc7b42da87f5163b8393eb87b8d04cd">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT3YCH9
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1aba6df34eaa29ce04366f64db58326c">efr32fg12p_vdac.h</a>
-</li>
 <li>VDAC_OPA_MUX_POSSEL_APORT4XCH1
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf7660f07e56bacf9186a8ded61764a37">efr32fg12p_vdac.h</a>
 </li>
@@ -2058,54 +1572,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 </li>
 <li>VDAC_OPA_MUX_POSSEL_APORT4XCH9
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga4f4d59e9f510de0705e1d1da1341c159">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH0
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa692c5ccb4e6f6e1057c82eb2f32b87e">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH10
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaef4c17580995b043707d51b1b2b5346b">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH12
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gad701987ae29c681b4447e0b24317e554">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH14
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga4f72bfbd812b1dbde699ca6db2080540">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH16
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gad8907124ec9bb924488957c8566a8512">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH18
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga93b61b17a93a716fa48fa6dc7d1df825">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab10ace0d5effacecefb054fe58424ebe">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH20
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga3ba49912f3cbddddab6cc3531d56ca97">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH22
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gabfce9a80fb2149220fa539802d9d2d59">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH24
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga707568009b854c1c62a0ba9464f6cc82">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH26
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga34c34617ec13104b960d3c6f34cfa2e0">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH28
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga95b5b7a13fac72d48a716f05f287bed7">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH30
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa250def1917181b133d3e81f41a691af">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH4
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga02f5b1550bc6b41b96d0b2966acc25e5">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH6
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga34fe33621417d01f9499e1e2211c834e">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_MUX_POSSEL_APORT4YCH8
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga14ed87f53765906a988c4921b0162393">efr32fg12p_vdac.h</a>
 </li>
 <li>VDAC_OPA_MUX_POSSEL_DAC
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga42368116adc3bb7bb4eae44e4bd39ad6">efr32fg12p_vdac.h</a>
@@ -2206,150 +1672,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <li>VDAC_OPA_OUT_APORTOUTEN_DEFAULT
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga52b2da53702c7954b840229bcf2d2d45">efr32fg12p_vdac.h</a>
 </li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH0
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga215806a6f0d4ba302dc21f1f4389b90d">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH1
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga375e317fc0b1a71123a80c839231f945">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH10
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga8f66106c9034e386b36be257166b9daa">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH11
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga0ece066ed4139af5ecbdc3a6ee5f4019">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH12
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gad55221fd8be3783a11cc26c0eb4bdff8">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH13
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaddeaecfbf07e5d99bd891065e8169b59">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH14
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga92b11e8442baf20ed308f98911960a49">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH15
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaab5cab020e1c84aabddca4ccadbbc74d">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa49b1342246429055dc195908de92ee1">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH3
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1216cab81cd571d56eb2eb04af09740f">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH4
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gae43b9d4a00879aaa0ff2cb415a44dd7e">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH5
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga54b34a305417319f25596c56e62d9031">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH6
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga7593ca390c907ae3f3012c262b47ab3d">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH7
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga0d36da47653e8e6012cd33c4dd7fb341">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH8
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gacc5b98ecf5cef8a01629e6960d6357c6">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0XCH9
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga45c66d0f05adfe3d23737260469948d2">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH0
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga40d804f4ca2f4f894d31e4f5b1451884">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH1
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gafb907d81740d6e72154f4ae2bfcab585">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH10
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1be2cd89f13c885d79e2f5972c4ea520">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH11
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga85af99c7254340635a106af260859eae">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH12
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gafb236da27a0fbd4cd3138c1ab253d298">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH13
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gac4d40cf440c19c1004029afd30ed8144">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH14
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga85b41eb27c08f6aa9e59263e1df9a287">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH15
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga682455d6ea5aa7ee4a9957e0873995d7">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaeaa14432167f949de0d6baf87c3baf6c">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH3
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa3508877846953bfa308def0585618ec">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH4
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga7c0b036b3bb2112329f79cc01630c82d">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH5
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaae5058e463286b49d4769ea35128b971">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH6
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga14db056eb12cc3497c06ad3eb267f3ad">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH7
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga27a9fbbf194bc16973af570bd22f600e">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH8
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga0ac8bd219e070c7a5ed1f773ee534d2e">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT0YCH9
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gae887491cbdffa00121e5aacbe2f42370">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH0
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga90cd2377b3adc57f1ad86b58e9fcf8ca">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH10
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga3f4bbbe971d498dc1ed2b7f2b4a9f685">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH12
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga65e2c19bf4bf00025d2d394364f2a5c4">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH14
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf724078efa0b247fe35eae30224c9e7e">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH16
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga03896d4283d07b2f83d81804be5e9623">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH18
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf6274dfb336ec1e9472ae675b5c5ca63">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga12ac869f8174f452c8055ca9c1357c59">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH20
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga8285cf6927bbf294e6e19fa330a83bd6">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH22
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaeffbb00807f9cf21d996db8e72af6bd2">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH24
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga5cbe15cde144fb3a333bf55b63e0835a">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH26
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gafaee1ea1f48e7c8459f117cbb174aee3">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH28
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga2a3f415cfbc50b08357fad0d972bac2c">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH30
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gac9a48a9e90c453619ba1515efffcf2df">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH4
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1d54ea029063942324ed6a0c1f561702">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH6
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa809325d12ad71dc2f8b24930859eb58">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT1XCH8
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf67eebaea831d286e959550dc9e63708">efr32fg12p_vdac.h</a>
-</li>
 <li>VDAC_OPA_OUT_APORTOUTSEL_APORT1YCH1
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gad1ab14021569f7a251fc317b4fdcd25e">efr32fg12p_vdac.h</a>
 </li>
@@ -2397,54 +1719,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 </li>
 <li>VDAC_OPA_OUT_APORTOUTSEL_APORT1YCH9
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga24e4d3974fb915f4a218050c4c345489">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH1
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga60f014c4a81fc6d13b0a82537ecb6ce4">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH11
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga890db6cbaaca5d58a3d02072a49cf4c6">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH13
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga83e49cbf55eb6c60ed5f97ba66ab078f">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH15
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga7ec00b1b921bec404e4a7c7c7da72153">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH17
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga9747f6925efdc87b87b352d7140df7e5">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH19
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga462d03b5759d43968a3288c9fff7af00">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab499057ee04e61348f6b8ebde8ec8a4e">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH21
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga8fa6e31796318b7176479c8f1d8892d0">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH23
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf1133938c641315a40ba35599fabc9e4">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH25
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf389adb4c4abf0fb013d10b2f6ee13b5">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH27
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga2d228b866475ff3519aef75d04f0679d">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH29
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga306680d6f1dce8774d6c3468f2c9d216">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH31
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga768248134292776cc0d437422da2fc30">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH5
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf4d4d2c3c7ce936c14606f8183369a3b">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH7
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1704b86185515c5d46c86ec9590139cc">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT2XCH9
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga3b52c92cacbe6cf92f18f6077c822425">efr32fg12p_vdac.h</a>
 </li>
 <li>VDAC_OPA_OUT_APORTOUTSEL_APORT2YCH0
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gadc2905bf2123266ff49e7e73ff2c199b">efr32fg12p_vdac.h</a>
@@ -2494,54 +1768,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <li>VDAC_OPA_OUT_APORTOUTSEL_APORT2YCH8
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga8aafde91393b332716acd937cfbf62a3">efr32fg12p_vdac.h</a>
 </li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH0
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga6b0c8a239f71813106c74787ef185b64">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH10
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga0257e2e4735328edbb12ae3d70c48bf0">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH12
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gacbc8a0c3cda1b2309f00fccce0352ead">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH14
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga8f2b6f036d9c5ecb22c33adf376e4460">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH16
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga85588936a209f60eebf4088ce8425384">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH18
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga196189dc1da67b637386d4336cbfb292">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH2
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf83ba31e05c7a663f4973a1702011585">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH20
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gac53daca6939e4bbaca57a99ad0fc5693">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH22
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaec1791f84c23585c290f2d2fa00b949b">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH24
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gafe2c06952f25361aa66f60d7a624b933">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH26
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga6e7fb153a21020de547b96caeba47a33">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH28
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gae8aa2052bd2ea670e39ca69c6d50ffea">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH30
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga5b40da7e3d17c11fa81e4f495015afa4">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH4
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga086a8e0f5afefcd89d5ce9fd256f8a60">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH6
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga8c2d69d94418d5658505a7df88cdbc7e">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT3XCH8
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gad94d91fae2b3998fcbd3b38425bf823c">efr32fg12p_vdac.h</a>
-</li>
 <li>VDAC_OPA_OUT_APORTOUTSEL_APORT3YCH1
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga5d432080409abbb383981ec5a898e6de">efr32fg12p_vdac.h</a>
 </li>
@@ -2589,54 +1815,6 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 </li>
 <li>VDAC_OPA_OUT_APORTOUTSEL_APORT3YCH9
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga02e2f6a78e42a264fabbbf385f155167">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH1
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaed9696b2c86d204edb22efb2f11e7d3c">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH11
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gae1c2309131a2747933b4111bb52c7187">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH13
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga1e8cc13625d764807ded3fc3c1510f05">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH15
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga9ba82f7e51bad70a232c0ff8938308a5">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH17
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gade1c81abc52a247750b3153a011e1f16">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH19
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gadd55713e0eed29af872d661c0ba5a554">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH21
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga5e8448f8d7fcc9f59abca2663de6a1d3">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH23
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf01004e8ebd2381cbe8286ddd4eb1b75">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH25
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga429cd9108e9cac5c516e2c795ab2a0ff">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH27
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga310a5a006b990ce050a5de46f0d46d97">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH29
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gadbabc04f0f90ec2be50ccb44e31091f7">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH3
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf51de9546b162f3673f8e71d2ca2085b">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH31
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga8f0fda991b343b4a9a5a982f13c54966">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH5
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gab607313822a24d2d4ab54c84df5d4ee5">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH7
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga22042bf267cd6b65de86c7684a6cffaa">efr32fg12p_vdac.h</a>
-</li>
-<li>VDAC_OPA_OUT_APORTOUTSEL_APORT4XCH9
-: <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga7723ec9dfc4b51b8b568f96054f44b9d">efr32fg12p_vdac.h</a>
 </li>
 <li>VDAC_OPA_OUT_APORTOUTSEL_APORT4YCH0
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaa5ff28582848d0304c4bdab01e032176">efr32fg12p_vdac.h</a>
@@ -2710,8 +1888,23 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <li>VDAC_OPA_TIMER_WARMUPTIME_DEFAULT
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#gaf158ce2008de163aecc6603c648f75a0">efr32fg12p_vdac.h</a>
 </li>
+<li>VDAC_PrescaleCalc()
+: <a class="el" href="group__VDAC.html#gad22f2d3df4ab519fe170ece032c02002">em_vdac.h</a>
+</li>
 <li>VDAC_PRESENT
 : <a class="el" href="group__EFR32FG12P433F1024GL125__Part.html#ga15d37a91ff5da4bb5fafe5540f8d6163">efr32fg12p433f1024gl125.h</a>
+</li>
+<li>VDAC_PrsSel_TypeDef
+: <a class="el" href="group__VDAC.html#ga884750f1eae15960872bde526398c7d3">em_vdac.h</a>
+</li>
+<li>VDAC_Ref_TypeDef
+: <a class="el" href="group__VDAC.html#ga0700c2189f5809e7d8d0c2ff4c12a595">em_vdac.h</a>
+</li>
+<li>VDAC_Refresh_TypeDef
+: <a class="el" href="group__VDAC.html#gafb26414c8686b515e23fc89e11920f5d">em_vdac.h</a>
+</li>
+<li>VDAC_Reset()
+: <a class="el" href="group__VDAC.html#gabb890d0ed0d2601cf67f7f94666ea90e">em_vdac.h</a>
 </li>
 <li>VDAC_STATUS_CH0BL
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga46078a7c90fddad7c3b3e9c92be44038">efr32fg12p_vdac.h</a>
@@ -2821,17 +2014,107 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <li>VDAC_STATUS_OPA2WARM_DEFAULT
 : <a class="el" href="group__EFR32FG12P__VDAC__BitFields.html#ga622f997bf38dd117b95418929abc46b0">efr32fg12p_vdac.h</a>
 </li>
+<li>VDAC_TrigMode_TypeDef
+: <a class="el" href="group__VDAC.html#ga1a81d5c8e5d88c5bc760cea89b490dfd">em_vdac.h</a>
+</li>
+<li>vdacPrsSelCh0
+: <a class="el" href="group__VDAC.html#gga884750f1eae15960872bde526398c7d3aa6ae6e9b3799bdb8192577e98c3340e2">em_vdac.h</a>
+</li>
+<li>vdacPrsSelCh1
+: <a class="el" href="group__VDAC.html#gga884750f1eae15960872bde526398c7d3a3848bc09085e868a7faaef65ae49853d">em_vdac.h</a>
+</li>
+<li>vdacPrsSelCh10
+: <a class="el" href="group__VDAC.html#gga884750f1eae15960872bde526398c7d3a1e2fb471c403349a38ac016331777ed0">em_vdac.h</a>
+</li>
+<li>vdacPrsSelCh11
+: <a class="el" href="group__VDAC.html#gga884750f1eae15960872bde526398c7d3a2c4a45e8461818299c03cfd1ac1f4e42">em_vdac.h</a>
+</li>
+<li>vdacPrsSelCh2
+: <a class="el" href="group__VDAC.html#gga884750f1eae15960872bde526398c7d3a03452d8f247d9319a0dbb61ba3fe11d7">em_vdac.h</a>
+</li>
+<li>vdacPrsSelCh3
+: <a class="el" href="group__VDAC.html#gga884750f1eae15960872bde526398c7d3a383ac456c56a012c92763e4a0ff9f23d">em_vdac.h</a>
+</li>
+<li>vdacPrsSelCh4
+: <a class="el" href="group__VDAC.html#gga884750f1eae15960872bde526398c7d3a50fe3e47451ae37b906c171c4d1dcf04">em_vdac.h</a>
+</li>
+<li>vdacPrsSelCh5
+: <a class="el" href="group__VDAC.html#gga884750f1eae15960872bde526398c7d3a249bff722fbe0bdd7a257ab961d50467">em_vdac.h</a>
+</li>
+<li>vdacPrsSelCh6
+: <a class="el" href="group__VDAC.html#gga884750f1eae15960872bde526398c7d3ad2e8ded50ce0933a629cbbff95752983">em_vdac.h</a>
+</li>
+<li>vdacPrsSelCh7
+: <a class="el" href="group__VDAC.html#gga884750f1eae15960872bde526398c7d3aaf0d06ffa4175cfa1faaf3040fbf01b5">em_vdac.h</a>
+</li>
+<li>vdacPrsSelCh8
+: <a class="el" href="group__VDAC.html#gga884750f1eae15960872bde526398c7d3afc0d41bc36deae87e87326721ddf8aa1">em_vdac.h</a>
+</li>
+<li>vdacPrsSelCh9
+: <a class="el" href="group__VDAC.html#gga884750f1eae15960872bde526398c7d3acf814d9d557924ae411605ed6c9de5e6">em_vdac.h</a>
+</li>
+<li>vdacRef1V25
+: <a class="el" href="group__VDAC.html#gga0700c2189f5809e7d8d0c2ff4c12a595a40fd88b1d43a9f3d72bcebccda85c493">em_vdac.h</a>
+</li>
+<li>vdacRef1V25Ln
+: <a class="el" href="group__VDAC.html#gga0700c2189f5809e7d8d0c2ff4c12a595af5d990401074167c8bc4d3eb5fb201ff">em_vdac.h</a>
+</li>
+<li>vdacRef2V5
+: <a class="el" href="group__VDAC.html#gga0700c2189f5809e7d8d0c2ff4c12a595a7c70aa28b2852a29d9e3179133e8c656">em_vdac.h</a>
+</li>
+<li>vdacRef2V5Ln
+: <a class="el" href="group__VDAC.html#gga0700c2189f5809e7d8d0c2ff4c12a595a93f71105c949e21bb65ef7b3bd63a434">em_vdac.h</a>
+</li>
+<li>vdacRefAvdd
+: <a class="el" href="group__VDAC.html#gga0700c2189f5809e7d8d0c2ff4c12a595a3dd1dd5a0409c489dd15d921c023e2b9">em_vdac.h</a>
+</li>
+<li>vdacRefExtPin
+: <a class="el" href="group__VDAC.html#gga0700c2189f5809e7d8d0c2ff4c12a595a9d3d4cff681fc42be14532f3ff388e7e">em_vdac.h</a>
+</li>
+<li>vdacRefresh16
+: <a class="el" href="group__VDAC.html#ggafb26414c8686b515e23fc89e11920f5daa7f9c8660840a1e7c36136d3e245b9b3">em_vdac.h</a>
+</li>
+<li>vdacRefresh32
+: <a class="el" href="group__VDAC.html#ggafb26414c8686b515e23fc89e11920f5da958d0da96bcae81ef7c0568f1f8726ab">em_vdac.h</a>
+</li>
+<li>vdacRefresh64
+: <a class="el" href="group__VDAC.html#ggafb26414c8686b515e23fc89e11920f5dabd2854deb7c9593a3bc74b840425b4a1">em_vdac.h</a>
+</li>
+<li>vdacRefresh8
+: <a class="el" href="group__VDAC.html#ggafb26414c8686b515e23fc89e11920f5dac724f98ca540555130fafbaceeb45400">em_vdac.h</a>
+</li>
+<li>vdacTrigModeLesense
+: <a class="el" href="group__VDAC.html#gga1a81d5c8e5d88c5bc760cea89b490dfda07d18a4577d242435a131b9f7e72fe39">em_vdac.h</a>
+</li>
+<li>vdacTrigModePrs
+: <a class="el" href="group__VDAC.html#gga1a81d5c8e5d88c5bc760cea89b490dfdabc62d219676c62a779ce804470b10296">em_vdac.h</a>
+</li>
+<li>vdacTrigModeRefresh
+: <a class="el" href="group__VDAC.html#gga1a81d5c8e5d88c5bc760cea89b490dfda5a1b8e516b7f31306927e5a17822b1c5">em_vdac.h</a>
+</li>
+<li>vdacTrigModeSw
+: <a class="el" href="group__VDAC.html#gga1a81d5c8e5d88c5bc760cea89b490dfda3391dbe3407b4cc673f59442a54ee837">em_vdac.h</a>
+</li>
+<li>vdacTrigModeSwPrs
+: <a class="el" href="group__VDAC.html#gga1a81d5c8e5d88c5bc760cea89b490dfda0ff0a8686d647b13b7faa2dd284b8ea9">em_vdac.h</a>
+</li>
+<li>vdacTrigModeSwRefresh
+: <a class="el" href="group__VDAC.html#gga1a81d5c8e5d88c5bc760cea89b490dfda69c883263b727416e979cecba6bf3381">em_vdac.h</a>
+</li>
 <li>VDDCHECK_Disable()
-: <a class="el" href="group__VddCheck.html#ga5d3a935fd8adf0a30a519e70e790ebb1">vddcheck.c</a>
-, <a class="el" href="group__VddCheck.html#ga5d3a935fd8adf0a30a519e70e790ebb1">vddcheck.h</a>
+: <a class="el" href="group__VddCheck.html#ga5d3a935fd8adf0a30a519e70e790ebb1">vddcheck.h</a>
+, <a class="el" href="group__VddCheck.html#ga5d3a935fd8adf0a30a519e70e790ebb1">vddcheck.c</a>
 </li>
 <li>VDDCHECK_Init()
-: <a class="el" href="group__VddCheck.html#gab3b6f35557b826311fc4de286db457fb">vddcheck.h</a>
-, <a class="el" href="group__VddCheck.html#gab3b6f35557b826311fc4de286db457fb">vddcheck.c</a>
+: <a class="el" href="group__VddCheck.html#gab3b6f35557b826311fc4de286db457fb">vddcheck.c</a>
+, <a class="el" href="group__VddCheck.html#gab3b6f35557b826311fc4de286db457fb">vddcheck.h</a>
 </li>
 <li>VDDCHECK_LowVoltage()
-: <a class="el" href="group__VddCheck.html#ga9281f4ae6f1c6b5f31205fb3cc138e0e">vddcheck.h</a>
-, <a class="el" href="group__VddCheck.html#ga9281f4ae6f1c6b5f31205fb3cc138e0e">vddcheck.c</a>
+: <a class="el" href="group__VddCheck.html#ga9281f4ae6f1c6b5f31205fb3cc138e0e">vddcheck.c</a>
+, <a class="el" href="group__VddCheck.html#ga9281f4ae6f1c6b5f31205fb3cc138e0e">vddcheck.h</a>
+</li>
+<li>Violet
+: <a class="el" href="glib__color_8h.html#acbc399a788665e749295b2cf71c0023e">glib_color.h</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -2839,7 +2122,7 @@ $(document).ready(function(){initNavTree('globals_v.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 16:09:27 for EFR32 Flex Gecko 12 Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:42:27 for EFR32 Flex Gecko 12 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

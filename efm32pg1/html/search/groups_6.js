@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['hal_5flayer',['HAL_Layer',['../group__HAL__Layer.html',1,'']]],
-  ['hidkeyboard',['HidKeyboard',['../group__HidKeyboard.html',1,'']]]
+  ['glib',['GLIB',['../group__glib.html',1,'']]],
+  ['gpcrc',['GPCRC',['../group__GPCRC.html',1,'']]],
+  ['gpio',['GPIO',['../group__GPIO.html',1,'']]],
+  ['gpioint',['GPIOINT',['../group__GPIOINT.html',1,'']]]
 ];

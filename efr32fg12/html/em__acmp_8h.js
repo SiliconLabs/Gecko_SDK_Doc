@@ -187,6 +187,22 @@ var em__acmp_8h =
       [ "acmpInputVDD", "group__ACMP.html#gga0971c188cd2a1aeff32dd621f851af17ad9b6a75a76e1391466d7f54abf581ea5", null ],
       [ "acmpInputVSS", "group__ACMP.html#gga0971c188cd2a1aeff32dd621f851af17a2d1290ff04154501d9fbaebb937a3213", null ]
     ] ],
+    [ "ACMP_ExternalInput_Typedef", "group__ACMP.html#ga64be8370eb2121aae541d2802822a5a4", [
+      [ "acmpExternalInputAPORT0X", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4a53a8d08db0c23fb383f9288a82a511f1", null ],
+      [ "acmpExternalInputAPORT0Y", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4aeffb7920f98fd147b347a9e66b3a0036", null ],
+      [ "acmpExternalInputAPORT1X", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4a132c81b5d62d75bca5fb9611993d0ce3", null ],
+      [ "acmpExternalInputAPORT1Y", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4ae73788ddce7aca33e25b781eaff19fb2", null ],
+      [ "acmpExternalInputAPORT1XY", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4ac2a4ec84a4713750a69d9002ae37651d", null ],
+      [ "acmpExternalInputAPORT2X", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4ab70246a35e87134986b27dea096fe541", null ],
+      [ "acmpExternalInputAPORT2Y", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4acf5ae207ee655c12c81156cbc7c2cc3a", null ],
+      [ "acmpExternalInputAPORT2YX", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4abf99c7f9d6e548ffc5c98641866c8081", null ],
+      [ "acmpExternalInputAPORT3X", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4a4fc1f238820129c5ec8ae5bde0f95e2c", null ],
+      [ "acmpExternalInputAPORT3Y", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4a49297c3db0cc441c9cb08f41732f907f", null ],
+      [ "acmpExternalInputAPORT3XY", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4accb1acd746157691c2e47375bc235c42", null ],
+      [ "acmpExternalInputAPORT4X", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4a2cb3d2c30877cbe95f05d2ecf1c4fac1", null ],
+      [ "acmpExternalInputAPORT4Y", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4ac2b7869d5d411eb0865f2c67bdf3ba88", null ],
+      [ "acmpExternalInputAPORT4YX", "group__ACMP.html#gga64be8370eb2121aae541d2802822a5a4a9cd69549a365a2ac75b19f6768289c25", null ]
+    ] ],
     [ "ACMP_HysteresisLevel_TypeDef", "group__ACMP.html#ga216306eec0ad9c6d68aa3c6819378001", [
       [ "acmpHysteresisLevel0", "group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a0b356c23ff07532fd9c8ed5cd82e41fd", null ],
       [ "acmpHysteresisLevel1", "group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001adfafa0cbeefb24869ef36a5445dd2330", null ],
@@ -280,6 +296,7 @@ var em__acmp_8h =
     [ "ACMP_ChannelSet", "group__ACMP.html#gaf2552815d97fa6b5cf035cf20727e322", null ],
     [ "ACMP_Disable", "group__ACMP.html#gaab980ab061d6799cc4bf756b141733d2", null ],
     [ "ACMP_Enable", "group__ACMP.html#ga6962a2f6816e64c36b88111ab368a6ac", null ],
+    [ "ACMP_ExternalInputSelect", "group__ACMP.html#ga46330ae94706d57b5c32890d744e775e", null ],
     [ "ACMP_GPIOSetup", "group__ACMP.html#ga7a312099dc46377af2714277236716d3", null ],
     [ "ACMP_Init", "group__ACMP.html#gad04e5819cd2d6ca5a275e8cc047f9ecf", null ],
     [ "ACMP_IntClear", "group__ACMP.html#ga8bcba309288cc9ee7ac36b57169d667a", null ],

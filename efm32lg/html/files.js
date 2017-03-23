@@ -1,5 +1,6 @@
 var files =
 [
-    [ "hardware", "dir_f4316de2dfb04db90651672103de31d6.html", "dir_f4316de2dfb04db90651672103de31d6" ],
-    [ "platform", "dir_c5a52a81292cf9a5167198f4f346d6d9.html", "dir_c5a52a81292cf9a5167198f4f346d6d9" ]
+    [ "files", "dir_b08ca37892623903ccad62c7d34c6f96.html", "dir_b08ca37892623903ccad62c7d34c6f96" ],
+    [ "hardware", "dir_47b141814df81f488c4f7eaff9a67e18.html", "dir_47b141814df81f488c4f7eaff9a67e18" ],
+    [ "platform", "dir_57c5670a54251515d5dc3137dddf203b.html", "dir_57c5670a54251515d5dc3137dddf203b" ]
 ];

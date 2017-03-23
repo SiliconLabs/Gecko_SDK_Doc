@@ -7,6 +7,7 @@ var searchData=
   ['nextstate',['nextState',['../structLESENSE__DecStCond__TypeDef.html#a46d3fa48d1809a1a7784651a13ececcf',1,'LESENSE_DecStCond_TypeDef']]],
   ['nminus1',['nMinus1',['../structDMA__CfgDescrSGAlt__TypeDef.html#a682f64b8005ac966a25f71c22781ad17',1,'DMA_CfgDescrSGAlt_TypeDef']]],
   ['no_5fflush',['No_Flush',['../structMSDSCSI__StartStopUnit__TypeDef.html#aa1ec8edda538071e9fc6291f1fb1d953',1,'MSDSCSI_StartStopUnit_TypeDef']]],
+  ['noise_5flevel',['noise_level',['../group__cslib__group.html#ga88e5a9e92ec1280894a8cfdc0d4ab0c0',1,'cslib.h']]],
   ['normaca',['NormACA',['../structMSDSCSI__InquiryData__TypeDef.html#acbbce207ea30d4a0df77858cc788ecd3',1,'MSDSCSI_InquiryData_TypeDef']]],
   ['npen',['npEn',['../structOPAMP__Init__TypeDef.html#ab07747ad69d9f957057cb91fec255e49',1,'OPAMP_Init_TypeDef']]],
   ['number',['Number',['../structMCU__DISPLAY.html#ad4bf6380e582c0897b03669b5f0b68cc',1,'MCU_DISPLAY']]]

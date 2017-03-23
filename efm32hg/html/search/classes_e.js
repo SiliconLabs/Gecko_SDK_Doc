@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['rmu_5ftypedef',['RMU_TypeDef',['../structRMU__TypeDef.html',1,'']]],
-  ['romtable_5ftypedef',['ROMTABLE_TypeDef',['../structROMTABLE__TypeDef.html',1,'']]],
-  ['rtc_5finit_5ftypedef',['RTC_Init_TypeDef',['../structRTC__Init__TypeDef.html',1,'']]],
-  ['rtc_5ftypedef',['RTC_TypeDef',['../structRTC__TypeDef.html',1,'']]]
+  ['pcnt_5finit_5ftypedef',['PCNT_Init_TypeDef',['../structPCNT__Init__TypeDef.html',1,'']]],
+  ['pcnt_5ftcc_5ftypedef',['PCNT_TCC_TypeDef',['../structPCNT__TCC__TypeDef.html',1,'']]],
+  ['pcnt_5ftypedef',['PCNT_TypeDef',['../structPCNT__TypeDef.html',1,'']]],
+  ['prs_5fch_5ftypedef',['PRS_CH_TypeDef',['../structPRS__CH__TypeDef.html',1,'']]],
+  ['prs_5ftypedef',['PRS_TypeDef',['../structPRS__TypeDef.html',1,'']]]
 ];

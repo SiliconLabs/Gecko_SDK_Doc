@@ -11,6 +11,8 @@ var efm32hg322f64_8h =
     [ "_SILICON_LABS_32B_PLATFORM_1", "group__EFM32HG322F64__Part.html#gadfe7757d548718f80cc349d4c7911ad1", null ],
     [ "_SILICON_LABS_32B_SERIES", "group__EFM32HG322F64__Part.html#ga34fba21792e0a4776657c3cc76ac91fd", null ],
     [ "_SILICON_LABS_32B_SERIES_0", "group__EFM32HG322F64__Part.html#ga1a84e29ae2965aef779fdb6f6d93cd95", null ],
+    [ "_SILICON_LABS_GECKO_INTERNAL_SDID", "group__EFM32HG322F64__Part.html#ga429d0461ae665806a9fe64d8845114f3", null ],
+    [ "_SILICON_LABS_GECKO_INTERNAL_SDID_77", "group__EFM32HG322F64__Part.html#ga01c6e568cffa67e687053a58059f1d92", null ],
     [ "ACMP0", "group__EFM32HG322F64__Peripheral__Declaration.html#ga07af77bdc71801553e581ddc858d7656", null ],
     [ "ACMP0_BASE", "group__EFM32HG322F64__Peripheral__Base.html#ga5e3f07f21dd6ab0682363834112ce5b5", null ],
     [ "ACMP_COUNT", "group__EFM32HG322F64__Part.html#gaf699e5d5d5575124cca033aa73084d0f", null ],

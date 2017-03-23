@@ -76,10 +76,10 @@
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> ******************************* ERROR CODES  **********************************</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#a8be0ca47a434da66be0e5e2b372b2f3c">   47</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECODE_AESDRV_NOT_SUPPORTED         (MBEDTLS_ECODE_AESDRV_BASE | 0x1)</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#ac442ae52faf8bfee4e216c5d78c70c41">   48</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECODE_AESDRV_AUTHENTICATION_FAILED (MBEDTLS_ECODE_AESDRV_BASE | 0x2)</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#ad07d06d5f92a83acbed7fc84fa782d3f">   49</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECODE_AESDRV_OUT_OF_RESOURCES      (MBEDTLS_ECODE_AESDRV_BASE | 0x3)</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#ad182831f28385a4b231d1e169c11fff3">   50</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECODE_AESDRV_INVALID_PARAM         (MBEDTLS_ECODE_AESDRV_BASE | 0x4)</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#a8be0ca47a434da66be0e5e2b372b2f3c">   47</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECODE_AESDRV_NOT_SUPPORTED         ((int)MBEDTLS_ECODE_AESDRV_BASE | 0x1)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#ac442ae52faf8bfee4e216c5d78c70c41">   48</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECODE_AESDRV_AUTHENTICATION_FAILED ((int)MBEDTLS_ECODE_AESDRV_BASE | 0x2)</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#ad07d06d5f92a83acbed7fc84fa782d3f">   49</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECODE_AESDRV_OUT_OF_RESOURCES      ((int)MBEDTLS_ECODE_AESDRV_BASE | 0x3)</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#ad182831f28385a4b231d1e169c11fff3">   50</a></span>&#160;<span class="preprocessor">#define MBEDTLS_ECODE_AESDRV_INVALID_PARAM         ((int)MBEDTLS_ECODE_AESDRV_BASE | 0x4)</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/*******************************************************************************</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> *******************************   TYPEDEFS   **********************************</span></div>
@@ -88,148 +88,73 @@
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bc">   58</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bcacf2fd4ca30684141d7bf6cbaf106bd47">   60</a></span>&#160;  <a class="code" href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bcacf2fd4ca30684141d7bf6cbaf106bd47">aesdrvIoModeCore</a>,  </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bca446b9237bf77c9144e6c8c9e88458c12">   62</a></span>&#160;  <a class="code" href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bca446b9237bf77c9144e6c8c9e88458c12">aesdrvIoModeBufc</a>,  </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bca8cbb2039b9f6322f063bdf90f5a71648">   65</a></span>&#160;  <a class="code" href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bca8cbb2039b9f6322f063bdf90f5a71648">aesdrvIoModeDma</a>    </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} <a class="code" href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bc">AESDRV_IoMode_t</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___dma_config__t.html">   69</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___dma_config__t.html#ad364f94d40012144e8147a7a82795f31">   71</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct_a_e_s_d_r_v___dma_config__t.html#ad364f94d40012144e8147a7a82795f31">dmaChIn</a>;  </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___dma_config__t.html#a90e571efce7e4de306977a1cf09ec8e7">   72</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct_a_e_s_d_r_v___dma_config__t.html#a90e571efce7e4de306977a1cf09ec8e7">dmaChOut</a>; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <a class="code" href="struct_a_e_s_d_r_v___dma_config__t.html">AESDRV_DmaConfig_t</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#if defined(BUFC_PRESENT)</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bca8cbb2039b9f6322f063bdf90f5a71648">   61</a></span>&#160;  <a class="code" href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bca8cbb2039b9f6322f063bdf90f5a71648">aesdrvIoModeDma</a>    </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <a class="code" href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bc">AESDRV_IoMode_t</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___dma_config__t.html">   65</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___dma_config__t.html#ad364f94d40012144e8147a7a82795f31">   67</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct_a_e_s_d_r_v___dma_config__t.html#ad364f94d40012144e8147a7a82795f31">dmaChIn</a>;  </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___dma_config__t.html#a90e571efce7e4de306977a1cf09ec8e7">   68</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="struct_a_e_s_d_r_v___dma_config__t.html#a90e571efce7e4de306977a1cf09ec8e7">dmaChOut</a>; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <a class="code" href="struct_a_e_s_d_r_v___dma_config__t.html">AESDRV_DmaConfig_t</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="union_a_e_s_d_r_v___io_mode_specific__t.html">   72</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="union_a_e_s_d_r_v___io_mode_specific__t.html#ae95bcfa65eb5792f030b20f997709b0b">   74</a></span>&#160;  <a class="code" href="struct_a_e_s_d_r_v___dma_config__t.html">AESDRV_DmaConfig_t</a>  <a class="code" href="union_a_e_s_d_r_v___io_mode_specific__t.html#ae95bcfa65eb5792f030b20f997709b0b">dmaConfig</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} <a class="code" href="union_a_e_s_d_r_v___io_mode_specific__t.html">AESDRV_IoModeSpecific_t</a>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  uint8_t bufId;    </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} AESDRV_BufcConfig_t;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  </div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="union_a_e_s_d_r_v___io_mode_specific__t.html">   84</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#aab273b8d90335491edd9f186e41440a2">   78</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="aesdrv_8h.html#aab273b8d90335491edd9f186e41440a2">AESDRV_CtrCallback_t</a>)(uint8_t *ctr);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#if ( defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0) )</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cryptodrv_8h.html">cryptodrv.h</a>&quot;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">/* Main AESDRV context structure. */</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___context__t.html">   84</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="union_a_e_s_d_r_v___io_mode_specific__t.html#ae95bcfa65eb5792f030b20f997709b0b">   86</a></span>&#160;  <a class="code" href="struct_a_e_s_d_r_v___dma_config__t.html">AESDRV_DmaConfig_t</a>  <a class="code" href="union_a_e_s_d_r_v___io_mode_specific__t.html#ae95bcfa65eb5792f030b20f997709b0b">dmaConfig</a>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#if defined(BUFC_PRESENT)</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  AESDRV_BufcConfig_t bufcConfig;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;} <a class="code" href="union_a_e_s_d_r_v___io_mode_specific__t.html">AESDRV_IoModeSpecific_t</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="aesdrv_8h.html#aab273b8d90335491edd9f186e41440a2">   93</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="aesdrv_8h.html#aab273b8d90335491edd9f186e41440a2">AESDRV_CtrCallback_t</a>)(uint8_t *ctr);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_INCLUDE_ASYNCH_API)</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___context__t.html#a8aef840b12d695e68be98cb2e026a01c">   86</a></span>&#160;  <a class="code" href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a>     <a class="code" href="struct_a_e_s_d_r_v___context__t.html#a8aef840b12d695e68be98cb2e026a01c">cryptodrvContext</a>; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___context__t.html#a3cdc84f4ad3ea43b4911a0a367b57c68">   87</a></span>&#160;  <a class="code" href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bc">AESDRV_IoMode_t</a>         <a class="code" href="struct_a_e_s_d_r_v___context__t.html#a3cdc84f4ad3ea43b4911a0a367b57c68">ioMode</a>;           </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___context__t.html#ad1abed398ea2b5b2b7d846590d3f81c1">   88</a></span>&#160;  <a class="code" href="union_a_e_s_d_r_v___io_mode_specific__t.html">AESDRV_IoModeSpecific_t</a> <a class="code" href="struct_a_e_s_d_r_v___context__t.html#ad1abed398ea2b5b2b7d846590d3f81c1">ioModeSpecific</a>;   </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___context__t.html#a1464bd07cc9e84042ca91c0c93adeaab">   90</a></span>&#160;  <span class="keywordtype">bool</span>                    <a class="code" href="struct_a_e_s_d_r_v___context__t.html#a1464bd07cc9e84042ca91c0c93adeaab">authTagOptimize</a>;  </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <a class="code" href="struct_a_e_s_d_r_v___context__t.html">AESDRV_Context_t</a>;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">typedef</span> void (*AESDRV_AsynchCallback_t)(<span class="keywordtype">int</span> result, <span class="keywordtype">void</span>* userArgument);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  cipherModeNone,</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  cipherModeBlockCipher, </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  cipherModeCcm,         </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  cipherModeCcmBle,      </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  cipherModeCmac,        </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  cipherModeGcm          </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;} AESDRV_CipherMode_t;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>               remainingBlocks;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  uint32_t*                  pBlockIn;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  uint32_t*                  pBlockOut;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  uint8_t*                   pInitialVector;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  AESDRV_AsynchCallback_t    asynchCallback;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">void</span>*                      asynchCallbackArgument;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;} AESDRV_BlockCipherAsynchContext_t;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keyword">const</span> uint8_t*             pHdr;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keyword">const</span> uint8_t*             pDataInput;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  uint8_t*                   pDataOutput;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  uint32_t                   la;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  uint32_t                   lm;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  uint32_t                   hdrLength;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  uint32_t                   dataLength;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  uint8_t*                   pAuthTag;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  uint8_t                    authTagLength;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">bool</span>                       encryptingHeader;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordtype">bool</span>                       encrypt;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  AESDRV_AsynchCallback_t    asynchCallback;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">void</span>*                      asynchCallbackArgument;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;} AESDRV_CCM_AsynchContext_t, AESDRV_GCM_AsynchContext_t;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  uint32_t*                  dataPointer;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  uint32_t                   dataBlocks;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  uint32_t                   lastBlock[4];</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  uint8_t*                   digest;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  uint16_t                   digestLengthBits;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordtype">bool</span>                       encrypt;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  AESDRV_AsynchCallback_t    asynchCallback;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">void</span>*                      asynchCallbackArgument;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;} AESDRV_CMAC_AsynchContext_t;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #if defined(MBEDTLS_INCLUDE_ASYNCH_API) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#if ( defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0) )</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cryptodrv_8h.html">cryptodrv.h</a>&quot;</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">/* Main AESDRV context structure. */</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___context__t.html">  177</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;{</div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___context__t.html#a8aef840b12d695e68be98cb2e026a01c">  179</a></span>&#160;  <a class="code" href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a>     <a class="code" href="struct_a_e_s_d_r_v___context__t.html#a8aef840b12d695e68be98cb2e026a01c">cryptodrvContext</a>; </div>
-<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___context__t.html#a3cdc84f4ad3ea43b4911a0a367b57c68">  180</a></span>&#160;  <a class="code" href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bc">AESDRV_IoMode_t</a>         <a class="code" href="struct_a_e_s_d_r_v___context__t.html#a3cdc84f4ad3ea43b4911a0a367b57c68">ioMode</a>;           </div>
-<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___context__t.html#ad1abed398ea2b5b2b7d846590d3f81c1">  181</a></span>&#160;  <a class="code" href="union_a_e_s_d_r_v___io_mode_specific__t.html">AESDRV_IoModeSpecific_t</a> <a class="code" href="struct_a_e_s_d_r_v___context__t.html#ad1abed398ea2b5b2b7d846590d3f81c1">ioModeSpecific</a>;   </div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="struct_a_e_s_d_r_v___context__t.html#a1464bd07cc9e84042ca91c0c93adeaab">  183</a></span>&#160;  <span class="keywordtype">bool</span>                    <a class="code" href="struct_a_e_s_d_r_v___context__t.html#a1464bd07cc9e84042ca91c0c93adeaab">authTagOptimize</a>;  </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_INCLUDE_ASYNCH_API)</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  AESDRV_CipherMode_t     cipherMode;       </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordtype">void</span>*                   pAsynchContext;   </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #if defined(MBEDTLS_INCLUDE_ASYNCH_API) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;} <a class="code" href="struct_a_e_s_d_r_v___context__t.html">AESDRV_Context_t</a>;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#elif ( defined(AES_COUNT) &amp;&amp; (AES_COUNT &gt; 0) )</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;{</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  uint32_t                ccmCounter[4];    </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;} <a class="code" href="struct_a_e_s_d_r_v___context__t.html">AESDRV_Context_t</a>;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;}</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #if ( defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0) ) || \</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">          ( defined(AES_COUNT) &amp;&amp; (AES_COUNT &gt; 0) ) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SILICON_LABS_AESDRV_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="struct_a_e_s_d_r_v___context__t_html_a8aef840b12d695e68be98cb2e026a01c"><div class="ttname"><a href="struct_a_e_s_d_r_v___context__t.html#a8aef840b12d695e68be98cb2e026a01c">AESDRV_Context_t::cryptodrvContext</a></div><div class="ttdeci">CRYPTODRV_Context_t cryptodrvContext</div><div class="ttdoc">CRYPTO driver context. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00179">aesdrv.h:179</a></div></div>
-<div class="ttc" id="aesdrv_8h_html_a1cd2dba93169573f7628dcec6b0163bca446b9237bf77c9144e6c8c9e88458c12"><div class="ttname"><a href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bca446b9237bf77c9144e6c8c9e88458c12">aesdrvIoModeBufc</a></div><div class="ttdoc">Core CPU moves data to/from the data registers. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00062">aesdrv.h:62</a></div></div>
-<div class="ttc" id="union_a_e_s_d_r_v___io_mode_specific__t_html"><div class="ttname"><a href="union_a_e_s_d_r_v___io_mode_specific__t.html">AESDRV_IoModeSpecific_t</a></div><div class="ttdoc">Data I/O mode specific configuration structure. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00084">aesdrv.h:84</a></div></div>
-<div class="ttc" id="struct_a_e_s_d_r_v___context__t_html_a3cdc84f4ad3ea43b4911a0a367b57c68"><div class="ttname"><a href="struct_a_e_s_d_r_v___context__t.html#a3cdc84f4ad3ea43b4911a0a367b57c68">AESDRV_Context_t::ioMode</a></div><div class="ttdeci">AESDRV_IoMode_t ioMode</div><div class="ttdoc">Data I/O mode. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00180">aesdrv.h:180</a></div></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#elif ( defined(AES_COUNT) &amp;&amp; (AES_COUNT &gt; 0) )</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  uint32_t                ccmCounter[4];    </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;} <a class="code" href="struct_a_e_s_d_r_v___context__t.html">AESDRV_Context_t</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #if ( defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0) ) || \</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">          ( defined(AES_COUNT) &amp;&amp; (AES_COUNT &gt; 0) ) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SILICON_LABS_AESDRV_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="struct_a_e_s_d_r_v___context__t_html_a8aef840b12d695e68be98cb2e026a01c"><div class="ttname"><a href="struct_a_e_s_d_r_v___context__t.html#a8aef840b12d695e68be98cb2e026a01c">AESDRV_Context_t::cryptodrvContext</a></div><div class="ttdeci">CRYPTODRV_Context_t cryptodrvContext</div><div class="ttdoc">CRYPTO driver context. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00086">aesdrv.h:86</a></div></div>
+<div class="ttc" id="union_a_e_s_d_r_v___io_mode_specific__t_html"><div class="ttname"><a href="union_a_e_s_d_r_v___io_mode_specific__t.html">AESDRV_IoModeSpecific_t</a></div><div class="ttdoc">Data I/O mode specific configuration structure. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00072">aesdrv.h:72</a></div></div>
+<div class="ttc" id="struct_a_e_s_d_r_v___context__t_html_a3cdc84f4ad3ea43b4911a0a367b57c68"><div class="ttname"><a href="struct_a_e_s_d_r_v___context__t.html#a3cdc84f4ad3ea43b4911a0a367b57c68">AESDRV_Context_t::ioMode</a></div><div class="ttdeci">AESDRV_IoMode_t ioMode</div><div class="ttdoc">Data I/O mode. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00087">aesdrv.h:87</a></div></div>
 <div class="ttc" id="config_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div><div class="ttdoc">Compatibility names (set of defines) </div></div>
-<div class="ttc" id="union_a_e_s_d_r_v___io_mode_specific__t_html_ae95bcfa65eb5792f030b20f997709b0b"><div class="ttname"><a href="union_a_e_s_d_r_v___io_mode_specific__t.html#ae95bcfa65eb5792f030b20f997709b0b">AESDRV_IoModeSpecific_t::dmaConfig</a></div><div class="ttdeci">AESDRV_DmaConfig_t dmaConfig</div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00086">aesdrv.h:86</a></div></div>
+<div class="ttc" id="union_a_e_s_d_r_v___io_mode_specific__t_html_ae95bcfa65eb5792f030b20f997709b0b"><div class="ttname"><a href="union_a_e_s_d_r_v___io_mode_specific__t.html#ae95bcfa65eb5792f030b20f997709b0b">AESDRV_IoModeSpecific_t::dmaConfig</a></div><div class="ttdeci">AESDRV_DmaConfig_t dmaConfig</div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00074">aesdrv.h:74</a></div></div>
 <div class="ttc" id="mbedtls__ecode_8h_html"><div class="ttname"><a href="mbedtls__ecode_8h.html">mbedtls_ecode.h</a></div><div class="ttdoc">Silicon Labs specific mbedtls error code definitions. </div></div>
-<div class="ttc" id="aesdrv_8h_html_a1cd2dba93169573f7628dcec6b0163bca8cbb2039b9f6322f063bdf90f5a71648"><div class="ttname"><a href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bca8cbb2039b9f6322f063bdf90f5a71648">aesdrvIoModeDma</a></div><div class="ttdoc">Buffer Controller moves data to/from the CRYPTO data registers. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00065">aesdrv.h:65</a></div></div>
-<div class="ttc" id="struct_a_e_s_d_r_v___dma_config__t_html"><div class="ttname"><a href="struct_a_e_s_d_r_v___dma_config__t.html">AESDRV_DmaConfig_t</a></div><div class="ttdoc">DMA I/O mode specific configuration structure. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00069">aesdrv.h:69</a></div></div>
+<div class="ttc" id="aesdrv_8h_html_a1cd2dba93169573f7628dcec6b0163bca8cbb2039b9f6322f063bdf90f5a71648"><div class="ttname"><a href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bca8cbb2039b9f6322f063bdf90f5a71648">aesdrvIoModeDma</a></div><div class="ttdoc">Core CPU moves data to/from the data registers. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00061">aesdrv.h:61</a></div></div>
+<div class="ttc" id="struct_a_e_s_d_r_v___dma_config__t_html"><div class="ttname"><a href="struct_a_e_s_d_r_v___dma_config__t.html">AESDRV_DmaConfig_t</a></div><div class="ttdoc">DMA I/O mode specific configuration structure. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00065">aesdrv.h:65</a></div></div>
 <div class="ttc" id="aesdrv_8h_html_a1cd2dba93169573f7628dcec6b0163bcacf2fd4ca30684141d7bf6cbaf106bd47"><div class="ttname"><a href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bcacf2fd4ca30684141d7bf6cbaf106bd47">aesdrvIoModeCore</a></div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00060">aesdrv.h:60</a></div></div>
-<div class="ttc" id="struct_a_e_s_d_r_v___context__t_html_ad1abed398ea2b5b2b7d846590d3f81c1"><div class="ttname"><a href="struct_a_e_s_d_r_v___context__t.html#ad1abed398ea2b5b2b7d846590d3f81c1">AESDRV_Context_t::ioModeSpecific</a></div><div class="ttdeci">AESDRV_IoModeSpecific_t ioModeSpecific</div><div class="ttdoc">Data I/O mode specific config. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00181">aesdrv.h:181</a></div></div>
+<div class="ttc" id="struct_a_e_s_d_r_v___context__t_html_ad1abed398ea2b5b2b7d846590d3f81c1"><div class="ttname"><a href="struct_a_e_s_d_r_v___context__t.html#ad1abed398ea2b5b2b7d846590d3f81c1">AESDRV_Context_t::ioModeSpecific</a></div><div class="ttdeci">AESDRV_IoModeSpecific_t ioModeSpecific</div><div class="ttdoc">Data I/O mode specific config. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00088">aesdrv.h:88</a></div></div>
 <div class="ttc" id="aesdrv_8h_html_a1cd2dba93169573f7628dcec6b0163bc"><div class="ttname"><a href="aesdrv_8h.html#a1cd2dba93169573f7628dcec6b0163bc">AESDRV_IoMode_t</a></div><div class="ttdeci">AESDRV_IoMode_t</div><div class="ttdoc">Enum defines which data I/O mode to use for moving data to/from the AES/CRYPTO hardware module...</div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00058">aesdrv.h:58</a></div></div>
-<div class="ttc" id="struct_a_e_s_d_r_v___dma_config__t_html_a90e571efce7e4de306977a1cf09ec8e7"><div class="ttname"><a href="struct_a_e_s_d_r_v___dma_config__t.html#a90e571efce7e4de306977a1cf09ec8e7">AESDRV_DmaConfig_t::dmaChOut</a></div><div class="ttdeci">unsigned int dmaChOut</div><div class="ttdoc">DMA output channel. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00072">aesdrv.h:72</a></div></div>
-<div class="ttc" id="aesdrv_8h_html_aab273b8d90335491edd9f186e41440a2"><div class="ttname"><a href="aesdrv_8h.html#aab273b8d90335491edd9f186e41440a2">AESDRV_CtrCallback_t</a></div><div class="ttdeci">void(* AESDRV_CtrCallback_t)(uint8_t *ctr)</div><div class="ttdoc">Prototype of counter callback function provided by user. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00093">aesdrv.h:93</a></div></div>
-<div class="ttc" id="struct_c_r_y_p_t_o_d_r_v___context__t_html"><div class="ttname"><a href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a></div><div class="ttdoc">CRYPTODRV operation context. </div><div class="ttdef"><b>Definition:</b> <a href="cryptodrv_8h_source.html#l00112">cryptodrv.h:112</a></div></div>
+<div class="ttc" id="struct_a_e_s_d_r_v___dma_config__t_html_a90e571efce7e4de306977a1cf09ec8e7"><div class="ttname"><a href="struct_a_e_s_d_r_v___dma_config__t.html#a90e571efce7e4de306977a1cf09ec8e7">AESDRV_DmaConfig_t::dmaChOut</a></div><div class="ttdeci">unsigned int dmaChOut</div><div class="ttdoc">DMA output channel. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00068">aesdrv.h:68</a></div></div>
+<div class="ttc" id="aesdrv_8h_html_aab273b8d90335491edd9f186e41440a2"><div class="ttname"><a href="aesdrv_8h.html#aab273b8d90335491edd9f186e41440a2">AESDRV_CtrCallback_t</a></div><div class="ttdeci">void(* AESDRV_CtrCallback_t)(uint8_t *ctr)</div><div class="ttdoc">Prototype of counter callback function provided by user. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00078">aesdrv.h:78</a></div></div>
+<div class="ttc" id="struct_c_r_y_p_t_o_d_r_v___context__t_html"><div class="ttname"><a href="struct_c_r_y_p_t_o_d_r_v___context__t.html">CRYPTODRV_Context_t</a></div><div class="ttdoc">CRYPTODRV operation context. </div><div class="ttdef"><b>Definition:</b> <a href="cryptodrv_8h_source.html#l00098">cryptodrv.h:98</a></div></div>
 <div class="ttc" id="cryptodrv_8h_html"><div class="ttname"><a href="cryptodrv_8h.html">cryptodrv.h</a></div></div>
-<div class="ttc" id="struct_a_e_s_d_r_v___dma_config__t_html_ad364f94d40012144e8147a7a82795f31"><div class="ttname"><a href="struct_a_e_s_d_r_v___dma_config__t.html#ad364f94d40012144e8147a7a82795f31">AESDRV_DmaConfig_t::dmaChIn</a></div><div class="ttdeci">unsigned int dmaChIn</div><div class="ttdoc">DMA input channel. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00071">aesdrv.h:71</a></div></div>
-<div class="ttc" id="struct_a_e_s_d_r_v___context__t_html_a1464bd07cc9e84042ca91c0c93adeaab"><div class="ttname"><a href="struct_a_e_s_d_r_v___context__t.html#a1464bd07cc9e84042ca91c0c93adeaab">AESDRV_Context_t::authTagOptimize</a></div><div class="ttdeci">bool authTagOptimize</div><div class="ttdoc">Enable/disable optimized handling of authentication tag in CCM/GCM. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00183">aesdrv.h:183</a></div></div>
-<div class="ttc" id="struct_a_e_s_d_r_v___context__t_html"><div class="ttname"><a href="struct_a_e_s_d_r_v___context__t.html">AESDRV_Context_t</a></div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00177">aesdrv.h:177</a></div></div>
+<div class="ttc" id="struct_a_e_s_d_r_v___dma_config__t_html_ad364f94d40012144e8147a7a82795f31"><div class="ttname"><a href="struct_a_e_s_d_r_v___dma_config__t.html#ad364f94d40012144e8147a7a82795f31">AESDRV_DmaConfig_t::dmaChIn</a></div><div class="ttdeci">unsigned int dmaChIn</div><div class="ttdoc">DMA input channel. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00067">aesdrv.h:67</a></div></div>
+<div class="ttc" id="struct_a_e_s_d_r_v___context__t_html_a1464bd07cc9e84042ca91c0c93adeaab"><div class="ttname"><a href="struct_a_e_s_d_r_v___context__t.html#a1464bd07cc9e84042ca91c0c93adeaab">AESDRV_Context_t::authTagOptimize</a></div><div class="ttdeci">bool authTagOptimize</div><div class="ttdoc">Enable/disable optimized handling of authentication tag in CCM/GCM. </div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00090">aesdrv.h:90</a></div></div>
+<div class="ttc" id="struct_a_e_s_d_r_v___context__t_html"><div class="ttname"><a href="struct_a_e_s_d_r_v___context__t.html">AESDRV_Context_t</a></div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00084">aesdrv.h:84</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2016 16:12:39 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 9 2017 20:48:04 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

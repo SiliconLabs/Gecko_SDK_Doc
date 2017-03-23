@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['emu_5fbodmode_5ftypedef',['EMU_BODMode_TypeDef',['../group__EMU.html#ga7453aecd1fc0cf2d035df6178dfb9a16',1,'em_emu.h']]],
-  ['ezradio_5fconfigret_5ft',['EZRADIO_ConfigRet_t',['../group__API__Layer.html#ga0a0400f1e4c5eae1df893aec358d5b5c',1,'ezradio_api_lib.h']]],
-  ['ezradiodrv_5fautoackmode',['EZRADIODRV_AutoAckMode',['../group__Auto__ACK__Plugin.html#ga87f4df5e14439a8b0bb6526746b077f8',1,'ezradio_auto_ack_plugin.h']]],
-  ['ezradiodrv_5fautoackpacketmode',['EZRADIODRV_AutoAckPacketMode',['../group__Auto__ACK__Plugin.html#ga14fb2073a567668e2d1cf065eb1dcf2d',1,'ezradio_auto_ack_plugin.h']]],
-  ['ezradiodrv_5ftransmitlengthmode',['EZRADIODRV_TransmitLengthMode',['../group__Transmit__Plugin.html#ga12a0fc2c8fdc6a154161bccd028dca40',1,'ezradio_transmit_plugin.h']]],
-  ['ezradiodrv_5ftransmitpackettype',['EZRADIODRV_TransmitPacketType',['../group__Transmit__Plugin.html#ga604388e9120f817261c150b65a03420d',1,'ezradio_transmit_plugin.h']]]
+  ['display_5faddressmode_5ft',['DISPLAY_AddressMode_t',['../group__Display.html#ga9bd101ffd5a8bdde4095b5b6e0f44cfc',1,'display.h']]],
+  ['display_5fcolourmode_5ft',['DISPLAY_ColourMode_t',['../group__Display.html#ga582477144c2aad1388d54d6291e67107',1,'display.h']]],
+  ['dma_5farbiterconfig_5ftypedef',['DMA_ArbiterConfig_TypeDef',['../group__DMA.html#ga0b815384b08ec6721a23eb8a29db0c59',1,'em_dma.h']]],
+  ['dma_5fcyclectrl_5ftypedef',['DMA_CycleCtrl_TypeDef',['../group__DMA.html#gaf7c5bc2b557c15cabf48a19746df01b7',1,'em_dma.h']]],
+  ['dma_5fdatainc_5ftypedef',['DMA_DataInc_TypeDef',['../group__DMA.html#gaade1a68a6cbf32800b8ac4046a133988',1,'em_dma.h']]],
+  ['dma_5fdatasize_5ftypedef',['DMA_DataSize_TypeDef',['../group__DMA.html#ga19fed692b981a8dc7e3a5d6b0f281540',1,'em_dma.h']]],
+  ['dmadrv_5fdatasize_5ft',['DMADRV_Datasize_t',['../group__DMADRV.html#ga5c64472ab957fa92a8b5099895591a8e',1,'dmadrv.h']]],
+  ['dmadrv_5fperipheralsignal_5ft',['DMADRV_Peripheralsignal_t',['../group__DMADRV.html#ga9d887cd6a26d26ed74cb19d77b501a94',1,'dmadrv.h']]]
 ];

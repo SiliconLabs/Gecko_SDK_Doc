@@ -15,6 +15,7 @@ var searchData=
   ['opactrl',['OPACTRL',['../structDAC__TypeDef.html#aae15cd74c96e91dcb4ddced32607dbba',1,'DAC_TypeDef']]],
   ['opaoffset',['OPAOFFSET',['../structDAC__TypeDef.html#ad042949266b8cf5112dd58b478b8f24e',1,'DAC_TypeDef']]],
   ['opcode',['OpCode',['../structMSDSCSI__Inquiry__TypeDef.html#afabea63a5cff7f2cd6078836bf5ef82d',1,'MSDSCSI_Inquiry_TypeDef::OpCode()'],['../structMSDSCSI__RequestSense__TypeDef.html#a2e663d75ee3be26383df61002dcf554a',1,'MSDSCSI_RequestSense_TypeDef::OpCode()'],['../structMSDSCSI__ReadCapacity__TypeDef.html#a5083c3f4033888bb0cae9f5342bab35b',1,'MSDSCSI_ReadCapacity_TypeDef::OpCode()'],['../structMSDSCSI__Read10__TypeDef.html#af761f58e88342d2362a6d63d2510def8',1,'MSDSCSI_Read10_TypeDef::OpCode()'],['../structMSDSCSI__Write10__TypeDef.html#ac8b0c2e5c4c679f4ab63eb682158ca9f',1,'MSDSCSI_Write10_TypeDef::OpCode()'],['../structMSDSCSI__Verify10__TypeDef.html#ae4880853b49b90e27ebd684f6ea2b15a',1,'MSDSCSI_Verify10_TypeDef::OpCode()'],['../structMSDSCSI__StartStopUnit__TypeDef.html#adeeb3bc14c7c1b06450fa6c00579ca26',1,'MSDSCSI_StartStopUnit_TypeDef::OpCode()']]],
+  ['orientation',['orientation',['../struct__IMU__SensorFusion.html#a0e619c79f6d8f63e9f2447d8ae8618f5',1,'_IMU_SensorFusion']]],
   ['osc',['osc',['../structEMU__EM4Init__TypeDef.html#aedcf838687cb18492b7d136764a69c4c',1,'EMU_EM4Init_TypeDef']]],
   ['oscencmd',['OSCENCMD',['../structCMU__TypeDef.html#a1028efc1f51c838e53de1b4a37688681',1,'CMU_TypeDef']]],
   ['out0pol',['out0Pol',['../structLETIMER__Init__TypeDef.html#a1ea57a4cc27cb605e1a9984c4d46c450',1,'LETIMER_Init_TypeDef']]],
@@ -24,6 +25,8 @@ var searchData=
   ['outmode',['outMode',['../structDAC__Init__TypeDef.html#a1a325a0e267d6e5ddaebd6c29a43d3dc',1,'DAC_Init_TypeDef::outMode()'],['../structOPAMP__Init__TypeDef.html#a348668e49c063b1393a62d74ca14fbf1',1,'OPAMP_Init_TypeDef::outMode()']]],
   ['outpen',['outPen',['../structOPAMP__Init__TypeDef.html#a30a43beed36d471a1b0d1d64d451baf1',1,'OPAMP_Init_TypeDef']]],
   ['outputsenablemask',['outputsEnableMask',['../structTIMER__InitDTI__TypeDef.html#a59fc55f38d62814fdf52521a5a197d41',1,'TIMER_InitDTI_TypeDef']]],
-  ['oversampling',['oversampling',['../structUSART__InitAsync__TypeDef.html#aad69d456670f5d2629a60dbbef977c49',1,'USART_InitAsync_TypeDef::oversampling()'],['../structUARTDRV__InitUart__t.html#ab6371f8a6226a2295226fe5e4805ed9f',1,'UARTDRV_InitUart_t::oversampling()'],['../structTOUCH__Config__TypeDef.html#ab482f703165b5ab55cb7237a22797500',1,'TOUCH_Config_TypeDef::oversampling()']]],
+  ['oversamp_5fpressure',['oversamp_pressure',['../structbmp280__t.html#afd6c0164744091601606d7b00e60a50d',1,'bmp280_t']]],
+  ['oversamp_5ftemperature',['oversamp_temperature',['../structbmp280__t.html#a92d5888dfeae96a83f25ee9554b50937',1,'bmp280_t']]],
+  ['oversampling',['oversampling',['../structUSART__InitAsync__TypeDef.html#aad69d456670f5d2629a60dbbef977c49',1,'USART_InitAsync_TypeDef::oversampling()'],['../structUARTDRV__InitUart__t.html#ab6371f8a6226a2295226fe5e4805ed9f',1,'UARTDRV_InitUart_t::oversampling()'],['../struct____BMP__Config.html#a1c9b6811780532b8560841a921074418',1,'__BMP_Config::oversampling()'],['../structTOUCH__Config__TypeDef.html#ab482f703165b5ab55cb7237a22797500',1,'TOUCH_Config_TypeDef::oversampling()']]],
   ['ovsratesel',['ovsRateSel',['../structADC__Init__TypeDef.html#abd87f85b8c594baee7981ec252998618',1,'ADC_Init_TypeDef']]]
 ];

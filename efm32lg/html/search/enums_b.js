@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['pcnt_5fcntevent_5ftypedef',['PCNT_CntEvent_TypeDef',['../group__PCNT.html#gaf5d5d7081a8e56ad0571addc1028ac5c',1,'em_pcnt.h']]],
-  ['pcnt_5fmode_5ftypedef',['PCNT_Mode_TypeDef',['../group__PCNT.html#ga2fb0fc7f68c902b71b271ba5687643a4',1,'em_pcnt.h']]],
-  ['pcnt_5fprsinput_5ftypedef',['PCNT_PRSInput_TypeDef',['../group__PCNT.html#gae186a75007f832e0de80ccae92528104',1,'em_pcnt.h']]],
-  ['pcnt_5fprssel_5ftypedef',['PCNT_PRSSel_TypeDef',['../group__PCNT.html#ga1e54a6fa69a7da44510c6f38ced54486',1,'em_pcnt.h']]],
-  ['prs_5fedge_5ftypedef',['PRS_Edge_TypeDef',['../group__PRS.html#ga853e2a53ed99eb3a0c5e163e1d33e814',1,'em_prs.h']]]
+  ['opamp_5fnegsel_5ftypedef',['OPAMP_NegSel_TypeDef',['../group__OPAMP.html#gaa158f1109c96c14b9531b47a76df24bd',1,'em_opamp.h']]],
+  ['opamp_5foutmode_5ftypedef',['OPAMP_OutMode_TypeDef',['../group__OPAMP.html#gab82f68a27f2f50473502101e9b1f42ab',1,'em_opamp.h']]],
+  ['opamp_5fpossel_5ftypedef',['OPAMP_PosSel_TypeDef',['../group__OPAMP.html#ga2c5ecf4f85f9031861b4e81643cb4ff8',1,'em_opamp.h']]],
+  ['opamp_5fresinmux_5ftypedef',['OPAMP_ResInMux_TypeDef',['../group__OPAMP.html#ga847c3ca2ddb170b44bc27816123b0ff6',1,'em_opamp.h']]],
+  ['opamp_5fressel_5ftypedef',['OPAMP_ResSel_TypeDef',['../group__OPAMP.html#gaa3e5ca28a695563596b9554fec10f810',1,'em_opamp.h']]],
+  ['opamp_5ftypedef',['OPAMP_TypeDef',['../group__OPAMP.html#ga8ab8b812547585753acc6893f340e32c',1,'em_opamp.h']]]
 ];

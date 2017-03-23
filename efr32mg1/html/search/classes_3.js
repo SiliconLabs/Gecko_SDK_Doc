@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['devinfo_5ftypedef',['DEVINFO_TypeDef',['../structDEVINFO__TypeDef.html',1,'']]],
-  ['display_5fdevice_5ft',['DISPLAY_Device_t',['../structDISPLAY__Device__t.html',1,'']]],
-  ['display_5fgeometry_5ft',['DISPLAY_Geometry_t',['../structDISPLAY__Geometry__t.html',1,'']]],
-  ['dma_5fdescriptor_5ftypedef',['DMA_DESCRIPTOR_TypeDef',['../structDMA__DESCRIPTOR__TypeDef.html',1,'']]]
+  ['cal_5fref_5ft',['cal_ref_t',['../structcal__ref__t.html',1,'']]],
+  ['char_5ftypedef',['CHAR_TypeDef',['../structCHAR__TypeDef.html',1,'']]],
+  ['cmu_5fhfxoinit_5ftypedef',['CMU_HFXOInit_TypeDef',['../structCMU__HFXOInit__TypeDef.html',1,'']]],
+  ['cmu_5flfxoinit_5ftypedef',['CMU_LFXOInit_TypeDef',['../structCMU__LFXOInit__TypeDef.html',1,'']]],
+  ['cmu_5ftypedef',['CMU_TypeDef',['../structCMU__TypeDef.html',1,'']]],
+  ['core_5fnvicmask_5ft',['CORE_nvicMask_t',['../structCORE__nvicMask__t.html',1,'']]],
+  ['cryotimer_5finit_5ftypedef',['CRYOTIMER_Init_TypeDef',['../structCRYOTIMER__Init__TypeDef.html',1,'']]],
+  ['cryotimer_5ftypedef',['CRYOTIMER_TypeDef',['../structCRYOTIMER__TypeDef.html',1,'']]],
+  ['crypto_5ftypedef',['CRYPTO_TypeDef',['../structCRYPTO__TypeDef.html',1,'']]]
 ];

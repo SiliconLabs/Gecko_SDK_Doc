@@ -1,7 +1,6 @@
 var searchData=
 [
   ['memorymanagement_5firqn',['MemoryManagement_IRQn',['../group__EFR32FG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083a33ff1cf7098de65d61b6354fee6cd5aa',1,'efr32fg12p433f1024gl125.h']]],
-  ['modem_5firqn',['MODEM_IRQn',['../group__EFR32FG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083ade4b94218400fbe7ca3211d7c9eddf21',1,'efr32fg12p433f1024gl125.h']]],
   ['mpuregionapfullaccess',['mpuRegionApFullAccess',['../group__MPU.html#ggad31bacb9d44584cbeece0f228b543518a01fe173fbfc0f844e6e6a6c0195302c9',1,'em_mpu.h']]],
   ['mpuregionappro',['mpuRegionApPRo',['../group__MPU.html#ggad31bacb9d44584cbeece0f228b543518a541c00b491f9f346537f7de7782a74d9',1,'em_mpu.h']]],
   ['mpuregionappro_5furo',['mpuRegionApPRo_URo',['../group__MPU.html#ggad31bacb9d44584cbeece0f228b543518a44f7f0cd923145ff9b5e1c09612c1590',1,'em_mpu.h']]],

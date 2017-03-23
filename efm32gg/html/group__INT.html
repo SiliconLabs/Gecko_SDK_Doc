@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Giant Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32gg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efm32gg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('group__INT.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Safe nesting of interrupt disable/enable API. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>These functions are deprecated and marked for removal in a later release. Please use the <a class="el" href="group__CORE.html">CORE</a> module instead. See <a class="el" href="group__CORE.html#core_porting">Porting from em_int</a> for information on how to convert existing code bases to use <a class="el" href="group__CORE.html">CORE</a>.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>These functions are deprecated and marked for removal in a later release. Please use the <a class="el" href="group__CORE.html">CORE</a> module instead. See <a class="el" href="group__CORE.html#core_porting">Porting from em_int</a> for information on how to convert existing code bases to use <a class="el" href="group__CORE.html">CORE</a>.</dd></dl>
 <p>This module contains functions to safely disable and enable interrupts at CPU level. <a class="el" href="group__INT.html#gaa46adfbe58501552a0614c3f7adda6a5" title="Disable interrupts. ">INT_Disable()</a> disables interrupts globally and increments a lock level counter (counting semaphore). <a class="el" href="group__INT.html#gafba0338f70b8fab23d8b5c00ec15df56" title="Enable interrupts. ">INT_Enable()</a> decrements the lock level counter and enable interrupts if the counter reaches zero.</p>
 <p>These functions would normally be used to secure critical regions, and to make sure that a critical section that calls into another critical section does not unintentionally terminate the callee critical section.</p>
 <p>These functions should also be used inside interrupt handlers: </p><pre class="fragment">*  void SysTick_Handler(void)
@@ -151,7 +151,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Disable interrupts. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>This function is deprecated and marked for removal in a later release. Please use the new CORE module instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>This function is deprecated and marked for removal in a later release. Please use the new CORE module instead.</dd></dl>
 <p>Disable interrupts and increment lock level counter.</p>
 <dl class="section return"><dt>Returns</dt><dd>The resulting interrupt disable nesting level. </dd></dl>
 
@@ -176,7 +176,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enable interrupts. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>This function is deprecated and marked for removal in a later release. Please use the new CORE module instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>This function is deprecated and marked for removal in a later release. Please use the new CORE module instead.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The resulting interrupt disable nesting level.</dd></dl>
 <p>Decrement interrupt lock level counter and enable interrupts if counter reached zero. </p>
 
@@ -209,7 +209,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 15:58:55 for EFM32 Giant Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:40:44 for EFM32 Giant Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

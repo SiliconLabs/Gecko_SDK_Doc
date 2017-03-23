@@ -1,4 +1,4 @@
 var group__EFR32FG12P__AF__Pins =
 [
-    [ "AF_CMU_CLK0_PIN", "group__EFR32FG12P__AF__Pins.html#gac6758f503140b9951e2359c7c74e84f4", null ]
+    [ "AF_CMU_CLK0_PIN", "group__EFR32FG12P__AF__Pins.html#ga9139a82da3c9697c1335cfa1ff97018d", null ]
 ];

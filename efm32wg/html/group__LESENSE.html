@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efm32wg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -156,6 +156,10 @@ Macros</h2></td></tr>
 <tr class="separator:ga130bb6e5e802e4b28f993753de2ee313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa8b03f76f26cf06cbc09efae88e4336a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaa8b03f76f26cf06cbc09efae88e4336a">LESENSE_INIT_DEFAULT</a></td></tr>
 <tr class="separator:gaa8b03f76f26cf06cbc09efae88e4336a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae21de722cc8d6864311f98e89608dd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaae21de722cc8d6864311f98e89608dd6">LESENSE_NUM_CHANNELS</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:gaae21de722cc8d6864311f98e89608dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36f4e64f9d121f04e761a64d8b4a8231"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga36f4e64f9d121f04e761a64d8b4a8231">LESENSE_NUM_DECODER_STATES</a>&#160;&#160;&#160;(<a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga504e454dfaad620bcd9c8a7984ef1780">_LESENSE_DECSTATE_DECSTATE_MASK</a> + 1)</td></tr>
+<tr class="separator:ga36f4e64f9d121f04e761a64d8b4a8231"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac1c18b05d96c2ddb0ca4ff5f7cc61f4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gac1c18b05d96c2ddb0ca4ff5f7cc61f4c">LESENSE_PERCTRL_DESC_DEFAULT</a></td></tr>
 <tr class="separator:gac1c18b05d96c2ddb0ca4ff5f7cc61f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe5c7dff185ddcd7047f2b35da859bbd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gabe5c7dff185ddcd7047f2b35da859bbd">LESENSE_SCAN_CONF_DEFAULT</a></td></tr>
@@ -249,7 +253,7 @@ Enumerations</h2></td></tr>
  }<tr class="separator:gaff36cd1e8c65cae36da232832e03dd1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
 <tr class="memitem:ga58e8af54c9773f66b045a6a17b10cc3a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga58e8af54c9773f66b045a6a17b10cc3a">LESENSE_ChSampleMode_TypeDef</a> { <br />
-&#160;&#160;<a class="el" href="group__LESENSE.html#gga58e8af54c9773f66b045a6a17b10cc3aabbcdd490433e76649dc885858a5f261a">lesenseSampleModeCounter</a> = LESENSE_CH_INTERACT_SAMPLE_COUNTER, 
+&#160;&#160;<a class="el" href="group__LESENSE.html#gga58e8af54c9773f66b045a6a17b10cc3aabbcdd490433e76649dc885858a5f261a">lesenseSampleModeCounter</a> = 0x0 &lt;&lt; _LESENSE_CH_INTERACT_SAMPLE_SHIFT, 
 <br />
 &#160;&#160;<a class="el" href="group__LESENSE.html#gga58e8af54c9773f66b045a6a17b10cc3aa304ef9d9636059c8f847084887310088">lesenseSampleModeACMP</a> = LESENSE_CH_INTERACT_SAMPLE_ACMP
 <br />
@@ -423,42 +427,42 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5e74a058bf6cb6a84b1b207ad7d0abcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga5e74a058bf6cb6a84b1b207ad7d0abcd">LESENSE_AltExConfig</a> (<a class="el" href="structLESENSE__ConfAltEx__TypeDef.html">LESENSE_ConfAltEx_TypeDef</a> const *confAltEx)</td></tr>
-<tr class="memdesc:ga5e74a058bf6cb6a84b1b207ad7d0abcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the LESENSE alternate excitation modes.  <a href="#ga5e74a058bf6cb6a84b1b207ad7d0abcd">More...</a><br /></td></tr>
-<tr class="separator:ga5e74a058bf6cb6a84b1b207ad7d0abcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac40301c926bfd10cf52c7a37e3fbd719"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gac40301c926bfd10cf52c7a37e3fbd719">LESENSE_AltExConfig</a> (const <a class="el" href="structLESENSE__ConfAltEx__TypeDef.html">LESENSE_ConfAltEx_TypeDef</a> *confAltEx)</td></tr>
+<tr class="memdesc:gac40301c926bfd10cf52c7a37e3fbd719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the LESENSE alternate excitation modes.  <a href="#gac40301c926bfd10cf52c7a37e3fbd719">More...</a><br /></td></tr>
+<tr class="separator:gac40301c926bfd10cf52c7a37e3fbd719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaebe21d230636d75d99dea2cc315305a0"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaebe21d230636d75d99dea2cc315305a0">LESENSE_ChannelActiveGet</a> (void)</td></tr>
 <tr class="memdesc:gaebe21d230636d75d99dea2cc315305a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the currently active channel index.  <a href="#gaebe21d230636d75d99dea2cc315305a0">More...</a><br /></td></tr>
 <tr class="separator:gaebe21d230636d75d99dea2cc315305a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24763a5f55c777f3021963a4f7809a96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga24763a5f55c777f3021963a4f7809a96">LESENSE_ChannelAllConfig</a> (<a class="el" href="structLESENSE__ChAll__TypeDef.html">LESENSE_ChAll_TypeDef</a> const *confChAll)</td></tr>
-<tr class="memdesc:ga24763a5f55c777f3021963a4f7809a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure all (16) LESENSE sensor channels.  <a href="#ga24763a5f55c777f3021963a4f7809a96">More...</a><br /></td></tr>
-<tr class="separator:ga24763a5f55c777f3021963a4f7809a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6aa126a4b073bd48954c8903da1bf47f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga6aa126a4b073bd48954c8903da1bf47f">LESENSE_ChannelConfig</a> (<a class="el" href="structLESENSE__ChDesc__TypeDef.html">LESENSE_ChDesc_TypeDef</a> const *confCh, uint32_t const chIdx)</td></tr>
-<tr class="memdesc:ga6aa126a4b073bd48954c8903da1bf47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure a single LESENSE sensor channel.  <a href="#ga6aa126a4b073bd48954c8903da1bf47f">More...</a><br /></td></tr>
-<tr class="separator:ga6aa126a4b073bd48954c8903da1bf47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga611f48ec1dcb0e3f6007a5245fcbac7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga611f48ec1dcb0e3f6007a5245fcbac7f">LESENSE_ChannelEnable</a> (uint8_t const chIdx, bool const enaScanCh, bool const enaPin)</td></tr>
-<tr class="memdesc:ga611f48ec1dcb0e3f6007a5245fcbac7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable LESENSE scan channel and the pin assigned to it.  <a href="#ga611f48ec1dcb0e3f6007a5245fcbac7f">More...</a><br /></td></tr>
-<tr class="separator:ga611f48ec1dcb0e3f6007a5245fcbac7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b6111131d7b5d5d902e3bd6473e5fab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga4b6111131d7b5d5d902e3bd6473e5fab">LESENSE_ChannelAllConfig</a> (const <a class="el" href="structLESENSE__ChAll__TypeDef.html">LESENSE_ChAll_TypeDef</a> *confChAll)</td></tr>
+<tr class="memdesc:ga4b6111131d7b5d5d902e3bd6473e5fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure all (16) LESENSE sensor channels.  <a href="#ga4b6111131d7b5d5d902e3bd6473e5fab">More...</a><br /></td></tr>
+<tr class="separator:ga4b6111131d7b5d5d902e3bd6473e5fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea5de81162fddc14155f27f38fa79d20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaea5de81162fddc14155f27f38fa79d20">LESENSE_ChannelConfig</a> (const <a class="el" href="structLESENSE__ChDesc__TypeDef.html">LESENSE_ChDesc_TypeDef</a> *confCh, uint32_t chIdx)</td></tr>
+<tr class="memdesc:gaea5de81162fddc14155f27f38fa79d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure a single LESENSE sensor channel.  <a href="#gaea5de81162fddc14155f27f38fa79d20">More...</a><br /></td></tr>
+<tr class="separator:gaea5de81162fddc14155f27f38fa79d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8f11a4d13a561ad6599335e221e92f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaf8f11a4d13a561ad6599335e221e92f4">LESENSE_ChannelEnable</a> (uint8_t chIdx, bool enaScanCh, bool enaPin)</td></tr>
+<tr class="memdesc:gaf8f11a4d13a561ad6599335e221e92f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable LESENSE scan channel and the pin assigned to it.  <a href="#gaf8f11a4d13a561ad6599335e221e92f4">More...</a><br /></td></tr>
+<tr class="separator:gaf8f11a4d13a561ad6599335e221e92f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad39d66ad78cc0a5499bbf213e8b9bc6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gad39d66ad78cc0a5499bbf213e8b9bc6b">LESENSE_ChannelEnableMask</a> (uint16_t chMask, uint16_t pinMask)</td></tr>
 <tr class="memdesc:gad39d66ad78cc0a5499bbf213e8b9bc6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable LESENSE scan channel and the pin assigned to it.  <a href="#gad39d66ad78cc0a5499bbf213e8b9bc6b">More...</a><br /></td></tr>
 <tr class="separator:gad39d66ad78cc0a5499bbf213e8b9bc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0f60936997170e7563c97552b99bb88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaa0f60936997170e7563c97552b99bb88">LESENSE_ChannelThresSet</a> (uint8_t const chIdx, uint16_t const acmpThres, uint16_t const cntThres)</td></tr>
-<tr class="memdesc:gaa0f60936997170e7563c97552b99bb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LESENSE channel threshold parameters.  <a href="#gaa0f60936997170e7563c97552b99bb88">More...</a><br /></td></tr>
-<tr class="separator:gaa0f60936997170e7563c97552b99bb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga81efdc1593d4cbdd8e599f8cd1a42aa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga81efdc1593d4cbdd8e599f8cd1a42aa1">LESENSE_ChannelTimingSet</a> (uint8_t const chIdx, uint8_t const exTime, uint8_t const sampleDelay, uint8_t const measDelay)</td></tr>
-<tr class="memdesc:ga81efdc1593d4cbdd8e599f8cd1a42aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LESENSE channel timing parameters.  <a href="#ga81efdc1593d4cbdd8e599f8cd1a42aa1">More...</a><br /></td></tr>
-<tr class="separator:ga81efdc1593d4cbdd8e599f8cd1a42aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ffd0b11de75b11d122d5a62d1a7fbab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga1ffd0b11de75b11d122d5a62d1a7fbab">LESENSE_ClkDivSet</a> (<a class="el" href="group__LESENSE.html#gad75ff5fe98fbe7fe30e79150803c1d7d">LESENSE_ChClk_TypeDef</a> const clk, <a class="el" href="group__LESENSE.html#ga87cfed7d62c2ab576068a3beda57b1d0">LESENSE_ClkPresc_TypeDef</a> const clkDiv)</td></tr>
-<tr class="memdesc:ga1ffd0b11de75b11d122d5a62d1a7fbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set clock division for LESENSE timers.  <a href="#ga1ffd0b11de75b11d122d5a62d1a7fbab">More...</a><br /></td></tr>
-<tr class="separator:ga1ffd0b11de75b11d122d5a62d1a7fbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab77af68ee8b46ed509e570f8c0b18e47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gab77af68ee8b46ed509e570f8c0b18e47">LESENSE_ChannelThresSet</a> (uint8_t chIdx, uint16_t acmpThres, uint16_t cntThres)</td></tr>
+<tr class="memdesc:gab77af68ee8b46ed509e570f8c0b18e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LESENSE channel threshold parameters.  <a href="#gab77af68ee8b46ed509e570f8c0b18e47">More...</a><br /></td></tr>
+<tr class="separator:gab77af68ee8b46ed509e570f8c0b18e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bc2ec714a8ceb1a29fcf5769724059e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga8bc2ec714a8ceb1a29fcf5769724059e">LESENSE_ChannelTimingSet</a> (uint8_t chIdx, uint8_t exTime, uint8_t sampleDelay, uint16_t measDelay)</td></tr>
+<tr class="memdesc:ga8bc2ec714a8ceb1a29fcf5769724059e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LESENSE channel timing parameters.  <a href="#ga8bc2ec714a8ceb1a29fcf5769724059e">More...</a><br /></td></tr>
+<tr class="separator:ga8bc2ec714a8ceb1a29fcf5769724059e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b1ce951e3a547fdc391dab22908d436"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga9b1ce951e3a547fdc391dab22908d436">LESENSE_ClkDivSet</a> (<a class="el" href="group__LESENSE.html#gad75ff5fe98fbe7fe30e79150803c1d7d">LESENSE_ChClk_TypeDef</a> clk, <a class="el" href="group__LESENSE.html#ga87cfed7d62c2ab576068a3beda57b1d0">LESENSE_ClkPresc_TypeDef</a> clkDiv)</td></tr>
+<tr class="memdesc:ga9b1ce951e3a547fdc391dab22908d436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set clock division for LESENSE timers.  <a href="#ga9b1ce951e3a547fdc391dab22908d436">More...</a><br /></td></tr>
+<tr class="separator:ga9b1ce951e3a547fdc391dab22908d436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga13e2e54c63941457aa18aed1c4462cd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga13e2e54c63941457aa18aed1c4462cd4">LESENSE_DecoderStart</a> (void)</td></tr>
 <tr class="memdesc:ga13e2e54c63941457aa18aed1c4462cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start LESENSE decoder.  <a href="#ga13e2e54c63941457aa18aed1c4462cd4">More...</a><br /></td></tr>
 <tr class="separator:ga13e2e54c63941457aa18aed1c4462cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c9e0e09e723fa04321bc17773b1e253"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga5c9e0e09e723fa04321bc17773b1e253">LESENSE_DecoderStateAllConfig</a> (<a class="el" href="structLESENSE__DecStAll__TypeDef.html">LESENSE_DecStAll_TypeDef</a> const *confDecStAll)</td></tr>
-<tr class="memdesc:ga5c9e0e09e723fa04321bc17773b1e253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure all LESENSE decoder states.  <a href="#ga5c9e0e09e723fa04321bc17773b1e253">More...</a><br /></td></tr>
-<tr class="separator:ga5c9e0e09e723fa04321bc17773b1e253"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaef8bc2c145fcae89fc4a3b6516bb4654"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaef8bc2c145fcae89fc4a3b6516bb4654">LESENSE_DecoderStateConfig</a> (<a class="el" href="structLESENSE__DecStDesc__TypeDef.html">LESENSE_DecStDesc_TypeDef</a> const *confDecSt, uint32_t const decSt)</td></tr>
-<tr class="memdesc:gaef8bc2c145fcae89fc4a3b6516bb4654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure a single LESENSE decoder state.  <a href="#gaef8bc2c145fcae89fc4a3b6516bb4654">More...</a><br /></td></tr>
-<tr class="separator:gaef8bc2c145fcae89fc4a3b6516bb4654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5529ef6ab4838a70159578598d3b01da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga5529ef6ab4838a70159578598d3b01da">LESENSE_DecoderStateAllConfig</a> (const <a class="el" href="structLESENSE__DecStAll__TypeDef.html">LESENSE_DecStAll_TypeDef</a> *confDecStAll)</td></tr>
+<tr class="memdesc:ga5529ef6ab4838a70159578598d3b01da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure all LESENSE decoder states.  <a href="#ga5529ef6ab4838a70159578598d3b01da">More...</a><br /></td></tr>
+<tr class="separator:ga5529ef6ab4838a70159578598d3b01da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffe3b519da7fa700e344e9e49ad1f100"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaffe3b519da7fa700e344e9e49ad1f100">LESENSE_DecoderStateConfig</a> (const <a class="el" href="structLESENSE__DecStDesc__TypeDef.html">LESENSE_DecStDesc_TypeDef</a> *confDecSt, uint32_t decSt)</td></tr>
+<tr class="memdesc:gaffe3b519da7fa700e344e9e49ad1f100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure a single LESENSE decoder state.  <a href="#gaffe3b519da7fa700e344e9e49ad1f100">More...</a><br /></td></tr>
+<tr class="separator:gaffe3b519da7fa700e344e9e49ad1f100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga26346866d73087ef74712b35b18fa596"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga26346866d73087ef74712b35b18fa596">LESENSE_DecoderStateGet</a> (void)</td></tr>
 <tr class="memdesc:ga26346866d73087ef74712b35b18fa596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current state of the LESENSE decoder.  <a href="#ga26346866d73087ef74712b35b18fa596">More...</a><br /></td></tr>
 <tr class="separator:ga26346866d73087ef74712b35b18fa596"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -468,9 +472,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga020ef394a68b9bcbf68cd8d2a2d4f2da"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga020ef394a68b9bcbf68cd8d2a2d4f2da">LESENSE_DecoderStop</a> (void)</td></tr>
 <tr class="memdesc:ga020ef394a68b9bcbf68cd8d2a2d4f2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop LESENSE decoder.  <a href="#ga020ef394a68b9bcbf68cd8d2a2d4f2da">More...</a><br /></td></tr>
 <tr class="separator:ga020ef394a68b9bcbf68cd8d2a2d4f2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a398212f9973311040dee0752bb587d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga0a398212f9973311040dee0752bb587d">LESENSE_Init</a> (<a class="el" href="structLESENSE__Init__TypeDef.html">LESENSE_Init_TypeDef</a> const *init, bool const reqReset)</td></tr>
-<tr class="memdesc:ga0a398212f9973311040dee0752bb587d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the LESENSE module.  <a href="#ga0a398212f9973311040dee0752bb587d">More...</a><br /></td></tr>
-<tr class="separator:ga0a398212f9973311040dee0752bb587d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86cbdb3201b07de4b4b314bd68b63cac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac">LESENSE_Init</a> (const <a class="el" href="structLESENSE__Init__TypeDef.html">LESENSE_Init_TypeDef</a> *init, bool reqReset)</td></tr>
+<tr class="memdesc:ga86cbdb3201b07de4b4b314bd68b63cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the LESENSE module.  <a href="#ga86cbdb3201b07de4b4b314bd68b63cac">More...</a><br /></td></tr>
+<tr class="separator:ga86cbdb3201b07de4b4b314bd68b63cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga994502fe555c22c4223a52f567662361"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga994502fe555c22c4223a52f567662361">LESENSE_IntClear</a> (uint32_t flags)</td></tr>
 <tr class="memdesc:ga994502fe555c22c4223a52f567662361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear one or more pending LESENSE interrupts.  <a href="#ga994502fe555c22c4223a52f567662361">More...</a><br /></td></tr>
 <tr class="separator:ga994502fe555c22c4223a52f567662361"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -498,12 +502,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1bb23d00276c3abbee5584b125106927"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga1bb23d00276c3abbee5584b125106927">LESENSE_ResultBufferClear</a> (void)</td></tr>
 <tr class="memdesc:ga1bb23d00276c3abbee5584b125106927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear result buffer.  <a href="#ga1bb23d00276c3abbee5584b125106927">More...</a><br /></td></tr>
 <tr class="separator:ga1bb23d00276c3abbee5584b125106927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8655dcda510a74ab5e0c2fdc7aded58"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gae8655dcda510a74ab5e0c2fdc7aded58">LESENSE_ScanFreqSet</a> (uint32_t refFreq, uint32_t const scanFreq)</td></tr>
-<tr class="memdesc:gae8655dcda510a74ab5e0c2fdc7aded58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scan frequency for periodic scanning.  <a href="#gae8655dcda510a74ab5e0c2fdc7aded58">More...</a><br /></td></tr>
-<tr class="separator:gae8655dcda510a74ab5e0c2fdc7aded58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa0333bb6df6eaa9833919e0e7519b658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gaa0333bb6df6eaa9833919e0e7519b658">LESENSE_ScanModeSet</a> (<a class="el" href="group__LESENSE.html#ga5e540ba859daf09ac666c039d21af1a9">LESENSE_ScanMode_TypeDef</a> const scanMode, bool const start)</td></tr>
-<tr class="memdesc:gaa0333bb6df6eaa9833919e0e7519b658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scan mode of the LESENSE channels.  <a href="#gaa0333bb6df6eaa9833919e0e7519b658">More...</a><br /></td></tr>
-<tr class="separator:gaa0333bb6df6eaa9833919e0e7519b658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga774d8a3ba9620c84fd9db4e252560efa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga774d8a3ba9620c84fd9db4e252560efa">LESENSE_ScanFreqSet</a> (uint32_t refFreq, uint32_t scanFreq)</td></tr>
+<tr class="memdesc:ga774d8a3ba9620c84fd9db4e252560efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scan frequency for periodic scanning.  <a href="#ga774d8a3ba9620c84fd9db4e252560efa">More...</a><br /></td></tr>
+<tr class="separator:ga774d8a3ba9620c84fd9db4e252560efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61b7b6a97a033f983f6daec531f5186b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga61b7b6a97a033f983f6daec531f5186b">LESENSE_ScanModeSet</a> (<a class="el" href="group__LESENSE.html#ga5e540ba859daf09ac666c039d21af1a9">LESENSE_ScanMode_TypeDef</a> scanMode, bool start)</td></tr>
+<tr class="memdesc:ga61b7b6a97a033f983f6daec531f5186b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scan mode of the LESENSE channels.  <a href="#ga61b7b6a97a033f983f6daec531f5186b">More...</a><br /></td></tr>
+<tr class="separator:ga61b7b6a97a033f983f6daec531f5186b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga26c2f4a57fb232a0a74b8b13bf7b3acd"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga26c2f4a57fb232a0a74b8b13bf7b3acd">LESENSE_ScanResultDataBufferGet</a> (uint32_t idx)</td></tr>
 <tr class="memdesc:ga26c2f4a57fb232a0a74b8b13bf7b3acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get data from the result data buffer.  <a href="#ga26c2f4a57fb232a0a74b8b13bf7b3acd">More...</a><br /></td></tr>
 <tr class="separator:ga26c2f4a57fb232a0a74b8b13bf7b3acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -522,9 +526,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2ee5eb4f4f582c371a1fd3bf24d10205"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga2ee5eb4f4f582c371a1fd3bf24d10205">LESENSE_SensorStateGet</a> (void)</td></tr>
 <tr class="memdesc:ga2ee5eb4f4f582c371a1fd3bf24d10205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current state of the LESENSE sensor.  <a href="#ga2ee5eb4f4f582c371a1fd3bf24d10205">More...</a><br /></td></tr>
 <tr class="separator:ga2ee5eb4f4f582c371a1fd3bf24d10205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae2e4883549fbd7cce4ec059c3c550bda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gae2e4883549fbd7cce4ec059c3c550bda">LESENSE_StartDelaySet</a> (uint8_t const startDelay)</td></tr>
-<tr class="memdesc:gae2e4883549fbd7cce4ec059c3c550bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set start delay of sensor interaction on each channel.  <a href="#gae2e4883549fbd7cce4ec059c3c550bda">More...</a><br /></td></tr>
-<tr class="separator:gae2e4883549fbd7cce4ec059c3c550bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b0dac3ef7efd0f80c7bfe5b6537289a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#ga8b0dac3ef7efd0f80c7bfe5b6537289a">LESENSE_StartDelaySet</a> (uint8_t startDelay)</td></tr>
+<tr class="memdesc:ga8b0dac3ef7efd0f80c7bfe5b6537289a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set start delay of sensor interaction on each channel.  <a href="#ga8b0dac3ef7efd0f80c7bfe5b6537289a">More...</a><br /></td></tr>
+<tr class="separator:ga8b0dac3ef7efd0f80c7bfe5b6537289a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad80bdc3858c24311db2e8f9d5e1c2f5f"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LESENSE.html#gad80bdc3858c24311db2e8f9d5e1c2f5f">LESENSE_StatusGet</a> (void)</td></tr>
 <tr class="memdesc:gad80bdc3858c24311db2e8f9d5e1c2f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current status of LESENSE.  <a href="#gad80bdc3858c24311db2e8f9d5e1c2f5f">More...</a><br /></td></tr>
 <tr class="separator:gad80bdc3858c24311db2e8f9d5e1c2f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -547,10 +551,10 @@ Functions</h2></td></tr>
 <div class="line"><a class="code" href="group__LESENSE.html#gga8c9bcc6b0b9192fa1169f8ce1c766868a9bf057a284a5fac5f7731b3ef2176690">  lesenseAltExPinIdleDis</a>,<span class="comment">/* Alternate excitation pin is disabled in idle. */</span> \</div>
 <div class="line">  false                  <span class="comment">/* Excite only for corresponding channel. */</span>        \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__LESENSE_html_gga8c9bcc6b0b9192fa1169f8ce1c766868a9bf057a284a5fac5f7731b3ef2176690"><div class="ttname"><a href="group__LESENSE.html#gga8c9bcc6b0b9192fa1169f8ce1c766868a9bf057a284a5fac5f7731b3ef2176690">lesenseAltExPinIdleDis</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00419">em_lesense.h:419</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga8c9bcc6b0b9192fa1169f8ce1c766868a9bf057a284a5fac5f7731b3ef2176690"><div class="ttname"><a href="group__LESENSE.html#gga8c9bcc6b0b9192fa1169f8ce1c766868a9bf057a284a5fac5f7731b3ef2176690">lesenseAltExPinIdleDis</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00478">em_lesense.h:478</a></div></div>
 </div><!-- fragment --><p>Default configuration for alternate excitation channel. </p>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00882">882</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01008">1008</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -584,10 +588,10 @@ Functions</h2></td></tr>
 <div class="line">    LESENSE_ALTEX_CH_CONF_DEFAULT  <span class="comment">/* Alternate excitation channel 15. */</span> \</div>
 <div class="line">  }                                                                       \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__LESENSE_html_gga353d749d1e56452fb664963c41d67cb0a54a8aff8b115ec340b341382deb207e1"><div class="ttname"><a href="group__LESENSE.html#gga353d749d1e56452fb664963c41d67cb0a54a8aff8b115ec340b341382deb207e1">lesenseAltExMapACMP</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00143">em_lesense.h:143</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga353d749d1e56452fb664963c41d67cb0a54a8aff8b115ec340b341382deb207e1"><div class="ttname"><a href="group__LESENSE.html#gga353d749d1e56452fb664963c41d67cb0a54a8aff8b115ec340b341382deb207e1">lesenseAltExMapACMP</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00142">em_lesense.h:142</a></div></div>
 </div><!-- fragment --><p>Default configuration for all alternate excitation channels. </p>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00890">890</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01017">1017</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -621,14 +625,14 @@ Functions</h2></td></tr>
 <div class="line">  0xFFU,                 <span class="comment">/* Counter threshold has bee set to 0xFF. */</span>                               \</div>
 <div class="line">  lesenseCompModeLess    <span class="comment">/* Compare mode has been set to trigger interrupt on &quot;less&quot;. */</span>            \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__LESENSE_html_gga4c03caf7e59477201dbf4b906d503669a8676790e590a83d47993eccb91674957"><div class="ttname"><a href="group__LESENSE.html#gga4c03caf7e59477201dbf4b906d503669a8676790e590a83d47993eccb91674957">lesenseSetIntNone</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00335">em_lesense.h:335</a></div></div>
-<div class="ttc" id="group__LESENSE_html_ggad75ff5fe98fbe7fe30e79150803c1d7da947c2254e5694bdbf152d3f612e7b8b7"><div class="ttname"><a href="group__LESENSE.html#ggad75ff5fe98fbe7fe30e79150803c1d7da947c2254e5694bdbf152d3f612e7b8b7">lesenseClkLF</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00394">em_lesense.h:394</a></div></div>
-<div class="ttc" id="group__LESENSE_html_ggaff36cd1e8c65cae36da232832e03dd1da757484f8c0877088f882b4dcd5362850"><div class="ttname"><a href="group__LESENSE.html#ggaff36cd1e8c65cae36da232832e03dd1da757484f8c0877088f882b4dcd5362850">lesenseChPinIdleLow</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00378">em_lesense.h:378</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gga4afcd408aa49b59d6476f3d9144c5196af670f3fc6c475d8e5ad3beada047a217"><div class="ttname"><a href="group__LESENSE.html#gga4afcd408aa49b59d6476f3d9144c5196af670f3fc6c475d8e5ad3beada047a217">lesenseChPinExHigh</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00355">em_lesense.h:355</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gga58e8af54c9773f66b045a6a17b10cc3aa304ef9d9636059c8f847084887310088"><div class="ttname"><a href="group__LESENSE.html#gga58e8af54c9773f66b045a6a17b10cc3aa304ef9d9636059c8f847084887310088">lesenseSampleModeACMP</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00327">em_lesense.h:327</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga4c03caf7e59477201dbf4b906d503669a8676790e590a83d47993eccb91674957"><div class="ttname"><a href="group__LESENSE.html#gga4c03caf7e59477201dbf4b906d503669a8676790e590a83d47993eccb91674957">lesenseSetIntNone</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00361">em_lesense.h:361</a></div></div>
+<div class="ttc" id="group__LESENSE_html_ggad75ff5fe98fbe7fe30e79150803c1d7da947c2254e5694bdbf152d3f612e7b8b7"><div class="ttname"><a href="group__LESENSE.html#ggad75ff5fe98fbe7fe30e79150803c1d7da947c2254e5694bdbf152d3f612e7b8b7">lesenseClkLF</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00426">em_lesense.h:426</a></div></div>
+<div class="ttc" id="group__LESENSE_html_ggaff36cd1e8c65cae36da232832e03dd1da757484f8c0877088f882b4dcd5362850"><div class="ttname"><a href="group__LESENSE.html#ggaff36cd1e8c65cae36da232832e03dd1da757484f8c0877088f882b4dcd5362850">lesenseChPinIdleLow</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00404">em_lesense.h:404</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga4afcd408aa49b59d6476f3d9144c5196af670f3fc6c475d8e5ad3beada047a217"><div class="ttname"><a href="group__LESENSE.html#gga4afcd408aa49b59d6476f3d9144c5196af670f3fc6c475d8e5ad3beada047a217">lesenseChPinExHigh</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00381">em_lesense.h:381</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga58e8af54c9773f66b045a6a17b10cc3aa304ef9d9636059c8f847084887310088"><div class="ttname"><a href="group__LESENSE.html#gga58e8af54c9773f66b045a6a17b10cc3aa304ef9d9636059c8f847084887310088">lesenseSampleModeACMP</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00345">em_lesense.h:345</a></div></div>
 </div><!-- fragment --><p>Default configuration for scan channel. </p>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00789">789</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00913">913</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -655,15 +659,15 @@ Functions</h2></td></tr>
 <div class="line"><a class="code" href="group__LESENSE.html#gga88d879432f34d026f8bfbd481d582fa1a6327c6de07158731c8392bb1bf2e5411">  lesenseBiasModeDontTouch</a>,  <span class="comment">/* Don&#39;t touch bias configuration. */</span>                                  \</div>
 <div class="line">  true                       <span class="comment">/* Keep LESENSE running in debug mode. */</span>                              \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__LESENSE_html_gga5e540ba859daf09ac666c039d21af1a9a69496abfb4aa6d70f8487bba54c342fb"><div class="ttname"><a href="group__LESENSE.html#gga5e540ba859daf09ac666c039d21af1a9a69496abfb4aa6d70f8487bba54c342fb">lesenseScanStartPeriodic</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00090">em_lesense.h:90</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gga06634baea0f6206f665df26018ec68cfa9e7142605f12ce7726da96e78307f525"><div class="ttname"><a href="group__LESENSE.html#gga06634baea0f6206f665df26018ec68cfa9e7142605f12ce7726da96e78307f525">lesenseDMAWakeUpDisable</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00162">em_lesense.h:162</a></div></div>
-<div class="ttc" id="group__LESENSE_html_ggafea2a924018edd708f161ad84237be71a2292b380bad734c7d52c497647cc77b2"><div class="ttname"><a href="group__LESENSE.html#ggafea2a924018edd708f161ad84237be71a2292b380bad734c7d52c497647cc77b2">lesenseBufTrigHalf</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00151">em_lesense.h:151</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gga2cc46db62eaf75c7d7d6ee94678efcdaa63048868fd1c7eb3a80b06b034aea155"><div class="ttname"><a href="group__LESENSE.html#gga2cc46db62eaf75c7d7d6ee94678efcdaa63048868fd1c7eb3a80b06b034aea155">lesenseScanConfDirMap</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00193">em_lesense.h:193</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gga81f01d564a4451ea2737a6c2abf17771a11adb37002b2835672715226661078d1"><div class="ttname"><a href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a11adb37002b2835672715226661078d1">lesensePRSCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00105">em_lesense.h:105</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gga88d879432f34d026f8bfbd481d582fa1a6327c6de07158731c8392bb1bf2e5411"><div class="ttname"><a href="group__LESENSE.html#gga88d879432f34d026f8bfbd481d582fa1a6327c6de07158731c8392bb1bf2e5411">lesenseBiasModeDontTouch</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00184">em_lesense.h:184</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga5e540ba859daf09ac666c039d21af1a9a69496abfb4aa6d70f8487bba54c342fb"><div class="ttname"><a href="group__LESENSE.html#gga5e540ba859daf09ac666c039d21af1a9a69496abfb4aa6d70f8487bba54c342fb">lesenseScanStartPeriodic</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00088">em_lesense.h:88</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga06634baea0f6206f665df26018ec68cfa9e7142605f12ce7726da96e78307f525"><div class="ttname"><a href="group__LESENSE.html#gga06634baea0f6206f665df26018ec68cfa9e7142605f12ce7726da96e78307f525">lesenseDMAWakeUpDisable</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00168">em_lesense.h:168</a></div></div>
+<div class="ttc" id="group__LESENSE_html_ggafea2a924018edd708f161ad84237be71a2292b380bad734c7d52c497647cc77b2"><div class="ttname"><a href="group__LESENSE.html#ggafea2a924018edd708f161ad84237be71a2292b380bad734c7d52c497647cc77b2">lesenseBufTrigHalf</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00157">em_lesense.h:157</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga2cc46db62eaf75c7d7d6ee94678efcdaa63048868fd1c7eb3a80b06b034aea155"><div class="ttname"><a href="group__LESENSE.html#gga2cc46db62eaf75c7d7d6ee94678efcdaa63048868fd1c7eb3a80b06b034aea155">lesenseScanConfDirMap</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00199">em_lesense.h:199</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga81f01d564a4451ea2737a6c2abf17771a11adb37002b2835672715226661078d1"><div class="ttname"><a href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a11adb37002b2835672715226661078d1">lesensePRSCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00103">em_lesense.h:103</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga88d879432f34d026f8bfbd481d582fa1a6327c6de07158731c8392bb1bf2e5411"><div class="ttname"><a href="group__LESENSE.html#gga88d879432f34d026f8bfbd481d582fa1a6327c6de07158731c8392bb1bf2e5411">lesenseBiasModeDontTouch</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00190">em_lesense.h:190</a></div></div>
 </div><!-- fragment --><p>Default configuration for LESENSE_CtrlDesc_TypeDef structure. </p>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00520">520</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00579">579</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -677,28 +681,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                                     <a class="code" href="group__LESENSE.html#gga51f02ccd2468cf6d095b62fc4d25658ca9f8b61132e9c528396986ceaf3afa054">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#gga51f02ccd2468cf6d095b62fc4d25658ca9f8b61132e9c528396986ceaf3afa054">  lesenseDecInputSensorSt</a>,        \</div>
-<div class="line">  0U,                             \</div>
-<div class="line">  false,                          \</div>
-<div class="line">  true,                           \</div>
-<div class="line">  true,                           \</div>
-<div class="line">  true,                           \</div>
-<div class="line">  true,                           \</div>
-<div class="line">  true,                           \</div>
-<div class="line">  false,                          <a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a11adb37002b2835672715226661078d1">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a11adb37002b2835672715226661078d1">  lesensePRSCh0</a>,                  <a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a43d0f771797e3fe31df1569040d0db0e">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a43d0f771797e3fe31df1569040d0db0e">  lesensePRSCh1</a>,                  <a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771aa5e2907388623f4e517e89c30a635267">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771aa5e2907388623f4e517e89c30a635267">  lesensePRSCh2</a>,                  <a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a0cc8d20ed91eb388894d2d41e04d0069">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a0cc8d20ed91eb388894d2d41e04d0069">  lesensePRSCh3</a>,                  \</div>
+<div class="line"><a class="code" href="group__LESENSE.html#gga51f02ccd2468cf6d095b62fc4d25658ca9f8b61132e9c528396986ceaf3afa054">  lesenseDecInputSensorSt</a>, <span class="comment">/* The SENSORSTATE register is used as input to the decoder. */</span>   \</div>
+<div class="line">  0U,                      <span class="comment">/* State 0 is the initial state of the decoder. */</span>                \</div>
+<div class="line">  false,                   <span class="comment">/* Disable check of current state. */</span>                             \</div>
+<div class="line">  true,                    <span class="comment">/* Enable channel x % 16 interrupt on state x change. */</span>          \</div>
+<div class="line">  true,                    <span class="comment">/* Enable decoder hysteresis on PRS0 output. */</span>                   \</div>
+<div class="line">  true,                    <span class="comment">/* Enable decoder hysteresis on PRS1 output. */</span>                   \</div>
+<div class="line">  true,                    <span class="comment">/* Enable decoder hysteresis on PRS2 output. */</span>                   \</div>
+<div class="line">  true,                    <span class="comment">/* Enable decoder hysteresis on PRS3 output. */</span>                   \</div>
+<div class="line">  false,                   <span class="comment">/* Disable count mode on decoder PRS channels 0 and 1*/</span>           <a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a11adb37002b2835672715226661078d1">\</a></div>
+<div class="line"><a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a11adb37002b2835672715226661078d1">  lesensePRSCh0</a>,           <span class="comment">/* PRS Channel 0 as input for bit 0 of the LESENSE decoder. */</span>    <a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a43d0f771797e3fe31df1569040d0db0e">\</a></div>
+<div class="line"><a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a43d0f771797e3fe31df1569040d0db0e">  lesensePRSCh1</a>,           <span class="comment">/* PRS Channel 1 as input for bit 1 of the LESENSE decoder. */</span>    <a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771aa5e2907388623f4e517e89c30a635267">\</a></div>
+<div class="line"><a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771aa5e2907388623f4e517e89c30a635267">  lesensePRSCh2</a>,           <span class="comment">/* PRS Channel 2 as input for bit 2 of the LESENSE decoder. */</span>    <a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a0cc8d20ed91eb388894d2d41e04d0069">\</a></div>
+<div class="line"><a class="code" href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a0cc8d20ed91eb388894d2d41e04d0069">  lesensePRSCh3</a>,           <span class="comment">/* PRS Channel 3 as input for bit 3 of the LESENSE decoder. */</span>    \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__LESENSE_html_gga81f01d564a4451ea2737a6c2abf17771aa5e2907388623f4e517e89c30a635267"><div class="ttname"><a href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771aa5e2907388623f4e517e89c30a635267">lesensePRSCh2</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00107">em_lesense.h:107</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gga81f01d564a4451ea2737a6c2abf17771a0cc8d20ed91eb388894d2d41e04d0069"><div class="ttname"><a href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a0cc8d20ed91eb388894d2d41e04d0069">lesensePRSCh3</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00108">em_lesense.h:108</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gga81f01d564a4451ea2737a6c2abf17771a43d0f771797e3fe31df1569040d0db0e"><div class="ttname"><a href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a43d0f771797e3fe31df1569040d0db0e">lesensePRSCh1</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00106">em_lesense.h:106</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gga81f01d564a4451ea2737a6c2abf17771a11adb37002b2835672715226661078d1"><div class="ttname"><a href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a11adb37002b2835672715226661078d1">lesensePRSCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00105">em_lesense.h:105</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gga51f02ccd2468cf6d095b62fc4d25658ca9f8b61132e9c528396986ceaf3afa054"><div class="ttname"><a href="group__LESENSE.html#gga51f02ccd2468cf6d095b62fc4d25658ca9f8b61132e9c528396986ceaf3afa054">lesenseDecInputSensorSt</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00313">em_lesense.h:313</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga81f01d564a4451ea2737a6c2abf17771aa5e2907388623f4e517e89c30a635267"><div class="ttname"><a href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771aa5e2907388623f4e517e89c30a635267">lesensePRSCh2</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00105">em_lesense.h:105</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga81f01d564a4451ea2737a6c2abf17771a0cc8d20ed91eb388894d2d41e04d0069"><div class="ttname"><a href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a0cc8d20ed91eb388894d2d41e04d0069">lesensePRSCh3</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00106">em_lesense.h:106</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga81f01d564a4451ea2737a6c2abf17771a43d0f771797e3fe31df1569040d0db0e"><div class="ttname"><a href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a43d0f771797e3fe31df1569040d0db0e">lesensePRSCh1</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00104">em_lesense.h:104</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga81f01d564a4451ea2737a6c2abf17771a11adb37002b2835672715226661078d1"><div class="ttname"><a href="group__LESENSE.html#gga81f01d564a4451ea2737a6c2abf17771a11adb37002b2835672715226661078d1">lesensePRSCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00103">em_lesense.h:103</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga51f02ccd2468cf6d095b62fc4d25658ca9f8b61132e9c528396986ceaf3afa054"><div class="ttname"><a href="group__LESENSE.html#gga51f02ccd2468cf6d095b62fc4d25658ca9f8b61132e9c528396986ceaf3afa054">lesenseDecInputSensorSt</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00331">em_lesense.h:331</a></div></div>
 </div><!-- fragment --><p>Default configuration for LESENSE_PerCtrl_TypeDef structure. </p>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00659">659</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00749">749</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -731,10 +735,10 @@ Functions</h2></td></tr>
 <div class="line">    { <span class="keyword">false</span>, <a class="code" href="group__LESENSE.html#gae4fea3639bac6abd3d3087204dcb1f7d">LESENSE_ST_CONF_DEFAULT</a>, <a class="code" href="group__LESENSE.html#gae4fea3639bac6abd3d3087204dcb1f7d">LESENSE_ST_CONF_DEFAULT</a> }  <span class="comment">/* Decoder state 15. */</span> \</div>
 <div class="line">  }                                                                                      \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__LESENSE_html_gae4fea3639bac6abd3d3087204dcb1f7d"><div class="ttname"><a href="group__LESENSE.html#gae4fea3639bac6abd3d3087204dcb1f7d">LESENSE_ST_CONF_DEFAULT</a></div><div class="ttdeci">#define LESENSE_ST_CONF_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00939">em_lesense.h:939</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gae4fea3639bac6abd3d3087204dcb1f7d"><div class="ttname"><a href="group__LESENSE.html#gae4fea3639bac6abd3d3087204dcb1f7d">LESENSE_ST_CONF_DEFAULT</a></div><div class="ttdeci">#define LESENSE_ST_CONF_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l01089">em_lesense.h:1089</a></div></div>
 </div><!-- fragment --><p>Default configuration for all decoder states. </p>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00974">974</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01125">1125</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -753,13 +757,47 @@ Functions</h2></td></tr>
 <div class="line">  .perCtrl  = <a class="code" href="group__LESENSE.html#gac1c18b05d96c2ddb0ca4ff5f7cc61f4c">LESENSE_PERCTRL_DESC_DEFAULT</a>,  <span class="comment">/* Default peripheral control parameters. */</span> \</div>
 <div class="line">  .decCtrl  = <a class="code" href="group__LESENSE.html#ga05d61d702307917f962b5af09755c496">LESENSE_DECCTRL_DESC_DEFAULT</a>   <span class="comment">/* Default decoder control parameters. */</span>    \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__LESENSE_html_ga040f7f899988be877ab2134473662397"><div class="ttname"><a href="group__LESENSE.html#ga040f7f899988be877ab2134473662397">LESENSE_CORECTRL_DESC_DEFAULT</a></div><div class="ttdeci">#define LESENSE_CORECTRL_DESC_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00520">em_lesense.h:520</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gae10d6d2e305b961e6664bfbc93862c78"><div class="ttname"><a href="group__LESENSE.html#gae10d6d2e305b961e6664bfbc93862c78">LESENSE_TIMECTRL_DESC_DEFAULT</a></div><div class="ttdeci">#define LESENSE_TIMECTRL_DESC_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00546">em_lesense.h:546</a></div></div>
-<div class="ttc" id="group__LESENSE_html_ga05d61d702307917f962b5af09755c496"><div class="ttname"><a href="group__LESENSE.html#ga05d61d702307917f962b5af09755c496">LESENSE_DECCTRL_DESC_DEFAULT</a></div><div class="ttdeci">#define LESENSE_DECCTRL_DESC_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00659">em_lesense.h:659</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gac1c18b05d96c2ddb0ca4ff5f7cc61f4c"><div class="ttname"><a href="group__LESENSE.html#gac1c18b05d96c2ddb0ca4ff5f7cc61f4c">LESENSE_PERCTRL_DESC_DEFAULT</a></div><div class="ttdeci">#define LESENSE_PERCTRL_DESC_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00592">em_lesense.h:592</a></div></div>
+<div class="ttc" id="group__LESENSE_html_ga040f7f899988be877ab2134473662397"><div class="ttname"><a href="group__LESENSE.html#ga040f7f899988be877ab2134473662397">LESENSE_CORECTRL_DESC_DEFAULT</a></div><div class="ttdeci">#define LESENSE_CORECTRL_DESC_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00579">em_lesense.h:579</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gae10d6d2e305b961e6664bfbc93862c78"><div class="ttname"><a href="group__LESENSE.html#gae10d6d2e305b961e6664bfbc93862c78">LESENSE_TIMECTRL_DESC_DEFAULT</a></div><div class="ttdeci">#define LESENSE_TIMECTRL_DESC_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00610">em_lesense.h:610</a></div></div>
+<div class="ttc" id="group__LESENSE_html_ga05d61d702307917f962b5af09755c496"><div class="ttname"><a href="group__LESENSE.html#ga05d61d702307917f962b5af09755c496">LESENSE_DECCTRL_DESC_DEFAULT</a></div><div class="ttdeci">#define LESENSE_DECCTRL_DESC_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00749">em_lesense.h:749</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gac1c18b05d96c2ddb0ca4ff5f7cc61f4c"><div class="ttname"><a href="group__LESENSE.html#gac1c18b05d96c2ddb0ca4ff5f7cc61f4c">LESENSE_PERCTRL_DESC_DEFAULT</a></div><div class="ttdeci">#define LESENSE_PERCTRL_DESC_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00672">em_lesense.h:672</a></div></div>
 </div><!-- fragment --><p>Default configuration for <a class="el" href="structLESENSE__Init__TypeDef.html">LESENSE_Init_TypeDef</a> structure. </p>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00694">694</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00784">784</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaae21de722cc8d6864311f98e89608dd6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LESENSE_NUM_CHANNELS&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Number of LESENSE channels. </p>
+
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00061">61</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__LESENSE.html#ga4b6111131d7b5d5d902e3bd6473e5fab">LESENSE_ChannelAllConfig()</a>, <a class="el" href="group__LESENSE.html#gaea5de81162fddc14155f27f38fa79d20">LESENSE_ChannelConfig()</a>, <a class="el" href="group__LESENSE.html#gab77af68ee8b46ed509e570f8c0b18e47">LESENSE_ChannelThresSet()</a>, and <a class="el" href="group__LESENSE.html#ga40f43668fc902a37ce1be07c83e7771b">LESENSE_Reset()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga36f4e64f9d121f04e761a64d8b4a8231"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LESENSE_NUM_DECODER_STATES&#160;&#160;&#160;(<a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga504e454dfaad620bcd9c8a7984ef1780">_LESENSE_DECSTATE_DECSTATE_MASK</a> + 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Number of decoder states supported by current device. </p>
+
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00058">58</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__LESENSE.html#ga5529ef6ab4838a70159578598d3b01da">LESENSE_DecoderStateAllConfig()</a>, <a class="el" href="group__LESENSE.html#gaffe3b519da7fa700e344e9e49ad1f100">LESENSE_DecoderStateConfig()</a>, and <a class="el" href="group__LESENSE.html#ga40f43668fc902a37ce1be07c83e7771b">LESENSE_Reset()</a>.</p>
 
 </div>
 </div>
@@ -773,27 +811,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                                     <a class="code" href="group__LESENSE.html#ggae4a838a9fbe18931d7bf7067b4567b88a0756fd363f9af187c879233a74ffb35b">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#ggae4a838a9fbe18931d7bf7067b4567b88a0756fd363f9af187c879233a74ffb35b">  lesenseDACIfData</a>,               <a class="code" href="group__LESENSE.html#ggae64b3460e263becd29b7755b94d1aa41aca5c558059a56ae5bac5437f7726be19">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#ggae64b3460e263becd29b7755b94d1aa41aca5c558059a56ae5bac5437f7726be19">  lesenseDACConvModeDisable</a>,      <a class="code" href="group__LESENSE.html#gga0b1462fa86adc1a1d3042b0d4e5badd3a96413baee7113b178cfcf58d358a497d">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#gga0b1462fa86adc1a1d3042b0d4e5badd3a96413baee7113b178cfcf58d358a497d">  lesenseDACOutModeDisable</a>,       <a class="code" href="group__LESENSE.html#ggae4a838a9fbe18931d7bf7067b4567b88a0756fd363f9af187c879233a74ffb35b">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#ggae4a838a9fbe18931d7bf7067b4567b88a0756fd363f9af187c879233a74ffb35b">  lesenseDACIfData</a>,               <a class="code" href="group__LESENSE.html#ggae64b3460e263becd29b7755b94d1aa41aca5c558059a56ae5bac5437f7726be19">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#ggae64b3460e263becd29b7755b94d1aa41aca5c558059a56ae5bac5437f7726be19">  lesenseDACConvModeDisable</a>,      <a class="code" href="group__LESENSE.html#gga0b1462fa86adc1a1d3042b0d4e5badd3a96413baee7113b178cfcf58d358a497d">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#gga0b1462fa86adc1a1d3042b0d4e5badd3a96413baee7113b178cfcf58d358a497d">  lesenseDACOutModeDisable</a>,       \</div>
-<div class="line">  0U,                             <a class="code" href="group__LESENSE.html#ggaa01d8ed0fd2d3f67c81860ae16bfa5d2ad21e744ea878385921b3eb346f84d888">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#ggaa01d8ed0fd2d3f67c81860ae16bfa5d2ad21e744ea878385921b3eb346f84d888">  lesenseDACRefVdd</a>,               <a class="code" href="group__LESENSE.html#gga3bf09e30c45f584c708655c3d7eeb211a8d3d3b80e140c8af5ce38083fe902738">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#gga3bf09e30c45f584c708655c3d7eeb211a8d3d3b80e140c8af5ce38083fe902738">  lesenseACMPModeMuxThres</a>,        <a class="code" href="group__LESENSE.html#gga3bf09e30c45f584c708655c3d7eeb211a8d3d3b80e140c8af5ce38083fe902738">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#gga3bf09e30c45f584c708655c3d7eeb211a8d3d3b80e140c8af5ce38083fe902738">  lesenseACMPModeMuxThres</a>,        <a class="code" href="group__LESENSE.html#ggae77285c42dc4aa211c3cc753abdf4645a305a3dfd71fd36ec5bbf1814923c1263">\</a></div>
-<div class="line"><a class="code" href="group__LESENSE.html#ggae77285c42dc4aa211c3cc753abdf4645a305a3dfd71fd36ec5bbf1814923c1263">  lesenseWarmupModeKeepWarm</a>,      \</div>
+<div class="line"><a class="code" href="group__LESENSE.html#ggae4a838a9fbe18931d7bf7067b4567b88a0756fd363f9af187c879233a74ffb35b">  lesenseDACIfData</a>,          <span class="comment">/* DAC channel 0 data is defined by DAC_CH0DATA register */</span>             <a class="code" href="group__LESENSE.html#ggae64b3460e263becd29b7755b94d1aa41aca5c558059a56ae5bac5437f7726be19">\</a></div>
+<div class="line"><a class="code" href="group__LESENSE.html#ggae64b3460e263becd29b7755b94d1aa41aca5c558059a56ae5bac5437f7726be19">  lesenseDACConvModeDisable</a>, <span class="comment">/* LESENSE does not control DAC CH0. */</span>                                 <a class="code" href="group__LESENSE.html#gga0b1462fa86adc1a1d3042b0d4e5badd3a96413baee7113b178cfcf58d358a497d">\</a></div>
+<div class="line"><a class="code" href="group__LESENSE.html#gga0b1462fa86adc1a1d3042b0d4e5badd3a96413baee7113b178cfcf58d358a497d">  lesenseDACOutModeDisable</a>,  <span class="comment">/* DAC channel 0 output to pin disabled. */</span>                             <a class="code" href="group__LESENSE.html#ggae4a838a9fbe18931d7bf7067b4567b88a0756fd363f9af187c879233a74ffb35b">\</a></div>
+<div class="line"><a class="code" href="group__LESENSE.html#ggae4a838a9fbe18931d7bf7067b4567b88a0756fd363f9af187c879233a74ffb35b">  lesenseDACIfData</a>,          <span class="comment">/* DAC channel 1 data is defined by DAC_CH1DATA register */</span>             <a class="code" href="group__LESENSE.html#ggae64b3460e263becd29b7755b94d1aa41aca5c558059a56ae5bac5437f7726be19">\</a></div>
+<div class="line"><a class="code" href="group__LESENSE.html#ggae64b3460e263becd29b7755b94d1aa41aca5c558059a56ae5bac5437f7726be19">  lesenseDACConvModeDisable</a>, <span class="comment">/* LESENSE does not control DAC CH1. */</span>                                 <a class="code" href="group__LESENSE.html#gga0b1462fa86adc1a1d3042b0d4e5badd3a96413baee7113b178cfcf58d358a497d">\</a></div>
+<div class="line"><a class="code" href="group__LESENSE.html#gga0b1462fa86adc1a1d3042b0d4e5badd3a96413baee7113b178cfcf58d358a497d">  lesenseDACOutModeDisable</a>,  <span class="comment">/* DAC channel 1 output to pin disabled. */</span>                             \</div>
+<div class="line">  0U,                        <span class="comment">/* DAC prescaling factor of 1 (0+1). */</span>                                 <a class="code" href="group__LESENSE.html#ggaa01d8ed0fd2d3f67c81860ae16bfa5d2ad21e744ea878385921b3eb346f84d888">\</a></div>
+<div class="line"><a class="code" href="group__LESENSE.html#ggaa01d8ed0fd2d3f67c81860ae16bfa5d2ad21e744ea878385921b3eb346f84d888">  lesenseDACRefVdd</a>,          <span class="comment">/* DAC uses VDD reference. */</span>                                           <a class="code" href="group__LESENSE.html#gga3bf09e30c45f584c708655c3d7eeb211a8d3d3b80e140c8af5ce38083fe902738">\</a></div>
+<div class="line"><a class="code" href="group__LESENSE.html#gga3bf09e30c45f584c708655c3d7eeb211a8d3d3b80e140c8af5ce38083fe902738">  lesenseACMPModeMuxThres</a>,   <span class="comment">/* LESENSE controls the input mux and the threshold value of ACMP0. */</span>  <a class="code" href="group__LESENSE.html#gga3bf09e30c45f584c708655c3d7eeb211a8d3d3b80e140c8af5ce38083fe902738">\</a></div>
+<div class="line"><a class="code" href="group__LESENSE.html#gga3bf09e30c45f584c708655c3d7eeb211a8d3d3b80e140c8af5ce38083fe902738">  lesenseACMPModeMuxThres</a>,   <span class="comment">/* LESENSE controls the input mux and the threshold value of ACMP1. */</span>  <a class="code" href="group__LESENSE.html#ggae77285c42dc4aa211c3cc753abdf4645a305a3dfd71fd36ec5bbf1814923c1263">\</a></div>
+<div class="line"><a class="code" href="group__LESENSE.html#ggae77285c42dc4aa211c3cc753abdf4645a305a3dfd71fd36ec5bbf1814923c1263">  lesenseWarmupModeKeepWarm</a>, <span class="comment">/* Keep both ACMPs and the DAC powered up when LESENSE is idle. */</span>      \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__LESENSE_html_ggae77285c42dc4aa211c3cc753abdf4645a305a3dfd71fd36ec5bbf1814923c1263"><div class="ttname"><a href="group__LESENSE.html#ggae77285c42dc4aa211c3cc753abdf4645a305a3dfd71fd36ec5bbf1814923c1263">lesenseWarmupModeKeepWarm</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00305">em_lesense.h:305</a></div></div>
-<div class="ttc" id="group__LESENSE_html_ggae64b3460e263becd29b7755b94d1aa41aca5c558059a56ae5bac5437f7726be19"><div class="ttname"><a href="group__LESENSE.html#ggae64b3460e263becd29b7755b94d1aa41aca5c558059a56ae5bac5437f7726be19">lesenseDACConvModeDisable</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00227">em_lesense.h:227</a></div></div>
-<div class="ttc" id="group__LESENSE_html_ggaa01d8ed0fd2d3f67c81860ae16bfa5d2ad21e744ea878385921b3eb346f84d888"><div class="ttname"><a href="group__LESENSE.html#ggaa01d8ed0fd2d3f67c81860ae16bfa5d2ad21e744ea878385921b3eb346f84d888">lesenseDACRefVdd</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00268">em_lesense.h:268</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gga3bf09e30c45f584c708655c3d7eeb211a8d3d3b80e140c8af5ce38083fe902738"><div class="ttname"><a href="group__LESENSE.html#gga3bf09e30c45f584c708655c3d7eeb211a8d3d3b80e140c8af5ce38083fe902738">lesenseACMPModeMuxThres</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00288">em_lesense.h:288</a></div></div>
-<div class="ttc" id="group__LESENSE_html_ggae4a838a9fbe18931d7bf7067b4567b88a0756fd363f9af187c879233a74ffb35b"><div class="ttname"><a href="group__LESENSE.html#ggae4a838a9fbe18931d7bf7067b4567b88a0756fd363f9af187c879233a74ffb35b">lesenseDACIfData</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00214">em_lesense.h:214</a></div></div>
-<div class="ttc" id="group__LESENSE_html_gga0b1462fa86adc1a1d3042b0d4e5badd3a96413baee7113b178cfcf58d358a497d"><div class="ttname"><a href="group__LESENSE.html#gga0b1462fa86adc1a1d3042b0d4e5badd3a96413baee7113b178cfcf58d358a497d">lesenseDACOutModeDisable</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00248">em_lesense.h:248</a></div></div>
+<div class="ttc" id="group__LESENSE_html_ggae77285c42dc4aa211c3cc753abdf4645a305a3dfd71fd36ec5bbf1814923c1263"><div class="ttname"><a href="group__LESENSE.html#ggae77285c42dc4aa211c3cc753abdf4645a305a3dfd71fd36ec5bbf1814923c1263">lesenseWarmupModeKeepWarm</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00323">em_lesense.h:323</a></div></div>
+<div class="ttc" id="group__LESENSE_html_ggae64b3460e263becd29b7755b94d1aa41aca5c558059a56ae5bac5437f7726be19"><div class="ttname"><a href="group__LESENSE.html#ggae64b3460e263becd29b7755b94d1aa41aca5c558059a56ae5bac5437f7726be19">lesenseDACConvModeDisable</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00241">em_lesense.h:241</a></div></div>
+<div class="ttc" id="group__LESENSE_html_ggaa01d8ed0fd2d3f67c81860ae16bfa5d2ad21e744ea878385921b3eb346f84d888"><div class="ttname"><a href="group__LESENSE.html#ggaa01d8ed0fd2d3f67c81860ae16bfa5d2ad21e744ea878385921b3eb346f84d888">lesenseDACRefVdd</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00285">em_lesense.h:285</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga3bf09e30c45f584c708655c3d7eeb211a8d3d3b80e140c8af5ce38083fe902738"><div class="ttname"><a href="group__LESENSE.html#gga3bf09e30c45f584c708655c3d7eeb211a8d3d3b80e140c8af5ce38083fe902738">lesenseACMPModeMuxThres</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00306">em_lesense.h:306</a></div></div>
+<div class="ttc" id="group__LESENSE_html_ggae4a838a9fbe18931d7bf7067b4567b88a0756fd363f9af187c879233a74ffb35b"><div class="ttname"><a href="group__LESENSE.html#ggae4a838a9fbe18931d7bf7067b4567b88a0756fd363f9af187c879233a74ffb35b">lesenseDACIfData</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00220">em_lesense.h:220</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga0b1462fa86adc1a1d3042b0d4e5badd3a96413baee7113b178cfcf58d358a497d"><div class="ttname"><a href="group__LESENSE.html#gga0b1462fa86adc1a1d3042b0d4e5badd3a96413baee7113b178cfcf58d358a497d">lesenseDACOutModeDisable</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00263">em_lesense.h:263</a></div></div>
 </div><!-- fragment --><p>Default configuration for LESENSE_PerCtrl_TypeDef structure. </p>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00592">592</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00672">672</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -828,7 +866,7 @@ Functions</h2></td></tr>
 <div class="line">}</div>
 </div><!-- fragment --><p>Default configuration for all sensor channels. </p>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00813">813</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00939">939</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -848,10 +886,10 @@ Functions</h2></td></tr>
 <div class="line"><a class="code" href="group__LESENSE.html#gga12f6a630786467cb261e6577eea6c53dab3297344c607e4255d088ad083306597">  lesenseTransActNone</a>, <span class="comment">/* No PRS action performed on compare match. */</span> \</div>
 <div class="line">  false                <span class="comment">/* No interrupt triggered on compare match. */</span>  \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__LESENSE_html_gga12f6a630786467cb261e6577eea6c53dab3297344c607e4255d088ad083306597"><div class="ttname"><a href="group__LESENSE.html#gga12f6a630786467cb261e6577eea6c53dab3297344c607e4255d088ad083306597">lesenseTransActNone</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00436">em_lesense.h:436</a></div></div>
+<div class="ttc" id="group__LESENSE_html_gga12f6a630786467cb261e6577eea6c53dab3297344c607e4255d088ad083306597"><div class="ttname"><a href="group__LESENSE.html#gga12f6a630786467cb261e6577eea6c53dab3297344c607e4255d088ad083306597">lesenseTransActNone</a></div><div class="ttdef"><b>Definition:</b> <a href="em__lesense_8h_source.html#l00495">em_lesense.h:495</a></div></div>
 </div><!-- fragment --><p>Default configuration for decoder state condition. </p>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00939">939</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01089">1089</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -864,12 +902,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                       \</div>
-<div class="line">  0U <span class="comment">/* No sensor interaction delay. */</span> \</div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                \</div>
+<div class="line">  0U,   <span class="comment">/* No sensor interaction delay. */</span>       \</div>
+<div class="line">  false <span class="comment">/* Don&#39;t delay the AUXHFRCO startup. */</span>  \</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Default configuration for <a class="el" href="structLESENSE__TimeCtrlDesc__TypeDef.html">LESENSE_TimeCtrlDesc_TypeDef</a> structure. </p>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00546">546</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00610">610</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -893,7 +932,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00137">137</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00135">135</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -919,7 +958,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00415">415</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00474">474</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -945,7 +984,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00175">175</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00181">181</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -968,7 +1007,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00148">148</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00154">154</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -991,7 +1030,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00391">391</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00423">423</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1007,14 +1046,14 @@ Functions</h2></td></tr>
 <p>Compare modes for counter comparison. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga468e17957c2cdfaf2733189468c2cb1ba8d3b238531539c76a40b27a3a2005172"></a>lesenseCompModeLess&#160;</td><td class="fielddoc">
-<p>Set interrupt flag if counter value is less than CTRTHRESHOLD, or if the ACMP output is 0. </p>
+<p>Comparison evaluates to 1 if the sensor data is less than the counter threshold, or if the ACMP output is 0. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga468e17957c2cdfaf2733189468c2cb1ba19fa3071a58f96c1869277ed1f6af8ef"></a>lesenseCompModeGreaterOrEq&#160;</td><td class="fielddoc">
-<p>Set interrupt flag if counter value is greater than, or equal to CTRTHRESHOLD, or if the ACMP output is 1. </p>
+<p>Comparison evaluates to 1 if the sensor data is greater than, or equal to the counter threshold, or if the ACMP output is 1. </p>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00402">402</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00434">434</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1082,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00332">332</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00358">358</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1072,7 +1111,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00349">349</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00375">375</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1104,7 +1143,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00366">366</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00392">392</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1127,7 +1166,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00321">321</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00339">339</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1207,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00073">73</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00071">71</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1194,7 +1233,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00276">276</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00294">294</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1223,7 +1262,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00223">223</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00237">237</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1246,7 +1285,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00210">210</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00216">216</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1275,7 +1314,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00244">244</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00259">259</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1298,7 +1337,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00265">265</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00282">282</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1321,7 +1360,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00310">310</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00328">328</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1347,7 +1386,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00159">159</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00165">165</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1400,7 +1439,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00103">103</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00101">101</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1429,7 +1468,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00189">189</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00195">195</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1455,7 +1494,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00087">87</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00085">85</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1508,7 +1547,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00432">432</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00491">491</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
@@ -1537,19 +1576,19 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00293">293</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l00311">311</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga5e74a058bf6cb6a84b1b207ad7d0abcd"></a>
+<a class="anchor" id="gac40301c926bfd10cf52c7a37e3fbd719"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void LESENSE_AltExConfig </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structLESENSE__ConfAltEx__TypeDef.html">LESENSE_ConfAltEx_TypeDef</a> const *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structLESENSE__ConfAltEx__TypeDef.html">LESENSE_ConfAltEx_TypeDef</a> *&#160;</td>
           <td class="paramname"><em>confAltEx</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1566,7 +1605,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00577">577</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00620">620</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga2f29e04af2b45bf3c4d5f496e7b47776">_LESENSE_CTRL_ALTEXMAP_SHIFT</a>, <a class="el" href="structLESENSE__ConfAltEx__TypeDef.html#a3a0f3a5d1837e4c0777f12ed22915fb2">LESENSE_ConfAltEx_TypeDef::AltEx</a>, <a class="el" href="structLESENSE__ConfAltEx__TypeDef.html#a5d20d2aef9f9562902adbb5bd90f8130">LESENSE_ConfAltEx_TypeDef::altExMap</a>, <a class="el" href="structLESENSE__AltExDesc__TypeDef.html#a9a7758009c8a9a95e7ab0a9192065e31">LESENSE_AltExDesc_TypeDef::alwaysEx</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="structLESENSE__AltExDesc__TypeDef.html#aeccfa890a5b81029e5dd0d3fd932ace1">LESENSE_AltExDesc_TypeDef::enablePin</a>, <a class="el" href="structLESENSE__AltExDesc__TypeDef.html#a96f207768d514f07fbc057819ae4790d">LESENSE_AltExDesc_TypeDef::idleConf</a>, <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="group__LESENSE.html#gga353d749d1e56452fb664963c41d67cb0a54a8aff8b115ec340b341382deb207e1">lesenseAltExMapACMP</a>, and <a class="el" href="group__LESENSE.html#gga353d749d1e56452fb664963c41d67cb0a0563914e6ba1b52e21ec601f0c594e2d">lesenseAltExMapALTEX</a>.</p>
 
@@ -1589,20 +1628,20 @@ Functions</h2></td></tr>
 <p>Get the currently active channel index. </p>
 <dl class="section return"><dt>Returns</dt><dd>This function returns the value of LESENSE_CHINDEX register that contains the index of the currently active channel (0-15). </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01110">1110</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01310">1310</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga24763a5f55c777f3021963a4f7809a96"></a>
+<a class="anchor" id="ga4b6111131d7b5d5d902e3bd6473e5fab"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void LESENSE_ChannelAllConfig </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structLESENSE__ChAll__TypeDef.html">LESENSE_ChAll_TypeDef</a> const *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structLESENSE__ChAll__TypeDef.html">LESENSE_ChAll_TypeDef</a> *&#160;</td>
           <td class="paramname"><em>confChAll</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1611,7 +1650,7 @@ Functions</h2></td></tr>
 
 <p>Configure all (16) LESENSE sensor channels. </p>
 <p>This function configures all the sensor channels of LESENSE interface. Please refer to the configuration parameter type definition (<a class="el" href="structLESENSE__ChAll__TypeDef.html">LESENSE_ChAll_TypeDef</a>) for more details.</p>
-<dl class="section note"><dt>Note</dt><dd>Channels can be configured individually using <a class="el" href="group__LESENSE.html#ga6aa126a4b073bd48954c8903da1bf47f" title="Configure a single LESENSE sensor channel. ">LESENSE_ChannelConfig()</a> function. Notice that pins used by the LESENSE module must be properly configured by the user explicitly, in order for the LESENSE to work as intended. (When configuring pins, one should remember to consider the sequence of configuration, in order to avoid unintended pulses/glitches on output pins.)</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Channels can be configured individually using <a class="el" href="group__LESENSE.html#gaea5de81162fddc14155f27f38fa79d20" title="Configure a single LESENSE sensor channel. ">LESENSE_ChannelConfig()</a> function. Notice that pins used by the LESENSE module must be properly configured by the user explicitly, in order for the LESENSE to work as intended. (When configuring pins, one should remember to consider the sequence of configuration, in order to avoid unintended pulses/glitches on output pins.)</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">confChAll</td><td>Configuration structure for all (16) LESENSE sensor channels. </td></tr>
@@ -1619,28 +1658,28 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00443">443</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00476">476</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
-<p>References <a class="el" href="structLESENSE__ChAll__TypeDef.html#a82109d6631bdb3d32a848070fe949300">LESENSE_ChAll_TypeDef::Ch</a>, and <a class="el" href="group__LESENSE.html#ga6aa126a4b073bd48954c8903da1bf47f">LESENSE_ChannelConfig()</a>.</p>
+<p>References <a class="el" href="structLESENSE__ChAll__TypeDef.html#a87b5fe3bb3fe5675f25ec66233112b21">LESENSE_ChAll_TypeDef::Ch</a>, <a class="el" href="group__LESENSE.html#gaea5de81162fddc14155f27f38fa79d20">LESENSE_ChannelConfig()</a>, and <a class="el" href="group__LESENSE.html#gaae21de722cc8d6864311f98e89608dd6">LESENSE_NUM_CHANNELS</a>.</p>
 
 <p>Referenced by <a class="el" href="group__CapSense.html#ga9cf779d965cc198a603d60d01225b993">CAPLESENSE_setupLESENSE()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga6aa126a4b073bd48954c8903da1bf47f"></a>
+<a class="anchor" id="gaea5de81162fddc14155f27f38fa79d20"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void LESENSE_ChannelConfig </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structLESENSE__ChDesc__TypeDef.html">LESENSE_ChDesc_TypeDef</a> const *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structLESENSE__ChDesc__TypeDef.html">LESENSE_ChDesc_TypeDef</a> *&#160;</td>
           <td class="paramname"><em>confCh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t const&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>chIdx</em>&#160;</td>
         </tr>
         <tr>
@@ -1662,34 +1701,34 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00478">478</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00511">511</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
-<p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga6be5076f4c03330fe2fb1c683fddb35a">_LESENSE_CH_EVAL_DECODE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga165861ab8fa680d4a983aa9b01debff4">_LESENSE_CH_EVAL_SCANRESINV_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga2461388e8609c25a27cab80278451543">_LESENSE_CH_EVAL_STRSAMPLE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga37b3ca53089e6caff043524f3b5e0db7">_LESENSE_CH_INTERACT_ALTEX_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga82f04bf6e60a4bee476cfd91b0a098ef">_LESENSE_CH_INTERACT_EXCLK_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga91a418b44cc9d4c4d0d996ca09bef0cf">_LESENSE_CH_INTERACT_SAMPLECLK_SHIFT</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#ab67e673cce7b2a4e2578b048522cb77e">LESENSE_ChDesc_TypeDef::acmpThres</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#aaa4e50e64792924e4aa586b2694f5d98">LESENSE_ChDesc_TypeDef::chPinExMode</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a40183afffebfd8204472616a92577a21">LESENSE_ChDesc_TypeDef::chPinIdleMode</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#abc0f6afd10e14de61ae93f809c24482e">LESENSE_ChDesc_TypeDef::cntThres</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a17d5f0cd4e19372f708d4a8d2fb0f2ff">LESENSE_ChDesc_TypeDef::compMode</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#ab73dcc469431b7bd2321b5c529822637">LESENSE_ChDesc_TypeDef::enaInt</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#abffb8d1403276bf1e1b56122d00a80d2">LESENSE_ChDesc_TypeDef::enaPin</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a7c64ee08b8be28891c79b787b1208560">LESENSE_ChDesc_TypeDef::enaScanCh</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a95cd44497377cf262119fa9f6c96c300">LESENSE_ChDesc_TypeDef::exClk</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#ad093954f2d9c4287ee5d154a9ad5febf">LESENSE_ChDesc_TypeDef::exTime</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a8668fd0a8e54e42aa63e0f4f3b49280d">LESENSE_ChDesc_TypeDef::intMode</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a826a97fc3e96ea07fbb2f1d14e75941f">LESENSE_ChDesc_TypeDef::invRes</a>, <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="group__LESENSE.html#gaa0f60936997170e7563c97552b99bb88">LESENSE_ChannelThresSet()</a>, <a class="el" href="group__LESENSE.html#ga81efdc1593d4cbdd8e599f8cd1a42aa1">LESENSE_ChannelTimingSet()</a>, <a class="el" href="group__LESENSE.html#gga4afcd408aa49b59d6476f3d9144c5196a85eb1dae0a56e52e63fb7deb9a60d0d0">lesenseChPinExDACOut</a>, <a class="el" href="group__LESENSE.html#ggaff36cd1e8c65cae36da232832e03dd1da65e7955ffe36e39b42bb787d7cf35672">lesenseChPinIdleDACCh0</a>, <a class="el" href="group__LESENSE.html#ggaff36cd1e8c65cae36da232832e03dd1dae9bd1fb1c75caa9822cfe5426eb0686f">lesenseChPinIdleDACCh1</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#aa3619553f8da233f208eba09d8503604">LESENSE_ChDesc_TypeDef::measDelay</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a77d43773b5fc86531848887e6441897a">LESENSE_ChDesc_TypeDef::sampleClk</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a77e5a3b5966c40fb1c02264416b52299">LESENSE_ChDesc_TypeDef::sampleDelay</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#aec17109b3dde2f28c614938e2208f64a">LESENSE_ChDesc_TypeDef::sampleMode</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a418908166dc41327ea1475bfbe5a5b76">LESENSE_ChDesc_TypeDef::shiftRes</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#ac8087212f0ec43cc163571f45437262f">LESENSE_ChDesc_TypeDef::storeCntRes</a>, and <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a606eb1453bd1b4b8dfd04c94885fe3c9">LESENSE_ChDesc_TypeDef::useAltEx</a>.</p>
+<p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga6be5076f4c03330fe2fb1c683fddb35a">_LESENSE_CH_EVAL_DECODE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga165861ab8fa680d4a983aa9b01debff4">_LESENSE_CH_EVAL_SCANRESINV_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga2461388e8609c25a27cab80278451543">_LESENSE_CH_EVAL_STRSAMPLE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga37b3ca53089e6caff043524f3b5e0db7">_LESENSE_CH_INTERACT_ALTEX_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga82f04bf6e60a4bee476cfd91b0a098ef">_LESENSE_CH_INTERACT_EXCLK_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga91a418b44cc9d4c4d0d996ca09bef0cf">_LESENSE_CH_INTERACT_SAMPLECLK_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga820592d5f8052e4169ae1a6f2acd0742">_LESENSE_CH_TIMING_EXTIME_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gad93e5a1001421ca6573974e8a3c7c19b">_LESENSE_CH_TIMING_EXTIME_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga5d0690316c28abc3a553d688525a603f">_LESENSE_CH_TIMING_MEASUREDLY_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gab3927921f252515f02151aeca01496af">_LESENSE_CH_TIMING_MEASUREDLY_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gad8162bd332ffeb895d8a4e38c57c1c03">_LESENSE_CH_TIMING_SAMPLEDLY_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga07a456cb6433a8ae3b2ee67292aa70c1">_LESENSE_CH_TIMING_SAMPLEDLY_SHIFT</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#ab67e673cce7b2a4e2578b048522cb77e">LESENSE_ChDesc_TypeDef::acmpThres</a>, <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#aaa4e50e64792924e4aa586b2694f5d98">LESENSE_ChDesc_TypeDef::chPinExMode</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a40183afffebfd8204472616a92577a21">LESENSE_ChDesc_TypeDef::chPinIdleMode</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#abc0f6afd10e14de61ae93f809c24482e">LESENSE_ChDesc_TypeDef::cntThres</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a17d5f0cd4e19372f708d4a8d2fb0f2ff">LESENSE_ChDesc_TypeDef::compMode</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#ab73dcc469431b7bd2321b5c529822637">LESENSE_ChDesc_TypeDef::enaInt</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#abffb8d1403276bf1e1b56122d00a80d2">LESENSE_ChDesc_TypeDef::enaPin</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a7c64ee08b8be28891c79b787b1208560">LESENSE_ChDesc_TypeDef::enaScanCh</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a95cd44497377cf262119fa9f6c96c300">LESENSE_ChDesc_TypeDef::exClk</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#ad093954f2d9c4287ee5d154a9ad5febf">LESENSE_ChDesc_TypeDef::exTime</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a8668fd0a8e54e42aa63e0f4f3b49280d">LESENSE_ChDesc_TypeDef::intMode</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a826a97fc3e96ea07fbb2f1d14e75941f">LESENSE_ChDesc_TypeDef::invRes</a>, <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="group__LESENSE.html#gab77af68ee8b46ed509e570f8c0b18e47">LESENSE_ChannelThresSet()</a>, <a class="el" href="group__LESENSE.html#ga8bc2ec714a8ceb1a29fcf5769724059e">LESENSE_ChannelTimingSet()</a>, <a class="el" href="group__LESENSE.html#gaae21de722cc8d6864311f98e89608dd6">LESENSE_NUM_CHANNELS</a>, <a class="el" href="group__LESENSE.html#gga4afcd408aa49b59d6476f3d9144c5196a85eb1dae0a56e52e63fb7deb9a60d0d0">lesenseChPinExDACOut</a>, <a class="el" href="group__LESENSE.html#ggaff36cd1e8c65cae36da232832e03dd1da65e7955ffe36e39b42bb787d7cf35672">lesenseChPinIdleDACCh0</a>, <a class="el" href="group__LESENSE.html#ggaff36cd1e8c65cae36da232832e03dd1dae9bd1fb1c75caa9822cfe5426eb0686f">lesenseChPinIdleDACCh1</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a96548abaa1115f4d53aa5be3625c8b49">LESENSE_ChDesc_TypeDef::measDelay</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a77d43773b5fc86531848887e6441897a">LESENSE_ChDesc_TypeDef::sampleClk</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a77e5a3b5966c40fb1c02264416b52299">LESENSE_ChDesc_TypeDef::sampleDelay</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#aec17109b3dde2f28c614938e2208f64a">LESENSE_ChDesc_TypeDef::sampleMode</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a418908166dc41327ea1475bfbe5a5b76">LESENSE_ChDesc_TypeDef::shiftRes</a>, <a class="el" href="structLESENSE__ChDesc__TypeDef.html#ac8087212f0ec43cc163571f45437262f">LESENSE_ChDesc_TypeDef::storeCntRes</a>, and <a class="el" href="structLESENSE__ChDesc__TypeDef.html#a606eb1453bd1b4b8dfd04c94885fe3c9">LESENSE_ChDesc_TypeDef::useAltEx</a>.</p>
 
-<p>Referenced by <a class="el" href="group__LESENSE.html#ga24763a5f55c777f3021963a4f7809a96">LESENSE_ChannelAllConfig()</a>.</p>
+<p>Referenced by <a class="el" href="group__LESENSE.html#ga4b6111131d7b5d5d902e3bd6473e5fab">LESENSE_ChannelAllConfig()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga611f48ec1dcb0e3f6007a5245fcbac7f"></a>
+<a class="anchor" id="gaf8f11a4d13a561ad6599335e221e92f4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void LESENSE_ChannelEnable </td>
           <td>(</td>
-          <td class="paramtype">uint8_t const&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>chIdx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool const&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>enaScanCh</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool const&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>enaPin</em>&#160;</td>
         </tr>
         <tr>
@@ -1702,7 +1741,7 @@ Functions</h2></td></tr>
 
 <p>Enable/disable LESENSE scan channel and the pin assigned to it. </p>
 <p>Use this function to enable/disable a selected LESENSE scan channel and the pin assigned to.</p>
-<dl class="section note"><dt>Note</dt><dd>Users can enable/disable scan channels and the channel pin by <a class="el" href="group__LESENSE.html#ga6aa126a4b073bd48954c8903da1bf47f" title="Configure a single LESENSE sensor channel. ">LESENSE_ChannelConfig()</a> function, but only with a significant overhead. This simple function serves the purpose of controlling these parameters after the channel has been configured.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Users can enable/disable scan channels and the channel pin by <a class="el" href="group__LESENSE.html#gaea5de81162fddc14155f27f38fa79d20" title="Configure a single LESENSE sensor channel. ">LESENSE_ChannelConfig()</a> function, but only with a significant overhead. This simple function serves the purpose of controlling these parameters after the channel has been configured.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">chIdx</td><td>Identifier of the scan channel. Valid range: 0-15.</td></tr>
@@ -1712,7 +1751,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00661">661</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00708">708</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
 <p>References <a class="el" href="group__BUS.html#gaf8574f14855448ecae32c5a9dd0c7164">BUS_RegBitWrite()</a>, and <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
@@ -1744,7 +1783,7 @@ Functions</h2></td></tr>
 
 <p>Enable/disable LESENSE scan channel and the pin assigned to it. </p>
 <p>Use this function to enable/disable LESENSE scan channels and the pins assigned to them using a mask.</p>
-<dl class="section note"><dt>Note</dt><dd>Users can enable/disable scan channels and channel pins by using <a class="el" href="group__LESENSE.html#ga24763a5f55c777f3021963a4f7809a96" title="Configure all (16) LESENSE sensor channels. ">LESENSE_ChannelAllConfig()</a> function, but only with a significant overhead. This simple function serves the purpose of controlling these parameters after the channel has been configured.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Users can enable/disable scan channels and channel pins by using <a class="el" href="group__LESENSE.html#ga4b6111131d7b5d5d902e3bd6473e5fab" title="Configure all (16) LESENSE sensor channels. ">LESENSE_ChannelAllConfig()</a> function, but only with a significant overhead. This simple function serves the purpose of controlling these parameters after the channel has been configured.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">chMask</td><td>Set the corresponding bit to 1 to enable, 0 to disable the selected scan channel.</td></tr>
@@ -1753,32 +1792,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00698">698</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00745">745</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gaa0f60936997170e7563c97552b99bb88"></a>
+<a class="anchor" id="gab77af68ee8b46ed509e570f8c0b18e47"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void LESENSE_ChannelThresSet </td>
           <td>(</td>
-          <td class="paramtype">uint8_t const&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>chIdx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t const&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>acmpThres</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t const&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>cntThres</em>&#160;</td>
         </tr>
         <tr>
@@ -1791,7 +1830,7 @@ Functions</h2></td></tr>
 
 <p>Set LESENSE channel threshold parameters. </p>
 <p>Use this function to set threshold parameters on a selected LESENSE channel.</p>
-<dl class="section note"><dt>Note</dt><dd>Users can configure the channel threshold parameters by <a class="el" href="group__LESENSE.html#ga6aa126a4b073bd48954c8903da1bf47f" title="Configure a single LESENSE sensor channel. ">LESENSE_ChannelConfig()</a> function, but only with a significant overhead. This simple function serves the purpose of controlling these parameters after the channel has been configured.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Users can configure the channel threshold parameters by <a class="el" href="group__LESENSE.html#gaea5de81162fddc14155f27f38fa79d20" title="Configure a single LESENSE sensor channel. ">LESENSE_ChannelConfig()</a> function, but only with a significant overhead. This simple function serves the purpose of controlling these parameters after the channel has been configured.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">chIdx</td><td>Identifier of the scan channel. Valid range: 0-15.</td></tr>
@@ -1807,40 +1846,40 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00787">787</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00837">837</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
-<p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gabb45fa860d5a7838b668fced6f33998a">_LESENSE_CH_EVAL_COMPTHRES_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gae61d826b950ceb7d0d21ef01ccbf7e32">_LESENSE_CH_EVAL_COMPTHRES_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga058b5b8832407c56a30b65f14a751a71">_LESENSE_CH_INTERACT_ACMPTHRES_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga513c071fd4d0b7cf50b23216e5de504e">_LESENSE_CH_INTERACT_ACMPTHRES_SHIFT</a>, and <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
+<p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gabb45fa860d5a7838b668fced6f33998a">_LESENSE_CH_EVAL_COMPTHRES_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gae61d826b950ceb7d0d21ef01ccbf7e32">_LESENSE_CH_EVAL_COMPTHRES_SHIFT</a>, <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, and <a class="el" href="group__LESENSE.html#gaae21de722cc8d6864311f98e89608dd6">LESENSE_NUM_CHANNELS</a>.</p>
 
-<p>Referenced by <a class="el" href="group__CapSense.html#ga9cf779d965cc198a603d60d01225b993">CAPLESENSE_setupLESENSE()</a>, and <a class="el" href="group__LESENSE.html#ga6aa126a4b073bd48954c8903da1bf47f">LESENSE_ChannelConfig()</a>.</p>
+<p>Referenced by <a class="el" href="group__CapSense.html#ga9cf779d965cc198a603d60d01225b993">CAPLESENSE_setupLESENSE()</a>, and <a class="el" href="group__LESENSE.html#gaea5de81162fddc14155f27f38fa79d20">LESENSE_ChannelConfig()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga81efdc1593d4cbdd8e599f8cd1a42aa1"></a>
+<a class="anchor" id="ga8bc2ec714a8ceb1a29fcf5769724059e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void LESENSE_ChannelTimingSet </td>
           <td>(</td>
-          <td class="paramtype">uint8_t const&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>chIdx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t const&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>exTime</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t const&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>sampleDelay</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t const&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>measDelay</em>&#160;</td>
         </tr>
         <tr>
@@ -1853,7 +1892,7 @@ Functions</h2></td></tr>
 
 <p>Set LESENSE channel timing parameters. </p>
 <p>Use this function to set timing parameters on a selected LESENSE channel.</p>
-<dl class="section note"><dt>Note</dt><dd>Users can configure the channel timing parameters by <a class="el" href="group__LESENSE.html#ga6aa126a4b073bd48954c8903da1bf47f" title="Configure a single LESENSE sensor channel. ">LESENSE_ChannelConfig()</a> function, but only with a significant overhead. This simple function serves the purpose of controlling these parameters after the channel has been configured.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Users can configure the channel timing parameters by <a class="el" href="group__LESENSE.html#gaea5de81162fddc14155f27f38fa79d20" title="Configure a single LESENSE sensor channel. ">LESENSE_ChannelConfig()</a> function, but only with a significant overhead. This simple function serves the purpose of controlling these parameters after the channel has been configured.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">chIdx</td><td>Identifier of the scan channel. Valid range: 0-15.</td></tr>
@@ -1864,28 +1903,28 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00735">735</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00782">782</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
-<p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gad93e5a1001421ca6573974e8a3c7c19b">_LESENSE_CH_TIMING_EXTIME_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gab3927921f252515f02151aeca01496af">_LESENSE_CH_TIMING_MEASUREDLY_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga07a456cb6433a8ae3b2ee67292aa70c1">_LESENSE_CH_TIMING_SAMPLEDLY_SHIFT</a>, and <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
+<p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga820592d5f8052e4169ae1a6f2acd0742">_LESENSE_CH_TIMING_EXTIME_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gad93e5a1001421ca6573974e8a3c7c19b">_LESENSE_CH_TIMING_EXTIME_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga5d0690316c28abc3a553d688525a603f">_LESENSE_CH_TIMING_MEASUREDLY_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gab3927921f252515f02151aeca01496af">_LESENSE_CH_TIMING_MEASUREDLY_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gad8162bd332ffeb895d8a4e38c57c1c03">_LESENSE_CH_TIMING_SAMPLEDLY_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga07a456cb6433a8ae3b2ee67292aa70c1">_LESENSE_CH_TIMING_SAMPLEDLY_SHIFT</a>, and <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
-<p>Referenced by <a class="el" href="group__LESENSE.html#ga6aa126a4b073bd48954c8903da1bf47f">LESENSE_ChannelConfig()</a>.</p>
+<p>Referenced by <a class="el" href="group__LESENSE.html#gaea5de81162fddc14155f27f38fa79d20">LESENSE_ChannelConfig()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga1ffd0b11de75b11d122d5a62d1a7fbab"></a>
+<a class="anchor" id="ga9b1ce951e3a547fdc391dab22908d436"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void LESENSE_ClkDivSet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__LESENSE.html#gad75ff5fe98fbe7fe30e79150803c1d7d">LESENSE_ChClk_TypeDef</a> const&#160;</td>
+          <td class="paramtype"><a class="el" href="group__LESENSE.html#gad75ff5fe98fbe7fe30e79150803c1d7d">LESENSE_ChClk_TypeDef</a>&#160;</td>
           <td class="paramname"><em>clk</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__LESENSE.html#ga87cfed7d62c2ab576068a3beda57b1d0">LESENSE_ClkPresc_TypeDef</a> const&#160;</td>
+          <td class="paramtype"><a class="el" href="group__LESENSE.html#ga87cfed7d62c2ab576068a3beda57b1d0">LESENSE_ClkPresc_TypeDef</a>&#160;</td>
           <td class="paramname"><em>clkDiv</em>&#160;</td>
         </tr>
         <tr>
@@ -1897,7 +1936,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set clock division for LESENSE timers. </p>
-<p>Use this function to configure the clock division for the LESENSE timers used for excitation timing. The division setting is global, but the clock source can be selected for each channel using <a class="el" href="group__LESENSE.html#ga6aa126a4b073bd48954c8903da1bf47f" title="Configure a single LESENSE sensor channel. ">LESENSE_ChannelConfig()</a> function, please refer to the documentation of it for more details.</p>
+<p>Use this function to configure the clock division for the LESENSE timers used for excitation timing. The division setting is global, but the clock source can be selected for each channel using <a class="el" href="group__LESENSE.html#gaea5de81162fddc14155f27f38fa79d20" title="Configure a single LESENSE sensor channel. ">LESENSE_ChannelConfig()</a> function, please refer to the documentation of it for more details.</p>
 <dl class="section note"><dt>Note</dt><dd>If AUXHFRCO is used for excitation timing, LFACLK can not exceed 500kHz. LFACLK can not exceed 50kHz if the ACMP threshold level (ACMPTHRES) is not equal for all channels.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1911,7 +1950,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00381">381</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00414">414</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga08ca389403d5ab63777ec96dbd4ef964">_LESENSE_TIMCTRL_AUXPRESC_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga6fb956cec95701b961410e09d01f948e">_LESENSE_TIMCTRL_AUXPRESC_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga74bda7c64826a7228c80e7fe6e13f87e">_LESENSE_TIMCTRL_LFPRESC_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gab424567250c8450263426274bb01cc7f">_LESENSE_TIMCTRL_LFPRESC_SHIFT</a>, <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="group__LESENSE.html#gga87cfed7d62c2ab576068a3beda57b1d0a7bcc0fdada8a0d839c18278e36c7522d">lesenseClkDiv_8</a>, <a class="el" href="group__LESENSE.html#ggad75ff5fe98fbe7fe30e79150803c1d7da51120b48636a35aa0c5690617a5a7361">lesenseClkHF</a>, and <a class="el" href="group__LESENSE.html#ggad75ff5fe98fbe7fe30e79150803c1d7da947c2254e5694bdbf152d3f612e7b8b7">lesenseClkLF</a>.</p>
 
@@ -1936,20 +1975,20 @@ Functions</h2></td></tr>
 <p>Start LESENSE decoder. </p>
 <dl class="section note"><dt>Note</dt><dd>This function will wait for any pending previous write operation to the CMD register to complete before accessing the CMD register. It will also wait for the write operation to the CMD register to complete before returning. Each write operation to the CMD register may take up to 3 LF clock cycles, so the user should expect some delay. The user may implement a separate function to write multiple command bits in the CMD register in one single operation in order to optimize an application. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l01010">1010</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l01199">1199</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gafe6b86ef7e2921bd34778b60f5d0e994">LESENSE_CMD_DECODE</a>, and <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga40afa3528fb9eb93f9794d94f2b9c937">LESENSE_SYNCBUSY_CMD</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga5c9e0e09e723fa04321bc17773b1e253"></a>
+<a class="anchor" id="ga5529ef6ab4838a70159578598d3b01da"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void LESENSE_DecoderStateAllConfig </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structLESENSE__DecStAll__TypeDef.html">LESENSE_DecStAll_TypeDef</a> const *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structLESENSE__DecStAll__TypeDef.html">LESENSE_DecStAll_TypeDef</a> *&#160;</td>
           <td class="paramname"><em>confDecStAll</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1958,34 +1997,34 @@ Functions</h2></td></tr>
 
 <p>Configure all LESENSE decoder states. </p>
 <p>This function configures all the decoder states of the LESENSE interface. Please refer to the configuration parameter type definition (<a class="el" href="structLESENSE__DecStAll__TypeDef.html">LESENSE_DecStAll_TypeDef</a>) for more details.</p>
-<dl class="section note"><dt>Note</dt><dd>Decoder states can be configured individually using <a class="el" href="group__LESENSE.html#gaef8bc2c145fcae89fc4a3b6516bb4654" title="Configure a single LESENSE decoder state. ">LESENSE_DecoderStateConfig()</a> function.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Decoder states can be configured individually using <a class="el" href="group__LESENSE.html#gaffe3b519da7fa700e344e9e49ad1f100" title="Configure a single LESENSE decoder state. ">LESENSE_DecoderStateConfig()</a> function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">confDecStAll</td><td>Configuration structure for all (16) LESENSE decoder states. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">confDecStAll</td><td>Configuration structure for all (16 or 32) LESENSE decoder states. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00833">833</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00999">999</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
-<p>References <a class="el" href="group__LESENSE.html#gaef8bc2c145fcae89fc4a3b6516bb4654">LESENSE_DecoderStateConfig()</a>, and <a class="el" href="structLESENSE__DecStAll__TypeDef.html#a073877278849c84179f8a987b768afc6">LESENSE_DecStAll_TypeDef::St</a>.</p>
+<p>References <a class="el" href="group__LESENSE.html#gaffe3b519da7fa700e344e9e49ad1f100">LESENSE_DecoderStateConfig()</a>, <a class="el" href="group__LESENSE.html#ga36f4e64f9d121f04e761a64d8b4a8231">LESENSE_NUM_DECODER_STATES</a>, and <a class="el" href="structLESENSE__DecStAll__TypeDef.html#a6054d7959493a82abf50e38991971e1b">LESENSE_DecStAll_TypeDef::St</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gaef8bc2c145fcae89fc4a3b6516bb4654"></a>
+<a class="anchor" id="gaffe3b519da7fa700e344e9e49ad1f100"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void LESENSE_DecoderStateConfig </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structLESENSE__DecStDesc__TypeDef.html">LESENSE_DecStDesc_TypeDef</a> const *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structLESENSE__DecStDesc__TypeDef.html">LESENSE_DecStDesc_TypeDef</a> *&#160;</td>
           <td class="paramname"><em>confDecSt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t const&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>decSt</em>&#160;</td>
         </tr>
         <tr>
@@ -2001,16 +2040,16 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">confDecSt</td><td>Configuration structure for a single LESENSE decoder state.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">decSt</td><td>Decoder state index to configure (0-15). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decSt</td><td>Decoder state index to configure (0-15) or (0-31) depending on device. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00861">861</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l01027">1027</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
-<p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga4fed8b2277e2290b99873bfe1b50217c">_LESENSE_ST_TCONFA_CHAIN_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gaf5c0bc3af403794eb84ce75f9258e974">_LESENSE_ST_TCONFA_COMP_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga6f5fbc52543006720f4cdd8b54f1a109">_LESENSE_ST_TCONFA_MASK_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga3b4b828504ce55b8c1a800dee4866b27">_LESENSE_ST_TCONFA_NEXTSTATE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gad9174aa2986078b6a0ba21ac10ceb155">_LESENSE_ST_TCONFA_SETIF_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga80d7ad1423214017c39176633be9ae7b">_LESENSE_ST_TCONFB_COMP_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0292abe82e1af28a3798acca436fc23a">_LESENSE_ST_TCONFB_MASK_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga7063be1c34503b2434c5533937081fb2">_LESENSE_ST_TCONFB_NEXTSTATE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga5fe48952f1388418db247945db419121">_LESENSE_ST_TCONFB_SETIF_SHIFT</a>, <a class="el" href="structLESENSE__DecStDesc__TypeDef.html#a41fe53e5736c515b3a4ff9ce0b351a05">LESENSE_DecStDesc_TypeDef::chainDesc</a>, <a class="el" href="structLESENSE__DecStCond__TypeDef.html#a2b691472ac41a5bf8a3f70f869596ba3">LESENSE_DecStCond_TypeDef::compMask</a>, <a class="el" href="structLESENSE__DecStCond__TypeDef.html#a0632649b1af386768debfc73f27b6ae0">LESENSE_DecStCond_TypeDef::compVal</a>, <a class="el" href="structLESENSE__DecStDesc__TypeDef.html#aaaebe954feaa78800de1667883c6962d">LESENSE_DecStDesc_TypeDef::confA</a>, <a class="el" href="structLESENSE__DecStDesc__TypeDef.html#a495530ed8f4741dbe6d417e1e6536c5a">LESENSE_DecStDesc_TypeDef::confB</a>, <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="structLESENSE__DecStCond__TypeDef.html#a46d3fa48d1809a1a7784651a13ececcf">LESENSE_DecStCond_TypeDef::nextState</a>, <a class="el" href="structLESENSE__DecStCond__TypeDef.html#aa92f3f511d30b56824a225746dbd7fe0">LESENSE_DecStCond_TypeDef::prsAct</a>, and <a class="el" href="structLESENSE__DecStCond__TypeDef.html#ae90cde3c1abe82b151707cc7e07e62f5">LESENSE_DecStCond_TypeDef::setInt</a>.</p>
+<p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga4fed8b2277e2290b99873bfe1b50217c">_LESENSE_ST_TCONFA_CHAIN_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gaf5c0bc3af403794eb84ce75f9258e974">_LESENSE_ST_TCONFA_COMP_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga6f5fbc52543006720f4cdd8b54f1a109">_LESENSE_ST_TCONFA_MASK_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga3b4b828504ce55b8c1a800dee4866b27">_LESENSE_ST_TCONFA_NEXTSTATE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gad9174aa2986078b6a0ba21ac10ceb155">_LESENSE_ST_TCONFA_SETIF_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga80d7ad1423214017c39176633be9ae7b">_LESENSE_ST_TCONFB_COMP_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0292abe82e1af28a3798acca436fc23a">_LESENSE_ST_TCONFB_MASK_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga7063be1c34503b2434c5533937081fb2">_LESENSE_ST_TCONFB_NEXTSTATE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga5fe48952f1388418db247945db419121">_LESENSE_ST_TCONFB_SETIF_SHIFT</a>, <a class="el" href="structLESENSE__DecStDesc__TypeDef.html#a41fe53e5736c515b3a4ff9ce0b351a05">LESENSE_DecStDesc_TypeDef::chainDesc</a>, <a class="el" href="structLESENSE__DecStCond__TypeDef.html#a2b691472ac41a5bf8a3f70f869596ba3">LESENSE_DecStCond_TypeDef::compMask</a>, <a class="el" href="structLESENSE__DecStCond__TypeDef.html#a0632649b1af386768debfc73f27b6ae0">LESENSE_DecStCond_TypeDef::compVal</a>, <a class="el" href="structLESENSE__DecStDesc__TypeDef.html#aaaebe954feaa78800de1667883c6962d">LESENSE_DecStDesc_TypeDef::confA</a>, <a class="el" href="structLESENSE__DecStDesc__TypeDef.html#a495530ed8f4741dbe6d417e1e6536c5a">LESENSE_DecStDesc_TypeDef::confB</a>, <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="group__LESENSE.html#ga36f4e64f9d121f04e761a64d8b4a8231">LESENSE_NUM_DECODER_STATES</a>, <a class="el" href="structLESENSE__DecStCond__TypeDef.html#a46d3fa48d1809a1a7784651a13ececcf">LESENSE_DecStCond_TypeDef::nextState</a>, <a class="el" href="structLESENSE__DecStCond__TypeDef.html#aa92f3f511d30b56824a225746dbd7fe0">LESENSE_DecStCond_TypeDef::prsAct</a>, and <a class="el" href="structLESENSE__DecStCond__TypeDef.html#ae90cde3c1abe82b151707cc7e07e62f5">LESENSE_DecStCond_TypeDef::setInt</a>.</p>
 
-<p>Referenced by <a class="el" href="group__LESENSE.html#ga5c9e0e09e723fa04321bc17773b1e253">LESENSE_DecoderStateAllConfig()</a>.</p>
+<p>Referenced by <a class="el" href="group__LESENSE.html#ga5529ef6ab4838a70159578598d3b01da">LESENSE_DecoderStateAllConfig()</a>.</p>
 
 </div>
 </div>
@@ -2031,7 +2070,7 @@ Functions</h2></td></tr>
 <p>Get the current state of the LESENSE decoder. </p>
 <dl class="section return"><dt>Returns</dt><dd>This function returns the value of LESENSE_DECSTATE register that represents the current state of the LESENSE decoder. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00928">928</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l01095">1095</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga504e454dfaad620bcd9c8a7984ef1780">_LESENSE_DECSTATE_DECSTATE_MASK</a>, and <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
@@ -2056,16 +2095,16 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Make sure the LESENSE decoder state is initialized by this function before enabling the decoder!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">decSt</td><td>Decoder state to set as current state. Valid range: 0-15 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">decSt</td><td>Decoder state to set as current state. Valid range: 0-15 or 0-31 depending on device. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00912">912</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l01079">1079</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga504e454dfaad620bcd9c8a7984ef1780">_LESENSE_DECSTATE_DECSTATE_MASK</a>, and <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
-<p>Referenced by <a class="el" href="group__LESENSE.html#ga0a398212f9973311040dee0752bb587d">LESENSE_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac">LESENSE_Init()</a>.</p>
 
 </div>
 </div>
@@ -2086,26 +2125,26 @@ Functions</h2></td></tr>
 <p>Stop LESENSE decoder. </p>
 <p>This function disables the LESENSE decoder by setting the command to the LESENSE_DECCTRL register. </p>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01048">1048</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01248">1248</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, and <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0a346d0f3ba53273d4f169228ff80aeb">LESENSE_DECCTRL_DISABLE</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga0a398212f9973311040dee0752bb587d"></a>
+<a class="anchor" id="ga86cbdb3201b07de4b4b314bd68b63cac"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void LESENSE_Init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structLESENSE__Init__TypeDef.html">LESENSE_Init_TypeDef</a> const *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structLESENSE__Init__TypeDef.html">LESENSE_Init_TypeDef</a> *&#160;</td>
           <td class="paramname"><em>init</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool const&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>reqReset</em>&#160;</td>
         </tr>
         <tr>
@@ -2118,7 +2157,7 @@ Functions</h2></td></tr>
 
 <p>Initialize the LESENSE module. </p>
 <p>This function configures the main parameters of the LESENSE interface. Please refer to the initialization parameter type definition (<a class="el" href="structLESENSE__Init__TypeDef.html">LESENSE_Init_TypeDef</a>) for more details.</p>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="group__LESENSE.html#ga0a398212f9973311040dee0752bb587d">LESENSE_Init()</a> has been designed for initializing LESENSE once in an operation cycle. Be aware of the effects of reconfiguration if using this function from multiple sources in your code. This function has not been designed to be re-entrant. Requesting reset by setting <code>reqReset</code> to true is required in each reset or power-on cycle in order to configure the default values of the RAM mapped LESENSE registers. Notice that GPIO pins used by the LESENSE module must be properly configured by the user explicitly, in order for the LESENSE to work as intended. (When configuring pins, one should remember to consider the sequence of configuration, in order to avoid unintended pulses/glitches on output pins.)</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac">LESENSE_Init()</a> has been designed for initializing LESENSE once in an operation cycle. Be aware of the effects of reconfiguration if using this function from multiple sources in your code. This function has not been designed to be re-entrant. Requesting reset by setting <code>reqReset</code> to true is required in each reset or power-on cycle in order to configure the default values of the RAM mapped LESENSE registers. Notice that GPIO pins used by the LESENSE module must be properly configured by the user explicitly, in order for the LESENSE to work as intended. (When configuring pins, one should remember to consider the sequence of configuration, in order to avoid unintended pulses/glitches on output pins.)</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">init</td><td>LESENSE initialization structure.</td></tr>
@@ -2127,9 +2166,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00103">103</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00118">118</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
-<p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga53428bcb88e4656f09dd4bb2f43e6b2d">_LESENSE_CTRL_ACMP0INV_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga96fcb3f31491d2065e84ad0b13cfd893">_LESENSE_CTRL_ACMP1INV_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga69d1cc665e29fd1b1c6ae85556dd1ba5">_LESENSE_CTRL_BUFOW_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gaf5c750345a7312d4bf4cbfac1cd614f9">_LESENSE_CTRL_DEBUGRUN_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga3f6d4a3a0b78a2fb065c926365306522">_LESENSE_CTRL_DUALSAMPLE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga6195d9b9c8932f54b9507fd8f8a0d3f6">_LESENSE_CTRL_PRSSEL_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga9c5e5db56a32a5e108cf65964c04dfa1">_LESENSE_CTRL_STRSCANRES_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga7e0badded92a3a4a756abc24e2e6ebfa">_LESENSE_DECCTRL_ERRCHK_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga1ed2b83bb755fca11be97b342fac116f">_LESENSE_DECCTRL_HYSTIRQ_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0f1a6264d1ae4fd859eae871db17ec3d">_LESENSE_DECCTRL_HYSTPRS0_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gad4985da888a4344dca7bc5e1fee53fda">_LESENSE_DECCTRL_HYSTPRS1_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gab6b7fb2bae3734eb5be1850d0fbfb311">_LESENSE_DECCTRL_HYSTPRS2_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0e29e6aca0c5fb5e049406efef3f554f">_LESENSE_DECCTRL_INTMAP_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga8607c2100498cf644bb881a1e2216845">_LESENSE_DECCTRL_PRSCNT_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga9806ba00b78b40e02de81291fe5ddd21">_LESENSE_DECCTRL_PRSSEL0_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gac6d6550740860ddf129e231302faaa87">_LESENSE_DECCTRL_PRSSEL1_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga75d819eb406101d44c3e55e84d568f87">_LESENSE_DECCTRL_PRSSEL2_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gafab3ca8e0181578c1b24f355c479a9ce">_LESENSE_DECCTRL_PRSSEL3_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga3ea83bd0b0b511a66eb626690c542479">_LESENSE_PERCTRL_ACMP0MODE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0b3e7c788c5fba1ca6de1f64a04ad842">_LESENSE_PERCTRL_ACMP1MODE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gac6d6ff0d864e6cd89b7339801e5db238">_LESENSE_PERCTRL_DACCH0CONV_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga8de553c747d635637c253b458aa756c2">_LESENSE_PERCTRL_DACCH0DATA_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga9e2b33de06554948a66db6fbc00e4c3f">_LESENSE_PERCTRL_DACCH0OUT_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gadf3fedd1a1e52d1249d650ebbd3d4337">_LESENSE_PERCTRL_DACCH1CONV_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga7b804a17b5d4d3b98b92efbb2c5d9beb">_LESENSE_PERCTRL_DACCH1DATA_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gaacb2a1e46dd6a7e536eecb5414e6580c">_LESENSE_PERCTRL_DACCH1OUT_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0d22fcbc0d0ce5b8077eb84f66d0ba22">_LESENSE_PERCTRL_DACPRESC_SHIFT</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a7a8b279f529136fb6fd7c37ef7e3e8e6">LESENSE_PerCtrlDesc_TypeDef::acmp0Mode</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a25398608725053cdf58c394b3822aa37">LESENSE_PerCtrlDesc_TypeDef::acmp1Mode</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a2d51b5cd71e2e729a61b86d4f026c3b5">LESENSE_CoreCtrlDesc_TypeDef::biasMode</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#aef2aa800a0467b3d792a9ae8896dd584">LESENSE_CoreCtrlDesc_TypeDef::bufOverWr</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#afcfbe2f18fd398af6960ba328cbeb7da">LESENSE_CoreCtrlDesc_TypeDef::bufTrigLevel</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a470abb5d631398801b9b0833db633636">LESENSE_DecCtrlDesc_TypeDef::chkState</a>, <a class="el" href="structLESENSE__Init__TypeDef.html#a4a5d083da1f59c0645ad843137b7acf0">LESENSE_Init_TypeDef::coreCtrl</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#ad3d5bcf3d2bfad01f34914aebdc75cc3">LESENSE_PerCtrlDesc_TypeDef::dacCh0ConvMode</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#aaad00f3f20ae881c52120ee9e16198fb">LESENSE_PerCtrlDesc_TypeDef::dacCh0Data</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a2038c0b81ab24130c6ad58f620ceb87f">LESENSE_PerCtrlDesc_TypeDef::dacCh0OutMode</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#afc3457a542da1b6676d314b0aa3432dd">LESENSE_PerCtrlDesc_TypeDef::dacCh1ConvMode</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a44368625c1031c2e821c012f46ca3c06">LESENSE_PerCtrlDesc_TypeDef::dacCh1Data</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a949a5854f8561764407b605eb5a8e3d8">LESENSE_PerCtrlDesc_TypeDef::dacCh1OutMode</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a1070d2ba24ed19deb447464b04d4fa82">LESENSE_PerCtrlDesc_TypeDef::dacPresc</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a3c21ceeb3359342a68b47500c6f8265e">LESENSE_PerCtrlDesc_TypeDef::dacRef</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a410b3b9ca22777cceb31fa33aed1c77c">LESENSE_CoreCtrlDesc_TypeDef::debugRun</a>, <a class="el" href="structLESENSE__Init__TypeDef.html#a6b2d2674bb0792f536ff5ac53776b1cf">LESENSE_Init_TypeDef::decCtrl</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#aa758785ce5b4fb9ccec42f93261d3adf">LESENSE_DecCtrlDesc_TypeDef::decInput</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#aefb13c489feaaeaaab4dcb86793b8798">LESENSE_CoreCtrlDesc_TypeDef::dualSample</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a91516249dc15be0d3e61bd7c1f61f9d9">LESENSE_DecCtrlDesc_TypeDef::hystIRQ</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a45c2dc19aee44f568b51c254ef6b2144">LESENSE_DecCtrlDesc_TypeDef::hystPRS0</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a41fde2b89334589a125674f52bd32d67">LESENSE_DecCtrlDesc_TypeDef::hystPRS1</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a15407d1e6210ffea38a464681d0c58e8">LESENSE_DecCtrlDesc_TypeDef::hystPRS2</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a17ae81d37bf5be800d288c12d3b60df5">LESENSE_DecCtrlDesc_TypeDef::initState</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a7cfc8189958c1b0182a8b2056eeb323b">LESENSE_DecCtrlDesc_TypeDef::intMap</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a1f5578cc862f3f6cebd0b90f1516db37">LESENSE_CoreCtrlDesc_TypeDef::invACMP0</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a063c72c7d5c5ee3eb4641c9fc7e4747d">LESENSE_CoreCtrlDesc_TypeDef::invACMP1</a>, <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="group__LESENSE.html#gad164d8048a3c0112d352c0b6447d66b1">LESENSE_DecoderStateSet()</a>, <a class="el" href="group__LESENSE.html#ga40f43668fc902a37ce1be07c83e7771b">LESENSE_Reset()</a>, <a class="el" href="group__LESENSE.html#gaa0333bb6df6eaa9833919e0e7519b658">LESENSE_ScanModeSet()</a>, <a class="el" href="group__LESENSE.html#gae2e4883549fbd7cce4ec059c3c550bda">LESENSE_StartDelaySet()</a>, <a class="el" href="structLESENSE__Init__TypeDef.html#adb9e9a504176c27cad3b527e9473a208">LESENSE_Init_TypeDef::perCtrl</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a9001783643c7ce9281984c66a999426d">LESENSE_DecCtrlDesc_TypeDef::prsChSel0</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#af1a646b8bd8530ba93669982a09cf684">LESENSE_DecCtrlDesc_TypeDef::prsChSel1</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#ac840f6329f746b7d603f3ca65df0cfe8">LESENSE_DecCtrlDesc_TypeDef::prsChSel2</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#adcca3bf56c5c318ae392d4701fc20d80">LESENSE_DecCtrlDesc_TypeDef::prsChSel3</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#abc13b6e87beafc1fca272d21fc021b01">LESENSE_DecCtrlDesc_TypeDef::prsCount</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a8171352fed6ab797cd74b50a23e27d0a">LESENSE_CoreCtrlDesc_TypeDef::prsSel</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#adf8d42c5cad3a6ce54ff9c09ccef88ef">LESENSE_CoreCtrlDesc_TypeDef::scanConfSel</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a72c5aeee991b17fda77060cb5a7c8989">LESENSE_CoreCtrlDesc_TypeDef::scanStart</a>, <a class="el" href="structLESENSE__TimeCtrlDesc__TypeDef.html#a53f5087d40b622dcdd37b013c6f09699">LESENSE_TimeCtrlDesc_TypeDef::startDelay</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a0d589143ca917cd6dc06e970907d8cd5">LESENSE_CoreCtrlDesc_TypeDef::storeScanRes</a>, <a class="el" href="structLESENSE__Init__TypeDef.html#a26e37c0392e9a5a4e5607e930eabc843">LESENSE_Init_TypeDef::timeCtrl</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a416c67f4910c6e6944b51fc199e18ee6">LESENSE_CoreCtrlDesc_TypeDef::wakeupOnDMA</a>, and <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#aabd26c94c44e5794faf8844ab43a784e">LESENSE_PerCtrlDesc_TypeDef::warmupMode</a>.</p>
+<p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gadcaaca3dfc23fb9a6bbed1cf68cb6ed0">_LESENSE_CTRL_ACMP0INV_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga53428bcb88e4656f09dd4bb2f43e6b2d">_LESENSE_CTRL_ACMP0INV_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga96fcb3f31491d2065e84ad0b13cfd893">_LESENSE_CTRL_ACMP1INV_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga69d1cc665e29fd1b1c6ae85556dd1ba5">_LESENSE_CTRL_BUFOW_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gaf5c750345a7312d4bf4cbfac1cd614f9">_LESENSE_CTRL_DEBUGRUN_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga3f6d4a3a0b78a2fb065c926365306522">_LESENSE_CTRL_DUALSAMPLE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga6195d9b9c8932f54b9507fd8f8a0d3f6">_LESENSE_CTRL_PRSSEL_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga9c5e5db56a32a5e108cf65964c04dfa1">_LESENSE_CTRL_STRSCANRES_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga7e0badded92a3a4a756abc24e2e6ebfa">_LESENSE_DECCTRL_ERRCHK_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga1ed2b83bb755fca11be97b342fac116f">_LESENSE_DECCTRL_HYSTIRQ_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0f1a6264d1ae4fd859eae871db17ec3d">_LESENSE_DECCTRL_HYSTPRS0_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gad4985da888a4344dca7bc5e1fee53fda">_LESENSE_DECCTRL_HYSTPRS1_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gab6b7fb2bae3734eb5be1850d0fbfb311">_LESENSE_DECCTRL_HYSTPRS2_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0e29e6aca0c5fb5e049406efef3f554f">_LESENSE_DECCTRL_INTMAP_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga8607c2100498cf644bb881a1e2216845">_LESENSE_DECCTRL_PRSCNT_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga9806ba00b78b40e02de81291fe5ddd21">_LESENSE_DECCTRL_PRSSEL0_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gac6d6550740860ddf129e231302faaa87">_LESENSE_DECCTRL_PRSSEL1_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga75d819eb406101d44c3e55e84d568f87">_LESENSE_DECCTRL_PRSSEL2_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gafab3ca8e0181578c1b24f355c479a9ce">_LESENSE_DECCTRL_PRSSEL3_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga3ea83bd0b0b511a66eb626690c542479">_LESENSE_PERCTRL_ACMP0MODE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0b3e7c788c5fba1ca6de1f64a04ad842">_LESENSE_PERCTRL_ACMP1MODE_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gac6d6ff0d864e6cd89b7339801e5db238">_LESENSE_PERCTRL_DACCH0CONV_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga8de553c747d635637c253b458aa756c2">_LESENSE_PERCTRL_DACCH0DATA_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga9e2b33de06554948a66db6fbc00e4c3f">_LESENSE_PERCTRL_DACCH0OUT_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gadf3fedd1a1e52d1249d650ebbd3d4337">_LESENSE_PERCTRL_DACCH1CONV_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga7b804a17b5d4d3b98b92efbb2c5d9beb">_LESENSE_PERCTRL_DACCH1DATA_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gaacb2a1e46dd6a7e536eecb5414e6580c">_LESENSE_PERCTRL_DACCH1OUT_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0d22fcbc0d0ce5b8077eb84f66d0ba22">_LESENSE_PERCTRL_DACPRESC_SHIFT</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a7a8b279f529136fb6fd7c37ef7e3e8e6">LESENSE_PerCtrlDesc_TypeDef::acmp0Mode</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a25398608725053cdf58c394b3822aa37">LESENSE_PerCtrlDesc_TypeDef::acmp1Mode</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a2d51b5cd71e2e729a61b86d4f026c3b5">LESENSE_CoreCtrlDesc_TypeDef::biasMode</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#aef2aa800a0467b3d792a9ae8896dd584">LESENSE_CoreCtrlDesc_TypeDef::bufOverWr</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#afcfbe2f18fd398af6960ba328cbeb7da">LESENSE_CoreCtrlDesc_TypeDef::bufTrigLevel</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a470abb5d631398801b9b0833db633636">LESENSE_DecCtrlDesc_TypeDef::chkState</a>, <a class="el" href="structLESENSE__Init__TypeDef.html#a4a5d083da1f59c0645ad843137b7acf0">LESENSE_Init_TypeDef::coreCtrl</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#ad3d5bcf3d2bfad01f34914aebdc75cc3">LESENSE_PerCtrlDesc_TypeDef::dacCh0ConvMode</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#aaad00f3f20ae881c52120ee9e16198fb">LESENSE_PerCtrlDesc_TypeDef::dacCh0Data</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a2038c0b81ab24130c6ad58f620ceb87f">LESENSE_PerCtrlDesc_TypeDef::dacCh0OutMode</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#afc3457a542da1b6676d314b0aa3432dd">LESENSE_PerCtrlDesc_TypeDef::dacCh1ConvMode</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a44368625c1031c2e821c012f46ca3c06">LESENSE_PerCtrlDesc_TypeDef::dacCh1Data</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a949a5854f8561764407b605eb5a8e3d8">LESENSE_PerCtrlDesc_TypeDef::dacCh1OutMode</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a1070d2ba24ed19deb447464b04d4fa82">LESENSE_PerCtrlDesc_TypeDef::dacPresc</a>, <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#a3c21ceeb3359342a68b47500c6f8265e">LESENSE_PerCtrlDesc_TypeDef::dacRef</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a410b3b9ca22777cceb31fa33aed1c77c">LESENSE_CoreCtrlDesc_TypeDef::debugRun</a>, <a class="el" href="structLESENSE__Init__TypeDef.html#a6b2d2674bb0792f536ff5ac53776b1cf">LESENSE_Init_TypeDef::decCtrl</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#aa758785ce5b4fb9ccec42f93261d3adf">LESENSE_DecCtrlDesc_TypeDef::decInput</a>, <a class="el" href="structLESENSE__TimeCtrlDesc__TypeDef.html#aa50fe96deb39ad8f33d1ac7643e4b6c2">LESENSE_TimeCtrlDesc_TypeDef::delayAuxStartup</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#aefb13c489feaaeaaab4dcb86793b8798">LESENSE_CoreCtrlDesc_TypeDef::dualSample</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a91516249dc15be0d3e61bd7c1f61f9d9">LESENSE_DecCtrlDesc_TypeDef::hystIRQ</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a45c2dc19aee44f568b51c254ef6b2144">LESENSE_DecCtrlDesc_TypeDef::hystPRS0</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a41fde2b89334589a125674f52bd32d67">LESENSE_DecCtrlDesc_TypeDef::hystPRS1</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a15407d1e6210ffea38a464681d0c58e8">LESENSE_DecCtrlDesc_TypeDef::hystPRS2</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a17ae81d37bf5be800d288c12d3b60df5">LESENSE_DecCtrlDesc_TypeDef::initState</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a7cfc8189958c1b0182a8b2056eeb323b">LESENSE_DecCtrlDesc_TypeDef::intMap</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a1f5578cc862f3f6cebd0b90f1516db37">LESENSE_CoreCtrlDesc_TypeDef::invACMP0</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a063c72c7d5c5ee3eb4641c9fc7e4747d">LESENSE_CoreCtrlDesc_TypeDef::invACMP1</a>, <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="group__LESENSE.html#gad164d8048a3c0112d352c0b6447d66b1">LESENSE_DecoderStateSet()</a>, <a class="el" href="group__LESENSE.html#ga40f43668fc902a37ce1be07c83e7771b">LESENSE_Reset()</a>, <a class="el" href="group__LESENSE.html#ga61b7b6a97a033f983f6daec531f5186b">LESENSE_ScanModeSet()</a>, <a class="el" href="group__LESENSE.html#ga8b0dac3ef7efd0f80c7bfe5b6537289a">LESENSE_StartDelaySet()</a>, <a class="el" href="structLESENSE__Init__TypeDef.html#adb9e9a504176c27cad3b527e9473a208">LESENSE_Init_TypeDef::perCtrl</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#a9001783643c7ce9281984c66a999426d">LESENSE_DecCtrlDesc_TypeDef::prsChSel0</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#af1a646b8bd8530ba93669982a09cf684">LESENSE_DecCtrlDesc_TypeDef::prsChSel1</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#ac840f6329f746b7d603f3ca65df0cfe8">LESENSE_DecCtrlDesc_TypeDef::prsChSel2</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#adcca3bf56c5c318ae392d4701fc20d80">LESENSE_DecCtrlDesc_TypeDef::prsChSel3</a>, <a class="el" href="structLESENSE__DecCtrlDesc__TypeDef.html#abc13b6e87beafc1fca272d21fc021b01">LESENSE_DecCtrlDesc_TypeDef::prsCount</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a8171352fed6ab797cd74b50a23e27d0a">LESENSE_CoreCtrlDesc_TypeDef::prsSel</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#adf8d42c5cad3a6ce54ff9c09ccef88ef">LESENSE_CoreCtrlDesc_TypeDef::scanConfSel</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a72c5aeee991b17fda77060cb5a7c8989">LESENSE_CoreCtrlDesc_TypeDef::scanStart</a>, <a class="el" href="structLESENSE__TimeCtrlDesc__TypeDef.html#a53f5087d40b622dcdd37b013c6f09699">LESENSE_TimeCtrlDesc_TypeDef::startDelay</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a0d589143ca917cd6dc06e970907d8cd5">LESENSE_CoreCtrlDesc_TypeDef::storeScanRes</a>, <a class="el" href="structLESENSE__Init__TypeDef.html#a26e37c0392e9a5a4e5607e930eabc843">LESENSE_Init_TypeDef::timeCtrl</a>, <a class="el" href="structLESENSE__CoreCtrlDesc__TypeDef.html#a416c67f4910c6e6944b51fc199e18ee6">LESENSE_CoreCtrlDesc_TypeDef::wakeupOnDMA</a>, and <a class="el" href="structLESENSE__PerCtrlDesc__TypeDef.html#aabd26c94c44e5794faf8844ab43a784e">LESENSE_PerCtrlDesc_TypeDef::warmupMode</a>.</p>
 
 <p>Referenced by <a class="el" href="group__CapSense.html#ga9cf779d965cc198a603d60d01225b993">CAPLESENSE_setupLESENSE()</a>.</p>
 
@@ -2157,7 +2196,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01215">1215</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01417">1417</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
@@ -2187,7 +2226,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01245">1245</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01447">1447</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
@@ -2217,7 +2256,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01230">1230</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01432">1432</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
@@ -2243,7 +2282,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>The event bits are not cleared by the use of this function.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Pending LESENSE interrupt sources. The OR combination of valid interrupt flags of the LESENSE module (LESENSE_IF_nnn). </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01277">1277</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01479">1479</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
@@ -2272,7 +2311,7 @@ Functions</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01301">1301</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01503">1503</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
@@ -2302,7 +2341,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01260">1260</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01462">1462</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
@@ -2326,7 +2365,7 @@ Functions</h2></td></tr>
 <p>This function shuts off the LESENSE RAM in order to decrease the leakage current of the mcu if LESENSE is not used in your application.</p>
 <dl class="section note"><dt>Note</dt><dd>Warning! Once the LESENSE RAM is powered down, it cannot be powered up again. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01199">1199</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01400">1400</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, and <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga3933dfd10865e2cd9ae6d413c5fc3f99">LESENSE_POWERDOWN_RAM</a>.</p>
 
@@ -2348,13 +2387,13 @@ Functions</h2></td></tr>
 
 <p>Reset the LESENSE module. </p>
 <p>Use this function to reset the LESENSE registers.</p>
-<dl class="section note"><dt>Note</dt><dd>Resetting LESENSE registers is required in each reset or power-on cycle in order to configure the default values of the RAM mapped LESENSE registers. <a class="el" href="group__LESENSE.html#ga40f43668fc902a37ce1be07c83e7771b" title="Reset the LESENSE module. ">LESENSE_Reset()</a> can be called on initialization by setting the <code>reqReset</code> parameter to true in <a class="el" href="group__LESENSE.html#ga0a398212f9973311040dee0752bb587d" title="Initialize the LESENSE module. ">LESENSE_Init()</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Resetting LESENSE registers is required in each reset or power-on cycle in order to configure the default values of the RAM mapped LESENSE registers. <a class="el" href="group__LESENSE.html#ga40f43668fc902a37ce1be07c83e7771b" title="Reset the LESENSE module. ">LESENSE_Reset()</a> can be called on initialization by setting the <code>reqReset</code> parameter to true in <a class="el" href="group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac" title="Initialize the LESENSE module. ">LESENSE_Init()</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l01069">1069</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l01258">1258</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
-<p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga59096fcf592cb7ef83829c5096cdcfee">_LESENSE_ALTEXCONF_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gaa064076f1d9455abdb4d7246f5cf33ad">_LESENSE_BIASCTRL_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga571502927a3c603c823e986ef6dd129e">_LESENSE_CH_EVAL_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga4c135d7e250213a00d566235db79157f">_LESENSE_CH_INTERACT_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gaba9aea734dfa2f7fa4c41af1a4ace3f7">_LESENSE_CH_TIMING_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga42bf25b19c076b595350409611b25fa1">_LESENSE_CHEN_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gae07709e711d4ccd6ebc69920ac650d19">_LESENSE_CTRL_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga70f6827a354b5303af696920052942fa">_LESENSE_DECCTRL_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gacd8de44260ae23631d1e58abfe80df73">_LESENSE_IDLECONF_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga4d60a45520197a981bb1300ff93a65f4">_LESENSE_IEN_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga8b6dd61ee92179dbe072faba5ab7fe43">_LESENSE_IFC_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gab1b2ee0accdf473c6733e2b7cd8116a6">_LESENSE_PERCTRL_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga989cc731d3b2d0ce879300b57f9cc769">_LESENSE_ROUTE_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0223848ce9a71859404bff1c7113714e">_LESENSE_ST_TCONFA_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga82ad8f8cd5c1a10a28cb5118b0dfa9d4">_LESENSE_ST_TCONFB_RESETVALUE</a>, <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga319baec4c0ff4590768ec94eb197f52c">LESENSE_CMD_CLEARBUF</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga817d120f4a77fbd3a99f550afd91be30">LESENSE_CMD_STOP</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0a346d0f3ba53273d4f169228ff80aeb">LESENSE_DECCTRL_DISABLE</a>, and <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga40afa3528fb9eb93f9794d94f2b9c937">LESENSE_SYNCBUSY_CMD</a>.</p>
+<p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga59096fcf592cb7ef83829c5096cdcfee">_LESENSE_ALTEXCONF_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gaa064076f1d9455abdb4d7246f5cf33ad">_LESENSE_BIASCTRL_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga571502927a3c603c823e986ef6dd129e">_LESENSE_CH_EVAL_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga4c135d7e250213a00d566235db79157f">_LESENSE_CH_INTERACT_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gaba9aea734dfa2f7fa4c41af1a4ace3f7">_LESENSE_CH_TIMING_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga42bf25b19c076b595350409611b25fa1">_LESENSE_CHEN_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gae07709e711d4ccd6ebc69920ac650d19">_LESENSE_CTRL_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga70f6827a354b5303af696920052942fa">_LESENSE_DECCTRL_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gacd8de44260ae23631d1e58abfe80df73">_LESENSE_IDLECONF_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga4d60a45520197a981bb1300ff93a65f4">_LESENSE_IEN_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga8b6dd61ee92179dbe072faba5ab7fe43">_LESENSE_IFC_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gab1b2ee0accdf473c6733e2b7cd8116a6">_LESENSE_PERCTRL_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga989cc731d3b2d0ce879300b57f9cc769">_LESENSE_ROUTE_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0223848ce9a71859404bff1c7113714e">_LESENSE_ST_TCONFA_RESETVALUE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga82ad8f8cd5c1a10a28cb5118b0dfa9d4">_LESENSE_ST_TCONFB_RESETVALUE</a>, <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga319baec4c0ff4590768ec94eb197f52c">LESENSE_CMD_CLEARBUF</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga817d120f4a77fbd3a99f550afd91be30">LESENSE_CMD_STOP</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0a346d0f3ba53273d4f169228ff80aeb">LESENSE_DECCTRL_DISABLE</a>, <a class="el" href="group__LESENSE.html#gaae21de722cc8d6864311f98e89608dd6">LESENSE_NUM_CHANNELS</a>, <a class="el" href="group__LESENSE.html#ga36f4e64f9d121f04e761a64d8b4a8231">LESENSE_NUM_DECODER_STATES</a>, and <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga40afa3528fb9eb93f9794d94f2b9c937">LESENSE_SYNCBUSY_CMD</a>.</p>
 
-<p>Referenced by <a class="el" href="group__LESENSE.html#ga0a398212f9973311040dee0752bb587d">LESENSE_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac">LESENSE_Init()</a>.</p>
 
 </div>
 </div>
@@ -2375,7 +2414,7 @@ Functions</h2></td></tr>
 <p>Clear result buffer. </p>
 <dl class="section note"><dt>Note</dt><dd>This function will wait for any pending previous write operation to the CMD register to complete before accessing the CMD register. It will also wait for the write operation to the CMD register to complete before returning. Each write operation to the CMD register may take up to 3 LF clock cycles, so the user should expect some delay. The user may implement a separate function to write multiple command bits in the CMD register in one single operation in order to optimize an application. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l01040">1040</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l01229">1229</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga319baec4c0ff4590768ec94eb197f52c">LESENSE_CMD_CLEARBUF</a>, and <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga40afa3528fb9eb93f9794d94f2b9c937">LESENSE_SYNCBUSY_CMD</a>.</p>
 
@@ -2383,7 +2422,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gae8655dcda510a74ab5e0c2fdc7aded58"></a>
+<a class="anchor" id="ga774d8a3ba9620c84fd9db4e252560efa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -2396,7 +2435,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t const&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>scanFreq</em>&#160;</td>
         </tr>
         <tr>
@@ -2419,7 +2458,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Frequency in Hz calculated and set by this function. Users can use this to compare the requested and set values. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00214">214</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00247">247</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga43f9fca7ca16e802132c2b5178dc2b8f">_LESENSE_TIMCTRL_PCPRESC_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga83fed6893fce5812550dc215d546d761">_LESENSE_TIMCTRL_PCPRESC_SHIFT</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga68732d7137e9a85671ab795e462e8848">_LESENSE_TIMCTRL_PCTOP_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gace0d005de5826490fbfc236cf1ffe324">_LESENSE_TIMCTRL_PCTOP_SHIFT</a>, <a class="el" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet()</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaa3ac1f7d1c561ba97b453dbf971614ba">cmuClock_LESENSE</a>, <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, and <a class="el" href="group__LESENSE.html#gga87cfed7d62c2ab576068a3beda57b1d0ad8d1a66c576f17a72f1f5eae4fba3561">lesenseClkDiv_128</a>.</p>
 
@@ -2427,20 +2466,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaa0333bb6df6eaa9833919e0e7519b658"></a>
+<a class="anchor" id="ga61b7b6a97a033f983f6daec531f5186b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void LESENSE_ScanModeSet </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__LESENSE.html#ga5e540ba859daf09ac666c039d21af1a9">LESENSE_ScanMode_TypeDef</a> const&#160;</td>
+          <td class="paramtype"><a class="el" href="group__LESENSE.html#ga5e540ba859daf09ac666c039d21af1a9">LESENSE_ScanMode_TypeDef</a>&#160;</td>
           <td class="paramname"><em>scanMode</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool const&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>start</em>&#160;</td>
         </tr>
         <tr>
@@ -2452,8 +2491,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set scan mode of the LESENSE channels. </p>
-<p>This function configures how the scan start is being triggered. It can be used for re-configuring the scan mode while running the application but it is also used by <a class="el" href="group__LESENSE.html#ga0a398212f9973311040dee0752bb587d" title="Initialize the LESENSE module. ">LESENSE_Init()</a> for initialization.</p>
-<dl class="section note"><dt>Note</dt><dd>Users can configure the scan mode by <a class="el" href="group__LESENSE.html#ga0a398212f9973311040dee0752bb587d" title="Initialize the LESENSE module. ">LESENSE_Init()</a> function, but only with a significant overhead. This simple function serves the purpose of controlling this parameter after the channel has been configured. Please be aware the effects of the non-atomic Read-Modify-Write cycle!</dd></dl>
+<p>This function configures how the scan start is being triggered. It can be used for re-configuring the scan mode while running the application but it is also used by <a class="el" href="group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac" title="Initialize the LESENSE module. ">LESENSE_Init()</a> for initialization.</p>
+<dl class="section note"><dt>Note</dt><dd>Users can configure the scan mode by <a class="el" href="group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac" title="Initialize the LESENSE module. ">LESENSE_Init()</a> function, but only with a significant overhead. This simple function serves the purpose of controlling this parameter after the channel has been configured. Please be aware the effects of the non-atomic Read-Modify-Write cycle!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">scanMode</td><td>Select where to map LESENSE alternate excitation channels. <ul>
@@ -2467,11 +2506,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00296">296</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00329">329</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga83e484630a7ab9e099c33f47797e9c7d">_LESENSE_CTRL_SCANMODE_MASK</a>, <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, and <a class="el" href="group__LESENSE.html#gaa78676d3eb250d8ebdc6f08ee249704c">LESENSE_ScanStart()</a>.</p>
 
-<p>Referenced by <a class="el" href="group__LESENSE.html#ga0a398212f9973311040dee0752bb587d">LESENSE_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac">LESENSE_Init()</a>.</p>
 
 </div>
 </div>
@@ -2499,7 +2538,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>This function returns the selected word from the result data buffer. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01167">1167</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01367">1367</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
@@ -2525,7 +2564,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Make sure that the STORERES bit is set in LESENSE_CHx_EVAL, or STRSCANRES bit is set in LESENSE_CTRL, otherwise this function will return undefined value.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>This function returns the value of LESENSE_RESDATA register that contains the oldest unread counter result from the result buffer. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01146">1146</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01346">1346</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
@@ -2550,9 +2589,9 @@ Functions</h2></td></tr>
 <p>Get the latest scan comparison result (1 bit / channel). </p>
 <dl class="section return"><dt>Returns</dt><dd>This function returns the value of LESENSE_SCANRES register that contains the comparison result of the last scan on all channels. Bit x is set if a comparison triggered on channel x, which means that the LESENSE counter met the comparison criteria set in LESENSE_CHx_EVAL by COMPMODE and CNTTHRES. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01127">1127</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01327">1327</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
-<p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
+<p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#gaf3af270e3cd5b5988eac3593170af7a0">_LESENSE_SCANRES_SCANRES_MASK</a>, and <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
 </div>
 </div>
@@ -2573,11 +2612,11 @@ Functions</h2></td></tr>
 <p>Start scanning of sensors. </p>
 <dl class="section note"><dt>Note</dt><dd>This function will wait for any pending previous write operation to the CMD register to complete before accessing the CMD register. It will also wait for the write operation to the CMD register to complete before returning. Each write operation to the CMD register may take up to 3 LF clock cycles, so the user should expect some delay. The user may implement a separate function to write multiple command bits in the CMD register in one single operation in order to optimize an application. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00947">947</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l01136">1136</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga099139cc85fe69286d85eb6a16672af2">LESENSE_CMD_START</a>, and <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga40afa3528fb9eb93f9794d94f2b9c937">LESENSE_SYNCBUSY_CMD</a>.</p>
 
-<p>Referenced by <a class="el" href="group__CapSense.html#ga9cf779d965cc198a603d60d01225b993">CAPLESENSE_setupLESENSE()</a>, and <a class="el" href="group__LESENSE.html#gaa0333bb6df6eaa9833919e0e7519b658">LESENSE_ScanModeSet()</a>.</p>
+<p>Referenced by <a class="el" href="group__CapSense.html#ga9cf779d965cc198a603d60d01225b993">CAPLESENSE_setupLESENSE()</a>, and <a class="el" href="group__LESENSE.html#ga61b7b6a97a033f983f6daec531f5186b">LESENSE_ScanModeSet()</a>.</p>
 
 </div>
 </div>
@@ -2600,7 +2639,7 @@ Functions</h2></td></tr>
 <dd>
 If issued during a scan, the command takes effect after scan completion. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00980">980</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l01169">1169</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga817d120f4a77fbd3a99f550afd91be30">LESENSE_CMD_STOP</a>, and <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga40afa3528fb9eb93f9794d94f2b9c937">LESENSE_SYNCBUSY_CMD</a>.</p>
 
@@ -2625,20 +2664,20 @@ If issued during a scan, the command takes effect after scan completion. </dd></
 <p>Get the current state of the LESENSE sensor. </p>
 <dl class="section return"><dt>Returns</dt><dd>This function returns the value of LESENSE_SENSORSTATE register that represents the current state of the LESENSE sensor. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01181">1181</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01381">1381</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gae2e4883549fbd7cce4ec059c3c550bda"></a>
+<a class="anchor" id="ga8b0dac3ef7efd0f80c7bfe5b6537289a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void LESENSE_StartDelaySet </td>
           <td>(</td>
-          <td class="paramtype">uint8_t const&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>startDelay</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2646,8 +2685,8 @@ If issued during a scan, the command takes effect after scan completion. </dd></
 </div><div class="memdoc">
 
 <p>Set start delay of sensor interaction on each channel. </p>
-<p>This function sets start delay of sensor interaction on each channel. It can be used for adjusting the start delay while running the application but it is also used by <a class="el" href="group__LESENSE.html#ga0a398212f9973311040dee0752bb587d" title="Initialize the LESENSE module. ">LESENSE_Init()</a> for initialization.</p>
-<dl class="section note"><dt>Note</dt><dd>Users can configure the start delay by <a class="el" href="group__LESENSE.html#ga0a398212f9973311040dee0752bb587d" title="Initialize the LESENSE module. ">LESENSE_Init()</a> function, but only with a significant overhead. This simple function serves the purpose of controlling this parameter after the channel has been configured. Please be aware the effects of the non-atomic Read-Modify-Write cycle!</dd></dl>
+<p>This function sets start delay of sensor interaction on each channel. It can be used for adjusting the start delay while running the application but it is also used by <a class="el" href="group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac" title="Initialize the LESENSE module. ">LESENSE_Init()</a> for initialization.</p>
+<dl class="section note"><dt>Note</dt><dd>Users can configure the start delay by <a class="el" href="group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac" title="Initialize the LESENSE module. ">LESENSE_Init()</a> function, but only with a significant overhead. This simple function serves the purpose of controlling this parameter after the channel has been configured. Please be aware the effects of the non-atomic Read-Modify-Write cycle!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">startDelay</td><td>Number of LFACLK cycles to delay. Valid range: 0-3 (2 bit). </td></tr>
@@ -2655,11 +2694,11 @@ If issued during a scan, the command takes effect after scan completion. </dd></
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00338">338</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8c_source.html#l00371">371</a> of file <a class="el" href="em__lesense_8c_source.html">em_lesense.c</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga0d794a20b42fb5edbc3e5954e364aca7">_LESENSE_TIMCTRL_STARTDLY_MASK</a>, <a class="el" href="group__EFM32WG__LESENSE__BitFields.html#ga8d0ca1ad2ded23956a8e85336a020c43">_LESENSE_TIMCTRL_STARTDLY_SHIFT</a>, and <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
-<p>Referenced by <a class="el" href="group__LESENSE.html#ga0a398212f9973311040dee0752bb587d">LESENSE_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__LESENSE.html#ga86cbdb3201b07de4b4b314bd68b63cac">LESENSE_Init()</a>.</p>
 
 </div>
 </div>
@@ -2686,7 +2725,7 @@ If issued during a scan, the command takes effect after scan completion. </dd></
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01069">1069</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01269">1269</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
@@ -2725,7 +2764,7 @@ If issued during a scan, the command takes effect after scan completion. </dd></
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01095">1095</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
+<p>Definition at line <a class="el" href="em__lesense_8h_source.html#l01295">1295</a> of file <a class="el" href="em__lesense_8h_source.html">em_lesense.h</a>.</p>
 
 <p>References <a class="el" href="group__EFM32WG995F256__Peripheral__Declaration.html#ga2fba86c15164350cb62cc0bddfa2cb5c">LESENSE</a>.</p>
 
@@ -2736,7 +2775,7 @@ If issued during a scan, the command takes effect after scan completion. </dd></
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 16:10:20 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:38:55 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -1,11 +1,14 @@
 var searchData=
 [
   ['a',['a',['../structCORE__nvicMask__t.html#a4cccf12e99e45609625447624e39a22b',1,'CORE_nvicMask_t']]],
+  ['aaccumulator',['aAccumulator',['../struct__IMU__SensorFusion.html#ac380297514db5fd43f06e2518969d01e',1,'_IMU_SensorFusion']]],
+  ['aaccumulatorcount',['aAccumulatorCount',['../struct__IMU__SensorFusion.html#aa48ee38376712d7cb72d55705947d67e',1,'_IMU_SensorFusion']]],
   ['acc',['Acc',['../structMSDSCSI__InquiryData__TypeDef.html#a1e3866e2688ebed6a706c681994d035d',1,'MSDSCSI_InquiryData_TypeDef']]],
   ['accesspermission',['accessPermission',['../structMPU__RegionInit__TypeDef.html#a8f5380dac41dceb78c333c6b1176aa94',1,'MPU_RegionInit_TypeDef']]],
   ['accuracy',['accuracy',['../structACMP__Init__TypeDef.html#ac081dc8ec4259cc2bc9c2e3b876bbf02',1,'ACMP_Init_TypeDef']]],
   ['ackmode',['ackMode',['../structEZRADIODRV__AutoAckHandle.html#ac13022d152d904492feb8cc13b122cc3',1,'EZRADIODRV_AutoAckHandle']]],
   ['acqtime',['acqTime',['../structADC__InitScan__TypeDef.html#afe0305e5c4ff30be937adf199052ffc5',1,'ADC_InitScan_TypeDef::acqTime()'],['../structADC__InitSingle__TypeDef.html#ab5774ab856a328f3f01e238cf92f96a9',1,'ADC_InitSingle_TypeDef::acqTime()']]],
+  ['activeindicator',['activeIndicator',['../structSensorStruct__t.html#a85942c9321adc454d4ffc09ad8440899',1,'SensorStruct_t']]],
   ['activelowout',['activeLowOut',['../structTIMER__InitDTI__TypeDef.html#a306dc6cba072085c6b68239e431f1708',1,'TIMER_InitDTI_TypeDef']]],
   ['adc0cal0',['ADC0CAL0',['../structDEVINFO__TypeDef.html#a333f69dff837b4690daab94d757eb427',1,'DEVINFO_TypeDef']]],
   ['adc0cal1',['ADC0CAL1',['../structDEVINFO__TypeDef.html#a2c2d83b38b9b7137f0c52f38fe9b8e60',1,'DEVINFO_TypeDef']]],
@@ -27,11 +30,13 @@ var searchData=
   ['aidis',['aiDis',['../structMSC__ExecConfig__TypeDef.html#a02222a8cd7df92ac4677b180ab0c9368',1,'MSC_ExecConfig_TypeDef']]],
   ['allocationlength',['AllocationLength',['../structMSDSCSI__Inquiry__TypeDef.html#a425c76925763cc8e363882b9a16493e0',1,'MSDSCSI_Inquiry_TypeDef::AllocationLength()'],['../structMSDSCSI__RequestSense__TypeDef.html#af731f84bb4dd977080536bc124573bc5',1,'MSDSCSI_RequestSense_TypeDef::AllocationLength()']]],
   ['anaperipheralpower',['anaPeripheralPower',['../structEMU__DCDCInit__TypeDef.html#a6feeab2ff282bb9e52b3faee2e142144',1,'EMU_DCDCInit_TypeDef']]],
+  ['anglecorrection',['angleCorrection',['../struct__IMU__SensorFusion.html#a0f0c2387f33a117bd5d3ea66ec31517a',1,'_IMU_SensorFusion']]],
   ['aportconflict',['APORTCONFLICT',['../structACMP__TypeDef.html#aa7210329904b6a4ac3360b14b5f0f718',1,'ACMP_TypeDef::APORTCONFLICT()'],['../structADC__TypeDef.html#a2f35b5f32c18225d05bad62599f604fb',1,'ADC_TypeDef::APORTCONFLICT()'],['../structIDAC__TypeDef.html#a3b6e5fd8e1f22a8cabe0bd81e8ca27c1',1,'IDAC_TypeDef::APORTCONFLICT()']]],
   ['aportmasterdis',['APORTMASTERDIS',['../structADC__TypeDef.html#a21da5e630a438c3942e28ad720052bff',1,'ADC_TypeDef']]],
   ['aportreq',['APORTREQ',['../structACMP__TypeDef.html#a28456ade55ae8a1c176d516257c4e313',1,'ACMP_TypeDef::APORTREQ()'],['../structADC__TypeDef.html#a5a04b6737ca0848a2805440c63401b02',1,'ADC_TypeDef::APORTREQ()'],['../structIDAC__TypeDef.html#af9a2f86054b049b07b472e9403ce7fb4',1,'IDAC_TypeDef::APORTREQ()']]],
   ['arb_5fctrl',['ARB_CTRL',['../structBC__TypeDef.html#a7166ee52d3e4e1d08f5dc870010de561',1,'BC_TypeDef']]],
   ['aring',['ARing',['../structMCU__DISPLAY.html#ae91408f747b60a2ac1f6cfa398bf47f9',1,'MCU_DISPLAY']]],
+  ['asamplerate',['aSampleRate',['../struct__IMU__SensorFusion.html#a6ba9013e2f91e18d3574b2727523eefc',1,'_IMU_SensorFusion']]],
   ['asc',['Asc',['../structMSDSCSI__RequestSenseData__TypeDef.html#ae0baccfc938c332b732deee5233089ea',1,'MSDSCSI_RequestSenseData_TypeDef']]],
   ['ascq',['Ascq',['../structMSDSCSI__RequestSenseData__TypeDef.html#a972f2db484c72a4bd90d86460ea7b05d',1,'MSDSCSI_RequestSenseData_TypeDef']]],
   ['async',['async',['../structUSART__InitIrDA__TypeDef.html#a79db04edfd924d5578c6540f3e0dd5b4',1,'USART_InitIrDA_TypeDef']]],
@@ -58,5 +63,6 @@ var searchData=
   ['auxhfrcocal6',['AUXHFRCOCAL6',['../structDEVINFO__TypeDef.html#ab8c2502e7fb2c146c1a7d4b2c1b3cfa6',1,'DEVINFO_TypeDef']]],
   ['auxhfrcocal7',['AUXHFRCOCAL7',['../structDEVINFO__TypeDef.html#ad1b0a46128027709254cf06391a7060f',1,'DEVINFO_TypeDef']]],
   ['auxhfrcocal8',['AUXHFRCOCAL8',['../structDEVINFO__TypeDef.html#a87b3143191ffaa5e37794960830573b8',1,'DEVINFO_TypeDef']]],
-  ['auxhfrcoctrl',['AUXHFRCOCTRL',['../structCMU__TypeDef.html#adf09a4cef9ab835b0a5e1fef6394880a',1,'CMU_TypeDef']]]
+  ['auxhfrcoctrl',['AUXHFRCOCTRL',['../structCMU__TypeDef.html#adf09a4cef9ab835b0a5e1fef6394880a',1,'CMU_TypeDef']]],
+  ['avector',['aVector',['../struct__IMU__SensorFusion.html#a2f838f17bfa1ed422f04f429e8af360a',1,'_IMU_SensorFusion']]]
 ];

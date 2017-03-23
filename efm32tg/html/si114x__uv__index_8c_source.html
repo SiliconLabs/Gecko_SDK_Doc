@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Tiny Gecko Software Documentation: c:/work/super/hardware/kit/common/drivers/si114x_uv_index.c Source File</title>
+<title>EFM32 Tiny Gecko Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/hardware/kit/common/drivers/si114x_uv_index.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Tiny Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32tg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efm32tg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -119,10 +119,10 @@ $(document).ready(function(){initNavTree('si114x__uv__index_8c_source.html','');
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">   29</a></span>&#160;<span class="preprocessor">static void * si114x_handle;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="si114x__uv__index_8h.html#a92a1b86e34e4ed9dd68f51ba170c8e5f">   40</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="si114x__uv__index_8c.html#a92a1b86e34e4ed9dd68f51ba170c8e5f">Si114x_MeasureUVIndex</a>(u16 *uvIndex)</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="si114x__uv__index_8h.html#a92a1b86e34e4ed9dd68f51ba170c8e5f">   40</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="si114x__uv__index_8c.html#a92a1b86e34e4ed9dd68f51ba170c8e5f">Si114x_MeasureUVIndex</a>(<a class="code" href="bmp280_8h.html#aa0b167025ed1eead1300bc4dbdfb230e">u16</a> *uvIndex)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  u16 data;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">volatile</span> u8 regval;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="bmp280_8h.html#aa0b167025ed1eead1300bc4dbdfb230e">u16</a> data;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">volatile</span> <a class="code" href="bmp280_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> regval;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">int</span>      retval = 0;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="group__Si114x.html#gac4487c27a69c68ce91b6f193fc35fd3f">Si114xPsAlsForce</a>(<a class="code" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('si114x__uv__index_8c_source.html','');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="si114x__uv__index_8h.html#a5636599ea7d573fcee234cc8bf4de655">   88</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="si114x__uv__index_8c.html#a5636599ea7d573fcee234cc8bf4de655">Si114x_EnableVisRange</a>(<span class="keywordtype">int</span> vis_range_bit)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{   s16         retval = 0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{   <a class="code" href="bmp280_8h.html#a4cb19f4a3324cfe0938ddfbfabaa825b">s16</a>         retval = 0;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span>( vis_range_bit == 1 )</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        retval += <a class="code" href="group__Si114x.html#gafee1fd953ec8559b0b2c53b4d3a7d442">Si114xParamSet</a>(<a class="code" href="si114x__uv__index_8c.html#a39588930c6bf1721e2a42ffaef0f7ec1">si114x_handle</a>, PARAM_ALSVIS_ADC_MISC, RANGE_EN);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">else</span></div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('si114x__uv__index_8c_source.html','');
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="si114x__uv__index_8h.html#aee56b411a2cb91ae85cae51c2d4039f7">  110</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="si114x__uv__index_8c.html#aee56b411a2cb91ae85cae51c2d4039f7">Si114x_ConfigureUV</a>(<span class="keywordtype">int</span> fullInit, HANDLE *handle)</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  s16          retval = 0;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="bmp280_8h.html#a4cb19f4a3324cfe0938ddfbfabaa825b">s16</a>          retval = 0;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="structSI114X__CAL__S.html">SI114X_CAL_S</a> si114x_cal;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="comment">/* Set handle */</span></div>
@@ -215,11 +215,14 @@ $(document).ready(function(){initNavTree('si114x__uv__index_8c_source.html','');
 <div class="ttc" id="structSI114X__CAL__S_html"><div class="ttname"><a href="structSI114X__CAL__S.html">SI114X_CAL_S</a></div><div class="ttdoc">SI114X_CAL_S Data Structure. </div><div class="ttdef"><b>Definition:</b> <a href="si114x__functions_8h_source.html#l00054">si114x_functions.h:54</a></div></div>
 <div class="ttc" id="si114x__uv__index_8c_html_a43d4736aa58d411f570d28c88d41d0c8"><div class="ttname"><a href="si114x__uv__index_8c.html#a43d4736aa58d411f570d28c88d41d0c8">UV_TASKLIST</a></div><div class="ttdeci">#define UV_TASKLIST</div><div class="ttdef"><b>Definition:</b> <a href="si114x__uv__index_8c_source.html#l00019">si114x_uv_index.c:19</a></div></div>
 <div class="ttc" id="si114x__functions_8h_html"><div class="ttname"><a href="si114x__functions_8h.html">si114x_functions.h</a></div><div class="ttdoc">Si114x function prototypes, structure and bit definitions. </div></div>
+<div class="ttc" id="bmp280_8h_html_aa0b167025ed1eead1300bc4dbdfb230e"><div class="ttname"><a href="bmp280_8h.html#aa0b167025ed1eead1300bc4dbdfb230e">u16</a></div><div class="ttdeci">unsigned short int u16</div><div class="ttdef"><b>Definition:</b> <a href="bmp280_8h_source.html#l00283">bmp280.h:283</a></div></div>
 <div class="ttc" id="group__Si114x_html_gafee1fd953ec8559b0b2c53b4d3a7d442"><div class="ttname"><a href="group__Si114x.html#gafee1fd953ec8559b0b2c53b4d3a7d442">Si114xParamSet</a></div><div class="ttdeci">int16_t Si114xParamSet(HANDLE si114x_handle, uint8_t address, uint8_t value)</div><div class="ttdoc">Writes a byte to an Si113x/4x Parameter. </div><div class="ttdef"><b>Definition:</b> <a href="si114x__functions_8c_source.html#l00300">si114x_functions.c:300</a></div></div>
 <div class="ttc" id="group__Si114x_html_ga8d9e6e60e0ced326193208cdf976bbee"><div class="ttname"><a href="group__Si114x.html#ga8d9e6e60e0ced326193208cdf976bbee">Si114xWriteToRegister</a></div><div class="ttdeci">int16_t Si114xWriteToRegister(HANDLE si114x_handle, uint8_t address, uint8_t data)</div><div class="ttdoc">Writes to Si114x Register. </div><div class="ttdef"><b>Definition:</b> <a href="si1147__i2c_8c_source.html#l00205">si1147_i2c.c:205</a></div></div>
 <div class="ttc" id="group__Si114x_html_ga9966ab23359f5ae0c7e5b8d79a4ef59a"><div class="ttname"><a href="group__Si114x.html#ga9966ab23359f5ae0c7e5b8d79a4ef59a">si114x_set_ucoef</a></div><div class="ttdeci">int16_t si114x_set_ucoef(HANDLE si114x_handle, uint8_t *input_ucoef, SI114X_CAL_S *si114x_cal)</div><div class="ttdoc">Initializes the Si113x/46/47/48 UCOEF Registers. </div><div class="ttdef"><b>Definition:</b> <a href="si114x__functions_8c_source.html#l01470">si114x_functions.c:1470</a></div></div>
 <div class="ttc" id="si114x__uv__index_8c_html_aee56b411a2cb91ae85cae51c2d4039f7"><div class="ttname"><a href="si114x__uv__index_8c.html#aee56b411a2cb91ae85cae51c2d4039f7">Si114x_ConfigureUV</a></div><div class="ttdeci">int Si114x_ConfigureUV(int fullInit, HANDLE *handle)</div><div class="ttdoc">Initializes and configures the Si1146 sensor for UV index measurements. </div><div class="ttdef"><b>Definition:</b> <a href="si114x__uv__index_8c_source.html#l00110">si114x_uv_index.c:110</a></div></div>
+<div class="ttc" id="bmp280_8h_html_a4cb19f4a3324cfe0938ddfbfabaa825b"><div class="ttname"><a href="bmp280_8h.html#a4cb19f4a3324cfe0938ddfbfabaa825b">s16</a></div><div class="ttdeci">signed short int s16</div><div class="ttdef"><b>Definition:</b> <a href="bmp280_8h_source.html#l00277">bmp280.h:277</a></div></div>
 <div class="ttc" id="group__Si114x_html_gac4487c27a69c68ce91b6f193fc35fd3f"><div class="ttname"><a href="group__Si114x.html#gac4487c27a69c68ce91b6f193fc35fd3f">Si114xPsAlsForce</a></div><div class="ttdeci">int16_t Si114xPsAlsForce(HANDLE si114x_handle)</div><div class="ttdoc">Sends a PSALSFORCE command to the Si113x/4x. </div><div class="ttdef"><b>Definition:</b> <a href="si114x__functions_8c_source.html#l00235">si114x_functions.c:235</a></div></div>
+<div class="ttc" id="bmp280_8h_html_aed742c436da53c1080638ce6ef7d13de"><div class="ttname"><a href="bmp280_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition:</b> <a href="bmp280_8h_source.html#l00282">bmp280.h:282</a></div></div>
 <div class="ttc" id="si114x__uv__index_8c_html_a5636599ea7d573fcee234cc8bf4de655"><div class="ttname"><a href="si114x__uv__index_8c.html#a5636599ea7d573fcee234cc8bf4de655">Si114x_EnableVisRange</a></div><div class="ttdeci">int Si114x_EnableVisRange(int vis_range_bit)</div><div class="ttdoc">Set the VIS_RANGE bit of the optical sensor Si114x. </div><div class="ttdef"><b>Definition:</b> <a href="si114x__uv__index_8c_source.html#l00088">si114x_uv_index.c:88</a></div></div>
 <div class="ttc" id="group__Si114x_html_gaeae79629a9f5a41c75ba329fa056eeef"><div class="ttname"><a href="group__Si114x.html#gaeae79629a9f5a41c75ba329fa056eeef">Si114xReadFromRegister</a></div><div class="ttdeci">int16_t Si114xReadFromRegister(HANDLE si114x_handle, uint8_t address)</div><div class="ttdoc">Reads from Si114x register. </div><div class="ttdef"><b>Definition:</b> <a href="si1147__i2c_8c_source.html#l00219">si1147_i2c.c:219</a></div></div>
 <div class="ttc" id="group__Si114x_html_gadbec1218d8cc103d4d6c2fc0ec0f6abf"><div class="ttname"><a href="group__Si114x.html#gadbec1218d8cc103d4d6c2fc0ec0f6abf">si114x_get_calibration</a></div><div class="ttdeci">int16_t si114x_get_calibration(HANDLE si114x_handle, SI114X_CAL_S *si114x_cal, uint8_t security)</div><div class="ttdoc">Populates the SI114X_CAL_S structure. </div><div class="ttdef"><b>Definition:</b> <a href="si114x__functions_8c_source.html#l01330">si114x_functions.c:1330</a></div></div>
@@ -231,8 +234,8 @@ $(document).ready(function(){initNavTree('si114x__uv__index_8c_source.html','');
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f4316de2dfb04db90651672103de31d6.html">hardware</a></li><li class="navelem"><a class="el" href="dir_76f2117c008bb27e945cccbe289eb43d.html">kit</a></li><li class="navelem"><a class="el" href="dir_60376687895b74e627fb8a241c3f339a.html">common</a></li><li class="navelem"><a class="el" href="dir_4f5ba988b7de2a6efab62310c4bddab1.html">drivers</a></li><li class="navelem"><a class="el" href="si114x__uv__index_8c.html">si114x_uv_index.c</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 15:55:51 for EFM32 Tiny Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_47b141814df81f488c4f7eaff9a67e18.html">hardware</a></li><li class="navelem"><a class="el" href="dir_af96359f81902c5c0c02a782680fb1d9.html">kit</a></li><li class="navelem"><a class="el" href="dir_5d4a48348b1da31968333dd38c7667cf.html">common</a></li><li class="navelem"><a class="el" href="dir_4d1202699618d790b69f43dda0aac898.html">drivers</a></li><li class="navelem"><a class="el" href="si114x__uv__index_8c.html">si114x_uv_index.c</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:39:45 for EFM32 Tiny Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

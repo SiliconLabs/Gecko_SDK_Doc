@@ -77,78 +77,63 @@
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#if defined( MBEDTLS_INCLUDE_ASYNCH_API )</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    AESDRV_CMAC_AsynchContext_t aesdrv_asynch_ctx; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="struct_a_e_s_d_r_v___context__t.html">AESDRV_Context_t</a>             aesdrv_ctx;  </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                 keybits;     </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    uint32_t                     key[8];      </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;mbedtls_cmac_asynch_context;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #if defined( MBEDTLS_INCLUDE_ASYNCH_API ) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="struct_a_e_s_d_r_v___context__t.html">AESDRV_Context_t</a>             aesdrv_ctx;  </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                 keybits;     </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    uint32_t                     key[8];      </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;mbedtls_cmac_context;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">void</span> mbedtls_cmac_init( mbedtls_cmac_context *ctx );</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">int</span> mbedtls_cmac_set_device_instance(mbedtls_cmac_context* ctx,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>          devno);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#if defined( MBEDTLS_INCLUDE_ASYNCH_API )</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keywordtype">int</span> mbedtls_cmac_set_asynch( mbedtls_cmac_context *ctx,</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                             mbedtls_cmac_asynch_context *asynch_ctx,</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                             <a class="code" href="sl__crypto_8h.html#a204657185b93d19dc64468c75b1abc5e">mbedtls_asynch_callback</a> asynch_callback,</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                             <span class="keywordtype">void</span>* user_arg );</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #if defined( MBEDTLS_INCLUDE_ASYNCH_API ) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keywordtype">int</span> mbedtls_cmac_setkey( mbedtls_cmac_context *ctx,</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                         <a class="code" href="cipher_8h.html#af5b069ffd0b2ad31225e42ee4ee29b1b">mbedtls_cipher_id_t</a> cipher,</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *key,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> keybits );</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordtype">void</span> mbedtls_cmac_free( mbedtls_cmac_context *ctx );</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;mbedtls_cmac_context;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> mbedtls_cmac_init( mbedtls_cmac_context *ctx );</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">int</span> mbedtls_cmac_set_device_instance(mbedtls_cmac_context* ctx,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>          devno);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordtype">int</span> mbedtls_cmac_set_device_lock_wait_ticks(mbedtls_cmac_context *ctx,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                            <span class="keywordtype">int</span>                   ticks);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keywordtype">int</span> mbedtls_cmac_setkey( mbedtls_cmac_context *ctx,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                         <a class="code" href="cipher_8h.html#af5b069ffd0b2ad31225e42ee4ee29b1b">mbedtls_cipher_id_t</a> cipher,</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *key,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> keybits );</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keywordtype">void</span> mbedtls_cmac_free( mbedtls_cmac_context *ctx );</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keywordtype">int</span> mbedtls_cmac_generate_tag( mbedtls_cmac_context *ctx,</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                               <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  *data,</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                               <span class="keywordtype">size_t</span>                data_len,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                               <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>        *tag,</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                               <span class="keywordtype">size_t</span>                tag_len );</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keywordtype">int</span> mbedtls_cmac_generate_tag( mbedtls_cmac_context *ctx,</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                               <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  *data,</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                               <span class="keywordtype">size_t</span>                data_len,</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                               <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>        *tag,</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                               <span class="keywordtype">size_t</span>                tag_len );</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keywordtype">int</span> mbedtls_cmac_verify_tag( mbedtls_cmac_context *ctx,</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  *data,</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                             <span class="keywordtype">size_t</span>                data_len,</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                             <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>        *tag,</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                             <span class="keywordtype">size_t</span>                tag_len );</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SELF_TEST) &amp;&amp; defined(MBEDTLS_CMAC_C)</span></div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keywordtype">int</span> mbedtls_cmac_verify_tag( mbedtls_cmac_context *ctx,</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                             <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  *data,</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                             <span class="keywordtype">size_t</span>                data_len,</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                             <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>        *tag,</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                             <span class="keywordtype">size_t</span>                tag_len );</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#if defined(MBEDTLS_SELF_TEST) &amp;&amp; defined(MBEDTLS_CMAC_C)</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keywordtype">int</span> mbedtls_cmac_self_test( <span class="keywordtype">int</span> verbose );</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_SELF_TEST &amp;&amp; MBEDTLS_CMAC_C */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;}</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #if defined( MBEDTLS_CMAC_ALT ) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_CMAC_ALT_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">int</span> mbedtls_cmac_self_test( <span class="keywordtype">int</span> verbose, <span class="keywordtype">int</span> device_instance );</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_SELF_TEST &amp;&amp; MBEDTLS_CMAC_C */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #if defined( MBEDTLS_CMAC_ALT ) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MBEDTLS_CMAC_ALT_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="config_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div><div class="ttdoc">Compatibility names (set of defines) </div></div>
 <div class="ttc" id="aesdrv_8h_html"><div class="ttname"><a href="aesdrv_8h.html">aesdrv.h</a></div><div class="ttdoc">Definitions for AES based ciphers with CRYPTO hw acceleration. </div></div>
 <div class="ttc" id="cipher_8h_html_af5b069ffd0b2ad31225e42ee4ee29b1b"><div class="ttname"><a href="cipher_8h.html#af5b069ffd0b2ad31225e42ee4ee29b1b">mbedtls_cipher_id_t</a></div><div class="ttdeci">mbedtls_cipher_id_t</div><div class="ttdef"><b>Definition:</b> <a href="cipher_8h_source.html#l00068">cipher.h:68</a></div></div>
 <div class="ttc" id="cipher_8h_html"><div class="ttname"><a href="cipher_8h.html">cipher.h</a></div><div class="ttdoc">Generic cipher wrapper. </div></div>
-<div class="ttc" id="sl__crypto_8h_html_a204657185b93d19dc64468c75b1abc5e"><div class="ttname"><a href="sl__crypto_8h.html#a204657185b93d19dc64468c75b1abc5e">mbedtls_asynch_callback</a></div><div class="ttdeci">void(* mbedtls_asynch_callback)(int result, void *user_arg)</div><div class="ttdoc">Asynchronous (non-blocking) operation completion callback function. </div><div class="ttdef"><b>Definition:</b> <a href="sl__crypto_8h_source.html#l00069">sl_crypto.h:69</a></div></div>
 <div class="ttc" id="sl__crypto_8h_html"><div class="ttname"><a href="sl__crypto_8h.html">sl_crypto.h</a></div><div class="ttdoc">Silicon Labs specific mbedTLS defintitions. </div></div>
-<div class="ttc" id="struct_a_e_s_d_r_v___context__t_html"><div class="ttname"><a href="struct_a_e_s_d_r_v___context__t.html">AESDRV_Context_t</a></div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00177">aesdrv.h:177</a></div></div>
+<div class="ttc" id="struct_a_e_s_d_r_v___context__t_html"><div class="ttname"><a href="struct_a_e_s_d_r_v___context__t.html">AESDRV_Context_t</a></div><div class="ttdef"><b>Definition:</b> <a href="aesdrv_8h_source.html#l00084">aesdrv.h:84</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2016 16:12:39 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 9 2017 20:48:04 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

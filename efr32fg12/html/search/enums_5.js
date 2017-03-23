@@ -1,7 +1,22 @@
 var searchData=
 [
-  ['gesture_5ft',['gesture_t',['../group__Si114x.html#ga336655f991c3d44f61e92e4d31c4bf36',1,'si114x_algorithm.h']]],
-  ['gpio_5fdrivestrength_5ftypedef',['GPIO_DriveStrength_TypeDef',['../group__GPIO.html#ga302f9e4781fc54afaace4dee03fdf046',1,'em_gpio.h']]],
-  ['gpio_5fmode_5ftypedef',['GPIO_Mode_TypeDef',['../group__GPIO.html#ga93ff740308e5b31729d8593a89967cda',1,'em_gpio.h']]],
-  ['gpio_5fport_5ftypedef',['GPIO_Port_TypeDef',['../group__GPIO.html#gafe496583dfd425fc03c413d49459efe6',1,'em_gpio.h']]]
+  ['emu_5fbodmode_5ftypedef',['EMU_BODMode_TypeDef',['../group__EMU.html#ga7453aecd1fc0cf2d035df6178dfb9a16',1,'em_emu.h']]],
+  ['emu_5fdcdcanaperipheralpower_5ftypedef',['EMU_DcdcAnaPeripheralPower_TypeDef',['../group__EMU.html#gaccf990475418eb1ed67acaed99efa4d0',1,'em_emu.h']]],
+  ['emu_5fdcdcconductionmode_5ftypedef',['EMU_DcdcConductionMode_TypeDef',['../group__EMU.html#ga45189ee92413218bfa0bb32e86c08205',1,'em_emu.h']]],
+  ['emu_5fdcdclncompctrl_5ftypedef',['EMU_DcdcLnCompCtrl_TypeDef',['../group__EMU.html#gabba8a5896d1f04f6d70aad9d59cb0f67',1,'em_emu.h']]],
+  ['emu_5fdcdclnrcoband_5ftypedef',['EMU_DcdcLnRcoBand_TypeDef',['../group__EMU.html#gaa7b79860e9ac3e301ab467715432b644',1,'em_emu.h']]],
+  ['emu_5fdcdcmode_5ftypedef',['EMU_DcdcMode_TypeDef',['../group__EMU.html#ga8dc5324b0e9baa047afdb67739bdb53d',1,'em_emu.h']]],
+  ['emu_5fem4pinretention_5ftypedef',['EMU_EM4PinRetention_TypeDef',['../group__EMU.html#gabfa67ae54e346d342a4e4bbc8c7ad27e',1,'em_emu.h']]],
+  ['emu_5fem4state_5ftypedef',['EMU_EM4State_TypeDef',['../group__EMU.html#gad04d2dd04b72ad9b4e621c29f59b4e81',1,'em_emu.h']]],
+  ['emu_5fperipheralretention_5ftypedef',['EMU_PeripheralRetention_TypeDef',['../group__EMU.html#gae488c226aa6849405e1337a1af0b15ba',1,'em_emu.h']]],
+  ['emu_5fpowerconfig_5ftypedef',['EMU_PowerConfig_TypeDef',['../group__EMU.html#ga87842440cb0cf01e18480e6d665c581f',1,'em_emu.h']]],
+  ['emu_5fvmonchannel_5ftypedef',['EMU_VmonChannel_TypeDef',['../group__EMU.html#gaa527372d08a0a02ef09aa2f7746cb1ce',1,'em_emu.h']]],
+  ['emu_5fvscaleem01_5ftypedef',['EMU_VScaleEM01_TypeDef',['../group__EMU.html#gaa7011233832b64921200495959068d54',1,'em_emu.h']]],
+  ['emu_5fvscaleem23_5ftypedef',['EMU_VScaleEM23_TypeDef',['../group__EMU.html#gaf5c7615fdbe3d04380dbe48aa62b60cd',1,'em_emu.h']]],
+  ['emu_5fvscaleem4h_5ftypedef',['EMU_VScaleEM4H_TypeDef',['../group__EMU.html#ga845a688f80566fab75f8bbcebb4cf6fb',1,'em_emu.h']]],
+  ['ezradio_5fconfigret_5ft',['EZRADIO_ConfigRet_t',['../group__API__Layer.html#ga0a0400f1e4c5eae1df893aec358d5b5c',1,'ezradio_api_lib.h']]],
+  ['ezradiodrv_5fautoackmode',['EZRADIODRV_AutoAckMode',['../group__Auto__ACK__Plugin.html#ga87f4df5e14439a8b0bb6526746b077f8',1,'ezradio_auto_ack_plugin.h']]],
+  ['ezradiodrv_5fautoackpacketmode',['EZRADIODRV_AutoAckPacketMode',['../group__Auto__ACK__Plugin.html#ga14fb2073a567668e2d1cf065eb1dcf2d',1,'ezradio_auto_ack_plugin.h']]],
+  ['ezradiodrv_5ftransmitlengthmode',['EZRADIODRV_TransmitLengthMode',['../group__Transmit__Plugin.html#ga12a0fc2c8fdc6a154161bccd028dca40',1,'ezradio_transmit_plugin.h']]],
+  ['ezradiodrv_5ftransmitpackettype',['EZRADIODRV_TransmitPacketType',['../group__Transmit__Plugin.html#ga604388e9120f817261c150b65a03420d',1,'ezradio_transmit_plugin.h']]]
 ];

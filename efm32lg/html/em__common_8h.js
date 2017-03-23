@@ -6,6 +6,7 @@ var em__common_8h =
     [ "SL_ATTRIBUTE_SECTION", "group__COMMON.html#gac9141d4fff890b3c5d3bb4bbef73259e", null ],
     [ "SL_MAX", "group__COMMON.html#gac33644dcb925ed2bde0b5fc7a5fd9cfe", null ],
     [ "SL_MIN", "group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3", null ],
+    [ "SL_NORETURN", "group__COMMON.html#ga2aa8835a23ecccc5db17082017b32707", null ],
     [ "SL_PACK_END", "group__COMMON.html#ga911e7f1f5d8dc5b4dd025e8c14159977", null ],
     [ "SL_PACK_START", "group__COMMON.html#ga4b1aea3e52adaa7882e0e0299cead0fc", null ],
     [ "SL_WEAK", "group__COMMON.html#ga6e33efc3fbeb9ceb617349303d98796a", null ],

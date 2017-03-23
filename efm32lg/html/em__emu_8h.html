@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFM32 Leopard Gecko Software Documentation: c:/work/super/platform/emlib/inc/em_emu.h File Reference</title>
+<title>EFM32 Leopard Gecko Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/platform/emlib/inc/em_emu.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32lg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efm32lg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('em__emu_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Energy management unit (EMU) peripheral API. </p>
-<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.1.2</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -149,7 +149,7 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:gaaf5c8ea002d444aba8fbc66ca764d92c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#gaaf5c8ea002d444aba8fbc66ca764d92c">EMU_BUPDINIT_DEFAULT</a></td></tr>
 <tr class="separator:gaaf5c8ea002d444aba8fbc66ca764d92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ab678c773fd5adc3d8763184b1e5b36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga3ab678c773fd5adc3d8763184b1e5b36">EMU_EM23INIT_DEFAULT</a>&#160;&#160;&#160;{ false }                               /* Reduced voltage regulator drive strength in EM2 and EM3 */</td></tr>
+<tr class="memitem:ga3ab678c773fd5adc3d8763184b1e5b36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga3ab678c773fd5adc3d8763184b1e5b36">EMU_EM23INIT_DEFAULT</a></td></tr>
 <tr class="separator:ga3ab678c773fd5adc3d8763184b1e5b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2ccfdd68ead3dab3d4926cac997b1461"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga2ccfdd68ead3dab3d4926cac997b1461">EMU_EM4INIT_DEFAULT</a></td></tr>
 <tr class="separator:ga2ccfdd68ead3dab3d4926cac997b1461"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,6 +183,9 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga10d22ac0d94024e589c77a265fe8ad99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:ga87842440cb0cf01e18480e6d665c581f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga87842440cb0cf01e18480e6d665c581f">EMU_PowerConfig_TypeDef</a> { <a class="el" href="group__EMU.html#gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9">emuPowerConfig_DcdcToDvdd</a>
+ }<tr class="separator:ga87842440cb0cf01e18480e6d665c581f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:ga30c5ddc1f074c2400fe8efd6a67eeec7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga30c5ddc1f074c2400fe8efd6a67eeec7">EMU_Probe_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__EMU.html#gga30c5ddc1f074c2400fe8efd6a67eeec7ad42740c242495edd6bb30d04b292ec43">emuProbe_Disable</a> = EMU_BUCTRL_PROBE_DISABLE, 
 <br />
@@ -208,9 +211,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga3711dafbd1f74eed5fa2920efa9aaa9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga3711dafbd1f74eed5fa2920efa9aaa9b">EMU_BUPDInit</a> (<a class="el" href="structEMU__BUPDInit__TypeDef.html">EMU_BUPDInit_TypeDef</a> *bupdInit)</td></tr>
-<tr class="memdesc:ga3711dafbd1f74eed5fa2920efa9aaa9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Backup Power Domain settings.  <a href="group__EMU.html#ga3711dafbd1f74eed5fa2920efa9aaa9b">More...</a><br /></td></tr>
-<tr class="separator:ga3711dafbd1f74eed5fa2920efa9aaa9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7dc4f8e2bc4be77fe0acc22ae25168c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga7dc4f8e2bc4be77fe0acc22ae25168c5">EMU_BUPDInit</a> (const <a class="el" href="structEMU__BUPDInit__TypeDef.html">EMU_BUPDInit_TypeDef</a> *bupdInit)</td></tr>
+<tr class="memdesc:ga7dc4f8e2bc4be77fe0acc22ae25168c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Backup Power Domain settings.  <a href="group__EMU.html#ga7dc4f8e2bc4be77fe0acc22ae25168c5">More...</a><br /></td></tr>
+<tr class="separator:ga7dc4f8e2bc4be77fe0acc22ae25168c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga423641b01d143cf598391ff9d772bb23"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga423641b01d143cf598391ff9d772bb23">EMU_BUPinEnable</a> (bool enable)</td></tr>
 <tr class="memdesc:ga423641b01d143cf598391ff9d772bb23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable BU_VIN support.  <a href="group__EMU.html#ga423641b01d143cf598391ff9d772bb23">More...</a><br /></td></tr>
 <tr class="separator:ga423641b01d143cf598391ff9d772bb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,9 +227,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="memitem:ga1ea702e017a7d98426a3a2516fe08520"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga1ea702e017a7d98426a3a2516fe08520">EMU_BUThresRangeSet</a> (<a class="el" href="group__EMU.html#ga7453aecd1fc0cf2d035df6178dfb9a16">EMU_BODMode_TypeDef</a> mode, uint32_t value)</td></tr>
 <tr class="memdesc:ga1ea702e017a7d98426a3a2516fe08520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Backup Power Domain BOD Threshold Range.  <a href="group__EMU.html#ga1ea702e017a7d98426a3a2516fe08520">More...</a><br /></td></tr>
 <tr class="separator:ga1ea702e017a7d98426a3a2516fe08520"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27ca632c20c9251019338c5690279974"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga27ca632c20c9251019338c5690279974">EMU_EM23Init</a> (<a class="el" href="structEMU__EM23Init__TypeDef.html">EMU_EM23Init_TypeDef</a> *em23Init)</td></tr>
-<tr class="memdesc:ga27ca632c20c9251019338c5690279974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update EMU module with Energy Mode 2 and 3 configuration.  <a href="group__EMU.html#ga27ca632c20c9251019338c5690279974">More...</a><br /></td></tr>
-<tr class="separator:ga27ca632c20c9251019338c5690279974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d66846de92bb95a33a37a9f2357e247"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga8d66846de92bb95a33a37a9f2357e247">EMU_EM23Init</a> (const <a class="el" href="structEMU__EM23Init__TypeDef.html">EMU_EM23Init_TypeDef</a> *em23Init)</td></tr>
+<tr class="memdesc:ga8d66846de92bb95a33a37a9f2357e247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update EMU module with Energy Mode 2 and 3 configuration.  <a href="group__EMU.html#ga8d66846de92bb95a33a37a9f2357e247">More...</a><br /></td></tr>
+<tr class="separator:ga8d66846de92bb95a33a37a9f2357e247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga72910c09de24f4e2f8f170dc06bd8c07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga72910c09de24f4e2f8f170dc06bd8c07"></a>
 __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga72910c09de24f4e2f8f170dc06bd8c07">EMU_EM2Block</a> (void)</td></tr>
 <tr class="memdesc:ga72910c09de24f4e2f8f170dc06bd8c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block entering EM2 or higher number energy modes. <br /></td></tr>
@@ -235,9 +238,9 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga9e959a9fd56ac4a2e18877b9b839d795">EMU_EM2UnBlock</a> (void)</td></tr>
 <tr class="memdesc:ga9e959a9fd56ac4a2e18877b9b839d795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unblock entering EM2 or higher number energy modes. <br /></td></tr>
 <tr class="separator:ga9e959a9fd56ac4a2e18877b9b839d795"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga06bca70635ca5004a01c35eeafa15690"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga06bca70635ca5004a01c35eeafa15690">EMU_EM4Init</a> (<a class="el" href="structEMU__EM4Init__TypeDef.html">EMU_EM4Init_TypeDef</a> *em4Init)</td></tr>
-<tr class="memdesc:ga06bca70635ca5004a01c35eeafa15690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update EMU module with Energy Mode 4 configuration.  <a href="group__EMU.html#ga06bca70635ca5004a01c35eeafa15690">More...</a><br /></td></tr>
-<tr class="separator:ga06bca70635ca5004a01c35eeafa15690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf5fb49f95c827b6ef45597595e5505c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#gabf5fb49f95c827b6ef45597595e5505c">EMU_EM4Init</a> (const <a class="el" href="structEMU__EM4Init__TypeDef.html">EMU_EM4Init_TypeDef</a> *em4Init)</td></tr>
+<tr class="memdesc:gabf5fb49f95c827b6ef45597595e5505c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update EMU module with Energy Mode 4 configuration.  <a href="group__EMU.html#gabf5fb49f95c827b6ef45597595e5505c">More...</a><br /></td></tr>
+<tr class="separator:gabf5fb49f95c827b6ef45597595e5505c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa07523b26da61b61201e56e1b55b64b2"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#gaa07523b26da61b61201e56e1b55b64b2">EMU_EM4Lock</a> (bool enable)</td></tr>
 <tr class="memdesc:gaa07523b26da61b61201e56e1b55b64b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable EM4 lock configuration.  <a href="group__EMU.html#gaa07523b26da61b61201e56e1b55b64b2">More...</a><br /></td></tr>
 <tr class="separator:gaa07523b26da61b61201e56e1b55b64b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,6 +281,13 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="memitem:ga49eb5750384ff279aae225ab5922e9f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga49eb5750384ff279aae225ab5922e9f1">EMU_MemPwrDown</a> (uint32_t blocks)</td></tr>
 <tr class="memdesc:ga49eb5750384ff279aae225ab5922e9f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power down memory block.  <a href="group__EMU.html#ga49eb5750384ff279aae225ab5922e9f1">More...</a><br /></td></tr>
 <tr class="separator:ga49eb5750384ff279aae225ab5922e9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b023a731a664add13a0ee090ce1db69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#ga9b023a731a664add13a0ee090ce1db69">EMU_RamPowerDown</a> (uint32_t start, uint32_t end)</td></tr>
+<tr class="memdesc:ga9b023a731a664add13a0ee090ce1db69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power down RAM memory blocks.  <a href="group__EMU.html#ga9b023a731a664add13a0ee090ce1db69">More...</a><br /></td></tr>
+<tr class="separator:ga9b023a731a664add13a0ee090ce1db69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff9e6aa2435b13a50a1dfa1f7547ad12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaff9e6aa2435b13a50a1dfa1f7547ad12"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#gaff9e6aa2435b13a50a1dfa1f7547ad12">EMU_Restore</a> (void)</td></tr>
+<tr class="memdesc:gaff9e6aa2435b13a50a1dfa1f7547ad12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore CMU HF clock select state, oscillator enable and voltage scaling (if available) after <a class="el" href="group__EMU.html#gacadc56c5e2a8fb2890edd139b694b25b">EMU_EnterEM2()</a> or <a class="el" href="group__EMU.html#ga9e98f9066d91dbd64c3e73254336218f">EMU_EnterEM3()</a> are called with the restore parameter set to false. Calling this function is equivalent to calling <a class="el" href="group__EMU.html#gacadc56c5e2a8fb2890edd139b694b25b">EMU_EnterEM2()</a> or <a class="el" href="group__EMU.html#ga9e98f9066d91dbd64c3e73254336218f">EMU_EnterEM3()</a> with the restore parameter set to true, but it allows the application to evaluate the wakeup reason before restoring state. <br /></td></tr>
+<tr class="separator:gaff9e6aa2435b13a50a1dfa1f7547ad12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae70d64f013a75e2d728b3a6d71e3f62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaae70d64f013a75e2d728b3a6d71e3f62"></a>
 __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EMU.html#gaae70d64f013a75e2d728b3a6d71e3f62">EMU_Unlock</a> (void)</td></tr>
 <tr class="memdesc:gaae70d64f013a75e2d728b3a6d71e3f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the EMU so that writing to locked registers again is possible. <br /></td></tr>
@@ -291,8 +301,8 @@ __STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__emu_8h.html">em_emu.h</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 15:59:57 for EFM32 Leopard Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_57c5670a54251515d5dc3137dddf203b.html">platform</a></li><li class="navelem"><a class="el" href="dir_74d47fbdcea7cda18072cc4be639af5a.html">emlib</a></li><li class="navelem"><a class="el" href="dir_bf479292f56c204ab5b202f2f7ed0583.html">inc</a></li><li class="navelem"><a class="el" href="em__emu_8h.html">em_emu.h</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:04 for EFM32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

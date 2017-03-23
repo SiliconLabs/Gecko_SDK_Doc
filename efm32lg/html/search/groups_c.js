@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['opamp',['OPAMP',['../group__OPAMP.html',1,'']]]
+  ['nandflash',['NandFlash',['../group__NandFlash.html',1,'']]],
+  ['norflash',['NorFlash',['../group__NorFlash.html',1,'']]],
+  ['nvm',['NVM',['../group__NVM.html',1,'']]]
 ];

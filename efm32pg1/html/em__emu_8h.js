@@ -21,6 +21,10 @@ var em__emu_8h =
       [ "emuDcdcAnaPeripheralPower_AVDD", "group__EMU.html#ggaccf990475418eb1ed67acaed99efa4d0a035bd434069aca951cc17748ecd8267f", null ],
       [ "emuDcdcAnaPeripheralPower_DCDC", "group__EMU.html#ggaccf990475418eb1ed67acaed99efa4d0a11b20cbde79a3d9aede0836319b4e6eb", null ]
     ] ],
+    [ "EMU_DcdcConductionMode_TypeDef", "group__EMU.html#ga45189ee92413218bfa0bb32e86c08205", [
+      [ "emuDcdcConductionMode_ContinuousLN", "group__EMU.html#gga45189ee92413218bfa0bb32e86c08205aa03ed679017808311942e7278080be33", null ],
+      [ "emuDcdcConductionMode_DiscontinuousLN", "group__EMU.html#gga45189ee92413218bfa0bb32e86c08205ad5cc162bbf982de5726920d927cdd372", null ]
+    ] ],
     [ "EMU_DcdcLnCompCtrl_TypeDef", "group__EMU.html#gabba8a5896d1f04f6d70aad9d59cb0f67", [
       [ "emuDcdcLnCompCtrl_1u0F", "group__EMU.html#ggabba8a5896d1f04f6d70aad9d59cb0f67aa311d8c0e15f9cb1a0bc5dde18a8a573", null ],
       [ "emuDcdcLnCompCtrl_4u7F", "group__EMU.html#ggabba8a5896d1f04f6d70aad9d59cb0f67a600a54e10fd5138d295ad5eff54f487e", null ]
@@ -57,16 +61,17 @@ var em__emu_8h =
       [ "emuVmonChannel_DVDD", "group__EMU.html#ggaa527372d08a0a02ef09aa2f7746cb1cea741b10c51b3d92da9946b1b6a2a4aa10", null ],
       [ "emuVmonChannel_IOVDD0", "group__EMU.html#ggaa527372d08a0a02ef09aa2f7746cb1cea5c7e302dea3ec625274189a4003d34a4", null ]
     ] ],
-    [ "EMU_DCDCInit", "group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265", null ],
+    [ "EMU_DCDCConductionModeSet", "group__EMU.html#ga04e1192310f75a52ad4ae5a5aaf3e6a4", null ],
+    [ "EMU_DCDCInit", "group__EMU.html#ga9537dcfde6aace1ae4fcb1c949d10da0", null ],
     [ "EMU_DCDCLnRcoBandSet", "group__EMU.html#ga4b8909b4558d78ba21bce5b57f5557dc", null ],
     [ "EMU_DCDCModeSet", "group__EMU.html#gade447bc354ddd2893ac668a7475e76fd", null ],
     [ "EMU_DCDCOptimizeSlice", "group__EMU.html#ga06bec9f178a2d2741c07735e138305b3", null ],
     [ "EMU_DCDCOutputVoltageSet", "group__EMU.html#gab99ce5b7cbbe4b4da1112dba636e1d71", null ],
     [ "EMU_DCDCPowerOff", "group__EMU.html#ga5625f85c3d89aba15e151ed8d1b701af", null ],
-    [ "EMU_EM23Init", "group__EMU.html#ga27ca632c20c9251019338c5690279974", null ],
+    [ "EMU_EM23Init", "group__EMU.html#ga8d66846de92bb95a33a37a9f2357e247", null ],
     [ "EMU_EM2Block", "group__EMU.html#ga72910c09de24f4e2f8f170dc06bd8c07", null ],
     [ "EMU_EM2UnBlock", "group__EMU.html#ga9e959a9fd56ac4a2e18877b9b839d795", null ],
-    [ "EMU_EM4Init", "group__EMU.html#ga06bca70635ca5004a01c35eeafa15690", null ],
+    [ "EMU_EM4Init", "group__EMU.html#gabf5fb49f95c827b6ef45597595e5505c", null ],
     [ "EMU_EnterEM1", "group__EMU.html#gaed0c4092bd3adc7a6679e1e2903d1267", null ],
     [ "EMU_EnterEM2", "group__EMU.html#gacadc56c5e2a8fb2890edd139b694b25b", null ],
     [ "EMU_EnterEM3", "group__EMU.html#ga9e98f9066d91dbd64c3e73254336218f", null ],
@@ -83,13 +88,15 @@ var em__emu_8h =
     [ "EMU_MemPwrDown", "group__EMU.html#ga49eb5750384ff279aae225ab5922e9f1", null ],
     [ "EMU_PowerLock", "group__EMU.html#ga161bc9be93bbd64d550cfcc662c48d44", null ],
     [ "EMU_PowerUnlock", "group__EMU.html#ga29da45db4e157186e87a2fd309f3e169", null ],
+    [ "EMU_RamPowerDown", "group__EMU.html#ga9b023a731a664add13a0ee090ce1db69", null ],
+    [ "EMU_Restore", "group__EMU.html#gaff9e6aa2435b13a50a1dfa1f7547ad12", null ],
     [ "EMU_SetBiasMode", "group__EMU.html#ga7c407db6178a3e2336702a23a882db61", null ],
     [ "EMU_UnlatchPinRetention", "group__EMU.html#ga7937ada2f10e2aae57e5f3bc356e032b", null ],
     [ "EMU_Unlock", "group__EMU.html#gaae70d64f013a75e2d728b3a6d71e3f62", null ],
     [ "EMU_UpdateOscConfig", "group__EMU.html#ga3d442fa018de5138afb19a2b85797099", null ],
     [ "EMU_VmonChannelStatusGet", "group__EMU.html#ga547c14bc2f1573cb8bb1ef965cc635cd", null ],
     [ "EMU_VmonEnable", "group__EMU.html#ga09300bbda1f03edc7096e49daa2a64eb", null ],
-    [ "EMU_VmonHystInit", "group__EMU.html#ga1dff87995235b3e9f1100881e11e1868", null ],
-    [ "EMU_VmonInit", "group__EMU.html#ga83f2bf640fd8916bd425b91f7b7bdba6", null ],
+    [ "EMU_VmonHystInit", "group__EMU.html#ga6a0d0cb738d3adf871e9d7f93f1d1cbd", null ],
+    [ "EMU_VmonInit", "group__EMU.html#ga906bcf7db101a3330ca7dc0ad3204559", null ],
     [ "EMU_VmonStatusGet", "group__EMU.html#gafe10f8365d6b7a829585982be34f08ee", null ]
 ];

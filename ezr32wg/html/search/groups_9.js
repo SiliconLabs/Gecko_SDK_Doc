@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['lesense',['LESENSE',['../group__LESENSE.html',1,'']]],
-  ['letimer',['LETIMER',['../group__LETIMER.html',1,'']]],
-  ['leuart',['LEUART',['../group__LEUART.html',1,'']]]
+  ['kit_20drivers',['Kit Drivers',['../group__kitdrv.html',1,'']]],
+  ['ksz8851snl',['Ksz8851snl',['../group__ksz8851snl.html',1,'']]]
 ];

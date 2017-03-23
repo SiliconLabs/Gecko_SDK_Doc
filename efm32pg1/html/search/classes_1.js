@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['battery_5ftypedef',['BATTERY_TypeDef',['../structBATTERY__TypeDef.html',1,'']]],
-  ['bc_5ftypedef',['BC_TypeDef',['../structBC__TypeDef.html',1,'']]],
-  ['bcp_5fpacket',['BCP_Packet',['../structBCP__Packet.html',1,'']]],
-  ['bcp_5fpacket_5f',['BCP_Packet_',['../structBCP__Packet__.html',1,'']]],
-  ['bcp_5fpacketheader',['BCP_PacketHeader',['../structBCP__PacketHeader.html',1,'']]],
-  ['block_5ftypedef',['Block_TypeDef',['../structBlock__TypeDef.html',1,'']]]
+  ['acmp_5fcapsenseinit_5ftypedef',['ACMP_CapsenseInit_TypeDef',['../structACMP__CapsenseInit__TypeDef.html',1,'']]],
+  ['acmp_5finit_5ftypedef',['ACMP_Init_TypeDef',['../structACMP__Init__TypeDef.html',1,'']]],
+  ['acmp_5ftypedef',['ACMP_TypeDef',['../structACMP__TypeDef.html',1,'']]],
+  ['acmp_5fvaconfig_5ftypedef',['ACMP_VAConfig_TypeDef',['../structACMP__VAConfig__TypeDef.html',1,'']]],
+  ['acmp_5fvbconfig_5ftypedef',['ACMP_VBConfig_TypeDef',['../structACMP__VBConfig__TypeDef.html',1,'']]],
+  ['adc_5finit_5ftypedef',['ADC_Init_TypeDef',['../structADC__Init__TypeDef.html',1,'']]],
+  ['adc_5finitscan_5ftypedef',['ADC_InitScan_TypeDef',['../structADC__InitScan__TypeDef.html',1,'']]],
+  ['adc_5finitscaninput_5ftypedef',['ADC_InitScanInput_TypeDef',['../structADC__InitScanInput__TypeDef.html',1,'']]],
+  ['adc_5finitsingle_5ftypedef',['ADC_InitSingle_TypeDef',['../structADC__InitSingle__TypeDef.html',1,'']]],
+  ['adc_5ftypedef',['ADC_TypeDef',['../structADC__TypeDef.html',1,'']]],
+  ['aring_5ftypedef',['ARING_TypeDef',['../structARING__TypeDef.html',1,'']]]
 ];

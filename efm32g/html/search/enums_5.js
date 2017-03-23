@@ -1,7 +1,13 @@
 var searchData=
 [
-  ['gesture_5ft',['gesture_t',['../group__Si114x.html#ga336655f991c3d44f61e92e4d31c4bf36',1,'si114x_algorithm.h']]],
-  ['gpio_5fdrivemode_5ftypedef',['GPIO_DriveMode_TypeDef',['../group__GPIO.html#ga0a984b2fd4eedd92d814e512555e10c5',1,'em_gpio.h']]],
-  ['gpio_5fmode_5ftypedef',['GPIO_Mode_TypeDef',['../group__GPIO.html#ga93ff740308e5b31729d8593a89967cda',1,'em_gpio.h']]],
-  ['gpio_5fport_5ftypedef',['GPIO_Port_TypeDef',['../group__GPIO.html#gafe496583dfd425fc03c413d49459efe6',1,'em_gpio.h']]]
+  ['ebi_5fline_5ftypedef',['EBI_Line_TypeDef',['../group__EBI.html#ga00aa2f73c29832bc6b5c525a78ba0d6c',1,'em_ebi.h']]],
+  ['ebi_5fmode_5ftypedef',['EBI_Mode_TypeDef',['../group__EBI.html#ga476667a09de244839afb6de3980ca0bd',1,'em_ebi.h']]],
+  ['ebi_5fpolarity_5ftypedef',['EBI_Polarity_TypeDef',['../group__EBI.html#ga606deb6325c511ef9397e7271d2908c8',1,'em_ebi.h']]],
+  ['emu_5fbodmode_5ftypedef',['EMU_BODMode_TypeDef',['../group__EMU.html#ga7453aecd1fc0cf2d035df6178dfb9a16',1,'em_emu.h']]],
+  ['emu_5fpowerconfig_5ftypedef',['EMU_PowerConfig_TypeDef',['../group__EMU.html#ga87842440cb0cf01e18480e6d665c581f',1,'em_emu.h']]],
+  ['ezradio_5fconfigret_5ft',['EZRADIO_ConfigRet_t',['../group__API__Layer.html#ga0a0400f1e4c5eae1df893aec358d5b5c',1,'ezradio_api_lib.h']]],
+  ['ezradiodrv_5fautoackmode',['EZRADIODRV_AutoAckMode',['../group__Auto__ACK__Plugin.html#ga87f4df5e14439a8b0bb6526746b077f8',1,'ezradio_auto_ack_plugin.h']]],
+  ['ezradiodrv_5fautoackpacketmode',['EZRADIODRV_AutoAckPacketMode',['../group__Auto__ACK__Plugin.html#ga14fb2073a567668e2d1cf065eb1dcf2d',1,'ezradio_auto_ack_plugin.h']]],
+  ['ezradiodrv_5ftransmitlengthmode',['EZRADIODRV_TransmitLengthMode',['../group__Transmit__Plugin.html#ga12a0fc2c8fdc6a154161bccd028dca40',1,'ezradio_transmit_plugin.h']]],
+  ['ezradiodrv_5ftransmitpackettype',['EZRADIODRV_TransmitPacketType',['../group__Transmit__Plugin.html#ga604388e9120f817261c150b65a03420d',1,'ezradio_transmit_plugin.h']]]
 ];

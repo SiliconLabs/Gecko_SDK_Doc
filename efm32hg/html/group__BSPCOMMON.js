@@ -3,7 +3,9 @@ var group__BSPCOMMON =
     [ "BSP_INIT_BCC", "group__BSPCOMMON.html#gadc355d95556722d900d5a5571ff77a31", null ],
     [ "BSP_INIT_DK_EBI", "group__BSPCOMMON.html#ga2717d611b19996956dd7b208d4908f57", null ],
     [ "BSP_INIT_DK_SPI", "group__BSPCOMMON.html#ga163283b6e5356adee23c481eef0de4da", null ],
+    [ "BSP_INIT_IOEXP", "group__BSPCOMMON.html#ga15b1985bbabc83228c1abf53304fd474", null ],
     [ "BSP_STATUS_ILLEGAL_PARAM", "group__BSPCOMMON.html#gad2f961beb04ec0c5e54224e91bb1e890", null ],
+    [ "BSP_STATUS_IOEXP_FAILURE", "group__BSPCOMMON.html#ga7dea37d8560dcda0ceebf9275b4ffa9e", null ],
     [ "BSP_STATUS_NOT_IMPLEMENTED", "group__BSPCOMMON.html#ga3ebeba724e7cbb9198d36dbe0d0e4a2c", null ],
     [ "BSP_STATUS_OK", "group__BSPCOMMON.html#ga9162f17feaee1b332cf4ce40f51a0e30", null ],
     [ "BSP_STATUS_UNSUPPORTED_MODE", "group__BSPCOMMON.html#gae3a15372cfda09e90aa7adbad50b1aec", null ],
@@ -15,5 +17,6 @@ var group__BSPCOMMON =
     [ "BSP_LedsGet", "group__BSPCOMMON.html#gaaca5aa60f6fa8d61e5d9bb7259623456", null ],
     [ "BSP_LedsInit", "group__BSPCOMMON.html#ga613508f20bd7eb40c6e9c51f9a2fcc29", null ],
     [ "BSP_LedsSet", "group__BSPCOMMON.html#ga3ccf1b78b909be9b57d580a6bafc038d", null ],
-    [ "BSP_LedToggle", "group__BSPCOMMON.html#gaa1d7f74ca14b30270a60546fb8fe9083", null ]
+    [ "BSP_LedToggle", "group__BSPCOMMON.html#gaa1d7f74ca14b30270a60546fb8fe9083", null ],
+    [ "BSP_PeripheralAccess", "group__BSPCOMMON.html#ga18ee56d221a2a21cb67f7320e78f3401", null ]
 ];

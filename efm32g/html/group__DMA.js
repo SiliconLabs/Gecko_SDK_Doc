@@ -65,9 +65,9 @@ var group__DMA =
       [ "dmaDataSize2", "group__DMA.html#gga19fed692b981a8dc7e3a5d6b0f281540aad69742ea4b6f914331c08fdcf9a5265", null ],
       [ "dmaDataSize4", "group__DMA.html#gga19fed692b981a8dc7e3a5d6b0f281540af372081fe5f67e55ac6ac355eaa2c7ba", null ]
     ] ],
-    [ "DMA_ActivateAuto", "group__DMA.html#gadaa5cd30f373b3e8150b64c26e53f2cd", null ],
-    [ "DMA_ActivateBasic", "group__DMA.html#ga6b72fd4e3bcc36e68cca16e5fa243a11", null ],
-    [ "DMA_ActivatePingPong", "group__DMA.html#ga7dd7d665c343274d70d5e597121b6b05", null ],
+    [ "DMA_ActivateAuto", "group__DMA.html#ga390b8891d006abe36098fac1f6aa9956", null ],
+    [ "DMA_ActivateBasic", "group__DMA.html#ga39176607740ee10b32a17b366443f652", null ],
+    [ "DMA_ActivatePingPong", "group__DMA.html#gafa024da06dae7c63203a1f8cf28d1734", null ],
     [ "DMA_ActivateScatterGather", "group__DMA.html#gabc90358478008982202768d217375a80", null ],
     [ "DMA_CfgChannel", "group__DMA.html#gab119fe5869e7ebcfd29542d05dae2d29", null ],
     [ "DMA_CfgDescr", "group__DMA.html#ga6595eabbd98c16c3d610eebb88daf052", null ],
@@ -83,6 +83,6 @@ var group__DMA =
     [ "DMA_IntGetEnabled", "group__DMA.html#gaf0ff865e18598c43437e589c9e435f04", null ],
     [ "DMA_IntSet", "group__DMA.html#gaed62cc3df555ca00b05adbbbe87fade1", null ],
     [ "DMA_IRQHandler", "group__DMA.html#gac1fca8b8a3ce0431d9aebbf432eda751", null ],
-    [ "DMA_RefreshPingPong", "group__DMA.html#ga98484c1f3ff4ca1bef804b1d35f387bd", null ],
+    [ "DMA_RefreshPingPong", "group__DMA.html#gaad834bd09b59fb131a6a53d1d31f0115", null ],
     [ "DMA_Reset", "group__DMA.html#ga35a483de1c773d6cd958434372054b8b", null ]
 ];

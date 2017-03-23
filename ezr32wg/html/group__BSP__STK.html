@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32wg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">ezr32wg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('group__BSP__STK.html','');});
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">API for STKs and WSTKs<div class="ingroups"><a class="el" href="group__BSP.html">BSP</a></div></div>  </div>
@@ -165,6 +166,48 @@ Macros</h2></td></tr>
 <tr class="memitem:gab5be77a938905f62c3e5461d551d3f87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#gab5be77a938905f62c3e5461d551d3f87">BSP_BCP_VOLTAGE_REQ</a>&#160;&#160;&#160;18</td></tr>
 <tr class="separator:gab5be77a938905f62c3e5461d551d3f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga978526e7803d063aeea2bba759571289"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga978526e7803d063aeea2bba759571289">BSP_Peripheral_TypeDef</a> { <br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a7ee2fe6799b66928489b136505bfd15a">BSP_RS232_SHUTDOWN</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289adce62ece06c8cb0512b4ea478f7f86ee">BSP_RS232_UART</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289abff6ba4882409c28bb2344fb32c77845">BSP_RS232_LEUART</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289af5b774032fff4d7dfedcb50705958ef6">BSP_I2C</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a92cc6711102e4fab9a97d3a300f68a95">BSP_ETH</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a74dd792f904c887e510e739881121f47">BSP_I2S</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a9e14c14c71eec858142df90d845d0393">BSP_TRACE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a10caa20cd86554aec51e23406ddb1f58">BSP_TOUCH</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a91e25b14ca42149386b528a220bad0c1">BSP_AUDIO_IN</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a218b4fa9f9e60fd622f025e847369a65">BSP_AUDIO_OUT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289ad93e25cae5a6055f75ccc8b74a33bee9">BSP_ANALOG_DIFF</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289ae75fc3ff8186b3418a13c345f2bbc098">BSP_ANALOG_SE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a083b9a980e1df709fa6e02814b159d93">BSP_MICROSD</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a743380f59f663a0f28e428573fe858bc">BSP_TFT</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a7041f79cbfb87047fea33f429198eeb8">BSP_IOEXP_LEDS</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289a252c0e71ef750aa548e6c8debe0a166e">BSP_IOEXP_SENSORS</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289afee6666bd01a8e5b92e0db33dad42794">BSP_IOEXP_DISPLAY</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__BSP__STK.html#gga978526e7803d063aeea2bba759571289af389457ed3ce92bf9924dbc21a246036">BSP_IOEXP_VCOM</a>
+<br />
+ }<tr class="separator:ga978526e7803d063aeea2bba759571289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gac3192060c8ac4b2c6f4293aed6b2747a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#gac3192060c8ac4b2c6f4293aed6b2747a">BSP_BccDeInit</a> (void)</td></tr>
@@ -191,6 +234,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga03b1ff40234468f05b725c7997d8bd84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga03b1ff40234468f05b725c7997d8bd84">BSP_EbiInit</a> (void)</td></tr>
 <tr class="memdesc:ga03b1ff40234468f05b725c7997d8bd84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the EBI interface for accessing the onboard nandflash.  <a href="#ga03b1ff40234468f05b725c7997d8bd84">More...</a><br /></td></tr>
 <tr class="separator:ga03b1ff40234468f05b725c7997d8bd84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02e6d90384575784588039dfd7120e51"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga02e6d90384575784588039dfd7120e51">BSP_IOExpGetDeviceId</a> (void)</td></tr>
+<tr class="memdesc:ga02e6d90384575784588039dfd7120e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get IO Expander Device id.  <a href="#ga02e6d90384575784588039dfd7120e51">More...</a><br /></td></tr>
+<tr class="separator:ga02e6d90384575784588039dfd7120e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga49f47507e5d6c286a2913807671803aa"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__BSP__STK.html#ga49f47507e5d6c286a2913807671803aa">BSP_VoltageGet</a> (void)</td></tr>
 <tr class="memdesc:ga49f47507e5d6c286a2913807671803aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request AEM (Advanced Energy Monitoring) voltage from board controller.  <a href="#ga49f47507e5d6c286a2913807671803aa">More...</a><br /></td></tr>
 <tr class="separator:ga49f47507e5d6c286a2913807671803aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -512,6 +558,78 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ga978526e7803d063aeea2bba759571289"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__BSP__DK.html#ga978526e7803d063aeea2bba759571289">BSP_Peripheral_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Peripherals control structure for WSTK's with onboard I/O expander. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289a7ee2fe6799b66928489b136505bfd15a"></a>BSP_RS232_SHUTDOWN&#160;</td><td class="fielddoc">
+<p>Disable RS232 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289adce62ece06c8cb0512b4ea478f7f86ee"></a>BSP_RS232_UART&#160;</td><td class="fielddoc">
+<p>UART control of RS232 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289abff6ba4882409c28bb2344fb32c77845"></a>BSP_RS232_LEUART&#160;</td><td class="fielddoc">
+<p>LEUART control of RS232 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289af5b774032fff4d7dfedcb50705958ef6"></a>BSP_I2C&#160;</td><td class="fielddoc">
+<p>I2C interface </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289a92cc6711102e4fab9a97d3a300f68a95"></a>BSP_ETH&#160;</td><td class="fielddoc">
+<p>Ethernet </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289a74dd792f904c887e510e739881121f47"></a>BSP_I2S&#160;</td><td class="fielddoc">
+<p>Audio I2S </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289a9e14c14c71eec858142df90d845d0393"></a>BSP_TRACE&#160;</td><td class="fielddoc">
+<p>ETM Trace </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289a10caa20cd86554aec51e23406ddb1f58"></a>BSP_TOUCH&#160;</td><td class="fielddoc">
+<p>Display touch interface </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289a91e25b14ca42149386b528a220bad0c1"></a>BSP_AUDIO_IN&#160;</td><td class="fielddoc">
+<p>Audio In </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289a218b4fa9f9e60fd622f025e847369a65"></a>BSP_AUDIO_OUT&#160;</td><td class="fielddoc">
+<p>Audio Out </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289ad93e25cae5a6055f75ccc8b74a33bee9"></a>BSP_ANALOG_DIFF&#160;</td><td class="fielddoc">
+<p>Differential analog input </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289ae75fc3ff8186b3418a13c345f2bbc098"></a>BSP_ANALOG_SE&#160;</td><td class="fielddoc">
+<p>Single ended analog input </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289a083b9a980e1df709fa6e02814b159d93"></a>BSP_MICROSD&#160;</td><td class="fielddoc">
+<p>MicroSD SPI interace </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289a743380f59f663a0f28e428573fe858bc"></a>BSP_TFT&#160;</td><td class="fielddoc">
+<p>SSD2119 TFT controller </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289a7041f79cbfb87047fea33f429198eeb8"></a>BSP_IOEXP_LEDS&#160;</td><td class="fielddoc">
+<p>LED control </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289a252c0e71ef750aa548e6c8debe0a166e"></a>BSP_IOEXP_SENSORS&#160;</td><td class="fielddoc">
+<p>Humidity &amp; temperature sensor control </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289afee6666bd01a8e5b92e0db33dad42794"></a>BSP_IOEXP_DISPLAY&#160;</td><td class="fielddoc">
+<p>Memory LCD control </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga978526e7803d063aeea2bba759571289af389457ed3ce92bf9924dbc21a246036"></a>BSP_IOEXP_VCOM&#160;</td><td class="fielddoc">
+<p>VCOM (virtual com port) control </p>
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="bsp_8h_source.html#l00143">143</a> of file <a class="el" href="bsp_8h_source.html">bsp.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="gac3192060c8ac4b2c6f4293aed6b2747a"></a>
 <div class="memitem">
@@ -669,7 +787,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Assumes that <a class="el" href="group__BSPCOMMON.html#ga8289bda0de5688289312df216c8b7a63" title="Initialize board support package functionality. ">BSP_Init()</a> has been called with <a class="el" href="group__BSPCOMMON.html#gadc355d95556722d900d5a5571ff77a31">BSP_INIT_BCC</a> bitmask.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The current expressed in milliamperes. Returns 0.0 on board controller communication error. </dd></dl>
 
-<p>Definition at line <a class="el" href="bsp__stk_8c_source.html#l00196">196</a> of file <a class="el" href="bsp__stk_8c_source.html">bsp_stk.c</a>.</p>
+<p>Definition at line <a class="el" href="bsp__stk_8c_source.html#l00317">317</a> of file <a class="el" href="bsp__stk_8c_source.html">bsp_stk.c</a>.</p>
 
 <p>References <a class="el" href="group__BSP__STK.html#ga7c4e0d4b56b273ec994f61e0f459c4fe">BSP_BccPacketReceive()</a>, <a class="el" href="group__BSP__STK.html#ga0b5a131c7411fd2080a5bb00473f81a8">BSP_BccPacketSend()</a>, <a class="el" href="group__BSP__STK.html#ga6445e79280ab84bbc90d9bfc8417be73">BSP_BCP_CURRENT_REPLY</a>, <a class="el" href="group__BSP__STK.html#ga249b6c201b45d747064e44be0518969a">BSP_BCP_CURRENT_REQ</a>, <a class="el" href="structBCP__Packet.html#abaf96065478d9057cd08f1f05496a39a">BCP_Packet::data</a>, <a class="el" href="structBCP__Packet.html#a48250e89704fa26d943f6725651e6848">BCP_Packet::payloadLength</a>, and <a class="el" href="structBCP__Packet.html#a9816c5bfe1cbd04d193f0d89442eec83">BCP_Packet::type</a>.</p>
 
@@ -693,7 +811,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This function is not relevant for Gxxx_STK's. This function is provided for API completeness, it does not perform an actual EBI deinitialization.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__BSPCOMMON.html#ga9162f17feaee1b332cf4ce40f51a0e30">BSP_STATUS_OK</a> or <a class="el" href="group__BSPCOMMON.html#ga3ebeba724e7cbb9198d36dbe0d0e4a2c">BSP_STATUS_NOT_IMPLEMENTED</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="bsp__stk_8c_source.html#l00157">157</a> of file <a class="el" href="bsp__stk_8c_source.html">bsp_stk.c</a>.</p>
+<p>Definition at line <a class="el" href="bsp__stk_8c_source.html#l00161">161</a> of file <a class="el" href="bsp__stk_8c_source.html">bsp_stk.c</a>.</p>
 
 <p>References <a class="el" href="group__BSPCOMMON.html#ga3ebeba724e7cbb9198d36dbe0d0e4a2c">BSP_STATUS_NOT_IMPLEMENTED</a>, and <a class="el" href="group__BSPCOMMON.html#ga9162f17feaee1b332cf4ce40f51a0e30">BSP_STATUS_OK</a>.</p>
 
@@ -717,9 +835,30 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This function is not relevant for Gxxx_STK's.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__BSPCOMMON.html#ga9162f17feaee1b332cf4ce40f51a0e30">BSP_STATUS_OK</a> or <a class="el" href="group__BSPCOMMON.html#ga3ebeba724e7cbb9198d36dbe0d0e4a2c">BSP_STATUS_NOT_IMPLEMENTED</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="bsp__stk_8c_source.html#l00064">64</a> of file <a class="el" href="bsp__stk_8c_source.html">bsp_stk.c</a>.</p>
+<p>Definition at line <a class="el" href="bsp__stk_8c_source.html#l00068">68</a> of file <a class="el" href="bsp__stk_8c_source.html">bsp_stk.c</a>.</p>
 
 <p>References <a class="el" href="group__BSPCOMMON.html#ga3ebeba724e7cbb9198d36dbe0d0e4a2c">BSP_STATUS_NOT_IMPLEMENTED</a>, <a class="el" href="group__BSPCOMMON.html#ga9162f17feaee1b332cf4ce40f51a0e30">BSP_STATUS_OK</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eaadef20e56d0b5f877854266fefb9d7d9">cmuClock_GPIO</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a>, <a class="el" href="group__GPIO.html#gab6751992334a136efe8750a1d01a850d">GPIO_PinModeSet()</a>, <a class="el" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaaaa4999965d92199eb5a93c31026dde42">gpioModeInput</a>, and <a class="el" href="group__GPIO.html#gga93ff740308e5b31729d8593a89967cdaa110ef690a2c14c594938e2aa70469abd">gpioModePushPull</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga02e6d90384575784588039dfd7120e51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t BSP_IOExpGetDeviceId </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get IO Expander Device id. </p>
+<dl class="section return"><dt>Returns</dt><dd>The device id of a connected IO Expander Device id or 0 if no IO expander is connected. </dd></dl>
+
+<p>Definition at line <a class="el" href="bsp__stk_8c_source.html#l00177">177</a> of file <a class="el" href="bsp__stk_8c_source.html">bsp_stk.c</a>.</p>
 
 </div>
 </div>
@@ -741,7 +880,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Assumes that <a class="el" href="group__BSPCOMMON.html#ga8289bda0de5688289312df216c8b7a63" title="Initialize board support package functionality. ">BSP_Init()</a> has been called with <a class="el" href="group__BSPCOMMON.html#gadc355d95556722d900d5a5571ff77a31">BSP_INIT_BCC</a> bitmask.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The voltage. Returns 0.0 on board controller communication error. </dd></dl>
 
-<p>Definition at line <a class="el" href="bsp__stk_8c_source.html#l00228">228</a> of file <a class="el" href="bsp__stk_8c_source.html">bsp_stk.c</a>.</p>
+<p>Definition at line <a class="el" href="bsp__stk_8c_source.html#l00349">349</a> of file <a class="el" href="bsp__stk_8c_source.html">bsp_stk.c</a>.</p>
 
 <p>References <a class="el" href="group__BSP__STK.html#ga7c4e0d4b56b273ec994f61e0f459c4fe">BSP_BccPacketReceive()</a>, <a class="el" href="group__BSP__STK.html#ga0b5a131c7411fd2080a5bb00473f81a8">BSP_BccPacketSend()</a>, <a class="el" href="group__BSP__STK.html#ga490e671df42b4175fa225205ec2f48c8">BSP_BCP_VOLTAGE_REPLY</a>, <a class="el" href="group__BSP__STK.html#gab5be77a938905f62c3e5461d551d3f87">BSP_BCP_VOLTAGE_REQ</a>, <a class="el" href="structBCP__Packet.html#abaf96065478d9057cd08f1f05496a39a">BCP_Packet::data</a>, <a class="el" href="structBCP__Packet.html#a48250e89704fa26d943f6725651e6848">BCP_Packet::payloadLength</a>, and <a class="el" href="structBCP__Packet.html#a9816c5bfe1cbd04d193f0d89442eec83">BCP_Packet::type</a>.</p>
 
@@ -752,7 +891,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 16:06:46 for EZR32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:47:56 for EZR32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

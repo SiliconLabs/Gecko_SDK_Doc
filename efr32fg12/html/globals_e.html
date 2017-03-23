@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Flex Gecko 12 Software Documentation
-   &#160;<span id="projectnumber">efr32fg12-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efr32fg12-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -391,6 +391,9 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 <li>ECODE_EMDRV_USTIMER_OK
 : <a class="el" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ustimer.h</a>
 </li>
+<li>ECODE_GLIB_BASE
+: <a class="el" href="group__glib.html#gad06619a1f7d1c5d7b503cde202f64c4b">glib.h</a>
+</li>
 <li>ECODE_OK
 : <a class="el" href="group__emdrv.html#gad59417e7951d81dfc15ec2757f08148e">ecode.h</a>
 </li>
@@ -416,9 +419,6 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 <li>EEPROM_Write()
 : <a class="el" href="group__Eeprom.html#ga1b92635b3e255f10731494e833654895">eeprom.c</a>
 , <a class="el" href="group__Eeprom.html#ga1b92635b3e255f10731494e833654895">eeprom.h</a>
-</li>
-<li>EFM32_CTZ()
-: <a class="el" href="group__COMMON.html#ga360287cd806ff1d1520498417c41bb6c">em_common.h</a>
 </li>
 <li>EFM_Alphabet
 : <a class="el" href="segmentlcd_8c.html#ac4076c746e6d96a4fce1f2583d1b3228">segmentlcd.c</a>
@@ -456,12 +456,6 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 <li>EMU_CMD_EM01VSCALE0_DEFAULT
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#gaffd2f3f08026e7184b815d2a8ce10c60">efr32fg12p_emu.h</a>
 </li>
-<li>EMU_CMD_EM01VSCALE1
-: <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#gaa86d36b73b68e181d4e459acc16bd020">efr32fg12p_emu.h</a>
-</li>
-<li>EMU_CMD_EM01VSCALE1_DEFAULT
-: <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#ga252b8c72fe79b47665bc0ed10488366f">efr32fg12p_emu.h</a>
-</li>
 <li>EMU_CMD_EM01VSCALE2
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#ga60056aad3f248c4325afe15a052dad7d">efr32fg12p_emu.h</a>
 </li>
@@ -488,9 +482,6 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 </li>
 <li>EMU_CTRL_EM23VSCALE_VSCALE0
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#ga09d3b4b10547046b40fcff675372244e">efr32fg12p_emu.h</a>
-</li>
-<li>EMU_CTRL_EM23VSCALE_VSCALE1
-: <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#ga05931fa6b2e5aab440cb969b8b9c70d3">efr32fg12p_emu.h</a>
 </li>
 <li>EMU_CTRL_EM23VSCALE_VSCALE2
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#ga8e684200a8621127a1ff9dba0ec91196">efr32fg12p_emu.h</a>
@@ -522,9 +513,6 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 <li>EMU_CTRL_EM4HVSCALE_VSCALE0
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#ga0be65788e6e38618ca054d8c2ff651aa">efr32fg12p_emu.h</a>
 </li>
-<li>EMU_CTRL_EM4HVSCALE_VSCALE1
-: <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#ga6d5779c8fbcd3abd7dc0134d2de01f9f">efr32fg12p_emu.h</a>
-</li>
 <li>EMU_CTRL_EM4HVSCALE_VSCALE2
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#gae715bd254347ed7a11524a99ef8b5bfe">efr32fg12p_emu.h</a>
 </li>
@@ -539,6 +527,12 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 </li>
 <li>EMU_DCDCCLIMCTRL_CLIMBLANKDLY_DEFAULT
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#ga7a9eaa94b7a7ad9df8b2b0c7b8fa1549">efr32fg12p_emu.h</a>
+</li>
+<li>EMU_DcdcConductionMode_TypeDef
+: <a class="el" href="group__EMU.html#ga45189ee92413218bfa0bb32e86c08205">em_emu.h</a>
+</li>
+<li>EMU_DCDCConductionModeSet()
+: <a class="el" href="group__EMU.html#ga04e1192310f75a52ad4ae5a5aaf3e6a4">em_emu.h</a>
 </li>
 <li>EMU_DCDCCTRL_DCDCMODE_BYPASS
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#gac37a5530b7a5c6704ada18f55de7de4b">efr32fg12p_emu.h</a>
@@ -580,10 +574,28 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#gaccb9729308343162177e14a538847c4a">efr32fg12p_emu.h</a>
 </li>
 <li>EMU_DCDCInit()
-: <a class="el" href="group__EMU.html#ga82fcb1a93c40723a2035975ec9d06265">em_emu.h</a>
+: <a class="el" href="group__EMU.html#ga9537dcfde6aace1ae4fcb1c949d10da0">em_emu.h</a>
 </li>
 <li>EMU_DCDCINIT_DEFAULT
 : <a class="el" href="group__EMU.html#ga31ff46ed4897f96bd2538117bfc2e3a2">em_emu.h</a>
+</li>
+<li>EMU_DCDCLNCOMPCTRL_COMPENC1_DEFAULT
+: <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#ga9e9bb0cf1d6347bc9c3c0a8c002aff04">efr32fg12p_emu.h</a>
+</li>
+<li>EMU_DCDCLNCOMPCTRL_COMPENC2_DEFAULT
+: <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#ga05d3534c6aec0070f74e366725a3648b">efr32fg12p_emu.h</a>
+</li>
+<li>EMU_DCDCLNCOMPCTRL_COMPENC3_DEFAULT
+: <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#gae4b73c457d1b0bf9374ec10021ea586b">efr32fg12p_emu.h</a>
+</li>
+<li>EMU_DCDCLNCOMPCTRL_COMPENR1_DEFAULT
+: <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#gacd28a96c7ebc85bbea4fa261aa50fd83">efr32fg12p_emu.h</a>
+</li>
+<li>EMU_DCDCLNCOMPCTRL_COMPENR2_DEFAULT
+: <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#gaa835d548bb72977f8563d142d9eb6377">efr32fg12p_emu.h</a>
+</li>
+<li>EMU_DCDCLNCOMPCTRL_COMPENR3_DEFAULT
+: <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#gaf245b474f3ed3d45e205b9246a12342c">efr32fg12p_emu.h</a>
 </li>
 <li>EMU_DcdcLnCompCtrl_TypeDef
 : <a class="el" href="group__EMU.html#gabba8a5896d1f04f6d70aad9d59cb0f67">em_emu.h</a>
@@ -744,8 +756,14 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 <li>EMU_DCDCZDETCTRL_ZDETILIMSEL_DEFAULT
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#gaebf680742c03eb5d9247d77c4d55f1cf">efr32fg12p_emu.h</a>
 </li>
+<li>EMU_EM01Init()
+: <a class="el" href="group__EMU.html#ga94015af7f05d2a57a7a558d9e77cb110">em_emu.h</a>
+</li>
+<li>EMU_EM01INIT_DEFAULT
+: <a class="el" href="group__EMU.html#ga4f77ad8930978067cab575abe18da9db">em_emu.h</a>
+</li>
 <li>EMU_EM23Init()
-: <a class="el" href="group__EMU.html#ga27ca632c20c9251019338c5690279974">em_emu.h</a>
+: <a class="el" href="group__EMU.html#ga8d66846de92bb95a33a37a9f2357e247">em_emu.h</a>
 </li>
 <li>EMU_EM23INIT_DEFAULT
 : <a class="el" href="group__EMU.html#ga3ab678c773fd5adc3d8763184b1e5b36">em_emu.h</a>
@@ -1090,7 +1108,7 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#ga971d2163a19f2b6b6c332a1cb4d43810">efr32fg12p_emu.h</a>
 </li>
 <li>EMU_EM4Init()
-: <a class="el" href="group__EMU.html#ga06bca70635ca5004a01c35eeafa15690">em_emu.h</a>
+: <a class="el" href="group__EMU.html#gabf5fb49f95c827b6ef45597595e5505c">em_emu.h</a>
 </li>
 <li>EMU_EM4INIT_DEFAULT
 : <a class="el" href="group__EMU.html#ga2ccfdd68ead3dab3d4926cac997b1461">em_emu.h</a>
@@ -1645,6 +1663,12 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 <li>EMU_MemPwrDown()
 : <a class="el" href="group__EMU.html#ga49eb5750384ff279aae225ab5922e9f1">em_emu.h</a>
 </li>
+<li>EMU_PeripheralRetention()
+: <a class="el" href="group__EMU.html#gac6c6889429a8378dd7e400c186c8f61f">em_emu.h</a>
+</li>
+<li>EMU_PeripheralRetention_TypeDef
+: <a class="el" href="group__EMU.html#gae488c226aa6849405e1337a1af0b15ba">em_emu.h</a>
+</li>
 <li>EMU_PowerConfig_TypeDef
 : <a class="el" href="group__EMU.html#ga87842440cb0cf01e18480e6d665c581f">em_emu.h</a>
 </li>
@@ -1747,6 +1771,12 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 <li>EMU_RAM2CTRL_RAMPOWERDOWN_NONE
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#gacf38b66e2678e4a2ec1856c4dfa6c6b4">efr32fg12p_emu.h</a>
 </li>
+<li>EMU_RamPowerDown()
+: <a class="el" href="group__EMU.html#ga9b023a731a664add13a0ee090ce1db69">em_emu.h</a>
+</li>
+<li>EMU_Restore()
+: <a class="el" href="group__EMU.html#gaff9e6aa2435b13a50a1dfa1f7547ad12">em_emu.h</a>
+</li>
 <li>EMU_STATUS_EM4IORET
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#gafa9b6a5f6d4e686619161cba06be53db">efr32fg12p_emu.h</a>
 </li>
@@ -1809,9 +1839,6 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 </li>
 <li>EMU_STATUS_VSCALE_VSCALE0
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#gade7fcb42bc45119dbf1e683a272ac82f">efr32fg12p_emu.h</a>
-</li>
-<li>EMU_STATUS_VSCALE_VSCALE1
-: <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#ga1de1fbf6413eda9919db9b8a41f18ab4">efr32fg12p_emu.h</a>
 </li>
 <li>EMU_STATUS_VSCALE_VSCALE2
 : <a class="el" href="group__EFR32FG12P__EMU__BitFields.html#ga4faab072215e77305716631fc5e09609">efr32fg12p_emu.h</a>
@@ -1937,13 +1964,13 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 : <a class="el" href="group__EMU.html#ga09300bbda1f03edc7096e49daa2a64eb">em_emu.h</a>
 </li>
 <li>EMU_VmonHystInit()
-: <a class="el" href="group__EMU.html#ga1dff87995235b3e9f1100881e11e1868">em_emu.h</a>
+: <a class="el" href="group__EMU.html#ga6a0d0cb738d3adf871e9d7f93f1d1cbd">em_emu.h</a>
 </li>
 <li>EMU_VMONHYSTINIT_DEFAULT
 : <a class="el" href="group__EMU.html#gaf4b3423e7291019064004822b8094dd7">em_emu.h</a>
 </li>
 <li>EMU_VmonInit()
-: <a class="el" href="group__EMU.html#ga83f2bf640fd8916bd425b91f7b7bdba6">em_emu.h</a>
+: <a class="el" href="group__EMU.html#ga906bcf7db101a3330ca7dc0ad3204559">em_emu.h</a>
 </li>
 <li>EMU_VMONINIT_DEFAULT
 : <a class="el" href="group__EMU.html#ga1e8cb24fae88de279ee84783f3b27e71">em_emu.h</a>
@@ -1981,6 +2008,27 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 <li>EMU_VmonStatusGet()
 : <a class="el" href="group__EMU.html#gafe10f8365d6b7a829585982be34f08ee">em_emu.h</a>
 </li>
+<li>EMU_VScaleEM01()
+: <a class="el" href="group__EMU.html#ga304ac3bfd0085cedd7ebaf452ab58b77">em_emu.h</a>
+</li>
+<li>EMU_VScaleEM01_TypeDef
+: <a class="el" href="group__EMU.html#gaa7011233832b64921200495959068d54">em_emu.h</a>
+</li>
+<li>EMU_VScaleEM01ByClock()
+: <a class="el" href="group__EMU.html#ga6ef9e1b8b615726cc1136c8b13fe766d">em_emu.h</a>
+</li>
+<li>EMU_VScaleEM23_TypeDef
+: <a class="el" href="group__EMU.html#gaf5c7615fdbe3d04380dbe48aa62b60cd">em_emu.h</a>
+</li>
+<li>EMU_VScaleEM4H_TypeDef
+: <a class="el" href="group__EMU.html#ga845a688f80566fab75f8bbcebb4cf6fb">em_emu.h</a>
+</li>
+<li>EMU_VScaleGet()
+: <a class="el" href="group__EMU.html#gafddbfc16753307c01502412c07f0f8d5">em_emu.h</a>
+</li>
+<li>EMU_VScaleWait()
+: <a class="el" href="group__EMU.html#ga931621e4e7093876273b14a24883c097">em_emu.h</a>
+</li>
 <li>emuBODMode_Active
 : <a class="el" href="group__EMU.html#gga7453aecd1fc0cf2d035df6178dfb9a16ab8a638e18a8c50b6406dc807e8ed727d">em_emu.h</a>
 </li>
@@ -1992,6 +2040,12 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 </li>
 <li>emuDcdcAnaPeripheralPower_DCDC
 : <a class="el" href="group__EMU.html#ggaccf990475418eb1ed67acaed99efa4d0a11b20cbde79a3d9aede0836319b4e6eb">em_emu.h</a>
+</li>
+<li>emuDcdcConductionMode_ContinuousLN
+: <a class="el" href="group__EMU.html#gga45189ee92413218bfa0bb32e86c08205aa03ed679017808311942e7278080be33">em_emu.h</a>
+</li>
+<li>emuDcdcConductionMode_DiscontinuousLN
+: <a class="el" href="group__EMU.html#gga45189ee92413218bfa0bb32e86c08205ad5cc162bbf982de5726920d927cdd372">em_emu.h</a>
 </li>
 <li>emuDcdcLnCompCtrl_1u0F
 : <a class="el" href="group__EMU.html#ggabba8a5896d1f04f6d70aad9d59cb0f67aa311d8c0e15f9cb1a0bc5dde18a8a573">em_emu.h</a>
@@ -2055,6 +2109,24 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 </li>
 <li>emuPowerConfig_DcdcToDvdd
 : <a class="el" href="group__EMU.html#gga87842440cb0cf01e18480e6d665c581fa5b886af660bf7cbe17905593276a63d9">em_emu.h</a>
+</li>
+<li>emuVScaleEM01_HighPerformance
+: <a class="el" href="group__EMU.html#ggaa7011233832b64921200495959068d54aabfae2e8d057fa5fa3e6a37ab06a9296">em_emu.h</a>
+</li>
+<li>emuVScaleEM01_LowPower
+: <a class="el" href="group__EMU.html#ggaa7011233832b64921200495959068d54a4a84ce445acb95253d741cfc6f87a645">em_emu.h</a>
+</li>
+<li>emuVScaleEM23_FastWakeup
+: <a class="el" href="group__EMU.html#ggaf5c7615fdbe3d04380dbe48aa62b60cda1023804421d2cbdeb1cd5cf4bdbbb272">em_emu.h</a>
+</li>
+<li>emuVScaleEM23_LowPower
+: <a class="el" href="group__EMU.html#ggaf5c7615fdbe3d04380dbe48aa62b60cdac2ce344982fdc3a053f141090d0096ec">em_emu.h</a>
+</li>
+<li>emuVScaleEM4H_FastWakeup
+: <a class="el" href="group__EMU.html#gga845a688f80566fab75f8bbcebb4cf6fbaecd6d84d94d7af851273e454d26bda9b">em_emu.h</a>
+</li>
+<li>emuVScaleEM4H_LowPower
+: <a class="el" href="group__EMU.html#gga845a688f80566fab75f8bbcebb4cf6fba65c7ee7d582361e3bab364726d9833ac">em_emu.h</a>
 </li>
 <li>ETH_CS_PIN
 : <a class="el" href="ksz8851snl__spi_8c.html#a8c72b0130a3a8067c2e9ce362cd305b9">ksz8851snl_spi.c</a>
@@ -2485,12 +2557,6 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 <li>ETM_ETMSCR_PROCNUM_DEFAULT
 : <a class="el" href="group__EFR32FG12P__ETM__BitFields.html#ga7d14b82328c11a30585a0209ae3ae3aa">efr32fg12p_etm.h</a>
 </li>
-<li>ETM_ETMSCR_Reserved
-: <a class="el" href="group__EFR32FG12P__ETM__BitFields.html#ga96d5f2c2e30bca1ab125d66b0c8a3049">efr32fg12p_etm.h</a>
-</li>
-<li>ETM_ETMSCR_Reserved_DEFAULT
-: <a class="el" href="group__EFR32FG12P__ETM__BitFields.html#ga2a6ccebc9f7dc3ddfce54ead99ca3578">efr32fg12p_etm.h</a>
-</li>
 <li>ETM_ETMSR_ETHOF
 : <a class="el" href="group__EFR32FG12P__ETM__BitFields.html#ga63295e097d737195b77be0d24f28d047">efr32fg12p_etm.h</a>
 </li>
@@ -2590,8 +2656,35 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 <li>ETM_ITTRIGOUT_TRIGGEROUT_DEFAULT
 : <a class="el" href="group__EFR32FG12P__ETM__BitFields.html#ga6ec44ac9ccb3cc0eb1b737faf5d601c4">efr32fg12p_etm.h</a>
 </li>
+<li>EXT_COMP_DESC_SIZE
+: <a class="el" href="em__usbxpress__descriptors_8h.html#a49564ea83ff4c1ccd3989e825ff1fdda">em_usbxpress_descriptors.h</a>
+</li>
+<li>EXT_COMP_VENDOR_CODE
+: <a class="el" href="em__usbxpress__descriptors_8h.html#a2fae8a776156b1b0bae26270c25d7517">em_usbxpress_descriptors.h</a>
+</li>
 <li>EXT_IRQ_COUNT
 : <a class="el" href="group__EFR32FG12P433F1024GL125__Part.html#ga1f5541236b626715663b8cc3ec32e50d">efr32fg12p433f1024gl125.h</a>
+</li>
+<li>EXTENDED_PROPERTY_TYPE_MULTI_SZ
+: <a class="el" href="em__usbxpress__descriptors_8h.html#a79309a10fa6f3d4b8bdeb4735bfd6f64">em_usbxpress_descriptors.h</a>
+</li>
+<li>EXTENDED_PROPERTY_TYPE_REG_BINARY
+: <a class="el" href="em__usbxpress__descriptors_8h.html#a6c63d8b357b649dd6871ec2e2bce8b95">em_usbxpress_descriptors.h</a>
+</li>
+<li>EXTENDED_PROPERTY_TYPE_REG_DWORD_BIG_ENDIAN
+: <a class="el" href="em__usbxpress__descriptors_8h.html#ab4da099be0f23d77b2a8cdb94d0ff150">em_usbxpress_descriptors.h</a>
+</li>
+<li>EXTENDED_PROPERTY_TYPE_REG_DWORD_LITTLE_ENDIAN
+: <a class="el" href="em__usbxpress__descriptors_8h.html#a6afc202db0a2019145d33e5f50f6ca0e">em_usbxpress_descriptors.h</a>
+</li>
+<li>EXTENDED_PROPERTY_TYPE_REG_EXPAND_SZ
+: <a class="el" href="em__usbxpress__descriptors_8h.html#a17cfe76b925e5a338eeded15bfe87db4">em_usbxpress_descriptors.h</a>
+</li>
+<li>EXTENDED_PROPERTY_TYPE_REG_LINK
+: <a class="el" href="em__usbxpress__descriptors_8h.html#a46f304ba428f23f8d8da8f16e62f2240">em_usbxpress_descriptors.h</a>
+</li>
+<li>EXTENDED_PROPERTY_TYPE_REG_SZ
+: <a class="el" href="em__usbxpress__descriptors_8h.html#a64020f149398bb6fab4d28c332e85552">em_usbxpress_descriptors.h</a>
 </li>
 <li>EXTRA_SIZE
 : <a class="el" href="ksz8851snl_8c.html#a14310221be58e5b64cc335aaecc80afd">ksz8851snl.c</a>
@@ -2605,32 +2698,32 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__COMM__Layer.html#ga26dddf452edc3e30c29cdab7d9fef1a7">ezradio_comm.c</a>
 </li>
 <li>ezradio_comm_CtsWentHigh
-: <a class="el" href="group__COMM__Layer.html#ga3be6bf56cfb1e196af67cb55fe708643">ezradio_comm.c</a>
-, <a class="el" href="group__COMM__Layer.html#ga3be6bf56cfb1e196af67cb55fe708643">ezradio_comm.h</a>
+: <a class="el" href="group__COMM__Layer.html#ga3be6bf56cfb1e196af67cb55fe708643">ezradio_comm.h</a>
+, <a class="el" href="group__COMM__Layer.html#ga3be6bf56cfb1e196af67cb55fe708643">ezradio_comm.c</a>
 </li>
 <li>ezradio_comm_GetResp()
-: <a class="el" href="group__COMM__Layer.html#ga45656b02cb2cf46e29c8f509203e08b4">ezradio_comm.c</a>
-, <a class="el" href="group__COMM__Layer.html#ga45656b02cb2cf46e29c8f509203e08b4">ezradio_comm.h</a>
+: <a class="el" href="group__COMM__Layer.html#ga45656b02cb2cf46e29c8f509203e08b4">ezradio_comm.h</a>
+, <a class="el" href="group__COMM__Layer.html#ga45656b02cb2cf46e29c8f509203e08b4">ezradio_comm.c</a>
 </li>
 <li>ezradio_comm_PollCTS()
-: <a class="el" href="group__COMM__Layer.html#gac2d23214b75072bedd593da2815858d3">ezradio_comm.c</a>
-, <a class="el" href="group__COMM__Layer.html#gac2d23214b75072bedd593da2815858d3">ezradio_comm.h</a>
+: <a class="el" href="group__COMM__Layer.html#gac2d23214b75072bedd593da2815858d3">ezradio_comm.h</a>
+, <a class="el" href="group__COMM__Layer.html#gac2d23214b75072bedd593da2815858d3">ezradio_comm.c</a>
 </li>
 <li>ezradio_comm_ReadData()
-: <a class="el" href="group__COMM__Layer.html#gafc9ec03055010c4c5cbfed6d8637de71">ezradio_comm.c</a>
-, <a class="el" href="group__COMM__Layer.html#gafc9ec03055010c4c5cbfed6d8637de71">ezradio_comm.h</a>
+: <a class="el" href="group__COMM__Layer.html#gafc9ec03055010c4c5cbfed6d8637de71">ezradio_comm.h</a>
+, <a class="el" href="group__COMM__Layer.html#gafc9ec03055010c4c5cbfed6d8637de71">ezradio_comm.c</a>
 </li>
 <li>ezradio_comm_SendCmd()
 : <a class="el" href="group__COMM__Layer.html#ga038a27f7a6883bc6640fe1187a98eed9">ezradio_comm.c</a>
 , <a class="el" href="group__COMM__Layer.html#ga038a27f7a6883bc6640fe1187a98eed9">ezradio_comm.h</a>
 </li>
 <li>ezradio_comm_SendCmdGetResp()
-: <a class="el" href="group__COMM__Layer.html#ga67ac511d7cfce9c8cb00cd31113ff9a4">ezradio_comm.c</a>
-, <a class="el" href="group__COMM__Layer.html#ga67ac511d7cfce9c8cb00cd31113ff9a4">ezradio_comm.h</a>
+: <a class="el" href="group__COMM__Layer.html#ga67ac511d7cfce9c8cb00cd31113ff9a4">ezradio_comm.h</a>
+, <a class="el" href="group__COMM__Layer.html#ga67ac511d7cfce9c8cb00cd31113ff9a4">ezradio_comm.c</a>
 </li>
 <li>ezradio_comm_WriteData()
-: <a class="el" href="group__COMM__Layer.html#ga6316768a0f0661af747171605e86f401">ezradio_comm.c</a>
-, <a class="el" href="group__COMM__Layer.html#ga6316768a0f0661af747171605e86f401">ezradio_comm.h</a>
+: <a class="el" href="group__COMM__Layer.html#ga6316768a0f0661af747171605e86f401">ezradio_comm.h</a>
+, <a class="el" href="group__COMM__Layer.html#ga6316768a0f0661af747171605e86f401">ezradio_comm.c</a>
 </li>
 <li>EZRADIO_CONFIG_COMMAND_ERROR
 : <a class="el" href="group__API__Layer.html#gga0a0400f1e4c5eae1df893aec358d5b5ca33ac7e1d9f0696eca05b880549b15a62">ezradio_api_lib.h</a>
@@ -2651,48 +2744,47 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 : <a class="el" href="group__API__Layer.html#ga0a0400f1e4c5eae1df893aec358d5b5c">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_configuration_init()
-: <a class="el" href="group__API__Layer.html#ga5e458f080841a7423743d53e2217d1e5">ezradio_api_lib_add.c</a>
-, <a class="el" href="group__API__Layer.html#ga5e458f080841a7423743d53e2217d1e5">ezradio_api_lib_add.h</a>
+: <a class="el" href="group__API__Layer.html#ga5e458f080841a7423743d53e2217d1e5">ezradio_api_lib_add.h</a>
+, <a class="el" href="group__API__Layer.html#ga5e458f080841a7423743d53e2217d1e5">ezradio_api_lib_add.c</a>
 </li>
 <li>ezradio_ezconfig_check()
 : <a class="el" href="group__API__Layer.html#ga34050d696c76dfc0e2f210ac3465cdf0">ezradio_api_lib_add.h</a>
 , <a class="el" href="group__API__Layer.html#ga34050d696c76dfc0e2f210ac3465cdf0">ezradio_api_lib_add.c</a>
 </li>
 <li>ezradio_fifo_info()
-: <a class="el" href="group__API__Layer.html#gad7e9af6ef1205ffb877a3c869f5193ee">ezradio_api_lib.h</a>
-, <a class="el" href="group__API__Layer.html#gad7e9af6ef1205ffb877a3c869f5193ee">ezradio_api_lib.c</a>
+: <a class="el" href="group__API__Layer.html#gad7e9af6ef1205ffb877a3c869f5193ee">ezradio_api_lib.c</a>
+, <a class="el" href="group__API__Layer.html#gad7e9af6ef1205ffb877a3c869f5193ee">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_fifo_info_fast_read()
 : <a class="el" href="group__API__Layer.html#gaf761bc9fbc4e01da3b6fc09523da4260">ezradio_api_lib.c</a>
 , <a class="el" href="group__API__Layer.html#gaf761bc9fbc4e01da3b6fc09523da4260">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_fifo_info_fast_reset()
-: <a class="el" href="group__API__Layer.html#gab214bdcdc5818dff1a6714c2aa0f98e3">ezradio_api_lib.c</a>
-, <a class="el" href="group__API__Layer.html#gab214bdcdc5818dff1a6714c2aa0f98e3">ezradio_api_lib.h</a>
+: <a class="el" href="group__API__Layer.html#gab214bdcdc5818dff1a6714c2aa0f98e3">ezradio_api_lib.h</a>
+, <a class="el" href="group__API__Layer.html#gab214bdcdc5818dff1a6714c2aa0f98e3">ezradio_api_lib.c</a>
 </li>
 <li>ezradio_frr_a_read()
-: <a class="el" href="group__API__Layer.html#ga36440d6a56405dc92ec2b72e1e10292a">ezradio_api_lib.h</a>
-, <a class="el" href="group__API__Layer.html#ga36440d6a56405dc92ec2b72e1e10292a">ezradio_api_lib.c</a>
+: <a class="el" href="group__API__Layer.html#ga36440d6a56405dc92ec2b72e1e10292a">ezradio_api_lib.c</a>
+, <a class="el" href="group__API__Layer.html#ga36440d6a56405dc92ec2b72e1e10292a">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_frr_b_read()
 : <a class="el" href="group__API__Layer.html#gaf0cda7a2e6b72419d9c11e2bbcbb652a">ezradio_api_lib.c</a>
 , <a class="el" href="group__API__Layer.html#gaf0cda7a2e6b72419d9c11e2bbcbb652a">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_frr_c_read()
-: <a class="el" href="group__API__Layer.html#ga0ee2cc3558bc6e85aea2f4c74dd7023a">ezradio_api_lib.c</a>
-, <a class="el" href="group__API__Layer.html#ga0ee2cc3558bc6e85aea2f4c74dd7023a">ezradio_api_lib.h</a>
+: <a class="el" href="group__API__Layer.html#ga0ee2cc3558bc6e85aea2f4c74dd7023a">ezradio_api_lib.h</a>
+, <a class="el" href="group__API__Layer.html#ga0ee2cc3558bc6e85aea2f4c74dd7023a">ezradio_api_lib.c</a>
 </li>
 <li>ezradio_frr_d_read()
 : <a class="el" href="group__API__Layer.html#ga3c6aa8b9c6580a45e53cb4f473e11168">ezradio_api_lib.c</a>
 , <a class="el" href="group__API__Layer.html#ga3c6aa8b9c6580a45e53cb4f473e11168">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_func_info()
-: <a class="el" href="group__API__Layer.html#ga6c5d8d1ef6ca843dfdbff5460e6dad2c">ezradio_api_lib.h</a>
-, <a class="el" href="group__API__Layer.html#ga6c5d8d1ef6ca843dfdbff5460e6dad2c">ezradio_api_lib.c</a>
+: <a class="el" href="group__API__Layer.html#ga6c5d8d1ef6ca843dfdbff5460e6dad2c">ezradio_api_lib.c</a>
+, <a class="el" href="group__API__Layer.html#ga6c5d8d1ef6ca843dfdbff5460e6dad2c">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_get_adc_reading()
-: <a class="el" href="group__API__Layer.html#gab50e698c116f28cdb80a64da04bb5dd2">ezradio_api_lib_add.c</a>
-, <a class="el" href="group__API__Layer.html#gab50e698c116f28cdb80a64da04bb5dd2">ezradio_api_lib_add.h</a>
+: <a class="el" href="group__API__Layer.html#gab50e698c116f28cdb80a64da04bb5dd2">ezradio_api_lib_add.h</a>
 , <a class="el" href="group__API__Layer.html#gab50e698c116f28cdb80a64da04bb5dd2">ezradio_api_lib_add.c</a>
 </li>
 <li>ezradio_get_chip_status()
@@ -2700,28 +2792,28 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__API__Layer.html#gad5ef27035ca328bb2861b5126600a490">ezradio_api_lib.c</a>
 </li>
 <li>ezradio_get_chip_status_fast_clear()
-: <a class="el" href="group__API__Layer.html#gad600f530d5f68c9a059f6bc661b38dbd">ezradio_api_lib.h</a>
-, <a class="el" href="group__API__Layer.html#gad600f530d5f68c9a059f6bc661b38dbd">ezradio_api_lib.c</a>
+: <a class="el" href="group__API__Layer.html#gad600f530d5f68c9a059f6bc661b38dbd">ezradio_api_lib.c</a>
+, <a class="el" href="group__API__Layer.html#gad600f530d5f68c9a059f6bc661b38dbd">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_get_chip_status_fast_clear_read()
-: <a class="el" href="group__API__Layer.html#ga797cd338dde1db4e7a24a06a06802766">ezradio_api_lib.c</a>
-, <a class="el" href="group__API__Layer.html#ga797cd338dde1db4e7a24a06a06802766">ezradio_api_lib.h</a>
+: <a class="el" href="group__API__Layer.html#ga797cd338dde1db4e7a24a06a06802766">ezradio_api_lib.h</a>
+, <a class="el" href="group__API__Layer.html#ga797cd338dde1db4e7a24a06a06802766">ezradio_api_lib.c</a>
 </li>
 <li>ezradio_get_int_status()
-: <a class="el" href="group__API__Layer.html#ga2060b35450cc17415abf08a2f028b2b6">ezradio_api_lib.h</a>
-, <a class="el" href="group__API__Layer.html#ga2060b35450cc17415abf08a2f028b2b6">ezradio_api_lib.c</a>
+: <a class="el" href="group__API__Layer.html#ga2060b35450cc17415abf08a2f028b2b6">ezradio_api_lib.c</a>
+, <a class="el" href="group__API__Layer.html#ga2060b35450cc17415abf08a2f028b2b6">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_get_int_status_fast_clear()
-: <a class="el" href="group__API__Layer.html#ga7aa4d52445b45b05292f22c888d54456">ezradio_api_lib.h</a>
-, <a class="el" href="group__API__Layer.html#ga7aa4d52445b45b05292f22c888d54456">ezradio_api_lib.c</a>
+: <a class="el" href="group__API__Layer.html#ga7aa4d52445b45b05292f22c888d54456">ezradio_api_lib.c</a>
+, <a class="el" href="group__API__Layer.html#ga7aa4d52445b45b05292f22c888d54456">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_get_int_status_fast_clear_read()
 : <a class="el" href="group__API__Layer.html#ga84c393b3068b4ae7366205b5be11b382">ezradio_api_lib.c</a>
 , <a class="el" href="group__API__Layer.html#ga84c393b3068b4ae7366205b5be11b382">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_get_modem_status()
-: <a class="el" href="group__API__Layer.html#gad7269dfaf3135be3218c08494df40542">ezradio_api_lib.c</a>
-, <a class="el" href="group__API__Layer.html#gad7269dfaf3135be3218c08494df40542">ezradio_api_lib.h</a>
+: <a class="el" href="group__API__Layer.html#gad7269dfaf3135be3218c08494df40542">ezradio_api_lib.h</a>
+, <a class="el" href="group__API__Layer.html#gad7269dfaf3135be3218c08494df40542">ezradio_api_lib.c</a>
 </li>
 <li>ezradio_get_modem_status_fast_clear()
 : <a class="el" href="group__API__Layer.html#ga31fbcc3ddf36d660029f52c7590551bf">ezradio_api_lib.c</a>
@@ -2732,8 +2824,8 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__API__Layer.html#ga2539aeb090517be778e29b658c7197fb">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_get_packet_info()
-: <a class="el" href="group__API__Layer.html#gaa6777e927f0bd0c5368ec58d4d6d3bcb">ezradio_api_lib.c</a>
-, <a class="el" href="group__API__Layer.html#gaa6777e927f0bd0c5368ec58d4d6d3bcb">ezradio_api_lib.h</a>
+: <a class="el" href="group__API__Layer.html#gaa6777e927f0bd0c5368ec58d4d6d3bcb">ezradio_api_lib.h</a>
+, <a class="el" href="group__API__Layer.html#gaa6777e927f0bd0c5368ec58d4d6d3bcb">ezradio_api_lib.c</a>
 </li>
 <li>ezradio_get_ph_status()
 : <a class="el" href="group__API__Layer.html#gac4a541df5be98d23714c2409ed485a1b">ezradio_api_lib.h</a>
@@ -2744,8 +2836,8 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__API__Layer.html#gae79ddb973018cb991d0272414cd7a961">ezradio_api_lib.c</a>
 </li>
 <li>ezradio_get_ph_status_fast_clear_read()
-: <a class="el" href="group__API__Layer.html#ga959a4025e03dbdcf89a195021400601d">ezradio_api_lib.h</a>
-, <a class="el" href="group__API__Layer.html#ga959a4025e03dbdcf89a195021400601d">ezradio_api_lib.c</a>
+: <a class="el" href="group__API__Layer.html#ga959a4025e03dbdcf89a195021400601d">ezradio_api_lib.c</a>
+, <a class="el" href="group__API__Layer.html#ga959a4025e03dbdcf89a195021400601d">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_get_property()
 : <a class="el" href="group__API__Layer.html#gad46745a62ae7ab1876792eac63216874">ezradio_api_lib.h</a>
@@ -2760,20 +2852,20 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__API__Layer.html#ga812515656b246c20cce34daa883151a6">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_hal_AssertShutdown()
-: <a class="el" href="group__HAL__Layer.html#ga2ed0dd8b886f54f697fa930ce6706363">ezradio_hal.h</a>
-, <a class="el" href="group__HAL__Layer.html#ga2ed0dd8b886f54f697fa930ce6706363">ezradio_hal.c</a>
+: <a class="el" href="group__HAL__Layer.html#ga2ed0dd8b886f54f697fa930ce6706363">ezradio_hal.c</a>
+, <a class="el" href="group__HAL__Layer.html#ga2ed0dd8b886f54f697fa930ce6706363">ezradio_hal.h</a>
 </li>
 <li>ezradio_hal_ClearNsel()
-: <a class="el" href="group__HAL__Layer.html#ga09c7ef4b4780a8089505f54ef1f26fd5">ezradio_hal.h</a>
-, <a class="el" href="group__HAL__Layer.html#ga09c7ef4b4780a8089505f54ef1f26fd5">ezradio_hal.c</a>
+: <a class="el" href="group__HAL__Layer.html#ga09c7ef4b4780a8089505f54ef1f26fd5">ezradio_hal.c</a>
+, <a class="el" href="group__HAL__Layer.html#ga09c7ef4b4780a8089505f54ef1f26fd5">ezradio_hal.h</a>
 </li>
 <li>ezradio_hal_DeassertShutdown()
-: <a class="el" href="group__HAL__Layer.html#ga2806bc95f89976726016169ea2b3339c">ezradio_hal.c</a>
-, <a class="el" href="group__HAL__Layer.html#ga2806bc95f89976726016169ea2b3339c">ezradio_hal.h</a>
+: <a class="el" href="group__HAL__Layer.html#ga2806bc95f89976726016169ea2b3339c">ezradio_hal.h</a>
+, <a class="el" href="group__HAL__Layer.html#ga2806bc95f89976726016169ea2b3339c">ezradio_hal.c</a>
 </li>
 <li>ezradio_hal_GpioInit()
-: <a class="el" href="group__HAL__Layer.html#gabf61af8f57a9c92ea50311df53a7d825">ezradio_hal.c</a>
-, <a class="el" href="group__HAL__Layer.html#gabf61af8f57a9c92ea50311df53a7d825">ezradio_hal.h</a>
+: <a class="el" href="group__HAL__Layer.html#gabf61af8f57a9c92ea50311df53a7d825">ezradio_hal.h</a>
+, <a class="el" href="group__HAL__Layer.html#gabf61af8f57a9c92ea50311df53a7d825">ezradio_hal.c</a>
 </li>
 <li>ezradio_hal_NirqLevel()
 : <a class="el" href="group__HAL__Layer.html#gaabf77038901412b5b640149538ec5cbe">ezradio_hal.h</a>
@@ -2788,8 +2880,8 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__HAL__Layer.html#gae1cf166781ecf4a2317e0d9d4f504197">ezradio_hal.c</a>
 </li>
 <li>ezradio_hal_SpiReadByte()
-: <a class="el" href="group__HAL__Layer.html#ga23ca775cc658644f29ceacbcc471606a">ezradio_hal.c</a>
-, <a class="el" href="group__HAL__Layer.html#ga23ca775cc658644f29ceacbcc471606a">ezradio_hal.h</a>
+: <a class="el" href="group__HAL__Layer.html#ga23ca775cc658644f29ceacbcc471606a">ezradio_hal.h</a>
+, <a class="el" href="group__HAL__Layer.html#ga23ca775cc658644f29ceacbcc471606a">ezradio_hal.c</a>
 </li>
 <li>ezradio_hal_SpiReadData()
 : <a class="el" href="group__HAL__Layer.html#ga9c4c63403aaa9f22f75391e4c767d298">ezradio_hal.c</a>
@@ -2800,8 +2892,8 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__HAL__Layer.html#ga52e4a984325c6446291b13b1a63e3dff">ezradio_hal.h</a>
 </li>
 <li>ezradio_hal_SpiWriteData()
-: <a class="el" href="group__HAL__Layer.html#ga4121044d05b7372b071773d4582204f5">ezradio_hal.h</a>
-, <a class="el" href="group__HAL__Layer.html#ga4121044d05b7372b071773d4582204f5">ezradio_hal.c</a>
+: <a class="el" href="group__HAL__Layer.html#ga4121044d05b7372b071773d4582204f5">ezradio_hal.c</a>
+, <a class="el" href="group__HAL__Layer.html#ga4121044d05b7372b071773d4582204f5">ezradio_hal.h</a>
 </li>
 <li>ezradio_hal_SpiWriteReadData()
 : <a class="el" href="group__HAL__Layer.html#ga7b4e804cd30d3d5071d61ce8205f4346">ezradio_hal.h</a>
@@ -2824,16 +2916,16 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__API__Layer.html#ga90809bd86f07081e57bdb2127c29b19c">ezradio_api_lib.c</a>
 </li>
 <li>ezradio_power_up()
-: <a class="el" href="group__API__Layer.html#gaaedde5a0144af3d029672a3d6c27210b">ezradio_api_lib.h</a>
-, <a class="el" href="group__API__Layer.html#gaaedde5a0144af3d029672a3d6c27210b">ezradio_api_lib.c</a>
+: <a class="el" href="group__API__Layer.html#gaaedde5a0144af3d029672a3d6c27210b">ezradio_api_lib.c</a>
+, <a class="el" href="group__API__Layer.html#gaaedde5a0144af3d029672a3d6c27210b">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_read_cmd_buff()
 : <a class="el" href="group__API__Layer.html#ga18c87c07ae75e6a7a378e2ebe9d618c1">ezradio_api_lib.c</a>
 , <a class="el" href="group__API__Layer.html#ga18c87c07ae75e6a7a378e2ebe9d618c1">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_read_rx_fifo()
-: <a class="el" href="group__API__Layer.html#ga329c4c3b314e2db479997a6b5bcf2ab0">ezradio_api_lib.h</a>
-, <a class="el" href="group__API__Layer.html#ga329c4c3b314e2db479997a6b5bcf2ab0">ezradio_api_lib.c</a>
+: <a class="el" href="group__API__Layer.html#ga329c4c3b314e2db479997a6b5bcf2ab0">ezradio_api_lib.c</a>
+, <a class="el" href="group__API__Layer.html#ga329c4c3b314e2db479997a6b5bcf2ab0">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_request_device_state()
 : <a class="el" href="group__API__Layer.html#ga9f990f8ebde64b6ef0c051f397430c53">ezradio_api_lib.h</a>
@@ -2844,20 +2936,20 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__API__Layer.html#gad7a48081868b00a765b488f47909396c">ezradio_api_lib.c</a>
 </li>
 <li>ezradio_rx_hop()
-: <a class="el" href="group__API__Layer.html#gacef1d81a9a5e390249154bbeed9b9df1">ezradio_api_lib_add.h</a>
-, <a class="el" href="group__API__Layer.html#gacef1d81a9a5e390249154bbeed9b9df1">ezradio_api_lib_add.c</a>
+: <a class="el" href="group__API__Layer.html#gacef1d81a9a5e390249154bbeed9b9df1">ezradio_api_lib_add.c</a>
+, <a class="el" href="group__API__Layer.html#gacef1d81a9a5e390249154bbeed9b9df1">ezradio_api_lib_add.h</a>
 </li>
 <li>ezradio_set_property()
 : <a class="el" href="group__API__Layer.html#ga5f37f9c7237c880623753bbd9c772876">ezradio_api_lib.c</a>
 , <a class="el" href="group__API__Layer.html#ga5f37f9c7237c880623753bbd9c772876">ezradio_api_lib.h</a>
 </li>
 <li>ezradio_start_rx()
-: <a class="el" href="group__API__Layer.html#ga6bebb6e764046173bd4b58db3d5f30c2">ezradio_api_lib.c</a>
-, <a class="el" href="group__API__Layer.html#ga6bebb6e764046173bd4b58db3d5f30c2">ezradio_api_lib.h</a>
+: <a class="el" href="group__API__Layer.html#ga6bebb6e764046173bd4b58db3d5f30c2">ezradio_api_lib.h</a>
+, <a class="el" href="group__API__Layer.html#ga6bebb6e764046173bd4b58db3d5f30c2">ezradio_api_lib.c</a>
 </li>
 <li>ezradio_start_rx_fast()
-: <a class="el" href="group__API__Layer.html#ga2afe6af0c962076145f252f0e18d97ee">ezradio_api_lib.c</a>
-, <a class="el" href="group__API__Layer.html#ga2afe6af0c962076145f252f0e18d97ee">ezradio_api_lib.h</a>
+: <a class="el" href="group__API__Layer.html#ga2afe6af0c962076145f252f0e18d97ee">ezradio_api_lib.h</a>
+, <a class="el" href="group__API__Layer.html#ga2afe6af0c962076145f252f0e18d97ee">ezradio_api_lib.c</a>
 </li>
 <li>ezradio_start_tx()
 : <a class="el" href="group__API__Layer.html#ga95ec30d47eea9860cccae2c5bb3fc878">ezradio_api_lib.c</a>
@@ -2876,8 +2968,8 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__API__Layer.html#ga48c934c7d9a3a297087572137693cdf7">ezradio_api_lib_add.h</a>
 </li>
 <li>ezradio_write_tx_fifo()
-: <a class="el" href="group__API__Layer.html#ga352edd05911a66d9fe2b2e7c11d2df22">ezradio_api_lib.h</a>
-, <a class="el" href="group__API__Layer.html#ga352edd05911a66d9fe2b2e7c11d2df22">ezradio_api_lib.c</a>
+: <a class="el" href="group__API__Layer.html#ga352edd05911a66d9fe2b2e7c11d2df22">ezradio_api_lib.c</a>
+, <a class="el" href="group__API__Layer.html#ga352edd05911a66d9fe2b2e7c11d2df22">ezradio_api_lib.h</a>
 </li>
 <li>ezradioDisableAutoAck()
 : <a class="el" href="group__Auto__ACK__Plugin.html#ga3315ed2a380411a885d067d6edfd5ef1">ezradio_auto_ack_plugin.h</a>
@@ -3018,8 +3110,8 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__Plugin__Manager.html#ga55ab56dfaa297c93024dc43239bc8592">ezradio_plugin_manager.c</a>
 </li>
 <li>ezradioPluginManager()
-: <a class="el" href="group__Plugin__Manager.html#ga32fa115744a93d5a0e56b5c33b8231bb">ezradio_plugin_manager.c</a>
-, <a class="el" href="group__Plugin__Manager.html#ga32fa115744a93d5a0e56b5c33b8231bb">ezradio_plugin_manager.h</a>
+: <a class="el" href="group__Plugin__Manager.html#ga32fa115744a93d5a0e56b5c33b8231bb">ezradio_plugin_manager.h</a>
+, <a class="el" href="group__Plugin__Manager.html#ga32fa115744a93d5a0e56b5c33b8231bb">ezradio_plugin_manager.c</a>
 </li>
 <li>ezradioResetTRxFifo()
 : <a class="el" href="group__Plugin__Manager.html#ga5a552425d8e40d1eefd78cc82b5dd7b5">ezradio_plugin_manager.h</a>
@@ -3034,24 +3126,24 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__Direct__Receive__Plugin.html#ga9a1aa8ea909b1667cf73d2227773251f">ezradio_direct_receive_plugin.h</a>
 </li>
 <li>ezradioStartDirectTransmit()
-: <a class="el" href="group__Direct__Transmit__Plugin.html#gab765dcab5e4aab236830b5f2cd764f17">ezradio_direct_transmit_plugin.c</a>
-, <a class="el" href="group__Direct__Transmit__Plugin.html#gab765dcab5e4aab236830b5f2cd764f17">ezradio_direct_transmit_plugin.h</a>
+: <a class="el" href="group__Direct__Transmit__Plugin.html#gab765dcab5e4aab236830b5f2cd764f17">ezradio_direct_transmit_plugin.h</a>
+, <a class="el" href="group__Direct__Transmit__Plugin.html#gab765dcab5e4aab236830b5f2cd764f17">ezradio_direct_transmit_plugin.c</a>
 </li>
 <li>ezradioStartPn9()
-: <a class="el" href="group__PN9__Plugin.html#ga6730098ec7ed97f93ad79079d6db3ab3">ezradio_pn9_plugin.h</a>
-, <a class="el" href="group__PN9__Plugin.html#ga6730098ec7ed97f93ad79079d6db3ab3">ezradio_pn9_plugin.c</a>
+: <a class="el" href="group__PN9__Plugin.html#ga6730098ec7ed97f93ad79079d6db3ab3">ezradio_pn9_plugin.c</a>
+, <a class="el" href="group__PN9__Plugin.html#ga6730098ec7ed97f93ad79079d6db3ab3">ezradio_pn9_plugin.h</a>
 </li>
 <li>ezradioStartRx()
-: <a class="el" href="group__Receive__Plugin.html#gae2761df30f35463d361937ddee63eed0">ezradio_receive_plugin.c</a>
-, <a class="el" href="group__Receive__Plugin.html#gae2761df30f35463d361937ddee63eed0">ezradio_receive_plugin.h</a>
+: <a class="el" href="group__Receive__Plugin.html#gae2761df30f35463d361937ddee63eed0">ezradio_receive_plugin.h</a>
+, <a class="el" href="group__Receive__Plugin.html#gae2761df30f35463d361937ddee63eed0">ezradio_receive_plugin.c</a>
 </li>
 <li>ezradioStartTransmitBasic()
 : <a class="el" href="group__Transmit__Plugin.html#gaf702a16bfb588bfed9cbc7c639ba650f">ezradio_transmit_plugin.h</a>
 , <a class="el" href="group__Transmit__Plugin.html#gaf702a16bfb588bfed9cbc7c639ba650f">ezradio_transmit_plugin.c</a>
 </li>
 <li>ezradioStartTransmitConfigured()
-: <a class="el" href="group__Transmit__Plugin.html#ga62e3d76389ad50afc7f77002f8750cb8">ezradio_transmit_plugin.c</a>
-, <a class="el" href="group__Transmit__Plugin.html#ga62e3d76389ad50afc7f77002f8750cb8">ezradio_transmit_plugin.h</a>
+: <a class="el" href="group__Transmit__Plugin.html#ga62e3d76389ad50afc7f77002f8750cb8">ezradio_transmit_plugin.h</a>
+, <a class="el" href="group__Transmit__Plugin.html#ga62e3d76389ad50afc7f77002f8750cb8">ezradio_transmit_plugin.c</a>
 </li>
 <li>ezradioStartTransmitCustom()
 : <a class="el" href="group__Transmit__Plugin.html#ga348cad1485fa0c671d91af6751488ec1">ezradio_transmit_plugin.h</a>
@@ -3062,8 +3154,8 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__Transmit__Plugin.html#gade85938593abc8d7c6246eeaa9536a61">ezradio_transmit_plugin.c</a>
 </li>
 <li>ezradioStartTransmitSmart()
-: <a class="el" href="group__Transmit__Plugin.html#gaf0c60b70ac28ad2c13779b041b923153">ezradio_transmit_plugin.c</a>
-, <a class="el" href="group__Transmit__Plugin.html#gaf0c60b70ac28ad2c13779b041b923153">ezradio_transmit_plugin.h</a>
+: <a class="el" href="group__Transmit__Plugin.html#gaf0c60b70ac28ad2c13779b041b923153">ezradio_transmit_plugin.h</a>
+, <a class="el" href="group__Transmit__Plugin.html#gaf0c60b70ac28ad2c13779b041b923153">ezradio_transmit_plugin.c</a>
 </li>
 <li>ezradioStartUnmodulatedCarrier()
 : <a class="el" href="group__Unmod__Carrier__Plugin.html#ga52403c3b77b358386eb55a5bcdf8f3d8">ezradio_unmod_carrier_plugin.c</a>
@@ -3082,8 +3174,8 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 , <a class="el" href="group__PN9__Plugin.html#ga721700326b2545601f947f24fed72676">ezradio_pn9_plugin.h</a>
 </li>
 <li>ezradioStopUnmodulatedCarrier()
-: <a class="el" href="group__Unmod__Carrier__Plugin.html#ga597d48cd98b47dc8811996c67c475e91">ezradio_unmod_carrier_plugin.c</a>
-, <a class="el" href="group__Unmod__Carrier__Plugin.html#ga597d48cd98b47dc8811996c67c475e91">ezradio_unmod_carrier_plugin.h</a>
+: <a class="el" href="group__Unmod__Carrier__Plugin.html#ga597d48cd98b47dc8811996c67c475e91">ezradio_unmod_carrier_plugin.h</a>
+, <a class="el" href="group__Unmod__Carrier__Plugin.html#ga597d48cd98b47dc8811996c67c475e91">ezradio_unmod_carrier_plugin.c</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -3091,7 +3183,7 @@ $(document).ready(function(){initNavTree('globals_e.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 16:09:26 for EFR32 Flex Gecko 12 Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:42:27 for EFR32 Flex Gecko 12 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Flex Gecko 12 Software Documentation: c:/work/super/platform/emdrv/ustimer/src/ustimer.c Source File</title>
+<title>EFR32 Flex Gecko 12 Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/platform/emdrv/ustimer/src/ustimer.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Flex Gecko 12 Software Documentation
-   &#160;<span id="projectnumber">efr32fg12-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efr32fg12-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -124,245 +124,300 @@ $(document).ready(function(){initNavTree('ustimer_8c_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define USTIMER_TIMER1 1</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define USTIMER_TIMER2 2</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define USTIMER_TIMER3 3</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef USTIMER_TIMER</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define USTIMER_TIMER USTIMER_TIMER0</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if ( USTIMER_TIMER == USTIMER_TIMER0 ) &amp;&amp; ( TIMER_COUNT &gt;= 1 )</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">  #define TIMER             TIMER0</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_TIMER0</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         TIMER0_IRQn</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  TIMER0_IRQHandler</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#elif ( USTIMER_TIMER == USTIMER_TIMER1 ) &amp;&amp; ( TIMER_COUNT &gt;= 2 )</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">  #define TIMER             TIMER1</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_TIMER1</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         TIMER1_IRQn</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  TIMER1_IRQHandler</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#elif ( USTIMER_TIMER == USTIMER_TIMER2 ) &amp;&amp; ( TIMER_COUNT &gt;= 3 )</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">  #define TIMER             TIMER2</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_TIMER2</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         TIMER2_IRQn</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  TIMER2_IRQHandler</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#elif ( USTIMER_TIMER == USTIMER_TIMER3 ) &amp;&amp; ( TIMER_COUNT == 4 )</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">  #define TIMER             TIMER3</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_TIMER3</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         TIMER3_IRQn</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  TIMER3_IRQHandler</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#error &quot;Illegal USTIMER TIMER selection&quot;</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">static</span> uint32_t freq;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">static</span> uint32_t minTicks;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">static</span> <span class="keyword">volatile</span> <span class="keywordtype">bool</span> timeElapsed = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define USTIMER_TIMER4 4</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define USTIMER_TIMER5 5</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define USTIMER_TIMER6 6</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define USTIMER_WTIMER0 10</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define USTIMER_WTIMER1 11</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define USTIMER_WTIMER2 12</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define USTIMER_WTIMER3 13</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#ifndef USTIMER_TIMER</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define USTIMER_TIMER USTIMER_TIMER0</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#if ( USTIMER_TIMER == USTIMER_TIMER0 ) &amp;&amp; ( TIMER_COUNT &gt;= 1 )</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">  #define TIMER             TIMER0</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_TIMER0</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         TIMER0_IRQn</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  TIMER0_IRQHandler</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#elif ( USTIMER_TIMER == USTIMER_TIMER1 ) &amp;&amp; ( TIMER_COUNT &gt;= 2 )</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">  #define TIMER             TIMER1</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_TIMER1</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         TIMER1_IRQn</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  TIMER1_IRQHandler</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#elif ( USTIMER_TIMER == USTIMER_TIMER2 ) &amp;&amp; ( TIMER_COUNT &gt;= 3 )</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">  #define TIMER             TIMER2</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_TIMER2</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         TIMER2_IRQn</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  TIMER2_IRQHandler</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#elif ( USTIMER_TIMER == USTIMER_TIMER3 ) &amp;&amp; ( TIMER_COUNT &gt;= 4 )</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">  #define TIMER             TIMER3</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_TIMER3</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         TIMER3_IRQn</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  TIMER3_IRQHandler</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> DelayTicksEM1( uint16_t ticks );</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> DelayTicksPolled( uint16_t ticks );</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">   86</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init</a>( <span class="keywordtype">void</span> )</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="structTIMER__Init__TypeDef.html">TIMER_Init_TypeDef</a> timerInit     = <a class="code" href="group__TIMER.html#ga8803e04b755a2a22dc9167e109a6be89">TIMER_INIT_DEFAULT</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="structTIMER__InitCC__TypeDef.html">TIMER_InitCC_TypeDef</a> timerCCInit = <a class="code" href="group__TIMER.html#ga1444f0ca7a97773a1152aa886f17b48a">TIMER_INITCC_DEFAULT</a>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  uint32_t coreClockScale;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  timerCCInit.<a class="code" href="structTIMER__InitCC__TypeDef.html#a04dcf1da58bdff3195483c270032f8ef">mode</a> = <a class="code" href="group__TIMER.html#ggacaeb01f1c6c64b144b9a5913893bd718a5c0e017e36fa868b76ea0adbe3b1d86e">timerCCModeCompare</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a>( TIMER_CLK, <span class="keyword">true</span> );</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="group__TIMER.html#gad367b1801475494e0aeab2e4eab1e646">TIMER_TopSet</a>( TIMER, 0xFFFF );</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="group__TIMER.html#ga9b2a3560717e0c174a030d99fa8501b4">TIMER_InitCC</a>( TIMER, 0, &amp;timerCCInit );</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="comment">/* Run timer at slowest frequency that still gives less than 1 us per tick */</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  timerInit.<a class="code" href="structTIMER__Init__TypeDef.html#a398fc7a5c956cc0f06eabe740c690d87">prescale</a> = (<a class="code" href="group__TIMER.html#gadc7dec57fe232c5fbabbb7cd25ebffe0">TIMER_Prescale_TypeDef</a>)<a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#gafc86de0d955c2f421bdd9c3b983b0f52">_TIMER_CTRL_PRESC_DIV1</a>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">do</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="group__TIMER.html#gad04a80140e22df0cd742e14933e9f028">TIMER_Init</a>( TIMER, &amp;timerInit );</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    freq = <a class="code" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet</a>( <a class="code" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a> );</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    freq /= 1 &lt;&lt; timerInit.<a class="code" href="structTIMER__Init__TypeDef.html#a398fc7a5c956cc0f06eabe740c690d87">prescale</a>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    timerInit.<a class="code" href="structTIMER__Init__TypeDef.html#a398fc7a5c956cc0f06eabe740c690d87">prescale</a>++;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordflow">while</span> ( ( timerInit.<a class="code" href="structTIMER__Init__TypeDef.html#a398fc7a5c956cc0f06eabe740c690d87">prescale</a> &lt;= <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#ga79d998fe87dcf52224f3e5eb43aaba8d">_TIMER_CTRL_PRESC_DIV1024</a> )</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;          &amp;&amp; ( freq &gt; 2000000 ) );</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="comment">/* Figure out the minimum delay we can have when using timer interrupt</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">   * to avoid that actual delay become a full timer counter lap.</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">   * We are assuming that this number scales with mcu core clock.</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">   * The number is found by trial and err on a GG running at 14MHz.</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  coreClockScale = ( 4 * 48000000 ) / <a class="code" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet</a>( <a class="code" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea040d340c971448a4607a4a70092bc0f8">cmuClock_CORE</a> );</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  minTicks = ( ( (uint64_t)freq * coreClockScale ) + 500000 ) / 1000000;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  timeElapsed = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9">TIMER_IntDisable</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#gae947ebc7f0a0a7555cfebce47959ccfb">TIMER_IEN_CC0</a> );</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  NVIC_ClearPendingIRQ( TIMER_IRQ );</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  NVIC_EnableIRQ( TIMER_IRQ );</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">  137</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">USTIMER_DeInit</a>( <span class="keywordtype">void</span> )</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  NVIC_DisableIRQ( TIMER_IRQ );</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <a class="code" href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9">TIMER_IntDisable</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#gae947ebc7f0a0a7555cfebce47959ccfb">TIMER_IEN_CC0</a> );</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <a class="code" href="group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57">TIMER_IntClear</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#ga533f75de120d61038ba5164d83d471f6">TIMER_IFC_CC0</a> );</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  NVIC_ClearPendingIRQ( TIMER_IRQ );</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#elif ( USTIMER_TIMER == USTIMER_TIMER4 ) &amp;&amp; ( TIMER_COUNT &gt;= 5 )</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">  #define TIMER             TIMER4</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_TIMER4</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         TIMER4_IRQn</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  TIMER4_IRQHandler</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#elif ( USTIMER_TIMER == USTIMER_TIMER5 ) &amp;&amp; ( TIMER_COUNT &gt;= 6 )</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">  #define TIMER             TIMER5</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_TIMER5</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         TIMER5_IRQn</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  TIMER5_IRQHandler</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#elif ( USTIMER_TIMER == USTIMER_TIMER6 ) &amp;&amp; ( TIMER_COUNT &gt;= 7 )</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">  #define TIMER             TIMER6</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_TIMER6</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         TIMER6_IRQn</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  TIMER6_IRQHandler</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#elif ( USTIMER_TIMER == USTIMER_WTIMER0 ) &amp;&amp; ( WTIMER_COUNT &gt;= 1 )</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">  #define TIMER             WTIMER0</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_WTIMER0</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         WTIMER0_IRQn</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  WTIMER0_IRQHandler</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#elif ( USTIMER_TIMER == USTIMER_WTIMER1 ) &amp;&amp; ( WTIMER_COUNT &gt;= 2 )</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">  #define TIMER             WTIMER1</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_WTIMER1</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         WTIMER1_IRQn</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  WTIMER1_IRQHandler</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#elif ( USTIMER_TIMER == USTIMER_WTIMER2 ) &amp;&amp; ( WTIMER_COUNT &gt;= 3 )</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">  #define TIMER             WTIMER2</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_WTIMER2</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         WTIMER2_IRQn</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  WTIMER2_IRQHandler</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#elif ( USTIMER_TIMER == USTIMER_WTIMER3 ) &amp;&amp; ( WTIMER_COUNT &gt;= 4 )</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">  #define TIMER             WTIMER3</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">  #define TIMER_CLK         cmuClock_WTIMER3</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">  #define TIMER_IRQ         WTIMER3_IRQn</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">  #define TIMER_IRQHandler  WTIMER3_IRQHandler</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#error &quot;Illegal USTIMER TIMER selection&quot;</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">// Use 16-bit TOP value for timer, independent of the width of the timer</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#define TIMER_MAX   0xFFFF</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">static</span> uint32_t freq;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">static</span> uint32_t minTicks;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">static</span> <span class="keyword">volatile</span> <span class="keywordtype">bool</span> timeElapsed = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> DelayTicksEM1( uint16_t ticks );</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> DelayTicksPolled( uint16_t ticks );</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">  139</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <a class="code" href="structTIMER__Init__TypeDef.html">TIMER_Init_TypeDef</a> timerInit     = <a class="code" href="group__TIMER.html#ga8803e04b755a2a22dc9167e109a6be89">TIMER_INIT_DEFAULT</a>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <a class="code" href="structTIMER__InitCC__TypeDef.html">TIMER_InitCC_TypeDef</a> timerCCInit = <a class="code" href="group__TIMER.html#ga1444f0ca7a97773a1152aa886f17b48a">TIMER_INITCC_DEFAULT</a>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  uint32_t coreClockScale;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <a class="code" href="group__TIMER.html#gae3dd36e419641a24d3f44084c216bf71">TIMER_Enable</a>( TIMER, <span class="keyword">false</span> );</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a>( TIMER_CLK, <span class="keyword">false</span> );</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">  168</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">USTIMER_Delay</a>( uint32_t usec )</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;{</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  uint64_t totalTicks;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  timerCCInit.<a class="code" href="structTIMER__InitCC__TypeDef.html#a04dcf1da58bdff3195483c270032f8ef">mode</a> = <a class="code" href="group__TIMER.html#ggacaeb01f1c6c64b144b9a5913893bd718a5c0e017e36fa868b76ea0adbe3b1d86e">timerCCModeCompare</a>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a>( TIMER_CLK, <span class="keyword">true</span> );</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <a class="code" href="group__TIMER.html#gad367b1801475494e0aeab2e4eab1e646">TIMER_TopSet</a>( TIMER, TIMER_MAX );</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <a class="code" href="group__TIMER.html#ga9b2a3560717e0c174a030d99fa8501b4">TIMER_InitCC</a>( TIMER, 0, &amp;timerCCInit );</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="comment">/* Run timer at slowest frequency that still gives less than 1 us per tick */</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  timerInit.<a class="code" href="structTIMER__Init__TypeDef.html#a398fc7a5c956cc0f06eabe740c690d87">prescale</a> = (<a class="code" href="group__TIMER.html#gadc7dec57fe232c5fbabbb7cd25ebffe0">TIMER_Prescale_TypeDef</a>)<a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#gafc86de0d955c2f421bdd9c3b983b0f52">_TIMER_CTRL_PRESC_DIV1</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="group__TIMER.html#gad04a80140e22df0cd742e14933e9f028">TIMER_Init</a>( TIMER, &amp;timerInit );</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    freq = <a class="code" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet</a>( <a class="code" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a> );</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    freq /= 1 &lt;&lt; timerInit.<a class="code" href="structTIMER__Init__TypeDef.html#a398fc7a5c956cc0f06eabe740c690d87">prescale</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    timerInit.<a class="code" href="structTIMER__Init__TypeDef.html#a398fc7a5c956cc0f06eabe740c690d87">prescale</a>++;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordflow">while</span> ( ( timerInit.<a class="code" href="structTIMER__Init__TypeDef.html#a398fc7a5c956cc0f06eabe740c690d87">prescale</a> &lt;= <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#ga79d998fe87dcf52224f3e5eb43aaba8d">_TIMER_CTRL_PRESC_DIV1024</a> )</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;          &amp;&amp; ( freq &gt; 2000000 ) );</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="comment">/* Figure out the minimum delay we can have when using timer interrupt</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">   * to avoid that actual delay become a full timer counter lap.</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">   * We are assuming that this number scales with mcu core clock.</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">   * The number is found by trial and err on a GG running at 14MHz.</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  coreClockScale = ( 4 * 48000000 ) / <a class="code" href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet</a>( <a class="code" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea040d340c971448a4607a4a70092bc0f8">cmuClock_CORE</a> );</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  minTicks = ( ( (uint64_t)freq * coreClockScale ) + 500000 ) / 1000000;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  timeElapsed = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  totalTicks = ( ( (uint64_t)freq * usec ) + 500000 ) / 1000000;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="comment">/* The timer counter is 16 bits wide, split the total wait up in chunks */</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="comment">/* of a little less than 2^16.                                          */</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordflow">while</span> ( totalTicks &gt; 65000 )</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    DelayTicksEM1( 65000 );</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    totalTicks -= 65000;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  }</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  DelayTicksEM1( (uint16_t)totalTicks );</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">  203</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">USTIMER_DelayIntSafe</a>( uint32_t usec )</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;{</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  uint64_t totalTicks;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  totalTicks = ( ( (uint64_t)freq * usec ) + 500000 ) / 1000000;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="comment">/* The timer counter is 16 bits wide, split the total wait up in chunks */</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="comment">/* of a little less than 2^16.                                          */</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keywordflow">while</span> ( totalTicks &gt; 65000 )</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  {</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    DelayTicksPolled( 65000 );</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    totalTicks -= 65000;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  }</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  DelayTicksPolled( (uint16_t)totalTicks );</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;}</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keywordtype">void</span> TIMER_IRQHandler( <span class="keywordtype">void</span> )</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;{</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  uint32_t flags;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  flags = <a class="code" href="group__TIMER.html#gacbd76455f127f402f6b38ed94f68e4e6">TIMER_IntGet</a>( TIMER );</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordflow">if</span> ( flags &amp; <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#ga680d3d26cc8940c83f8b8aa6a5791a35">TIMER_IF_CC0</a> )</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57">TIMER_IntClear</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#ga533f75de120d61038ba5164d83d471f6">TIMER_IFC_CC0</a> );</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    timeElapsed = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> DelayTicksPolled( uint16_t ticks )</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;{</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  uint16_t startTime;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keyword">volatile</span> uint16_t now;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordflow">if</span> ( ticks )</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  {</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    startTime = <a class="code" href="group__TIMER.html#ga83e10f77009812d7bfff2cf835ca64d7">TIMER_CounterGet</a>( TIMER );</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">do</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      now = <a class="code" href="group__TIMER.html#ga83e10f77009812d7bfff2cf835ca64d7">TIMER_CounterGet</a>( TIMER );</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    } <span class="keywordflow">while</span> ( (uint16_t)( now - startTime ) &lt; ticks );</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  }</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> DelayTicksEM1( uint16_t ticks )</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;{</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keywordflow">if</span> ( ticks )</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  {</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="comment">/* Arm TIMER compare interrupt */</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <a class="code" href="group__CORE.html#ga3b0354ed174362818a7e22916917d43a">CORE_ATOMIC_SECTION</a>(</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <span class="comment">/* The following lines costs 2.7us@48MHz and 7.5us@14MHz (measured with GG)*/</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      <a class="code" href="group__TIMER.html#ga4ef423dd1b30cc66f3c3d3d51dac5d16">TIMER_CompareSet</a>( TIMER, 0,</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                        <a class="code" href="group__TIMER.html#ga83e10f77009812d7bfff2cf835ca64d7">TIMER_CounterGet</a>( TIMER ) + <a class="code" href="group__COMMON.html#gac33644dcb925ed2bde0b5fc7a5fd9cfe">SL_MAX</a>( minTicks, ticks ) );</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      <a class="code" href="group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57">TIMER_IntClear</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#ga533f75de120d61038ba5164d83d471f6">TIMER_IFC_CC0</a> );</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <a class="code" href="group__TIMER.html#ga10317eb2cd4cf6c5bde768023ea132cd">TIMER_IntEnable</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#gae947ebc7f0a0a7555cfebce47959ccfb">TIMER_IEN_CC0</a> );</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    )</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">while</span> ( ! timeElapsed )</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      <a class="code" href="group__EMU.html#gaed0c4092bd3adc7a6679e1e2903d1267">EMU_EnterEM1</a>();</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    timeElapsed = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <a class="code" href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9">TIMER_IntDisable</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#gae947ebc7f0a0a7555cfebce47959ccfb">TIMER_IEN_CC0</a> );</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  }</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment">/******** THE REST OF THE FILE IS DOCUMENTATION ONLY !**********************/</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <a class="code" href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9">TIMER_IntDisable</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#gae947ebc7f0a0a7555cfebce47959ccfb">TIMER_IEN_CC0</a> );</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  NVIC_ClearPendingIRQ( TIMER_IRQ );</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  NVIC_EnableIRQ( TIMER_IRQ );</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;}</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">  190</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">USTIMER_DeInit</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;{</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  NVIC_DisableIRQ( TIMER_IRQ );</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <a class="code" href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9">TIMER_IntDisable</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#gae947ebc7f0a0a7555cfebce47959ccfb">TIMER_IEN_CC0</a> );</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <a class="code" href="group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57">TIMER_IntClear</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#ga533f75de120d61038ba5164d83d471f6">TIMER_IFC_CC0</a> );</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  NVIC_ClearPendingIRQ( TIMER_IRQ );</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <a class="code" href="group__TIMER.html#gae3dd36e419641a24d3f44084c216bf71">TIMER_Enable</a>( TIMER, <span class="keyword">false</span> );</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <a class="code" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a>( TIMER_CLK, <span class="keyword">false</span> );</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">  221</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">USTIMER_Delay</a>( uint32_t usec )</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;{</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  uint64_t totalTicks;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  totalTicks = ( ( (uint64_t)freq * usec ) + 500000 ) / 1000000;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="comment">/* The timer counter is 16 bits wide, split the total wait up in chunks */</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="comment">/* of a little less than 2^16.                                          */</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordflow">while</span> ( totalTicks &gt; 65000 )</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    DelayTicksEM1( 65000 );</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    totalTicks -= 65000;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  DelayTicksEM1( (uint16_t)totalTicks );</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">  256</a></span>&#160;<a class="code" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> <a class="code" href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">USTIMER_DelayIntSafe</a>( uint32_t usec )</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;{</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  uint64_t totalTicks;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  totalTicks = ( ( (uint64_t)freq * usec ) + 500000 ) / 1000000;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="comment">/* The timer counter is 16 bits wide, split the total wait up in chunks */</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="comment">/* of a little less than 2^16.                                          */</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordflow">while</span> ( totalTicks &gt; 65000 )</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    DelayTicksPolled( 65000 );</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    totalTicks -= 65000;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  }</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  DelayTicksPolled( (uint16_t)totalTicks );</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a>;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keywordtype">void</span> TIMER_IRQHandler( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;{</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  uint32_t flags;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  flags = <a class="code" href="group__TIMER.html#gacbd76455f127f402f6b38ed94f68e4e6">TIMER_IntGet</a>( TIMER );</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordflow">if</span> ( flags &amp; <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#ga680d3d26cc8940c83f8b8aa6a5791a35">TIMER_IF_CC0</a> )</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <a class="code" href="group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57">TIMER_IntClear</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#ga533f75de120d61038ba5164d83d471f6">TIMER_IFC_CC0</a> );</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    timeElapsed = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;}</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> DelayTicksPolled( uint16_t ticks )</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;{</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  uint16_t startTime;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keyword">volatile</span> uint16_t now;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="keywordflow">if</span> ( ticks )</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    startTime = <a class="code" href="group__TIMER.html#ga83e10f77009812d7bfff2cf835ca64d7">TIMER_CounterGet</a>( TIMER );</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    {</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      now = <a class="code" href="group__TIMER.html#ga83e10f77009812d7bfff2cf835ca64d7">TIMER_CounterGet</a>( TIMER );</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    } <span class="keywordflow">while</span> ( (uint16_t)( now - startTime ) &lt; ticks );</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  }</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;}</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> DelayTicksEM1( uint16_t ticks )</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;{</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  uint32_t cmp;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <span class="keywordflow">if</span> ( ticks )</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="comment">/* Arm TIMER compare interrupt */</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <a class="code" href="group__CORE.html#ga3b0354ed174362818a7e22916917d43a">CORE_ATOMIC_SECTION</a>(</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <span class="comment">/* The following lines costs 2.7us@48MHz and 7.5us@14MHz (measured with GG)*/</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      cmp = (<a class="code" href="group__TIMER.html#ga83e10f77009812d7bfff2cf835ca64d7">TIMER_CounterGet</a>( TIMER ) + <a class="code" href="group__COMMON.html#gac33644dcb925ed2bde0b5fc7a5fd9cfe">SL_MAX</a>( minTicks, ticks )) &amp; TIMER_MAX;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <a class="code" href="group__TIMER.html#ga4ef423dd1b30cc66f3c3d3d51dac5d16">TIMER_CompareSet</a>( TIMER, 0, cmp );</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <a class="code" href="group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57">TIMER_IntClear</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#ga533f75de120d61038ba5164d83d471f6">TIMER_IFC_CC0</a> );</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <a class="code" href="group__TIMER.html#ga10317eb2cd4cf6c5bde768023ea132cd">TIMER_IntEnable</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#gae947ebc7f0a0a7555cfebce47959ccfb">TIMER_IEN_CC0</a> );</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    )</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordflow">while</span> ( ! timeElapsed )</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      <a class="code" href="group__EMU.html#gaed0c4092bd3adc7a6679e1e2903d1267">EMU_EnterEM1</a>();</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    timeElapsed = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <a class="code" href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9">TIMER_IntDisable</a>( TIMER, <a class="code" href="group__EFR32FG12P__TIMER__BitFields.html#gae947ebc7f0a0a7555cfebce47959ccfb">TIMER_IEN_CC0</a> );</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  }</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;}</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment">/******** THE REST OF THE FILE IS DOCUMENTATION ONLY !**********************/</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
 <div class="ttc" id="em__cmu_8h_html"><div class="ttname"><a href="em__cmu_8h.html">em_cmu.h</a></div><div class="ttdoc">Clock management unit (CMU) API. </div></div>
-<div class="ttc" id="group__TIMER_html_gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9"><div class="ttname"><a href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9">TIMER_IntDisable</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_IntDisable(TIMER_TypeDef *timer, uint32_t flags)</div><div class="ttdoc">Disable one or more TIMER interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00730">em_timer.h:730</a></div></div>
-<div class="ttc" id="group__TIMER_html_gad367b1801475494e0aeab2e4eab1e646"><div class="ttname"><a href="group__TIMER.html#gad367b1801475494e0aeab2e4eab1e646">TIMER_TopSet</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_TopSet(TIMER_TypeDef *timer, uint32_t val)</div><div class="ttdoc">Set top value for timer. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00900">em_timer.h:900</a></div></div>
+<div class="ttc" id="group__TIMER_html_gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9"><div class="ttname"><a href="group__TIMER.html#gaa7f5ea5d035ebe3fad7dbb2e3c7c1cc9">TIMER_IntDisable</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_IntDisable(TIMER_TypeDef *timer, uint32_t flags)</div><div class="ttdoc">Disable one or more TIMER interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00777">em_timer.h:777</a></div></div>
+<div class="ttc" id="group__TIMER_html_gad367b1801475494e0aeab2e4eab1e646"><div class="ttname"><a href="group__TIMER.html#gad367b1801475494e0aeab2e4eab1e646">TIMER_TopSet</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_TopSet(TIMER_TypeDef *timer, uint32_t val)</div><div class="ttdoc">Set top value for timer. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00948">em_timer.h:948</a></div></div>
 <div class="ttc" id="group__EFR32FG12P__TIMER__BitFields_html_ga79d998fe87dcf52224f3e5eb43aaba8d"><div class="ttname"><a href="group__EFR32FG12P__TIMER__BitFields.html#ga79d998fe87dcf52224f3e5eb43aaba8d">_TIMER_CTRL_PRESC_DIV1024</a></div><div class="ttdeci">#define _TIMER_CTRL_PRESC_DIV1024</div><div class="ttdef"><b>Definition:</b> <a href="efr32fg12p__timer_8h_source.html#l00173">efr32fg12p_timer.h:173</a></div></div>
-<div class="ttc" id="group__TIMER_html_gae3dd36e419641a24d3f44084c216bf71"><div class="ttname"><a href="group__TIMER.html#gae3dd36e419641a24d3f44084c216bf71">TIMER_Enable</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_Enable(TIMER_TypeDef *timer, bool enable)</div><div class="ttdoc">Start/stop TIMER. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00613">em_timer.h:613</a></div></div>
-<div class="ttc" id="group__TIMER_html_ga1444f0ca7a97773a1152aa886f17b48a"><div class="ttname"><a href="group__TIMER.html#ga1444f0ca7a97773a1152aa886f17b48a">TIMER_INITCC_DEFAULT</a></div><div class="ttdeci">#define TIMER_INITCC_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00397">em_timer.h:397</a></div></div>
+<div class="ttc" id="group__TIMER_html_gae3dd36e419641a24d3f44084c216bf71"><div class="ttname"><a href="group__TIMER.html#gae3dd36e419641a24d3f44084c216bf71">TIMER_Enable</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_Enable(TIMER_TypeDef *timer, bool enable)</div><div class="ttdoc">Start/stop TIMER. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00660">em_timer.h:660</a></div></div>
+<div class="ttc" id="group__TIMER_html_ga1444f0ca7a97773a1152aa886f17b48a"><div class="ttname"><a href="group__TIMER.html#ga1444f0ca7a97773a1152aa886f17b48a">TIMER_INITCC_DEFAULT</a></div><div class="ttdeci">#define TIMER_INITCC_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00381">em_timer.h:381</a></div></div>
 <div class="ttc" id="em__timer_8h_html"><div class="ttname"><a href="em__timer_8h.html">em_timer.h</a></div><div class="ttdoc">Timer/counter (TIMER) peripheral API. </div></div>
-<div class="ttc" id="group__TIMER_html_ga92304cb71e3c8da55c9715c8ab30dc57"><div class="ttname"><a href="group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57">TIMER_IntClear</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_IntClear(TIMER_TypeDef *timer, uint32_t flags)</div><div class="ttdoc">Clear one or more pending TIMER interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00713">em_timer.h:713</a></div></div>
+<div class="ttc" id="group__TIMER_html_ga92304cb71e3c8da55c9715c8ab30dc57"><div class="ttname"><a href="group__TIMER.html#ga92304cb71e3c8da55c9715c8ab30dc57">TIMER_IntClear</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_IntClear(TIMER_TypeDef *timer, uint32_t flags)</div><div class="ttdoc">Clear one or more pending TIMER interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00760">em_timer.h:760</a></div></div>
 <div class="ttc" id="em__device_8h_html"><div class="ttname"><a href="em__device_8h.html">em_device.h</a></div><div class="ttdoc">CMSIS Cortex-M Peripheral Access Layer for Silicon Laboratories microcontroller devices. </div></div>
-<div class="ttc" id="structTIMER__InitCC__TypeDef_html_a04dcf1da58bdff3195483c270032f8ef"><div class="ttname"><a href="structTIMER__InitCC__TypeDef.html#a04dcf1da58bdff3195483c270032f8ef">TIMER_InitCC_TypeDef::mode</a></div><div class="ttdeci">TIMER_CCMode_TypeDef mode</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00375">em_timer.h:375</a></div></div>
-<div class="ttc" id="group__TIMER_html_ga10317eb2cd4cf6c5bde768023ea132cd"><div class="ttname"><a href="group__TIMER.html#ga10317eb2cd4cf6c5bde768023ea132cd">TIMER_IntEnable</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_IntEnable(TIMER_TypeDef *timer, uint32_t flags)</div><div class="ttdoc">Enable one or more TIMER interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00752">em_timer.h:752</a></div></div>
+<div class="ttc" id="structTIMER__InitCC__TypeDef_html_a04dcf1da58bdff3195483c270032f8ef"><div class="ttname"><a href="structTIMER__InitCC__TypeDef.html#a04dcf1da58bdff3195483c270032f8ef">TIMER_InitCC_TypeDef::mode</a></div><div class="ttdeci">TIMER_CCMode_TypeDef mode</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00359">em_timer.h:359</a></div></div>
+<div class="ttc" id="group__TIMER_html_ga10317eb2cd4cf6c5bde768023ea132cd"><div class="ttname"><a href="group__TIMER.html#ga10317eb2cd4cf6c5bde768023ea132cd">TIMER_IntEnable</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_IntEnable(TIMER_TypeDef *timer, uint32_t flags)</div><div class="ttdoc">Enable one or more TIMER interrupts. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00799">em_timer.h:799</a></div></div>
 <div class="ttc" id="em__common_8h_html"><div class="ttname"><a href="em__common_8h.html">em_common.h</a></div><div class="ttdoc">General purpose utilities. </div></div>
 <div class="ttc" id="group__EFR32FG12P__TIMER__BitFields_html_gafc86de0d955c2f421bdd9c3b983b0f52"><div class="ttname"><a href="group__EFR32FG12P__TIMER__BitFields.html#gafc86de0d955c2f421bdd9c3b983b0f52">_TIMER_CTRL_PRESC_DIV1</a></div><div class="ttdeci">#define _TIMER_CTRL_PRESC_DIV1</div><div class="ttdef"><b>Definition:</b> <a href="efr32fg12p__timer_8h_source.html#l00163">efr32fg12p_timer.h:163</a></div></div>
-<div class="ttc" id="group__USTIMER_html_ga5c7fa9c799b61638907d4f832a45e58b"><div class="ttname"><a href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init</a></div><div class="ttdeci">Ecode_t USTIMER_Init(void)</div><div class="ttdoc">Activate and initialize the hardware timer used to pace the 1 microsecond delay functions. </div><div class="ttdef"><b>Definition:</b> <a href="ustimer_8c_source.html#l00086">ustimer.c:86</a></div></div>
+<div class="ttc" id="group__USTIMER_html_ga5c7fa9c799b61638907d4f832a45e58b"><div class="ttname"><a href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init</a></div><div class="ttdeci">Ecode_t USTIMER_Init(void)</div><div class="ttdoc">Activate and initialize the hardware timer used to pace the 1 microsecond delay functions. </div><div class="ttdef"><b>Definition:</b> <a href="ustimer_8c_source.html#l00139">ustimer.c:139</a></div></div>
 <div class="ttc" id="group__EFR32FG12P__TIMER__BitFields_html_ga680d3d26cc8940c83f8b8aa6a5791a35"><div class="ttname"><a href="group__EFR32FG12P__TIMER__BitFields.html#ga680d3d26cc8940c83f8b8aa6a5791a35">TIMER_IF_CC0</a></div><div class="ttdeci">#define TIMER_IF_CC0</div><div class="ttdef"><b>Definition:</b> <a href="efr32fg12p__timer_8h_source.html#l00328">efr32fg12p_timer.h:328</a></div></div>
 <div class="ttc" id="group__CORE_html_ga3b0354ed174362818a7e22916917d43a"><div class="ttname"><a href="group__CORE.html#ga3b0354ed174362818a7e22916917d43a">CORE_ATOMIC_SECTION</a></div><div class="ttdeci">#define CORE_ATOMIC_SECTION(yourcode)</div><div class="ttdef"><b>Definition:</b> <a href="em__core_8h_source.html#l00126">em_core.h:126</a></div></div>
 <div class="ttc" id="group__EFR32FG12P__TIMER__BitFields_html_ga533f75de120d61038ba5164d83d471f6"><div class="ttname"><a href="group__EFR32FG12P__TIMER__BitFields.html#ga533f75de120d61038ba5164d83d471f6">TIMER_IFC_CC0</a></div><div class="ttdeci">#define TIMER_IFC_CC0</div><div class="ttdef"><b>Definition:</b> <a href="efr32fg12p__timer_8h_source.html#l00446">efr32fg12p_timer.h:446</a></div></div>
-<div class="ttc" id="group__EMU_html_gaed0c4092bd3adc7a6679e1e2903d1267"><div class="ttname"><a href="group__EMU.html#gaed0c4092bd3adc7a6679e1e2903d1267">EMU_EnterEM1</a></div><div class="ttdeci">__STATIC_INLINE void EMU_EnterEM1(void)</div><div class="ttdoc">Enter energy mode 1 (EM1). </div><div class="ttdef"><b>Definition:</b> <a href="em__emu_8h_source.html#l00529">em_emu.h:529</a></div></div>
-<div class="ttc" id="group__TIMER_html_gacbd76455f127f402f6b38ed94f68e4e6"><div class="ttname"><a href="group__TIMER.html#gacbd76455f127f402f6b38ed94f68e4e6">TIMER_IntGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t TIMER_IntGet(TIMER_TypeDef *timer)</div><div class="ttdoc">Get pending TIMER interrupt flags. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00772">em_timer.h:772</a></div></div>
-<div class="ttc" id="group__TIMER_html_ga8803e04b755a2a22dc9167e109a6be89"><div class="ttname"><a href="group__TIMER.html#ga8803e04b755a2a22dc9167e109a6be89">TIMER_INIT_DEFAULT</a></div><div class="ttdeci">#define TIMER_INIT_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00317">em_timer.h:317</a></div></div>
-<div class="ttc" id="group__emdrv_html_ga7bf5621660c5ba69ac4dd3044173d35c"><div class="ttname"><a href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a></div><div class="ttdeci">uint32_t Ecode_t</div><div class="ttdoc">Typedef for API function errorcode return values. </div><div class="ttdef"><b>Definition:</b> <a href="ecode_8h_source.html#l00051">ecode.h:51</a></div></div>
+<div class="ttc" id="group__EMU_html_gaed0c4092bd3adc7a6679e1e2903d1267"><div class="ttname"><a href="group__EMU.html#gaed0c4092bd3adc7a6679e1e2903d1267">EMU_EnterEM1</a></div><div class="ttdeci">__STATIC_INLINE void EMU_EnterEM1(void)</div><div class="ttdoc">Enter energy mode 1 (EM1). </div><div class="ttdef"><b>Definition:</b> <a href="em__emu_8h_source.html#l00713">em_emu.h:713</a></div></div>
+<div class="ttc" id="group__TIMER_html_gacbd76455f127f402f6b38ed94f68e4e6"><div class="ttname"><a href="group__TIMER.html#gacbd76455f127f402f6b38ed94f68e4e6">TIMER_IntGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t TIMER_IntGet(TIMER_TypeDef *timer)</div><div class="ttdoc">Get pending TIMER interrupt flags. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00819">em_timer.h:819</a></div></div>
+<div class="ttc" id="group__TIMER_html_ga8803e04b755a2a22dc9167e109a6be89"><div class="ttname"><a href="group__TIMER.html#ga8803e04b755a2a22dc9167e109a6be89">TIMER_INIT_DEFAULT</a></div><div class="ttdeci">#define TIMER_INIT_DEFAULT</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00301">em_timer.h:301</a></div></div>
+<div class="ttc" id="group__emdrv_html_ga7bf5621660c5ba69ac4dd3044173d35c"><div class="ttname"><a href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a></div><div class="ttdeci">uint32_t Ecode_t</div><div class="ttdoc">Typedef for API function error code return values. </div><div class="ttdef"><b>Definition:</b> <a href="ecode_8h_source.html#l00051">ecode.h:51</a></div></div>
 <div class="ttc" id="em__core_8h_html"><div class="ttname"><a href="em__core_8h.html">em_core.h</a></div><div class="ttdoc">Core interrupt handling API. </div></div>
-<div class="ttc" id="group__CMU_html_ga93913d50050d52b38b0a7c7c08ac81e8"><div class="ttname"><a href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a></div><div class="ttdeci">void CMU_ClockEnable(CMU_Clock_TypeDef clock, bool enable)</div><div class="ttdoc">Enable/disable a clock. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01443">em_cmu.c:1443</a></div></div>
-<div class="ttc" id="group__USTIMER_html_gae0ab9e930ee6cbd71061142c4ad4e298"><div class="ttname"><a href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">USTIMER_DeInit</a></div><div class="ttdeci">Ecode_t USTIMER_DeInit(void)</div><div class="ttdoc">Deinitialize USTIMER driver. </div><div class="ttdef"><b>Definition:</b> <a href="ustimer_8c_source.html#l00137">ustimer.c:137</a></div></div>
-<div class="ttc" id="group__TIMER_html_ga4ef423dd1b30cc66f3c3d3d51dac5d16"><div class="ttname"><a href="group__TIMER.html#ga4ef423dd1b30cc66f3c3d3d51dac5d16">TIMER_CompareSet</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_CompareSet(TIMER_TypeDef *timer, unsigned int ch, uint32_t val)</div><div class="ttdoc">Set compare value for compare/capture channel when operating in compare or PWM mode. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00563">em_timer.h:563</a></div></div>
-<div class="ttc" id="group__TIMER_html_ga83e10f77009812d7bfff2cf835ca64d7"><div class="ttname"><a href="group__TIMER.html#ga83e10f77009812d7bfff2cf835ca64d7">TIMER_CounterGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t TIMER_CounterGet(TIMER_TypeDef *timer)</div><div class="ttdoc">Get TIMER counter value. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00581">em_timer.h:581</a></div></div>
-<div class="ttc" id="group__CMU_html_gga519ea66a1a21e07f2d1cccc9aa55799ea040d340c971448a4607a4a70092bc0f8"><div class="ttname"><a href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea040d340c971448a4607a4a70092bc0f8">cmuClock_CORE</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8h_source.html#l00688">em_cmu.h:688</a></div></div>
-<div class="ttc" id="structTIMER__Init__TypeDef_html_a398fc7a5c956cc0f06eabe740c690d87"><div class="ttname"><a href="structTIMER__Init__TypeDef.html#a398fc7a5c956cc0f06eabe740c690d87">TIMER_Init_TypeDef::prescale</a></div><div class="ttdeci">TIMER_Prescale_TypeDef prescale</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00279">em_timer.h:279</a></div></div>
-<div class="ttc" id="structTIMER__Init__TypeDef_html"><div class="ttname"><a href="structTIMER__Init__TypeDef.html">TIMER_Init_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00270">em_timer.h:270</a></div></div>
+<div class="ttc" id="group__CMU_html_ga93913d50050d52b38b0a7c7c08ac81e8"><div class="ttname"><a href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable</a></div><div class="ttdeci">void CMU_ClockEnable(CMU_Clock_TypeDef clock, bool enable)</div><div class="ttdoc">Enable/disable a clock. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01453">em_cmu.c:1453</a></div></div>
+<div class="ttc" id="group__USTIMER_html_gae0ab9e930ee6cbd71061142c4ad4e298"><div class="ttname"><a href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">USTIMER_DeInit</a></div><div class="ttdeci">Ecode_t USTIMER_DeInit(void)</div><div class="ttdoc">Deinitialize USTIMER driver. </div><div class="ttdef"><b>Definition:</b> <a href="ustimer_8c_source.html#l00190">ustimer.c:190</a></div></div>
+<div class="ttc" id="group__TIMER_html_ga4ef423dd1b30cc66f3c3d3d51dac5d16"><div class="ttname"><a href="group__TIMER.html#ga4ef423dd1b30cc66f3c3d3d51dac5d16">TIMER_CompareSet</a></div><div class="ttdeci">__STATIC_INLINE void TIMER_CompareSet(TIMER_TypeDef *timer, unsigned int ch, uint32_t val)</div><div class="ttdoc">Set compare value for compare/capture channel when operating in compare or PWM mode. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00608">em_timer.h:608</a></div></div>
+<div class="ttc" id="group__TIMER_html_ga83e10f77009812d7bfff2cf835ca64d7"><div class="ttname"><a href="group__TIMER.html#ga83e10f77009812d7bfff2cf835ca64d7">TIMER_CounterGet</a></div><div class="ttdeci">__STATIC_INLINE uint32_t TIMER_CounterGet(TIMER_TypeDef *timer)</div><div class="ttdoc">Get TIMER counter value. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00627">em_timer.h:627</a></div></div>
+<div class="ttc" id="group__CMU_html_gga519ea66a1a21e07f2d1cccc9aa55799ea040d340c971448a4607a4a70092bc0f8"><div class="ttname"><a href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea040d340c971448a4607a4a70092bc0f8">cmuClock_CORE</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8h_source.html#l00693">em_cmu.h:693</a></div></div>
+<div class="ttc" id="structTIMER__Init__TypeDef_html_a398fc7a5c956cc0f06eabe740c690d87"><div class="ttname"><a href="structTIMER__Init__TypeDef.html#a398fc7a5c956cc0f06eabe740c690d87">TIMER_Init_TypeDef::prescale</a></div><div class="ttdeci">TIMER_Prescale_TypeDef prescale</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00263">em_timer.h:263</a></div></div>
+<div class="ttc" id="structTIMER__Init__TypeDef_html"><div class="ttname"><a href="structTIMER__Init__TypeDef.html">TIMER_Init_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00254">em_timer.h:254</a></div></div>
 <div class="ttc" id="group__TIMER_html_gad04a80140e22df0cd742e14933e9f028"><div class="ttname"><a href="group__TIMER.html#gad04a80140e22df0cd742e14933e9f028">TIMER_Init</a></div><div class="ttdeci">void TIMER_Init(TIMER_TypeDef *timer, const TIMER_Init_TypeDef *init)</div><div class="ttdoc">Initialize TIMER. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8c_source.html#l00076">em_timer.c:76</a></div></div>
 <div class="ttc" id="em__emu_8h_html"><div class="ttname"><a href="em__emu_8h.html">em_emu.h</a></div><div class="ttdoc">Energy management unit (EMU) peripheral API. </div></div>
-<div class="ttc" id="group__USTIMER_html_ga22982b2c10f35aa2f9dacb7252dfa0af"><div class="ttname"><a href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">USTIMER_DelayIntSafe</a></div><div class="ttdeci">Ecode_t USTIMER_DelayIntSafe(uint32_t usec)</div><div class="ttdoc">Delay a given number of microseconds. </div><div class="ttdef"><b>Definition:</b> <a href="ustimer_8c_source.html#l00203">ustimer.c:203</a></div></div>
+<div class="ttc" id="group__USTIMER_html_ga22982b2c10f35aa2f9dacb7252dfa0af"><div class="ttname"><a href="group__USTIMER.html#ga22982b2c10f35aa2f9dacb7252dfa0af">USTIMER_DelayIntSafe</a></div><div class="ttdeci">Ecode_t USTIMER_DelayIntSafe(uint32_t usec)</div><div class="ttdoc">Delay a given number of microseconds. </div><div class="ttdef"><b>Definition:</b> <a href="ustimer_8c_source.html#l00256">ustimer.c:256</a></div></div>
 <div class="ttc" id="group__USTIMER_html_gafa7a3cfd6fa84e52ff30b19963c550bc"><div class="ttname"><a href="group__USTIMER.html#gafa7a3cfd6fa84e52ff30b19963c550bc">ECODE_EMDRV_USTIMER_OK</a></div><div class="ttdeci">#define ECODE_EMDRV_USTIMER_OK</div><div class="ttdoc">Success return value. </div><div class="ttdef"><b>Definition:</b> <a href="ustimer_8h_source.html#l00036">ustimer.h:36</a></div></div>
 <div class="ttc" id="group__EFR32FG12P__TIMER__BitFields_html_gae947ebc7f0a0a7555cfebce47959ccfb"><div class="ttname"><a href="group__EFR32FG12P__TIMER__BitFields.html#gae947ebc7f0a0a7555cfebce47959ccfb">TIMER_IEN_CC0</a></div><div class="ttdeci">#define TIMER_IEN_CC0</div><div class="ttdef"><b>Definition:</b> <a href="efr32fg12p__timer_8h_source.html#l00505">efr32fg12p_timer.h:505</a></div></div>
-<div class="ttc" id="group__CMU_html_gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f"><div class="ttname"><a href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8h_source.html#l00390">em_cmu.h:390</a></div></div>
-<div class="ttc" id="group__COMMON_html_gac33644dcb925ed2bde0b5fc7a5fd9cfe"><div class="ttname"><a href="group__COMMON.html#gac33644dcb925ed2bde0b5fc7a5fd9cfe">SL_MAX</a></div><div class="ttdeci">#define SL_MAX(a, b)</div><div class="ttdoc">Macro for getting maximum value. No sideeffects, a and b are evaluated once only. ...</div><div class="ttdef"><b>Definition:</b> <a href="em__common_8h_source.html#l00134">em_common.h:134</a></div></div>
-<div class="ttc" id="structTIMER__InitCC__TypeDef_html"><div class="ttname"><a href="structTIMER__InitCC__TypeDef.html">TIMER_InitCC_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00351">em_timer.h:351</a></div></div>
+<div class="ttc" id="group__CMU_html_gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f"><div class="ttname"><a href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eafdbf6d011629cb273654aa780dc3d00f">cmuClock_HFPER</a></div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8h_source.html#l00395">em_cmu.h:395</a></div></div>
+<div class="ttc" id="group__COMMON_html_gac33644dcb925ed2bde0b5fc7a5fd9cfe"><div class="ttname"><a href="group__COMMON.html#gac33644dcb925ed2bde0b5fc7a5fd9cfe">SL_MAX</a></div><div class="ttdeci">#define SL_MAX(a, b)</div><div class="ttdoc">Macro for getting maximum value. No sideeffects, a and b are evaluated once only. ...</div><div class="ttdef"><b>Definition:</b> <a href="em__common_8h_source.html#l00140">em_common.h:140</a></div></div>
+<div class="ttc" id="structTIMER__InitCC__TypeDef_html"><div class="ttname"><a href="structTIMER__InitCC__TypeDef.html">TIMER_InitCC_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00335">em_timer.h:335</a></div></div>
 <div class="ttc" id="ustimer_8h_html"><div class="ttname"><a href="ustimer_8h.html">ustimer.h</a></div><div class="ttdoc">Microsecond delay function API definition. </div></div>
-<div class="ttc" id="group__USTIMER_html_ga3a844fc16a527d15450ba4692f6ce047"><div class="ttname"><a href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">USTIMER_Delay</a></div><div class="ttdeci">Ecode_t USTIMER_Delay(uint32_t usec)</div><div class="ttdoc">Delay a given number of microseconds. </div><div class="ttdef"><b>Definition:</b> <a href="ustimer_8c_source.html#l00168">ustimer.c:168</a></div></div>
+<div class="ttc" id="group__USTIMER_html_ga3a844fc16a527d15450ba4692f6ce047"><div class="ttname"><a href="group__USTIMER.html#ga3a844fc16a527d15450ba4692f6ce047">USTIMER_Delay</a></div><div class="ttdeci">Ecode_t USTIMER_Delay(uint32_t usec)</div><div class="ttdoc">Delay a given number of microseconds. </div><div class="ttdef"><b>Definition:</b> <a href="ustimer_8c_source.html#l00221">ustimer.c:221</a></div></div>
 <div class="ttc" id="group__TIMER_html_ga9b2a3560717e0c174a030d99fa8501b4"><div class="ttname"><a href="group__TIMER.html#ga9b2a3560717e0c174a030d99fa8501b4">TIMER_InitCC</a></div><div class="ttdeci">void TIMER_InitCC(TIMER_TypeDef *timer, unsigned int ch, const TIMER_InitCC_TypeDef *init)</div><div class="ttdoc">Initialize TIMER compare/capture channel. </div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8c_source.html#l00130">em_timer.c:130</a></div></div>
-<div class="ttc" id="group__CMU_html_gac9aa0ed17f83bd48abcf7b430843374a"><div class="ttname"><a href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet</a></div><div class="ttdeci">uint32_t CMU_ClockFreqGet(CMU_Clock_TypeDef clock)</div><div class="ttdoc">Get clock frequency for a clock point. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01540">em_cmu.c:1540</a></div></div>
-<div class="ttc" id="group__TIMER_html_ggacaeb01f1c6c64b144b9a5913893bd718a5c0e017e36fa868b76ea0adbe3b1d86e"><div class="ttname"><a href="group__TIMER.html#ggacaeb01f1c6c64b144b9a5913893bd718a5c0e017e36fa868b76ea0adbe3b1d86e">timerCCModeCompare</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00101">em_timer.h:101</a></div></div>
-<div class="ttc" id="group__TIMER_html_gadc7dec57fe232c5fbabbb7cd25ebffe0"><div class="ttname"><a href="group__TIMER.html#gadc7dec57fe232c5fbabbb7cd25ebffe0">TIMER_Prescale_TypeDef</a></div><div class="ttdeci">TIMER_Prescale_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00205">em_timer.h:205</a></div></div>
+<div class="ttc" id="group__CMU_html_gac9aa0ed17f83bd48abcf7b430843374a"><div class="ttname"><a href="group__CMU.html#gac9aa0ed17f83bd48abcf7b430843374a">CMU_ClockFreqGet</a></div><div class="ttdeci">uint32_t CMU_ClockFreqGet(CMU_Clock_TypeDef clock)</div><div class="ttdoc">Get clock frequency for a clock point. </div><div class="ttdef"><b>Definition:</b> <a href="em__cmu_8c_source.html#l01550">em_cmu.c:1550</a></div></div>
+<div class="ttc" id="group__TIMER_html_ggacaeb01f1c6c64b144b9a5913893bd718a5c0e017e36fa868b76ea0adbe3b1d86e"><div class="ttname"><a href="group__TIMER.html#ggacaeb01f1c6c64b144b9a5913893bd718a5c0e017e36fa868b76ea0adbe3b1d86e">timerCCModeCompare</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00085">em_timer.h:85</a></div></div>
+<div class="ttc" id="group__TIMER_html_gadc7dec57fe232c5fbabbb7cd25ebffe0"><div class="ttname"><a href="group__TIMER.html#gadc7dec57fe232c5fbabbb7cd25ebffe0">TIMER_Prescale_TypeDef</a></div><div class="ttdeci">TIMER_Prescale_TypeDef</div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00189">em_timer.h:189</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_a9326de1addf90fcea92508392adbd27.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_6b6e1d6f724ded44d3d99c92d8a26f66.html">ustimer</a></li><li class="navelem"><a class="el" href="dir_a9685a2d7cee848a53a31e608dcb387b.html">src</a></li><li class="navelem"><a class="el" href="ustimer_8c.html">ustimer.c</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 16:09:00 for EFR32 Flex Gecko 12 Software Documentation by
+    <li class="navelem"><a class="el" href="dir_57c5670a54251515d5dc3137dddf203b.html">platform</a></li><li class="navelem"><a class="el" href="dir_ca4c3fa4bf908f3600ce3f97dbc06fd3.html">emdrv</a></li><li class="navelem"><a class="el" href="dir_6a3b363332d58e23167655d51e2fcc9d.html">ustimer</a></li><li class="navelem"><a class="el" href="dir_42ce7f40a18026c15d07f44a75f26030.html">src</a></li><li class="navelem"><a class="el" href="ustimer_8c.html">ustimer.c</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:42:17 for EFR32 Flex Gecko 12 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

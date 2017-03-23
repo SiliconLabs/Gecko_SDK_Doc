@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -335,6 +335,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga803a1151a9b40252e20c39e71971053c"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#ga803a1151a9b40252e20c39e71971053c">TIMER_Lock</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer)</td></tr>
 <tr class="memdesc:ga803a1151a9b40252e20c39e71971053c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock some of the TIMER registers in order to protect them from being modified.  <a href="#ga803a1151a9b40252e20c39e71971053c">More...</a><br /></td></tr>
 <tr class="separator:ga803a1151a9b40252e20c39e71971053c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb8522fff7c668bb00fb6db6947454e8"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#gabb8522fff7c668bb00fb6db6947454e8">TIMER_MaxCount</a> (const <a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *ref)</td></tr>
+<tr class="memdesc:gabb8522fff7c668bb00fb6db6947454e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Max count of the timer.  <a href="#gabb8522fff7c668bb00fb6db6947454e8">More...</a><br /></td></tr>
+<tr class="separator:gabb8522fff7c668bb00fb6db6947454e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gade950f7c7c81fe3ae1612f40f5e0327d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#gade950f7c7c81fe3ae1612f40f5e0327d">TIMER_Reset</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer)</td></tr>
 <tr class="memdesc:gade950f7c7c81fe3ae1612f40f5e0327d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset TIMER to same state as after a HW reset.  <a href="#gade950f7c7c81fe3ae1612f40f5e0327d">More...</a><br /></td></tr>
 <tr class="separator:gade950f7c7c81fe3ae1612f40f5e0327d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -350,6 +353,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gae2b8639e42754b13b70c2202b854c86b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#gae2b8639e42754b13b70c2202b854c86b">TIMER_Unlock</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer)</td></tr>
 <tr class="memdesc:gae2b8639e42754b13b70c2202b854c86b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the TIMER so that writing to locked registers again is possible.  <a href="#gae2b8639e42754b13b70c2202b854c86b">More...</a><br /></td></tr>
 <tr class="separator:gae2b8639e42754b13b70c2202b854c86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04442bc44f2b694b17ad60274e6668e7"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#ga04442bc44f2b694b17ad60274e6668e7">TIMER_Valid</a> (const <a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *ref)</td></tr>
+<tr class="memdesc:ga04442bc44f2b694b17ad60274e6668e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the TIMER register block pointer.  <a href="#ga04442bc44f2b694b17ad60274e6668e7">More...</a><br /></td></tr>
+<tr class="separator:ga04442bc44f2b694b17ad60274e6668e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga8803e04b755a2a22dc9167e109a6be89"></a>
@@ -376,15 +382,15 @@ Functions</h2></td></tr>
 <div class="line">  false,                  <span class="comment">/* Disable one shot. */</span>                                     \</div>
 <div class="line">  false                   <span class="comment">/* Not started/stopped/reloaded by other timers. */</span>         \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__TIMER_html_gga511d9c88c172605ee06715c274ad9cfaa8ea267f0e495bc1582a930da2de0ec11"><div class="ttname"><a href="group__TIMER.html#gga511d9c88c172605ee06715c274ad9cfaa8ea267f0e495bc1582a930da2de0ec11">timerClkSelHFPerClk</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00110">em_timer.h:110</a></div></div>
-<div class="ttc" id="group__TIMER_html_ggad737fcc050f53fc713f07f22f9bd5143afb8d4dc601f6006ddb34a890c025a3dd"><div class="ttname"><a href="group__TIMER.html#ggad737fcc050f53fc713f07f22f9bd5143afb8d4dc601f6006ddb34a890c025a3dd">timerInputActionNone</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00164">em_timer.h:164</a></div></div>
-<div class="ttc" id="group__TIMER_html_gga7198f02825e0938408a7287a75171265a6a5d2cfb3ec8de569154d34a3e43e44b"><div class="ttname"><a href="group__TIMER.html#gga7198f02825e0938408a7287a75171265a6a5d2cfb3ec8de569154d34a3e43e44b">timerModeUp</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00180">em_timer.h:180</a></div></div>
-<div class="ttc" id="group__TIMER_html_ggadc7dec57fe232c5fbabbb7cd25ebffe0a5a7aa653bdaf1417447ccd2da60ca635"><div class="ttname"><a href="group__TIMER.html#ggadc7dec57fe232c5fbabbb7cd25ebffe0a5a7aa653bdaf1417447ccd2da60ca635">timerPrescale1</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00207">em_timer.h:207</a></div></div>
+<div class="ttc" id="group__TIMER_html_gga511d9c88c172605ee06715c274ad9cfaa8ea267f0e495bc1582a930da2de0ec11"><div class="ttname"><a href="group__TIMER.html#gga511d9c88c172605ee06715c274ad9cfaa8ea267f0e495bc1582a930da2de0ec11">timerClkSelHFPerClk</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00094">em_timer.h:94</a></div></div>
+<div class="ttc" id="group__TIMER_html_ggad737fcc050f53fc713f07f22f9bd5143afb8d4dc601f6006ddb34a890c025a3dd"><div class="ttname"><a href="group__TIMER.html#ggad737fcc050f53fc713f07f22f9bd5143afb8d4dc601f6006ddb34a890c025a3dd">timerInputActionNone</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00148">em_timer.h:148</a></div></div>
+<div class="ttc" id="group__TIMER_html_gga7198f02825e0938408a7287a75171265a6a5d2cfb3ec8de569154d34a3e43e44b"><div class="ttname"><a href="group__TIMER.html#gga7198f02825e0938408a7287a75171265a6a5d2cfb3ec8de569154d34a3e43e44b">timerModeUp</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00164">em_timer.h:164</a></div></div>
+<div class="ttc" id="group__TIMER_html_ggadc7dec57fe232c5fbabbb7cd25ebffe0a5a7aa653bdaf1417447ccd2da60ca635"><div class="ttname"><a href="group__TIMER.html#ggadc7dec57fe232c5fbabbb7cd25ebffe0a5a7aa653bdaf1417447ccd2da60ca635">timerPrescale1</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00191">em_timer.h:191</a></div></div>
 </div><!-- fragment --><p>Default config for TIMER init structure. </p>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00317">317</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00301">301</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="group__USB__COMMON.html#ga21c87b800d87fd731173dd4f48f23c28">USBTIMER_Init()</a>, and <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#gad14824889b3f0fb3d93c1d96d477dde3">BOARD_init()</a>, <a class="el" href="group__USB__COMMON.html#ga21c87b800d87fd731173dd4f48f23c28">USBTIMER_Init()</a>, and <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a>.</p>
 
 </div>
 </div>
@@ -410,16 +416,16 @@ Functions</h2></td></tr>
 <div class="line">  false,                    <span class="comment">/* Clear output when counter disabled. */</span>        \</div>
 <div class="line">  false                     <span class="comment">/* Do not invert output. */</span>                      \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__TIMER_html_ggacaeb01f1c6c64b144b9a5913893bd718ad26fef318159894a86f4c6a5deb5c12a"><div class="ttname"><a href="group__TIMER.html#ggacaeb01f1c6c64b144b9a5913893bd718ad26fef318159894a86f4c6a5deb5c12a">timerCCModeOff</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00099">em_timer.h:99</a></div></div>
-<div class="ttc" id="group__TIMER_html_ggaa024137506ad0a0cd518c4572f8ba545adaf018c66d975a7bd2b75f6a1a9a78cf"><div class="ttname"><a href="group__TIMER.html#ggaa024137506ad0a0cd518c4572f8ba545adaf018c66d975a7bd2b75f6a1a9a78cf">timerEdgeRising</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00127">em_timer.h:127</a></div></div>
-<div class="ttc" id="group__TIMER_html_ggaaa9a5454731dae18603a8076f9a9010aa1b07e6f0decb7202899be9b5ff43a761"><div class="ttname"><a href="group__TIMER.html#ggaaa9a5454731dae18603a8076f9a9010aa1b07e6f0decb7202899be9b5ff43a761">timerPRSSELCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00224">em_timer.h:224</a></div></div>
-<div class="ttc" id="group__TIMER_html_gga141160bf6b286d2a001079a562c64761ab52e57e9a104c302988ff2994db9e378"><div class="ttname"><a href="group__TIMER.html#gga141160bf6b286d2a001079a562c64761ab52e57e9a104c302988ff2994db9e378">timerEventEveryEdge</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00144">em_timer.h:144</a></div></div>
-<div class="ttc" id="group__TIMER_html_gga3899377f736a636532b16922f7c65728a1ae017e12e3a98b091536244b7adc972"><div class="ttname"><a href="group__TIMER.html#gga3899377f736a636532b16922f7c65728a1ae017e12e3a98b091536244b7adc972">timerOutputActionNone</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00191">em_timer.h:191</a></div></div>
+<div class="ttc" id="group__TIMER_html_ggacaeb01f1c6c64b144b9a5913893bd718ad26fef318159894a86f4c6a5deb5c12a"><div class="ttname"><a href="group__TIMER.html#ggacaeb01f1c6c64b144b9a5913893bd718ad26fef318159894a86f4c6a5deb5c12a">timerCCModeOff</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00083">em_timer.h:83</a></div></div>
+<div class="ttc" id="group__TIMER_html_ggaa024137506ad0a0cd518c4572f8ba545adaf018c66d975a7bd2b75f6a1a9a78cf"><div class="ttname"><a href="group__TIMER.html#ggaa024137506ad0a0cd518c4572f8ba545adaf018c66d975a7bd2b75f6a1a9a78cf">timerEdgeRising</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00111">em_timer.h:111</a></div></div>
+<div class="ttc" id="group__TIMER_html_ggaaa9a5454731dae18603a8076f9a9010aa1b07e6f0decb7202899be9b5ff43a761"><div class="ttname"><a href="group__TIMER.html#ggaaa9a5454731dae18603a8076f9a9010aa1b07e6f0decb7202899be9b5ff43a761">timerPRSSELCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00208">em_timer.h:208</a></div></div>
+<div class="ttc" id="group__TIMER_html_gga141160bf6b286d2a001079a562c64761ab52e57e9a104c302988ff2994db9e378"><div class="ttname"><a href="group__TIMER.html#gga141160bf6b286d2a001079a562c64761ab52e57e9a104c302988ff2994db9e378">timerEventEveryEdge</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00128">em_timer.h:128</a></div></div>
+<div class="ttc" id="group__TIMER_html_gga3899377f736a636532b16922f7c65728a1ae017e12e3a98b091536244b7adc972"><div class="ttname"><a href="group__TIMER.html#gga3899377f736a636532b16922f7c65728a1ae017e12e3a98b091536244b7adc972">timerOutputActionNone</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00175">em_timer.h:175</a></div></div>
 </div><!-- fragment --><p>Default config for TIMER compare/capture init structure. </p>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00397">397</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00381">381</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="group__USB__COMMON.html#ga21c87b800d87fd731173dd4f48f23c28">USBTIMER_Init()</a>, and <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#gad14824889b3f0fb3d93c1d96d477dde3">BOARD_init()</a>, <a class="el" href="group__USB__COMMON.html#ga21c87b800d87fd731173dd4f48f23c28">USBTIMER_Init()</a>, and <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a>.</p>
 
 </div>
 </div>
@@ -451,13 +457,13 @@ Functions</h2></td></tr>
 <div class="line"><a class="code" href="group__TIMER.html#ggaaa9a5454731dae18603a8076f9a9010aa1b07e6f0decb7202899be9b5ff43a761">  timerPRSSELCh0</a>,           <span class="comment">/* Not used by default, select PRS channel 0. */</span> <a class="code" href="group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691fab5142a73cd3ed39af3b2852fff3069e5">\</a></div>
 <div class="line"><a class="code" href="group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691fab5142a73cd3ed39af3b2852fff3069e5">  timerDtiFaultActionInactive</a>, <span class="comment">/* No fault action. */</span>                        \</div>
 <div class="line">}</div>
-<div class="ttc" id="group__TIMER_html_ggaaa9a5454731dae18603a8076f9a9010aa1b07e6f0decb7202899be9b5ff43a761"><div class="ttname"><a href="group__TIMER.html#ggaaa9a5454731dae18603a8076f9a9010aa1b07e6f0decb7202899be9b5ff43a761">timerPRSSELCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00224">em_timer.h:224</a></div></div>
-<div class="ttc" id="group__TIMER_html_ggadc7dec57fe232c5fbabbb7cd25ebffe0a5a7aa653bdaf1417447ccd2da60ca635"><div class="ttname"><a href="group__TIMER.html#ggadc7dec57fe232c5fbabbb7cd25ebffe0a5a7aa653bdaf1417447ccd2da60ca635">timerPrescale1</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00207">em_timer.h:207</a></div></div>
-<div class="ttc" id="group__TIMER_html_ggae8ecc03dd4449015adc2fcb5469c691fab5142a73cd3ed39af3b2852fff3069e5"><div class="ttname"><a href="group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691fab5142a73cd3ed39af3b2852fff3069e5">timerDtiFaultActionInactive</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00259">em_timer.h:259</a></div></div>
+<div class="ttc" id="group__TIMER_html_ggaaa9a5454731dae18603a8076f9a9010aa1b07e6f0decb7202899be9b5ff43a761"><div class="ttname"><a href="group__TIMER.html#ggaaa9a5454731dae18603a8076f9a9010aa1b07e6f0decb7202899be9b5ff43a761">timerPRSSELCh0</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00208">em_timer.h:208</a></div></div>
+<div class="ttc" id="group__TIMER_html_ggadc7dec57fe232c5fbabbb7cd25ebffe0a5a7aa653bdaf1417447ccd2da60ca635"><div class="ttname"><a href="group__TIMER.html#ggadc7dec57fe232c5fbabbb7cd25ebffe0a5a7aa653bdaf1417447ccd2da60ca635">timerPrescale1</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00191">em_timer.h:191</a></div></div>
+<div class="ttc" id="group__TIMER_html_ggae8ecc03dd4449015adc2fcb5469c691fab5142a73cd3ed39af3b2852fff3069e5"><div class="ttname"><a href="group__TIMER.html#ggae8ecc03dd4449015adc2fcb5469c691fab5142a73cd3ed39af3b2852fff3069e5">timerDtiFaultActionInactive</a></div><div class="ttdef"><b>Definition:</b> <a href="em__timer_8h_source.html#l00243">em_timer.h:243</a></div></div>
 <div class="ttc" id="group__EZR32LG__TIMER__BitFields_html_ga9ac7a5716490b7297a85459a0e65889b"><div class="ttname"><a href="group__EZR32LG__TIMER__BitFields.html#ga9ac7a5716490b7297a85459a0e65889b">TIMER_DTOGEN_DTOGCDTI0EN</a></div><div class="ttdeci">#define TIMER_DTOGEN_DTOGCDTI0EN</div><div class="ttdef"><b>Definition:</b> <a href="ezr32lg__timer_8h_source.html#l00886">ezr32lg_timer.h:886</a></div></div>
 </div><!-- fragment --><p>Default config for TIMER DTI init structure. </p>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00475">475</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00459">459</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 </div>
 </div>
@@ -487,7 +493,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00097">97</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00081">81</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 </div>
 </div>
@@ -513,7 +519,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00107">107</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00091">91</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 </div>
 </div>
@@ -542,7 +548,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00256">256</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00240">240</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +577,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00124">124</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00108">108</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 </div>
 </div>
@@ -600,7 +606,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00141">141</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00125">125</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +635,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00161">161</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00145">145</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 </div>
 </div>
@@ -658,7 +664,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00178">178</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00162">162</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 </div>
 </div>
@@ -687,7 +693,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00188">188</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00172">172</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 </div>
 </div>
@@ -737,7 +743,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00205">205</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00189">189</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 </div>
 </div>
@@ -790,7 +796,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00222">222</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00206">206</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 </div>
 </div>
@@ -829,7 +835,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current capture value. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00516">516</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00560">560</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#aa68f87ea634a5a4dbfb132a96400c77e">TIMER_TypeDef::CC</a>, and <a class="el" href="structTIMER__CC__TypeDef.html#a08171cad28467b1a803b3557cc1127d7">TIMER_CC_TypeDef::CCV</a>.</p>
 
@@ -868,7 +874,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00693">693</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00740">740</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#afa75dbbe9d9633c435278a42c2f65ee0">TIMER_TypeDef::DTFAULTC</a>, and <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#gaf1b746ba5ab7d0ab657156ebda0f290c">TIMER0</a>.</p>
 
@@ -917,9 +923,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00541">541</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00585">585</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
-<p>References <a class="el" href="structTIMER__TypeDef.html#aa68f87ea634a5a4dbfb132a96400c77e">TIMER_TypeDef::CC</a>, and <a class="el" href="structTIMER__CC__TypeDef.html#a954e0fd8b3bda78f99106ad3ebb7fa0f">TIMER_CC_TypeDef::CCVB</a>.</p>
+<p>References <a class="el" href="structTIMER__TypeDef.html#aa68f87ea634a5a4dbfb132a96400c77e">TIMER_TypeDef::CC</a>, <a class="el" href="structTIMER__CC__TypeDef.html#a954e0fd8b3bda78f99106ad3ebb7fa0f">TIMER_CC_TypeDef::CCVB</a>, and <a class="el" href="group__TIMER.html#gabb8522fff7c668bb00fb6db6947454e8">TIMER_MaxCount()</a>.</p>
+
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#ga9f33f622d5c3c3e0d52bfe2d4763a2a8">BOARD_rgbledSetRawColor()</a>.</p>
 
 </div>
 </div>
@@ -963,9 +971,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00563">563</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00608">608</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
-<p>References <a class="el" href="structTIMER__TypeDef.html#aa68f87ea634a5a4dbfb132a96400c77e">TIMER_TypeDef::CC</a>, and <a class="el" href="structTIMER__CC__TypeDef.html#a08171cad28467b1a803b3557cc1127d7">TIMER_CC_TypeDef::CCV</a>.</p>
+<p>References <a class="el" href="structTIMER__TypeDef.html#aa68f87ea634a5a4dbfb132a96400c77e">TIMER_TypeDef::CC</a>, <a class="el" href="structTIMER__CC__TypeDef.html#a08171cad28467b1a803b3557cc1127d7">TIMER_CC_TypeDef::CCV</a>, and <a class="el" href="group__TIMER.html#gabb8522fff7c668bb00fb6db6947454e8">TIMER_MaxCount()</a>.</p>
 
 <p>Referenced by <a class="el" href="group__USB__COMMON.html#ga21c87b800d87fd731173dd4f48f23c28">USBTIMER_Init()</a>.</p>
 
@@ -994,7 +1002,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current TIMER counter value. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00581">581</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00627">627</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#a66ea705fd154abd25564b23060b6ca2c">TIMER_TypeDef::CNT</a>.</p>
 
@@ -1035,9 +1043,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00597">597</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00643">643</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
-<p>References <a class="el" href="structTIMER__TypeDef.html#a66ea705fd154abd25564b23060b6ca2c">TIMER_TypeDef::CNT</a>.</p>
+<p>References <a class="el" href="structTIMER__TypeDef.html#a66ea705fd154abd25564b23060b6ca2c">TIMER_TypeDef::CNT</a>, and <a class="el" href="group__TIMER.html#gabb8522fff7c668bb00fb6db6947454e8">TIMER_MaxCount()</a>.</p>
 
 </div>
 </div>
@@ -1074,11 +1082,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00613">613</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00660">660</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#a0cca5b2e7edf40bdd9f6d214ad09f735">TIMER_TypeDef::CMD</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gab7ac1e3caa6497cd181c9934020c5e71">TIMER_CMD_START</a>, and <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gad422984e78892ff17aacb0bc00d87e3a">TIMER_CMD_STOP</a>.</p>
 
-<p>Referenced by <a class="el" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">USTIMER_DeInit()</a>.</p>
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#ga9f33f622d5c3c3e0d52bfe2d4763a2a8">BOARD_rgbledSetRawColor()</a>, and <a class="el" href="group__USTIMER.html#gae0ab9e930ee6cbd71061142c4ad4e298">USTIMER_DeInit()</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1123,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00646">646</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00693">693</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#a5b5c96820edcdfa464bbf64878ecb55c">TIMER_TypeDef::DTCTRL</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#gaf1b746ba5ab7d0ab657156ebda0f290c">TIMER0</a>, and <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga79e5cb4336fdb143fa0cf6bab16f3ed7">TIMER_DTCTRL_DTEN</a>.</p>
 
@@ -1147,7 +1155,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Status of the DTI fault source flags. Returns one or more valid DTI fault source flags (TIMER_DTFAULT_nnn) OR'ed together. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00675">675</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00722">722</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#a304a0355f7947657c240fc7026398025">TIMER_TypeDef::DTFAULT</a>, and <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#gaf1b746ba5ab7d0ab657156ebda0f290c">TIMER0</a>.</p>
 
@@ -1193,7 +1201,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gaf1bfec7db817b4f73eaf334cfdb2a6df">_TIMER_CNT_RESETVALUE</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gada70ba8cdf0825fa05c6535b8ffec3f6">_TIMER_CTRL_CLKSEL_SHIFT</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga46b617c6b91a598589157c1a8f619b30">_TIMER_CTRL_FALLA_SHIFT</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gac248e47c2696d001ddc4ab2ef1ac014c">_TIMER_CTRL_MODE_SHIFT</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga85c23cdd21fd7b988dae346f462887de">_TIMER_CTRL_PRESC_SHIFT</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga81969ad2d0824c376796d6b268aac799">_TIMER_CTRL_RISEA_SHIFT</a>, <a class="el" href="structTIMER__Init__TypeDef.html#a3335f6fa99e335aa0e87fa5a4fdc68c6">TIMER_Init_TypeDef::ati</a>, <a class="el" href="structTIMER__Init__TypeDef.html#a789217095117b0701209e3d2ca79142e">TIMER_Init_TypeDef::clkSel</a>, <a class="el" href="structTIMER__TypeDef.html#a0cca5b2e7edf40bdd9f6d214ad09f735">TIMER_TypeDef::CMD</a>, <a class="el" href="structTIMER__TypeDef.html#a66ea705fd154abd25564b23060b6ca2c">TIMER_TypeDef::CNT</a>, <a class="el" href="structTIMER__Init__TypeDef.html#af2ed7bab3ebd49339675385bf71391f6">TIMER_Init_TypeDef::count2x</a>, <a class="el" href="structTIMER__TypeDef.html#ad9223cbc1792d9fee9d8bdcf9eba8f47">TIMER_TypeDef::CTRL</a>, <a class="el" href="structTIMER__Init__TypeDef.html#aff9baba6904dceb106d00eab2dc37852">TIMER_Init_TypeDef::debugRun</a>, <a class="el" href="structTIMER__Init__TypeDef.html#aa02ecfce7fa22c17447280cf1312dd83">TIMER_Init_TypeDef::dmaClrAct</a>, <a class="el" href="structTIMER__Init__TypeDef.html#abdca26183c22fc3d6905b67aed8dd6db">TIMER_Init_TypeDef::enable</a>, <a class="el" href="structTIMER__Init__TypeDef.html#a8310f7f65e6359215e3f47593a086a0f">TIMER_Init_TypeDef::fallAction</a>, <a class="el" href="structTIMER__Init__TypeDef.html#a823ddcccabecd7552f7505f219f3b1a4">TIMER_Init_TypeDef::mode</a>, <a class="el" href="structTIMER__Init__TypeDef.html#a0d7b4ece39bb4b5672933a20e91b5cf7">TIMER_Init_TypeDef::oneShot</a>, <a class="el" href="structTIMER__Init__TypeDef.html#a398fc7a5c956cc0f06eabe740c690d87">TIMER_Init_TypeDef::prescale</a>, <a class="el" href="structTIMER__Init__TypeDef.html#aa3e36a96a284c9a9eeb7c0b1c943b550">TIMER_Init_TypeDef::quadModeX4</a>, <a class="el" href="structTIMER__Init__TypeDef.html#ae91e022ffd6afd97004820a8e1f46fba">TIMER_Init_TypeDef::riseAction</a>, <a class="el" href="structTIMER__Init__TypeDef.html#a7c375c9914c07876fbb3023c1f6de3eb">TIMER_Init_TypeDef::sync</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gab7ac1e3caa6497cd181c9934020c5e71">TIMER_CMD_START</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gad422984e78892ff17aacb0bc00d87e3a">TIMER_CMD_STOP</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gaa0e77e4aa9c691b59cf208c3d27f8761">TIMER_CTRL_ATI</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga50c70610cfaf95459bec6439fd68a42e">TIMER_CTRL_DEBUGRUN</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga7550620f6b2022f68ecb9f836260cd20">TIMER_CTRL_DMACLRACT</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga07d40ce47f9538063b7886c54efad567">TIMER_CTRL_OSMEN</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga0426a48462b14b98e1fbde7fde03bec4">TIMER_CTRL_QDM_X4</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gae41e4abd62bd96f3f1fc57b431cf4ad5">TIMER_CTRL_SYNC</a>, and <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gaf654fbac74cadbfcbdceabc441f3137a">TIMER_CTRL_X2CNT</a>.</p>
 
-<p>Referenced by <a class="el" href="group__USB__COMMON.html#ga21c87b800d87fd731173dd4f48f23c28">USBTIMER_Init()</a>, and <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#gad14824889b3f0fb3d93c1d96d477dde3">BOARD_init()</a>, <a class="el" href="group__USB__COMMON.html#ga21c87b800d87fd731173dd4f48f23c28">USBTIMER_Init()</a>, and <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a>.</p>
 
 </div>
 </div>
@@ -1242,7 +1250,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga04e304275a5ff577755f5f1c87e33feb">_TIMER_CC_CTRL_CMOA_SHIFT</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga4eb63b8876285a8d6e77484f761ecfd0">_TIMER_CC_CTRL_COFOA_SHIFT</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga45d90bf15b575a2404ef74303a811be0">_TIMER_CC_CTRL_CUFOA_SHIFT</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga8973df50f431e6663e78721721d4310b">_TIMER_CC_CTRL_ICEDGE_SHIFT</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga6965ea03554bc639716194d0c37a1595">_TIMER_CC_CTRL_ICEVCTRL_SHIFT</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga49b9e603a65950792064f651abb23ce6">_TIMER_CC_CTRL_MODE_SHIFT</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gab01df2e92920732e30c427762b5b7c3d">_TIMER_CC_CTRL_PRSSEL_SHIFT</a>, <a class="el" href="structTIMER__TypeDef.html#aa68f87ea634a5a4dbfb132a96400c77e">TIMER_TypeDef::CC</a>, <a class="el" href="structTIMER__InitCC__TypeDef.html#a7b46afd8e9f5d5a64426a16ac53d0bb4">TIMER_InitCC_TypeDef::cmoa</a>, <a class="el" href="structTIMER__InitCC__TypeDef.html#aee89b62b3f7c730eb4f6011f76e0f847">TIMER_InitCC_TypeDef::cofoa</a>, <a class="el" href="structTIMER__InitCC__TypeDef.html#ae3f4937a7f9f883688e70051ce752e4b">TIMER_InitCC_TypeDef::coist</a>, <a class="el" href="structTIMER__CC__TypeDef.html#a6cc61bb28f687753c3527f6d0ccfba27">TIMER_CC_TypeDef::CTRL</a>, <a class="el" href="structTIMER__InitCC__TypeDef.html#aee0489bbfd118d0ed9d740b218bf5e18">TIMER_InitCC_TypeDef::cufoa</a>, <a class="el" href="structTIMER__InitCC__TypeDef.html#a7ea719ab652477adb9525eda45d3071b">TIMER_InitCC_TypeDef::edge</a>, <a class="el" href="structTIMER__InitCC__TypeDef.html#abf13a3647d816e68d0a8c611c1abc6df">TIMER_InitCC_TypeDef::eventCtrl</a>, <a class="el" href="structTIMER__InitCC__TypeDef.html#a0e28645c4772183980533f46cd963930">TIMER_InitCC_TypeDef::filter</a>, <a class="el" href="structTIMER__InitCC__TypeDef.html#a04dcf1da58bdff3195483c270032f8ef">TIMER_InitCC_TypeDef::mode</a>, <a class="el" href="structTIMER__InitCC__TypeDef.html#a3f6a4a60bb45febd3911bf4b53fedfc5">TIMER_InitCC_TypeDef::outInvert</a>, <a class="el" href="structTIMER__InitCC__TypeDef.html#a6ba43a3bb11c08e11ffdf0b95732cea7">TIMER_InitCC_TypeDef::prsInput</a>, <a class="el" href="structTIMER__InitCC__TypeDef.html#aea9a8d3f2d286b6ce118a10565d4182a">TIMER_InitCC_TypeDef::prsSel</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga93dca8600950608b58ad1d6ab324b217">TIMER_CC_CTRL_COIST</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga9bf68da29b7f12e4a397815c1c16c210">TIMER_CC_CTRL_FILT_ENABLE</a>, <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gaa89b31a3649b286fc60e99dc52405ffe">TIMER_CC_CTRL_INSEL_PRS</a>, and <a class="el" href="group__EZR32LG__TIMER__BitFields.html#ga824e6a247bafea653237c5329f7355e3">TIMER_CC_CTRL_OUTINV</a>.</p>
 
-<p>Referenced by <a class="el" href="group__USB__COMMON.html#ga21c87b800d87fd731173dd4f48f23c28">USBTIMER_Init()</a>, and <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#gad14824889b3f0fb3d93c1d96d477dde3">BOARD_init()</a>, <a class="el" href="group__USB__COMMON.html#ga21c87b800d87fd731173dd4f48f23c28">USBTIMER_Init()</a>, and <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a>.</p>
 
 </div>
 </div>
@@ -1318,7 +1326,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00713">713</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00760">760</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#a70bf6922d93e603c9005f2328253193d">TIMER_TypeDef::IFC</a>.</p>
 
@@ -1359,7 +1367,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00730">730</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00777">777</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#ad32b13648efbd50af8fea19a099e942e">TIMER_TypeDef::IEN</a>.</p>
 
@@ -1401,7 +1409,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00752">752</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00799">799</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#ad32b13648efbd50af8fea19a099e942e">TIMER_TypeDef::IEN</a>.</p>
 
@@ -1433,7 +1441,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>TIMER interrupt source(s) pending. Returns one or more valid interrupt flags for the TIMER module (TIMER_IF_nnn) OR'ed together. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00772">772</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00819">819</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#a1ae5de7cac2fba68ed3151969857d2d9">TIMER_TypeDef::IF</a>.</p>
 
@@ -1467,7 +1475,7 @@ Functions</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00797">797</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00844">844</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#ad32b13648efbd50af8fea19a099e942e">TIMER_TypeDef::IEN</a>, and <a class="el" href="structTIMER__TypeDef.html#a1ae5de7cac2fba68ed3151969857d2d9">TIMER_TypeDef::IF</a>.</p>
 
@@ -1506,7 +1514,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00821">821</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00868">868</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#a341e06af8624074fa857e192297c7aab">TIMER_TypeDef::IFS</a>.</p>
 
@@ -1536,9 +1544,38 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00843">843</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00890">890</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#a4627bd7844fdbf158d987da9fe8a68c3">TIMER_TypeDef::DTLOCK</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#gaf1b746ba5ab7d0ab657156ebda0f290c">TIMER0</a>, and <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gab1f94c93032f1b66ca6459fdc35e2dec">TIMER_DTLOCK_LOCKKEY_LOCK</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gabb8522fff7c668bb00fb6db6947454e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE uint32_t TIMER_MaxCount </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>ref</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Max count of the timer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timer</td><td>Pointer to TIMER peripheral register block.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The max count value of the timer. This is 0xFFFF for 16 bit timers and 0xFFFFFFFF for 32 bit timers. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00529">529</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+
+<p>Referenced by <a class="el" href="group__TIMER.html#gaca426134377caec8f8e5d44fe7726a4a">TIMER_CompareBufSet()</a>, <a class="el" href="group__TIMER.html#ga4ef423dd1b30cc66f3c3d3d51dac5d16">TIMER_CompareSet()</a>, <a class="el" href="group__TIMER.html#gadf8070d157063a47b20abe97e146a919">TIMER_CounterSet()</a>, <a class="el" href="group__TIMER.html#gaa4768fe62ef7609d62bf432e7143332c">TIMER_TopBufSet()</a>, and <a class="el" href="group__TIMER.html#gad367b1801475494e0aeab2e4eab1e646">TIMER_TopSet()</a>.</p>
 
 </div>
 </div>
@@ -1605,9 +1642,9 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00868">868</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00915">915</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
-<p>References <a class="el" href="structTIMER__TypeDef.html#a4b13b32d4cd857acb56bf9ae249c0e07">TIMER_TypeDef::TOPB</a>.</p>
+<p>References <a class="el" href="group__TIMER.html#gabb8522fff7c668bb00fb6db6947454e8">TIMER_MaxCount()</a>, and <a class="el" href="structTIMER__TypeDef.html#a4b13b32d4cd857acb56bf9ae249c0e07">TIMER_TypeDef::TOPB</a>.</p>
 
 </div>
 </div>
@@ -1634,7 +1671,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current top value. </dd></dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00884">884</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00932">932</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#adad8e4c50781cac90a9ea0b58a6620f8">TIMER_TypeDef::TOP</a>.</p>
 
@@ -1673,11 +1710,11 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00900">900</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00948">948</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
-<p>References <a class="el" href="structTIMER__TypeDef.html#adad8e4c50781cac90a9ea0b58a6620f8">TIMER_TypeDef::TOP</a>.</p>
+<p>References <a class="el" href="group__TIMER.html#gabb8522fff7c668bb00fb6db6947454e8">TIMER_MaxCount()</a>, and <a class="el" href="structTIMER__TypeDef.html#adad8e4c50781cac90a9ea0b58a6620f8">TIMER_TypeDef::TOP</a>.</p>
 
-<p>Referenced by <a class="el" href="group__USB__COMMON.html#ga21c87b800d87fd731173dd4f48f23c28">USBTIMER_Init()</a>, and <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__BOARD__Functions.html#gad14824889b3f0fb3d93c1d96d477dde3">BOARD_init()</a>, <a class="el" href="group__USB__COMMON.html#ga21c87b800d87fd731173dd4f48f23c28">USBTIMER_Init()</a>, and <a class="el" href="group__USTIMER.html#ga5c7fa9c799b61638907d4f832a45e58b">USTIMER_Init()</a>.</p>
 
 </div>
 </div>
@@ -1703,9 +1740,38 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00914">914</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00963">963</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
 
 <p>References <a class="el" href="structTIMER__TypeDef.html#a4627bd7844fdbf158d987da9fe8a68c3">TIMER_TypeDef::DTLOCK</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#gaf1b746ba5ab7d0ab657156ebda0f290c">TIMER0</a>, and <a class="el" href="group__EZR32LG__TIMER__BitFields.html#gab8a48815d7140cedb69b970d7768f612">TIMER_DTLOCK_LOCKKEY_UNLOCK</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga04442bc44f2b694b17ad60274e6668e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__STATIC_INLINE bool TIMER_Valid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *&#160;</td>
+          <td class="paramname"><em>ref</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validate the TIMER register block pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref</td><td>Pointer to TIMER peripheral register block.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if ref points to a valid timer, false otherwise. </dd></dl>
+
+<p>Definition at line <a class="el" href="em__timer_8h_source.html#l00497">497</a> of file <a class="el" href="em__timer_8h_source.html">em_timer.h</a>.</p>
+
+<p>References <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#gaf1b746ba5ab7d0ab657156ebda0f290c">TIMER0</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga63bf4f24c85f26e838f55701a5e69831">TIMER1</a>, <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#gaca904d0e4ebb6d643c349f7f05613995">TIMER2</a>, and <a class="el" href="group__EZR32LG330F256R69__Peripheral__Declaration.html#ga6d4063b72c434f0e7afa8eb2a0e7ee00">TIMER3</a>.</p>
 
 </div>
 </div>
@@ -1714,7 +1780,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 16:03:34 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:45 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

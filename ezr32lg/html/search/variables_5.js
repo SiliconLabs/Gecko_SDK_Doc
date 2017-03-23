@@ -2,6 +2,7 @@ var searchData=
 [
   ['ebi_5fctrl',['EBI_CTRL',['../structBC__TypeDef.html#a906e0713013e68bfde1b528f685514d6',1,'BC_TypeDef']]],
   ['ecc',['ecc',['../structNANDFLASH__Info__TypeDef.html#ac1f8aca107c0ee0aa8ebd67d151c1ff8',1,'NANDFLASH_Info_TypeDef']]],
+  ['ecid',['ecid',['../structUSB__ExtendedCompatIdOsFeatureDesc__t.html#ad922a61bc3f5fe44242a0877c9df3a31',1,'USB_ExtendedCompatIdOsFeatureDesc_t']]],
   ['edge',['edge',['../structTIMER__InitCC__TypeDef.html#a7ea719ab652477adb9525eda45d3071b',1,'TIMER_InitCC_TypeDef']]],
   ['efm_5falphabet',['EFM_Alphabet',['../segmentlcd_8c.html#ac4076c746e6d96a4fce1f2583d1b3228',1,'segmentlcd.c']]],
   ['efm_5fdisplay',['EFM_Display',['../segmentlcd_8c.html#a6d935fbb5f88d47deec8e5ba9c2e1988',1,'segmentlcd.c']]],
@@ -28,6 +29,7 @@ var searchData=
   ['enapin',['enaPin',['../structLESENSE__ChDesc__TypeDef.html#abffb8d1403276bf1e1b56122d00a80d2',1,'LESENSE_ChDesc_TypeDef']]],
   ['enascanch',['enaScanCh',['../structLESENSE__ChDesc__TypeDef.html#a7c64ee08b8be28891c79b787b1208560',1,'LESENSE_ChDesc_TypeDef']]],
   ['encserv',['EncServ',['../structMSDSCSI__InquiryData__TypeDef.html#a0472c75a9563a37016b009bae33a625a',1,'MSDSCSI_InquiryData_TypeDef']]],
+  ['endofrow',['endOfRow',['../struct____BMP__DataType.html#a7b04c98b2955bdaf25dff6e8ce2685a4',1,'__BMP_DataType']]],
   ['eom',['Eom',['../structMSDSCSI__RequestSenseData__TypeDef.html#a2e73be3191c1814f79b0b32abcd7b483',1,'MSDSCSI_RequestSenseData_TypeDef']]],
   ['ep',['ep',['../structUSBH__Device__TypeDef.html#a6faabbcd85b74888a66033798b643455',1,'USBH_Device_TypeDef']]],
   ['ep0',['ep0',['../structUSBH__Device__TypeDef.html#a6babfb30fb631b15a7177342a1912b38',1,'USBH_Device_TypeDef']]],
@@ -76,6 +78,7 @@ var searchData=
   ['eventctrl',['eventCtrl',['../structTIMER__InitCC__TypeDef.html#abf13a3647d816e68d0a8c611c1abc6df',1,'TIMER_InitCC_TypeDef']]],
   ['evpd',['Evpd',['../structMSDSCSI__Inquiry__TypeDef.html#af899eee2e39c656937846058b75ec6c0',1,'MSDSCSI_Inquiry_TypeDef']]],
   ['exclk',['exClk',['../structLESENSE__ChDesc__TypeDef.html#a95cd44497377cf262119fa9f6c96c300',1,'LESENSE_ChDesc_TypeDef']]],
+  ['expvalue',['expValue',['../structSensorStruct__t.html#abdb9fce0b83409dfcb39f7c23229aa2f',1,'SensorStruct_t']]],
   ['extifall',['EXTIFALL',['../structGPIO__TypeDef.html#a0ecd75dabda39fe28cff98533a9c58ac',1,'GPIO_TypeDef']]],
   ['extime',['exTime',['../structLESENSE__ChDesc__TypeDef.html#ad093954f2d9c4287ee5d154a9ad5febf',1,'LESENSE_ChDesc_TypeDef']]],
   ['extipselh',['EXTIPSELH',['../structGPIO__TypeDef.html#adc5cf2a5d299cc28ef0a4603cd7210f7',1,'GPIO_TypeDef']]],

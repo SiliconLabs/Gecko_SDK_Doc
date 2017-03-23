@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['leuart_5fdatabits_5ftypedef',['LEUART_Databits_TypeDef',['../group__LEUART.html#ga6bc858472381dd682afb465b3c363111',1,'em_leuart.h']]],
-  ['leuart_5fenable_5ftypedef',['LEUART_Enable_TypeDef',['../group__LEUART.html#gac19b101f40ce0d0a0920f82abebc129e',1,'em_leuart.h']]],
-  ['leuart_5fparity_5ftypedef',['LEUART_Parity_TypeDef',['../group__LEUART.html#ga034badf61f0e439ce3a6cf4169f504c0',1,'em_leuart.h']]],
-  ['leuart_5fstopbits_5ftypedef',['LEUART_Stopbits_TypeDef',['../group__LEUART.html#gaf748a72c90312181000bd33926390552',1,'em_leuart.h']]]
+  ['i2c_5fclockhlr_5ftypedef',['I2C_ClockHLR_TypeDef',['../group__I2C.html#gabb1516548b4528328682d6be09a3e3a5',1,'em_i2c.h']]],
+  ['i2c_5ftransferreturn_5ftypedef',['I2C_TransferReturn_TypeDef',['../group__I2C.html#ga7c781ec28ae11e3e28892de7aa07a00f',1,'em_i2c.h']]],
+  ['idac_5foutmode_5ftypedef',['IDAC_OutMode_TypeDef',['../group__IDAC.html#ga58be7eed3e51f941d9b788b53aedf4c5',1,'em_idac.h']]],
+  ['idac_5fprssel_5ftypedef',['IDAC_PRSSEL_TypeDef',['../group__IDAC.html#gadd77491cecf587b26365844200cd0597',1,'em_idac.h']]],
+  ['idac_5frange_5ftypedef',['IDAC_Range_TypeDef',['../group__IDAC.html#ga7ff0d5acba93b8f7b3111bfdf094fcee',1,'em_idac.h']]],
+  ['irqn',['IRQn',['../group__EZR32HG320F64R69.html#ga666eb0caeb12ec0e281415592ae89083',1,'ezr32hg320f64r69.h']]]
 ];

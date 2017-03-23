@@ -1,0 +1,25 @@
+var si1133_8c =
+[
+    [ "SI1133_deInit", "group__Si1133__Functions.html#gae0de3a67b5e50e7fdd7d113a3e414ecd", null ],
+    [ "SI1133_getHardwareID", "group__Si1133__Functions.html#ga62ae7ce206192eb3e953bf2a127de31b", null ],
+    [ "SI1133_getIrqStatus", "group__Si1133__Functions.html#gaf2772acba88aa0227a861bec9f31af99", null ],
+    [ "SI1133_getLux", "group__Si1133__Functions.html#gae4ee216e3c2b6273551676bbe9c683f1", null ],
+    [ "SI1133_getMeasurement", "group__Si1133__Functions.html#gaa43328df65e51e24c65bac86a045dde7", null ],
+    [ "SI1133_getUv", "group__Si1133__Functions.html#ga7fef12f5306e26410665f8eb3b8d60d2", null ],
+    [ "SI1133_init", "group__Si1133__Functions.html#ga00900e2ef57db16983d71946d5c874ae", null ],
+    [ "SI1133_measureLuxUvi", "group__Si1133__Functions.html#ga040eca79cbe2d641a7d755631a98b73c", null ],
+    [ "SI1133_measurementForce", "group__Si1133__Functions.html#ga9cc078ead4cc9630f8f865a3033e8ea1", null ],
+    [ "SI1133_measurementGet", "group__Si1133__Functions.html#gabc1b7abe2d4139c60c61c9a5bc092e6f", null ],
+    [ "SI1133_measurementPause", "group__Si1133__Functions.html#ga5997ee9ee8b42e71c0627052001dc93a", null ],
+    [ "SI1133_measurementStart", "group__Si1133__Functions.html#gad325078d36b0f1f95fafec4abe0b7d0b", null ],
+    [ "SI1133_paramRead", "group__Si1133__Functions.html#ga2d6c66ba40f3fb59bc83372acf4732f8", null ],
+    [ "SI1133_paramSet", "group__Si1133__Functions.html#gafa950eba7a9a6c887ab40bd46c6e55b3", null ],
+    [ "SI1133_registerBlockRead", "group__Si1133__Functions.html#ga4e3ed1cdf79dd1101efd6e1f3f21bbf6", null ],
+    [ "SI1133_registerBlockWrite", "group__Si1133__Functions.html#gad9c7a541cd5628c7badf7f3dd83fd74f", null ],
+    [ "SI1133_registerRead", "group__Si1133__Functions.html#ga0a497f2bc99c7119bfbd1d1f505e0b72", null ],
+    [ "SI1133_registerWrite", "group__Si1133__Functions.html#ga09176007513c3f6aa9b47c886a7d80ef", null ],
+    [ "SI1133_reset", "group__Si1133__Functions.html#gacd28bea0163cda6082ae63ca2256ea09", null ],
+    [ "SI1133_resetCmdCtr", "group__Si1133__Functions.html#ga50f561c2b5e41f9a5f0fe6a86f879571", null ],
+    [ "SI1133_sendCmd", "group__Si1133__Functions.html#ga25d29f15cc2ef5080c943e5ef7847cc3", null ],
+    [ "SI1133_waitUntilSleep", "group__Si1133__Functions.html#gac694fcb552b3a25ed6505cb85aa2edbc", null ]
+];

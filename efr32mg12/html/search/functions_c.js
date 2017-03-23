@@ -1,6 +1,15 @@
 var searchData=
 [
+  ['measuresupplyir',['measureSupplyIR',['../group__Util__Functions.html#gaa31d93545e57d416f3cf78e2ec180daf',1,'util_supply.c']]],
+  ['measuresupplyvoltage',['measureSupplyVoltage',['../group__Util__Functions.html#ga6d9a7a2b2199b65918ddbdb6e3f381db',1,'util_supply.c']]],
   ['mibcountersread',['MIBCountersRead',['../ksz8851snl_8c.html#aca1ebdc21bb550265c785e6d5ae76f80',1,'ksz8851snl.c']]],
+  ['mic_5fdeinit',['MIC_deInit',['../group__Mic__Functions.html#gaaf39000454d5a11416c35a44f6b85462',1,'mic.c']]],
+  ['mic_5fgetmean',['MIC_getMean',['../group__Mic__Functions.html#ga08c9da2474abe28a673fc4e2a433bdc0',1,'mic.c']]],
+  ['mic_5fgetsamplebuffer',['MIC_getSampleBuffer',['../group__Mic__Functions.html#ga586d0c188baa24e35981f49665802569',1,'mic.c']]],
+  ['mic_5fgetsoundlevel',['MIC_getSoundLevel',['../group__Mic__Functions.html#ga3b8168b3ef2cc726a43ae2ec092f3061',1,'mic.c']]],
+  ['mic_5finit',['MIC_init',['../group__Mic__Functions.html#ga9f744ce6cb39bdc2fe5ff0b28aa3b1ad',1,'mic.c']]],
+  ['mic_5fisbusy',['MIC_isBusy',['../group__Mic__Functions.html#ga3bb2db51cc47249003ac65c1761e910b',1,'mic.c']]],
+  ['mic_5fstart',['MIC_start',['../group__Mic__Functions.html#gaad96690f829184ca623471d9faa310c9',1,'mic.c']]],
   ['microsd_5fblockrx',['MICROSD_BlockRx',['../group__MicroSd.html#ga4f2cd8f75823802af6efb0568189387c',1,'MICROSD_BlockRx(uint8_t *buff, uint32_t btr):&#160;microsd.c'],['../group__MicroSd.html#ga4f2cd8f75823802af6efb0568189387c',1,'MICROSD_BlockRx(uint8_t *buff, uint32_t btr):&#160;microsd.c']]],
   ['microsd_5fblocktx',['MICROSD_BlockTx',['../group__MicroSd.html#gadf4ee87ae048da2feb899558ec3466be',1,'MICROSD_BlockTx(const uint8_t *buff, uint8_t token):&#160;microsd.c'],['../group__MicroSd.html#gadf4ee87ae048da2feb899558ec3466be',1,'MICROSD_BlockTx(const uint8_t *buff, uint8_t token):&#160;microsd.c']]],
   ['microsd_5fdeinit',['MICROSD_Deinit',['../group__MicroSd.html#ga0dfabd5e4e437eb3207e0bbc370efd24',1,'MICROSD_Deinit(void):&#160;microsd.c'],['../group__MicroSd.html#ga0dfabd5e4e437eb3207e0bbc370efd24',1,'MICROSD_Deinit(void):&#160;microsd.c']]],

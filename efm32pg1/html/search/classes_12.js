@@ -1,14 +1,13 @@
 var searchData=
 [
-  ['uartdrv_5fbuffer_5ffifoqueue_5ft',['UARTDRV_Buffer_FifoQueue_t',['../structUARTDRV__Buffer__FifoQueue__t.html',1,'']]],
-  ['uartdrv_5fbuffer_5ft',['UARTDRV_Buffer_t',['../structUARTDRV__Buffer__t.html',1,'']]],
-  ['uartdrv_5fhandledata',['UARTDRV_HandleData',['../structUARTDRV__HandleData.html',1,'']]],
-  ['uartdrv_5finitleuart_5ft',['UARTDRV_InitLeuart_t',['../structUARTDRV__InitLeuart__t.html',1,'']]],
-  ['uartdrv_5finituart_5ft',['UARTDRV_InitUart_t',['../structUARTDRV__InitUart__t.html',1,'']]],
-  ['usart_5finitasync_5ftypedef',['USART_InitAsync_TypeDef',['../structUSART__InitAsync__TypeDef.html',1,'']]],
-  ['usart_5finiti2s_5ftypedef',['USART_InitI2s_TypeDef',['../structUSART__InitI2s__TypeDef.html',1,'']]],
-  ['usart_5finitirda_5ftypedef',['USART_InitIrDA_TypeDef',['../structUSART__InitIrDA__TypeDef.html',1,'']]],
-  ['usart_5finitsync_5ftypedef',['USART_InitSync_TypeDef',['../structUSART__InitSync__TypeDef.html',1,'']]],
-  ['usart_5fprstriggerinit_5ftypedef',['USART_PrsTriggerInit_TypeDef',['../structUSART__PrsTriggerInit__TypeDef.html',1,'']]],
-  ['usart_5ftypedef',['USART_TypeDef',['../structUSART__TypeDef.html',1,'']]]
+  ['tempdrv_5fcallbackset_5ft',['TEMPDRV_CallbackSet_t',['../structTEMPDRV__CallbackSet__t.html',1,'']]],
+  ['tempsens_5ftemp_5ftypedef',['TEMPSENS_Temp_TypeDef',['../structTEMPSENS__Temp__TypeDef.html',1,'']]],
+  ['textdisplay_5fconfig_5ft',['TEXTDISPLAY_Config_t',['../structTEXTDISPLAY__Config__t.html',1,'']]],
+  ['timer_5fcc_5ftypedef',['TIMER_CC_TypeDef',['../structTIMER__CC__TypeDef.html',1,'']]],
+  ['timer_5finit_5ftypedef',['TIMER_Init_TypeDef',['../structTIMER__Init__TypeDef.html',1,'']]],
+  ['timer_5finitcc_5ftypedef',['TIMER_InitCC_TypeDef',['../structTIMER__InitCC__TypeDef.html',1,'']]],
+  ['timer_5finitdti_5ftypedef',['TIMER_InitDTI_TypeDef',['../structTIMER__InitDTI__TypeDef.html',1,'']]],
+  ['timer_5ftypedef',['TIMER_TypeDef',['../structTIMER__TypeDef.html',1,'']]],
+  ['touch_5fconfig_5ftypedef',['TOUCH_Config_TypeDef',['../structTOUCH__Config__TypeDef.html',1,'']]],
+  ['touch_5fpos_5ftypedef',['TOUCH_Pos_TypeDef',['../structTOUCH__Pos__TypeDef.html',1,'']]]
 ];

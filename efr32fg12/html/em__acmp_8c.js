@@ -5,6 +5,7 @@ var em__acmp_8c =
     [ "ACMP_ChannelSet", "group__ACMP.html#gaf2552815d97fa6b5cf035cf20727e322", null ],
     [ "ACMP_Disable", "group__ACMP.html#gaab980ab061d6799cc4bf756b141733d2", null ],
     [ "ACMP_Enable", "group__ACMP.html#ga6962a2f6816e64c36b88111ab368a6ac", null ],
+    [ "ACMP_ExternalInputSelect", "group__ACMP.html#ga46330ae94706d57b5c32890d744e775e", null ],
     [ "ACMP_GPIOSetup", "group__ACMP.html#ga7a312099dc46377af2714277236716d3", null ],
     [ "ACMP_Init", "group__ACMP.html#gad04e5819cd2d6ca5a275e8cc047f9ecf", null ],
     [ "ACMP_Reset", "group__ACMP.html#ga671cb9f47c56e8c8a81af7d4bbfdbc5f", null ],

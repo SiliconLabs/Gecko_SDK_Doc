@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hidkbd_5finit_5ft',['HIDKBD_Init_t',['../structHIDKBD__Init__t.html',1,'']]],
-  ['hidkbd_5fkeyreport_5ft',['HIDKBD_KeyReport_t',['../structHIDKBD__KeyReport__t.html',1,'']]]
+  ['gpio_5fp_5ftypedef',['GPIO_P_TypeDef',['../structGPIO__P__TypeDef.html',1,'']]],
+  ['gpio_5ftypedef',['GPIO_TypeDef',['../structGPIO__TypeDef.html',1,'']]]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Flex Gecko 12 Software Documentation: c:/work/super/platform/emlib/inc/em_system.h File Reference</title>
+<title>EFR32 Flex Gecko 12 Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/platform/emlib/inc/em_system.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Flex Gecko 12 Software Documentation
-   &#160;<span id="projectnumber">efr32fg12-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efr32fg12-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('em__system_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>System API. </p>
-<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.1.2</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -173,6 +173,14 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa54518bd34646d0e0af74c72c2d942658">systemPartFamilyEfm32Jade1B</a> = _DEVINFO_PART_DEVICE_FAMILY_EFM32JG1B, 
 <br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aac4b1a538f9a82bfba30b0d61d37e63ab">systemPartFamilyEfm32Pearl12B</a> = _DEVINFO_PART_DEVICE_FAMILY_EFM32PG12B, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aac6fc5851b45b74b01b7159cec5d6db16">systemPartFamilyEfm32Jade12B</a> = _DEVINFO_PART_DEVICE_FAMILY_EFM32JG12B, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aadf5387e0cf906477f4ee659feb6ea325">systemPartFamilyEfm32Pearl13B</a> = _DEVINFO_PART_DEVICE_FAMILY_EFM32PG13B, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aae897103674a7be41a34bd0d7fbe00445">systemPartFamilyEfm32Jade13B</a> = _DEVINFO_PART_DEVICE_FAMILY_EFM32JG13B, 
+<br />
 &#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa84e454b85a98198113ccd39acc196c70">systemPartFamilyEzr32Wonder</a> = _DEVINFO_PART_DEVICE_FAMILY_EZR32WG, 
 <br />
 &#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aaec28dbd9e3f9efb90eba030ca0e934dc">systemPartFamilyEzr32Leopard</a> = _DEVINFO_PART_DEVICE_FAMILY_EZR32LG, 
@@ -198,6 +206,42 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aac138e157cb640c4560a2b10402688c39">systemPartFamilyFlex1V</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32FG1V, 
 <br />
 &#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa62629ff1a9b6dcb4f777bf932e747fea">systemPartFamilyMighty2P</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32MG2P, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa11236401ef2dc2fc5bc8015700e39a29">systemPartFamilyMighty12P</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32MG12P, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aabd5c8c28371785d64737e4f3dc8df633">systemPartFamilyMighty12B</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32MG12B, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa711b674ea38231738fe3752a7b196011">systemPartFamilyMighty12V</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32MG12V, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa4d585aabf860767339e9a21f66627219">systemPartFamilyBlue12P</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32BG12P, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa24ac28c89d9753ebdb0462d1e9584392">systemPartFamilyBlue12B</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32BG12B, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa2ed1d810ab15d2ed574392c0209617c2">systemPartFamilyBlue12V</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32BG12V, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa02043c7fa898e9b6442f28551554f0fb">systemPartFamilyFlex12P</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32FG12P, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aac96640367ba86a0c7b73fa9b82aaacca">systemPartFamilyFlex12B</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32FG12B, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa952e6433c58e733d5f757539a52b1cd6">systemPartFamilyFlex12V</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32FG12V, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa8cd106c00e28fc8e341dd106b0bb3e7a">systemPartFamilyMighty13P</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32MG13P, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa92119951fd51266c1b66c4dae1dc7fbd">systemPartFamilyMighty13B</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32MG13B, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aabb7ff8b3639292975e93f3048e6f9f0d">systemPartFamilyMighty13V</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32MG13V, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa951d4c322672691384d0060b44923a6a">systemPartFamilyBlue13P</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32BG13P, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa4890db2475bb61a47fd60c818dc76609">systemPartFamilyBlue13B</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32BG13B, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aad752db475b29c1db353c9634e68936b5">systemPartFamilyBlue13V</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32BG13V, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aaab44f380779f33fc9788b6f3479e8247">systemPartFamilyFlex13P</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32FG13P, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa159d67924c22ca7e4c099b3ea059c0ff">systemPartFamilyFlex13B</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32FG13B, 
+<br />
+&#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa58f9fdafc46e690c73c35eb21d8587a6">systemPartFamilyFlex13V</a> = _DEVINFO_PART_DEVICE_FAMILY_EFR32FG13V, 
 <br />
 &#160;&#160;<a class="el" href="group__SYSTEM.html#gga45f33557f44ae73db1c70765a2a29e5aa489b6eb51f431130db9d250c44137fbe">systemPartFamilyGecko</a> = _DEVINFO_PART_DEVICE_FAMILY_G, 
 <br />
@@ -262,8 +306,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__system_8h.html">em_system.h</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 16:09:10 for EFR32 Flex Gecko 12 Software Documentation by
+    <li class="navelem"><a class="el" href="dir_57c5670a54251515d5dc3137dddf203b.html">platform</a></li><li class="navelem"><a class="el" href="dir_74d47fbdcea7cda18072cc4be639af5a.html">emlib</a></li><li class="navelem"><a class="el" href="dir_bf479292f56c204ab5b202f2f7ed0583.html">inc</a></li><li class="navelem"><a class="el" href="em__system_8h.html">em_system.h</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:42:19 for EFR32 Flex Gecko 12 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

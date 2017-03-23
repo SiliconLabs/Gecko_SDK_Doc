@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Giant Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32gg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efm32gg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -134,8 +134,8 @@ Configuration Options</h1>
 <li>Integration with SLEEP driver.</li>
 </ul>
 <p>When integration with the SLEEP driver is enabled, RTCDRV will keep the SLEEP driver updated with regards to which energy mode that can be safely used.</p>
-<p>To configure RTCDRV, provide your own configuration file. Here is a sample rtcdrv_config.h file: </p><pre class="fragment">#ifndef __SILICON_LABS_RTCDRV_CONFIG_H__
-#define __SILICON_LABS_RTCDRV_CONFIG_H__
+<p>To configure RTCDRV, provide your own configuration file. Here is a sample rtcdrv_config.h file: </p><pre class="fragment">#ifndef SILICON_LABS_RTCDRV_CONFIG_H
+#define SILICON_LABS_RTCDRV_CONFIG_H
 
 // Define how many timers RTCDRV provide.
 #define EMDRV_RTCDRV_NUM_TIMERS     (4)
@@ -145,6 +145,9 @@ Configuration Options</h1>
 
 // Uncomment the following line to enable integration with SLEEP driver.
 //#define EMDRV_RTCDRV_SLEEPDRV_INTEGRATION
+
+// Uncomment the following line to let RTCDRV clock on LFRCO, default is LFXO.
+//#define EMDRV_RTCDRV_USE_LFRCO
 
 #endif</pre><p><br />
  </p>
@@ -397,7 +400,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__RTCDRV.html#ga438d9a6102b0bc78eb9d0f80dd9ae6d4">ECODE_EMDRV_RTCDRV_ALL_TIMERS_USED</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, and <a class="el" href="group__RTCDRV.html#gad9070ac5c8805b44a4fe2e284d75cc7d">ECODE_EMDRV_RTCDRV_PARAM_ERROR</a>.</p>
 
-<p>Referenced by <a class="el" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239">SPIDRV_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239">SPIDRV_Init()</a>, and <a class="el" href="group__Util__Functions.html#ga0b942ccc7d6ccd131f9fe5e61865a26a">UTIL_sleepInit()</a>.</p>
 
 </div>
 </div>
@@ -578,7 +581,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="group__CMU.html#ga7cc316a8dca5436fcc39d57f5e6c412d">CMU_ClockDivSet()</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet()</a>, <a class="el" href="group__CMU.html#ga3ac649cb01dd184676c6bdea7ff3d768">CMU_DivToLog2()</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799ea555db71790d226b22932597eddc65003">cmuClock_LFA</a>, <a class="el" href="group__CMU.html#gga519ea66a1a21e07f2d1cccc9aa55799eacedf32067074558f64c468650acfaef1">cmuClock_RTC</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__RTC.html#ga693d1c349834ec6be942f5b27258f6e9">RTC_Init()</a>, <a class="el" href="group__SLEEP.html#gac26ef85c0817797fb9ec823d38742af7">SLEEP_SleepBlockBegin()</a>, and <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a>.</p>
 
-<p>Referenced by <a class="el" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239">SPIDRV_Init()</a>.</p>
+<p>Referenced by <a class="el" href="group__SPIDRV.html#gae1bf2b297eca13e7e46cbbcb66202239">SPIDRV_Init()</a>, and <a class="el" href="group__Util__Functions.html#ga0b942ccc7d6ccd131f9fe5e61865a26a">UTIL_sleepInit()</a>.</p>
 
 </div>
 </div>
@@ -770,7 +773,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a>, <a class="el" href="group__RTCDRV.html#gga08a8750e466e18aee02bbb692446dac9af9e2c16ec81453d483001682fdc84f5b">rtcdrvTimerTypePeriodic</a>, <a class="el" href="group__COMMON.html#ga9569b0ba06efef226b0a82109eef3ec3">SL_MIN</a>, <a class="el" href="group__SLEEP.html#gac26ef85c0817797fb9ec823d38742af7">SLEEP_SleepBlockBegin()</a>, and <a class="el" href="group__SLEEP.html#ggaafb23646b17401bdad763d0fb0c7ff9aa7a8bd036c0eef04c1c07618a4d73b939">sleepEM3</a>.</p>
 
-<p>Referenced by <a class="el" href="group__SPIDRV.html#gaa4a1d07a7cfa1b461231b81ee9bd7208">SPIDRV_SReceive()</a>, <a class="el" href="group__SPIDRV.html#gaacf21de6f56b73897137afe66c8a55fc">SPIDRV_SReceiveB()</a>, <a class="el" href="group__SPIDRV.html#ga3b0e6cefe8389131f8cda2d3422ca165">SPIDRV_STransfer()</a>, <a class="el" href="group__SPIDRV.html#ga2117731649ff7375202f3db7c7eaea14">SPIDRV_STransferB()</a>, <a class="el" href="group__SPIDRV.html#gab17e267c072c9fa5424ac0dbb6d162b4">SPIDRV_STransmit()</a>, and <a class="el" href="group__SPIDRV.html#ga950e481559e49f805c4c65701f272df5">SPIDRV_STransmitB()</a>.</p>
+<p>Referenced by <a class="el" href="group__SPIDRV.html#gaa4a1d07a7cfa1b461231b81ee9bd7208">SPIDRV_SReceive()</a>, <a class="el" href="group__SPIDRV.html#gaacf21de6f56b73897137afe66c8a55fc">SPIDRV_SReceiveB()</a>, <a class="el" href="group__SPIDRV.html#ga3b0e6cefe8389131f8cda2d3422ca165">SPIDRV_STransfer()</a>, <a class="el" href="group__SPIDRV.html#ga2117731649ff7375202f3db7c7eaea14">SPIDRV_STransferB()</a>, <a class="el" href="group__SPIDRV.html#gab17e267c072c9fa5424ac0dbb6d162b4">SPIDRV_STransmit()</a>, <a class="el" href="group__SPIDRV.html#ga950e481559e49f805c4c65701f272df5">SPIDRV_STransmitB()</a>, <a class="el" href="group__Util__Functions.html#gab542f9eafd0944771f5facd870446692">UTIL_sleep()</a>, and <a class="el" href="group__Util__Functions.html#ga5cbbea3f0d50d3785f866b448033e541">UTIL_waitForEvent()</a>.</p>
 
 </div>
 </div>
@@ -903,6 +906,8 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="group__CORE.html#ga770acbc9bf18f2204fd1d81c65bcad07">CORE_DECLARE_IRQ_STATE</a>, <a class="el" href="group__CORE.html#gafd6d1639ca2bcc25fcf654431e8479cb">CORE_ENTER_ATOMIC</a>, <a class="el" href="group__CORE.html#ga1d8489590f6414297183c63928b76708">CORE_EXIT_ATOMIC</a>, <a class="el" href="group__RTCDRV.html#ga541a5648ecaa2b43ce6e76bca02c44ce">ECODE_EMDRV_RTCDRV_ILLEGAL_TIMER_ID</a>, <a class="el" href="group__RTCDRV.html#ga0c5b41f3cde7ea0fc19616c05d2a8132">ECODE_EMDRV_RTCDRV_OK</a>, <a class="el" href="group__RTCDRV.html#gad9070ac5c8805b44a4fe2e284d75cc7d">ECODE_EMDRV_RTCDRV_PARAM_ERROR</a>, <a class="el" href="group__RTCDRV.html#ga786188a1db4e9187fc996c857efe3086">ECODE_EMDRV_RTCDRV_TIMER_NOT_ALLOCATED</a>, and <a class="el" href="group__RTCDRV.html#ga6f61a5708b7d1589edebb799eb8521b7">ECODE_EMDRV_RTCDRV_TIMER_NOT_RUNNING</a>.</p>
 
+<p>Referenced by <a class="el" href="group__Util__Functions.html#ga5cbbea3f0d50d3785f866b448033e541">UTIL_waitForEvent()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -910,7 +915,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 15:58:56 for EFM32 Giant Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:40:44 for EFM32 Giant Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

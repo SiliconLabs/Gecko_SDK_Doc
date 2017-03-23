@@ -1,18 +1,15 @@
 var searchData=
 [
-  ['uartdrv_5faborttype',['UARTDRV_AbortType',['../group__UARTDRV.html#ga7b3eb02ccaea26685afc6dd9e69c8501',1,'uartdrv.h']]],
-  ['uartdrv_5fflowcontrolstate',['UARTDRV_FlowControlState',['../group__UARTDRV.html#gae5bb048bcc9222f56c9b4b811f3395e0',1,'uartdrv.h']]],
-  ['uartdrv_5fflowcontroltype',['UARTDRV_FlowControlType',['../group__UARTDRV.html#gaaf1c5185723fc794e00c2cd4a7e33d73',1,'uartdrv.h']]],
-  ['usart_5fclockmode_5ftypedef',['USART_ClockMode_TypeDef',['../group__USART.html#ga9308807377a9f1b25c19bc60d9f64674',1,'em_usart.h']]],
-  ['usart_5fdatabits_5ftypedef',['USART_Databits_TypeDef',['../group__USART.html#ga882a4def49cdb2fb18622d61b24eeacd',1,'em_usart.h']]],
-  ['usart_5fenable_5ftypedef',['USART_Enable_TypeDef',['../group__USART.html#gab911b3b57b0cfe33cc34e7c37693c14b',1,'em_usart.h']]],
-  ['usart_5fi2sformat_5ftypedef',['USART_I2sFormat_TypeDef',['../group__USART.html#gab8a8e724d03a6cdaebc8f5c61a5e3e87',1,'em_usart.h']]],
-  ['usart_5fi2sjustify_5ftypedef',['USART_I2sJustify_TypeDef',['../group__USART.html#ga3ddf14445cc284b6b54f07fbbd34c9ba',1,'em_usart.h']]],
-  ['usart_5firdaprssel_5ftypedef',['USART_IrDAPrsSel_Typedef',['../group__USART.html#gaa76c86d959fdc20d201ad4171ba646a1',1,'em_usart.h']]],
-  ['usart_5firdapw_5ftypedef',['USART_IrDAPw_Typedef',['../group__USART.html#ga4622379ccdcc531ab7f9e7e1cefe404f',1,'em_usart.h']]],
-  ['usart_5fovs_5ftypedef',['USART_OVS_TypeDef',['../group__USART.html#gab8f135534a77aba5382a820b2a35a284',1,'em_usart.h']]],
-  ['usart_5fparity_5ftypedef',['USART_Parity_TypeDef',['../group__USART.html#ga57d987f474e5fd47d4760c4178c7f0d5',1,'em_usart.h']]],
-  ['usart_5fprsrxch_5ftypedef',['USART_PrsRxCh_TypeDef',['../group__USART.html#gad349d37e4b02e9fce46f0317d5d846c8',1,'em_usart.h']]],
-  ['usart_5fprstriggerch_5ftypedef',['USART_PrsTriggerCh_TypeDef',['../group__USART.html#ga61793f62c8e5dcd0c8adc9ec314f7bdc',1,'em_usart.h']]],
-  ['usart_5fstopbits_5ftypedef',['USART_Stopbits_TypeDef',['../group__USART.html#ga697bdb6e146a4f6b8e761efc4f31065e',1,'em_usart.h']]]
+  ['tempdrv_5flimittype',['TEMPDRV_LimitType',['../group__TEMPDRV.html#ga0e0c05e85e286ed17a27d0db06e8a6ed',1,'tempdrv.h']]],
+  ['tempsens_5fregister_5ftypedef',['TEMPSENS_Register_TypeDef',['../group__TempSensor.html#gaf7cf71b30a49a97a51a7c60a2b9ff225',1,'tempsens.h']]],
+  ['timer_5fccmode_5ftypedef',['TIMER_CCMode_TypeDef',['../group__TIMER.html#gacaeb01f1c6c64b144b9a5913893bd718',1,'em_timer.h']]],
+  ['timer_5fclksel_5ftypedef',['TIMER_ClkSel_TypeDef',['../group__TIMER.html#ga511d9c88c172605ee06715c274ad9cfa',1,'em_timer.h']]],
+  ['timer_5fedge_5ftypedef',['TIMER_Edge_TypeDef',['../group__TIMER.html#gaa024137506ad0a0cd518c4572f8ba545',1,'em_timer.h']]],
+  ['timer_5fevent_5ftypedef',['TIMER_Event_TypeDef',['../group__TIMER.html#ga141160bf6b286d2a001079a562c64761',1,'em_timer.h']]],
+  ['timer_5finputaction_5ftypedef',['TIMER_InputAction_TypeDef',['../group__TIMER.html#gad737fcc050f53fc713f07f22f9bd5143',1,'em_timer.h']]],
+  ['timer_5fmode_5ftypedef',['TIMER_Mode_TypeDef',['../group__TIMER.html#ga7198f02825e0938408a7287a75171265',1,'em_timer.h']]],
+  ['timer_5foutputaction_5ftypedef',['TIMER_OutputAction_TypeDef',['../group__TIMER.html#ga3899377f736a636532b16922f7c65728',1,'em_timer.h']]],
+  ['timer_5fprescale_5ftypedef',['TIMER_Prescale_TypeDef',['../group__TIMER.html#gadc7dec57fe232c5fbabbb7cd25ebffe0',1,'em_timer.h']]],
+  ['timer_5fprssel_5ftypedef',['TIMER_PRSSEL_TypeDef',['../group__TIMER.html#gaaa9a5454731dae18603a8076f9a9010a',1,'em_timer.h']]],
+  ['touch_5fstate_5ftypedef',['TOUCH_State_TypeDef',['../touch_8c.html#a497f72fae656c2a34ecbb383925825f1',1,'touch.c']]]
 ];

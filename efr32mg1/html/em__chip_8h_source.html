@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Mighty Gecko 1 Software Documentation: c:/work/super/platform/emlib/inc/em_chip.h Source File</title>
+<title>EFR32 Mighty Gecko 1 Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/platform/emlib/inc/em_chip.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Mighty Gecko 1 Software Documentation
-   &#160;<span id="projectnumber">efr32mg1-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efr32mg1-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('em__chip_8h_source.html','');});
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group__CHIP.html#ga6491ac6b7e786d253753c334615bce61">   70</a></span>&#160;__STATIC_INLINE <span class="keywordtype">void</span> <a class="code" href="group__CHIP.html#ga6491ac6b7e786d253753c334615bce61">CHIP_Init</a>(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#if defined(_EFM32_GECKO_FAMILY)</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#if defined(_SILICON_LABS_32B_SERIES_0) &amp;&amp; defined(_EFM32_GECKO_FAMILY)</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  uint32_t                    rev;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="structSYSTEM__ChipRevision__TypeDef.html">SYSTEM_ChipRevision_TypeDef</a> chipRev;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">volatile</span> uint32_t           *reg;</div>
@@ -219,129 +219,158 @@ $(document).ready(function(){initNavTree('em__chip_8h_source.html','');});
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  }</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#if defined(_EFM32_GIANT_FAMILY)</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  uint32_t                    rev;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <a class="code" href="structSYSTEM__ChipRevision__TypeDef.html">SYSTEM_ChipRevision_TypeDef</a> chipRev;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  rev = *(<span class="keyword">volatile</span> uint32_t *)(0x0FE081FC);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <a class="code" href="group__SYSTEM.html#ga6470ed38937ffd0b8b509334c5add7dd">SYSTEM_ChipRevisionGet</a>(&amp;chipRev);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordflow">if</span> (((rev &gt;&gt; 24) &gt; 15) &amp;&amp; (chipRev.<a class="code" href="structSYSTEM__ChipRevision__TypeDef.html#a4c191c69987d7029a7f2ec9510a99898">minor</a> == 3))</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="comment">/* This fixes an issue with the LFXO on high temperatures. */</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    *(<span class="keyword">volatile</span> uint32_t*)0x400C80C0 =</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                      ( *(<span class="keyword">volatile</span> uint32_t*)0x400C80C0 &amp; ~(1&lt;&lt;6) ) | (1&lt;&lt;4);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  }</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#if defined(_EFM32_HAPPY_FAMILY)</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  uint32_t rev;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  rev = *(<span class="keyword">volatile</span> uint32_t *)(0x0FE081FC);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#if defined(_SILICON_LABS_32B_SERIES_0) &amp;&amp; defined(_EFM32_GIANT_FAMILY)</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="comment">/****************************/</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="comment">/* Fix for errata CMU_E113. */</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  uint8_t                     prodRev;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <a class="code" href="structSYSTEM__ChipRevision__TypeDef.html">SYSTEM_ChipRevision_TypeDef</a> chipRev;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  prodRev = <a class="code" href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev</a>();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <a class="code" href="group__SYSTEM.html#ga6470ed38937ffd0b8b509334c5add7dd">SYSTEM_ChipRevisionGet</a>(&amp;chipRev);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordflow">if</span> ((prodRev &gt;= 16) &amp;&amp; (chipRev.<a class="code" href="structSYSTEM__ChipRevision__TypeDef.html#a4c191c69987d7029a7f2ec9510a99898">minor</a> &gt;= 3))</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">/* This fixes an issue with the LFXO on high temperatures. */</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    *(<span class="keyword">volatile</span> uint32_t*)0x400C80C0 =</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                      ( *(<span class="keyword">volatile</span> uint32_t*)0x400C80C0 &amp; ~(1 &lt;&lt; 6) ) | (1 &lt;&lt; 4);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordflow">if</span> ((rev &gt;&gt; 24) &lt;= 129)</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">/* This fixes a mistaken internal connection between PC0 and PC4 */</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">/* This disables an internal pulldown on PC4 */</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    *(<span class="keyword">volatile</span> uint32_t*)(0x400C6018) = (1 &lt;&lt; 26) | (5 &lt;&lt; 0);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">/* This disables an internal LDO test signal driving PC4 */</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    *(<span class="keyword">volatile</span> uint32_t*)(0x400C80E4) &amp;= ~(1 &lt;&lt; 24);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#if defined(_SILICON_LABS_32B_PLATFORM_2_GEN_1)</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="comment">/****************************</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">  * Fixes for errata GPIO_E201 (slewrate) and</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">  * HFXO high temperature oscillator startup robustness fix */</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  uint32_t port;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  uint32_t clkEn;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  uint8_t prodRev;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keyword">const</span> uint32_t setVal   = (0x5 &lt;&lt; <a class="code" href="group__EFR32MG1P__GPIO__BitFields.html#gaadd680b203df0922271d033244c8c002">_GPIO_P_CTRL_SLEWRATEALT_SHIFT</a>)</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                             | (0x5 &lt;&lt; <a class="code" href="group__EFR32MG1P__GPIO__BitFields.html#ga820c29924b210bfa154672c6612a8d64">_GPIO_P_CTRL_SLEWRATE_SHIFT</a>);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keyword">const</span> uint32_t resetVal = <a class="code" href="group__EFR32MG1P__GPIO__BitFields.html#gaf616736ce9780d2762e52da4a473eb88">_GPIO_P_CTRL_RESETVALUE</a></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                            &amp; ~(<a class="code" href="group__EFR32MG1P__GPIO__BitFields.html#gad1d918dda97d7e1dc0ea5f1367671413">_GPIO_P_CTRL_SLEWRATE_MASK</a></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                                | <a class="code" href="group__EFR32MG1P__GPIO__BitFields.html#gaf92a2eb8b36a28b48f51ba9c1068ea01">_GPIO_P_CTRL_SLEWRATEALT_MASK</a>);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  prodRev = <a class="code" href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev</a>();</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <a class="code" href="structSYSTEM__ChipRevision__TypeDef.html">SYSTEM_ChipRevision_TypeDef</a> chipRev;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <a class="code" href="group__SYSTEM.html#ga6470ed38937ffd0b8b509334c5add7dd">SYSTEM_ChipRevisionGet</a>(&amp;chipRev);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="comment">/* This errata is fixed in hardware from PRODREV 0x8F. */</span></div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keywordflow">if</span> (prodRev &lt; 0x8F)</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="comment">/* Fixes for errata GPIO_E201 (slewrate) */</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#if defined(_SILICON_LABS_32B_SERIES_0) &amp;&amp; defined(_EFM32_HAPPY_FAMILY)</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  uint8_t prodRev;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  prodRev = <a class="code" href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev</a>();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordflow">if</span> (prodRev &lt;= 129)</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">/* This fixes a mistaken internal connection between PC0 and PC4 */</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">/* This disables an internal pulldown on PC4 */</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    *(<span class="keyword">volatile</span> uint32_t*)(0x400C6018) = (1 &lt;&lt; 26) | (5 &lt;&lt; 0);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">/* This disables an internal LDO test signal driving PC4 */</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    *(<span class="keyword">volatile</span> uint32_t*)(0x400C80E4) &amp;= ~(1 &lt;&lt; 24);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">#if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_80)</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="comment">/****************************</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">  * Fixes for errata GPIO_E201 (slewrate) and</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">  * HFXO high temperature oscillator startup robustness fix */</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  uint32_t port;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  uint32_t clkEn;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  uint8_t prodRev;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keyword">const</span> uint32_t setVal   = (0x5 &lt;&lt; <a class="code" href="group__EFR32MG1P__GPIO__BitFields.html#gaadd680b203df0922271d033244c8c002">_GPIO_P_CTRL_SLEWRATEALT_SHIFT</a>)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                             | (0x5 &lt;&lt; <a class="code" href="group__EFR32MG1P__GPIO__BitFields.html#ga820c29924b210bfa154672c6612a8d64">_GPIO_P_CTRL_SLEWRATE_SHIFT</a>);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keyword">const</span> uint32_t resetVal = <a class="code" href="group__EFR32MG1P__GPIO__BitFields.html#gaf616736ce9780d2762e52da4a473eb88">_GPIO_P_CTRL_RESETVALUE</a></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                            &amp; ~(<a class="code" href="group__EFR32MG1P__GPIO__BitFields.html#gad1d918dda97d7e1dc0ea5f1367671413">_GPIO_P_CTRL_SLEWRATE_MASK</a></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                                | <a class="code" href="group__EFR32MG1P__GPIO__BitFields.html#gaf92a2eb8b36a28b48f51ba9c1068ea01">_GPIO_P_CTRL_SLEWRATEALT_MASK</a>);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  prodRev = <a class="code" href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev</a>();</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <a class="code" href="structSYSTEM__ChipRevision__TypeDef.html">SYSTEM_ChipRevision_TypeDef</a> chipRev;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <a class="code" href="group__SYSTEM.html#ga6470ed38937ffd0b8b509334c5add7dd">SYSTEM_ChipRevisionGet</a>(&amp;chipRev);</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="comment">/* Save HFBUSCLK enable state and enable GPIO clock. */</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    clkEn = <a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;HFBUSCLKEN0;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;HFBUSCLKEN0 = clkEn | <a class="code" href="group__EFR32MG1P__CMU__BitFields.html#ga34077d56a74ee78ed32b5c9e8f344a47">CMU_HFBUSCLKEN0_GPIO</a>;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="comment">/* Update slewrate */</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">for</span>(port = 0; port &lt;= GPIO_PORT_MAX; port++)</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    {</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      <a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].CTRL = setVal | resetVal;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="comment">/* Restore HFBUSCLK enable state. */</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;HFBUSCLKEN0 = clkEn;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  }</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="comment">/* This errata is fixed in hardware from PRODREV 0x90. */</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordflow">if</span> (prodRev &lt; 0x90)</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  {</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="comment">/* HFXO high temperature oscillator startup robustness fix */</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;HFXOSTARTUPCTRL =</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;          (<a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;HFXOSTARTUPCTRL &amp; ~<a class="code" href="group__EFR32MG1P__CMU__BitFields.html#gafb81ea0cea68ed5c9eb201c174ff25e6">_CMU_HFXOSTARTUPCTRL_IBTRIMXOCORE_MASK</a>)</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;          | (0x20 &lt;&lt; <a class="code" href="group__EFR32MG1P__CMU__BitFields.html#gad3daa3b222273bd2c6acb01f324ac2d5">_CMU_HFXOSTARTUPCTRL_IBTRIMXOCORE_SHIFT</a>);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordflow">if</span> (chipRev.<a class="code" href="structSYSTEM__ChipRevision__TypeDef.html#a79ebea0f9a0321ec622d9098afe5bdd1">major</a> == 0x01)</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  {</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="comment">/* Fix for errata EMU_E210 - Potential Power-Down When Entering EM2 */</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    *(<span class="keyword">volatile</span> uint32_t *)(<a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Base.html#ga61fd6590fabeb9f46d757e426bef70b4">EMU_BASE</a> + 0x164) |= 0x4;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#if defined(_SILICON_LABS_32B_PLATFORM_2_GEN_2)</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="comment">/* No fixes required. */</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="comment">/* This errata is fixed in hardware from PRODREV 0x8F. */</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordflow">if</span> (prodRev &lt; 0x8F)</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="comment">/* Fixes for errata GPIO_E201 (slewrate) */</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="comment">/* Save HFBUSCLK enable state and enable GPIO clock. */</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    clkEn = <a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;HFBUSCLKEN0;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;HFBUSCLKEN0 = clkEn | <a class="code" href="group__EFR32MG1P__CMU__BitFields.html#ga34077d56a74ee78ed32b5c9e8f344a47">CMU_HFBUSCLKEN0_GPIO</a>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="comment">/* Update slewrate */</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">for</span>(port = 0; port &lt;= GPIO_PORT_MAX; port++)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      <a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a>-&gt;P[port].CTRL = setVal | resetVal;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="comment">/* Restore HFBUSCLK enable state. */</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;HFBUSCLKEN0 = clkEn;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="comment">/* This errata is fixed in hardware from PRODREV 0x90. */</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordflow">if</span> (prodRev &lt; 0x90)</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="comment">/* HFXO high temperature oscillator startup robustness fix */</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;HFXOSTARTUPCTRL =</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;          (<a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;HFXOSTARTUPCTRL &amp; ~<a class="code" href="group__EFR32MG1P__CMU__BitFields.html#gafb81ea0cea68ed5c9eb201c174ff25e6">_CMU_HFXOSTARTUPCTRL_IBTRIMXOCORE_MASK</a>)</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;          | (0x20 &lt;&lt; <a class="code" href="group__EFR32MG1P__CMU__BitFields.html#gad3daa3b222273bd2c6acb01f324ac2d5">_CMU_HFXOSTARTUPCTRL_IBTRIMXOCORE_SHIFT</a>);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keywordflow">if</span> (chipRev.<a class="code" href="structSYSTEM__ChipRevision__TypeDef.html#a79ebea0f9a0321ec622d9098afe5bdd1">major</a> == 0x01)</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="comment">/* Fix for errata EMU_E210 - Potential Power-Down When Entering EM2 */</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    *(<span class="keyword">volatile</span> uint32_t *)(<a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Base.html#ga61fd6590fabeb9f46d757e426bef70b4">EMU_BASE</a> + 0x164) |= 0x4;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">#if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_84)</span></div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;}</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_CHIP_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="group__EFR32MG1P233F256GM48__Peripheral__Declaration_html_ga1037b18e2d226fe7d327d4a6f17a21c1"><div class="ttname"><a href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a></div><div class="ttdeci">#define GPIO</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p233f256gm48_8h_source.html#l00332">efr32mg1p233f256gm48.h:332</a></div></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  uint8_t prodRev = <a class="code" href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev</a>();</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="comment">/* EM2 current fixes for early samples */</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keywordflow">if</span> (prodRev == 0)</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    *(<span class="keyword">volatile</span> uint32_t *)(<a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Base.html#ga61fd6590fabeb9f46d757e426bef70b4">EMU_BASE</a> + 0x190)  = 0x0000ADE8UL;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    *(<span class="keyword">volatile</span> uint32_t *)(<a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Base.html#ga61fd6590fabeb9f46d757e426bef70b4">EMU_BASE</a> + 0x198) |= (0x1 &lt;&lt; 2);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    *(<span class="keyword">volatile</span> uint32_t *)(<a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Base.html#ga61fd6590fabeb9f46d757e426bef70b4">EMU_BASE</a> + 0x190)  = 0x0;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">if</span> (prodRev &lt; 2)</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    *(<span class="keyword">volatile</span> uint32_t *)(<a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Base.html#ga61fd6590fabeb9f46d757e426bef70b4">EMU_BASE</a> + 0x164) |= (0x1 &lt;&lt; 13);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="comment">/* Set optimal LFRCOCTRL VREFUPDATE and enable duty cycling of vref */</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;LFRCOCTRL = (<a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a>-&gt;LFRCOCTRL &amp; ~_CMU_LFRCOCTRL_VREFUPDATE_MASK)</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                    | CMU_LFRCOCTRL_VREFUPDATE_64CYCLES</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                    | <a class="code" href="group__EFR32MG1P__CMU__BitFields.html#gad83960bf7aa61df7d6e2faa67933271a">CMU_LFRCOCTRL_ENVREF</a>;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#if defined(_EFR_DEVICE) &amp;&amp; (_SILICON_LABS_GECKO_INTERNAL_SDID &gt;= 84)</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <a class="code" href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga543ff1594e55db162ab50232e7db483e">MSC</a>-&gt;CTRL |= 0x1 &lt;&lt; 8;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* EM_CHIP_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group__EFR32MG1P233F256GM48__Peripheral__Declaration_html_ga1037b18e2d226fe7d327d4a6f17a21c1"><div class="ttname"><a href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga1037b18e2d226fe7d327d4a6f17a21c1">GPIO</a></div><div class="ttdeci">#define GPIO</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p233f256gm48_8h_source.html#l00338">efr32mg1p233f256gm48.h:338</a></div></div>
+<div class="ttc" id="group__EFR32MG1P__CMU__BitFields_html_gad83960bf7aa61df7d6e2faa67933271a"><div class="ttname"><a href="group__EFR32MG1P__CMU__BitFields.html#gad83960bf7aa61df7d6e2faa67933271a">CMU_LFRCOCTRL_ENVREF</a></div><div class="ttdeci">#define CMU_LFRCOCTRL_ENVREF</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p__cmu_8h_source.html#l00304">efr32mg1p_cmu.h:304</a></div></div>
 <div class="ttc" id="group__EFR32MG1P__GPIO__BitFields_html_gaf92a2eb8b36a28b48f51ba9c1068ea01"><div class="ttname"><a href="group__EFR32MG1P__GPIO__BitFields.html#gaf92a2eb8b36a28b48f51ba9c1068ea01">_GPIO_P_CTRL_SLEWRATEALT_MASK</a></div><div class="ttdeci">#define _GPIO_P_CTRL_SLEWRATEALT_MASK</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p__gpio_8h_source.html#l00104">efr32mg1p_gpio.h:104</a></div></div>
 <div class="ttc" id="em__bus_8h_html"><div class="ttname"><a href="em__bus_8h.html">em_bus.h</a></div><div class="ttdoc">RAM and peripheral bit-field set and clear API. </div></div>
 <div class="ttc" id="group__SYSTEM_html_ga6470ed38937ffd0b8b509334c5add7dd"><div class="ttname"><a href="group__SYSTEM.html#ga6470ed38937ffd0b8b509334c5add7dd">SYSTEM_ChipRevisionGet</a></div><div class="ttdeci">void SYSTEM_ChipRevisionGet(SYSTEM_ChipRevision_TypeDef *rev)</div><div class="ttdoc">Get chip major/minor revision. </div><div class="ttdef"><b>Definition:</b> <a href="em__system_8c_source.html#l00058">em_system.c:58</a></div></div>
+<div class="ttc" id="group__EFR32MG1P233F256GM48__Peripheral__Declaration_html_ga543ff1594e55db162ab50232e7db483e"><div class="ttname"><a href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga543ff1594e55db162ab50232e7db483e">MSC</a></div><div class="ttdeci">#define MSC</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p233f256gm48_8h_source.html#l00333">efr32mg1p233f256gm48.h:333</a></div></div>
 <div class="ttc" id="group__CHIP_html_ga6491ac6b7e786d253753c334615bce61"><div class="ttname"><a href="group__CHIP.html#ga6491ac6b7e786d253753c334615bce61">CHIP_Init</a></div><div class="ttdeci">__STATIC_INLINE void CHIP_Init(void)</div><div class="ttdoc">Chip initialization routine for revision errata workarounds. This function must be called immediately...</div><div class="ttdef"><b>Definition:</b> <a href="em__chip_8h_source.html#l00070">em_chip.h:70</a></div></div>
-<div class="ttc" id="group__EFR32MG1P__CMU__BitFields_html_ga34077d56a74ee78ed32b5c9e8f344a47"><div class="ttname"><a href="group__EFR32MG1P__CMU__BitFields.html#ga34077d56a74ee78ed32b5c9e8f344a47">CMU_HFBUSCLKEN0_GPIO</a></div><div class="ttdeci">#define CMU_HFBUSCLKEN0_GPIO</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p__cmu_8h_source.html#l01344">efr32mg1p_cmu.h:1344</a></div></div>
+<div class="ttc" id="group__EFR32MG1P__CMU__BitFields_html_ga34077d56a74ee78ed32b5c9e8f344a47"><div class="ttname"><a href="group__EFR32MG1P__CMU__BitFields.html#ga34077d56a74ee78ed32b5c9e8f344a47">CMU_HFBUSCLKEN0_GPIO</a></div><div class="ttdeci">#define CMU_HFBUSCLKEN0_GPIO</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p__cmu_8h_source.html#l01374">efr32mg1p_cmu.h:1374</a></div></div>
 <div class="ttc" id="em__device_8h_html"><div class="ttname"><a href="em__device_8h.html">em_device.h</a></div><div class="ttdoc">CMSIS Cortex-M Peripheral Access Layer for Silicon Laboratories microcontroller devices. </div></div>
-<div class="ttc" id="group__EFR32MG1P233F256GM48__Peripheral__Base_html_ga61fd6590fabeb9f46d757e426bef70b4"><div class="ttname"><a href="group__EFR32MG1P233F256GM48__Peripheral__Base.html#ga61fd6590fabeb9f46d757e426bef70b4">EMU_BASE</a></div><div class="ttdeci">#define EMU_BASE</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p233f256gm48_8h_source.html#l00291">efr32mg1p233f256gm48.h:291</a></div></div>
+<div class="ttc" id="group__EFR32MG1P233F256GM48__Peripheral__Base_html_ga61fd6590fabeb9f46d757e426bef70b4"><div class="ttname"><a href="group__EFR32MG1P233F256GM48__Peripheral__Base.html#ga61fd6590fabeb9f46d757e426bef70b4">EMU_BASE</a></div><div class="ttdeci">#define EMU_BASE</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p233f256gm48_8h_source.html#l00297">efr32mg1p233f256gm48.h:297</a></div></div>
 <div class="ttc" id="group__EFR32MG1P__GPIO__BitFields_html_gad1d918dda97d7e1dc0ea5f1367671413"><div class="ttname"><a href="group__EFR32MG1P__GPIO__BitFields.html#gad1d918dda97d7e1dc0ea5f1367671413">_GPIO_P_CTRL_SLEWRATE_MASK</a></div><div class="ttdeci">#define _GPIO_P_CTRL_SLEWRATE_MASK</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p__gpio_8h_source.html#l00086">efr32mg1p_gpio.h:86</a></div></div>
-<div class="ttc" id="structSYSTEM__ChipRevision__TypeDef_html_a4c191c69987d7029a7f2ec9510a99898"><div class="ttname"><a href="structSYSTEM__ChipRevision__TypeDef.html#a4c191c69987d7029a7f2ec9510a99898">SYSTEM_ChipRevision_TypeDef::minor</a></div><div class="ttdeci">uint8_t minor</div><div class="ttdef"><b>Definition:</b> <a href="em__system_8h_source.html#l00214">em_system.h:214</a></div></div>
+<div class="ttc" id="structSYSTEM__ChipRevision__TypeDef_html_a4c191c69987d7029a7f2ec9510a99898"><div class="ttname"><a href="structSYSTEM__ChipRevision__TypeDef.html#a4c191c69987d7029a7f2ec9510a99898">SYSTEM_ChipRevision_TypeDef::minor</a></div><div class="ttdeci">uint8_t minor</div><div class="ttdef"><b>Definition:</b> <a href="em__system_8h_source.html#l00237">em_system.h:237</a></div></div>
 <div class="ttc" id="group__EFR32MG1P__GPIO__BitFields_html_ga820c29924b210bfa154672c6612a8d64"><div class="ttname"><a href="group__EFR32MG1P__GPIO__BitFields.html#ga820c29924b210bfa154672c6612a8d64">_GPIO_P_CTRL_SLEWRATE_SHIFT</a></div><div class="ttdeci">#define _GPIO_P_CTRL_SLEWRATE_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p__gpio_8h_source.html#l00085">efr32mg1p_gpio.h:85</a></div></div>
-<div class="ttc" id="group__SYSTEM_html_ga0ab109172e28a441c3ff173d0f83405b"><div class="ttname"><a href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev</a></div><div class="ttdeci">__STATIC_INLINE uint8_t SYSTEM_GetProdRev(void)</div><div class="ttdoc">Get the production revision for this part. </div><div class="ttdef"><b>Definition:</b> <a href="em__system_8h_source.html#l00280">em_system.h:280</a></div></div>
+<div class="ttc" id="group__SYSTEM_html_ga0ab109172e28a441c3ff173d0f83405b"><div class="ttname"><a href="group__SYSTEM.html#ga0ab109172e28a441c3ff173d0f83405b">SYSTEM_GetProdRev</a></div><div class="ttdeci">__STATIC_INLINE uint8_t SYSTEM_GetProdRev(void)</div><div class="ttdoc">Get the production revision for this part. </div><div class="ttdef"><b>Definition:</b> <a href="em__system_8h_source.html#l00303">em_system.h:303</a></div></div>
 <div class="ttc" id="em__gpio_8h_html"><div class="ttname"><a href="em__gpio_8h.html">em_gpio.h</a></div><div class="ttdoc">General Purpose IO (GPIO) peripheral API. </div></div>
-<div class="ttc" id="group__EFR32MG1P__CMU__BitFields_html_gad3daa3b222273bd2c6acb01f324ac2d5"><div class="ttname"><a href="group__EFR32MG1P__CMU__BitFields.html#gad3daa3b222273bd2c6acb01f324ac2d5">_CMU_HFXOSTARTUPCTRL_IBTRIMXOCORE_SHIFT</a></div><div class="ttdeci">#define _CMU_HFXOSTARTUPCTRL_IBTRIMXOCORE_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p__cmu_8h_source.html#l00421">efr32mg1p_cmu.h:421</a></div></div>
-<div class="ttc" id="structSYSTEM__ChipRevision__TypeDef_html_a79ebea0f9a0321ec622d9098afe5bdd1"><div class="ttname"><a href="structSYSTEM__ChipRevision__TypeDef.html#a79ebea0f9a0321ec622d9098afe5bdd1">SYSTEM_ChipRevision_TypeDef::major</a></div><div class="ttdeci">uint8_t major</div><div class="ttdef"><b>Definition:</b> <a href="em__system_8h_source.html#l00215">em_system.h:215</a></div></div>
+<div class="ttc" id="group__EFR32MG1P__CMU__BitFields_html_gad3daa3b222273bd2c6acb01f324ac2d5"><div class="ttname"><a href="group__EFR32MG1P__CMU__BitFields.html#gad3daa3b222273bd2c6acb01f324ac2d5">_CMU_HFXOSTARTUPCTRL_IBTRIMXOCORE_SHIFT</a></div><div class="ttdeci">#define _CMU_HFXOSTARTUPCTRL_IBTRIMXOCORE_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p__cmu_8h_source.html#l00422">efr32mg1p_cmu.h:422</a></div></div>
+<div class="ttc" id="structSYSTEM__ChipRevision__TypeDef_html_a79ebea0f9a0321ec622d9098afe5bdd1"><div class="ttname"><a href="structSYSTEM__ChipRevision__TypeDef.html#a79ebea0f9a0321ec622d9098afe5bdd1">SYSTEM_ChipRevision_TypeDef::major</a></div><div class="ttdeci">uint8_t major</div><div class="ttdef"><b>Definition:</b> <a href="em__system_8h_source.html#l00238">em_system.h:238</a></div></div>
 <div class="ttc" id="group__EFR32MG1P__GPIO__BitFields_html_gaf616736ce9780d2762e52da4a473eb88"><div class="ttname"><a href="group__EFR32MG1P__GPIO__BitFields.html#gaf616736ce9780d2762e52da4a473eb88">_GPIO_P_CTRL_RESETVALUE</a></div><div class="ttdeci">#define _GPIO_P_CTRL_RESETVALUE</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p__gpio_8h_source.html#l00074">efr32mg1p_gpio.h:74</a></div></div>
-<div class="ttc" id="group__EFR32MG1P__CMU__BitFields_html_gafb81ea0cea68ed5c9eb201c174ff25e6"><div class="ttname"><a href="group__EFR32MG1P__CMU__BitFields.html#gafb81ea0cea68ed5c9eb201c174ff25e6">_CMU_HFXOSTARTUPCTRL_IBTRIMXOCORE_MASK</a></div><div class="ttdeci">#define _CMU_HFXOSTARTUPCTRL_IBTRIMXOCORE_MASK</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p__cmu_8h_source.html#l00422">efr32mg1p_cmu.h:422</a></div></div>
+<div class="ttc" id="group__EFR32MG1P__CMU__BitFields_html_gafb81ea0cea68ed5c9eb201c174ff25e6"><div class="ttname"><a href="group__EFR32MG1P__CMU__BitFields.html#gafb81ea0cea68ed5c9eb201c174ff25e6">_CMU_HFXOSTARTUPCTRL_IBTRIMXOCORE_MASK</a></div><div class="ttdeci">#define _CMU_HFXOSTARTUPCTRL_IBTRIMXOCORE_MASK</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p__cmu_8h_source.html#l00423">efr32mg1p_cmu.h:423</a></div></div>
 <div class="ttc" id="em__system_8h_html"><div class="ttname"><a href="em__system_8h.html">em_system.h</a></div><div class="ttdoc">System API. </div></div>
 <div class="ttc" id="group__EFR32MG1P__GPIO__BitFields_html_gaadd680b203df0922271d033244c8c002"><div class="ttname"><a href="group__EFR32MG1P__GPIO__BitFields.html#gaadd680b203df0922271d033244c8c002">_GPIO_P_CTRL_SLEWRATEALT_SHIFT</a></div><div class="ttdeci">#define _GPIO_P_CTRL_SLEWRATEALT_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p__gpio_8h_source.html#l00103">efr32mg1p_gpio.h:103</a></div></div>
-<div class="ttc" id="group__EFR32MG1P233F256GM48__Peripheral__Declaration_html_ga0ed1d26edfd19bbb92da3601b9804750"><div class="ttname"><a href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a></div><div class="ttdeci">#define CMU</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p233f256gm48_8h_source.html#l00330">efr32mg1p233f256gm48.h:330</a></div></div>
-<div class="ttc" id="structSYSTEM__ChipRevision__TypeDef_html"><div class="ttname"><a href="structSYSTEM__ChipRevision__TypeDef.html">SYSTEM_ChipRevision_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="em__system_8h_source.html#l00212">em_system.h:212</a></div></div>
+<div class="ttc" id="group__EFR32MG1P233F256GM48__Peripheral__Declaration_html_ga0ed1d26edfd19bbb92da3601b9804750"><div class="ttname"><a href="group__EFR32MG1P233F256GM48__Peripheral__Declaration.html#ga0ed1d26edfd19bbb92da3601b9804750">CMU</a></div><div class="ttdeci">#define CMU</div><div class="ttdef"><b>Definition:</b> <a href="efr32mg1p233f256gm48_8h_source.html#l00336">efr32mg1p233f256gm48.h:336</a></div></div>
+<div class="ttc" id="structSYSTEM__ChipRevision__TypeDef_html"><div class="ttname"><a href="structSYSTEM__ChipRevision__TypeDef.html">SYSTEM_ChipRevision_TypeDef</a></div><div class="ttdef"><b>Definition:</b> <a href="em__system_8h_source.html#l00235">em_system.h:235</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__chip_8h.html">em_chip.h</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 16:04:18 for EFR32 Mighty Gecko 1 Software Documentation by
+    <li class="navelem"><a class="el" href="dir_57c5670a54251515d5dc3137dddf203b.html">platform</a></li><li class="navelem"><a class="el" href="dir_74d47fbdcea7cda18072cc4be639af5a.html">emlib</a></li><li class="navelem"><a class="el" href="dir_bf479292f56c204ab5b202f2f7ed0583.html">inc</a></li><li class="navelem"><a class="el" href="em__chip_8h.html">em_chip.h</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:45:00 for EFR32 Mighty Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -1,22 +1,14 @@
 var searchData=
 [
-  ['wdogclksellfrco',['wdogClkSelLFRCO',['../group__WDOG.html#gga84959950c7a90940b7b2aa414648f338a4bf588ad917693cc867dbde173d7a090',1,'em_wdog.h']]],
-  ['wdogclksellfxo',['wdogClkSelLFXO',['../group__WDOG.html#gga84959950c7a90940b7b2aa414648f338a4277fbeff57cbd111bc2b6df49dc17f7',1,'em_wdog.h']]],
-  ['wdogclkselulfrco',['wdogClkSelULFRCO',['../group__WDOG.html#gga84959950c7a90940b7b2aa414648f338a13e2668aa9503395dece59d8ed08e468',1,'em_wdog.h']]],
-  ['wdogperiod_5f128k',['wdogPeriod_128k',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505ad1fde90472a0e74d6db24fe91149f5ea',1,'em_wdog.h']]],
-  ['wdogperiod_5f129',['wdogPeriod_129',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505a31ea334179d9e70ca0f92ea1369c74b3',1,'em_wdog.h']]],
-  ['wdogperiod_5f16k',['wdogPeriod_16k',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505a9a2fde8ebb666994e72244dab6cbd449',1,'em_wdog.h']]],
-  ['wdogperiod_5f17',['wdogPeriod_17',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505aa813473bdb90f90ccebcc4220ebaf99b',1,'em_wdog.h']]],
-  ['wdogperiod_5f1k',['wdogPeriod_1k',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505a33a208eaf203ae5d837d296d1282249d',1,'em_wdog.h']]],
-  ['wdogperiod_5f256k',['wdogPeriod_256k',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505a763da9dc72d140d86dac3be63fcc77a9',1,'em_wdog.h']]],
-  ['wdogperiod_5f257',['wdogPeriod_257',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505a272770bd44311a38300bf6d0b92ab50c',1,'em_wdog.h']]],
-  ['wdogperiod_5f2k',['wdogPeriod_2k',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505a582f804642864a8c10ee669183fe42b9',1,'em_wdog.h']]],
-  ['wdogperiod_5f32k',['wdogPeriod_32k',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505a78630e83f49b6ab218acbfc86bdaf6c6',1,'em_wdog.h']]],
-  ['wdogperiod_5f33',['wdogPeriod_33',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505a13f8ceefd730aea4db809cb5b3a2cafa',1,'em_wdog.h']]],
-  ['wdogperiod_5f4k',['wdogPeriod_4k',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505a421552f135d5094c6c84b0a741dc3f30',1,'em_wdog.h']]],
-  ['wdogperiod_5f513',['wdogPeriod_513',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505a86b24d8f3bf634c9cdbbcc283d3e01e2',1,'em_wdog.h']]],
-  ['wdogperiod_5f64k',['wdogPeriod_64k',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505af993d4fb21b4a97af5d406ffdf64ebbb',1,'em_wdog.h']]],
-  ['wdogperiod_5f65',['wdogPeriod_65',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505ad807cead07d003a35620973c339db111',1,'em_wdog.h']]],
-  ['wdogperiod_5f8k',['wdogPeriod_8k',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505a69df19e83f9db479572531d795cedebb',1,'em_wdog.h']]],
-  ['wdogperiod_5f9',['wdogPeriod_9',['../group__WDOG.html#ggafb32176c669596071269d5fe62734505a9ed45af9c6fd5b2d8e3f205b448755d1',1,'em_wdog.h']]]
+  ['vcmp_5firqn',['VCMP_IRQn',['../group__EFM32ZG222F32.html#gga666eb0caeb12ec0e281415592ae89083ae51ac365d90523f2d68ec5689b4d1c9c',1,'efm32zg222f32.h']]],
+  ['vcmphyst20mv',['vcmpHyst20mV',['../group__VCMP.html#ggab56ac68a10865bcbd08f2978a6cf5d5ba9c7ff466e5d4da40fcd034d880f0b334',1,'em_vcmp.h']]],
+  ['vcmphystnone',['vcmpHystNone',['../group__VCMP.html#ggab56ac68a10865bcbd08f2978a6cf5d5ba206e40abcd9cb83626a9ca4b4120c629',1,'em_vcmp.h']]],
+  ['vcmpwarmtime128cycles',['vcmpWarmTime128Cycles',['../group__VCMP.html#gga4d4b37ff688f47766c7f11fd44806cc6a303d98df3d98f8f9cdb25e0a701e278b',1,'em_vcmp.h']]],
+  ['vcmpwarmtime16cycles',['vcmpWarmTime16Cycles',['../group__VCMP.html#gga4d4b37ff688f47766c7f11fd44806cc6a0c3463a3df83eb595683def4fa3e191e',1,'em_vcmp.h']]],
+  ['vcmpwarmtime256cycles',['vcmpWarmTime256Cycles',['../group__VCMP.html#gga4d4b37ff688f47766c7f11fd44806cc6a0629f788c0d6c46e0bc61a1890c7a927',1,'em_vcmp.h']]],
+  ['vcmpwarmtime32cycles',['vcmpWarmTime32Cycles',['../group__VCMP.html#gga4d4b37ff688f47766c7f11fd44806cc6a40c1933761b44df612af15901ba3b3bd',1,'em_vcmp.h']]],
+  ['vcmpwarmtime4cycles',['vcmpWarmTime4Cycles',['../group__VCMP.html#gga4d4b37ff688f47766c7f11fd44806cc6aa18bd07e3b064e80f710772c03ef6e16',1,'em_vcmp.h']]],
+  ['vcmpwarmtime512cycles',['vcmpWarmTime512Cycles',['../group__VCMP.html#gga4d4b37ff688f47766c7f11fd44806cc6a3a70a500a360e8e46e0e27ff8d245061',1,'em_vcmp.h']]],
+  ['vcmpwarmtime64cycles',['vcmpWarmTime64Cycles',['../group__VCMP.html#gga4d4b37ff688f47766c7f11fd44806cc6a7f759bfc3a0cd6061c9e56de13f90049',1,'em_vcmp.h']]],
+  ['vcmpwarmtime8cycles',['vcmpWarmTime8Cycles',['../group__VCMP.html#gga4d4b37ff688f47766c7f11fd44806cc6ab833ea0316d2729f828f44b3ebe2b4ba',1,'em_vcmp.h']]]
 ];

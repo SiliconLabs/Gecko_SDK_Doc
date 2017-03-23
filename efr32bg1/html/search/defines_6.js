@@ -1,5 +1,20 @@
 var searchData=
 [
+  ['gainsboro',['Gainsboro',['../glib__color_8h.html#a431ceb142ff8be46205bacad8d33b261',1,'glib_color.h']]],
+  ['ghostwhite',['GhostWhite',['../glib__color_8h.html#a3464a61089ac1ac89aca6ca90d98476f',1,'glib_color.h']]],
+  ['glib_5fdefault_5ffont',['GLIB_DEFAULT_FONT',['../glib_8c.html#acb2548602b4322ad248c8f518130d082',1,'glib.c']]],
   ['global_5fsoft_5freset',['GLOBAL_SOFT_RESET',['../ksz8851snl_8c.html#a4286160ca194bc8850c7fc9013fe3779',1,'ksz8851snl.c']]],
-  ['grr',['GRR',['../ksz8851snl_8c.html#a092b1852ba2fbba0bcdd216f3f641b49',1,'ksz8851snl.c']]]
+  ['gold',['Gold',['../glib__color_8h.html#a16d4cb159b985f9cb15555e03e791377',1,'glib_color.h']]],
+  ['goldenrod',['Goldenrod',['../glib__color_8h.html#af7453b1141bc4b5dc93d8fe04d9f3188',1,'glib_color.h']]],
+  ['gray',['Gray',['../glib__color_8h.html#aab957a0fe1c92d227cced2922967fb97',1,'glib_color.h']]],
+  ['green',['Green',['../glib__color_8h.html#aa429cd977709122166b6e31fa10903d1',1,'glib_color.h']]],
+  ['greenmask',['GreenMask',['../glib__color_8h.html#a497e0526c95a404311c7ca73787e0121',1,'glib_color.h']]],
+  ['greenshift',['GreenShift',['../glib__color_8h.html#a5dc978883174ed92c73a5cef49c6adc5',1,'glib_color.h']]],
+  ['greenyellow',['GreenYellow',['../glib__color_8h.html#ad15d5037de508ae5182a2a7eb2d1140e',1,'glib_color.h']]],
+  ['grr',['GRR',['../ksz8851snl_8c.html#a092b1852ba2fbba0bcdd216f3f641b49',1,'ksz8851snl.c']]],
+  ['guid_5fproperty',['GUID_PROPERTY',['../em__usbxpress__descriptors_8h.html#a5bc51271f32997042569b2f999891ff0',1,'em_usbxpress_descriptors.h']]],
+  ['guid_5fproperty_5fdescriptor_5fsize',['GUID_PROPERTY_DESCRIPTOR_SIZE',['../em__usbxpress__descriptors_8h.html#aa4f03aaec2f3c5c47211653e34444cb2',1,'em_usbxpress_descriptors.h']]],
+  ['guid_5fproperty_5flen',['GUID_PROPERTY_LEN',['../em__usbxpress__descriptors_8h.html#a18232536b2e1a06cb22ecf10166567cb',1,'em_usbxpress_descriptors.h']]],
+  ['guid_5fproperty_5fname',['GUID_PROPERTY_NAME',['../em__usbxpress__descriptors_8h.html#acef62b6fd3bea8e247a73e5aa9460f77',1,'em_usbxpress_descriptors.h']]],
+  ['guid_5fproperty_5fname_5flen',['GUID_PROPERTY_NAME_LEN',['../em__usbxpress__descriptors_8h.html#ad196858454a326c8b90d8aedc9d81089',1,'em_usbxpress_descriptors.h']]]
 ];

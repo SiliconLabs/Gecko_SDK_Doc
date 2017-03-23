@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lba',['Lba',['../structMSDSCSI__ReadCapacity__TypeDef.html#a68cd5734a4019cd89f9880c7ea74b95b',1,'MSDSCSI_ReadCapacity_TypeDef::Lba()'],['../structMSDSCSI__Read10__TypeDef.html#a0f7d380926a76054cfc9f1ba47e606b0',1,'MSDSCSI_Read10_TypeDef::Lba()'],['../structMSDSCSI__Write10__TypeDef.html#a8e61a32441fc28c57dbc04a9962d0386',1,'MSDSCSI_Write10_TypeDef::Lba()'],['../structMSDSCSI__Verify10__TypeDef.html#aea2da4d7826b701c8eeaf629a291e332',1,'MSDSCSI_Verify10_TypeDef::Lba()'],['../structMSDD__CmdStatus__TypeDef.html#a3459bee80f45f8511927bf70dacd6483',1,'MSDD_CmdStatus_TypeDef::lba()']]],
+  ['lba',['lba',['../structMSDD__CmdStatus__TypeDef.html#a3459bee80f45f8511927bf70dacd6483',1,'MSDD_CmdStatus_TypeDef::lba()'],['../structMSDSCSI__ReadCapacity__TypeDef.html#a68cd5734a4019cd89f9880c7ea74b95b',1,'MSDSCSI_ReadCapacity_TypeDef::Lba()'],['../structMSDSCSI__Read10__TypeDef.html#a0f7d380926a76054cfc9f1ba47e606b0',1,'MSDSCSI_Read10_TypeDef::Lba()'],['../structMSDSCSI__Write10__TypeDef.html#a8e61a32441fc28c57dbc04a9962d0386',1,'MSDSCSI_Write10_TypeDef::Lba()'],['../structMSDSCSI__Verify10__TypeDef.html#aea2da4d7826b701c8eeaf629a291e332',1,'MSDSCSI_Verify10_TypeDef::Lba()']]],
   ['ldmacfgarbslots',['ldmaCfgArbSlots',['../structLDMA__TransferCfg__t.html#af52334eee003bf37c2b41153c153c13a',1,'LDMA_TransferCfg_t']]],
   ['ldmacfgdstincsign',['ldmaCfgDstIncSign',['../structLDMA__TransferCfg__t.html#a2f0451d0520f33c85f2d289a7e350c77',1,'LDMA_TransferCfg_t']]],
   ['ldmacfgsrcincsign',['ldmaCfgSrcIncSign',['../structLDMA__TransferCfg__t.html#aea560beb6aca344fd728ed7390fa58b9',1,'LDMA_TransferCfg_t']]],
@@ -21,6 +21,7 @@ var searchData=
   ['leftadjust',['leftAdjust',['../structADC__InitScan__TypeDef.html#afaeb7c7c6aa576a679de08b1c1b23845',1,'ADC_InitScan_TypeDef::leftAdjust()'],['../structADC__InitSingle__TypeDef.html#a64d99bb9d75e905b8a464233cb764c0e',1,'ADC_InitSingle_TypeDef::leftAdjust()']]],
   ['len',['len',['../structI2C__TransferSeq__TypeDef.html#a92b6d16d6d3b3e4d5650740fa306a285',1,'I2C_TransferSeq_TypeDef']]],
   ['lenconfig',['lenConfig',['../structEZRADIODRV__AutoAckHandle.html#a0f3b4f0d1dbeb3381b368fa2cb3c6664',1,'EZRADIODRV_AutoAckHandle::lenConfig()'],['../structEZRADIODRV__PacketTxHandle.html#ac97208fb2420b81e58b144113109d056',1,'EZRADIODRV_PacketTxHandle::lenConfig()']]],
+  ['length',['length',['../structUSB__ExtendedCompatIdOsFeatureDesc__t.html#a960fdbccccb3828ee158e5d56d3fba70',1,'USB_ExtendedCompatIdOsFeatureDesc_t']]],
   ['lenmode',['lenMode',['../structEZRADIODRV__PacketLengthConfig.html#ab6c504130d8c4d0702a7261c34d7724d',1,'EZRADIODRV_PacketLengthConfig']]],
   ['lesensechcb',['lesenseChCb',['../caplesense_8c.html#aa06947c6a4ea227268be55e94645a095',1,'caplesense.c']]],
   ['lesensescancb',['lesenseScanCb',['../caplesense_8c.html#ab0d8e36a09eee55fa31bffcf9dc7365a',1,'caplesense.c']]],
@@ -36,7 +37,8 @@ var searchData=
   ['lfrcoctrl',['LFRCOCTRL',['../structCMU__TypeDef.html#a3f65ee290247393a10526c000efe3fc5',1,'CMU_TypeDef']]],
   ['lftocrlf',['lfToCrLf',['../structTEXTDISPLAY__Config__t.html#aae4d4c24d67076baa049bb7d8ea9099e',1,'TEXTDISPLAY_Config_t::lfToCrLf()'],['../group__RetargetIo.html#ga39f367ecd73dc4d3885a2f7e3117ac8c',1,'LFtoCRLF():&#160;retargetserial.c'],['../retargettft_8c.html#a348ac2c49f51720a95cfedffc5476fa6',1,'LFtoCRLF():&#160;retargettft.c']]],
   ['lfxoctrl',['LFXOCTRL',['../structCMU__TypeDef.html#ab8c9d11b21480546288f6e5db3437064',1,'CMU_TypeDef']]],
-  ['link',['LINK',['../structDMA__DESCRIPTOR__TypeDef.html#a1a9307332617039688ca04154343f2df',1,'DMA_DESCRIPTOR_TypeDef::LINK()'],['../structLDMA__CH__TypeDef.html#ab5bf7c4a5756e627b794995dfa0d1112',1,'LDMA_CH_TypeDef::LINK()'],['../unionLDMA__Descriptor__t.html#afb2aa046fc651d35ead93cbfaf189cc9',1,'LDMA_Descriptor_t::link()']]],
+  ['linespacing',['lineSpacing',['../struct____GLIB__Font__t.html#a9ab3ada73983b92d5d817e40803a4cd1',1,'__GLIB_Font_t']]],
+  ['link',['link',['../unionLDMA__Descriptor__t.html#afb2aa046fc651d35ead93cbfaf189cc9',1,'LDMA_Descriptor_t::link()'],['../structDMA__DESCRIPTOR__TypeDef.html#a1a9307332617039688ca04154343f2df',1,'DMA_DESCRIPTOR_TypeDef::LINK()'],['../structLDMA__CH__TypeDef.html#ab5bf7c4a5756e627b794995dfa0d1112',1,'LDMA_CH_TypeDef::LINK()']]],
   ['linkaddr',['linkAddr',['../unionLDMA__Descriptor__t.html#ad5c790cc73a7edf426235b508d41812b',1,'LDMA_Descriptor_t']]],
   ['linked',['Linked',['../structMSDSCSI__InquiryData__TypeDef.html#a8e8b9cd39602920d09cce83ff7f11a31',1,'MSDSCSI_InquiryData_TypeDef']]],
   ['linkload',['LINKLOAD',['../structLDMA__TypeDef.html#affa26f021e7b8743da91a5945b33f984',1,'LDMA_TypeDef']]],

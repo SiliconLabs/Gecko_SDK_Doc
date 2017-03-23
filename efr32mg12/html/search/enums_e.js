@@ -1,18 +1,13 @@
 var searchData=
 [
-  ['uartdrv_5faborttype',['UARTDRV_AbortType',['../group__UARTDRV.html#ga7b3eb02ccaea26685afc6dd9e69c8501',1,'uartdrv.h']]],
-  ['uartdrv_5fflowcontrolstate',['UARTDRV_FlowControlState',['../group__UARTDRV.html#gae5bb048bcc9222f56c9b4b811f3395e0',1,'uartdrv.h']]],
-  ['uartdrv_5fflowcontroltype',['UARTDRV_FlowControlType',['../group__UARTDRV.html#gaaf1c5185723fc794e00c2cd4a7e33d73',1,'uartdrv.h']]],
-  ['usart_5fclockmode_5ftypedef',['USART_ClockMode_TypeDef',['../group__USART.html#ga9308807377a9f1b25c19bc60d9f64674',1,'em_usart.h']]],
-  ['usart_5fdatabits_5ftypedef',['USART_Databits_TypeDef',['../group__USART.html#ga882a4def49cdb2fb18622d61b24eeacd',1,'em_usart.h']]],
-  ['usart_5fenable_5ftypedef',['USART_Enable_TypeDef',['../group__USART.html#gab911b3b57b0cfe33cc34e7c37693c14b',1,'em_usart.h']]],
-  ['usart_5fi2sformat_5ftypedef',['USART_I2sFormat_TypeDef',['../group__USART.html#gab8a8e724d03a6cdaebc8f5c61a5e3e87',1,'em_usart.h']]],
-  ['usart_5fi2sjustify_5ftypedef',['USART_I2sJustify_TypeDef',['../group__USART.html#ga3ddf14445cc284b6b54f07fbbd34c9ba',1,'em_usart.h']]],
-  ['usart_5firdaprssel_5ftypedef',['USART_IrDAPrsSel_Typedef',['../group__USART.html#gaa76c86d959fdc20d201ad4171ba646a1',1,'em_usart.h']]],
-  ['usart_5firdapw_5ftypedef',['USART_IrDAPw_Typedef',['../group__USART.html#ga4622379ccdcc531ab7f9e7e1cefe404f',1,'em_usart.h']]],
-  ['usart_5fovs_5ftypedef',['USART_OVS_TypeDef',['../group__USART.html#gab8f135534a77aba5382a820b2a35a284',1,'em_usart.h']]],
-  ['usart_5fparity_5ftypedef',['USART_Parity_TypeDef',['../group__USART.html#ga57d987f474e5fd47d4760c4178c7f0d5',1,'em_usart.h']]],
-  ['usart_5fprsrxch_5ftypedef',['USART_PrsRxCh_TypeDef',['../group__USART.html#gad349d37e4b02e9fce46f0317d5d846c8',1,'em_usart.h']]],
-  ['usart_5fprstriggerch_5ftypedef',['USART_PrsTriggerCh_TypeDef',['../group__USART.html#ga61793f62c8e5dcd0c8adc9ec314f7bdc',1,'em_usart.h']]],
-  ['usart_5fstopbits_5ftypedef',['USART_Stopbits_TypeDef',['../group__USART.html#ga697bdb6e146a4f6b8e761efc4f31065e',1,'em_usart.h']]]
+  ['segmentlcd_5fblockmode_5ftypedef',['SegmentLCD_BlockMode_TypeDef',['../group__SegmentLcd.html#gafbcfe27efe1304334520446550824d87',1,'segmentlcd.h']]],
+  ['sleep_5fenergymode_5ft',['SLEEP_EnergyMode_t',['../group__SLEEP.html#gaafb23646b17401bdad763d0fb0c7ff9a',1,'sleep.h']]],
+  ['smu_5fperipheral_5ftypedef',['SMU_Peripheral_TypeDef',['../group__SMU.html#ga2a8f057c3e4826e4e26ec7b0e7f2a2f7',1,'em_smu.h']]],
+  ['spidrv_5fbitorder',['SPIDRV_BitOrder',['../group__SPIDRV.html#ga25c5e9421435cbb3cdd8e7da486426dd',1,'spidrv.h']]],
+  ['spidrv_5fclockmode',['SPIDRV_ClockMode',['../group__SPIDRV.html#gaa1b4721388b623f0242d0cadd4a3b3ef',1,'spidrv.h']]],
+  ['spidrv_5fcscontrol',['SPIDRV_CsControl',['../group__SPIDRV.html#gaec2cac185e42ded3da0d3e2d5cd56226',1,'spidrv.h']]],
+  ['spidrv_5fslavestart',['SPIDRV_SlaveStart',['../group__SPIDRV.html#ga5e653c9b53ec8c873a24192257bd8312',1,'spidrv.h']]],
+  ['spidrv_5ftype',['SPIDRV_Type',['../group__SPIDRV.html#gad47b70bb6c11a6a2842f7dc8dab31824',1,'spidrv.h']]],
+  ['system_5ffpuaccess_5ftypedef',['SYSTEM_FpuAccess_TypeDef',['../group__SYSTEM.html#gacad9a0706dbf7fea35b1fef36749c3f2',1,'em_system.h']]],
+  ['system_5fpartfamily_5ftypedef',['SYSTEM_PartFamily_TypeDef',['../group__SYSTEM.html#ga45f33557f44ae73db1c70765a2a29e5a',1,'em_system.h']]]
 ];

@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['ksz8851sln_5fmib_5fs',['KSZ8851SLN_mib_s',['../structKSZ8851SLN__mib__s.html',1,'']]]
+  ['i2c_5finit_5ftypedef',['I2C_Init_TypeDef',['../structI2C__Init__TypeDef.html',1,'']]],
+  ['i2c_5ftransferseq_5ftypedef',['I2C_TransferSeq_TypeDef',['../structI2C__TransferSeq__TypeDef.html',1,'']]],
+  ['i2c_5ftypedef',['I2C_TypeDef',['../structI2C__TypeDef.html',1,'']]],
+  ['i2cspm_5finit_5ftypedef',['I2CSPM_Init_TypeDef',['../structI2CSPM__Init__TypeDef.html',1,'']]]
 ];

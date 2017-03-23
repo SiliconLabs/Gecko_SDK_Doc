@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Leopard Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32lg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">ezr32lg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -103,22 +103,22 @@ $(document).ready(function(){initNavTree('group__USB.html','');});
   <div class="summary">
 <a href="#groups">Modules</a>  </div>
   <div class="headertitle">
-<div class="title">USB</div>  </div>
+<div class="title">USB<div class="ingroups"><a class="el" href="group__middleware.html">Platform Middleware</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>USB HOST and DEVICE protocol stacks. </p><pre class="fragment"></pre><p>. </p>
+<p>Gecko USB HOST and DEVICE protocol stacks. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
 <tr class="memitem:group__USB__COMMON"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USB__COMMON.html">USB_COMMON</a></td></tr>
-<tr class="memdesc:group__USB__COMMON"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common parts for both HOST and DEVICE USB stacks, see <a class="el" href="group__USB.html">USB device stack library</a> and <a class="el" href="group__USB.html">USB host stack library</a> pages for device and host library documentation. </p><pre class="fragment"></pre><p>. <br /></td></tr>
+<tr class="memdesc:group__USB__COMMON"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common parts for both HOST and DEVICE USB stacks, see <a class="el" href="group__USB.html">USB device stack library</a> and <a class="el" href="group__USB.html">USB host stack library</a> pages for device and host library documentation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__USB__DEVICE"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USB__DEVICE.html">USB_DEVICE</a></td></tr>
-<tr class="memdesc:group__USB__DEVICE"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB DEVICE protocol stack, see <a class="el" href="group__USB.html">USB device stack library</a> page for detailed documentation. </p><pre class="fragment"></pre><p>. <br /></td></tr>
+<tr class="memdesc:group__USB__DEVICE"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gecko USB DEVICE protocol stack, see <a class="el" href="group__USB.html">USB device stack library</a> page for detailed documentation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__USB__HOST"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__USB__HOST.html">USB_HOST</a></td></tr>
-<tr class="memdesc:group__USB__HOST"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB HOST protocol stack, see <a class="el" href="group__USB.html">USB host stack library</a> page for detailed documentation. </p><pre class="fragment"></pre><p>. <br /></td></tr>
+<tr class="memdesc:group__USB__HOST"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gecko USB HOST protocol stack, see <a class="el" href="group__USB.html">USB host stack library</a> page for detailed documentation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 
@@ -217,12 +217,12 @@ The device stack API</h1>
  </p>
 <h1><a class="anchor" id="usb_device_conf"></a>
 Configuring the device stack</h1>
-<p>Your application must provide a header file named <em>usbconfig.h</em>. This file must contain the following #define's:<br />
+<p>Your application must provide a header file named <em><a class="el" href="usbconfig_8h.html" title="USB protocol stack library, application supplied configuration options. ">usbconfig.h</a></em>. This file must contain the following #define's:<br />
  <br />
 </p><pre class="fragment">#define USB_DEVICE       // Compile the stack for device mode.
 #define NUM_EP_USED n    // Your application use 'n' endpoints in
                          // addition to endpoint 0. </pre><p><br />
- <em>usbconfig.h</em> may define the following items: <br />
+ <em><a class="el" href="usbconfig_8h.html" title="USB protocol stack library, application supplied configuration options. ">usbconfig.h</a></em> may define the following items: <br />
  <br />
 </p><pre class="fragment">#define NUM_APP_TIMERS n // Your application needs 'n' timers
 
@@ -254,7 +254,7 @@ extern int RETARGET_WriteChar(char c);
 <h1><a class="anchor" id="usb_device_powersave"></a>
 Energy-saving modes</h1>
 <p>The device stack provides two energy saving levels. The first level is to set the USB peripheral in energy saving mode, the next level is to enter Energy Mode 2 (EM2). These energy saving modes can be applied when the device is suspended by the USB host, or when when the device is not connected to a USB host. In addition to this an application can use energy modes EM1 and EM2. There are no restrictions on when EM1 can be entered, EM2 can only be entered when the USB device is suspended or detached from host.</p>
-<p>Energy-saving modes are selected with a #define in <em>usbconfig.h</em>, default selection is to not use any energy saving modes.<br />
+<p>Energy-saving modes are selected with a #define in <em><a class="el" href="usbconfig_8h.html" title="USB protocol stack library, application supplied configuration options. ">usbconfig.h</a></em>, default selection is to not use any energy saving modes.<br />
  <br />
 </p><pre class="fragment">#define USB_PWRSAVE_MODE (USB_PWRSAVE_MODE_ONSUSPEND | USB_PWRSAVE_MODE_ENTEREM2)</pre><p>There are three flags available, the flags can be or'ed together as shown above.</p>
 <p><b>#define USB_PWRSAVE_MODE_ONSUSPEND</b><br />
@@ -263,7 +263,7 @@ Energy-saving modes</h1>
  Set USB peripheral in low power mode when not attached to a host. This mode assumes that the internal voltage regulator is used and that the VREGI pin of the chip is connected to VBUS. This option can not be used with bus-powered devices.</p>
 <p><b>#define USB_PWRSAVE_MODE_ENTEREM2</b><br />
  Enter EM2 when USB peripheral is in low power mode.</p>
-<p>When the USB peripheral is set in low power mode, it must be clocked by a 32kHz clock. Both LFXO and LFRCO can be used, but only LFXO guarantee USB specification compliance. Selection is done with a #define in <em>usbconfig.h</em>.<br />
+<p>When the USB peripheral is set in low power mode, it must be clocked by a 32kHz clock. Both LFXO and LFRCO can be used, but only LFXO guarantee USB specification compliance. Selection is done with a #define in <em><a class="el" href="usbconfig_8h.html" title="USB protocol stack library, application supplied configuration options. ">usbconfig.h</a></em>.<br />
  <br />
 </p><pre class="fragment">#define USB_USBC_32kHz_CLK   USB_USBC_32kHz_CLK_LFXO </pre><p> Two flags are available, <b>USB_USBC_32kHz_CLK_LFXO</b> and <b>USB_USBC_32kHz_CLK_LFRCO</b>. <b>USB_USBC_32kHz_CLK_LFXO</b> is selected by default.</p>
 <p>The USB HID keyboard and Mass Storage device example projects demonstrate different energy-saving modes.</p>
@@ -313,7 +313,7 @@ int main( void )
 
   for (;;) {}
 } </pre><p><br />
- Configure the device stack in <em>usbconfig.h</em>: <br />
+ Configure the device stack in <em><a class="el" href="usbconfig_8h.html" title="USB protocol stack library, application supplied configuration options. ">usbconfig.h</a></em>: <br />
  <br />
 </p><pre class="fragment">#define USB_DEVICE                        // Compile stack for device mode.
 
@@ -676,13 +676,13 @@ Utility functions</h2>
  </p>
 <h1><a class="anchor" id="usb_host_conf"></a>
 Configuring the host stack</h1>
-<p>Your application must provide a header file named <em>usbconfig.h</em>. This file must contain the following #define's:<br />
+<p>Your application must provide a header file named <em><a class="el" href="usbconfig_8h.html" title="USB protocol stack library, application supplied configuration options. ">usbconfig.h</a></em>. This file must contain the following #define's:<br />
  <br />
 </p><pre class="fragment">#define USB_HOST         // Compile the stack for host mode.
 #define NUM_HC_USED n    // Your application use 'n' host channels in addition
                          // to channels 0 and 1 which are assigned by the
                          // host stack for device endpoint 0 communication. </pre><p><br />
- <em>usbconfig.h</em> may define the following items: <br />
+ <em><a class="el" href="usbconfig_8h.html" title="USB protocol stack library, application supplied configuration options. ">usbconfig.h</a></em> may define the following items: <br />
  <br />
 </p><pre class="fragment">#define NUM_APP_TIMERS n // Your application needs 'n' timers
 
@@ -714,7 +714,7 @@ extern int RETARGET_WriteChar(char c);
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 16:03:35 for EZR32 Leopard Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:46:42 for EZR32 Leopard Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

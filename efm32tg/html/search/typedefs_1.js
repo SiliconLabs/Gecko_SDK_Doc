@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['cmu_5fclkdiv_5ftypedef',['CMU_ClkDiv_TypeDef',['../group__CMU.html#ga44da9c73a703ac0f9c9f101aa43414c3',1,'em_cmu.h']]],
-  ['core_5firqstate_5ft',['CORE_irqState_t',['../group__CORE.html#ga4b715be4b95b8b0ac6c7b188f517177b',1,'em_core.h']]]
+  ['bmp_5fconfig',['BMP_Config',['../group__BMP__Typedefs.html#gafcedf4165b37fbd115df76c78e61fc72',1,'bmp.h']]],
+  ['bmp_5fdatatype',['BMP_DataType',['../group__glib.html#ga973330207e4eff28624d94127dc17226',1,'bmp.h']]],
+  ['bmp_5fpalette',['BMP_Palette',['../group__glib.html#ga5b489af41facb202fc8485725a1cccf0',1,'bmp.h']]]
 ];

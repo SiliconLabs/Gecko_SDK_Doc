@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Wonder Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32wg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efm32wg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -103,13 +103,13 @@ $(document).ready(function(){initNavTree('structUSB__InterfaceDescriptor__TypeDe
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">USB_InterfaceDescriptor_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group__USB.html">USB</a> &raquo; <a class="el" href="group__USB__COMMON.html">USB_COMMON</a></div></div>  </div>
+<div class="title">USB_InterfaceDescriptor_TypeDef Struct Reference<div class="ingroups"><a class="el" href="group__middleware.html">Platform Middleware</a> &raquo; <a class="el" href="group__USB.html">USB</a> &raquo; <a class="el" href="group__USB__COMMON.html">USB_COMMON</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>USB Interface Descriptor. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00466">466</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00459">459</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="em__usb_8h_source.html">em_usb.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -146,7 +146,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Value used to select this alternate setting for the interface identified in the prior field. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00473">473</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00466">466</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__USB__DEVICE.html#ga0e5f5bd847e7cc1c4c384bb6b7f0ce77">USBD_Init()</a>, and <a class="el" href="group__USB__HOST.html#ga7a4aa696c25dfd0b99a2cda6e02d7a36">USBH_PrintInterfaceDescriptor()</a>.</p>
 
@@ -163,7 +163,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Constant INTERFACE Descriptor Type. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00469">469</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00462">462</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__USB__HOST.html#ga7a4aa696c25dfd0b99a2cda6e02d7a36">USBH_PrintInterfaceDescriptor()</a>.</p>
 
@@ -180,7 +180,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Class code (assigned by the USB-IF). A value of zero is reserved for future standardization. If this field is set to FFH, the interface class is vendor-specific. All other values are reserved for assignment by the USB-IF. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00478">478</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00471">471</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__USB__HOST.html#ga7a4aa696c25dfd0b99a2cda6e02d7a36">USBH_PrintInterfaceDescriptor()</a>.</p>
 
@@ -197,7 +197,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Number of this interface. Zero-based value identifying the index in the array of concurrent interfaces supported by this configuration. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00470">470</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00463">463</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__USB__DEVICE.html#ga0e5f5bd847e7cc1c4c384bb6b7f0ce77">USBD_Init()</a>, and <a class="el" href="group__USB__HOST.html#ga7a4aa696c25dfd0b99a2cda6e02d7a36">USBH_PrintInterfaceDescriptor()</a>.</p>
 
@@ -214,7 +214,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Protocol code (assigned by the USB). These codes are qualified by the value of the bInterfaceClass and the bInterfaceSubClass fields. If an interface supports class-specific requests, this code identifies the protocols that the device uses as defined by the specification of the device class. If this field is reset to zero, the device does not use a class-specific protocol on this interface. If this field is set to FFH, the device uses a vendor-specific protocol for this interface </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00489">489</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00482">482</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__USB__HOST.html#ga7a4aa696c25dfd0b99a2cda6e02d7a36">USBH_PrintInterfaceDescriptor()</a>.</p>
 
@@ -231,7 +231,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Subclass code (assigned by the USB-IF). These codes are qualified by the value of the bInterfaceClass field. If the bInterfaceClass field is reset to zero, this field must also be reset to zero. If the bInterfaceClass field is not set to FFH, all values are reserved forassignment by the USB-IF. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00483">483</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00476">476</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__USB__HOST.html#ga7a4aa696c25dfd0b99a2cda6e02d7a36">USBH_PrintInterfaceDescriptor()</a>.</p>
 
@@ -248,7 +248,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Size of this descriptor in bytes. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00468">468</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00461">461</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__USB__HOST.html#ga7a4aa696c25dfd0b99a2cda6e02d7a36">USBH_PrintInterfaceDescriptor()</a>.</p>
 
@@ -265,7 +265,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Number of endpoints used by this interface (excluding endpoint zero). If this value is zero, this interface only uses the Default Control Pipe. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00475">475</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00468">468</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__USB__HOST.html#ga7a4aa696c25dfd0b99a2cda6e02d7a36">USBH_PrintInterfaceDescriptor()</a>.</p>
 
@@ -282,14 +282,14 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 <p>Index of string descriptor describing this interface. </p>
 
-<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00499">499</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
+<p>Definition at line <a class="el" href="em__usb_8h_source.html#l00492">492</a> of file <a class="el" href="em__usb_8h_source.html">em_usb.h</a>.</p>
 
 <p>Referenced by <a class="el" href="group__USB__HOST.html#ga7a4aa696c25dfd0b99a2cda6e02d7a36">USBH_PrintInterfaceDescriptor()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>c:/work/super/platform/middleware/usb_gecko/inc/<a class="el" href="em__usb_8h_source.html">em_usb.h</a></li>
+<li>D:/jenkins-slave/workspaces/Executor-0/super/platform/middleware/usb_gecko/inc/<a class="el" href="em__usb_8h_source.html">em_usb.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -297,7 +297,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structUSB__InterfaceDescriptor__TypeDef.html">USB_InterfaceDescriptor_TypeDef</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 16:10:26 for EFM32 Wonder Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:38:56 for EFM32 Wonder Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Mighty Gecko 12 Software Documentation
-   &#160;<span id="projectnumber">efr32mg12-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efr32mg12-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -136,9 +136,6 @@ Modules</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:ga155caceb2656aa00800335a77e01d465"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EFR32MG12P433F1024GL125.html#ga155caceb2656aa00800335a77e01d465">CRYPTO_IRQn</a>&#160;&#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083aae0f67398f569dfcb791c7e7b94eaa7e">CRYPTO0_IRQn</a></td></tr>
 <tr class="separator:ga155caceb2656aa00800335a77e01d465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7979121950b76a6bd75bf5a8f6fbdcc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__EFR32MG12P433F1024GL125.html#ga7979121950b76a6bd75bf5a8f6fbdcc0">SET_BIT_FIELD</a>(REG,  MASK,  VALUE,  OFFSET)&#160;&#160;&#160;REG = ((REG) &amp;~(MASK)) | (((VALUE) &lt;&lt; (OFFSET)) &amp; (MASK));</td></tr>
-<tr class="memdesc:ga7979121950b76a6bd75bf5a8f6fbdcc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of a bit field within a register.  <a href="#ga7979121950b76a6bd75bf5a8f6fbdcc0">More...</a><br /></td></tr>
-<tr class="separator:ga7979121950b76a6bd75bf5a8f6fbdcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -168,21 +165,9 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083a062e5ea03f867d7642f4fbfc676ec986">EMU_IRQn</a> = 0, 
 <br />
-&#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083a2423d32cc02b40172208699f0c93d5cd">FRC_PRI_IRQn</a> = 1, 
-<br />
 &#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083a5f823f16180e5d3c195393ee10dc05b9">WDOG0_IRQn</a> = 2, 
 <br />
 &#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083ab8b8f2dc2098b4f2fa1c0c19c5a3910e">WDOG1_IRQn</a> = 3, 
-<br />
-&#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083a26ebd95ac2bff63600775fd101c59fd0">FRC_IRQn</a> = 4, 
-<br />
-&#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083ade4b94218400fbe7ca3211d7c9eddf21">MODEM_IRQn</a> = 5, 
-<br />
-&#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083aeea080507b258b09dd1d3c5ff1241e45">RAC_SEQ_IRQn</a> = 6, 
-<br />
-&#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083a3987b6977f4dfa30fb3650c4fd5901bf">RAC_RSM_IRQn</a> = 7, 
-<br />
-&#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083ad1a3a9b30e918ad1fe871bdddde9b055">BUFC_IRQn</a> = 8, 
 <br />
 &#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083a82a4d5fc77590d2698f6369463a5961c">LDMA_IRQn</a> = 9, 
 <br />
@@ -222,17 +207,9 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083a5fbd435892ec1f0b9031995a18ce02a2">LETIMER0_IRQn</a> = 27, 
 <br />
-&#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083a2190207d34965d5170f00c8c6ba71274">AGC_IRQn</a> = 28, 
-<br />
-&#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083ad284a74a1a7c2d682b438aad165df6a2">PROTIMER_IRQn</a> = 29, 
-<br />
 &#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083a3932a253ec10569aa83634ef09748bb4">RTCC_IRQn</a> = 30, 
 <br />
-&#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083ae10a5c7d24541aaf57b3dbd3b589e357">SYNTH_IRQn</a> = 31, 
-<br />
 &#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083af5f388d079596963ad1b60696ce60933">CRYOTIMER_IRQn</a> = 32, 
-<br />
-&#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083a51d1ce9ced75f30ca3cea3982b2df191">RFSENSE_IRQn</a> = 33, 
 <br />
 &#160;&#160;<a class="el" href="group__EFR32MG12P433F1024GL125.html#gga666eb0caeb12ec0e281415592ae89083afaeaa167e3d353d9a747c7685e1e5b61">FPUEH_IRQn</a> = 34, 
 <br />
@@ -281,58 +258,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Alias for CRYPTO0_IRQn </p>
 
-<p>Definition at line <a class="el" href="efr32mg12p433f1024gl125_8h_source.html#l00119">119</a> of file <a class="el" href="efr32mg12p433f1024gl125_8h_source.html">efr32mg12p433f1024gl125.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga7979121950b76a6bd75bf5a8f6fbdcc0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SET_BIT_FIELD</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">REG, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">MASK, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">VALUE, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">OFFSET&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;REG = ((REG) &amp;~(MASK)) | (((VALUE) &lt;&lt; (OFFSET)) &amp; (MASK));</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the value of a bit field within a register. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">REG</td><td>The register to update </td></tr>
-    <tr><td class="paramname">MASK</td><td>The mask for the bit field to update </td></tr>
-    <tr><td class="paramname">VALUE</td><td>The value to write to the bit field </td></tr>
-    <tr><td class="paramname">OFFSET</td><td>The number of bits that the field is offset within the register. 0 (zero) means LSB. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="efr32mg12p433f1024gl125_8h_source.html#l02073">2073</a> of file <a class="el" href="efr32mg12p433f1024gl125_8h_source.html">efr32mg12p433f1024gl125.h</a>.</p>
+<p>Definition at line <a class="el" href="efr32mg12p433f1024gl125_8h_source.html#l00109">109</a> of file <a class="el" href="efr32mg12p433f1024gl125_8h_source.html">efr32mg12p433f1024gl125.h</a>.</p>
 
 </div>
 </div>
@@ -392,29 +318,11 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083a062e5ea03f867d7642f4fbfc676ec986"></a>EMU_IRQn&#160;</td><td class="fielddoc">
 <p>0 EFR32 EMU Interrupt </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083a2423d32cc02b40172208699f0c93d5cd"></a>FRC_PRI_IRQn&#160;</td><td class="fielddoc">
-<p>1 EFR32 FRC_PRI Interrupt </p>
-</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083a5f823f16180e5d3c195393ee10dc05b9"></a>WDOG0_IRQn&#160;</td><td class="fielddoc">
 <p>2 EFR32 WDOG0 Interrupt </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083ab8b8f2dc2098b4f2fa1c0c19c5a3910e"></a>WDOG1_IRQn&#160;</td><td class="fielddoc">
 <p>3 EFR32 WDOG1 Interrupt </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083a26ebd95ac2bff63600775fd101c59fd0"></a>FRC_IRQn&#160;</td><td class="fielddoc">
-<p>4 EFR32 FRC Interrupt </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083ade4b94218400fbe7ca3211d7c9eddf21"></a>MODEM_IRQn&#160;</td><td class="fielddoc">
-<p>5 EFR32 MODEM Interrupt </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083aeea080507b258b09dd1d3c5ff1241e45"></a>RAC_SEQ_IRQn&#160;</td><td class="fielddoc">
-<p>6 EFR32 RAC_SEQ Interrupt </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083a3987b6977f4dfa30fb3650c4fd5901bf"></a>RAC_RSM_IRQn&#160;</td><td class="fielddoc">
-<p>7 EFR32 RAC_RSM Interrupt </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083ad1a3a9b30e918ad1fe871bdddde9b055"></a>BUFC_IRQn&#160;</td><td class="fielddoc">
-<p>8 EFR32 BUFC Interrupt </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083a82a4d5fc77590d2698f6369463a5961c"></a>LDMA_IRQn&#160;</td><td class="fielddoc">
 <p>9 EFR32 LDMA Interrupt </p>
@@ -473,23 +381,11 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083a5fbd435892ec1f0b9031995a18ce02a2"></a>LETIMER0_IRQn&#160;</td><td class="fielddoc">
 <p>27 EFR32 LETIMER0 Interrupt </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083a2190207d34965d5170f00c8c6ba71274"></a>AGC_IRQn&#160;</td><td class="fielddoc">
-<p>28 EFR32 AGC Interrupt </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083ad284a74a1a7c2d682b438aad165df6a2"></a>PROTIMER_IRQn&#160;</td><td class="fielddoc">
-<p>29 EFR32 PROTIMER Interrupt </p>
-</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083a3932a253ec10569aa83634ef09748bb4"></a>RTCC_IRQn&#160;</td><td class="fielddoc">
 <p>30 EFR32 RTCC Interrupt </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083ae10a5c7d24541aaf57b3dbd3b589e357"></a>SYNTH_IRQn&#160;</td><td class="fielddoc">
-<p>31 EFR32 SYNTH Interrupt </p>
-</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083af5f388d079596963ad1b60696ce60933"></a>CRYOTIMER_IRQn&#160;</td><td class="fielddoc">
 <p>32 EFR32 CRYOTIMER Interrupt </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083a51d1ce9ced75f30ca3cea3982b2df191"></a>RFSENSE_IRQn&#160;</td><td class="fielddoc">
-<p>33 EFR32 RFSENSE Interrupt </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga666eb0caeb12ec0e281415592ae89083afaeaa167e3d353d9a747c7685e1e5b61"></a>FPUEH_IRQn&#160;</td><td class="fielddoc">
 <p>34 EFR32 FPUEH Interrupt </p>
@@ -550,7 +446,7 @@ Enumerations</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 16:07:56 for EFR32 Mighty Gecko 12 Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:37:21 for EFR32 Mighty Gecko 12 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

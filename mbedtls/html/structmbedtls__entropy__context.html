@@ -46,16 +46,17 @@
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Entropy context structure. </p>
 
-<p>Definition at line <a class="el" href="entropy_8h_source.html#l00122">122</a> of file <a class="el" href="entropy_8h_source.html">entropy.h</a>.</p>
+<p>Definition at line <a class="el" href="entropy__alt_8h_source.html#l00126">126</a> of file <a class="el" href="entropy__alt_8h_source.html">entropy_alt.h</a>.</p>
 </div>
-<p><code>#include &lt;<a class="el" href="entropy_8h_source.html">entropy.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="entropy__alt_8h_source.html">entropy_alt.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for mbedtls_entropy_context:</div>
 <div class="dyncontent">
 <div class="center"><img src="structmbedtls__entropy__context__coll__graph.png" border="0" usemap="#mbedtls__entropy__context_coll__map" alt="Collaboration graph"/></div>
 <map name="mbedtls__entropy__context_coll__map" id="mbedtls__entropy__context_coll__map">
-<area shape="rect" id="node2" href="structmbedtls__entropy__source__state.html" title="Entropy source state. " alt="" coords="5,6,168,47"/>
-<area shape="rect" id="node4" href="structmbedtls__sha256__context.html" title="SHA&#45;256 context structure. " alt="" coords="193,13,359,40"/>
+<area shape="rect" id="node2" href="structmbedtls__trng__context.html" title="TRNG context structure. " alt="" coords="5,13,152,40"/>
+<area shape="rect" id="node4" href="structmbedtls__entropy__source__state.html" title="Entropy source state. " alt="" coords="177,6,340,47"/>
+<area shape="rect" id="node6" href="structmbedtls__sha256__context.html" title="SHA&#45;256 context structure. " alt="" coords="365,13,531,40"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -65,8 +66,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:a5f6366b5c48672dedbb3d32857372675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae21caec42d2e42c87762fcbb4079cb1b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__entropy__context.html#ae21caec42d2e42c87762fcbb4079cb1b">source_count</a></td></tr>
 <tr class="separator:ae21caec42d2e42c87762fcbb4079cb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a95d0e03ef1bc1f198e23e201c064be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmbedtls__entropy__source__state.html">mbedtls_entropy_source_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__entropy__context.html#a8a95d0e03ef1bc1f198e23e201c064be">source</a> [<a class="el" href="entropy_8h.html#a819aa4f3046aa257738f0dafe481ca1f">MBEDTLS_ENTROPY_MAX_SOURCES</a>]</td></tr>
+<tr class="memitem:a8a95d0e03ef1bc1f198e23e201c064be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmbedtls__entropy__source__state.html">mbedtls_entropy_source_state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__entropy__context.html#a8a95d0e03ef1bc1f198e23e201c064be">source</a> [<a class="el" href="entropy__alt_8h.html#a819aa4f3046aa257738f0dafe481ca1f">MBEDTLS_ENTROPY_MAX_SOURCES</a>]</td></tr>
 <tr class="separator:a8a95d0e03ef1bc1f198e23e201c064be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a817c29f65f694c316ad31d6531607274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmbedtls__trng__context.html">mbedtls_trng_context</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmbedtls__entropy__context.html#a817c29f65f694c316ad31d6531607274">trng_ctx</a></td></tr>
+<tr class="separator:a817c29f65f694c316ad31d6531607274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a5f6366b5c48672dedbb3d32857372675"></a>
@@ -79,7 +82,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="entropy_8h_source.html#l00127">127</a> of file <a class="el" href="entropy_8h_source.html">entropy.h</a>.</p>
+<p>Definition at line <a class="el" href="entropy__alt_8h_source.html#l00131">131</a> of file <a class="el" href="entropy__alt_8h_source.html">entropy_alt.h</a>.</p>
 
 </div>
 </div>
@@ -88,12 +91,12 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmbedtls__entropy__source__state.html">mbedtls_entropy_source_state</a> mbedtls_entropy_context::source[<a class="el" href="entropy_8h.html#a819aa4f3046aa257738f0dafe481ca1f">MBEDTLS_ENTROPY_MAX_SOURCES</a>]</td>
+          <td class="memname"><a class="el" href="structmbedtls__entropy__source__state.html">mbedtls_entropy_source_state</a> mbedtls_entropy_context::source[<a class="el" href="entropy__alt_8h.html#a819aa4f3046aa257738f0dafe481ca1f">MBEDTLS_ENTROPY_MAX_SOURCES</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="entropy_8h_source.html#l00130">130</a> of file <a class="el" href="entropy_8h_source.html">entropy.h</a>.</p>
+<p>Definition at line <a class="el" href="entropy__alt_8h_source.html#l00134">134</a> of file <a class="el" href="entropy__alt_8h_source.html">entropy_alt.h</a>.</p>
 
 </div>
 </div>
@@ -107,17 +110,32 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="entropy_8h_source.html#l00129">129</a> of file <a class="el" href="entropy_8h_source.html">entropy.h</a>.</p>
+<p>Definition at line <a class="el" href="entropy__alt_8h_source.html#l00133">133</a> of file <a class="el" href="entropy__alt_8h_source.html">entropy_alt.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a817c29f65f694c316ad31d6531607274"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmbedtls__trng__context.html">mbedtls_trng_context</a> mbedtls_entropy_context::trng_ctx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TRNG context </p>
+
+<p>Definition at line <a class="el" href="entropy__alt_8h_source.html#l00142">142</a> of file <a class="el" href="entropy__alt_8h_source.html">entropy_alt.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="entropy_8h_source.html">entropy.h</a></li>
+<li><a class="el" href="entropy__alt_8h_source.html">entropy_alt.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2016 16:12:43 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 9 2017 20:48:05 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

@@ -2,7 +2,8 @@ var searchData=
 [
   ['halfbias',['halfBias',['../structACMP__CapsenseInit__TypeDef.html#ab53a763b956f38c0352ea36dbdc82f20',1,'ACMP_CapsenseInit_TypeDef::halfBias()'],['../structACMP__Init__TypeDef.html#a5380169ff4dbe9feded059a79a4ed8a5',1,'ACMP_Init_TypeDef::halfBias()'],['../structVCMP__Init__TypeDef.html#afd471ecfc787b495a5881de6d2b76d85',1,'VCMP_Init_TypeDef::halfBias()']]],
   ['head',['head',['../structUARTDRV__Buffer__FifoQueue__t.html#a098bc39f083739e5a6e32093a094593c',1,'UARTDRV_Buffer_FifoQueue_t']]],
-  ['height',['height',['../structDISPLAY__Geometry__t.html#a03ff0be9b964a10dcdf7dc02b73814b8',1,'DISPLAY_Geometry_t']]],
+  ['headersize',['headerSize',['../struct____BMP__Header.html#aa9e0687cf6115e1d3ca5f9459d8efe60',1,'__BMP_Header']]],
+  ['height',['height',['../struct____BMP__Header.html#acec41e9bac2e069de7cc444ec30202a5',1,'__BMP_Header::height()'],['../structDISPLAY__Geometry__t.html#a03ff0be9b964a10dcdf7dc02b73814b8',1,'DISPLAY_Geometry_t::height()']]],
   ['hfcoreclkdiv',['HFCORECLKDIV',['../structCMU__TypeDef.html#a397e1260d5cab9af09fbbb63361a3d19',1,'CMU_TypeDef']]],
   ['hfcoreclken0',['HFCORECLKEN0',['../structCMU__TypeDef.html#aba0fd60c6a1fb4fdc14ae53e8ba5d75e',1,'CMU_TypeDef']]],
   ['hfperclkdiv',['HFPERCLKDIV',['../structCMU__TypeDef.html#a60de86c022d033dec0aa731fcf48a94d',1,'CMU_TypeDef']]],
@@ -13,6 +14,7 @@ var searchData=
   ['hiddescriptor',['hidDescriptor',['../structHIDKBD__Init__t.html#a1abc15bb9c1f43a76634bb23488e87dd',1,'HIDKBD_Init_t']]],
   ['highpri',['highPri',['../structDMA__CfgChannel__TypeDef.html#a2ab5794514b10a171b2cdc5588a4c1c3',1,'DMA_CfgChannel_TypeDef']]],
   ['hisup',['HiSup',['../structMSDSCSI__InquiryData__TypeDef.html#a877dca1a45dd4447f46e88fcf1586ba7',1,'MSDSCSI_InquiryData_TypeDef']]],
+  ['hpixelspermeter',['hPixelsPerMeter',['../struct____BMP__Header.html#a0773aee07ed35391202851f637701ce3',1,'__BMP_Header']]],
   ['hprot',['hprot',['../structDMA__CfgDescr__TypeDef.html#a24cd2bca792ea31c9744ede714cd2298',1,'DMA_CfgDescr_TypeDef::hprot()'],['../structDMA__CfgDescrSGAlt__TypeDef.html#a1e4b02d52d2c25d644523398f92c71c9',1,'DMA_CfgDescrSGAlt_TypeDef::hprot()'],['../structDMA__Init__TypeDef.html#a5f223fedb2ef5d2a8e7b219631520c4d',1,'DMA_Init_TypeDef::hprot()']]],
   ['hw_5fversion',['HW_VERSION',['../structBC__TypeDef.html#a54f8cf0a391f950ca84f3c1e1c1bde21',1,'BC_TypeDef']]],
   ['hyst',['hyst',['../structPCNT__Init__TypeDef.html#a0b5c589f5083a032275acb525753c114',1,'PCNT_Init_TypeDef::hyst()'],['../structVCMP__Init__TypeDef.html#a44179cd7668600fb20235db8a3a4849b',1,'VCMP_Init_TypeDef::hyst()']]],

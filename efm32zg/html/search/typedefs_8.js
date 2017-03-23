@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pdisplaydevicedriverinitfunction_5ft',['pDisplayDeviceDriverInitFunction_t',['../group__Display.html#ga084120c6ff6117a10cdbcc7973fd634c',1,'display.h']]]
+  ['ksz8851sln_5fmib_5ft',['KSZ8851SLN_mib_t',['../group__ksz8851snl.html#ga12ffde4611132f0e103166084b7b2fd3',1,'ksz8851snl.h']]]
 ];

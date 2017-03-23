@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['tempdrv',['TEMPDRV',['../group__TEMPDRV.html',1,'']]],
-  ['tempsensor',['TempSensor',['../group__TempSensor.html',1,'']]],
-  ['textdisplay',['Textdisplay',['../group__Textdisplay.html',1,'']]],
-  ['tft',['Tft',['../group__Tft.html',1,'']]],
-  ['timer',['TIMER',['../group__TIMER.html',1,'']]],
-  ['touch',['Touch',['../group__Touch.html',1,'']]],
-  ['transmit_5fplugin',['Transmit_Plugin',['../group__Transmit__Plugin.html',1,'']]]
+  ['ramfunc',['RAMFUNC',['../group__RAMFUNC.html',1,'']]],
+  ['receive_5fplugin',['Receive_Plugin',['../group__Receive__Plugin.html',1,'']]],
+  ['retargetio',['RetargetIo',['../group__RetargetIo.html',1,'']]],
+  ['rfs',['RFS',['../group__RFS.html',1,'']]],
+  ['rmu',['RMU',['../group__RMU.html',1,'']]],
+  ['rtcc',['RTCC',['../group__RTCC.html',1,'']]],
+  ['rtcdrv',['RTCDRV',['../group__RTCDRV.html',1,'']]]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EZR32 Happy Gecko Software Documentation: c:/work/super/platform/emlib/inc/em_timer.h File Reference</title>
+<title>EZR32 Happy Gecko Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/platform/emlib/inc/em_timer.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EZR32 Happy Gecko Software Documentation
-   &#160;<span id="projectnumber">ezr32hg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">ezr32hg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('em__timer_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Timer/counter (TIMER) peripheral API. </p>
-<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.1.2</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -342,6 +342,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga803a1151a9b40252e20c39e71971053c"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#ga803a1151a9b40252e20c39e71971053c">TIMER_Lock</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer)</td></tr>
 <tr class="memdesc:ga803a1151a9b40252e20c39e71971053c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock some of the TIMER registers in order to protect them from being modified.  <a href="group__TIMER.html#ga803a1151a9b40252e20c39e71971053c">More...</a><br /></td></tr>
 <tr class="separator:ga803a1151a9b40252e20c39e71971053c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb8522fff7c668bb00fb6db6947454e8"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#gabb8522fff7c668bb00fb6db6947454e8">TIMER_MaxCount</a> (const <a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *ref)</td></tr>
+<tr class="memdesc:gabb8522fff7c668bb00fb6db6947454e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Max count of the timer.  <a href="group__TIMER.html#gabb8522fff7c668bb00fb6db6947454e8">More...</a><br /></td></tr>
+<tr class="separator:gabb8522fff7c668bb00fb6db6947454e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gade950f7c7c81fe3ae1612f40f5e0327d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#gade950f7c7c81fe3ae1612f40f5e0327d">TIMER_Reset</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer)</td></tr>
 <tr class="memdesc:gade950f7c7c81fe3ae1612f40f5e0327d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset TIMER to same state as after a HW reset.  <a href="group__TIMER.html#gade950f7c7c81fe3ae1612f40f5e0327d">More...</a><br /></td></tr>
 <tr class="separator:gade950f7c7c81fe3ae1612f40f5e0327d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -357,14 +360,17 @@ Functions</h2></td></tr>
 <tr class="memitem:gae2b8639e42754b13b70c2202b854c86b"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#gae2b8639e42754b13b70c2202b854c86b">TIMER_Unlock</a> (<a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *timer)</td></tr>
 <tr class="memdesc:gae2b8639e42754b13b70c2202b854c86b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the TIMER so that writing to locked registers again is possible.  <a href="group__TIMER.html#gae2b8639e42754b13b70c2202b854c86b">More...</a><br /></td></tr>
 <tr class="separator:gae2b8639e42754b13b70c2202b854c86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04442bc44f2b694b17ad60274e6668e7"><td class="memItemLeft" align="right" valign="top">__STATIC_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__TIMER.html#ga04442bc44f2b694b17ad60274e6668e7">TIMER_Valid</a> (const <a class="el" href="structTIMER__TypeDef.html">TIMER_TypeDef</a> *ref)</td></tr>
+<tr class="memdesc:ga04442bc44f2b694b17ad60274e6668e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the TIMER register block pointer.  <a href="group__TIMER.html#ga04442bc44f2b694b17ad60274e6668e7">More...</a><br /></td></tr>
+<tr class="separator:ga04442bc44f2b694b17ad60274e6668e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__timer_8h.html">em_timer.h</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 15:56:58 for EZR32 Happy Gecko Software Documentation by
+    <li class="navelem"><a class="el" href="dir_57c5670a54251515d5dc3137dddf203b.html">platform</a></li><li class="navelem"><a class="el" href="dir_74d47fbdcea7cda18072cc4be639af5a.html">emlib</a></li><li class="navelem"><a class="el" href="dir_bf479292f56c204ab5b202f2f7ed0583.html">inc</a></li><li class="navelem"><a class="el" href="em__timer_8h.html">em_timer.h</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:45:28 for EZR32 Happy Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

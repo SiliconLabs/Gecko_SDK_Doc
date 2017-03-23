@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Blue Gecko 1 Software Documentation
-   &#160;<span id="projectnumber">efr32bg1-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efr32bg1-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('group__emdrv.html','');});
 <p>energyAware drivers </p>
 <p>EMDRV is a set of function specific high performance drivers for EFM32, EZR32 and EFR32 on-chip peripherals. Drivers are typically DMA based and are using all available low-energy features. For most drivers, the API offers both synchronous and asynchronous functions. The APIs are fully reentrant and callback based.</p>
 <p>Most drivers are compile-time configurable to allow the highest possible code size optimization for the application. Compile-time configuration is defined in *_config.h files. Templates for the configuration files can be found in emdrv\config.</p>
-<dl class="section note"><dt>Note</dt><dd>EMDRV APIs use Ecode_t to return status. <br />
+<dl class="section note"><dt>Note</dt><dd>EMDRV APIs use <a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a> to return status. <br />
  <br />
  With the exception of ezradiodrv, EMDRV does not implement RF support. Please refer to stack documentation for more information. </dd></dl>
 <table class="memberdecls">
@@ -215,7 +215,7 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga7bf5621660c5ba69ac4dd3044173d35c"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__emdrv.html#ga7bf5621660c5ba69ac4dd3044173d35c">Ecode_t</a></td></tr>
-<tr class="memdesc:ga7bf5621660c5ba69ac4dd3044173d35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for API function errorcode return values.  <a href="#ga7bf5621660c5ba69ac4dd3044173d35c">More...</a><br /></td></tr>
+<tr class="memdesc:ga7bf5621660c5ba69ac4dd3044173d35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef for API function error code return values.  <a href="#ga7bf5621660c5ba69ac4dd3044173d35c">More...</a><br /></td></tr>
 <tr class="separator:ga7bf5621660c5ba69ac4dd3044173d35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -229,10 +229,10 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Typedef for API function errorcode return values. </p>
-<p>Bit 24-31: sub-system, for example emLib, eaDrivers,... <br />
- Bit 16-23: module, for example UART, LCD,... <br />
- Bit 0-15: error code, specific error code </p>
+<p>Typedef for API function error code return values. </p>
+<p>Bit 24-31: Component, for example EMDRV <br />
+ Bit 16-23: Module, for example <a class="el" href="group__UARTDRV.html">UARTDRV</a> or <a class="el" href="group__RTCDRV.html">RTCDRV</a> <br />
+ Bit 0-15: Error code </p>
 
 <p>Definition at line <a class="el" href="ecode_8h_source.html#l00051">51</a> of file <a class="el" href="ecode_8h_source.html">ecode.h</a>.</p>
 
@@ -243,7 +243,7 @@ Typedefs</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 15:52:30 for EFR32 Blue Gecko 1 Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:43:48 for EFR32 Blue Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

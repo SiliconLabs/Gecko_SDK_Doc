@@ -1,16 +1,15 @@
 var searchData=
 [
-  ['tempdrv_5flimittype',['TEMPDRV_LimitType',['../group__TEMPDRV.html#ga0e0c05e85e286ed17a27d0db06e8a6ed',1,'tempdrv.h']]],
-  ['tempsens_5fregister_5ftypedef',['TEMPSENS_Register_TypeDef',['../group__TempSensor.html#gaf7cf71b30a49a97a51a7c60a2b9ff225',1,'tempsens.h']]],
-  ['timer_5fccmode_5ftypedef',['TIMER_CCMode_TypeDef',['../group__TIMER.html#gacaeb01f1c6c64b144b9a5913893bd718',1,'em_timer.h']]],
-  ['timer_5fclksel_5ftypedef',['TIMER_ClkSel_TypeDef',['../group__TIMER.html#ga511d9c88c172605ee06715c274ad9cfa',1,'em_timer.h']]],
-  ['timer_5fdtifaultaction_5ftypedef',['TIMER_DtiFaultAction_TypeDef',['../group__TIMER.html#gae8ecc03dd4449015adc2fcb5469c691f',1,'em_timer.h']]],
-  ['timer_5fedge_5ftypedef',['TIMER_Edge_TypeDef',['../group__TIMER.html#gaa024137506ad0a0cd518c4572f8ba545',1,'em_timer.h']]],
-  ['timer_5fevent_5ftypedef',['TIMER_Event_TypeDef',['../group__TIMER.html#ga141160bf6b286d2a001079a562c64761',1,'em_timer.h']]],
-  ['timer_5finputaction_5ftypedef',['TIMER_InputAction_TypeDef',['../group__TIMER.html#gad737fcc050f53fc713f07f22f9bd5143',1,'em_timer.h']]],
-  ['timer_5fmode_5ftypedef',['TIMER_Mode_TypeDef',['../group__TIMER.html#ga7198f02825e0938408a7287a75171265',1,'em_timer.h']]],
-  ['timer_5foutputaction_5ftypedef',['TIMER_OutputAction_TypeDef',['../group__TIMER.html#ga3899377f736a636532b16922f7c65728',1,'em_timer.h']]],
-  ['timer_5fprescale_5ftypedef',['TIMER_Prescale_TypeDef',['../group__TIMER.html#gadc7dec57fe232c5fbabbb7cd25ebffe0',1,'em_timer.h']]],
-  ['timer_5fprssel_5ftypedef',['TIMER_PRSSEL_TypeDef',['../group__TIMER.html#gaaa9a5454731dae18603a8076f9a9010a',1,'em_timer.h']]],
-  ['touch_5fstate_5ftypedef',['TOUCH_State_TypeDef',['../touch_8c.html#a497f72fae656c2a34ecbb383925825f1',1,'touch.c']]]
+  ['rmu_5freset_5ftypedef',['RMU_Reset_TypeDef',['../group__RMU.html#ga8ac0ad7bdf565905989745354d31cb07',1,'em_rmu.h']]],
+  ['rmu_5fresetmode_5ftypedef',['RMU_ResetMode_TypeDef',['../group__RMU.html#gaa68fbe3a3279aff1f10fb2fb9f2b98fe',1,'em_rmu.h']]],
+  ['rtcc_5fcapcomchmode_5ftypedef',['RTCC_CapComChMode_TypeDef',['../group__RTCC.html#gae97fe5bba7812a48b934bd7fdab814fb',1,'em_rtcc.h']]],
+  ['rtcc_5fcntmode_5ftypedef',['RTCC_CntMode_TypeDef',['../group__RTCC.html#ga99b059f50a485234a456503ca956ea1e',1,'em_rtcc.h']]],
+  ['rtcc_5fcntpresc_5ftypedef',['RTCC_CntPresc_TypeDef',['../group__RTCC.html#gad0335cb53922f7fedc244336f5f299b1',1,'em_rtcc.h']]],
+  ['rtcc_5fcompbase_5ftypedef',['RTCC_CompBase_TypeDef',['../group__RTCC.html#gaffe824f0dbb1678e31697c966a6c15bf',1,'em_rtcc.h']]],
+  ['rtcc_5fcompmatchoutaction_5ftypedef',['RTCC_CompMatchOutAction_TypeDef',['../group__RTCC.html#ga5262fdbf7e20eef8456121bb4c0128c8',1,'em_rtcc.h']]],
+  ['rtcc_5fdaycomparemode_5ftypedef',['RTCC_DayCompareMode_TypeDef',['../group__RTCC.html#gaca22e74b99f507c580c2069a97b0bfe4',1,'em_rtcc.h']]],
+  ['rtcc_5finedgesel_5ftypedef',['RTCC_InEdgeSel_TypeDef',['../group__RTCC.html#ga25aa199b54a7dbaa388ce94cd1c250cb',1,'em_rtcc.h']]],
+  ['rtcc_5fprescmode_5ftypedef',['RTCC_PrescMode_TypeDef',['../group__RTCC.html#ga27eaf41fd1b547e396790d6bab732054',1,'em_rtcc.h']]],
+  ['rtcc_5fprssel_5ftypedef',['RTCC_PRSSel_TypeDef',['../group__RTCC.html#gaca3af9bdf0979b882fa0ea6d5847ff36',1,'em_rtcc.h']]],
+  ['rtcdrv_5ftimertype_5ft',['RTCDRV_TimerType_t',['../group__RTCDRV.html#ga08a8750e466e18aee02bbb692446dac9',1,'rtcdriver.h']]]
 ];

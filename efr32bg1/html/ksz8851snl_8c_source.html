@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Blue Gecko 1 Software Documentation: c:/work/super/hardware/kit/common/drivers/ksz8851snl.c Source File</title>
+<title>EFR32 Blue Gecko 1 Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/hardware/kit/common/drivers/ksz8851snl.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Blue Gecko 1 Software Documentation
-   &#160;<span id="projectnumber">efr32bg1-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efr32bg1-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -731,201 +731,201 @@ $(document).ready(function(){initNavTree('ksz8851snl_8c_source.html','');});
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;</div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__ksz8851snl.html#ga31c3be356bee9c4f14f9e5255c87c21c">KSZ8851SNL_TransmitBegin</a>(uint16_t length)</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;{</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;  uint16_t txmir;</div>
-<div class="line"><a name="l00740"></a><span class="lineno"><a class="line" href="group__ksz8851snl.html#ga31c3be356bee9c4f14f9e5255c87c21c">  740</a></span>&#160;  uint16_t data, reqSize;</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;  uint8_t  outbuf[4];</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  <span class="comment">/* Wait for previous frame to finish before setting up a new one */</span></div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#a272d3d63d93ee08337f48780bf95f9db">TXQCR</a>) &amp; <a class="code" href="ksz8851snl_8c.html#a56ad1b68495eb52699727a5e1fd29da5">TXQ_ENQUEUE</a>)</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;  {</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    ;</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;  }</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;  <span class="comment">/* Make sure there is room for</span></div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;<span class="comment">   *</span></div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;<span class="comment">   * 4 bytes Control Word</span></div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;<span class="comment">   * 4 bytes Byte Count</span></div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;<span class="comment">   * n bytes Packet</span></div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;<span class="comment">   * 4 bytes CRC</span></div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;  reqSize = length + 12;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;  txmir = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#afce935acdb1eb7756aeb45bddb6ffbcd">TXMIR</a>) &amp; <a class="code" href="ksz8851snl_8c.html#ad53a856610ae8f92071467aa1d9f0215">TX_MEM_AVAIL_MASK</a>;</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;  LWIP_DEBUGF(NETIF_DEBUG, (<span class="stringliteral">&quot;KSZ8851SNL_LongTransmitInit: txmir =%hu  reqSize = %hu \n&quot;</span>, txmir, reqSize));</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;  <span class="keywordflow">if</span> (txmir &lt; reqSize)</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;  {</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;    <span class="comment">/* TXQ is out of memory */</span></div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    LWIP_DEBUGF(NETIF_DEBUG | LWIP_DBG_LEVEL_WARNING, (<span class="stringliteral">&quot;Not enough TXQ Memory, available=%u required=%u\n&quot;</span>, txmir, reqSize));</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;  }</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;  LWIP_DEBUGF(NETIF_DEBUG, (<span class="stringliteral">&quot;KSZ8851SNL_LongTransmitInit: Memory available &gt;  txmir =%hu  reqSize = %hu \n&quot;</span>, txmir, reqSize));</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;  <span class="comment">/* Enable TXQ write access */</span></div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;  data = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>) | <a class="code" href="ksz8851snl_8c.html#a22c8cae8de31b0afd6b5eb78080c4d4f">RXQ_START_DMA</a>;</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>, data);</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;  <span class="comment">/* Write frame ID, control word and byte count */</span></div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;  outbuf[0] = (frameId++ &amp; <a class="code" href="ksz8851snl_8c.html#a8908b96fed6ae4dd395a7a1b4126606d">FRAME_ID_MASK</a>);</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;  outbuf[1] = 0x80; <span class="comment">/*  TX_INT_on_COMPLETION */</span></div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;  outbuf[2] = length &amp; <a class="code" href="ksz8851snl_8c.html#a338d54179ac0da2af2363e3a930bf374">LSB_MASK</a>;</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;  outbuf[3] = length &gt;&gt; <a class="code" href="ksz8851snl_8c.html#aebafa824e034291924298c85bc366e0e">MSB_POS</a>;</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;  <span class="comment">/* Start the SPI Transfer and send frame header */</span></div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga06d01a766dd38a09f6cb657bf778b385">KSZ8851SNL_SPI_WriteFifoBegin</a>();</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">KSZ8851SNL_SPI_WriteFifo</a>(4, outbuf);</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="group__ksz8851snl.html#ga31c3be356bee9c4f14f9e5255c87c21c">KSZ8851SNL_TransmitBegin</a>(uint16_t length)</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;{</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;  uint16_t txmir;</div>
+<div class="line"><a name="l00744"></a><span class="lineno"><a class="line" href="group__ksz8851snl.html#ga31c3be356bee9c4f14f9e5255c87c21c">  744</a></span>&#160;  uint16_t data, reqSize;</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;  uint8_t  outbuf[4];</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;  <span class="comment">/* Wait for previous frame to finish before setting up a new one */</span></div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#a272d3d63d93ee08337f48780bf95f9db">TXQCR</a>) &amp; <a class="code" href="ksz8851snl_8c.html#a56ad1b68495eb52699727a5e1fd29da5">TXQ_ENQUEUE</a>)</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;  {</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    ;</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;  }</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;  <span class="comment">/* Make sure there is room for</span></div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;<span class="comment">   * 4 bytes Control Word</span></div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;<span class="comment">   * 4 bytes Byte Count</span></div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;<span class="comment">   * n bytes Packet</span></div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;<span class="comment">   * 4 bytes CRC</span></div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;  reqSize = length + 12;</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;  txmir = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#afce935acdb1eb7756aeb45bddb6ffbcd">TXMIR</a>) &amp; <a class="code" href="ksz8851snl_8c.html#ad53a856610ae8f92071467aa1d9f0215">TX_MEM_AVAIL_MASK</a>;</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;  LWIP_DEBUGF(NETIF_DEBUG, (<span class="stringliteral">&quot;KSZ8851SNL_LongTransmitInit: txmir =%hu  reqSize = %hu \n&quot;</span>, txmir, reqSize));</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;  <span class="keywordflow">if</span> (txmir &lt; reqSize)</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;  {</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    <span class="comment">/* TXQ is out of memory */</span></div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    LWIP_DEBUGF(NETIF_DEBUG | LWIP_DBG_LEVEL_WARNING, (<span class="stringliteral">&quot;Not enough TXQ Memory, available=%u required=%u\n&quot;</span>, txmir, reqSize));</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;  }</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;  LWIP_DEBUGF(NETIF_DEBUG, (<span class="stringliteral">&quot;KSZ8851SNL_LongTransmitInit: Memory available &gt;  txmir =%hu  reqSize = %hu \n&quot;</span>, txmir, reqSize));</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;  <span class="comment">/* Enable TXQ write access */</span></div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;  data = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>) | <a class="code" href="ksz8851snl_8c.html#a22c8cae8de31b0afd6b5eb78080c4d4f">RXQ_START_DMA</a>;</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>, data);</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;  <span class="comment">/* Write frame ID, control word and byte count */</span></div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;  outbuf[0] = (frameId++ &amp; <a class="code" href="ksz8851snl_8c.html#a8908b96fed6ae4dd395a7a1b4126606d">FRAME_ID_MASK</a>);</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;  outbuf[1] = 0x80; <span class="comment">/*  TX_INT_on_COMPLETION */</span></div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;  outbuf[2] = length &amp; <a class="code" href="ksz8851snl_8c.html#a338d54179ac0da2af2363e3a930bf374">LSB_MASK</a>;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;  outbuf[3] = length &gt;&gt; <a class="code" href="ksz8851snl_8c.html#aebafa824e034291924298c85bc366e0e">MSB_POS</a>;</div>
 <div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;}</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;  <span class="comment">/* Start the SPI Transfer and send frame header */</span></div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga06d01a766dd38a09f6cb657bf778b385">KSZ8851SNL_SPI_WriteFifoBegin</a>();</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">KSZ8851SNL_SPI_WriteFifo</a>(4, outbuf);</div>
 <div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__ksz8851snl.html#ga62488dd5f992f4a6965e0fb0a0cf1134">KSZ8851SNL_Transmit</a>(uint16_t length, <span class="keyword">const</span> uint8_t *buffer)</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;{</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;  EFM_ASSERT(buffer != NULL);</div>
-<div class="line"><a name="l00804"></a><span class="lineno"><a class="line" href="group__ksz8851snl.html#ga62488dd5f992f4a6965e0fb0a0cf1134">  804</a></span>&#160;  <a class="code" href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">KSZ8851SNL_SPI_WriteFifo</a>(length, buffer);</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;}</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__ksz8851snl.html#ga4e4ea2904a2346dbe35d1ecffb3aa8ca">KSZ8851SNL_TransmitEnd</a>(uint16_t length)</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;{</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;  uint16_t data;</div>
-<div class="line"><a name="l00822"></a><span class="lineno"><a class="line" href="group__ksz8851snl.html#ga4e4ea2904a2346dbe35d1ecffb3aa8ca">  822</a></span>&#160;  uint16_t padding;</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;  uint8_t dummy[4] = {0x00};</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;  <span class="comment">/* Padding packet to 4 byte boundary */</span></div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;  <span class="keywordflow">if</span> (length % 4)</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;  {</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    padding = 4 - (length % 4);</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    <a class="code" href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">KSZ8851SNL_SPI_WriteFifo</a>(padding, dummy);</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;  }</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;  <span class="comment">/* Stop the SPI Transfer */</span></div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga3102136a87269f6531366fca103c06f7">KSZ8851SNL_SPI_WriteFifoEnd</a>();</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;  <span class="comment">/* Disable TXQ write access */</span></div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;  data = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>) &amp; (~<a class="code" href="ksz8851snl_8c.html#a22c8cae8de31b0afd6b5eb78080c4d4f">RXQ_START_DMA</a>);</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>, data);</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;}</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__ksz8851snl.html#ga62488dd5f992f4a6965e0fb0a0cf1134">KSZ8851SNL_Transmit</a>(uint16_t length, <span class="keyword">const</span> uint8_t *buffer)</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;{</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;  EFM_ASSERT(buffer != NULL);</div>
+<div class="line"><a name="l00808"></a><span class="lineno"><a class="line" href="group__ksz8851snl.html#ga62488dd5f992f4a6965e0fb0a0cf1134">  808</a></span>&#160;  <a class="code" href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">KSZ8851SNL_SPI_WriteFifo</a>(length, buffer);</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;}</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__ksz8851snl.html#ga4e4ea2904a2346dbe35d1ecffb3aa8ca">KSZ8851SNL_TransmitEnd</a>(uint16_t length)</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;{</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;  uint16_t data;</div>
+<div class="line"><a name="l00826"></a><span class="lineno"><a class="line" href="group__ksz8851snl.html#ga4e4ea2904a2346dbe35d1ecffb3aa8ca">  826</a></span>&#160;  uint16_t padding;</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;  uint8_t dummy[4] = {0x00};</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;  <span class="comment">/* Padding packet to 4 byte boundary */</span></div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;  <span class="keywordflow">if</span> (length % 4)</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;  {</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    padding = 4 - (length % 4);</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    <a class="code" href="group__ksz8851snl.html#ga8bf407a2b072a222c5053b39963ed165">KSZ8851SNL_SPI_WriteFifo</a>(padding, dummy);</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;  }</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;  <span class="comment">/* Stop the SPI Transfer */</span></div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga3102136a87269f6531366fca103c06f7">KSZ8851SNL_SPI_WriteFifoEnd</a>();</div>
 <div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;  <span class="comment">/* Start TXQ Manual enqueue */</span></div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;  data = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#a272d3d63d93ee08337f48780bf95f9db">TXQCR</a>) | <a class="code" href="ksz8851snl_8c.html#a56ad1b68495eb52699727a5e1fd29da5">TXQ_ENQUEUE</a>;</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#a272d3d63d93ee08337f48780bf95f9db">TXQCR</a>, data);</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;}</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="ksz8851snl_8c.html#a1893ae2fdc832fc747a3f297c6b17d5c">ReleaseIncosistentFrame</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;{</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;  uint16_t data;</div>
-<div class="line"><a name="l00851"></a><span class="lineno"><a class="line" href="ksz8851snl_8c.html#a1893ae2fdc832fc747a3f297c6b17d5c">  851</a></span>&#160;  <span class="comment">/* Issue the Release error frame command */</span></div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;  data = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>) | <a class="code" href="ksz8851snl_8c.html#adf331f33bb045dc73bbdd2aca446d3b1">RXQ_RELEASE_ERROR_FRAME</a>;</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>, data);</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;  <span class="comment">/* Wait for PHY to clear the command/flag */</span></div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>) &amp; <a class="code" href="ksz8851snl_8c.html#adf331f33bb045dc73bbdd2aca446d3b1">RXQ_RELEASE_ERROR_FRAME</a>)</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;  {</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    ;</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;  }</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;}</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;uint16_t <a class="code" href="group__ksz8851snl.html#gad49a596fbc706123a1aa477f14cdf3b4">KSZ8851SNL_Receive</a>(uint16_t length, uint8_t *buffer)</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;{</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;  uint16_t data;</div>
-<div class="line"><a name="l00878"></a><span class="lineno"><a class="line" href="group__ksz8851snl.html#gad49a596fbc706123a1aa477f14cdf3b4">  878</a></span>&#160;  uint16_t rxStatus;</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;  uint16_t rxPacketLength;</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;  uint16_t frameLength;</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;  uint16_t bytesToRead;</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;  EFM_ASSERT(buffer != NULL);</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;  <span class="keywordflow">while</span> (rxFrameCount &gt; 0)</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;  {</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    rxFrameCount--;</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;    <span class="comment">/* Read the received frame status */</span></div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    rxStatus = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#a30e9e4c89c87aa77f0168cec82474b8c">RXFHSR</a>);</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    <span class="comment">/* Check the consistency of the frame */</span></div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    <span class="keywordflow">if</span> ((!(rxStatus &amp; <a class="code" href="ksz8851snl_8c.html#aeaa8fab8c4bb775b6dd1fc7532911f25">VALID_FRAME_MASK</a>)) || (rxStatus &amp; <a class="code" href="ksz8851snl_8c.html#a028895fdab77c4dd8aca7a34aaaf38e9">CHECKSUM_VALID_FRAME_MASK</a>))</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    {</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;      <span class="comment">/* Issue the Release error frame command */</span></div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;      <a class="code" href="ksz8851snl_8c.html#a1893ae2fdc832fc747a3f297c6b17d5c">ReleaseIncosistentFrame</a>();</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;      <span class="comment">/* continue to next frame */</span></div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;      <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    }</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    {</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;      <span class="comment">/* Read the byte size of the received frame */</span></div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;      rxPacketLength = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#a0b47780f1c7a35ea8af1f91738af073f">RXFHBCR</a>) &amp; <a class="code" href="ksz8851snl_8c.html#a60cd22a6881b225ea028f8bc1a0e0783">RX_BYTE_CNT_MASK</a>;</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;      <span class="comment">/* round to dword boundary */</span></div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;      bytesToRead = 4 * ((rxPacketLength + 3) &gt;&gt; 2);</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;      LWIP_DEBUGF(NETIF_DEBUG, (<span class="stringliteral">&quot;KSZ8851SNL_Receive: rxPacketLength=%u, bytesToRead=%u \n&quot;</span>, rxPacketLength, bytesToRead));</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;      <span class="keywordflow">if</span> ((bytesToRead &gt; length) || (rxPacketLength &lt;= 4))</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;      {</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;        <span class="comment">/* Issue the Release error frame command */</span></div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;        <a class="code" href="ksz8851snl_8c.html#a1893ae2fdc832fc747a3f297c6b17d5c">ReleaseIncosistentFrame</a>();</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;        <span class="comment">/* continue to next frame */</span></div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;      }</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;      <span class="comment">/* Set QMU RXQ frame pointer to start of packet data. Note</span></div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;<span class="comment">       * that we skip the status word and byte count since we</span></div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;<span class="comment">       * already know this from RXFHSR and RXFHBCR.</span></div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;<span class="comment">       */</span></div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;      <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#a30336f6509570d09b6a6ef1309499c99">RXFDPR</a>, 0x0004 | <a class="code" href="ksz8851snl_8c.html#a56cdd36751f5a5ba51247720848a46ae">FD_PTR_AUTO_INC</a>);</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;      <span class="comment">/* Start QMU DMA transfer */</span></div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;      data = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>) | <a class="code" href="ksz8851snl_8c.html#a22c8cae8de31b0afd6b5eb78080c4d4f">RXQ_START_DMA</a>;</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;      <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>, data);</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;  <span class="comment">/* Disable TXQ write access */</span></div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;  data = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>) &amp; (~<a class="code" href="ksz8851snl_8c.html#a22c8cae8de31b0afd6b5eb78080c4d4f">RXQ_START_DMA</a>);</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>, data);</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;  <span class="comment">/* Start TXQ Manual enqueue */</span></div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;  data = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#a272d3d63d93ee08337f48780bf95f9db">TXQCR</a>) | <a class="code" href="ksz8851snl_8c.html#a56ad1b68495eb52699727a5e1fd29da5">TXQ_ENQUEUE</a>;</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#a272d3d63d93ee08337f48780bf95f9db">TXQCR</a>, data);</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;}</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="ksz8851snl_8c.html#a1893ae2fdc832fc747a3f297c6b17d5c">ReleaseIncosistentFrame</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;{</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;  uint16_t data;</div>
+<div class="line"><a name="l00855"></a><span class="lineno"><a class="line" href="ksz8851snl_8c.html#a1893ae2fdc832fc747a3f297c6b17d5c">  855</a></span>&#160;  <span class="comment">/* Issue the Release error frame command */</span></div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;  data = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>) | <a class="code" href="ksz8851snl_8c.html#adf331f33bb045dc73bbdd2aca446d3b1">RXQ_RELEASE_ERROR_FRAME</a>;</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;  <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>, data);</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;  <span class="comment">/* Wait for PHY to clear the command/flag */</span></div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;  <span class="keywordflow">while</span> (<a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>) &amp; <a class="code" href="ksz8851snl_8c.html#adf331f33bb045dc73bbdd2aca446d3b1">RXQ_RELEASE_ERROR_FRAME</a>)</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;  {</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    ;</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;  }</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;}</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;uint16_t <a class="code" href="group__ksz8851snl.html#gad49a596fbc706123a1aa477f14cdf3b4">KSZ8851SNL_Receive</a>(uint16_t length, uint8_t *buffer)</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;{</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;  uint16_t data;</div>
+<div class="line"><a name="l00882"></a><span class="lineno"><a class="line" href="group__ksz8851snl.html#gad49a596fbc706123a1aa477f14cdf3b4">  882</a></span>&#160;  uint16_t rxStatus;</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;  uint16_t rxPacketLength;</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;  uint16_t frameLength;</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;  uint16_t bytesToRead;</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;  EFM_ASSERT(buffer != NULL);</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;  <span class="keywordflow">while</span> (rxFrameCount &gt; 0)</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;  {</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    rxFrameCount--;</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    <span class="comment">/* Read the received frame status */</span></div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    rxStatus = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#a30e9e4c89c87aa77f0168cec82474b8c">RXFHSR</a>);</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;    <span class="comment">/* Check the consistency of the frame */</span></div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    <span class="keywordflow">if</span> ((!(rxStatus &amp; <a class="code" href="ksz8851snl_8c.html#aeaa8fab8c4bb775b6dd1fc7532911f25">VALID_FRAME_MASK</a>)) || (rxStatus &amp; <a class="code" href="ksz8851snl_8c.html#a028895fdab77c4dd8aca7a34aaaf38e9">CHECKSUM_VALID_FRAME_MASK</a>))</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    {</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;      <span class="comment">/* Issue the Release error frame command */</span></div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;      <a class="code" href="ksz8851snl_8c.html#a1893ae2fdc832fc747a3f297c6b17d5c">ReleaseIncosistentFrame</a>();</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;      <span class="comment">/* continue to next frame */</span></div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;      <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;    }</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;    {</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;      <span class="comment">/* Read the byte size of the received frame */</span></div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;      rxPacketLength = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#a0b47780f1c7a35ea8af1f91738af073f">RXFHBCR</a>) &amp; <a class="code" href="ksz8851snl_8c.html#a60cd22a6881b225ea028f8bc1a0e0783">RX_BYTE_CNT_MASK</a>;</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;      <span class="comment">/* round to dword boundary */</span></div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;      bytesToRead = 4 * ((rxPacketLength + 3) &gt;&gt; 2);</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;      LWIP_DEBUGF(NETIF_DEBUG, (<span class="stringliteral">&quot;KSZ8851SNL_Receive: rxPacketLength=%u, bytesToRead=%u \n&quot;</span>, rxPacketLength, bytesToRead));</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;      <span class="keywordflow">if</span> ((bytesToRead &gt; length) || (rxPacketLength &lt;= 4))</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;      {</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;        <span class="comment">/* Issue the Release error frame command */</span></div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;        <a class="code" href="ksz8851snl_8c.html#a1893ae2fdc832fc747a3f297c6b17d5c">ReleaseIncosistentFrame</a>();</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;        <span class="comment">/* continue to next frame */</span></div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;      }</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;      <span class="comment">/* Set QMU RXQ frame pointer to start of packet data. Note</span></div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;<span class="comment">       * that we skip the status word and byte count since we</span></div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;<span class="comment">       * already know this from RXFHSR and RXFHBCR.</span></div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;<span class="comment">       */</span></div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;      <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#a30336f6509570d09b6a6ef1309499c99">RXFDPR</a>, 0x0004 | <a class="code" href="ksz8851snl_8c.html#a56cdd36751f5a5ba51247720848a46ae">FD_PTR_AUTO_INC</a>);</div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;      <span class="comment">/* Read the whole ethernet frame */</span></div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;      <a class="code" href="group__ksz8851snl.html#ga3eda0b4b00ab2ec0a7c265329587cc88">KSZ8851SNL_SPI_ReadFifo</a>(bytesToRead, buffer);</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;      <span class="comment">/* Stop QMU DMA transfer */</span></div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;      data = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>) &amp; (~<a class="code" href="ksz8851snl_8c.html#a22c8cae8de31b0afd6b5eb78080c4d4f">RXQ_START_DMA</a>);</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;      <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>, data);</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;      <span class="comment">/* Start QMU DMA transfer */</span></div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;      data = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>) | <a class="code" href="ksz8851snl_8c.html#a22c8cae8de31b0afd6b5eb78080c4d4f">RXQ_START_DMA</a>;</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;      <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>, data);</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;      <span class="comment">/* Read the whole ethernet frame */</span></div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;      <a class="code" href="group__ksz8851snl.html#ga3eda0b4b00ab2ec0a7c265329587cc88">KSZ8851SNL_SPI_ReadFifo</a>(bytesToRead, buffer);</div>
 <div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;      <span class="comment">/* Return frame length without CRC */</span></div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;      frameLength = rxPacketLength - 4;</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;      <span class="keywordflow">return</span> frameLength;</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    }</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;  }</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;}</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__ksz8851snl.html#ga628b9c6f6df5bebe5d5cb1317d4b3f7b">KSZ8851SNL_MacAddressGet</a>(uint8_t *macAddress)</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;{</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;  <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00953"></a><span class="lineno"><a class="line" href="group__ksz8851snl.html#ga628b9c6f6df5bebe5d5cb1317d4b3f7b">  953</a></span>&#160;</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;  EFM_ASSERT(macAddress != NULL);</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;  <span class="comment">/* set the first 3 bytes given by the EM MAC Address space */</span></div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;  macAddress[0] = <a class="code" href="ksz8851snl_8c.html#ae3b1a19388873dd5c03e63feecff9c14">HIGH_QMU_MAC_H</a>;</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;  macAddress[1] = <a class="code" href="ksz8851snl_8c.html#a8aa3036cea0079ddc98c874ffbd24125">HIGH_QMU_MAC_L</a>;</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;  macAddress[2] = <a class="code" href="ksz8851snl_8c.html#aa5a2ce4eeabfe5f74d047bcfece64724">MID_QMU_MAC_H</a>;</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;  <span class="comment">/* set the next 3 bytes given by the CMU unique ID */</span></div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; 3; i++)</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;  {</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;    macAddress[5 - i] = (<a class="code" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>-&gt;UNIQUEL &amp; (BYTE_MASK &lt;&lt; i * BYTE_SIZE)) &gt;&gt; i * <a class="code" href="ksz8851snl_8c.html#a86fd4404b140711fdb77326609c0f393">BYTE_SIZE</a>;</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;  }</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;}</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;<span class="comment">/***************************************************************************/</span></div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;uint16_t <a class="code" href="group__ksz8851snl.html#ga6e245d5e6c11c9880c438f088120e8ce">KSZ8851SNL_PHYStatusGet</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;{</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#ab84f41b2f2b735bec6b04abab49be0dd">P1SR</a>);</div>
-<div class="line"><a name="l00974"></a><span class="lineno"><a class="line" href="group__ksz8851snl.html#ga6e245d5e6c11c9880c438f088120e8ce">  974</a></span>&#160;}</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;      <span class="comment">/* Stop QMU DMA transfer */</span></div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;      data = <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>) &amp; (~<a class="code" href="ksz8851snl_8c.html#a22c8cae8de31b0afd6b5eb78080c4d4f">RXQ_START_DMA</a>);</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;      <a class="code" href="group__ksz8851snl.html#ga194769a82e5a1c0ab03ea0923b7da2d0">KSZ8851SNL_SPI_WriteRegister</a>(<a class="code" href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a>, data);</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;      <span class="comment">/* Return frame length without CRC */</span></div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;      frameLength = rxPacketLength - 4;</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;      <span class="keywordflow">return</span> frameLength;</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;    }</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;  }</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;}</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__ksz8851snl.html#ga628b9c6f6df5bebe5d5cb1317d4b3f7b">KSZ8851SNL_MacAddressGet</a>(uint8_t *macAddress)</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;{</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;  <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l00957"></a><span class="lineno"><a class="line" href="group__ksz8851snl.html#ga628b9c6f6df5bebe5d5cb1317d4b3f7b">  957</a></span>&#160;</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;  EFM_ASSERT(macAddress != NULL);</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;  <span class="comment">/* set the first 3 bytes given by the EM MAC Address space */</span></div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;  macAddress[0] = <a class="code" href="ksz8851snl_8c.html#ae3b1a19388873dd5c03e63feecff9c14">HIGH_QMU_MAC_H</a>;</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;  macAddress[1] = <a class="code" href="ksz8851snl_8c.html#a8aa3036cea0079ddc98c874ffbd24125">HIGH_QMU_MAC_L</a>;</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;  macAddress[2] = <a class="code" href="ksz8851snl_8c.html#aa5a2ce4eeabfe5f74d047bcfece64724">MID_QMU_MAC_H</a>;</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;  <span class="comment">/* set the next 3 bytes given by the CMU unique ID */</span></div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; 3; i++)</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;  {</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    macAddress[5 - i] = (<a class="code" href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a>-&gt;UNIQUEL &amp; (BYTE_MASK &lt;&lt; i * BYTE_SIZE)) &gt;&gt; i * <a class="code" href="ksz8851snl_8c.html#a86fd4404b140711fdb77326609c0f393">BYTE_SIZE</a>;</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;  }</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;}</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;<span class="comment">/***************************************************************************/</span></div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;uint16_t <a class="code" href="group__ksz8851snl.html#ga6e245d5e6c11c9880c438f088120e8ce">KSZ8851SNL_PHYStatusGet</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;{</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a>(<a class="code" href="ksz8851snl_8c.html#ab84f41b2f2b735bec6b04abab49be0dd">P1SR</a>);</div>
+<div class="line"><a name="l00978"></a><span class="lineno"><a class="line" href="group__ksz8851snl.html#ga6e245d5e6c11c9880c438f088120e8ce">  978</a></span>&#160;}</div>
 <div class="ttc" id="structKSZ8851SLN__mib__s_html_af94a9a4b07a6c8e7a072eeceae6e9d51"><div class="ttname"><a href="structKSZ8851SLN__mib__s.html#af94a9a4b07a6c8e7a072eeceae6e9d51">KSZ8851SLN_mib_s::RxFragmentsCnt</a></div><div class="ttdeci">uint32_t RxFragmentsCnt</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8h_source.html#l00086">ksz8851snl.h:86</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a35f925972a31fa513b3d50ede32091b5"><div class="ttname"><a href="ksz8851snl_8c.html#a35f925972a31fa513b3d50ede32091b5">RX_FLOW_CTRL_RX_ENABLE</a></div><div class="ttdeci">#define RX_FLOW_CTRL_RX_ENABLE</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00159">ksz8851snl.c:159</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_adeb3a4d09a3fed3e809b1c96c21b4241"><div class="ttname"><a href="ksz8851snl_8c.html#adeb3a4d09a3fed3e809b1c96c21b4241">PMECR</a></div><div class="ttdeci">#define PMECR</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00055">ksz8851snl.c:55</a></div></div>
 <div class="ttc" id="group__ksz8851snl_html_ga1fc05f812bbd153f2cd82042b7398e67"><div class="ttname"><a href="group__ksz8851snl.html#ga1fc05f812bbd153f2cd82042b7398e67">KSZ8851SNL_Enable</a></div><div class="ttdeci">void KSZ8851SNL_Enable(void)</div><div class="ttdoc">Enable RX and TX. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00715">ksz8851snl.c:715</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_aca1ebdc21bb550265c785e6d5ae76f80"><div class="ttname"><a href="ksz8851snl_8c.html#aca1ebdc21bb550265c785e6d5ae76f80">MIBCountersRead</a></div><div class="ttdeci">static uint32_t MIBCountersRead(uint16_t offset)</div><div class="ttdoc">helper function for KSZ8851SNL_UpdateMIBCounters </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00365">ksz8851snl.c:365</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a67a9f9d1d59c17889c587973b758890c"><div class="ttname"><a href="ksz8851snl_8c.html#a67a9f9d1d59c17889c587973b758890c">KSZ8851SNL_CHIP_ID</a></div><div class="ttdeci">#define KSZ8851SNL_CHIP_ID</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00061">ksz8851snl.c:61</a></div></div>
-<div class="ttc" id="ksz8851snl_8c_html_a1893ae2fdc832fc747a3f297c6b17d5c"><div class="ttname"><a href="ksz8851snl_8c.html#a1893ae2fdc832fc747a3f297c6b17d5c">ReleaseIncosistentFrame</a></div><div class="ttdeci">static void ReleaseIncosistentFrame(void)</div><div class="ttdoc">Release the current frame if it is inconsistent. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00851">ksz8851snl.c:851</a></div></div>
-<div class="ttc" id="group__EFR32BG1P333F256GM48__Peripheral__Declaration_html_ga0fcf54e71ec010df38f8b7a9c1166f1f"><div class="ttname"><a href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a></div><div class="ttdeci">#define DEVINFO</div><div class="ttdef"><b>Definition:</b> <a href="efr32bg1p333f256gm48_8h_source.html#l00352">efr32bg1p333f256gm48.h:352</a></div></div>
+<div class="ttc" id="ksz8851snl_8c_html_a1893ae2fdc832fc747a3f297c6b17d5c"><div class="ttname"><a href="ksz8851snl_8c.html#a1893ae2fdc832fc747a3f297c6b17d5c">ReleaseIncosistentFrame</a></div><div class="ttdeci">static void ReleaseIncosistentFrame(void)</div><div class="ttdoc">Release the current frame if it is inconsistent. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00855">ksz8851snl.c:855</a></div></div>
+<div class="ttc" id="group__EFR32BG1P333F256GM48__Peripheral__Declaration_html_ga0fcf54e71ec010df38f8b7a9c1166f1f"><div class="ttname"><a href="group__EFR32BG1P333F256GM48__Peripheral__Declaration.html#ga0fcf54e71ec010df38f8b7a9c1166f1f">DEVINFO</a></div><div class="ttdeci">#define DEVINFO</div><div class="ttdef"><b>Definition:</b> <a href="efr32bg1p333f256gm48_8h_source.html#l00358">efr32bg1p333f256gm48.h:358</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a53b0bd1eebb93c5d26d4ee73a6928140"><div class="ttname"><a href="ksz8851snl_8c.html#a53b0bd1eebb93c5d26d4ee73a6928140">MARM</a></div><div class="ttdeci">#define MARM</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00031">ksz8851snl.c:31</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a421ef10418d62e6b65390cb8cdab5c15"><div class="ttname"><a href="ksz8851snl_8c.html#a421ef10418d62e6b65390cb8cdab5c15">ISR</a></div><div class="ttdeci">#define ISR</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00046">ksz8851snl.c:46</a></div></div>
 <div class="ttc" id="ksz8851snl__spi_8h_html"><div class="ttname"><a href="ksz8851snl__spi_8h.html">ksz8851snl_spi.h</a></div><div class="ttdoc">SPI interface API for KSZ8851SNL Ethernet controller. </div></div>
@@ -935,7 +935,7 @@ $(document).ready(function(){initNavTree('ksz8851snl_8c_source.html','');});
 <div class="ttc" id="structKSZ8851SLN__mib__s_html_a3b8c24fcc36406fd1d719103a530cf46"><div class="ttname"><a href="structKSZ8851SLN__mib__s.html#a3b8c24fcc36406fd1d719103a530cf46">KSZ8851SLN_mib_s::RxUnicastCnt</a></div><div class="ttdeci">uint32_t RxUnicastCnt</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8h_source.html#l00104">ksz8851snl.h:104</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a56cdd36751f5a5ba51247720848a46ae"><div class="ttname"><a href="ksz8851snl_8c.html#a56cdd36751f5a5ba51247720848a46ae">FD_PTR_AUTO_INC</a></div><div class="ttdeci">#define FD_PTR_AUTO_INC</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00064">ksz8851snl.c:64</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_ab81fe647d62bb6f5e024bad0a173f3f2"><div class="ttname"><a href="ksz8851snl_8c.html#ab81fe647d62bb6f5e024bad0a173f3f2">MIB_TxByte</a></div><div class="ttdeci">#define MIB_TxByte</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00323">ksz8851snl.c:323</a></div></div>
-<div class="ttc" id="group__ksz8851snl_html_ga628b9c6f6df5bebe5d5cb1317d4b3f7b"><div class="ttname"><a href="group__ksz8851snl.html#ga628b9c6f6df5bebe5d5cb1317d4b3f7b">KSZ8851SNL_MacAddressGet</a></div><div class="ttdeci">void KSZ8851SNL_MacAddressGet(uint8_t *macAddress)</div><div class="ttdoc">Get the MAC address of the current board. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00953">ksz8851snl.c:953</a></div></div>
+<div class="ttc" id="group__ksz8851snl_html_ga628b9c6f6df5bebe5d5cb1317d4b3f7b"><div class="ttname"><a href="group__ksz8851snl.html#ga628b9c6f6df5bebe5d5cb1317d4b3f7b">KSZ8851SNL_MacAddressGet</a></div><div class="ttdeci">void KSZ8851SNL_MacAddressGet(uint8_t *macAddress)</div><div class="ttdoc">Get the MAC address of the current board. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00957">ksz8851snl.c:957</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a64fd7907e77cb4570457d7558bcb9b81"><div class="ttname"><a href="ksz8851snl_8c.html#a64fd7907e77cb4570457d7558bcb9b81">MIB_TxMulticastPkts</a></div><div class="ttdeci">#define MIB_TxMulticastPkts</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00327">ksz8851snl.c:327</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a272d3d63d93ee08337f48780bf95f9db"><div class="ttname"><a href="ksz8851snl_8c.html#a272d3d63d93ee08337f48780bf95f9db">TXQCR</a></div><div class="ttdeci">#define TXQCR</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00041">ksz8851snl.c:41</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_ae3b1a19388873dd5c03e63feecff9c14"><div class="ttname"><a href="ksz8851snl_8c.html#ae3b1a19388873dd5c03e63feecff9c14">HIGH_QMU_MAC_H</a></div><div class="ttdeci">#define HIGH_QMU_MAC_H</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00089">ksz8851snl.c:89</a></div></div>
@@ -973,13 +973,13 @@ $(document).ready(function(){initNavTree('ksz8851snl_8c_source.html','');});
 <div class="ttc" id="group__ksz8851snl_html_gaef8e79d738a8e792ea8335a14e4d80c5"><div class="ttname"><a href="group__ksz8851snl.html#gaef8e79d738a8e792ea8335a14e4d80c5">KSZ8851SNL_SPI_ReadRegister</a></div><div class="ttdeci">uint16_t KSZ8851SNL_SPI_ReadRegister(uint8_t reg)</div><div class="ttdoc">Read ethernet controller register. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl__spi_8c_source.html#l00167">ksz8851snl_spi.c:167</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a4286160ca194bc8850c7fc9013fe3779"><div class="ttname"><a href="ksz8851snl_8c.html#a4286160ca194bc8850c7fc9013fe3779">GLOBAL_SOFT_RESET</a></div><div class="ttdeci">#define GLOBAL_SOFT_RESET</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00277">ksz8851snl.c:277</a></div></div>
 <div class="ttc" id="structKSZ8851SLN__mib__s_html_a8bc682f332838e0ae7681a428ca03090"><div class="ttname"><a href="structKSZ8851SLN__mib__s.html#a8bc682f332838e0ae7681a428ca03090">KSZ8851SLN_mib_s::RxPausePktsCnt</a></div><div class="ttdeci">uint32_t RxPausePktsCnt</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8h_source.html#l00098">ksz8851snl.h:98</a></div></div>
-<div class="ttc" id="group__ksz8851snl_html_ga6e245d5e6c11c9880c438f088120e8ce"><div class="ttname"><a href="group__ksz8851snl.html#ga6e245d5e6c11c9880c438f088120e8ce">KSZ8851SNL_PHYStatusGet</a></div><div class="ttdeci">uint16_t KSZ8851SNL_PHYStatusGet(void)</div><div class="ttdoc">Get the PHY status. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00974">ksz8851snl.c:974</a></div></div>
+<div class="ttc" id="group__ksz8851snl_html_ga6e245d5e6c11c9880c438f088120e8ce"><div class="ttname"><a href="group__ksz8851snl.html#ga6e245d5e6c11c9880c438f088120e8ce">KSZ8851SNL_PHYStatusGet</a></div><div class="ttdeci">uint16_t KSZ8851SNL_PHYStatusGet(void)</div><div class="ttdoc">Get the PHY status. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00978">ksz8851snl.c:978</a></div></div>
 <div class="ttc" id="structKSZ8851SLN__mib__s_html_a05f5f25782d2c18c98eb7a176eb29813"><div class="ttname"><a href="structKSZ8851SLN__mib__s.html#a05f5f25782d2c18c98eb7a176eb29813">KSZ8851SLN_mib_s::RxJabbersCnt</a></div><div class="ttdeci">uint32_t RxJabbersCnt</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8h_source.html#l00091">ksz8851snl.h:91</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_ad43736a9aeccb0eb58620770717fd71d"><div class="ttname"><a href="ksz8851snl_8c.html#ad43736a9aeccb0eb58620770717fd71d">RX_FLOW_CTRL1_CONFIG</a></div><div class="ttdeci">#define RX_FLOW_CTRL1_CONFIG</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00162">ksz8851snl.c:162</a></div></div>
 <div class="ttc" id="ksz8851snl_8h_html"><div class="ttname"><a href="ksz8851snl_8h.html">ksz8851snl.h</a></div><div class="ttdoc">Driver for Micrel KSZ8851SNL Ethernet controller. </div></div>
 <div class="ttc" id="group__ksz8851snl_html_ga0021d947767d6e2d4cc7872f4d99b6aa"><div class="ttname"><a href="group__ksz8851snl.html#ga0021d947767d6e2d4cc7872f4d99b6aa">KSZ8851SNL_FrameCounterSet</a></div><div class="ttdeci">void KSZ8851SNL_FrameCounterSet(void)</div><div class="ttdoc">FrameCounter. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00561">ksz8851snl.c:561</a></div></div>
 <div class="ttc" id="structKSZ8851SLN__mib__s_html_aa9484bc7f8848639cb9a8f445ed67e92"><div class="ttname"><a href="structKSZ8851SLN__mib__s.html#aa9484bc7f8848639cb9a8f445ed67e92">KSZ8851SLN_mib_s::TxUnicastPktsCnt</a></div><div class="ttdeci">uint32_t TxUnicastPktsCnt</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8h_source.html#l00114">ksz8851snl.h:114</a></div></div>
-<div class="ttc" id="group__ksz8851snl_html_ga31c3be356bee9c4f14f9e5255c87c21c"><div class="ttname"><a href="group__ksz8851snl.html#ga31c3be356bee9c4f14f9e5255c87c21c">KSZ8851SNL_TransmitBegin</a></div><div class="ttdeci">bool KSZ8851SNL_TransmitBegin(uint16_t length)</div><div class="ttdoc">Prepares for a transmission of an ethernet frame over the network. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00740">ksz8851snl.c:740</a></div></div>
+<div class="ttc" id="group__ksz8851snl_html_ga31c3be356bee9c4f14f9e5255c87c21c"><div class="ttname"><a href="group__ksz8851snl.html#ga31c3be356bee9c4f14f9e5255c87c21c">KSZ8851SNL_TransmitBegin</a></div><div class="ttdeci">bool KSZ8851SNL_TransmitBegin(uint16_t length)</div><div class="ttdoc">Prepares for a transmission of an ethernet frame over the network. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00744">ksz8851snl.c:744</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_aebafa824e034291924298c85bc366e0e"><div class="ttname"><a href="ksz8851snl_8c.html#aebafa824e034291924298c85bc366e0e">MSB_POS</a></div><div class="ttdeci">#define MSB_POS</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00081">ksz8851snl.c:81</a></div></div>
 <div class="ttc" id="group__ksz8851snl_html_ga02611fd180208feb00a4f1fbab7115dc"><div class="ttname"><a href="group__ksz8851snl.html#ga02611fd180208feb00a4f1fbab7115dc">KSZ8851SNL_FrameCounterGet</a></div><div class="ttdeci">uint16_t KSZ8851SNL_FrameCounterGet(void)</div><div class="ttdoc">FrameCounter. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00615">ksz8851snl.c:615</a></div></div>
 <div class="ttc" id="group__ksz8851snl_html_ga3102136a87269f6531366fca103c06f7"><div class="ttname"><a href="group__ksz8851snl.html#ga3102136a87269f6531366fca103c06f7">KSZ8851SNL_SPI_WriteFifoEnd</a></div><div class="ttdeci">void KSZ8851SNL_SPI_WriteFifoEnd(void)</div><div class="ttdoc">Stop read/write the ethernet controller FIFO. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl__spi_8c_source.html#l00301">ksz8851snl_spi.c:301</a></div></div>
@@ -988,11 +988,11 @@ $(document).ready(function(){initNavTree('ksz8851snl_8c_source.html','');});
 <div class="ttc" id="ksz8851snl_8c_html_a22c8cae8de31b0afd6b5eb78080c4d4f"><div class="ttname"><a href="ksz8851snl_8c.html#a22c8cae8de31b0afd6b5eb78080c4d4f">RXQ_START_DMA</a></div><div class="ttdeci">#define RXQ_START_DMA</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00219">ksz8851snl.c:219</a></div></div>
 <div class="ttc" id="group__ksz8851snl_html_ga9a2d44441ec164bb37194fb00d00994f"><div class="ttname"><a href="group__ksz8851snl.html#ga9a2d44441ec164bb37194fb00d00994f">KSZ8851SNL_MIBCountersUpdate</a></div><div class="ttdeci">void KSZ8851SNL_MIBCountersUpdate(void)</div><div class="ttdoc">Update the Management Information Base Counters. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00385">ksz8851snl.c:385</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a71ef81afb42a9b3dc69b8efb67ba08cc"><div class="ttname"><a href="ksz8851snl_8c.html#a71ef81afb42a9b3dc69b8efb67ba08cc">CHIP_ID_MASK</a></div><div class="ttdeci">#define CHIP_ID_MASK</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00062">ksz8851snl.c:62</a></div></div>
-<div class="ttc" id="group__ksz8851snl_html_ga4e4ea2904a2346dbe35d1ecffb3aa8ca"><div class="ttname"><a href="group__ksz8851snl.html#ga4e4ea2904a2346dbe35d1ecffb3aa8ca">KSZ8851SNL_TransmitEnd</a></div><div class="ttdeci">void KSZ8851SNL_TransmitEnd(uint16_t length)</div><div class="ttdoc">Ends a transmission of an ethernet frame to the ethernet controller. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00822">ksz8851snl.c:822</a></div></div>
+<div class="ttc" id="group__ksz8851snl_html_ga4e4ea2904a2346dbe35d1ecffb3aa8ca"><div class="ttname"><a href="group__ksz8851snl.html#ga4e4ea2904a2346dbe35d1ecffb3aa8ca">KSZ8851SNL_TransmitEnd</a></div><div class="ttdeci">void KSZ8851SNL_TransmitEnd(uint16_t length)</div><div class="ttdoc">Ends a transmission of an ethernet frame to the ethernet controller. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00826">ksz8851snl.c:826</a></div></div>
 <div class="ttc" id="structKSZ8851SLN__mib__s_html_a572e781d36d8dd2e81a6891337c8feb4"><div class="ttname"><a href="structKSZ8851SLN__mib__s.html#a572e781d36d8dd2e81a6891337c8feb4">KSZ8851SLN_mib_s::RxOversizeCnt</a></div><div class="ttdeci">uint32_t RxOversizeCnt</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8h_source.html#l00088">ksz8851snl.h:88</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_ac83b32831e0638f88b91366948124c04"><div class="ttname"><a href="ksz8851snl_8c.html#ac83b32831e0638f88b91366948124c04">CLEAR_INT</a></div><div class="ttdeci">#define CLEAR_INT</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00065">ksz8851snl.c:65</a></div></div>
 <div class="ttc" id="structKSZ8851SLN__mib__s_html_a3be5c3738593d1521397653c324baa16"><div class="ttname"><a href="structKSZ8851SLN__mib__s.html#a3be5c3738593d1521397653c324baa16">KSZ8851SLN_mib_s::RxBroadcastCnt</a></div><div class="ttdeci">uint32_t RxBroadcastCnt</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8h_source.html#l00100">ksz8851snl.h:100</a></div></div>
-<div class="ttc" id="group__ksz8851snl_html_gad49a596fbc706123a1aa477f14cdf3b4"><div class="ttname"><a href="group__ksz8851snl.html#gad49a596fbc706123a1aa477f14cdf3b4">KSZ8851SNL_Receive</a></div><div class="ttdeci">uint16_t KSZ8851SNL_Receive(uint16_t length, uint8_t *buffer)</div><div class="ttdoc">Performs the actual receive of a raw frame over the network. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00878">ksz8851snl.c:878</a></div></div>
+<div class="ttc" id="group__ksz8851snl_html_gad49a596fbc706123a1aa477f14cdf3b4"><div class="ttname"><a href="group__ksz8851snl.html#gad49a596fbc706123a1aa477f14cdf3b4">KSZ8851SNL_Receive</a></div><div class="ttdeci">uint16_t KSZ8851SNL_Receive(uint16_t length, uint8_t *buffer)</div><div class="ttdoc">Performs the actual receive of a raw frame over the network. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00882">ksz8851snl.c:882</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a834364c5d577e607cd80192eb19610ac"><div class="ttname"><a href="ksz8851snl_8c.html#a834364c5d577e607cd80192eb19610ac">TX_FLOW_CTRL_FLUSH_QUEUE</a></div><div class="ttdeci">#define TX_FLOW_CTRL_FLUSH_QUEUE</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00104">ksz8851snl.c:104</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a328ffd91c6ae67b14aad42bcf1aa8927"><div class="ttname"><a href="ksz8851snl_8c.html#a328ffd91c6ae67b14aad42bcf1aa8927">MARH</a></div><div class="ttdeci">#define MARH</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00032">ksz8851snl.c:32</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a58ec254864d78b34afa2322c4a835b15"><div class="ttname"><a href="ksz8851snl_8c.html#a58ec254864d78b34afa2322c4a835b15">MIB_TxBroadcastPkts</a></div><div class="ttdeci">#define MIB_TxBroadcastPkts</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00326">ksz8851snl.c:326</a></div></div>
@@ -1006,7 +1006,7 @@ $(document).ready(function(){initNavTree('ksz8851snl_8c_source.html','');});
 <div class="ttc" id="ksz8851snl_8c_html_af5c7dd624af5db2a9d1e5ff08d17d7a1"><div class="ttname"><a href="ksz8851snl_8c.html#af5c7dd624af5db2a9d1e5ff08d17d7a1">RXQCR</a></div><div class="ttdeci">#define RXQCR</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00042">ksz8851snl.c:42</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a2b2622989bd3fa193103abae8004d3b3"><div class="ttname"><a href="ksz8851snl_8c.html#a2b2622989bd3fa193103abae8004d3b3">RXQ_CMD_CONFIG</a></div><div class="ttdeci">#define RXQ_CMD_CONFIG</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00224">ksz8851snl.c:224</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a18250b5f09179aaf682a773042d55506"><div class="ttname"><a href="ksz8851snl_8c.html#a18250b5f09179aaf682a773042d55506">MIB_TxTotalCollision</a></div><div class="ttdeci">#define MIB_TxTotalCollision</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00330">ksz8851snl.c:330</a></div></div>
-<div class="ttc" id="group__ksz8851snl_html_ga62488dd5f992f4a6965e0fb0a0cf1134"><div class="ttname"><a href="group__ksz8851snl.html#ga62488dd5f992f4a6965e0fb0a0cf1134">KSZ8851SNL_Transmit</a></div><div class="ttdeci">void KSZ8851SNL_Transmit(uint16_t length, const uint8_t *buffer)</div><div class="ttdoc">Transmit a chunk of data to the ethernet controller. The chunk can be either a full ethernet frame or...</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00804">ksz8851snl.c:804</a></div></div>
+<div class="ttc" id="group__ksz8851snl_html_ga62488dd5f992f4a6965e0fb0a0cf1134"><div class="ttname"><a href="group__ksz8851snl.html#ga62488dd5f992f4a6965e0fb0a0cf1134">KSZ8851SNL_Transmit</a></div><div class="ttdeci">void KSZ8851SNL_Transmit(uint16_t length, const uint8_t *buffer)</div><div class="ttdoc">Transmit a chunk of data to the ethernet controller. The chunk can be either a full ethernet frame or...</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00808">ksz8851snl.c:808</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a4fb198f5122ad90b21a55144fd193adc"><div class="ttname"><a href="ksz8851snl_8c.html#a4fb198f5122ad90b21a55144fd193adc">TX_FLOW_CTRL_ENABLE</a></div><div class="ttdeci">#define TX_FLOW_CTRL_ENABLE</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00112">ksz8851snl.c:112</a></div></div>
 <div class="ttc" id="group__ksz8851snl_html_ga85f1d9a0eb9a3f6f39d86aa3b6cc476f"><div class="ttname"><a href="group__ksz8851snl.html#ga85f1d9a0eb9a3f6f39d86aa3b6cc476f">KSZ8851SNL_RXQCRGet</a></div><div class="ttdeci">uint16_t KSZ8851SNL_RXQCRGet(void)</div><div class="ttdoc">Get RXQCR register. </div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00553">ksz8851snl.c:553</a></div></div>
 <div class="ttc" id="ksz8851snl_8c_html_a20ca27dd1f0d0a4b0f8f2d7fc68b9a67"><div class="ttname"><a href="ksz8851snl_8c.html#a20ca27dd1f0d0a4b0f8f2d7fc68b9a67">MIB_MASK</a></div><div class="ttdeci">#define MIB_MASK</div><div class="ttdef"><b>Definition:</b> <a href="ksz8851snl_8c_source.html#l00301">ksz8851snl.c:301</a></div></div>
@@ -1059,8 +1059,8 @@ $(document).ready(function(){initNavTree('ksz8851snl_8c_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f4316de2dfb04db90651672103de31d6.html">hardware</a></li><li class="navelem"><a class="el" href="dir_76f2117c008bb27e945cccbe289eb43d.html">kit</a></li><li class="navelem"><a class="el" href="dir_60376687895b74e627fb8a241c3f339a.html">common</a></li><li class="navelem"><a class="el" href="dir_4f5ba988b7de2a6efab62310c4bddab1.html">drivers</a></li><li class="navelem"><a class="el" href="ksz8851snl_8c.html">ksz8851snl.c</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 15:52:12 for EFR32 Blue Gecko 1 Software Documentation by
+    <li class="navelem"><a class="el" href="dir_47b141814df81f488c4f7eaff9a67e18.html">hardware</a></li><li class="navelem"><a class="el" href="dir_af96359f81902c5c0c02a782680fb1d9.html">kit</a></li><li class="navelem"><a class="el" href="dir_5d4a48348b1da31968333dd38c7667cf.html">common</a></li><li class="navelem"><a class="el" href="dir_4d1202699618d790b69f43dda0aac898.html">drivers</a></li><li class="navelem"><a class="el" href="ksz8851snl_8c.html">ksz8851snl.c</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:43:45 for EFR32 Blue Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

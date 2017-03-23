@@ -84,66 +84,51 @@
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="sl__crypto_8h.html#a204657185b93d19dc64468c75b1abc5e">   69</a></span>&#160;<span class="keyword">typedef</span> void (*<a class="code" href="sl__crypto_8h.html#a204657185b93d19dc64468c75b1abc5e">mbedtls_asynch_callback</a>)(<span class="keywordtype">int</span> result, <span class="keywordtype">void</span>* user_arg);</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8">   58</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8aed9ceece031a2afd7033bf6afa96a399">   60</a></span>&#160;  <a class="code" href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8aed9ceece031a2afd7033bf6afa96a399">MBEDTLS_DEVICE_IO_MODE_CORE</a>, </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#if defined( MBEDTLS_INCLUDE_IO_MODE_DMA )</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  MBEDTLS_DEVICE_IO_MODE_DMA   </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;} <a class="code" href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8">mbedtls_device_io_mode</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#if defined( MBEDTLS_INCLUDE_IO_MODE_DMA )</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8">   73</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8aed9ceece031a2afd7033bf6afa96a399">   75</a></span>&#160;  <a class="code" href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8aed9ceece031a2afd7033bf6afa96a399">MBEDTLS_DEVICE_IO_MODE_CORE</a>, </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8a9a402497d0fb9085ee908764fed36461">   78</a></span>&#160;  <a class="code" href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8a9a402497d0fb9085ee908764fed36461">MBEDTLS_DEVICE_IO_MODE_BUFC</a>, </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dma_ch_in;  </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dma_ch_out; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} mbedtls_device_dma_config;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="unionmbedtls__device__io__mode__specific.html">   79</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#if defined( MBEDTLS_INCLUDE_IO_MODE_DMA )</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  MBEDTLS_DEVICE_IO_MODE_DMA   </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;} <a class="code" href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8">mbedtls_device_io_mode</a>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#if defined( MBEDTLS_INCLUDE_IO_MODE_DMA )</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dma_ch_in;  </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dma_ch_out; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} mbedtls_device_dma_config;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#if defined(BUFC_PRESENT)</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  uint8_t buf_id;    </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;} mbedtls_device_bufc_config;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  </div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="unionmbedtls__device__io__mode__specific.html">  105</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#if defined( MBEDTLS_INCLUDE_IO_MODE_DMA )</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  mbedtls_device_dma_config  dma_config;  </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#if defined(BUFC_PRESENT)</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  mbedtls_device_bufc_config bufc_config; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="unionmbedtls__device__io__mode__specific.html#a89b06104f945e5a7a3315a1bd67db4ce">  113</a></span>&#160;  <span class="keywordtype">void</span>* <a class="code" href="unionmbedtls__device__io__mode__specific.html#a89b06104f945e5a7a3315a1bd67db4ce">placeholder</a>;                      </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;} <a class="code" href="unionmbedtls__device__io__mode__specific.html">mbedtls_device_io_mode_specific</a>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #if ( defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0) ) ||  \</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">          ( defined(AES_COUNT) &amp;&amp; (AES_COUNT &gt; 0) ) */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #ifndef MBEDTLS_SL_CRYPTO_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="unionmbedtls__device__io__mode__specific_html_a89b06104f945e5a7a3315a1bd67db4ce"><div class="ttname"><a href="unionmbedtls__device__io__mode__specific.html#a89b06104f945e5a7a3315a1bd67db4ce">mbedtls_device_io_mode_specific::placeholder</a></div><div class="ttdeci">void * placeholder</div><div class="ttdef"><b>Definition:</b> <a href="sl__crypto_8h_source.html#l00113">sl_crypto.h:113</a></div></div>
-<div class="ttc" id="sl__crypto_8h_html_a0db512d40860e61bd11571a2204897b8aed9ceece031a2afd7033bf6afa96a399"><div class="ttname"><a href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8aed9ceece031a2afd7033bf6afa96a399">MBEDTLS_DEVICE_IO_MODE_CORE</a></div><div class="ttdef"><b>Definition:</b> <a href="sl__crypto_8h_source.html#l00075">sl_crypto.h:75</a></div></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  mbedtls_device_dma_config  dma_config;  </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="unionmbedtls__device__io__mode__specific.html#a89b06104f945e5a7a3315a1bd67db4ce">   84</a></span>&#160;  <span class="keywordtype">void</span>* <a class="code" href="unionmbedtls__device__io__mode__specific.html#a89b06104f945e5a7a3315a1bd67db4ce">placeholder</a>;                      </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} <a class="code" href="unionmbedtls__device__io__mode__specific.html">mbedtls_device_io_mode_specific</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #if ( defined(CRYPTO_COUNT) &amp;&amp; (CRYPTO_COUNT &gt; 0) ) ||  \</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">          ( defined(AES_COUNT) &amp;&amp; (AES_COUNT &gt; 0) ) */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* #ifndef MBEDTLS_SL_CRYPTO_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="unionmbedtls__device__io__mode__specific_html_a89b06104f945e5a7a3315a1bd67db4ce"><div class="ttname"><a href="unionmbedtls__device__io__mode__specific.html#a89b06104f945e5a7a3315a1bd67db4ce">mbedtls_device_io_mode_specific::placeholder</a></div><div class="ttdeci">void * placeholder</div><div class="ttdef"><b>Definition:</b> <a href="sl__crypto_8h_source.html#l00084">sl_crypto.h:84</a></div></div>
+<div class="ttc" id="sl__crypto_8h_html_a0db512d40860e61bd11571a2204897b8aed9ceece031a2afd7033bf6afa96a399"><div class="ttname"><a href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8aed9ceece031a2afd7033bf6afa96a399">MBEDTLS_DEVICE_IO_MODE_CORE</a></div><div class="ttdef"><b>Definition:</b> <a href="sl__crypto_8h_source.html#l00060">sl_crypto.h:60</a></div></div>
 <div class="ttc" id="config_8h_html"><div class="ttname"><a href="config_8h.html">config.h</a></div><div class="ttdoc">Compatibility names (set of defines) </div></div>
 <div class="ttc" id="mbedtls__ecode_8h_html"><div class="ttname"><a href="mbedtls__ecode_8h.html">mbedtls_ecode.h</a></div><div class="ttdoc">Silicon Labs specific mbedtls error code definitions. </div></div>
-<div class="ttc" id="sl__crypto_8h_html_a204657185b93d19dc64468c75b1abc5e"><div class="ttname"><a href="sl__crypto_8h.html#a204657185b93d19dc64468c75b1abc5e">mbedtls_asynch_callback</a></div><div class="ttdeci">void(* mbedtls_asynch_callback)(int result, void *user_arg)</div><div class="ttdoc">Asynchronous (non-blocking) operation completion callback function. </div><div class="ttdef"><b>Definition:</b> <a href="sl__crypto_8h_source.html#l00069">sl_crypto.h:69</a></div></div>
 <div class="ttc" id="cryptodrv_8h_html"><div class="ttname"><a href="cryptodrv_8h.html">cryptodrv.h</a></div></div>
-<div class="ttc" id="sl__crypto_8h_html_a0db512d40860e61bd11571a2204897b8"><div class="ttname"><a href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8">mbedtls_device_io_mode</a></div><div class="ttdeci">mbedtls_device_io_mode</div><div class="ttdoc">Enum defines which data I/O mode to use for moving data to/from the AES/CRYPTO hardware module...</div><div class="ttdef"><b>Definition:</b> <a href="sl__crypto_8h_source.html#l00073">sl_crypto.h:73</a></div></div>
-<div class="ttc" id="sl__crypto_8h_html_a0db512d40860e61bd11571a2204897b8a9a402497d0fb9085ee908764fed36461"><div class="ttname"><a href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8a9a402497d0fb9085ee908764fed36461">MBEDTLS_DEVICE_IO_MODE_BUFC</a></div><div class="ttdef"><b>Definition:</b> <a href="sl__crypto_8h_source.html#l00078">sl_crypto.h:78</a></div></div>
-<div class="ttc" id="unionmbedtls__device__io__mode__specific_html"><div class="ttname"><a href="unionmbedtls__device__io__mode__specific.html">mbedtls_device_io_mode_specific</a></div><div class="ttdoc">Data I/O mode specific configuration structure. </div><div class="ttdef"><b>Definition:</b> <a href="sl__crypto_8h_source.html#l00105">sl_crypto.h:105</a></div></div>
+<div class="ttc" id="sl__crypto_8h_html_a0db512d40860e61bd11571a2204897b8"><div class="ttname"><a href="sl__crypto_8h.html#a0db512d40860e61bd11571a2204897b8">mbedtls_device_io_mode</a></div><div class="ttdeci">mbedtls_device_io_mode</div><div class="ttdoc">Enum defines which data I/O mode to use for moving data to/from the AES/CRYPTO hardware module...</div><div class="ttdef"><b>Definition:</b> <a href="sl__crypto_8h_source.html#l00058">sl_crypto.h:58</a></div></div>
+<div class="ttc" id="unionmbedtls__device__io__mode__specific_html"><div class="ttname"><a href="unionmbedtls__device__io__mode__specific.html">mbedtls_device_io_mode_specific</a></div><div class="ttdoc">Data I/O mode specific configuration structure. </div><div class="ttdef"><b>Definition:</b> <a href="sl__crypto_8h_source.html#l00079">sl_crypto.h:79</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 27 2016 16:12:40 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 9 2017 20:48:04 for mbed TLS v2.2.0 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

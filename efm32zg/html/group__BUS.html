@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFM32 Zero Gecko Software Documentation
-   &#160;<span id="projectnumber">efm32zg-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efm32zg-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -107,8 +107,8 @@ $(document).ready(function(){initNavTree('group__BUS.html','');});
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>BUS RAM and register bit/field read/write API. </p>
-<p>API to perform bitbanded and masked accesses to SRAM and peripheral memory. </p>
+<p>BUS register and RAM bit/field read/write API. </p>
+<p>API to perform bit-band and field set/clear access to RAM and peripherals. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -268,7 +268,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="group__EFM32ZG222F32__Part.html#ga46ab71255f6da2fcd617bd33dfb3c202">PER_MEM_BASE</a>.</p>
 
-<p>Referenced by <a class="el" href="group__CMU.html#ga144a6e08d50cc4913a3452231eb3cc36">CMU_Calibrate()</a>, <a class="el" href="group__CMU.html#ga6a5fb4b2d369de8db9ebf56edc780a7c">CMU_CalibrateCountGet()</a>, <a class="el" href="group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9">CMU_OscillatorEnable()</a>, <a class="el" href="group__CMU.html#ga1200b660d32b39db023753094a282ae9">CMU_OscillatorTuningSet()</a>, <a class="el" href="group__GPIO.html#gac1050d30b940c30899c63aa060fa4dba">GPIO_PinInGet()</a>, <a class="el" href="group__GPIO.html#ga8ed31bc079380c74d6db162d4cdc16b8">GPIO_PinOutGet()</a>, and <a class="el" href="group__WDOG.html#gaccf944498d4c40e6d87afa84e06d297b">WDOGn_Enable()</a>.</p>
+<p>Referenced by <a class="el" href="group__CMU.html#ga144a6e08d50cc4913a3452231eb3cc36">CMU_Calibrate()</a>, <a class="el" href="group__CMU.html#ga6a5fb4b2d369de8db9ebf56edc780a7c">CMU_CalibrateCountGet()</a>, <a class="el" href="group__CMU.html#ga2cc0f1684fbc32976b82c6d93a51c7d9">CMU_OscillatorEnable()</a>, <a class="el" href="group__CMU.html#ga1200b660d32b39db023753094a282ae9">CMU_OscillatorTuningSet()</a>, <a class="el" href="group__EMU.html#ga4b8909b4558d78ba21bce5b57f5557dc">EMU_DCDCLnRcoBandSet()</a>, <a class="el" href="group__GPIO.html#gac1050d30b940c30899c63aa060fa4dba">GPIO_PinInGet()</a>, <a class="el" href="group__GPIO.html#ga8ed31bc079380c74d6db162d4cdc16b8">GPIO_PinOutGet()</a>, and <a class="el" href="group__WDOG.html#gaccf944498d4c40e6d87afa84e06d297b">WDOGn_Enable()</a>.</p>
 
 </div>
 </div>
@@ -318,7 +318,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="group__EFM32ZG222F32__Part.html#ga46ab71255f6da2fcd617bd33dfb3c202">PER_MEM_BASE</a>.</p>
 
-<p>Referenced by <a class="el" href="group__ACMP.html#gab99c16a966bfa66c081160ec51e0a039">ACMP_CapsenseInit()</a>, <a class="el" href="group__ACMP.html#gad04e5819cd2d6ca5a275e8cc047f9ecf">ACMP_Init()</a>, <a class="el" href="group__ADC.html#ga41207273ca90e4173084233060e0edbb">ADC_InitScan()</a>, <a class="el" href="group__ADC.html#ga76aa8949d51eb1027906f68b0952ea0e">ADC_InitSingle()</a>, <a class="el" href="group__CMU.html#gab0bbce1edee26bdd70234b1017cb1362">CMU_CalibrateCont()</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet()</a>, <a class="el" href="group__CMU.html#ga36fa7c0d6a7e7e7fd621ca184ec5e236">CMU_LFXOInit()</a>, <a class="el" href="group__CMU.html#gac0fede38cfa32965cc8ace2b51a14d5b">CMU_PCNTClockExternalSet()</a>, <a class="el" href="group__DMA.html#gab119fe5869e7ebcfd29542d05dae2d29">DMA_CfgChannel()</a>, <a class="el" href="group__DMA.html#ga906324e92ed0f9b14f755ec2b2047590">DMA_ChannelRequestEnable()</a>, <a class="el" href="group__EMU.html#ga72910c09de24f4e2f8f170dc06bd8c07">EMU_EM2Block()</a>, <a class="el" href="group__EMU.html#ga9e959a9fd56ac4a2e18877b9b839d795">EMU_EM2UnBlock()</a>, <a class="el" href="group__EMU.html#gacadc56c5e2a8fb2890edd139b694b25b">EMU_EnterEM2()</a>, <a class="el" href="group__EMU.html#ga9e98f9066d91dbd64c3e73254336218f">EMU_EnterEM3()</a>, <a class="el" href="group__EMU.html#gac92115921464d7435fc714d8b9bd494b">EMU_EnterEM4()</a>, <a class="el" href="group__GPIO.html#ga7aa21d660197b3e2f67589db89686bbf">GPIO_DbgSWDClkEnable()</a>, <a class="el" href="group__GPIO.html#gaceecf411d11a30e7fa10fc42dd4f612d">GPIO_DbgSWDIOEnable()</a>, <a class="el" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig()</a>, <a class="el" href="group__GPIO.html#ga607f3a5f3d881bb145101566f1664aba">GPIO_PinOutClear()</a>, <a class="el" href="group__GPIO.html#gab08f054efbb07aaff57d616974c9c536">GPIO_PinOutSet()</a>, <a class="el" href="group__I2C.html#gaca1c9ca46d6945a4696f8a34ab8c2ddf">I2C_Enable()</a>, <a class="el" href="group__I2C.html#gab52e0fc0d3690e40f80a193d5b6fdd51">I2C_Init()</a>, <a class="el" href="group__IDAC.html#gaee730488249cae5faac6be865dab9a33">IDAC_Enable()</a>, <a class="el" href="group__IDAC.html#ga6d5eba9c5497b56265fed7918daf97cd">IDAC_MinimalOutputTransitionMode()</a>, <a class="el" href="group__IDAC.html#gadb7157da10f33ecceb87bad6cc753df3">IDAC_OutEnable()</a>, <a class="el" href="group__MSC.html#ga5245d3b0940fea9a9c812e95476e9aa1">MSC_EnableAutoCacheFlush()</a>, <a class="el" href="group__MSC.html#gae1220a12c62b8709ae553b0a155c0d18">MSC_EnableCache()</a>, <a class="el" href="group__PCNT.html#gacb21126956add214b4af318f61fd17cd">PCNT_CounterReset()</a>, <a class="el" href="group__PCNT.html#ga726934d28be99230a6025503fdbaf86d">PCNT_Init()</a>, <a class="el" href="group__PCNT.html#ga3398bc56f58cfc86afeedcd4febc5753">PCNT_PRSInputEnable()</a>, <a class="el" href="group__PCNT.html#gadf14f80981badc92e7a30a43caae130b">PCNT_Reset()</a>, <a class="el" href="group__RMU.html#ga1ebc1af03f738faa79b3e87d60a96ff1">RMU_ResetCauseClear()</a>, <a class="el" href="group__RMU.html#gafad06e5ac32430ed4182d4306d684eb7">RMU_ResetControl()</a>, <a class="el" href="group__RTC.html#ga19213bbf2d6cb73d55cec086a98493e6">RTC_Enable()</a>, <a class="el" href="group__WDOG.html#gaccf944498d4c40e6d87afa84e06d297b">WDOGn_Enable()</a>, and <a class="el" href="group__WDOG.html#ga638259d740de220fb9b34a5b9654e182">WDOGn_Lock()</a>.</p>
+<p>Referenced by <a class="el" href="group__ACMP.html#gab99c16a966bfa66c081160ec51e0a039">ACMP_CapsenseInit()</a>, <a class="el" href="group__ACMP.html#gad04e5819cd2d6ca5a275e8cc047f9ecf">ACMP_Init()</a>, <a class="el" href="group__ADC.html#ga41207273ca90e4173084233060e0edbb">ADC_InitScan()</a>, <a class="el" href="group__ADC.html#ga76aa8949d51eb1027906f68b0952ea0e">ADC_InitSingle()</a>, <a class="el" href="group__CMU.html#gab0bbce1edee26bdd70234b1017cb1362">CMU_CalibrateCont()</a>, <a class="el" href="group__CMU.html#ga93913d50050d52b38b0a7c7c08ac81e8">CMU_ClockEnable()</a>, <a class="el" href="group__CMU.html#gae11949f9c2e4033ad63dac48c9a739d3">CMU_ClockSelectSet()</a>, <a class="el" href="group__CMU.html#ga36fa7c0d6a7e7e7fd621ca184ec5e236">CMU_LFXOInit()</a>, <a class="el" href="group__CMU.html#gac0fede38cfa32965cc8ace2b51a14d5b">CMU_PCNTClockExternalSet()</a>, <a class="el" href="group__DMA.html#gab119fe5869e7ebcfd29542d05dae2d29">DMA_CfgChannel()</a>, <a class="el" href="group__DMA.html#ga906324e92ed0f9b14f755ec2b2047590">DMA_ChannelRequestEnable()</a>, <a class="el" href="group__EMU.html#ga9537dcfde6aace1ae4fcb1c949d10da0">EMU_DCDCInit()</a>, <a class="el" href="group__EMU.html#gade447bc354ddd2893ac668a7475e76fd">EMU_DCDCModeSet()</a>, <a class="el" href="group__EMU.html#ga72910c09de24f4e2f8f170dc06bd8c07">EMU_EM2Block()</a>, <a class="el" href="group__EMU.html#ga9e959a9fd56ac4a2e18877b9b839d795">EMU_EM2UnBlock()</a>, <a class="el" href="group__GPIO.html#ga7aa21d660197b3e2f67589db89686bbf">GPIO_DbgSWDClkEnable()</a>, <a class="el" href="group__GPIO.html#gaceecf411d11a30e7fa10fc42dd4f612d">GPIO_DbgSWDIOEnable()</a>, <a class="el" href="group__GPIO.html#gac954a361034e059b980964055f6d735a">GPIO_ExtIntConfig()</a>, <a class="el" href="group__GPIO.html#ga607f3a5f3d881bb145101566f1664aba">GPIO_PinOutClear()</a>, <a class="el" href="group__GPIO.html#gab08f054efbb07aaff57d616974c9c536">GPIO_PinOutSet()</a>, <a class="el" href="group__I2C.html#gaca1c9ca46d6945a4696f8a34ab8c2ddf">I2C_Enable()</a>, <a class="el" href="group__I2C.html#gab52e0fc0d3690e40f80a193d5b6fdd51">I2C_Init()</a>, <a class="el" href="group__IDAC.html#gaee730488249cae5faac6be865dab9a33">IDAC_Enable()</a>, <a class="el" href="group__IDAC.html#ga6d5eba9c5497b56265fed7918daf97cd">IDAC_MinimalOutputTransitionMode()</a>, <a class="el" href="group__IDAC.html#gadb7157da10f33ecceb87bad6cc753df3">IDAC_OutEnable()</a>, <a class="el" href="group__MSC.html#ga5245d3b0940fea9a9c812e95476e9aa1">MSC_EnableAutoCacheFlush()</a>, <a class="el" href="group__MSC.html#gae1220a12c62b8709ae553b0a155c0d18">MSC_EnableCache()</a>, <a class="el" href="group__PCNT.html#gacb21126956add214b4af318f61fd17cd">PCNT_CounterReset()</a>, <a class="el" href="group__PCNT.html#ga726934d28be99230a6025503fdbaf86d">PCNT_Init()</a>, <a class="el" href="group__PCNT.html#ga3398bc56f58cfc86afeedcd4febc5753">PCNT_PRSInputEnable()</a>, <a class="el" href="group__PCNT.html#gadf14f80981badc92e7a30a43caae130b">PCNT_Reset()</a>, <a class="el" href="group__RMU.html#ga1ebc1af03f738faa79b3e87d60a96ff1">RMU_ResetCauseClear()</a>, <a class="el" href="group__RMU.html#gafad06e5ac32430ed4182d4306d684eb7">RMU_ResetControl()</a>, <a class="el" href="group__RTC.html#ga19213bbf2d6cb73d55cec086a98493e6">RTC_Enable()</a>, <a class="el" href="group__WDOG.html#gaccf944498d4c40e6d87afa84e06d297b">WDOGn_Enable()</a>, and <a class="el" href="group__WDOG.html#ga638259d740de220fb9b34a5b9654e182">WDOGn_Lock()</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Unshifted and masked register value </dd></dl>
 
-<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00315">315</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
+<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00318">318</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
 
 </div>
 </div>
@@ -485,12 +485,12 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Peripheral register address</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>Peripheral register mask</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>Peripheral register value. The value must be shifted to the correct bit position in the register. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>Peripheral register value. The value must be shifted to the correct bit position in the register corresponding to the field defined by the mask parameter. The register value must be contained in the field defined by the mask parameter. This function is not performing masking of val internally. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00285">285</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
+<p>Definition at line <a class="el" href="em__bus_8h_source.html#l00288">288</a> of file <a class="el" href="em__bus_8h_source.html">em_bus.h</a>.</p>
 
 <p>References <a class="el" href="group__BUS.html#gad226bfe478c81d51681539d935241758">BUS_RegMaskedClear()</a>, and <a class="el" href="group__BUS.html#ga8225a5d4acac280abb182dc118e8df77">BUS_RegMaskedSet()</a>.</p>
 
@@ -503,7 +503,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Sep 27 2016 15:57:51 for EFM32 Zero Gecko Software Documentation by
+    <li class="footer">Generated on Thu Mar 9 2017 20:40:07 for EFM32 Zero Gecko Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

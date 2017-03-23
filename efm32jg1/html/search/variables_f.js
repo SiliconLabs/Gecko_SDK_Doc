@@ -9,6 +9,7 @@ var searchData=
   ['op1',['op1',['../structoperand__t.html#a3110d0088d2cc26a4eca11c34c8280ea',1,'operand_t']]],
   ['op2',['op2',['../structoperand__t.html#a2085baba44e6aec76bacafcf38462095',1,'operand_t']]],
   ['opcode',['OpCode',['../structMSDSCSI__Inquiry__TypeDef.html#afabea63a5cff7f2cd6078836bf5ef82d',1,'MSDSCSI_Inquiry_TypeDef::OpCode()'],['../structMSDSCSI__RequestSense__TypeDef.html#a2e663d75ee3be26383df61002dcf554a',1,'MSDSCSI_RequestSense_TypeDef::OpCode()'],['../structMSDSCSI__ReadCapacity__TypeDef.html#a5083c3f4033888bb0cae9f5342bab35b',1,'MSDSCSI_ReadCapacity_TypeDef::OpCode()'],['../structMSDSCSI__Read10__TypeDef.html#af761f58e88342d2362a6d63d2510def8',1,'MSDSCSI_Read10_TypeDef::OpCode()'],['../structMSDSCSI__Write10__TypeDef.html#ac8b0c2e5c4c679f4ab63eb682158ca9f',1,'MSDSCSI_Write10_TypeDef::OpCode()'],['../structMSDSCSI__Verify10__TypeDef.html#ae4880853b49b90e27ebd684f6ea2b15a',1,'MSDSCSI_Verify10_TypeDef::OpCode()'],['../structMSDSCSI__StartStopUnit__TypeDef.html#adeeb3bc14c7c1b06450fa6c00579ca26',1,'MSDSCSI_StartStopUnit_TypeDef::OpCode()']]],
+  ['orientation',['orientation',['../struct__IMU__SensorFusion.html#a0e619c79f6d8f63e9f2447d8ae8618f5',1,'_IMU_SensorFusion']]],
   ['osc',['osc',['../structCRYOTIMER__Init__TypeDef.html#a51a7b5db3f57bc905174c887d4069057',1,'CRYOTIMER_Init_TypeDef']]],
   ['oscencmd',['OSCENCMD',['../structCMU__TypeDef.html#a1028efc1f51c838e53de1b4a37688681',1,'CMU_TypeDef']]],
   ['out0pol',['out0Pol',['../structLETIMER__Init__TypeDef.html#a1ea57a4cc27cb605e1a9984c4d46c450',1,'LETIMER_Init_TypeDef']]],
@@ -16,7 +17,9 @@ var searchData=
   ['outinvert',['outInvert',['../structTIMER__InitCC__TypeDef.html#a3f6a4a60bb45febd3911bf4b53fedfc5',1,'TIMER_InitCC_TypeDef']]],
   ['outmode',['outMode',['../structIDAC__Init__TypeDef.html#a73024982aa23263a084b0fada9ced096',1,'IDAC_Init_TypeDef']]],
   ['outputsenablemask',['outputsEnableMask',['../structTIMER__InitDTI__TypeDef.html#a59fc55f38d62814fdf52521a5a197d41',1,'TIMER_InitDTI_TypeDef']]],
-  ['oversampling',['oversampling',['../structUSART__InitAsync__TypeDef.html#aad69d456670f5d2629a60dbbef977c49',1,'USART_InitAsync_TypeDef::oversampling()'],['../structUARTDRV__InitUart__t.html#ab6371f8a6226a2295226fe5e4805ed9f',1,'UARTDRV_InitUart_t::oversampling()'],['../structTOUCH__Config__TypeDef.html#ab482f703165b5ab55cb7237a22797500',1,'TOUCH_Config_TypeDef::oversampling()']]],
+  ['oversamp_5fpressure',['oversamp_pressure',['../structbmp280__t.html#afd6c0164744091601606d7b00e60a50d',1,'bmp280_t']]],
+  ['oversamp_5ftemperature',['oversamp_temperature',['../structbmp280__t.html#a92d5888dfeae96a83f25ee9554b50937',1,'bmp280_t']]],
+  ['oversampling',['oversampling',['../structUSART__InitAsync__TypeDef.html#aad69d456670f5d2629a60dbbef977c49',1,'USART_InitAsync_TypeDef::oversampling()'],['../structUARTDRV__InitUart__t.html#ab6371f8a6226a2295226fe5e4805ed9f',1,'UARTDRV_InitUart_t::oversampling()'],['../struct____BMP__Config.html#a1c9b6811780532b8560841a921074418',1,'__BMP_Config::oversampling()'],['../structTOUCH__Config__TypeDef.html#ab482f703165b5ab55cb7237a22797500',1,'TOUCH_Config_TypeDef::oversampling()']]],
   ['ovscfg',['OVSCFG',['../structPCNT__TypeDef.html#a3fbcb299dadc7413cfaa978871b5d36c',1,'PCNT_TypeDef']]],
   ['ovsratesel',['ovsRateSel',['../structADC__Init__TypeDef.html#abd87f85b8c594baee7981ec252998618',1,'ADC_Init_TypeDef']]],
   ['ovtdis',['OVTDIS',['../structGPIO__P__TypeDef.html#aa13d30a78116fd726ced16ec5c6a446c',1,'GPIO_P_TypeDef']]]

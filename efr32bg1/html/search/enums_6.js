@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['i2c_5fclockhlr_5ftypedef',['I2C_ClockHLR_TypeDef',['../group__I2C.html#gabb1516548b4528328682d6be09a3e3a5',1,'em_i2c.h']]],
-  ['i2c_5ftransferreturn_5ftypedef',['I2C_TransferReturn_TypeDef',['../group__I2C.html#ga7c781ec28ae11e3e28892de7aa07a00f',1,'em_i2c.h']]],
-  ['idac_5foutmode_5ftypedef',['IDAC_OutMode_TypeDef',['../group__IDAC.html#ga58be7eed3e51f941d9b788b53aedf4c5',1,'em_idac.h']]],
-  ['idac_5fprssel_5ftypedef',['IDAC_PRSSEL_TypeDef',['../group__IDAC.html#gadd77491cecf587b26365844200cd0597',1,'em_idac.h']]],
-  ['idac_5frange_5ftypedef',['IDAC_Range_TypeDef',['../group__IDAC.html#ga7ff0d5acba93b8f7b3111bfdf094fcee',1,'em_idac.h']]],
-  ['irqn',['IRQn',['../group__EFR32BG1P333F256GM48.html#ga666eb0caeb12ec0e281415592ae89083',1,'efr32bg1p333f256gm48.h']]]
+  ['gesture_5ft',['gesture_t',['../group__Si114x.html#ga336655f991c3d44f61e92e4d31c4bf36',1,'si114x_algorithm.h']]],
+  ['gpio_5fdrivestrength_5ftypedef',['GPIO_DriveStrength_TypeDef',['../group__GPIO.html#ga302f9e4781fc54afaace4dee03fdf046',1,'em_gpio.h']]],
+  ['gpio_5fmode_5ftypedef',['GPIO_Mode_TypeDef',['../group__GPIO.html#ga93ff740308e5b31729d8593a89967cda',1,'em_gpio.h']]],
+  ['gpio_5fport_5ftypedef',['GPIO_Port_TypeDef',['../group__GPIO.html#gafe496583dfd425fc03c413d49459efe6',1,'em_gpio.h']]]
 ];

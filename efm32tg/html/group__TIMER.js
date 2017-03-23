@@ -108,8 +108,10 @@ var group__TIMER =
     [ "TIMER_IntGet", "group__TIMER.html#gacbd76455f127f402f6b38ed94f68e4e6", null ],
     [ "TIMER_IntGetEnabled", "group__TIMER.html#gab0fb61a0bc7cc248a247b59637c76d02", null ],
     [ "TIMER_IntSet", "group__TIMER.html#gabef9a01112726dde12b8b9c7831bd266", null ],
+    [ "TIMER_MaxCount", "group__TIMER.html#gabb8522fff7c668bb00fb6db6947454e8", null ],
     [ "TIMER_Reset", "group__TIMER.html#gade950f7c7c81fe3ae1612f40f5e0327d", null ],
     [ "TIMER_TopBufSet", "group__TIMER.html#gaa4768fe62ef7609d62bf432e7143332c", null ],
     [ "TIMER_TopGet", "group__TIMER.html#gaea8b8e6f85bb4cbe77f21bb838169692", null ],
-    [ "TIMER_TopSet", "group__TIMER.html#gad367b1801475494e0aeab2e4eab1e646", null ]
+    [ "TIMER_TopSet", "group__TIMER.html#gad367b1801475494e0aeab2e4eab1e646", null ],
+    [ "TIMER_Valid", "group__TIMER.html#ga04442bc44f2b694b17ad60274e6668e7", null ]
 ];

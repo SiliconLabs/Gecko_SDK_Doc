@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Flex Gecko 1 Software Documentation: c:/work/super/hardware/kit/common/drivers/tftamapped.c Source File</title>
+<title>EFR32 Flex Gecko 1 Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/hardware/kit/common/drivers/tftamapped.c Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Flex Gecko 1 Software Documentation
-   &#160;<span id="projectnumber">efr32fg1-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efr32fg1-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('tftamapped_8c_source.html','');});
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tftamapped_8h.html">tftamapped.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/* DMD init from dmd_ssd2119_direct.c */</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;dmd/ssd2119/dmd_ssd2119.h&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;glib/glib.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="glib_8h.html">glib/glib.h</a>&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="tftamapped_8c.html#afe70170d3fccae20385a566186646374">   28</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="tftamapped_8c.html#afe70170d3fccae20385a566186646374">runOnce</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
@@ -135,55 +135,64 @@ $(document).ready(function(){initNavTree('tftamapped_8c_source.html','');});
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">/* If we&#39;re not BC_ARB_CTRL_EBI state, we need to reconfigure display controller */</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> ((<a class="code" href="group__BSP__DK.html#ga4044b087f6c29f36df7e29ade3bafb49">BSP_RegisterRead</a>(&amp;<a class="code" href="group__BSP__DK.html#ga12ce42235734e893cce2ebc3abe1a6c5">BC_REGISTER</a>-&gt;ARB_CTRL) != <a class="code" href="group__BSP__DK.html#gaa977cf835cf8e19adaa3bdac1d94634e">BC_ARB_CTRL_EBI</a>) || <a class="code" href="tftamapped_8c.html#afe70170d3fccae20385a566186646374">runOnce</a>)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="comment">/* Configure for EBI mode and reset display */</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="group__BSP__DK.html#gacdf0586194771b5184caf46a9f0bd3ea">BSP_DisplayControl</a>(<a class="code" href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343ac381926a3fee8df795a47bf1ab6dba4c">BSP_Display_EBI</a>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="group__BSP__DK.html#gacdf0586194771b5184caf46a9f0bd3ea">BSP_DisplayControl</a>(<a class="code" href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343a5426d95e45332ac2c41f5fc0d3a4597e">BSP_Display_ResetAssert</a>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <a class="code" href="group__BSP__DK.html#gacdf0586194771b5184caf46a9f0bd3ea">BSP_DisplayControl</a>(<a class="code" href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343ad7e9d4e6f9be25e468072506cdde62e4">BSP_Display_PowerDisable</a>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="comment">/* Short reset delay */</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      freq = <a class="code" href="system__efr32fg1p_8c.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">for</span> (i = 0; i &lt; (freq / 100); i++)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        __NOP();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="comment">/* Configure display for Direct Drive + SPI mode */</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="group__BSP__DK.html#gacdf0586194771b5184caf46a9f0bd3ea">BSP_DisplayControl</a>(<a class="code" href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343a3055e41913f9167012d07aed05660643">BSP_Display_Mode8080</a>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <a class="code" href="group__BSP__DK.html#gacdf0586194771b5184caf46a9f0bd3ea">BSP_DisplayControl</a>(<a class="code" href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343aeaee2cfd66048e46480c6018c2331e55">BSP_Display_PowerEnable</a>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="group__BSP__DK.html#gacdf0586194771b5184caf46a9f0bd3ea">BSP_DisplayControl</a>(<a class="code" href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343a4b837ec2d6e0cb4a74e8439ec62175ab">BSP_Display_ResetRelease</a>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="comment">/* Initialize graphics - abort on failure */</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      status = DMDIF_init(<a class="code" href="group__BSP__DK.html#ga585f7744aa6efd253df48b958968d3ec">BC_SSD2119_BASE</a>, <a class="code" href="group__BSP__DK.html#ga585f7744aa6efd253df48b958968d3ec">BC_SSD2119_BASE</a> + 2);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">if</span> (status == DMD_OK) status = DMD_init(0);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">if</span> ((status != DMD_OK) &amp;&amp; (status != DMD_ERROR_DRIVER_ALREADY_INITIALIZED)) <span class="keywordflow">while</span> (1) ;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="comment">/* Make sure display is configured with correct rotation */</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">if</span> ((status == DMD_OK)) DMD_flipDisplay(1, 1);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <a class="code" href="tftamapped_8c.html#afe70170d3fccae20385a566186646374">runOnce</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    ret = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    ret = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="comment">/* Resetting display while SPI_DEMUX is set to display does not work */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="group__BSP__DK.html#ga4044b087f6c29f36df7e29ade3bafb49">BSP_RegisterRead</a>(&amp;<a class="code" href="group__BSP__DK.html#ga12ce42235734e893cce2ebc3abe1a6c5">BC_REGISTER</a>-&gt;SPI_DEMUX) == <a class="code" href="group__BSP__DK.html#ga24d20f93550bfedf08d03fb2bf45bf2b">BC_SPI_DEMUX_SLAVE_DISPLAY</a>)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="group__BSP__DK.html#ga80f89f8fce2cc70dfe2cc20c87027134">BSP_RegisterWrite</a>(&amp;<a class="code" href="group__BSP__DK.html#ga12ce42235734e893cce2ebc3abe1a6c5">BC_REGISTER</a>-&gt;SPI_DEMUX, <a class="code" href="group__BSP__DK.html#gac72ace66804a381a306a57ac83c86549">BC_SPI_DEMUX_SLAVE_AUDIO</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="comment">/* Configure for EBI mode and reset display */</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <a class="code" href="group__BSP__DK.html#gacdf0586194771b5184caf46a9f0bd3ea">BSP_DisplayControl</a>(<a class="code" href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343ac381926a3fee8df795a47bf1ab6dba4c">BSP_Display_EBI</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="group__BSP__DK.html#gacdf0586194771b5184caf46a9f0bd3ea">BSP_DisplayControl</a>(<a class="code" href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343a5426d95e45332ac2c41f5fc0d3a4597e">BSP_Display_ResetAssert</a>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="group__BSP__DK.html#gacdf0586194771b5184caf46a9f0bd3ea">BSP_DisplayControl</a>(<a class="code" href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343ad7e9d4e6f9be25e468072506cdde62e4">BSP_Display_PowerDisable</a>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="comment">/* Short reset delay */</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      freq = <a class="code" href="system__efr32fg1p_8c.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">for</span> (i = 0; i &lt; (freq / 100); i++)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        __NOP();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="comment">/* Configure display for Direct Drive + SPI mode */</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <a class="code" href="group__BSP__DK.html#gacdf0586194771b5184caf46a9f0bd3ea">BSP_DisplayControl</a>(<a class="code" href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343a3055e41913f9167012d07aed05660643">BSP_Display_Mode8080</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <a class="code" href="group__BSP__DK.html#gacdf0586194771b5184caf46a9f0bd3ea">BSP_DisplayControl</a>(<a class="code" href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343aeaee2cfd66048e46480c6018c2331e55">BSP_Display_PowerEnable</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="group__BSP__DK.html#gacdf0586194771b5184caf46a9f0bd3ea">BSP_DisplayControl</a>(<a class="code" href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343a4b837ec2d6e0cb4a74e8439ec62175ab">BSP_Display_ResetRelease</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="comment">/* Initialize graphics - abort on failure */</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      status = DMDIF_init(<a class="code" href="group__BSP__DK.html#ga585f7744aa6efd253df48b958968d3ec">BC_SSD2119_BASE</a>, <a class="code" href="group__BSP__DK.html#ga585f7744aa6efd253df48b958968d3ec">BC_SSD2119_BASE</a> + 2);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">if</span> (status == DMD_OK) status = DMD_init(0);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">if</span> ((status != DMD_OK) &amp;&amp; (status != DMD_ERROR_DRIVER_ALREADY_INITIALIZED)) <span class="keywordflow">while</span> (1) ;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="comment">/* Make sure display is configured with correct rotation */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">if</span> ((status == DMD_OK)) DMD_flipDisplay(1, 1);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="tftamapped_8c.html#afe70170d3fccae20385a566186646374">runOnce</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    ret = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    ret = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
 <div class="ttc" id="bsp_8h_html"><div class="ttname"><a href="bsp_8h.html">bsp.h</a></div><div class="ttdoc">Board support package API definitions. </div></div>
+<div class="ttc" id="group__BSP__DK_html_gac72ace66804a381a306a57ac83c86549"><div class="ttname"><a href="group__BSP__DK.html#gac72ace66804a381a306a57ac83c86549">BC_SPI_DEMUX_SLAVE_AUDIO</a></div><div class="ttdeci">#define BC_SPI_DEMUX_SLAVE_AUDIO</div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__bcreg__3201_8h_source.html#l00208">bsp_dk_bcreg_3201.h:208</a></div></div>
 <div class="ttc" id="em__device_8h_html"><div class="ttname"><a href="em__device_8h.html">em_device.h</a></div><div class="ttdoc">CMSIS Cortex-M Peripheral Access Layer for Silicon Laboratories microcontroller devices. </div></div>
 <div class="ttc" id="system__efr32fg1p_8c_html_af2e6aa1120f0e55e38c83d8387625d16"><div class="ttname"><a href="system__efr32fg1p_8c.html#af2e6aa1120f0e55e38c83d8387625d16">SystemCoreClockGet</a></div><div class="ttdeci">uint32_t SystemCoreClockGet(void)</div><div class="ttdoc">Get the current core clock frequency. </div><div class="ttdef"><b>Definition:</b> <a href="system__efr32fg1p_8c_source.html#l00137">system_efr32fg1p.c:137</a></div></div>
 <div class="ttc" id="group__BSP__DK_html_ga4044b087f6c29f36df7e29ade3bafb49"><div class="ttname"><a href="group__BSP__DK.html#ga4044b087f6c29f36df7e29ade3bafb49">BSP_RegisterRead</a></div><div class="ttdeci">uint16_t BSP_RegisterRead(volatile uint16_t *addr)</div><div class="ttdoc">Read from a board controller register. </div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__3201_8c_source.html#l00687">bsp_dk_3201.c:687</a></div></div>
-<div class="ttc" id="group__BSP__DK_html_gga2dc0e02483c77ca9536927c6495db343a5426d95e45332ac2c41f5fc0d3a4597e"><div class="ttname"><a href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343a5426d95e45332ac2c41f5fc0d3a4597e">BSP_Display_ResetAssert</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp_8h_source.html#l00068">bsp.h:68</a></div></div>
+<div class="ttc" id="group__BSP__DK_html_gga2dc0e02483c77ca9536927c6495db343a5426d95e45332ac2c41f5fc0d3a4597e"><div class="ttname"><a href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343a5426d95e45332ac2c41f5fc0d3a4597e">BSP_Display_ResetAssert</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp_8h_source.html#l00070">bsp.h:70</a></div></div>
 <div class="ttc" id="group__BSP__DK_html_ga2cb3b987e8ac312f73be1dab2274b575"><div class="ttname"><a href="group__BSP__DK.html#ga2cb3b987e8ac312f73be1dab2274b575">BC_UIF_AEM_EFM</a></div><div class="ttdeci">#define BC_UIF_AEM_EFM</div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__bcreg__3201_8h_source.html#l00157">bsp_dk_bcreg_3201.h:157</a></div></div>
 <div class="ttc" id="em__ebi_8h_html"><div class="ttname"><a href="em__ebi_8h.html">em_ebi.h</a></div><div class="ttdoc">External Bus Iterface (EBI) peripheral API. </div></div>
-<div class="ttc" id="group__BSP__DK_html_gga2dc0e02483c77ca9536927c6495db343ad7e9d4e6f9be25e468072506cdde62e4"><div class="ttname"><a href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343ad7e9d4e6f9be25e468072506cdde62e4">BSP_Display_PowerDisable</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp_8h_source.html#l00067">bsp.h:67</a></div></div>
+<div class="ttc" id="glib_8h_html"><div class="ttname"><a href="glib_8h.html">glib.h</a></div><div class="ttdoc">Silicon Labs Graphics Library. </div></div>
+<div class="ttc" id="group__BSP__DK_html_gga2dc0e02483c77ca9536927c6495db343ad7e9d4e6f9be25e468072506cdde62e4"><div class="ttname"><a href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343ad7e9d4e6f9be25e468072506cdde62e4">BSP_Display_PowerDisable</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp_8h_source.html#l00069">bsp.h:69</a></div></div>
 <div class="ttc" id="em__gpio_8h_html"><div class="ttname"><a href="em__gpio_8h.html">em_gpio.h</a></div><div class="ttdoc">General Purpose IO (GPIO) peripheral API. </div></div>
-<div class="ttc" id="group__BSP__DK_html_gga2dc0e02483c77ca9536927c6495db343ac381926a3fee8df795a47bf1ab6dba4c"><div class="ttname"><a href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343ac381926a3fee8df795a47bf1ab6dba4c">BSP_Display_EBI</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp_8h_source.html#l00063">bsp.h:63</a></div></div>
-<div class="ttc" id="group__BSP__DK_html_gga2dc0e02483c77ca9536927c6495db343a4b837ec2d6e0cb4a74e8439ec62175ab"><div class="ttname"><a href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343a4b837ec2d6e0cb4a74e8439ec62175ab">BSP_Display_ResetRelease</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp_8h_source.html#l00069">bsp.h:69</a></div></div>
-<div class="ttc" id="group__BSP__DK_html_gga2dc0e02483c77ca9536927c6495db343aeaee2cfd66048e46480c6018c2331e55"><div class="ttname"><a href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343aeaee2cfd66048e46480c6018c2331e55">BSP_Display_PowerEnable</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp_8h_source.html#l00066">bsp.h:66</a></div></div>
+<div class="ttc" id="group__BSP__DK_html_gga2dc0e02483c77ca9536927c6495db343ac381926a3fee8df795a47bf1ab6dba4c"><div class="ttname"><a href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343ac381926a3fee8df795a47bf1ab6dba4c">BSP_Display_EBI</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp_8h_source.html#l00065">bsp.h:65</a></div></div>
+<div class="ttc" id="group__BSP__DK_html_gga2dc0e02483c77ca9536927c6495db343a4b837ec2d6e0cb4a74e8439ec62175ab"><div class="ttname"><a href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343a4b837ec2d6e0cb4a74e8439ec62175ab">BSP_Display_ResetRelease</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp_8h_source.html#l00071">bsp.h:71</a></div></div>
+<div class="ttc" id="group__BSP__DK_html_gga2dc0e02483c77ca9536927c6495db343aeaee2cfd66048e46480c6018c2331e55"><div class="ttname"><a href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343aeaee2cfd66048e46480c6018c2331e55">BSP_Display_PowerEnable</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp_8h_source.html#l00068">bsp.h:68</a></div></div>
 <div class="ttc" id="tftamapped_8c_html_afe70170d3fccae20385a566186646374"><div class="ttname"><a href="tftamapped_8c.html#afe70170d3fccae20385a566186646374">runOnce</a></div><div class="ttdeci">static bool runOnce</div><div class="ttdef"><b>Definition:</b> <a href="tftamapped_8c_source.html#l00028">tftamapped.c:28</a></div></div>
+<div class="ttc" id="group__BSP__DK_html_ga80f89f8fce2cc70dfe2cc20c87027134"><div class="ttname"><a href="group__BSP__DK.html#ga80f89f8fce2cc70dfe2cc20c87027134">BSP_RegisterWrite</a></div><div class="ttdeci">int BSP_RegisterWrite(volatile uint16_t *addr, uint16_t data)</div><div class="ttdoc">Write to a board controller register. </div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__3201_8c_source.html#l00704">bsp_dk_3201.c:704</a></div></div>
 <div class="ttc" id="group__BSP__DK_html_gaa977cf835cf8e19adaa3bdac1d94634e"><div class="ttname"><a href="group__BSP__DK.html#gaa977cf835cf8e19adaa3bdac1d94634e">BC_ARB_CTRL_EBI</a></div><div class="ttdeci">#define BC_ARB_CTRL_EBI</div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__bcreg__3201_8h_source.html#l00172">bsp_dk_bcreg_3201.h:172</a></div></div>
 <div class="ttc" id="group__Tft_html_ga53cad6afec098c05461dd0da9479c0ef"><div class="ttname"><a href="group__Tft.html#ga53cad6afec098c05461dd0da9479c0ef">TFT_AddressMappedInit</a></div><div class="ttdeci">bool TFT_AddressMappedInit(void)</div><div class="ttdoc">TFT initialize or reinitialize to Address Mapped Mode Assumes EBI has been configured correctly in BS...</div><div class="ttdef"><b>Definition:</b> <a href="tftamapped_8c_source.html#l00037">tftamapped.c:37</a></div></div>
 <div class="ttc" id="group__BSP__DK_html_gacdf0586194771b5184caf46a9f0bd3ea"><div class="ttname"><a href="group__BSP__DK.html#gacdf0586194771b5184caf46a9f0bd3ea">BSP_DisplayControl</a></div><div class="ttdeci">int BSP_DisplayControl(BSP_Display_TypeDef option)</div><div class="ttdoc">Configure display control. </div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__3201_8c_source.html#l00251">bsp_dk_3201.c:251</a></div></div>
-<div class="ttc" id="group__BSP__DK_html_gga2dc0e02483c77ca9536927c6495db343a3055e41913f9167012d07aed05660643"><div class="ttname"><a href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343a3055e41913f9167012d07aed05660643">BSP_Display_Mode8080</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp_8h_source.html#l00070">bsp.h:70</a></div></div>
+<div class="ttc" id="group__BSP__DK_html_ga24d20f93550bfedf08d03fb2bf45bf2b"><div class="ttname"><a href="group__BSP__DK.html#ga24d20f93550bfedf08d03fb2bf45bf2b">BC_SPI_DEMUX_SLAVE_DISPLAY</a></div><div class="ttdeci">#define BC_SPI_DEMUX_SLAVE_DISPLAY</div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__bcreg__3201_8h_source.html#l00210">bsp_dk_bcreg_3201.h:210</a></div></div>
+<div class="ttc" id="group__BSP__DK_html_gga2dc0e02483c77ca9536927c6495db343a3055e41913f9167012d07aed05660643"><div class="ttname"><a href="group__BSP__DK.html#gga2dc0e02483c77ca9536927c6495db343a3055e41913f9167012d07aed05660643">BSP_Display_Mode8080</a></div><div class="ttdef"><b>Definition:</b> <a href="bsp_8h_source.html#l00072">bsp.h:72</a></div></div>
 <div class="ttc" id="group__BSP__DK_html_ga12ce42235734e893cce2ebc3abe1a6c5"><div class="ttname"><a href="group__BSP__DK.html#ga12ce42235734e893cce2ebc3abe1a6c5">BC_REGISTER</a></div><div class="ttdeci">#define BC_REGISTER</div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__bcreg__3201_8h_source.html#l00125">bsp_dk_bcreg_3201.h:125</a></div></div>
 <div class="ttc" id="group__BSP__DK_html_ga585f7744aa6efd253df48b958968d3ec"><div class="ttname"><a href="group__BSP__DK.html#ga585f7744aa6efd253df48b958968d3ec">BC_SSD2119_BASE</a></div><div class="ttdeci">#define BC_SSD2119_BASE</div><div class="ttdef"><b>Definition:</b> <a href="bsp__dk__bcreg__3200_8h_source.html#l00043">bsp_dk_bcreg_3200.h:43</a></div></div>
 <div class="ttc" id="tftamapped_8h_html"><div class="ttname"><a href="tftamapped_8h.html">tftamapped.h</a></div><div class="ttdoc">EFM32GG_DK3750, TFT Initialization and setup for Adress Mapped mode. </div></div>
@@ -192,8 +201,8 @@ $(document).ready(function(){initNavTree('tftamapped_8c_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f4316de2dfb04db90651672103de31d6.html">hardware</a></li><li class="navelem"><a class="el" href="dir_76f2117c008bb27e945cccbe289eb43d.html">kit</a></li><li class="navelem"><a class="el" href="dir_60376687895b74e627fb8a241c3f339a.html">common</a></li><li class="navelem"><a class="el" href="dir_4f5ba988b7de2a6efab62310c4bddab1.html">drivers</a></li><li class="navelem"><a class="el" href="tftamapped_8c.html">tftamapped.c</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 16:05:15 for EFR32 Flex Gecko 1 Software Documentation by
+    <li class="navelem"><a class="el" href="dir_47b141814df81f488c4f7eaff9a67e18.html">hardware</a></li><li class="navelem"><a class="el" href="dir_af96359f81902c5c0c02a782680fb1d9.html">kit</a></li><li class="navelem"><a class="el" href="dir_5d4a48348b1da31968333dd38c7667cf.html">common</a></li><li class="navelem"><a class="el" href="dir_4d1202699618d790b69f43dda0aac898.html">drivers</a></li><li class="navelem"><a class="el" href="tftamapped_8c.html">tftamapped.c</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:47:11 for EFR32 Flex Gecko 1 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

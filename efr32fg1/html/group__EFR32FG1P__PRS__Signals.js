@@ -4,6 +4,7 @@ var group__EFR32FG1P__PRS__Signals =
     [ "PRS_ACMP1_OUT", "group__EFR32FG1P__PRS__Signals.html#gab22d813be80f21d821f2da303007d506", null ],
     [ "PRS_ADC0_SCAN", "group__EFR32FG1P__PRS__Signals.html#gaf270647ca258b86642d90d0f5b90f65e", null ],
     [ "PRS_ADC0_SINGLE", "group__EFR32FG1P__PRS__Signals.html#ga677a78b27270a137877f26718495050b", null ],
+    [ "PRS_CM4_TXEV", "group__EFR32FG1P__PRS__Signals.html#ga66014622b7982ae2e9c18d680c484faa", null ],
     [ "PRS_CMU_CLKOUT0", "group__EFR32FG1P__PRS__Signals.html#ga0c37871b94ffc217f25cbf30b731d994", null ],
     [ "PRS_CMU_CLKOUT1", "group__EFR32FG1P__PRS__Signals.html#ga6c6aa1409d39dd54c13c8cef9ae3af3e", null ],
     [ "PRS_CRYOTIMER_PERIOD", "group__EFR32FG1P__PRS__Signals.html#gadc1d4c267037d72d85c3100c27a3db43", null ],

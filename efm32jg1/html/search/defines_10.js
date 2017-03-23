@@ -1,7 +1,12 @@
 var searchData=
 [
+  ['red',['Red',['../glib__color_8h.html#ae8e246fd7335d7e27ab04150cbc418ba',1,'glib_color.h']]],
+  ['redmask',['RedMask',['../glib__color_8h.html#a424ec36b2b41df8d977c5243d016ca30',1,'glib_color.h']]],
+  ['redshift',['RedShift',['../glib__color_8h.html#aefeae192d0b949281ed3090a70c44d54',1,'glib_color.h']]],
   ['reg_5fmask',['REG_MASK',['../ksz8851snl__spi_8c.html#aa6a4859af8e250ed21bc057b7540a461',1,'ksz8851snl_spi.c']]],
   ['restart_5fauto_5fneg',['RESTART_AUTO_NEG',['../ksz8851snl_8c.html#a91e22764b853a4d283935d13f28a044c',1,'ksz8851snl.c']]],
+  ['rosybrown',['RosyBrown',['../glib__color_8h.html#a848660fb3730f2bfdeddb55432288c57',1,'glib_color.h']]],
+  ['royalblue',['RoyalBlue',['../glib__color_8h.html#a53b77f0d5ad8763154d61986936e8186',1,'glib_color.h']]],
   ['rx_5fbyte_5fcnt_5fmask',['RX_BYTE_CNT_MASK',['../ksz8851snl_8c.html#a60cd22a6881b225ea028f8bc1a0e0783',1,'ksz8851snl.c']]],
   ['rx_5fflow_5fctrl1_5fconfig',['RX_FLOW_CTRL1_CONFIG',['../ksz8851snl_8c.html#ad43736a9aeccb0eb58620770717fd71d',1,'ksz8851snl.c']]],
   ['rx_5fflow_5fctrl2_5fconfig',['RX_FLOW_CTRL2_CONFIG',['../ksz8851snl_8c.html#a0bde5dcaa753e8253fb4fd81acd640ec',1,'ksz8851snl.c']]],

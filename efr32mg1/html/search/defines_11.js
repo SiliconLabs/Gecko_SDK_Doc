@@ -1,4 +1,26 @@
 var searchData=
 [
-  ['si1146_5fdevice_5fid',['SI1146_DEVICE_ID',['../si114x__uv__index_8c.html#a37f8a55071debf6fddedd4ccf2f06fda',1,'si114x_uv_index.c']]]
+  ['saddlebrown',['SaddleBrown',['../glib__color_8h.html#ac053aa10a4efdee617c34dca0494b4bc',1,'glib_color.h']]],
+  ['salmon',['Salmon',['../glib__color_8h.html#a0404bbd9dea17711142eaa0c7e8f72cb',1,'glib_color.h']]],
+  ['sandybrown',['SandyBrown',['../glib__color_8h.html#a8a94dbbab4fcd8b7723b26921a4f314a',1,'glib_color.h']]],
+  ['seagreen',['SeaGreen',['../glib__color_8h.html#a545acb204d3bc7128c6a8c8a3c9ce668',1,'glib_color.h']]],
+  ['seashell',['Seashell',['../glib__color_8h.html#ae878e487321259bc7b09ff26c20b8a48',1,'glib_color.h']]],
+  ['si1146_5fdevice_5fid',['SI1146_DEVICE_ID',['../si114x__uv__index_8c.html#a37f8a55071debf6fddedd4ccf2f06fda',1,'si114x_uv_index.c']]],
+  ['si_5fcp210x_5fget_5fpart_5fnumber',['SI_CP210X_GET_PART_NUMBER',['../em__usbxpress__internal_8h.html#a43e9a15533c5cbe9c7670fec5f0542c4',1,'em_usbxpress_internal.h']]],
+  ['si_5fcp210x_5frequest',['SI_CP210X_REQUEST',['../em__usbxpress__internal_8h.html#a707fc439601527d8dac3c6fc89064f03',1,'em_usbxpress_internal.h']]],
+  ['si_5fusbxpress_5fclear_5fto_5fsend',['SI_USBXPRESS_CLEAR_TO_SEND',['../em__usbxpress__internal_8h.html#a76daf4f969876a650956823abd54380e',1,'em_usbxpress_internal.h']]],
+  ['si_5fusbxpress_5fflush_5fbuffers',['SI_USBXPRESS_FLUSH_BUFFERS',['../em__usbxpress__internal_8h.html#a922b0212a0dc5b414c3c5fb5b04751be',1,'em_usbxpress_internal.h']]],
+  ['si_5fusbxpress_5fget_5fversion',['SI_USBXPRESS_GET_VERSION',['../em__usbxpress__internal_8h.html#a503c51692da7daa20f794734b103cf56',1,'em_usbxpress_internal.h']]],
+  ['si_5fusbxpress_5fnot_5fclear_5fto_5fsend',['SI_USBXPRESS_NOT_CLEAR_TO_SEND',['../em__usbxpress__internal_8h.html#ab50340fa80a9cda6a1a715edeeb3f51a',1,'em_usbxpress_internal.h']]],
+  ['si_5fusbxpress_5fpart_5fnumber_5fefm32',['SI_USBXPRESS_PART_NUMBER_EFM32',['../em__usbxpress__internal_8h.html#a0711d06317a06c2ae549cc5da52eed3f',1,'em_usbxpress_internal.h']]],
+  ['si_5fusbxpress_5fpart_5fnumber_5fefm8',['SI_USBXPRESS_PART_NUMBER_EFM8',['../em__usbxpress__internal_8h.html#a2b2665ef8cfc2e9bb63e3b49aa4fe6cb',1,'em_usbxpress_internal.h']]],
+  ['si_5fusbxpress_5frequest',['SI_USBXPRESS_REQUEST',['../em__usbxpress__internal_8h.html#ae4f7b18c6058a253210cea35eeda7721',1,'em_usbxpress_internal.h']]],
+  ['sienna',['Sienna',['../glib__color_8h.html#ae011a22e92b577ea887d8d1b7c641991',1,'glib_color.h']]],
+  ['silver',['Silver',['../glib__color_8h.html#a83dd455066a997b33ef319b7f6531015',1,'glib_color.h']]],
+  ['skyblue',['SkyBlue',['../glib__color_8h.html#a8a431faef1cf5f8d166b51cd97ee08bf',1,'glib_color.h']]],
+  ['slateblue',['SlateBlue',['../glib__color_8h.html#aa58f679105844d8aad9efb1472d750d8',1,'glib_color.h']]],
+  ['slategray',['SlateGray',['../glib__color_8h.html#a5cb3fe04752689749473d648a2c2f731',1,'glib_color.h']]],
+  ['snow',['Snow',['../glib__color_8h.html#a7738dbaccd4ba7a258af559a744bf2d8',1,'glib_color.h']]],
+  ['springgreen',['SpringGreen',['../glib__color_8h.html#ac0704f3079d6d24b14d3be8524eb8b58',1,'glib_color.h']]],
+  ['steelblue',['SteelBlue',['../glib__color_8h.html#ab3807a68372c0280f1173cd592e2a1b9',1,'glib_color.h']]]
 ];

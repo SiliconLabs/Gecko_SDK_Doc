@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usb_20device_20stack_20library',['USB device stack library',['../group__USB.html',1,'']]]
+  ['efm32_20happy_20gecko_20software_20documentation',['EFM32 Happy Gecko Software Documentation',['../index.html',1,'']]]
 ];

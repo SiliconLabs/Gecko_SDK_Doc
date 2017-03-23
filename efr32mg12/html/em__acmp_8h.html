@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>EFR32 Mighty Gecko 12 Software Documentation: c:/work/super/platform/emlib/inc/em_acmp.h File Reference</title>
+<title>EFR32 Mighty Gecko 12 Software Documentation: D:/jenkins-slave/workspaces/Executor-0/super/platform/emlib/inc/em_acmp.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">EFR32 Mighty Gecko 12 Software Documentation
-   &#160;<span id="projectnumber">efr32mg12-doc-5.0.0</span>
+   &#160;<span id="projectnumber">efr32mg12-doc-5.1.2</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('em__acmp_8h.html','');});
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Analog Comparator (ACMP) peripheral API. </p>
-<dl class="section version"><dt>Version</dt><dd>5.0.0</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>5.1.2</dd></dl>
 <h1><a class="anchor" id="License"></a>
 License</h1>
 <p><b>Copyright 2016 Silicon Laboratories, Inc. <a href="http://www.silabs.com">http://www.silabs.com</a></b></p>
@@ -523,6 +523,37 @@ Enumerations</h2></td></tr>
 <br />
  }<tr class="separator:ga0971c188cd2a1aeff32dd621f851af17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
+<tr class="memitem:ga64be8370eb2121aae541d2802822a5a4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga64be8370eb2121aae541d2802822a5a4">ACMP_ExternalInput_Typedef</a> { <br />
+&#160;&#160;<b>acmpExternalInputAPORT0X</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT0X, 
+<br />
+&#160;&#160;<b>acmpExternalInputAPORT0Y</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT0Y, 
+<br />
+&#160;&#160;<b>acmpExternalInputAPORT1X</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT1X, 
+<br />
+&#160;&#160;<b>acmpExternalInputAPORT1Y</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT1Y, 
+<br />
+&#160;&#160;<b>acmpExternalInputAPORT1XY</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT1XY, 
+<br />
+&#160;&#160;<b>acmpExternalInputAPORT2X</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT2X, 
+<br />
+&#160;&#160;<b>acmpExternalInputAPORT2Y</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT2Y, 
+<br />
+&#160;&#160;<b>acmpExternalInputAPORT2YX</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT2YX, 
+<br />
+&#160;&#160;<b>acmpExternalInputAPORT3X</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT3X, 
+<br />
+&#160;&#160;<b>acmpExternalInputAPORT3Y</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT3Y, 
+<br />
+&#160;&#160;<b>acmpExternalInputAPORT3XY</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT3XY, 
+<br />
+&#160;&#160;<b>acmpExternalInputAPORT4X</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT4X, 
+<br />
+&#160;&#160;<b>acmpExternalInputAPORT4Y</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT4Y, 
+<br />
+&#160;&#160;<b>acmpExternalInputAPORT4YX</b> = _ACMP_EXTIFCTRL_APORTSEL_APORT4YX
+<br />
+ }<tr class="separator:ga64be8370eb2121aae541d2802822a5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</td></tr>
 <tr class="memitem:ga216306eec0ad9c6d68aa3c6819378001"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga216306eec0ad9c6d68aa3c6819378001">ACMP_HysteresisLevel_TypeDef</a> { <br />
 &#160;&#160;<a class="el" href="group__ACMP.html#gga216306eec0ad9c6d68aa3c6819378001a0b356c23ff07532fd9c8ed5cd82e41fd">acmpHysteresisLevel0</a> = _ACMP_HYSTERESIS0_HYST_HYST0, 
 <br />
@@ -711,6 +742,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6962a2f6816e64c36b88111ab368a6ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga6962a2f6816e64c36b88111ab368a6ac">ACMP_Enable</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp)</td></tr>
 <tr class="memdesc:ga6962a2f6816e64c36b88111ab368a6ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the ACMP.  <a href="group__ACMP.html#ga6962a2f6816e64c36b88111ab368a6ac">More...</a><br /></td></tr>
 <tr class="separator:ga6962a2f6816e64c36b88111ab368a6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46330ae94706d57b5c32890d744e775e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga46330ae94706d57b5c32890d744e775e">ACMP_ExternalInputSelect</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp, <a class="el" href="group__ACMP.html#ga64be8370eb2121aae541d2802822a5a4">ACMP_ExternalInput_Typedef</a> aport)</td></tr>
+<tr class="memdesc:ga46330ae94706d57b5c32890d744e775e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select and enable an external input.  <a href="group__ACMP.html#ga46330ae94706d57b5c32890d744e775e">More...</a><br /></td></tr>
+<tr class="separator:ga46330ae94706d57b5c32890d744e775e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a312099dc46377af2714277236716d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ACMP.html#ga7a312099dc46377af2714277236716d3">ACMP_GPIOSetup</a> (<a class="el" href="structACMP__TypeDef.html">ACMP_TypeDef</a> *acmp, uint32_t location, bool enable, bool invert)</td></tr>
 <tr class="memdesc:ga7a312099dc46377af2714277236716d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up GPIO output from the ACMP.  <a href="group__ACMP.html#ga7a312099dc46377af2714277236716d3">More...</a><br /></td></tr>
 <tr class="separator:ga7a312099dc46377af2714277236716d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -750,8 +784,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c5a52a81292cf9a5167198f4f346d6d9.html">platform</a></li><li class="navelem"><a class="el" href="dir_97087f942f74790e3d4b94c9b8a767c9.html">emlib</a></li><li class="navelem"><a class="el" href="dir_4db78d8b22030b0014c716096a552eaf.html">inc</a></li><li class="navelem"><a class="el" href="em__acmp_8h.html">em_acmp.h</a></li>
-    <li class="footer">Generated on Tue Sep 27 2016 16:07:54 for EFR32 Mighty Gecko 12 Software Documentation by
+    <li class="navelem"><a class="el" href="dir_57c5670a54251515d5dc3137dddf203b.html">platform</a></li><li class="navelem"><a class="el" href="dir_74d47fbdcea7cda18072cc4be639af5a.html">emlib</a></li><li class="navelem"><a class="el" href="dir_bf479292f56c204ab5b202f2f7ed0583.html">inc</a></li><li class="navelem"><a class="el" href="em__acmp_8h.html">em_acmp.h</a></li>
+    <li class="footer">Generated on Thu Mar 9 2017 20:37:21 for EFR32 Mighty Gecko 12 Software Documentation by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

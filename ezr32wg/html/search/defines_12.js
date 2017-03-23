@@ -1,6 +1,10 @@
 var searchData=
 [
+  ['tan',['Tan',['../glib__color_8h.html#a4a0de908a18062456ea8828052a7d444',1,'glib_color.h']]],
+  ['teal',['Teal',['../glib__color_8h.html#a5136e790688908e6c1162de6030be09d',1,'glib_color.h']]],
   ['textdisplay_5femstatus_5fbase',['TEXTDISPLAY_EMSTATUS_BASE',['../emstatus_8h.html#a65a83bba432329e332e019bf985607ab',1,'emstatus.h']]],
+  ['thistle',['Thistle',['../glib__color_8h.html#ad0169a780caaaade545390e38eda535c',1,'glib_color.h']]],
+  ['tomato',['Tomato',['../glib__color_8h.html#adb16a8920f2ee321b7118fd5c6fad0f4',1,'glib_color.h']]],
   ['touch_5fx1_5fpin',['TOUCH_X1_PIN',['../touch_8c.html#a907d61e49e4895b3078b70b8f923e8e3',1,'touch.c']]],
   ['touch_5fx1_5fport',['TOUCH_X1_PORT',['../touch_8c.html#af1ceece19587ca2e5fe78f48889c4c1c',1,'touch.c']]],
   ['touch_5fx2_5fpin',['TOUCH_X2_PIN',['../touch_8c.html#a2a7a9e04c209dfa2d916b1012cb93533',1,'touch.c']]],
@@ -9,6 +13,7 @@ var searchData=
   ['touch_5fy1_5fport',['TOUCH_Y1_PORT',['../touch_8c.html#a97d35dd4557aa243d84901dc668a8190',1,'touch.c']]],
   ['touch_5fy2_5fpin',['TOUCH_Y2_PIN',['../touch_8c.html#a28ca90129571f5f84375827944edd66c',1,'touch.c']]],
   ['touch_5fy2_5fport',['TOUCH_Y2_PORT',['../touch_8c.html#a0d56e24c2aaddf4352e3b80d94a69219',1,'touch.c']]],
+  ['turquoise',['Turquoise',['../glib__color_8h.html#a1080592ee5d9a78a672ed1e4d022906a',1,'glib_color.h']]],
   ['tx_5fflow_5fctrl_5fconfig',['TX_FLOW_CTRL_CONFIG',['../ksz8851snl_8c.html#ac95b594e03b020184d53ee1285ff2d0d',1,'ksz8851snl.c']]],
   ['tx_5fflow_5fctrl_5fcrc_5fenable',['TX_FLOW_CTRL_CRC_ENABLE',['../ksz8851snl_8c.html#aa37cabe23ff4bca018afc1f512bb6b60',1,'ksz8851snl.c']]],
   ['tx_5fflow_5fctrl_5fenable',['TX_FLOW_CTRL_ENABLE',['../ksz8851snl_8c.html#a4fb198f5122ad90b21a55144fd193adc',1,'ksz8851snl.c']]],
