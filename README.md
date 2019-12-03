@@ -1,4 +1,4 @@
-**Note:** This reference guide is deprecated. Up to date documentation can be found at [docs.silabs.com](https://docs.silabs.com/")
+**Note:** This reference guide is deprecated. Up to date documentation can be found at [docs.silabs.com](https://docs.silabs.com/)
 
 Gecko SDK Documentation
 =======================
